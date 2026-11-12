@@ -81,6 +81,7 @@ body.reader-night{--ink:#e8e1d7;--muted:#aaa096;--rule:#413b36;--paper:#181615;-
 .reader-note-location{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:.8rem;margin-top:.85rem;padding:.35rem 0}
 @media(max-width:620px){.reader-navigation-toggle{min-height:2.5rem}.reader-navigation{left:1rem;right:1rem;width:auto}.reader-note-preview{padding:1rem}.reader-location{max-width:9rem;flex-shrink:0}.reader-location>[data-reader-search-return]{text-align:left;justify-content:flex-start}.reader-bar{align-items:flex-start;flex-wrap:wrap}.reader-home{flex-shrink:0}}
 @media print{.reader-navigation,.reader-note-preview{display:none!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* Current reviewed-edition typography. The base reader controls remain
    unchanged; article structure mirrors the reviewed PDF treatment. */

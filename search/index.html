@@ -7,8 +7,8 @@
   
   <title>Search - Timothy Williamson Archive</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/style.css?v=20260822-1">
-  <link rel="stylesheet" href="../assets/discovery.css?v=20261112">
+  <link rel="stylesheet" href="../assets/style.css?v=20261112-2">
+  <link rel="stylesheet" href="../assets/discovery.css?v=20261112-2">
 <link rel="canonical" href="https://dkodsi.github.io/williamson-archive/search/">
 <meta name="description" content="Search titles and full text across the digital editions of Timothy Williamson&#x27;s work, with links to matching passages.">
 <meta property="og:title" content="Search – Timothy Williamson Archive">
@@ -18,14 +18,12 @@
 <script type="application/ld+json" data-public-seo>{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dkodsi.github.io/williamson-archive/search/#webpage","url":"https://dkodsi.github.io/williamson-archive/search/","name":"Search – Timothy Williamson Archive","description":"Search titles and full text across the digital editions of Timothy Williamson's work, with links to matching passages.","isPartOf":{"@id":"https://dkodsi.github.io/williamson-archive/#website"}}]}</script>
 </head>
 <body data-discovery-root="../" data-discovery-default-scope="text">
+  <a class="skip-link" href="#catalogueResults">Skip to results</a>
   <header class="topbar">
     <a class="brand" href="../index.html">TW<span>Archive</span></a>
     <nav class="topbar-links" aria-label="Archive pages">
       <a class="topbar-link" href="../index.html" data-titles-link>Catalogue</a>
-
-      <a class="topbar-link" href="index.html" data-fulltext-link>Corpus search</a>
       <a class="topbar-link" href="../citations/index.html">Timeline</a>
-
     </nav>
   </header>
 
@@ -47,44 +45,36 @@
         </div>
         <p id="searchHint" class="search-hint">Find a title, or search the text of the digital editions.</p>
       </form>
-      <div class="hero-links">
-        <a class="article-search-link" href="index.html" data-fulltext-link>Corpus search</a>
-        <a class="article-search-link" href="../citations/index.html">Timeline</a>
-      </div>
       <div id="stats" class="stats"></div>
       <p id="searchStatus" class="discovery-status" role="status" aria-live="polite"></p>
     </section>
 
     <section id="browse" class="catalogue">
-      <details id="catalogueFilters" class="catalogue-filters" open>
+      <details id="catalogueFilters" class="catalogue-filters" open tabindex="0" aria-label="Filter works">
         <summary>Filters<span id="filterCount"></span></summary>
       <aside aria-label="Filter works">
-        <div class="aside-title">Browse</div>
-        <button class="filter active" data-category="all">All topics</button>
-
-        <div class="aside-title spaced">Availability</div>
+        <fieldset class="filter-group">
+        <legend class="aside-title">Availability</legend>
         <div class="availability-options" role="radiogroup" aria-label="Digital edition availability">
           <label><input type="radio" class="availability-filter" name="availability" value="all" checked> All</label>
           <label><input type="radio" class="availability-filter" name="availability" value="available"> Editions</label>
           <label><input type="radio" class="availability-filter" name="availability" value="unavailable"> Without editions</label>
         </div>
+        </fieldset>
 
-        <div class="aside-title spaced">Type</div>
+        <fieldset class="filter-group">
+        <legend class="aside-title">Type</legend>
         <label><input type="checkbox" class="type-filter" value="Book" checked> Books</label>
         <label><input type="checkbox" class="type-filter" value="Paper" checked> Papers</label>
         <label><input type="checkbox" class="type-filter" value="Public writing" checked> Public writing</label>
         <label><input type="checkbox" class="type-filter" value="Review / interview" checked> Reviews &amp; interviews</label>
-
-        <details class="category-panel" open>
-          <summary class="aside-title">Categories</summary>
-          <div id="categoryFilters"></div>
-        </details>
+        </fieldset>
       </aside>
       </details>
 
-      <div class="results">
+      <div class="results" id="catalogueResults" tabindex="-1" role="region" aria-label="Results">
         <div class="results-head">
-          <div><span id="resultCount"></span> works <button id="clearFilters" type="button" hidden>Clear filters</button></div>
+          <div><span id="resultCountLabel" hidden><span id="resultCount"></span> works</span> <button id="clearFilters" type="button" hidden>Clear filters</button></div>
           <div class="sort-wrap">
             <label for="sort">Sort</label>
             <select id="sort">
@@ -111,6 +101,6 @@
   </footer>
 
   <script src="../assets/article-search.js?v=20261112"></script>
-  <script src="../assets/app.js?v=20261112"></script>
+  <script src="../assets/app.js?v=20261112-2"></script>
 </body>
 </html>

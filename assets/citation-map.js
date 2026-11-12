@@ -594,7 +594,8 @@ function searchConnections() {
     `<li><button type="button" data-work="${esc(node.id)}">${esc(label(node))}</button></li>`
   ).join("")}</ul>` : query ? "<p>No matching work. Try another word from the title.</p>" : "<p>Enter part of a title to find matching works.</p>";
   bindWorkButtons(matches);
-  $("#citationStatus").textContent = query && candidates.length ? `${candidates.length} matching works. Choose one below.` : "No matching work. Try another word from the title.";
+  $("#citationStatus").textContent = query && candidates.length ? `${candidates.length} matching works. Choose one below.`
+    : query ? "No matching work. Try another word from the title." : "Enter part of a title to find matching works.";
 }
 
 async function init() {
@@ -650,6 +651,7 @@ async function init() {
     searchQuery = ""; decadeFilter = "all"; topicFilter = "all";
     $("#timelineDecade").value = "all"; $("#timelineTopic").value = "all";
     render(currentId);
+    $("#citationWork").focus();
   };
   window.addEventListener("popstate", () => { applyURLState(); render(currentId, false); });
   applyURLState();

@@ -20,6 +20,19 @@ body {
   font-family: var(--sans);
 }
 a { color: inherit; }
+.skip-link {
+  background: var(--white);
+  border: 2px solid var(--accent);
+  color: var(--ink);
+  font-size: 14px;
+  left: 1rem;
+  padding: .75rem 1rem;
+  position: fixed;
+  top: .75rem;
+  transform: translateY(-200%);
+  z-index: 100;
+}
+.skip-link:focus { transform: none; outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .topbar {
   align-items: center;
@@ -316,7 +329,9 @@ footer {
 }
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
+  max-width: 100%;
 }
 .footer-links a {
   text-decoration-color: var(--line);
@@ -352,9 +367,35 @@ footer {
 .work-record-tools {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-top: 15px;
 }
+.citation-copy-fallback,
+.citation-copy-status { flex-basis: 100%; min-width: 0; }
+.citation-copy-fallback label {
+  color: var(--muted);
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.citation-copy-text {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  box-sizing: border-box;
+  color: var(--ink);
+  font: 14px/1.5 var(--sans);
+  max-width: 100%;
+  min-height: 6rem;
+  padding: 12px;
+  resize: vertical;
+  user-select: text;
+  width: 100%;
+}
+.citation-copy-text:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.citation-copy-status { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 8px 0 0; }
 .work-record-tools button,
 .work-record-tools a,
 .work-record-tools span {
@@ -509,6 +550,7 @@ footer {
 }
 .citation-view-controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 22px 0 12px;
 }

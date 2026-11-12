@@ -194,7 +194,7 @@
         }
         status.textContent = "";
         input.removeAttribute("aria-invalid");
-        closePanel(false);
+        closePanel(true);
         location.hash = `#${encodeURIComponent(target.id)}`;
         document.getElementById(target.id)?.scrollIntoView({ block: "start" });
       });
@@ -214,7 +214,7 @@
         if (!text) continue;
         const link = create("a", text);
         link.href = `#${encodeURIComponent(item.id)}`;
-        link.addEventListener("click", () => closePanel(false));
+        link.addEventListener("click", () => closePanel(true));
         const row = create("li");
         row.style.setProperty("--heading-depth", String(Math.min(3, Number(item.tagName.slice(1)) - minimumLevel)));
         row.append(link);

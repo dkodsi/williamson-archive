@@ -1,5 +1,4 @@
 let works = [];
-let category = "all";
 let restoringState = false;
 let fulltextQuery = null;
 let fulltextResults = [];
@@ -39,11 +38,10 @@ const compareCitations = (left, right) => {
   return b - a || compareYears(left, right, -1);
 };
 
-function readState(params, categories, defaultScope = DEFAULT_SCOPE) {
+function readState(params, defaultScope = DEFAULT_SCOPE) {
   const scope = ["titles", "text"].includes(params.get("scope")) ? params.get("scope") : defaultScope;
   return {
     query: params.get("q") || "", scope,
-    category: categories.includes(params.get("category")) ? params.get("category") : "all",
     availability: ["available", "unavailable"].includes(params.get("availability")) ? params.get("availability") : "all",
     types: params.has("types") ? ALL_TYPES.filter(type => params.get("types").split(",").includes(type)) : [...ALL_TYPES],
     sort: ["newest", "oldest", "az", "citations", "relevance"].includes(params.get("sort")) ? params.get("sort") : defaultSort(scope),
@@ -55,7 +53,6 @@ function stateParameters(state, existing = "") {
   for (const key of ["q", "scope", "category", "availability", "types", "sort"]) params.delete(key);
   if (state.query.trim()) params.set("q", state.query.trim());
   params.set("scope", state.scope);
-  if (state.category !== "all") params.set("category", state.category);
   if (state.availability !== "all") params.set("availability", state.availability);
   if (state.types.length !== ALL_TYPES.length) params.set("types", state.types.join(","));
   if (state.sort !== defaultSort(state.scope)) params.set("sort", state.sort);
@@ -64,7 +61,7 @@ function stateParameters(state, existing = "") {
 
 function matchesFilters(work, state) {
   return (state.availability === "all" || (work.edition_path ? "available" : "unavailable") === state.availability) &&
-    (state.category === "all" || work.category === state.category) && state.types.includes(work.catalogue_type);
+    state.types.includes(work.catalogue_type);
 }
 
 function sortWorks(items, sort) {
@@ -94,16 +91,12 @@ async function init() {
   const response = await fetch(`${ARCHIVE_ROOT}data/works.json`);
   if (!response.ok) throw new Error("Catalogue unavailable");
   works = await response.json();
-  const categories = [...new Set(works.map(work => work.category))];
   const editionCount = works.filter(work => work.edition_path).length;
   $("#stats").innerHTML = [
     `<span><strong>${works.length}</strong> works</span>`,
 
     `<span><strong>${editionCount}</strong> editions</span>`
   ].join("");
-  $("#categoryFilters").innerHTML = categories.map(item =>
-    `<button class="filter" data-category="${esc(item)}">${esc(item)} <span></span></button>`
-  ).join("");
   bind();
   applyURLState();
   render({ updateURL: false });
@@ -113,16 +106,18 @@ function configureMobileFilters() {
   const panel = $("#catalogueFilters");
   if (!panel || typeof window === "undefined") return;
   const media = window.matchMedia?.("(max-width: 800px)");
+  const applyLayout = mobile => {
+    // A resize must not hide a control that still has keyboard focus.
+    if (!mobile || !panel.contains?.(document.activeElement)) panel.open = !mobile;
+    panel.tabIndex = mobile ? -1 : 0;
+  };
   if (media) {
-    panel.open = !media.matches;
-    media.addEventListener?.("change", event => { panel.open = !event.matches; });
-  } else if (window.innerWidth <= 800) panel.open = false;
+    applyLayout(media.matches);
+    media.addEventListener?.("change", event => applyLayout(event.matches));
+  } else applyLayout(window.innerWidth <= 800);
 }
 
 function bind() {
-  $$(".filter[data-category]").forEach(button => {
-    button.onclick = () => { category = button.dataset.category; updateCategoryControls(); render(); };
-  });
   $("#discoverySearch").addEventListener("submit", event => {
     event.preventDefault(); clearTimeout(queryTimer); editingQuery = false; render();
   });
@@ -147,13 +142,15 @@ function bind() {
   $("#sort").onchange = () => render();
   $$(".type-filter, .availability-filter").forEach(item => { item.onchange = () => render(); });
   $("#clearFilters").onclick = clearFilters;
-  $("#moreWorks").onclick = renderMoreGroups;
+  $("#moreWorks").onclick = () => renderMoreGroups({ focusNew: true });
   window.addEventListener("popstate", () => {
     clearTimeout(queryTimer); editingQuery = false; restoringState = true;
     applyURLState(); render({ updateURL: false }); restoringState = false;
   });
   document.addEventListener("keydown", event => {
-    if (event.key === "/" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName) && !document.activeElement.isContentEditable) {
+    if (event.key === "/" && !event.defaultPrevented && !event.isComposing &&
+        !event.ctrlKey && !event.metaKey && !event.altKey &&
+        !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName) && !document.activeElement.isContentEditable) {
       event.preventDefault(); $("#search").focus();
     }
   });
@@ -162,7 +159,7 @@ function bind() {
 function selectedAvailability() { return $(".availability-filter:checked")?.value || "all"; }
 function selectedTypes() { return new Set($$(".type-filter:checked").map(item => item.value)); }
 function stateFromControls() {
-  return { query: $("#search").value.trim(), scope: selectedScope(), category,
+  return { query: $("#search").value.trim(), scope: selectedScope(),
     availability: selectedAvailability(), types: [...selectedTypes()], sort: $("#sort").value };
 }
 function titleMatches(work, query) { return !query || normalized(work.title).includes(normalized(query)); }
@@ -171,26 +168,12 @@ function current() {
   return sortWorks(works.filter(work => matchesFilters(work, state) && titleMatches(work, state.query)), state.sort);
 }
 function updateCounts(filtered) {
-  const availability = selectedAvailability();
-  const types = selectedTypes();
-  $("#categoryFilters").querySelectorAll(".filter").forEach(button => {
-    button.querySelector("span").textContent = works.filter(work =>
-      (availability === "all" || (work.edition_path ? "available" : "unavailable") === availability) &&
-      types.has(work.catalogue_type) && work.category === button.dataset.category
-    ).length;
-  });
+  $("#resultCountLabel").hidden = false;
   $("#resultCount").textContent = filtered.length;
   $("#searchStatus").textContent = `${filtered.length} work${filtered.length === 1 ? "" : "s"} shown.`;
 }
-function updateCategoryControls() {
-  $$(".filter[data-category]").forEach(item => {
-    const active = item.dataset.category === category;
-    item.classList.toggle("active", active); item.setAttribute("aria-pressed", String(active));
-  });
-}
 function updateFilterSummary(state) {
   const filters = [];
-  if (state.category !== "all") filters.push({ label: state.category, clear() { category = "all"; } });
   if (state.availability !== "all") filters.push({ label: state.availability === "available" ? "With editions" : "Without editions", clear() { $(".availability-filter[value=all]").checked = true; } });
   if (state.types.length !== ALL_TYPES.length) filters.push({ label: state.types.length ? state.types.join(", ") : "No types selected", clear() { $$(".type-filter").forEach(input => { input.checked = true; }); } });
   $("#filterCount").textContent = filters.length ? ` · ${filters.length} active` : "";
@@ -202,7 +185,7 @@ function updateFilterSummary(state) {
     const button = document.createElement("button");
     button.type = "button"; button.textContent = `${filter.label} ×`;
     button.setAttribute("aria-label", `Remove filter: ${filter.label}`);
-    button.onclick = () => { filter.clear(); updateCategoryControls(); render(); };
+    button.onclick = () => { filter.clear(); render(); $("#catalogueResults").focus({ preventScroll: true }); };
     region.append(button);
   }
 }
@@ -243,17 +226,13 @@ function searchFulltext(query) {
 async function render({ updateURL = true, historyMode = "push" } = {}) {
   const request = ++requestId;
   const state = stateFromControls();
-  updateCategoryControls(); updateFilterSummary(state);
+  updateFilterSummary(state);
   $("#search").placeholder = state.scope === "text" ? "Search full text…" : "Search titles…";
   $("#searchHint").textContent = state.scope === "text"
     ? 'Search available digital editions. Use quotation marks for a phrase; * matches part of a word.'
     : "Find a title, or search the text of the digital editions.";
   $("#sort option[value=relevance]").hidden = state.scope !== "text";
   if (updateURL && !restoringState) writeURLState(historyMode);
-  $$('[data-fulltext-link]').forEach(link => {
-    const params = stateParameters({ ...state, scope: "text", sort: state.sort === "citations" ? "relevance" : state.sort });
-    link.href = `${ARCHIVE_ROOT}search/index.html?${params}`;
-  });
   $$('[data-titles-link]').forEach(link => {
     const params = stateParameters({ ...state, scope: "titles", sort: state.sort === "relevance" ? "citations" : state.sort });
     link.href = `${ARCHIVE_ROOT}index.html?${params}`;
@@ -274,13 +253,17 @@ async function render({ updateURL = true, historyMode = "push" } = {}) {
     }
     return;
   }
-  updateCounts([]);
+  $("#resultCountLabel").hidden = true;
   const parsed = globalThis.TWArticleSearch.parseQuery(state.query);
   if (parsed.state !== "ready") {
     $("#searchStatus").textContent = parsed.state === "empty" ? "Enter a word or phrase to search the editions." : "Enter searchable words and close any quotation marks.";
+    $("#empty").textContent = $("#searchStatus").textContent;
+    $("#empty").hidden = false;
     return;
   }
   $("#searchStatus").textContent = "Searching editions…";
+  $("#empty").textContent = "Searching editions…";
+  $("#empty").hidden = false;
   try {
     if (fulltextQuery !== state.query) {
       const response = await searchFulltext(state.query);
@@ -294,6 +277,7 @@ async function render({ updateURL = true, historyMode = "push" } = {}) {
     updateCounts(resultGroups);
     const passages = resultGroups.reduce((n, group) => n + group.passages.length, 0);
     $("#searchStatus").textContent = `${resultGroups.length.toLocaleString()} work${resultGroups.length === 1 ? "" : "s"} · ${passages.toLocaleString()} matching passage${passages === 1 ? "" : "s"}.`;
+    $("#empty").hidden = true;
     if (!resultGroups.length) {
       $("#empty").textContent = state.availability === "unavailable" ? "Works without digital editions cannot be searched in full text. Choose All or Editions to see matching passages." : "No matching passages with these filters. Try fewer words or clear a filter.";
       $("#empty").hidden = false; return;
@@ -303,10 +287,12 @@ async function render({ updateURL = true, historyMode = "push" } = {}) {
   } catch (_) {
     if (request !== requestId) return;
     $("#searchStatus").textContent = "Full-text search is temporarily unavailable. You can still search titles.";
+    $("#empty").textContent = "Full-text search is temporarily unavailable. Try Search again, or choose Titles above.";
+    $("#empty").hidden = false;
   }
 }
 
-function renderMoreGroups() {
+function renderMoreGroups({ focusNew = false } = {}) {
   const state = resultState;
   if (!state) return;
   // Use the completed query, never text typed while an older result set is visible.
@@ -316,6 +302,7 @@ function renderMoreGroups() {
     const href = globalThis.TWArticleSearch.resultHref(result, query, { editionRoot: `${ARCHIVE_ROOT}editions/`, returnTo });
     return `<li><a href="${esc(href)}"><span class="passage-section">${esc(result.section || "Passage")}</span><span class="fulltext-result-snippet">${globalThis.TWArticleSearch.snippet(result)}</span></a></li>`;
   };
+  let firstNew;
   for (const group of resultGroups.slice(shownGroups, shownGroups + 12)) {
     const item = document.createElement("article"); item.className = "discovery-work";
     item.innerHTML = `<header><h2><a href="${esc(archiveHref(group.work.work_path))}">${esc(group.work.title)}</a></h2><p>${esc(group.work.year ?? "n.d.")} · ${group.passages.length} matching passage${group.passages.length === 1 ? "" : "s"}</p></header><ol class="passage-list">${group.passages.slice(0, 3).map(passageHTML).join("")}</ol>`;
@@ -332,10 +319,12 @@ function renderMoreGroups() {
       item.append(details);
     }
     $("#fulltextGroups").append(item);
+    firstNew ||= item;
   }
   shownGroups = Math.min(shownGroups + 12, resultGroups.length);
   $("#moreWorks").hidden = shownGroups >= resultGroups.length;
   $("#moreWorks").textContent = `Show more works (${resultGroups.length - shownGroups} remaining)`;
+  if (focusNew) firstNew?.querySelector("h2 a")?.focus();
 }
 
 function card(work) {
@@ -349,10 +338,10 @@ function card(work) {
   return `<article class="work-card"><div class="${titleClass}">${title}</div>${work.reference_html ? `<div class="reference">${work.reference_html}</div>` : work.reference ? `<div class="reference">${esc(work.reference)}</div>` : ""}${(actions.length || cited) ? `<div class="work-actions">${actions.join("")}${cited}</div>` : ""}</article>`;
 }
 function clearFilters() {
-  category = "all"; updateCategoryControls();
   $(".availability-filter[value=all]").checked = true;
   $$(".type-filter").forEach(item => { item.checked = true; });
   render();
+  $("#catalogueResults").focus({ preventScroll: true });
 }
 function writeURLState(mode = "push") {
   const params = stateParameters(stateFromControls(), location.search);
@@ -360,13 +349,19 @@ function writeURLState(mode = "push") {
   if (next !== `${location.pathname}${location.search}${location.hash}`) history[mode === "replace" ? "replaceState" : "pushState"](null, "", next);
 }
 function applyURLState() {
-  const state = readState(new URLSearchParams(location.search), [...new Set(works.map(work => work.category))]);
-  $("#search").value = state.query; category = state.category;
+  const params = new URLSearchParams(location.search);
+  // Old bookmarked topic filters must not silently restrict the simplified UI.
+  if (params.has("category")) {
+    params.delete("category");
+    history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`);
+  }
+  const state = readState(params);
+  $("#search").value = state.query;
   $(".availability-filter[value=all]").checked = true;
   $$(".availability-filter").forEach(input => { input.checked = input.value === state.availability; });
   $$(".type-filter").forEach(input => { input.checked = state.types.includes(input.value); });
   $$("input[name=scope]").forEach(input => { input.checked = input.value === state.scope; });
-  $("#sort").value = state.sort; updateCategoryControls();
+  $("#sort").value = state.sort;
 }
 
 init().catch(() => {

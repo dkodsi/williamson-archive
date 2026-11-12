@@ -10,7 +10,7 @@
 .timeline-year { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 26px; margin-bottom: 26px; }
 .timeline-year h2 { color: var(--muted); font: 25px var(--serif); margin: 14px 0 0; }
 .timeline-year ul, .timeline-matches ul, .connections-text-list ul { list-style: none; padding: 0; margin: 0; }
-.timeline-work { border-top: 1px solid var(--line); padding: 16px 0; }
+.timeline-work { border-top: 1px solid var(--line); padding: 16px 0; overflow-wrap: anywhere; }
 .timeline-work-title { font: 21px/1.35 var(--serif); text-decoration: none; }
 .timeline-work-title:hover, .timeline-work-title:focus-visible { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
 .timeline-work-meta { color: var(--muted); font-size: 12px; margin: 7px 0 2px; }
@@ -19,12 +19,12 @@
 .timeline-work-actions a:hover, .timeline-work-actions button:hover { text-decoration: underline; }
 .timeline-work-actions button { padding: 8px 0; }
 .timeline-matches { max-width: 720px; padding: 14px; border: 1px solid var(--line); margin: 8px 0 16px; }
-.timeline-matches button, .connections-text-list button { background: none; border: 0; color: var(--ink); cursor: pointer; display: block; font: 16px/1.5 var(--serif); padding: 9px 0; text-align: left; width: 100%; }
+.timeline-matches button, .connections-text-list button { background: none; border: 0; color: var(--ink); cursor: pointer; display: block; font: 16px/1.5 var(--serif); padding: 9px 0; text-align: left; width: 100%; overflow-wrap: anywhere; }
 .timeline-matches li + li, .connections-text-list li + li { border-top: 1px solid var(--line); }
 .citation-legend { max-width: 64rem; color: var(--muted); font-size: 13px; line-height: 1.6; margin: 22px 0; }
 .connections-layout { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 28px; }
 .connections-layout:has(.citation-focus:not([hidden])) { grid-template-columns: minmax(0, 1fr) 310px; }
-.timeline-main .citation-focus { margin: 0; min-width: 0; }
+.timeline-main .citation-focus { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .timeline-main .citation-focus-work { padding: 18px 0; }
 .timeline-main .citation-focus-work h2 { font-size: 27px; }
 .timeline-main .citation-neighbours { grid-template-columns: 1fr; gap: 24px; padding-top: 22px; }
@@ -37,7 +37,7 @@
 .citation-graph-frame figcaption { color: var(--muted); font-size: 12px; line-height: 1.5; padding: 12px 6px 2px; }
 .citation-graph-edges.overview path.citation-edge-hit, .citation-graph-edges line.citation-edge-hit { stroke: transparent; stroke-width: 14; pointer-events: stroke; cursor: pointer; }
 .citation-graph-edges.overview path.citation-edge-hit:hover, .citation-graph-edges line.citation-edge-hit:hover { stroke: var(--accent); stroke-opacity: .18; outline: none; }
-.citation-evidence { background: var(--paper); border: 1px solid var(--line); padding: 24px; margin-top: 28px; scroll-margin-top: 90px; }
+.citation-evidence { background: var(--paper); border: 1px solid var(--line); padding: 24px; margin-top: 28px; scroll-margin-top: 90px; overflow-wrap: anywhere; }
 .citation-evidence h2 { font: 25px/1.3 var(--serif); margin: 0 0 16px; }
 .citation-evidence > p { color: var(--muted); font-size: 13px; line-height: 1.6; }
 .citation-evidence blockquote { margin: 16px 0 8px; font: 17px/1.6 var(--serif); }
