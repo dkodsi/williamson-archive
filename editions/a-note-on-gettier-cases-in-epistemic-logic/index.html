@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="A note on Gettier cases in epistemic logic by Timothy Williamson. Philosophical Studies 172 (2015): 129–140."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>A note on Gettier cases in epistemic logic - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/a-note-on-gettier-cases-in-epistemic-logic.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>A note on Gettier cases in epistemic
+logic</h1><p class="author">Timothy
+Williamson</p><p class="publication"><em>Philosophical Studies</em> 172
+(2015): 129–140.</p></header>
+<div class="summary">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00001"
+class="search-passage"><span class="orig-page" data-page="129" id="page-129" aria-hidden="true"></span><em>Abstract</em></span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00002"
+class="search-passage">The paper explains how Gettier’s conclusion can
+be reached on general theoretical grounds within the framework of
+epistemic logic, without reliance on thought experiments. It extends the
+argument to permissive conceptions of justification that invalidate
+principles of multi-premise closure and require neighbourhood semantics
+rather than semantics of a more standard type. The paper concludes by
+recommending a robust methodology that aims at convergence in results
+between thought experimentation and more formal methods. It also warns
+against conjunctive definitions as sharing several of the drawbacks of
+disjunctive definitions.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00003"
+class="search-passage"><em>Keywords:</em> Gettier · Knowledge ·
+Justification · Epistemic logic · Neighbourhood semantics · Thought
+experiments</span></p>
+</div>
+<h1 class="unnumbered" id="introduction">1 Introduction</h1>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00004"
+class="search-passage">Gettier’s (1963) paper is not just famous; it is
+famous for being famous. It is celebrated as a turning-point in
+epistemology, and partly for that reason has become a central test case
+in debates on philosophical method. More specifically, it is standardly
+taken as a convenient paradigm of recent analytic philosophy’s reliance
+on thought experiments. Gettier is interpreted as simply eliciting
+case-specific judgments about his two imagined examples, that they
+involve justified true belief without knowledge. The question under
+debate is what authority, if any, such case-specific judgments or
+‘intuitions’ should enjoy.<a href="#note-1" id="note-ref-1"
+class="note-ref" data-note="1" aria-label="Note 1">1</a></span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00005"
+class="search-passage"><span class="orig-page" data-page="130" id="page-130" aria-hidden="true"></span>In
+fact, Gettier’s approach in the paper is more theoretical. He stipulates
+that he is using ‘that sense of “justified” in which S’s being justified
+in believing P is a necessary condition of S’s knowing P’, and then
+makes two general claims. The first is that justification is not
+factive: ‘it is possible for a person to be justified in believing a
+proposition that is in fact false’. Gettier’s second general claim is a
+closure principle for justification: ‘for any proposition P, if S is
+justified in believing P, and P entails Q, and S deduces Q from P and
+accepts Q as a result of this deduction, then S is justified in
+believing Q’. His counterexamples then illustrate the fatal consequences
+of these theoretical points for justified true belief as a supposed
+necessary and sufficient condition for knowledge. Significantly, both of
+Gettier’s theoretical points concern <em>justification</em>, rather than
+<em>knowledge</em>. That is hardly surprising, for ‘S is justified in
+believing P’ is a less ordinary, more theoretical sounding locution than
+‘S knows P’. Indeed, one can argue that the way most contemporary
+epistemologists apply the term ‘justified’ to belief involves an
+artificial disciplinary convention, rooted in a confusion between
+justification and blamelessness.<a href="#note-2" id="note-ref-2"
+class="note-ref" data-note="2" aria-label="Note 2">2</a> However, for
+purposes of this paper, I will follow the currently standard use of
+‘justified’ in epistemology. In particular, I will adhere to both of
+Gettier’s theoretical principles about justification: non-factivity and
+closure.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00006"
+class="search-passage">Gettier provides no theoretical backing for his
+claims that the subjects in his examples do not know. He simply treats
+them as obvious. Those are the claims that have become at least mildly
+controversial, and they do exemplify the case-specific methodology. I
+regard Gettier’s denials of knowledge as not just true but obvious, in a
+way that is neither ethnicity-specific nor gender-specific.
+Nevertheless, it is desirable to have some independent confirmation of
+them, preferably of a more theoretical kind. The point is not just to
+reassure ourselves that they are indeed true. By deriving them from more
+general considerations, we stand to gain theoretical insight into the
+nature of knowledge and (in the relevant sense) justification.
+Furthermore, we can thereby hope to rebut a milder but insidious form of
+scepticism, which concedes the denials of knowledge in Gettier cases but
+queries their significance. The fear is that they reveal mere
+<em>quirks</em> of knowledge, because oddities of humans’
+species-specific epistemological sensibility make us latch onto a
+gerrymandered cognitive relation that lacks deeper theoretical
+significance. If Gettier cases can be predicted on general theoretical
+grounds, that dismissive interpretation of them is
+unwarranted.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00007"
+class="search-passage">In previous work, I have argued that Gettier
+cases can indeed be predicted within the general framework of
+<em>epistemic logic</em>.<a href="#note-3" id="note-ref-3"
+class="note-ref" data-note="3" aria-label="Note 3">3</a> Section 2
+briefly rehearses the argument. The main novelty of the present paper is
+in Sect. 3, which generalizes the argument to a wider range of settings
+and assumptions, thereby showing its conclusions to be
+robust.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00008"
+class="search-passage"><span class="orig-page" data-page="131" id="page-131" aria-hidden="true"></span>To
+many epistemologists, the intellectual style of epistemic logic is
+unfamiliar and unsettling. In particular, they are disturbed by its
+reliance on idealizations such as logical omniscience, on which one
+automatically knows whatever follows from what one knows. Their outraged
+instinct is to cite counterexamples. That is the analogue of the
+outraged folk physicist giving examples of planets that are not point
+masses. The use of idealized models is ubiquitous in the natural and
+social sciences. Practitioners are normally aware of the idealizations
+and know how to handle them. The aim is to gain insight into a
+phenomenon by studying how it works under simplified, rigorously
+described conditions that enable us to apply mathematical or
+quasi-mathematical reasoning that we cannot apply directly to the
+phenomenon as it occurs in the wild, with all its intractable
+complexity. We can then cautiously transfer our insight about the
+idealized model back to the phenomenon in the wild. The selection and
+application of such models requires experience, skill, and good
+judgment, which are not primarily matters of mathematical facility. So
+far, mainstream epistemology has made disappointingly little use of such
+techniques. The reader is urged to understand what follows in the same
+spirit as idealized model-building in the natural and social
+sciences.</span></p>
+<h1 class="unnumbered" id="gettier-cases-in-epistemic-logic">2 Gettier
+Cases in Epistemic Logic</h1>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00009"
+class="search-passage">For the time being, a model is a <em>frame</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">&lt;</mo><mi mathvariant="normal">W</mi><mo>,</mo><mi mathvariant="normal">R</mi><mo>,</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="postfix">&gt;</mo></mrow><annotation encoding="application/x-tex">\mathopen{&lt;}\mathrm{W},\mathrm{R},\mathrm{S}\mathclose{&gt;}</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+is a set and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+are binary relations over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>,
+that is, sets of ordered pairs of members of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00010"
+class="search-passage">Informally, we interpret
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+as a set of mutually exclusive, jointly exhaustive worlds or states,
+which may but need not be metaphysically possible (‘informally’, because
+that interpretation does not constrain the formal definitions and
+arguments). Informally, we interpret subsets of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+as coarse-grained propositions, for which mutual entailment amounts to
+identity. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⊆</mo><mi mathvariant="normal">W</mi></mrow><annotation encoding="application/x-tex">p \subseteq \mathrm{W}</annotation></semantics></math>
+then think of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+as true at every world in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and false at every other world. Thus the intersection of two
+propositions is their conjunction and their union is their disjunction;
+the complement of a proposition in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+is its negation. Furthermore,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⊆</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \subseteq q</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+in the sense that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true at every world at which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true. Similarly,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∩</mo><mi>q</mi><mo>⊆</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">p \cap q \subseteq r</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+together entail
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>,
+in the sense that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+is true at every world at which both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+are true.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00011"
+class="search-passage">Still informally, we interpret the relations
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+as encoding the epistemology of the frame, given a cognizing subject
+(‘the agent’) and a time (the present tense).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+is a relation of <em>epistemic accessibility</em>: a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+to a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+if and only if for all the agent knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+the agent is in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+that is, whatever the agent knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Since knowledge is factive, everything the agent knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+should be <em>reflexive</em> (every world has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+to itself); we shall only consider models meeting that condition. We
+define a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+from propositions to propositions by the following equation for all
+propositions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>:</span></p>
+<div class="displayblock">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00012"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>∈</mo><mi mathvariant="normal">W</mi><mo>:</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∈</mo><mi mathvariant="normal">W</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mi>R</mi><mi>x</mi><mo>⇒</mo><mi>x</mi><mo>∈</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">Kp = \{w \in \mathrm{W} : \forall x\,\in \mathrm{W}\,(wRx \Rightarrow x \in p)\}</annotation></semantics></math></span></p>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00013"
+class="search-passage">In other words,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp</annotation></semantics></math>
+is true at a world if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true at every world epistemically accessible from that one.
+Informally,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp</annotation></semantics></math>
+is interpreted as the
+<span class="orig-page" data-page="132" id="page-132" aria-hidden="true"></span>proposition
+that the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Thus the agent knows something if and only if it is true at every
+uneliminated possibility, where the eliminated possibilities are the
+epistemically inaccessible worlds. These remarks are not intended as an
+<em>analysis</em> of knowledge in terms of epistemic accessibility,
+since epistemic accessibility was itself explained in terms of
+knowledge. Rather, they are just a recipe for informally decoding how
+knowledge behaves according to the frame from the relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>.
+For any world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+in any frame there is a <em>strongest</em> thing the agent knows at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+the proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>,
+defined as the set of all worlds epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>∈</mo><mi mathvariant="normal">W</mi><mo>:</mo><mi>w</mi><mi mathvariant="normal">R</mi><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{x \in \mathrm{W} : w\mathrm{R}x\}</annotation></semantics></math>.
+For, by the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+for any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">w \in Kp</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) \subseteq p</annotation></semantics></math>.
+That convenient equivalence will be used without comment in some of the
+arguments to come. One obvious corollary is an unrestricted
+multi-premise closure principle for knowledge, for if some premises
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \ldots, p_n</annotation></semantics></math>
+entail a conclusion
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+and the agent knows each of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \ldots, p_n</annotation></semantics></math>
+at a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+entails each of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \ldots, p_n</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+so the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+More formally:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>MPCK</dt>
+<dd>
+<span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00014"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>∩</mo><mi>…</mi><mo>∩</mo><msub><mi>p</mi><mi>n</mi></msub><mo>⊆</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p_1 \cap \dots \cap p_n \subseteq q</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mi>p</mi><mn>1</mn></msub><mo>∩</mo><mi>…</mi><mo>∩</mo><mi>K</mi><msub><mi>p</mi><mi>n</mi></msub><mo>⊆</mo><mi>K</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">Kp_1 \cap \dots \cap Kp_n \subseteq Kq</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00015"
+class="search-passage">There is no restriction to cases in which the
+agent goes through a process of deducing the conclusion from the
+premises, competently or otherwise, nor is any allowance made for an
+agent’s failure to recognize that the same proposition is recurring
+under different guises. This is the main idealization about knowledge in
+the models.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00016"
+class="search-passage">The account of justified belief in the frame is
+similar. For present purposes, it is convenient to treat justified
+belief as a single phenomenon, rather than separating it out into
+justification and belief components, though nothing said here will
+preclude the possibility of so analysing it.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+is a relation of <em>doxastic accessibility</em>: a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+to a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+if and only if whatever the agent believes with justification in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Since justified belief is not factive,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+will not in general be reflexive. However,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+should be <em>serial</em>, in the sense that every world has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+to at least one world, for a world that has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+to no worlds is a world in which the agent vacuously has a justified
+belief in every proposition whatsoever, and so has mutually inconsistent
+justified beliefs, an eventuality we may exclude, at least at this level
+of idealization. We define a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+from propositions to propositions by the following equation for all
+propositions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>:</span></p>
+<div class="displayblock">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00017"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mi>p</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>∈</mo><mi mathvariant="normal">W</mi><mo>:</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∈</mo><mi mathvariant="normal">W</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">x</mi></mrow><mo>⇒</mo><mi>x</mi><mo>∈</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">Jp = \{w \in \mathrm{W} : \forall x\,\in \mathrm{W}\,(\mathrm{wSx} \Rightarrow x \in p)\}</annotation></semantics></math></span></p>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00018"
+class="search-passage">In other words,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Jp</annotation></semantics></math>
+is true at a world if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true at every world doxastically accessible from that one.
+Informally,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Jp</annotation></semantics></math>
+is interpreted as the proposition that the agent has a justified belief
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+This is not intended as an <em>analysis</em> of justified belief in
+terms of doxastic accessibility, since doxastic accessibility was itself
+explained in terms of justified belief. Rather, it is just a recipe for
+informally decoding how justified belief behaves according to the frame
+from the relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>.
+For any world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+in any frame there is a <em>strongest</em> thing the agent has a
+justified belief in at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+the proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>,
+defined as the set of all worlds doxastically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>∈</mo><mi mathvariant="normal">W</mi><mo>:</mo><mi>w</mi><mi>S</mi><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{x \in \mathrm{W} : wSx\}</annotation></semantics></math>.
+For, by the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>,
+for any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Jp</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">w \in Jp</annotation></semantics></math>
+if and only if
+<span class="orig-page" data-page="133" id="page-133" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq p</annotation></semantics></math>.
+That convenient equivalence will be used without comment in some of the
+arguments to come. One obvious corollary is an unrestricted
+multi-premise closure principle for justified belief, for if some
+premises
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \ldots, p_n</annotation></semantics></math>
+entail a conclusion
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+and the agent has a justified belief in each of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \ldots, p_n</annotation></semantics></math>
+at a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+entails each of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_1, \ldots, p_n</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+so the agent has a justified belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+More formally:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>MPCJ</dt>
+<dd>
+<span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00019"
+class="search-passage">IF
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>∩</mo><mi>…</mi><mo>∩</mo><msub><mi>p</mi><mi>n</mi></msub><mo>⊆</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p_1 \cap \dots \cap p_n \subseteq q</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><msub><mi>p</mi><mn>1</mn></msub><mo>∩</mo><mi>…</mi><mo>∩</mo><mi>J</mi><msub><mi>p</mi><mi>n</mi></msub><mo>⊆</mo><mrow><mi mathvariant="normal">J</mi><mi mathvariant="normal">q</mi></mrow></mrow><annotation encoding="application/x-tex">Jp_1 \cap \dots \cap Jp_n \subseteq \mathrm{Jq}</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00020"
+class="search-passage">As before, there is no restriction to cases in
+which the agent goes through a process of deducing the conclusion from
+the premises, competently or otherwise, nor is any allowance made for an
+agent’s failure to recognize that the same proposition is recurring
+under different guises. This is the main idealization about justified
+belief in the models. Although these idealizations about knowledge and
+justified belief may be drastic, that can work to our advantage. For if
+Gettier cases occur even under these drastic idealizations, that is all
+the more reason to regard them as a robust phenomenon.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00021"
+class="search-passage">The justified true belief account of knowledge
+can be expressed as a simple equation, for all propositions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+with one conjunct on the right-hand side for truth and one for justified
+belief:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>JTB</dt>
+<dd>
+<span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00022"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>=</mo><mi>p</mi><mo>∩</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp = p \cap Jp</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00023"
+class="search-passage">A trivial corollary of JTB is that knowledge
+entails justification:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq Jp</annotation></semantics></math>,
+just as Gettier stipulated in explaining how he was using the word
+‘justified’. This is equivalent to the claim that at every world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+the strongest thing the agent has a justified belief in entails the
+strongest thing the agent knows:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>.<a
+href="#note-4" id="note-ref-4" class="note-ref" data-note="4"
+aria-label="Note 4">4</a> Very roughly: since knowledge is at least as
+demanding as justification, there are at least as many worlds in which
+something must hold for it to be known in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+as there are worlds in which it must hold for it to be believed with
+justification in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+In what follows, we may assume that, without exception,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq Jp</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>,
+for defenders of JTB must assume those relations anyway, since they
+follow from JTB.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00024"
+class="search-passage">We can now taxonomize worlds in such frames to
+describe exactly the circumstances in which Gettier cases arise, that
+is, in which there are counterexamples to JTB. By hypothesis,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq Jp</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq p</annotation></semantics></math>
+(the latter because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+is reflexive), so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>p</mi><mo>∩</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq p \cap Jp</annotation></semantics></math>.
+On these assumptions, any counterexample to JTB must be a counterexample
+to the converse inclusion, a case of justified true belief without
+knowledge, just as a Gettier case is supposed to be. Consider a given
+world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+in a frame of the kind described. We divide the cases thus:</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00025"
+class="search-passage">Case (i):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∉</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">w \notin \mathrm{S}(w)</annotation></semantics></math>.
+This means that the strongest proposition in which the agent has a
+justified belief at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is false at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+so in this case the agent has justified false beliefs. The agent also
+has justified true beliefs, for instance in the trivial
+<span class="orig-page" data-page="134" id="page-134" aria-hidden="true"></span>proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+true at all worlds. Less trivially, the agent has a justified true
+belief in the proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>.
+Indeed,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+is the <em>strongest</em> proposition in which the agent has a justified
+true belief at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+For if the agent has a justified true belief in the proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq p</annotation></semantics></math>
+(because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+is the strongest proposition in which the agent has a justified belief
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>)
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">w \in p</annotation></semantics></math>
+(because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>),
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Conversely, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+then the agent has a justified belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+(because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>)
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+We subdivide case (i) thus:</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00026"
+class="search-passage">Case (ia):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) = \mathrm{S}(w) \cup \{w\}</annotation></semantics></math>.
+Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+is the strongest proposition in which the agent has a justified true
+belief at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+in this subcase what the agent knows is exactly what the agent has a
+justified true belief in, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is not a counterexample to JTB for any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+There are no Gettier cases at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+However, this looks like a rather special circumstance, a world in which
+the agent’s justified belief and the agent’s knowledge differ in content
+only by a single world.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00027"
+class="search-passage">Case (ib):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>≠</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) \ne \mathrm{S}(w) \cup \{w\}</annotation></semantics></math>.
+But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>
+by hypothesis, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">w \in \mathrm{R}(w)</annotation></semantics></math>
+because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+is reflexive, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\} \subseteq \mathrm{R}(w)</annotation></semantics></math>.
+Hence it is not the case that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) \subseteq \mathrm{S}(w) \cup \{w\}</annotation></semantics></math>.
+But that means that the agent does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Since the agent has a justified true belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+constitutes a Gettier case at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+It has the same overall structure as Gettier’s original cases,
+inheriting its justification from the false disjunct
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+and its truth from the unjustified disjunct
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{w\}</annotation></semantics></math>.
+Since it involves a justified true belief derived from a justified false
+belief, we may call it an <em>impurely veridical</em> Gettier case. Of
+course, ‘derived’ here just marks the logical relation of entailment
+between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>;
+the coarse-grained nature of the frame does not permit us to ask whether
+the agent has gone through a process of deducing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \cup \{w\}</annotation></semantics></math>
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>,
+but that simplification is only to be expected.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00028"
+class="search-passage">Case (ii):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">w \in \mathrm{S}(w)</annotation></semantics></math>.
+This means that the strongest proposition in which the agent has a
+justified belief at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+so at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+all the agent’s justified beliefs are true. We subdivide case (ii)
+thus:</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00029"
+class="search-passage">Case (iia):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) = \mathrm{S}(w)</annotation></semantics></math>.
+In this subcase, like (ia), what the agent knows is exactly what the
+agent has a justified true belief in, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is not a counterexample to JTB for any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+There are no Gettier cases at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+However, this too looks like a rather special circumstance, a world in
+which the agent’s justified belief and the agent’s knowledge exactly
+coincide in content.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00030"
+class="search-passage">Case (iib):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>≠</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) \ne \mathrm{S}(w)</annotation></semantics></math>.
+But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>
+by hypothesis, so it is not the case that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) \subseteq \mathrm{S}(w)</annotation></semantics></math>.
+But that means that the agent does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Since the agent has a justified belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+constitutes a Gettier case at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Its overall structure is more like that of a fake barn case, since it
+does not involve justified false beliefs.<a href="#note-5"
+id="note-ref-5" class="note-ref" data-note="5" aria-label="Note 5">5</a>
+We may therefore call it a <em>purely veridical</em> Gettier
+case.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00031"
+class="search-passage">On purely general grounds, we have thus
+constructed a framework in which the two main types of Gettier case
+found in the literature naturally arise, and in which the worlds without
+Gettier cases look like very special cases. However, we have to move
+carefully, since friends of JTB might argue that although the Gettier
+subcases
+<span class="orig-page" data-page="135" id="page-135" aria-hidden="true"></span>(ib)
+and (iib) are formally possible, they are not genuine epistemological
+possibilities given the intended readings of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+in terms of knowledge and justified belief respectively, so that the
+Gettier-free subcases (ia) and (iia) are not genuinely special. To
+counter that suggestion, we need to show that (ib) and (iib) are indeed
+genuine epistemological possibilities. That might seem to invite a
+return to the method of thought experimentation after all, thereby
+abandoning the attempt to provide independent corroboration of its
+results. But that is not so. Far more general considerations
+suffice.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00032"
+class="search-passage">When epistemologists try to explain what they
+understand by justified belief without reference to knowledge — as would
+be required for JTB to constitute a non-circular analysis of knowledge —
+they typically gloss it along the following lines. Justification may
+remain constant while knowledge varies, depending on factors to which
+the agent may have no access, such as the reliability of their
+perceptual faculties and the conduciveness of environmental conditions.
+According to an extreme version of this idea, you have exactly the same
+justified beliefs as a brain in a vat to whom everything appears as it
+does to you. Even if one rejects that version, one may allow much less
+extreme versions in which the agent is merely the victim of a practical
+joke in the bad case. Many of these less extreme versions are consistent
+with many externalist accounts of justification, on which it may depend
+on general background conditions inaccessible to the agent.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00033"
+class="search-passage">In the spirit just explained, let us postulate
+two worlds, a good case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and a corresponding bad case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+between which justification is constant, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) = \mathrm{S}(x)</annotation></semantics></math>,
+while the agent knows much less in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+than in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(x)</annotation></semantics></math>
+contains many worlds (uneliminated epistemic possibilities) not in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>.
+For example, for each shade of colour, it is consistent with what the
+brain in a vat knows that it is a brain in a vat of that shade. More
+specifically, we assume that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(x)</annotation></semantics></math>
+contains at least <em>two</em> worlds not in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>.
+Now suppose that the bad case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+does not involve a Gettier case. Hence, by the taxonomy above,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+falls under either subcase (ia) or (iia), so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo><mo>=</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(x) \subseteq \mathrm{S}(x) \cup \{x\} = \mathrm{S}(w) \cup \{x\}</annotation></semantics></math>.
+Moreover, by standing hypothesis,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>.
+Together, those two inclusions imply that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(x)</annotation></semantics></math>
+contains at most one world,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+not in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>.
+But that contradicts the assumption that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(x)</annotation></semantics></math>
+contains at least two worlds not in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>.
+Therefore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+does contain a Gettier case after all. In short, JTB allows only a small
+difference between what the agent has justified belief in and what the
+agent knows; but if what the agent has justified belief in is constant
+between a good case and a bad case, while what the agent knows varies
+drastically between them, then the difference between what the agent has
+justified belief in and what the agent knows is not always small.
+Whether the Gettier case is purely or impurely veridical depends on
+whether
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+belongs to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(x)</annotation></semantics></math>
+(subcase (iib)) or not (subcase (ib)). Typically, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is only a very mildly bad case, the Gettier case will be purely
+veridical; if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is much worse, the Gettier case will be impurely veridical. What matters
+is that we have predicted on very general structural grounds that a
+Gettier case will occur.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00034"
+class="search-passage">The argument does not depend on the method of
+thought experiments. Brains in vats were mentioned only to illustrate
+the account of justification; much less exotic examples of blameless
+epistemic misfortune would do just as well. The phenomenon of blameless
+error of the relevant kind is far too familiar to need verification by
+<span class="orig-page" data-page="136" id="page-136" aria-hidden="true"></span>thought
+experiments. Moreover, both internalists and externalists accept it. In
+any case, friends of the JTB analysis of knowledge obviously accept the
+non-factiveness of knowledge (Gettier’s first theoretical claim), for if
+justification were factive the truth conjunct of the analysis would be
+redundant. They also accept the factiveness of knowledge, which follows
+from JTB. Nor does the support for the (idealized) closure principles
+for justification and knowledge MPCJ and MPCK come from thought
+experiments; rather, it comes from a more theoretical positive
+assessment of deduction as a cognitive process. Furthermore, whereas the
+judgment that the agent does not know is the focus of the controversy
+over Gettier’s thought experiments, in the argument just presented the
+reader was at no point asked to judge that the agent in a hypothetical
+(or real case) does not know a given truth. Of course, any necessarily
+true claims in the argument, about knowledge, justification, or anything
+else, will <em>ipso facto</em> hold in the possible scenario of any
+thought experiment, but that does not mean that the thought experiment
+plays any role in the argument.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00035"
+class="search-passage">The argument is quite robust to perturbations of
+the original assumptions. Even if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(x)</annotation></semantics></math>
+are not identical, but differ only over a narrow range of cases, the
+argument still goes through given that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(x)</annotation></semantics></math>
+range over a significantly wider range of cases. In brief, JTB forces
+knowledge and justification always to stay close together while the
+underlying account of justification forces them sometimes to be far
+apart. Thus counterexamples to JTB are bound to occur. However, the
+argument can be made even more robust, as the next section will
+show.</span></p>
+<h1 class="unnumbered" id="permissive-conceptions-of-justification">3
+Permissive Conceptions of Justification</h1>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00036"
+class="search-passage">The multi-premise closure principle for
+justification, MPCJ, fits a conception of (epistemically) justified
+belief as in some sense (epistemically) <em>obligatory</em> belief. In
+particular, it is plausible that such obligations agglomerate. If I
+ought to stand and I ought to salute, then I ought to do both. If one
+ought to believe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and one ought to believe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+then one ought to believe both, and so (arguably) ought to believe their
+conjunction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∩</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \cap q</annotation></semantics></math>.
+Of course, issues arise about clutter avoidance and computational
+tractability, but those are just the sorts of consideration that basic
+epistemic logic idealizes away, and in any case they do not seem to have
+much to do with Gettier cases. However, on an alternative view,
+justified belief is <em>permissible</em> belief rather than
+<em>obligatory</em> belief. Unlike obligations, permissions do not
+plausibly agglomerate. If I am permitted to take the ice cream and
+permitted to take the cheese, it does not follow that I am permitted to
+take both. A treatment of the lottery paradox has been derived from such
+a permissive account of justified belief: for each ticket one is
+permitted to believe that it will lose, but one is not permitted to
+believe that they will all lose.<a href="#note-6" id="note-ref-6"
+class="note-ref" data-note="6" aria-label="Note 6">6</a> On a more
+extreme version of the view, one is permitted to believe that there is a
+God, and one is permitted to believe that there is no God, but one is
+not permitted to believe a contradiction. A natural probabilistic
+implementation of the permissive conception is that one is permitted to
+believe a
+<span class="orig-page" data-page="137" id="page-137" aria-hidden="true"></span>proposition
+if and only if its probability on one’s evidence reaches some fixed
+threshold strictly between 0 and 1, say 99 % or even 50 %. For any such
+threshold, there will be a pair of propositions each of which reaches
+the threshold while their conjunction does not. One of the two
+contemporary philosophers whom Gettier cites for the JTB analysis, A. J.
+Ayer, provides just such a permissive account, with ‘S has the right to
+be sure that P’ in place of ‘S is justified in believing that P’ and ‘S
+is sure that P’ in place of ‘S believes that P’ (Ayer 1956,
+pp. 33-4).</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00037"
+class="search-passage">How can we generalize the structural argument
+against JTB to cover permissive conceptions of justification? We can no
+longer appeal to the definition of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+function in terms of the doxastic accessibility relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>,
+since it automatically validates MPCJ. In this new setting, there may be
+no such thing as the strongest proposition in which the agent has a
+justified belief at a given world. However, we can still model
+justification as a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+from propositions to propositions, and propositions as sets of worlds,
+in the setting of so-called <em>neighbourhood semantics</em>.<a
+href="#note-7" id="note-ref-7" class="note-ref" data-note="7"
+aria-label="Note 7">7</a> Moreover, a weaker principle of
+<em>single</em>-premise closure for justification remains plausible on
+the permissive conception:<a href="#note-8" id="note-ref-8"
+class="note-ref" data-note="8" aria-label="Note 8">8</a></span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>SPCJ</dt>
+<dd>
+<span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00038"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⊆</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \subseteq q</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mi>p</mi><mo>⊆</mo><mi>J</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">Jp \subseteq Jq</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00039"
+class="search-passage">For instance, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+reaches the probabilistic threshold, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+reaches the probabilistic threshold. More generally, if one is permitted
+to believe a proposition, one is plausibly permitted to believe anything
+it entails, and the permissive conception is consistent with an
+idealization to an agent who does indeed believe those entailed
+propositions. Thus we assume SPCJ in what follows.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00040"
+class="search-passage">Having abandoned the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+in terms of doxastic accessibility for present purposes, we may also be
+wary of the structurally parallel definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+in terms of epistemic accessibility, on grounds of fairness to defenders
+of JBT, since the close relation it requires between justification and
+knowledge may suggest that the two definitions should stand or fall
+together. We shall therefore not appeal to that definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+although we still model knowledge as a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+from propositions to propositions. We can no longer appeal to MPCK, the
+principle of multi-premise closure for knowledge, since it goes with the
+definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+in terms of epistemic accessibility. In this new setting, there may be
+no such thing as the strongest truth the agent knows at a given world.
+We can still maintain a principle of single-premise closure for
+knowledge, in parallel with justification:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>SPCK</dt>
+<dd>
+<span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00041"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⊆</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \subseteq q</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>K</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq Kq</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00042"
+class="search-passage">Indeed, SPCK follows from SPCJ given JTB (just as
+MPCK follows from MPCJ given JTB), so friends of JTB should accept SPCK
+if they accept SPCJ. We still have the principle that knowledge entails
+justification, for the same reason as before.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00043"
+class="search-passage">We can now reconstruct the argument for Gettier
+cases just on the basis of these weaker assumptions. As before, we
+suppose a good case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and a less good case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Just as before, we assume that justified belief is constant between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+but we now have to express the assumption thus: for every proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">w \in Jp</annotation></semantics></math>
+if and
+<span class="orig-page" data-page="138" id="page-138" aria-hidden="true"></span>only
+if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">x \in Jp</annotation></semantics></math>.
+We cash out the assumption that the agent knows much less at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+than at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+thus: for some proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and does not know anything nearly as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Here a proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+counts as ‘nearly as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>’
+if and only if there are only a few worlds where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+excludes all but a few of the worlds that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+excludes. (These are stipulative definitions of ‘knows much less’ and
+‘nearly as strong’, not assumptions.) For example, in the good case one
+may know that one’s car has not been stolen, while in the bad case for
+many natural numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+it is consistent with everything one knows that one’s car was stolen
+exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+minutes ago, so one knows nothing nearly as strong as that one’s car has
+not been stolen. Thus the assumption that one knows much less in the bad
+case than in the good case is not very demanding.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00044"
+class="search-passage">Suppose that the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and does not know anything nearly as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Since knowledge entails justification, the agent has a justified belief
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Since justified belief is constant between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+the agent also has a justified belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Of course,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+may be false at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+even though it was true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+(because it was known at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>).
+However,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>,
+so by SPCJ the agent also has a justified belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+is nearly as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+since there is at most one world,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+is true.<a href="#note-9" id="note-ref-9" class="note-ref" data-note="9"
+aria-label="Note 9">9</a> By hypothesis, therefore, the agent does not
+know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Thus we have our Gettier case at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>:
+justified true belief without knowledge of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>.
+As before, the argument does not depend on the method of thought
+experiments. It too is robust to minor perturbations of its
+premises.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00045"
+class="search-passage">For permissive conceptions of justification we
+can still distinguish between impurely veridical and purely veridical
+Gettier cases, although in slightly different terms from before, since
+even if the agent has some justified false beliefs at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+they need not include one that entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Instead, we distinguish the two sorts of case relative to the
+proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+as well as the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+where (as above) the agent does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>:</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00046"
+class="search-passage">Case (i): The agent has a justified false belief
+at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+in some proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+that entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">x \notin r</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>J</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">x \in Jr</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">r \subseteq p</annotation></semantics></math>).
+Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>.
+Then the agent’s justified true belief without knowledge at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \cup \{x\}</annotation></semantics></math>
+is an impurely veridical Gettier case.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00047"
+class="search-passage">Case (ii): The agent has no justified false
+belief at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+in a proposition that entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+(in particular, therefore, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+entails itself and is justified at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>).
+This is a purely veridical case Gettier case.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00048"
+class="search-passage">Whether a given Gettier case is purely or
+impurely veridical depends on the details of the case and on how
+‘justification’ is understood.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00049"
+class="search-passage">In general, the idea that justification can be
+constant across corresponding good and bad cases provides the natural
+motivation for the first of Gettier’s two general theoretical claims
+mentioned in Sect. 1, that one can be justified in believing falsehoods.
+Notably, Gettier’s second general theoretical claim is a principle of
+<em>single</em>-premise closure for justification, corresponding to SPCJ
+rather than MPCJ, though with the proviso required in Gettier’s
+unidealized setting, that the agent accepts the conclusion as a
+resulting of deducing it from the premise. Thus the
+<span class="orig-page" data-page="139" id="page-139" aria-hidden="true"></span>materials
+of the present argument are quite similar to Gettier’s general
+theoretical claims.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00050"
+class="search-passage">The upshot of this section is that the underlying
+structural objection to JTB generalizes from an understanding of
+justifications as obligations to an understanding of them as
+permissions.</span></p>
+<h1 class="unnumbered" id="concluding-reflections">4 Concluding
+Reflections</h1>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00051"
+class="search-passage">Natural formal models of knowledge and justified
+belief (in a non-factive sense) provide robust evidence against JTB,
+independently of thought experiments in any distinctive sense, but in a
+way closely related to Gettier’s original arguments. Experimental
+philosophy will not save JTB. Nor does the idea that the word
+‘knowledge’ picks out non-factively justified true belief because it is
+the most natural candidate roughly to fit our use of the word look
+promising on the evidence of the models.<a href="#note-10"
+id="note-ref-10" class="note-ref" data-note="10"
+aria-label="Note 10">10</a> For if justified belief is basic, then on
+JTB the strongest things we know at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+will typically be odd disjunctions of the strongest things in which we
+have justified belief at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+with the singleton of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+itself, which would make knowledge a far from natural relation.<a
+href="#note-11" id="note-ref-11" class="note-ref" data-note="11"
+aria-label="Note 11">11</a></span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00052"
+class="search-passage">None of this means that formal models make
+thought experiments redundant. Rather, the mutual confirmation of the
+results of the two methods should increase our confidence in each
+method.</span></p>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00053"
+class="search-passage">We might also draw another general moral for
+philosophical method. Philosophers are used to the idea that disjunctive
+definitions tend not to pick out theoretically useful distinctions,
+because they do not carve at the joints. By contrast, conjunctive
+definitions such as JTB have stood under no such cloud. After all, when
+two things fall under a disjunctive definition, they may be quite
+dissimilar, because they fall under different disjuncts, whereas when
+two things fall under a conjunctive definition, they must be quite
+similar, because they both fall under the same conjuncts (all of them).
+However, we saw that in epistemic logic what fall under the JTB
+definition are all and only disjunctions of a disjunct believed with
+justification and a true disjunct, a point already hinted at in
+Gettier’s counterexamples. The conjunctive definition has a disjunctive
+obverse. That is not very surprising, given the logical duality of
+conjunction and disjunction (interchanging ‘T’ and ‘F’ throughout the
+truth-table for either operator yields the truth-table for the other);
+the distinction between a conjunction and its negation is equivalent to
+the distinction
+<span class="orig-page" data-page="140" id="page-140" aria-hidden="true"></span>between
+the disjunction of the negated conjuncts and its negation.<a
+href="#note-12" id="note-ref-12" class="note-ref" data-note="12"
+aria-label="Note 12">12</a> Faced with a conjunctive definition, our
+first thought should be to doubt that it has enough unity to give us a
+theoretically useful distinction.</span></p>
+<h1 class="unnumbered" id="acknowledgements">Acknowledgements</h1>
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00054"
+class="search-passage">This article develops half of my talk at the 2013
+‘Gettier Problem at 50’ conference in Edinburgh; Williamson 201X
+develops the other half. I thank Allan Hazlett and audiences there and
+at the Universities of Michigan, Oxford, and Virginia for helpful
+comments.</span></p>
+<h1 class="unnumbered" id="notes">Notes</h1>
+<div id="note-1" class="note-entry" data-note="1">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00055"
+class="search-passage">Much of the debate concerns alleged experimental
+findings of ethnic or gender variation in judgments about Gettier cases,
+following Weinberg et al. (2001). For a recent defence of the method of
+cases see Nagel (2012), and for a recent experimental study that did not
+find such bias see Nagel et al. (2013). For a different kind of
+scepticism about Gettier cases see Weatherson (2003). My discussion of
+Gettier cases in Williamson (<a class="crossref-link" href="../../works/the-philosophy-of-philosophy-second-edition/index.html">2007</a>) also concentrated on case-specific
+judgments. <a href="#note-ref-1" class="note-back"
+aria-label="Back to note 1">↩︎</a></span></p>
+</div>
+<div id="note-2" class="note-entry" data-note="2">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00056"
+class="search-passage">See Williamson (<a class="crossref-link" href="../../works/gettier-cases-in-epistemic-logic/index.html">2013a</a>, <a class="crossref-link" href="../../works/response-to-cohen-comesana-goodman-nagel-and-weatherson-on-gettier-cases-in-epistemic-logic/index.html">b</a>, 201X). <a
+href="#note-ref-2" class="note-back"
+aria-label="Back to note 2">↩︎</a></span></p>
+</div>
+<div id="note-3" class="note-entry" data-note="3">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00057"
+class="search-passage">See Williamson (<a class="crossref-link" href="../../works/gettier-cases-in-epistemic-logic/index.html">2013a</a>, <a class="crossref-link" href="../../works/response-to-cohen-comesana-goodman-nagel-and-weatherson-on-gettier-cases-in-epistemic-logic/index.html">b</a>, <a class="crossref-link" href="../../works/very-improbable-knowing/index.html">2014</a>). <a
+href="#note-ref-3" class="note-back"
+aria-label="Back to note 3">↩︎</a></span></p>
+</div>
+<div id="note-4" class="note-entry" data-note="4">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00058"
+class="search-passage"><em>Proof</em> Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq Jp</annotation></semantics></math>
+for all propositions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>;
+but for any world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>K</mi><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">w \in K\mathrm{R}(w)</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>J</mi><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">w \in J\mathrm{R}(w)</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>.
+Conversely, suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq \mathrm{R}(w)</annotation></semantics></math>
+for all worlds
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>;
+but if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">w \in Kp</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{R}(w) \subseteq p</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{S}(w) \subseteq p</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>∈</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">w \in Jp</annotation></semantics></math>;
+thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>p</mi><mo>⊆</mo><mi>J</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">Kp \subseteq Jp</annotation></semantics></math>.
+<a href="#note-ref-4" class="note-back"
+aria-label="Back to note 4">↩︎</a></span></p>
+</div>
+<div id="note-5" class="note-entry" data-note="5">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00059"
+class="search-passage">The case was first published in Goldman (1976),
+which acknowledges Carl Ginet for the example. <a href="#note-ref-5"
+class="note-back" aria-label="Back to note 5">↩︎</a></span></p>
+</div>
+<div id="note-6" class="note-entry" data-note="6">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00060"
+class="search-passage">See Kroedel (2012). <a href="#note-ref-6"
+class="note-back" aria-label="Back to note 6">↩︎</a></span></p>
+</div>
+<div id="note-7" class="note-entry" data-note="7">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00061"
+class="search-passage">See Hughes and Cresswell (1996), pp. 221–223. <a
+href="#note-ref-7" class="note-back"
+aria-label="Back to note 7">↩︎</a></span></p>
+</div>
+<div id="note-8" class="note-entry" data-note="8">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00062"
+class="search-passage">Chellas (1980, p. 234), calls modal logics with
+this rule <em>monotonic</em>. <a href="#note-ref-8" class="note-back"
+aria-label="Back to note 8">↩︎</a></span></p>
+</div>
+<div id="note-9" class="note-entry" data-note="9">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00063"
+class="search-passage">Of course, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p \cup \{x\} = p</annotation></semantics></math>.
+<a href="#note-ref-9" class="note-back"
+aria-label="Back to note 9">↩︎</a></span></p>
+</div>
+<div id="note-10" class="note-entry" data-note="10">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00064"
+class="search-passage">See Weatherson (2003). <a href="#note-ref-10"
+class="note-back" aria-label="Back to note 10">↩︎</a></span></p>
+</div>
+<div id="note-11" class="note-entry" data-note="11">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00065"
+class="search-passage">Artemov (2008) analyses Gettier’s arguments and
+related considerations in the framework of <em>justification logic</em>,
+a refinement of epistemic logic in which the structure of justifications
+can be explicitly represented in the formal language. For present
+purposes, the austere framework of unrefined epistemic logic is
+preferable, because it assumes less and makes the comparison between
+knowledge and justified true belief more perspicuous. Nevertheless,
+justification logic is an intriguing resource for epistemologists to
+exploit. <a href="#note-ref-11" class="note-back"
+aria-label="Back to note 11">↩︎</a></span></p>
+</div>
+<div id="note-12" class="note-entry" data-note="12">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00066"
+class="search-passage">Another problem for strictly conjunctive analyses
+is that they disallow <em>compensation</em> between how a putative
+instance scores on the various dimension relevant to the conjuncts. To
+put the point schematically, let being
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+depend on doing well on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+dimensions, with compensation between dimensions. Suppose that we
+analyse what it is for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+to be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+as a conjunction of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+conjuncts, where the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+conjunct is that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>i</mi></msub><mo>&lt;</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">t_i &lt; x_i</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_i</annotation></semantics></math>
+is how well
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+does on the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+dimension,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>i</mi></msub><annotation encoding="application/x-tex">t_i</annotation></semantics></math>
+is the required threshold for that dimension, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&lt;</mo><annotation encoding="application/x-tex">&lt;</annotation></semantics></math>
+is the relevant ordering relation. Given compensation between
+dimensions, we should have cases like this:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>&lt;</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_i &lt; a_i</annotation></semantics></math>
+but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>&lt;</mo><msub><mi>b</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">a_j &lt; b_j</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+compensates for doing worse than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+on dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+by doing better than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+on dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>),
+but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+is not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">c_i = b_i</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>=</mo><msub><mi>a</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">c_j = a_j</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+does not compensate for doing worse than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+on dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+by doing better than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+on dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>;
+for simplicity, assume that on each other dimension
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+are equal). But this cannot happen on the conjunctive model. For since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+it satisfies the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+conjunct, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>i</mi></msub><mo>&lt;</mo><msub><mi>b</mi><mi>i</mi></msub><mo>=</mo><msub><mi>c</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">t_i &lt; b_i = c_i</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+satisfies the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+conjunct too; since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+it satisfies the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>th
+conjunct, so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>j</mi></msub><mo>&lt;</mo><msub><mi>a</mi><mi>j</mi></msub><mo>=</mo><msub><mi>c</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">t_j &lt; a_j = c_j</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+satisfies the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>th
+conjunct too; since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+equals
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+on all the other dimensions, it also satisfies all the other conjuncts;
+thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+on the conjunctive analysis. <a href="#note-ref-12" class="note-back"
+aria-label="Back to note 12">↩︎</a></span></p>
+</div>
+<h1 class="unnumbered" id="references">References</h1>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00067"
+class="search-passage">Artemov, S. (2008). The logic of justification.
+<em>The Review of Symbolic Logic</em>, <em>1</em>, 477–513.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00068"
+class="search-passage">Ayer, A. J. (1956). <em>The problem of
+knowledge</em>. London: Macmillan.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00069"
+class="search-passage">Chellas, B. (1980). <em>Modal logic: An
+introduction</em>. Cambridge: Cambridge University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00070"
+class="search-passage">Gettier, E. (1963). Is justified true belief
+knowledge? <em>Analysis</em>, <em>23</em>, 121–123.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00071"
+class="search-passage">Goldman, A. (1976). Discrimination and perceptual
+knowledge. <em>The Journal of Philosophy</em>, <em>73</em>,
+771–791.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00072"
+class="search-passage">Hughes, G., &amp; Cresswell, M. (1996). <em>A new
+introduction to modal logic</em>. London: Routledge.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00073"
+class="search-passage">Kroedel, T. (2012). The lottery paradox,
+epistemic justification, and permissibility. <em>Analysis</em>,
+<em>72</em>, 57–60.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00074"
+class="search-passage">Nagel, J. (2012). Intuitions and experiments: a
+defense of the case method in epistemology. <em>Philosophy and
+Phenomenological Research</em>, <em>85</em>, 495–527.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00075"
+class="search-passage">Nagel, J., San Juan, V., &amp; Mar, R. (2013).
+Lay denial of knowledge for justified true beliefs. <em>Cognition</em>,
+<em>129</em>, 652–661.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00076"
+class="search-passage">Weatherson, B. (2003). What good are
+counterexamples? <em>Philosophical Studies</em>, <em>115</em>,
+1–31.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00077"
+class="search-passage">Weinberg, J., Nichols, S., &amp; Stich, S.
+(2001). Normativity and epistemic intuitions. <em>Philosophical
+Topics</em>, <em>29</em>, 429–460.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00078"
+class="search-passage">Williamson, T. (<a class="crossref-link" href="../../works/the-philosophy-of-philosophy-second-edition/index.html">2007</a>). <em>The philosophy of
+philosophy</em>. Oxford: Blackwell, Wiley.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00079"
+class="search-passage">Williamson, T. (<a class="crossref-link" href="../../works/gettier-cases-in-epistemic-logic/index.html">2013a</a>). Gettier cases in
+epistemic logic. <em>Inquiry</em>, <em>56</em>, 1–14.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00080"
+class="search-passage">Williamson, T. (<a class="crossref-link" href="../../works/response-to-cohen-comesana-goodman-nagel-and-weatherson-on-gettier-cases-in-epistemic-logic/index.html">2013b</a>). Response to Cohen,
+Comesaña, Goodman, Nagel, and Weatherson on Gettier cases in epistemic
+logic. <em>Inquiry</em>, <em>56</em>, 77–96.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00081"
+class="search-passage">Williamson, T. <a class="crossref-link" href="../../works/very-improbable-knowing/index.html">2014</a>. Very improbable knowing,
+<em>Erkenntnis</em>, forthcoming.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-a-note-on-gettier-cases-in-epistemic-logic-00082"
+class="search-passage">Williamson, T. 201X. Justifications, excuses, and
+sceptical scenarios. In F. Dorsch, &amp; J. Dutant (Eds.), <em>The new
+evil demon: New essays on knowledge, justification and rationality</em>,
+forthcoming.</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

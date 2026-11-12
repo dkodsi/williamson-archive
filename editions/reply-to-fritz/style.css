@@ -1,0 +1,108 @@
+:root{--ink:#191816;--muted:#77736d;--rule:#d8d3ca;--paper:#fcfbf7;--bar-bg:rgba(252,251,247,.96);--report-count-bg:#ded9cf;--measure:39.5rem;--reader-size:17px}
+[hidden]{display:none!important}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:var(--reader-size);line-height:1.52}
+.reader-bar{align-items:center;background:var(--bar-bg);border-bottom:1px solid var(--rule);display:flex;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:.75rem;justify-content:space-between;letter-spacing:.02em;padding:.62rem max(1rem,calc((100vw - var(--measure))/2));position:sticky;top:0;z-index:10}.reader-bar a{color:var(--muted);text-decoration:none}.reader-bar a:hover,.reader-bar a:focus{color:var(--ink)}.reader-home{font-weight:600}.reader-actions,.reader-preference-tools,.reader-report-tools{align-items:center;display:flex;gap:1.1rem}.reader-preference-tools,.reader-report-tools{border-left:1px solid var(--rule);gap:.65rem;padding-left:1rem}.reader-preference-tools button,.reader-report-tools button{appearance:none;background:none;border:0;color:var(--muted);cursor:pointer;font:inherit;letter-spacing:inherit;margin:0;padding:0}.reader-preference-tools button:hover,.reader-preference-tools button:focus-visible,.reader-preference-tools button.active,.reader-report-tools button:hover,.reader-report-tools button:focus-visible,.reader-report-tools button.active{color:var(--ink)}.reader-report-tools button.approved{color:#38613c;font-weight:600}.reader-preference-tools button:focus-visible,.reader-report-tools button:focus-visible{outline:2px solid currentColor;outline-offset:3px}.report-count{background:var(--report-count-bg);border-radius:1rem;color:var(--ink);font-variant-numeric:tabular-nums;margin-left:.12rem;padding:.05rem .34rem}
+article{max-width:var(--measure);margin:0 auto;padding:2.5rem 1.4rem 5rem;position:relative}header{text-align:center;margin:0 0 2.1rem}header h1{font-size:1.72rem;font-weight:400;letter-spacing:.01em;margin:0 0 .38rem}.author{font-size:1.02rem;margin:0}.publication{font-size:.79rem;color:var(--muted);font-style:italic;margin:.42rem auto 0;max-width:33rem}.edition-scope{font-size:.79rem;color:var(--muted);font-style:normal;margin:.22rem auto 0;max-width:33rem;text-indent:0}
+article>h1,article>h2,article>h3,article>.keep-block>h1,article>.keep-block>h2,article>.keep-block>h3{font-size:1.08rem;font-weight:700;text-align:left;margin:1.85rem 0 .8rem}p{margin:0;text-indent:1.25em}article>h1+p,article>h2+p,article>h3+p,article>.keep-block>h1+p,article>.keep-block>h2+p,article>.keep-block>h3+p,header+p,blockquote+p,blockquote+.keep-block>p:first-child,.summary+p,.section-break+p,.displayblock+p,.displayblock+.keep-block>p:first-child,.keep-block:has(>.displayblock:last-child)+p,.keep-block:has(>.displayblock:last-child)+.keep-block>p:first-child,.quantifier-rules+p,article>ul+p,article>ol+p,article>dl+p,article>pre+p,article>table+p{text-indent:0}em{font-style:italic}.smallcaps{font-variant:small-caps}blockquote{margin:1rem 2rem;font-size:.98em}blockquote p{text-indent:0}
+.spaced-paragraph{margin-top:1.52em;margin-top:1lh}
+.summary{margin:0 0 1.4rem}.summary p{margin:0;text-indent:0}.summary p:first-child{margin-bottom:.2rem}
+.keep-together{white-space:nowrap}.keep-block{break-inside:avoid}.displayblock{margin:1.05rem 0 1.05rem 1.65rem}.displayblock p{padding-left:0;text-indent:0}.displayblock.labelled-display{margin-left:1.05rem}.labelled-display dl{display:grid;grid-template-columns:2.6em minmax(0,1fr);column-gap:.55em;row-gap:.18rem;margin:0}.labelled-display.wide-labels dl{grid-template-columns:5.3em minmax(0,1fr)}.labelled-display.extra-wide-labels dl{grid-template-columns:11.5em minmax(0,1fr)}.labelled-display dt,.labelled-display dd{margin:0}.labelled-display dt{text-align:right;font-weight:400}.labelled-display dd p{margin:0;text-indent:0}.centered{text-align:center;margin:1.05rem 0}.centered p{text-indent:0}.right-aligned{text-align:right;margin:1.05rem 0}.right-aligned p{text-indent:0}.reference-entry,.reference-continuation,#references~p,#bibliography~p{font-size:.94em;line-height:1.42}.reference-entry p,.reference-continuation p{padding-left:1.45em;text-indent:-1.45em;margin:0}#references~p,#bibliography~p{text-indent:0}.reference-entry a.uri,.reference-continuation a.uri,#references~p a.uri,#bibliography~p a.uri{overflow-wrap:anywhere;word-break:break-word}.math{max-width:100%;overflow-x:auto;overflow-y:hidden}.math.inline{display:inline-block;vertical-align:-.12em}.math.display{display:block;margin:.72rem 0}math[display="block"]{margin:.72rem 0}math{font-size:1em;max-width:100%;overflow-x:auto;overflow-y:hidden}a{color:inherit;text-decoration-color:#aaa;text-underline-offset:.13em}a:focus-visible{outline:2px solid #6f6a62;outline-offset:2px}
+.book-contents{margin:.7rem 0 1.35rem}.book-contents dl{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:.8rem;row-gap:.12rem;margin:0}.book-contents dt,.book-contents dd{margin:0}.book-contents dt{font-weight:400;min-width:0}.book-contents dd{text-align:right;font-variant-numeric:tabular-nums}.book-contents dd p{margin:0;text-indent:0}.book-contents .toc-part{display:block;font-weight:600;margin-top:.55rem}.book-contents .toc-section{display:block;padding-left:1.25em}
+body.reader-night{--ink:#e8e1d7;--muted:#aaa096;--rule:#413b36;--paper:#181615;--bar-bg:rgba(24,22,21,.96);--report-count-bg:#413b36;color-scheme:dark}
+@media(max-width:860px){:root{--reader-size:16.5px}.reader-bar{padding:.58rem 1rem}.reader-actions{gap:.72rem}.reader-preference-tools,.reader-report-tools{gap:.5rem;padding-left:.7rem}article{padding:1.8rem 1rem 4rem}.publication{font-size:.78rem}}
+@media(max-width:620px){.reader-bar{align-items:flex-start;gap:.5rem;padding:.58rem .75rem}.reader-actions{flex-wrap:wrap;justify-content:flex-end}.reader-preference-tools,.reader-report-tools{border-left:0;gap:.55rem;padding-left:0}.reader-report-tools{flex-basis:100%;justify-content:flex-end}}
+@media(max-width:420px){.reader-bar{font-size:.68rem}.reader-actions{gap:.45rem}}
+@media print{body{background:white}.reader-bar,.report-toast{display:none}}
+.note-ref{font-size:.7em;line-height:0;vertical-align:super;text-decoration:none;margin-left:.04em}.note-ref:hover,.note-ref:focus{text-decoration:underline}.note-entry{position:relative;margin:.55rem 0;padding-left:1.8rem;font-size:.86em;line-height:1.43}.note-entry::before{content:attr(data-note);position:absolute;left:0;width:1.35rem;text-align:right;font-variant-numeric:tabular-nums}.note-entry[data-note-label]::before{content:attr(data-note-label)}.note-entry p{margin:0;text-indent:0}.note-back{text-decoration:none;color:var(--muted);font-size:.8em;white-space:nowrap}.note-back:hover,.note-back:focus{text-decoration:underline}#notes{margin-top:2.4rem}
+.crossref-link{text-decoration-style:dotted;text-decoration-color:#999}
+
+
+.quantifier-rules{margin:1rem 0}.quantifier-rules dl{display:grid;grid-template-columns:9.6rem 1fr;column-gap:.7rem;row-gap:.22rem;margin:0}.quantifier-rules dt,.quantifier-rules dd{margin:0}.quantifier-rules dd p{margin:0;text-indent:0}@media(max-width:600px){.quantifier-rules dl{grid-template-columns:1fr;row-gap:.15rem}.quantifier-rules dt{font-weight:500}.quantifier-rules dd{margin-bottom:.35rem}}
+
+.report-pick-mode{cursor:crosshair}.report-hover{outline:2px solid rgba(126,103,52,.55);outline-offset:3px}.report-flash{animation:report-flash 1.1s ease-out}.report-toast{align-items:center;background:#292722;border:1px solid rgba(255,255,255,.2);border-radius:.25rem;bottom:1.1rem;box-shadow:0 .25rem 1rem rgba(0,0,0,.2);color:#fff;display:flex;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:.78rem;gap:.9rem;left:50%;max-width:calc(100vw - 2rem);opacity:0;padding:.58rem .75rem;pointer-events:none;position:fixed;transform:translate(-50%,.4rem);transition:opacity .15s ease,transform .15s ease;z-index:20}.report-toast.visible{opacity:1;pointer-events:auto;transform:translate(-50%,0)}.report-toast button{appearance:none;background:none;border:0;border-left:1px solid rgba(255,255,255,.28);color:#fff;cursor:pointer;font:inherit;font-weight:600;padding:0 0 0 .9rem}.report-toast button:focus-visible{outline:2px solid #fff;outline-offset:2px}@keyframes report-flash{0%,35%{background:rgba(205,167,80,.28);outline:2px solid rgba(126,103,52,.45);outline-offset:3px}100%{background:transparent;outline-color:transparent}}
+
+.semantic-underline{text-decoration:underline;text-underline-offset:.08em}
+.inference-premise{display:inline-block;min-width:17em;border-bottom:1px solid currentColor;padding-bottom:.08em}
+.search-passage,.note-entry,.note-ref,article :is(h1,h2,h3,h4,h5,h6)[id]{scroll-margin-top:var(--reader-anchor-offset,5.4rem)}.search-match{background:#eadcae;color:#191816;border-radius:.08em}.search-passage-fallback{background:rgba(234,220,174,.48)}body.reader-night .search-match{background:#725f2b;color:#fff8e8}body.reader-night .search-passage-fallback{background:rgba(114,95,43,.45)}
+
+/* Keep reader controls easy to tap without changing the article measure. */
+@media screen and (max-width:620px){
+  :root{--reader-anchor-offset:9rem}
+  .reader-home{flex-shrink:0}
+  .reader-bar a,.reader-preference-tools button{display:inline-flex;align-items:center;justify-content:center;min-height:2.5rem}
+  .reader-preference-tools{gap:.15rem}
+  .reader-preference-tools button{min-width:2.5rem}
+}
+
+.run-in-heading{margin-top:1.52em;margin-top:1lh}.run-in-heading>p{text-indent:0}
+
+/* Opt-in full-size clauses with independently hanging continuations. */
+.displayblock.hanging-display p{padding-left:2em;text-indent:-2em}
+
+/* A source contents byline remains within its title cell. */
+.book-contents .toc-author { display: block; }
+
+/* Opt-in source blocks that occupy the surrounding text measure. */
+.displayblock.full-width{margin-left:0;margin-right:0}
+
+/* Opt-in native small capitals, including uppercase source letters. */
+.all-smallcaps, .all-smallcaps .smallcaps { font-variant-caps: all-small-caps; }
+
+/* Current reviewed-edition typography. The base reader controls remain
+   unchanged; article structure mirrors the reviewed PDF treatment. */
+@font-face{font-family:"TW Modal Symbols";src:url("TWModalSymbols.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block}
+@font-face{font-family:"TW Bold Math Symbols";src:url("../../fonts/XITSMath-Bold.otf") format("opentype");font-style:normal;font-weight:700;font-display:block}
+math .bold-math-operator{font-family:"TW Bold Math Symbols",serif!important;font-style:normal;font-weight:700}
+article>h1,article>h2,article>h3,article>.keep-block>h1,article>.keep-block>h2,article>.keep-block>h3{font-size:1.2rem;font-weight:400;text-align:left;margin-left:2em}
+.publication{font-style:normal}
+.displayblock{margin-top:.9rem;margin-bottom:.9rem}
+.displayblock.continued-display math[display="block"],.displayblock.continued-display>.math.display{margin-top:0;margin-bottom:0}
+blockquote,.centered{margin-top:.85rem;margin-bottom:.85rem}
+.displayblock.labelled-display{margin-left:0}
+.labelled-display dl{grid-template-columns:3em minmax(0,1fr);column-gap:.55em;row-gap:.33em}
+.labelled-display.wide-labels dl{grid-template-columns:5.3em minmax(0,1fr)}
+.labelled-display.extra-wide-labels dl{grid-template-columns:11.5em minmax(0,1fr)}
+.labelled-display dt{text-align:right;font-weight:400}
+.displayblock math mtable{row-gap:0}
+table.derivation-table.compact-reasons{border-collapse:collapse}
+table.derivation-table.compact-reasons td{padding:0 .27em;vertical-align:top}
+table.derivation-table.compact-reasons td:first-child{padding-left:0}
+table.derivation-table.compact-reasons td:last-child{padding-right:0}
+.math-align-top{display:inline-block;vertical-align:top}
+.raised-full-size{font-size:1em;line-height:0;vertical-align:.5ex}
+.lowered-full-size{font-size:1em;line-height:0;vertical-align:-.65ex}
+.math-align-bottom{display:inline-block;vertical-align:bottom}
+.math-align-top>math,.math-align-bottom>math{display:block;vertical-align:inherit}
+.modal-operator{font-family:"TW Modal Symbols",Georgia,"Times New Roman",serif!important;font-style:normal;font-weight:400}
+.counterfactual-operator{font-family:"TW Modal Symbols",Georgia,"Times New Roman",serif!important;font-style:normal;font-weight:400;white-space:nowrap}
+span.counterfactual-operator{display:inline-block}
+.formal-statement,.formal-proof{margin:.68rem 0 .22rem}
+.formal-proof{margin:.5rem 0}
+.formal-statement p,.formal-proof p{margin:0;text-indent:0}
+.formal-proof p+p{margin-top:.3rem}
+.formal-statement+p,.formal-proof+p{text-indent:0}
+
+/* A source proof-termination mark belongs at the right margin. */
+.proof-end {
+  float: right;
+  margin-left: 1em;
+  white-space: nowrap;
+}
+
+/* Reduced source glyphs can retain the surrounding text baseline. */
+.reduced-baseline {
+  font-size: 83.333333%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* Intrinsic-width lines share a left edge; note links stay in their own row. */
+.centered-lines{display:table;margin:.85rem auto;max-width:100%;text-align:left}
+.centered-lines>p,.centered-lines>div>p{margin:0;text-indent:0}
+.centered-lines+p{text-indent:0}
+
+/* Explicit unruled source tables retain their declared column alignment. */
+.displayblock.unruled-table>table{width:100%;border-collapse:collapse}
+.displayblock.unruled-table>table td,.displayblock.unruled-table>table th{border:0;vertical-align:baseline;padding:0 .5em}
+.displayblock.unruled-table>table tr>:first-child{padding-left:0}
+.displayblock.unruled-table>table tr>:last-child{padding-right:0}

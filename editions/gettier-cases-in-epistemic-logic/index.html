@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Gettier cases in epistemic logic by Timothy Williamson. Inquiry 56 (1) (2013): 1–14."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Gettier cases in epistemic logic - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/gettier-cases-in-epistemic-logic.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>Gettier cases in epistemic
+logic</h1><p class="author">Timothy
+Williamson</p><p class="publication"><em>Inquiry</em> 56 (1) (2013):
+1–14.</p></header>
+<div class="summary">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00001"
+class="search-passage"><span class="orig-page" data-page="1" id="page-1" aria-hidden="true"></span><span
+class="smallcaps">Abstract</span> <em>The possibility of justified true
+belief without knowledge is normally motivated by informally classified
+examples. This paper shows that it can also be motivated more formally,
+by a natural class of epistemic models in which both knowledge and
+justified belief (in the relevant sense) are represented. The models
+involve a distinction between appearance and reality. Gettier cases
+arise because the agent’s ignorance increases as the gap between
+appearance and reality widens. The models also exhibit an epistemic
+asymmetry between good and bad cases that sceptics seem to ignore or
+deny.</em></span></p>
+</div>
+<h1 class="unnumbered" id="i.">I.</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00002"
+class="search-passage">Thought experiments are a source of unmysterious
+philosophical knowledge. I have defended that statement elsewhere.<a
+href="#note-1" id="note-ref-1" class="note-ref" data-note="1"
+aria-label="Note 1">1</a> Nevertheless, when conclusions so reached are
+subsequently corroborated by other forms of argument, the latter need
+not be redundant. We are hardly good enough at philosophy to dispense
+with independent checks on our working. Moreover, less case-oriented
+methods of argument promise deeper theoretical insight into phenomena
+whose sheer occurrence has already been recognized.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00003"
+class="search-passage">Take Gettier cases. Since the publication of
+Gettier’s 1963 paper,<a href="#note-2" id="note-ref-2" class="note-ref"
+data-note="2" aria-label="Note 2">2</a> there has been a consensus in
+epistemology that cases such as he presents are counterexamples to the
+view that justified true belief is equivalent to, or at least sufficient
+for, knowledge. The consensus survives, despite experiments that have
+been claimed to show that it depends on the ethnicity or gender of those
+who evaluate the cases.<a href="#note-3" id="note-ref-3"
+class="note-ref" data-note="3" aria-label="Note 3">3</a> More recent
+experiments suggest that the threat
+<span class="orig-page" data-page="2" id="page-2" aria-hidden="true"></span>to
+the consensus may have been a false alarm, by calling into question the
+robust replicability of the results.<a href="#note-4" id="note-ref-4"
+class="note-ref" data-note="4" aria-label="Note 4">4</a> Nevertheless,
+it would be reassuring to have some independent way of checking that in
+Gettier cases the subject does not know after all. Even granted that
+reflective verdicts on such cases do not vary significantly with
+ethnicity or gender, one can worry that those verdicts might still
+reflect some oddity of the human cognitive system for ascribing
+‘knowledge’, rather than a genuine feature of the underlying
+epistemological kind to which the term refers.<a href="#note-5"
+id="note-ref-5" class="note-ref" data-note="5" aria-label="Note 5">5</a>
+An argument cast within a more general theoretical framework has a fair
+chance of bypassing any such putative oddity.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00004"
+class="search-passage">This paper uses the more general theoretical
+framework of epistemic and doxastic logic, in the tradition going back
+to Hintikka.<a href="#note-6" id="note-ref-6" class="note-ref"
+data-note="6" aria-label="Note 6">6</a> Models will be constructed in
+which justified true belief in the relevant sense can be compared with
+knowledge; cases of the former without the latter will be shown to arise
+under reasonable conditions.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00005"
+class="search-passage">We must take care about methodology. If we simply
+introduce three primitive operators for justification, belief and
+knowledge respectively and permit them to vary independently of each
+other, then modelling justified true belief without knowledge is
+trivial. By the same token, such models constitute no serious evidence
+for the genuine possibility of that combination. The point is instead to
+minimize the number of moving parts in the models, using reasonable
+idealizations and other well-motivated constraints, for if we can show
+that <em>all</em> models of the type so characterized contain cases of
+the required combination, that <em>is</em> significant evidence for its
+genuine possibility. Relaxing the constraints will not make the
+combination less possible. What we seek from the model-building exercise
+is an independent test, not conclusive proof, of whether justified true
+belief implies knowledge. As in the natural sciences, the proper use of
+formal models involves an ineliminable informal element of good
+judgement. Readers who dislike the models in this paper can try to build
+better ones, to be judged by the same standard.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00006"
+class="search-passage">The models described below turn out to have other
+uses too. For example, they exhibit epistemic asymmetries of a sort that
+sceptical arguments have been accused of ignoring, and so provide
+independent evidence for an obstacle to scepticism.</span></p>
+<h1 class="unnumbered" id="ii.">II.</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00007"
+class="search-passage">For present purposes, an <em>epistemic model</em>
+is simply an ordered pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi mathvariant="normal">W</mi><mo>,</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle \mathrm{W},\mathrm{R}\rangle</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+is any non-empty set and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+is any binary relation (in extension) over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>,
+that is, a set of ordered pairs of members of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00008"
+class="search-passage"><span class="orig-page" data-page="3" id="page-3" aria-hidden="true"></span>Informally,
+we think of the members of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+as <em>worlds</em>, or maximally specific states, although that informal
+interpretation is no part of the formal definition of what it is to be
+an epistemic model. The <em>propositions</em> in the model are just the
+subsets of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>.
+Thus propositions are identified with sets of worlds. The variables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+. . . will be used to range over worlds, and the variables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+. . . to range over propositions. A proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is <em>true</em> in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+belongs to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>;
+otherwise
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Consequently, a proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+<em>entails</em> a proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a subset of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true in every world in which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true. Hence propositions are identical if and only if they are
+mutually entailing, true in the same worlds.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00009"
+class="search-passage">The model treats propositions as coarse-grained,
+without internal structure corresponding to the semantic structure of
+sentences that express them. Of course, such a treatment looks like an
+obstacle to understanding epistemic puzzles where agents seem to take
+different attitudes to the propositions expressed by ‘Hesperus is
+bright’ and ‘Phosphorus is bright’, or by ‘2 + 2 = 4’ and ‘There is no
+largest prime number’—although it is doubtful that even a finer-grained
+Russellian or Fregean treatment of propositions will solve all such
+puzzles by itself. In any case, even if the coarse-grained treatment is
+merely an idealization, it is a harmlessly simplifying one for our
+purposes. For given a model of justified true belief without knowledge
+for coarse-grained propositions, we can turn it into a model of
+justified true belief without knowledge for fine-grained propositions by
+associating in some uniform manner each coarse-grained proposition in
+the model with one of the fine-grained propositions true at the same
+worlds. The distinction between coarse-grained and fine-grained
+propositions is not what does the work in the models below. Gettier
+cases and Frege cases raise very different problems.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00010"
+class="search-passage">All the epistemology in an epistemic model
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi mathvariant="normal">W</mi><mo>,</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle \mathrm{W},\mathrm{R}\rangle</annotation></semantics></math>
+is encoded in its second element,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>.
+Informally, we think of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+as the relation of <em>epistemic accessibility</em> for a given agent at
+a given time. In other words, a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is accessible from a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mi mathvariant="normal">R</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">w\mathrm{R}x</annotation></semantics></math>)
+if and only if whatever the agent then knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>:
+for all the agent knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+she is in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is epistemically possible in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>).
+For any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{K}p</annotation></semantics></math>
+be the proposition true in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true in every world accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">K</mi><mi>p</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>:</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mi mathvariant="normal">R</mi><mi>x</mi><mo>⇒</mo><mi>x</mi><mo>∈</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{K}p=\{w:\forall x\,(w\mathrm{R}x\Rightarrow x\in p)\}</annotation></semantics></math>.
+Informally,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{K}p</annotation></semantics></math>
+is identified with the proposition that the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Thus the agent counts as knowing whatever is true in all the worlds that
+for all she knows she is in. This is in no deep sense an analysis of
+knowledge in terms of epistemic accessibility, but simply the imagined
+decoding of the epistemic information encoded in the relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00011"
+class="search-passage">The treatment of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">K</mi><annotation encoding="application/x-tex">\mathrm{K}</annotation></semantics></math>
+as a knowledge operator according to the definition above enforces a
+form of logical omniscience for knowledge beyond that already implicit
+in the coarse-grained treatment of propositions. Specifically, if the
+agent knows each premise of a valid deductive argument, then the agent
+<em>ipso facto</em> knows the conclusion. For since the argument is
+valid, the conjunction of the premises entails the conclusion; in other
+words, the
+<span class="orig-page" data-page="4" id="page-4" aria-hidden="true"></span>intersection
+of the premises is a subset of the conclusion. Hence, if the agent knows
+each premise in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+and a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+then each premise is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+so the conclusion is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>;
+thus, the conclusion is true in every world accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+so she knows the conclusion in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+This logical omniscience too can be regarded as a harmlessly simplifying
+idealization of the models. If even perfect logicians are susceptible to
+Gettier cases, humans with more limited logical skills should not expect
+to be immune.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00012"
+class="search-passage">A convenient feature of epistemic models is that
+in each world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+there is a strongest proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+known by the agent. It is simply the set of accessible worlds:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>:</mo><mi>w</mi><mi mathvariant="normal">R</mi><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)=\{x:w\mathrm{R}x\}</annotation></semantics></math>.
+For, unpacking the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">K</mi><annotation encoding="application/x-tex">\mathrm{K}</annotation></semantics></math>,
+she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+and for any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+if she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+In terms of membership,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+is the smallest proposition the agent knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+More simply,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(w)</annotation></semantics></math>
+is what she knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+It is the horizon of open epistemic possibility.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00013"
+class="search-passage">Knowledge is factive: whatever is known is true.
+That uncontentious principle requires the relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+to be reflexive, for if some world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+were not accessible from itself,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{K}p</annotation></semantics></math>
+would be true but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is the proposition containing all worlds except
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Conversely, suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+is reflexive; let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+be any proposition and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+any world. Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">K</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">\mathrm{K}q</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true in every world accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>;
+since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is accessible from itself,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">K</mi><annotation encoding="application/x-tex">\mathrm{K}</annotation></semantics></math>
+is factive. All the models considered below have a reflexive
+accessibility relation.</span></p>
+<h1 class="unnumbered" id="iii.">III.</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00014"
+class="search-passage">To make progress, we must consider a more
+specific class of epistemic models. We do so by introducing a very
+simple form of the distinction between reality and appearance. Imagine
+the agent gaining perceptual knowledge of some environmental parameter
+(such as temperature) that takes values in a set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>.
+For simplicity, imagine further that the parameter always appears to her
+in a maximally specific way, in the sense that exactly one member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>
+appears to her to be the value of the parameter (e.g., the temperature
+appears to be exactly 30 degrees Celsius). For present purposes it is
+unnecessary to build in the complications of unspecific appearances.
+There is no limit in principle to how far the apparent value of the
+parameter can diverge from its real value at a given time. As another
+idealization, we identify worlds with ordered pairs of members of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">W</mi><mo>=</mo><msup><mi mathvariant="normal">E</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathrm{W}=\mathrm{E}^2</annotation></semantics></math>).
+Informally, the first member of an ordered pair represents the real
+value of the parameter; the second member represents its apparent value
+to the agent. Such impoverished worlds contain enough information to be
+adequate for present purposes; everything else can be
+ignored.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00015"
+class="search-passage">We treat present appearances to the agent as
+transparent to her: she knows all about them, in the sense that no world
+where the parameter has a different apparent value is epistemically
+possible for her. Formally, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{R}\langle e^{*},f^{*}\rangle</annotation></semantics></math>
+<span class="orig-page" data-page="5" id="page-5" aria-hidden="true"></span>then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{*}</annotation></semantics></math>.
+Although appearances are not in fact so epistemically privileged,<a
+href="#note-7" id="note-ref-7" class="note-ref" data-note="7"
+aria-label="Note 7">7</a> treating them as such is yet another
+harmlessly simplifying concession for present purposes. If even agents
+to whom appearances are transparent suffer from Gettier cases, humans
+with more limited knowledge of their appearances should not expect to be
+immune.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00016"
+class="search-passage">A mathematical temptation is to make the stronger
+biconditional stipulation that if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{*}</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{R}\langle e^{*},f^{*}\rangle</annotation></semantics></math>
+as well as vice versa. That temptation must be resisted, for it is
+tantamount to scepticism about the external world. It implies that the
+agent has no non-trivial knowledge at all of the real value of the
+parameter, for example of the external temperature. For let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be a non-trivial proposition about the real value. It is non-trivial in
+the sense that it is false in at least one world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>h</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle g,h\rangle</annotation></semantics></math>.
+It is about the real value in the sense that its truth-value depends
+only on that value:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+has the same truth-value in any two worlds with the same real value.
+Consider the agent in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>.
+Since the real value is the same in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>h</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle g,h\rangle</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle g,f\rangle</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>h</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle g,h\rangle</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is also false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle g,f\rangle</annotation></semantics></math>.
+But the envisaged converse stipulation implies that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{R}\langle g,f\rangle</annotation></semantics></math>,
+since the apparent value is the same in the two worlds. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false in a world epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>,
+so in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+the agent does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>:
+if the agent knows only appearances, for all she knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+she is in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle g,f\rangle</annotation></semantics></math>.
+The stronger, biconditional stipulation makes her perfectly
+knowledgeable about appearances but perfectly ignorant of the
+corresponding realities, even though we started with a scenario in which
+she was gaining ordinary perceptual knowledge of her environment. To
+avoid such crass scepticism, we must permit some worlds to be
+inaccessible from others with the same appearance.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00017"
+class="search-passage">A better picture is this. When the real value
+matches the apparent value, the agent knows <em>something</em>
+non-trivial about the real value. For example, when the temperature both
+is and appears to be 30 degrees, she knows that it is not zero. Some
+world with a different real value but the same apparent value is
+<em>not</em> epistemically possible for her. However, she still does not
+know <em>everything</em> about the real value, for her perceptual
+apparatus is not perfectly discriminating. For example, when the
+temperature is 30.0006 degrees, she does not know that it is not 30.0007
+degrees. Some world with a different real value but the same apparent
+value <em>is</em> epistemically possible for her. The latter world is
+distinct from the one she is in, which is of course epistemically
+accessible from itself by factiveness. Formally, for any value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>,
+the worlds accessible from the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+with identical real and apparent values are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+itself (trivially, by reflexivity) and at least one other
+world:</span></p>
+<div class="displayblock" data-right-label="(#1)">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00018"
+class="search-passage"><span
+class="numbered-equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">}</mo><mo>⊂</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\{\langle f,f\rangle\}\subset \mathrm{R}(\langle f,f\rangle)</annotation></semantics></math><span
+class="equation-number">(#1)</span></span></span></p>
+</div>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00019"
+class="search-passage"><span class="orig-page" data-page="6" id="page-6" aria-hidden="true"></span>To
+complete the picture, a natural postulate is that as the real value
+diverges more and more from the given apparent value, the agent knows
+less and less about the real value. To state the relation formally, we
+postulate a <em>metric</em> on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>,
+in the mathematical sense of the term, to measure distance in the space
+of values. The metric is a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">d</mi><annotation encoding="application/x-tex">\mathrm{d}</annotation></semantics></math>
+from pairs of values in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>
+to real numbers;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)</annotation></semantics></math>
+measures the difference in value between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+The standard mathematical definition of a metric also requires
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">d</mi><annotation encoding="application/x-tex">\mathrm{d}</annotation></semantics></math>
+to have the following properties, for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">e,f,g</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">0\le \mathrm{d}(e,f)</annotation></semantics></math>
+(no distance is negative);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)=0</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">e=f</annotation></semantics></math>
+(no value is as close to any other as any value is to itself);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>e</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)=\mathrm{d}(f,e)</annotation></semantics></math>
+(distance is symmetric);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,g)\le \mathrm{d}(e,f)+\mathrm{d}(f,g)</annotation></semantics></math>
+(the triangle inequality: metaphorically, the shortest journey in
+quality space from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+is no longer than the journey from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+followed by that from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>).</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00020"
+class="search-passage">We can now state the constraint on the
+accessibility relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+that ignorance grows with the distance of the real value from the
+apparent value:</span></p>
+<div class="displayblock" data-right-label="(#2)">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00021"
+class="search-passage"><span
+class="numbered-equation"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mtext mathvariant="normal">if and only if</mtext><mspace width="1.0em"></mspace><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)\le \mathrm{d}(e^{*},f)\quad\text{if and only if}\quad \mathrm{R}(\langle e,f\rangle)\subseteq \mathrm{R}(\langle e^{*},f\rangle)</annotation></semantics></math><span
+class="equation-number">(#2)</span></span></span></p>
+</div>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00022"
+class="search-passage">In other words, if the real value diverges no
+more from the given apparent value in the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+than it does in the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e^{*},f\rangle</annotation></semantics></math>,
+then the agent knows at least as much in the former world as in the
+latter; every world she can exclude in the latter she can already
+exclude in the former. Conversely, the agent knows at least as much in
+one world as in another only if the gap between appearance and reality
+is no wider in the former than in the latter.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00023"
+class="search-passage">The rationale for constraint (#2) is that any
+increase in the gap between appearance and reality has an epistemic cost
+for the agent: more knowledge is lost. However, (#2) is not claimed to
+be an exceptionless law of epistemology. Rather, it is a natural
+idealization of a wide range of cases.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00024"
+class="search-passage">We check that our stipulations are reasonable by
+constructing a natural model that verifies them. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>
+be the set of real numbers, so a world is an ordered pair of a
+real-valued real value and a real-valued apparent value. For real
+numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)</annotation></semantics></math>
+be the absolute distance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|e-f|</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">d</mi><annotation encoding="application/x-tex">\mathrm{d}</annotation></semantics></math>
+is a metric. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+be a positive real number; the epistemic structure of the model will not
+depend on the particular value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+We define the relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+thus:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{R}\langle e^{*},f^{*}\rangle</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>e</mi><mo>*</mo></msup><mo>−</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">|e^{*}-f^{*}|\le |e-f|+c</annotation></semantics></math>
+and of course
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{*}</annotation></semantics></math>.
+Thus the worlds accessible from a given world are those where the
+apparent value is exactly the same and the gap between it and the real
+value exceeds the gap in the given world by at most the constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+Obviously
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+is reflexive. In any world, what the agent knows about the real value is
+that it falls within some margin for error of the apparent value; she
+does not know exactly what that margin is, since it varies across the
+accessible worlds.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00025"
+class="search-passage">Note that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle e,f\rangle)=\{(\langle g,f\rangle:|g-f|\le |e-f|+c\}</annotation></semantics></math>.
+In particular, therefore,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)=\{(\langle g,f\rangle:|g-f|\le c\}</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>+</mo><mi>c</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle \mathrm{R}\langle f+c,f\rangle</annotation></semantics></math>,
+<span class="orig-page" data-page="7" id="page-7" aria-hidden="true"></span>so
+(#1) holds. To check (#2), first suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>e</mi><mo>*</mo></msup><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|e-f|\le |e^{*}-f|</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi><mo stretchy="false" form="postfix">}</mo><mo>⊆</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>e</mi><mo>*</mo></msup><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi><mo stretchy="false" form="postfix">}</mo><mo>=</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle e,f\rangle)=\{(\langle g,f\rangle:|g-f|\le |e-f|+c\}\subseteq\{(\langle g,f\rangle:|g-f|\le |e^{*}-f|+c\}=\mathrm{R}(\langle e^{*},f\rangle)</annotation></semantics></math>.
+Conversely, suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle e,f\rangle)\subseteq \mathrm{R}(\langle e^{*},f\rangle)</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>f</mi><mo>+</mo><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">g=f+|e-f|+c</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">|g-f|=|e-f|+c</annotation></semantics></math>.
+Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∈</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\langle g,f\rangle\in \mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>g</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∈</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\langle g,f\rangle\in \mathrm{R}(\langle e^{*},f\rangle)</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>e</mi><mo>*</mo></msup><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">|e-f|+c=|g-f|\le |e^{*}-f|+c</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>e</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mo stretchy="false" form="prefix">|</mo><msup><mi>e</mi><mo>*</mo></msup><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|e-f|\le |e^{*}-f|</annotation></semantics></math>,
+as required. Thus the model verifies both constraints, (#1) and
+(#2).</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00026"
+class="search-passage">In the rest of the paper, we explore some
+epistemic consequences of the constraints (#1) and (#2) themselves. For
+the sake of generality, we avoid reliance on the model just sketched.
+Nevertheless, the model may help the reader visualize the arguments
+below more clearly.<a href="#note-8" id="note-ref-8" class="note-ref"
+data-note="8" aria-label="Note 8">8</a></span></p>
+<h1 class="unnumbered" id="iv.">IV.</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00027"
+class="search-passage">One obvious consequence of the constraints is
+that whatever is epistemically possible in a world in which appearance
+matches reality is epistemically possible in any world with the same
+appearance. For (#2) implies that since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>≤</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(f,f)=0\le \mathrm{d}(e,f)</annotation></semantics></math>
+by the axioms for a metric,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)\subseteq \mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>.
+In particular, since the world in which appearance matches reality is
+accessible from itself, it is accessible from any world with the same
+appearance;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∈</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle\in \mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00028"
+class="search-passage">We can go further. By (#1),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+contains some world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+other than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>#</mi></msup><mo>≠</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f^{\#}\ne f</annotation></semantics></math>.
+Although appearance in fact matches reality perfectly, and the agent
+knows the appearance perfectly, she does not know the reality perfectly:
+for all she knows, it is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>#</mi></msup><annotation encoding="application/x-tex">f^{\#}</annotation></semantics></math>
+rather than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Now suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f^{\#},f\rangle)\subseteq \mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>.
+Then by (#2),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{d}(f^{\#},f)\le \mathrm{d}(f,f)=0</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>#</mi></msup><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f^{\#}=f</annotation></semantics></math>
+by the axioms for a metric, contrary to hypothesis. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f^{\#},f\rangle)</annotation></semantics></math>
+contains some world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+not in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>.
+Consequently, the accessibility relation is non-transitive. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle \mathrm{R}\langle f^{\#},f\rangle</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle \mathrm{R}\langle f^{\#\#},f\rangle</annotation></semantics></math>,
+but not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle \mathrm{R}\langle f^{\#\#},f\rangle</annotation></semantics></math>.
+A natural interpretation of this result is that when appearance matches
+reality, for all the agent knows there is a small gap between them, and
+when there is a small gap between appearance and reality, for all she
+knows there is a larger gap, but when appearance matches reality, the
+agent does know that there is not the larger gap between appearance and
+reality (scepticism is false). As always in epistemic logic, the
+non-transitivity of accessibility yields failures of the KK principle,
+also known as positive introspection and the 4 axiom of modal logic,
+that if one knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+then one
+<span class="orig-page" data-page="8" id="page-8" aria-hidden="true"></span>knows
+that one knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.<a
+href="#note-9" id="note-ref-9" class="note-ref" data-note="9"
+aria-label="Note 9">9</a> Specifically, in the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>,
+but she does not know that she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>,
+because she does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+(even though it is true) in the accessible world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>.
+There is no need to labour the failure of the KK principle
+here.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00029"
+class="search-passage">A more interesting consequence of the constraints
+is that accessibility is also non-symmetric, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle \mathrm{R}\langle f,f\rangle</annotation></semantics></math>
+but not vice versa. A natural interpretation of this result is that
+there is an epistemic asymmetry between the good (anti-sceptical)
+scenario
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+where appearance matches reality, and the bad (sceptical) scenario
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>,
+where appearance diverges widely from reality. In the bad case, for all
+the agent knows she is in the good case; by contrast, in the good case,
+the agent knows that she is not in the bad case. Sceptics often neglect
+the possibility of such epistemic asymmetries.<a href="#note-10"
+id="note-ref-10" class="note-ref" data-note="10"
+aria-label="Note 10">10</a> As always in epistemic logic, the
+non-symmetry of accessibility yields failures of the ‘Brouwerian’ axiom
+B that if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false then one knows that one does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Specifically, in the bad case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+the proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+is false, but the agent does not know that she does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>,
+because for all she knows she is in the good case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+in which she does know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>.
+The general failure of the B axiom for knowledge was pointed out by
+Hintikka.<a href="#note-11" id="note-ref-11" class="note-ref"
+data-note="11" aria-label="Note 11">11</a> It immediately yields
+failures of the ‘negative introspection’ principle (known as axiom 5 or
+E in modal logic) that if one does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+then one knows that one does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+for by factiveness if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false, then one does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Although many researchers in epistemic logic continue to treat the
+accessibility relation for knowledge as symmetric and transitive as well
+as reflexive, and the assumptions are often harmless idealizations for
+their purposes, they are not harmless for purposes of serious
+epistemology.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00030"
+class="search-passage">We can also extract more positive consequences
+from the constraints. For example, we can show that the <em>only</em>
+world in which the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+itself. For suppose that the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,g\rangle</annotation></semantics></math>.
+By the structure of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">g=f</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">K</mi><mi mathvariant="normal">R</mi></mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{KR}(\langle f,f\rangle)</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>.
+Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>
+is what she knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle e,f\rangle)\subseteq \mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>.
+Therefore, by (#2),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)\le \mathrm{d}(f,f)=0</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">e=f</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,g\rangle=\langle f,f\rangle</annotation></semantics></math>,
+as required. Elsewhere, I have shown how such propositions known in only
+one world generate cases where the agent knows a truth
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+even though it is virtually certain on her own current evidence that she
+does not know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Details are omitted here, because they involve the introduction of an
+apparatus of evidential probabilities.<a href="#note-12"
+id="note-ref-12" class="note-ref" data-note="12"
+aria-label="Note 12">12</a></span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00031"
+class="search-passage"><span class="orig-page" data-page="9" id="page-9" aria-hidden="true"></span>The
+consequences just drawn from our constraints have a strongly externalist
+feel. However, the constraints themselves were not motivated by
+externalism, but only by a preference for simplicity over complexity,
+and for anti-scepticism over scepticism. In particular, the agent was
+granted a knowledge of appearances as complete as internalists could
+desire. That makes the externalist upshot all the more
+significant.</span></p>
+<h1 class="unnumbered" id="v.">V.</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00032"
+class="search-passage">To discuss Gettier cases, we must interpret
+belief and justification over the models. That is the task of this
+section.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00033"
+class="search-passage">In epistemic logic, the normal way to interpret
+belief is by adding another binary relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+between worlds as a further constituent of the model, to represent
+<em>doxastic accessibility</em> for the given agent at the given time. A
+world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is doxastically accessible from a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mi mathvariant="normal">S</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">w\mathrm{S}x</annotation></semantics></math>)
+if and only if whatever the agent believes in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is doxastically possible in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+For any proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p</annotation></semantics></math>
+be the proposition true in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true in every world doxastically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>w</mi><mo>:</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mi mathvariant="normal">S</mi><mi>x</mi><mo>⇒</mo><mi>x</mi><mo>∈</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{B}p=\{w:\forall x\,(w\mathrm{S}x\Rightarrow x\in p)\}</annotation></semantics></math>.
+Informally,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p</annotation></semantics></math>
+is identified with the proposition that the agent believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Thus the agent counts as believing whatever is true in all the worlds
+that for all she believes she is in. The treatment of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">B</mi><annotation encoding="application/x-tex">\mathrm{B}</annotation></semantics></math>
+as a belief operator enforces a form of logical omniscience for belief
+beyond that already implicit in the coarse-grained treatment of
+propositions. Specifically, if the agent believes each premise of a
+valid deductive argument, then the agent <em>ipso facto</em> believes
+the conclusion, by the same reasoning as for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">K</mi><annotation encoding="application/x-tex">\mathrm{K}</annotation></semantics></math>.
+As before, this logical omniscience, too, can be regarded as a
+harmlessly simplifying idealization of the models.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00034"
+class="search-passage">Since belief is not factive—some falsehoods are
+believed—the relation S is not required to be reflexive, unlike R.
+However, S may be required to be serial, in the sense that every world
+has S to at least one world. For if no world were doxastically
+accessible from a world <em>w</em>, then every proposition would count
+vacuously as believed in <em>w</em>, making the agent inconsistent.
+Although one can be irrational and have inconsistent beliefs, it is
+doubtful that one can have inconsistent justified beliefs.<a
+href="#note-13" id="note-ref-13" class="note-ref" data-note="13"
+aria-label="Note 13">13</a> Conversely, if from each world at least one
+<span class="orig-page" data-page="10" id="page-10" aria-hidden="true"></span>world
+in the model is accessible, then neither
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi><mo>&amp;</mo><mi mathvariant="normal">B</mi><mo>¬</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p\mathbin{\&amp;}\mathrm{B}\neg p</annotation></semantics></math>
+nor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>&amp;</mo><mo>¬</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{B}(p\mathbin{\&amp;}\neg p)</annotation></semantics></math>
+is true at any world: the agent never believes a contradiction, either
+in the sense of believing both of a pair of contradictories or in the
+sense of believing their conjunction.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00035"
+class="search-passage">A natural assumption is that, if one knows
+<em>p</em>, one believes <em>p</em>. It is equivalent to the constraint
+that doxastic accessibility implies epistemic accessibility. For suppose
+that a world <em>x</em> is not epistemically accessible from a world
+<em>w</em>. Then in <em>w</em> the agent knows the proposition
+<em>p</em> containing all worlds except <em>x</em>. So, if knowledge
+requires belief, in <em>w</em> the agent believes <em>p</em>, so
+<em>x</em> is not doxastically accessible from <em>w</em>. Conversely,
+if doxastic accessibility implies epistemic accessibility, then whatever
+is true in all epistemically accessible worlds is true in all
+doxastically accessible worlds, so knowledge requires belief. Let us
+accept that requirement.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00036"
+class="search-passage">In epistemic models of the sort introduced above,
+we can define the doxastic accessibility relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+well enough for present purposes without adding it as a separate
+component. To motivate the definition, let us make the simplifying but
+natural assumption that what the agent believes, unlike what she knows,
+depends only on the apparent value of the relevant parameter: for any
+values
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mo>*</mo></msup><annotation encoding="application/x-tex">e^{*}</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+exactly the same worlds are doxastically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+as from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e^{*},f\rangle</annotation></semantics></math>.
+Although an agent’s beliefs could be sensitive to factors other than
+appearance, we focus on agents who do not base their beliefs on such
+factors. Since the agent has the same beliefs in a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+as in the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+all that remains is to determine what the agent believes in a world
+where appearance matches reality. Since knowledge requires belief,
+whatever she knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+she believes in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>.
+Conversely, there is no relevant reason to attribute to her beliefs that
+fail to constitute knowledge in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+the good case where appearances match reality perfectly. Thus we may
+assume that whatever she believes in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+she knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>.
+Consequently, she believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+if and only if she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>.
+Thus doxastic accessibility is definable in terms of epistemic
+accessibility in our models:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{S}\langle e^{*},f^{*}\rangle</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle \mathrm{R}\langle e^{*},f^{*}\rangle</annotation></semantics></math>
+(so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{*}</annotation></semantics></math>).
+What the agent believes in a case is what she knows in the corresponding
+good case. As with (#1) and (#2), this is not claimed to be an
+exceptionless law of epistemology; rather, it is a natural idealization
+of a wide range of cases.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00037"
+class="search-passage">One consequence of our definition is that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+is serial, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{S}\langle f,f\rangle</annotation></semantics></math>
+since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle \mathrm{R}\langle f,f\rangle</annotation></semantics></math>.
+Thus the agent’s beliefs are always consistent. Moreover, a perfect
+match between appearance and reality is always doxastically
+possible.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00038"
+class="search-passage">For knowledge to imply belief, doxastic
+accessibility must imply epistemic accessibility. Our definition of the
+former in terms of the latter yields that result, given our constraints.
+For suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{S}\langle e^{*},f^{*}\rangle</annotation></semantics></math>.
+By the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle \mathrm{R}\langle e^{*},f^{*}\rangle</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{*}</annotation></semantics></math>.
+But by constraint (#2)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>⊆</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)\subseteq \mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>.
+Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∈</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\langle e^{*},f\rangle\in \mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo></mrow><annotation encoding="application/x-tex">\langle e^{*},f^{*}\rangle=\langle e^{*},</annotation></semantics></math>
+<span class="orig-page" data-page="11" id="page-11" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo>∈</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f\rangle\in \mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><msup><mi>f</mi><mo>*</mo></msup><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle \mathrm{R}\langle e^{*},f^{*}\rangle</annotation></semantics></math>,
+as required. That is some evidence that our definition of doxastic
+accessibility is a reasonable one.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00039"
+class="search-passage">The agent in our models is omniscient about her
+own current beliefs, in the sense that, if she believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+then she knows that she believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+and if she does not believe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+then she knows that she does not believe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+For what she believes supervenes in the model on appearances to her, and
+she is omniscient about those appearances. More precisely, the
+definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+ensures that for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mo>*</mo></msup><annotation encoding="application/x-tex">e^{*}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>
+if and only if it is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>e</mi><mo>*</mo></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e^{*},f\rangle</annotation></semantics></math>.
+Consequently, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>,
+then it is true in every world epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">K</mi><mi mathvariant="normal">B</mi></mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{KB}p</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>.
+Similarly, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p</annotation></semantics></math>
+is false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>,
+then it is false in every world epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">K</mi><mo>¬</mo><mi mathvariant="normal">B</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{K}\neg \mathrm{B}p</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,f\rangle</annotation></semantics></math>.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00040"
+class="search-passage">The agent does <em>not</em> satisfy the principle
+that if she believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+then she also believes that she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.<a
+href="#note-14" id="note-ref-14" class="note-ref" data-note="14"
+aria-label="Note 14">14</a> For example, in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+she believes, and indeed knows,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>,
+but we noted in Section IV that she fails to know
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+in the other worlds epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>;
+since those worlds are also doxastically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+she neither knows nor believes in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>
+that she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>.
+This is an admirable form of epistemic modesty on her part. In the
+model, she cannot know that she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>;
+she avoids believing that she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+because in the model such a belief cannot constitute
+knowledge.</span></p>
+<h1 class="unnumbered" id="vi.">VI.</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00041"
+class="search-passage">We have modelled an internally rational agent
+whose beliefs depend only on appearances. Whatever she believes in a
+world, she knows in some world with the same appearance. In any world in
+such a model, all her beliefs are justified in an internalist sense. In
+some worlds, she has justified false beliefs. We saw in Section IV that
+the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+is epistemically inaccessible from the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>:
+in the good case, the agent has non-trivial knowledge of the real value
+of the parameter. By the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+is doxastically inaccessible from itself. Thus in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+the agent has a justified false belief that she is not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>.
+In an internalist sense, she is justified in believing the gap between
+appearance and reality to be narrower than it really is. Similarly,
+internalists often say that a brain in a vat is justified in believing
+that it is not a brain in a vat.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00042"
+class="search-passage">In a strongly externalist sense, a belief is
+<em>fully</em> justified only if it constitutes knowledge, and is
+therefore true. Although one may have a cast-iron excuse for a false
+belief, that excuse does not amount to a justification. Similarly,
+<span class="orig-page" data-page="12" id="page-12" aria-hidden="true"></span>consider
+a competent and non-negligent surgeon who causes the death of a patient
+because a lab technician with a grievance switched the labels on two
+bottles: he has a cast-iron <em>excuse</em> for killing the patient, but
+it does not amount to a <em>justification</em> for killing the
+patient.<a href="#note-15" id="note-ref-15" class="note-ref"
+data-note="15" aria-label="Note 15">15</a> Trivially, in that
+externalist sense, there are no cases of justified true belief without
+knowledge; indeed, there are no cases of justified belief without
+knowledge. The interest of Gettier cases concerns a more internalist
+sense of ‘justified’, closer to excusability than to genuine
+justification. Gettier himself seems to have had such a reading in mind;
+he emphasizes that someone can be justified in believing a false
+proposition.<a href="#note-16" id="note-ref-16" class="note-ref"
+data-note="16" aria-label="Note 16">16</a> After all, a sense of
+‘justification’ explained in terms of ‘knowledge’ would not help the
+project of analysing knowledge in terms of justification and other
+factors. The internalist sense of ‘justified’, in which the beliefs of
+the agent in the model are justified even when false, is much more
+relevant to the debate over Gettier cases.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00043"
+class="search-passage">Every model of the kind we have described also
+contains cases of justified true belief without knowledge: Gettier
+cases. For recall the scenario derived in Section IV from our
+constraints: a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+is epistemically accessible from a world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>,
+which is in turn epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+although
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>
+is not itself epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>.
+The proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>.
+Moreover, the agent believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>,
+for by the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+what she believes in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+is what she knows in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+and she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>.
+We have just seen that in the relevant models the agent’s beliefs count
+as justified in the relevant sense. Thus in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+the agent has a justified true belief in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>.
+However, in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+she does not <em>know</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle</annotation></semantics></math>,
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>
+is false in the epistemically accessible world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mrow><mi>#</mi><mi>#</mi></mrow></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#\#},f\rangle</annotation></semantics></math>.
+Thus in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+with respect to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle f,f\rangle)</annotation></semantics></math>,
+the agent has a justified true belief that is not knowledge. Our
+constraints predict Gettier cases in epistemic logic.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00044"
+class="search-passage">The Gettier cases just described are not of the
+traditional type, in which the agent derives her justified true belief
+from a justified false belief in something else. Our Gettier cases arise
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>,
+a world in which the agent lacks false beliefs: for if she believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+then she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><msup><mi>f</mi><mi>#</mi></msup><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f^{\#},f\rangle</annotation></semantics></math>
+because the latter is epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle f,f\rangle</annotation></semantics></math>.
+The cases above are more like ‘fake barn’ Gettier cases,<a
+href="#note-17" id="note-ref-17" class="note-ref" data-note="17"
+aria-label="Note 17">17</a> in which the agent may lack relevant false
+beliefs but still the circumstances are not favourable enough for
+knowledge of the given truth. In our case, the unfavourable circumstance
+is the gap between appearance and reality, even though the agent does
+not doxastically endorse the appearance specifically enough to produce
+falsity.</span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00045"
+class="search-passage">Some but not all of our models also contain
+Gettier cases of a more traditional type. For example, in the
+real-valued models described in Section III,
+<span class="orig-page" data-page="13" id="page-13" aria-hidden="true"></span>the
+agent in the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2c,0\rangle</annotation></semantics></math>
+has a justified belief in the false proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle 0,0\rangle)</annotation></semantics></math>,
+which is true just in worlds of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>c</mi><mo>≤</mo><mi>e</mi><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">-c\le e\le c</annotation></semantics></math>.
+Since her beliefs are closed under entailment, in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2c,0\rangle</annotation></semantics></math>
+she also believes the ‘disjunctive’ proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo><mo>∨</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle 0,0\rangle)\vee\{\langle 2c,0\rangle\}</annotation></semantics></math>.
+Her belief in the disjunction is justified in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2c,0\rangle</annotation></semantics></math>
+because she has a justified belief in its left disjunct, although no
+belief in its right disjunct. Moreover, in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2c,0\rangle</annotation></semantics></math>
+the disjunction is true because its right disjunct is true, although its
+left disjunct is false. But in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2c,0\rangle</annotation></semantics></math>
+she does not know the disjunction, for it is false in the world
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>3</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 3c,0\rangle</annotation></semantics></math>,
+which is epistemically (though not doxastically) accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mi>c</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2c,0\rangle</annotation></semantics></math>.
+That is much closer to Gettier’s original cases.<a href="#note-18"
+id="note-ref-18" class="note-ref" data-note="18"
+aria-label="Note 18">18</a></span></p>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00046"
+class="search-passage">With respect to Gettier cases, the informal
+judgements of epistemologists and a more formal model-building
+methodology in epistemic logic converge. One can arrive at the same
+conclusion either way, and each method lends support to the other. The
+Gettier effect is robust.</span></p>
+<h1 class="unnumbered" id="acknowledgements">Acknowledgements</h1>
+<p><span id="passage-gettier-cases-in-epistemic-logic-00047"
+class="search-passage">This paper is based on a talk at the 2012
+workshop in Svolvær, Norway, on formal epistemology; thanks to the
+participants for lively discussion, and to the Centre for the Study of
+Mind in Nature in Oslo for its support of the event.</span></p>
+<h1 class="unnumbered" id="notes">Notes</h1>
+<div id="note-1" class="note-entry" data-note="1">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00048"
+class="search-passage">Williamson, <em>Philosophy of Philosophy</em>. <a
+href="#note-ref-1" class="note-back"
+aria-label="Back to note 1">↩︎</a></span></p>
+</div>
+<div id="note-2" class="note-entry" data-note="2">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00049"
+class="search-passage">Gettier, ‘Is Justified True Belief Knowledge?’.
+<a href="#note-ref-2" class="note-back"
+aria-label="Back to note 2">↩︎</a></span></p>
+</div>
+<div id="note-3" class="note-entry" data-note="3">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00050"
+class="search-passage">Weinberg et al., ‘Normativity and Epistemic
+Intuitions’; Buckwalter and Stich, ‘Gender and the Philosophy Club’. <a
+href="#note-ref-3" class="note-back"
+aria-label="Back to note 3">↩︎</a></span></p>
+</div>
+<div id="note-4" class="note-entry" data-note="4">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00051"
+class="search-passage">Nagel, ‘Defending the Evidential Value’,
+‘Intuitions and Experiments’; Stich, ‘Different Groups’. <a
+href="#note-ref-4" class="note-back"
+aria-label="Back to note 4">↩︎</a></span></p>
+</div>
+<div id="note-5" class="note-entry" data-note="5">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00052"
+class="search-passage">Weatherson, ‘What Good Are Counterexamples?’. <a
+href="#note-ref-5" class="note-back"
+aria-label="Back to note 5">↩︎</a></span></p>
+</div>
+<div id="note-6" class="note-entry" data-note="6">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00053"
+class="search-passage">Hintikka, <em>Knowledge and Belief</em>. <a
+href="#note-ref-6" class="note-back"
+aria-label="Back to note 6">↩︎</a></span></p>
+</div>
+<div id="note-7" class="note-entry" data-note="7">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00054"
+class="search-passage">Williamson, <em>Knowledge and its Limits</em>. <a
+href="#note-ref-7" class="note-back"
+aria-label="Back to note 7">↩︎</a></span></p>
+</div>
+<div id="note-8" class="note-entry" data-note="8">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00055"
+class="search-passage">There are also less natural models of all the
+constraints. Here is one. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">E</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{E}=\{0,1,2\}</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+hold between all pairs in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">W</mi><annotation encoding="application/x-tex">\mathrm{W}</annotation></semantics></math>
+with just these exceptions:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,0\rangle</annotation></semantics></math>
+does not have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 1,0\rangle</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 1,1\rangle</annotation></semantics></math>
+does not have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2,1\rangle</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2,2\rangle</annotation></semantics></math>
+does not have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi><annotation encoding="application/x-tex">\mathrm{R}</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,2\rangle</annotation></semantics></math>.
+The metric
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">d</mi><annotation encoding="application/x-tex">\mathrm{d}</annotation></semantics></math>
+is simple:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathrm{d}(w,x)=1</annotation></semantics></math>
+if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>≠</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">w\ne x</annotation></semantics></math>.
+Since the model is symmetric between members of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>,
+we need only consider worlds of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>.
+Then (#1) holds because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,0\rangle \mathrm{R}\langle 2,0\rangle</annotation></semantics></math>;
+(#2) holds since both sides of (#2) are false when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mo>*</mo></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e^{*}=0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e\ne0</annotation></semantics></math>
+and both sides of (#2) are true otherwise. Although such models are hard
+to interpret, for present purposes there is no need to exclude them,
+since they do no harm. <a href="#note-ref-8" class="note-back"
+aria-label="Back to note 8">↩︎</a></span></p>
+</div>
+<div id="note-9" class="note-entry" data-note="9">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00056"
+class="search-passage">For discussion, see Williamson, <em>Knowledge and
+Its Limits</em>, 114–34. <a href="#note-ref-9" class="note-back"
+aria-label="Back to note 9">↩︎</a></span></p>
+</div>
+<div id="note-10" class="note-entry" data-note="10">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00057"
+class="search-passage">For discussion, see Williams, <em>Descartes</em>,
+310–13; Humberstone, ‘Some Epistemic Capacities’; and Williamson,
+<em>Knowledge and Its Limits</em>, 164–8. <a href="#note-ref-10"
+class="note-back" aria-label="Back to note 10">↩︎</a></span></p>
+</div>
+<div id="note-11" class="note-entry" data-note="11">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00058"
+class="search-passage">Hintikka, <em>Knowledge and Belief</em>. <a
+href="#note-ref-11" class="note-back"
+aria-label="Back to note 11">↩︎</a></span></p>
+</div>
+<div id="note-12" class="note-entry" data-note="12">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00059"
+class="search-passage">The models in Williamson (‘Improbable Knowing’)
+differ from those here in having a symmetric accessibility relation. The
+more complex models introduced in Williamson (‘Very Improbable Knowing’)
+are more similar to those in the present paper; in particular, they have
+a nonsymmetric accessibility relation. However, they do not fully
+satisfy (#2) with respect to their natural metric, since they allow
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(e,f)</annotation></semantics></math>
+to continue growing after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">R</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{R}(\langle e,f\rangle)</annotation></semantics></math>
+has attained a maximum (the models are finite to simplify the
+probability distribution). They satisfy a good enough approximation to
+(#2) for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">K</mi><mi mathvariant="normal">R</mi></mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{KR}(\langle f,f\rangle)</annotation></semantics></math>
+to be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{\langle f,f\rangle\}</annotation></semantics></math>.
+Incidentally, those models were originally devised for quite different
+purposes, with no thought of Gettier cases. They simply turned out to
+exhibit Gettier-like behaviour. <a href="#note-ref-12" class="note-back"
+aria-label="Back to note 12">↩︎</a></span></p>
+</div>
+<div id="note-13" class="note-entry" data-note="13">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00060"
+class="search-passage">On some views, Kripke’s puzzling Pierre may
+simultaneously have both a justified belief that London is pretty, which
+he expresses by sincerely asserting ‘Londres est jolie’, and a justified
+belief that London is not pretty, which he expresses by sincerely
+asserting ‘London is not pretty’ (Kripke, ‘Puzzle about Belief’). The
+coarse-grained contents of those beliefs are mutually inconsistent. As
+already explained, the complexities of such Frege cases have been
+ignored for the purposes of this paper. <a href="#note-ref-13"
+class="note-back" aria-label="Back to note 13">↩︎</a></span></p>
+</div>
+<div id="note-14" class="note-entry" data-note="14">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00061"
+class="search-passage">It is an axiom of the system in Stalnaker (‘On
+Logics of Knowledge’). The principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi><mo>→</mo><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">K</mi></mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p\to \mathrm{BK}p</annotation></semantics></math>
+yields the principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi>p</mi><mo>→</mo><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">K</mi></mrow><mi>…</mi><mi mathvariant="normal">K</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\mathrm{B}p\to \mathrm{BK}\ldots \mathrm{K}p</annotation></semantics></math>
+for any number of iterations of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">K</mi><annotation encoding="application/x-tex">\mathrm{K}</annotation></semantics></math>
+by repeated substitutions for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+and so is stronger than first appears. <a href="#note-ref-14"
+class="note-back" aria-label="Back to note 14">↩︎</a></span></p>
+</div>
+<div id="note-15" class="note-entry" data-note="15">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00062"
+class="search-passage">Williamson, ‘On Being Justified’. <a
+href="#note-ref-15" class="note-back"
+aria-label="Back to note 15">↩︎</a></span></p>
+</div>
+<div id="note-16" class="note-entry" data-note="16">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00063"
+class="search-passage">Gettier, ‘Is Justified True Belief Knowledge?’.
+<a href="#note-ref-16" class="note-back"
+aria-label="Back to note 16">↩︎</a></span></p>
+</div>
+<div id="note-17" class="note-entry" data-note="17">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00064"
+class="search-passage">Goldman, ‘Discrimination and Perceptual
+Knowledge. <a href="#note-ref-17" class="note-back"
+aria-label="Back to note 17">↩︎</a></span></p>
+</div>
+<div id="note-18" class="note-entry" data-note="18">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00065"
+class="search-passage">By contrast, the model in footnote 1 lacks
+traditional Gettier cases. For suppose that in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>
+the agent believes a false proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+that entails a true proposition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.
+By the definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>,
+she knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,0\rangle</annotation></semantics></math>
+since she believes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>.
+The worlds epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,0\rangle</annotation></semantics></math>
+are itself and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2,0\rangle</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,0\rangle</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2,0\rangle</annotation></semantics></math>.
+Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">e=1</annotation></semantics></math>.
+Hence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 1,0\rangle</annotation></semantics></math>.
+Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 0,0\rangle</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle 2,0\rangle</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is true in all worlds epistemically accessible from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>,
+so in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>
+the agent knows
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>e</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle e,0\rangle</annotation></semantics></math>
+is no Gettier case for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.
+By the symmetry of the model, the argument extends to all worlds. <a
+href="#note-ref-18" class="note-back"
+aria-label="Back to note 18">↩︎</a></span></p>
+</div>
+<h1 class="unnumbered" id="references">References</h1>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00066"
+class="search-passage">Buckwalter, Wesley, and Stephen Stich. ‘Gender
+and the Philosophy Club’. <em>Philosophers’ Magazine</em> 52 (2011):
+60–5.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00067"
+class="search-passage">Gettier, Edmund. ‘Is Justified True Belief
+Knowledge?’. <em>Analysis</em> 23 (1963): 121–3.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00068"
+class="search-passage">Goldman, Alvin. ‘Discrimination and Perceptual
+Knowledge’. <em>Journal of Philosophy</em> 73 (1976): 771–91.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00069"
+class="search-passage">Hintikka, Jaakko. <em>Knowledge and Belief</em>.
+Ithaca, NY: Cornell University Press, 1962.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00070"
+class="search-passage">Humberstone, Lloyd. ‘Some Epistemic Capacities’.
+<em>Dialectica</em> 42 (1988): 183–200.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00071"
+class="search-passage">Kripke, Saul. ‘A Puzzle about Belief’. In
+<em>Meaning and Use</em>, ed. Avishai Margalit, 239–83. Dordrecht:
+Reidel, 1979.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00072"
+class="search-passage">Nagel, Jennifer. ‘Defending the Evidential Value
+of Epistemic Intuitions: A Reply to Stich’. <em>Philosophy and
+Phenomenological Research</em> (forthcoming).</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00073"
+class="search-passage">Nagel, Jennifer. ‘Intuitions and Experiments: A
+Defense of the Case Method in Epistemology’. <em>Philosophy and
+Phenomenological Research</em> 85 (2012): 495–527.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00074"
+class="search-passage">Stalnaker, Robert. ‘On Logics of Knowledge and
+Belief’. <em>Philosophical Studies</em> 128 (2006): 169–99.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00075"
+class="search-passage"><span class="orig-page" data-page="14" id="page-14" aria-hidden="true"></span>Stich,
+Stephen. ‘Do Different Groups Have Different Epistemic Intuitions? A
+Reply to Jennifer Nagel’. <em>Philosophy and Phenomenological
+Research</em> (forthcoming).</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00076"
+class="search-passage">Weatherson, Brian. ‘What Good Are
+Counterexamples?’. <em>Philosophical Studies</em> 115 (2003):
+1–31.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00077"
+class="search-passage">Weinberg, Jonathan, Shaun Nichols, and Stephen
+Stich. ‘Normativity and Epistemic Intuitions’. <em>Philosophical
+Topics</em> 29 (2001): 429–60.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00078"
+class="search-passage">Williams, Bernard. <em>Descartes: The Project of
+Pure Enquiry</em>. London: Penguin, 1978.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00079"
+class="search-passage">Williamson, Timothy. ‘Improbable Knowing’. In
+<em>Evidentialism and Its Discontents</em>, ed. Trent Dougherty, 147–64.
+Oxford: Oxford University Press, 2011.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00080"
+class="search-passage">Williamson, Timothy. <em>Knowledge and Its
+Limits</em>. Oxford: Oxford University Press, 2000.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00081"
+class="search-passage">Williamson, Timothy. ‘On Being Justified in One’s
+Head’. In <em>Rationality and the Good: Critical Essays on the Ethics
+and Epistemology of Robert Audi</em>, ed. Mark Timmons, John Greco, and
+Alfred Mele, 106–22. Oxford: Oxford University Press, 2007.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00082"
+class="search-passage">Williamson, Timothy. <em>The Philosophy of
+Philosophy</em>. Oxford: Blackwell, 2007.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-gettier-cases-in-epistemic-logic-00083"
+class="search-passage">Williamson, Timothy. ‘Very Improbable Knowing’.
+<em>Erkenntnis</em> (forthcoming).</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

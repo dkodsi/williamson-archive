@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-publication-profile="public">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A chronological map of connections between works in the Timothy Williamson Archive.">
+  <title>Timeline - Timothy Williamson Archive</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css?v=20260822-2">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="../index.html">TW<span>Archive</span></a>
+    <nav class="topbar-links" aria-label="Archive pages">
+      <a class="topbar-link" href="../index.html">Catalogue</a>
+      <a class="topbar-link" href="../search/index.html">Corpus search</a>
+      <a class="topbar-link" href="index.html">Timeline</a>
+    </nav>
+
+  </header>
+  <main class="citation-map-main">
+    <a class="work-record-back" href="../index.html">← Archive</a>
+    <h1>Timeline</h1>
+    <form id="citationSearch" class="citation-map-search" role="search">
+      <label class="visually-hidden" for="citationWork">Work</label>
+      <input id="citationWork" list="citationWorkList" type="search" placeholder="Find a work…" autocomplete="off">
+      <datalist id="citationWorkList"></datalist>
+      <button type="submit">Show</button>
+    </form>
+    <p id="citationStatus" class="citation-map-status" role="status" aria-live="polite"></p>
+    <div class="citation-view-controls" role="group" aria-label="Graph view">
+      <button id="citationOverviewView" class="active" type="button">Overview</button>
+      <button id="citationFocusView" type="button" disabled>Focus</button>
+    </div>
+    <figure class="citation-graph-frame">
+      <button id="citationZoomOut" class="citation-zoom-out" type="button" hidden>Zoom out</button>
+      <svg id="citationGraph" viewBox="0 0 1000 540" role="img" aria-label="Chronological map of connections between works; books are red"></svg>
+    </figure>
+    <section id="citationFocus" class="citation-focus" hidden></section>
+  </main>
+  <script src="../assets/citation-map.js?v=20260822-5"></script>
+</body>
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="A note on truth, satisfaction and the empty domain by Timothy Williamson. Analysis 59 (1) (1999): 3–8."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>A note on truth, satisfaction and the empty domain - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/a-note-on-satisfaction-truth-and-the-empty-domain.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>A note on truth, satisfaction and the empty
+domain</h1><p class="author">Timothy
+Williamson</p><p class="publication"><em>Analysis</em> 59 (1) (1999):
+3–8.</p></header>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00001"
+class="search-passage"><span class="orig-page" data-page="3" id="page-3" aria-hidden="true"></span>An
+attractive principle about domains of quantification is the analogue of
+the Separation Axiom in set theory: restricting a domain by an arbitrary
+predicate yields a domain. In particular, restricting a domain by a
+predicate that applies to nothing yields a domain. Thus if there is a
+nonempty domain, there is an empty domain. But semantics for the empty
+domain involves some neglected subtleties. Untangling them requires us
+to revise the usual definition of truth in a model, avoiding the detour
+through Tarski’s notion of satisfaction.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00002"
+class="search-passage">Some terminology: An individual variable is a
+variable that takes name position. A model as usually understood
+interprets quantified individual variables as ranging over a domain
+whose members are of the type used to interpret names; call them
+‘individuals’. The terms ‘variable’ and ‘domain’ will henceforth be
+tacitly qualified by ‘individual’. An empty model is a model whose
+domain is the empty set. Even for a fixed language, empty models can
+differ from each other in their assignments to atomic sentence letters.
+An inclusive logic is a logic whose theorems are true in all models,
+including the empty ones.<a href="#note-1" id="note-ref-1"
+class="note-ref" data-note="1" aria-label="Note 1">1</a> An inclusive
+logic with constant singular terms is a free logic, in the sense that
+those terms denote nothing in the domain, but the interpretation of
+singular terms is not the primary concern of this note. For readability,
+the presentation will be informal.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00003"
+class="search-passage">It is usual to assume, following Quine, that
+every formula of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+is vacuously true in every empty model, and every formula of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+false, where the variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+may but need not occur in the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>,
+and that theorems of ordinary first-order logic such as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi><mo>⊃</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,Fx\supset\exists x\,Fx</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>⊃</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(Fx\supset Fx)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\exists x\,x=x</annotation></semantics></math>
+are therefore not theorems of inclusive logic, even though they are true
+in every nonempty model.<a href="#note-2" id="note-ref-2"
+class="note-ref" data-note="2" aria-label="Note 2">2</a> The proof
+theory of inclusive logic is supposed to involve corresponding
+restrictions to block the proof of such theorems.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00004"
+class="search-passage">Consider, by contrast, a standard Tarski-inspired
+definition of truth in a model. For any model
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignment
+is a function mapping each variable of the language to a member of the
+domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+functions are treated as sets of ordered pairs. One first defines what
+it is for an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assign<span class="orig-page" data-page="4" id="page-4" aria-hidden="true"></span>ment
+to <em>satisfy</em> an open or closed formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+by a recursion on the complexity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is closed, every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignment
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+if any does. One then defines truth in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+as satisfaction in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+by every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignment.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+is empty, there are no
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignments,
+for no function maps each (or any) member of a nonempty set (the set of
+variables of the language) to a member of the empty set. Consequently,
+every formula of the language, irrespective of its structure, is
+vacuously true in every empty model (Schneider 1958: 86). <em>A
+fortiori</em>, every formula true in every nonempty model is also true
+in every empty model, so a logic sound and complete for nonempty models
+is already a sound and complete inclusive logic without any modification
+of its proof theory, even though it has theorems such as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi><mo>⊃</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,Fx\supset\exists x\,Fx</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>⊃</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(Fx\supset Fx)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\exists x\,x=x</annotation></semantics></math>.
+Inclusive logic seems to be easier than we had thought.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00005"
+class="search-passage">The disadvantage of this resolution is that it
+grossly violates the intended meaning of many formulas. All distinctions
+of truth-value are lost in empty models.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ϕ</mi><mo>∧</mo><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{\phi}\wedge\neg\mathrm{\phi}</annotation></semantics></math>
+come out equally true, as do formulas such as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\exists x\,x=x</annotation></semantics></math>
+which intuitively should express the nonemptiness of the domain. If
+falsity in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+is defined by analogy to truth in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+as satisfaction by no
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignment
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+then every formula is false as well as true in every empty model; even
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ϕ</mi><mo>⊃</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{\phi}\supset\mathrm{\phi}</annotation></semantics></math>
+comes out false. The same follows if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is stipulated to be false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+If one makes the alternative stipulation that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is not true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+then no formula is false in any empty model. The Quinean ruling that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+is true and not false and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+false and not true in every empty model comes much closer to our
+intention, but it is not what our standard semantics
+delivers.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00006"
+class="search-passage">Things would be even worse if one defined truth
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+as satisfaction by some (in place of every)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignment
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+For then no formula would be true in an empty model, so a sound
+inclusive logic would have no theorems at all.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00007"
+class="search-passage">We might reflect that, for a fixed model
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+whether an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>-assignment
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+depends only on the values it assigns variables occurring free in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>.
+We might therefore define an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+as a function mapping each variable free in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+to a member of the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+recursively define what it is for an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+to satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+and then define
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+to be true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+In particular, an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\forall v\,\mathrm{\phi}</annotation></semantics></math>-assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+differing from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+at most over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\exists v\,\mathrm{\phi}</annotation></semantics></math>-assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case some
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+differing from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+at most over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is closed, the quantification over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignments
+in the definition of truth in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+is thereby neutralized, for exactly one function maps each variable free
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+to a member of the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+it is the empty set of ordered pairs, and constitutes the only
+<span class="orig-page" data-page="5" id="page-5" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment.
+Since the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\neg\mathrm{\phi}</annotation></semantics></math>-assignments
+are just the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignments,
+and an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\neg\mathrm{\phi}</annotation></semantics></math>-assignment
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case it does not satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+a closed formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is not true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+so closed formulas are no longer all equivalent in truth-value in empty
+models. When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is open and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+empty, there are no
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignments,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is again vacuously true irrespective of structure, but open formulas are
+in any case hard to interpret; what matters most is the treatment of
+closed formulas.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00008"
+class="search-passage">To be more specific, suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+occurs free in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>.
+Then an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\forall v\,\mathrm{\phi}</annotation></semantics></math>-assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case for every member
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">a\cup\{\langle v,d\rangle\}</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+correspondingly, an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\exists v\,\mathrm{\phi}</annotation></semantics></math>-assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case for some member
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">a\cup\{\langle v,d\rangle\}</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+Thus if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+is empty, every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\forall v\,\mathrm{\phi}</annotation></semantics></math>-assignment
+vacuously satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+and no
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\exists v\,\mathrm{\phi}</annotation></semantics></math>-assignment
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+Hence if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+is the only variable free in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+are closed,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+is not. Non-vacuously quantified formulas are distinguished in
+truth-value in the Quinean manner. By contrast, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+is not free in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>,
+the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\forall v\,\mathrm{\phi}</annotation></semantics></math>-assignments
+are just the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignments,
+and such an assignment satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+if and only if it satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>;
+likewise for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>.
+Thus if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is closed,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">ϕ</mi><mo>∧</mo><mo>¬</mo><mi mathvariant="normal">ϕ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall v\,(\mathrm{\phi}\wedge\neg\mathrm{\phi})</annotation></semantics></math>
+is not true in an empty model while
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">ϕ</mi><mo>⊃</mo><mi mathvariant="normal">ϕ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists v\,(\mathrm{\phi}\supset\mathrm{\phi})</annotation></semantics></math>
+is true, but such vacuous quantifications constitute another peripheral
+case.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00009"
+class="search-passage">The method of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mo>,</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\mathrm{M},\mathrm{\phi}</annotation></semantics></math>-assignments
+is an <em>ad hoc</em> patch, with many unattractive features. For
+instance, as Mostowski in effect pointed out, it does not validate modus
+ponens: if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is a monadic predicate,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi><mo>⊃</mo><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx\supset Fx</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>⊃</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>⊃</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>⊃</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(Fx\supset Fx)\supset\exists x\,(Fx\supset Fx)</annotation></semantics></math>
+are valid, in particular true in empty models because open, while
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>⊃</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(Fx\supset Fx)</annotation></semantics></math>
+is invalid, because untrue in empty models (Mostowski 1951). Moreover, a
+method that sometimes makes both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+true in the same model, as this one does whenever
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is open and the model empty, thereby deviates at least somewhat from the
+intuitive reading of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+as the negation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>.<a
+href="#note-3" id="note-ref-3" class="note-ref" data-note="3"
+aria-label="Note 3">3</a></span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00010"
+class="search-passage">The fault may be traced to the indirect
+definition of truth in a model, by a recursion on satisfaction rather
+than truth itself. Indeed, the definition of truth in terms of
+satisfaction is intuitively suspect even for nonempty models, for like
+supervaluationism it permits true disjunctions without a true disjunct.
+For example, if the extension of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+includes some but not all members of the domain,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi><mo>∨</mo><mo>¬</mo><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx\vee\neg Fx</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+even though neither
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx</annotation></semantics></math>
+nor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\neg Fx</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+Similarly, the definition of truth in terms of satisfaction permits true
+existential generalizations without a true instance, even when every
+member of the domain is the denotation of some constant. For
+<span class="orig-page" data-page="6" id="page-6" aria-hidden="true"></span>example,
+if the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+has at least two members,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists y\,x=y</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">x=c</annotation></semantics></math>
+is not true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+for any constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+These results make sense if an open formula standing alone is
+interpreted as its universal closure, but that involves postulating a
+curious kind of ambiguity. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx</annotation></semantics></math>
+is interpreted as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,Fx</annotation></semantics></math>
+when it stands alone but not when it occurs as a constituent of a
+complex formula, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi><mo>∨</mo><mi>G</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx\vee Gx</annotation></semantics></math>
+is interpreted as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>∨</mo><mi>G</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall x\,(Fx\vee Gx)</annotation></semantics></math>,
+which is not equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi><mo>∨</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>G</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,Fx\vee\forall x\,Gx</annotation></semantics></math>.
+The proposition expressed by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi><mo>∨</mo><mi>G</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx\vee Gx</annotation></semantics></math>
+(in a context of utterance) is not the disjunction of the propositions
+expressed by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Fx</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Gx</annotation></semantics></math>
+(in that context). Alternatively, one could restrict the application of
+‘true’ and ‘false’ to closed formulas, which implies that open formulas
+do not express propositions. A final stage of interpretation would be
+applied to closed formulas but not to open ones. A semantics that fully
+interprets closed formulas by recursion on less than fully interpreted
+open formulas is not straightforwardly compositional; it does not
+generate the full interpretations of complex expressions from the full
+interpretations of their constituents. While not decisive, these puzzles
+prompt the consideration of other approaches.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00011"
+class="search-passage">If one defines truth in a model by a direct
+recursion, one will stipulate that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\neg\mathrm{\phi}</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+is not true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+and automatically avoid the lack of truth-value discrimination in empty
+models. The challenge is to state intuitively adequate truth-conditions
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+in terms of truth in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+given that the possibly uncountable domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+may contain unnamed members. Notoriously,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,Fx</annotation></semantics></math>
+may be false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+even though
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">Fc</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+for every constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+of the language; likewise,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\exists x\,Fx</annotation></semantics></math>
+may be true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+even though
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">Fc</annotation></semantics></math>
+is false in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+for every constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+The problem can be overcome by quantification over possible extensions
+of the language, if one is willing to assume that every member of the
+domain of a model has a name in some possible extension of the
+language.<a href="#note-4" id="note-ref-4" class="note-ref"
+data-note="4" aria-label="Note 4">4</a> But that assumption becomes
+highly contentious if combined with the (not uncontentious) view that
+every possible language could be used by some possible speaker; it is
+not obviously incoherent to suppose that there are or could have been
+objects essentially incapable of being singled out for naming by any
+possible speaker. They might include very small particles or very large
+sets.<a href="#note-5" id="note-ref-5" class="note-ref" data-note="5"
+aria-label="Note 5">5</a> In any case, the apparatus of possible
+languages is suspiciously cumbersome.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00012"
+class="search-passage">One can achieve the same effect more economically
+by defining truth in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+by direct recursion for a single expansion of the language in which for
+every variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+and member
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+the pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle v,d\rangle</annotation></semantics></math>
+is a closed
+<span class="orig-page" data-page="7" id="page-7" aria-hidden="true"></span>singular
+term denoting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>.<a
+href="#note-6" id="note-ref-6" class="note-ref" data-note="6"
+aria-label="Note 6">6</a> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ϕ</mi><mo stretchy="false" form="prefix">[</mo><mi>v</mi><mo>∣</mo><mi>d</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathrm{\phi}[v\mid d]</annotation></semantics></math>
+be the result of replacing each free occurrence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle v,d\rangle</annotation></semantics></math>;
+this replacement is well-defined if we think of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+as a sequence in a mathematical rather than a spatial or temporal sense.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>)
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case for every (some) member
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ϕ</mi><mo stretchy="false" form="prefix">[</mo><mi>v</mi><mo>∣</mo><mi>d</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathrm{\phi}[v\mid d]</annotation></semantics></math>
+is true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+open formulas do not figure in this recursion. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+is empty,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+is vacuously true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>
+is not true in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>.
+Even this semantics is compositional only in a stretched sense; an
+instance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ϕ</mi><mo stretchy="false" form="prefix">[</mo><mi>v</mi><mo>∣</mo><mi>d</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathrm{\phi}[v\mid d]</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+is not strictly its constituent.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00013"
+class="search-passage">There is no pretence that a possible speaker
+could use this extension of the language as a language, or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle v,d\rangle</annotation></semantics></math>
+as a name of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>.
+Rather, the device may be one step towards a semantics in which
+Russellian propositions mediate between sentences and their
+truth-values.</span></p>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00014"
+class="search-passage">An alternative approach is to view quantifiers
+over the ‘inner’ domain as the result of restricting quantifiers over a
+nonempty ‘outer’ domain or absolutely unrestricted quantifiers, permit
+assignments to assign variables members of the outer domain, define
+satisfaction by a recursion where an assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\forall v\,\mathrm{\phi}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>v</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">ϕ</mi></mrow><annotation encoding="application/x-tex">\exists v\,\mathrm{\phi}</annotation></semantics></math>)
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+just in case every (some) assignment differing from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+at most over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+and assigning
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+a member of the inner domain satisfies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ϕ</mi><annotation encoding="application/x-tex">\mathrm{\phi}</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>,
+and define truth as satisfaction by all assignments.<a href="#note-7"
+id="note-ref-7" class="note-ref" data-note="7" aria-label="Note 7">7</a>
+That would yield the Quinean rulings. But it still generates the puzzles
+about compositionality noted above. Moreover, some elements outside the
+inner domain are extrinsic to the model as usually understood. For
+purposes of model theory, we may wish to make the definition of truth in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>
+intrinsic to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+the direct recursion on truth above meets that condition.</span></p>
+<h1 class="unnumbered" id="acknowledgements">Acknowledgements</h1>
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00015"
+class="search-passage">Thanks to João Branquinho, Paolo Crivelli, Kit
+Fine, Graeme Forbes, Lloyd Humberstone, Peter Milne, Ian Rumfitt, Jason
+Stanley and Achille Varzi.</span></p>
+<h1 class="unnumbered" id="notes">Notes</h1>
+<div id="note-1" class="note-entry" data-note="1">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00016"
+class="search-passage">For the origins of inclusive logic see Bencivenga
+1986: 379–82. See also Schneider 1958 and 1961. <a href="#note-ref-1"
+class="note-back" aria-label="Back to note 1">↩︎</a></span></p>
+</div>
+<div id="note-2" class="note-entry" data-note="2">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00017"
+class="search-passage">See Quine 1954; in the system proposed there only
+closed formulas are theorems. See also Hailperin 1953. <a
+href="#note-ref-2" class="note-back"
+aria-label="Back to note 2">↩︎</a></span></p>
+</div>
+<div id="note-3" class="note-entry" data-note="3">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00018"
+class="search-passage">Graham Priest’s dialetheism is not countenanced
+here. <a href="#note-ref-3" class="note-back"
+aria-label="Back to note 3">↩︎</a></span></p>
+</div>
+<div id="note-4" class="note-entry" data-note="4">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00019"
+class="search-passage">See Evans 1985: 80–87, reprinting Evans 1977. <a
+href="#note-ref-4" class="note-back"
+aria-label="Back to note 4">↩︎</a></span></p>
+</div>
+<div id="note-5" class="note-entry" data-note="5">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00020"
+class="search-passage">For a neo-Fregean such as Evans, one might expect
+the possibility of reference to <em>d</em> to require the possibility of
+a sense picking out <em>d</em>. <a href="#note-ref-5" class="note-back"
+aria-label="Back to note 5">↩︎</a></span></p>
+</div>
+<div id="note-6" class="note-entry" data-note="6">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00021"
+class="search-passage">The use of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+alone in place of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle v,d\rangle</annotation></semantics></math>
+would create complications if some constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+in the original language belonged to the domain of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">M</mi><annotation encoding="application/x-tex">\mathrm{M}</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+would then be ambiguous in denotation between itself and its denotation
+as a constant in the original language. By contrast,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle v,d\rangle</annotation></semantics></math>
+will not itself be a constant in the original language. <a
+href="#note-ref-6" class="note-back"
+aria-label="Back to note 6">↩︎</a></span></p>
+</div>
+<div id="note-7" class="note-entry" data-note="7">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00022"
+class="search-passage">Williamson <a class="crossref-link" href="../../works/existence-and-contingency/index.html">1999</a> defends absolutely unrestricted
+quantification; it is not concerned with the difference between
+recursion on satisfaction and recursion on truth. <a href="#note-ref-7"
+class="note-back" aria-label="Back to note 7">↩︎</a></span></p>
+</div>
+<h1 class="unnumbered"
+id="references"><span class="orig-page" data-page="8" id="page-8" aria-hidden="true"></span>References</h1>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00023"
+class="search-passage">Bencivenga, Ermanno. 1986. Free logics. In D.
+Gabbay and F. Guenthner, eds., <em>Handbook of Philosophical Logic,
+Volume III: Alternatives to Classical Logic</em>: 373–426. Dordrecht:
+Reidel.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00024"
+class="search-passage">Evans, Gareth. 1977. Pronouns, quantifiers and
+relative clauses (I). <em>Canadian Journal of Philosophy</em> 7:
+467–536. Reprinted in Evans 1985: 76–152.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00025"
+class="search-passage">Evans, Gareth. 1985. <em>Collected Papers</em>.
+Oxford: Clarendon Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00026"
+class="search-passage">Hailperin, T. 1953. Quantification theory and
+empty individual-domains. <em>The Journal of Symbolic Logic</em> 18:
+197–200.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00027"
+class="search-passage">Mostowski, Andrzej. 1951. On the rules of proof
+in the pure functional calculus of the first order. <em>The Journal of
+Symbolic Logic</em> 16: 107–111.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00028"
+class="search-passage">Quine, Willard. 1954. Quantification and the
+empty domain. <em>The Journal of Symbolic Logic</em> 19:
+177–79.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00029"
+class="search-passage">Schneider, Hubert. 1958. Semantics of the
+predicate calculus with identity and the validity in the empty
+individual-domain. <em>Portugaliae Mathematica</em> 17:
+85–96.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00030"
+class="search-passage">Schneider, Hubert. 1961. A syntactical
+characterization of the predicate calculus with identity and the
+validity in all individual-domains. <em>Portugaliae Mathematica</em> 20:
+105–117.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-a-note-on-satisfaction-truth-and-the-empty-domain-00031"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/existence-and-contingency/index.html">1999</a>. Existence and
+contingency. <em>The Aristotelian Society</em>, sup. vol. 73:
+181–203.</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

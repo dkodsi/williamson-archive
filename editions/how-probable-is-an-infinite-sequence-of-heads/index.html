@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="How probable is an infinite sequence of heads? by Timothy Williamson. Analysis 67 (3) (2007): 173–180."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>How probable is an infinite sequence of heads? - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/how-probable-is-an-infinite-sequence-of-heads.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>How probable is an infinite sequence of
+heads?</h1><p class="author">Timothy
+Williamson</p><p class="publication"><em>Analysis</em> 67 (3) (2007):
+173–180.</p></header>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00001"
+class="search-passage"><span class="orig-page" data-page="173" id="page-173" aria-hidden="true"></span>Isn’t
+probability 1 certainty? If the probability is objective, so is the
+certainty: whatever has chance 1 of occurring is certain to occur.
+Equivalently, whatever has chance 0 of occurring is certain not to occur
+(it has no chance of occurring). If the probability is subjective, so is
+the certainty: if you give credence 1 to an event, you are certain that
+it will occur. Equivalently, if you give credence 0 to an event, you are
+certain that it will not occur (it has no weight in your calculations of
+expected outcomes). And so on for other kinds of probability, such as
+evidential probability.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00002"
+class="search-passage">The formal analogue of this picture is the
+regularity constraint: a probability distribution over sets of
+possibilities is <em>regular</em> just in case it assigns probability 0
+only to the null set, and therefore probability 1 only to the set of all
+possibilities. For convenience, restrict the term ‘possibility’ to those
+maximally specific in relevant respects. Thus possibilities are mutually
+exclusive and jointly exhaustive. The probability of a possibility is
+just the probability of its singleton. Assume that each possibility has
+a well-defined probability. Then regularity is equivalent to the
+constraint that every possibility has a probability greater than
+0.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00003"
+class="search-passage">Regularity runs into notorious trouble when the
+set of possibilities is infinite, given the standard mathematics of
+probabilities, on which they are real numbers between 0 and 1. Indeed,
+when the set of possibilities is uncountable, no probability
+distribution is regular. For let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_n</annotation></semantics></math>
+be the set of all possibilities of probability at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">1/n</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is a natural number).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_n</annotation></semantics></math>
+has at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+members, otherwise its probability exceeds 1. If a possibility has
+probability greater than 0, it belongs to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_n</annotation></semantics></math>
+for some natural number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+But the union of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_n</annotation></semantics></math>
+over all natural numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is a countable union of finite sets and therefore itself countable. Thus
+only countably many possibilities have probability greater than 0, so
+uncountably many possibilities have probability 0. For example, suppose
+that a rotating pointer can stop at any point on a circle. As space is
+usually conceived, the circle comprises uncountably many points. For
+each point, it is neither objectively nor subjectively certain that the
+pointer will not stop at it. Yet on any real-valued probability
+distribution, for almost every point on the circle, the real-valued
+probability that the pointer will stop at it is 0.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00004"
+class="search-passage"><span class="orig-page" data-page="174" id="page-174" aria-hidden="true"></span>The
+trouble is not confined to uncountable cases. Consider a countable
+infinity of points on the circle. Call them the <em>select</em> points.
+If we treat all the points as the real numbers between 0 and 1
+(including 0 but excluding 1), we can treat the select points as the
+rational numbers between 0 and 1. Since nothing favours one point over
+another, the probability of the pointer’s stopping at a given point
+conditional on its stopping at a select point should be the same for
+each select point; let it be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+By the Archimedean principle, for any real number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+greater than 0,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">nx</annotation></semantics></math>
+exceeds 1 for some natural number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Thus if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+were greater than 0, for any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+select points the probability of the pointer stopping at one of them
+conditional on its stopping at a select point would exceed 1. Therefore
+the probability of the pointer’s stopping at a given select point
+conditional on its stopping at a select point is 0, even though it is
+neither objectively nor subjectively certain that it will not stop at
+that point, conditional on its stopping at a select point.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00005"
+class="search-passage">An attractive response is to deny the assumption
+that probabilities must be real-valued. In non-standard analysis, the
+numbers between 0 and 1 include infinitesimals, greater than 0 but less
+than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">1/n</annotation></semantics></math>
+for each (standard) natural number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+That avoids the troubles above. Each point can have the same
+infinitesimal probability of being stopped at (Bernstein and Wattenberg
+1969). Thus infinitesimal probabilities appear to rehabilitate the
+equation of probability 1 with certainty and the equivalent conception
+of probability 0. For example, David Lewis appeals to them in requiring
+that the credence of a proposition is zero only if it is ‘the empty
+proposition, true at no worlds’; he justifies the requirement ‘as a
+condition of reasonableness’ on the grounds that one who started out by
+violating it and then learned from experience by conditionalizing ‘would
+stubbornly refuse to believe some propositions no matter what the
+evidence in their favour’ (1986: 88). In the case of objective
+probability, he was also ‘inclined to think that […] there are no worlds
+where anything with zero chance happens; the contrary opinion comes of
+mistaking infinitesimals for zero’ (1986: 333).</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00006"
+class="search-passage">Do infinitesimal probabilities really
+rehabilitate the equation of probability 1 with certainty or the
+equivalent conception of probability 0? Consider one of the simplest
+cases. A fair coin will be tossed infinitely many times at one second
+intervals. The tosses are independent. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+be the event that every toss comes up heads. It is one of uncountably
+many possible outcomes. It is not subjectively certain that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+will not occur. Given a suitable indeterminism, it is not objectively
+certain that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+will not occur. Henceforth, we need not specify what kind of probability
+is in play, because the argument is the same for all kinds. In standard
+probability theory, the only probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+can have is 0, since for each natural number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+its probability is no greater than the probability of an initial
+sequence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+tosses,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">1/2^n</annotation></semantics></math>.
+That argument fails in the non-standard setting,
+<span class="orig-page" data-page="175" id="page-175" aria-hidden="true"></span>since
+it does not exclude the assignment of an infinitesimal probability to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>.<a
+href="#note-1" id="note-ref-1" class="note-ref" data-note="1"
+aria-label="Note 1">1</a> Let us reason in this non-standard
+framework.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00007"
+class="search-passage">Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1)</annotation></semantics></math>
+be the event that the first toss comes up heads and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+the event that every toss after the first comes up heads. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+is equivalent to the conjunction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{X})</annotation></semantics></math>
+is the probability of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">X</mi><mo>∣</mo><mi mathvariant="normal">Y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{X} \mid \mathrm{Y})</annotation></semantics></math>
+the probability of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+conditional on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>.
+By the nature of conditional probabilities:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(1)</dt>
+<dd>
+<span id="passage-how-probable-is-an-infinite-sequence-of-heads-00008"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1\ldots)) = \operatorname{Prob}(\mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)) =</annotation></semantics></math><br />
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mtext mathvariant="normal">.</mtext><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1))\text{.}\operatorname{Prob}(\mathrm{H}(2\ldots) \mid \mathrm{H}(1))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00009"
+class="search-passage">Since the coin is fair:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(2)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00010"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mtext mathvariant="normal">½</mtext></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1)) = \text{½}</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00011"
+class="search-passage">Since the tosses are independent:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(3)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00012"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(2\ldots) \mid \mathrm{H}(1)) = \operatorname{Prob}(\mathrm{H}(2\ldots))</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00013"
+class="search-passage">By (1)–(3):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(4)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00014"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1\ldots)) = \operatorname{Prob}(\mathrm{H}(2\ldots))/2</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00015"
+class="search-passage">But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+are isomorphic events. More precisely, we can map the constituent
+single-toss events of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+one-one onto the constituent single-toss events of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+in a natural way that preserves the physical structure of the set-up
+just by mapping each toss to its successor.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+are events of exactly the same qualitative type; they differ only in the
+inconsequential respect that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+starts one second after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>.
+That
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+is preceded by another toss is irrelevant, given the independence of the
+tosses. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+should have the same probability. To make the point vivid, suppose that
+another fair coin, qualitatively identical with the first, will also be
+tossed infinitely many times at one second intervals, starting at the
+same time as the second toss of the first coin, all tosses being
+independent. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+be the event that every toss of the second coin comes up heads, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(2\ldots)</annotation></semantics></math>
+the event that every toss after the first of the second coin comes up
+heads. Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+should be equiprobable, because the probability that a coin comes up
+heads on every toss does not depend on when one starts tossing, and
+there is no qualitative difference between the coins. But for the same
+reason
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+should also be equiprobable. These two infinite sequences of tosses
+proceed in parallel, synchronically, and there is no qualitative
+difference between the coins; in particular, that the first coin
+<span class="orig-page" data-page="176" id="page-176" aria-hidden="true"></span>will
+be tossed once before the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+sequence begins is irrelevant. By transitivity,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+should be equiprobable:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(5)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00016"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1\ldots)) = \operatorname{Prob}(\mathrm{H}(2\ldots))</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00017"
+class="search-passage">By (4) and (5):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(6)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00018"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1\ldots)) = \operatorname{Prob}(\mathrm{H}(1\ldots))/2</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00019"
+class="search-passage">But even in non-standard analysis the principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>x</mi><mi>/</mi><mn>2</mn><mo>→</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = x/2 \rightarrow x = 0</annotation></semantics></math>
+holds universally, for non-standard analysis concerns non-standard
+models of the very same first-order theory as standard analysis. Thus
+(6) yields:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(7)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00020"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1\ldots)) = 0</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00021"
+class="search-passage">This argument for (7) is neutral between standard
+and non-standard probabilities. Even when infinitesimal probabilities
+are allowed, the nature of the case still yields the conclusion that the
+probability of an infinite sequence of heads is 0. The same goes for
+every other specific outcome. Yet they are all possible, and one of them
+will be actual. Each outcome has probability 1 of not occurring, but it
+is not certain that it will not occur. Regularity fails. Infinitesimal
+probabilities may be fine in other cases, but they do not solve the
+present problem.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00022"
+class="search-passage">Is the underlying problem the attempt in such
+cases to measure probabilities by numbers, standard or non-standard? If
+so, we might fall back on ordinal relations of comparative probability,
+such as ‘is more probable than’
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&gt;</mo><annotation encoding="application/x-tex">&gt;</annotation></semantics></math>)
+and ‘is at least as probable as’
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\geq</annotation></semantics></math>).
+Let us not even assume that comparative probability involves a total
+ordering. Thus
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&gt;</mo><mi mathvariant="normal">Y</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} &gt; \mathrm{Y}</annotation></semantics></math>’
+and
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Y</mi><mo>≥</mo><mi mathvariant="normal">X</mi></mrow><annotation encoding="application/x-tex">\mathrm{Y} \geq \mathrm{X}</annotation></semantics></math>’
+may be contraries rather than contradictories. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>⊥</mi><annotation encoding="application/x-tex">\bot</annotation></semantics></math>
+is a contradiction (corresponding to the null set of possibilities),
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&gt;</mo><mi>⊥</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} &gt; \bot</annotation></semantics></math>’
+replaces the claim that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+has probability greater than 0. Thus regularity becomes the constraint
+that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&gt;</mo><mi>⊥</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} &gt; \bot</annotation></semantics></math>
+(and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>⊥</mi><mo>&gt;</mo><mo>¬</mo><mi mathvariant="normal">X</mi></mrow><annotation encoding="application/x-tex">\neg\bot &gt; \neg \mathrm{X}</annotation></semantics></math>)
+unless
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+corresponds to the null set of possibilities. Can the claim that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+is more probable than a contradiction be defended in this purely
+qualitative setting?</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00023"
+class="search-passage">A promising principle for comparative probability
+is this:<a href="#note-2" id="note-ref-2" class="note-ref" data-note="2"
+aria-label="Note 2">2</a></span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(!)</dt>
+<dd>
+<span id="passage-how-probable-is-an-infinite-sequence-of-heads-00024"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+are each incompatible with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Z</mi><annotation encoding="application/x-tex">\mathrm{Z}</annotation></semantics></math>,
+then</span>
+<span id="passage-how-probable-is-an-infinite-sequence-of-heads-00025"
+class="search-passage">(a)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&gt;</mo><mi mathvariant="normal">Y</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} &gt; \mathrm{Y}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>∨</mo><mi mathvariant="normal">Z</mi><mo>&gt;</mo><mi mathvariant="normal">Y</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} \vee \mathrm{Z} &gt; \mathrm{Y} \vee \mathrm{Z}</annotation></semantics></math></span>
+<span id="passage-how-probable-is-an-infinite-sequence-of-heads-00026"
+class="search-passage">(b)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>≥</mo><mi mathvariant="normal">Y</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} \geq \mathrm{Y}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>∨</mo><mi mathvariant="normal">Z</mi><mo>≥</mo><mi mathvariant="normal">Y</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} \vee \mathrm{Z} \geq \mathrm{Y} \vee \mathrm{Z}</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00027"
+class="search-passage">(Unless comparative probability is a total
+ordering, (!a) and (!b) are not equivalent.) One motivation for (!) is
+that if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+are each incompatible
+<span class="orig-page" data-page="177" id="page-177" aria-hidden="true"></span>with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Z</mi><annotation encoding="application/x-tex">\mathrm{Z}</annotation></semantics></math>,
+then the possibilities of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+without
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+are exactly the possibilities of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} \vee \mathrm{Z}</annotation></semantics></math>
+without
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Y</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{Y} \vee \mathrm{Z}</annotation></semantics></math>
+and the possibilities of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+without
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+are exactly the possibilities of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Y</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{Y} \vee \mathrm{Z}</annotation></semantics></math>
+without
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} \vee \mathrm{Z}</annotation></semantics></math>;
+since those possibilities should determine any probabilistic difference
+between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+or between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} \vee \mathrm{Z}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Y</mi><mo>∨</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{Y} \vee \mathrm{Z}</annotation></semantics></math>
+respectively, the comparative probability relations within the two pairs
+should be the same. Without (!), what substance is there to regarding
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&gt;</mo><annotation encoding="application/x-tex">&gt;</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≥</mo><annotation encoding="application/x-tex">\geq</annotation></semantics></math>
+as relations of comparative <em>probability</em>?</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00028"
+class="search-passage">Now let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>⊥</mi><annotation encoding="application/x-tex">\bot</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Z</mi><annotation encoding="application/x-tex">\mathrm{Z}</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>.
+Clearly,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>⊥</mi><annotation encoding="application/x-tex">\bot</annotation></semantics></math>
+are both incompatible with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>.
+Thus (!a) yields:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(8)</dt>
+<dd>
+<span id="passage-how-probable-is-an-infinite-sequence-of-heads-00029"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>⊥</mi></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) &gt; \bot</annotation></semantics></math>
+if and only if<br />
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>∨</mo><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>⊥</mi><mo>∨</mo><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) \vee (\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)) &gt; \bot \vee (\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00030"
+class="search-passage">But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>∨</mo><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) \vee (\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots))</annotation></semantics></math>
+is logically equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+(under appropriate definitions), and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⊥</mi><mo>∨</mo><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\bot \vee (\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots))</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>.
+Given the natural constraint that comparative probability relations are
+invariant across logical equivalents, (8) simplifies thus:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(9)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00031"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>⊥</mi></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) &gt; \bot</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots) &gt; \neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00032"
+class="search-passage">Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+differ only on the outcome of the first toss, which is equally likely to
+be heads or tails, and the other tosses are independent of it, the two
+events are equiprobable. Consequently:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(10)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00033"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots) \geq \mathrm{H}(1\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00034"
+class="search-passage">Since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&gt;</mo><mi mathvariant="normal">Y</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} &gt; \mathrm{Y}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Y</mi><mo>≥</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{Y} \geq \mathrm{Z}</annotation></semantics></math>
+entail
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">X</mi><mo>&gt;</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{X} &gt; \mathrm{Z}</annotation></semantics></math>
+by the logic of comparatives, (10) and the left-to-right direction of
+(9) yield:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(11)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00035"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>⊥</mi></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) &gt; \bot</annotation></semantics></math>
+only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots) &gt; \mathrm{H}(1\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00036"
+class="search-passage">The considerations above in favour of (5)
+concerned only comparative probability relations. Thus in the present
+notation they become considerations in favour of:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(12)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00037"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) \geq \mathrm{H}(2\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<div class="keep-block">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00038"
+class="search-passage">Since (12) is inconsistent with the consequent of
+(11):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(13)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00039"
+class="search-passage">Not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>⊥</mi></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots) &gt; \bot</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00040"
+class="search-passage">A sequence of infinitely many heads is not more
+probable than a contradiction; regularity fails.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00041"
+class="search-passage">We can reach a similar conclusion using (!b) in
+place of (!a). Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>⊥</mi><annotation encoding="application/x-tex">\bot</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Z</mi><annotation encoding="application/x-tex">\mathrm{Z}</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>.
+Thus (!b) yields:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(14)</dt>
+<dd>
+<span id="passage-how-probable-is-an-infinite-sequence-of-heads-00042"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⊥</mi><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\bot \geq \mathrm{H}(1\ldots)</annotation></semantics></math>
+if and only if<br />
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⊥</mi><mo>∨</mo><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>∨</mo><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\bot \vee (\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)) \geq \mathrm{H}(1\ldots) \vee (\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00043"
+class="search-passage">By the same simplifications as before, (14)
+becomes:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(15)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00044"
+class="search-passage"><span class="orig-page" data-page="178" id="page-178" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⊥</mi><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\bot \geq \mathrm{H}(1\ldots)</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots) \geq \mathrm{H}(2\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00045"
+class="search-passage">From (10) and (12) by transitivity:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(16)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00046"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots) \geq \mathrm{H}(2\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00047"
+class="search-passage">Thus from (16) and the right-to-left direction of
+(15):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(17)</dt>
+<dd>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00048"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⊥</mi><mo>≥</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\bot \geq \mathrm{H}(1\ldots)</annotation></semantics></math></span></p>
+</dd>
+</dl>
+</div>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00049"
+class="search-passage">A contradiction is at least as probable as an
+infinite sequence of heads.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00050"
+class="search-passage">Thus (!a) and (!b) each separately generate the
+analogue for comparative probability of the conclusion that an infinite
+sequence of heads has probability 0. The problem for regularity does not
+lie in the use of numerical rather than comparative probability, given
+natural constraints on the latter.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00051"
+class="search-passage">On some regular non-standard probability
+distributions, the difference in probability between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+is infinitesimal. For any standard probability distribution is
+approximated to within infinitesimal differences by a regular
+non-standard distribution (Kraus 1968, McGee 1994). Thus the standard
+probability distribution on which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+both have probability 0 is approximated by a non-standard distribution
+on which they both have infinitesimal probabilities. By (4) these
+probabilities will differ, by an infinitesimal. However, anyone who
+thinks regularity worth defending by appeal to infinitesimals must think
+that the difference between probability 0 and an infinitesimal
+probability matters, and therefore that at least some infinitesimal
+differences in probability matter. Moreover, the argument that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+has probability 0 is not merely an argument that its probability is at
+least approximately 0. In particular, the considerations in favour of
+the crucial claim (5) that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+are equiprobable do not merely favour the claim that they have at least
+approximately the same probability; they favour the claim that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+have <em>exactly</em> the same probability. For the relevant sequences
+of events are of <em>exactly</em> the same qualitative type. Recall that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+is the event that the second coin comes up heads on every toss.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+has exactly the same chance as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+has exactly the same chance as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>.
+It would be unreasonable to give
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+more or less credence than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(1\ldots)</annotation></semantics></math>
+more or less credence than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>.
+Likewise for other kinds of probability. Sometimes the problem with
+regular non-standard distributions is that too many are eligible: the
+assignment of one infinitesimal probability rather than another to a
+given possibility seems arbitrary (Elga 2004). Here, by contrast, the
+problem is that too few are eligible: none satisfies the non-arbitrary
+constraints.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00052"
+class="search-passage">One advantage of regularity is that it makes
+sense of the definition of the conditional probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">X</mi><mo>∣</mo><mi mathvariant="normal">Y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{P}(\mathrm{X} \mid \mathrm{Y})</annotation></semantics></math>
+as the ratio
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">X</mi><mo>&amp;</mo><mi mathvariant="normal">Y</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{P}(\mathrm{X} \mathbin{\&amp;} \mathrm{Y})/\mathrm{P}(\mathrm{Y})</annotation></semantics></math>
+whenever
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Y</mi><annotation encoding="application/x-tex">\mathrm{Y}</annotation></semantics></math>
+is
+<span class="orig-page" data-page="179" id="page-179" aria-hidden="true"></span>possible.
+But this is not decisive, for conditional probability can be treated as
+primitive, subject to appropriate axioms, rather than being defined as a
+ratio of unconditional probabilities (Popper 1955, Renyi 1955). The
+arguments above do not tell against primitive conditional probabilities
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+((1) above concerns the conditional probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(2\ldots) \mid \mathrm{H}(1))</annotation></semantics></math>,
+but since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prob</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prob}(\mathrm{H}(1))</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">½</mtext><annotation encoding="application/x-tex">\text{½}</annotation></semantics></math>,
+(1) does not depend on whether conditional probability is primitive or
+defined). However, such probabilities do not dispel all the present
+mysteries.</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00053"
+class="search-passage">Let the ticket
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{X})</annotation></semantics></math>
+pay a wonderful prize if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+obtains and otherwise nothing (the prize is the same whatever
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">X</mi><annotation encoding="application/x-tex">\mathrm{X}</annotation></semantics></math>
+is). You should be indifferent between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(2\ldots))</annotation></semantics></math>
+and the pair of tickets
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(1\ldots))</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots))</annotation></semantics></math>,
+for the outcome is exactly the same in every case, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(2\ldots)</annotation></semantics></math>
+obtains if and only if either
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots)</annotation></semantics></math>
+obtains (they cannot both obtain). You should prefer that pair of
+tickets to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(1\ldots))</annotation></semantics></math>
+alone, for to throw away
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&amp;</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\neg \mathrm{H}(1) \mathbin{\&amp;} \mathrm{H}(2\ldots))</annotation></semantics></math>
+is simply to throw away one chance of a wonderful prize. Thus you should
+prefer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(2\ldots))</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(1\ldots))</annotation></semantics></math>.
+But since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}(1\ldots)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}\text{*}(2\ldots)</annotation></semantics></math>
+are isomorphic independent events as already discussed, you should be
+indifferent between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(1\ldots))</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}\text{*}(2\ldots))</annotation></semantics></math>.
+Therefore you should prefer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(2\ldots))</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}\text{*}(2\ldots))</annotation></semantics></math>.
+By an exactly symmetric argument, you should prefer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mtext mathvariant="normal">*</mtext><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}\text{*}(2\ldots))</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">t</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">H</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>…</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{t}(\mathrm{H}(2\ldots))</annotation></semantics></math>.
+What has gone wrong?</span></p>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00054"
+class="search-passage">Cantor showed that some natural, apparently
+compelling forms of reasoning fail for infinite sets. This moral applies
+to forms of probabilistic and decision-theoretic reasoning in a more
+radical way than may have been realized. Infinitesimals do not solve the
+problem. Can we do better by weakening (!)?</span></p>
+<h1 class="unnumbered" id="acknowledgements">Acknowledgements</h1>
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00055"
+class="search-passage">Thanks to Frank Arntzenius and Adam Elga for very
+helpful discussion.</span></p>
+<h1 class="unnumbered" id="notes">Notes</h1>
+<div id="note-1" class="note-entry" data-note="1">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00056"
+class="search-passage">Lewis appeals to infinitesimals in defence of
+regularity in this very case (1986: 90). Vann McGee uses them in a
+similar capacity (1994: 179–80). <a href="#note-ref-1" class="note-back"
+aria-label="Back to note 1">↩︎</a></span></p>
+</div>
+<div id="note-2" class="note-entry" data-note="2">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00057"
+class="search-passage">(!) corresponds to de Finetti’s fourth axiom of
+comparative probability (1964: 100). His other three axioms correspond
+to regularity and the linearity and transitivity of comparative
+probability. His first three axioms hold on any linear ordering of
+contingencies, with the necessities added at the top and the
+impossibilities at the bottom. <a href="#note-ref-2" class="note-back"
+aria-label="Back to note 2">↩︎</a></span></p>
+</div>
+<h1 class="unnumbered" id="references">References</h1>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00058"
+class="search-passage">Bernstein, A. R. and F. Wattenberg. 1969.
+Non-standard measure theory. In <em>Applications of Model Theory of
+Algebra, Analysis, and Probability</em>, ed. W. A. J. Luxemburg. New
+York: Holt, Rinehard and Winston.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00059"
+class="search-passage">Elga, A. 2004. Infinitesimal chances and the laws
+of nature. <em>Australasian Journal of Philosophy</em> 82:
+67–76.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00060"
+class="search-passage">Finetti, B. de. 1964. Foresight, its logical
+laws, its subjective sources. In <em>Studies in Subjective
+Probability</em>, ed. H. Kyburg and H. Smokler. Huntington, N.Y.:
+Krieger.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00061"
+class="search-passage">Kraus, P. H. 1968. Representation of conditional
+probability measures on Boolean algebras. <em>Acta Mathematica Academiae
+Scientiarum Hungaricae</em> 19: 229–41.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00062"
+class="search-passage"><span class="orig-page" data-page="180" id="page-180" aria-hidden="true"></span>Lewis,
+D. K. 1986. <em>Philosophical Papers: Volume II</em>. Oxford: Oxford
+University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00063"
+class="search-passage">McGee, V. 1994. Learning the impossible. In
+<em>Probability and Conditionals: Belief Revision and Rational
+Decision</em>, eds. E. Eells and B. Skyrms. Cambridge: Cambridge
+University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00064"
+class="search-passage">Popper, K. R. 1955. Two autonomous systems for
+the calculus of probabilities. <em>British Journal for the Philosophy of
+Science</em> 6: 51–57.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-how-probable-is-an-infinite-sequence-of-heads-00065"
+class="search-passage">Renyi, A. 1955. On a new axiomatic theory of
+probability. <em>Acta Mathematica Academiae Scientiarum Hungaricae</em>
+6: 285–335.</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

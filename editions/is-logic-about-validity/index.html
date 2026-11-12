@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Is Logic about Validity? by Timothy Williamson. In Elke Brendel, Massimiliano Carrara, Filippo Ferrari, Ole Hjortland, Gil Sagi, Gila Sher, and Florian Steinberger (eds.), The Oxford Handbook of the Philosophy of Logic (forthcoming). Oxford: Oxford University Press."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Is Logic about Validity? - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/is-logic-about-validity.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>Is Logic about Validity?</h1><p class="author">Timothy
+Williamson</p><p class="publication">In Elke Brendel, Massimiliano
+Carrara, Filippo Ferrari, Ole Hjortland, Gil Sagi, Gila Sher, and
+Florian Steinberger (eds.), <em>The Oxford Handbook of the Philosophy of
+Logic</em> (forthcoming). Oxford: Oxford University Press.</p></header>
+<p><span id="passage-is-logic-about-validity-00001"
+class="search-passage"><span class="orig-page" data-page="1" id="page-1" aria-hidden="true"></span>A
+common understanding of logic is that, centrally, it is about
+<em>validity</em>. A recent proponent of this view is Graham Priest
+(2016: 8). Ole Thomassen Hjortland defends a similar view: ‘a logical
+theory should be about validity, consistency, formality, truth
+preservation, provability, among other things’ (2017: 641), which sounds
+somewhat broader, but in practice his discussion too gives pride of
+place to validity. Indeed, when one opens an elementary textbook of
+logic, one expects it to start with a rough explanation of the
+difference between valid and invalid arguments. Occasionally, a textbook
+starts with consistency rather than validity, but since each is
+definable in terms of the other, that makes little difference (Hodges
+1977: 13).</span></p>
+<p><span id="passage-is-logic-about-validity-00002"
+class="search-passage">When logicians study arguments, they normally
+treat them as linguistic constructs. Their premises and conclusions are
+sentences of a natural or formal language. Thus, the study of validity,
+consistency, and provability is a metalinguistic pursuit. If that is
+what logic is, all logic is metalogic. Conversely, since metalogic is
+part of logic, all metalogic is logic. On this view, logic and metalogic
+are identical; the ‘meta’ is redundant.</span></p>
+<p><span id="passage-is-logic-about-validity-00003"
+class="search-passage">Such a view seems simplistic once one looks at
+logic as a discipline. It has its own academic journals and conferences,
+though very few of its own university departments: one might describe
+the discipline as semi-institutionalized. There are still some
+departments labelled ‘Logic and Philosophy of Science’, a legacy of
+logical positivism, though contemporary logic and contemporary
+philosophy of science are only tenuously linked. The articles in logic
+journals are mostly by authors in departments of mathematics or computer
+science or—less often—philosophy. Unsurprisingly, logic as a discipline
+is too diverse in its concerns for any monistic account of what it is
+about to be adequate.</span></p>
+<p><span id="passage-is-logic-about-validity-00004"
+class="search-passage">For example, much of logic is <em>mathematical
+logic</em>, of which the four most salient branches are model theory,
+proof theory, set theory, and computability theory. Obviously, theorems
+are proved in all four of these branches, and the proofs need to be
+valid arguments, but that no more makes those branches <em>about</em>
+validity than it does any other branch of mathematics. When one studies
+recursive functions in computability theory, one is not primarily
+studying validity, or even provability. Model theory can reasonably be
+described as about validity, given the dominant model-theoretic account
+of validity (logical or semantic consequence) as truth-preservation in
+all models, but proof theory is not about validity in that sense. Some
+results in set theory are model-theoretic: for instance, the
+independence of the Continuum Hypothesis from first-order
+Zermelo-Fraenkel set theory with the Axiom of Choice. But set-theorists
+trying to prove or refute a conjecture within their favoured set
+<span class="orig-page" data-page="2" id="page-2" aria-hidden="true"></span>theory
+may be primarily interested in the structure of the hierarchy of sets,
+not in validity. Neither set theory nor computability theory is happily
+described as a branch of metalogic. To insist that such activities are
+not ‘genuine logic’ would be a pointlessly tendentious use of the term
+‘logic’.</span></p>
+<p><span id="passage-is-logic-about-validity-00005"
+class="search-passage">Someone might concede that not all mathematical
+logic is metalogic, but still hold that the most philosophically
+interesting part of logic is metalogic, and perhaps specifically the
+study of validity. This chapter concerns a philosophically more
+fundamental kind of logical inquiry, which is not metalogic. It is best
+understood as abstract metaphysics.</span></p>
+<p><span id="passage-is-logic-about-validity-00006"
+class="search-passage">Section 1 explains how the idea of logic as
+metaphysics is a natural upshot of Tarski’s famous account of logical
+consequence and logical truth, when we respect the mundane distinction
+between mentioning symbols and simply using them. Section 2 explains why
+the natural methodology for logic as metaphysics is an
+<em>abductive</em> one, like that familiar from theorizing in natural
+science. It shows how confusion between logic and metalogic has caused
+misunderstanding of methodological issues, particularly about the role
+of logical <em>strength</em> in evaluating logics.</span></p>
+<section id="logic-metalogic-and-logical-truth"
+class="unnumbered keep-block" data-keep-lines="13">
+<h1 class="unnumbered">1. Logic, Metalogic, and Logical Truth</h1>
+<p><span id="passage-is-logic-about-validity-00007"
+class="search-passage">A simple logical truth is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\, x = x</annotation></semantics></math>,
+a formula of first-order logic with identity. The claim
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\, x = x</annotation></semantics></math>
+is a logical truth’ is a metalogical truth, but the formula itself is
+not a distinctively <em>metalogical</em> truth, since it belongs to the
+object-language and contains no distinctively metalinguistic vocabulary.
+By contrast, if we prefix it with the metalogical symbol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+for logical truth, we get the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\vDash \forall x\, x = x</annotation></semantics></math>,
+which belongs to the formal metalanguage, not to the
+object-language.</span></p>
+</section>
+<p><span id="passage-is-logic-about-validity-00008"
+class="search-passage">In English, we can roughly paraphrase
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\, x = x</annotation></semantics></math>
+as ‘Everything is self-identical’. To interpret it fully, we must
+clarify how widely the quantifier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x</annotation></semantics></math>
+or ‘everything’ is ranging. For present purposes, we may stipulate that,
+by default, quantifiers are to be read as completely unrestricted, and
+so as ranging over absolutely everything (see Williamson <a class="crossref-link" href="../../works/everything/index.html">2003</a> for a
+defence of absolute generality, and Rayo and Uzquiano 2006 for an
+introduction to the debate on it). Thus the formula says, without
+restriction: everything is self-identical.</span></p>
+<p><span id="passage-is-logic-about-validity-00009"
+class="search-passage">Neither the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\, x = x</annotation></semantics></math>
+nor the English sentence ‘Everything is self-identical’ is in any way
+meta-linguistic. The constituents of each are non-metalinguistic and
+occur in many entirely non-metalinguistic sentences, nor do those
+familiar ways of composing them import any metalinguistic element. That
+much is just a routine application of the standard distinction between
+use and mention. Of course, by a standard disquotational principle for
+truth, the non-metalinguistic statement ‘Everything is self-identical’
+is equivalent (given the semantics of English) to the metalinguistic
+statement ‘“Everything is self-identical” is true’, just as the
+non-metalinguistic statement ‘There are mountains in Scotland’ is
+equivalent (given the semantics of English) to the metalinguistic
+statement ‘“There are mountains in Scotland” is true’.</span></p>
+<p><span id="passage-is-logic-about-validity-00010"
+class="search-passage">To say ‘“Everything is self-identical” is true’
+is not yet to say ‘“Everything is self-identical” is logically true’.
+After all, someone who accepts the truth of ‘Everything is
+self-<span class="orig-page" data-page="3" id="page-3" aria-hidden="true"></span>identical’
+might still wonder whether it is a <em>logical</em> truth, perhaps
+because they wonder whether identity is a matter of pure logic. However,
+identity has all the structural hallmarks typical of the standard
+logical constants, such as invariance under permutations of individuals,
+so for present purposes we can continue to treat it as one, and to
+assume that ‘Everything is self-identical’ or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\, x = x</annotation></semantics></math>
+is indeed a logical truth.</span></p>
+<p><span id="passage-is-logic-about-validity-00011"
+class="search-passage">Logic tells us that everything is self-identical.
+Someone might object that we don’t need logic to tell us that, since it
+is obvious anyway. But that just reflects my choice of a very simple
+example; there is no end of ever more complex logical truths. Anyway, no
+logical truth is too simple to be denied by a sufficiently perverse
+metaphysician. An analytic philosopher once illustrated his difficulties
+in engaging fruitfully with his non-analytic colleagues, the majority in
+his department, by telling me that they all took it for granted that
+<em>nothing</em> is self-identical. At a guess, they thought that
+everything changes, and that no changing thing is self-identical, in
+effect because they committed the usual fallacy in applying Leibniz’s
+law (the indiscernibility of identicals) to change over time and so
+reached the conclusion that it is inconsistent with numerical identity,
+although they would probably not have put it that way (the fallacy is
+diagnosed in Wiggins 1980). They did not mean something different from
+the rest of us by ‘identical’. They were just not very good at logic.
+The logical message ‘Everything is self-identical’ really is news to
+some. It matters in metaphysics, even though getting it right does not
+take us far, for getting it <em>wrong</em> takes us so far
+astray.</span></p>
+<p><span id="passage-is-logic-about-validity-00012"
+class="search-passage">To generalize the point, Tarski’s seminal account
+of logical consequence provides a convenient starting-point (Tarski
+1936). It is often treated as the origin of the contemporary
+model-theoretic account, on which a conclusion
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is a logical consequence of a set of premises
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+(in other words, the argument from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is valid) if and only if every model of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+is a model of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+The premises and conclusion are formulas of a given language. A model in
+the modern sense is a set-theoretic structure with a set domain over
+which the non-logical constants (atomic predicates and names) of the
+language are assigned extensions, and over which the quantifiers are
+interpreted as ranging. By recursive compositional clauses, the model
+determines a truth-value (truth or falsity) for each formula of the
+language (relative to an assignment of values over the domain to all
+variables). A model is a model <em>of</em> a formula just in case the
+formula is true in the model, and it is a model of a set formulas just
+in case it is a model of each formula in the set. Thus logical
+consequence is truth-preservation across all models.</span></p>
+<p><span id="passage-is-logic-about-validity-00013"
+class="search-passage">Tarski was one of the founders of model theory as
+a branch of modern logic, and more specifically as a branch of modern
+metalogic. However, his original 1936 account of logical consequence
+differs significantly from the contemporary model-theoretic account. His
+1936 models are not set-theoretic structures but simply assignments of
+values of appropriate types to all variables. There is no domain.
+Instead, the quantifiers are mandatorily interpreted as ranging
+unrestrictedly over the appropriate type, in the spirit of a simplified
+version of Russell and Whitehead’s type theory in <em>Principia
+Mathematica</em>. In particular, the first-order quantifiers range over
+absolutely every individual. The omission of domains was no oversight or
+popularizing short-cut of Tarski’s; he took careful account of it in his
+mathematical practice for some years subsequently (Mancosu
+2006).</span></p>
+<p><span id="passage-is-logic-about-validity-00014"
+class="search-passage"><span class="orig-page" data-page="4" id="page-4" aria-hidden="true"></span>To
+determine whether a conclusion is a logical consequence of a set of
+premises, Tarski proceeded in 1936 like this. First, all non-logical
+atomic constants are replaced in all formulas of the language by new
+variables, replacing occurrences of the same constant by the same
+variable and occurrences of different constants by different variables.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Γ</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\mathrm{\Gamma}^{\prime}</annotation></semantics></math>
+result from applying this substitution to a formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+and a set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+of formulas respectively. Assignments of values to variables assign
+values to the new variables too. Thus, each assignment determines a
+truth-value for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+and each member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Γ</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\mathrm{\Gamma}^{\prime}</annotation></semantics></math>,
+since the only constants in them are logical ones, which are interpreted
+standardly. An assignment
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mi>a</mi><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{a}</annotation></semantics></math>
+is a <em>1936-model</em> of a formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+is true under
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mi>a</mi><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{a}</annotation></semantics></math>;
+likewise,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mi>a</mi><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{a}</annotation></semantics></math>
+is a 1936-model of a set of formulas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+if and only if every member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Γ</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\mathrm{\Gamma}^{\prime}</annotation></semantics></math>
+is true under
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mi>a</mi><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{a}</annotation></semantics></math>.
+One then stipulates that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is a logical consequence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+if and only if every 1936-model of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+is a 1936-model of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+Logical consequence is truth-preservation across all 1936-models, as on
+the modern model-theoretic account, but with domain-free models. As a
+special case, one stipulates that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is a logical truth if and only if it is a logical consequence of the
+empty set of formulas, in other words, if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+is true under every assignment (since every assignment is vacuously a
+model of the empty set).</span></p>
+<p><span id="passage-is-logic-about-validity-00015"
+class="search-passage">Tarski’s 1936 account, like the modern
+model-theoretic one, makes logical consequence and logical truth
+independent of the intended interpretations of the non-logical
+constants, since those constants are replaced by variables; only their
+logical type is retained. It makes logical consequence and logical truth
+purely <em>formal</em> matters, where ‘form’ abstracts from all
+non-logical aspects of meaning.</span></p>
+<p><span id="passage-is-logic-about-validity-00016"
+class="search-passage">In 1936, Tarski explicitly refrains from
+providing a criterion for distinguishing between logical and non-logical
+constants. He leaves it open whether there is an objectively correct
+criterion, or whether instead the line has to be drawn <em>ad hoc</em>,
+perhaps in different places on different occasions, for pragmatic
+reasons. In much later work, he proposed a unique criterion: an
+expression is a logical constant just in case its extension remains
+constant under all permutations of individuals (Tarski 1986). The
+identity sign ‘=’ is a logical constant by that criterion, as are the
+usual truth-functors and quantifiers.</span></p>
+<p><span id="passage-is-logic-about-validity-00017"
+class="search-passage">A revealing special case for Tarski’s account is
+where the argument from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+contains no non-logical constants and no free variables. Thus the
+replacement operation makes no difference;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Γ</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\mathrm{\Gamma}^{\prime}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+are just
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+Since they contain no free variables, varying the assignment leaves the
+truth-values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+and the sentences in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+fixed, so the generality over 1936-models in characterizing logical
+consequence becomes redundant. The upshot, as Tarski noted in 1936, is
+that in this special case
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is a logical consequence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+unless
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is false and every member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+true. In particular, when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+is empty,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is logically true if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is true. For example, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\, x = x</annotation></semantics></math>
+is a closed sentence with no non-logical constants, it is logically true
+because it is plain true.</span></p>
+<p><span id="passage-is-logic-about-validity-00018"
+class="search-passage">A more striking example is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists x\,\exists y\, x \ne y</annotation></semantics></math>,
+another closed sentence with no non-logical constants, which says in
+effect that there are at least two things. It too is plain true, for
+there are indeed at least two things—for instance, Warsaw and
+Berkeley—so it too is logically true, on Tarski’s 1936 account. In this
+respect, it contrasts sharply with a contemporary model-theoretic
+account, on which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists x\,\exists y\, x \ne y</annotation></semantics></math>
+is not logically true, since it is false in any model with a
+one-membered domain.</span></p>
+<p><span id="passage-is-logic-about-validity-00019"
+class="search-passage"><span class="orig-page" data-page="5" id="page-5" aria-hidden="true"></span>Many
+philosophers of logic regard the contrast as a major advantage of the
+contemporary model-theoretic account over Tarski’s 1936 account. Some
+would argue that logical truths are metaphysically necessary, whereas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists x\,\exists y\, x \ne y</annotation></semantics></math>
+is metaphysically contingent. Others would argue that logical truths
+that knowable <em>a priori</em>, whereas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists x\,\exists y\, x \ne y</annotation></semantics></math>
+is not knowable <em>a priori</em>. Still others would argue that logical
+truths are non-substantive, whereas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists x\,\exists y\, x \ne y</annotation></semantics></math>
+is substantive.</span></p>
+<p><span id="passage-is-logic-about-validity-00020"
+class="search-passage">Those objections are problematic for specific
+reasons: if elementary set theory is metaphysically necessary, it is
+metaphysically necessary that there are at least two individuals
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{\}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{\{\}\}</annotation></semantics></math>);
+if elementary set theory is knowable <em>a priori</em>, it is knowable
+<em>a priori</em> that there are at least two individuals; what counts
+as a substantive truth is utterly obscure. But the objections are also
+problematic for a more general reason: where are the alleged constraints
+on logical truth supposed to come from?</span></p>
+<p><span id="passage-is-logic-about-validity-00021"
+class="search-passage">Philosophers of logic sometimes judge accounts of
+logical consequence as if by their fit with a pre-theoretic folk
+conception of logical consequence. But why think the folk have any such
+pre-theoretic conception? They may indeed have some pre-theoretic
+conception of <em>good reasoning</em> or <em>inconsistency</em>; that
+conception will presumably count arguing from ‘This is scarlet’ to ‘This
+is red’ as good reasoning, and accepting ‘This is scarlet’ while denying
+‘This is red’ as inconsistent. But, it is generally agreed, the argument
+from ‘This is scarlet’ to ‘This is red’ is not <em>logically</em> valid,
+although it may be valid in some looser, non-logical sense, and
+accepting ‘This is scarlet’ while denying ‘This is red’ is not
+<em>logically</em> inconsistent, although again it may be inconsistent
+in some looser, non-logical sense. For logical connections are supposed
+to be <em>formal</em>, while the connection between ‘This is scarlet’
+and ‘This is red’ is not formal; it depends on the specific meanings of
+the non-logical words ‘scarlet’ and ‘red’. The folk had no pre-theoretic
+need of any standard of consequence higher than those looser, non-formal
+ones. Thus there is unlikely to be any pre-theoretic folk conception of
+specifically <em>logical</em> consequence.</span></p>
+<div class="keep-block" data-keep-lines="9">
+<p><span id="passage-is-logic-about-validity-00022"
+class="search-passage">Admittedly, Tarski himself opens his discussion
+thus (1936: 409):</span></p>
+<blockquote>
+<p><span id="passage-is-logic-about-validity-00023"
+class="search-passage">The concept of <em>logical consequence</em> is
+one of those whose introduction into the field of strict formal
+investigation was not a matter of arbitrary decision on the part of this
+or that investigator; in defining this concept, efforts were made to
+adhere to the common usage of the language of everyday life.</span></p>
+</blockquote>
+</div>
+<div class="keep-block" data-keep-lines="9">
+<p><span id="passage-is-logic-about-validity-00024"
+class="search-passage">But he then notes the unclarity of ordinary
+language and warns (ibid.):</span></p>
+<blockquote>
+<p><span id="passage-is-logic-about-validity-00025"
+class="search-passage">Any attempt to bring into harmony all possible
+vague, sometimes contradictory, tendencies which are connected with the
+use of this concept, is certainly doomed to failure. We must reconcile
+ourselves from the start to the fact that every precise definition of
+this concept will show arbitrary features to a greater or less
+degree.</span></p>
+</blockquote>
+</div>
+<p><span id="passage-is-logic-about-validity-00026"
+class="search-passage">In the paper, Tarski argues for his preferred
+account against then-prevalent alternatives on technical, structural
+grounds, such as mathematical cases where logical consequence is clearly
+non-compact (a conclusion is a logical consequence of an infinite set of
+premises but of no finite subset of it), and the need for logical
+consequence to be robust with respect to accidental limitations in the
+expressive power of the language (it should conservative with respect to
+extensions of the language, so an argument in the old vocabulary is
+valid in the old language if and only if it is valid in the new
+language). He invokes no theoretically loaded
+<span class="orig-page" data-page="6" id="page-6" aria-hidden="true"></span>metaphysical
+or epistemological constraint on logical consequence, and would surely
+have disapproved of doing so.</span></p>
+<p><span id="passage-is-logic-about-validity-00027"
+class="search-passage">Probably, philosophers’ expectations of logical
+consequence derive from traditional paradigms of logical reasoning, and
+so reflect older images of logic. But what authority have those older
+images? Logic has made more progress in the past century than in all of
+previous history. Like any other science, it is entitled to draw and
+study whatever distinctions it finds theoretically fruitful.</span></p>
+<p><span id="passage-is-logic-about-validity-00028"
+class="search-passage">Of course, the flourishing contemporary
+sub-discipline of model theory is mainly about models with domains, so
+the later model-theoretic account of logical consequence has itself
+proved to be extremely theoretically fruitful—not least through Tarski’s
+own contributions—and is clearly legitimate in its own right. That is
+not in question. Its emergence too had far more to do with mathematical
+naturalness than with any metaphysical or epistemological constraints.
+From a Tarskian perspective, the absence of theoretically motivated
+philosophical accretions from both the 1936 account and the later one is
+a positive advantage, yielding clean, spare, precise definitions of just
+the sort conducive to rigorous proofs of metalogical results. Which of
+them better deserves the title of ‘logical consequence’ is a question
+not worth disputing.</span></p>
+<p><span id="passage-is-logic-about-validity-00029"
+class="search-passage">Tarski’s 1936 account has its own distinctive
+interest. Indeed, its domain-free approach makes it even more
+attractively austere and simple than the later version. We can bring out
+its significance by focusing on the special case of logical
+truth.</span></p>
+<p><span id="passage-is-logic-about-validity-00030"
+class="search-passage">Recall that, on the 1936 account, a formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is a logical truth, true in all 1936-models, if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+(the result of substituting variables for non-logical constants in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>)
+is true on all assignments of appropriately typed values to variables.
+But that generality over assignments can be captured in the
+object-language, if it has universal quantifiers for all types for which
+the language has variables. We can add universal quantifiers for those
+types if the original language does not already have them. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+be the closed sentence which results from prefixing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+with unrestricted universal quantifiers for all its free variables (in
+some specified order). Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+is true if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+is true on all assignments. In other words,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is <em>logically</em> true if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+is plain true: roughly, the logical truth of a formula is the truth of
+its universal generalization. But since the truth predicate behaves
+disquotationally, an ascription of truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+is equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+itself. Thus an ascription of logical truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is also equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>,
+which is just a universal generalization in the (possibly expanded)
+object-language.</span></p>
+<p><span id="passage-is-logic-about-validity-00031"
+class="search-passage">Typically, the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+contains no metalinguistic expressions, except in the unusual case where
+the original formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+contained some metalinguistic device (such as quotation marks or a
+truth-predicate) which is being treated as a logical constant. Normally,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+will not contain the kind of vocabulary capable of generating semantic
+paradoxes such as the Liar, and so will not be vulnerable to associated
+doubts about the disquotational equivalence of the sentence
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+is true’ to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+itself.</span></p>
+<p><span id="passage-is-logic-about-validity-00032"
+class="search-passage">To appreciate what is going on, an example will
+help. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+be an instance of excluded middle,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∨</mo><mo>¬</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \vee \neg A</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is a sentence letter, a non-logical constant. Disjunction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>∨</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\vee )</annotation></semantics></math>
+and negation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\neg )</annotation></semantics></math>
+are treated as logical constants. Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">P \vee \neg P</annotation></semantics></math>,
+where
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>’
+is a sentential variable, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall P\,(P \vee \neg P)</annotation></semantics></math>,
+a fully general statement of the <em>law</em> of
+<span class="orig-page" data-page="7" id="page-7" aria-hidden="true"></span>excluded
+middle, in the original object-language or an expansion thereof. We can
+paraphrase it as ‘Every state of affairs either obtains or does not
+obtain’. In one key respect, that paraphrase is misleading, for it
+suggests first-order quantification—quantification into <em>name</em>
+position—over special objects, states of affairs, a singular term for
+which combines with the monadic predicate ‘obtains’ to form a
+sentence—whereas the quantifier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">\forall P</annotation></semantics></math>
+binds a variable already in <em>sentence</em> position. English and
+other natural languages may lack the resources for a more accurate
+paraphrase, but that does not make the formula unintelligible on its
+intended reading, for we can get the hang of such locutions by the
+direct method of language learning (Williamson <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>: 235-40). More
+generally, such comments apply to attempts to paraphrase type-theoretic
+semantics in a natural language, and in particular to the required gloss
+that the quantification is over all entities of the relevant type, not
+just to those that happen to be expressible in the language.
+Quantification into sentence position or any other non-nominal position
+is not substitutional quantification; it is no more substitutional or
+somehow metalinguistic than quantification into name position. In
+particular, the law of excluded middle,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall P\,(P \vee \neg P)</annotation></semantics></math>,
+is just a very general structural law about the mostly non-linguistic
+world—a basic law of both logic and metaphysics, whatever Tarski would
+have said.</span></p>
+<p><span id="passage-is-logic-about-validity-00033"
+class="search-passage">Unifying excluded middle as one universal
+generalization, rather than distributing it through all the instances of
+a schema, also grants it a negation,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \forall P\,(P \vee \neg P)</annotation></semantics></math>.
+By contrast, negating the schema
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∨</mo><mo>¬</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha \vee \neg \alpha</annotation></semantics></math>
+just yields the negative schema
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>∨</mo><mo>¬</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg (\alpha \vee \neg \alpha )</annotation></semantics></math>,
+which has as instances the negations of <em>all</em> instances of
+excluded middle, whereas anti-classical logicians who reject the law
+only argue that it is not always right, not that it is always wrong.
+This is especially significant for intuitionistic logicians, who deny
+the law of excluded middle but cannot deny any instance of it on pain of
+contradiction, since the schema
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>¬</mo><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>∨</mo><mo>¬</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \neg (\alpha \vee \neg \alpha )</annotation></semantics></math>
+is intuitionistically valid. Their position is in effect to assert
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \forall P\,(P \vee \neg P)</annotation></semantics></math>,
+with the intuitionistically compelling argument that we could never have
+a proof of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall P\,(P \vee \neg P)</annotation></semantics></math>,
+since such a proof would provide a decision procedure for all yes/no
+questions, which is absurd. That is consistent in intuitionistic logic,
+even though
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>P</mi><mspace width="0.167em"></mspace><mo>¬</mo><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists P\,\neg (P \vee \neg P)</annotation></semantics></math>
+is inconsistent, for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \forall P\,(P \vee \neg P)</annotation></semantics></math>
+does not imply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>P</mi><mspace width="0.167em"></mspace><mo>¬</mo><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists P\,\neg (P \vee \neg P)</annotation></semantics></math>.
+The intuitionistic failure of excluded middle consists in a failure of
+generality, not a counterexample. As a classical logician, I reject that
+approach root and branch, but I do not find intuitionists’ denial of
+excluded middle <em>unintelligible</em>. They should be allowed the
+linguistic resources to express their erroneous view. Of course, some
+logicians regard the dispute between classical and intuitionistic
+logicians as merely verbal, on the grounds that the two schools use the
+logical constants with different senses, but many self-described
+intuitionists have meant their critique of classical logic more
+seriously than that, and have genuinely denied the law of excluded
+middle on the very reading on which classical logicians assert it; those
+are the intuitionists I have in mind (for more discussion see Williamson
+<a class="crossref-link" href="../../works/accepting-a-logic-accepting-a-theory/index.html">2023</a>).</span></p>
+<p><span id="passage-is-logic-about-validity-00034"
+class="search-passage">To return to the main thread of argument, here is
+an example from first-order logic. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+be the classical logical truth
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>x</mi><mo>→</mo><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(Fx \to \forall y\,Fy)</annotation></semantics></math>,
+where
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>’
+is a non-logical monadic predicate constant. Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>α</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha ^{\prime}</annotation></semantics></math>
+is the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>y</mi><mo>→</mo><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>X</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(Xy \to \forall y\,Xy)</annotation></semantics></math>,
+where
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>’
+is a monadic predicate variable, and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>→</mo><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>X</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall X\,\exists x\,(Xx \to \forall y\,Xy)</annotation></semantics></math>,
+a fully general statement of the law, in the original object-language or
+an expansion thereof. We can paraphrase it as ‘For every property, there
+is something which has it only if everything has it’. In one key
+respect, that
+<span class="orig-page" data-page="8" id="page-8" aria-hidden="true"></span>paraphrase
+too is misleading, for it suggests first-order quantification—that is,
+quantification into <em>name</em> position—over special objects,
+properties, a singular term for which combines with another singular
+term and the dyadic predicate ‘has’ to form a sentence—whereas the
+quantifier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\forall X</annotation></semantics></math>
+binds a variable already in <em>monadic predicate</em> position. Exactly
+analogous comments to those already made about the understanding of
+quantification into sentence position apply to the understanding of
+quantification into predicate position;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>→</mo><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>X</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall X\,\exists x\,(Xx \to \forall y\,Xy)</annotation></semantics></math>
+is another very general structural law about the mostly non-linguistic
+world—another law of both logic and metaphysics.</span></p>
+<p><span id="passage-is-logic-about-validity-00035"
+class="search-passage">These examples also illustrate how the need to
+make the generality of our results explicit leads us naturally beyond
+first-order logic to higher-order logic. Wherever the object-language
+has non-logical constants of a given type, in following Tarski we
+replace them by variables of the same type, and quantifying those
+variables in the object-language captures the very same generality he
+captures in the metalanguage when he defines logical truth and logical
+consequence. From this perspective, first-order logic looks
+theoretically unstable, because it cannot capture the generality
+implicit in its treatment of non-logical predicate constants.</span></p>
+<p><span id="passage-is-logic-about-validity-00036"
+class="search-passage">What does this whole approach imply about cases
+of logical consequence with a <em>non-</em>empty set of premises. In
+classical logic,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is a logical consequence of the set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>∧</mi><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">(\wedge \mathrm{\Gamma}) \to \mathrm{\alpha}</annotation></semantics></math>
+is logically true, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>∧</mi><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\wedge \mathrm{\Gamma}</annotation></semantics></math>
+is the conjunction of all members of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+(in a specified order), which holds if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>∧</mi><msup><mi mathvariant="normal">Γ</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>→</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall ((\wedge \mathrm{\Gamma}^{\prime}) \to \alpha ^{\prime})</annotation></semantics></math>
+is plain true, so in that way the account generalizes. If the premise
+set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+is infinite, we must add an infinitary conjunction operator to the
+language. Since an infinite conjunction may contain infinitely many
+variables, we must also allow a universal quantifier to bind infinitely
+many variables (if such devices are not already available in the
+language). This role for infinitary formulas is unsurprising, since it
+arises only for arguments that already have infinitely many
+premises.</span></p>
+<p><span id="passage-is-logic-about-validity-00037"
+class="search-passage">Admittedly, not all logics provide a conditional
+that bridges between logical consequence and logical truth. Moreover, we
+also care about logical consequence in its own right, irrespective of
+its connection with logical truth. After all, when we <em>apply</em>
+logic—classical or non-classical—to other fields, our primary concern is
+arguments whose premises and conclusion are not logical truths. For
+example, syllogistic logic studies only arguments with multiple
+premises. In logic’s auxiliary role of drawing out deductive
+consequences of hypotheses and theories, what matters is the relation of
+logical consequence. But logic also has another role, in codifying very
+general structural truths about the world; for that purpose what matters
+are the true universal generalizations corresponding to logical truths.
+Their primary significance is in what they tell us about the world, not
+in what they tell us about logical truth or validity; our interest in
+them is no more primarily metalinguistic than is our interest in the
+true sentences of the language of physics.</span></p>
+<p><span id="passage-is-logic-about-validity-00038"
+class="search-passage">Even when our primary interest is in logical
+truths, we may take a strong derivative interest in other cases of
+logical consequence, since we use them to establish logical truths. This
+is clear in a standard system of natural deduction, where the proof of
+any logical truth involves making hypothetical assumptions which are
+later discharged, since that is how the basic introduction and
+elimination rules are designed. The simplest case is the proof of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">α</mi><mo>→</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\alpha} \to \mathrm{\alpha}</annotation></semantics></math>,
+which moves from the trivial sequent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">α</mi><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\alpha} \vDash \mathrm{\alpha}</annotation></semantics></math>
+with the assumption
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+to the sequent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo><mi mathvariant="normal">α</mi><mo>→</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\vDash \mathrm{\alpha} \to \mathrm{\alpha}</annotation></semantics></math>
+by
+<span class="orig-page" data-page="9" id="page-9" aria-hidden="true"></span>a
+step of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>-introduction
+(conditional proof). Proof-theoretically, logical truth is just a
+by-product of logical consequence, even though, metaphysically, logical
+consequence is just a means to the end of logical truth.</span></p>
+<p><span id="passage-is-logic-about-validity-00039"
+class="search-passage">Where does this approach to logic as metaphysics
+leave the distinction between logical and non-logical constants,
+presupposed by Tarski’s account? We could simply follow his later line
+of demarcation, equating the logicality of a constant with its
+invariance under all permutations of individuals. That seems as good a
+criterion as any, with the virtues of clarity, naturalness, and
+simplicity. Of course, the symbol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+for logical consequence is neither a logical nor a non-logical constant
+of the object-language, because it is not a symbol of that language at
+all.</span></p>
+<p><span id="passage-is-logic-about-validity-00040"
+class="search-passage">However, once we increase the expressive capacity
+of the language, it becomes much less obvious how to apply Tarski’s
+criterion. For example, we may add the monadic sentence operators
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">□</mi><annotation encoding="application/x-tex">□</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">◇</mi><annotation encoding="application/x-tex">◇</annotation></semantics></math>
+to the object-language. If we leave them uninterpreted, we cannot treat
+them as logical constants, since the truth-value of a formula involving
+them under an assignment is undefined. Once we interpret them, say as
+operators for metaphysical necessity and metaphysical possibility
+respectively, we can treat them as logical constants, although we are
+not obliged to do so. If we do treat them as logical constants, the
+necessitist formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">□ \forall x\,□ \exists y\, x = y</annotation></semantics></math>
+(‘Necessarily everything is necessarily something’) and its
+contingentist negation, equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">◇</mi><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi class="modal-operator">◇</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">◇ \exists x\,◇ \forall y\, x \ne y</annotation></semantics></math>
+(‘Possibly something is possibly nothing’), are both free of non-logical
+constants, so whichever of them is true is logically true, on Tarski’s
+account (see Williamson <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a> for more discussion). They make the
+metaphysical potential of logical truth vivid. But we could also
+interpret
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">□</mi><annotation encoding="application/x-tex">□</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">◇</mi><annotation encoding="application/x-tex">◇</annotation></semantics></math>
+as deontic operators such as ‘obligatorily’ and ‘permissibly’, or as
+temporal operators such as ‘always’ and ‘sometimes’. Once we consider
+the range of possible interpretations from a metaphysical perspective,
+the need for a once-and-for-all criterion of logical constanthood
+evaporates. Which interpretations we hold fixed in evaluating logical
+consequence and logical truth, and which we abstract away from, just
+depends on what we want to study. If we want to study the structure of
+time, we hold the interpretation of temporal operators fixed, thereby
+treating them as logical constants. If instead we want to abstract away
+from the structure of time, we allow the interpretation of temporal
+operators to vary, thereby treating them as non-logical constants. The
+same goes for deontic and alethic modal operators. Thus we can leave the
+line between logical and non-logical constants as a parameter in a
+Tarskian account of logical consequence and logical truth to be filled
+in according to the needs of a given inquiry.</span></p>
+<p><span id="passage-is-logic-about-validity-00041"
+class="search-passage">Of course, some interpreted expressions will
+<em>reward</em> being treated as logical constants more than others do,
+by leading to a more fruitful inquiry, for example by yielding more
+informative general laws. Treating the word ‘British’ as a logical
+constant would not yield interesting results. But effects on the
+fruitfulness of inquiry are a messy, pragmatic matter; nothing is gained
+by trying to build them into the definition of ‘logical’.</span></p>
+<p><span id="passage-is-logic-about-validity-00042"
+class="search-passage">The assessment of such proposed object-language
+universal laws as excluded middle and necessitism is properly one branch
+of logic not only by historical tradition and the intimate connection
+with logical truth. It is fundamental work that has to be done, by
+<em>someone</em>, and philosophical logicians are in practice the people
+with by far the most relevant training, skills, and interests to do
+it.</span></p>
+<section id="abductive-methodology-and-logical-strength"
+class="unnumbered keep-block" data-keep-lines="17">
+<h1
+class="unnumbered"><span class="orig-page" data-page="10" id="page-10" aria-hidden="true"></span>2.
+Abductive Methodology and Logical Strength</h1>
+<p><span id="passage-is-logic-about-validity-00043"
+class="search-passage">Once we have settled on a specific
+object-language and set of logical constants in fixing our inquiry, our
+target theory comprises every universal generalization
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>α</mi><mi>′</mi></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall (\alpha ^{\prime})</annotation></semantics></math>
+corresponding to a logical truth
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+in the object-language. We try to discover which those universal
+generalizations are. We cannot expect them to be self-evident. But we do
+not start from a position of total ignorance. We already have some
+patchy knowledge of our chosen field, else our attempts to theorize it
+would be hopelessly premature. The aim is to systematize and extend, to
+generalize and deepen, what we already know, and to correct the
+mistakes, whatever they are, in what we currently believe. That
+schematic picture fits logic as well as natural science.</span></p>
+</section>
+<p><span id="passage-is-logic-about-validity-00044"
+class="search-passage">The law of excluded middle is an example. With
+reference to any point at issue, one can feel the crude pre-theoretic
+force of ‘It is or it isn’t’. But that hardly settles the question
+whether the law,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall P\,(P \vee \neg P)</annotation></semantics></math>,
+is true—plain true, let alone logically true. All sorts of
+counterexample to the universal generalization have been proposed,
+concerning the open future, vagueness, semantic paradoxes, infinite
+sequences, and so on. In my view, all the alleged counterexamples to the
+law are mistaken, but they are not all <em>trivially</em> or even
+<em>blatantly</em> mistaken. Reasonable people can doubt any proposed
+law of logic. However compelling it sounds on first hearing, they may
+suspect that, although it holds in everyday situations, it fails in less
+familiar but still actual or at least possible ones—or even that its
+appearance of holding in everyday situations is the artefact of some
+glitch in the human cognitive system. If we take such doubts seriously,
+they call for more systematic, rigorous inquiry, to explore and compare
+the results of accepting the law with those of rejecting it in various
+ways.</span></p>
+<div class="keep-block" data-keep-lines="12">
+<p><span id="passage-is-logic-about-validity-00045"
+class="search-passage">Even for logicians who accept all of classical
+propositional logic, assessing quantified claims poses tricky new
+challenges. Consider this formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\varphi}(R)</annotation></semantics></math>,
+which we can paraphrase as ‘<em>R</em> totally orders everything’, in
+other words, ‘<em>R</em> is a total, antisymmetric, transitive relation’
+(where
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>’
+is a non-logical predicate constant):</span></p>
+<div class="centered">
+<p><span id="passage-is-logic-about-validity-00046"
+class="search-passage"><span
+class="math-align-top"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>y</mi><mo>∨</mo><mi>R</mi><mi>y</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow></mrow><mo>∧</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>y</mi><mo>∧</mo><mi>R</mi><mi>y</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mrow></mrow><mo>∧</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>z</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>y</mi><mo>∧</mo><mi>R</mi><mi>y</mi><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi>R</mi><mi>x</mi><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}&amp;\forall x\,\forall y\,(Rxy \vee Ryx)\\ &amp;{}\wedge\forall x\,\forall y\,((Rxy \wedge Ryx) \to x = y)\\ &amp;{}\wedge\forall x\,\forall y\,\forall z\,((Rxy \wedge Ryz) \to Rxz))\end{aligned}</annotation></semantics></math></span></span></p>
+</div>
+</div>
+<p><span id="passage-is-logic-about-validity-00047"
+class="search-passage">If we think of a finite or countably infinite
+domain, we can find, or at least imagine constructing, such a total
+ordering of it, by enumerating its members, which verifies
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\varphi (R)</annotation></semantics></math>
+on one interpretation of ‘<em>R</em>’. We may therefore be tempted to
+conclude that its negation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi mathvariant="normal">φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \mathrm{\varphi}(R)</annotation></semantics></math>
+is no logical truth, and correspondingly that its universal
+generalization
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mo>¬</mo><mi>φ</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall X\,\neg \varphi (X)</annotation></semantics></math>
+is plain false. But that would be too quick. On their present reading,
+the first-order quantifiers in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\varphi (R)</annotation></semantics></math>
+range over absolutely everything. Without some version of an axiom of
+global choice, one cannot show that there is a total ordering of
+absolutely everything (see Friedman 1999 for discussion). Thus the
+attempt to settle the logical status of the first-order formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \varphi (R)</annotation></semantics></math>
+on its unrestricted interpretation quickly takes one into abstract,
+speculative regions.</span></p>
+<p><span id="passage-is-logic-about-validity-00048"
+class="search-passage">The speculative, metaphysical character of the
+inquiry becomes even more marked once we consider modal, deontic, and
+temporal logic and other extensions of the expressive
+<span class="orig-page" data-page="11" id="page-11" aria-hidden="true"></span>power
+of the language of predicate logic. We already saw how the metaphysical
+dispute between necessitism and contingentism boils down to a comparison
+between two mutually contradictory sentences, each of which is logically
+true if true at all. At the level of propositional modal logic, one
+currently disputed issue is whether the S5 axiom
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">◇</mi><mi>A</mi><mo>→</mo><mi class="modal-operator">□</mi><mi class="modal-operator">◇</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">◇ A \to □ ◇ A</annotation></semantics></math>
+is universally true on the metaphysical reading of the modal operators,
+that is, whether the universal generalization
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi class="modal-operator">◇</mi><mi>P</mi><mo>→</mo><mi class="modal-operator">□</mi><mi class="modal-operator">◇</mi><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall P\,(◇ P \to □ ◇ P)</annotation></semantics></math>
+is plain true on that reading: is every metaphysical possibility
+metaphysically necessarily metaphysically possible? (For related
+discussion see Bacon 2018.)</span></p>
+<p><span id="passage-is-logic-about-validity-00049"
+class="search-passage">Just as in the natural sciences, <em>ad hoc</em>
+answers to such theoretical questions are unsatisfying. As far as we
+can, we want to answer them on the basis of general principles. We
+prefer logical theories that are not only consistent with our
+evidence—with what we already know—but answer many of our questions, so
+the more informative they are the better, and we prefer them to do so in
+ways which are not <em>ad hoc</em>, so the less gerrymandered they are
+the better. To use a standard formulation, we want the optimal
+combination of <em>strength</em> and <em>simplicity</em>, where strength
+corresponds to informativeness, and simplicity to avoidance of
+gerrymandering.</span></p>
+<p><span id="passage-is-logic-about-validity-00050"
+class="search-passage">The criterion of simplicity raises notoriously
+tricky issues in the philosophy of science, and the same problems are no
+easier to solve in the philosophy of logic. A robust definition of
+‘simpler’ is elusive, but without some such criterion one is hard
+pressed to explain exactly what is wrong with even the most outrageously
+<em>ad hoc</em> hypotheses. By contrast, the criterion of strength looks
+more tractable, especially as applied to precisely characterized logical
+theories, since logicians already describe some logics as stronger than
+others in a precise sense. However, the relevance of strength to logical
+theorizing has been called into questions. Disentangling the issues
+reveals some of the methodological harm done by equating logical
+theories with metalogical theories of validity. That will be the main
+task for the rest of this chapter.</span></p>
+<p><span id="passage-is-logic-about-validity-00051"
+class="search-passage">Logics are routinely compared for ‘strength’.
+Textbooks and articles often include diagrams to map the logics in play
+by comparative strength. This is straightforward in areas such as modal
+logic, where a logic is usually identified with the set of its
+theorems—its logical truths. Then a logic
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_1</annotation></semantics></math>
+is said to be <em>at least as strong as</em> a logic
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_2</annotation></semantics></math>
+if and only every theorem of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_2</annotation></semantics></math>
+is a theorem of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_1</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><mo>⊆</mo><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\mathrm{L}_2\subseteq \mathrm{L}_1</annotation></semantics></math>);
+‘at least as strong as’ expresses a reflexive partial ordering of
+logics.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_1</annotation></semantics></math>
+is said to be <em>stronger than</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_2</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_1</annotation></semantics></math>
+is at least as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_2</annotation></semantics></math>
+is not at least as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{L}_1</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><mo>⊂</mo><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\mathrm{L}_2\subset \mathrm{L}_1</annotation></semantics></math>);
+‘stronger than’ expresses a strict partial ordering of
+logics.</span></p>
+<p><span id="passage-is-logic-about-validity-00052"
+class="search-passage">So defined, logical strength is intended as a way
+of ordering logics in the <em>same</em> object-language. To compare
+logical theories in different object-languages, without prejudging any
+semantic relations between them, one must fall back on a standard of
+<em>relative interpretability</em> in some sense. One might also use
+such a standard to compare logical theories in the same language if one
+wanted not to prejudge semantic relations between syntactically the same
+symbol as used in one theory and as used in another. Interpretability
+strength is a much coarser standard than logical strength, since the
+interpretations (despite often being called ‘translations’) are not
+required to preserve meaning. In the present setting, logical strength
+is more appropriate, because we are treating the object-language as
+already interpreted—we theorize about the world in it.</span></p>
+<p><span id="passage-is-logic-about-validity-00053"
+class="search-passage"><span class="orig-page" data-page="12" id="page-12" aria-hidden="true"></span>If
+a logic is equated with the extension of ‘logical consequence’ rather
+than that of ‘logical truth’, the subset relations defining ‘at least as
+strong as’ and ‘stronger than’ can be read accordingly. This makes no
+difference to the ordering for logics with the bridging equivalence
+between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash \alpha</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo><mo stretchy="false" form="prefix">(</mo><mi>∧</mi><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\vDash (\wedge \mathrm{\Gamma}) \to \alpha</annotation></semantics></math>
+(for compact logics, a finite subset of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+will do), since the extension of logical truth already encodes the
+extension of logical consequence, so ordering in terms of logical
+consequence has the same effect as ordering in terms of logical truth.
+But for logics with no such bridging equivalence, ordering in terms of
+logical consequence can make a difference. For instance, some
+non-classical logics have no theorems at all, but still differ from each
+other in their consequence relation: one may be stronger than another in
+logical consequences even though they coincide in logical
+truths.</span></p>
+<p><span id="passage-is-logic-about-validity-00054"
+class="search-passage">Logical strength does not capture all aspects of
+informativeness. For example, recall the comparison between standard
+classical and intuitionistic propositional logic (considered as rival
+theories in the same language). Every intuitionistic theorem is a
+classical theorem but not <em>vice versa</em>, so classical
+propositional logic is logically stronger than intuitionistic
+propositional logic. The result is the same whether we consider logical
+truth or logical consequence, since both logics have the bridging
+equivalence. Now expand the object-language by adding quantification
+into sentence position, governed by appropriate principles. Then the
+classical logic will have the theorem
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall P\,(P \vee \neg P)</annotation></semantics></math>,
+while the intuitionistic logic will have the theorem
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>P</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo>∨</mo><mo>¬</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \forall P\,(P \vee \neg P)</annotation></semantics></math>,
+as explained in section 1. Since both logics are consistent, each has a
+theorem the other lacks, so neither is logically at least as strong as
+the other; they are incommensurable in logical strength. Nevertheless,
+adding quantification into sentence position does very little to
+diminish the difference in strength between the two logics, informally
+understood. The law of excluded middle as a universal generalization is
+far more informative deductively than its negation. As an instrument for
+mathematical reasoning, for instance, classical logic remains much more
+powerful than intuitionistic logic.</span></p>
+<p><span id="passage-is-logic-about-validity-00055"
+class="search-passage">Analogous examples arise in natural science. Let
+SR be Einstein’s theory of special relativity, formulated as a big
+universal generalization. An anti-Einsteinian bluntly asserts
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>
+(‘Einstein is wrong’). Pretheoretically, SR is much more informative
+than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>.
+SR gives a very full, exact account of motion, applicable to all times
+and places. Its negation merely says that SR goes wrong
+<em>somewhere</em>, without specifying where, or when, or how. SR, is a
+paradigm of a theory of physics;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>
+hardly deserves the title of a ‘theory’ at all. Yet SR is logically no
+stronger than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>,
+indeed it does not even count as logically at least as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>,
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>
+is a logical consequence of itself but not of SR. One can summarize the
+comparison by saying that SR is <em>scientifically stronger</em> (more
+informative) than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>,
+but not <em>logically stronger</em>. In general, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>
+is logically stronger than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_2</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>
+is also scientifically stronger than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_2</annotation></semantics></math>
+(since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>
+already says everything that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_2</annotation></semantics></math>
+says), but the converse fails.</span></p>
+<p><span id="passage-is-logic-about-validity-00056"
+class="search-passage">Other things being equal, we prefer
+scientifically stronger theories to scientifically weaker ones—though
+buying a little more strength at the cost of a lot more complexity may
+be a bad bargain. The reason for preferring scientifically stronger
+theories is of course <em>not</em> that they are more probable. On the
+contrary, increasing scientific strength tends to decrease probability.
+In particular, by the standard Kolmogorov axioms of probability, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>
+is logically (and so scientifically) at least as strong as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_2</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>
+is no more probable than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_2</annotation></semantics></math>.
+A better reason for preferring scientifically stronger theories is that
+they answer more of our questions, which is something we want our
+scientific theories <em>for</em>. Moreover, greater scientific strength
+<span class="orig-page" data-page="13" id="page-13" aria-hidden="true"></span>carries
+additional epistemic benefits: it tends to increase explanatory and
+predictive power, and thereby the scope for abductive confirmation or
+inference to the best explanation. But having gained such confirmation
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>,
+we could always increase probability again by watering
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mathrm{T}_1</annotation></semantics></math>
+down to some logically and scientifically weaker disjunction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mo>∨</mo><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathrm{T}_1\vee \mathrm{T}_2</annotation></semantics></math>.
+We avoid such retreats because they deprive us of answers to some of our
+questions. Theory comparison is typically between rival theories of
+similar scientific strength.</span></p>
+<p><span id="passage-is-logic-about-validity-00057"
+class="search-passage">These considerations apply to comparisons between
+rival logical theories too. In their own right, scientifically stronger
+logics answer more of our questions in logic. In their auxiliary role as
+background logics for theories in other fields, they increase the
+scientific strength of those non-logical theories, and enhance their
+explanatory and predictive power, by extracting more relevant
+consequences from them. But stronger logics can also play an explanatory
+role in logic itself, obviously not by providing causal explanations,
+but by subsuming isolated logical observations under illuminating
+generalizations—for example, in the twentieth-century streamlining of
+modal logic.</span></p>
+<p><span id="passage-is-logic-about-validity-00058"
+class="search-passage">One special case deserves mention. In classical
+logic (and many others), an inconsistent theory has all sentences of the
+language as theorems, and so is logically stronger—and therefore
+scientifically stronger too—than any consistent theory. But an
+inconsistent theory is not <em>better</em> than a consistent theory, not
+even by giving (mutually inconsistent) answers to all our questions. One
+can have too much of a good thing; an inconsistent theory is
+<em>too</em> strong. But what is so bad about an inconsistent theory is
+not its maximal scientific strength as such. Rather, what is so bad
+about it is its inconsistency with all our evidence, an inevitable
+consequence of its maximal strength.</span></p>
+<p><span id="passage-is-logic-about-validity-00059"
+class="search-passage">We can test this rough sketch of the place of
+logical and scientific strength in an abductive methodology for theory
+choice in logic against a recent challenge by Gillian Russell (Russell
+2019). She is inclined to agree with me that ‘scientific strength is a
+virtue’ but argues that ‘logical strength does not entail scientific
+strength’ (2019: 557), and more generally that logical strength is not a
+virtue in a logical theory. As one of the main sources for the view she
+is attacking, she repeatedly cites an article of mine (Williamson <a class="crossref-link" href="../../works/semantic-paradoxes-and-abductive-methodology/index.html">2017</a>).
+Identifying her misunderstandings may help to clarify my abductive
+account. That such a perceptive and open-minded philosopher should get
+the view so wrong may indicate how far it runs contrary to
+well-entrenched expectations.</span></p>
+<div class="keep-block" data-keep-lines="13">
+<p><span id="passage-is-logic-about-validity-00060"
+class="search-passage">Russell opens her article by noting ‘renewed
+interest in a broadly abductive approach to the epistemology of logic’
+(Russell 2019: 548, citing Priest 2006, Russell 2014, Hjortland 2017,
+Beall 2017, and Williamson <a class="crossref-link" href="../../works/semantic-paradoxes-and-abductive-methodology/index.html">2017</a>). She writes (ibid.):</span></p>
+<blockquote>
+<p><span id="passage-is-logic-about-validity-00061"
+class="search-passage">The details vary but the central idea is that
+rival logics are different theories of the relation of logical
+consequence, and the best theory is the one which is adequate to the
+data and possesses the most theoretical virtues—perhaps simplicity,
+strength, elegance, unity, symmetry, or ontological parsimony—and least
+theoretical vices—such as ad hockery, inelegance, or ontological
+profligacy.</span></p>
+</blockquote>
+</div>
+<p><span id="passage-is-logic-about-validity-00062"
+class="search-passage">But central to my idea (and explicit in
+Williamson <a class="crossref-link" href="../../works/semantic-paradoxes-and-abductive-methodology/index.html">2017</a>) is that rival logics are <em>not</em> ‘different
+theories of the relation of logical consequence’, for that would make
+them theories of a metalogical subject matter, which is exactly what I
+deny. The symbol for logical consequence,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>,
+belongs to the metalanguage, not to the object-language, whereas the
+logical theories I have been discussing are formulated in the
+object-language itself; their theorems
+<span class="orig-page" data-page="14" id="page-14" aria-hidden="true"></span>are
+its logical truths, in which the symbol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+does not occur. They are theories not of the somewhat esoteric relation
+of logical consequence but of the referents of the logical
+constants—negation, conjunction, disjunction, identity, universality and
+other quantifiers, various modalities, and so on, many of which are
+involved in virtually all serious theorizing (a more accurate but less
+concise statement would respect type distinctions). When universally
+generalized, the theorems state very abstract general patterns in the
+mostly non-linguistic world, not relations between sentences.</span></p>
+<p><span id="passage-is-logic-about-validity-00063"
+class="search-passage">When logicians apply the terminology of
+‘stronger’ and ‘weaker’ to logics conceived as sets of theorems, they
+understand those theorems in the usual way, as formulas of the
+object-language, not as formulas of the metalanguage with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>.
+As a slight generalization, when they conceive a logic as the extension
+of a consequence relation, they in effect treat it as the set of ordered
+pairs
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lt;</mi><mi mathvariant="normal">Γ</mi><mo>,</mo><mi>α</mi><mi>&gt;</mi></mrow><annotation encoding="application/x-tex">\mathord{&lt;}\mathrm{\Gamma}, \alpha \mathord{&gt;}</annotation></semantics></math>
+such that the relation holds between the set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+of object-language formulas and the object-language formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+In both cases, a weaker logic is simply a proper subset of a stronger
+one, in the usual way. By contrast, when Russell defines ‘logical
+strength’ for logics, she gets the intended extension only by the
+Procrustean device of ‘thinking of logics as sets of sentences of the
+form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash A</annotation></semantics></math>’
+(2019: 554). That hardly fits her official view of logics as ‘theories
+of the relation of logical consequence’, for such theories should be
+allowed sometimes to say that a given formula is <em>not</em> a logical
+consequence of a given set of formulas, and to state the introduction
+and elimination rules for a system of natural deduction, which involve
+conditional statements with several different constituent sentences of
+the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash \alpha</annotation></semantics></math>.
+Russell’s need for such an artificial restriction indicates that her
+approach does not really fit the way logicians think of stronger and
+weaker logics.</span></p>
+<div class="keep-block" data-keep-lines="9">
+<p><span id="passage-is-logic-about-validity-00064"
+class="search-passage">Russell’s restriction of logics to sentences of
+the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash A</annotation></semantics></math>
+is also inconsistent with what she says about them elsewhere in the
+paper, for instance (2019: 557):</span></p>
+<blockquote>
+<p><span id="passage-is-logic-about-validity-00065"
+class="search-passage">Modern logic is mathematical, and logics are
+formulated so that they are determinate, in the sense that for any set
+of premises,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>,
+and conclusion, <em>A</em>, in the language on which the logic is
+defined, they say whether or not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash A</annotation></semantics></math>.</span></p>
+</blockquote>
+</div>
+<p><span id="passage-is-logic-about-validity-00066"
+class="search-passage">For if the logic were a theory consisting only of
+metalinguistic sentences of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash A</annotation></semantics></math>,
+it would be consistent with the hypothesis that the relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+is universal, holding between any set of object-language formulas and
+any object-language formula, in which case the logic would <em>not</em>
+say whether or not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash A</annotation></semantics></math>
+in cases where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+did not in fact hold (if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+is not universal, in other words, there is no inconsistency at the level
+of the object-language).</span></p>
+<p><span id="passage-is-logic-about-validity-00067"
+class="search-passage">Incidentally, if a metalogic for standard
+first-order logic were ‘determinate’ in Russell’s sense, it would not
+even be recursively enumerable, and so could not be formally
+axiomatized. For otherwise it would provide a decision procedure for
+first-order logic. To decide whether a formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+of the first-order object-language was a theorem of first-order logic,
+we could simply let the metalogic start enumerating its (metalogical)
+theorems, and wait; since it was determinate, it would sooner or later
+output either
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\vDash \alpha</annotation></semantics></math>
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊭</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\nvDash \alpha</annotation></semantics></math>.
+But first-order logic is undecidable; there is no such decision
+procedure.</span></p>
+<p><span id="passage-is-logic-about-validity-00068"
+class="search-passage">The special case of inconsistency brings out
+another difficulty for Russell’s treatment of logics as metalogical. A
+logic is inconsistent if and only if it has every formula of the
+object-language as a theorem. In the metalanguage, we can easily give a
+complete and
+<span class="orig-page" data-page="15" id="page-15" aria-hidden="true"></span>consistent
+description of the inconsistent logic. But if we identify the logic with
+its complete metalinguistic description in the way Russell does, in
+calling the logic inconsistent we are calling its complete
+metalinguistic description inconsistent, which it is not! One might
+wriggle out of the problem by multiplying senses of ‘inconsistent’, but
+the need for such artificial manoeuvres is another indication that
+something has gone wrong.</span></p>
+<p><span id="passage-is-logic-about-validity-00069"
+class="search-passage">The difference between logics and their
+metalogical descriptions is vivid for the weakest logics as well as the
+strongest ones. Consider the minimal logic Min, treated as a consequence
+relation, in which any set of formulas entails only its own members: for
+all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\mathrm{\Gamma}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>,</mo><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha , \mathrm{\Gamma} \vDash \alpha</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\alpha \in \mathrm{\Gamma}</annotation></semantics></math>.
+Min obeys all the standard structural rules for a consequence relation:
+reflexivity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mi>α</mi><mo stretchy="false" form="postfix">}</mo><mo>⊨</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\{\alpha \} \vDash \alpha )</annotation></semantics></math>,
+monotonicity (if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash \alpha</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊆</mo><mi mathvariant="normal">Δ</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \subseteq \mathrm{\Delta}</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta} \vDash \alpha</annotation></semantics></math>),
+cut (if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash \alpha</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>α</mi><mo stretchy="false" form="postfix">}</mo><mo>⊨</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta} \cup \{\alpha \} \vDash \beta</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>∪</mo><mi mathvariant="normal">Δ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \cup \mathrm{\Delta} \vDash \alpha</annotation></semantics></math>),
+and closure under uniform substitution (if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Gamma} \vDash \alpha</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>s</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">s\mathrm{\Gamma} \vDash s\alpha</annotation></semantics></math>,
+for any uniform substitution
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>).
+Any consequence relation that obeys all those rules includes Min (by
+contrast, the empty relation violates reflexivity). As a logic, Min is
+pitifully weak. It has no theorems (since no formula belongs to the
+empty set), and it prevents one from ever deriving a new conclusion from
+premises. But this metalogical description of Min is just as informative
+as an (accurate) description of any other logic, since it enables one to
+work out exactly what does or doesn’t follow from what in Min. Min is
+scientifically weak as well as logically weak: since it has no theorems,
+it says nothing in its own right about the structure of the world, and
+as an auxiliary logic for other sciences it would be a disaster, since
+it would not enable one to draw any further consequences from given
+hypotheses or theories in those sciences. It is exactly this scientific
+weakness which disqualifies Min as an auxiliary logic for science. Many
+other logics, not as weak as Min but still much weaker than classical
+logic, are similarly far too weak scientifically to serve as the
+background logic for science.</span></p>
+<p><span id="passage-is-logic-about-validity-00070"
+class="search-passage">Russell claims that a whole range of
+propositional logics—including the empty logic, various many-valued
+logics, classical logic, and the inconsistent logic—‘are all equal in
+scientific strength’ (2019: 557). Her basis for this claim is in effect
+that their metalogical descriptions are all equally informative, because
+she conflates the logics with their metalogical descriptions. That basis
+is clearly quite irrelevant to the abductive assessment of those logics
+either as abstract, structural theories of the world or as background
+logics for science. Nor does it support her rejection of my elementary
+point that greater logical strength entails greater scientific strength,
+because she is using the terms in senses quite alien to mine.</span></p>
+<p><span id="passage-is-logic-about-validity-00071"
+class="search-passage">To her credit, Russell is aware that simply to
+treat all logics as equal in scientific strength would be to miss
+something. She therefore labours to explain a new sense in which logics
+are <em>not</em> all equal in scientific strength. However, she denies
+that this new sense will vindicate the role of logical strength in the
+abductive comparison of logics, for on it ‘although logically weaker
+logics are often less scientifically strong than logically stronger
+logics, <em>any</em> of the logics in our set can be
+strengthened—without damage to the logic—to make them as scientifically
+strong as our logically strongest logic’ (2019: 557, her
+italics).</span></p>
+<p><span id="passage-is-logic-about-validity-00072"
+class="search-passage">Russell’s idea is that when a logic classifies an
+argument form as invalid, it does not thereby tell us <em>which</em>
+instances of the argument fail; by contrast, when a logic classifies an
+argument form as valid, it thereby tells us that <em>no</em> instances
+of the argument fail. Since weaker logics classify more argument forms
+as invalid, they tend to be less informative. But the
+<span class="orig-page" data-page="16" id="page-16" aria-hidden="true"></span>weaker
+logics can be supplemented with the missing information as to which
+instances fail, so equality in scientific strength is
+restored.</span></p>
+<p><span id="passage-is-logic-about-validity-00073"
+class="search-passage">The details of Russell’s account are confusing,
+because consequence relations as usually understood involve not argument
+<em>forms</em> but <em>arguments</em> from a specific set of
+object-language sentences to a specific object-language sentence. It is
+correspondingly unclear what she means by ‘instances’. They might be
+interpreted substitution instances of the original argument in a given
+language, but an argument can be invalid even though all its
+substitution instances are truth-preserving, through expressive
+limitations of the language (Tarski 1936). To return to an earlier
+example, there may be complete orderings of everything, even though no
+predicate of any actual language expresses any of them; in that case,
+the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \varphi (R)</annotation></semantics></math>
+is not a logical truth, even though every interpreted substitution
+instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>φ</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg \varphi (R)</annotation></semantics></math>
+is true.</span></p>
+<p><span id="passage-is-logic-about-validity-00074"
+class="search-passage">We need not press these subtle difficulties, for
+Russell’s account faces more blatant problems. She explains that, in
+Tarski’s 1936 account of logical consequence, an argument form fails in
+a given instance with true premises unless the conclusion is also true
+(2019: 561n30). Her account is supposed to apply both to that framework
+and to a broad range of others. In any case, Tarski’s 1936 framework is
+the one relevant to her critique of my abductive account.</span></p>
+<p><span id="passage-is-logic-about-validity-00075"
+class="search-passage">Consider the fallacious argument form of
+<em>affirming the consequent</em> for the simple case of the material
+conditional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo>→</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\to )</annotation></semantics></math>.
+To accept affirming the consequent as valid is to accept the metalogical
+schema or argument form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>α</mi><mo>→</mo><mi>β</mi><mo>,</mo><mi>β</mi><mo stretchy="false" form="postfix">}</mo><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\{\alpha \to \beta , \beta \} \vDash \alpha</annotation></semantics></math>.
+In a given instance, affirming the consequent fails if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>→</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha \to \beta</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+are both true and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is false. Since the truth of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+implies the truth of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>→</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha \to \beta</annotation></semantics></math>,
+that means that affirming the consequent fails in any instance where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is false and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+true. The same applies to the even more crassly invalid argument form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\beta \vDash \alpha</annotation></semantics></math>.
+Thus to identify all the instances in a given language where invalid
+argument forms fail, one must be able to identify all the true sentences
+of the language as true, and all the false sentences as false: in
+effect, one must be more or less omniscient. The result generalizes to
+many non-classical logics and many non-standard semantic frameworks,
+with minor complications, but for present purposes Tarski’s 1936
+framework is the most relevant. Thus the strengthenings of logics
+Russell invokes to restore equality in scientific strength are available
+only to a quasi-omniscient being.</span></p>
+<p><span id="passage-is-logic-about-validity-00076"
+class="search-passage">Compare the difference in scientific strength
+between Einstein’s theory of special relativity, SR, and its mere
+negation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>.
+If opponents of SR propose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>
+as their alternative theory, they face the complaint that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>
+is too weak scientifically to be a serious competitor theory to SR.
+Following Russell’s example, they might respond that once
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>
+is supplemented by a full account of every instance in which SR holds
+and every instance in which it fails, their theory will be just as
+scientifically strong as SR. But that response is hopeless. For
+scientific purposes, the relevant abductive comparison is <em>not</em>
+between notional strengthenings of SR and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>,
+of which their proponents can only dream, but between the theories
+currently on the table in the envisaged case, SR and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>.
+What counts is the pitiful scientific weakness of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">R</mi></mrow></mrow><annotation encoding="application/x-tex">\neg \mathrm{SR}</annotation></semantics></math>,
+not the putative scientific strength of its imagined extension. Exactly
+the same applies in the methodology of logic. For scientific purposes,
+the relevant abductive comparison is <em>not</em> between notional
+strengthenings of (say) classical logic and a sub-classical alternative
+logic, of which their proponents can only dream, but between the
+<span class="orig-page" data-page="17" id="page-17" aria-hidden="true"></span>logics
+currently on the table, classical logic and the alternative logic. What
+counts is the scientific weakness of the alternative logic itself, not
+the putative scientific strength of its imagined extension. Thus
+Russell’s attempt to restore equality in scientific strength between
+logics is irrelevant to the application of the abductive
+methodology.</span></p>
+<p><span id="passage-is-logic-about-validity-00077"
+class="search-passage">A further methodological remark is worth making.
+The kind of case-by-case supplementation of a logic with classifications
+of individual instances as failing or not failing various invalid rules
+would involve a massive increase in the complexity of the resultant
+theory. It would be like supplementing a physical theory with a vast
+array of miscellaneous observations consistent with it but not explained
+by it. Trading off simplicity for strength in that way would normally be
+considered a bad bargain.</span></p>
+<p><span id="passage-is-logic-about-validity-00078"
+class="search-passage">In the case of mathematics, proponents of weak
+non-classical logics often propose to recover the full strength of
+classical mathematics by supplementing their logic with versions of
+classical schemas such as excluded middle restricted to instances in the
+language of mathematics (Hjortland 2017). That strategy runs into
+trouble with <em>applications</em> of classical mathematics in the
+natural and social sciences, because accepting the relevant instances of
+the classical schemas often conflicts with the proposed rationale for
+going non-classical in the first place (Williamson <a class="crossref-link" href="../../works/alternative-logics-and-applied-mathematics/index.html">2018</a>).</span></p>
+<p><span id="passage-is-logic-about-validity-00079"
+class="search-passage">The strange contortions of Russell’s account all
+result from her initial conflation of logic with metalogic, of logical
+theories with their metalogical descriptions. It is an object lesson in
+what goes wrong once one assumes that logic is about validity. In
+particular, it shows how that confusion can distort the application of
+an abductive methodology to logic, by neutralizing one of the key
+criteria for abductive theory comparison, scientific
+strength.</span></p>
+<p><span id="passage-is-logic-about-validity-00080"
+class="search-passage">That moral also bears on Russell’s comment on how
+different authors, all professing to apply a broadly abductive
+methodology to logic, have in practice arrived at such divergent
+conclusions (2019: 548-9, following Hjortland 2017). The divergence is
+unsurprising; after all, there are many deep disagreements in physics
+and other natural sciences where all parties employ a broadly abductive
+methodology. But a more specific point is also relevant. The conception
+of logic as the study of validity, and resultant conflation of logic
+with metalogic, are widespread amongst philosophers of logic, including
+some of those who profess to apply a broadly abductive methodology to
+logic: for example, Russell herself, Graham Priest (2006, 2016), and Ole
+Thomassen Hjortland (2017). Given how badly that conflation can distort
+the application of an abductive methodology to logic, it may well have
+contributed to the divergence in results. In particular, the way it
+confuses the issue of scientific strength may help explain some
+professed abductivists’ preference for non-classical logics whose
+striking weakness might have been expected to disqualify them by normal
+abductive standards.</span></p>
+<section id="acknowledgements" class="unnumbered keep-block"
+data-keep-lines="8">
+<h1
+class="unnumbered"><span class="orig-page" data-page="18" id="page-18" aria-hidden="true"></span>Acknowledgements</h1>
+<p><span id="passage-is-logic-about-validity-00081"
+class="search-passage">Thanks to participants in an Oxford graduate
+class and Daniel Kodsi for comments on earlier versions of this
+material.</span></p>
+</section>
+<section id="references" class="unnumbered keep-block"
+data-keep-lines="10">
+<h1
+class="unnumbered"><span class="orig-page" data-page="19" id="page-19" aria-hidden="true"></span>References</h1>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00082"
+class="search-passage">Bacon, Andrew. 2018: ‘The broadest necessity’,
+<em>Journal of Philosophical Logic</em>, 47: 733-783.</span></p>
+</div>
+</section>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00083"
+class="search-passage">Beall, J.C. 2017: ‘There is no logical negation:
+True, false, both, and neither’, <em>The Australasian Journal of
+Logic</em>, 14, 1.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00084"
+class="search-passage">Friedman, Harvey. 1999: ‘A complete theory of
+everything: satisfiability in the universal domain’. <a
+href="https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/1/1952/files/2014/01/ACompThyEver101099-1mkg42b.pdf"
+class="uri">https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/1/1952/files/2014/01/ACompThyEver101099-1mkg42b.pdf</a></span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00085"
+class="search-passage">Hjortland, Ole Thomassen. 2017:
+‘Anti-exceptionalism about logic’, <em>Philosophical Studies</em>, 174:
+631-658.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00086"
+class="search-passage">Hodges, Wilfrid. 1977: <em>Logic</em>. London:
+Penguin.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00087"
+class="search-passage">Mancosu, Paolo. 2006: ‘Tarski on models and
+logical consequence’, in Jeremy Gray and José Ferreiros (eds.), <em>The
+Architecture of Modern Mathematics</em>, 209-237. Oxford: Oxford
+University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00088"
+class="search-passage">Priest, Graham. 2006: <em>Doubt Truth to be a
+Liar</em>. Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00089"
+class="search-passage">Priest, Graham. 2016: ‘Logical disputes and the
+<em>a priori</em>’, <em>Logique et Analyse</em>, 236:
+347-366.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00090"
+class="search-passage">Rayo, Agustín, and Uzquiano, Gabriel (eds.).
+2006: <em>Absolute Generality</em>. Oxford: Clarendon Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00091"
+class="search-passage">Russell, Gillian. 2014: ‘Metaphysical analyticity
+and the epistemology of logic’, <em>Philosophical Studies</em>, 171:
+161-175.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00092"
+class="search-passage">Russell, Gillian. 2019: ‘Deviance and vice:
+strength as a theoretical virtue in the epistemology of logic’,
+<em>Philosophy and Phenomenological Research</em>, 99:
+548-563.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00093"
+class="search-passage">Tarski, Alfred. 1936: ‘O pojciu wynikania
+logicznego’, <em>Przgeląd Filozoficzny</em>, 39: 58-68. Page references
+are to English translation by J.H. Woodger, ‘On the concept of logical
+consequence’, in Alfred Tarski (ed. John Corcoran), <em>Logic,
+Semantics, Metamathematics</em>, 409-420. Indianapolis: Hackett,
+1983.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00094"
+class="search-passage">Tarski, Alfred. 1986: ‘What are logical notions?’
+(ed. John Corcoran), <em>History and Philosophy of Logic</em>, 7:
+143-154. Based on a 1966 lecture.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00095"
+class="search-passage">Wiggins, David. 1980: <em>Sameness and
+Substance</em>. Oxford: Blackwell.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00096"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/everything/index.html">2003</a>: ‘Everything’,
+<em>Philosophical Perspectives</em>, 17, 415-465.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00097"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>: <em>Modal Logic as
+Metaphysics</em>. Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00098"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/semantic-paradoxes-and-abductive-methodology/index.html">2017</a>: ‘Semantic paradoxes
+and abductive methodology’, in Brad Armour-Garb (ed.), <em>Reflections
+on the Liar</em>, 325-346. Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00099"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/alternative-logics-and-applied-mathematics/index.html">2018</a>: ‘Alternative logics
+and applied mathematics’, <em>Philosophical Issues</em>, 28:
+399-424.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-is-logic-about-validity-00100"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/accepting-a-logic-accepting-a-theory/index.html">2023</a>: ‘Accepting a logic,
+accepting a theory’, in Romina Padró and Yale Weiss (eds.), <em>Saul
+Kripke on Modal Logic</em>. New York: Springer.</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

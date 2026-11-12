@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Higher-order metaphysics and small differences by Timothy Williamson. Analysis 83 (1) (2023): 213–224."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Higher-order metaphysics and small differences - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/higher-order-metaphysics-and-small-differences.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>Higher-order metaphysics and small
+differences</h1><p class="author">Timothy
+Williamson</p><p class="publication"><em>Analysis</em> 83 (1) (2023):
+213–224.</p></header>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00001"
+class="search-passage"><span class="orig-page" data-page="1" id="page-1" aria-hidden="true"></span><span class="print-page" data-page="213" id="print-page-213" aria-hidden="true"></span><em>The
+Bounds of Possibility: Puzzles of Modal Variation</em> <span
+class="smallcaps">By Cian Dorr and John Hawthorne with Juhani
+Yli-Vakkuri.</span> Oxford University Press, 2021. xii + 436
+pp.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00002"
+class="search-passage">Conspicuously missing some planks, a latter-day
+Ship of Theseus catches the eye when one picks up this Book of Three
+Authors. Teasingly, differentiated prepositions between their names on
+the title page hint at its complex history. The result is a formidable
+achievement, exemplifying contemporary metaphysics at its
+best.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00003"
+class="search-passage">Puzzles of variation arise from pre-reflectively
+plausible tolerance principles, on which an artefact survives any small
+variation in its constituents but no large variation in them:
+unfortunately, many small variations make a large variation. The
+variations may be across times or across possibilities, though
+<span class="print-page" data-page="214" id="print-page-214" aria-hidden="true"></span>the
+analogy between the temporal and modal dimensions is not assumed to go
+all the way to the puzzles’ solutions. In particular, what is future in
+the future is future, but Iteration – that what is possibly possible is
+possible – is much less obvious. According to Nathan Salmón (1989),
+puzzles of modal variation refute Iteration, and so undermine the
+structural analogy with time, for which the corresponding principle is
+uncontentious – though one might suspect that whatever measures are
+needed to resolve the temporal puzzles will resolve the modal puzzles
+too, independently of modal logic (Williamson <a class="crossref-link" href="../../works/identity-and-discrimination/index.html">1990</a>).</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00004"
+class="search-passage">The puzzles are not just brain teasers. They cast
+serious doubt on whether object-oriented human cognition is suited to
+making coherent sense of reality, even of those bits of it which we
+ourselves construct. Anyone who suspects the puzzles of being mere
+sophisms can learn from this book (<em>BOP</em>) that they have no
+pain-free solution. More generally, <em>BOP</em> can be used as a
+high-level introduction, as well as a contribution, to an emerging kind
+of formal metaphysics (for more on which see soon Bacon forthcoming;
+Fritz and Jones forthcoming). I will explain <em>BOP’s</em> innovative
+approach.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00005"
+class="search-passage">Formal metaphysics is not a study of
+uninterpreted formal systems – that would not be metaphysics. It is
+closer in spirit to Plato’s Academy, with the injunction ‘Let no one
+ignorant of geometry enter here’ supposedly
+<span class="orig-page" data-page="2" id="page-2" aria-hidden="true"></span>written
+over the entrance, except that ‘first-order logic’ has replaced
+‘geometry’. Formal metaphysics uses <em>interpreted</em> formal systems
+to achieve systematicity. For instance, mereology has long contributed
+to formal metaphysics by using formal systems whose primitive symbols
+are interpreted in terms of parthood and overlap. Formal metaphysics is
+more systematic than the helpful habit of clarifying individual claims
+and arguments by formalizing them, because it works with whole theories,
+not just individual sentences.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00006"
+class="search-passage"><em>BOP’s</em> formal systems are of higher-order
+logic. The reader needs some knowledge of first-order logic before
+entering, but is taught its higher-order extensions once
+inside.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00007"
+class="search-passage">Syntactically, the formal language is typed. The
+lowest type is that of singular terms. Higher types are defined
+iteratively: any finite sequence of types is itself a type, the type of
+predicates with arguments of those types in that order. Concatenating
+such a predicate with such a sequence of terms yields a sentence, open
+or closed. The language has infinitely many variables and perhaps some
+constants of any given type. The type of <em>n</em>-place predicates of
+a first-order language is just the sequence of <em>n</em> occurrences of
+the type of individuals, for any natural number <em>n</em>. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n = 0</annotation></semantics></math>,
+it is the empty sequence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lt;</mi><mspace width="0.167em"></mspace><mi>&gt;</mi></mrow><annotation encoding="application/x-tex">\mathord{&lt;}\,\mathord{&gt;}</annotation></semantics></math>,
+the type of sentences. Both negation and the modal operators
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">□</mi><annotation encoding="application/x-tex">□</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>◊</mo><annotation encoding="application/x-tex">\lozenge</annotation></semantics></math>
+are of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lt;</mi><mi>&lt;</mi><mspace width="0.167em"></mspace><mi>&gt;</mi><mi>&gt;</mi></mrow><annotation encoding="application/x-tex">\mathord{&lt;}\mathord{&lt;}\,\mathord{&gt;}\mathord{&gt;}</annotation></semantics></math>,
+since concatenating any of them with a sentence yields a sentence.
+Binary sentence operators such as conjunction, disjunction, and the
+material conditional and are of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lt;</mi><mi>&lt;</mi><mspace width="0.167em"></mspace><mi>&gt;</mi><mo>,</mo><mi>&lt;</mi><mspace width="0.167em"></mspace><mi>&gt;</mi><mi>&gt;</mi></mrow><annotation encoding="application/x-tex">\mathord{&lt;}\mathord{&lt;}\,\mathord{&gt;}, \mathord{&lt;}\,\mathord{&gt;}\mathord{&gt;}</annotation></semantics></math>.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00008"
+class="search-passage"><span class="print-page" data-page="215" id="print-page-215" aria-hidden="true"></span>One
+can form complex predicates of any given predicate type by lambda
+abstraction, prefixing the untyped expression
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+and a sequence of variables of appropriate types to a sentence. For any
+type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>,
+the language has quantifiers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>∀</mo><mi>σ</mi></msub><annotation encoding="application/x-tex">\forall_\sigma</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>∃</mo><mi>σ</mi></msub><annotation encoding="application/x-tex">\exists_\sigma</annotation></semantics></math>
+of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lt;</mi><mi>&lt;</mi><mi>σ</mi><mi>&gt;</mi><mi>&gt;</mi></mrow><annotation encoding="application/x-tex">\mathord{&lt;}\mathord{&lt;}\sigma\mathord{&gt;}\mathord{&gt;}</annotation></semantics></math>,
+which means that they are higher-type 1-place predicates applicable to
+1-place predicates, which are in turn applicable to terms of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>.
+In effect, this allows quantification into type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>
+position. From a sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A(v)</annotation></semantics></math>
+containing a variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>,
+one forms the complex predicate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\lambda v(A(v))</annotation></semantics></math>
+of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lt;</mi><mi>σ</mi><mi>&gt;</mi></mrow><annotation encoding="application/x-tex">\mathord{&lt;}\sigma\mathord{&gt;}</annotation></semantics></math>,
+and then applies a quantifier to get the sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∀</mo><mi>σ</mi></msub><mi>λ</mi><mspace width="0.167em"></mspace><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall_\sigma\lambda\, v(A(v))</annotation></semantics></math>
+(‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A(v)</annotation></semantics></math>
+holds everywhere’) or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∃</mo><mi>σ</mi></msub><mi>λ</mi><mspace width="0.167em"></mspace><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists_\sigma\lambda\, v(A(v))</annotation></semantics></math>
+(‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A(v)</annotation></semantics></math>
+holds somewhere’). In particular, one can quantify into predicate
+position for any given type of predicate, including into sentence
+position. By contrast, in first-order logic, one can only quantify into
+singular term position.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00009"
+class="search-passage">The language also has an analogue of the identity
+predicate,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>=</mo><mi>σ</mi></msub><annotation encoding="application/x-tex">=_\sigma</annotation></semantics></math>,
+for any type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>;
+one can formulate a corresponding version of Leibniz’s Law.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00010"
+class="search-passage">One might try to understand sentences of the
+higher-order language by paraphrasing them into English or another
+natural language. For instance, one could read
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>∀</mo><mi>σ</mi></msub><annotation encoding="application/x-tex">\forall_\sigma</annotation></semantics></math>
+as ‘every individual’, ‘every proposition’, ‘every property’ or ‘every
+relation’, depending on whether
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>
+is the type of singular terms, sentences, one-place predicates or
+many-place predicates, with further restrictions to reflect the
+complexities of the type-theoretic hierarchy. Such readings treat the
+higher-order language as if it were a first-order language with a
+<span class="orig-page" data-page="3" id="page-3" aria-hidden="true"></span>single
+heterogeneous domain of entities, partitioned into individuals proper,
+propositions and properties and relations of various kinds. That in
+effect discards all the advantages of going higher-order. Consequently,
+the authors recommend learning the higher-order language ‘by the direct
+method’, through use, without trying to reduce it to anything more
+familiar. <em>BOP</em> provides ample exposure to the higher-order
+language in use. Rough paraphrases in English are offered too, as study
+aids, but the official formulations of metaphysical principles, the most
+logically perspicuous, are formulas of the higher-order
+language.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00011"
+class="search-passage">But what <em>are</em> the advantages of going
+higher-order? Consider the argument from ‘Al is silent and Ben isn’t’ to
+‘Al is something that Ben isn’t’. It is a rough English paraphrase of
+the argument from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>a</mi><mo>∧</mo><mo>¬</mo><mi>S</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">Sa \wedge \neg Sb</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∃</mo><mrow><mi>&lt;</mi><mi mathvariant="normal">e</mi><mi>&gt;</mi></mrow></msub><mi>λ</mi><mspace width="0.167em"></mspace><mi>X</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>a</mi><mo>∧</mo><mo>¬</mo><mi>X</mi><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists_{\mathord{&lt;}\mathrm{e}\mathord{&gt;}}\lambda\, X(Xa \wedge \neg Xb)</annotation></semantics></math>,
+which is easily derivable in <em>BOP’s</em> official minimal system of
+higher-order logic. For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>a</mi><mo>∧</mo><mo>¬</mo><mi>S</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">Sa \wedge \neg Sb</annotation></semantics></math>
+is equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mi>X</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>a</mi><mo>∧</mo><mo>¬</mo><mi>X</mi><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">\lambda X(Xa \wedge \neg Xb)S</annotation></semantics></math>
+by its principle of Extensional Beta-Conversion, from which the
+conclusion follows by its unrestricted principle of Existential
+Generalization. By contrast, the first-order strategy regiments the
+conclusion as something like ‘For some property
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+Al has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and Ben does not have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>’,
+in symbols
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Property</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>∧</mo><mrow><mi mathvariant="normal">Has</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>∧</mo><mo>¬</mo><mrow><mi mathvariant="normal">Has</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>b</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(\operatorname{Property}(x) \wedge \operatorname{Has}(a,x) \wedge \neg\operatorname{Has}(b,x))</annotation></semantics></math>.
+To derive it from the premise
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>a</mi><mo>∧</mo><mo>¬</mo><mi>S</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">Sa \wedge \neg Sb</annotation></semantics></math>,
+one needs the generalization ‘For some property
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+anything has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+if and only if it is silent’, in symbols
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Property</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>∧</mo><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Has</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>↔</mo><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists x\,(\operatorname{Property}(x) \wedge \forall y\,(\operatorname{Has}(y,x) \leftrightarrow \mathrm{S}(y)))</annotation></semantics></math>.
+But the underlying general property existence principle is inconsistent:
+substituting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">Has</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg\operatorname{Has}(y,y)</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">S</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{S}(y)</annotation></semantics></math>
+yields the
+<span class="print-page" data-page="216" id="print-page-216" aria-hidden="true"></span>analogue
+for properties of Russell’s Paradox for sets! By contrast, the
+higher-order form of argument is under no such threat of disaster, since
+the suspect predicate ‘Has’ corresponds to nothing in the typed
+language.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00012"
+class="search-passage">In response, defenders of the first-order
+strategy may claim that ‘is silent’ is logically harmless in a way that
+‘does not have itself is not, so nominalizing the former is fine, even
+if nominalizing the latter is not. But ad hoc claims to be doing nothing
+wrong are not enough. We need a more principled way of answering
+questions of the form ‘Is there a property <em>p</em> such that for
+every <em>x</em>, <em>x</em> has <em>p</em> if and only
+<em>A</em>(<em>x</em>)?’ (where ‘<em>p</em>’ does not occur in
+<em>A</em>(<em>x</em>)). In other words, property theory requires
+explicit, general <em>comprehension principles</em>. A depressing
+feature of most philosophical discussions of properties and relations,
+the problem of universals and the like is that no such comprehension
+principle is on the horizon. Not even the possibility of one is
+discussed. Yet standard higher-order logics have explicit, unrestricted
+comprehension theorems for all types of predicate. <em>BOP</em> rightly
+emphasizes the contrast to motivate the higher-order
+framework.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00013"
+class="search-passage">An extreme but tempting comparison is with the
+rigorization of analysis in 19th-century mathematics, after the old
+methods started yielding apparent counterexamples to apparently proved
+theorems. Contemporary philosophers who persist in theorizing about
+properties and relations in the old-fashioned discursive way, without
+clear comprehension principles,
+<span class="orig-page" data-page="4" id="page-4" aria-hidden="true"></span>remind
+me of 19th-century mathematicians who persisted with the old-fashioned
+methods of argument when those developed by Cauchy and Weierstrass were
+already available, as if what was good enough for 1800 was good enough
+for 1900.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00014"
+class="search-passage">Naturally, <em>BOP</em> emphasizes the usefulness
+of higher-order logic in philosophy, but its applications elsewhere
+should not be ignored. The semantics of natural languages provides
+examples. Even if there is no genuine quantification into predicate
+position in natural language, the semanticist seeks a <em>general</em>
+account of the semantics of actual and possible predicate constants in a
+natural language, not just one-off accounts for a few selected
+predicates. To formulate such an account in the meta-language, one must
+in effect quantify into predicate position. Moreover, to do its job
+properly, that generality should be unrestricted, for predicates –
+especially complex predicates – in natural language are not required to
+cut at the joints, or to be qualitative or non-disjunctive or
+non-negative in meaning, or anything like that. The required generality
+is plenitudinous.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00015"
+class="search-passage">The background logic of mathematics is also
+better understood as higher-order than as first-order. Consider the
+principle of mathematical induction. Formalized as a first-order schema,
+it allows one to deduce from the premises
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{P}(0)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall n\,(\mathrm{P}(n) \to \mathrm{P}(n+1))</annotation></semantics></math>
+the conclusion
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mi mathvariant="normal">P</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall n\,\mathrm{P}(n)</annotation></semantics></math>,
+where the individual variable
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>’
+ranges over natural numbers. The principle’s instances correspond to the
+predicates of natural numbers in the language, any of which can
+<span class="print-page" data-page="217" id="print-page-217" aria-hidden="true"></span>replace
+the schematic letter ‘P’. Since there are only countably many such
+predicates, the principle has only countably many instances, even though
+the set of natural numbers has uncountably many subsets, each of which
+is a candidate extension for a possible predicate of natural numbers.
+Now any true first-order theory of arithmetic has non-standard models,
+with non-standard ‘natural numbers’ beyond the standard ones.
+Pre-theoretically understood, the principle of mathematical induction
+fails in such models, since the premises are true and the conclusion
+false when ‘P’ is conceived as applying to all and only the standard
+natural numbers in the model, but there is no such predicate in the
+language. By contrast, on the standard semantics for higher-order logic,
+second-order arithmetic captures a unique structure, the right one: all
+its models are isomorphic to each other. It succeeds where first-order
+arithmetic fails because the second-order quantifiers are mandatorily
+unrestricted, on the standard semantics. Thus we need unrestricted
+second-order quantifiers to capture the principle mathematicians intend
+by mathematical induction.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00016"
+class="search-passage">Similar comments apply to standard set existence
+principles such as Separation and Replacement, represented by a
+predicate schema in a first-order setting and a second-order universal
+generalization in a second-order setting. Only the full second-order
+version captures the principle mathematicians intend.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00017"
+class="search-passage"><span class="orig-page" data-page="5" id="page-5" aria-hidden="true"></span>As
+such examples from mathematics and natural language semantics show,
+generality with respect to predicate position is no mere plaything of
+metaphysicians. It is implicit in serious work outside philosophy too.
+Those applications also require a plenitudinous version of such
+generality. Before plugging a predicate into the principle of
+mathematical induction, it would be ridiculous for the mathematician to
+ask whether it cuts at the joints, or is qualitative or non-disjunctive
+or non-negative in meaning, or anything like that. Such considerations
+provide external support for <em>BOP’s</em> approach, with its
+unrestricted higher-order quantification. In general, by becoming more
+serious about the logical framework in which they work, metaphysicians
+get more serious about something with consequences for non-philosophers
+too, a potentially fruitful reality check on metaphysical
+theorizing.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00018"
+class="search-passage">Why is the higher-order framework relevant to
+puzzles of modal variation? To explain the reasons, I will use rough
+paraphrases in English, for familiarity, but one must appreciate that
+higher-order logic provides more perspicuous, if less familiar,
+formulations, without the confusion introduced by the imagined ‘has’
+relation.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00019"
+class="search-passage">The puzzles are generated by <em>tolerance
+principles</em>, which can be simply formalized in general higher-order
+terms. The modal variation is tracked through properties of objects,
+which typically specify how they are constituted. Small variations
+correspond to ones between <em>close</em> properties. A modal tolerance
+principle says that for any properties <em>F</em> and <em>G</em>, if
+<em>G</em> is close to <em>F</em>, and
+<span class="print-page" data-page="218" id="print-page-218" aria-hidden="true"></span>something
+has <em>F</em>, it <em>could</em> have had <em>G</em>. <em>G</em> is
+<em>ancestrally close</em> to <em>F</em> just in case, for some finite
+sequence of properties starting with <em>G</em> and ending with
+<em>F</em>, each member of the sequence (except the last) is close to
+the next. Obviously, large variations can correspond to ones between
+ancestrally close properties. The corresponding modal hypertolerance
+principle says that for any properties <em>F</em> and <em>G</em>, if
+<em>G</em> is ancestrally close to <em>F</em>, and something has
+<em>F</em>, it <em>could</em> have had <em>G</em>. For a suitable
+closeness relation, the tolerance principle is very plausible, but the
+hypertolerance principle is very implausible. Unfortunately, the
+tolerance principle threatens to entail the hypertolerance principle,
+given plausible background assumptions: Iteration and the
+non-contingency of closeness and tolerance. Which assumption should be
+given up? The best framework for exploring the issues is higher-order
+logic.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00020"
+class="search-passage">Another advantage of the higher-order framework
+is that it facilitates the reduction of (possible) <em>worlds</em> to
+special propositions or properties of propositions. However,
+<em>BOP</em> makes little use of worlds, preferring to work directly
+with modal operators.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00021"
+class="search-passage">A more central use of the higher-order framework
+in <em>BOP</em> is to generalize over modal operators, understood as
+properties of propositions. The idea goes back to Kripke’s claim in
+<em>Naming and Necessity</em> that some truths are ‘necessary in the
+highest degree – whatever that means’ (1980: 99). A truth may be
+necessary in a low degree by being ‘locally’ necessary: it could not
+<span class="orig-page" data-page="6" id="page-6" aria-hidden="true"></span><em>easily</em>
+have been otherwise. Iteration fails when read locally. The question is
+whether it fails when read non-locally, for instance, in terms of
+<em>metaphysical</em> possibility, the dual of metaphysical necessity,
+which is often – but not always – equated with necessity in the highest
+degree. Presumably, when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">□</mi><annotation encoding="application/x-tex">□</annotation></semantics></math>
+is read as ‘it is necessary in the highest degree that’, the principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mi>p</mi><mo>→</mo><mi class="modal-operator">□</mi><mi class="modal-operator">□</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">□ p \to □□ p</annotation></semantics></math>
+holds, for otherwise
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mi class="modal-operator">□</mi></mrow><annotation encoding="application/x-tex">□□</annotation></semantics></math>
+would express a higher degree of necessity than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="modal-operator">□</mi><annotation encoding="application/x-tex">□</annotation></semantics></math>,
+contrary to hypothesis; then the principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>◊</mo><mo>◊</mo><mi>p</mi><mo>→</mo><mo>◊</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\lozenge\lozenge p \to \lozenge p</annotation></semantics></math>
+holds too, on the dual reading of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>◊</mo><annotation encoding="application/x-tex">\lozenge</annotation></semantics></math>.
+<em>BOP</em> explores a range of associated issues in depth.
+Necessity-like properties are treated as those obeying appropriate
+structural constraints. To show that such a collection of properties has
+a maximal member, one typically proves closure results, for instance,
+that any conjunction of structurally appropriate properties is itself
+structurally appropriate. Some strong necessity-like properties can be
+defined quite simply; for instance, the property of being identical with
+the proposition that everything is self-identical is necessity-like.
+<em>BOP’s</em> detailed logical results support a view on which there
+<em>is</em> a maximal necessity, which is metaphysical necessity, and
+which obeys Iteration. All this development is framed within
+higher-order logic.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00022"
+class="search-passage">The higher-order framework also plays a more
+general unifying role in <em>BOP</em>. It is introduced in the first few
+pages and remains in place thereafter.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00023"
+class="search-passage">Of course, higher-order modal logic comes in many
+different strengths, on many different dimensions. <em>BOP’s</em> basic
+system is a curious mixture of strength and weakness. It extends
+classical non-modal first-order logic with
+<span class="print-page" data-page="219" id="print-page-219" aria-hidden="true"></span>identity,
+and it provides unrestricted comprehension principles, but no analogue
+of the Axiom of Choice. It neither proves nor refutes the identity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>p</mi><mo>∧</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p = p \wedge p</annotation></semantics></math>.
+The super-controversial necessitist thesis
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall x\,□\exists y\,(x = y)</annotation></semantics></math>
+(necessarily everything is necessarily something) is a theorem, unlike
+the modal principles
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mi>p</mi><mo>→</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">□ p \to p</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mi>p</mi><mo>→</mo><mi class="modal-operator">□</mi><mi class="modal-operator">□</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">□ p \to □□ p</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>◊</mo><mi>p</mi><mo>→</mo><mi class="modal-operator">□</mi><mo>◊</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\lozenge p \to □\lozenge p</annotation></semantics></math>.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00024"
+class="search-passage">What standard was applied in selecting the axioms
+and rules of the basic system? Wisely, the authors did not require them
+to fit a preconceived image of logic as metaphysically neutral; no
+principle of logic is incapable of being questioned by a wrong-headed
+metaphysician. Likewise, they avoid claiming the obscure status of
+‘analytic’ or ‘conceptual’ truth for its principles. The selection was
+responsive to other pressures.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00025"
+class="search-passage">One kind of consideration was dialectical:
+Iteration was omitted in order not to beg the question against Salmón’s
+rejection of it. By contrast, necessitism is much less directly involved
+in the puzzles. Such concerns are understandable. Still, they are not
+the best guide to theory-building. After all, Salmón and other opponents
+are not dialectically obliged to accept even the proposed basic system
+of higher-order logic (some of Salmon’s ideas mentioned in <em>BOP</em>
+are inimical to the type-theoretic approach). As for the baked-in
+necessitism, contingentists are briefly offered the option of treating
+it as just a manner of speaking, as they might do with other necessitist
+discourse, but they are unlikely to trust the deliverances of a basic
+logical framework
+<span class="orig-page" data-page="7" id="page-7" aria-hidden="true"></span>that
+(from a contingentist perspective) goes so badly wrong right from the
+start.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00026"
+class="search-passage">A standard of convenience was also applied.
+Modifying many of <em>BOP’s</em> arguments to accommodate different
+varieties of contingentism ‘would require several different kinds of
+qualification, making them unpleasantly complicated’. Fair enough,
+though elsewhere <em>BOP</em> is not frightened of
+complexity.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00027"
+class="search-passage">Another reason for working with a weak basic
+system and introducing stronger principles as needed is to isolate the
+role of those additional principles. But one still needs to decide
+<em>which</em> principles to withhold from the basic system for later
+study. For example, the authors could have started with intuitionistic,
+rather than classical propositional logic, in order to study the role of
+double negation elimination in the arguments. They show no inclination
+to do so, presumably because they regard double negation elimination as
+not in serious doubt.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00028"
+class="search-passage">The upshot is that <em>BOP’s</em> basic logical
+system looks rather ad hoc. For example, it has the strong necessitist
+theorem, but not the Barcan formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>Y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mo>◊</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>Y</mi><mi>x</mi><mo>→</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>◊</mo><mi>Y</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall Y\,(\lozenge\exists x\,Yx \to \exists x\,\lozenge Yx)</annotation></semantics></math>.
+If the Barcan formula fails, there could have been something that had a
+given property, even though there is nothing that could have had that
+property: in a sense, there could have been more than there is. But it
+is hard to motivate the necessitist principle in the face of obvious
+objections without a metaphysical picture on which ontological structure
+is beyond the reach of contingency, so there could not have been more or
+<span class="print-page" data-page="220" id="print-page-220" aria-hidden="true"></span>less
+than there is. Thus a higher-order logic of metaphysical modality with
+the necessitist theorem but not the Barcan formula looks
+under-motivated. Similarly, <em>BOP’s</em> basic system has a restricted
+form of the necessity of identity, but not the necessity of
+distinctness. A clearer picture includes both identity and distinctness
+in ontological structure, beyond the reach of contingency.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00029"
+class="search-passage">Recent work by Zachary Goodsell and Juhani
+Yli-Vakkuri (MS) also indicates that systems like <em>BOP’s</em> are too
+weak for mathematical purposes, because they lack an adequate
+comprehension principle for functions. Goodsell and Yli-Vakkuri’s own
+system LF of higher-order logic has such a principle, as a corollary of
+an axiom of choice. Although LF individuates <em>functions</em>
+extensionally, it is not extensional, for it implies that some
+materially equivalent <em>propositions</em> are distinct. LF is
+intensional; whenever a biconditional is provable, so is the
+corresponding propositional identity. They show LF to suffice for most
+of contemporary mathematics: a new version of logicism. My money has
+always been on mathematical power to beat metaphysical qualms, not least
+in higher-order modal logic (Williamson <a class="crossref-link" href="../../works/everything/index.html">2003</a>; <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>; <a class="crossref-link" href="../../works/modal-science/index.html">2016</a>). LF
+incorporates modality by identifying necessity with being identical to
+the weakest truth. They derive the strong modal logic S5, the necessity
+of identity and distinctness and the Barcan formula and its converse.
+Mathematical strength and modal strength go naturally
+together.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00030"
+class="search-passage"><span class="orig-page" data-page="8" id="page-8" aria-hidden="true"></span>Fortunately,
+<em>BOP</em> does not insist that its basic system is optimal;
+<em>BOP</em> is more provisional in spirit. The reader has a sense of
+work in progress, even though <em>BOP</em> is far richer in logically
+polished theses and arguments than most works of metaphysics. The field
+is developing with almost frightening rapidity. One suspects that in a
+very few years, all three authors will have considerably advanced their
+ideas, perhaps not all in the same direction. Meanwhile, there is an
+exciting sense of new intellectual landscapes coming into view, quite
+unlike the tired rounding-up of the usual suspects one so often has to
+endure in philosophy.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00031"
+class="search-passage"><em>BOP’s</em> methodology still requires a
+pre-theoretic starting point. That role is played primarily by tolerance
+principles, with instances such as ‘This table could have been made from
+slightly different materials’. Where such claims come from is not much
+discussed. <em>BOP’s</em> attitude seems to be that ordinary speakers
+assent to them, so charity mandates an interpretation of their words on
+which tolerance principles come out true. The trouble is that ordinary
+speakers also assent to tolerance principles of slightly different
+forms, for instance, that this table <em>will</em> survive the removal
+of one molecule, whose repeated application can generate sorites
+paradoxes. <em>BOP</em> firmly rejects soritical tolerance principles as
+just false, and treats any philosophical reasoning based on the thought
+‘The difference is too small to matter’ as thereby discredited. Thus the
+special tolerance principles it aims to vindicate had better not be
+based on similar bad thinking.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00032"
+class="search-passage"><span class="print-page" data-page="221" id="print-page-221" aria-hidden="true"></span><em>BOP</em>
+divides the contribution of tolerance principles to the modal puzzles
+into two premises. Take the case of tables. The first premise,
+Tolerance, says that every table is tolerantly a table, in the sense
+that for any properties <em>F</em> and <em>G</em>, if <em>G</em> is
+close to <em>F</em>, any table with <em>F</em> could have been a table
+with <em>G</em>. The second premise, Non-Contingency, says that if
+Tolerance holds, it does so necessarily. As a first step, the two
+premises are combined to yield the lemma that Tolerance necessarily
+holds. The puzzle proceeds from there.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00033"
+class="search-passage">With Tolerance treated as pre-theoretically
+plausible, the focus is on motivating Non-Contingency. Attempted
+motivations dependent on bad soritical thinking are dismissed. A better,
+non-soritical motivation is proposed instead: the Security Argument.
+Roughly, it says that if Tolerance is contingent, our belief in it will
+often be true only by luck, and so fail to constitute knowledge. Thus,
+if we know the first premise, the second premise is true.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00034"
+class="search-passage">One of <em>BOP’s</em> main moves is an ingenious
+response to the Security Argument. It exploits a form of semantic
+plasticity once suggested by Eli Hirsch. On this picture, the word
+‘table’ subtly shifts its meaning, in particular its associated standard
+of modal individuation, depending on the world in which it is used. In
+each relevant world <em>w</em>, every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>w</mi></msub><annotation encoding="application/x-tex">\mathrm{table}_w</annotation></semantics></math>
+is tolerantly a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>w</mi></msub><annotation encoding="application/x-tex">\mathrm{table}_w</annotation></semantics></math>,
+where
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>w</mi></msub><annotation encoding="application/x-tex">\mathrm{table}_w</annotation></semantics></math>’
+refers to whatever the word ‘table’ refers to as used in <em>w</em>.
+Although the proposition that every table is tolerantly a table is
+contingent, we could not easily have believed it falsely, for in a world
+<em>w</em> where not
+<span class="orig-page" data-page="9" id="page-9" aria-hidden="true"></span>every
+table is tolerantly a table, what we believe is instead the proposition,
+true in <em>w</em>, that every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>w</mi></msub><annotation encoding="application/x-tex">\mathrm{table}_w</annotation></semantics></math>
+is tolerantly a table in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>w</mi></msub><annotation encoding="application/x-tex">\mathrm{table}_w</annotation></semantics></math>.
+Thus we can still know that every table is tolerantly a table, just as
+we can know that we live in this world, even though we could easily have
+lived in some other world, and thought ‘We live in this world’ – truly.
+Necessitated Tolerance is paradoxical, but what gets us into trouble is
+a combination of common sense (Tolerance) and a subtle error in
+propositional attitude ascription under a modal operator
+(Non-Contingency); soritical thoughts play no role.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00035"
+class="search-passage">How realistic is such an account of our
+pre-theoretic thinking about the puzzles? The proposed motivation for
+Non-Contingency involves sophisticated epistemological reflection on the
+status of belief in Tolerance. Even the separation between Tolerance and
+Non-Contingency seems artificial. In pre-theoretically assessing
+Tolerance, I imagine a table, and contrast that scenario with a
+counterfactual alternative with slightly different composing materials.
+The initial scenario is not specifically imagined <em>as actual</em>. I
+do not <em>first</em> assent to Tolerance for the actual world, and
+<em>then</em> generalize to all possible worlds. It feels more like
+first assenting to Tolerance for a more or less <em>arbitrary</em>
+world, and then endorsing Necessitated Tolerance as a corollary, though
+the strict word ‘necessarily’ acts as a warning to be cautious. Perhaps
+I endorse Tolerance only for worlds similar to ours, but they suffice
+for reaching a paradoxical conclusion. I doubt that I am unusual in
+these respects.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00036"
+class="search-passage"><span class="print-page" data-page="222" id="print-page-222" aria-hidden="true"></span>Even
+if the factorization of Necessary Tolerance into Tolerance and
+Non-Contingency and the Security Argument for Non-Contingency are no
+part of our ordinary pre-reflective entry into the modal puzzle, they
+might still make an interesting philosophical challenge. But there is
+little point in trying to keep bad soritical thinking out of the
+motivation for Non-Contingency if it is already in the motivation for
+Tolerance.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00037"
+class="search-passage">Arguably, sorites-generating tolerance principles
+are best understood as simply the results of a labour-saving, fairly
+reliable heuristic by which the default <em>is</em> to ignore small
+differences (Williamson <a class="crossref-link" href="../../works/suppose-and-tell/index.html">2020</a>: 63–67). If told that Mary was in London
+and then took a step, you may reasonably assume that she was still in
+London after that step, even though it is possible to walk out of
+London; the assumption is reasonable irrespective of the vagueness or
+precision of the name ‘London’. Likewise, normally one need not keep
+rechecking someone’s scalp to retain knowledge that they are not bald,
+even though they lose several hairs each day. Again, if you have
+borrowed a book, you need not keep asking yourself whether you still
+have that book every time you rub a few molecules off a page with your
+fingers. We apply this persistence heuristic just as much under imagined
+suppositions. You probably did so when you thought through those
+examples. To block the default, something drastic is needed, either a
+much larger variation or a warning that the relevant boundary is nearby.
+If I tell you that Mary lives right on the edge of London or that she
+has seven league boots, you will probably <em>not</em>
+<span class="orig-page" data-page="10" id="page-10" aria-hidden="true"></span>conclude
+that she is still in London. If I tell you that John is not yet bald but
+is rapidly going bald, you may keep glancing at his scalp. If the book
+you borrowed is a priceless, crumbling, medieval manuscript, you may
+worry more about its survival. Our cognitive processing of
+counterfactual identity works similarly. ‘I wish this table had been
+made slightly longer’ is much less likely than ‘I wish this table had
+been made ten times longer’ to prompt the default-breaking thought
+‘Would that still have been this table?’ The persistence heuristic
+explains such patterns, obviating the need to postulate more elaborate
+forms of proto-metaphysical thinking.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00038"
+class="search-passage">Heuristics are described negatively as ‘cheap and
+dirty’, positively as ‘fast and frugal’. We normally apply them without
+being aware of doing so, as perceptual illusions reveal. Human cognition
+depends on heuristics. They are efficient and reliable enough to be
+adaptive, but not perfectly reliable. Their limitations emerge in
+unusual circumstances. If you apply the persistence heuristic once at
+random, it will almost certainly be truth-preserving. Both sorites
+paradoxes and puzzles of modal variation work by chaining together many
+different applications of the heuristic into an argument that is
+manifestly not truth preserving.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00039"
+class="search-passage">If such an account is correct, Tolerance is
+motivated by the very heuristic that generates sorites paradoxes, even
+though Tolerance by itself cannot generate such paradoxes. Does that
+make the puzzles of modal variation
+prob<span class="print-page" data-page="223" id="print-page-223" aria-hidden="true"></span>lems
+of vagueness? The persistence heuristic itself has nothing specifically
+to do with vagueness; it is applied to terms irrespective of their place
+on the spectrum from vagueness to precision. The heuristic makes more
+philosophical trouble in cases of vagueness because awareness of a
+nearby boundary for a relevant term tends to block the persistence
+default as too risky, while we may lack such awareness where the
+relevant term is vague. <em>BOP</em> acknowledges that the key terms in
+the modal puzzles, such as ‘table’, <em>are</em> relevantly vague; the
+issue is whether their vagueness is relevant in the same way as in
+sorites paradoxes. On the heuristic account, the relevance is of broadly
+the same kind.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00040"
+class="search-passage">The heuristic account is far from making
+<em>BOP’s</em> detailed metaphysical discussions redundant. Although
+heuristics help explain various features of our thought and talk,
+identifying them is no substitute for the work of interpretation. After
+all, questions of reliability and truth preservation arise for
+heuristics because heuristics operate on cognitive attitudes with
+truth-evaluable contents, and the relevant terms refer. Just as
+<em>BOP</em> assumes, interpretation must be constrained by some
+principle of charity: perhaps one which, as far as possible, maximizes
+our true beliefs, or, as I prefer, our knowledge. Although heuristics
+are not always truth-preserving, they can still deliver knowledge – for
+instance, perceptual knowledge – where they are locally
+truth-preserving, or safe. Much can be learnt from <em>BOP</em> about
+the most charitable ways of interpreting our thought and talk about the
+persistence of things, given the
+<span class="orig-page" data-page="11" id="page-11" aria-hidden="true"></span>puzzles
+of modal variation. But since part of what must be charitably
+interpreted is our modal thought and talk about how things <em>would
+have been</em>, not just about what we <em>would have thought or
+said</em> about things, the role of semantic plasticity may be smaller
+than the authors suggest.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00041"
+class="search-passage">The scope for charitable interpretation depends
+on how wide a range of candidates for reference reality affords.
+<em>BOP</em> argues for several principles of plenitude to fill out
+reality in natural ways and facilitate charitable interpretation; it has
+little sympathy for error theories.</span></p>
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00042"
+class="search-passage">There is far more metaphysics and higher-order
+logic to learn from <em>BOP</em> than this review can convey; I hope to
+have conveyed at least an impression of its intellectual style.
+<em>BOP’s</em> analyses of the puzzles in the rigorous framework of
+higher-order modal logic focuses a microscope on the underlying issues
+and distinctions. Much previously obscured structure comes into clear
+view. Although <em>BOP</em> does not pretend to reach definitive
+conclusions, it provides the means to build on its achievements, perhaps
+to supersede them. That is what one expects of good science.</span></p>
+<h1 class="unnumbered"
+id="references"><span class="print-page" data-page="224" id="print-page-224" aria-hidden="true"></span>References</h1>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00043"
+class="search-passage">Bacon, A. Forthcoming. <em>A Philosophical
+Introduction to Higher-Order Logics.</em> London: Routledge.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00044"
+class="search-passage">Fritz, P. and N. Jones, eds. Forthcoming.
+<em>Higher-Order Metaphysics.</em> Oxford: Oxford University
+Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00045"
+class="search-passage">Goodsell, Z. and J. Yli-Vakkuri. MS. <em>Logical
+Foundations.</em> MS.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00046"
+class="search-passage">Kripke, S. 1980. <em>Naming and Necessity.</em>
+Oxford: Blackwell.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00047"
+class="search-passage">Salmón, N. 1989. The logic of what might have
+been. <em>Philosophical Review</em> 98: 3–34.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00048"
+class="search-passage">Williamson, T. <a class="crossref-link" href="../../works/identity-and-discrimination/index.html">1990</a>. <em>Identity and
+Discrimination.</em> Oxford: Blackwell.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00049"
+class="search-passage">Williamson, T. <a class="crossref-link" href="../../works/everything/index.html">2003</a>. Everything.
+<em>Philosophical Perspectives</em> 17: 415–65.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00050"
+class="search-passage">Williamson, T. <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>. <em>Modal Logic as
+Metaphysics.</em> Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00051"
+class="search-passage">Williamson, T. <a class="crossref-link" href="../../works/modal-science/index.html">2016</a>. Modal science. <em>Canadian
+Journal of Philosophy</em> 46: 453–92.</span></p>
+</div>
+<div class="reference-entry">
+<p><span
+id="passage-higher-order-metaphysics-and-small-differences-00052"
+class="search-passage">Williamson, T. <a class="crossref-link" href="../../works/suppose-and-tell/index.html">2020</a>. <em>Suppose and Tell: The
+Semantics and Heuristics of Conditionals.</em> Oxford: Oxford University
+Press.</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

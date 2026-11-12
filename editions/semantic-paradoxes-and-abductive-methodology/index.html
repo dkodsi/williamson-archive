@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Semantic paradoxes and abductive methodology by Timothy Williamson. In Bradley Armour-Garb (ed.), The Relevance of the Liar (2017), 325–346. Oxford: Oxford University Press."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Semantic paradoxes and abductive methodology - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/semantic-paradoxes-and-abductive-methodology.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>Semantic paradoxes and abductive
+methodology</h1><p class="author">Timothy
+Williamson</p><p class="publication">In Bradley Armour-Garb (ed.),
+<em>The Relevance of the Liar</em> (2017), 325–346. Oxford: Oxford
+University Press.</p></header>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00001"
+class="search-passage"><span class="orig-page" data-page="325" id="page-325" aria-hidden="true"></span>Understandably
+absorbed in technical details, discussion of the semantic paradoxes
+risks losing sight of broad methodological principles. This chapter
+sketches a general approach to the comparison of rival logics, and
+applies it to argue that revision of classical propositional logic has
+much higher costs than its proponents typically recognize.</span></p>
+<h1 class="unnumbered"
+id="logical-truths-and-universal-generalizations">13.1. Logical Truths
+and Universal Generalizations</h1>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00002"
+class="search-passage">As a first step, we rehearse a version of
+Tarski’s account of logical consequence in his famous early paper
+(Tarski 1936).</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00003"
+class="search-passage">For present purposes, we are <em>not</em> trying
+to analyze a pretheoretically given concept of logical consequence.
+Although the folk reason, and sometimes even reflect on differences
+between specific instances of good and bad reasoning, they have no need
+to distinguish between <em>logically</em> valid reasoning and reasoning
+valid in some much broader sense. Nor should logic as a developing
+theoretical discipline tailor its basic theoretical terms to fit
+whatever pretheoretic prejudices and stereotypes may happen to be
+associated with the word ‘logic’, any more than physics should tailor
+its basic theoretical terms to fit whatever pretheoretic prejudices and
+stereotypes may happen to be associated with the word ‘physics’. Like
+every other form of systematic inquiry, logic has the right to identify
+and employ whatever fundamental distinctions help it formulate the most
+fruitful questions and their answers. Such distinctions cut through
+pointless accretions and complications in folk logic.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00004"
+class="search-passage">We start from an interpreted object-language L.
+It could be a natural language, although in practice we shall find it
+more convenient to deal with an interpreted formal language, such as a
+mathematical notation, since we have a clearer overview of the totality
+of its sentences and their syntax. We do not assume that
+<span class="orig-page" data-page="326" id="page-326" aria-hidden="true"></span>the
+speakers of L have agreed an explicit semantic theory of L, any more
+than the speakers of a natural language have agreed an explicit semantic
+theory of it. Rather, as with a natural language, the speakers of L
+share ordinary linguistic competence in L, using it as a public
+language, relying on the publicly available, informally explained
+meanings of its sentences. They acquire such competence in the first
+place by the direct method of immersion in the language, supplemented
+with occasional ad hoc explanations of specific points, usually given by
+already competent speakers. As always, this shared competence permits,
+and indeed enables, deep disagreements between speakers to be expressed
+in the common language.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00005"
+class="search-passage">We are going to define a relation of <em>logical
+consequence</em> between sets of sentences of L and sentences of L, but
+first we need to sketch in some more background.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00006"
+class="search-passage">For simplicity, we assume that all sentences of L
+are declarative. If L has context-sensitive expressions, we
+provisionally fix a preferred context—ideally, one that leaves
+quantifiers unrestricted. Taking nondeclaratives and indexicality into
+account would complicate the arguments below without seriously impeding
+them. For concreteness, we further assume that L has at least the
+expressive power of a first-order language with identity: L has
+negation, conjunction, disjunction, universal and existential
+quantifiers, an identity predicate, and an appropriate variety of other
+predicates. We assume that open or closed formulas of L can be evaluated
+as true or otherwise on an assignment of values to variables; after all,
+L is an interpreted language, not a mere formalism.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00007"
+class="search-passage">The <em>constants</em> of L are the atomic
+nonvariable expressions of L, of whatever type. From among them we
+select a set of <em>logical constants</em>. In Tarski’s original paper,
+he left it open where and how the distinction between logical and
+nonlogical constants is to be drawn, and indeed whether it can be drawn
+nonarbitrarily. In a later paper, he proposed that the logical constants
+are those invariant under permutations of individuals (Tarski 1986). If
+a once-and-for-all criterion of logicality is wanted, something along
+those lines may be the best we can do. But for present purposes a
+once-and-for-all criterion is not wanted. Rather, the choice of logical
+constants is pragmatic. In effect, one is investigating which general
+structural principles the logical constants satisfy. Varying the
+extension of ‘logical constant’ amounts to varying what one is
+investigating the general structural features of. For example, in modal
+logic, if one is interested in the specific structural features of
+metaphysical necessity and metaphysical possibility, one may make the
+operators <span class="modal-operator">□</span> and <span
+class="modal-operator">◇</span> logical constants (typically, in
+addition to the standard ones) with the respective intended
+interpretations (as in Williamson <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>). Alternatively, one may be
+interested in the structural features general to all operators, and make
+<span class="modal-operator">□</span> and <span
+class="modal-operator">◇</span> nonlogical. Both choices are legitimate.
+Indeed, both investigations need to be carried out sooner or later. Of
+course, some choices of logical constant will send the investigation
+outside the pragmatically appropriate domain of logic. For instance, if
+one counts ‘mass’ and ‘energy’ as ‘logical’ constants, one will be doing
+physics rather than logic in any distinctive sense.
+<span class="orig-page" data-page="327" id="page-327" aria-hidden="true"></span>Experience
+and good judgment are needed to determine which choices determine
+promising inquiries.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00008"
+class="search-passage">In what follows, we assume that a set of logical
+constants has been given, and that it includes at least the usual
+suspects: negation, conjunction, disjunction, the universal and
+existential quantifiers, and the identity predicate. Others will be
+added as required.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00009"
+class="search-passage">For each nonlogical constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+we extend the language with a new variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>e</mi></msub><annotation encoding="application/x-tex">v_e</annotation></semantics></math>
+of the same semantic type as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>e</mi></msub><mo>=</mo><msub><mi>v</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">v_e=v_f</annotation></semantics></math>
+only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">e=f</annotation></semantics></math>.
+For each sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+be the result of substituting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>e</mi></msub><annotation encoding="application/x-tex">v_e</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+throughout
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+for each nonlogical constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>.
+For each set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">Γ</mi><mi>v</mi></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><msup><mi>α</mi><mi>v</mi></msup><mo>:</mo><mi>α</mi><mo>∈</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\Gamma^v=\{\alpha^v:\alpha\in\Gamma\}</annotation></semantics></math>.
+Some of the new variables will be of higher type, for instance those
+replacing atomic predicates and sentences, and will need to be assigned
+values appropriate to their type. If the context restricted the values
+of the variables to a contextually relevant domain, the assignments
+would need to meet those restrictions, but for present purposes we can
+work on the simplifying assumption that the quantifiers are
+unrestricted. Although in this chapter we will continue speaking in
+terms of ‘values’ and ‘assignments’, a more rigorous treatment would be
+articulated in part by quantifiers of suitably higher types in the
+metalanguage, in order to avoid Russellian paradoxes with unrestricted
+quantification.<a href="#note-1" id="note-ref-1" class="note-ref"
+data-note="1" aria-label="Note 1">1</a> These complications do not
+affect the broad methodological issues which concern this
+chapter.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00010"
+class="search-passage">We can now define logical consequence. A sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+is a <em>logical consequence</em> of a set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vDash\mathrm{\alpha}</annotation></semantics></math>)
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+is true on every assignment on which every member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Γ</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\Gamma^v</annotation></semantics></math>
+is true. As a special case,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is <em>logically true</em>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\vDash\mathrm{\alpha}</annotation></semantics></math>)
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+is a logical consequence of the empty set, in other words,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+is true on every assignment. We can think of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+as representing the logical form of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>,
+and the pair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">&lt;</mo><msup><mi mathvariant="normal">Γ</mi><mi>v</mi></msup><mo>,</mo><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><mo stretchy="false" form="postfix">&gt;</mo></mrow><annotation encoding="application/x-tex">\mathopen{&lt;}\Gamma^v,\mathrm{\alpha}^v\mathclose{&gt;}</annotation></semantics></math>
+as representing the logical form of the argument from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>,
+subject to the stipulation that logical form is invariant under
+permutations of the variables of a given type.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00011"
+class="search-passage">Logical consequence in the sense of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+obeys the standard structural rules for a consequence relation. That is,
+the following hold for all sentences
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">β</mi><annotation encoding="application/x-tex">\mathrm{\beta}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+and all sets
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>:</span></p>
+<div class="displayblock labelled-display extra-wide-labels">
+<dl>
+<dt>Assumption</dt>
+<dd>
+<span id="passage-semantic-paradoxes-and-abductive-methodology-00012"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">}</mo><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\{\mathrm{\alpha}\}\vDash\mathrm{\alpha}</annotation></semantics></math></span>
+</dd>
+<dt>Monotonicity (Thinning)</dt>
+<dd>
+<span id="passage-semantic-paradoxes-and-abductive-methodology-00013"
+class="search-passage"><em>If</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vDash\alpha</annotation></semantics></math>
+<em>then</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>∪</mo><mi mathvariant="normal">Δ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\Gamma\cup\Delta\vDash\alpha</annotation></semantics></math></span>
+</dd>
+<dt>Cut</dt>
+<dd>
+<span id="passage-semantic-paradoxes-and-abductive-methodology-00014"
+class="search-passage"><em>If</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vDash\alpha</annotation></semantics></math>
+<em>and</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi>α</mi><mo stretchy="false" form="postfix">}</mo><mo>⊨</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\Delta\cup\{\alpha\}\vDash\beta</annotation></semantics></math>
+<em>then</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>∪</mo><mi mathvariant="normal">Δ</mi><mo>⊨</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\Gamma\cup\Delta\vDash\beta</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00015"
+class="search-passage">Logical consequence also obeys a rule of closure
+under uniform substitution. To be more precise, let a <em>uniform
+substitution</em> be a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">s</mi><annotation encoding="application/x-tex">\mathrm{s}</annotation></semantics></math>
+that maps each expression
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+to an expression
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">s</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">\mathrm{s}e</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+of the same type as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>,
+maps every logical constant to itself, and commutes with all grammatical
+constructions.<a href="#note-2" id="note-ref-2" class="note-ref"
+data-note="2" aria-label="Note 2">2</a> For example, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>¬</mo><annotation encoding="application/x-tex">\neg</annotation></semantics></math>
+is a logical constant,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">s</mi><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi mathvariant="normal">s</mi><mo stretchy="false" form="prefix">(</mo><mo>¬</mo><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">s</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>¬</mo><mi mathvariant="normal">s</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{s}(\neg\mathrm{\alpha})=\mathrm{s}(\neg)\mathrm{s}(\mathrm{\alpha})=\neg \mathrm{s}(\mathrm{\alpha})</annotation></semantics></math>.
+A uniform substitution may
+<span class="orig-page" data-page="328" id="page-328" aria-hidden="true"></span>substitute
+variables for nonlogical constants and constants for logical or
+nonlogical constants, within the same type; thus a uniform substitution
+may map
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+or vice versa. As usual,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">Γ</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">s</mi><mi mathvariant="normal">α</mi><mo>:</mo><mi mathvariant="normal">α</mi><mo>∈</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathrm{s}\Gamma=\{\mathrm{s}\mathrm{\alpha}:\mathrm{\alpha}\in\Gamma\}</annotation></semantics></math>.
+Then:</span></p>
+<div class="displayblock labelled-display extra-wide-labels">
+<dl>
+<dt>Uniform Substitution</dt>
+<dd>
+<span id="passage-semantic-paradoxes-and-abductive-methodology-00016"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vDash\mathrm{\alpha}</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi mathvariant="normal">s</mi><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\mathrm{s}\Gamma\vDash \mathrm{s}\mathrm{\alpha}</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00017"
+class="search-passage">Someone might ask what logical consequence in the
+sense of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>
+has to do with <em>logic</em>. Notoriously, Tarski’s account does not
+impose any modal or epistemic constraints, yet many philosophers assume
+that principles of logic should be necessary or a priori or analytic.
+They often present themselves as speaking on behalf of some intuitive
+pretheoretic conception of logic. But it has already been emphasized
+that we are not trying to be faithful to any such conception. Rather, we
+are trying to <em>construct</em> a definition that will best serve the
+purposes of theoretical inquiry in this general area. We want to
+<em>define</em> logical consequence rather than treating it as
+primitive, because any pretheoretic conception associated with the
+phrase ‘logical consequence’ will be too inchoate, too primitive in the
+adverse sense, to be adequately constrained. Tarski’s austerely clean
+and clear definition is perfectly suited to a discipline as fundamental
+as logic. In abstracting from the specific meanings of the nonlogical
+constants, it enables us to recognize the patterns formed by the logical
+constants, which pick out the field of our interest. Once we have that
+dimension of generality, adding a second dimension of necessity, a
+priority, or analyticity needlessly complicates the picture, mixing
+together questions that our fundamental terminology should hold
+carefully apart so that it can represent their interrelations
+perspicuously.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00018"
+class="search-passage">The wisdom of not adding such accretions to
+logical consequence is confirmed when we come to the semantic paradoxes.
+Suppose that we are confronted with a liar-like derivation of an absurd
+conclusion. We want a diagnosis which tells us <em>where</em> the
+derivation goes wrong. Roughly speaking, we want to know <em>which</em>
+step goes from true to false, or at least to untrue (this is only rough,
+in part because ‘true’ is itself one of the contested terms in the
+semantic paradoxes). If we are told that the conclusion of some step is
+not a logical consequence of its immediate premises, because the
+connection is contingent, or a posteriori, or synthetic, but the step
+turns out still to be materially truth-preserving, then we have not yet
+been given the needed diagnosis, because we have not been told where to
+stop going along with derivation. Of course, we want to <em>know</em>
+whether the step is materially good, but that is just an instance of the
+banal general need to know the results of a science in order to apply
+them; it does not stem from any special epistemic condition on logical
+consequence. When we are trying to solve the semantic paradoxes, any
+special epistemic or metaphysical constraint inserted into the
+definition of logical consequence would be a pointless distraction. In
+answer to the corresponding worry about the generality condition itself
+in Tarski’s account, that generality is the minimal requirement for a
+theoretically useful relation in the vicinity.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00019"
+class="search-passage"><span class="orig-page" data-page="329" id="page-329" aria-hidden="true"></span>One
+manifestation of the austerity of Tarski’s account, already noted in his
+1936 paper, is that if a closed sentence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+contains no nonlogical constants, then it is logically true if and only
+if it is (simply) true: the quantification over assignments is redundant
+here because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+contains no free variables. For instance, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mo>¬</mo><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\exists x\,\exists y\,\neg x=y</annotation></semantics></math>
+contains no nonlogical constants, it is logically true, because it is
+true: there are indeed at least two things. Although logical consequence
+is a linguistic relation, because it holds only between sets of
+sentences and sentences, and logical truth is a linguistic property,
+because it holds only of sentences, they are nevertheless closely
+connected to how things are in the mostly nonlinguistic
+world.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00020"
+class="search-passage">The equivalence between ascriptions of logical
+truth and nonmetalinguistic sentences can be generalized in an extension
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">L</mi><mo>+</mo></msup><annotation encoding="application/x-tex">\mathrm{L}^+</annotation></semantics></math>
+be the result of adding to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+both the new variables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>e</mi></msub><annotation encoding="application/x-tex">v_e</annotation></semantics></math>
+and universal quantifiers for all the corresponding types. A universal
+quantifier for a given type is interpreted as ranging unrestrictedly
+over all members of that type. For any sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+be the result of prefixing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+with a sequence of universal quantifiers for the relevant types on all
+its free variables (in some fixed order). For instance, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">a=a</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>a</mi></msub><mo>=</mo><msub><mi>v</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">v_a=v_a</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><msub><mi>v</mi><mi>a</mi></msub><mspace width="0.167em"></mspace><msub><mi>v</mi><mi>a</mi></msub><mo>=</mo><msub><mi>v</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">\forall v_a\,v_a=v_a</annotation></semantics></math>.
+If if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>F</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\neg\forall x\,Fx</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is a nonlogical predicate constant, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">α</mi><mi>v</mi></msup><annotation encoding="application/x-tex">\mathrm{\alpha}^v</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><msub><mi>V</mi><mi>F</mi></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">\neg\forall x\,V_Fx</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><msub><mi>V</mi><mi>F</mi></msub><mspace width="0.167em"></mspace><mo>¬</mo><mo>∀</mo><mi>V</mi><mspace width="0.167em"></mspace><mi>x</mi><msub><mi>V</mi><mi>F</mi></msub></mrow><annotation encoding="application/x-tex">\forall V_F\,\neg\forall V\,xV_F</annotation></semantics></math>.
+These extra universal quantifiers simply articulate in the extended
+object-language the effect of the universal quantification over
+assignments in the definition of logical truth. Thus any sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+is logically true
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\vDash\mathrm{\alpha}</annotation></semantics></math>)
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is (simply) true. But
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is simply a nonmetalinguistic generalization (unless
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+itself contains a metalinguistic logical constant, such as a truth
+predicate): there is no more reason to regard higher-order
+quantification as metalinguistic than there is to regard first-order
+quantification as metalinguistic.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00021"
+class="search-passage">The question whether
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is true still has a metalinguistic aspect, at least superficially. More
+generally, one is asking which <em>sentences</em> of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">L</mi><mo>+</mo></msup><annotation encoding="application/x-tex">\mathrm{L}^+</annotation></semantics></math>
+of a given universally generalized form are true. However, that is an
+artifact of presentational convenience. After all, one could present
+physics as asking which generalizations in an appropriate language for
+physics are true, but that would not make physics a metalinguistic
+inquiry in any deep sense. Rather, we may simply be using the truth
+predicate here in its familiar role as a convenient device for
+generalization (‘Everything the policeman said is true’). Our underlying
+interest is typically not in the sentences themselves.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00022"
+class="search-passage">We can go further if we provisionally assume that
+a disquotational principle for truth applies to sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">L</mi><mo>+</mo></msup><annotation encoding="application/x-tex">\mathrm{L}^+</annotation></semantics></math>
+(the assumption will be reconsidered shortly). Thus an ascription of
+truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+itself. But, as we have just seen, an ascription of logical truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is equivalent to an ascription of truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>.
+Hence an ascription of logical truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+itself. Investigating which sentences of L are logically true is
+tantamount to trying to decide universal generalizations of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">L</mi><mo>+</mo></msup><annotation encoding="application/x-tex">\mathrm{L}^+</annotation></semantics></math>
+not containing nonlogical constants. Such an investigation is not
+semantic or epistemological in any distinctive sense. It is
+<span class="orig-page" data-page="330" id="page-330" aria-hidden="true"></span>more
+like an investigation in mathematics or physics, an attempt to determine
+which relevant principles hold. Its subject matter is of obvious
+scientific interest, in a sense of ‘science’ that includes mathematics
+as well as the natural and social sciences.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00023"
+class="search-passage">One might feel that a universal generalization
+like
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,x=x</annotation></semantics></math>
+is too trivial to be of scientific interest, but of course
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">a=a</annotation></semantics></math>
+was chosen for heuristic reasons as an example of a logical truth for
+its extreme simplicity: in general, logical truths can have all the
+complexity and difficulty of mathematical theorems. Indeed, not even
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,x=x</annotation></semantics></math>
+is wholly uncontroversial. Some nonanalytic philosophers deny that
+anything is really self-identical, probably because (like many analytic
+philosophers) they misapply Leibniz’s Law. However confused their
+reasons, the reflexivity of identity is what they reprove their analytic
+colleagues for naively accepting. I have argued at length elsewhere that
+disputes even over elementary logical principles can be nonverbal,
+involving genuine disagreement of a nonmetalinguistic sort (Williamson
+<a class="crossref-link" href="../../works/the-philosophy-of-philosophy-second-edition/index.html">2007</a>, <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>). I will not repeat those arguments here.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00024"
+class="search-passage">Of course, the semantic paradoxes throw doubt on
+the assumed disquotational principle about truth, at least at the
+margins, since restricting that principle is one of the main strategies
+for resolving the paradoxes. Nevertheless, even if we cannot assume that
+an ascription of truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+is always exactly equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+itself, we might find the latter more interesting or fundamental than
+the former. After all, such nonmetalinguistic generalizations constitute
+in effect a large part of mathematics. Moreover,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+itself should precede ascriptions of truth to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+in the order of explanation. Just as we should ask whether grass is
+green before asking whether the sentence ‘Grass is green’ is true, once
+we separate the questions, so we should ask whether everything is
+self-identical before asking whether the sentence ‘Everything is
+self-identical’ is true, once we separate the questions. Allowing that
+the questions may have different answers does not reverse that order of
+priorities. In such cases, the metalinguistic question of the logical
+truth of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+may be just a convenient but approximate device for raising the
+nonmetalinguistic question of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+itself. To continue the analogy with physics: even if we are forced to
+restrict the disquotational principle, that does not make investigating
+which physical principles are true a fundamentally metalinguistic
+inquiry. We are still talking <em>with</em> words such as ‘mass’ and
+‘energy’, not <em>about</em> them. The same goes for the logical
+constants in the sort of logical inquiry just sketched.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00025"
+class="search-passage">In asking the nonmetalinguistic question
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>?’,
+we are outside the realm of <em>metalogic</em>, but that does not mean
+that we are outside the realm of <em>logic</em>. Indeed, we may be able
+to answer the question by deducing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">U</mi><mi mathvariant="normal">G</mi></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{UG}(\mathrm{\alpha})</annotation></semantics></math>
+in the object-language simply by using standard rules of logic. However,
+we cannot always rely on such rules. In some cases, there are no
+standard rules: we are breaking fresh ground. In other cases, there are
+standard rules, but paradoxes—such as the semantic paradoxes—call them
+into question. We are then forced to adopt a more speculative mode of
+inquiry, to determine which rules <em>should</em> be standard. In
+nonnormative terms, we
+<span class="orig-page" data-page="331" id="page-331" aria-hidden="true"></span>ask
+which universal generalizations really hold. Such an inquiry resembles
+an early stage of mathematics when there is still widespread
+disagreement over which first principles we may rely on in proving
+mathematical results. The investigation has a more philosophical flavor.
+Even here, for suitable choices of the logical constants, no discipline
+is better fitted than logic to evaluate the universal generalizations at
+issue, given their extreme generality.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00026"
+class="search-passage">Of course, the term ‘logic’ covers a wide variety
+of legitimate inquiries. The diverse branches of model theory, proof
+theory, set theory, and recursion theory all count as logic, and these
+days there are more logicians in departments of mathematics or computer
+science than in departments of philosophy, as a glance at a logic
+journal will indicate. Those more technical branches of logic are
+pursued by purely mathematical methods of an established sort. Moreover,
+insofar as they investigate logical consequence at all, they do so from
+a metalinguistic standpoint: their results about the object-language
+hold independently of its intended interpretation. By contrast, although
+the sort of nonmetalinguistic inquiry just sketched is logic, it is not
+primarily metalogic (see also Williamson <a class="crossref-link" href="../../works/logic-metalogic-and-neutrality/index.html">2014</a>). While it in no way
+supplants those more technical parts of logic, it has its own
+fundamental significance. It is, in one good sense of the term,
+<em>philosophical logic</em>.</span></p>
+<h1 class="unnumbered" id="logical-truths-and-logical-consequence">13.2.
+Logical Truths and Logical Consequence</h1>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00027"
+class="search-passage">The focus so far has been on logical truth, the
+special case of logical consequence where the set of premises is empty.
+One might fear that it is a very misleading special case: when it comes
+to practical applications, what typically matters is deducing
+conclusions that are not logical truths from premises that are not
+logical truths. Indeed, from a proof-theoretic perspective in
+particular, logical truth has no privileged status. The introduction and
+elimination rules for standard systems of natural deduction make that
+obvious. Praising Gentzen’s work in proof theory, Michael Dummett wrote:
+“The generation of logical truths is thus reduced to its proper,
+subsidiary, role, as a by-product, not the core, of logic” (1981,
+p. 434).</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00028"
+class="search-passage">Alternative logics standardly provide a candidate
+relation of logical consequence, not just a candidate set of logical
+truths. This is crucial for their treatment of the semantic paradoxes,
+many of which start from a premise that is not a logical truth, such as
+the observed identity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mo>=</mo><mtext mathvariant="normal">‘</mtext><mo>¬</mo><mrow><mi mathvariant="normal">True</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">λ</mi><mo stretchy="false" form="postfix">)</mo><mtext mathvariant="normal">’</mtext></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}=\text{‘}\neg\operatorname{True}(\mathrm{\lambda})\text{’}</annotation></semantics></math>
+in one version of the Liar. How well does the present approach extend
+from logical truth to logical consequence?</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00029"
+class="search-passage">The extension is not trivial. We have taken the
+target of the logical inquiry to be the typically nonmetalinguistic
+general principles involving only the selected logical constants, just
+as the target of a physical inquiry may be general principles involving
+only terms from a language for physics. In the logical case, those
+general principles correspond to logical truths. It is not obvious how
+logical consequence might be supposed to enlarge such a
+target.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00030"
+class="search-passage"><span class="orig-page" data-page="332" id="page-332" aria-hidden="true"></span>To
+define a framework for discussion, let a <em>consequence relation</em>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+be any relation between sets of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+and sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+that, in place of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>,
+obeys the standard structural rules above of Assumption, Monotonicity,
+Cut, and (with respect to the selected set of logical constants) Uniform
+Substitution.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+will of course have many different consequence relations in this sense.
+The narrowest consequence relation for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+holds between any set of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+and any of its members, and in no other case. The widest consequence
+relation for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+holds between any set of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+and any sentence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>.
+The <em>theorems</em> of a consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+are the sentences
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+for which
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\{\}\vdash\mathrm{\alpha}</annotation></semantics></math>.
+Thus the narrowest consequence relation for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+has no theorems, whereas every sentence of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+is a theorem of the widest consequence relation for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>.
+We can treat different consequence relations as rival attempts to
+theorize the typically nonmetalinguistic subject matter indicated in
+section 13.1. For simplicity, we may assume that the language
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+has already been chosen to be expressive enough for present purposes, so
+we need not extend it further to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">L</mi><mo>+</mo></msup><annotation encoding="application/x-tex">\mathrm{L}^+</annotation></semantics></math>.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00031"
+class="search-passage">In building the four rules into the definition of
+‘consequence relation’, the intent is not at all to put them above
+question, but simply to make the picture more definite for the sake of
+clarity. The arguments below can be adapted to wider classes of
+relations.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00032"
+class="search-passage">Of course, we could simply say that the relevant
+standard of success for consequence relations is how closely they
+approximate logical consequence as defined in section 13.1. More
+specifically, the consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+should if possible be both <em>sound</em>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vDash\mathrm{\alpha}</annotation></semantics></math>
+whenever
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>)
+and <em>complete</em>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>
+whenever
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊨</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vDash\mathrm{\alpha}</annotation></semantics></math>).
+But that looks like a fundamentally metalinguistic inquiry. The question
+is how, if at all, the fundamentally nonmetalinguistic conception in
+section 13.1 of the goal of the inquiry can be extended from logical
+truth to logical consequence.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00033"
+class="search-passage">One strategy is to take a consequence relation
+into account by trying to encode it in its set of theorems. Suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+contains a two-place sentence operator
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>
+which obeys conditional proof (the deduction theorem) and modus ponens,
+the standard introduction and elimination rules for a conditional, with
+respect to the consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>.
+In other words, for any formulas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">β</mi><annotation encoding="application/x-tex">\mathrm{\beta}</annotation></semantics></math>
+and set of formulas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt>(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>E)</dt>
+<dd>
+<span id="passage-semantic-paradoxes-and-abductive-methodology-00034"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi><mo>→</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}\to\mathrm{\beta}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Delta\vdash\mathrm{\alpha}</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>∪</mo><mi mathvariant="normal">Δ</mi><mo>⊢</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\Gamma\cup\Delta\vdash\mathrm{\beta}</annotation></semantics></math></span>
+</dd>
+<dt>(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>I)</dt>
+<dd>
+<span id="passage-semantic-paradoxes-and-abductive-methodology-00035"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>∪</mo><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\Gamma\cup\{\mathrm{\alpha}\}\vdash\mathrm{\beta}</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi><mo>→</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}\to\mathrm{\beta}</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00036"
+class="search-passage">Then, using the standard structural rules above,
+one can easily show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msub><mi mathvariant="normal">α</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi mathvariant="normal">α</mi><mi>n</mi></msub><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\{\mathrm{\alpha}_1,\ldots,\mathrm{\alpha}_n\}\vdash\mathrm{\beta}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><msub><mi mathvariant="normal">α</mi><mn>1</mn></msub><mo>→</mo><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="normal">α</mi><mn>2</mn></msub><mo>→</mo><mo stretchy="false" form="prefix">(</mo><mi>…</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="normal">α</mi><mi>n</mi></msub><mo>→</mo><mi mathvariant="normal">β</mi><mo stretchy="false" form="postfix">)</mo><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vdash\mathrm{\alpha}_1\to(\mathrm{\alpha}_2\to(\ldots(\mathrm{\alpha}_n\to\mathrm{\beta})\ldots)</annotation></semantics></math>.
+Thus, at least for finite sets of premises, each consequence is encoded
+in a corresponding theorem, so in a way one loses nothing by
+concentrating on logical truth. Even for infinite sets of premises,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+may be <em>compact</em>, like the standard consequence relation for
+first-order logic, in the sense that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mtext mathvariant="normal">*</mtext><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\text{*}\vdash\mathrm{\alpha}</annotation></semantics></math>
+for some finite subset
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\Gamma\text{*}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>,
+in
+<span class="orig-page" data-page="333" id="page-333" aria-hidden="true"></span>which
+case the consequence relation is still reducible to its theorems. Of
+course,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+may be noncompact, like the standard consequence relation for
+second-order logic. In that case, we may still be able to reduce logical
+consequence to logical truth in an extension of the language with an
+infinitary conjunction operator
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⋀</mo><annotation encoding="application/x-tex">\bigwedge</annotation></semantics></math>.
+For suppose that every set of sentences
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+has a conjunction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋀</mo><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\bigwedge\Gamma</annotation></semantics></math>,
+a single sentence, where for every sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋀</mo><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\bigwedge\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>.
+Then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mo>⋀</mo><mi mathvariant="normal">Γ</mi><mo>→</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\vdash\bigwedge\Gamma\to\mathrm{\alpha}</annotation></semantics></math>,
+as required.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00037"
+class="search-passage">However, for some nonclassical logics such
+reductions are unavailable. Cases in point are the weak and strong
+Kleene logics. They are based on three-valued tables; we may label the
+values ‘True’, ‘False’, and ‘Neutral’. True is the only designated
+value:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>
+if and only if whenever every member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+is assigned True, so is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>.
+For the strong Kleene tables, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>#</mi><annotation encoding="application/x-tex">\#</annotation></semantics></math>
+is an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-place
+connective then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>#</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="normal">α</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi mathvariant="normal">α</mi><mi>n</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\#(\mathrm{\alpha}_1,\ldots,\mathrm{\alpha}_n)</annotation></semantics></math>
+is assigned Neutral if every one of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">α</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi mathvariant="normal">α</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathrm{\alpha}_1,\ldots,\mathrm{\alpha}_n</annotation></semantics></math>
+is assigned Neutral. For the weak Kleene tables,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>#</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="normal">α</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi mathvariant="normal">α</mi><mi>n</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\#(\mathrm{\alpha}_1,\ldots,\mathrm{\alpha}_n)</annotation></semantics></math>
+is assigned Neutral if at least one of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">α</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi mathvariant="normal">α</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathrm{\alpha}_1,\ldots,\mathrm{\alpha}_n</annotation></semantics></math>
+is assigned Neutral. Either way, any sentence built up by connectives
+out of atomic sentences is assigned Neutral on the line of the
+three-valued table on which every atomic sentence is assigned Neutral.<a
+href="#note-3" id="note-ref-3" class="note-ref" data-note="3"
+aria-label="Note 3">3</a> Thus no such formula is assigned True on every
+line: the logic has no theorems at all. In particular, no conditional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>
+is definable in it for which
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>I)
+holds, since that would require
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p\to p</annotation></semantics></math>
+to be a theorem, because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\{p\}\vdash p</annotation></semantics></math>
+by Assumption. Nevertheless, neither the strong nor even the weak Kleene
+logic trivializes logical consequence. For example, the usual
+introduction and elimination rules for conjunction still hold:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">α</mi><mo>&amp;</mo><mi mathvariant="normal">β</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\{\mathrm{\alpha}\mathbin{\&amp;}\mathrm{\beta}\}\vdash\mathrm{\alpha}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">α</mi><mo>&amp;</mo><mi mathvariant="normal">β</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\{\mathrm{\alpha}\mathbin{\&amp;}\mathrm{\beta}\}\vdash\mathrm{\beta}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">α</mi><mo>,</mo><mi mathvariant="normal">β</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi mathvariant="normal">α</mi><mo>&amp;</mo><mi mathvariant="normal">β</mi></mrow><annotation encoding="application/x-tex">\{\mathrm{\alpha},\mathrm{\beta}\}\vdash\mathrm{\alpha}\mathbin{\&amp;}\mathrm{\beta}</annotation></semantics></math>.
+For such logics, we cannot afford to focus exclusively on logical truth.
+We especially cannot afford to do so when comparing nonclassical logics
+proposed in response to the semantic paradoxes, since one of the most
+salient is strong Kleene logic. If we just look at its theorems, it
+seems powerless; if we look at its consequence relation, it seems
+moderately powerful.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00038"
+class="search-passage">Even for logics with the full set of classical
+theorems, theoremhood may be a poor guide to the consequence relation
+when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>E
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>I
+fails. Here is an extreme example of a kind opposite to the Kleene
+logics. For a propositional language, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash\mathrm{\alpha}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+is either a classical tautology or a member of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+yields the same set of theorems as classical logic. One can easily check
+that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+obeys the structural rules for consequence relations. Nevertheless, it
+is radically impoverished. In particular, it lacks both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>E
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>I.
+For example, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+are distinct atomic sentences, we have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\{p\to q\}\vdash p\to q</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\{p\}\vdash p</annotation></semantics></math>
+but not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo><mi>p</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\{p\to q,p\}\vdash q</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>E
+fails, and we have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\{p,q\}\vdash q</annotation></semantics></math>
+but not
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>q</mi><mo stretchy="false" form="postfix">}</mo><mo>⊢</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\{q\}\vdash p\to q</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>I
+fails. If we just look at its theorems, the logic seems very powerful;
+if we look at its consequence relation, it seems almost
+powerless.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00039"
+class="search-passage">We need our methodology for comparing logics to
+be capable of taking seriously logics that lack a connective
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>
+obeying
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>I
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\to</annotation></semantics></math>E.
+Clearly, then, it must take account of the full consequence relation
+directly, not just of its precipitate in theorems.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00040"
+class="search-passage"><span class="orig-page" data-page="334" id="page-334" aria-hidden="true"></span>There
+is a natural proposal. For a consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+and a set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+of sentences, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mo>⊢</mo></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash}(\Gamma)</annotation></semantics></math>
+be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi mathvariant="normal">α</mi><mo>:</mo><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi mathvariant="normal">α</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{\mathrm{\alpha}:\Gamma\vdash\mathrm{\alpha}\}</annotation></semantics></math>,
+the set of consequences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+with respect to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>,
+in other words, the theory generated by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>.
+Suppose that we are comparing the consequence relations
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\vdash\text{*}</annotation></semantics></math>.
+Then we should not simply compare the theorems of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+with the theorems of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\vdash\text{*}</annotation></semantics></math>.
+Rather, we should compare the theories they generate from independently
+well-confirmed sentences, such as well-established principles of
+physics. That is, we should compare
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mo>⊢</mo></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash}(\Gamma)</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash\text{*}}(\Gamma)</annotation></semantics></math>
+as theories for various independently well-confirmed sets
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>.
+We require
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+to be highly confirmed because the best of logics will draw some bad
+conclusions from bad premises, and for reasons of methodological
+fairness we require the confirmation to be independent in the sense that
+it is not too sensitive to the choice of logic.<a href="#note-4"
+id="note-ref-4" class="note-ref" data-note="4" aria-label="Note 4">4</a>
+Comparing the theorems of the consequence relations is just the limiting
+case where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\Gamma=\{\}</annotation></semantics></math>,
+for the empty set is vacuously well-confirmed.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00041"
+class="search-passage">The proposal vindicates the idea that the
+comparison of consequence relations is primarily nonmetalinguistic,
+since the comparison of the theories
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mo>⊢</mo></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash}(\Gamma)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash\text{*}}(\Gamma)</annotation></semantics></math>
+will not in general be a primarily metalinguistic inquiry, unless the
+subject matter of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+itself happens to be metalinguistic. The proposal gives full weight to
+the service role of logic in drawing out the consequences of assumptions
+or beliefs that are not themselves logical truths, but it also takes the
+candidate logical truths into account in their own right.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00042"
+class="search-passage">The proposal need not displace the ideal for our
+consequence relation of soundness and completeness with respect to
+logical consequence
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊨</mo><annotation encoding="application/x-tex">\vDash</annotation></semantics></math>).
+Rather, it may be a means to achieving that ideal when it is unclear
+what rules of logic we should reason by. For we can use normal
+scientific standards of theory comparison in comparing the theories
+generated by rival consequence relations. Thus the evaluation of logics
+is continuous with the evaluation of scientific theories, just as Quine
+suggested (1951). We must now say something about what those standards
+are.</span></p>
+<h1 class="unnumbered"
+id="abductive-methodology-in-philosophical-logic">13.3. Abductive
+Methodology in Philosophical Logic</h1>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00043"
+class="search-passage">We make the standard assumption that scientific
+theory choice follows a broadly abductive methodology. Scientific
+theories are compared with respect to how well they fit the evidence, of
+course, but also with respect to virtues such as strength, simplicity,
+elegance, and unifying power. We may speak loosely of inference to the
+best explanation, although in the case of logical theorems we do not
+mean specifically <em>causal</em> explanation, but rather a wider
+process of bringing our miscellaneous information under generalizations
+that unify it in illuminating ways. We do not fully understand
+<em>why</em> this methodology works so well. In particular, much remains
+to be done in clarifying the relevance of aesthetic or pragmatic
+criteria like simplicity and elegance to questions of truth and falsity.
+Nevertheless, it is clear that if we do not prefer them in theories to
+complication and ugliness, we face a hopeless proliferation of ad hoc
+projections from our data. The abductive
+<span class="orig-page" data-page="335" id="page-335" aria-hidden="true"></span>methodology
+is the best science provides, and we should use it.<a href="#note-5"
+id="note-ref-5" class="note-ref" data-note="5" aria-label="Note 5">5</a>
+In particular, we should use it when comparing the theories generated
+from a given set of premises by rival consequence relations.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00044"
+class="search-passage">The idea of applying an abductive methodology to
+logic and mathematics is far from new. According to Bertrand Russell,
+what he calls ‘mathematical philosophy’</span></p>
+<blockquote>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00045"
+class="search-passage">proceeds, by analysing, to greater and greater
+abstractness and logical simplicity; instead of asking what can be
+defined and deduced from what is assumed to begin with, we ask instead
+what more general ideas and principles can be found, in terms of which
+what was our starting-point can be defined or deduced.</span></p>
+</blockquote>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00046"
+class="search-passage">The role of such an inquiry is ‘to take us
+backward to the logical foundations of the things that we are inclined
+to take for granted in mathematics’ (Russell 1919, pp. 1–2).</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00047"
+class="search-passage">We cannot attempt a general discussion of
+abductive methodology here. However, some specific comments on the
+criteria may be useful, concerning their application to
+logic.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00048"
+class="search-passage">First comes fit with the evidence. At a minimum,
+one might think, it requires <em>consistency</em> with the evidence. But
+that raises the worry that the operative standard of consistency is set
+by some transcendental background logic, thereby undermining the ideal
+of fair process in comparing alternative logics. Another worry is that a
+standard of consistency is unfair to dialetheist treatments of the
+semantic paradoxes, which embrace the contradictions and restrict the
+logic to block their trivializing consequences.<a href="#note-6"
+id="note-ref-6" class="note-ref" data-note="6" aria-label="Note 6">6</a>
+We can answer the first worry by using the logics under test to set
+their own standard of consistency. Moreover, we can answer the second
+worry too by treating consistency as avoidance of trivialization rather
+than avoidance of contradiction. To be more precise, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>
+be the relevant evidence, expressed in a set of sentences of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>.
+Then a consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+is <em>consistent</em> with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">E</mi><annotation encoding="application/x-tex">\mathrm{E}</annotation></semantics></math>
+if and only if for not every sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+does it hold that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">E</mi><mo>⊢</mo><mi mathvariant="normal">α</mi></mrow><annotation encoding="application/x-tex">\mathrm{E}\vdash\mathrm{\alpha}</annotation></semantics></math>.
+That criterion should be acceptable even to dialetheists, who are almost
+as keen as everyone else to avoid trivialization, as well as to
+classical logicians and others who accept that everything follows from a
+contradiction.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00049"
+class="search-passage">Such consistency with the evidence does not
+exhaust fit with the evidence. A theory to which the evidence is simply
+irrelevant is consistent with the evidence. A theory fits the evidence
+better if the evidence verifies some of its predictions as well as
+falsifying none of them. Evidence here is not confined to observations.
+We may use anything we know as evidence (Williamson <a class="crossref-link" href="../../works/knowledge-and-its-limits/index.html">2000</a>). For example,
+in the case of propositional modal logic, we may know that the coin
+could have come up heads, and could have not come up heads, but could
+not have both come up heads and not done so, and on that basis eliminate
+this proposed law:</span></p>
+<div class="displayblock">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00050"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi class="modal-operator">◇</mi><mi>p</mi><mo>&amp;</mo><mi class="modal-operator">◇</mi><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi class="modal-operator">◇</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>&amp;</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(◇ p\mathbin{\&amp;}◇ q)\to◇(p\mathbin{\&amp;}q)</annotation></semantics></math></span></p>
+</div>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00051"
+class="search-passage"><span class="orig-page" data-page="336" id="page-336" aria-hidden="true"></span>By
+contrast, this law identifies a useful pattern in the modal
+data:</span></p>
+<div class="displayblock">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00052"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi class="modal-operator">◇</mi><mi>p</mi><mo>∨</mo><mi class="modal-operator">◇</mi><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mo>↔</mo><mi class="modal-operator">◇</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(◇ p\vee◇ q)\leftrightarrow◇(p\vee q)</annotation></semantics></math></span></p>
+</div>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00053"
+class="search-passage">In that sense, we can verify some predictions of
+the law by using our pretheoretic ability to evaluate particular modal
+claims. The law even goes some way toward unifying and explaining its
+instances, by bringing them under an illuminating
+generalization.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00054"
+class="search-passage">The criterion of strength also requires
+clarification in the context of logic. In one standard logical sense, a
+theory
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is <em>stronger</em> than a theory
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+does not entail
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>:
+every theorem of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+is a theorem of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>,
+but not every theorem of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is a theorem of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>.
+Similarly, one might call a consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+stronger than a consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\vdash\text{*}</annotation></semantics></math>
+if and only if whenever
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\vdash\text{*}</annotation></semantics></math>
+holds, so does
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>,
+but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+sometimes holds when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\vdash\text{*}</annotation></semantics></math>
+does not. Since we are concerned with theories in a given interpreted
+language
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>,
+and consequence relations for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>,
+we do not consider ‘translations’ between languages, or nonhomophonic
+‘translations’ of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">L</mi><annotation encoding="application/x-tex">\mathrm{L}</annotation></semantics></math>
+into itself, in making comparisons of strength.<a href="#note-7"
+id="note-ref-7" class="note-ref" data-note="7" aria-label="Note 7">7</a>
+However, relative strength of the logical sort just explained is rarely
+at issue in the abductive comparison of scientific theories. Typically,
+we are comparing internally consistent theories that are inconsistent
+with each other (on any reasonable standard of consistency). But if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is stronger in the sense above than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+entails
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>,
+yet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is also inconsistent with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>,
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is internally inconsistent. For abductive purposes, we need a looser
+sense in which one internally consistent theory may be stronger than
+another with which it is inconsistent, because the former is more
+specific or informative than the latter. For instance, ‘The time is
+between 3.14 and 3.16’ is more specific than ‘The time is between 4.00
+and 12.00’, even though they are inconsistent with each other. To take
+an extreme case, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+be a consistent scientific theory axiomatized by a conjunction of
+universal generalizations with many interesting consequences, and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+be the consistent theory axiomatized by the negation of that
+conjunction.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+is inconsistent with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+and concerns the same subject matter; if the probability of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+on our evidence is less than 0.5, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+is more probable than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+on our evidence. Nevertheless,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+would typically not even be treated as a rival theory to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>,
+because it is too uninformative: it says that there is a counterexample
+somewhere or other to one of the universal generalizations in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>,
+but nothing more. One role for the informal scientific standard of
+strength is to provide a minimal threshold of informativeness below
+which theories do not even come up for serious abductive evaluation. We
+want scientific theories to inform us about their subject matters; weak
+theories do too little of that to give us what we want. Furthermore,
+strength contributes to explanatory power in the broad sense sketched
+above, the capacity to bring our miscellaneous information under
+generalizations that unify it in illuminating ways.<a href="#note-8"
+id="note-ref-8" class="note-ref" data-note="8"
+aria-label="Note 8">8</a></span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00055"
+class="search-passage">If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is stronger than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+in the strict logical sense, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+is also stronger than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+in the looser scientific sense, but the converse fails. Both senses are
+applicable
+<span class="orig-page" data-page="337" id="page-337" aria-hidden="true"></span>to
+logical theories. For instance, let PC be standard classical
+propositional logic, and IC be intuitionist propositional logic. Then
+every theorem of IC is a theorem of PC but not conversely, since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p\vee\neg p</annotation></semantics></math>
+is a theorem of PC but not of IC; likewise for the corresponding
+consequence relations. Thus PC is stronger than IC in the strict logical
+sense, and so also in the looser scientific sense. Now extend the
+language to include quantification into sentence position (propositional
+quantification). Thus the natural extension
+PC<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>+</mo></msup><annotation encoding="application/x-tex">^+</annotation></semantics></math>
+of PC to the extended language has the universal generalization
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>p</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall p\,(p\vee\neg p)</annotation></semantics></math>
+as a theorem. Arguably, the appropriate extension
+IC<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>+</mo></msup><annotation encoding="application/x-tex">^+</annotation></semantics></math>
+of IC to the extended language should have its negation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>p</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg\forall p\,(p\vee\neg p)</annotation></semantics></math>
+as a theorem: for intuitionists, it is absurd to suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>p</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall p\,(p\vee\neg p)</annotation></semantics></math>
+assertable, since that would require a decision procedure for all
+sentences of the language, which is impossible, and intuitionistically
+that absurdity makes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo>∀</mo><mi>p</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg\forall p\,(p\vee\neg p)</annotation></semantics></math>
+assertable. They deny the universal generalization even though they
+cannot deny any instance of it (since
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg(p\vee\neg p)</annotation></semantics></math>
+is intuitionistically as well as classically inconsistent). Thus neither
+PC<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>+</mo></msup><annotation encoding="application/x-tex">^+</annotation></semantics></math>
+nor
+IC<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>+</mo></msup><annotation encoding="application/x-tex">^+</annotation></semantics></math>
+is stronger than the other in the strict logical sense. Nevertheless,
+PC<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>+</mo></msup><annotation encoding="application/x-tex">^+</annotation></semantics></math>
+is stronger than
+IC<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>+</mo></msup><annotation encoding="application/x-tex">^+</annotation></semantics></math>
+in the looser scientific sense, just as the scientific theory
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">T</mi><annotation encoding="application/x-tex">\mathrm{T}</annotation></semantics></math>
+was stronger than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">T</mi><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\mathrm{T}\text{*}</annotation></semantics></math>
+above, in the way that a universal generalization is typically more
+informative than its negation. Remember, we are <em>not</em> concerned
+with ‘translations’ between classical and intuitionistic languages
+because we are considering the corresponding logics as formulated in a
+single already interpreted language.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00056"
+class="search-passage">In discussion of alternative logics, it is not
+always recognized that strength is a strength, in logical theories as in
+others. One often encounters various forms of exceptionalism about
+logic, according to which weakness is a strength in logic, because weak
+logics leave open more possibilities, prejudge fewer issues, and achieve
+higher levels of neutrality. However, such tendencies have no natural
+stopping-off point short of an empty consequence relation, since any
+logical principle whatsoever is in principle open to challenge. Indeed,
+virtually every salient logical principle has actually been challenged
+by some philosopher or other. Attempts to argue that the challenges are
+just verbal typically fail to do justice to the role of an interpreted
+public language in which all parties are competent for the formulation
+of such challenges: one is reminded of a bland spokesman for a
+totalitarian regime, assuring us that its critics do not mean what they
+say. Since I have discussed this issue at length elsewhere, I will not
+labor it further here (Williamson <a class="crossref-link" href="../../works/the-philosophy-of-philosophy-second-edition/index.html">2007</a>, <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>, <a class="crossref-link" href="../../works/logic-metalogic-and-neutrality/index.html">2014</a>). Henceforth, I will
+assume the abductive methodology.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00057"
+class="search-passage">Once we assess logics abductively, it is obvious
+that classical logic has a head start on its rivals, none of which can
+match its combination of simplicity and strength. Its strength is
+particularly clear in propositional logic, since PC is Post-complete, in
+the sense that the only consequence relation properly extending the
+classical one is trivial (everything follows from anything). First-order
+classical logic is not Post-complete, but is still significantly
+stronger than its rivals, at least in the looser scientific sense, as
+well as being simpler than they are; likewise for
+<span class="orig-page" data-page="338" id="page-338" aria-hidden="true"></span>natural
+extensions of it to more expressive languages. In many cases, it is
+unclear what abductive gains are supposed to compensate us for the loss
+of strength involved in the proposed restriction of classical
+logic.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00058"
+class="search-passage">None of this is yet to say that no nonclassical
+logic can overcome the initial advantages of classical logic once we
+move to a wider setting, by considering fit with evidence or with other
+scientific theories, or by treating more expressions as logical
+constants. Quantum logic is an obvious test case. Quine (1951) invoked
+proposals to revise the law of excluded middle in order to simplify
+quantum mechanics, and Putnam (1969) more pertinently proposed rejecting
+one of the distributive laws of PC as a precondition for understanding
+what is physically occurring in two-slit experiments. In both cases, the
+idea was that the intrinsic abductive advantages of classical logic over
+nonclassical alternatives are trumped by the abductive advantages of
+quantum mechanics plus the preferred nonclassical logic over quantum
+mechanics plus classical logic. The general methodology proposed in this
+chapter does not preclude such a challenge to classical logic. In the
+terminology of section 13.2, comparing the consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo><annotation encoding="application/x-tex">\vdash</annotation></semantics></math>
+of classical logic with the consequence relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow><annotation encoding="application/x-tex">\vdash\text{*}</annotation></semantics></math>
+of the nondistributive logic at issue involves comparing the theory
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mo>⊢</mo></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash}(\Gamma)</annotation></semantics></math>
+with the theory
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">n</mi></mrow><mrow><mo>⊢</mo><mtext mathvariant="normal">*</mtext></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Γ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{Cn}_{\vdash\text{*}}(\Gamma)</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+comprises principles of quantum mechanics. However, both Quine (1970,
+pp. 85–86) and Putnam (2012) later came to a negative verdict on quantum
+logic. Most significantly, in practice rejecting classical logic just
+does not seem to help us understand the nature of quantum reality. Thus
+quantum logic is not in practice an encouraging precedent for critics of
+classical logic. Nevertheless, the challenge had to be argued through in
+immanent detail; it could not merely be dismissed on transcendental
+grounds.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00059"
+class="search-passage">The strong prima facie abductive case for
+classical logic just noted does <em>not</em> depend on a principle of
+conservativism. It does not rely on the position of classical logic as
+the status quo, the logic we more or less currently accept, nor does it
+appeal to the benefits of familiarity or the costs of change. It
+concerns intrinsic features of classical logic, such as simplicity and
+strength, which it would have even if we currently accepted some
+nonclassical logic. The case may indeed be strengthened by reference to
+the track record of classical logic: it has been tested <em>far</em>
+more severely than any other logic in the history of science, most
+notably in the history of mathematics, and has withstood the tests
+remarkably well. Nevertheless, the initial abductive case for classical
+logic would be quite powerful, even if we had only stumbled across that
+logic a few weeks ago.</span></p>
+<h1 class="unnumbered" id="application-to-the-semantic-paradoxes">13.4.
+Application to the Semantic Paradoxes</h1>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00060"
+class="search-passage">We can now consider the semantic paradoxes as a
+challenge to classical logic, and apply the abductive methodology just
+sketched to the challenge.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00061"
+class="search-passage"><span class="orig-page" data-page="339" id="page-339" aria-hidden="true"></span>At
+first sight, the semantic paradoxes constitute unusually promising
+ground for an abductive critique of classical logic. They seem to rely
+on a combination of classical logic with identity and a disquotational
+principle for truth to derive absurd consequences from easily verified
+premises, such as that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mo>=</mo><mtext mathvariant="normal">‘</mtext><mo>¬</mo><mrow><mi mathvariant="normal">True</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">λ</mi><mo stretchy="false" form="postfix">)</mo><mtext mathvariant="normal">’</mtext></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}=\text{‘}\neg\operatorname{True}(\mathrm{\lambda})\text{’}</annotation></semantics></math>,
+where the sentence
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mrow><mi mathvariant="normal">True</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">λ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg\operatorname{True}(\mathrm{\lambda})</annotation></semantics></math>’
+has indeed been labeled
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">λ</mi><annotation encoding="application/x-tex">\mathrm{\lambda}</annotation></semantics></math>’;
+such a sentence simply articulates part of our evidence. Thus we seem to
+be forced to restrict either classical logic or disquotation. But if we
+restrict classical logic in suitable ways, then we can hold on to an
+unrestricted disquotation principle which allows us to treat any
+sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>
+as freely intersubstitutable with a sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">True</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">‘</mtext><mi mathvariant="normal">α</mi><mtext mathvariant="normal">’</mtext><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{True}(\text{‘}\mathrm{\alpha}\text{’})</annotation></semantics></math>
+that applies the truth predicate to a quotation name
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>’
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">α</mi><annotation encoding="application/x-tex">\mathrm{\alpha}</annotation></semantics></math>.
+Thus although the restriction of classical logic involves a loss of both
+simplicity and strength, it compensates us by saving the simplicity and
+strength of unrestricted disquotation. Saving the simplicity and
+strength of unrestricted classical logic forces us to sacrifice the
+simplicity and strength of unrestricted disquotation. Which is the
+better deal?</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00062"
+class="search-passage">In this respect, the case against classical logic
+from the semantic paradoxes is better than most cases against classical
+logic, such as that from the sorites paradoxes. For the latter typically
+involve no principles as simple and strong as disquotation to compensate
+for the lost simplicity and strength of classical logic (for the case of
+the sorites paradoxes see Williamson <a class="crossref-link" href="../../works/vagueness/index.html">1994</a>).</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00063"
+class="search-passage">To apply our abductive methodology to the
+semantic paradoxes, we should add both the truth predicate and the
+quotation device to the usual list of logical constants. The reason is
+of the pragmatic kind explained in section 13.1: in this context part of
+our interest is in what general principles the truth predicate and the
+quotation device obey, so we should hold them fixed, and not worry
+whether they are <em>really</em> logical devices in some mysterious deep
+sense. Thus we count as revising logic whether we revise excluded middle
+or disquotation. However, the term ‘classical logic’ will as usual be
+confined to the logic of the more standard logical constants: negation,
+disjunction, conjunction, the quantifiers, and the identity predicate.
+Thus, given our evidence, the choice is indeed between revising
+classical logic and revising disquotation.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00064"
+class="search-passage">Let us return to the choice between restricting
+classical logic and restricting disquotation. On second thoughts, one
+might doubt the apparent symmetry between the options. For the constants
+of classical logic seem to express absolutely fundamental structure. By
+contrast, the constants at issue in the disquotational principle—the
+truth predicate, quotation marks—seem to express much less fundamental
+matters, specific to the phenomenon of language. Thus the comparison
+between classical logic and disquotation looks analogous to the contrast
+between a successful theory in fundamental physics and a successful
+theory in one of the special sciences, such as economics. Suppose that
+the economic theory is found to be inconsistent with the fundamental
+physical theory. Faced with the choice as to which theory to restrict in
+order to preserve the other unrestricted, which would you choose?
+Perhaps one can imagine unusual
+<span class="orig-page" data-page="340" id="page-340" aria-hidden="true"></span>circumstances
+in which it would be better to restrict the fundamental physical theory
+in order to preserve the economic theory unrestricted. Nevertheless, on
+general methodological grounds, that would usually be a perverse choice.
+It would normally be better to make the opposite choice, and restrict
+the economic theory in order to preserve the fundamental physical theory
+unrestricted. By analogy, then, on general methodological grounds it
+would normally be better to restrict disquotation in order to preserve
+classical logic unrestricted, and perverse to do the
+opposite.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00065"
+class="search-passage">Friends of disquotation may dispute the analogy.
+In particular, they may argue that the concept of truth is itself
+implicitly fundamental to our usual understanding of classical logic,
+through both the standard truth-conditional account of the meanings of
+the classical logical constants and the standard Tarskian account of
+logical consequence as generalized truth-preservation. The truth
+predicate and quotation marks are then just the linguistic devices
+required to articulate that fundamental conception. On this view, the
+disquotational principle for truth concerns as fundamental a level as
+does classical logic.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00066"
+class="search-passage">Our general abductive methodology helps us
+resolve the apparent impasse. As we saw, it recommends us not to compare
+two logics only in isolation, but also to compare the results of
+combining each of them with well-confirmed results from outside logic,
+such as principles of natural science. But now a crucial asymmetry
+becomes visible. For any complex scientific theory, especially one that
+involves some mathematics, will make heavy use of negation, conjunction,
+disjunction, the quantifiers, and identity. Thus, restricting classical
+logic will tend to impose widespread restrictions on its explanatory
+power, by blocking the derivation of its classical consequences in
+particular applications. By contrast, most scientific theories make no
+use whatsoever of a truth predicate and quotation marks, because they
+are not metalinguistic theories. Hence restricting disquotation makes no
+difference to their explanatory power. Once we take such extralogical
+applications into account, restricting classical logic must involve a
+vastly greater abductive loss than does restricting
+disquotation.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00067"
+class="search-passage">Quine already made a similar point, in relation
+to both the semantic and the set-theoretic paradoxes:</span></p>
+<blockquote>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00068"
+class="search-passage">The classical logic of truth functions and
+quantification is free of paradox, and incidentally it is a paragon of
+clarity, elegance, and efficiency. The paradoxes emerge only with set
+theory and semantics. Let us then try to resolve them within set theory
+and semantics, and not lay fairer fields to waste. (1970,
+p. 85)</span></p>
+</blockquote>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00069"
+class="search-passage">However, two differences may be noted. First,
+Quine bases his argument on ‘the maxim of minimum mutilation’. By
+contrast, I argued above that abductive comparisons of the relevant kind
+need not make such appeals to a principle of conservativism. Second, the
+quotation comes from <em>Philosophy of Logic</em>, in which
+<span class="orig-page" data-page="341" id="page-341" aria-hidden="true"></span>Quine
+notoriously claims of the deviant logician: ‘when he tries to deny the
+doctrine he only changes the subject’ (1970, p. 81). Here Quine takes
+disputes over alternative logics to be verbal. By contrast, I have
+argued that they typically involve genuine nonverbal disagreement (a
+view perhaps closer to that of Quine 1951).<a href="#note-9"
+id="note-ref-9" class="note-ref" data-note="9"
+aria-label="Note 9">9</a></span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00070"
+class="search-passage">But wait: the friends of disquotation are not
+finished yet. Like other opponents of classical logic, they argue that
+it fails only in exceptional cases, and can be recovered in
+nonexceptional ones. When we need it, we can have it. For example, many
+proponents of a nonclassical approach to the semantic paradoxes opt for
+the strong Kleene logic
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">K</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\mathrm{K}_3</annotation></semantics></math>.
+True is the only designated value. Liar-like sentences are supposed to
+be neither True nor False. The law of excluded middle fails in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">K</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\mathrm{K}_3</annotation></semantics></math>,
+because both
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\neg p</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p\vee\neg p</annotation></semantics></math>
+are Neutral when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is Neutral. However, adding
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∨</mo><mo>¬</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p\vee\neg p</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">K</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\mathrm{K}_3</annotation></semantics></math>
+for each atomic sentence
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+restores classical logic, since it is True when and only when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is True or False, and the Kleene tables yield the standard bivalent
+outputs whenever all the inputs are bivalent. Thus the Kleenean recovers
+classical logic for nonparadoxical sentences by adding appropriate
+instances of excluded middle. This goes for Hartry Field’s approach
+(2008), and for many other nonclassical logics.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00071"
+class="search-passage">Of course, it can be far from obvious which
+sentences <em>are</em> paradoxical. Semantic paradoxes can be contingent
+on all sorts of circumstance (Kripke 1975). Even if we are working in a
+language for physics, with no overtly semantic vocabulary, a
+reductionist about semantics may worry that the property of Truth is
+expressed by some complex predicate or other of the language for
+physics, so that confining our sentences to that language is no
+guarantee of nonparadoxicality.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00072"
+class="search-passage">There is a more general concern. The retreat to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">K</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\mathrm{K}_3</annotation></semantics></math>
+invalidates vast swathes of ordinary mathematical reasoning, since
+mathematicians freely reason in ways that depend on the law of excluded
+middle. Such restrictions on mathematics in turn restrict its
+applications to natural science. The natural scientists might overcome
+the restrictions by postulating instances of excluded middle as
+needed.<a href="#note-10" id="note-ref-10" class="note-ref"
+data-note="10" aria-label="Note 10">10</a> But then their explanations
+invoke those auxiliary assumptions, which reduces their explanatory
+value; elegant explanations get as much as possible out of as little as
+possible. The point is not that the auxiliary assumptions exceed the
+classical logician’s commitments: they do not, because the classical
+logician is anyway committed to the unrestricted law of excluded middle.
+Rather, the point is that the auxiliary assumptions are ad hoc for the
+Kleenean in a way they are not for the classical logician, who derives
+them all from the simple, elegant, general principles of classical
+logic. The Kleenean can give them no such general explanation. The best
+the Kleenean can do is derive them from a metalinguistic principle such
+as that all instances of excluded middle in the language of physics are
+true; but it would be bizarre to claim that ordinary physical
+explanations which happen to need excluded middle actually involve such
+metalinguistic considerations. Thus the Kleenean strategy pays a heavy
+abductive cost across a vast range of ordinary
+<span class="orig-page" data-page="342" id="page-342" aria-hidden="true"></span>science,
+by remodeling ordinary scientific explanations in ways that introduce
+numerous ad hoc assumptions. By standard abductive criteria, the
+classical strategy does significantly better, because its abductive
+costs are restricted to metalinguistic discourse.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00073"
+class="search-passage">Similar considerations apply to other
+nonclassical treatments of the semantic paradoxes. For instance, a
+dialetheist may argue for truth-value gluts rather than gaps: if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is paradoxical, then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is both true and false, so the contradiction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∧</mo><mo>¬</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">p\wedge\neg p</annotation></semantics></math>
+is both true and false too. The dialetheist may classify the rule of
+disjunctive syllogism as invalid, on the grounds that when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is both true and false but
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is simply false, the disjunction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\neg p\vee q</annotation></semantics></math>
+is both true and false, so the argument from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\neg p\vee q</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+has true premises (even though one of them is also false) and a simply
+false conclusion. That would invalidate a vast array of arguments in
+mathematics and the rest of science. The dialetheist may respond by
+permitting instances of disjunctive syllogism in nonparadoxical cases,
+whichever they are. But, just as before, that still involves a heavy
+abductive cost across a vast range of ordinary science, by remodeling
+ordinary scientific explanations in ways that introduce numerous ad hoc
+elements.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00074"
+class="search-passage">The piecemeal reintroduction of instances of
+missing classical principles involves heavy abductive costs through loss
+of simplicity and elegance. The appeal to the greater complexity of
+nonclassical logics here involves more than the usual impressionistic
+claim that classical logic is simpler than its nonclassical rivals. In
+the context of the semantic paradoxes, technical results are available
+about the extreme complexity of some nonclassical proposals.<a
+href="#note-11" id="note-ref-11" class="note-ref" data-note="11"
+aria-label="Note 11">11</a> By standard abductive criteria, it is far
+better to keep classical logic unrestricted and restrict disquotation
+than to keep disquotation unrestricted and restrict classical
+logic.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00075"
+class="search-passage">To sharpen our sense of the abductive loss
+involved in the nonclassical proposals, we may consider the opposite
+process, of gain through theoretical unification. Suppose that we have
+explained many different physical phenomena, using specific auxiliary
+hypotheses on a case-by-case basis. Now someone notices that vast
+numbers of those auxiliary hypotheses can all be subsumed as instances
+of a single simple universal generalization, which we then postulate as
+a law. That would normally be regarded as progress, a very significant
+abductive gain. The nonclassical proposals for the semantic paradoxes
+amount to reversing just such a step. That involves an abductive loss
+equal to the abductive gain in taking the original step
+forward.</span></p>
+<h1 class="unnumbered" id="complications">13.5. Complications</h1>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00076"
+class="search-passage">The foregoing argument oversimplifies in various
+ways. Although they complicate the overall picture, they change its
+overall outline little. Still, they deserve mention.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00077"
+class="search-passage"><span class="orig-page" data-page="343" id="page-343" aria-hidden="true"></span>The
+competing theories of truth were assumed to be all formulated within the
+same interpreted language L. But many theories of truth essentially
+involve extensions of the original language specific to their approach.
+Tarski’s account is an obvious example, since it requires a hierarchy of
+languages.<a href="#note-12" id="note-ref-12" class="note-ref"
+data-note="12" aria-label="Note 12">12</a> Even nonhierarchical theories
+of truth may require distinctive new vocabulary, for instance to
+classify pathological sentences. This proliferation of new technical
+terms is of course normal for scientific theories, and poses no
+insuperable obstacle to abductive comparisons between them. It may,
+however, initially obscure their logical relations, since they may use
+homophonic expressions with different meanings, or nonhomophonic
+expressions with the same meaning. Serious issues of translation between
+the rival technical vocabularies may arise, as in any other science.
+And, as in any other science, such problems do not warrant overblown
+claims of wholesale incommensurability between rival theories, such as
+Kuhn and Feyerabend once made fashionable on the basis of a mistaken
+philosophy of language. We must be sensitive to semantic issues and
+flexible in handling them when we compare theories of truth abductively,
+but we can still make the comparisons.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00078"
+class="search-passage">The assumption of constancy in reference across
+contexts in the semantics of the given language L also needs to be
+lifted, since some important explanations of the paradoxes postulate
+variation in the reference of semantic terms such as ‘true’ across
+contexts (Parsons 1974; Burge 1979). This too complicates abductive
+comparisons between theories without rendering them impossible. Criteria
+such as strength, simplicity, and evidential fit can be applied even to
+theories formulated partly in context-sensitive terms.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00079"
+class="search-passage">A related idea is that in paradoxical contexts
+semantic terms like ‘true’ may <em>crash</em>, becoming locally semantic
+defective. Then meaningful sentences involving them may fail to say
+anything. Such malfunctions in the working of the linguistic mechanism
+may occur unsystematically, as malfunctions in general tend to do.<a
+href="#note-13" id="note-ref-13" class="note-ref" data-note="13"
+aria-label="Note 13">13</a> This idea may even suggest that we were too
+quick in assuming that the semantic paradoxes make classical logic and
+disquotation incompatible.<a href="#note-14" id="note-ref-14"
+class="note-ref" data-note="14" aria-label="Note 14">14</a> For the bad
+results of substituting semantically defective terms into principles of
+classical logic and disquotation no more show something wrong with those
+principles than the bad results of substituting ‘this little green man’
+or ‘0/0’ into a law of physics show something wrong with that law. We
+may simply regard such semantically defective instances as not genuine
+instances. Can we then hold on to <em>both</em> classical logic
+<em>and</em> disquotation after all?</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00080"
+class="search-passage">If crashes depend on context, then to theorize
+explicitly about such context-dependent phenomena we must relativize
+‘true’ and other semantic expressions to contexts. We cannot expect to
+generalize disquotational principles across contexts. Although ‘It is
+cold here’ is true as uttered in the present context if and only if it
+is cold here, and that whole biconditional sentence is true as uttered
+in other contexts too, it is not cold here (in Oxford) even though ‘It
+is cold here’ ” is true as uttered in various other contexts (such as
+the South Pole). In that banal sense,
+<span class="orig-page" data-page="344" id="page-344" aria-hidden="true"></span>disquotation
+must be restricted anyway. But that still leaves disquotation with
+respect to the theorist’s own context. The danger is that the semantic
+paradoxes force the theorist of crashes into locating some of those
+crashes for the terms of the crash theory itself in the very context of
+the theorizing, which looks like some sort of defeat for the crash
+theory itself. Of course, once we are willing to theorize about L in a
+metalanguage for L that contains a predicate ‘true’ for L not in L
+itself, we can have a disquotational principle for that predicate over
+all sentences of L, but such a potentially hierarchical approach falls
+short of the originally envisaged form of disquotation. And presumably
+the term ‘crash’ will have to get the hierarchical treatment too. But we
+can still hope for a simple, strong version of the hierarchical approach
+that fits our evidence.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00081"
+class="search-passage">Many ways of handling the semantic paradoxes are
+consistent with classical logic. There is no need to try to rank them
+here. But when they are ranked, the usual abductive methodology will of
+course apply.</span></p>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00082"
+class="search-passage">The methodological case made here for maintaining
+classical logic even in the face of the semantic paradoxes is a very
+natural one. Why have such obvious considerations been so widely
+neglected? Presumably, the explanation lies in the tendency to discuss
+the paradoxes in isolation. A narrow focus has many advantages, but from
+time to time it is worth looking at the bigger picture.</span></p>
+<h1 class="unnumbered" id="acknowledgements">Acknowledgements</h1>
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00083"
+class="search-passage">Previous versions of this material were presented
+at a conference in honor of Michael Dummett at the Institute of History
+and Philosophy of Sciences and Techniques in Paris and a seminar at
+Oxford University, and earlier in some of the 2013 Hägerstrom Lectures
+at Uppsala University. It has benefited greatly from questions and
+comments on those occasions.</span></p>
+<h1 class="unnumbered" id="notes">Notes</h1>
+<div id="note-1" class="note-entry" data-note="1">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00084"
+class="search-passage">Although Tarski (1936) is often cited as the
+origin of the model-theoretic conception of logical consequence, its
+assignments are not accompanied by a specification of a domain in the
+model-theoretic sense. He seems to have envisaged the quantifiers as
+ranging unrestrictedly over the relevant type in a type-theoretic
+hierarchy. Thus first-order quantifiers range over absolutely all
+individuals. See Williamson (<a class="crossref-link" href="../../works/everything/index.html">2003</a> and <a class="crossref-link" href="../../works/modal-logic-as-metaphysics/index.html">2013</a>, pp. 221–261) for more
+discussion. <a href="#note-ref-1" class="note-back"
+aria-label="Back to note 1">↩︎</a></span></p>
+</div>
+<div id="note-2" class="note-entry" data-note="2">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00085"
+class="search-passage">We spare the reader the further constraints
+needed to avoid clashes of variables. For instance,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>R</mi><mi>x</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x\,Rxx</annotation></semantics></math>
+should not count as a substitution instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>R</mi><mi>x</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">\forall x\,Rxy</annotation></semantics></math>.
+<a href="#note-ref-2" class="note-back"
+aria-label="Back to note 2">↩︎</a></span></p>
+</div>
+<div id="note-3" class="note-entry" data-note="3">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00086"
+class="search-passage">Since L is an already interpreted language, the
+status of the three-valued semantics is that of a <em>theory</em> about
+the semantics of L, comparable to that of a theory about the semantics
+of English or some other natural language. It is no mere stipulation. <a
+href="#note-ref-3" class="note-back"
+aria-label="Back to note 3">↩︎</a></span></p>
+</div>
+<div id="note-4" class="note-entry" data-note="4">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00087"
+class="search-passage">We require the sentences in Γ to be jointly
+well-confirmed, not just individually so, to avoid problems with lottery
+and preface paradoxes. <a href="#note-ref-4" class="note-back"
+aria-label="Back to note 4">↩︎</a></span></p>
+</div>
+<div id="note-5" class="note-entry" data-note="5">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00088"
+class="search-passage">For a general discussion and assessment of
+abductive methodology see Lipton (2004). <a href="#note-ref-5"
+class="note-back" aria-label="Back to note 5">↩︎</a></span></p>
+</div>
+<div id="note-6" class="note-entry" data-note="6">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00089"
+class="search-passage">A seminal work here is of course Priest (1987).
+<a href="#note-ref-6" class="note-back"
+aria-label="Back to note 6">↩︎</a></span></p>
+</div>
+<div id="note-7" class="note-entry" data-note="7">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00090"
+class="search-passage">The reason for the inverted commas is that such
+mappings typically fail to preserve meaning. <a href="#note-ref-7"
+class="note-back" aria-label="Back to note 7">↩︎</a></span></p>
+</div>
+<div id="note-8" class="note-entry" data-note="8">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00091"
+class="search-passage">Proof-theoretic criteria of strength are also too
+coarse-grained for present purposes. <a href="#note-ref-8"
+class="note-back" aria-label="Back to note 8">↩︎</a></span></p>
+</div>
+<div id="note-9" class="note-entry" data-note="9">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00092"
+class="search-passage">See Cozzo (1998, pp. 271–279) for an interesting
+development of Quine’s view in a similar spirit to that of this chapter
+(although I regard the commitment to evidence-transcendent truth he
+discusses as an interesting outcome rather than a <em>cost</em> of
+classical logic with known auxiliary assumptions). <a href="#note-ref-9"
+class="note-back" aria-label="Back to note 9">↩︎</a></span></p>
+</div>
+<div id="note-10" class="note-entry" data-note="10">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00093"
+class="search-passage">Halbach (2011, p. 293) points out that the use of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">K</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\mathrm{K}_3</annotation></semantics></math>
+for treating the semantic paradoxes involves an essential loss of the
+principle of transfinite induction up to the ordinal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ε</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\mathrm{\varepsilon}_0</annotation></semantics></math>,
+and a corresponding loss of combinatorial principles of arithmetic,
+although that would presumably not be crippling for most natural
+science. <a href="#note-ref-10" class="note-back"
+aria-label="Back to note 10">↩︎</a></span></p>
+</div>
+<div id="note-11" class="note-entry" data-note="11">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00094"
+class="search-passage">See the appeal to complexity considerations in
+the critique of Field (2008) by Welch (2011). <a href="#note-ref-11"
+class="note-back" aria-label="Back to note 11">↩︎</a></span></p>
+</div>
+<div id="note-12" class="note-entry" data-note="12">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00095"
+class="search-passage"><span class="orig-page" data-page="345" id="page-345" aria-hidden="true"></span>See
+Tarski (1935). Williamson (<a class="crossref-link" href="../../works/indefinite-extensibility/index.html">1998</a>) postulates a less systematic sort of
+linguistic variation provoked by the semantic paradoxes. <a
+href="#note-ref-12" class="note-back"
+aria-label="Back to note 12">↩︎</a></span></p>
+</div>
+<div id="note-13" class="note-entry" data-note="13">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00096"
+class="search-passage">See Smiley (1993) for a sketch of such an
+approach. <a href="#note-ref-13" class="note-back"
+aria-label="Back to note 13">↩︎</a></span></p>
+</div>
+<div id="note-14" class="note-entry" data-note="14">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00097"
+class="search-passage">Of course, as well as classical logic and
+disquotation, we also need some elementary syntax or the equivalent to
+derive the paradoxes by diagonalization or the like. Above, the equation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mo>=</mo><mtext mathvariant="normal">‘</mtext><mo>¬</mo><mrow><mi mathvariant="normal">True</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">λ</mi><mo stretchy="false" form="postfix">)</mo><mtext mathvariant="normal">’</mtext></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}=\text{‘}\neg\operatorname{True}(\mathrm{\lambda})\text{’}</annotation></semantics></math>
+was treated as part of our evidence. Alternatively, one could treat it
+as up for abductive assessment too. That would only reinforce the main
+moral of the chapter, that classical logic is the very last thing to
+revise. <a href="#note-ref-14" class="note-back"
+aria-label="Back to note 14">↩︎</a></span></p>
+</div>
+<h1 class="unnumbered" id="references">References</h1>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00098"
+class="search-passage">Burge, Tyler. 1979. “Semantical Paradox.”
+<em>Journal of Philosophy</em> 76: 169–198. Reprinted with postscript in
+Robert Martin, ed., <em>Recent Essays on Truth and the Liar Paradox</em>
+(Oxford: Clarendon Press, 1984), 83–117.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00099"
+class="search-passage">Cozzo, Cesare. 1998. “Epistemic Truth and
+Excluded Middle.” <em>Theoria</em> 64: 243–282.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00100"
+class="search-passage">Dummett, Michael. 1981. <em>Frege: Philosophy of
+Language</em>. London: Duckworth.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00101"
+class="search-passage">Field, Hartry. 2008. <em>Saving Truth from
+Paradox</em>. Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00102"
+class="search-passage">Halbach, Volker. 2011. <em>Axiomatic Theories of
+Truth</em>. Cambridge: Cambridge University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00103"
+class="search-passage">Kripke, Saul. 1975. “Outline of a Theory of
+Truth.” <em>Journal of Philosophy</em> 72: 690–716.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00104"
+class="search-passage">Lipton, Peter. 2004. <em>Inference to the Best
+Explanation</em>. 2nd ed. London: Routledge.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00105"
+class="search-passage">Parsons, Charles. 1974. “The Liar Paradox.”
+<em>Journal of Philosophical Logic</em> 3: 381–412. Reprinted with
+postscript in Robert Martin, ed., <em>Recent Essays on Truth and the
+Liar Paradox</em> (Oxford: Clarendon Press, 1984), 9–45.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00106"
+class="search-passage">Priest, Graham. 1987. <em>In Contradiction: A
+Study of the Transconsistent</em>. The Hague: Martinus Nijhoff. 2nd
+ed. Oxford: Oxford University Press, 2006.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00107"
+class="search-passage">Putnam, Hilary. 1969. “Is Logic Empirical?” In R.
+Cohen and M. Wartofsky, eds., <em>Boston Studies in the Philosophy of
+Science</em>, 5: 216–241. Dordrecht: Reidel.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00108"
+class="search-passage">———. 2012. “The Curious Story of Quantum Logic.”
+In Putnam, <em>Philosophy in an Age of Science: Physics, Mathematics,
+and Skepticism</em>, ed. M. De Caro and D. Macarthur, 162–177.
+Cambridge, MA: Harvard University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00109"
+class="search-passage">Quine, Willard van Orman. 1951. “Two Dogmas of
+Empiricism.” <em>Philosophical Review</em> 60: 20–43.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00110"
+class="search-passage">———. 1970. <em>Philosophy of Logic</em>.
+Englewood Cliffs, NJ: Prentice Hall.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00111"
+class="search-passage">Russell, Bertrand. 1919. <em>Introduction to
+Mathematical Philosophy</em>. London: George Allen &amp;
+Unwin.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00112"
+class="search-passage">Smiley, Timothy. 1993. “Can Contradictions Be
+True?” <em>Proceedings of the Aristotelian Society</em>, suppl. 67:
+17–33.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00113"
+class="search-passage">Tarski, Alfred. 1935. “Der Wahrheitsbegriff in
+den formalisierten Sprachen.” <em>Studia Philosophica Commentarii
+Societatis Philosophicae Polonorum</em> 1: 261–405. Translated by J. H.
+Woodger as “The Concept of Truth in Formalized Languages” in Tarski,
+<em>Logic, Semantics, Metamathematics</em>, ed. J. H. Woodger and J.
+Corcoran, 152–278, 2nd ed. (Indianapolis: Hackett, 1983).</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00114"
+class="search-passage">———. 1936. “O pojciu wynikania logicznego.”
+<em>Przegląd Filozoficzny</em> 39: 58–68. Translated by J. H. Woodger as
+“On the Concept of Logical Consequence” in Tarski, <em>Logic, Semantics,
+Metamathematics</em>, ed. J. H. Woodger and J. Corcoran, 2nd
+ed. (Indianapolis: Hackett, 1983), 409–420.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00115"
+class="search-passage">———. 1986. “What Are Logical Notions?”
+<em>History and Philosophy of Logic</em> 7: 145–154.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00116"
+class="search-passage">Welch, Philip. 2011. “Truth, Logical Validity,
+and Determinateness: A Commentary on Field’s <em>Saving Truth from
+Paradox</em>.” <em>Review of Symbolic Logic</em> 4: 348–359.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00117"
+class="search-passage">Williamson, Timothy. <a class="crossref-link" href="../../works/vagueness/index.html">1994</a>. <em>Vagueness</em>.
+London: Routledge.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00118"
+class="search-passage"><span class="orig-page" data-page="346" id="page-346" aria-hidden="true"></span>———.
+1998. “Indefinite Extensibility.” <em>Grazer Philosophische Studien</em>
+55: 1–24.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00119"
+class="search-passage">———. 2000. <em>Knowledge and Its Limits</em>.
+Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00120"
+class="search-passage">———. 2003. “Everything.” <em>Philosophical
+Perspectives</em> 17: 415–465.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00121"
+class="search-passage">———. 2007. <em>The Philosophy of Philosophy</em>.
+Oxford: Wiley-Blackwell.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00122"
+class="search-passage">———. 2013. <em>Modal Logic as Metaphysics</em>.
+Oxford: Oxford University Press.</span></p>
+</div>
+<div class="reference-entry">
+<p><span id="passage-semantic-paradoxes-and-abductive-methodology-00123"
+class="search-passage">———. 2014. “Logic, Metalogic, and Neutrality.”
+<em>Erkenntnis</em> 79: 211–231.</span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

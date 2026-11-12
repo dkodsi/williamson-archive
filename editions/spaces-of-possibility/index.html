@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Spaces of possibility by Timothy Williamson. Royal Institute of Philosophy Supplement 82 (2018): 189–204."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Spaces of possibility - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/spaces-of-possibility.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>Spaces of possibility</h1><p class="author">Timothy
+Williamson</p><p class="publication"><em>Royal Institute of Philosophy
+Supplement</em> 82 (2018): 189–204.</p></header>
+<div class="summary">
+<p><span id="passage-spaces-of-possibility-00001"
+class="search-passage"><span class="orig-page" data-page="189" id="page-189" aria-hidden="true"></span><em>Abstract</em></span></p>
+<p><span id="passage-spaces-of-possibility-00002"
+class="search-passage">We care not just how things are but how they
+could have been otherwise – about possibility and necessity as well as
+actuality. Many philosophers regard such talk as beyond the reach of
+respectable science, since observation tells us how things are but
+(allegedly) not how they could have been otherwise. I argue that, on the
+contrary, such criticisms are ill-founded: possibility and necessity are
+studied in natural science, for example through phase spaces, abstract
+mathematical representations of the possible states of a physical
+system. The possibility is objective, not merely epistemic, though it
+may be more restricted than pure metaphysical possibility. The elements
+of a phase space are very similar to Kripke’s possible worlds, despite
+being time slices rather than total histories. The absence of explicit
+modal operators in the mathematical models used by scientists does not
+show science to be nonmodal; rather, it manifests reliance on a
+mathematical framework for theorizing about objective possibility
+similar to the mathematical framework of possible worlds model
+theory.</span></p>
+</div>
+<h1 class="unnumbered" id="introduction1">1. Introduction<a
+href="#note-1" id="note-ref-1" class="note-ref" data-note="1"
+aria-label="Note 1">1</a></h1>
+<p><span id="passage-spaces-of-possibility-00003"
+class="search-passage">We speak not just of what <em>is</em> or <em>is
+not</em>, but of what <em>can</em> or <em>cannot</em> be, not just of
+what something does or fails to do, but of what it <em>can</em> or
+<em>cannot</em> do. We continually modify verb phrases with
+<em>modal</em> auxiliary verbs such as ‘can’, ‘could’, ‘should’, ‘may’,
+‘might’, ‘must’, constructions such as ‘able to’, ‘has to’, ‘needs to’,
+and so on. We also use corresponding adjectives: instead of saying that
+something <em>can</em> or <em>cannot</em> or <em>must</em> happen, we
+also say that it is <em>possible</em> or <em>impossible</em> or
+<em>necessary</em>. Such a modal dimension is more or less ubiquitous in
+our thought and talk.</span></p>
+<p><span id="passage-spaces-of-possibility-00004"
+class="search-passage">Not all modalities are alike. You spot a large
+insect of unknown species. You say ‘Careful: it may sting’. You don’t
+know whether it
+<span class="orig-page" data-page="190" id="page-190" aria-hidden="true"></span><em>can</em>
+sting, but since you know that for all you know it stings, you are
+entitled to say that it <em>may</em> sting. Here ‘may’ concerns your
+state of knowledge, while ‘can’ concerns the nature of the insect,
+irrespective of what you or anyone else happens to know or believe about
+it. Linguists have studied such a distinction in many languages.
+Linguists call ‘may’ here an <em>epistemic</em> modal, because it
+concerns the relevant speakers’ states of knowledge. Many of them call
+‘can’ a <em>circumstantial</em> modal, because it concerns the
+circumstances themselves, rather than states of knowledge about them.
+Other linguists call ‘can’ a <em>dynamic</em> modal, because it concerns
+powers to change the circumstances.<a href="#note-2" id="note-ref-2"
+class="note-ref" data-note="2" aria-label="Note 2">2</a></span></p>
+<p><span id="passage-spaces-of-possibility-00005"
+class="search-passage">Neither ‘circumstantial’ nor ‘dynamic’ is a
+terribly felicitous choice of terminology. Both words have misleadingly
+restrictive implications. Think of the classic metaphysical question
+‘Could there have been nothing?’ It makes sense, even if it is hard to
+answer. It is not a question about anyone’s states of knowledge or
+belief. After all, we all know that there <em>is</em> something, but our
+knowledge does not settle the question. The metaphysician grants that
+there is something, but still asks whether that is <em>necessarily</em>
+or only <em>contingently</em> so. The question abstracts away from
+everything specific to our actual circumstances.</span></p>
+<p><span id="passage-spaces-of-possibility-00006"
+class="search-passage">In more helpful terminology, epistemic modality
+is contrasted with <em>objective</em> modality. In effect, the
+metaphysician is asking whether it is objectively necessary in the
+highest degree that there is something. The distinctions between what is
+accidental and what is inevitable, or between what is contingent and
+what is necessary, concern objective modality. By contrast, the
+distinction between what is uncertain and what is certain concerns
+epistemic modality.</span></p>
+<p><span id="passage-spaces-of-possibility-00007"
+class="search-passage">This talk of objective modality is meant to
+recall the closely connected talk of <em>objective probability</em>.
+Suppose that I tell you that the coin hidden in my fist is either
+two-headed or two-tailed, but I won’t tell you which. I am trustworthy,
+and you trust me. What is the probability that the coin will come up
+heads if tossed?
+<span class="orig-page" data-page="191" id="page-191" aria-hidden="true"></span>Objectively,
+the probability is either 100% (if it is two-headed – we can ignore
+complications such as its landing on its edge) or 0% (if it is
+two-tailed). But if you are betting on the outcome, with your limited
+knowledge, it is wiser to assign a probability of 50% to heads. That is
+the best candidate for the <em>epistemic probability</em> of heads, the
+probability on your evidence. By contrast, physical chance and actual
+frequency are forms of objective probability. Also contrasted with
+objective probability is <em>subjective</em> or <em>doxastic
+probability</em>, your credence or degree of belief. Roughly, subjective
+or doxastic probability stands to belief as epistemic probability stands
+to knowledge; both concern the cognitive states of agents, as opposed to
+what obtains independently. For instance, if a fervent monarchist is
+certain that the coin will come up heads, because it is <em>the
+queen</em>’s head, his subjective probability for heads is 100%. If the
+coin is two-headed, he is lucky, because his subjective probability
+happens to match the objective probability. If the coin is two-tailed,
+he is unlucky, because his subjective probability happens to maximally
+mismatch the objective probability.</span></p>
+<p><span id="passage-spaces-of-possibility-00008"
+class="search-passage">Just as physical chance and actual frequency are
+different kinds of objective probability, so there are different kinds
+of objective modality. More specifically, there are different kinds of
+objective <em>possibility</em>, and for each of those there is a dual
+kind of <em>necessity</em>. This duality is a special sort of
+interdefinability. Given a sense of ‘possible’, one can define the dual
+sense of ‘necessary’ by stipulating that, for any state of affairs
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>,
+it is necessary for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+to obtain if and only if it is not possible for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+not to obtain. Conversely, given a sense of ‘necessary’, one can define
+the dual sense of ‘possible’ by stipulating that it is possible for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+to obtain if and only if it is not necessary for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">S</mi><annotation encoding="application/x-tex">\mathrm{S}</annotation></semantics></math>
+not to obtain.</span></p>
+<p><span id="passage-spaces-of-possibility-00009"
+class="search-passage">The auxiliary ‘can’ often expresses some kind
+practical possibility, a kind of objective possibility highly restricted
+by circumstances. For instance, as I write, I can touch my computer
+screen, but I cannot touch the books on my shelves, because they are a
+metre too far away. In the corresponding very restrictive sense, right
+now it is necessary that I am not touching those books. Obviously, there
+is also a less restrictive sense in which I can touch the books but
+cannot touch the moon, and a still less restrictive sense in which I can
+touch the moon (the world contains the technological resources for
+that).</span></p>
+<p><span id="passage-spaces-of-possibility-00010"
+class="search-passage">Some kinds of objective possibility hold the past
+history fixed, to give a sense in which it is impossible for you never
+to have been born. Other kinds of objective possibility allow the past
+history to vary, to give a sense in which it is possible for you never
+to have been born. Some kinds of objective possibility hold the laws of
+physics fixed, to give a sense in which the actual laws could not
+<span class="orig-page" data-page="192" id="page-192" aria-hidden="true"></span>have
+failed. Other kinds of objective possibility allow the laws of physics
+to vary, to give a sense in which the actual laws could have
+failed.</span></p>
+<p><span id="passage-spaces-of-possibility-00011"
+class="search-passage">In a given situation, something is <em>nomically
+possible</em> if and only if it is compatible with the laws of nature in
+that situation; dually, it is <em>nomically necessary</em> if and only
+if those laws entail it. Nomic possibility and necessity are objective
+modalities. But some kinds of objective possibility may be nomically
+impossible: perhaps, in some objective way, the actual laws of nature
+could have failed.</span></p>
+<p><span id="passage-spaces-of-possibility-00012"
+class="search-passage">Arguably, there is a most general objective kind
+of modality, <em>metaphysical modality</em>. If something has
+metaphysically necessity, it has <em>every</em> objective kind of
+necessity. In particular, metaphysical necessity entails both practical
+necessity and nomic necessity. Dually, if something has <em>any</em>
+objective kind of possibility, it has metaphysical possibility. In
+particular, both practical possibility and nomic possibility entail
+metaphysical possibility. Thus one may regard any objective modality as
+a restriction of a metaphysical modality.</span></p>
+<p><span id="passage-spaces-of-possibility-00013"
+class="search-passage">It was Saul Kripke who made the distinction
+between metaphysical and epistemic modality prominent.<a href="#note-3"
+id="note-ref-3" class="note-ref" data-note="3" aria-label="Note 3">3</a>
+He contrasted the objective distinction between (metaphysically)
+necessary and contingent truths with the epistemic distinction between
+truths we can know <em>a priori</em> and truths we can only know <em>a
+posteriori</em>, giving examples of both necessary truths knowable only
+<em>a posteriori</em> and contingent truths knowable <em>a priori</em>;
+the details do not matter for present purposes. Since Kripke, nomic and
+metaphysical modalities have been normal parts of a metaphysician’s
+stock-in-trade. Humbler objective modalities have long been normal parts
+of any human’s cognitive stock-in-trade. One need not be a metaphysician
+to care whether an insect can sting, or whether one can reach an
+apple.</span></p>
+<p><span id="passage-spaces-of-possibility-00014"
+class="search-passage">Remarkably, there has also been a long tradition
+of philosophical scepticism about objective modality, often associated
+with the idea that objective modal distinctions are somehow
+<em>pre-scientific</em>. Sometimes they are dismissed as simply
+illusions; sometimes they are grudgingly allowed but treated as
+superficial or gerrymandered. Section 2 sketches the sceptical concerns.
+Section 3 is a case study of one general way in which contemporary
+natural science explores spaces of objective possibility. It is the
+sceptics who are suffering from an illusion: that, with respect to the
+objective modalities, science is a modality-free zone. Although much
+remains to be understood as to exactly what role objective modality
+plays in a natural
+<span class="orig-page" data-page="193" id="page-193" aria-hidden="true"></span>science,
+the answer ‘none’ is no good. If that should be obvious, many clever
+philosophers have not found it so.</span></p>
+<h1 class="unnumbered"
+id="varieties-of-scepticism-about-objective-modality">2. Varieties of
+Scepticism About Objective Modality</h1>
+<p><span id="passage-spaces-of-possibility-00015"
+class="search-passage">The patriarch of scepticism about objective
+modality is, of course, David Hume. For him, as standardly – and, as far
+as I can tell, correctly – interpreted, we have no idea of power or
+necessary connection as observer-independent features of objects. We see
+the glass dropping to the floor, and think ‘It must smash’, but that is
+just our way of expressing our psychological expectation that it
+<em>will</em> smash. In saying ‘must’ rather than ‘will’, we make no
+further conjecture, true or false, about the glass itself. On Hume’s
+view, talk of ‘objective necessity’ makes no real sense.</span></p>
+<p><span id="passage-spaces-of-possibility-00016"
+class="search-passage">Surprisingly, Hume’s argument for scepticism
+about objective modality continues to be influential, despite its
+reliance on an eighteenth-century empiricist picture of perception. He
+assumes that our perceptual impressions are objectively amodal – they
+concern purely what things are, not what they can or must be – so that,
+however we patch them together into ideas, the results are always
+objectively amodal too. But why assume that all perceptual impressions
+are objectively amodal? Why be so sure that we never see that some
+object <em>can be reached</em>? Of course, someone else with much
+shorter arms may see the same object from the same angle in the same
+conditions yet not see that it can be reached, but so what? The sort of
+perception most relevant to science is not just perceiving objects; it
+is perceiving <em>that</em> something is so. We need to perceive-that in
+order to gather observational data against which to test scientific
+theories, or indeed to test simple everyday hypotheses about our
+environment.<a href="#note-4" id="note-ref-4" class="note-ref"
+data-note="4" aria-label="Note 4">4</a></span></p>
+<p><span id="passage-spaces-of-possibility-00017"
+class="search-passage">Of course, a theorist may somehow distinguish a
+narrow class of ‘purely perceptual’ that-contents from a wider class of
+linguistically articulable that-contents, inferred from the purely
+perceptual that-contents together with background beliefs. But even if
+one accepts such a controversial distinction, why assume that the purely
+perceptual that-contents will all be amodal? To guide our actions, we
+often need modal information about what we and other creatures and
+things in our environment can do, to identify the genuine options,
+opportunities, and dangers. Moreover, since we often act under time
+pressure in a fast-changing environment, we often need such
+<span class="orig-page" data-page="194" id="page-194" aria-hidden="true"></span>modal
+information without delay. Since inference from background beliefs is a
+time-consuming and cognitively costly operation, there are obvious
+evolutionary pressures for perception to deliver the required modal
+information directly. Thus we might expect at least some of the supposed
+purely perceptual that-contents to be modal. Some major psychological
+theories of perception postulate exactly that – for instance, Gibson’s
+theory of affordances.<a href="#note-5" id="note-ref-5" class="note-ref"
+data-note="5" aria-label="Note 5">5</a> Such theories cannot be
+dismissed on the basis of a picture of perception good enough for
+1750.</span></p>
+<p><span id="passage-spaces-of-possibility-00018"
+class="search-passage">Moreover, if for some reason all the supposed
+purely perceptual that-contents <em>are</em> amodal, why assume that
+every that-content we can entertain is definable in terms of purely
+perceptual that-contents? Such an empiricist dogma is a speculative
+hypothesis, arguably less plausible than the hypothesis that the
+capacity for applying objective modal distinctions is innate in humans.
+These are matters for scientific investigation, not blind faith. In
+short, the Humean critique fails to establish even a presumption of
+guilt in our thinking about objective modal matters.</span></p>
+<p><span id="passage-spaces-of-possibility-00019"
+class="search-passage">The leading twentieth-century critic of modality
+was Willard Quine.<a href="#note-6" id="note-ref-6" class="note-ref"
+data-note="6" aria-label="Note 6">6</a> However, his prime target was
+Rudolf Carnap’s account of <em>logical</em> modality. Since Carnap
+conceived logical necessity semantically, as a kind of analyticity, he
+did not really have <em>objective</em> modality in mind. Much of Quine’s
+specific critique is irrelevant to objective modality. Nevertheless, a
+more general Quinean critique is relevant. For Quine takes our best
+theory of the world to be fundamental physics, and with it mathematics,
+both of which he conceives as amodal. Thus our best understanding of the
+world has no place for objective modality. Quine’s scornful remarks
+about Aristotelian essentialism as an implicit commitment of quantified
+modal logic assume that essentialism is quite alien to contemporary
+science. Thus if quantified modal logic turns out to be implicit in much
+contemporary science, there are serious internal tensions in Quine’s
+position.</span></p>
+<p><span id="passage-spaces-of-possibility-00020"
+class="search-passage">Quine’s pupil David Lewis ingeniously made room
+for something like objective modality within a broadly Quinean
+worldview.<a href="#note-7" id="note-ref-7" class="note-ref"
+data-note="7" aria-label="Note 7">7</a>
+<span class="orig-page" data-page="195" id="page-195" aria-hidden="true"></span>Lewis’s
+‘modal realism’ postulates infinitely many possible worlds as large
+physical objects, spatiotemporally disconnected from each other, and
+uses them to make charitable sense of ordinary modal discourse. He does
+so by regimenting it in the formal language of quantified modal logic
+and then ‘translating’ the result into his preferred nonmodal language
+of counterpart theory. Thus Lewis reduces the modal to the non-modal. On
+his view, when people engage in modal discourse, including objective
+modal discourse, they often speak truly, but what is going on can be
+explained in ultimately extensional, non-modal terms.</span></p>
+<p><span id="passage-spaces-of-possibility-00021"
+class="search-passage">Lewis’s aim of interpreting ordinary modal
+discourse charitably is in line with Quine’s overall methodology, and
+the language of counterpart theory is respectable by Quinean standards.
+But should Quine accept Lewis’s postulate of infinitely many concrete
+worlds? After all, without reference to physics, Lewis is making bold
+claims about the global structure of spatiotemporal reality: for
+instance, that it divides into infinitely many mutually disconnected
+pieces. In effect, he is proposing a grand cosmological theory.
+Moreover, it is inconsistent with cosmological theories in physics,
+which also aim to map the global structure of spatiotemporal structure.
+Although Lewis’s postulate of disconnected pieces has some precedents in
+physics, the specific structures postulated are quite different.
+Moreover, for the sake of elegance in modal realism and of charity to
+claims that the laws of physics in our world are contingent, Lewis
+postulates worlds where those laws fail. Since those worlds are supposed
+to be part of overall spatiotemporal reality, he is implicitly committed
+to rejecting physicists’ claims that their laws hold throughout
+spatiotemporal reality, without restriction.<a href="#note-8"
+id="note-ref-8" class="note-ref" data-note="8" aria-label="Note 8">8</a>
+From a Quinean perspective, one might expect consistency with theories
+in physics to be given a higher priority than that. By making modal
+claims hostage to a deviant cosmology with little relation to
+developments in the natural sciences, Lewis unintentionally presents
+them as unscientific.</span></p>
+<p><span id="passage-spaces-of-possibility-00022"
+class="search-passage">It would be misleading to call Lewis himself a
+modal sceptic. Indeed, with Kripke and others such as Robert Stalnaker,
+he was a leader of the ‘modal turn’, when possible worlds became part of
+the standard framework within which to develop philosophical
+theories.</span></p>
+<p><span id="passage-spaces-of-possibility-00023"
+class="search-passage">Subsequently, there has been metaphysically
+driven pushback against the modal turn, involving a milder form of modal
+scepticism.
+<span class="orig-page" data-page="196" id="page-196" aria-hidden="true"></span>Although
+modal distinctions are admitted, they are side-lined. Much of the
+explanatory work they were expected to do was taken away from them and
+reassigned elsewhere, because they were thought to be too indiscriminate
+to do it properly. An early instance concerned attempts in the
+philosophy of mind to use a modal relation of <em>supervenience</em> to
+explain how the physical ‘determines’ the mental: no (possible) mental
+difference without a (possible) physical difference. By 1980, it was
+already a standard complaint that supervenience is too coarse-grained to
+capture the sense in which the physical was supposed to be
+constitutively <em>prior</em> to the mental.<a href="#note-9"
+id="note-ref-9" class="note-ref" data-note="9" aria-label="Note 9">9</a>
+Another key moment concerned Kripke’s use of modality to rehabilitate
+the old distinction between <em>essential</em> and <em>accidental</em>
+property possession: an object has a property essentially if and only if
+it is necessary that if the object exists then it has the property. In a
+very influential paper of 1994, Kit Fine objected that although it is
+impossible for either of Socrates and his singleton set {Socrates} to
+exist without the other, it is essential to {Socrates} to have Socrates
+as a member but not essential to Socrates to be a member of {Socrates},
+whereas the modal account makes the two essentialist claims stand or
+fall together. It is too coarse-grained to capture the sense in which
+Socrates is supposed to be constitutively prior to {Socrates}.<a
+href="#note-10" id="note-ref-10" class="note-ref" data-note="10"
+aria-label="Note 10">10</a> More fine-grained distinctions of essence,
+constitution, grounding, and the like were therefore invoked to do the
+explanatory work instead, and treated as metaphysically more fundamental
+than modality. Just as extensional distinctions had given way to
+intensional ones, so the latter gave way to hyperintensional
+distinctions.</span></p>
+<p><span id="passage-spaces-of-possibility-00024"
+class="search-passage">A recent manifestation of this new kind of modal
+scepticism is Ted Sider’s argument that metaphysical necessity is not a
+unified characteristic but a ragbag disjunction of miscellaneous
+features with no common rationale. If so, metaphysical modality is unfit
+for serious theoretical purposes. Like many modal sceptics, Sider
+specifically targets metaphysical modality, rather than objective
+modalities more generally. He does not consider it as a distinguished
+member of the broader category.<a href="#note-11" id="note-ref-11"
+class="note-ref" data-note="11" aria-label="Note 11">11</a></span></p>
+<p><span id="passage-spaces-of-possibility-00025"
+class="search-passage"><span class="orig-page" data-page="197" id="page-197" aria-hidden="true"></span>A
+common feature of modal scepticism is its presupposition that objective
+modalities are unscientific, therefore theoretically vulnerable.
+Thinking in terms of objective modalities is seen as something done by
+ordinary folk or metaphysicians, not as integral to natural science.
+Modal sceptics see themselves as fighting for science, not against
+it.</span></p>
+<p><span id="passage-spaces-of-possibility-00026"
+class="search-passage">One might hope to refute the idea that objective
+modalities are alien to natural science simply by pointing to nomic
+modality. The distinction between nomic necessity and nomic contingency
+just is the distinction between what the laws of nature entail and what
+they do not. But that response is inadequate as it stands, for it would
+still need to be shown that the distinction between those true universal
+generalizations in the language of science that express laws of nature
+and those that do not is load-bearing within the science. If the phrase
+‘law of nature’ functioned more like an honorific in science, a laurel
+wreath bestowed on the generalization that does all the serious work
+itself, then not much would have been done to vindicate the category of
+objective modality.</span></p>
+<p><span id="passage-spaces-of-possibility-00027"
+class="search-passage">To reinforce the impression that science is
+fundamentally amodal, the ‘harder’ the science the more mathematical is
+the language in which its theories are formulated. There are no modal
+operators in the language of mathematics. From the outside one may
+classify mathematical theorems as metaphysically necessary, but that
+classification plays no role within the mathematics itself.</span></p>
+<p><span id="passage-spaces-of-possibility-00028"
+class="search-passage">Nevertheless, it is an illusion that objective
+modalities play no role within natural science. They are integral to its
+subject matter. In effect, much of natural science is an exploration of
+objective modal space. Pure mathematics is not specifically about modal
+matters, but it is also not specifically about the phenomena studied in
+natural science. When the mathematics is applied to a physical system,
+it is instantiated by sets of objects relevant to that system, such as
+the set of its symmetries. Those objects may be objectively modal in
+nature, such as the set of its <em>possible</em> states, the states it
+<em>can</em> be in.</span></p>
+<p><span id="passage-spaces-of-possibility-00029"
+class="search-passage">The point can be argued in many different ways.
+For instance, natural science often investigates <em>probabilities</em>,
+and probability is a kind of modality, since whatever has non-zero
+probability is possible in a corresponding sense. Of course, some
+probabilities in science are epistemic, concerning scientists’ states of
+knowledge, as when they
+<span class="orig-page" data-page="198" id="page-198" aria-hidden="true"></span>discuss
+which theory is most probable on the current evidence. Epistemic
+probabilities correspond to epistemic modalities. But sometimes
+scientists are interested in objective probabilities as aspects of the
+physical system under study, and objective probabilities correspond to
+objective modalities. The most famous example is quantum mechanics, but
+sense can also be made of objective probabilities in classical physics.
+Objective probabilities do not require indeterminism; they can be
+defined in terms of a measure over a space of initial conditions for a
+system.</span></p>
+<p><span id="passage-spaces-of-possibility-00030"
+class="search-passage">Probabilities raise many complications,
+especially when defined over an infinite set of possibilities. For
+present purposes, it is sufficient to consider the simpler case of
+<em>phase space</em>. Thinking in terms of phase space is found in many
+areas of natural science.<a href="#note-12" id="note-ref-12"
+class="note-ref" data-note="12" aria-label="Note 12">12</a> Informally,
+scientists understand the phase space of a physical system as the space
+of its <em>possible</em> instantaneous states. For definiteness, we will
+consider a specific kind of phase space.</span></p>
+<h1 class="unnumbered" id="dynamical-systems">3. Dynamical Systems</h1>
+<p><span id="passage-spaces-of-possibility-00031"
+class="search-passage">Dynamical systems theory is a research programme
+in mathematics motivated with an eye to applications in physics,
+chemistry, biology, engineering, and elsewhere, including the theory of
+chaos. It investigates a mathematically well-defined family of
+structured sets, dynamical systems.<a href="#note-13" id="note-ref-13"
+class="note-ref" data-note="13" aria-label="Note 13">13</a></span></p>
+<p><span id="passage-spaces-of-possibility-00032"
+class="search-passage">A given dynamical system is based on a set of
+objects, which in a physical application are informally understood as
+states of a given physical system, such as the solar system, the
+terrestrial weather system, or a pendulum. These states are treated as
+maximally specific, mutually exclusive, and jointly exhaustive.
+Typically, geometrical or topological structure is defined over the set
+of states; although the details do not matter here, much of the
+mathematical power of the theory derives from this structure.</span></p>
+<p><span id="passage-spaces-of-possibility-00033"
+class="search-passage">The system is also equipped with a
+<em>dynamics</em>, which describes how it evolves over time. The
+dynamics is given by a family of mathematical functions, indexed by
+positive and negative numbers (including zero). A positive number
+represents a temporal distance into the
+<span class="orig-page" data-page="199" id="page-199" aria-hidden="true"></span>future;
+a negative number represents a temporal distance into the past. If you
+input a state of the system to the function indexed by a positive
+number, the function outputs the state the system will be in the
+associated length of time after it was in the input state. Similarly, if
+you input the state to the function indexed by a negative number, the
+function outputs the state the system was in the corresponding length of
+time before it was in the input state. Time may be treated either as
+discrete (represented by positive and negative integers) or as
+continuous (represented by positive and negative real numbers). Formal
+constraints are imposed to ensure that all the functions in the family
+fit together into a single coherent dynamics.</span></p>
+<p><span id="passage-spaces-of-possibility-00034"
+class="search-passage">The dynamics is <em>deterministic</em> both
+backwards and forwards in time: the state of the system at any given
+moment uniquely determines its state at any later or earlier
+moment.</span></p>
+<p><span id="passage-spaces-of-possibility-00035"
+class="search-passage">In laying down such a dynamics, we treat the
+system as closed, impervious to external influence, such as the
+intrusion of a meteorite. This of course is normally an idealization,
+but such idealizations are typical of natural science (for example, the
+treatment of a planet as a point mass), and should not disturb
+us.</span></p>
+<p><span id="passage-spaces-of-possibility-00036"
+class="search-passage">Analysing the global structure of the dynamics is
+often a key step in understanding the overall behavioural patterns of
+the system.</span></p>
+<p><span id="passage-spaces-of-possibility-00037"
+class="search-passage">When dynamical systems theory is applied to a
+given (type of) physical system, the states are typically assignments of
+numerical values to key variables associated with the system, such as
+the temperature at a given point. The dynamics is then usually specified
+by a family of equations in those variables, difference equations for
+discrete time or differential equations for continuous time.</span></p>
+<p><span id="passage-spaces-of-possibility-00038"
+class="search-passage">It is easy to show that if some state ever
+repeats, in the sense that if the system is in it then it will be in it
+again at some later time (according to the dynamics), then the state is
+involved in a Nietzschean eternal recurrence: the system’s history
+cycles infinitely. If there are only finitely many states, every state
+is involved in such an eternal recurrence. Indeed, Nietzsche’s interest
+in eternal recurrence was connected with developments in physics that
+figured in the prehistory of dynamical systems theory.</span></p>
+<p><span id="passage-spaces-of-possibility-00039"
+class="search-passage">In analysing a dynamical system, it is often
+convenient to partition the set of states into <em>orbits</em>. Two
+states are in the same orbit just in case if the system is in one of
+them then it was or will be in the other. This is an equivalence
+relation, so each state is in exactly one orbit. Thus orbits are
+mutually exclusive and jointly exhaustive of the set of
+states.</span></p>
+<p><span id="passage-spaces-of-possibility-00040"
+class="search-passage">In the special case where the partition contains
+only one orbit, the system sooner or later traverses every state.
+However, that case is unusual. More normally, the states are partitioned
+into at least two
+<span class="orig-page" data-page="200" id="page-200" aria-hidden="true"></span>orbits.
+This means that we must regard some states as <em>counterfactual</em>,
+not actually past, present, or future. The natural understanding of the
+states in an application is as <em>possible</em> states of the system.
+We cannot discard all states outside the actual orbit, because the
+geometrical or topological structure is defined over the set of states
+as a whole, not over a single orbit. Since the mathematical power of the
+theory depends on that structure, the utility of the application depends
+on retaining all the states, including the counterfactual ones. Thus the
+modal dimension of the system is crucial to its study.</span></p>
+<p><span id="passage-spaces-of-possibility-00041"
+class="search-passage">How can we articulate the modal dimension of
+dynamical systems explicitly? The key is to appreciate the analogy
+between possible states in phase space and possible worlds in models of
+modal logic as developed by Saul Kripke – who was aware of the analogy
+when doing his pioneering work. The set of worlds in a Kripke model
+corresponds to the set of states in a dynamical system, or, more
+generally, in a phase space. Possible worlds, like possible states, are
+conceived as maximally specific, mutually exclusive, and jointly
+exhaustive. Moreover, just as we can ask what is true or false in a
+possible world, so we can ask what is true or false in a possible state
+of the dynamical system.</span></p>
+<p><span id="passage-spaces-of-possibility-00042"
+class="search-passage">Incidentally, this analogy gives no support to
+Lewis’s modal realism; quite the opposite. Just as Kripke’s theory in no
+way motivates regarding all possible worlds as concretely realized, so
+regarding all possible states of the dynamical system as concretely
+realized would be to impose pointless confusion onto the idea of phase
+space, motivated by philosophical ideology rather than by any need of
+the science. Both possible worlds and possible states are better
+conceived more abstractly. The states of the dynamical systems are
+specified by possible assignments of values to physical variables;
+whether those variables will ever actually take those values is an
+entirely different question.</span></p>
+<p><span id="passage-spaces-of-possibility-00043"
+class="search-passage">A sentence is interpreted over a Kripke model by
+being assigned a proposition, modelled as a subset of the set of worlds
+in a model: the proposition is true at the worlds it contains and false
+at the other worlds, and the sentence receives exactly that
+truth-condition. Similarly, a sentence can be interpreted over a
+dynamical system by being assigned a proposition, modelled as a subset
+of the set of states in the dynamical system: the proposition is true at
+the states it contains and false at the other states, and the sentence
+receives exactly that truth-condition. This framework allows us to
+interpret modal operators over the system, just as in the simplest
+models of modal logic: necessity is equated with truth-in-every-state,
+like truth-in-every-world, and possibility with truth-in-some-state,
+like
+<span class="orig-page" data-page="201" id="page-201" aria-hidden="true"></span>truth-in-some-world.
+A sentence is <em>valid</em> over a dynamical system if and only if it
+is true in every state in the system, whatever sets of states are
+assigned to the atomic formulas.</span></p>
+<p><span id="passage-spaces-of-possibility-00044"
+class="search-passage">The effect of this semantics is that every
+dynamical system validates every theorem of a strong and simple modal
+system, known as S5, in which purely modal matters are never contingent:
+what is necessary is necessarily necessary, and what is possible is
+necessarily possible.</span></p>
+<p><span id="passage-spaces-of-possibility-00045"
+class="search-passage">Although the semantics for the modal operators
+over dynamical systems leaves them absolute, unrestricted by any
+relation of accessibility between worlds, that does not mean that the
+operators have generality over all <em>metaphysically</em> possible
+worlds. The states in a dynamical system may be much more restricted
+than that, and not only by laws of nature. For example, the laws of
+nature presumably do not require that there <em>be</em> the solar system
+at all, even though it is there in all states of a dynamical system of
+states of the solar system. Thus the states of a dynamical system need
+not cover all metaphysical or even all nomic possibilities.
+Nevertheless, the modalities defined over the dynamical system are still
+clearly <em>objective</em>. Their role is not to characterize what
+happens to be known or believed about the system.</span></p>
+<p><span id="passage-spaces-of-possibility-00046"
+class="search-passage">To express distinctions more specific to
+dynamical systems in our language, we can define some operators in terms
+of the dynamical functions, since they determine which states are in the
+past or future of a given state. For instance, we can define tense
+operators such as ‘sometime in the future’, ‘always in the future’,
+‘sometime in the past’, and ‘always in the past’.</span></p>
+<p><span id="passage-spaces-of-possibility-00047"
+class="search-passage">The temporal operators can usefully be combined
+with modal operators. For example, we can say that is <em>possible</em>
+for a given proposition to cease to obtain: in other words, in the
+future of some state in which the proposition is true is a state in
+which the proposition is false. We cannot express that general idea
+using only temporal operators or only modal operators.</span></p>
+<p><span id="passage-spaces-of-possibility-00048"
+class="search-passage">Thus the natural logic for dynamical systems has
+at least modal and temporal operators. These points help us reflect on
+some differences between states and worlds, despite the rough analogy
+between them.</span></p>
+<p><span id="passage-spaces-of-possibility-00049"
+class="search-passage">Normally, a world is supposed to encompass a
+whole history, past and future as well as present, without
+distinguishing one point in it as ‘now’. Thus it is more like a whole
+orbit than one state in that orbit. We need not specify such a world in
+addition to a state because the deterministic dynamics ensures that each
+state belongs to only one history, one orbit. Pursuing analogies in the
+opposite direction, one might try comparing a state with an ordered pair
+of a world and a time, which fixes the state of that world at that time:
+such pairs are
+<span class="orig-page" data-page="202" id="page-202" aria-hidden="true"></span>often
+used as points of evaluation in the standard semantics for a language
+with modal and temporal operators. However, that comparison is not quite
+apt, because states are repeatable, in the case of Nietzschean eternal
+recurrence, whereas one cannot be at the same world-time pair twice.
+This might suggest that states are ‘purely qualitative’ in some sense.
+But even that suggestion is wrong. For instance, suppose that two states
+are ‘mirror images’ of each other. Then there is no qualitative
+difference between them, yet we must not equate them as somehow the same
+state, since that would eliminate the distinction between an unchanging
+history that remains in just one of them throughout and a changing
+history that alternates between the two states. Dynamical systems permit
+such symmetries, and our methodology is, as far as we can, to avoid
+second-guessing the science. Thus states in dynamical systems do not
+quite fit into the standard philosophical categories. Nevertheless, the
+affinity with modal temporal logic is extremely strong.</span></p>
+<p><span id="passage-spaces-of-possibility-00050"
+class="search-passage">For many purposes we need a still more expressive
+language. For example, we might want to say that a given proposition is
+true throughout one orbit and in no other states. We cannot say that in
+the current language. We can overcome this expressive deficiency by
+introducing ‘propositional quantifiers’, which permit us to generalize
+on variables in sentence rather than name position. Since such a
+variable is interpreted as taking a set of states as its value, the
+generality is over all sets of states, rather than over all individual
+states. These quantifiers can be read as ‘for every proposition’ and
+‘for some proposition’. The sort of quantification over sets of states
+to which these propositional quantifiers correspond is frequently used
+in the ordinary mathematics of dynamical systems theory. For example, in
+the theory of chaos, it is used in defining ideas like ‘attractor’ and
+‘basin of attraction’. It is of great philosophical interest, in part
+<em>because</em> it is not some sort of philosophical accretion on the
+theory of dynamical systems, but simply the natural way of articulating
+structure already present in that theory. Although it can be paraphrased
+as quantification over propositions, a perfectly faithful rendering
+would have to respect the fact that the variables it binds take the
+grammatical position of sentences, not of names for propositions,
+perhaps by using such quantification in the metalanguage.</span></p>
+<p><span id="passage-spaces-of-possibility-00051"
+class="search-passage">Another example of the use of propositional
+quantification is to express the condition – which some dynamical
+systems satisfy but many do not – that all histories cycle, in other
+words that Nietzschean eternal recurrence is necessary.</span></p>
+<p><span id="passage-spaces-of-possibility-00052"
+class="search-passage">Here is an example of how the modal-temporal
+language avoids some ‘unphysical’ distinctions that the set-theoretic
+framework of
+<span class="orig-page" data-page="203" id="page-203" aria-hidden="true"></span>the
+standard mathematical formulation forces on us. It requires us to
+distinguish between a single state and the singleton set whose only
+member is that state: they are distinct entities because no set is a
+member of itself. That distinction seems ‘unphysical’. By contrast, the
+modal-temporal language has no need to express such a
+distinction.</span></p>
+<p><span id="passage-spaces-of-possibility-00053"
+class="search-passage">We can also use propositional quantification to
+say, truly, that there is a necessarily true proposition (the set of all
+states), a necessarily false proposition (the empty set), and a
+necessarily contingent proposition (any other set of states). These
+cases are of philosophical interest because they involve quantifying
+into the scope of a modal operator. This is exactly what Quine regarded
+as the third, most disgraceful stage of modal involvement.<a
+href="#note-14" id="note-ref-14" class="note-ref" data-note="14"
+aria-label="Note 14">14</a> But here we see that such ‘essentialism’ (in
+the relevant coarse-grained modal sense, rather than Fine’s) is simply a
+by-product of articulating the modal claims implicit in a scientific
+theory of dynamical systems. One proposition is essentially true, one is
+essentially false, and others are essentially contingent. That the
+quantification is propositional, in other words into sentence position
+rather than name position, only makes it worse from Quine’s perspective,
+since he insisted that the only logically respectable kind of
+quantification is into name position (in other words first-order
+quantification). Quine had in mind essentialism formulated with
+first-order quantifiers and modal operators with a stronger metaphysical
+reading of the quantifiers, but his objections are so general that if
+they worked at all, they would work against the present
+version.</span></p>
+<p><span id="passage-spaces-of-possibility-00054"
+class="search-passage">There is a more general moral here. Consider two
+strands in Quine’s philosophy. One is his methodological naturalism,
+roughly the idea that our philosophizing should be guided by our best
+overall theory of the world, which he took to boil down to fundamental
+physics plus mathematics. The other is his austerity about logic: no
+modal operators are allowed, only first-order quantifiers. Quine assumed
+that these two lines of thought were not in conflict. Our considerations
+suggest that he was wrong about that. Much of our best science has a
+modal dimension which can be made explicit most perspicuously in the
+framework of quantified modal logic.</span></p>
+<p><span id="passage-spaces-of-possibility-00055"
+class="search-passage">In a further development of these themes, one can
+also add first-order quantifiers over individuals to the language, and
+determine what quantified modal logic for them is satisfied. Doing so
+requires looking into the internal structure of the states, which in
+practice are
+<span class="orig-page" data-page="204" id="page-204" aria-hidden="true"></span>typically
+assignments of values to the relevant system variables; those variables
+may in turn be associated with an individual. For instance, the physical
+system might contain three particles, with variables for the position
+and velocity of each particle, making six variables in all; in that
+sense the dynamical system would be six-dimensional. This is not the
+place to go into details. The results reinforce the conclusions already
+reached.</span></p>
+<p><span id="passage-spaces-of-possibility-00056"
+class="search-passage">In general, the absence of modal operators from
+standard formulations of scientific theories in mathematical notation
+does not show the theories to be amodal, any more than the absence of
+modal operators in formal theories about possible worlds and their
+inhabitants shows those theories to be a modal. Rather, such theories
+are based on strong modal assumptions, without which their non-modal
+framework for the treatment of modal issues would embody modal
+fallacies.</span></p>
+<h1 class="unnumbered" id="notes">Notes</h1>
+<div id="note-1" class="note-entry" data-note="1">
+<p><span id="passage-spaces-of-possibility-00057"
+class="search-passage">This paper descends from a lecture given at the
+Royal Institute of Philosophy, where it received useful feedback. For a
+more detailed and rigorous development of the ideas in it, see Timothy
+Williamson, ‘Modal Science’, <em>Canadian Journal of Philosophy</em> 46
+(2016): 453–492. More general issues about the status of modal logic are
+treated in Timothy Williamson, <em>Modal Logic as Metaphysics</em>
+(Oxford: Oxford University Press, 2013). <a href="#note-ref-1"
+class="note-back" aria-label="Back to note 1">↩︎</a></span></p>
+</div>
+<div id="note-2" class="note-entry" data-note="2">
+<p><span id="passage-spaces-of-possibility-00058"
+class="search-passage">For the large relevant literature by linguists on
+the semantics of modal expressions in natural language, one might start
+with Angelika Kratzer, ‘What “must” and “can” must and can mean’,
+<em>Linguistics and Philosophy</em> 1 (1977): 337–355, and <em>Modals
+and Conditionals: New and Revised Perspectives</em> (Oxford: Oxford
+University Press), and Paul Portner, <em>Modality</em> (Oxford: Oxford
+University Press). For an exchange on the distinction between epistemic
+and objective modalities see Barbara Vetter, ‘Williamsonian modal
+epistemology, possibility-based’, <em>Canadian Journal of
+Philosophy</em> 46 (2016): 766–795, and Timothy Williamson, ‘Reply to
+Vetter’, <em>Canadian Journal of Philosophy</em> 46 (2016): 796–802. <a
+href="#note-ref-2" class="note-back"
+aria-label="Back to note 2">↩︎</a></span></p>
+</div>
+<div id="note-3" class="note-entry" data-note="3">
+<p><span id="passage-spaces-of-possibility-00059"
+class="search-passage">See Saul Kripke, <em>Naming and Necessity</em>
+(Oxford: Blackwell, 1980). <a href="#note-ref-3" class="note-back"
+aria-label="Back to note 3">↩︎</a></span></p>
+</div>
+<div id="note-4" class="note-entry" data-note="4">
+<p><span id="passage-spaces-of-possibility-00060"
+class="search-passage">For a strong case for modal perception, see
+Margot Strohminger ‘Perceptual knowledge of nonactual possibilities’,
+<em>Philosophical Perspectives</em> 29 (2015): 363–375. <a
+href="#note-ref-4" class="note-back"
+aria-label="Back to note 4">↩︎</a></span></p>
+</div>
+<div id="note-5" class="note-entry" data-note="5">
+<p><span id="passage-spaces-of-possibility-00061"
+class="search-passage">See James Gibson, <em>The Ecological Approach to
+Visual Perception</em> (Boston, MA: Houghton Mifflin, 1979). <a
+href="#note-ref-5" class="note-back"
+aria-label="Back to note 5">↩︎</a></span></p>
+</div>
+<div id="note-6" class="note-entry" data-note="6">
+<p><span id="passage-spaces-of-possibility-00062"
+class="search-passage">See especially Willard van Orman Quine,
+‘Reference and modality’, in his <em>From a Logical Point of View</em>
+(Cambridge, MA: Harvard University Press, 1953): 139–159. <a
+href="#note-ref-6" class="note-back"
+aria-label="Back to note 6">↩︎</a></span></p>
+</div>
+<div id="note-7" class="note-entry" data-note="7">
+<p><span id="passage-spaces-of-possibility-00063"
+class="search-passage">See David Lewis, ‘Counterpart theory and
+quantified modal logic’, <em>Journal of Philosophy</em> 65 (1968):
+113–126, and <em>On the Plurality of Worlds</em> (Oxford: Blackwell,
+1986). <a href="#note-ref-7" class="note-back"
+aria-label="Back to note 7">↩︎</a></span></p>
+</div>
+<div id="note-8" class="note-entry" data-note="8">
+<p><span id="passage-spaces-of-possibility-00064"
+class="search-passage">For a recent exchange on this objection to
+Lewis’s modal realism see John Divers, ‘Modal reality and (modal)
+logical space’, <em>Philosophy and Phenomenological Research</em> 88
+(2014): 726–733, and Timothy Williamson, ‘Replies to Bricker, Divers,
+and Sullivan’, <em>Philosophy and Phenomenological Research</em> 88
+(2014): 744–764. <a href="#note-ref-8" class="note-back"
+aria-label="Back to note 8">↩︎</a></span></p>
+</div>
+<div id="note-9" class="note-entry" data-note="9">
+<p><span id="passage-spaces-of-possibility-00065"
+class="search-passage">For exploration of these issues see Jaegwon Kim,
+<em>Supervenience and Mind: Selected Philosophical Issues</em>
+(Cambridge: Cambridge University Press, 1993). <a href="#note-ref-9"
+class="note-back" aria-label="Back to note 9">↩︎</a></span></p>
+</div>
+<div id="note-10" class="note-entry" data-note="10">
+<p><span id="passage-spaces-of-possibility-00066"
+class="search-passage">See Kit Fine, ‘Essence and modality’,
+<em>Philosophical Perspectives</em>, 8 (1994): 1–16. <a
+href="#note-ref-10" class="note-back"
+aria-label="Back to note 10">↩︎</a></span></p>
+</div>
+<div id="note-11" class="note-entry" data-note="11">
+<p><span id="passage-spaces-of-possibility-00067"
+class="search-passage">See Ted Sider, <em>Writing the Book of the
+World</em> (Oxford: Clarendon Press, 2011), and ‘On Williamson and
+simplicity in modal logic’, <em>Canadian Journal of Philosophy</em> 46
+(2016): 683–698, and Timothy Williamson, ‘Reply to Sider’, <em>Canadian
+Journal of Philosophy</em> 46 (2016): 699–708. <a href="#note-ref-11"
+class="note-back" aria-label="Back to note 11">↩︎</a></span></p>
+</div>
+<div id="note-12" class="note-entry" data-note="12">
+<p><span id="passage-spaces-of-possibility-00068"
+class="search-passage">See David Nolte, ‘The tangled tale of phase
+space’, <em>Physics Today</em>, 63/4 (2010): 33–38. <a
+href="#note-ref-12" class="note-back"
+aria-label="Back to note 12">↩︎</a></span></p>
+</div>
+<div id="note-13" class="note-entry" data-note="13">
+<p><span id="passage-spaces-of-possibility-00069"
+class="search-passage">For an introduction to dynamical systems theory,
+see Steven Strogatz, <em>Nonlinear Dynamics and Chaos: With Applications
+to Physics, Biology, Chemistry, and Engineering</em> (Boulder, CO:
+Westview: 2001). <a href="#note-ref-13" class="note-back"
+aria-label="Back to note 13">↩︎</a></span></p>
+</div>
+<div id="note-14" class="note-entry" data-note="14">
+<p><span id="passage-spaces-of-possibility-00070"
+class="search-passage">See W.V.O. Quine, ‘Three grades of modal
+involvement’, in his <em>The Ways of Paradox</em> (New York: Random
+House, 1966): 156–174. <a href="#note-ref-14" class="note-back"
+aria-label="Back to note 14">↩︎</a></span></p>
+</div>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

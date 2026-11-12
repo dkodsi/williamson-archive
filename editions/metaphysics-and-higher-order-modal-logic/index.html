@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Metaphysics and Higher-Order Modal Logic by Timothy Williamson. In C. Kanzian, W. Löffler and J. Quitterer (eds.), The Way Things Are: Studies in Ontology (2011), 17–36. Frankfurt: ontos verlag."/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Metaphysics and Higher-Order Modal Logic - Timothy Williamson</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="reader-bar" aria-label="Edition tools">
+<a class="reader-home" href="../../index.html">← Archive</a>
+<span class="reader-actions">
+<a href="../../downloads/metaphysics-and-higher-order-modal-logic.pdf" target="_blank" rel="noopener">Download PDF</a>
+
+<span class="reader-preference-tools" aria-label="Reading controls">
+<button type="button" data-reader-size-down aria-label="Decrease text size">A−</button>
+<button type="button" data-reader-size-up aria-label="Increase text size">A+</button>
+<button type="button" data-reader-width aria-label="Toggle text width">↔</button>
+<button type="button" data-reader-theme aria-label="Toggle dark mode">◐</button>
+</span>
+
+</span>
+</nav>
+<article>
+<header><h1>Metaphysics and Higher-Order Modal
+Logic</h1><p class="author">Timothy
+Williamson</p><p class="publication">In C. Kanzian, W. Löffler and J.
+Quitterer (eds.), <em>The Way Things Are: Studies in Ontology</em>
+(2011), 17–36. Frankfurt: ontos verlag.</p></header>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00001"
+class="search-passage"><span class="orig-page" data-page="17" id="page-17" aria-hidden="true"></span>One
+of the most fundamental issues in modal metaphysics can be summed up in
+a single formula of first-order modal logic:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><annotation encoding="application/x-tex">\mathrm{NNE}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00002"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∃</mo><mi>y</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">□\forall x\,□\exists y\,x=y</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00003"
+class="search-passage">This says that necessarily everything is
+necessarily something. On the interpretation of interest here, the
+necessity is metaphysical, what would have been so whatever had been so,
+and the quantifiers unrestricted, ranging over absolutely everything
+there is. <em>Contingentists</em> deny NNE. Typically, they hold that
+each of us is a counterexample: if your parents had never met, you would
+have been nothing at all. <em>Necessitists</em> assert NNE. Typically,
+they hold that if your parents had never met, you would still have been
+something, a merely possible person, something that is not a person but
+could have been one.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00004"
+class="search-passage">Both views save the ordinary phenomena. Deciding
+between them requires developing each view as a systematic theory, to
+facilitate the application of scientific criteria of theory choice. This
+paper pursues that methodology in the wider setting of higher-modal
+logic. In making the comparison, we can uncritically assume no form of
+possible worlds semantics for higher-order modal logic, for its use of
+an outer domain that includes the domains of all worlds is radically
+misleading from a contingentist perspective. Rather, we should assess
+principles of higher-order modal logic in the object-language for
+theoretical virtues such as strength, simplicity and compatibility with
+what we already know.</span></p>
+<h1 class="unnumbered"
+id="comprehension-and-higher-order-necessitism">1. Comprehension and
+Higher-Order Necessitism</h1>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00005"
+class="search-passage">Higher-order quantification theory requires
+comprehension principles. In crudely nominalizing terms, they tell us
+when an open formula defines a member of the relevant higher-order
+domain. We may conveniently focus on the special case where the
+higher-order variable is one-place and second-order:</span></p>
+<div class="displayblock labelled-display wide-labels">
+<dl>
+<dt><span
+class="display-label"><span class="orig-page" data-page="18" id="page-18" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00006"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□\forall x\,(Xx \leftrightarrow A)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00007"
+class="search-passage">Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is an individual variable that may occur free in the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is a monadic first-level predicate variable that does not occur free in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+Any result of prefixing an instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+with necessity operators and universal quantifiers of any type (binding
+parameters in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>)
+in any order also counts as an instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>.
+Roughly,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+says that there is a property having which is strictly equivalent to
+being such-and-such, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+says of the value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+that it is such-and-such (the property of being such-and-such). In some
+logics we can derive
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∃</mo><annotation encoding="application/x-tex">\exists</annotation></semantics></math>-generalization
+from the elementary
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">λ</mi><annotation encoding="application/x-tex">\mathrm{\lambda}</annotation></semantics></math>-conversion
+principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">λ</mi><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall x\,(\mathrm{\lambda} x(A)x \leftrightarrow A)</annotation></semantics></math>,
+and regard the property as the referent of the predicate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda} x(A)</annotation></semantics></math>.
+In any case,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+is an attractive comprehension principle as it stands.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00008"
+class="search-passage">Standard possible worlds model theory for
+higher-order modal logic validates all instances of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>.
+Although that will not convince contingentists or even all necessitists
+that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+is informally valid, it does at least show the schema to be part of one
+consistent and natural picture of modal reality. Independently of the
+formal semantics, something like
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+is the rationale for pretheoretically compelling arguments by
+second-order generalization. The latter consideration carries as much
+weight for contingentists as for necessitists.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00009"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+requires a plenitudinous theory of properties, on which open sentences
+like ‘<em>x</em> is not red’ and ‘<em>x</em> is red or green’ define
+properties, for we can put ¬<em>Rx</em> or <em>Rx</em> ∨ <em>Gx</em> for
+<em>A</em>. Thus sharing a property does not imply similarity. Whatever
+the virtues of a sparse theory of natural properties for other purposes,
+it is unsuitable for a good theory of higher-order logic, modal or
+non-modal. Without a reasonably strong comprehension principle,
+higher-order logic is impotent. We therefore adopt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+as a working hypothesis.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00010"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+implies a second-order analogue of the necessitist principle NNE for
+properties: necessarily every property is necessarily something. To see
+this, we must first formalize the second-order principle. For a
+first-order variable <em>x</em>, the open sentence ‘<em>x</em> is
+something’ is formalized as ∃ <em>y x</em>=<em>y</em>. Thus to formalize
+‘<em>X</em> is something’ for a second-order variable <em>X</em> we need
+the analogue for predicates of the identity predicate for individual
+terms. The natural candidate is necessary coextensiveness. Hence the
+analogue of <em>x</em>=<em>y</em> is <span
+class="modal-operator">□</span>∀<em>x</em> (<em>Xx</em> ↔︎ <em>Yx</em>),
+so the analogue of ∃<em>y x</em>=<em>y</em> is ∃<em>Y</em> <span
+class="modal-operator">□</span>∀<em>x</em> (<em>Xx</em> ↔︎ <em>Yx</em>),
+and the analogue of NNE is this:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><span class="orig-page" data-page="19" id="page-19" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00011"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∃</mo><mi>Y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>Y</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall X\,□\exists Y\,□\forall x\,(Xx \leftrightarrow Yx)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00012"
+class="search-passage">But if we instantiate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+with <em>Yx</em> for <em>A</em> and the prefix <span
+class="modal-operator">□</span> ∀ <em>Y</em> <span
+class="modal-operator">□</span>, the result is <span
+class="modal-operator">□</span> ∀ <em>Y</em> <span
+class="modal-operator">□</span> ∃ <em>X</em> <span
+class="modal-operator">□</span> ∀ <em>x</em> (<em>Xx</em> ↔︎
+<em>Yx</em>), which is trivially equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>.
+In effect,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+entails that properties have non-contingent being.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00013"
+class="search-passage">A similar point holds for higher types: the
+corresponding general comprehension principle Comp entails the
+corresponding analogue of NNE for all types. It does not entail NNE
+itself. Thus the natural comprehension principle for higher-order modal
+logic entails the analogues of necessitism at all orders beyond the
+first. Contingentists have two strategies in response. They may accept
+that comprehension principle and argue that the difference between
+first-order and higher-order quantification is deep enough to justify
+postulating the asymmetry in logic. Alternatively, they may reject that
+comprehension principle and seek another that does not entail the
+higher-order analogues of necessitism. The next section explores the
+former strategy; sections 3 and 4 explore the latter.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00014"
+class="search-passage">For simplicity, we will assume S5 as the
+background propositional modal logic for metaphysical
+modality.</span></p>
+<h1 class="unnumbered" id="individuals-and-their-haecceities">2.
+Individuals and Their Haecceities</h1>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00015"
+class="search-passage">Suppose that the contingentist accepts Comp, and
+in particular
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>.
+We can derive some connections between the first-order and second-order
+quantifiers. For putting <em>x</em>=<em>y</em> for <em>A</em> and adding
+the prefix <span class="modal-operator">□</span> ∀ <em>y</em> <span
+class="modal-operator">□</span> gives this instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(1)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00016"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,□\exists X\,□\forall x\,(Xx \leftrightarrow x=y)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00017"
+class="search-passage">Necessarily for each thing necessarily there is
+the property of being that thing: having the property is necessary and
+sufficient for being identical with the thing.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00018"
+class="search-passage">Informally write ‘<em>X</em> is a haecceity of
+<em>y</em>’ for <span class="modal-operator">□</span> ∀ <em>x</em>
+(<em>Xx</em> ↔︎ <em>x</em>=<em>y</em>) and ‘<em>X</em> is a haecceity’
+for <span class="modal-operator">◇</span> ∃ <em>y</em> <span
+class="modal-operator">□</span> ∀ <em>x</em> (<em>Xx</em> ↔︎
+<em>x</em>=<em>y</em>). Then (1) says that necessarily everything
+necessarily has a haecceity. The haecceity is unique, in the strong
+sense that necessarily for every haecceity of <em>y</em> necessarily
+every haecceity of <em>y</em> is necessarily coextensive with it. For in
+S5 nothing of the form <span class="modal-operator">□</span><em>A</em>
+is contingent, so it is not contingent whether something is a haecceity
+of <em>y</em>; but if both <em>X</em> and <em>Y</em> are haecceities of
+<em>y</em> then they are necessarily coextensive with each other. Since
+necessary coextensiveness is the analogue of
+<span class="orig-page" data-page="20" id="page-20" aria-hidden="true"></span>identity
+in the present setting, that suffices for uniqueness. Furthermore, a
+haecceity determines a unique individual, in the strong sense that
+necessarily for everything of which <em>X</em> is a haecceity
+necessarily everything of which <em>X</em> is a haecceity is identical
+with it.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00019"
+class="search-passage">Clearly, in some sense there is a
+one-correspondence between individuals and their haecceities. It is
+tempting to go further, and say that there is a one-one correspondence
+between <em>possible</em> individuals and their haecceities. However,
+such talk is radically misleading. In the relevant unrestricted sense of
+‘individual’, contingentists and necessitists should agree that there
+are no merely possible individuals; everything is actually something.
+For necessitists, there is no contingency in what individuals or
+haecceities there are, so the actual one-correspondence between
+individuals and their haecceities covers all possibilities. For most
+contingentists, there could have been individuals other than all the
+actual ones. In this section, we have supposed that the contingentist
+accepts
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>,
+and therefore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>.
+On this view, there actually are properties that could have been the
+haecceities of individuals other than all the actual ones. Thus not
+every haecceity is the haecceity of something; some haecceities merely
+could have been the haecceity of something.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00020"
+class="search-passage">Haecceities as characterized above resemble the
+individual essences on which Alvin Plantinga bases his contingentist
+account of quantified modal logic. For him, a property <em>X</em> is an
+essence if and only if possibly something is not possibly something
+without having <em>X</em>, and necessarily nothing else has <em>X</em>.
+A second-order version of Plantinga’s theory would entail (1). Moreover,
+he holds, essences have necessary being: my essence would be
+uninstantiated but still something if I were nothing. That is why he
+uses essences as surrogates for ‘possible individuals’ to make possible
+worlds semantics metaphysically respectable: there are no merely
+possible individuals, but there are merely possibly instantiated
+essences. Thus (1) and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>
+generate a theory of haecceities very similar to Plantinga’s theory of
+individual essences. However, this also means that, given
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>,
+contingentism is subject to objections analogous to those made to
+Plantinga’s contingentist theory.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00021"
+class="search-passage">The initial challenge is this. My haecceity
+necessarily tracks me in a modal sense, because it is necessary that it
+is a haecceity of me and of nothing else. Even if I were nothing, there
+would still be a property tracking me and only me. But how can it single
+me out in my absence? For example, if it tracked me by somehow being
+built out of me and the identity
+<span class="orig-page" data-page="21" id="page-21" aria-hidden="true"></span>relation,
+how could it still track me when there is no such thing for it to be
+built out of?</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00022"
+class="search-passage">A parallel challenge can be raised in terms of
+anti-haecceities, defined like haecceities except with
+¬<em>x</em>=<em>y</em> in place of <em>x</em>=<em>y</em> and established
+by a corresponding application of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>.
+My anti-haecceity is the property of not being me. It too necessarily
+tracks me in a modal sense, because it is necessary that it is an
+anti-haecceity of me and of nothing else. How can my anti-haecceity
+single me out in my absence?</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00023"
+class="search-passage">The underlying problem is more general. By
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>,
+properties have necessary being. Nevertheless, as haecceities and
+anti-haecceities illustrate, by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+they must also be capable of tracking a particular individual even when
+there is no such individual. Does any plausible metaphysics of
+properties combine these features?</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00024"
+class="search-passage">The contingentist may envisage properties as
+purely qualitative in some sense. But then the nature of individuals
+must permit them to be tracked, singled out, by purely qualitative
+properties. For example, suppose that exactly the same qualitative
+possibilities are open to Tweedledum and Tweedledee. If contingently
+there were no Tweedledum, no Tweedledee, and no other individuals
+specifically related to them, there would still be their haecceities,
+one tracking only Tweedledum, the other tracking only Tweedledee. But in
+those counterfactual circumstances how could a purely qualitative
+property single out one of them and exclude the other? A purely
+qualitative description would fit both or neither. Thus the purely
+qualitative conception of properties may well require a highly
+contentious form of the identity of indiscernibles for individuals, on
+which qualitative identity entails numerical identity. That is a far
+less plausible claim than the trivial form of the identity of
+indiscernibles that does not assume properties to be purely qualitative.
+We have no serious evidence against the metaphysical possibility of a
+symmetrical universe in which every individual can be reflected
+(rotated, translated) onto its double.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00025"
+class="search-passage">The problem for the purely qualitative conception
+of properties is not just that it yields an implausible form of the
+identity of indiscernibles. The latter in turn yields a conception of
+individuals themselves as purely qualitative in nature. But they must
+not be purely qualitative in the way properties are supposed to be
+purely qualitative, for the latter way was supposed to explain why
+properties are necessarily something, and the contingentist denies that
+individuals are necessarily something. Thus ways of being purely
+qualitative seem to multiply.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00026"
+class="search-passage"><span class="orig-page" data-page="22" id="page-22" aria-hidden="true"></span>The
+contingentist might conceive an individual as a bundle of purely
+qualitative properties, held together by a primitive purely qualitative
+higher-order compresence relation and individuated by the properties in
+the bundle, where both the properties and the relation have necessary
+being but are only contingently instantiated: if the compresence
+relation were not instantiated, there would be no individual
+(compresence may be multigrade, in holding between different numbers of
+properties). The theory becomes still more elaborate once fitted out
+with an account of the persistence of individuals across times and
+possibilities, since an individual typically has many of its purely
+qualitative properties, such as shape, temporarily and contingently.
+Alternatively, if the theory denies identity through change and through
+contingency, not only is that yet another implausible consequence, which
+requires still more theoretical complexity to save the appearances, it
+also fits badly with the underlying motivation for contingentism, by
+treating a vast range of apparent contingency as an illusion. Thus the
+purely qualitative conception drags the contingentist into proliferating
+complications of metaphysical theory with no independent plausibility.
+They are not what most philosophers who signed on to contingentism
+bargained for.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00027"
+class="search-passage">The notion of the purely qualitative is not
+altogether clear. Which properties count as purely qualitative? We may
+even count relational properties as purely qualitative when definable
+without reference to specific individuals: for example, being inside a
+hollow sphere, as opposed to being inside <em>this</em> hollow sphere.
+Thus purely qualitative properties may be extrinsic and relational. Such
+properties still seem to satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>.
+They are also preserved under any symmetries of the universe. The
+picture is that purely qualitative properties correspond to predicates
+of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}v(A)</annotation></semantics></math>,
+where <em>A</em> contains no individual constants and no free individual
+variables except <em>v</em>, but may contain quantifiers of any order.
+Although
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+also has instances such as (1) in which <em>A</em> contains constants or
+variables as parameters, the corresponding ‘impure’ predicate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}v(A)</annotation></semantics></math>
+is supposed to pick out a property that could in principle also be
+picked out by a ‘pure’ predicate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}v(B)</annotation></semantics></math>,
+where <em>B</em> satisfies the restrictions. Unfortunately, the
+syntactic criterion is of limited help, since the reference of a
+syntactically atomic predicate such as ‘Hellenic’ may nevertheless be
+fixed in relation to particular people or places. The notion of a
+predicate that does not semantically ‘involve’ any particular individual
+is itself far from clear. Here the coarse-grained individuation of
+properties by necessary coextensiveness
+exacer<span class="orig-page" data-page="23" id="page-23" aria-hidden="true"></span>bates
+the problem, because it undermines the idea that properties have
+constituent structure analogous to that of predicates, for necessarily
+coextensive predicates may have utterly dissimilar constituent
+structures. Thus a property’s involving an individual cannot be
+explained as the individual’s being a constituent of the
+property.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00028"
+class="search-passage">Given the unclarity in the notion of the purely
+qualitative, the argument that the purely qualitative conception of
+properties yields an implausible metaphysics of individuals can only be
+provisional. But the onus is on a proponent of that conception to supply
+the requisite clarification, preferably in a way that avoids the bad
+metaphysical consequences. As yet there is no sign of that happening,
+and the argument stands.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00029"
+class="search-passage">By appealing to the purely qualitative
+conception, contingentists talked their way into worse trouble. They do
+better to adopt a more minimalist approach, denying that they must
+provide any metaphysically deeper account of how properties and
+relations are individuated than one in terms of their modal application
+conditions, on which necessary coextensiveness is analogous to identity.
+The minimalist endorses
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>,
+and with a similar attitude its generalization Comp to higher types,
+while insisting that we need no more explanation of how my haecceity
+singles me out in my absence than that it is the property that,
+necessarily, applies to something if and only if it is me.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00030"
+class="search-passage">One danger for minimalist contingentism is that
+the minimalism leaves the contingentism looking suspiciously ad hoc, its
+combination with Comp a messy hybrid. As seen in section 1, Comp implies
+necessitism at every order except the first. The onus is on the
+metaphysician who postulates such logical differences between orders to
+justify the asymmetry in treatment. Minimalism deprives the
+contingentist of the resources needed to provide such a
+justification.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00031"
+class="search-passage">The problem can also be put in more metaphysical
+terms. According to the minimalist contingentist, if your parents had
+never met, there would not have been you, a merely possible person, but
+there would still have been your haecceity. The latter claim depends on
+a minimalist standard of being for properties, on which they can be even
+in circumstances in which they leave no trace. The former claim, that
+there would not have been you, depends on a non-minimalist standard of
+being for individuals, on which they can be only in circumstances in
+which they leave some trace. Of course, this talk of leaving a trace is
+metaphorical, but it is the minimalist contingentist who needs to cash
+out the metaphor. The default preference is for a
+<span class="orig-page" data-page="24" id="page-24" aria-hidden="true"></span>uniform
+metaphysics, on which being is contingent at all orders or none. Given
+the minimalist comprehension principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+or Comp, second-order being is not contingent. Therefore the default
+preference favours a metaphysics on which being is not contingent at any
+order including the first, in other words, necessitism.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00032"
+class="search-passage">The minimalist contingentist may reply that there
+is a compelling metaphysical difference between the first-order
+quantifiers and their higher-order analogues, because the former range
+over (although perhaps not exclusively over) sparse flesh and blood
+‘thick’ particulars, whose being requires causal activity and
+spatiotemporal location, while the latter range only over plenitudinous
+bloodless ‘thin’ universals, whose being requires only a well-defined
+application condition. But even if we grant that metaphysical difference
+for the sake of argument, it does not justify the asymmetry in the
+treatment of the quantifiers, because it does not really explain the
+non-contingency of higher-order being. Take my haecceity for example: of
+course there is <em>actually</em> a well-defined application condition,
+but to draw from that premise the conclusion that there <em>would have
+been</em> that well-defined application condition even if there had not
+been me is to assume something like
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>,
+one of the very principles to be explained. The condition is defined by
+the assignment of me as value to the parameter <em>y</em> in the
+predicate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda}x(x=y)</annotation></semantics></math>.
+Without me, there is nothing to assign, so no such assignment. Indeed,
+‘well-defined application condition’ is barely more than a notational
+variant of ‘property’, in the relevant plenitudinous sense. To put it
+the other way round: conceiving the second-order quantifiers as ranging
+over legitimate semantic values for predicates automatically validates
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>
+only if conceiving the first-order quantifiers as ranging over
+legitimate semantic values for names automatically validates
+NNE.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00033"
+class="search-passage">Could the minimalist contingentist claim instead
+that higher-order quantifiers, unlike first-order ones, are somehow not
+really in the scope of modal operators prefixed to them? That is to
+postulate a grammatical difference between first-order and higher-order
+quantifiers that in no way follows from any metaphysical difference in
+what they range over. One could just as easily postulate a reading of
+the first-order quantifiers on which they are not really in the scope of
+the modal operators prefixed to them. Such a reading would trivially
+validate NNE. Presumably that would not be a decisive argument for
+necessitism, because it would not decide in favour of NNE on a reading
+of the first-order quantifiers that is not ‘scoped out’. Similarly, why
+should the scoped out reading of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>
+settle the issue in
+<span class="orig-page" data-page="25" id="page-25" aria-hidden="true"></span>favour
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>
+on a reading of the second-order quantifiers that is not scoped out?
+There is such a reading, for the metaphysical differences imply nothing
+about the purely semantic question of scope. In any case, the grammar of
+a standard formal language for higher-order modal logic is clear:
+higher-order quantifiers do occur in the scope of modal
+operators.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00034"
+class="search-passage">The safest line for the minimalist contingentist
+may be even more minimalist: to lay down Comp as a comprehension
+principle attractive simply for its general theoretical virtues, and
+derive the non-contingency of higher-order being as a corollary, but
+uphold the contingency of first-order being as common sense. Such an
+ultra-minimalist contingentist abjures any attempt to explain or justify
+the asymmetry on deeper metaphysical grounds, as likely just to lead to
+trouble. The combination of Comp with (first-order) contingentism can be
+shown to be internally consistent.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00035"
+class="search-passage">Nevertheless, ultra-minimalist contingentism is
+unsatisfying. It has internal tensions about which it stays silent,
+rather than attempting to resolve them. On one hand, the theoretical
+virtues such as simplicity and strength that recommend Comp and
+higher-order necessitism also recommend first-order necessitism. On the
+other hand, the allegedly common sense rejection of the latter threatens
+the former too, since common sense has difficulty with the property of
+being a given individual when there is no individual for it to be the
+property of being. Thus the motivations for the two components of
+ultra-minimalist contingentism appear to conflict with each other. If
+the appearance is deceptive, we want to know why. It is hard to rest
+content with the unexplained asymmetries in ultra-minimalist
+contingentism. We might have to in the absence of a tolerable
+alternative, but necessitism is such an alternative.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00036"
+class="search-passage">Full-blooded contingentists may also object to
+all forms of minimalist contingentism that they are not contingentist
+enough, because they deny the contingency of being at higher orders.
+Since Comp requires that denial, full-blooded contingentists may
+therefore reject Comp, and seek an alternative comprehension principle
+that lacks its higher-order necessitist consequences. Since they are
+independently committed to not taking possible worlds semantics at face
+value, the validity of Comp in the most natural forms of such semantics
+will not impress them. The next two sections examine different sorts of
+alternative comprehension principle for contingentist higher-order modal
+logic.</span></p>
+<h1 class="unnumbered"
+id="non-modal-comprehension"><span class="orig-page" data-page="26" id="page-26" aria-hidden="true"></span>3.
+Non-Modal Comprehension</h1>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00037"
+class="search-passage">One natural way of weakening Comp is to omit the
+modal operator between the two quantifiers. In the case of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>,
+the result is this:</span></p>
+<div class="displayblock labelled-display wide-labels">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00038"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,\forall x\,(Xx \leftrightarrow A)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00039"
+class="search-passage">In all other respects
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is like
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00040"
+class="search-passage">To see the point of the weakening, consider the
+instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+with the same prefix and the same substitution for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+as (1), the haecceity-yielding instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msup><mn>1</mn><mo>−</mo></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1^{-})</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00041"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,□\exists X\,\forall x\,(Xx \leftrightarrow x=y)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00042"
+class="search-passage">This does not imply any modal tracking of
+individuals: when I am the value of the variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+it requires only that in each possible circumstance, if I am something
+then there is a property that I alone have (but in other possible
+circumstances other individuals may have it, and I may lack it even
+though I am something), and if I am nothing then there is a property
+that nothing has (but in other possible circumstances anything may have
+it). Thus
+(1<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>−</mo></msup><annotation encoding="application/x-tex">^-</annotation></semantics></math>)
+lacks the consequences of (1) that made trouble for contingentism. The
+constraint on the extension of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is modally local rather than global.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00043"
+class="search-passage">As the visible absence of modal operators makes
+clear,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is in some fundamental way a non-modal principle. Of course, we can
+necessitate its instances, as in
+(1<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mo>−</mo></msup><annotation encoding="application/x-tex">^-</annotation></semantics></math>),
+and we can also substitute formulas with modal operators for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+but in those respects
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is no different from a principle of non-modal propositional logic such
+as the law of non-contradiction
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>¬</mo><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>&amp;</mo><mo>¬</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\neg(A \mathbin{\&amp;} \neg A)</annotation></semantics></math>.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00044"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is provably consistent with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>¬</mo><annotation encoding="application/x-tex">\neg</annotation></semantics></math>NNE
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&amp;</mi><mo>¬</mo></mrow><annotation encoding="application/x-tex">\mathbin{\&amp;} \neg</annotation></semantics></math><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>,
+so that it allows the first-order contingentist to be a second-order
+contingentist too. A similar argument shows that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mo>−</mo></msup><annotation encoding="application/x-tex">\mathrm{Comp}^{-}</annotation></semantics></math>,
+the generalization of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+to all higher types, is consistent with the family of negations of the
+analogues of NNE for all types. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+permits a thoroughgoing contingentism over all types.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00045"
+class="search-passage">We can use the same sort of model to show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is also consistent with the negation of (1), so that it does not require
+haecceities. We can also show that not even the combination of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+with the analogues of NNE for all types requires haecceities.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00046"
+class="search-passage"><span class="orig-page" data-page="27" id="page-27" aria-hidden="true"></span>Such
+results show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is weak enough for the contingentist’s purposes. However, it may be too
+weak. For example, it does not underwrite pretheoretically valid
+arguments by second-order generalization. To be more precise, consider
+(2), where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is an atomic two-place predicate constant:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(2)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00047"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>T</mi><mi>a</mi><mi>a</mi><mo>&amp;</mo><mi class="modal-operator">◇</mi><mo>¬</mo><mi>T</mi><mi>a</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>a</mi><mo>&amp;</mo><mi class="modal-operator">◇</mi><mo>¬</mo><mi>X</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(Taa \mathbin{\&amp;} ◇\neg Taa) \to \exists X\,(Xa \mathbin{\&amp;} ◇\neg Xa)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00048"
+class="search-passage">A typical instance of (2) can be roughly
+paraphrased as a banal truth such as ‘If Alice contingently talks to
+herself, there is something that Alice contingently does’. One can
+derive (2) from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+and the being constraint that it is impossible to stand in the relation
+expressed by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+without being something (to tie up loose ends about non-being) in any
+reasonable second-order modal logic. But (2) does not follow from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+and the being constraint, even with the help of NNE and its higher-order
+analogues.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00049"
+class="search-passage">The rationale for (2) comes from a conception of
+the values of the second-order variables as properties for which
+coextensiveness does not imply identity, although necessary
+coextensiveness does: a non-extensional but intensional view. By
+contrast, (2) is implausible on an extensional view, for example Boolos’
+plural interpretation of second-order logic (with suitable provision for
+the vacuous case). No individuals are such that necessarily they are all
+and only those who scratch themselves, or all and only those who scratch
+themselves at least once but less than a million times.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00050"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+does not even entail the principle that any two properties have a
+conjunction:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(3)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00051"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>Y</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>Z</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo stretchy="false" form="prefix">(</mo><mi>Y</mi><mi>x</mi><mo>&amp;</mo><mi>Z</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall Y\,\forall Z\,\exists X\,□\forall x\,(Xx \leftrightarrow (Yx \mathbin{\&amp;} Zx))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00052"
+class="search-passage">More generally, let % express one of the sixteen
+binary truth-functions. Then one can show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+entails (%) only in the trivial case when % expresses either the left
+projection,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+%
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+being always equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+or the right projection,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+%
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+being always equivalent to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>%</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\%)</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00053"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>Y</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>Z</mi><mspace width="0.167em"></mspace><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo stretchy="false" form="prefix">(</mo><mi>Y</mi><mi>x</mi><mo>%</mo><mi>Z</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall Y\,\forall Z\,\exists X\,□\forall x\,(Xx \leftrightarrow (Yx\mathbin{\%}Zx))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00054"
+class="search-passage">Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+does not yield the most elementary non-trivial closure principles for
+which one would hope in a systematic theory of properties on the
+plenitudinous conception. For example, it does not require properties to
+be closed under negation or disjunction, in the sense of (4). Without
+such Boolean combinations of properties, second-order logic is
+crippled.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00055"
+class="search-passage"><span class="orig-page" data-page="28" id="page-28" aria-hidden="true"></span>We
+can see the weakness of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+from another perspective by viewing plenitudinous properties as
+<em>conditions</em>. One may inquire into the necessary or sufficient
+conditions for life to evolve on a planet, or for someone to have the
+right to vote under a given constitution. Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be ‘life evolves on planet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>’,
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+has the right to vote under this constitution’, or whatever. There is no
+guarantee that our language in its current form has the expressive
+resources to articulate all such conditions, for instance for life. In
+the simplest case, asking about necessary conditions for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is asking about
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>X</mi><mo stretchy="false" form="prefix">(</mo><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>→</mo><mi>X</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda} X(□\forall x\,(A \to Xx))</annotation></semantics></math>;
+asking about sufficient conditions is asking about
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>X</mi><mo stretchy="false" form="prefix">(</mo><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>→</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda} X(□\forall x\,(Xx \to A))</annotation></semantics></math>.
+A (partial) answer to the question may be, for example, ‘A necessary
+condition for having the right to vote under this constitution is being
+at least 18 years old’ (the conditions for having the right to vote
+under a given constitution need not cut nature at its joints). Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+be
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is at least 18 years old’. The form of the answer is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall x\,(A \to B)</annotation></semantics></math>.
+But that answers the original question about necessary conditions,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">λ</mi><mi>X</mi><mo stretchy="false" form="prefix">(</mo><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>→</mo><mi>X</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{\lambda} X(□\forall x\,(A \to Xx))</annotation></semantics></math>,
+only if (4) holds, to connect the question to the answer:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(4)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00056"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□\forall x\,(Xx \leftrightarrow B)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00057"
+class="search-passage">But (4) is an instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>,
+not of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>.
+A similar point applies even to inquiry into conditions that are not
+strictly necessary or sufficient, but only normally or probably or other
+things being equal so, for those still involve a modal correlation of
+some sort between the relevant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>.
+In general, (4) is still needed to get the same modal correlation
+between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Xx</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+is too weak adequately to underpin the role of second-order logic in
+serving theoretical inquiry.</span></p>
+<h1 class="unnumbered" id="non-singular-comprehension">4. Non-Singular
+Comprehension</h1>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00058"
+class="search-passage">If contingentists are to formulate a
+comprehension principle weaker than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+but strong enough for the purposes of theoretical inquiry, they need an
+alternative approach. A natural starting-point is the idea that
+first-order contingency induces corresponding higher-order contingency:
+what properties there are depends on what individuals there are, because
+some properties ontologically depend on individuals in the way my
+haecceity ontologically depends on me. Without the individual, there is
+no property.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00059"
+class="search-passage">A comprehension principle suited to such a view
+will make the being of the property at issue depend on the being of the
+things denoted by the
+pa<span class="orig-page" data-page="29" id="page-29" aria-hidden="true"></span>rameters
+and non-logical constants in the defining formula. The idea warrants no
+blanket ban on all instances of the comprehension schema with parameters
+or non-logical constants. Indeed, such instances are essential for
+second-order logic to serve some of its central logical and mathematical
+roles. For example, to capture the full intent of the principle of
+mathematical induction one must use a second-order
+formulation:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">I</mi></mrow><annotation encoding="application/x-tex">\mathrm{MI}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00060"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mn>0</mn><mo>&amp;</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>n</mi><mo>→</mo><mi>X</mi><mi>s</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mi>X</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall X\,((X0 \mathbin{\&amp;} \forall n\,(Xn \to Xsn)) \to \forall n\,Xn)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00061"
+class="search-passage">In mathematics, we need MI to generate
+consequences like (5):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(5)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00062"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>a</mi><mn>0</mn><mo>&amp;</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>a</mi><mi>n</mi><mo>→</mo><mi>R</mi><mi>a</mi><mi>s</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mi>R</mi><mi>a</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">(Ra0 \mathbin{\&amp;} \forall n\,(Ran \to Rasn)) \to \forall n\,Ran</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00063"
+class="search-passage">But (5) follows from MI by universal
+instantiation only if (6) holds:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(6)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00064"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>n</mi><mo>↔</mo><mi>R</mi><mi>a</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,\forall n\,(Xn \leftrightarrow Ran)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00065"
+class="search-passage">If our comprehension principle forbids the
+formula <em>A</em> to contain parameters or non-logical constants (such
+as <em>a</em>), we cannot expect it to yield (6) (an instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>),
+let alone (7) (an instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(7)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00066"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>n</mi><mo>↔</mo><mi>R</mi><mi>a</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□\forall n\,(Xn \leftrightarrow Ran)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00067"
+class="search-passage">The proposal is instead to condition the relevant
+instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+on the being of anything specified in the formula <em>A</em>. For
+example, in the haecceity principle (1) <em>A</em> is just
+<em>x</em>=<em>y</em>, in which the only parameter or non-logical
+constant is the variable <em>y</em> (<em>x</em> is not a parameter
+because it is bound by the universal quantifier in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+itself). Thus the relevant being condition is just ∃ <em>x
+x</em>=<em>y</em>, and the conditioned version of (1) is (8):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(8)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00068"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,□(\exists x\,x=y \to \exists X\,□\forall x\,(Xx \leftrightarrow x=y))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00069"
+class="search-passage">Unlike (1), (8) does not imply that there is my
+haecceity even if there is not me. Thus it avoids the feature that made
+(1) problematic in a contingentist setting. The same goes for the
+corresponding principle for anti-haecceities: since the defining formula
+¬<em>x</em>=<em>y</em> contains the same non-logical constants and
+parameters as <em>x</em>=<em>y</em>, the qualifying condition ∃ <em>x
+x</em>=<em>y</em> is the same:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(9)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00070"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo>¬</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,□(\exists x\,x=y \to \exists X\,□\forall x\,(Xx \leftrightarrow \neg x=y))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00071"
+class="search-passage">The general form of the new contingentist
+comprehension principle is this:</span></p>
+<div class="displayblock labelled-display wide-labels">
+<dl>
+<dt><span
+class="display-label"><span class="orig-page" data-page="30" id="page-30" aria-hidden="true"></span><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00072"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>A</mi></msub><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E_A \to \exists X\,□\forall x\,(Xx \leftrightarrow A)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00073"
+class="search-passage">Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+is the analogue of the condition ∃ <em>x x</em>=<em>y</em> in (8) and
+(9), depending on the structure of the formula <em>A</em>. The same
+provisos apply as to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>.
+The results of prefixing instances of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+with necessity operators and universal quantifiers of any type in any
+order also count as instances of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>,
+as in (8) and (9).</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00074"
+class="search-passage">Care is needed in defining
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>.
+We might try equating it with the conjunction of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>t</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\exists x\,t=x</annotation></semantics></math>
+for each individual constant or parameter
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+(if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+contains no such terms,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+is a tautology). However, that definition does not fit the underlying
+motivation, on which contingencies of first-order being produce
+contingencies of higher-order being, so that we must also take account
+of higher-order constants or parameters in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+Indeed, if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+were so limited to first-order terms, we could still derive
+unconditional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">E</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{NNE}_{\mathrm{M}}</annotation></semantics></math>
+from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+as in section 1, for the relevant formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is simply
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Yx</annotation></semantics></math>,
+which lacks individual constants and parameters; thus the commitment to
+the non-contingency of second-order being would remain. To avoid it,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+must also have conjuncts analogous to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>t</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\exists x\,t=x</annotation></semantics></math>
+for each higher-order non-logical constant or parameter in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+too, of the form described in section 1. When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Yx</annotation></semantics></math>,
+the one such expression is the second-order parameter
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>;
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>Y</mi><mi>x</mi></mrow></msub><annotation encoding="application/x-tex">E_{Yx}</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>Y</mi><mi>x</mi><mo>↔</mo><mi>X</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□\forall x\,(Yx \leftrightarrow Xx)</annotation></semantics></math>.
+Thus the correct instantiation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Yx</annotation></semantics></math>
+is logically trivial:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(10)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00075"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>Y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>Y</mi><mi>x</mi><mo>↔</mo><mi>X</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>Y</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall Y\,□(\exists X\,□\forall x\,(Yx \leftrightarrow Xx) \to \exists X\,□\forall x\,(Xx \leftrightarrow Yx))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00076"
+class="search-passage">With the proper definition of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+is a comprehension principle for second-order free modal
+logic.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00077"
+class="search-passage">Is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+strong enough for mathematical applications of second-order logic? We
+want to derive (5) as an instance of MI. The relevant formula <em>A</em>
+is <em>Ran</em>, which has no parameters but the first-order constant
+<em>a</em> and the second-order constant <em>R</em>, both non-logical.
+Thus the relevant instance of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+is (11):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(11)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00078"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>a</mi><mo>=</mo><mi>x</mi><mo>&amp;</mo><mo>∃</mo><mi>U</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>y</mi><mo>↔</mo><mi>U</mi><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>n</mi><mo>↔</mo><mi>R</mi><mi>a</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\exists x\,a=x \mathbin{\&amp;} \exists U\,□\forall x\,\forall y\,(Rxy \leftrightarrow Uxy)) \to \exists X\,□\forall n\,(Xn \leftrightarrow Ran)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00079"
+class="search-passage">We can derive (12) from (11) by MI:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(12)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00080"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>a</mi><mo>=</mo><mi>x</mi><mo>&amp;</mo><mo>∃</mo><mi>U</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>y</mi><mo>↔</mo><mi>U</mi><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo></mrow><annotation encoding="application/x-tex">(\exists x\,a=x \mathbin{\&amp;} \exists U\,□\forall x\,\forall y\,(Rxy \leftrightarrow Uxy)) \to</annotation></semantics></math><br />
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>a</mi><mn>0</mn><mo>&amp;</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>a</mi><mi>n</mi><mo>→</mo><mi>R</mi><mi>a</mi><mi>s</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mi>R</mi><mi>a</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\qquad ((Ra0 \mathbin{\&amp;} \forall n\,(Ran \to Rasn)) \to \forall n\,Ran)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00081"
+class="search-passage"><span class="orig-page" data-page="31" id="page-31" aria-hidden="true"></span>How
+to eliminate the antecedent of (12) to reach the unconditional (5), the
+intended application of mathematical induction? For a contingentist, the
+antecedent of (12) is a highly non-trivial assumption, especially when
+we necessitate (12) to reason about counterfactual situations. Such
+situations need not contain the relevant individual
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>)
+or relation
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>).
+For in applications of mathematics to natural or social science, the
+former need not be a mathematical object and the latter need not be a
+mathematical relation.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00082"
+class="search-passage">The natural way to finesse the difficulty is by
+invoking being constraints on <em>R</em>, for if the absence of the
+relevant individual or relation falsifies <em>Ra</em>0, it thereby
+verifies the consequent of (12) vacuously. More specifically, we obtain
+(13) and (14) from first-order and second-order being constraints
+respectively:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(13)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00083"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>a</mi><mn>0</mn><mo>→</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>a</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">Ra0 \to \exists x\,a=x</annotation></semantics></math></span>
+</dd>
+<dt><span class="display-label">(14)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00084"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>a</mi><mn>0</mn><mo>→</mo><mo>∃</mo><mi>U</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>y</mi><mo>↔</mo><mi>U</mi><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Ra0 \to \exists U\,□\forall x\,\forall y\,(Rxy \leftrightarrow Uxy)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00085"
+class="search-passage">From (12)–(14), (5). Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+seems to be strong enough for mathematical applications.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00086"
+class="search-passage">Unfortunately for the contingentist, the problems
+do not end there. For by the anti-haecceity principle (9), my
+anti-haecceity is such that everything would have it if there were not
+me. Although (9) alone does not imply that there would be my
+anti-haecceity in those circumstances, that does follow once we add the
+second-order being constraint for my anti-haecceity analogous to (14). A
+more general version of the constraint is this:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(15)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00087"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>→</mo><mo>∃</mo><mi>Y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>Y</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall X\,□\forall x\,□(Xx \to \exists Y\,□\forall x\,(Xx \leftrightarrow Yx))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00088"
+class="search-passage">But even in systems of higher-order S5 acceptable
+to contingentists, (15) and (9) yield:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(16)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00089"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mo>¬</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo>¬</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,□(\exists x\,\neg x=y \to \exists X\,□\forall x\,(Xx \leftrightarrow \neg x=y))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00090"
+class="search-passage">This raises something close enough to the problem
+of anti-haecceities in section 2 to discredit that comprehension
+principle. It also fits badly with the motivation for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>,
+the idea that the contingency of first-order being induces corresponding
+contingencies of higher-order being.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00091"
+class="search-passage">The problem is general. For it is both plausible
+and technically desirable for properties (in a liberal sense) to be
+closed under the Boolean operation
+<span class="orig-page" data-page="32" id="page-32" aria-hidden="true"></span>of
+negation, so that a formula defines a property if and only if its
+negation does:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(17)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00092"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>↔</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo>¬</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□(\exists X\,□\forall x\,(Xx \leftrightarrow A) \leftrightarrow \exists X\,□\forall x\,(Xx \leftrightarrow \neg A))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00093"
+class="search-passage">The two formulas <em>A</em> and ¬<em>A</em> draw
+the same line; they differ only by marking different sides of it.
+Whatever metaphysical underpinnings one property needs, the other needs
+too. In terms of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mo>¬</mo><mi>A</mi></mrow></msub><annotation encoding="application/x-tex">E_{\neg A}</annotation></semantics></math>
+are identical. But in the setting of higher-order S5 with the
+higher-order being constraint (15), (17) entails (18):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(18)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00094"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">◇</mi><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>x</mi><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">◇\exists X\,□\forall x\,(Xx \leftrightarrow A) \to □(\exists x\,x=x \to \exists X\,□\forall x\,(Xx \leftrightarrow A))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00095"
+class="search-passage">This comes close enough to saying that no
+property has contingent being to make the antecedent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+virtually pointless.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00096"
+class="search-passage">The contingentist might draw the moral that even
+when the metaphysical precondition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+associated with a formula <em>A</em> obtains, so <em>A</em> determines a
+property, we still cannot expect <em>A</em> to determine what has that
+property in counterfactual circumstances in which the precondition
+fails. That suggests modifying the comprehension principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+by adding the condition
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+at a second point:</span></p>
+<div class="displayblock labelled-display wide-labels">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00097"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>A</mi></msub><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>E</mi><mi>A</mi></msub><mo>→</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E_A \to \exists X\,□(E_A \to \forall x\,(Xx \leftrightarrow A))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00098"
+class="search-passage">For example, if we make the anti-haecceity
+substitution of ¬<em>x</em>=<em>y</em> for <em>A</em> in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>,
+the result is (19) instead of (9):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(19)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00099"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi><mo>→</mo><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo>∃</mo><mi>x</mi><mspace width="0.167em"></mspace><mi>x</mi><mo>=</mo><mi>y</mi><mo>→</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo>¬</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,□(\exists x\,x=y \to \exists X\,□(\exists x\,x=y \to \forall x\,(Xx \leftrightarrow \neg x=y)))</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00100"
+class="search-passage">This is harmless to the contingentist, even in
+the presence of the second-order being constraint (15), because it
+allows that nothing has my anti-haecceity when there is not me. Adding
+the condition at the second point does not permit the contingentist to
+drop it at the first, to give the comprehension principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>E</mi><mi>A</mi></msub><mo>→</mo><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□(E_A\to\forall x\,(Xx\leftrightarrow A))</annotation></semantics></math>.
+For that still yields an anti-haecceity principle that implies the
+unconditional being of a property that modally tracks the relevant
+individual enough to raise the problems for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+discussed in section 2.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00101"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>
+does not make properties closed under negation, and so avoids
+consequences such as (18). For example, let <em>F</em> be a non-logical
+atomic monadic predicate, and consider these instances of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><span class="orig-page" data-page="33" id="page-33" aria-hidden="true"></span>(20)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00102"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□\forall x\,(Xx \leftrightarrow Fx)</annotation></semantics></math></span>
+</dd>
+<dt><span class="display-label">(21)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00103"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mo>¬</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\exists X\,□\forall x\,(Xx \leftrightarrow \neg Fx)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00104"
+class="search-passage">We can prove that even granted ∃ <em>x
+x</em>=<em>x</em> and all instances of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><msup><mrow></mrow><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}{}^{-}</annotation></semantics></math>
+and the first-order and second-order being constraints as auxiliary
+assuimptions,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>
+does not make (20) entail (21).</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00105"
+class="search-passage">For the purposes of theoretical inquiry, however,
+the weakness of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>
+is a disadvantage. For example, think of an investigation into the
+necessary conditions for life to evolve. As a partial answer, a theorist
+suggests the absence of an atmosphere full of a chemical C. Let
+<em>Lx</em> and <em>Fx</em> abbreviate ‘Life evolves on planet
+<em>x</em>’ and ‘The atmosphere on <em>x</em> is full of chemical C’
+respectively. At this level of abstraction, we can adequately formalize
+the theorist’s claim thus:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(22)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00106"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mi>x</mi><mo>→</mo><mo>¬</mo><mi>F</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall x\,(Lx \to \neg Fx)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00107"
+class="search-passage">For reasons explained in section 2, (22) meets
+the request for a necessary condition for life to evolve only if
+¬<em>Fx</em> expresses such a condition, and so only if (21) holds. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>
+does not deliver the required condition.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00108"
+class="search-passage">For the contingentist, we may assume, the point
+of the restrictions in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>
+here is that it is contingent that there is such a chemical as C, and so
+contingent that there is such a condition as having an atmosphere full
+of C. Thus (20) is a contingent truth. The idea is that even when (20)
+is true, (21) is still false, because in the possible circumstances in
+which there is no such chemical as C, there is no such condition as not
+having an atmosphere full of C, so by the second-order being constraint
+nothing meets such a condition. All we have is a condition met by
+whatever does not have an atmosphere full of C when there is such a
+chemical as C. But the theorist may easily hold that such a restricted
+version of the condition of not having an atmosphere full of C is
+<em>not</em> necessary for life to evolve, because life can evolve even
+if there is no such chemical as C. Thus the second restriction in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">2</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC2}}</annotation></semantics></math>
+frustrates the theoretical purpose of framing inquiry in terms of
+conditions, as formalized in higher-order modal logic.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00109"
+class="search-passage">Can the contingentist reply that the request for
+necessary conditions really just expected an answer of the form of (22),
+so that (21) is irrelevant? That is in effect to abandon higher-order
+modal logic as a framework for understanding such theoretical talk of
+conditions. Moreover, as noted in section 3, questions about the
+conditions for a phenomenon do not presuppose that our language is
+already expressively adequate for their answers.
+<span class="orig-page" data-page="34" id="page-34" aria-hidden="true"></span>The
+process of inquiry may involve expanding its vocabulary. If the phrase
+‘an answer of the form of (22)’ anticipates such expansions, which must
+be meaningful, its generality over their semantics already requires
+generality over something like conditions. Thus the need for (21) is
+serious.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00110"
+class="search-passage">At this point, the contingentist might reconsider
+second-order being constraints such as (14) and (15), since they were
+assumed in the objections to the stronger comprehension principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>.
+Even that principle yields (21) only when (20) is assumed, but the
+contingentist may argue that we can postulate (21) only when there is
+such a chemical as C, in which case (20) is (contingently)
+true.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00111"
+class="search-passage">Denying the second-order being constraint is very
+implausible. If concrete individuals would have a given property (such
+as my anti-haecceity) in counterfactual circumstances, what more is
+needed for there to be that property in those circumstances? Moreover,
+the denial creates technical difficulties. We saw that with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+as comprehension principle, MI yields only conclusions conditional on
+first-order and second-order being assumptions, as in (12), the obvious
+way of discharging which is by first-order and second-order being
+constraints.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00112"
+class="search-passage">The contingentist might seek the benefits of MI
+without invoking the second-order being constraint by an alternative
+strategy. Divide applications of MI into those to actual circumstances
+and those to counterfactual ones. In the former case, these
+contingentists need the actual truth of the relevant being assumption
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>,
+where <em>A</em> is the defining formula for the relevant instance of
+MI. They might argue that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+has some sort of a priori status, as a precondition for the content of
+<em>A</em>. In the latter case, there is no corresponding argument for
+the truth of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>
+in the relevant counterfactual circumstances. However, to reason about
+those circumstances, they might use instead of the necessitation of MI a
+modalized version of MI with the necessitation inside the second-order
+quantifier:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span
+class="display-label"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">I</mi></mrow><mi class="modal-operator">□</mi></msup><annotation encoding="application/x-tex">\mathrm{MI}^{□}</annotation></semantics></math></span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00113"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mn>0</mn><mo>&amp;</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>n</mi><mo>→</mo><mi>X</mi><mi>s</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mi>X</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\forall X\,□((X0 \mathbin{\&amp;} \forall n\,(Xn \to Xsn)) \to \forall n\,Xn)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00114"
+class="search-passage">To apply
+MI<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mi class="modal-operator">□</mi></msup><annotation encoding="application/x-tex">^□</annotation></semantics></math>
+to counterfactual circumstances with a property defined by the formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+one requires only the actual being of the property, and so only the
+actual truth of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>A</mi></msub><annotation encoding="application/x-tex">E_A</annotation></semantics></math>,
+which the contingentist might justify as in the former case.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00115"
+class="search-passage">One does not expect the application of a standard
+non-modal mathematical principle to counterfactual circumstances to need
+more than the
+<span class="orig-page" data-page="35" id="page-35" aria-hidden="true"></span>necessitation
+of that principle. But a more serious problem for the divide-and-conquer
+strategy is that
+MI<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi></mi><mi class="modal-operator">□</mi></msup><annotation encoding="application/x-tex">^□</annotation></semantics></math>
+is still too weak to cover all the required cases. Here is an
+example:</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(23)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00116"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mn>0</mn><mo>&amp;</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>x</mi><mi>n</mi><mo>→</mo><mi>R</mi><mi>x</mi><mi>s</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>→</mo><mo>∀</mo><mi>n</mi><mspace width="0.167em"></mspace><mi>R</mi><mi>x</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall x\,((Rx0 \mathbin{\&amp;} \forall n\,(Rxn \to Rxsn)) \to \forall n\,Rxn)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00117"
+class="search-passage">Here the relevant property-defining formula is
+<em>Rxn</em>, where <em>x</em> is the parameter and <em>R</em> the
+predicate constant. The corresponding being assumption
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>R</mi><mi>x</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">E_{Rxn}</annotation></semantics></math>
+is ∃ <em>y x</em>=<em>y</em> &amp; ∃ <em>X</em> <span
+class="modal-operator">□</span> ∀ <em>n</em> (<em>Xn</em> ↔︎
+<em>Rxn</em>). But for contingentists the first conjunct of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>R</mi><mi>x</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">E_{Rxn}</annotation></semantics></math>
+may fail in the actual circumstances, because the quantifier governing
+the parameter <em>x</em> is inside the modal operator in (23), so we are
+talking about what individuals there would have been in counterfactual
+circumstances. Equally, the second conjunct of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>R</mi><mi>x</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">E_{Rxn}</annotation></semantics></math>
+may fail in counterfactual circumstances, since the relation expressed
+by <em>R</em> may not be in those circumstances. For all the
+contingentist is entitled to assume, in each circumstance one or other
+failure occurs. Thus the being assumption
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>R</mi><mi>x</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">E_{Rxn}</annotation></semantics></math>
+may be impossible. If so,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mn mathvariant="normal">1</mn></mrow></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{MC1}}</annotation></semantics></math>
+does not even yield the possibility of the relevant property.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00118"
+class="search-passage">Of course, the contingentist might add examples
+like (23) as new axioms in their own right. But that is to give up a
+principal advantage of second-order formulations of mathematical
+principles, which is that they capture the full range of intended
+generality, rather than simply collecting together those instances that
+happen to be expressible in the language.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00119"
+class="search-passage">Similar problems arise in non-mathematical
+contexts. For example, the form of contingentism now in view is not
+entitled to (24):</span></p>
+<div class="displayblock labelled-display">
+<dl>
+<dt><span class="display-label">(24)</span></dt>
+<dd>
+<span id="passage-metaphysics-and-higher-order-modal-logic-00120"
+class="search-passage"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="modal-operator">□</mi><mo>∀</mo><mi>y</mi><mspace width="0.167em"></mspace><mi class="modal-operator">◇</mi><mo>∃</mo><mi>X</mi><mspace width="0.167em"></mspace><mi class="modal-operator">□</mi><mo>∀</mo><mi>x</mi><mspace width="0.167em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mi>x</mi><mo>↔</mo><mi>S</mi><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">□\forall y\,◇\exists X\,□\forall x\,(Xx \leftrightarrow Sxy)</annotation></semantics></math></span>
+</dd>
+</dl>
+</div>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00121"
+class="search-passage">For the contingentist cannot exclude the
+counterfactual possibility of an individual (<em>y</em>) incompossible
+with the relation actually expressed by <em>S</em>. The argument that in
+such cases the property at issue would have been empty tacitly relies on
+the second-order being constraint, which the contingentist in question
+has rejected. Without principles like (24), second-order quantifiers
+lack the generality we intended to capture in second-order modal logic.
+Thus rejecting the second-order being constraint solves some old
+problems for the contingentist only by making new ones.</span></p>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00122"
+class="search-passage">We saw in section 2 that the prospects are poor
+for reconciling contingentism with the strong comprehension principle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+for higher-order modal logic. In sections 3 and 4, we have seen that
+replacing
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+with
+<span class="orig-page" data-page="36" id="page-36" aria-hidden="true"></span>weaker
+comprehension principles creates a tangle of further problems for
+contingentism. By contrast,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi></mrow><mi mathvariant="normal">M</mi></msub><annotation encoding="application/x-tex">\mathrm{Comp}_{\mathrm{M}}</annotation></semantics></math>
+fits nicely with necessitism. Thus, on present evidence, necessitism is
+better placed than contingentism to integrate with the sort of
+comprehension principle that higher-order modal logic needs if it is to
+serve as a framework for general systematic inquiry.</span></p>
+<h1 class="unnumbered" id="acknowledgements">Acknowledgements</h1>
+<p><span id="passage-metaphysics-and-higher-order-modal-logic-00123"
+class="search-passage">The arguments of this essay will be developed in
+more detail in my projected book <em>Modal Logic as Metaphysics</em>. My
+interest in the topic was reawakened by giving a talk on it to the
+conference on Analytic Ontology at the University of Innsbruck in 1997,
+subsequently published as ‘Bare Possibilia’ in a special issue of
+<em>Erkenntnis</em> dedicated to the conference proceedings and
+co-edited by Edmund Runggaldier. Not only do we share many philosophical
+values; we were fellow students of philosophy at Oxford in 1973-77,
+although he was several years senior to me. I applaud his important role
+in the revival of analytic philosophy in Central Europe, and dedicate
+this essay to him on the occasion of his 65<sup>th</sup>
+birthday.</span></p>
+</article>
+<script src="../../assets/article-search.js" defer></script>
+<script src="../../assets/edition-reader.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-publication-profile="public">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Full-text search of the Timothy Williamson digital editions.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Search articles - Timothy Williamson Archive">
+  <meta property="og:description" content="Full-text search of the Timothy Williamson digital editions.">
+  <meta property="og:type" content="website">
+  <title>Search articles - Timothy Williamson Archive</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css?v=20260821-2">
+</head>
+<body class="fulltext-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html">TW<span>Archive</span></a>
+    <nav class="topbar-links" aria-label="Archive pages">
+      <a class="topbar-link" href="../index.html">Catalogue</a>
+
+      <a class="topbar-link" href="index.html">Corpus search</a>
+      <a class="topbar-link" href="../citations/index.html">Timeline</a>
+
+    </nav>
+  </header>
+  <main class="fulltext-main">
+    <h1>Search articles</h1>
+    <form class="fulltext-search" role="search" data-search-form data-search-index="../assets/article-search-index.json">
+      <label class="visually-hidden" for="article-search">Search article text</label>
+      <input id="article-search" type="search" autocomplete="off" data-search-input>
+      <button type="submit">Search</button>
+    </form>
+    <p class="fulltext-status" role="status" aria-live="polite" data-search-status></p>
+    <section class="fulltext-results" data-search-results hidden>
+      <ol></ol>
+      <button class="fulltext-more" type="button" data-search-more hidden>Show more</button>
+    </section>
+  </main>
+  <script src="../assets/article-search.js?v=20260821-2"></script>
+</body>
+</html>
