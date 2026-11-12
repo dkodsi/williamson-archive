@@ -123,18 +123,6 @@ a { color: inherit; }
   font-family: var(--sans);
   padding: 2px 7px;
 }
-.article-search-link {
-  color: var(--accent);
-  display: inline-block;
-  font-size: 12px;
-  margin-top: 14px;
-  text-decoration-color: var(--line);
-  text-underline-offset: 4px;
-}
-.hero-links {
-  display: flex;
-  gap: 18px;
-}
 .stats {
   color: var(--muted);
   display: flex;
@@ -170,31 +158,6 @@ aside {
   margin-bottom: 12px;
   text-transform: uppercase;
 }
-.aside-title.spaced { margin-top: 30px; }
-.category-panel { margin-top: 30px; }
-.category-panel summary {
-  cursor: pointer;
-  list-style-position: inside;
-  user-select: none;
-}
-.category-panel[open] summary { margin-bottom: 4px; }
-.filter {
-  background: none;
-  border: 0;
-  color: var(--muted);
-  cursor: pointer;
-  display: flex;
-  font-size: 14px;
-  justify-content: space-between;
-  padding: 8px 0;
-  text-align: left;
-  width: 100%;
-}
-.filter.active {
-  color: var(--accent);
-  font-weight: 700;
-}
-.filter span { font-variant-numeric: tabular-nums; }
 aside label {
   color: var(--muted);
   display: block;
@@ -881,11 +844,6 @@ footer {
     position: static;
   }
   .aside-title { grid-column: 1 / -1; }
-  .aside-title.spaced { margin-top: 20px; }
-  .category-panel {
-    grid-column: 1 / -1;
-    margin-top: 20px;
-  }
   .year-group { grid-template-columns: 58px 1fr; }
   .year-group.ungrouped { grid-template-columns: 1fr; }
   .year-label { font-size: 19px; }

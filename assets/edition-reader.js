@@ -19,14 +19,13 @@
     preferences = {};
   }
 
-  const save = () => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));
-    } catch (_error) {
-      // Reading controls still work for this page when browser storage is unavailable.
-    }
-  };
   const button = selector => document.querySelector(selector);
+
+  function setPressed(selector, pressed) {
+    const control = button(selector);
+    control?.classList.toggle("active", pressed);
+    control?.setAttribute("aria-pressed", String(pressed));
+  }
 
   function apply() {
     if (preferences.size) {
@@ -36,39 +35,31 @@
       root.style.setProperty("--measure", `${preferences.width}rem`);
     }
     body.classList.toggle("reader-night", Boolean(preferences.night));
-    button("[data-reader-width]")?.classList.toggle(
-      "active", preferences.width === 49
-    );
-    button("[data-reader-width]")?.setAttribute(
-      "aria-pressed", String(preferences.width === 49)
-    );
-    button("[data-reader-theme]")?.classList.toggle(
-      "active", Boolean(preferences.night)
-    );
-    button("[data-reader-theme]")?.setAttribute(
-      "aria-pressed", String(Boolean(preferences.night))
-    );
+    setPressed("[data-reader-width]", preferences.width === 49);
+    setPressed("[data-reader-theme]", Boolean(preferences.night));
+  }
+
+  function setPreference(name, value) {
+    preferences[name] = value;
+    apply();
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));
+    } catch (_error) {
+      // Reading controls still work for this page when browser storage is unavailable.
+    }
   }
 
   button("[data-reader-size-down]")?.addEventListener("click", () => {
-    preferences.size = clamp((preferences.size || 17) - 1, 15, 23);
-    apply();
-    save();
+    setPreference("size", clamp((preferences.size || 17) - 1, 15, 23));
   });
   button("[data-reader-size-up]")?.addEventListener("click", () => {
-    preferences.size = clamp((preferences.size || 17) + 1, 15, 23);
-    apply();
-    save();
+    setPreference("size", clamp((preferences.size || 17) + 1, 15, 23));
   });
   button("[data-reader-width]")?.addEventListener("click", () => {
-    preferences.width = (preferences.width || 39.5) >= 49 ? 39.5 : 49;
-    apply();
-    save();
+    setPreference("width", (preferences.width || 39.5) >= 49 ? 39.5 : 49);
   });
   button("[data-reader-theme]")?.addEventListener("click", () => {
-    preferences.night = !preferences.night;
-    apply();
-    save();
+    setPreference("night", !preferences.night);
   });
 
   apply();

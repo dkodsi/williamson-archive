@@ -19,6 +19,7 @@ const $ = selector => document.querySelector(selector);
 const normalized = value => String(value ?? "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[’‘]/g, "\'").trim();
 
 const SVG = "http://www.w3.org/2000/svg";
+const VIEW_BUTTONS = [["#citationTimelineView", "timeline"], ["#citationFocusView", "focus"], ["#citationOverviewView", "overview"]];
 const esc = value => String(value ?? "").replace(
   /[&<>"']/g,
   character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[character]
@@ -70,12 +71,26 @@ function addDefinitions(svg) {
   svg.append(defs);
 }
 
-function activateNode(id) {
-  const restoreFocus = Boolean(document.activeElement?.closest?.("#citationGraph, #citationFocus, #timelineList, #citationMatches, #connectionsListItems"));
-  currentView = "focus";
+function selectView(view, id = currentId) {
+  currentView = view;
   selectedEdge = null;
   render(id);
+}
+
+function activateNode(id) {
+  const restoreFocus = Boolean(document.activeElement?.closest?.("#citationGraph, #citationFocus, #timelineList, #citationMatches, #connectionsListItems"));
+  selectView("focus", id);
   if (restoreFocus) document.querySelector(".citation-graph-node.selected")?.focus({ preventScroll: true });
+}
+
+function bindGraphSelection(item, id) {
+  item.addEventListener("click", () => activateNode(id));
+  item.addEventListener("keydown", event => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      activateNode(id);
+    }
+  });
 }
 
 function addNode(layer, node, x, y, radius, keyboard = true, selected = false) {
@@ -100,13 +115,7 @@ function addNode(layer, node, x, y, radius, keyboard = true, selected = false) {
   title.textContent = `${label(node)} — cites ${node.out_degree}; cited by ${node.in_degree}` +
     (Number.isFinite(node.external_citations) ? `; ${node.external_citations} external citations` : "");
   item.append(circle, title);
-  item.addEventListener("click", () => activateNode(node.id));
-  item.addEventListener("keydown", event => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      activateNode(node.id);
-    }
-  });
+  bindGraphSelection(item, node.id);
   layer.append(item);
 }
 
@@ -125,13 +134,7 @@ function addGraphLabel(layer, node, x, y, anchor = "start", selected = false) {
   const title = element("title");
   title.textContent = label(node);
   text.append(title);
-  text.addEventListener("click", () => activateNode(node.id));
-  text.addEventListener("keydown", event => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      activateNode(node.id);
-    }
-  });
+  bindGraphSelection(text, node.id);
   layer.append(text);
 }
 
@@ -230,7 +233,14 @@ function nodeRadius(node, selected = false) {
   );
 }
 
-function addYearAxis(layer, firstYear, lastDatedYear, lastAxisYear, yearX, hasUndated) {
+function yearX(year) {
+  return 75 + 760 * (year - overviewYears.first) /
+    Math.max(1, overviewYears.last + 1 - overviewYears.first);
+}
+
+function addYearAxis(layer, hasUndated) {
+  const { first: firstYear, last: lastDatedYear } = overviewYears;
+  const lastAxisYear = lastDatedYear + 1;
   const tickYears = [firstYear];
   for (let year = Math.ceil(firstYear / 10) * 10; year <= lastDatedYear; year += 10) {
     if (!tickYears.includes(year)) tickYears.push(year);
@@ -257,8 +267,6 @@ function prepareOverviewLayout() {
   const years = graph.nodes.map(node => node.year).filter(Number.isFinite);
   overviewYears = { first: Math.min(...years), last: Math.max(...years) };
   maximumInfluence = Math.max(...connectedNodes.map(node => node.in_degree));
-  const yearX = year => 75 + 760 * (year - overviewYears.first) /
-    Math.max(1, overviewYears.last + 1 - overviewYears.first);
   const predecessor = new Map(graph.nodes.map(node => [node.id, []]));
   const successor = new Map(graph.nodes.map(node => [node.id, []]));
   lineages.edges.forEach(edge => {
@@ -344,15 +352,21 @@ function addFocusEdge(layer, source, target, positions, radii) {
   layer.append(hit);
 }
 
+function graphLayers(svg, overview = false) {
+  const suffix = overview ? " overview" : "";
+  const axisLayer = element("g", { class: "citation-year-axis" });
+  const edgeLayer = element("g", { class: `citation-graph-edges${suffix}` });
+  const nodeLayer = element("g", { class: `citation-graph-nodes${suffix}` });
+  const labelLayer = element("g", { class: "citation-graph-labels" });
+  svg.append(axisLayer, edgeLayer, nodeLayer, labelLayer);
+  return { axisLayer, edgeLayer, nodeLayer, labelLayer };
+}
+
 function drawFocus(id) {
   const svg = $("#citationGraph");
   svg.replaceChildren();
   addDefinitions(svg);
-  const axisLayer = element("g", { class: "citation-year-axis" });
-  const edgeLayer = element("g", { class: "citation-graph-edges" });
-  const nodeLayer = element("g", { class: "citation-graph-nodes" });
-  const labelLayer = element("g", { class: "citation-graph-labels" });
-  svg.append(axisLayer, edgeLayer, nodeLayer, labelLayer);
+  const { axisLayer, edgeLayer, nodeLayer, labelLayer } = graphLayers(svg);
   const localIds = new Set([id, ...(outgoing.get(id) || []), ...(incoming.get(id) || [])]);
   const localNodes = [...localIds].map(workId => nodes.get(workId)).filter(Boolean);
   const positions = overviewPositions;
@@ -369,10 +383,7 @@ function drawFocus(id) {
   const width = Math.min(1000, Math.max(520, maximumX - minimumX + 330));
   const x = Math.max(0, Math.min(1000 - width, minimumX - 105));
   // Retain the shared year scale and its bottom axis when a neighbourhood is focused.
-  const yearX = year => 75 + 760 * (year - overviewYears.first) /
-    Math.max(1, overviewYears.last + 1 - overviewYears.first);
-  addYearAxis(axisLayer, overviewYears.first, overviewYears.last, overviewYears.last + 1, yearX,
-    localNodes.some(node => !Number.isFinite(node.year)));
+  addYearAxis(axisLayer, localNodes.some(node => !Number.isFinite(node.year)));
   addFocusLabels(labelLayer, localNodes, positions, id, { left: x, right: x + width, top: 0, bottom: 510 });
   svg.setAttribute("viewBox", `${x.toFixed(1)} 0 ${width.toFixed(1)} 550`);
   $("#citationGraphCaption").textContent = "Direct citations to and from the selected work.";
@@ -383,17 +394,8 @@ function drawOverview() {
   const svg = document.querySelector("#citationGraph");
   svg.replaceChildren();
   svg.setAttribute("viewBox", "0 0 1000 540");
-  const axisLayer = element("g", { class: "citation-year-axis" });
-  const edgeLayer = element("g", { class: "citation-graph-edges overview" });
-  const nodeLayer = element("g", { class: "citation-graph-nodes overview" });
-  const labelLayer = element("g", { class: "citation-graph-labels" });
-  svg.append(axisLayer, edgeLayer, nodeLayer, labelLayer);
-  const yearX = year => 75 + 760 * (year - overviewYears.first) /
-    Math.max(1, overviewYears.last + 1 - overviewYears.first);
-  addYearAxis(
-    axisLayer, overviewYears.first, overviewYears.last,
-    overviewYears.last + 1, yearX, connectedNodes.some(node => !Number.isFinite(node.year))
-  );
+  const { axisLayer, edgeLayer, nodeLayer, labelLayer } = graphLayers(svg, true);
+  addYearAxis(axisLayer, connectedNodes.some(node => !Number.isFinite(node.year)));
   lineages.edges.filter(edge => edge.overview).forEach(edge => {
     const start = overviewPositions.get(edge.source);
     const end = overviewPositions.get(edge.target);
@@ -423,7 +425,7 @@ function drawOverview() {
 }
 
 function updateViewButtons() {
-  for (const [selector, view] of [["#citationTimelineView", "timeline"], ["#citationFocusView", "focus"], ["#citationOverviewView", "overview"]]) {
+  for (const [selector, view] of VIEW_BUTTONS) {
     const control = $(selector);
     if (!control) continue;
     control.classList.toggle("active", currentView === view);
@@ -589,13 +591,14 @@ function searchConnections() {
   const candidates = exact ? exact.map(id => nodes.get(id)) : graph.nodes.filter(node => matchTitle(node, query));
   if (query && candidates.length === 1) { activateNode(candidates[0].id); return; }
   const matches = $("#citationMatches");
+  const message = query && candidates.length ? `${candidates.length} matching works. Choose one below.`
+    : query ? "No matching work. Try another word from the title." : "Enter part of a title to find matching works.";
   matches.hidden = false;
   matches.innerHTML = query && candidates.length ? `<ul>${chronologicalWorks(candidates).map(node =>
     `<li><button type="button" data-work="${esc(node.id)}">${esc(label(node))}</button></li>`
-  ).join("")}</ul>` : query ? "<p>No matching work. Try another word from the title.</p>" : "<p>Enter part of a title to find matching works.</p>";
+  ).join("")}</ul>` : `<p>${message}</p>`;
   bindWorkButtons(matches);
-  $("#citationStatus").textContent = query && candidates.length ? `${candidates.length} matching works. Choose one below.`
-    : query ? "No matching work. Try another word from the title." : "Enter part of a title to find matching works.";
+  $("#citationStatus").textContent = message;
 }
 
 async function init() {
@@ -642,8 +645,8 @@ async function init() {
   $("#citationWork").addEventListener("input", () => {
     if (currentView === "timeline") { searchQuery = $("#citationWork").value.trim(); renderChronology(); updateURL("replace"); }
   });
-  for (const [selector, view] of [["#citationTimelineView", "timeline"], ["#citationOverviewView", "overview"], ["#citationFocusView", "focus"], ["#citationZoomOut", "overview"]]) {
-    $(selector).onclick = () => { currentView = view; selectedEdge = null; render(currentId); };
+  for (const [selector, view] of [...VIEW_BUTTONS, ["#citationZoomOut", "overview"]]) {
+    $(selector).onclick = () => selectView(view);
   }
   $("#timelineDecade").onchange = event => { decadeFilter = event.target.value; render(currentId); };
   $("#timelineTopic").onchange = event => { topicFilter = event.target.value; render(currentId); };

@@ -1,10 +1,6 @@
 let works = [];
-let restoringState = false;
-let fulltextQuery = null;
-let fulltextResults = [];
-let resultGroups = [];
-let resultState = null;
-let shownGroups = 0;
+let fulltextCache = { query: null, results: [] };
+let resultPage;
 let requestId = 0;
 let queryTimer;
 let editingQuery = false;
@@ -64,10 +60,14 @@ function matchesFilters(work, state) {
     state.types.includes(work.catalogue_type);
 }
 
-function sortWorks(items, sort) {
-  return items.sort(sort === "az" ? (a, b) => a.title.localeCompare(b.title)
+function workOrder(sort) {
+  return sort === "az" ? (a, b) => a.title.localeCompare(b.title)
     : sort === "oldest" ? (a, b) => compareYears(a, b, 1)
-    : sort === "newest" ? (a, b) => compareYears(a, b, -1) : compareCitations);
+    : sort === "newest" ? (a, b) => compareYears(a, b, -1) : compareCitations;
+}
+
+function sortWorks(items, sort) {
+  return items.sort(workOrder(sort));
 }
 
 function groupFilteredResults(results, catalogue, state) {
@@ -76,9 +76,8 @@ function groupFilteredResults(results, catalogue, state) {
     .filter(group => bySlug.has(group.slug) && matchesFilters(bySlug.get(group.slug), state))
     .map(group => ({ ...group, work: bySlug.get(group.slug) }));
   if (state.sort !== "relevance") {
-    const ordered = sortWorks(grouped.map(group => group.work), state.sort);
-    const positions = new Map(ordered.map((work, i) => [work.id, i]));
-    grouped.sort((a, b) => positions.get(a.work.id) - positions.get(b.work.id));
+    const compare = workOrder(state.sort);
+    grouped.sort((a, b) => compare(a.work, b.work));
   }
   return grouped;
 }
@@ -119,7 +118,7 @@ function configureMobileFilters() {
 
 function bind() {
   $("#discoverySearch").addEventListener("submit", event => {
-    event.preventDefault(); clearTimeout(queryTimer); editingQuery = false; render();
+    event.preventDefault(); finishQueryEdit(); render();
   });
   $("#search").addEventListener("input", () => {
     clearTimeout(queryTimer);
@@ -133,7 +132,7 @@ function bind() {
   $("#search").addEventListener("blur", () => { editingQuery = false; });
   $$("input[name=scope]").forEach(input => {
     input.addEventListener("change", () => {
-      clearTimeout(queryTimer); editingQuery = false;
+      finishQueryEdit();
       const sort = $("#sort");
       if (["citations", "relevance"].includes(sort.value)) sort.value = defaultSort(input.value);
       render();
@@ -144,8 +143,8 @@ function bind() {
   $("#clearFilters").onclick = clearFilters;
   $("#moreWorks").onclick = () => renderMoreGroups({ focusNew: true });
   window.addEventListener("popstate", () => {
-    clearTimeout(queryTimer); editingQuery = false; restoringState = true;
-    applyURLState(); render({ updateURL: false }); restoringState = false;
+    finishQueryEdit();
+    applyURLState(); render({ updateURL: false });
   });
   document.addEventListener("keydown", event => {
     if (event.key === "/" && !event.defaultPrevented && !event.isComposing &&
@@ -156,21 +155,25 @@ function bind() {
   });
 }
 
-function selectedAvailability() { return $(".availability-filter:checked")?.value || "all"; }
-function selectedTypes() { return new Set($$(".type-filter:checked").map(item => item.value)); }
+function finishQueryEdit() {
+  clearTimeout(queryTimer);
+  editingQuery = false;
+}
 function stateFromControls() {
   return { query: $("#search").value.trim(), scope: selectedScope(),
-    availability: selectedAvailability(), types: [...selectedTypes()], sort: $("#sort").value };
+    availability: $(".availability-filter:checked")?.value || "all",
+    types: $$(".type-filter:checked").map(item => item.value), sort: $("#sort").value };
 }
 function titleMatches(work, query) { return !query || normalized(work.title).includes(normalized(query)); }
-function current() {
-  const state = stateFromControls();
-  return sortWorks(works.filter(work => matchesFilters(work, state) && titleMatches(work, state.query)), state.sort);
-}
-function updateCounts(filtered) {
+function updateCounts(filtered, status = `${filtered.length} work${filtered.length === 1 ? "" : "s"}`) {
   $("#resultCountLabel").hidden = false;
   $("#resultCount").textContent = filtered.length;
-  $("#searchStatus").textContent = `${filtered.length} work${filtered.length === 1 ? "" : "s"}`;
+  $("#searchStatus").textContent = status;
+}
+function showSearchMessage(status, message = status) {
+  $("#searchStatus").textContent = status;
+  $("#empty").textContent = message;
+  $("#empty").hidden = false;
 }
 function updateFilterSummary(state) {
   const filters = [];
@@ -223,64 +226,63 @@ function searchFulltext(query) {
   return loadIndex().then(index => globalThis.TWArticleSearch.search(index, query));
 }
 
-async function render({ updateURL = true, historyMode = "push" } = {}) {
+function render({ updateURL = true, historyMode = "push" } = {}) {
   const request = ++requestId;
   const state = stateFromControls();
+  const fulltext = state.scope === "text";
   updateFilterSummary(state);
-  $("#searchStatus").className = state.scope === "text" ? "discovery-status" : "visually-hidden";
-  $("#search").placeholder = state.scope === "text" ? "Search full text…" : "Search titles…";
-  $("#searchHint").textContent = state.scope === "text"
-    ? 'Use "quotes" for phrases; * matches part of a word.'
-    : "";
-  $("#searchHint").hidden = state.scope !== "text";
-  $("#sort option[value=relevance]").hidden = state.scope !== "text";
-  if (updateURL && !restoringState) writeURLState(historyMode);
+  $("#searchStatus").className = fulltext ? "discovery-status" : "visually-hidden";
+  $("#search").placeholder = fulltext ? "Search full text…" : "Search titles…";
+  $("#searchHint").textContent = fulltext ? 'Use "quotes" for phrases; * matches part of a word.' : "";
+  $("#searchHint").hidden = !fulltext;
+  $("#sort option[value=relevance]").hidden = !fulltext;
+  if (updateURL) writeURLState(state, historyMode);
   $$('[data-titles-link]').forEach(link => {
     const params = stateParameters({ ...state, scope: "titles", sort: state.sort === "relevance" ? "citations" : state.sort });
     link.href = `${ARCHIVE_ROOT}index.html?${params}`;
   });
-  $("#yearBuckets").hidden = state.scope === "text";
+  $("#yearBuckets").hidden = fulltext;
   $("#fulltextGroups").hidden = true; $("#moreWorks").hidden = true;
   $("#empty").hidden = true;
-  if (state.scope === "titles") {
-    const filtered = current(); updateCounts(filtered);
-    $("#empty").textContent = "No works match your search and filters.";
-    $("#empty").hidden = Boolean(filtered.length);
-    if (["az", "citations", "relevance"].includes(state.sort)) {
-      $("#yearBuckets").innerHTML = `<section class="year-group ungrouped"><div>${filtered.map(card).join("")}</div></section>`;
-    } else {
-      const groups = new Map();
-      filtered.forEach(work => { const year = work.year ?? "n.d."; if (!groups.has(year)) groups.set(year, []); groups.get(year).push(work); });
-      $("#yearBuckets").innerHTML = [...groups].map(([year, entries]) => `<section class="year-group"><div class="year-label">${year}</div><div>${entries.map(card).join("")}</div></section>`).join("");
-    }
-    return;
+  return fulltext ? renderFulltext(state, request) : renderTitles(state);
+}
+
+function renderTitles(state) {
+  const filtered = sortWorks(works.filter(work => matchesFilters(work, state) && titleMatches(work, state.query)), state.sort);
+  updateCounts(filtered);
+  $("#empty").textContent = "No works match your search and filters.";
+  $("#empty").hidden = Boolean(filtered.length);
+  if (["az", "citations", "relevance"].includes(state.sort)) {
+    $("#yearBuckets").innerHTML = `<section class="year-group ungrouped"><div>${filtered.map(card).join("")}</div></section>`;
+  } else {
+    const groups = new Map();
+    filtered.forEach(work => { const year = work.year ?? "n.d."; if (!groups.has(year)) groups.set(year, []); groups.get(year).push(work); });
+    $("#yearBuckets").innerHTML = [...groups].map(([year, entries]) => `<section class="year-group"><div class="year-label">${year}</div><div>${entries.map(card).join("")}</div></section>`).join("");
   }
+}
+
+async function renderFulltext(state, request) {
   $("#resultCountLabel").hidden = true;
   const parsed = globalThis.TWArticleSearch.parseQuery(state.query);
   if (parsed.state !== "ready") {
-    $("#searchStatus").textContent = parsed.state === "empty" ? "Enter a word or phrase to search the editions." : "Enter searchable words and close any quotation marks.";
-    $("#empty").textContent = $("#searchStatus").textContent;
-    $("#empty").hidden = false;
+    showSearchMessage(parsed.state === "empty" ? "Enter a word or phrase to search the editions." : "Enter searchable words and close any quotation marks.");
     return;
   }
-  $("#searchStatus").textContent = "Searching editions…";
-  $("#empty").textContent = "Searching editions…";
-  $("#empty").hidden = false;
+  showSearchMessage("Searching editions…");
   try {
-    if (fulltextQuery !== state.query) {
+    if (fulltextCache.query !== state.query) {
       const response = await searchFulltext(state.query);
       if (request !== requestId) return;
-      fulltextQuery = state.query; fulltextResults = response.results || [];
+      fulltextCache = { query: state.query, results: response.results || [] };
     }
     if (request !== requestId) return;
-    resultGroups = groupFilteredResults(fulltextResults, works, state);
-    resultState = state;
-    shownGroups = 0; $("#fulltextGroups").replaceChildren();
-    updateCounts(resultGroups);
-    const passages = resultGroups.reduce((n, group) => n + group.passages.length, 0);
-    $("#searchStatus").textContent = `${resultGroups.length.toLocaleString()} work${resultGroups.length === 1 ? "" : "s"} · ${passages.toLocaleString()} matching passage${passages === 1 ? "" : "s"}.`;
+    const groups = groupFilteredResults(fulltextCache.results, works, state);
+    resultPage = { state, groups, shown: 0 };
+    $("#fulltextGroups").replaceChildren();
+    const passages = groups.reduce((n, group) => n + group.passages.length, 0);
+    updateCounts(groups, `${groups.length.toLocaleString()} work${groups.length === 1 ? "" : "s"} · ${passages.toLocaleString()} matching passage${passages === 1 ? "" : "s"}.`);
     $("#empty").hidden = true;
-    if (!resultGroups.length) {
+    if (!groups.length) {
       $("#empty").textContent = state.availability === "unavailable" ? "Works without digital editions cannot be searched in full text. Choose All or Editions to see matching passages." : "No matching passages with these filters. Try fewer words or clear a filter.";
       $("#empty").hidden = false; return;
     }
@@ -288,24 +290,23 @@ async function render({ updateURL = true, historyMode = "push" } = {}) {
     renderMoreGroups();
   } catch (_) {
     if (request !== requestId) return;
-    $("#searchStatus").textContent = "Full-text search is temporarily unavailable. You can still search titles.";
-    $("#empty").textContent = "Full-text search is temporarily unavailable. Try Search again, or choose Titles above.";
-    $("#empty").hidden = false;
+    showSearchMessage("Full-text search is temporarily unavailable. You can still search titles.",
+      "Full-text search is temporarily unavailable. Try Search again, or choose Titles above.");
   }
 }
 
 function renderMoreGroups({ focusNew = false } = {}) {
-  const state = resultState;
-  if (!state) return;
+  if (!resultPage) return;
+  const { state, groups, shown } = resultPage;
   // Use the completed query, never text typed while an older result set is visible.
   const query = state.query;
-  const returnTo = `${location.pathname}?${stateParameters({ ...state, query, scope: "text" })}`;
+  const returnTo = `${location.pathname}?${stateParameters(state)}`;
   const passageHTML = result => {
     const href = globalThis.TWArticleSearch.resultHref(result, query, { editionRoot: `${ARCHIVE_ROOT}editions/`, returnTo });
     return `<li><a href="${esc(href)}"><span class="passage-section">${esc(result.section || "Passage")}</span><span class="fulltext-result-snippet">${globalThis.TWArticleSearch.snippet(result)}</span></a></li>`;
   };
   let firstNew;
-  for (const group of resultGroups.slice(shownGroups, shownGroups + 12)) {
+  for (const group of groups.slice(shown, shown + 12)) {
     const item = document.createElement("article"); item.className = "discovery-work";
     item.innerHTML = `<header><h2><a href="${esc(archiveHref(group.work.work_path))}">${esc(group.work.title)}</a></h2><p>${esc(group.work.year ?? "n.d.")} · ${group.passages.length} matching passage${group.passages.length === 1 ? "" : "s"}</p></header><ol class="passage-list">${group.passages.slice(0, 3).map(passageHTML).join("")}</ol>`;
     if (group.passages.length > 3) {
@@ -323,9 +324,9 @@ function renderMoreGroups({ focusNew = false } = {}) {
     $("#fulltextGroups").append(item);
     firstNew ||= item;
   }
-  shownGroups = Math.min(shownGroups + 12, resultGroups.length);
-  $("#moreWorks").hidden = shownGroups >= resultGroups.length;
-  $("#moreWorks").textContent = `Show more works (${resultGroups.length - shownGroups} remaining)`;
+  resultPage.shown = Math.min(shown + 12, groups.length);
+  $("#moreWorks").hidden = resultPage.shown >= groups.length;
+  $("#moreWorks").textContent = `Show more works (${groups.length - resultPage.shown} remaining)`;
   if (focusNew) firstNew?.querySelector("h2 a")?.focus();
 }
 
@@ -345,8 +346,8 @@ function clearFilters() {
   render();
   $("#catalogueResults").focus({ preventScroll: true });
 }
-function writeURLState(mode = "push") {
-  const params = stateParameters(stateFromControls(), location.search);
+function writeURLState(state, mode = "push") {
+  const params = stateParameters(state, location.search);
   const next = `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`;
   if (next !== `${location.pathname}${location.search}${location.hash}`) history[mode === "replace" ? "replaceState" : "pushState"](null, "", next);
 }
@@ -359,7 +360,6 @@ function applyURLState() {
   }
   const state = readState(params);
   $("#search").value = state.query;
-  $(".availability-filter[value=all]").checked = true;
   $$(".availability-filter").forEach(input => { input.checked = input.value === state.availability; });
   $$(".type-filter").forEach(input => { input.checked = state.types.includes(input.value); });
   $$("input[name=scope]").forEach(input => { input.checked = input.value === state.scope; });
