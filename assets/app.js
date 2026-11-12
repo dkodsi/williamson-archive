@@ -170,7 +170,7 @@ function current() {
 function updateCounts(filtered) {
   $("#resultCountLabel").hidden = false;
   $("#resultCount").textContent = filtered.length;
-  $("#searchStatus").textContent = `${filtered.length} work${filtered.length === 1 ? "" : "s"} shown.`;
+  $("#searchStatus").textContent = `${filtered.length} work${filtered.length === 1 ? "" : "s"}`;
 }
 function updateFilterSummary(state) {
   const filters = [];
@@ -227,6 +227,7 @@ async function render({ updateURL = true, historyMode = "push" } = {}) {
   const request = ++requestId;
   const state = stateFromControls();
   updateFilterSummary(state);
+  $("#searchStatus").className = state.scope === "text" ? "discovery-status" : "visually-hidden";
   $("#search").placeholder = state.scope === "text" ? "Search full text…" : "Search titles…";
   $("#searchHint").textContent = state.scope === "text"
     ? 'Use "quotes" for phrases; * matches part of a word.'
