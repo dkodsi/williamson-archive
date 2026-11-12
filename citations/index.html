@@ -29,12 +29,12 @@
     </form>
     <p id="citationStatus" class="citation-map-status" role="status" aria-live="polite"></p>
     <div class="citation-view-controls" role="group" aria-label="Graph view">
-      <button id="citationOverviewView" class="active" type="button">Overview</button>
-      <button id="citationFocusView" type="button" disabled>Focus</button>
+      <button id="citationOverviewView" class="active" type="button" aria-pressed="true">Overview</button>
+      <button id="citationFocusView" type="button" aria-pressed="false" disabled>Focus</button>
     </div>
     <figure class="citation-graph-frame">
       <button id="citationZoomOut" class="citation-zoom-out" type="button" hidden>Zoom out</button>
-      <svg id="citationGraph" viewBox="0 0 1000 540" role="img" aria-label="Chronological map of connections between works; books are red"></svg>
+      <svg id="citationGraph" viewBox="0 0 1000 540" role="group" aria-label="Chronological map of connections between works; books are red"></svg>
     </figure>
     <section id="citationFocus" class="citation-focus" hidden></section>
   </main>

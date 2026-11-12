@@ -497,6 +497,10 @@ footer {
 }
 .citation-map-search input:focus-visible,
 .citation-map-search button:focus-visible { outline: 0; }
+.citation-map-search button:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: -5px;
+}
 .citation-map-status {
   color: var(--muted);
   font-size: 12px;
@@ -746,6 +750,10 @@ footer {
 }
 .fulltext-search input:focus-visible,
 .fulltext-search button:focus-visible { outline: 0; }
+.fulltext-search button:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: -5px;
+}
 .fulltext-more:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
@@ -858,8 +866,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .topbar { padding-left: 16px; padding-right: 16px; }
-  .topbar-links { gap: 11px; }
+  .topbar { padding-left: 16px; padding-right: 16px; height: auto; min-height: 60px; gap: 8px; }
+  .brand { flex-shrink: 0; }
+  .topbar-links { gap: 8px 11px; flex-wrap: wrap; justify-content: flex-end; padding: 12px 0; }
   .topbar-link { font-size: 11px; }
   .fulltext-search button { padding: 0 14px; }
 }

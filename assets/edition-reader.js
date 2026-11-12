@@ -4,17 +4,21 @@
   const STORAGE_KEY = "tw-reader-preferences-v1";
   const root = document.documentElement;
   const body = document.body;
+  const clamp = (value, minimum, maximum) =>
+    Math.min(maximum, Math.max(minimum, value));
   let preferences = {};
 
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    if (stored && typeof stored === "object" && !Array.isArray(stored)) preferences = stored;
+    if (stored && typeof stored === "object" && !Array.isArray(stored)) {
+      if (Number.isFinite(stored.size)) preferences.size = clamp(stored.size, 15, 23);
+      if ([39.5, 49].includes(stored.width)) preferences.width = stored.width;
+      if (typeof stored.night === "boolean") preferences.night = stored.night;
+    }
   } catch (_error) {
     preferences = {};
   }
 
-  const clamp = (value, minimum, maximum) =>
-    Math.min(maximum, Math.max(minimum, value));
   const save = () => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));

@@ -61,9 +61,10 @@ function addDefinitions(svg) {
 }
 
 function activateNode(id) {
+  const restoreFocus = Boolean(document.activeElement?.closest?.("#citationGraph, #citationFocus"));
   currentView = "focus";
-  updateViewButtons();
   render(id);
+  if (restoreFocus) document.querySelector(".citation-graph-node.selected")?.focus({ preventScroll: true });
 }
 
 function addNode(layer, node, x, y, radius, keyboard = true, selected = false) {
@@ -72,7 +73,7 @@ function addNode(layer, node, x, y, radius, keyboard = true, selected = false) {
   const item = element("g", {
     class: `citation-graph-node${selected ? " selected" : ""}`,
     transform: `translate(${x.toFixed(2)} ${y.toFixed(2)})`,
-    role: "link",
+    role: "button",
     "aria-label": `${label(node)}. Cites ${node.out_degree}; cited by ${node.in_degree}.${external}`,
     tabindex: keyboard ? "0" : "-1"
   });
@@ -400,6 +401,8 @@ function drawOverview() {
 function updateViewButtons() {
   document.querySelector("#citationFocusView").classList.toggle("active", currentView === "focus");
   document.querySelector("#citationOverviewView").classList.toggle("active", currentView === "overview");
+  document.querySelector("#citationFocusView").setAttribute("aria-pressed", String(currentView === "focus"));
+  document.querySelector("#citationOverviewView").setAttribute("aria-pressed", String(currentView === "overview"));
   document.querySelector("#citationFocusView").disabled = !currentId;
   document.querySelector("#citationZoomOut").hidden = currentView === "overview";
 }
@@ -424,6 +427,7 @@ function render(id, updateHistory = true) {
     return;
   }
   currentId = id;
+  updateViewButtons();
   document.querySelector("#citationWork").value = label(node);
   const cites = [...(outgoing.get(id) || [])];
   const citedBy = [...(incoming.get(id) || [])];
