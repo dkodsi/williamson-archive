@@ -1,0 +1,148 @@
+# Intuitionism disproved?
+
+Timothy Williamson
+
+Analysis 42 (4) (1982): 203–207.
+
+Perennial philosophers’ hopes are unlikely victims of swift, natural deduction. Yet anti-realism has been thought one. Not hoping for anti-realism myself I here show it, lest it be underestimated, to survive the following argument, adapted from W. D. Hart (‘Access and Inference’, Proceedings of the Aristotelian Society, sup. vol. LIII (1979) pp. 156, 164–5; he credits first publication to Fitch).
+
+Call (1) ‘strong anti-realism’ the view that all truths are known and (2) ‘weak anti-realism’ the view that all truths are knowable. In formal schemata with obvious notation:
+
+(1)
+$\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$
+(2)
+$\mathrm{P} \rightarrow \lozenge \mathrm{K}\mathrm{P}$
+
+Strong anti-realism is obviously false: the number of books in my room may be odd even if I never bother to count them. Only weak anti-realism can be taken seriously. Unfortunately, (2) entails (1): since strong anti-realism has been rejected, so should weak anti-realism be, and any form of verificationism or idealism that entails it. The proof requires a minimum of modal and epistemic logic: the necessitation rule—if $\vdash \mathrm{P}$ then $\vdash □ \mathrm{P}$—the definition of possibility in terms of necessity—$\lozenge \mathrm{P}$ as $\mathord{\sim} □ \mathord{\sim} \mathrm{P}$—(though not, as Hart seems to think (p. 156), the rules that necessity entails truth and that the consequences of necessities are necessary) and two trite principles about knowledge—knowledge entails truth, and knowledge of a conjunction entails knowledge of its conjuncts:
+
+(3)
+$\mathrm{K}\mathrm{P} \rightarrow \mathrm{P}$
+(4)
+$\mathrm{K}(\mathrm{P} \mathbin{\&} \mathrm{Q}) \rightarrow (\mathrm{K}\mathrm{P} \mathbin{\&} \mathrm{K}\mathrm{Q})$
+
+Now assume:
+
+(5)
+$\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P}$
+
+By an instance of (2):
+
+(6)
+$\lozenge \mathrm{K}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$
+
+By definition of $\lozenge$:
+
+(7)
+$\mathord{\sim} □ \mathord{\sim} \mathrm{K}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$
+
+Now assume:
+
+(8)
+$\mathrm{K}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$
+
+By an instance of (3):
+
+(9)
+$\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P}$
+
+From (8) by an instance of (4):
+
+(10)
+$\mathrm{K}\mathrm{P}$
+
+The second conjunct of (9) contradicts (10), so their assumption (8) may be negated:
+
+(11)
+$\mathord{\sim} \mathrm{K}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$
+
+By necessitation (since (11) has no assumptions):
+
+(12)
+$□ \mathord{\sim} \mathrm{K}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$
+
+(7) contradicts (12), so (7)’s assumption (5) may be negated:
+
+(13)
+$\mathord{\sim} (\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$
+
+But (13) is equivalent to (1). Hence (2) entails (1) and anti-realism is untenable.
+
+I shall not challenge the principles of modal and epistemic logic used (quibbles aside): they seem reasonable. However, the argument fails against the most significant current form of anti-realism: intuitionism.
+
+How should ‘$\mathrm{K}\mathrm{P}$’ be interpreted? That $\mathrm{P}$ is known now? Or that it is, has been or will be known at some time or other? Consider the first alternative. If ‘$\mathrm{K}$’ means present knowledge throughout, the argument remains valid. But then (2) says that whatever is true is knowable now, which is no longer integral to anti-realism. Why ever should anti-realists not allow some truths knowable only after the event? They could even give $\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P}$ as an example. They need insist only that all truths be knowable at some time to remain anti-realists (perhaps that time must be future, not past: I ignore this inessential complication). So they are committed only to:
+
+(2′)
+$\mathrm{P} \rightarrow \lozenge \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P}$
+
+where ‘$\mathrm{K}_{\mathrm{t}}\mathrm{P}$’ means that $\mathrm{P}$ is known at time $\mathrm{t}$. All knowledge statements must now be tagged for time (I use quantifiers and variables for clarity: operators would do). Then, where $\mathrm{n}$ is the present, (5) becomes:
+
+(5′)
+$\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}_{\mathrm{n}}\mathrm{P}$
+
+An instance of (2′) now gives:
+
+(6′)
+$\lozenge \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}_{\mathrm{n}}\mathrm{P})$
+
+which converts to:
+
+(7′)
+$\mathord{\sim} □ \mathord{\sim} \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}_{\mathrm{n}}\mathrm{P})$
+
+To contradict (7′), one must refute:
+
+(8′)
+$\exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}_{\mathrm{n}}\mathrm{P})$
+
+Subscripts turn (3) and (4) into (3′) and (4′):
+
+(3′)
+$\mathrm{K}_{\mathrm{t}}\mathrm{P} \rightarrow \mathrm{P}$
+(4′)
+$\mathrm{K}_{\mathrm{t}}(\mathrm{P} \mathbin{\&} \mathrm{Q}) \rightarrow (\mathrm{K}_{\mathrm{t}}\mathrm{P} \mathbin{\&} \mathrm{K}_{\mathrm{t}}\mathrm{Q})$
+
+(4′) needs the same subscript throughout if knowledge of a conjunction is ipso facto knowledge of its conjuncts; I shall not use the time needed to infer between conjunctions and conjuncts to undermine the argument. An instance of (3′) and (8′) give:
+
+(9′)
+$\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}_{\mathrm{n}}\mathrm{P}$
+
+But an instance of (4′) and (8′) give:
+
+(10′)
+$\exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P}$
+
+and the second conjunct of (9′) does not contradict (10′). In fact, (8′) cannot reduce to absurdity: I verified it by noticing, five minutes later, that at the time to which the ‘$\mathrm{n}$’ I wrote referred my book was open at page 156, but that at the time I did not know this. The argument cannot run on these lines.
+
+‘$\mathord{\sim} \mathrm{K}\mathrm{P}$’ in (5) must be understood as incompatible with (10′), whose interpretation the requirements of anti-realism fixed: for the ‘$\mathord{\sim} \mathrm{K}\mathrm{P}$’ in (9) ‘comes from’ (5). Hence ‘$\mathord{\sim} \mathrm{K}\mathrm{P}$’ must be at least as strong as $\mathord{\sim} \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P}$, hence ‘$\mathrm{K}\mathrm{P}$’ at least as weak as $\exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P}$: but it can hardly be weaker. So ‘$\mathrm{K}\mathrm{P}$’ must mean $\exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P}$ in (5): no compromise between the present and eternity will do. ‘$\mathrm{K}$’ is uniformly interpretable throughout the proof, which should succeed as at first.
+
+To challenge its success intuitionist logic must now be involved. The argument as far as (13) may be intuitionistically valid: intuitionists might reject the definition of ‘$\lozenge \mathrm{P}$’ as $\mathord{\sim} □ \mathord{\sim} \mathrm{P}$, as they reject that of ‘$\exists \mathrm{x}\, \mathrm{F}\mathrm{x}$’ as $\mathord{\sim} \forall \mathrm{x}\, \mathord{\sim} \mathrm{F}\mathrm{x}$, but could still accept the inference from $\lozenge \mathrm{P}$ to $\mathord{\sim} □ \mathord{\sim} \mathrm{P}$, as they accept that from $\exists \mathrm{x}\, \mathrm{F}\mathrm{x}$ to $\mathord{\sim} \forall \mathrm{x}\, \mathord{\sim} \mathrm{F}\mathrm{x}$. However, intuitionistically (13) does not entail (1). $\mathord{\sim}(\mathrm{P} \mathbin{\&} \mathord{\sim} \mathrm{K}\mathrm{P})$ entails only $\mathrm{P} \rightarrow \mathord{\sim} \mathord{\sim} \mathrm{K}\mathrm{P}$; as ‘$\mathrm{K}$’ is now understood:
+
+(14)
+$\mathrm{P} \rightarrow \mathord{\sim} \mathord{\sim} \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P}$
+
+and the elimination of double negation is, intuitionistically, a notorious failure. Statements of present knowledge may be decidable, so that $\mathord{\sim} \mathord{\sim} \mathrm{K}_{\mathrm{t}}\mathrm{P}$ would entail $\mathrm{K}_{\mathrm{t}}\mathrm{P}$, just as intuitionists can tell what has already been proved: but statements of knowledge in the unspecified future are undecidable, just as intuitionists cannot tell what will be proved.
+
+(14) is not evidently absurd. It forbids intuitionists to produce claimed instances of truths that will never be known: but why should they attempt something so foolish? For they can do justice to the platitude that not all truths will be known precisely in the formula:
+
+(15)
+$\mathord{\sim} \forall \mathrm{P}(\mathrm{P} \rightarrow \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P})$
+
+For intuitionistically (15) does not entail:
+
+(16)
+$\exists \mathrm{P}\, \mathord{\sim}(\mathrm{P} \rightarrow \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P})$
+
+which would compel intuitionists to produce instances ((14) and $\mathord{\sim}(\mathrm{P} \rightarrow \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{P})$ are intuitionistically incompatible). If the second order quantification in (15) looks suspect, one can instead make claims of the form:
+
+(17)
+$\mathord{\sim} \forall \mathrm{x}(\mathrm{F}\mathrm{x} \rightarrow \exists \mathrm{t}\, \mathrm{K}_{\mathrm{t}}\mathrm{F}\mathrm{x})$
+
+for suitably chosen ‘$\mathrm{F}$’ (e.g. ‘contains an even number of grains of sand’).
+
+The intuitionist status of (1) is like that of the law of excluded middle. For $\mathord{\sim}(\mathrm{P} \vee \mathord{\sim} \mathrm{P})$ contradicts itself in intuitionist logic as in classical, which prompts John McDowell mistakenly to suggest that use of the former in semantics, not forcing rejection of excluded middle, would be compatible with realism (‘Truth Conditions, Bivalence, and Verificationism’, in Evans and McDowell (ed.), Truth and Meaning, Oxford, 1976, p. 55). But intuitionists can assert $\mathord{\sim} \forall \mathrm{P}(\mathrm{P} \vee \mathord{\sim} \mathrm{P})$, since it does not entail $\exists \mathrm{P}\, \mathord{\sim}(\mathrm{P} \vee \mathord{\sim} \mathrm{P})$. Indeed, they should do so, for any assertion of $\forall \mathrm{P}(\mathrm{P} \vee \mathord{\sim} \mathrm{P})$ would amount, from their point of view, to a claim of (potential) omniscience (Brouwer, ‘Consciousness, Philosophy and Mathematics’ in Benacerraf and Putnam (ed.), Philosophy of Mathematics, Blackwells, 1964): that we can see now that we could never be in a position to make such a claim is just what (the intuitionist explanation of the connectives says) entitles us to assert its negation. Again, if the second order quantification looks suspect, one can instead make selected claims of the form $\mathord{\sim} \forall \mathrm{x}(\mathrm{F}\mathrm{x} \vee \mathord{\sim} \mathrm{F}\mathrm{x})$: intuitionist mathematics actually has such theorems (Dummett, Elements of Intuitionism, Oxford, 1977, p. 84).
+
+In short, the argument fails because it uses principles of logic that anti-realists need not—should not—accept. However, Hart does suggest a direct argument to commit intuitionists to (1). Intuitionistically, a proof of $\mathrm{P} \rightarrow \mathrm{Q}$ is just an evident way of turning any proof of $\mathrm{P}$ into a proof of $\mathrm{Q}$. Take any proof of $\mathrm{P}$: note underneath that you have apprehended it and so know that $\mathrm{P}$: is that not just a proof that $\mathrm{P}$ is known? Hence $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$ would be disastrously provable for intuitionists. But that shows just that proof has not been understood in a way appropriate to intuitionism. Perhaps every proof token of $\mathrm{P}$ (in a mind, on paper) can be turned into a proof token that $\mathrm{P}$ is known: that does not entail that every proof type (as the permanent possibility of a token) can be turned into a proof type that $\mathrm{P}$ is known. No way leads from a structure of shareable thoughts to the further thought that some mind has contained that structure—without begging the question by assuming (1). Intuitionists say that necessarily some mind could contain the proof. That gives a route to (2), not (1): every proof type of $\mathrm{P}$ can be turned into a proof type that $\mathrm{P}$ is knowable. The intuitionist assertibility of (2) does show the instability of the position canvassed by McDowell: intuitionist logic with the claim ‘that the truth condition of a sentence may obtain even if we cannot tell that it does, and may not obtain even if we cannot tell that it does not’ (op. cit.). The intuitionist analysis of proof, without which the logic is but a dead formalism, is not innocent of anti-realist commitment. On the requisite view of proof, Hart’s argument leads intuitionist proof theory into anti-realist philosophy, not into a proof of its own absurdity.
+
+Confusingly, Dummett endorses an argument very like Hart’s second (op. cit. p. 349). However, this depends on interpreting the existential quantifier so that what corresponds to our (10′) means that one has an effective means of bringing about a time $\mathrm{t}$ such that $\mathrm{K}_{\mathrm{t}}\mathrm{P}$, not that such a time will actually come (p. 350). This interpretation is needed for the statements of the theory of the creative subject to be mathematical rather than historical in content. I have interpreted the existential quantifier in the straightforward temporal sense, since that is what Hart needs for the intuitive absurdity of (1). Thus Dummett so interprets his conclusion ((4) on p. 348) that it is analogous to our (2′) or (2), not (1). He allows his equivalent of our (14) ((4), p. 339) on either interpretation of the quantifier.
+
+Intuitionism remains standing. That a little logic should short circuit an intensely difficult and obscure issue was perhaps too much to hope, or fear.

@@ -1,0 +1,150 @@
+# Putnam on the sorites paradox
+
+Timothy Williamson
+
+Philosophical Papers 25 (1) (1996): 47–56.
+
+Hilary Putnam has suggested that intuitionistic logic provides a solution to the sorites paradox, and is therefore appropriate for vague languages. Earlier criticisms of this suggestion were ineffective, because they assumed it to involve the adoption of intuitionistic semantics as well as intuitionistic logic; Putnam has repudiated that assumption. This paper argues that a new sorites paradox arises from the combination of intuitionistic logic with Putnam’s epistemic account of truth, on which the true is what would be justified under optimal conditions. Putnam defends such an account of truth in his work on vagueness, amongst other places. More recently, he has begun to distance himself from the epistemic account of truth.1 However, the grounds on which he has done so do not concern vagueness. To reject the consequences of the epistemic account of truth on which the new sorites paradox depends is to move towards an epistemic account of vagueness. On such an account, the retreat from classical to intuitionistic logic is unmotivated.
+
+Why might the logic of a vague language appear to be intuitionistic? The structure of the sorites paradox gives the answer. 10,000 grains (optimally arranged) clearly make a heap; 0 grains (optimally arranged) clearly do not make a heap. For each $i$ from 10,000 to 1, the difference between $i$ grains and $i-1$ grains appears too small to be the difference between what makes a heap and what does not. Let the sentence $\mathrm{H}_i$ of an object language $\mathrm{L}$ mean that $i$ grains (optimally arranged) make a heap.2 We have:
+
+(1)
+$\mathrm{H}_{10{,}000}$
+(2)
+$\neg \mathrm{H}_0$
+
+In classical logic, (1) and (2) jointly entail:
+
+(3)
+$\neg[(\mathrm{H}_{10{,}000} \to \mathrm{H}_{9{,}999}) \mathbin{\&} (\mathrm{H}_{9{,}999} \to \mathrm{H}_{9{,}998}) \mathbin{\&} \ldots \mathbin{\&} (\mathrm{H}_1 \to \mathrm{H}_0)]$
+
+(3) is classically equivalent to:
+
+(4)
+$(\mathrm{H}_{10{,}000} \mathbin{\&} \neg \mathrm{H}_{9{,}999}) \vee (\mathrm{H}_{9{,}999} \mathbin{\&} \neg \mathrm{H}_{9{,}998}) \vee \ldots \vee (\mathrm{H}_1 \mathbin{\&} \neg \mathrm{H}_0)$
+
+The classical logician is therefore committed to (4) by the obvious facts about heaps. The problem is that it is hard to see how any disjunct of (4) could be true. For each disjunct entails that there is a decisive difference between two successive members of the sorites series with respect to heaphood, which is just what there appears not to be.
+
+Enter intuitionistic logic. In this logic, (1) and (2) still jointly entail (3), and (4) also entails (3). However, (3) does not intuitionistically entail (4). Although the negation of any conjunct of the conjunction negated in (3) entails the corresponding disjunct of (4), this is of no help, for the inference from the negation of a conjunction to the disjunction of the negations of its conjuncts is intuitionistically invalid (as usual, the claim of invalidity can be confirmed by the construction of a suitable Kripke tree). (3) is intuitionistically equivalent to the double negation of (4):
+
+(5)
+$\neg\neg[(\mathrm{H}_{10{,}000} \mathbin{\&} \neg \mathrm{H}_{9{,}999}) \vee (\mathrm{H}_{9{,}999} \mathbin{\&} \neg \mathrm{H}_{9{,}998}) \vee \ldots \vee (\mathrm{H}_1 \mathbin{\&} \neg \mathrm{H}_0)]$
+
+The inference from (5) to (4) is, of course, intuitionistically invalid. Indeed, the inference from (1) and (2) to (4) is intuitionistically invalid, whether or not it proceeds via (3). Thus it is intuitionistically consistent to assert (1) and (2) while refusing to assert (4). The trick is to leave (4) undenied while refusing to assert it; if one asserts (1) and (2), one must assert the double negation of (4), so it would be inconsistent also to deny (4). One acknowledges the difference between what makes a heap and what does not without being forced to say that it has a definite location. On such grounds, Putnam has proposed the use of intuitionistic logic for reasoning in vague languages.3
+
+Stephen Read and Crispin Wright have pointed out that if intuitionistic logic is combined with intuitionistic semantics, which gives the meaning of sentences in terms of conditions for their assertibility rather than for their truth, then sorites paradoxes return in a subtler form.4 Putnam replied that the use of intuitionistic semantics was no part of his proposal.5 The reply risks making the proposal look ad hoc. What explains the appropriateness of intuitionistic logic if not intuitionistic semantics? However, the issue is not straightforward, for there is no direct argument from truth-conditional semantics to classical logic. The combined choice of truth-conditional semantics and intuitionistic logic is not formally inconsistent.
+
+When discussing vagueness, Putnam endorsed the epistemic account of truth: ‘In my view, truth is idealized justification (the true is what would be justified under optimal conditions, where optimal conditions depend on the particular assertion, context, and interests in complex ways)’.6 What will now be argued is that if one sets intuitionistic semantics aside, but combines an intuitionistic treatment of vagueness with such an epistemic account of truth, then the threat of a sorites paradox returns. The epistemic account of truth and intuitionistic semantics have a similar effect. That is hardly surprising in light of the intuitionists’ constructivist account of truth.
+
+The threat develops thus. Follow Putnam in making the convenient over-simplification that sentences are truth-bearers. Expand the original object language $\mathrm{L}$ to a meta-language $\mathrm{L}^+$ for $\mathrm{L}$ by adding: quotation marks (‘. . .’); variables (e.g., $s$) ranging over sentences of $\mathrm{L}$; quantifiers ($\forall$, $\exists$); a truth predicate True for $\mathrm{L}$; a predicate Just to be read as ‘would be justified under optimal conditions’. Putnam’s epistemic account of truth in $\mathrm{L}$ is then formalized by:
+
+(6)
+$\forall s\,[\operatorname{True}(s) \leftrightarrow \operatorname{Just}(s)]$
+
+Consider the sentence $\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}$ of $\mathrm{L}$, which says in effect that there is a cut-off point for heaphood between $i$ and $i-1$. The corresponding instance of Tarski’s disquotational condition of adequacy on an account of truth in $\mathrm{L}$ says:
+
+(7)
+$\operatorname{True}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’) \leftrightarrow (\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1})$
+
+(6) and (7) intuitionistically entail:
+
+(8)
+$(\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}) \to \operatorname{Just}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’)$
+
+Now it is generally agreed that not even under optimal conditions would one be justified in asserting a cut-off for a vague predicate at a given point in a sorites series. If there were such optimal conditions, then the problem of vagueness would not be deep: it would merely reflect the epistemic under-privilege of the circumstances in which we happen to be. But the problem of vagueness is deep. Even under optimal conditions, there would be no justification for asserting $\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}$ rather than $\mathrm{H}_{i+1} \mathbin{\&} \neg \mathrm{H}_i$. If someone asserted the former, someone else could assert the latter on a similar basis. They could not both be speaking the truth, for $\mathrm{H}_i$ cannot be both true and false; that one asserts it and the other denies it is not an adequate basis for assigning it different contents in their mouths, to make each assertion true, for some vague assertions are false. Under optimal conditions, each would know of the other’s assertion, and neither assertion would be justified. Psychologically, we do not even have the impression of recognizing such a cut-off point in a sorites series. Presumably the epistemic account will not permit the claim that $\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}$ would be justified under optimal conditions to be vacuously correct, in virtue of the impossibility of appropriate optimal conditions, for otherwise it would risk making both a sentence and its negation vacuously true. Consequently:
+
+(9)
+$\neg\operatorname{Just}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’)$
+
+Together, (8) and (9) intuitionistically entail:
+
+(10)
+$\neg(\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1})$
+
+One can now argue much as Read and Wright did. (10) intuitionistically entails:
+
+(11)
+$\neg \mathrm{H}_{i-1} \to \neg \mathrm{H}_i$
+
+(11) is asserted for each $i$ from 1 to 10,000. Intuitionistic logic does not allow one to contrapose (11) and delete the negations, but that does not matter. For one can use instances of (11) with successively larger values of $i$ to argue from (2) by repeated uses of the intuitionistically valid rule of modus ponens to the conclusion:
+
+(12)
+$\neg \mathrm{H}_{10{,}000}$
+
+(12) is obviously false and contradicts (1), for 10,000 grains clearly make a heap. The argument is a reductio ad absurdum of the conjunction of (6) and instances of (7). Thus, given Tarski’s adequacy condition (7) for an account of truth, the treatment of sorites paradoxes by intuitionistic logic is adequate only if (6) fails and the true is not what would be justified under optimal conditions.
+
+Given Tarski’s adequacy condition, what must be given up if sorites paradoxes are treated by intuitionistic logic is not just the claim (6) that the true is what would be justified under optimal conditions. Even the weaker claim that such counterfactual justification is necessary for truth must be given up, for only that consequence of the stronger claim was exploited in the argument. From (1), (2) and instances of (7) and (9), there is a valid intuitionistic argument for:
+
+(13)
+$\neg\forall s\,[\operatorname{True}(s) \to \operatorname{Just}(s)]$
+
+Not only must we refrain from asserting that every truth would be justified under optimal conditions; we must deny it.
+
+Intuitionistically, (13) does not commit us to asserting that some truth is not such that it would be justified under optimal conditions. There is no intuitionistically valid argument from (13) to the existential claim:
+
+(14)
+$\exists s\,[\operatorname{True}(s) \mathbin{\&} \neg\operatorname{Just}(s)]$
+
+The obstacle is like that to the inference from (3) to (4). Indeed, there is no intuitionistically valid argument from (1), (2) and instances of (7) and (9) to (14). Nevertheless, (13) would be a significant result, for it denies one half of Putnam’s epistemic constraint on truth.
+
+In discussion, Putnam proposed to reject the Tarskian disquotational adequacy condition (7). The proposal would be that in a borderline case the right-hand side of (7), $\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}$, is neither true nor false whereas its left-hand side, $\operatorname{True}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’)$, is false, so that the Tarskian biconditional as a whole is not true.7 The objection applies specifically to the half of (7) used in the argument, the right-to-left conditional. The inference from $\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}$ to $\operatorname{True}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’)$ is allowed to be valid, because truth-preserving, but the rule of Conditional Proof, according to which the validity of the inference from $\mathrm{P}$ and a possibly empty set $\mathrm{X}$ of other premises to $\mathrm{Q}$ implies the validity of the inference from $\mathrm{X}$ to $\mathrm{P} \to \mathrm{Q}$, is held to break down in the presence of vagueness, so that one could not pass to the corresponding conditional.8 Since (6) and (9) intuitionistically entail $\neg\operatorname{True}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’)$, and all the argument needs is $\neg(\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1})$, the validity of the inference from the former to the latter must also be denied.
+
+The proposal involves the abandonment of intuitionistic logic as it is most commonly and most perspicuously formalized, as a system of natural deduction in the style of Gentzen. For then Conditional Proof just is the intuitionistic introduction rule for $\to$. For example, given the validity of the inference from ‘That is crimson’ to ‘That is red’, the claim that the logic of the corresponding fragment of English is intuitionistic would normally be understood as implying the derivability of the conditional ‘That is crimson $\to$ that is red’. Putnam’s claim that the logic of a vague language is intuitionistic must therefore be taken in the following etiolated sense: all substitution instances of intuitionistic theorems in the language are valid, as is the rule of modus ponens. All the intuitionistic inferences made in this paper are derivable on that narrower basis.
+
+It may be observed in passing that the rejection of the inference from $\neg\operatorname{True}(‘\mathrm{Q}’)$ to $\neg \mathrm{Q}$ undermines a celebrated argument of Putnam’s. For he has argued on the basis of semantic externalism that our sentence ‘We are brains in vats’ is not true, and concluded that we are not brains in vats.9 The final step has the rejected form. Of course, one might attempt to supply extra premises in the presence of which that step would be valid. The challenge is to do so without also validating the step from $\neg\operatorname{True}(‘\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1}’)$ to $\neg(\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_{i-1})$, and thereby rehabilitating the argument against the epistemic theory of truth. That challenge will not be pursued here.
+
+How are the supposed exceptions to bivalence in vague languages to be analysed? In reporting with apparent approval Wittgenstein’s remarks on truth at Philosophical Investigations §136, Putnam says:
+
+When we ourselves are willing to apply truth functions to a sentence – note how Wittgenstein emphasizes in our language – we regard the sentence as true or false, as a genuine Satz.10
+
+Call the conjunction of this thought with the claim that vague sentences are neither true nor false in borderline cases Propositional Failure. Given Propositional Failure, we should be unwilling to apply truth functions to vague sentences in borderline cases. One might suppose that Putnam endorses Propositional Failure.
+
+Unfortunately, Propositional Failure makes the retreat to intuitionistic logic pointless. If one considers all substitution instances of intuitionistic theorems in the vague language, they include many in which truth functions are applied to vague sentences in borderline cases, e.g., $\neg(\mathrm{H}_i \mathbin{\&} \neg \mathrm{H}_i)$.11 The point generalizes to any logic with at least one theorem in which at least one non-logical atomic sentence occurs, i.e., to almost any logic at all. It is therefore more natural to say that the appropriate logic is the one that embodies the valid inferences amongst those sentences to which we should apply truth functions. But, according to Propositional Failure, we should regard those sentences as true or false, so the resulting logic will be classical, not intuitionistic.
+
+Propositional Failure is in any case intuitively implausible. We can understand what is said by an utterance of the sentence ‘There is a heap of sand behind that house’ without having any idea what arrangement of sand is behind that house (we may not trust the speaker). We no more turn out not to have understood if the sentence turns out to be borderline than we do if it turns out to be false. Moreover, we do apply truth functions to vague sentences even in borderline cases. For example, suppose that the sand behind this house is arranged exactly like the sand behind that house; then the material conditional ‘If there is a heap of sand behind this house then there is a heap of sand behind that house’ is true, whether or not the case is borderline. Such sentences can have practical uses in borderline cases; it would be unfair to treat the owner of this house but not the owner of that house as in breach of a local bylaw that one must not have a heap of sand behind one’s house. Similarly, the conditional ‘If $i-1$ grains make a heap then $i$ grains make a heap’, the banal converse of the sorites conditional, is obviously true for each $i$.
+
+Propositional Failure is therefore both intrinsically implausible as an account of vagueness and inconsistent with the role that Putnam assigns to intuitionistic logic. Moreover, once it is granted that vague sentences do succeed in saying something even in borderline cases, it becomes much harder to see how the Tarskian biconditionals could fail for them. Given that a sentence says that there is a heap of sand behind that house, what is it for it to be true but for there to be a heap of sand behind that house? If there is a heap of sand behind that house, what more is required for the sentence to be true?
+
+From a merely technical point of view, there are other analyses on which the Tarskian biconditionals can fail. According to a supervaluationist, $\operatorname{True}(‘\mathrm{Q}’) \leftrightarrow \mathrm{Q}$ is correct only if it is true on all sharpenings; on a given sharpening, $\operatorname{True}(‘\mathrm{Q}’)$ is true only if $\mathrm{Q}$ is true on all sharpenings, so the biconditional is false on that sharpening if $\mathrm{Q}$ is true on that sharpening but false on some other; thus the biconditional is incorrect if $\mathrm{Q}$ is true on some but not all sharpenings. Again, according to some degree-theorists, if $\mathrm{Q}$ is half-true then $\operatorname{True}(‘\mathrm{Q}’)$ is less than half-true, so the biconditional is less than wholly true. However, these approaches do not vindicate Putnam’s choice of intuitionistic logic. Given supervaluationism, the logic of the vague object language will not be intuitionistic unless the logic of its sharpenings is intuitionistic, which there is no reason to expect. Unlike the intuitionist, the classical supervaluationist permits the inference from (3) to (4), explaining away the unintuitive appearance of the latter disjunction on the grounds that, although it is true on every sharpening, none of its disjuncts is. Degree theory in the manner of many-valued logic is equally unlikely to make the logic of a vague language intuitionistic. The step of double negation elimination from (5) to (4) becomes quite innocent; if $\neg \mathrm{Q}$ has degree of truth $1-\mathrm{x}$ when $\mathrm{Q}$ has degree of truth $\mathrm{x}$, then $\neg\neg \mathrm{Q}$ has the same degree of truth as $\mathrm{Q}$. The intuitionistically innocent inference from (1) and (2) to (3) is likely to be blamed, on the grounds that the degree of truth of (3) is $1-\mathrm{x}$, where $\mathrm{x}$ is the minimum of the degrees of truth of the conditionals $\mathrm{H}_i \to \mathrm{H}_{i-1}$, all of which are close to 1; on this view, (3) has a degree of truth close to 0.
+
+Intuitionism itself provides no reason to reject the Tarskian biconditionals. Any proof of $\operatorname{True}(‘\mathrm{Q}’)$ amounts to a proof of $\mathrm{Q}$, and vice versa; given the intuitionistic semantics for $\leftrightarrow$, this observation amounts to a proof of $\operatorname{True}(‘\mathrm{Q}’) \leftrightarrow \mathrm{Q}$. Putnam, of course, does not accept intuitionistic semantics; the present point is just that since the semantics validates both intuitionistic logic and the Tarskian biconditionals, the logic provides no explanation of their supposed failure.
+
+No principled basis for the rejection of the Tarskian biconditionals has been found to vindicate the choice of intuitionistic logic. Thus the objection to the new sorites paradox has not been sustained. If intuitionistic reasoning is valid in a vague language, then (6), the epistemic account of truth, is false of that language. The truth of ‘$i$ grains make a heap and $i-1$ grains do not make a heap’ does not imply that it would be justified under optimal conditions. Since this gap between truth and justification is exactly what defuses the sorites paradox, we have something like an epistemic account of vagueness, on which our ignorance of cut-off points does not imply their non-existence. On such an account, classical logic is unproblematic for a vague language.12 Thus, as applied to vagueness, intuitionistic logic undermines itself: it is strong enough to require philosophical distinctions from the perspective of which it is unnecessarily weak.
+
+Someone deeply attached to the epistemic account of truth might seek to preserve it by abandoning intuitionistic logic in favour of a logic that was, at least in some respects, even weaker. Such attempts will not be considered here. Putnam himself is no longer so attached to an epistemic account of truth:
+
+[T]ruth is sometimes recognition-transcendent because what goes on in the world is sometimes beyond our power to recognize, even when it is not beyond our power to conceive.13
+
+Why should that remark lose its validity when vagueness is in question? Why should the ceasing to be of a heap when one of $i$ grains is removed not be something that goes on in the world beyond our power to recognize, although not beyond our power to conceive? Unfortunately, the exploration of that question lies beyond the scope of this paper.
+
+# Acknowledgements
+
+An earlier version of this material was presented to a conference on the philosophy of Hilary Putnam at Utrecht in September 1994, at which Bob Hale, Charles Travis, Crispin Wright and, especially, Putnam himself made helpful comments.
+
+# Notes
+
+[1] See H.Putnam, ‘Sense, nonsense and the senses: An inquiry into the powers of the human mind’, Journal of Philosophy 91 (1994): 445-517, at 503, 510-511.
+
+[2] For simplicity, the argument has been transposed to propositional logic from the predicate logic used in Putnam’s exposition. When no ambiguity results, quotation marks will be omitted or used as corner quotes.
+
+[3] See H. Putnam, ‘Vagueness and alternative logic’, Erkenntnis 19 (1983): 297-314, reprinted in his Realism and Reason: Philosophical Papers Volume 3 (Cambridge: Cambridge University Press), at 285-286 of the latter. It is suggested in S.P. Schwartz and W. Throop, ‘Intuitionism and vagueness’, Erkenntnis 34 (1991): 347-356, at 355, that the connection between vagueness and intuitionism was made by Max Black, in ‘Vagueness: an exercise in logical analysis’, Philosophy of Science 4 (1937): 427-455, reprinted in his Language and Philosophy (Ithaca, N.Y., Cornell University Press, 1949), at 36-37 of the latter. However, Black treats intuitionistic logic merely as a non-classical logic more developed than his own non-intuitionistic non-classical logic of vagueness, not as a candidate logic of vagueness.
+
+[4] See S.L. Read and C.J.G. Wright, ‘Hairier than Putnam thought’, Analysis 45 (1985): 56-58.
+
+[5] See H. Putnam, ‘A quick Read is a wrong Wright’, Analysis 45 (1985): 203. For subsequent discussion of Putnam’s proposal see S.P. Schwartz, ‘Intuitionism and sorites’, Analysis 47 (1987): 179-183; G. Rea, ‘Degrees of truth versus intuitionism’, Analysis 49 (1989): 31-32; Schwartz and Throop, op. cit.; H. Putnam, ‘Replies and comments’, Erkenntnis 34 (1991): 401-424, at 413-414; C.J.G. Wright, ‘Is higher order vagueness coherent?’, Analysis 52 (1992): 129-139, at 129; P. Mott, ‘On the intuitionistic solution of the sorites paradox’, Pacific Philosophical Quarterly 75 (1994): 133-150.
+
+[6] ‘Vagueness and alternative logic’, op. cit., at 280.
+
+[7] In ‘Sense, nonsense and the senses’, op. cit., at 511, Putnam proposes an example of a vague sentence for which a truth-value gap occurs and the Tarskian biconditional fails (‘The number of trees in Canada is even’).
+
+[8] In discussion, Putnam cited Richard Heck, ‘A note on the logic of (higher-order) vagueness’, Analysis 53 (1993): 201-208, on this point. Heck’s discussion concerns a determinacy operator, not a truth predicate.
+
+[9] See Reason, Truth and History (Cambridge: Cambridge University Press: 1981), at 7-8.
+
+[10] ‘Sense, nonsense and the senses’, op. cit., at 513.
+
+[11] The standard intuitionistic sentence operators are truth functions, because the usual truth tables remain correct for them; it is just that the list of cases in such tables can no longer be regarded as exhaustive.
+
+[12] An epistemic theory of vagueness is defended in Timothy Williamson, Vagueness (London: Routledge, 1994). In ‘Vagueness and alternative logic’, op. cit., at 274, Putnam describes as ‘heroic but misguided’ the related account of vagueness in Israel Scheffler, Beyond the Letter (London: Routledge and Kegan Paul, 1979). Such unargued dismissals of the epistemic view of vagueness are no longer adequate.
+
+[13] ‘Sense, nonsense and the senses’, op. cit., at 516.

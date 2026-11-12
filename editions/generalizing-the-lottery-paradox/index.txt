@@ -1,0 +1,491 @@
+# Generalizing the Lottery Paradox
+
+Igor Douven and Timothy Williamson
+
+With Igor Douven. British Journal for the Philosophy of Science 57 (2006): 755–779.
+
+ABSTRACT
+
+This paper is concerned with formal solutions to the lottery paradox on which high probability defeasibly warrants acceptance. It considers some recently proposed solutions of this type and presents an argument showing that these solutions are trivial in that they boil down to the claim that perfect probability is sufficient for rational acceptability. The argument is then generalized, showing that a broad class of similar solutions faces the same problem.
+
+1 An argument against some formal solutions to the lottery paradox
+
+2 The argument generalized
+
+3 Some variations
+
+4 Adding modalities
+
+5 Anticipated objections
+
+Over the past decades, there has been a steadily growing interest in utilizing probability theory to elucidate, or even analyze, concepts central to traditional epistemology. Special attention in this regard has been given to the notion of rational acceptability. Many have found the following thesis at least prima facie a promising starting point for a probabilistic elucidation of that notion:
+
+$\textsf{Sufficiency Thesis}$ ($\mathsf{ST}$) A proposition $\varphi$ is rationally acceptable if
+
+$$\Pr(\varphi)>\mathrm{t},$$
+
+where $\Pr$ is a probability distribution over propositions and $\mathrm{t}$ is a threshold value close to 1.1 Another plausible constraint is that when some propositions are rationally acceptable, so is their conjunction:
+
+$\textsf{Conjunction Principle}$ ($\mathsf{CP}$) If each of the propositions $\varphi$ and $\psi$ is rationally acceptable, so is $\varphi\wedge\psi$.
+
+From $\mathsf{CP}$ we can easily derive its generalization to any finite number of conjuncts, by mathematical induction.
+
+Of course, one can think of readings of ‘rationally acceptable’ on which $\mathsf{CP}$ fails. Suppose that we have generalized the consequence relation beyond deduction to include the results of good abductive, inductive, statistical and probabilistic reasoning too. Call the generalized relation between premise sets and conclusions ‘general consequence’. Thus a deductive consequence of a premise set is also a general consequence of that set, but a general consequence of a premise set need not be a deductive consequence of the set. A proposition is generally consistent with a premise set if and only if its negation is not a general consequence of that set. We assume a weak form of transitivity for general consequence: if each proposition in the set $\mathrm{\Delta}$ is a general consequence of the premise set $\mathrm{\Gamma}$, then any general consequence of the combined premise set $\mathrm{\Gamma}\cup\mathrm{\Delta}$ is already a general consequence of $\mathrm{\Gamma}$ itself.2 The rationale for this principle is to make general consequence accumulative, in the sense that we can freely use any general consequences that we have already drawn from a premise set in drawing further general consequences from that set, for otherwise what use are chains of non-deductive reasoning? Now stipulate that a proposition is rationally acceptable in given circumstances if and only if it is generally consistent with the evidence available in those circumstances. Then we can expect $\mathsf{CP}$ to fail. For in virtually all circumstances the available evidence will leave some proposition $\varphi$ undecided, in the sense that neither $\varphi$ nor $\neg\varphi$ is a general consequence of the evidence available. By our stipulation, each of $\varphi$ and $\neg\varphi$ is rationally acceptable in those circumstances, because it is generally consistent with the evidence. But their conjunction $\varphi\wedge\neg\varphi$ is not rationally acceptable, for its tautological negation $\neg(\varphi\wedge\neg\varphi)$ is a deductive consequence and therefore a general consequence of any evidence.
+
+However, we could have made the alternative and perhaps more natural stipulation that a proposition is rationally acceptable in given circumstances if and only if it is a general consequence of the evidence available in those circumstances. Then $\mathsf{CP}$ holds. For suppose that each of the propositions $\varphi$ and $\psi$ is rationally acceptable in given circumstances. Let $E$ be the evidence available in those circumstances. Of course $\varphi\wedge\psi$ is a deductive consequence, and therefore a general consequence, of $E\cup\{\varphi,\psi\}$. But, by our new stipulation, each of $\varphi$ and $\psi$ is a general consequence of $E$. Hence, by the accumulation principle, $\varphi\wedge\psi$ is already a general consequence of $E$. Therefore, by the new stipulation again, $\varphi\wedge\psi$ is rationally acceptable in the given circumstances, as $\mathsf{CP}$ requires. Note that $\mathsf{ST}$ still sounds plausible on this understanding of being ‘rationally acceptable’. For one might think that if the probability of $\varphi$ on the evidence available in given circumstances exceeds a high enough threshold, then $\varphi$ is beyond reasonable doubt in those circumstances, and so should count as a general consequence of the evidence, in which case it is rationally acceptable by the new stipulation. For example, perhaps it is a general consequence of our present evidence that the earth has existed for more than ten thousand years, because that proposition is so probable on that evidence. In what follows, we do not assume this or any other particular account of rational acceptability, but instead rely on the reader’s informal understanding of the notion. We hope that the preceding remarks indicate the attractions of $\mathsf{ST}$ and the structural difficulty of giving up $\mathsf{CP}$.
+
+It has long been known, however, that $\mathsf{ST}$, when combined with $\mathsf{CP}$, leads to the untoward conclusion that $\bot$, the inconsistent proposition, can be rationally acceptable. A simple argument for this goes as follows. Consider an $n$-ticket lottery known to be fair and to have exactly one winner, and with $1-1/n>\mathrm{t}$. Given $\mathsf{ST}$, all propositions in the set
+
+$\mathrm{LOT} = \{\langle\text{Ticket \#}i\text{ will lose}\rangle \mid 1 \leq i \leq n\}$
+
+are rationally acceptable.3 The same is true of the proposition that some ticket will win, of course, for that is assumed to be known and hence to have probability 1. But the conjunction of the latter proposition and all the members of LOT forms an outright contradiction, which should now, given $\mathsf{CP}$, be rationally acceptable, too.4
+
+The foregoing argument is attributable to Kyburg ([1961]), and since its first presentation has commonly been known as ‘the lottery paradox’. Kyburg’s own response to it, which is now almost generally regarded as being too drastic, was to abandon $\mathsf{CP}$. A currently more popular type of response emanates from the (correct) idea that, by itself, the lottery paradox does not show $\mathsf{ST}$ to be completely off the mark; something in the vicinity of that thesis might still be tenable. Virtually all proposals that start from this idea let high probability defeasibly warrant acceptance, and can be schematically represented as follows:
+
+$$\varphi\text{ is rationally acceptable if }\Pr(\varphi)>\mathrm{t},\text{ unless defeater }D\text{ holds of }\varphi.$$
+
+(1)
+
+Another general feature of these proposals is that they aim to define a defeater that applies as selectively as possible to ‘lottery propositions’, such as the elements of LOT; many or even all other propositions that have a probability above the threshold are supposed still to qualify as rationally acceptable on account of their high probability.
+
+This paper will be concerned with proposals of this type, and only with those that are formal in the sense that they define the defeater in terms that are probabilistic or broadly logical. In particular it argues that such solutions either are trivial in that they boil down to the claim that probability 1 is sufficient for rational acceptability or still have as a consequence that $\bot$ or some almost equally discreditable proposition is rationally acceptable (even if perhaps they solve the lottery paradox in the narrower sense that they succeed in blocking Kyburg’s argument).
+
+To underline the significance of this result, despite its being restricted to formal solutions, let us first say that in analytic philosophy the prima facie attractiveness of a formal approach should hardly need mentioning. Moreover, because differences in philosophers’ understanding of the notion of rational acceptability are sometimes quite subtle and hard to detect, and therefore harbour some danger of leading to equivocation and spurious debate, the use of relatively strong analytic tools seems particularly called for in the present debate. Also, as it is easier to implement notions that are formal in the indicated sense, those working in the field of Artificial Intelligence, or at any rate those agreeing with Pollock ([1995], p. xi) that ‘The implementability of a theory of rationality is a necessary condition for its correctness’, have an especially good reason for aspiring to formality here. For only a formal solution to the lottery paradox can be embedded in (or perhaps even serve as a basis for) a formal theory of rational acceptability.
+
+# 1 An argument against some formal solutions to the lottery paradox
+
+In this section we briefly review some recent formal proposals of what D in (1) should be and show why they fail.
+
+Call a set of propositions minimally inconsistent iff it is inconsistent and has no proper subset that is inconsistent. Then, glossing over some details that are inessential for present purposes, Pollock’s ([1995]) proposal for the defeater is
+
+(2) being a member of a minimally inconsistent set of propositions each of which has a probability above t.5
+
+Another proposal, which can be distilled from Ryan ([1996]), is this:
+
+(3) being a member of a set of propositions such that (i) each member of the set has a probability above t and (ii) the probability that every member of the set is true is not above t.
+
+And our final example reads as follows:
+
+(4) being a member of a probabilistically self-undermining set,
+
+where a set of propositions $\mathrm{\Phi}$ with cardinality $|\mathrm{\Phi}|$ is defined to be probabilistically self-undermining iff for all $\varphi\in\mathrm{\Phi}$: $\Pr(\varphi)>\mathrm{t}$ and $\Pr(\varphi\mid\mathrm{\Phi}-\varphi)\leq \mathrm{t}$ (where $\mathrm{\Phi}-\varphi$ is the conjunction of all members of $\mathrm{\Phi}$ except $\varphi$). This is essentially Douven’s ([2002]) proposal.
+
+One readily verifies that substituting any of these proposals for the schematic letter D in (1) yields a thesis on which none of the elements of LOT comes out as being rationally acceptable. Consequently, $\mathsf{CP}$ can be combined with any of those theses without engendering Kyburg’s paradox. As adumbrated, however, the challenge is not just to define a defeater that applies to the members of LOT and to similar propositions; the challenge is to define a defeater that does so selectively. And the argument now to be presented shows that in this respect the above proposals do quite badly.6
+
+Let $\varphi$ be any proposition such that $\mathrm{t}<\Pr(\varphi)<1$. Then consider the set
+
+$\mathrm{\Gamma}=\{\neg\varphi\vee\langle\text{Ticket \#}i\text{ of lottery }L\text{ will lose}\rangle\mid1\leq i\leq n\}$.
+
+again with $1-1/n>\mathrm{t}$. Now for all $i$:
+
+$$\Pr(\neg\varphi\vee\langle\text{Ticket \#}\mathrm{i}\text{ will lose}\rangle)>\mathrm{t},$$
+
+(5)
+
+for the second disjunct has a probability above the threshold and the probability of a disjunction is never less than that of its most probable disjunct. But given that it is part of the background knowledge that one of the tickets #1–#n will win:
+
+$$\Pr(\varphi\mid\neg\varphi\vee\langle\text{Ticket \#1 will lose}\rangle,\ldots,\neg\varphi\vee\langle\text{Ticket \#}n\text{ will lose}\rangle)=0$$
+
+(6)
+
+and for all i:
+
+$$
+\begin{aligned}
+&\Pr(\neg\varphi\vee\langle\text{Ticket \#}i\text{ will lose}\rangle\mid\neg\varphi\vee\langle\text{Ticket \#1 will lose}\rangle,\ldots,{}\\
+&\neg\varphi\vee\langle\text{Ticket \#}i-1\text{ will lose}\rangle,\neg\varphi\vee\langle\text{Ticket \#}i+1\text{ will lose}\rangle,\ldots,{}\\
+&\neg\varphi\vee\langle\text{Ticket \#}n\text{ will lose}\rangle,\varphi)=0.
+\end{aligned}
+$$
+
+(7)
+
+After all, given the background knowledge we are supposing, the set $\mathrm{\Gamma}\cup\{\varphi\}$ is inconsistent. Now note, first, that there must be a $\mathrm{\Gamma}'\subseteq\mathrm{\Gamma}$ such that $\mathrm{\Gamma}'\cup\{\varphi\}$ is minimally inconsistent.7 Secondly, because $\mathrm{\Gamma}\cup\{\varphi\}$ is inconsistent we know that at least one of its members must be false, so that the probability that all members are true equals 0 and thus is not above $\mathrm{t}$. And finally note that from (5), (6) and (7) it follows that $\mathrm{\Gamma}\cup\{\varphi\}$ is a probabilistically self-undermining set. Thus, as $\varphi$ is an arbitrary proposition having a probability above the threshold without having perfect probability, it appears that the combination of (1) with any of (2), (3) and (4) constitutes a thesis that tells us no more than that propositions having probability 1 are rationally acceptable. That is to say, not only lottery propositions, but all propositions having non-perfect probability fail to qualify as rationally acceptable on the theses resulting from the above proposals.
+
+# 2 The argument generalized
+
+The argument of the foregoing section may seem to present the sort of problem that can be overcome by tinkering further with the definition of the defeater. Evidently none of (2), (3) and (4) specifies a defeater that is strict enough; given any of those definitions, too many things count as defeaters, so that too few high probability propositions qualify as rationally acceptable. But it might seem not too difficult to amend these definitions so that, to begin with, the members of $\mathrm{\Gamma}\cup\{\varphi\}$ do not have a defeater. To mention a very simple amendment that already seems to do the trick, we could have Pollock’s solution read that a proposition is rationally acceptable if it has high probability and besides is not an element of a minimally inconsistent set of propositions each two members of which are probabilistically negatively relevant to one another, and similarly for the other two proposals. That would certainly block the above argument, for nothing in it excludes that, for instance,
+
+$$\Pr(\varphi\mid\neg\varphi\vee\langle\text{Ticket \#14 will lose}\rangle)>\Pr(\varphi).$$
+
+It thus could no longer be concluded that every proposition that is highly but not perfectly probable is a member of a set of propositions each of which is defeated.
+
+A first worry one may have about this and similar amendments is that they are ad hoc. That worry aside, however, with such amendments there remains the nagging doubt that there might be some presently overlooked ‘trivialization argument’ similar to the one propounded previously. As it turns out, such a doubt would be justified, for the argument of Section 1 generalizes: it can be proved that a large class of proposals similar to the ones considered above fail for what is at root the same reason for which those were seen to fail.8
+
+To show this, we need some terminology.
+
+Definition 2.1.
+
+Let $W$ be a set of worlds, and think of propositions as subsets of $W$. Further assume a probability distribution $\Pr$ on $\wp(W)$. Then $f$ is an automorphism of $\langle W,\Pr\rangle$ iff $f$ is a function from $\wp(W)$ onto itself that satisfies these conditions:
+
+1. $f(\varphi\wedge\psi)=f(\varphi)\wedge f(\psi)$;
+2. $f(\neg\varphi)=\neg f(\varphi)$;
+3. $\Pr(\varphi)=\Pr(f(\varphi))$,
+
+for all propositions $\varphi,\psi\in\wp(W)$. $\dashv$
+
+A structural property of propositions is any property $P$ such that for any proposition $\varphi$ and any automorphism of propositions $f$, $\varphi$ has $P$ iff $f(\varphi)$ has $P$.9 An aggregative property of propositions is any property $P$ such that whenever $\varphi$ has $P$ and $\psi$ has $P$, so has $\varphi\wedge\psi$. Call a probability distribution $\Pr$ on a set $W$ of worlds equiprobable iff, for all $w,w'\in W$, $\Pr(\{w\})=\Pr(\{w'\})$. Because in most of what follows a finite probability space will be assumed, it is useful to note that if $W$ is finite and $\Pr$ an equiprobable distribution on $W$, then $\Pr(\varphi)=|\varphi|/|W|$, for all $\varphi\in\wp(W)$; similarly, $\Pr(\varphi\mid\psi)=|\varphi\wedge\psi|/|\psi|$, for all $\varphi,\psi\in\wp(W)$. Finally, we define $\varphi$ to be inconsistent iff $\varphi=\emptyset=\bot$.
+
+We then have the following:
+
+Proposition 2.1.
+
+Let $W$ be finite and let $\Pr$ be an equiprobable distribution on $W$. Further, let $P$ be structural, $Q$ aggregative, and $P$ sufficient for $Q$. Then if some proposition $\varphi$ such that $\Pr(\varphi)<1$ has $P$, then $\bot$ has $Q$.
+
+Proof. Assume the conditions hold for properties $P$ and $Q$, and that $\Pr(\varphi)<1$ and $\varphi$ has $P$. As $\Pr(W)=1\neq\Pr(\varphi)$, $W\neq\varphi$, so for some $w\mathord{\text{*}}\in W$, $w\mathord{\text{*}}\notin\varphi$. Then for all $w_i\in W$, let $\pi_i$ be the permutation on $W$ such that $\pi_i(w_i)=w\mathord{\text{*}}$, $\pi_i(w\mathord{\text{*}})=w_i$ and $\pi_i(w)=w$ for all other $w\in W$. Define $f_i(\psi):=\{\pi_i(w)\mid w\in\psi\}$ for all $\psi\in\wp(W)$. Each such $f_i$ automatically satisfies the first two conditions of Definition 2.1. It satisfies the third because, given that $W$ is finite and $\Pr$ equiprobable, any two propositions with the same number of worlds have the same probability. Thus each $f_i$ is an automorphism of propositions. Since, by assumption, $\varphi$ has $P$, and $P$ is structural, $P$ also holds of $f_i(\varphi)$, for all $i:1\leq i\leq n$. As $P$ is sufficient for $Q$, every $f_i(\varphi)$ has $Q$, too. Note that for each $i$, $w_i\notin f_i(\varphi)$. Let $W=\{w_1,\ldots,w_n\}$. Then $f_1(\varphi)\wedge\cdots\wedge f_n(\varphi)=\bot$. Because $Q$ is aggregative, $Q$ holds of $\bot$. $\dashv$
+
+Before showing how this bears on solutions to the lottery paradox of the kind considered in this paper, we first point to a simple corollary of the above result:
+
+Corollary 2.2.
+
+Let $\Pr$ be an equiprobable distribution on a finite set $W$ and let $P$ be both structural and aggregative. Then if some proposition $\varphi$ such that $\Pr(\varphi)<1$ has $P$, then $\bot$ has $P$.
+
+Proof. From the proof of Proposition 2.1 by taking $P$ and $Q$ to be identical. $\dashv$
+
+Now note that to require rational acceptability to validate $\mathsf{CP}$ is to require, in the above terminology, that it be an aggregative property. It then follows immediately that if propositions with imperfect probability can be rationally acceptable while the inconsistent proposition is not then rational acceptability is not a structural property.
+
+Of course instances of (1) are attempts not to give a necessary and sufficient condition for rational acceptability, but only a sufficient one. The existence of a structural sufficient condition for rational acceptability, unlike that of a structural necessary and sufficient condition, does not imply that rational acceptability is itself structural. So, to address such proposals, we need Proposition 2.1, and not just the above corollary. Assuming that rational acceptability is aggregative, the proposition tells us that if there is a sufficient condition for rational acceptability that is both structural and non-trivial, in the sense that at least one proposition with probability less than 1 has it, then the inconsistent proposition is rationally acceptable. Hence, any proposal properly called a solution to the lottery paradox—which cannot allow the inconsistent proposition to be rationally acceptable—is, if structural, trivial, just as the proposals depicted in Section 1 were seen to be.
+
+To appreciate exactly how damaging this is to the project of finding a formal solution to the lottery paradox, extend the term ‘structural’ to relations and predicates as well, in the following obvious way: a relation $R$ between propositions is structural if it holds for all propositions $\varphi_1,\ldots,\varphi_n$ and all automorphisms of propositions $f$ that $R(\varphi_1,\ldots,\varphi_n)$ iff $R(f(\varphi_1),\ldots,f(\varphi_n))$, and a predicate is structural if it denotes either a structural property or a structural relation. We further need the notion of degree of a predicate, which for an $n$-ary, $m$th-order predicate $R$ is defined inductively as follows:
+
+1. $d(R(X_1,\ldots,X_n))=0$ if $R$ is primitive;
+2. $\begin{aligned}d(R(X_1,\ldots,X_n)\vee Q(X_1,\ldots,X_n))={}&\\\max[d(R(X_1,\ldots,X_n)),d(Q(X_1,\ldots,X_n))]+1\end{aligned}$;
+3. $d(\neg R(X_1,\ldots,X_n))=d(R(X_1,\ldots,X_n))+1$
+4. $d(\forall X_{i_1}\,\cdots\forall X_{i_k<n}\,R(X_1,\ldots,X_n))=d(R(X_1,\ldots,X_n))+1$.
+
+And finally, for any set $W$ the following definition provides us with a convenient shorthand for iterations of the operation of taking the powerset: $\wp^0(W):=\wp(W)$; $\wp^n(W):=\wp(\wp^{n-1}(W))$.
+
+Then consider the following:
+
+Proposition 2.3.
+
+Any predicate defined purely in terms of structural predicates by means of the Boolean operators and quantification is structural.
+
+Proof. The proof is by a double induction over the order of quantification and the degree of predicates.
+
+We first prove that the proposition holds for the case of first-order quantification. Assume a set $W$ of worlds, and let variables $\varphi_i$ range over $\wp(W)$ and the variable $f$ over automorphisms of $\wp(W)$. For the induction over the degree of predicates, the induction hypothesis then is that
+
+$$\forall\varphi_1\,\cdots\forall\varphi_m\,\forall f\,[R(\varphi_1,\ldots,\varphi_m)\Leftrightarrow R(f(\varphi_1),\ldots,f(\varphi_m))]$$
+
+holds for all $m$-ary first-order predicates ($m\in\mathbb{N}$) of degree $n$ that are defined in terms of structural predicates only. We must thus prove that it holds for those of degree $n+1$ as well. For the Boolean operations the proof is trivial. We prove the more difficult case of quantification. Define a predicate $Q$ as $Q(\psi):=\forall\varphi\, R(\varphi,\psi)$, where $R$ is assumed to be a structural predicate of degree $n$. It is thus to be shown that $Q(\psi)$ iff $Q(f(\psi))$ for all $\psi$ and $f$, that is,
+
+$$\forall\psi\,\forall f\,[\forall\varphi\, R(\varphi,\psi)\Leftrightarrow\forall\varphi\, R(\varphi,f(\psi))].$$
+
+We prove sufficiency; necessity is trivial. Consider any $\psi$ such that $\forall\varphi\, R(\varphi,\psi)$. We must then prove that
+
+$$\forall f\,\forall\varphi\, R(\varphi,f(\psi)).$$
+
+(8)
+
+Let $f$ be an arbitrary automorphism. It follows from the induction hypothesis and our assumption that, for all $\varphi$, $R(\varphi,\psi)$, that $R(f(\varphi),f(\psi))$ for all $\varphi$. Because $f$ is a 1:1 function from the set of propositions onto itself, there is for every proposition $\varphi$ a proposition $\varphi'$ such that $\varphi=f(\varphi')$. Hence, $\forall\varphi\, R(\varphi,f(\psi))$, and since $f$ was arbitrary, we have (8). Sufficiency then follows from the fact that $\psi$ was arbitrary too and from the observation that the foregoing generalizes to $m$-ary predicates for any $m$.
+
+Next assume that the proposition holds for all orders of quantification up to and including $k$; this is the induction hypothesis for the induction over the order of quantification. It is to be shown that it holds for $k+1$st-order quantification. First note that each automorphism $f$ of $\wp(W)$ implicitly defines a 1:1 function $f^l$ on $\wp^l(W)$ for all $l\in\mathbb{N}$. Where the variable $S^i$ ranges over $\wp^i(W)$, these functions can be defined explicitly as: $f^1(S^1)=\{f(\varphi)\mid\varphi\in S^1\}$; $f^l(S^l)=\{f^{l-1}(S^{l-1})\mid S^{l-1}\in S^l\}$. In this notation, the induction hypothesis for the induction over the degree of $k+1$st-order predicates is that
+
+$$\begin{aligned}\forall S^{k+1}_1\,\cdots\forall S^{k+1}_m\,\forall f^{k+1}\,[\mathcal{R}(S^{k+1}_1,\ldots,S^{k+1}_m)\Leftrightarrow\\& \mathcal{R}(f^{k+1}(S^{k+1}_1),\ldots,f^{k+1}(S^{k+1}_m))]\end{aligned}$$
+
+(9)
+
+holds for all $m$-ary $k+1$st-order predicates $\mathcal{R}$ of degree $n$ that are defined purely in structural terms. It must then be shown that it holds for those of degree $n+1$ too. Now note that essentially the same reasoning as in the first-order case can be repeated. For the Boolean operations the proof is again easy, and the case of $k+1$st-order quantification follows in exactly the same way as the case for first-order quantification followed. It may be observed that both (9) and the hypothesis that the proposition holds for all orders of quantification $\leq k$ are needed as a definition of a $k+1$st-order predicate of degree $n+1$ may contain $k$th-order predicates (of any degree) as well as $k+1$st-order predicates of degree $\leq n$. $\dashv$
+
+It is worth noticing that as long as we consider only finite sets of worlds, a version of Proposition 2.3 restricted to predicates defined in terms of structural predicates by means of the Boolean operations and first-order quantification does just as well. For even though the proposals considered in Section 1 already make use of higher-order quantification in their definitions of the defeating condition, on a finite probability space higher-order quantification is really dispensable in that predicates defined by means of higher-order quantifiers all have equivalent definitions in which the only quantifiers are first-order.10 However, while we will mostly assume a finite probability space, in Section 5 we will briefly discuss the possibility of generalizing the results of this and the next section to infinite probability spaces. That makes it useful that Proposition 2.3 pertains also to structural predicates whose definitions contain higher-order quantifiers.
+
+To see the generality of Proposition 2.1, then, one only needs to go through the list of what can reasonably be regarded as the primitive predicates from (meta-)logic, set theory and probability theory and check that they define (on our model) structural properties or relations.11 For example, given an automorphism $f$, $\varphi$ is consistent iff $\varphi\neq\varphi\wedge\neg\varphi$ iff $f(\varphi)\neq f(\varphi\wedge\neg\varphi)$ iff $f(\varphi)\neq f(\varphi)\wedge\neg f(\varphi)$ iff $f(\varphi)$ is consistent; similar procedures work for the other (meta-)logical and set-theoretic predicates. And the predicate ‘probability’ (and so, concomitantly, ‘conditional probability’, ‘high probability’, ‘probability above $\mathrm{t}$’, etc.) is, of course, by definition a structural predicate, for we defined automorphisms as mappings that are, among others, probability-preserving.
+
+The above result pertains to any structural sufficient condition. Nevertheless, as all extant formal solutions to the lottery paradox we are aware of instantiate (1), it may be useful to point out what exactly the result implies for schema (1): first, from Proposition 2.3 it follows that if having a particular defeater D is a structural property, then not having that defeater is structural as well. As having a probability above t is structural, it follows from the same proposition that the combination of having a probability above t and lacking a structural defeater is a structural property. Thus, if the defeater D in (1) is to be defined in terms that denote structural properties or relations, then any instance of that schema defines a sufficient condition for rational acceptability that is structural itself. It is easy to see that the predicates used in (2), (3) and (4) are all structural. But the foregoing shows that however complicated we make the definition of a defeater, we will not end up with an adequate solution to the lottery paradox if that definition is to be cast entirely in structural terms.
+
+# 3 Some variations
+
+We consider two variations on the above result. These will show that some possible responses to the lottery paradox other than those of the schematic form (1) fare no better than the latter.
+
+One type of alternative response is, for any proposition $\varphi$ such that $\Pr(\varphi)>\mathrm{t}$, to take its high probability as a defeasible reason for holding it rationally acceptable provided that the high probability resulted from learning certain specific propositions or a certain type of proposition. The idea, in other words, is to define a sufficient condition for rational acceptability (partly) in dynamic terms. Assume, however, that the learning proceeds by the following rule:
+
+$\textsf{Conditionalization}$ ($\mathsf{COND}$) For any proposition $\varphi$ such that $\Pr(\varphi)>0$, let $\operatorname{Pr}\nolimits_\varphi$ represent the probability distribution that results from $\Pr$ when $\varphi$ (and no stronger proposition) is learnt. Then we say that $\operatorname{Pr}\nolimits_\varphi$ comes from $\Pr$ by conditionalization on $\varphi$ iff, for all propositions $\psi$: $\operatorname{Pr}\nolimits_\varphi(\psi)=\Pr(\psi\mid\varphi)$.
+
+Then if the defeater or defeaters are assumed to be both structural and non-trivial, we can still derive something just as bad as that the inconsistent proposition is rationally acceptable.
+
+To see this, we need some more terminology. Given a sequence $S=\langle\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n\rangle$ of probability distributions on $W$, we call $f$ an automorphism of $\langle W,S\rangle$ iff $f$ is an automorphism of each $\langle W,\operatorname{Pr}\nolimits_i\rangle$. In the context of sequences of probability distributions we understand a structural property as one that is preserved under automorphisms in the redefined sense. Furthermore, call a distribution $\Pr$ on $W$ quasi-equiprobable iff for all $w,w'\in W$, if $\Pr(\{w\})>0$ and $\Pr(\{w'\})>0$, then $\Pr(\{w\})=\Pr(\{w'\})$. It is clear that any equiprobable distribution is quasi-equiprobable but that the converse is not true. Finally, given a set $W$ and a sequence $S=\langle\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n\rangle$ of probability distributions on $W$, define $W[i]:=\{w\in W\mid\operatorname{Pr}\nolimits_i(\{w\})>0\}$. Then we say that a permutation $\pi$ on $W$ accords with $S$ iff, for all $w\in W$ and all $i:0\leq i\leq n$, $w\in W[i]$ iff $\pi(w)\in W[i]$. Observe that if $\operatorname{Pr}\nolimits_{i+1}$ comes from $\operatorname{Pr}\nolimits_i$ by $\mathsf{COND}$, then $\operatorname{Pr}\nolimits_{i+1}(\varphi)=0$ whenever $\operatorname{Pr}\nolimits_i(\varphi)=0$; thus if $i\leq j$, $W[j]\subseteq W[i]$.
+
+In order to facilitate our proof showing that the idea broached at the beginning of this section cannot succeed, we first prove two lemmas:
+
+Lemma 3.1.
+
+Let $W$ be a finite set of worlds and let $\Pr$ be a quasi-equiprobable distribution on $W$. Then a distribution $\Pr'$ on $W$ comes from $\Pr$ by $\mathsf{COND}$ iff (i) $\Pr'$ is a quasi-equiprobable distribution on $W$, and (ii) for all $w\in W$, if $\Pr(\{w\})=0$, then $\Pr'(\{w\})=0$.
+
+Proof. ($\Rightarrow$) Assume that $\Pr$ is a quasi-equiprobable distribution on $W$ and that $\Pr'$ comes from $\Pr$ by $\mathsf{COND}$ on $\varphi$, for some proposition $\varphi\in\wp(W)$. Then (ii) is obvious, because we have already noted that $\mathsf{COND}$ preserves probability 0. For (i): $\Pr'(\{w\})=\Pr(\{w\}\mid\varphi)=\Pr(\{w\}\cap\varphi)/\Pr(\varphi)$. If $w\notin\varphi$, then $\{w\}\cap\varphi=\emptyset$, so $\Pr'(\{w\})=0$. If $w\in\varphi$, then $\{w\}\cap\varphi=\{w\}$, so $\Pr'(\{w\})=\Pr(\{w\})/\Pr(\varphi)$. Hence if $\Pr'(\{w\})>0$ and $\Pr'(\{w\mathord{\text{*}}\})>0$, then $w,w\mathord{\text{*}}\in\varphi$, $\Pr(\{w\})>0$ and $\Pr(\{w\mathord{\text{*}}\})>0$, so $\Pr(\{w\})=\Pr(\{w\mathord{\text{*}}\})$ because $\Pr$ is quasi-equiprobable. Consequently, $\Pr'(\{w\})=\Pr(\{w\})/\Pr(\varphi)=\Pr(\{w\mathord{\text{*}}\})/\Pr(\varphi)=\Pr'(\{w\mathord{\text{*}}\})$.
+
+($\Leftarrow$) Assume (i) and (ii), and let $W'=\{w\in W\mid\Pr'(\{w\})>0\}$. We show that $\Pr'$ comes from $\Pr$ by $\mathsf{COND}$ on $W'$. Let $\Pr\mathord{\text{*}}$ come from $\Pr$ by $\mathsf{COND}$ on $W'$. Then for all $w\in W$, if $\Pr\mathord{\text{*}}(\{w\})>0$, then $w\in W'$ and hence, by the definition of $W'$, $\Pr'(\{w\})>0$. Conversely, if $\Pr'(\{w\})>0$ then $w\in W'$. Thus, by (ii), $\Pr(\{w\})>0$, so that, by the nature of $\mathsf{COND}$, $\Pr\mathord{\text{*}}(\{w\})>0$. Moreover, by ($\Rightarrow$) $\Pr\mathord{\text{*}}$ is a quasi-equiprobable distribution on $W$. Since by (i) the same holds for $\Pr'$, $\Pr\mathord{\text{*}}$ and $\Pr'$ are both quasi-equiprobable distributions on $W$ that give a nonzero probability to exactly the same worlds. Hence $\Pr\mathord{\text{*}}=\Pr'$. $\dashv$
+
+Lemma 3.2.
+
+Let $W$ be finite and $S=\langle\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n\rangle$ be a sequence of probability distributions on $W$ such that $\operatorname{Pr}\nolimits_i$ comes from $\operatorname{Pr}\nolimits_{i-1}$ by $\mathsf{COND}$, for all $i:1\leq i\leq n$, with $\operatorname{Pr}\nolimits_0$ quasi-equiprobable, and $\pi$ be a permutation on $W$. Let $f$ be defined by $f(\varphi):=\{\pi(w)\mid w\in\varphi\}$. Then $f$ is an automorphism of $\langle W,S\rangle$ iff $\pi$ accords with $S$.
+
+Proof. ($\Rightarrow$) If $w\in W$, $0\leq i\leq n$ and $f$ is an automorphism of $\langle W,S\rangle$, then $\operatorname{Pr}\nolimits_i(\{w\})=\operatorname{Pr}\nolimits_i(f(\{w\}))=\operatorname{Pr}\nolimits_i(\{\pi(w)\})$, so $w\in W[i]$ iff $\pi(w)\in W[i]$.
+
+($\Leftarrow$) Suppose $\pi$ accords with $S$. To see that $f$ is an automorphism of $\langle W,\operatorname{Pr}\nolimits_i\rangle$ for all $i:0\leq i\leq n$, first observe that because $\pi$ is a permutation on $W$, $f$ automatically satisfies the first two clauses of Definition 2.1 for all $i$. In order to see that $f$ satisfies the third as well for all $i$, notice that it follows from the assumptions about $W$ and $S$ together with Lemma 3.1 that $\operatorname{Pr}\nolimits_i$ is quasi-equiprobable for all $i:0\leq i\leq n$. Therefore, because $\pi$ accords with $S$, for all $w\in\varphi$ and all $i:0\leq i\leq n$, $\operatorname{Pr}\nolimits_i(\{w\})=\operatorname{Pr}\nolimits_i(\{\pi(w)\})$. Then by Finite Additivity and the definition of $f$ we have for any $\varphi\in\wp(W)$ and all $i:0\leq i\leq n$, $\operatorname{Pr}\nolimits_i(\varphi)=\sum_{w\in\varphi}\operatorname{Pr}\nolimits_i(\{w\})=\sum_{w\in\varphi}\operatorname{Pr}\nolimits_i(\{\pi(w)\})=\sum_{w'\in f(\varphi)}\operatorname{Pr}\nolimits_i(\{w'\})=\operatorname{Pr}\nolimits_i(f(\varphi)).$ $\dashv$
+
+We are now set to prove the main proposition:
+
+Proposition 3.3.
+
+Let $W$ be a finite set of worlds and $S=\langle\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n\rangle$ a sequence of probability distributions on $W$ such that $\operatorname{Pr}\nolimits_0$ is quasi-equiprobable and $\operatorname{Pr}\nolimits_i$ comes from $\operatorname{Pr}\nolimits_{i-1}$ by $\mathsf{COND}$, for all $i:1\leq i\leq n$. Let $P$ be structural, $Q$ aggregative and $P$ sufficient for $Q$. Then if some proposition $\varphi$ such that $\operatorname{Pr}\nolimits_n(\varphi)<1$ has $P$, some proposition $\psi$ such that $\operatorname{Pr}\nolimits_n(\psi)=0$ has $Q$.
+
+Proof. Consider any $\varphi\in\wp(W)$ such that $\operatorname{Pr}\nolimits_n(\varphi)<1$ and $\varphi$ has $P$. Then for some world $w\mathord{\text{*}}\in W[n]$, $w\mathord{\text{*}}\notin\varphi$. It follows that for each $w_i\in W[n]$, there is a permutation $\pi_i$ on $W$ such that $\pi_i(w_i)=w\mathord{\text{*}}$ and $\pi_i(w\mathord{\text{*}})=w_i$ and $\pi_i(w)=w$ for all other $w\in W$. Again let $f_i(\psi):=\{\pi_i(w)\mid w\in\psi\}$ for all propositions $\psi$. As $\pi_i$ merely swaps $w_i$ and $w\mathord{\text{*}}$, where both $w_i\in W[n]$ and $w\mathord{\text{*}}\in W[n]$, it is clear that $\pi_i$ accords with $S$. Thus, by Lemma 3.2, $f_i$ is an automorphism of $\langle W,S\rangle$. Let $W[n]=\{w_1,\ldots,w_m\}$. Then, as $P$ is structural, $f_i(\varphi)$ has $P$ for all $i:1\leq i\leq m$. And since $P$ is sufficient for $Q$, and $Q$ is aggregative, $f_1(\varphi)\wedge\cdots\wedge f_m(\varphi)$ has $Q$. But $(f_1(\varphi)\wedge\cdots\wedge f_m(\varphi))\cap W[n]=\emptyset$ and thus $\operatorname{Pr}\nolimits_n(f_1(\varphi)\wedge\cdots\wedge f_m(\varphi))=0$. $\dashv$
+
+As an immediate and obvious consequence we state, without proof, the following corollary:
+
+Corollary 3.4.
+
+Same assumptions about $W$ as in Proposition 3.3. Let $P$ be both structural and aggregative. Then if some proposition $\varphi$ such that $\operatorname{Pr}\nolimits_n(\varphi)<1$ has $P$, some proposition $\psi$ such that $\operatorname{Pr}\nolimits_n(\psi)=0$ has $P$.
+
+But of course the most relevant consequence of Proposition 3.3 is that saying that, unless a defeater $D$ applies to it, a proposition is rationally acceptable if it is highly probable as a result of $n$ (specific) learning events by means of $\mathsf{COND}$, for any $n\in\mathbb{N}$, will not help to avoid trivialization as long as the defeater is to be defined in structural terms and rational acceptability is supposed to be an aggregative property. For while discussions of the lottery paradox have focused on the (unwanted) implication that contradictions can be rationally acceptable, that a proposition to which we assign probability 0 is rationally acceptable is an implication we will want just as much to exclude.
+
+The foregoing may be as interesting for what it suggests as for what it shows. For it suggests looking at rules for updating probabilities other than $\mathsf{COND}$. Here the most obvious alternative is Jeffrey conditionalization. $\mathsf{COND}$ applies only in cases in which some proposition’s probability is raised to 1. But Jeffrey argued that there may be learning events in which we become certain of no proposition, even though we do learn something in them. To use one of Jeffrey’s examples (Jeffrey [1983], pp. 165–6), a glimpse of a cloth by candlelight may raise our probability that the cloth is green without raising it to 1. In order to be able to represent formally the effects of such events on our probability assignments, Jeffrey proposed the following generalization of $\mathsf{COND}$:
+
+$\textsf{Jeffrey Conditionalization}$ ($\mathsf{JCOND}$) Let $\{\psi_i\}$ be a countable collection of propositions which partition logical space and which all have some positive probability for a given agent. Further let $\operatorname{Pr}\nolimits_{\mathrm{old}}$ and $\operatorname{Pr}\nolimits_{\mathrm{new}}$ be the agent’s pre-experience and post-experience probability function, respectively. Then the change from the former to the latter accords with Jeffrey conditionalization iff for all propositions $\varphi$
+
+$$\operatorname{Pr}\nolimits_{\mathrm{new}}(\varphi)=\sum_i\operatorname{Pr}\nolimits_{\mathrm{new}}(\psi_i)\operatorname{Pr}\nolimits_{\mathrm{old}}(\varphi\mid\psi_i).$$
+
+The $\psi_i$s are to be thought of as being directly affected by the agent’s experience; in the cloth example they are plausibly thought of as propositions about the cloth’s color. Note that if one of the $\psi_i$s gets probability 1, then $\mathsf{JCOND}$ reduces to $\mathsf{COND}$. Call a case of $\mathsf{JCOND}$ essential if it does not reduce to $\mathsf{COND}$.
+
+To see why this is relevant to the above result, notice that in the proof of Proposition 3.3 it was crucial that all worlds that after the n supposed learning events had some positive probability had the same positive probability. If changes of credences are by $\mathsf{COND}$, then, as explained in the proof of Lemma 3.1, that is preserved, at least on our probability model. But if changes of credences are or may be by $\mathsf{JCOND}$, then, on a finite probability space, quasi-equiprobability is no longer preserved. In fact, it follows from Lemma 3.1 that on a finite probability space no essential application of $\mathsf{JCOND}$ to a quasi-equiprobable distribution results in a quasiequiprobable distribution: condition (ii) of that lemma always holds in cases of $\mathsf{JCOND}$, so if the new distribution is quasi-equiprobable it comes by $\mathsf{COND}$ from the old distribution and therefore not essentially by $\mathsf{JCOND}$.
+
+Example 3.1
+
+Let $W$ be finite and consider any case of change of credences where for all $w\in W$, $\operatorname{Pr}\nolimits_{\mathrm{old}}(\{w\})>0$ and $\operatorname{Pr}\nolimits_{\mathrm{new}}(\{w\})>0$ and $\operatorname{Pr}\nolimits_{\mathrm{old}}\neq\operatorname{Pr}\nolimits_{\mathrm{new}}$. Then $\operatorname{Pr}\nolimits_{\mathrm{new}}$ does not come from $\operatorname{Pr}\nolimits_{\mathrm{old}}$ by $\mathsf{COND}$, as the set conditionalized on would have to be $W$ itself, in which case $\operatorname{Pr}\nolimits_{\mathrm{old}}=\operatorname{Pr}\nolimits_{\mathrm{new}}$. But $\operatorname{Pr}\nolimits_{\mathrm{new}}$ does come from $\operatorname{Pr}\nolimits_{\mathrm{old}}$ by $\mathsf{JCOND}$ as we can take our partition as being that into all singletons of worlds. These facts establish a large range of examples. See further Williamson ([2000], p. 216 n). $\dashv$
+
+One thing this implies is that Proposition 3.3 does not extend to the supposition that at least some elements of the sequence of probability distributions $\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n$ are derived from their predecessors by means of $\mathsf{JCOND}$. And unless we have quasi-equiprobability of all elements of $S=\langle\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n\rangle$, we have no guarantee that there exists any automorphism of $\langle W,S\rangle$—other than the ‘trivial’ one, that is, which maps each proposition onto itself. Consequently, if changes of credences may be by $\mathsf{JCOND}$, then stipulating that a proposition is rationally acceptable if it is highly probable as a result of certain changes of credences, provided a defeater $D$ does not apply to it, might help to avoid trivialization, even if the defeater is defined strictly in structural terms. As, however, for reasons given in Williamson ([2000], pp. 216–8), $\mathsf{JCOND}$ is of doubtful epistemic significance at best, we doubt that the foregoing can be welcomed as offering an escape.
+
+Now to the second variation. Earlier we said that abandoning $\mathsf{CP}$ is nowadays generally found to be too drastic a response to the lottery paradox. Some might think, however, that replacing the principle by the following just slightly stricter principle is both tolerable and sufficient to rid us of the paradox:
+
+$\textsf{Restricted Conjunction Principle}$ ($\mathsf{RCP}$) If each of the propositions $\varphi$ and $\psi$ is rationally acceptable and $\varphi\wedge\psi\neq\bot$, then $\varphi\wedge\psi$ is rationally acceptable.
+
+From $\mathsf{RCP}$ we can easily derive the generalization that if each of finitely many propositions is rationally acceptable, and their conjunction is consistent, then it is rationally acceptable too.
+
+Supplanting $\mathsf{CP}$ by $\mathsf{RCP}$ would not be an unprecedented move. It is well known that the so-called Principle of Indifference, according to which (roughly put) mutually exclusive propositions ought to be assigned equal initial probability, at least absent any reason to the contrary, is inconsistent. But because of its intuitive appeal, and its many successful applications,12 it has seemed the best strategy to some not to abandon the principle altogether but to try and salvage as much as possible of it by searching for a restricted consistent version.13,14
+
+Yet switching to $\mathsf{RCP}$ offers no solace. For call $P$ a C-aggregative property of propositions if whenever $\varphi$ has $P$ and $\psi$ has $P$, and in addition $\varphi\wedge\psi$ is consistent, then $\varphi\wedge\psi$ has $P$. We then still have
+
+Proposition 3.5.
+
+Same assumptions as in Proposition 2.1, except that $Q$ is now assumed to be only C-aggregative. Then if some proposition $\varphi$ such that $\Pr(\varphi)<1$ has $P$, some proposition $\psi$ such that $\Pr(\psi)\leq1/|W|$ has $Q$.
+
+Proof. Let everything be as in the proof of Proposition 2.1, but now consider the sequence of propositions $\psi_1,\ldots,\psi_n$, where $\psi_1=f_1(\varphi)$ and $\psi_{i+1}=\psi_i\wedge f_{i+1}(\varphi)$ and $W=\{w_1,\ldots,w_n\}$. As before, $\psi_n=\bot$. Consider the least $k$ such that $\psi_k=\bot$. If $k=1$, then $\varphi=f_1(\varphi)=\bot$ has $P$ and therefore $Q$ and $\Pr(\varphi)=0$, so we are done. Suppose that $k>1$. Thus $\psi_j\neq\bot$ for $j<k$. For each $i$, $f_i(\varphi)$ has $P$ (because $P$ is structural) and therefore $Q$, so for each $j<k$, $\psi_j$ has $Q$ by C-aggregativity. Observe that each $f_{j+1}(\varphi)$ lacks at most one member that $f_j(\varphi)$ may have, namely $w_{j+1}$. Consequently, $|\psi_j|\leq|\psi_{j+1}|+1$. Therefore $|\psi_{k-1}|=1$. As $\Pr$ is equiprobable, $\Pr(\psi_{k-1})=1/|W|$. $\dashv$
+
+Again we state, without proof, a simpler corollary:
+
+Corollary 3.6.
+
+Same assumptions as Corollary 2.2, except that $P$ is now assumed to be structural and C-aggregative. Then if some proposition $\varphi$ such that $\Pr(\varphi)<1$ has $P$, some proposition $\psi$ such that $\Pr(\psi)\leq1/|W|$ has $P$.
+
+Assuming $\mathsf{RCP}$ is tantamount to assuming that rational acceptability is a C-aggregative property. Given this assumption, it is thus a further simple corollary of Proposition 3.5 that if some sufficient condition for rational acceptability is structural, a proposition can be rationally acceptable even if one is as good as certain that it is false. After all, the cardinality of $W$ can be assumed as large as we want; accordingly, $1/|W|$ can be assumed to be as close to 0 as we want. Again this is a possibility one would just as much want to exclude as the possibility that the inconsistent proposition is rationally acceptable.
+
+Finally note that combining the variations depicted above will not help either:
+
+Proposition 3.7.
+
+Let $W$ be finite and let $\langle\operatorname{Pr}\nolimits_0,\ldots,\operatorname{Pr}\nolimits_n\rangle$ be as in Proposition 3.3. Furthermore, let $P$ be structural, $Q$ C-aggregative, and $P$ sufficient for $Q$. Then if some proposition $\varphi$ such that $\operatorname{Pr}\nolimits_n(\varphi)<1$ has $P$, then some proposition $\psi$ such that $\operatorname{Pr}\nolimits_n(\psi)\leq1/|W[n]|$ has $Q$.
+
+Corollary 3.8.
+
+Same assumptions about $W$ as in Proposition 3.3. Let $P$ be both structural and C-aggregative. If some proposition $\varphi$ such that $\operatorname{Pr}\nolimits_n(\varphi)<1$ has $P$, then some proposition $\psi$ such that $\operatorname{Pr}\nolimits_n(\psi)\leq1/|W[n]|$ has $P$.
+
+The proofs of these results can be obtained basically just by combining the proofs of Propositions 3.3 and 3.5 (and, for the corollary, making the requisite substitutions); for that reason they are omitted.
+
+# 4 Adding modalities
+
+We have seen that any instance of (1) that is both structural and nontrivial, or indeed any other sufficient condition for rational acceptability that meets those criteria, leads straight to the conclusion that the inconsistent proposition is rationally acceptable. And what prima facie may have seemed promising escape routes still within the confines of a formal approach to the lottery paradox did not work. While we cannot claim to have considered all possible escape routes of a formal variety, the above does seem to warrant the conclusion that the prospects for a purely formal solution to the paradox are dim. It may therefore be instructive to see, if only in rough outline, how an appeal to informal notions might be of help. Especially when such notions can be given a possible worlds semantics or natural axiomatization, a solution to the lottery paradox formulated in terms of them might still be somewhat to the liking of those who had hoped for a formal solution.
+
+One obvious way to try to increase the expressive power of our model is by adding modal operators. So far we cannot represent modalities in our model, for we are not assuming an accessibility relation on the elements of $W$. But of course we might extend the model by defining a relation $R\subseteq W\times W$; we call $w$ accessible from $w\mathord{\text{*}}$ iff $wRw\mathord{\text{*}}$.
+
+That an operator can be axiomatized or given a possible worlds semantics does not automatically make that operator purely formal. For instance, the accessibility relation in its semantics may itself be defined in informal terms, such as similarity or knowledge. A natural criterion for an accessibility relation to be purely formal is that it should be invariant under all permutations of $W$. That is equivalent to requiring it to be homogeneous in the following sense:
+
+Definition 4.1
+
+Let $W$ be a set of worlds and $R\subseteq W\times W$. Then the frame $\langle W,R\rangle$ is homogeneous iff
+
+1. for all $w,w'\in W$, $wRw$ iff $w'Rw'$;
+2. for all $w,w',x,x'\in W$ such that $w\neq x$ and $w'\neq x'$, $wRx$ iff $w'Rx'$.
+
+$\dashv$
+
+As can be readily verified, the class of homogeneous frames is exhausted by those whose accessibility relation is defined by any of the following (where $W$ is the set of worlds of the given frame):
+
+(a)
+$R=\emptyset$;
+(b)
+$R=\{\langle w,w\rangle\mid w\in W\}$;
+(c)
+$R=\{\langle w,w'\rangle\mid w,w'\in W\}$;
+(d)
+$R=\{\langle w,w'\rangle\mid w,w'\in W\wedge w\neq w'\}$.
+
+The accessibility relation of a homogeneous frame is structural in the above sense, because it is preserved under all permutations. Thus adding modal notions defined in terms of a homogeneous frame will not affect our previous results.
+
+We pause to identify the logic of the class of homogeneous frames. As is well known, to obtain the logic of the class of frames of type (a) one adds to the weakest normal modal logic $\mathsf{K}$ the Ver schema $□\varphi$; for the class of frames of type (b) one adds to $\mathsf{K}$ the Triv schema $□\varphi\leftrightarrow\varphi$; for the class of frames of type (c) one adds to $\mathsf{K}$ the schemas characteristic of the modal logic $\mathsf{S5}$, in particular the T schema $□\varphi\rightarrow\varphi$, the B schema $\varphi\rightarrow□◇\varphi$ and the 4 schema $□\varphi\rightarrow□□\varphi$. For the class of frames of type (d), one adds the B schema and the weakening 4$'$ of the 4 schema: $(\varphi\wedge□\varphi)\rightarrow□□\varphi$ (Segerberg [1980]). It is easy to check that all instances of the B and 4$'$ schemas are also derivable in the other three logics. Consequently, the logic of the class of all homogeneous frames is the same as the logic of the class of all frames of type (d) and can therefore be axiomatized in the same way.
+
+![](assets/figure-1.png)
+
+Figure 1. Models with a non-homogeneous underlying frame
+
+By contrast, the accessibility relation of a non-homogeneous frame is not preserved under all permutations of $W$, and therefore is not preserved under all automorphisms of $\langle W,\Pr\rangle$ when $W$ is finite and $\Pr$ equiprobable. Consequently, our previous results do not generalize to the non-homogeneous case, because automorphisms as defined above need not preserve modal properties of propositions.
+
+Example 4.1
+
+Let $f$ be the automorphism that interchanges $\{w_1\}$ and $\{w_2\}$ in Figure 1. In that model, $\varphi$ has the property of implying a possibility because $\varphi\rightarrow◇\varphi$ is true at all worlds, whereas $f(\varphi)$ lacks that property, because $f(\varphi)\rightarrow◇\psi$ is false at the ‘blind’ world $w_2$ for every proposition $\psi$. $\dashv$
+
+In sum, on the modal approach we might be able to define a defeater in terms that are to some extent formally constrained, although they will not be purely formal.
+
+Epistemic and doxastic modalities typically correspond to accessibility relations that generate non-homogeneous frames. For example, knowledge violates the B and 4 schemas, and therefore the 4$'$ schema too, which is equivalent to 4 in the presence of the T schema, which knowledge trivially satisfies (Williamson [2000]). However, on the approach of Williamson ([2000]), known propositions have probability 1 on the evidence, and only propositions with probability 1 on the evidence are fully rationally acceptable, so no definition of a defeater is forthcoming of the kind for which many have hoped. It is far from obvious how to employ non-homogeneous epistemic or doxastic modalities in order to define a plausible and illuminating sufficient condition for rational acceptability short of probability 1. However, we will not attempt here to argue that it cannot be done. The foregoing simply indicates one direction in which some may seek a solution to the lottery paradox—with no guarantee that there is one.
+
+# 5 Anticipated objections
+
+In closing we present, and try to defuse, two objections that might be raised against the model we used in obtaining our negative results.
+
+First, it may be pointed out that the proofs of Propositions 2.1, 3.3, 3.5 and 3.7 and the associated lemmas and corollaries heavily depend on the fact that our model is a finite probability space. It must be admitted that there is no straightforward generalization to infinite probability spaces. A crucial fact for the proofs of those propositions is an obvious consequence of Finite Additivity: when all worlds in a subset $W\mathord{\text{*}}$ of the finite set $W$ have equal probability, all subsets of $W\mathord{\text{*}}$ of equal cardinality have equal probability (for Proposition 2.1, let $W\mathord{\text{*}}$ be $W$ itself). But all subsets of equal cardinality of an infinite set $W\mathord{\text{*}}$ have equal probability only in the trivial case in which $\Pr(W\mathord{\text{*}}) = 0$. For any infinite $W\mathord{\text{*}}$ set can be partitioned into two disjoint subsets $X$ and $Y$ each of equal cardinality to $W\mathord{\text{*}}$ itself; thus $\Pr(W\mathord{\text{*}}) = \Pr(X) + \Pr(Y)$. If equal cardinality implies equal probability for subsets of $W\mathord{\textit{*}}$, then $\Pr(X) = \Pr(W\mathord{\textit{*}})$ = $\Pr(Y)$, so $\Pr(W\mathord{\text{*}}) = \Pr(W\mathord{\text{*}}) + \Pr(W\mathord{\text{*}})$, so $\Pr(W\mathord{\text{*}}) = 0$. Thus we cannot make progress simply by considering probability distributions that assign equal probability to all worlds in an infinite set of positive probability, either by assigning probability 0 to all worlds (which requires the abandonment of Countable Additivity if $W\mathord{\text{*}}$ is countable) or by using non-standard analysis, for such distributions still do not yield what we want for our proofs at the level of subsets of $W\mathord{\text{*}}$.
+
+Of course, we could consider switching to ‘non-normalizing’ probabilities (see Renyi [1970]). But that option is controversial. A better response, in our view, is to give the model we employed a kind of contextualist twist by noting that our results do not require the finitely many equiprobable worlds to be maximally specific. It is enough to assume that they are ‘specific enough’ for whatever purposes may be at hand—that is, to be more precise, a set of mutually exclusive and jointly exhaustive states that determine answers to all the questions that happen to be relevant to a particular application. In addition to this, it should be noted that the case of finitely many equiprobable worlds is the simplest non-trivial case, and a good treatment of the lottery paradox should at least work for the simple cases—especially as the phenomena of rational acceptability in which we are interested do not seem to arise only for infinite probability spaces.
+
+But we can even do better than this. For we can obtain something hardly less destructive than our previous results if the finiteness assumption is dropped. First, one more definition:
+
+Definition 5.1
+
+Let $\Pr$ be a probability distribution on a set $W$ of worlds and $\varepsilon\in\mathbb{R}$ such that $0\leq\varepsilon\leq1$. $\Pr$ is $\varepsilon$-equiprobable iff for some finite $W\mathord{\text{*}}\subseteq W$:
+
+1. $\Pr(W\mathord{\text{*}})\geq1-\varepsilon$;
+2. for all $w,w'\in W\mathord{\text{*}}$, $\Pr(\{w\})=\Pr(\{w'\})$.
+
+$\dashv$
+
+Example 5.1
+
+Let $w_1,w_2,w_3,\ldots$ be an enumeration of the elements of some infinite set $W$ of worlds. Then for any $n\in\mathbb{N}$, the following defines a $1/n$-equiprobable distribution on $W$:
+
+$$\Pr(\{w_i\})=\begin{cases}
+\frac1n & \text{if }1\leq i\leq n-1;\\[4pt]
+\frac1n\left(\frac12^{1+i-n}\right) & \text{if }i\geq n.
+\end{cases}$$
+
+$\dashv$
+
+Now consider
+
+Proposition 5.1.
+
+Let $\Pr$ be an $\varepsilon$-equiprobable distribution on a set $W$, $P$ be structural, $Q$ aggregative and $P$ sufficient for $Q$. Then if some proposition $\varphi$ such that $\Pr(\varphi)<1-\varepsilon$ has $P$, then some proposition $\psi$ such that $\Pr(\psi)\leq\varepsilon$ has $Q$.
+
+Proof. Let $W\mathord{\text{*}}$ satisfy conditions 1 and 2 of Definition 5.1. Suppose that $\varphi$ has $P$ and $\Pr(\varphi)<1-\varepsilon$. Thus $\Pr(\varphi)<\Pr(W\mathord{\text{*}})$, so $W\mathord{\text{*}}\nsubseteq\varphi$, so for some $w\mathord{\text{*}}\in W\mathord{\text{*}}$, $w\mathord{\text{*}}\notin\varphi$. Now suppose that $w_i\in W\mathord{\text{*}}$. Let $\pi_i$ be the permutation of $W$ such that $\pi_i(w_i)=w\mathord{\text{*}}$, $\pi_i(w\mathord{\text{*}})=w_i$ and $\pi_i(w)=w$ for all other $w\in W$. Define $f_i$ from $\wp(W)$ to $\wp(W)$ in the usual way: $f_i(\psi):=\{\pi_i(w)\mid w\in\psi\}$ for all $\psi\in\wp(W)$. As usual, $f_i$ is an automorphism. We need only check the third condition: $f_i(\varphi)=f_i((\varphi\wedge W\mathord{\text{*}})\vee(\varphi\wedge\neg W\mathord{\text{*}}))=[(f_i(\varphi)\wedge f_i(W\mathord{\text{*}}))\vee f_i(\varphi\wedge\neg W\mathord{\text{*}})]=[(f_i(\varphi)\wedge W\mathord{\text{*}})\vee(\varphi\wedge\neg W\mathord{\text{*}})]$, so $\Pr(f_i(\varphi))=\Pr(f_i(\varphi)\wedge W\mathord{\text{*}})+\Pr(\varphi\wedge\neg W\mathord{\text{*}})$; by conditions 1 and 2, if $\psi\subseteq W\mathord{\text{*}}$, then $\Pr(\psi)=\Pr(W\mathord{\text{*}})|\psi|/|W\mathord{\text{*}}|$, so $\Pr(f_i(\varphi)\wedge W\mathord{\text{*}})=\Pr(W\mathord{\text{*}})|f_i(\varphi)\wedge W\mathord{\text{*}}|/|W\mathord{\text{*}}|=\Pr(W\mathord{\text{*}})|\varphi\wedge W\mathord{\text{*}}|/|W\mathord{\text{*}}|=\Pr(\varphi\wedge W\mathord{\text{*}})$; thus $\Pr(f_i(\varphi))=\Pr(\varphi\wedge W\mathord{\text{*}})+\Pr(\varphi\wedge\neg W\mathord{\text{*}})=\Pr(\varphi)$. As $P$ is structural, each $f_i(\varphi)$ has $P$. As $P$ is sufficient for $Q$, each $f_i(\varphi)$ has $Q$. As $Q$ is aggregative, $f_1(\varphi)\wedge\cdots\wedge f_n(\varphi)$ has $Q$. For $w_i\in W\mathord{\text{*}}$, $w_i\notin f_i(\varphi)$, so $f_1(\varphi)\wedge\cdots\wedge f_n(\varphi)\subseteq\neg W\mathord{\text{*}}$ where $W\mathord{\text{*}}=\{w_1,\ldots,w_n\}$. So $\Pr(f_1(\varphi)\wedge\cdots\wedge f_n(\varphi))\leq\Pr(\neg W\mathord{\text{*}})=1-\Pr(W\mathord{\text{*}})\leq\varepsilon$ by the first condition of Definition 5.1 $\dashv$
+
+Corollary 5.2.
+
+Let $\Pr$ be an $\varepsilon$-equiprobable distribution on a set $W$ and let $P$ be both structural and aggregative. Then if some proposition $\varphi$ such that $\Pr(\varphi)<1-\varepsilon$ has $P$, some proposition $\psi$ such that $\Pr(\psi)\leq\varepsilon$ has $P$.
+
+Proof. From the proof of Proposition 5.1 by taking $P$ and $Q$ to be identical. $\dashv$
+
+Note that we do not require all worlds to have positive probability, so the results apply both to countable and uncountable $W$.
+
+Informally, the point of $\varepsilon$-equiprobability is that the smaller $\varepsilon$ is, the more likely we are to be in the subset $W\mathord{\text{*}}$ for whose subsets equal cardinality entails equal probability. As already noted, no infinite set $W\mathord{\text{*}}$ of positive probability has this property. In a sense, therefore, $\varepsilon$-equiprobability as $\varepsilon$ tends to 0 is the best possible approximation for our purposes to strict equiprobability over infinite domains. To illustrate, consider the $1/n$-equiprobable distribution $\Pr[n]$ as defined in Example 5.1, and let $W\mathord{\text{*}}[n]=\{w_1,w_2,\ldots,w_n\}$. For $m<n$, $\Pr[n]$ is closer than $\Pr[m]$ to equiprobability in at least two ways. First, the probability of being in the set of equiprobability is higher, because $\Pr(W\mathord{\text{*}}[m])=(m-1)/m<(n-1)/n=\Pr(W\mathord{\text{*}}[n])$. Second, the set of equiprobability is larger, because $W\mathord{\text{*}}[m]\subset W\mathord{\text{*}}[n]$. Now Proposition 5.1 yields a sort of trivialization result ‘in the limit’. For by taking $n$ larger and larger or, in the general case, $\varepsilon$ smaller and smaller, we have better and better approximations to Proposition 2.1 (with probability 0 in place of inconsistency). It will be obvious how to get increasingly good approximations to Propositions 3.3, 3.5 and 3.7 for infinite models too.
+
+The second possible objection we want to consider is that it is a rather serious drawback of our model that we are working with a coarse-grained conception of propositions according to which propositions are individuated solely by their truth conditions. For—it might be said—rational acceptability is, just like belief for instance, plausibly thought of as a hyperintensional notion; that is to say, it seems to matter to our verdicts regarding the rational acceptability of a proposition how that proposition is presented to us (and so not just what worlds it is true in).
+
+A first thing to note in this connection is that insofar as the objection points to a limitation of our model, it is one that is inherited from the very analytic tool that is central to all probabilistic approaches to rational acceptability (whether or not they are fully formal), namely, probability theory. For although a pre-theoretic conception of probability also seems to be a hyperintensional notion, it must by way of idealizing assumption be considered an intensional (but not hyperintensional) one. For example, it would from an intuitive viewpoint seem entirely reasonable, at least presently, to believe Goldbach’s conjecture to some non-extreme degree. Nevertheless, the conjecture is either necessarily true or necessarily false and so expresses the same proposition as either ‘2 + 2 = 4’ or ‘2 + 2 = 5’. As it is a theorem of probability theory that $\Pr(\varphi)=\Pr(\psi)$ whenever $\varphi$ and $\psi$ are logically equivalent,15 it follows that anyone believing the conjecture to a degree different from the one to which she believes that 2 + 2 = 4—if the conjecture is true—or the one to which she believes that 2 + 2 = 5—if the conjecture is false—counts as being incoherent. More generally, according to probability theory it is immaterial how propositions are presented to us. So if cutting propositions coarsely is a problem here, it is simply the price to be paid for using probability theory in the analysis of rational acceptability.16 Secondly, and equally importantly, it appears far from implausible to assume that in many ordinary situations people know the identities and differences of propositions under all contextually relevant modes of presentation. So at least in such situations there seems to be no impediment to cutting propositions coarsely. And, to make a point similar to one made a few paragraphs back, any adequate solution to the lottery paradox should work for those situations as well.
+
+# Acknowledgements
+
+An earlier version of this paper was presented at the Popper Seminar at the LSE. Thanks to the audience for helpful questions and remarks. We are also grateful to Leon Horsten and to two anonymous referees for this journal for their comments. Further we would like to thank Albert Visser for a useful discussion about the subject matter of this paper.
+
+# Notes
+
+[1] We think of the Pr-function as representing the probability of the various propositions on the relevant evidence. We are neutral as to whether such evidential probabilities should be conceived as the degrees of belief of a rational agent or more objectively, for example in the manner of Williamson ([2000], pp. 209–37). In any case, we assume that they satisfy the standard axioms of probability theory.
+
+[2] Full transitivity would require that if each proposition in a set $\mathrm{\Delta}$ is a general consequence of a set $\mathrm{\Gamma}$, then any general consequence of $\mathrm{\Delta}$ is a general consequence of $\mathrm{\Gamma}$. Our weak transitivity principle is the special case of this in which for ‘$\mathrm{\Delta}$’ we substitute ‘$\mathrm{\Gamma}\cup\mathrm{\Delta}$’ (note that every member of $\mathrm{\Gamma}$ is a deductive consequence and therefore a general consequence of $\mathrm{\Gamma}$). We do not assume full transitivity for general consequence because it makes general transitivity monotonic, in the sense that any general consequence of a set $\mathrm{\Gamma}$ would also count as a general consequence of $\mathrm{\Gamma}\cup\mathrm{\Delta}$, no matter what extra premises $\mathrm{\Delta}$ contains, whereas most forms of non-deductive reasoning are nonmonotonic: for example, the best explanation of some evidence may be inconsistent with an enlarged evidence set. Full transitivity implies monotonicity because each proposition in $\mathrm{\Gamma}$ is a deductive consequence and therefore a general consequence of $\mathrm{\Gamma}\cup\mathrm{\Delta}$, so by full transitivity any general consequence of $\mathrm{\Gamma}$ is a general consequence of $\mathrm{\Gamma}\cup\mathrm{\Delta}$ too. By contrast, the weak transitivity principle in the text does not imply monotonicity. To show this, we give an artificial interpretation of ‘general consequence’ on which it properly extends deductive consequence and weak transitivity holds but monotonicity does not. Consider a language of propositional logic with only finitely many atomic letters. Thus there are only finitely many models (assignments of truth-values to atomic letters). Assign each model a real number as its ‘value’; different models may be assigned the same value, but at least one model must be assigned a higher value than some other. The ‘best’ models in a set are those assigned the highest ‘value’ of any in the set; thus any nonempty set of models has at least one best member. Interpret ‘$\varphi$ is a general consequence of $\mathrm{\Gamma}$’ to mean that $\varphi$ is true in each of the best members of the set of models in which every member of $\mathrm{\Gamma}$ is true (if $\mathrm{\Gamma}$ is empty, $\varphi$ is a vacuous general consequence of $\mathrm{\Gamma}$). In brief, $\varphi$ is a general consequence of $\mathrm{\Gamma}$ iff every best model of $\mathrm{\Gamma}$ is a model of $\varphi$. On this interpretation, general consequence extends deductive consequence, for if $\varphi$ is a deductive consequence of $\mathrm{\Gamma}$, then every model of $\mathrm{\Gamma}$ is a model of $\varphi$; a fortiori, every best model of $\mathrm{\Gamma}$ is a model of $\varphi$. Moreover, weak transitivity holds. For suppose that every member of $\mathrm{\Delta}$ is a general consequence of $\mathrm{\Gamma}$, and that $\varphi$ is a general consequence of $\mathrm{\Gamma}\cup\mathrm{\Delta}$. Let $M$ be a best model of $\mathrm{\Gamma}$, so $M$ is a model of $\mathrm{\Delta}$. Thus $M$ is a model of $\mathrm{\Gamma}\cup\mathrm{\Delta}$. If $M$ were not a best model of $\mathrm{\Gamma}\cup\mathrm{\Delta}$, another model $M^*$ of $\mathrm{\Gamma}\cup\mathrm{\Delta}$ would be better; but $M^*$ would be a model of $\mathrm{\Gamma}$, so $M$ would not be a best model of $\mathrm{\Gamma}$. Hence $M$ is a best model of $\mathrm{\Gamma}\cup\mathrm{\Delta}$. As $\varphi$ is a general consequence of $\mathrm{\Gamma}\cup\mathrm{\Delta}$, $M$ is a model of $\varphi$. Thus every best model of $\mathrm{\Gamma}$ is a model of $\varphi$, so $\varphi$ is a general consequence of $\mathrm{\Gamma}$. Nevertheless, we can show that monotonicity fails, as follows. For each model $M$, let $\alpha(M)$ be the conjunction of the atomic letters true in $M$ and the negations of the atomic letters false in $M$; thus $\alpha(M)$ is true in $M$ and in no other model. Let $\beta$ be the disjunction of $\alpha(M)$ for each best model $M$ (best member of the set of all models). Hence $\beta$ is true in each best model and in no other. So $\beta$ is a general consequence of the null set. But $\beta$ is no general consequence of $\{\neg\beta\}$, for $\neg\beta$ has some models (by hypothesis, not every model takes the maximum value). Therefore general consequence is non-monotonic. Since full transitivity implies monotonicity, full transitivity also fails on this interpretation.
+
+[3] Throughout the paper, a sentence surrounded by angle brackets refers to the sentence’s propositional content.
+
+[4] In terms of the understanding of rational acceptability as the property of being a general consequence of the evidence, the upshot of the argument is that if general consequence satisfies $\mathsf{ST}$ and $\mathsf{CP}$, it violates the following consistency constraint: a contradiction is a general consequence of a set only if it is a deductive consequence of that set.
+
+[5] A detail still worth mentioning is that Pollock’s ([1995], p. 66) full proposal appeals to a notion of projectibility. His general formal approach notwithstanding, however, this notion nowhere receives a formal definition; it in effect is not properly defined at all but instead is said to be related to the notion of the same name in Goodman’s ([1954]) work on induction (a notion that is notoriously vague).
+
+[6] Similar arguments are to be found in Korb ([1992]), Pollock ([1995], pp. 64–5) and Olin ([2003], pp. 93–4).
+
+[7] For as $\mathrm{\Gamma}\cup\{\varphi\}$ is a finite inconsistent set, it has a minimally inconsistent subset $\mathrm{\Delta}$. But $\mathrm{\Gamma}$ itself is consistent because every member of it is true if $\varphi$ is false, which can be since $\Pr(\varphi)<1$. Thus $\varphi\in\mathrm{\Delta}$, so $\mathrm{\Delta}=\mathrm{\Gamma}'\cup\{\varphi\}$ for some $\mathrm{\Gamma}'\subseteq\mathrm{\Gamma}$.
+
+[8] Incidentally, the amendment just mentioned already comes to grief over the following argument: let $\varphi$ again be any proposition such that $\mathrm{t}<\Pr(\varphi)<1$. Suppose the same holds true of each of $\psi_1,\ldots,\psi_n$, and let each element of the set $\{\varphi,\psi_1,\ldots,\psi_n\}$ be probabilistically independent of each consistent truth-function of the other elements of the set. Then, just provided $n$ is large enough, it will hold that $\Pr(\varphi\wedge\psi_1\wedge\cdots\wedge\psi_n)<1-\mathrm{t}$ and hence that $\Pr(\neg\varphi\vee\neg\psi_1\vee\cdots\vee\neg\psi_n)>\mathrm{t}$. Then, if we add the suggested clause about negative probabilistic relevance to the proposals of Pollock, Ryan and Douven, all elements of $\{\varphi,\psi_1,\ldots,\psi_n,\neg\varphi\vee\neg\psi_1\vee\cdots\vee\neg\psi_n\}$ are rationally acceptable on those proposals. But as the set is inconsistent, it follows from $\mathsf{CP}$ that $\bot$ is rationally acceptable.
+
+[9] Note that strictly speaking a property is (or fails to be) structural only relative to a given probability model. So we should really say that, for instance, a property $P$ is $\langle W,\Pr\rangle$-structural, for a certain probability model $\langle W,\Pr\rangle$. However, below context will always make it obvious relative to which model a property is said or assumed to be structural, so that explicit reference to the model can be suppressed.
+
+[10] By way of simple example, take the predicate being a member of an inconsistent set of propositions each of which has a probability above the threshold, $M(\varphi)$, and assume that $W=\{w_1,\ldots,w_n\}$. Where it is understood that the higher-order quantifiers range over $\wp^1(W)$ and the first-order ones over $\wp(W)$, the predicate is naturally defined as follows:
+
+$$M(\varphi):=\exists S\,[\bigcap S=\bot\wedge\forall\psi\,(\psi\in S\rightarrow\Pr(\psi)>\mathrm{t})\wedge\varphi\in S].$$
+
+But letting ‘$\operatorname{CON}(\varphi)$’ mean that $\varphi$ is consistent and ‘$\operatorname{HP}(\varphi)$’ that $\varphi$ has a probability above $\mathrm{t}$, we can redefine $M(\varphi)$ simply—through somewhat tediously—using only first-order quantifiers as
+
+$$\begin{aligned}
+M'(\varphi):=\forall\varphi_{i_1}\,\cdots\forall\varphi_{i_{2^n-1}}\,\bigl[&
+\varphi\neq\varphi_{i_1}\wedge\cdots\wedge\varphi\neq\varphi_{i_{2^n-1}}\rightarrow{}\\
+&(\neg\operatorname{CON}(\varphi\wedge\varphi_{i_1})\\
+&\qquad\wedge\operatorname{HP}(\varphi)\wedge\operatorname{HP}(\varphi_{i_1}))\vee{}\\
+&(\neg\operatorname{CON}(\varphi\wedge\varphi_{i_1}\wedge\varphi_{i_2})\\
+&\qquad\wedge\operatorname{HP}(\varphi)\wedge\operatorname{HP}(\varphi_{i_1})
+\wedge\operatorname{HP}(\varphi_{i_2}))\vee\cdots\vee{}\\
+&(\neg\operatorname{CON}(\varphi\wedge\varphi_{i_1}\wedge\cdots\wedge\varphi_{i_{2^n-1}})\\
+&\qquad\wedge\cdots\wedge\operatorname{HP}(\varphi)\wedge\cdots
+\wedge\operatorname{HP}(\varphi_{i_{2^n-1}}))\bigr].
+\end{aligned}$$
+
+Clearly $M(\varphi)$ iff $M'(\varphi)$, for any $\varphi\in\wp(W)$. It should also be clear that basically the same trick will work just as well for any other predicate defined by means of higher-order quantifiers, and that it will do so given any finite cardinality of $W$.
+
+[11] Or one may consult Tarski ([1986]), where the logical notions are characterized as precisely those that are invariant under all 1:1 transformations of the domain of discourse onto itself. As Tarski (p. 151) remarks, properties concerning the number of elements in a class are, given this characterization, logical as well. And as already hinted at in the text, given a finite number of worlds and an equiprobable probability distribution, marginal probabilities just measure cardinalities and conditional probabilities ratios between cardinalities. See also van Benthem ([2002]).
+
+[12] See Jaynes ([1973]) and Uffink ([1995]).
+
+[13] See e.g. Keynes ([1921]) and Castell ([1998]).
+
+[14] Douven and Uffink also follow the strategy of restricting $\mathsf{CP}$ (though not quite in the way suggested here) in their ([2003]) solution to Makinson’s ([1965]) preface paradox.
+
+[15] Logical equivalence is in this setting standardly taken to comprise mathematical equivalence; see e.g. Howson and Urbach ([1993], p. 20).
+
+[16] Indeed, it seems to be a price that comes with probabilistic analyses of notions from mainstream epistemology generally; see for this point in connection with probabilistic analyses of the notion of coherence Douven and Meijs ([forthcoming]).
+
+# References
+
+Castell, P. [1998]: ‘A Consistent Restriction of the Principle of Indifference’, British Journal for the Philosophy of Science, 49, pp. 387–95.
+
+Douven, I. [2002]: ‘A New Solution to the Paradoxes of Rational Acceptability’, British Journal for the Philosophy of Science, 53, pp. 391–410.
+
+Douven, I. and Meijs, W. [forthcoming]: ‘Measuring Coherence’, Synthese, in press.
+
+Douven, I. and Uffink, J. [2003]: ‘The Preface Paradox Revisited’, Erkenntnis, 59, pp. 389–420.
+
+Goodman, N. [1954]: Fact, Fiction, Forecast, London: The Athlone Press.
+
+Howson, C. and Urbach, P. [1993]: Scientific Reasoning, 2nd edn, La Salle, IL: Open Court.
+
+Jaynes, E. T. [1993]: ‘The Well-Posed Problem’, Foundations of Physics, 4, pp. 477–92.
+
+Jeffrey, R. [1983]: The Logic of Decision, 2nd edn, Chicago: University of Chicago Press.
+
+Keynes, J. M. [1921]: A Treatise on Probability, London: Macmillan.
+
+Korb, K. [1992]: ’The Collapse of Collective Defeat: Lessons from the Lottery Paradox’, PSA: Proceedings of the Biennial Meeting of the Philosophy of Science Association, Vol. I, pp. 230–6.
+
+Kyburg, H. [1961]: Probability and the Logic of Rational Belief, Middletown, CT: Wesleyan University Press.
+
+Makinson, D. [1965]: ‘The Paradox of the Preface’, Analysis, 25, pp. 205–7.
+
+Olin, D. [2003]: Paradox, Chesham: Acumen.
+
+Pollock, J. [1995]: Cognitive Carpentry, Cambridge, MA: MIT Press.
+
+Renyi, A. [1970]: Foundations of Probability, Boca Raton, FL: Holden-Day, Inc.
+
+Ryan, S. [1996]: ‘The Epistemic Virtues of Consistency’, Synthese, 109, pp. 121–41.
+
+Segerberg, K. [1980]: ‘A Note on the Logic of Elsewhere’, Theoria, 46, pp. 183–7.
+
+Tarski, A. [1986]: ‘What are Logical Notions?’, History and Philosophy of Logic, 7, pp. 143–54.
+
+Uffink, J. [1995]: ‘Can the Maximum Entropy Principle be Explained as a Consistency Requirement?’, Studies in History and Philosophy of Modern Physics, 26, pp. 223–61.
+
+van Benthem, J. [2002]: ‘Logical Constants: The Variable Fortunes of an Elusive Notion’, in W. Sieg, R. Sommer and C. Talcott (eds), 2002, Reflections on the Foundations of Mathematics (ASL Lecture Notes in Logic 15), Wellesley, MA: AK Peters, Ltd., pp. 426–46.
+
+Williamson, T. [2000]: Knowledge and Its Limits, Oxford: Oxford University Press.

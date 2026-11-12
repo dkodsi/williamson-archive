@@ -1,0 +1,305 @@
+# Non-genuine MacIntosh Logics
+
+Timothy Williamson
+
+Journal of Philosophical Logic 23 (1994): 87–101.
+
+# 0. Introduction
+
+The aim of this paper is to extend recent work on admissible rules in modal logic. In the terminology of Chellas and Segerberg [2], the territory of a rule is the set of modal logics in which it is admissible. The structure of such a territory may be complex, not least because extensions of a logic do not in general preserve the admissibility of rules. It can also happen that two logics $L$ and $L'$ admit a given rule, while $L+L'$, the smallest logic containing both of them, does not; thus the territory of the rule is not closed under $+$. Some results will be given of this kind (see 4.0–4.5 below).
+
+Three rules will be investigated. A modal logic $L$ provides the MacIntosh rule just in case for every formula $A$:
+
+if $\vdash_L A\rightarrow□ A$
+
+then $\vdash_L ◇ A\rightarrow A$.
+
+This is equivalent (in normal modal logics) to the principle: if $A\mathbin{\&}◇\neg A$ is consistent in $L$ then $\neg A\mathbin{\&}◇ A$ is consistent in $L$. $L$ provides the rule of margins just in case for every formula $A$:
+
+if $\vdash_L A\rightarrow□ A$
+
+then $\vdash_L A$ or $\vdash_L\neg A$.
+
+This is equivalent to the principle: if $A$ and $\neg A$ are each consistent in $L$ then $A\mathbin{\&}◇\neg A$ is consistent in $L$. Let $□^0A=A$ and $□^{n+1}A=□□^nA$. $L$ provides the alternative rule of disjunction just in case for all formulas $A_0,\ldots,A_n$:
+
+if $\vdash_L A_0\vee□^{j(1)}A_1\vee\cdots\vee□^{j(n)}A_n$ for all $j(1),\ldots,j(n)\geq 0$
+
+then $\vdash_L A_i$ for some $i$ $(0\leq i\leq n)$.
+
+This is equivalent to the principle: if each $A_i$ is consistent in $L$ then $A_0\mathbin{\&}◇^{j(1)}A_1\mathbin{\&}\cdots\mathbin{\&}◇^{j(n)}A_n$ is consistent in $L$ for some $j(n),\ldots,j(n)$. The relations between the rules are clarified in §1. The main results of the paper state sufficient conditions for a modal logic to provide all three rules.
+
+Semantic methods are used. The main construction is of the stack of a model. If $M!$ is the stack of $M$, every formula falsified at some world in $M$ is falsified at some world in $M!$, and every world in $M!$ has the ancestral of the accessibility relation to every world in $M!$. Hence if a logic $L$ is characterized by a model $M$ whose stack $M!$ is also a model of $L$, $L$ is characterized by a model $M!$ in which every world has the ancestral of accessibility to every world. The proof of the main theorem (2.3) exploits this fact; most of the work involves showing that if $L$ satisfies certain conditions then the stack of the canonical model of $L$ is itself a model of $L$.
+
+Some earlier results about the rule of margins and the alternative rule of disjunction were proved in [5]; [6] sketches a connection between the rule of margins and some issues in philosophy. Chellas and Segerberg introduce the MacIntosh rule in [2], where the origin of the name and the philosophical interest of the rule are explained. This paper answers some questions left open in [2].
+
+Chellas and Segerberg investigate the class of MacIntosh logics, defined as the normal modal logics which provide the MacIntosh rule. ‘Normal’ is understood in this paper as in [3]. Thus a normal logic is closed under the rule of uniform substitution US; K4, for example, can be axiomatized by the addition of the single formula $□ p\rightarrow□□ p$ to the smallest normal logic K, with the same effect as the addition of the schema $□ A\rightarrow□□ A$ (‘$p$’ is always a propositional variable, ‘$A$’ and ‘$B$’ metalogical variables over all formulas). In contrast, [2] does not require normal logics to be closed under US.
+
+K4 is not a MacIntosh logic, for it contains $□ p\rightarrow□□ p$ but not $◇□ p\rightarrow□ p$. But it is proved semantically in [2] that KD and KT, for example, are MacIntosh logics (Chellas and Segerberg ask for syntactic proofs of these results; they are given in [7]). It is also shown that any normal extension of $KB^n$ is a MacIntosh logic, where $B^n$ is the formula $p\rightarrow□◇^n p$ (thus $B^0=p\rightarrow□ p$ and $B^1=B$).
+
+A MacIntosh logic is defined in [2] to be genuine just in case for some formula $A$ it contains $A\rightarrow□ A$ (and therefore $◇ A\rightarrow A$) but neither $□ A$ nor $\neg◇ A$. KB4 is genuine, for it contains $□ p\rightarrow□□ p$ but neither $□□ p$ nor $\neg◇□ p$. $KB^0$ is also genuine, for it contains $p\rightarrow□ p$ but neither $□ p$ nor $\neg◇ p$. But Chellas and Segerberg show that KD and KT are not genuine. They ask whether $KB^n$ is genuine for $n>0$. They also ask a question about the structure of the class of MacIntosh logics: if $L$ and $L'$ are MacIntosh logics, does it follow that $L+L'$ (the smallest normal logic containing both $L$ and $L'$) is also a MacIntosh logic? Both questions will be answered in the negative (for both senses of ‘normal’).
+
+# 1. Relations Between the Rules
+
+PROPOSITION 1.0. The alternative rule of disjunction is equivalent to its special case $n=1$.
+
+Proof. It suffices to show that if $L$ provides the rule for $n=1$ and $n=k$, $L$ provides it for $n=k+1$. Fix $j(1),\ldots,j(k)$. If for all $j(k+1)$ $\vdash_L(A_0\vee□^{j(1)}A_1\vee\cdots\vee□^{j(k)}A_k)\vee□^{j(k+1)}A_{k+1}$, either $\vdash_L A_{k+1}$ or $\vdash_L A_0\vee□^{j(1)}A_1\vee\cdots\vee□^{j(k)}A_k$ by the rule for $n=1$. Thus if the premise of the rule holds for $n=k+1$, either $\vdash_L A_{k+1}$ or the premise of the rule holds for $n=k$.
+
+PROPOSITION 1.1. If a normal logic provides the alternative rule of disjunction, it provides the rule of margins.
+
+Proof. If $\vdash_L A\rightarrow□ A$ then $\vdash_L□^jA\rightarrow□^{j+1}A$ for all $j$, so $\vdash_L\neg A\vee□^jA$ for all $j$, so $\vdash_L\neg A$ or $\vdash_L A$ by the alternative rule.
+
+PROPOSITION 1.2. Not every normal logic providing the rule of margins provides the alternative rule of disjunction.
+
+Proof. See [5].
+
+PROPOSITION 1.3. If a normal logic provides the rule of margins, it is a non-genuine MacIntosh logic.
+
+Proof. Suppose that $\vdash_L A\rightarrow□ A$. If $\vdash_L A$ then $\vdash_L□ A$ and $\vdash_L◇ A\rightarrow A$. If $\vdash_L\neg A$ then $\vdash_L\neg◇ A$ and $\vdash_L◇ A\rightarrow A$.
+
+PROPOSITION 1.4. The smallest normal logic to provide the rule of margins is KD.
+
+Proof. That any normal logic providing the rule extends KD is shown in [5]. For semantic proofs that KD provides the rule see [5] and, in effect, [2], or 2.4 below (since KD provides the Lemmon–Scott rule of disjunction); for a syntactic proof see [7].
+
+PROPOSITION 1.5. Not every non-genuine MacIntosh logic provides the rule of margins.
+
+Proof. $K+□\neg \top$ is a non-genuine MacIntosh logic ($\top$ a tautology). Since it does not extend KD, by 1.4 it does not provide the rule of margins.
+
+PROPOSITION 1.6. The smallest MacIntosh logic is $K+□◇ \top$.
+
+Proof. See [2].
+
+PROPOSITION 1.7. If $L$ is a normal logic, $L+◇ \top$ provides the rule of margins iff $L+□◇ \top$ is a non-genuine MacIntosh logic.
+
+Proof. Write $\vdash$ for $\vdash_{L+□◇ \top}$ and $\vdash_+$ for $\vdash_{L+◇ \top}$. Since $\vdash_+□◇ \top$, $L+◇ \top$ extends $L+□◇ \top$. Left to right: Suppose that $L+◇ \top$ provides the rule of margins and $\vdash A\rightarrow□ A$. Thus $\vdash_+A\rightarrow□ A$, so by the rule either $\vdash_+A$ or $\vdash_+\neg A$. If $\vdash_+A$, $\vdash◇ \top\rightarrow A$, so by normality $\vdash□◇ \top\rightarrow□ A$; since $\vdash□◇ \top$, $\vdash□ A$; moreover, by normality $\vdash◇ A\rightarrow◇ \top$, so $\vdash◇ A\rightarrow A$. Similarly, if $\vdash_+\neg A$, $\vdash\neg◇ A$ and $\vdash◇ A\rightarrow A$. Thus $L+□◇ \top$ is a non-genuine MacIntosh logic. Right to left: Suppose that $L+□◇ \top$ is a non-genuine MacIntosh logic and $\vdash_+A\rightarrow□ A$. Hence $\vdash◇ \top\rightarrow(A\rightarrow□ A)$, so $\vdash(◇ \top\mathbin{\&}A)\rightarrow□(◇ \top\mathbin{\&}A)$. Since $L+□◇ \top$ is non-genuine, either $\vdash□(◇ \top\mathbin{\&}A)$ or $\vdash\neg◇(◇ \top\mathbin{\&}A)$. In the former case, $\vdash_+□(◇ \top\mathbin{\&}A)$, so $\vdash_+◇(◇ \top\mathbin{\&}A)$ because $\vdash_+◇ \top$. Since $L+□◇ \top$ is a MacIntosh logic, $\vdash◇(◇ \top\mathbin{\&}A)\rightarrow(◇ \top\mathbin{\&}A)$, so $\vdash_+◇(◇ \top\mathbin{\&}A)\rightarrow(◇ \top\mathbin{\&}A)$, so $\vdash_+◇ \top\mathbin{\&}A$, so $\vdash_+A$. If $\vdash\neg◇(◇ \top\mathbin{\&}A)$, $\vdash□(◇ \top\rightarrow\neg A)$, so $\vdash□◇ \top\rightarrow□\neg A$, so $\vdash□\neg A$, so $\vdash_+□\neg A$, so $\vdash_+◇\neg A$. Moreover, $\vdash\neg A\rightarrow□\neg A$; since $L+□◇ \top$ is a MacIntosh logic, $\vdash◇\neg A\rightarrow\neg A$, so $\vdash_+◇\neg A\rightarrow\neg A$, so $\vdash_+\neg A$. Thus $L+◇ \top$ provides the rule of margins.
+
+PROPOSITION 1.8. A normal extension of KD provides the rule of margins iff it is a non-genuine MacIntosh logic.
+
+Proof. From 1.7 ($L+◇ \top=L+□◇ \top=L$).
+
+PROPOSITION 1.9. $K+□◇ \top$ is a non-genuine MacIntosh logic.
+
+Proof. By 1.4, $K+◇ \top$ provides the rule of margins. The result follows by 1.7. Chellas and Segerberg subsequently gave a different proof of the non-genuineness of $K+□◇ \top$ (which they call $D\bar D$).
+
+# 2. Sufficient Conditions for the Rules
+
+Chellas and Segerberg prove that $KB^n$ is a MacIntosh logic, and ask whether it is genuine ($n\geq1$). This section gives a negative answer. The strategy is to show that $KBD^n$ provides the alternative rule of disjunction, and then use 1.1 and 1.7 to show that $KB^n$ is non-genuine. $KDB^1$ (= KDB) was already shown in [5] to provide the alternative rule, as were KD, KT, KTB and $KTG1$. Proposition 2.4 generalizes these results (this generalization does not cover all the normal logics proved in [5] to provide the alternative rule; $KD!$ is an exception). It is proved by a simplification of the model-theoretic construction used in [5] (with notation as in [3]); however, the greater generality of the result requires a more complex argument.
+
+The main construction is of the stack of a model. The stack of $\langle W,R,V\rangle$ is a new model $\langle W!,R!,V!\rangle$, defined as follows, where $\mathrm{N}$ is the set of natural numbers, $p$ is any propositional variable and $|i-j|=\max\{i,j\}-\min\{i,j\}$.
+
+$W!=W\times\mathrm{N}.$
+
+$\begin{aligned}
+\langle u,i\rangle R!\langle v,j\rangle\quad&\text{iff either }|i-j|\leq1\text{ and }uRv\\
+&\text{or }i=j=0\qquad(\langle u,i\rangle,\langle v,j\rangle\in W!).
+\end{aligned}$
+
+$V!(p,\langle u,i\rangle)=V(p,u).$
+
+$\langle W!,R!,V!\rangle$ may be thought of as an infinite stack of copies of $\langle W,R,V\rangle$, with a warped copy at the bottom. Above the bottom, the accessibility relation is like $R$, but also projected up towards the next copy above and down towards the next copy below. At the bottom of the stack, the accessibility relation is warped; it holds everywhere. At the bottom, the valuation need coincide with $V$ only on non-modal formulas. Each step up from one copy to the next guarantees the coincidence of the stack’s valuation with $V$ for formulas with one more layer of modal operators. Thus each formula is evaluated as by $V$ from some point up; this is the content of 2.0. Hence any formula true at some point in $\langle W,R,V\rangle$ is true at some point in $\langle W!,R!,V!\rangle$. Now suppose that $R$ is serial; for every $w\in W$ there is an $x\in W$ such that $wRx$. Then any point not at the bottom of the stack has $R!$ to some point in the copy below, and so has the ancestral of $R!$ to some point in the bottom copy, and therefore to every point in the bottom copy. Similarly, suppose that $R$ is backward-serial; for every $w\in W$ there is an $x\in W$ such that $xRw$. Then every point in the bottom copy has the ancestral of $R!$ to any point in the stack. Thus if $R$ is both serial and backward-serial, every point in the stack has the ancestral of $R!$ to every point in the stack. In this case, suppose that the formula $A$ holds somewhere in the original model, as does the formula $B$. By 2.0, $A$ holds at some point in the stack and $B$ holds at some point in the stack. Since the former point has the ancestral of $R!$ to the latter, $A\mathbin{\&}◇^iB$ holds at the former point for some $i$. This property of the stack is crucial in the proof of 2.3.
+
+Consider the case in which $\langle W,R,V\rangle$ is the canonical model of a logic $L$, and $R$ is serial and backward-serial. If $\langle W!,R!,V!\rangle$ can be shown to be a model of $L$, it will have been shown that if $A$ and $B$ are each consistent in $L$ then so is $A\mathbin{\&}◇^iB$ for some $i$. This is in effect what is needed to show that $L$ provides the alternative rule of disjunction, from which it will follow by 1.1 and 1.3 that $L$ provides the rule of margins and is a non-genuine MacIntosh logic. $R$ will be serial if $L$ is an extension of KD. $R$ will be backward-serial if $L$ provides denecessitation, in the sense that for every formula $A$, $\vdash_L□ A$ implies $\vdash_L A$. Thus the results below concern extensions of KD which provide denecessitation. It is also required that the stack of the canonical model of $L$ be a model of $L$. Hence the interest is in properties of $R$ that are preserved by $R!$. Such a property is $m,n,j,k$-incestuality for $m+j\leq n+k$, where $R$ is $m,n,j,k$-incestual just in case for all $w,x$ and $y$, if $wR^mx$ and $wR^jy$ then, for some $z$, $xR^nz$ and $yR^kz$; this is the content of 2.1. Now $m,n,j,k$-incestuality is known to be the semantic condition corresponding in the usual way to the formula $G^{m,n,j,k}$, $◇^m□^np\rightarrow□^j◇^kp$. The alternative rule of disjunction will therefore be established for extensions of KD which are axiomatized by such formulas and provide denecessitation. $KDB^n$ will emerge as a special case.
+
+The modal depth $\#A$ of a formula $A$ is defined as usual: $\#p=0$ for each propositional variable $p$; $\#\neg A=\#A$; $\#(A\mathbin{\&}B)=\max\{\#A,\#B\}$; $\#□ A=\#A+1$.
+
+PROPOSITION 2.0. If $\langle W!,R!,V!\rangle$ is the stack of $\langle W,R,V\rangle$ and $\#A\leq i$, then $V!(A,\langle u,i\rangle)=V(A,u)$.
+
+Proof. By induction on the complexity of $A$. The definition of $V!$ gives the basis. The cases of $\neg$ and $\mathbin{\&}$ are routine. Assume the claim is true for $A$, and $\#□ A\leq i$. It suffices to show that $V!(□ A,\langle u,i\rangle)=0$ iff $V(□ A,u)=0$. Suppose $V!(□ A,\langle u,i\rangle)=0$. Then for some $v$ and $j$, $\langle u,i\rangle R!\langle v,j\rangle$ and $V!(A,\langle v,j\rangle)=0$. Since $\#A+1\leq i$, $1\leq i$. Thus, by definition of $R!$, $|i-j|\leq1$ and $uRv$. Hence $\#A\leq j$, so by the induction hypothesis $V(A,v)=V!(A,\langle v,j\rangle)=0$. Since $uRv$, $V(□ A,u)=0$. Conversely, suppose $V(□ A,u)=0$. Then for some $v$, $uRv$ and $V(A,v)=0$. Now $\#A<i$, so by hypothesis $V!(A,\langle v,i\rangle)=V(A,v)$. Moreover, $\langle u,i\rangle R!\langle v,i\rangle$ by definition of $R!$. Thus $V!(□ A,\langle u,i\rangle)=0$. So $V!(□ A,\langle u,i\rangle)=V(□ A,u)$.
+
+PROPOSITION 2.1. If $\langle W!,R!,V!\rangle$ is the stack of $\langle W,R,V\rangle$, $m+j\leq n+k$ and $R$ is serial, backward-serial and $m,n,j,k$-incestual, then $R!$ is $m,n,j,k$-incestual.
+
+Proof. Suppose that $\langle w,g\rangle R!^m\langle x,h\rangle$ and $\langle w,g\rangle R!^j\langle y,i\rangle$. There are three cases.
+
+Case (a): $wR^mx$ and $wR^jy$. Since $R$ is $m,n,j,k$-incestual, for some $z$, $xR^nz$ and $yR^kz$. Thus there are $x_0,\ldots,x_n$ and $y_0,\ldots,y_k$ such that $x=x_0Rx_1R\ldots Rx_n=z$ and $y=y_0Ry_1R\ldots Ry_k=z$. Assume $h\leq i$ (the argument is parallel if $i\leq h$). By definition of $R!$, $g\leq h+m$ (because $\langle w,g\rangle R!^m\langle x,h\rangle$) and $i\leq g+j$ (because $\langle w,g\rangle R!^j\langle y,i\rangle$), so $g+i\leq h+g+m+j$, so $i-h\leq m+j\leq n+k$. If $n\leq i-h$, put $h_f=h+f$ $(0\leq f\leq n)$, $i_f=i-f$ $(0\leq f\leq i-h-n)$, $i_f=h+n$ $(i-h-n\leq f\leq k)$. If $n>i-h$, put $h_f=h+f$ $(0\leq f\leq i-h)$, $h_f=i$ $(i-h\leq f\leq n)$, $i_f=i$ $(0\leq f\leq k)$. In either case, $h_n=i_k$, $|h_f-h_{f+1}|\leq1$ $(0\leq f<n)$ and $|i_f-i_{f+1}|\leq1$ $(0\leq f<k)$. Thus
+
+$\langle x,h\rangle=\langle x_0,h_0\rangle R!\langle x_1,h_1\rangle R!\ldots R!\langle x_n,h_n\rangle=\langle z,h_n\rangle$
+
+and
+
+$\langle y,i\rangle=\langle y_0,i_0\rangle R!\langle y_1,i_1\rangle R!\ldots R!\langle y_k,i_k\rangle=\langle z,h_n\rangle.$
+
+Hence $\langle x,h\rangle R!^n\langle x,h_n\rangle$ and $\langle y,i\rangle R!^k\langle z,h_n\rangle$.
+
+Case (b): Not $wR^mx$. But $\langle w,g\rangle R!^m\langle x,h\rangle$, so by definition of $R!$ an $R!$-chain of length $m$ linking $\langle w,g\rangle$ to $\langle x,h\rangle$ must be of the form $\langle w,g\rangle R!\ldots R!\langle w',g-1\rangle R!\ldots R!\langle w'',g-2\rangle R!\ldots R!\langle u,0\rangle R!\langle v,0\rangle R!\ldots R!\langle x'',h-2\rangle R!\ldots R!\langle x',h-1\rangle R!\ldots R!\langle x,h\rangle$, and so be of length at least $g+h+1$. Thus $g+h+1\leq m$, so $g+j+h+1\leq m+j\leq n+k$. As noted in case (a), $i\leq g+j$, so $i+h+1\leq n+k$. There are three subcases.
+
+Subcase (b1): $n\leq h$. By hypothesis, $R$ is serial. Thus there are $x_0,\ldots,x_n$ such that $x=x_0Rx_1R\ldots Rx_n$. Thus
+
+$\langle x_0,h\rangle R!\langle x_1,h-1\rangle R!\ldots R!\langle x_n,h-n\rangle,$
+
+so $\langle x,h\rangle R!^n\langle x_n,h-n\rangle$. It suffices to show that $\langle y,i\rangle R!^k\langle x_n,h-n\rangle$. $R$ is also serial, so there are $y_0,\ldots,y_i$ such that $y=y_0Ry_1R\ldots Ry_i$. Thus
+
+$\langle y_0,i\rangle R!\langle y_1,i-1\rangle R!\ldots R!\langle y_i,0\rangle,$
+
+so $\langle y,i\rangle R!^i\langle y_i,0\rangle$. By hypothesis, $R$ is backward-serial, so there are $z_0,\ldots,z_{h-n}$ such that $z_0Rz_1R\ldots Rz_{h-n}=x_n$. Thus
+
+$\langle z_0,0\rangle R!\langle z_1,1\rangle R!\ldots R!\langle x_{h-n},h-n\rangle,$
+
+so $\langle z_0,0\rangle R!^{h-n}\langle x_n,h-n\rangle$. Moreover, $\langle y_i,0\rangle R!\langle z_0,0\rangle$. Since $i+h+1\leq n+k$, $h-n+i+1\leq k$; since $\langle z_0,0\rangle R!\langle z_0,0\rangle$, $\langle z_0,0\rangle R!^{k-(h-n+i+1)}\langle z_0,0\rangle$. Putting the pieces together:
+
+$\langle y,i\rangle R!^i\langle y_i,0\rangle R!\langle z_0,0\rangle R!^{k-(h-n+i+1)}\langle z_0,0\rangle R!^{h-n}\langle x_n,h-n\rangle.$
+
+Thus $\langle y,i\rangle R!^k\langle x_n,h-n\rangle$, as required.
+
+Subcase (b2): $k\leq i$. parallel to (b1).
+
+Subcase (b3): $h<n$, $i<k$. By arguments like those in (b1), there are $x_n$ and $y_i$ such that $\langle x,h\rangle R!^n\langle x_n,0\rangle$ and
+
+$\langle y,i\rangle R!^i\langle y_i,0\rangle R!^{k-i}\langle x_n,0\rangle,$
+
+so $\langle y,i\rangle R!^k\langle x_n,0\rangle$.
+
+Case (c): Not $wR^jy$. Parallel to (b).
+
+PROPOSITION 2.2. $L$ provides denecessitation iff the canonical model of $L$ is backward-serial.
+
+Proof. A simple variation on the proof of Theorem 3.4 in [4].
+
+THEOREM 2.3. Let $X$ be a set of wff such that if $A\in X$, $A=G^{m,n,j,k}$ for some $m,n,j,k$, where $m+j\leq n+k$, and suppose that $KD+X$ provides denecessitation. Then if
+
+$\vdash_{KD+X}A_0\vee□^{g(1)}A_1\vee\cdots\vee□^{g(h)}A_h$
+
+for some $g(1),\ldots,g(h)$ such that $\#A_0+\#A_1<g(1),\ldots,\#A_0+\#A_h<g(h)$, then $\vdash_{KD+X}A_i$ for some $i$ $(0\leq i\leq h)$.
+
+Proof. Let $\langle W,R,V\rangle$ be the canonical model of $KD+X$, and $\langle W!,R!,V!\rangle$ the stack of $\langle W,R,V\rangle$. Since $KD+X$ extends KD, $R$ is serial. Since $KD+X$ admits denecessitation, $R$ is backward-serial by 2.2. For $G^{m,n,j,k}\in X$, $R$ is $m,n,j,k$-incestual by Theorem 4.2 of [4], so $R!$ is $m,n,j,k$-incestual by 2.1 above, so $\langle W!,R!,V!\rangle$ is a model of $G^{m,n,j,k}$ by Theorem 4.1 of [4]. Thus $\langle W!,R!,V!\rangle$ is a model of $KD+X$. Now suppose that $\vdash_{KD+X}A_i$ for no $i$ $(0\leq i\leq h)$. Thus for $0\leq i\leq h$ there is a $w_i\in W$ such that $V(A_i,w_i)=0$. Let $f=\#A_0$. It suffices to show that
+
+$V!(A_0\vee□^{g(1)}A_1\vee\cdots\vee□^{g(h)}A_h,\langle w_0,f\rangle)=0,$
+
+for then that disjunction is not a theorem of $KD+X$. Now
+
+$V!(A_0,\langle w_0,f\rangle)=V(A_0,w_0)=0$
+
+by 2.0. Similarly, since $\#A_i\leq g(i)-f-1$ by the hypothesis of the theorem.
+
+$V!(A_i,\langle w_i,g(i)-f-1\rangle)=V(A_i,w_i)=0\quad(1\leq i\leq h).$
+
+Thus it suffices to show that $\langle w_0,f\rangle R!^{g(i)}\langle w_i,g(i)-f-1\rangle$, for then
+
+$V!(□^{g(i)}A_i,\langle w_0,f\rangle)=0\quad(1\leq i\leq h).$
+
+Since $R$ is serial, $w_0R^fx$ for some $x$, so $\langle w_0,f\rangle R!^f\langle x,0\rangle$. Since $R$ is backward-serial, $yR^{g(i)-f-1}w_i$ for some $y$, so $\langle y,0\rangle R!^{g(i)-f-1}\langle w_i,g(i)-f-1\rangle$. But $\langle x,0\rangle R!\langle y,0\rangle$. Thus
+
+$\langle w_0,f\rangle R!^f\langle x,0\rangle R!\langle y,0\rangle R!^{g(i)-f-1}\langle w_i,g(i)-f-1\rangle.$
+
+Hence $\langle w_0,f\rangle R!^{g(i)}\langle w_i,g(i)-f-1\rangle$, as required.
+
+COROLLARY 2.4. Under the conditions of Theorem 2.3, $KD+X$ is a non-genuine MacIntosh logic and provides the alternative rule of disjunction and the rule of margins.
+
+Proof. That $KD+X$ provides the alternative rule of disjunction is immediate from 2.3. By 1.1, it provides the rule of margins. By 1.8, it is a non-genuine MacIntosh logic.
+
+COROLLARY 2.5. Let $X$ be a set of wff such that if $A\in X$, $A=G^{m,n,j,k}$ for some $m,n,j,k$, where $m+j\leq n+k$, and suppose that $G^{0,0,0,k}\in X$ for some $k\geq1$. Then $K+X$ is a non-genuine MacIntosh logic and provides the alternative rule of disjunction and the rule of margins.
+
+Proof. $G^{0,0,0,k}=p\rightarrow◇^kp$. Thus $\vdash_{KD+X}◇ \top$, so $K+X=KD+X$. Moreover $\vdash_{K+X}□^kA\rightarrow A$; thus $K+X$ provides denecessitation, for if $\vdash_{K+X}□ A$, $\vdash_{K+X}□^kA$, so $\vdash_{K+X}A$. The result follows by 2.4.
+
+COROLLARY 2.6. Let $X$ be a set of wff such that if $A\in X$, $A=G^{m,n,j,k}$ for some $m,n,j,k$, where $m+j\leq n+k$. Then $KT+X$ is a non-genuine MacIntosh logic and provides the alternative rule of disjunction and the rule of margins.
+
+Proof. From 2.5.
+
+COROLLARY 2.7. $KDB^k$ provides the rule of margins $(k>0)$.
+
+Proof. $□ p\rightarrow◇ p$ is $G^{0,1,0,1}$ and $p\rightarrow□◇^kp$ is $G^{0,0,1,k}$. Together they yield $p\rightarrow◇^{k+1}p$, i.e. $G^{0,0,0,k+1}$. Thus $KDB^k=K+\{G^{0,1,0,1},G^{0,0,1,k},G^{0,0,0,k+1}\}$. By 2.5, $KDB^k$ provides the rule of margins.
+
+COROLLARY 2.8. $KB^k$ is a non-genuine MacIntosh logic $(k>0)$.
+
+Proof. By 1.7, $KB^k+□◇ \top$ is a non-genuine MacIntosh logic iff $KBD^k$ provides the rule of margins, as it does by 2.7. But $KB^k+□◇ \top=KB^k$, for $□◇^k\top$, and so $□◇ \top$, is a theorem of $KB^k$.
+
+# 3. Necessary Conditions for the Rules
+
+Why are the conditions of Theorem 2.3 needed? Proposition 3.1 below shows that the inequality $m+j\leq n+k$ is “the best possible” in the sense that for any $m,n,j,k$ not satisfying the inequality, some normal logic satisfies the other conditions of Theorem 2.3 but not its conclusion. To see the point of the inequality, recall that $G^{m,n,j,k}$ corresponds to $m,n,j,k$-incestuality: if $wR^mx$ and $wR^jy$ then, for some $z$, $xR^nz$ and $yR^kz$. If $R$ is symmetric, one can think of the minimum number of steps of $R$ needed to get from $x$ to $y$ as the distance between them. Thus if the distance between $x$ and $y$ is $m+j$, there is a $w$ such that $wR^mx$ and $wR^jy$; but if $yR^nz$ and $yR^kz$, the distance between $x$ and $y$ is at most $n+k$, so $m+j\leq n+k$. So if $n+k<m+j$, $m,n,j,k$-incestuality limits the maximum distance between points (in symmetric models) to $n+k$. Thus if every point within a distance $n+k$ has a certain property, so has every point within a distance $n+k+1$, which causes violations of the rule of margins. These remarks constitute a sketchy semantic equivalent of the proofs of 3.0 and 3.1. The need for the denecessitation condition in 2.3 is clear from 3.4. Proposition 3.6 gives an example of a logic meeting all the conditions for the proof of Theorem 2.3 except for denecessitation that does not provide the alternative rule of disjunction (note that the frame used to prove 3.6 is not backward-serial).
+
+PROPOSITION 3.0. If $L$ is a consistent normal logic and $\vdash_L□^np\rightarrow□^jp$ where $n<j$, $L$ provides neither the rule of margins nor the alternative rule of disjunction.
+
+Proof. Let ${}^{*}(A)=A\mathbin{\&}□ A\mathbin{\&}\cdots\mathbin{\&}□^{j-1}A$. Since $\vdash_L□^np\rightarrow□^jp$ and $n<j$, $\vdash_L{}^{*}(p)\rightarrow□^jp$. Since $L$ is normal, $\vdash_L({}^{*}(p)\mathbin{\&}□^jp)\rightarrow□{}^{*}(p)$. Thus $\vdash_L{}^{*}(p)\rightarrow□{}^{*}(p)$. If $L$ provides the rule of margins, either $\vdash_L{}^{*}(p)$ or $\vdash_L\neg{}^{*}(p)$. If $\vdash_L{}^{*}(p)$, $\vdash_Lp$ and $L$ is inconsistent by US. If $\vdash_L\neg{}^{*}(p)$, $\vdash_L\neg{}^{*}(\top)$ by US; but $\vdash_L{}^{*}(\top)$ by normality, and $L$ is again inconsistent. Thus $L$ does not provide the rule of margins. By 1.1, $L$ does not provide the alternative rule of disjunction.
+
+PROPOSITION 3.1. If $n+k<m+j$, no consistent normal extension of $KBG^{m,n,j,k}$ provides either the rule of margins or the alternative rule of disjunction.
+
+Proof. Let $L$ be a normal extension of $KB+◇^m□^np\rightarrow□^j◇^kp$. Then $\vdash_L□^m◇^m□^np\rightarrow□^{m+j}◇^kp$. Since $L$ extends KB, $\vdash_Lp\rightarrow□^m◇^mp$; by US, $\vdash_L□^np\rightarrow□^m◇^m□^np$, so $\vdash_L□^np\rightarrow□^{m+j}◇^kp$. By US, $\vdash_L□^{n+k}p\rightarrow□^{m+j}◇^k□^kp$. Since $L$ extends KB, $\vdash_L◇^k□^kp\rightarrow p$ and therefore $\vdash_L□^{m+j}◇^k□^kp\rightarrow□^{m+j}p$. Thus $\vdash_L□^{n+k}p\rightarrow□^{m+j}p$. Thus if $L$ is consistent, by 3.0 it provides neither rule.
+
+PROPOSITION 3.2. If $n+k<m+j$, any consistent normal extension of $KDBG^{m,n,j,k}$ is a genuine MacIntosh logic.
+
+Proof. Such a logic is MacIntosh because it is a normal extension of KB. Were it non-genuine, by 1.8 it would provide the rule of margins, contrary to 3.1.
+
+PROPOSITION 3.3. If $n+k<m+j$, $KTBG^{m,n,j,k}$ provides neither the rule of margins nor the alternative rule of disjunction.
+
+Proof. The system is consistent because all its theorems become theorems of the propositional calculus on deletion of all occurrences of $□$ and $◇$. The result follows by 3.1.
+
+PROPOSITION 3.4. If $L$ provides the rule of margins or the alternative rule of disjunction, $L$ provides denecessitation.
+
+Proof. If $\vdash_L□ A$, $\vdash_LA\rightarrow□ A$. If $L$ provides either rule, $\vdash_LA$ or $\vdash_L\neg A$. If $\vdash_L\neg A$, $\vdash_L□\neg A$, so $\vdash_L□(A\mathbin{\&}\neg A)$; but by 1.4 $L$ extends KD, so $L$ is inconsistent, so $\vdash_LA$.
+
+PROPOSITION 3.5. If a MacIntosh logic extends KD, it provides denecessitation.
+
+Proof. If $\vdash_L□ A$, $\vdash_LA\rightarrow□ A$, so $\vdash_L◇ A\rightarrow A$ because $L$ is a MacIntosh logic. But $\vdash_L◇ A$ because $L$ extends KD, so $\vdash_LA$.
+
+PROPOSITION 3.6. $KDG^{2,2,2,2}$ provides none of: the MacIntosh rule, the rule of margins, the alternative rule of disjunction.
+
+Proof. Call the logic $L$. Since $L$ is normal, $\vdash_L□^2◇^2\neg p\vee□^2◇^2p$, so $\vdash_L□(□◇^2\neg p\vee□◇^2p)$. If $L$ provides one of the rules, it provides denecessitation by 3.4 and 3.5. Then $\vdash_L□◇^2\neg p\vee□◇^2p$. Consider this frame:
+
+![](assets/frame-99.png)
+
+The frame is clearly serial and $2,2,2,2$-incestual, so $L$ is valid on it. However, if $V(p,x'')=1$ and $V(p,y'')=0$, $V(◇^2\neg p,x)=V(◇^2p,y)=0$, so $V(□◇^2\neg p,w)=V(□◇^2p,w)=0$. Thus $□◇^2\neg p\vee□◇^2p$ is not valid on the frame, and so is not a theorem of $L$. Thus $L$ provides none of the rules.
+
+# 4. Non-Closure of Territories Under $+$
+
+The final topic is Chellas and Segerberg’s second question: if $L$ and $L'$ are MacIntosh logics, does it follow that $L+L'$ is a MacIntosh logic too? Here $L+L'$ is defined as the intersection of all normal logics containing both $L$ and $L'$. It turns out that $KD!$ ($KD+◇ p\rightarrow□ p$) and $KD4_c$ ($KD+□^2p\rightarrow□ p$) are MacIntosh logics, but that their sum $KD!4_c$ is not. Moreover, $KD!$ and $KD4_c$ both provide the alternative rule of disjunction and the rule of margins, while their sum provides neither. Thus MacIntosh logics do not form a lattice under $+$ and $\cap$; similarly for the logics providing the alternative rule of disjunction, or the rule of margins.
+
+PROPOSITION 4.0. $KD!$ provides the alternative rule of disjunction and the rule of margins.
+
+Proof. See [5].
+
+PROPOSITION 4.1. $KD!$ is a non-genuine MacIntosh logic.
+
+Proof. By 1.8 and 4.0.
+
+PROPOSITION 4.2. $KD4_c$ is sound and complete with respect to dense serial backward-serial models.
+
+Proof. By Theorems 4.1 and 4.2 of [4], $KD4_c$ is sound and complete with respect to dense serial models. Thus it suffices to show that if a dense serial model invalidates $A$, so does a dense serial backward-serial model. Let $\langle W,R,V\rangle$ be dense and serial. Define a new model $\langle W^*,R^*,V^*\rangle$ as follows (where $Q^+$ is the set of non-negative rationals):
+
+$W^*=W\times Q^+.$
+
+$\begin{aligned}
+\langle u,r\rangle R^*\langle v,s\rangle\quad&\text{iff either }r=s=0\text{ and }uRv\\
+&\text{or both }u=v\text{ and }r>s\qquad(\langle u,r\rangle,\langle v,s\rangle\in W^*).
+\end{aligned}$
+
+$V^*(p,\langle u,r\rangle)=V(p,u)\quad(p\text{ a propositional variable}).$
+
+To see that $R^*$ is dense, suppose that $\langle u,r\rangle R^*\langle v,s\rangle$; if $r=s=0$ and $uRv$, then $uRwRv$ for some $w$ because $R$ is dense, so
+
+$\langle u,0\rangle R^*\langle w,0\rangle R^*\langle v,0\rangle.$
+
+If $u=v$ and $r>s$,
+
+$\langle u,r\rangle R^*\langle u,(r+s)/2\rangle R^*\langle v,s\rangle.$
+
+To see that $R^*$ is serial, consider $\langle u,r\rangle$; if $r>0$, $\langle u,r\rangle R^*\langle u,0\rangle$; if $r=0$, $uRv$ for some $v$ because $R$ is serial, so $\langle u,0\rangle R^*\langle v,0\rangle$. $R^*$ is backward-serial because $\langle u,r+1\rangle R^*\langle u,r\rangle$. It is routine to show by induction on the complexity of $A$ that $V^*(A,\langle u,0\rangle)=V(A,u)$. Thus if $\langle W,R,V\rangle$ invalidates $A$, so does $\langle W^*,R^*,V^*\rangle$.
+
+PROPOSITION 4.3. $KD4_c$ provides denecessitation.
+
+Proof. By 4.2 and the proof of Theorem 3.4 in [4].
+
+PROPOSITION 4.4. $KD4_c$ is a non-genuine MacIntosh logic and provides the alternative rule of disjunction and the rule of margins.
+
+Proof. By 4.3, $KD!4_c=KDG^{0,2,1,0}$ meets the conditions of 2.4.
+
+PROPOSITION 4.5. $KD!4_c$ provides none of: the MacIntosh rule, the rule of margins, the alternative rule of disjunction.
+
+Proof. $\vdash_{KD4_c}◇ p\rightarrow◇◇ p$, $\vdash_{KD}□ p\rightarrow◇ p$ and $\vdash_{KD!}◇◇ p\rightarrow□□ p$, so $\vdash_{KD!4_c}□ p\rightarrow□□ p$, so $\vdash_{KD!4_c}(p\mathbin{\&}□ p)\rightarrow□(p\mathbin{\&}□ p)$. Thus if $KD!4_c$ is a MacIntosh logic, $\vdash_{KD!4_c}◇(p\mathbin{\&}□ p)\rightarrow(p\mathbin{\&}□ p)$. However, consider this frame:
+
+![](assets/frame-101.png)
+
+Since the frame is dense, serial and functional, $KD!4_c$ is valid on it. However, if $V(p,w)=0$ and $V(p,x)=1$, $V(p\mathbin{\&}□ p,w)=0$ and $V(p\mathbin{\&}□ p,x)=1$, so $V(◇(p\mathbin{\&}□ p),w)=1$. Hence $◇(p\mathbin{\&}□ p)\rightarrow(p\mathbin{\&}□ p)$ is not valid on the frame, and so is not a theorem of $KD!4_c$. Thus $KD!4_c$ is not a MacIntosh logic. The result follows by 1.1 and 1.8.
+
+# Bibliography
+
+[1] Chellas, B. F., Modal Logic: An Introduction (Cambridge: Cambridge University Press, 1980).
+
+[2] Chellas, B. F. and Segerberg, K., ‘Modal logics with the MacIntosh rule’, Journal of Philosophical Logic 23 (1994): 67–86.
+
+[3] Hughes, G. E. and Cresswell, M. J., A Companion to Modal Logic (London: Methuen, 1984).
+
+[4] Lemmon, E. J., with Scott, D., ed. Segerberg, K., The “Lemmon Notes”: An Introduction to Modal Logic (Oxford: Blackwell, 1977).
+
+[5] Williamson, T., ‘An alternative rule of disjunction in modal logic’, Notre Dame Journal of Formal Logic 33 (1992): 89–100.
+
+[6] Williamson, T., ‘Inexact knowledge’, Mind 101 (1992): 217–42.
+
+[7] Williamson, T., ‘Some admissible rules in non-normal modal logics’, Notre Dame Journal of Formal Logic 34 (1993) forthcoming.

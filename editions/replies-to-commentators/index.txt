@@ -1,0 +1,166 @@
+# Replies to Commentators
+
+Timothy Williamson
+
+Philosophical Issues 8, Truth (1997): 255–265.
+
+# 1 Reply to Horgan
+
+Terry Horgan argues that the epistemic view of vagueness implies that some facts about supervenience have no imaginable explanation, a consequence which he rejects as intolerably mysterious. On closer inspection, his objection turns out to threaten the epistemic view only to the extent to which it threatens the view that there are semantic facts. Not only epistemicists should reject his assumptions.
+
+It is intuitively plausible that there is no semantic difference without a non-semantic difference. If two possible situations are the same in all non-semantic respects, then they are the same in all semantic respects too.1 Why the supervenience claim should be so plausible is by no means obvious. But it is plausible; I will grant its truth. On which aspects of the non-semantic does the semantic depend? In [1994] I proposed the following as a first approximation (p. 206):
+
+#
+If an expression $e$ is used in a possible situation $s$ in the same way as an expression $f$ is used in a possible situation $t$, then $e$ has the same meaning in $s$ as $f$ has in $t$.
+
+I noted that # needs refinement, for instance to take account of the environment as a constitutive factor in meaning and to clarify the notion ‘used in the same way’; ignore such refinements for present purposes. Let an expression $e$ be used in a way W with meaning M in our present situation; W is maximally specific and specifiable in non-semantic terms. Then # implies this:
+
+#a
+Necessarily, any expression used in way $W$ has meaning $M$.
+
+What kind of meaning does the epistemic view attribute to vague expressions? Horgan’s assumption that the postulated meanings embody sharp boundaries is over-simple, for on the epistemic view a vague expression can express different boundaries in different contexts of utterance while its linguistic meaning remains fixed; ‘here’ is an obvious example (Williamson [1994]: 215).2 The number of grains needed for ‘heap’ to apply may likewise vary with context. However, this misinterpretation is not the focus of Horgan’s argument. For simplicity, treat the relevant contextual features as part of the way in which an expression is used on that occasion. On that understanding, the epistemic view postulates truths of this form:
+
+#b
+Necessarily, any expression used in vague way $W$ has sharp boundary $B$.
+
+Horgan objects that we cannot imagine what could explain #b; either it has no explanation, or its explanation is unimaginable. Regarding both alternatives as repugnant to good sense, he denies the postulated sharp boundary.
+
+To say that an expression $e$ has a sharp boundary is just to say picturesquely that $e$ is true or false of each thing.3 Thus #b in effect conjoins many more specific supervenience theses of these two forms:
+
+#c
+Necessarily, any expression used in vague way $W$ is true of everything of type $T$.
+#d
+Necessarily, any expression used in vague way $W$ is true of nothing of type $T$.
+
+‘Type $T$’ summarizes the precisely described non-semantic features relevant to expressions used in way $W$: for example, the precisely described state of a candidate bald man’s scalp. To explain #b is to explain a vast conjunction whose conjuncts are the appropriate instances of #c and #d. What Horgan finds puzzling is less the conjunction as a whole than some particular conjuncts of it: those for which type T constitutes a borderline case. For definiteness, we may therefore assume that the explanandum is such a borderline instance of #c (#d raises exactly parallel problems).
+
+Many other instances of #c are usually taken to be unproblematic: those for which type $T$ constitutes a clear case. For example, $W$ is the way in which we actually use ‘heap’, and objects of type $T$ are paradigmatic heaps. Such clear instances of #c are common ground between the epistemic view and most of its rivals. What explains the clear instances of #c? Horgan gives no hint of an answer. If every sentence to which 90% of speakers of the language assent were true, then perhaps we could provide such an explanation; but the generalization is obviously false. What law of semantics could do the explanatory work? Horgan’s considerations are quite insensitive to the difference between the borderline instances of #c and the clear ones. Any doubt which they cast on the former they cast on the latter too. Suppose that an unknown law of semantics does explain the clear instances of #c; why think that it could not also explain borderline instances of #c, unless one already thinks on independent grounds that they are not true?4
+
+Horgan’s argument does not tell specifically against the epistemic view of vagueness; it tells quite generally against any reasonable version of the view that there are semantic facts which supervene on non-semantic facts.5 Indirectly, it tells against the view that there are any semantic facts. Indeed, Horgan’s own view of vagueness in his [1995] implies that really there are no semantic facts.
+
+How strong is Horgan’s argument from supervenience? Why shouldn’t the regress of explanations end in instances of #c and #d? On Horgan’s view, we should expect the regress to end in a tightly knit bundle of fundamental laws, in which such instances have no place. The fundamental laws will be framed in a restricted theoretical vocabulary. How can such laws explain anything framed in a less restricted vocabulary? Bridge laws will be needed to connect the two vocabularies. Instances of #c and #d are embryonic bridge laws, connecting the non-semantic notion of way $W$ with the semantic notions of truth and falsity. The variety of ordinary notions absent from the postulated fundamental laws implies a corresponding variety of bridge laws.6 To deem such a variety implausible, and yet to demand explanations of ordinary truths, is to prejudge the issue in favour of Horgan’s eliminativist metaphysics. Anyone inclined to think that there are semantic facts has reason to reject Horgan’s explanatory demands.
+
+Can we know bridge laws of the forms #c and #d? If we could, and we could also in principle survey the way in which a vague expression is used, then we could in principle find out whether it applied to things of a given type. The trouble is that #c and #d employ a vague notion of truth for linguistic items, ‘true of’. It is vague whether ‘heap’ is true of a borderline candidate. This notion satisfies the principle that if a predicate $e$ refers to a property $\pi$, then $e$ is true of a thing $x$ if and only if $x$ has $\pi$; but ‘refers’ is vague too. We can know that ‘is a heap’ refers to a property $\pi$ only under a vague description of $\pi$, such as ‘heaphood’. That will not help us to know an instance of #c or #d in a borderline case. The obstacle to knowing such an instance is simply a special case of the general obstacle to vague knowledge in a borderline case (Williamson [1994]: 230-234). The appeal to use is an attempt to circumvent first-order ignorance by semantic ascent; it is blocked by second-order vagueness.
+
+# 2 Reply to Gomez-Torrente
+
+Mario Gomez-Torrente raises three difficulties for my epistemic account. I deal with each in turn.
+
+## I. Omniscient Speakers.
+
+If vagueness does not essentially depend on ignorance, then it should be harmless to imagine a speaker who is omniscient in all relevant vague respects. I argued that ‘The hypothesis of an omniscient speaker gives us a [… ] way to appreciate the difficulty of thinking through a non-epistemic view of vagueness’ ([1994]: 199). The thought experiment was not presented or intended as a knockdown refutation of the non-epistemic view; nevertheless, I continue to think that it has some weight. It involves continually asking a series of cooperative non-colluding omniscient speakers ‘Is this a heap?’ as one removes grain after grain. Each time, they can answer ‘Yes’, ‘No’ or anything else. In the relevant version of the experiment, they are instructed to be conservative, i.e. to use any discretion they have to minimize the number of times they answer ‘Yes’. I argued that they would all stop answering ‘Yes’ at the same point, since otherwise at least one of them would not have been conservative. Even if the point at which they all stop answering ‘Yes’ is not the point at which they all start answering ‘No’, it is just the kind of hidden boundary (perhaps a higher-order boundary) which the non-epistemic view will not countenance.
+
+Gomez-Torrente objects that the term ‘conservative’ is itself vague: ‘if there are no hidden boundaries of conservativeness, they [the omniscient speakers] may set the boundaries at many different points, within some limits’. If so, they may use their discretion to set the boundaries of ‘conservative’ in a way which does not minimize the number of times they answer ‘Yes’. Would that violate the instruction ‘Be conservative’? Gomez-Torrente argues that it would not, on the grounds that to make the instruction self-applicable is to make it unintelligible: ‘they cannot be expected, any more than we can, to understand an instruction in a particular way before they have understood it in some way’. But to know the linguistic meaning of an expression is not to set its boundary on a particular occasion; a sentence with a given vague meaning can express different propositions on different occasions. The omniscient speakers certainly know the linguistic meaning of the sentence ‘Use any discretion you have to minimize the number of times you answer “Yes”’. They still have to set boundaries to ‘discretion’, but if ‘they may set the boundaries at many different points, within some limits’, then to do so in a way which would not minimize the number of times they answer ‘Yes’ would clearly violate the instruction, given the linguistic meaning of the sentence by which it was expressed. Thus the challenge to think through a coherent non-epistemic view of the thought experiment has not been met.
+
+If one prefers, one can dispense with notions like ‘conservative’ in an alternative version of the thought experiment. Let the omniscient speakers use their discretion as they wish. Suppose that they do not all stop answering ‘Yes’ at the same point. Nevertheless, on reasonable non-epistemic views all omniscient speakers will answer ‘Yes’ at some early stages when a paradigm heap is present, however many one asks. Consider the first point at which some omniscient speakers stop answering ‘Yes’, as the number of speakers asked goes to infinity. It is just the kind of hidden boundary (perhaps a higher-order boundary) which the non-epistemic view will not countenance.
+
+## II. A Gene for Baldness.
+
+Gomez-Torrente discusses the relation between ordinary vague terms and the terms of natural science. He pretends that we have empirical evidence for the following pair of hypotheses:
+
+(A)
+For all $x$, if $x$ is a bald man by age $a$, then $x$ has gene $G$.
+(B)
+For all $x$, if $x$ is not a bald man by age $a$, then $x$ does not have gene $G$.
+
+Now a man who does not have gene G can shave all his hair off by age $a$. If (A) is a serious scientific hypothesis, he would not thereby refute (A). Thus ‘bald’ in (A) and (B) should be understood dispositionally; one is bald if one is predisposed to have one’s hair fall out. The number of hairs on one’s head does not determine whether one is bald in this sense. We might even decide that baldness is essentially possession of gene $G$. ‘Bald’ in this sense is a natural kind term.7 It poses no more difficulty to the epistemic view than does ‘water’ or ‘gold’. Most of our ignorance of baldness would be ordinary scientific ignorance.8 None of this implies that we can find out whether a borderline case is bald in the ordinary sense.
+
+In general, a vague term can unexpectedly pick up the boundaries of a natural kind. Our ignorance may then be remediable by ordinary scientific means. No scientific remedy is available in the central cases of vagueness. The epistemic account does not entail that such a remedy is absolutely impossible; it says that we have no idea how to find one, and no reason to think that one exists.9
+
+## III. Margins for Error.
+
+Our ignorance in borderline cases can be explained by appeal to margin for error principles (Williamson [1994]: 216–247). For example, when ‘bald’ is understood in the ordinary way, not as in the previous section, we have for all $n$:
+
+(1)
+If it is known that a man with $n$ hairs is bald, then a man with $n+1$ hairs is bald (for all $n$).
+
+The idea behind (1) is this. When I assert ‘A man with $n$ hairs is bald’, my assertion is knowledgeable only if my disposition to utter the sentence would not easily be manifested in contexts in which it would express a false proposition. But if ‘bald’ does not apply to a man with $n+1$ hairs, then I might easily have uttered the sentence even if ‘bald’ had meant something very slightly different and did not apply to a man with $n$ hairs, so that the sentence did express a false proposition, for the vagueness of ‘bald’ implies that particular utterances of the sentence are not perfectly sensitive to the whole pattern of use in virtue of which ‘bald’ means what it does. Hence my assertion is knowledgeable only if ‘bald’ does apply to a man with $n+1$ hairs. Thus if a man with $n$ hairs is bald and one with $n+1$ hairs is not, I am not in a position to know that a man with $n$ hairs is bald.
+
+The argument turns on the vagueness of ‘bald’. But ‘known to be bald’, ‘known to be known to be bald’, … are also vague, so they should saistfy margin for error principles too. Gomez-Torrente suggests that this generates a new sorites paradox. His argument can be symbolized as follows. Let ‘$B(n)$’ and ‘$K^n$’ abbreviate ‘A man with $n$ hairs is bald’ and a sequence of $n$ occurrences of ‘it is known that’ respectively. A margin for error principle for the predicate $K^mB(x)$ says this:
+
+$(1^{(m)})$
+$\forall n\,[K^{m+1}B(n) \supset K^mB(n+1)]$
+
+According to Gomez-Torrente, a man with no hairs is not only bald but known to be bald, known to be known to be bald, …. Hence:
+
+$(2^{(k)})$
+$K^{k+1}B(0)$
+
+Given $(1^{(m)})$ for all $m$ and $(2^{(k)})$ for fixed $k$, one can prove $B(k+1)$. For one can prove $K^{k+1-j}B(j)$ for $0\le j\le k+1$ by mathematical induction on $j$. The basis ($j=0$) is simply $(2^{(k)})$. The induction hypothesis is $K^{k+1-j}B(j)$. It combines with $(1^{(k-j+1)})$ for $n=j$ to give $K^{k-j}B(j+1)$, as required to complete the induction. Now put $j=k+1$. Thus the assumptions imply that a man with $k+1$ hairs is bald, whatever $k$ is.
+
+What is Gomez-Torrente’s argument for $(2^{(k)})$? He calls the proposition that a man with no hairs is bald an ‘especially transparent proposition that we might even be tempted to call analytic’. This might explain how it is known that a man with no hairs is bald, but does not directly explain how it is known that it is known that a man with no hairs is bald. After all, it is not analytic that it is known that a man with no hairs is bald. It is far from obvious that $(2^{(k)})$ is actually true for all $k$, for it is far from obvious that all the iterations of knowledge have actually been realized. If a proposition is known only if it is thought, and $(2^{(k-1)})$ has not been thought, then $(2^{(k)})$ is not true. Gomez-Torrente might reply that we can make $(2^{(k)})$ true for any particular $k$ just by thinking the relevant propositions: that would not make a man with $k$ hairs bald. But merely thinking a true proposition is not in general sufficient for knowing it; if $(2^{(k-1)})$ is true, why should thinking so make $(2^{(k)})$ true? To make $(2^{(k)})$ true for large $k$, we must know $(2^{(k-1)})$, which is to know that the complex empirical proposition $(2^{(k-2)})$ is known. If each stage in this process involves a slight loss of transparency, we may be unable to make $(2^{(k)})$ true for large $k$. Gomez-Torrente has not provided a compelling argument for $(2^{(k)})$.
+
+Consider a formal model. For each natural number $i$, let $s_i$ be a situation in which $B(n)$ is true just in case $n<i$; $i$ is the cut-off point for baldness. Let $s_j$ be accessible from $s_i$ (epistemically possible from the standpoint of $s_i$) just in case $|i-j|\le 1$. Treat $K$ like $□$ in possible-worlds semantics: $KA$ is true in a situation $s_i$ if and only if $\mathrm{A}$ is true in every situation accessible from $s_i$. Thus the accessibility relation specifies the margin for error. Our actual situation is $s_i$ for some fairly large $i$; no situation other than $s_{i-1}$, $s_i$ and $s_{i+1}$ is actually epistemically possible. One easily shows by induction on $m$ that $K^mB(n)$ is true in $s_i$ if and only if $m+n<i$. Thus every instance of $(1^{(m)})$ is true in every situation, and $(2^{(k)})$ is true in $s_i$ if and only if $k+1<i$. Whatever the cut-off point for baldness, $(2^{(k)})$ fails for some $k$. If one doubts that this does justice to the special paradigmatic status of the proposition that a man with no hairs is bald, one can delete $s_0$ (the situation in which not even a man with no hairs is bald) from the model. $B(0)$ is then true in every situation in the new model; consequently, so is $(2^{(k)})$ for each $k$. Nevertheless, when $n>0$, $K^mB(n)$ is true in $s_i$ if and only if $m+n<i$. Thus an instance of $(1^{(m)})$ is true in every situation when $n>0$, but fails in $s_i$ when $n=0$ and $m+1<i$.
+
+The failure of $(1^{(m)})$ in the cropped model does not undermine the idea of margins for error, which is built into the accessibility relation of the model even without $s_0$. In both models, this margin for error principle holds for all situations $s_i$ and $s_j$ and all replacements for ‘$A$’:
+
+(3)
+If $KA$ is true in $s_i$ and $|i-j|\le 1$ then $A$ is true in $s_j$.
+
+(3) is more fundamental than (1). What fails in the cropped model is only the deduction of (1) from (3). But (3) is sufficient to explain our ignorance of cut-off points. If the cut-off point for baldness were known, $K[B(n) \mathbin{\&} \mathord{\sim} B(n+1)]$ would be true. But (3) implies that $K[B(n) \mathbin{\&} \mathord{\sim} B(n+1)]$ is true in $s_i$ only if $B(n) \mathbin{\&} \mathord{\sim} B(n+1)$ is true in both $s_i$ and $s_{i+1}$, which is impossible, for $B(n)$ is true in $s_i$ only if $n<i$, in which case $n+1<i+1$, so $B(n+1)$ is true in $s_{i+1}$, so $\mathord{\sim} B(n+1)$ is not true in $s_{i+1}$. What (3) illustrates is that the margins for error primarily relevant to vagueness are on a semantic dimension; $s_i$ and $s_{i+1}$ differ in the cut-off point for baldness. The argument for (1) reflected this by appealing to small differences in the meaning of ‘bald’, not to small differences in the scalp of the person in view. If one wanted to accept $(2^{(k)})$ for all $k$, one could do so on the cropped model, deny $(1^{(k)})$ and still retain the margin for error principle (3) in the underlying epistemic explanation of our ignorance.10
+
+# 3 Reply to Tye11
+
+Michael Tye worries that the epistemicist explanation of our ignorance
+
+seems to threaten our knowledge of the meanings of vague terms. How can I know the meaning of the word ‘thin’, if there is a relevantly similar situation in which the word has a slightly different meaning even though I do not recognize that any shift in meaning has occurred?
+
+We know that ‘thin’ means thin. If our dispositions to use ‘thin’ had been very slightly different, it would have meant something very slightly different, say thin*. But if ‘thin’ had meant thin*, we should not have believed falsely that it meant thin; we should have believed truly that it meant thin*. The same factors would determine both its meaning and the content of our belief as to its meaning. Such a counterfactual situation does not threaten our knowledge that ‘thin’ means thin.
+
+Does the argument trivialize knowledge of meaning? Consider an analogy. A shape is projected onto a screen. I can point and say ‘The screen shows that shape’. By ordinary standards, I know the proposition expressed. If I know that the same slide is also being projected onto another screen, I know that the second screen shows that shape [pointing at the shape on the first screen]; it is no harder to know that the first screen shows that shape. Nevertheless, in some sense I know only roughly what shape the screen shows. My eyesight is far from perfect, and I should not notice if a slightly different shape were substituted. In a similar sense we know only roughly what our words mean. We should not notice if the meaning changed very slightly.
+
+The point is independent of the epistemic view of vagueness. On any reasonable view, gradual changes in meaning can occur. Suppose that for all $n$ ‘$n$ grains make a heap’ has the semantic status which ‘$n+1$ grains make a heap’ had last century, whatever that status is. The assumption that no semantic change had occurred would imply that for all $n$ ‘$n$ grains make a heap’ has the same semantic status as ‘$n+1$ grains make a heap’, which generates a sorites paradox. An undetectable semantic change has occurred. In this harmless sense, we know only roughly what ‘heap’ means; still we know that it means heap. Likewise, we know only roughly what shape the screen shows; still we know that it shows that shape [pointing].
+
+Perhaps I can discriminate the present shape $S$ from the shapes on all the other slides in the projectionist’s box when they are projected. I may even have looked at the slides in advance, and checked that no other slide has a shape on it anything like $S$. If so, I have a local capacity to recognize $S$, which I shall lose as soon as he acquires a slide with a shape on it indiscriminably different from $S$. But the mere possibility of such a slide is compatible with my local capacity to recognize $S$. Similarly, we have a local capacity to recognize the meaning $M$ of a vague word ‘$M$’ if our language does not in fact contain a word with a meaning indiscriminably different from $M$, even though it could have contained such a term (Williamson [1994]: 234-237). Tye asks:
+
+Why should our ability to know where the precise boundaries lie in borderline cases (given arguendo that there are such boundaries) be undermined by the mere possibility of slight shifts in meaning in vague terms?
+
+There is a subtle difference. The possibility that does not undermine our local capacity to recognize $M$ is the possibility of a word other than ‘$M$’ having a meaning indiscriminably different from $M$. The possibility that does undermine our knowledge of the boundary of ‘$M$’ is the possibility of ‘$M$’ itself having a meaning indiscriminably different from $M$. The difference is like that between the possibility of a new slide showing a shape indiscriminably different from $S$ and the possibility of the original slide showing such a shape. Why should the difference matter? If our language does not in fact contain a word with a meaning very similar to $M$, then there is a straightforwardly detectable difference between our language as it actually is and our language as it would have been had it contained a word other than ‘$M$’ with a meaning indiscriminably different from $M$. The latter either has a new word not in our language as it actually is or assigns an old word a meaning quite different from its actual one. That counterfactual situation is not epistemically possible. In contrast, there is no detectable difference between our language as it actually is and our language as it would have been if ‘$M$’ had had a meaning indiscriminably different from $M$. That counterfactual situation is epistemically possible. It undermines our knowledge of the boundary of ‘$M$’. It does not undermine our local capacity to recognize $M$, for in it we do not misattribute $M$ to ‘$M$’; we do not attribute $M$ at all, just because ‘$M$’ does not mean $M$.
+
+The epistemic view is consistent with the knowledge that ‘thin’ means thin. It is not consistent with a capacity to discriminate the meaning of ‘thin’ from every other possible meaning. Just in that sense it implies that we do not know exactly what ‘thin’ means; but it was never plausible to attribute such a capacity to ourselves.
+
+# Acknowledgements
+
+I thank all three commentators for their remarks, which raise a variety of significant issues about the epistemic view of vagueness.
+
+# Notes
+
+[1] The semantic here includes intentional psychology: the difference between having a belief and lacking it counts as a semantic difference. Thus if ‘possible’ in the supervenience claim means metaphysically possible, then the claim implies (given the modal logic S5 that an extreme Cartesian view on which differences in thought content do not supervene on anything non-semantic is metaphysically impossible, not just false. To avoid this consequence, a more restrictive notion of possibility (e.g. nomological possibility) might be employed. My reply to Horgan does not depend on a particular resolution of this issue.
+
+[2] Gomez-Torrente’s attribution to the epistemicist of the view that ‘given any scale of precision relevant to the question whether it applies or not, every predicate has associated with it a sharp cut-off point in that scale between cases in which it applies and cases in which it does not apply’ would involve a similar misinterpretation if the association between predicate and cut-off point were supposed to be context-independent.
+
+[3] Variants on ‘true of’ and ‘false of’ are needed for some grammatical categories, but the underlying point is the same.
+
+[4] This kind of argument is elaborated in Williamson 1996.
+
+[5] An unreasonable version of the view against which Horgan’s argument may not tell is one which embodies a crude consensus theory of truth.
+
+[6] In his paper, Horgan imagines an explanation of the exact moment of onset of an avalanche on the basis of the laws of physics, which he regards as unproblematic even though in practice we cannot know the initial conditions in sufficient detail. Since ‘moment of onset of the avalanche’ is itself vague, the explanation would involve bridge laws of the kind he finds unproblematic.
+
+[7] See Hart [1991–2] (discussed in Williamson [1994]: 213) for an ingenious argument that ‘heap’ is a natural kind term whose boundary we can identify. The argument does not generalize to ‘large heap’.
+
+[8] Even ‘has gene $G$’ is vague in principle (imagine someone whose genetic structure has been massively disrupted by radiation). Such vagueness will transfer across (A) and (B) to ‘is a bald man’.
+
+[9] Williamson [1996] discusses the relation between vague predicates and (less vague) scientific ones in more detail.
+
+[10] I discuss examples in which margin for error principles like (1) fail but those like (3) still hold in [1994]: 233–234. For more on formal models like those in the text see [1994]: 270–275.
+
+[11] For other points raised by Tye’s reply see footnote 2 and the text to footnote 11 of Williamson [1997].
+
+# References
+
+Gomez-Torrente, Mario. 1997. ‘Two problems for an epistemicist view of vagueness’. This volume.
+
+Hart, William. 1991–2. ‘Hat-tricks and heaps’. Philosophical Studies (Dublin) 33: 1–24.
+
+Horgan, Terry. 1995. ‘Transvaluationism: A Dionysian approach to vagueness’. The Southern Journal of Philosophy 33, Supplement: 97–126.
+
+Horgan, Terry. 1997. ‘Deep ignorance, brute supervenience, and the problem of the many’. This volume.
+
+Tye, Michael. 1997. ‘On the epistemic theory of vagueness’. This volume.
+
+Williamson, Timothy. 1994. Vagueness. London: Routledge.
+
+Williamson, Timothy. 1996. ‘What makes it a heap?’. Erkenntnis 44: 327–339.
+
+Williamson, Timothy. 1997. ‘Imagination, stipulation and vagueness’. This volume.

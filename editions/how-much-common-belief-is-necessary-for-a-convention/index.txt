@@ -1,0 +1,484 @@
+# How much common belief is necessary for a convention?
+
+Hyun Song Shin and Timothy Williamson
+
+Games and Economic Behavior 13 (1996): 252–268.
+
+We study Bayesian coordination games in which players choose actions conditional on the realization of their respective signals. Due to differential information, the players do not have common knowledge that a particular game is being played. However, they do have common beliefs with specified probabilities concerning their environment. In our framework, any equilibrium set of rules must be simple enough so that the actions of all players are common belief with probability 1 at every state. Common belief with probability close to 1 will not do. Journal of Economic Literature Classification Numbers: C72, D82.
+
+# 1. Introduction
+
+Coordination problems come in many forms. A case of particular interest to students of norms and conventions is that in which the payoff function of the coordination game depends on the state of Nature. In such an environment, the possibility of conditioning one’s actions on some signal of the state of Nature adds an extra dimension to the coordination problem and makes it a more accurate representation of the problem of day-to-day interaction in which individuals face a variety of coordination problems determined by the state of Nature. In such an environment, the problem becomes one of coordinating on the most advantageous set of rules of action, where each player’s rule of action maps a possible realization of his signal to an action.
+
+If the players have perfect information, the problem can be reduced to the solution of each one-shot coordination game for each realization of the state of Nature. Since in general the payoffs vary across states, the players will be made better off by coordinating on strategies which utilize their information concerning the true state. However, if the players have imperfect information, constraints will be placed on the rules of action which can be sustained as an equilibrium. We shall examine how much of the information of the individual players may be utilized in the equilibrium of a Bayesian coordination game. If the players, taken individually, are capable of making fine distinctions across the states of the world, and an equilibrium prescribes strategies which depend on such fine distinctions, we can regard such an equilibrium as being “intricate” relative to the information of individual players. In contrast, if an equilibrium involves strategies which do not utilize to any great extent the private information of individual players, then we may informally dub such an equilibrium “simple” relative to the information of individual players.
+
+This question is of more than just passing interest, since many of the conventions around us tend to be simple relative to the set of signals on which we could condition our actions. For example, it could be argued that our conventions concerning appropriate dress are too rigid relative to rules which are Pareto superior. Why isn’t there a convention that jackets and ties should be worn by men to dinner unless the temperature is above a threshold level, in which case all the men turn up in T-shirts?
+
+On a less frivolous note, the archetypal convention is that of language and the meaning we associate with sentences. Lewis’ (1969) account of the use of language as an equilibrium in a coordination game has been very influential among philosophers. In this context, it is an intuitively appealing principle that the meaning of sentences should not vary with, say, the season or day of the week. For example, it is difficult for us to picture a language in which the sentence “the cat is on the mat” means that the cat is on the mat, on weekdays, but means that the cherry is on the tree, on weekends. However, if we take at face value the claim that language is merely a coordination device, we are hard put to give a quick rebuttal to such oddities. Why are such perverse languages not observed in practice?
+
+We provide one possible answer. We show that for a wide class of coordination problems with smooth action sets, the optimizing behavior of individuals eliminates all rules of action except those which are “very simple” relative to the information of individual players, in the sense that only the public signals matter for equilibrium, and any equilibrium action is common belief with probability 1 at every state. Common belief with probability close to 1 will not do. Formally, a convention can be sustained only if it prescribes actions which are measurable on the meet of the individuals’ information partitions.
+
+In pointing to this connection between common belief and equilibrium, our result has some bearing on the debate on the robustness of equilibrium to small departures from common knowledge. Rubinstein’s (1989) example of the electronics mail game demonstrates in a striking way how equilibrium may change when the hierarchy of iterated knowledge is truncated at some high, but finite degree. For Rubinstein, iterated knowledge of high degree constitutes a situation “close” to common knowledge.
+
+An alternative dimension in which to relax common knowledge is to replace knowledge by belief and to restore the unbounded hierarchy. In an important contribution, Monderer and Samet (1989) explore this approach and note its implications for game theory. In particular, they show that if players are $\epsilon$-optimizers, then for most states, equilibrium behavior implied by common belief with high probability approximates behavior implied by common knowledge. Our contribution to this debate is to strike a cautionary note for the program of supplanting common knowledge by common belief. For the coordination games in this paper, if the players are fully rational, then no amount of common belief (short of the maximum) will do as a substitute for common knowledge.
+
+This conclusion places our result on the simplicity of equilibria under sharper focus. On the face of it, we have the somewhat paradoxical result that full rationality leads to simple rules, while $\epsilon$-rationality admits complex ones. As for the question of how reasonable $\epsilon$-rationality is in this context, the answer must depend on the particular game under scrutiny. However, if behavior motivated by $\epsilon$-rationality differs radically from the behavior motivated by full rationality, then the reasons for this difference ought to be of interest to game theorists. Thus, we may be justified in regarding Monderer and Samet’s result as a starting point in the investigation of the role of common belief in games rather than the last word on this subject.
+
+Our discussion is also closely related to the question of when a correlated equilibrium in a convex combination of Nash equilibria (Forges, 1990; Cripps, 1993). This is so, since in the special case of our framework when the payoffs do not depend on the state, an equilibrium of the Bayesian game corresponds to a correlated equilibrium of the one-shot game with the same payoffs. If every Bayesian equilibrium involves constant (i.e., state-independent) strategies, then every correlated equilibrium must be a Nash equilibrium. Neyman (1991) has used the notion of a potential of a game (introduced by Monderer and Shapley, 1988) to show that if a game has a smooth and strictly concave potential, then there is a unique correlated equilibrium. Among other things, this implies that Bayesian equilibrium strategies of such games must be constant.
+
+Neyman’s argument is of interest to us, since for the standard examples of our framework, developments of Neyman’s result could be used as an alternative to our argument to derive the results reported here. We find this a very interesting and satisfying coincidence, since the two arguments rest on very different constructions. We shall return to this point later in the paper. For now, it suffices to say that, although it is an open question as to whether Neyman’s result can be used to prove our main theorem, the typical cases dealt with in our framework can be tackled by a suitable modification of Neyman’s result. Accordingly, the emphasis in our discussion will be on the insights and interpretations offered by our argument for the simplicity of equilibria.
+
+In order to motivate the main questions, we begin with a simple example. A more systematic discussion follows in Section 3, where we present our main result.
+
+# 2. An Example
+
+Consider the following pure coordination game. There are two-players—player 1 and player 2. The action set of both players is given by closed interval $[-1,1]$. There is a set $C$ of circumstances, given by the natural numbers
+
+$$\{0,1,2,3,\ldots\}.$$
+
+(2.1)
+
+We use the term “circumstance” rather than “state” because we want to reserve the latter term for a different use. Nature chooses one of the circumstances according to the probability distribution $p$, where $p$ assigns positive weight to all circumstances, and $p(i)>p(i+1)$, for all $i$.
+
+The payoffs of the players depend on the circumstances, but each player prefers to choose an action which is as close as possible to the action chosen by the other. We assume that each player has a convex loss function which is minimized when the actions of the two players coincide. We will allow these loss functions to be different across the players.
+
+We denote by $V$ player 1’s action and denote by $W$ player 2’s action. There are positive integers $k$ and $m$ associated with the payoff functions of the two players, reflecting possible differences in penalties for failing to coordinate. There is also a circumstance $M>0$ such that player 1’s payoff for the action pair $(V,W)$ at the circumstance $i$ is
+
+$$u^1(V,W,i)=
+\begin{cases}
+-(V-W)^{2k}+W & \text{if }i\le M\\
+-(V-W)^{2k}-W & \text{if }i>M,
+\end{cases}$$
+
+(2.2)
+
+whereas player 2’s payoff is
+
+$$u^2(V,W,i)=
+\begin{cases}
+-(V-W)^{2m}+V & \text{if }i\le M\\
+-(V-W)^{2m}-V & \text{if }i>M.
+\end{cases}$$
+
+(2.3)
+
+If the players have perfect information of the circumstance, there are many equilibria of the game. If we denote by $v:C\to[-1,1]$ the strategy of player 1 and denote by $w:C\to[-1,1]$ the strategy of player 2, then any pair $(v,w)$ for which $v=w$ is an equilibrium. However, there is a Pareto dominant equilibrium of this game given by the pair $(v,w)$, where
+
+$$v(i)=w(i)=
+\begin{cases}
+1 & \text{if }i\le M\\
+-1 & \text{if }i>M.
+\end{cases}$$
+
+(2.4)
+
+Let us now perturb the game in the following way. Both players have signals concerning the true circumstance. Player 1 observes the true circumstance perfectly. However, player 2 has a noisy signal $\sigma$, which for circumstances $i>0$ yields
+
+$$\sigma(i)=
+\begin{cases}
+i & \text{with probability }1-\epsilon\\
+i-1 & \text{with probability }\epsilon
+\end{cases}$$
+
+(2.5)
+
+for some small $\epsilon>0$. At circumstance 0, player 2’s signal has no noise. Thus, for any circumstance other than 0, player 2 learns of the true state with high probability, but there is a small chance that the signal is inaccurate. We assume that the noise defined in (2.5) is independent of Nature’s choice of the true circumstance. In this perturbed game, player 2’s strategy is a function $w$ which maps each realization of the signal $\sigma$ to an action. Denote by $w(i)$ the action of player 2 given the message $i$. Player 1’s strategy can be defined as a function of the true circumstance. We denote by $v(i)$ the action of player 1 at circumstance $i$. The introduction of noise to player 2’s signal alters the set of equilibria drastically.
+
+Theorem 1. If $(v,w)$ is an equilibrium of the perturbed game, then $v=w$ and $v$ is a constant function.
+
+With noise, the set of equilibria shrinks to the set of constant functions. Only the simplest possible rule of action can be supported as an equilibrium—namely, that which does not depend on the message of either player. In particular, the pair of strategies given by (2.4), which is the Pareto dominant equilibrium when there is no noise, is not an equilibrium of the game with noise. At first sight this seems puzzling, since the strategies given by (2.4) are not very demanding in terms of the information needed by the players. It merely depends on the players recognizing that the true circumstance is to one side of M or the other. However, the key insight in understanding this problem in that although each player may recognize that the true circumstance is to one side of M or the other, it is never common knowledge that this is so. We elaborate on this point below.
+
+We should also comment on how Neyman’s (1991) result on potential games is relevant here. Note that the above game is best-reply equivalent to the game in which the payoffs are state independent and equal to $-(V-W)^{2k}$ and $-(V-W)^{2m}$, respectively. For the game in normal form with these payoffs, $-(V-W)^2$ serves as an ordinal potential for this game which is smooth and strictly concave. Neyman’s result implies that there is a unique correlated equilibrium for this game, and this is enough to derive the above result.
+
+![](figure-1.png)
+
+Proof. Our own proof is ad hoc to this example. It is by induction on the set of circumstances. On the assumption that $(v,w)$ is an equilibrium, we first show that $v(0)=v(1)$, and then show that if $v(i-1)=v(i)$ then $v(i+1)=v(i)$.
+
+To see that $v(0)=v(1)$, consider player 1’s reasoning given the message 0. Since player 1’s signal has no noise, she knows that the true circumstance is 0. Moreover, player 2’s signal at 0 has no noise. Hence given the message 0, player 1 knows that player 2 received the message 0 also. Thus, player 1 sets
+
+$$v(0)=w(0).$$
+
+(2.6)
+
+Now, consider player 2’s reasoning given the message 0. Refer to Fig. 1. Given the message 0, player 2 allows two possibilities. Either the true circumstance is 0 and his message is accurate, or the true circumstance is 1 and his message is inaccurate. The probability of the former is
+
+$$p(0)/[p(0)+p(1)\epsilon],$$
+
+(2.7)
+
+while the probability of the latter is
+
+$$p(1)\epsilon/[p(0)+p(1)\epsilon].$$
+
+(2.8)
+
+We denote (2.7) and (2.8) by $1-\eta_0$ and $\eta_0$, respectively. Thus, given message 0, player 2 chooses $W$ to maximize $(1-\eta_0)u^2(v(0),W,0)+\eta_0u^2(v(1),W,1)$, so that the optimal $W$ satisfies the first-order condition
+
+$$(1-\eta_0)(v(0)-W)^{2m-1}+\eta_0(v(1)-W)^{2m-1}=0.$$
+
+(2.9)
+
+Thus, either $W=v(0)=v(1)$, or $v(0)-W$ and $v(1)-W$ have opposite signs. In either case, the optimal $W$ can be expressed as a strict convex combination of $v(0)$ and $v(1)$. That is, there is $\lambda_0$ with $0<\lambda_0<1$ such that
+
+$$w(0)=\lambda_0v(0)+(1-\lambda_0)v(1).$$
+
+(2.10)
+
+Since $w(0)=v(0)$ by (2.6), we have $v(0)=v(1)$.
+
+We now demonstrate that if $v(i-1)=v(i)$, then $v(i)=v(i+1)$. Consider player 1’s reasoning given the message $i$. Refer again to Fig. 1. Since player 1’s signal has no noise, she knows that $i$ is the true circumstance. However, 2’s signal has noise. Player 1 knows that player 2 has received one of two messages; namely, $i$ or $i-1$. Player 2’s strategy $w$ yields the actions $w(i)$ and $w(i-1)$ for these messages. Since 2 receives the messages $i$ and $i-1$ with probabilities $1-\epsilon$ and $\epsilon$, respectively, player 1 chooses $V$ to maximize
+
+$$(1-\epsilon)u^1(V,w(i),i)+\epsilon u^1(V,w(i-1),i-1),$$
+
+(2.11)
+
+so that the optimal V satisfies the first-order condition
+
+$$(1-\epsilon)(V-w(i))^{2k-1}+\epsilon(V-w(i-1))^{2k-1}=0.$$
+
+(2.12)
+
+Thus, either $V=w(i)=w(i-1)$, or $V-w(i)$ and $V-w(i-1)$ have opposite signs. In either case, the optimal $V$ can be expressed as a strict convex combination of $w(i-1)$ and $w(i)$. That is, there is $\mu_i$ with $0<\mu_i<1$ such that
+
+$$v(i)=\mu_iw(i)+(1-\mu_i)w(i-1).$$
+
+(2.13)
+
+Now, let us turn to player 2’s reasoning. Suppose 2 has received the message $i$. This leaves open two possibilities. Either the true circumstance is $i$ or the true circumstance is $i+1$. The latter has probability
+
+$$\eta_i\equiv p(i+1)\epsilon/[p(i)(1-\epsilon)+p(i+1)\epsilon],$$
+
+(2.14)
+
+while the former has probability $1-\eta_i$. Thus, given the message $i$, player 2 chooses $W$ to maximize
+
+$$(1-\eta_i)u^2(v(i),W,i)+\eta_i u^2(v(i+1),W,i+1).$$
+
+(2.15)
+
+Then, analogous reasoning to that behind (2.13) leads to the conclusion that $w(i)$ is a strict convex combination of $v(i)$ and $v(i+1)$. In other words, there is $\lambda_i$ with $0<\lambda_i<1$ such that
+
+$$w(i)=\lambda_iv(i)+(1-\lambda_i)v(i+1).$$
+
+(2.16)
+
+Substituting (2.16) and the analogous expression for $w(i-1)$ into (2.13), we have
+
+$$[\mu_i(1-\lambda_i)+(1-\mu_i)\lambda_{i-1}]v(i)
+=\mu_i(1-\lambda_i)v(i+1)+(1-\mu_i)\lambda_{i-1}v(i-1).$$
+
+(2.17)
+
+But by the induction hypothesis, $v(i-1)=v(i)$. Hence, $v(i+1)=v(i)$. It remains for us to note that (2.16) requires $w$ to be equal to $v$. $\blacksquare$
+
+The introduction of noise leads to a loss of efficiency in the payoffs. This is a conclusion which echoes the inefficiency result in Rubinstein’s (1989) electronic mail game. Indeed, the comparison with Rubinstein’s example is instructive. In both cases, the inefficiency results from a “small” departure from common knowledge. However, in our example, we shall show that there is common belief with high probability that both players have received the same message. In other words, the departure from common knowledge is in the manner of Monderer and Samet (1989), rather than a truncation of iterated knowledge.
+
+To state these claims more precisely, we turn to a description of beliefs in our game. The definitions are those of Monderer and Samet (1989). Because the set of circumstances $C$ does not exhaust all uncertainty, we start by defining the state space as follows. We say that a pair of natural numbers $(i,j)$ is a state if $j=i$ or $j=i-1$. We denote a state by $\omega$ and denote the set of states by $\Omega$. In state $\omega=(i,j)$, the true circumstance is $i$ and the message received by player 2 is $j$. Since player 1’s signal is accurate, $\Omega$ exhausts all the uncertainty in our game.
+
+Since player 1 knows the true circumstances but does not know the message received by player 2, player 1’s information partition over $\Omega$ is
+
+$$\bigl\{\{(0,0)\},\{(1,0),(1,1)\},\{(2,1),(2,2)\},\ldots,
+\{(k,k-1),(k,k)\},\ldots\bigr\}.$$
+
+Similarly, player 2’s information partition over $\Omega$ is given by
+
+$$\bigl\{\{(0,0),(1,0)\},\{(1,1),(2,1)\},\{(2,2),(3,2)\},\ldots,
+\{(k,k),(k+1,k)\},\ldots\bigr\}.$$
+
+These information partitions are illustrated in Fig. 2.
+
+The probability distribution $p$ over the set of circumstances and the independent noise in player 2’s signal generate a probability distribution over $\Omega$. We denote this distribution by $\phi$. We shall be interested in the posterior probabilities obtained from $\phi$ by conditioning on the players’ information partitions.
+
+![](figure-2.png)
+
+Denote by $T^1(\omega)$ the element of player 1’s partition which contains the state $\omega$. For any event $E\subseteq\Omega$, we denote by $\phi(E\mid T^1(\omega))$ the posterior probability of $E$ conditional on $T^1(\omega)$. We shall say that player 1 believes E at $\omega$ with degree r if
+
+$$\phi(E\mid T^1(\omega))\ge r.$$
+
+(2.18)
+
+In other words, player 1 believes $E$ at $\omega$ with degree $r$ if, based on the information at $\omega$, player 1 attaches probability no less than $r$ to the event $E$. We shall denote by $B_r^1(E)$ the set of states at which player 1 believes $E$ with degree $r$. That is,
+
+$$B_r^1(E)=\{\omega\mid\phi(E\mid T^1(\omega))\ge r\}.$$
+
+(2.19)
+
+$B_r^2(E)$ is defined analogously for player 2. Using this notation, we define common belief in terms of a characterization given by Monderer and Samet (1989, p. 177). For any event $C$, define the sequence $C^0,C^1,C^2,\ldots$ as follows. $C^0=C$, and for $n\ge1$,
+
+$$C^n=B_r^1(C^{n-1})\cap B_r^2(C^{n-1}).$$
+
+(2.20)
+
+Definition. Event $C$ is common belief with degree $r$ at $\omega$ if $\omega\in\bigcap_{n\ge1}C^n$.
+
+This definition formalizes the notion of everyone believing $C$, everyone believing that everyone believes $C$, and so on, where each layer of belief is to degree $r$. Notice that the intersection is taken over $n\ge1$. Thus, $C$ may be common belief even though $C$ is false. This is one important respect in which belief differs from knowledge.
+
+We shall be interested in the common belief between the players of the event that both players have received the same message. Let $S$ be the set of states $(i,j)$ such that $i=j$. $S$ is the set of points on the leading diagonal in Fig. 2. For player 1, the posterior probability of $S$ at any state $\omega$ whose first component is $i$, where $i\ge1$, is given by
+
+$$\phi(S\mid T^1(\omega))=\phi(\{(i,i)\}\mid\{(i,i),(i,i-1)\})=1-\epsilon.$$
+
+(2.21)
+
+For $\omega=(0,0)$, $\phi(S\mid T^1(\omega))=1$. Thus, at every state, player 1 believes $S$ with degree $1-\epsilon$. That is,
+
+$$B_{1-\epsilon}^1(S)=\Omega.$$
+
+(2.22)
+
+For player 2, the posterior probability of $S$ at any state whose second component is $i$ is given by
+
+$$\phi(S\mid T^2(\omega))=\phi(\{(i,i)\}\mid\{(i,i),(i+1,i)\})=1-\eta_i,$$
+
+(2.23)
+
+where $\eta_i$ is the expression defined in (2.14). Since we have assumed that $p(i)$ is decreasing in $i$, $\eta_i<\epsilon$, for all $i$. Hence $1-\eta_i>1-\epsilon$, so that player 2 believes $S$ with degree $1-\epsilon$ at all states. In other words,
+
+$$B_{1-\epsilon}^2(S)=\Omega.$$
+
+(2.24)
+
+Thus, $B_{1-\epsilon}^1(S)\cap B_{1-\epsilon}^2(S)=\Omega$. Since $\Omega$ has posterior probability of 1 at every state, we have:
+
+Theorem 2. At every state $\omega$, there is common belief of S with degree $1-\epsilon$.
+
+As $\epsilon$ becomes small, there is common belief of $S$ with degree close to 1. That is, there is common belief with high probability that the same message has been received by both players. However, the set of equilibria remains the set of constant functions. For $\epsilon=0$, the set of equilibria is given by the set of all functions. In this sense, there is a failure of lower hemi-continuity of the equilibrium correspondence at $\epsilon=0$. We have a case where common belief with high probability cannot serve as a substitute for common knowledge.
+
+# 3. The General Argument
+
+The setting for our general argument is a coordination game with $n$ players, each with action set $A$ where $A$ is a closed interval of the real numbers. We denote by $a^i$ the action of player $i$, and by $a$ the vector of actions $(a^1,a^2,\ldots,a^n)$. Associated with this game is a state space $\Omega$, with a typical element $\omega$. We shall assume that $\Omega$ has a countable number of elements. There is a probability distribution $\phi$ over $\Omega$ which assigns positive weight to all states. Each player has an information partition over $\Omega$. We denote by $\mathcal P^i$ the partition of player $i$, and by $P^i(\omega)$ the element of $\mathcal P^i$ containing $\omega$.
+
+In what follows, it will be useful to draw on the terminology of types (Harsanyi, 1967). Each element of $\mathcal P^i$ indexed by $i$ has the interpretation of a type of player $i$. We define the set of types of player $i$ to consist of ordered pairs $(P,i)$, where $P\in\mathcal P^i$. Let $T^i$ denote the set of types of player $i$. Since $\Omega$ is countable, each player has a countable number of possible types.
+
+The strategy of player $i$ is a function
+
+$$s^i:T^i\to A,$$
+
+(3.1)
+
+which maps each type of player $i$ to an action. Alternatively, we could define a strategy to be a function mapping each state $\omega$ to an action, with the proviso that the strategy be measurable on the partition $\mathcal P^i$. It will be convenient to use both notions of a strategy below. We denote by $s^i(\omega)$ the action of player $i$ at $\omega$, and by $s^i(t)$ the action of type $t$ of player $i$.
+
+We now turn to the payoffs. We will denote by $u^i(a,\omega)$ the payoff of player $i$ at state $\omega$ given actions $a$. Rather than tying down $u^i$ to any specific functional form, we will impose a general condition on these payoffs, consonant with our aim of investigating coordination problems. For this purpose, define
+
+$$M^i(\omega)\equiv\sup_{\substack{j\ne i\\\omega'\in P^i(\omega)}}\{s^j(\omega')\},
+\qquad
+m^i(\omega)\equiv\inf_{\substack{j\ne i\\\omega'\in P^i(\omega)}}\{s^j(\omega')\}.$$
+
+(3.2)
+
+In other words, $M^i(\omega)$ is the least upper bound on the actions of $i$’s opponents which player $i$ believes possible at state $\omega$. The greatest lower bound $m^i(\omega)$ is defined analogously. Thus, at state $\omega$, player $i$ believes that other players have chosen actions in the interval $[m^i(\omega),M^i(\omega)]$. We consider payoff functions which satisfy the following condition on the best reply of player $i$ at state $\omega$.
+
+(CC) If $a^i$ is optimal at $\omega$ and $m^i(\omega)=M^i(\omega)$, then $a^i=m^i(\omega)=M^i(\omega)$. If $a^i$ is optimal at $\omega$ and $m^i(\omega)<M^i(\omega)$, then $m^i(\omega)<a^i<M^i(\omega)$.
+
+The “CC” stands for “convex combination.” This condition stipulates that a player choose a strict convex combination of the actions of his opponents that he believes to be possible given his information. The force of condition (CC) is that this convex combination be strict. No player wants to be an “outlier,” and there is an incentive to conform to some nontrivial average. Our example in Section 2 exhibits payoffs which are instances of (CC). As mentioned earlier, it is not known at the time of this writing what relation holds between condition (CC) and the existence of a smooth and strictly concave potential. This question would be of independent interest and deserves further investigation.
+
+We now proceed to examine the properties of equilibrium strategies. For any strategy $s^i$ of player $i$, define the equivalence relation $\equiv^i$ on $\Omega$ as
+
+$$\omega\equiv^i\omega'\quad⟺\quad s^i(\omega)=s^i(\omega').$$
+
+(3.3)
+
+The partition generated by this relation is the coarsest partition on which player $i$’s strategy can be defined. If this partition is fine relative to $\mathcal P^i$, player $i$’s strategy is utilizing much of $i$’s private information. If this partition is coarse relative to $\mathcal P^i$, the equilibrium is a simple one in which player $i$’s private information is not being used in equilibrium. Let us have the following definition.
+
+Definition. An element $C$ is a conditioning event for player $i$ in the equilibrium $(s^1,s^2,\ldots,s^n)$ if $C$ is an element of the partition generated by $\equiv^i$.
+
+We shall also carry over the formal definitions of belief and common belief given in the previous section. $B_r^i(E)$ is the event that player $i$ believes $E$ with degree $r$, and common belief of event $C$ is defined in terms of the sequence $C^0,C^1,C^2,\ldots$, suitably modified to include $n$ players (see Monderer and Samet, 1989). Since the prior distribution $\phi$ assigns positive weight to all states, belief with probability 1 coincides with knowledge in our framework. Accordingly, common belief with probability 1 coincides with common knowledge. We will appeal to the following well-known sufficient condition for common knowledge. Recall that the meet of a set of partitions is the finest partition which is at least as coarse as all the partitions in the set.
+
+Lemma 1. Event E is common belief with degree 1 at $\omega$ if there is an event C in the meet of the partitions $\{\mathcal P^i\}$ such that $\omega\in C\subseteq E$.
+
+Aumann (1976) and Bacharach (1985) provide proofs of this result. Brandenburger and Dekel (1987) examine common belief with probability 1 in a more general setting. Following Monderer and Samet (1989), we say that an event E is evident if E is common belief with degree 1 whenever the true state is in E. We can then state the main result of this paper.
+
+Theorem 3. If C is a conditioning event for some player, then C is evident.
+
+In other words, if $s^i$ is an equilibrium strategy for player $i$, then $s^i$ is constant on each element of the meet. This theorem has the following immediate corollary.
+
+Corollary. At any state, the equilibrium action of any player is common belief with probability 1.
+
+Theorem 3 and its corollary provide a precise answer to the question of how intricate a convention can be. Conventions must be simple enough so that the actions of all players are common belief with probability 1. Common belief with probability close to 1 will not do. An alternative interpretation of Theorem 3 is in terms of the distinction between private and public signals. If the players’ information partitions are generated by a set of signals, the subset of these signals which generate the meet of the player’s partitions could be seen as the “public” signals, observed by all. All other signals are classified as being private. Then, Theorem 3 implies that only the public signals have any bearing on equilibrium. Private signals are irrelevant. Notice that the notion of a private signal is a wide one. It encompasses those signals which are observed by “most” of the players, but not by all. Equilibrium strategies must be coarse enough to accommodate players with the worst information. This suggests that the number of players in the game is an important determinant of how fine an equilibrium can be.
+
+It is instructive in understanding the result to consider two proofs, the first one being for the special case where each player’s partition is finite. The proof for the general case proceeds by noting that the equilibrium actions define a Martingale on a suitable probability space. We then appeal to a version of the Martingale convergence theorem. In both cases, our argument relies on the construction of a Markov chain.
+
+As a first step, for two types $t=(P,i)$ and $t'=(P',j)$, define $\phi(t\mid t')\equiv\phi(P\mid P')$. Then, if $(s^1,s^2,\ldots,s^n)$ is an equilibrium and $s^i(t)$ is the action of type $t$ of player $i$ in this equilibrium, condition (CC) implies that $s^i(t)$ is a convex combination of the elements of the set
+
+$$\{s^j(t')\mid\phi(t'\mid t)>0\text{ and }j\ne i\},$$
+
+(3.4)
+
+where each element receives positive weight. Thus, if we denote by $s(t)$ the action of type $t$ in equilibrium, then there are probabilities $P(t,t')$ defined on pairs of types such that for any types $t$ and $t'$,
+
+$$\begin{aligned}
+\text{(i)}\quad &P(t,t')\quad⟺\quad
+\phi(t'\mid t)>0\\
+&\qquad\text{and }t\text{ and }t'\text{ belong to different players},\\
+\text{(ii)}\quad &\sum_{t'}P(t,t')=1,\\
+\text{(iii)}\quad &s(t)=\sum_{t'}P(t,t')s(t').
+\end{aligned}$$
+
+(3.5)
+
+We define the set of types to be the union $\bigcup_i T^i$, and denote it by $T$, and consider the following Markov chain. The set of states of the Markov chain is $T$. The one-step transition probability from type $t$ to type $t'$ is $P(\mathord\cdot,\mathord\cdot)$ given above. Using received terminology, we say that type $t$ communicates with type $t'$ in the Markov chain if there is a positive probability of transition from $t$ to $t'$ in a finite number of steps. The argument for the following result for two players is already in Aumann (1976). For the sake of completeness, we give a proof in the Appendix.
+
+Lemma 2. Suppose $t=(P,i)$ and $t'=(P',j)$, where $t\ne t'$. Then, t communicates with t’ in the Markov chain if and only if there is an event E in the meet of the partitions $\{\mathcal P^i\}$ such that $(P\cup P')\subseteq E$.
+
+We now consider two proofs of Theorem 3. The case when T is finite allows us to use elementary properties of matrices.
+
+Proof of Theorem 3 for finite T. Lemma 2 tells us that for each event $E$ in the meet of the partitions $\{\mathcal P^i\}$, the set of types $t=(P,i)$ for which $P\subseteq E$ forms an irreducible and persistent set of states in the Markov chain. Thus, for each element $E$ of the meet of the partitions $\{\mathcal P^i\}$, there is an associated irreducible subchain. Consider one such subchain. We index the set of types in this subchain by $\{1,2,\ldots,N\}$ and denote by $t_k$ the type with index $k$. We define
+
+$$s=\begin{bmatrix}
+s(t_1)\\
+s(t_2)\\
+\vdots\\
+s(t_N)
+\end{bmatrix}.$$
+
+(3.6)
+
+Denote by $P$ the associated transition matrix of this subchain, i.e., the matrix whose $(j,k)$th entry is $P(t_j,t_k)$. Then (3.5)(iii) implies
+
+$$s=Ps.$$
+
+(3.7)
+
+We argue that any solution of this system takes the form
+
+$$s=\begin{bmatrix}
+k\\
+k\\
+\vdots\\
+k
+\end{bmatrix}$$
+
+(3.8)
+
+for some constant $k$. Since $P$ is a stochastic matrix, (3.8) is certainly one solution of this system. We need to show that every solution is of this form. One way to proceed is to note that $P$ is an indecomposable matrix, that is, there is no way of renumbering the types so that $P$ can be expressed in block triangular form. This follows from the fact that $P$ is the transition matrix associated with an irreducible and persistent subchain. For such matrices, the eigenvectors associated with the largest eigenvalue are proportional to each other (see, for example, McKenzie, 1960, p. 52). This would suffice to support our claim since the solutions to (3.7) are the eigenvectors of $P$ associated with the unit eigenvalue. There is a more direct proof of our claim, using the fact that $P$ is a stochastic matrix. Suppose that
+
+$$q=\begin{bmatrix}
+q_1\\
+q_2\\
+\vdots\\
+q_N
+\end{bmatrix}$$
+
+(3.9)
+
+is also a solution of (3.7) but that $q_i\ne q_j$ for some $i$ and $j$. We derive a contradiction. Let
+
+$$q_m=\max_i\{q_i\}.$$
+
+(3.10)
+
+Since $q$ is not a constant vector, there is a component $q_k$ such that
+
+$$q_m>q_k.$$
+
+(3.11)
+
+Since $P$ is the transition matrix associated with an irreducible and persistent Markov chain, there is an $r$-step transition matrix $P^r$ for which the $(m,k)$th entry is positive. From the hypothesis that $q$ solves (3.7),
+
+$$q=P^rq.$$
+
+(3.12)
+
+Denote by $R(i,j)$ the $(i,j)$th entry of $P^r$. Then
+
+$$q_m=\sum_jR(m,j)q_j.$$
+
+(3.13)
+
+From (3.10), (3.11), and the fact that $R(m,k)>0$,
+
+$$q_m<q_m\sum_jR(m,j).$$
+
+(3.14)
+
+Thus $\sum_jR(m,j)\ne1$. But this contradicts the fact that $P^r$ is a stochastic matrix. Hence $q$ cannot be a solution to (3.7).
+
+For any event $E$ in the meet of the partitions $\{\mathcal P^i\}$, the actions of all types which are subsets of $E$ must satisfy (3.7). However, we have shown that in any solution to (3.7), every type $(P,i)$ for which $P\subseteq E$ chooses the same action. Thus, the conditioning event for any player must be a union of elements from the meet of partitions. Finally, Lemma 1 tells us that any such union of events is evident. This proves Theorem 3 for finite $T$. $\blacksquare$
+
+Proof of Theorem 3 for Countable T. Consider an element $E$ from the meet of the partitions and the associated irreducible persistent subchain of the Markov chain. Denote by $T_\wedge$ the set of types for this subchain, and denote by $\{X_n\}$ the subchain taking values in $T_\wedge$. Then, the sequence of random variables $\{s(X_n)\}$ is a Martingale with respect to the filtration generated by $\{X_n\}$. This is because $s(X_n)=\sum_{t'\in T_\wedge}P(X_n,t')s(t')=E(s(X_{n+1})\mid X_n)$, where the conditional expectation is that associated with $\{X_n\}$. We state this formally as:
+
+Lemma 3. $\{s(X_n)\}$ is a Martingale with respect to $\{X_n\}$.
+
+Since $s(\mathord\cdot)$ takes values in a fixed interval of the reals, $s(\mathord\cdot)$ is bounded. Hence, we can appeal to one of the standard convergence theorems for martingales (for example, Feller, 1968, p. 242), which states that $\{s(X_n)\}$ converges almost surely to some random variable $Z$. Since the subchain on $T_\wedge$ is irreducible and persistent, any type $t$ in $T_\wedge$ is visited infinitely often with probability 1 in $\{X_n\}$. But then, since $\{s(X_n)\}$ converges almost surely to $Z$, it must be that $Z$ takes the value $s(t)$ with probability 1. However, $t$ was chosen arbitrarily from $T_\wedge$. Hence, $Z=s(t)$ a.s. for all $t\in T_\wedge$. Since all types receive positive probability, $s(t)=s(t')$ for any pair of types $t$ and $t'$ in $T_\wedge$. This proves Theorem 3. $\blacksquare$
+
+# 4. Concluding Remarks
+
+The kinds of coordination problems for which our framework is best suited are those in which the players are choosing from a continuum. The framework has little to say concerning coordination games with a small number of actions. For these games, rather different arguments are required. Morris et al. (1995) tackle this issue for general, finite Bayesian games.
+
+However, subject to these qualifications, our argument may have explanatory value. Norms and conventions around us tend to be simple relative to the range of possible “sunspots” on which actions can be conditioned. It is perhaps an indication of this simplicity that most discussions of conventions outside the formal game-theoretic literature concentrate on one-shot coordination games. Since Lewis’ (1969) seminal work on the subject, Ullman-Margalit (1977), Gilbert (1990), Miller (1990), and others have developed the theme of conventions as being equilibrium strategies in coordination games. In the light of our discussion, this may not be unduly restrictive.
+
+# Appendix
+
+Proof of Lemma 2. Define the operator $L^i(\mathord\cdot)$ as
+
+$$L^i(E)\equiv\{\omega\mid P^i(\omega)\cap E\ne\emptyset\}.$$
+
+(A.1)
+
+$L^i(E)$ is the set of states at which player $i$ allows that $E$ is possible. Since all states have positive weight, $L^i(E)$ is the event in which $i$ believes $E$ with positive probability. The following properties of $L^i$ can easily be verified:
+
+$$\begin{aligned}
+\text{(i)}\quad &E\subseteq L^i(E),\text{ for all }E\subseteq\Omega,\\
+\text{(ii)}\quad &E=L^i(E)\text{ if and only if }E\text{ is a union of elements in }\mathcal P^i.
+\end{aligned}$$
+
+(A.2)
+
+Also, if $t=(P,i)$ and $t'=(P',j)$, there is some $i$ for which $P'\subseteq L^i(P)$ if and only if there is a one-step transition from $t$ to $t'$ in the Markov chain. Let us denote by $L(E)$ the event $L^1(L^2(L^3(\cdots(L^n(E))\cdots)))$. Then (A.2) implies that $E\subseteq L(E)$ for any event $E$, and $E=L(E)$ if and only if $E$ is a union of elements in $\mathcal P^i$ for every $i$. Hence, $E=L(E)$ if and only if $E$ is an element of the meet of $\{\mathcal P^i\}$.
+
+Now consider the “only if” part of the lemma. Suppose there are two types $t=(P,i)$ and $t'=(P',j)$, where $P$ and $P'$ do not belong to the same element of the meet. Then, there is an element $E$ of the meet such that $P\subseteq E$ but $P'\subseteq\Omega\backslash E$. By (A.2), for every $k$th iteration of $L(\mathord\cdot)$, denoted by $L^{(k)}(\mathord\cdot)$,
+
+$$L^{(k)}(P)\subseteq L^{(k)}(E)=E
+\qquad\text{and}\qquad
+L^{(k)}(P')\subseteq L^{(k)}(\Omega\backslash E)=\Omega\backslash E.$$
+
+(A.3)
+
+Hence, for all positive integers $k$, $L^{(k)}(P)\cap L^{(k)}(P')$ is the empty set, so that $t$ and $t'$ do not communicate in the Markov chain.
+
+To prove the “if” part of the lemma, suppose $P,P'\subseteq E$, where $E$ is an element of the meet of the partitions $\{\mathcal P^i\}$, and there are types $t=(P,i)$ and $t'=(P',j)$. By (A.2), the sequence defined as
+
+$$P,L(P),L^{(2)}(P),L^{(3)}(P),\ldots,$$
+
+(A.4)
+
+is such that $L^{(k)}(P)\subseteq L^{(k+1)}(P)$. Now, if $L^{(k)}(P)=L^{(k+1)}(P)$ for some $k$, then $L^{(k)}(P)=E$, so that $t$ and $t'$ communicate. Hence, suppose that $L^{(k)}(P)\ne L^{(k+1)}(P)$ for all $k$. Since there are countably many states in $\Omega$, the sequence (A.4) converges to $E$ in the sense that, for any state $\omega\in E$, there is some $k$ such that $\omega\in L^{(k)}(P)$. Since $P'\subseteq E$, there is some $k$ such that $P'\subseteq L^{(k)}(P)$, so that $t$ and $t'$ communicate. $\blacksquare$
+
+# Acknowledgements
+
+We thank the editors and two referees for their comments (in particular an associate editor and a referee who alerted us to Neyman’s work on potential games and who pointed out the connection with our result). We have gained much from detailed conversations with Stephen Morris on issues raised by this paper. We also thank Stephen Coate, Kathryn Graddy, Paul Klemperer, George Mailath, Rafael Rob, and seminar participants at Duke, Pennsylvania, and Princeton Universities for their comments. An earlier version of this paper was presented at the conference on Markets as Games at CORE, Louvain-la-Neuve. The first author thanks the Economics department of the University of Pennsylvania for its hospitality during the Fall semester of 1992 when this paper was in preparation.
+
+# References
+
+Aumann, R. J. (1976). “Agreeing to Disagree,” Ann. Statist. 4, 1236–1239.
+
+Bacharach, M. O. L. (1985). “Some Extensions of a Claim of Aumann in an Axiomatic Model of Knowledge,” J. Econ. Theory 37, 167–190.
+
+Brandenburger, A., and Dekel, E. (1987). “Common Knowledge with Probability 1,” J. Math. Econ. 16, 237–246.
+
+Cripps, M. (1993). “Extreme Correlated and Nash Equilibria in Two-Person Games,” mimeo. Department of Economics, University of Warwick.
+
+Feller, W. (1968). Introduction to Probability Theory and Its Applications, 3rd ed. Vol. II. New York: Wiley.
+
+Forges, F. (1990). “Correlated Equilibrium in Two-Person Zero Sum Games,” Econometrica 58, 515.
+
+Gilbert, M. (1990). “Rationality, Coordination and Convention,” Synthese 84, 1–21.
+
+Harsanyi, J. C. (1967). “Games with Incomplete Information Played by Bayesian Players, I, II, III,” Manage. Sci. 14, 159–282, 320–334, 486–502.
+
+Lewis, D. (1969). Conventions: A Philosophical Study. Cambridge, MA: Harvard Univ. Press.
+
+McKenzie, L. (1960). “Matrices with Dominant Diagonals and Economic Theory,” in Mathematical Methods in the Social Sciences (Proceedings of the First Stanford Symposium) (K. Arrow, S. Karlin, and P. Suppes, Eds.). Stanford, CA: Stanford Univ. Press.
+
+Miller, S. (1990). “Rationalising Conventions,” Synthese 84, 23–41.
+
+Monderer, D., and Samet, D. (1989). “Approximating Common Knowledge with Common Beliefs,” Games Econ. Behav. 1, 170–190.
+
+Monderer, D., and Shapley, L. (1988). “Potential Games,” mimeo. Faculty of Industrial Engineering and Management, the Technion, Haifa, Israel.
+
+Morris, S., Rob, R., and Shin, H. (1995). “p-Dominance and Belief Potential,” Econometrica 63, 145–158.
+
+Neyman, A. (1991). “Correlated Equilibrium and Potential Games,” mimeo. Institute of Mathematics, Hebrew University.
+
+Rubinstein, A. (1989). “The Electronic Mail Game: Strategic Behavior under ‘Almost Common Knowledge’,” Amer. Econ. Rev. 79, 385–391.
+
+Ullman-Margalit, E. (1977). The Emergence of Norms. Oxford, UK: Oxford Univ. Press.

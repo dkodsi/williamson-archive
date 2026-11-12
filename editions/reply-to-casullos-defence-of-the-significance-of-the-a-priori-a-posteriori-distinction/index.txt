@@ -1,0 +1,191 @@
+# Reply to Casullo’s defence of the significance of the a priori–a posteriori distinction
+
+Timothy Williamson
+
+In Dylan Dodd and Elia Zardini (eds.), The A Priori: Its Significance, Sources, and Extent (2026), 62–71. Oxford: Oxford University Press.
+
+Albert Casullo’s Chapter 2 in this volume, ‘A Defence of the Significance of the A Priori–A Posteriori Distinction’, is a reply to my paper, ‘How Deep Is the Distinction between A Priori and A Posteriori Knowledge?’ (Williamson 2013). For ease of comparison, I will divide this chapter into sections numbered as the sections of his chapter to which they respond.
+
+# 1. Casullo’s Hermeneutics
+
+Casullo’s chapter is carefully crafted and perspicuously structured. Many of his criticisms would be apt if my aim had been to argue deductively from self-evident premises, using only perfectly clear terms. Obviously, it was not. I regard such a standard of argument as quite unreasonable for philosophy (Williamson 2016). Neither my original paper nor Casullo’s reply comes anywhere near it.
+
+In the 2013 paper, I described how a subject, Norman, knows two truths:
+
+(1)
+All crimson things are red.
+(2)
+All recent volumes of Who’s Who are red.
+
+The point was that, if we use ‘a priori’ and ‘a posteriori’ as most philosophers use them, not according to precise stipulated definitions but understood by examples and a few informal slogans, independently of any developed theory, we can recognize Norman’s knowledge of (1) as a priori and his knowledge of (2) as a posteriori. That knowledge constitutes a pair of clear cases on opposite sides of the distinction. On Casullo’s numbering:
+
+(2.1)
+Norman’s knowledge of (1) is clearly a priori.
+(2.2)
+Norman’s knowledge of (2) is clearly a posteriori.
+
+I then argued that the significant differences between the two cases are not epistemological but metaphysical: (1) is necessary while (2) is contingent.
+
+Casullo complains, ‘Premises (2.1) and (2.2) are unsupported.’ A similar complaint could be made about almost any application of the abductive methodology philosophers standardly employ to motivate a theory of some informally understood distinction: using one’s informal recognitional capacity—rather than, say, conscious deductive reasoning—one assembles clear cases on both sides of the distinction, and then shows that one’s favoured theory gets the clear cases right. Of course, Casullo might say that (2.1) or (2.2) is false, on an informal understanding of the distinction, but that is not the present charge.
+
+Having said that I leave (2.1) and (2.2) unsupported, Casullo next accuses me of the ‘assumption’ that (2.1) follows from (K1) and (2.2) from (K2):
+
+(K1)
+Normal cases of knowledge of (1) are clearly a priori.
+(K2)
+Normal cases of knowledge of (2) are clearly a posteriori.
+
+I did indeed explicitly endorse (K1) and (K2), and still do, but my use of ‘normal’ obviously signalled unwillingness at that stage to rule out abnormal cases of knowledge of (1), which might not be clearly a priori, and abnormal cases of knowledge of (2), which might not be clearly a posteriori. Did it not occur to Casullo that a reading on which I assume that (2.1) follows from (K1) and (2.2) from (K2) might be a misinterpretation?
+
+Even more oddly, Casullo goes on to accuse me, in this argument, of failing ‘to take into account the possibility of epistemic overdetermination’, of a truth knowable in several ways, which might not all fall on the same side of the a priori–a posteriori distinction. He finds my failure to take the possibility into account ‘puzzling’, since I emphasize it in the same article. But the wording of (K1) and (K2) shows that I took the possibility into account in the very argument at issue. I alerted the reader to the potential difference between normal and abnormal ways of knowing (1) and (2) and its relevance to the a priori–a posteriori distinction.
+
+Grimly following his interpretation of my argument, Casullo floats various auxiliary premises on my behalf:
+
+(K1*)
+All ways of knowing (1) are clearly a priori.
+(K2*)
+All ways of knowing (2) are clearly a posteriori.
+(K1+)
+There is only one way of knowing (1).
+(K2+)
+There is only one way of knowing (2).
+
+Generalizing to the broader aims of my paper, he asserts that ‘Williamson must deny that there are alternative a priori ways of knowing (1) and the truths of set theory, mathematics and logic’. I reject all these claims; nothing in my argument commits me to any of them.
+
+As it happens, Casullo overlooks a slightly less uncharitable reading of my argument in the same deductive style as his. For if (K1) and (K2) are treated as universal rather than generic generalizations, then (2.1) does follow from (K1) and (2#.1), and (2.2) from (K2) and (2#.2):
+
+(2#.1)
+Norman’s knowledge of (1) is a normal case of knowledge of (1).
+(2#.2)
+Norman’s knowledge of (2) is a normal case of knowledge of (2).
+
+But not even that was my intention. I did not endorse (2#.1) or (2#.2). In effect, I simply invited readers to accept (2.1) and (2.2) by exercising their informal recognitional capacity for a priori and a posteriori knowledge.
+
+(K1) and (K2) figure in the argument only as introductory, scene-setting remarks. They do no heavy lifting. Casullo’s misreading may result from his expectation of a more deductive form of argument than I was offering. It also moves him to complain that ‘Williamson does not offer a general characterization of what he means by a “normal case” of knowing $\mathrm{p}$’ and to ask ‘what are the general features that distinguish the normal way of knowing $\mathrm{p}$ from other ways of knowing $\mathrm{p}$?’. I could in turn demand that Casullo explain what he means by ‘general’ and ‘feature’. For obvious reasons (think: infinite regress), there is no requirement to define all one’s terms before one starts arguing. If ‘normal’ had played a crucial role in my argument, I might have said more to ward off misunderstandings, but it did not.
+
+Casullo’s misreading nullifies his argument in section 1. It is an object lesson in the dangers of hermeneutic obstinacy, of settling on one interpretation and following it through thick and thin, no matter how weird the errors it forces one to attribute, rather than wondering whether the error might instead be in one’s own reading, and considering alternatives. We may therefore turn to the later sections of his chapter.
+
+# 2. The Relevance of Cognitive Science
+
+Casullo’s section 2 raises the more interesting question of empirical assumptions in my argument, assumptions that might in principle be overturned by developments in cognitive psychology. He is right that my argument is not perfectly neutral in that respect, although he misidentifies the relevant assumptions.
+
+Casullo claims that my argument ‘rests on two pairs of empirical claims’:
+
+(E1a)
+Norman’s belief that (1) is based on an exercise in imagination that employs offline cognitive skills developed online in perception.
+(E1b)
+Norman’s exercise in imagination [as in (E1a)] is sufficiently reliable that the resulting belief constitutes knowledge.
+(E2a)
+Norman’s belief that (2) is based on an exercise in imagination that employs offline cognitive skills developed online in perception.
+(E2b)
+Norman’s exercise in imagination [as in (E2a)] is sufficiently reliable that the resulting belief constitutes knowledge.
+
+However, all four of these propositions just serve to characterize the relevant counterfactual scenarios (with the fictional name ‘Norman’); my argument does not assume that they hold in the actual world.1
+
+While (E1a)–(E2b) are explicit in my account of the two cases, Casullo also discerns ‘a tacit empirical assumption’:
+
+(EA)
+There is no way of knowing (1) that employs cognitive processes quite different from those employed by Norman’s way of knowing (2).
+
+But I need (EA) only on the misreading of my argument that nullified Casullo’s section 1. On the correct reading, what matter are just Norman’s ways of knowing (1) and (2), in the relevant cases. Thus my argument does not assume (EA) either.
+
+How then might cognitive psychology subvert my argument? Suppose that it accumulates good evidence that humans have an innate module for rational insight, by which we know (1) and first principles of logic and mathematics, in a process completely different from the imaginative exercise by which Norman knows (1). Suppose also that the evidence indicates that we could not know truths like (2) by the postulated module. In those circumstances, it might make sense to identify a priori knowledge with knowledge from the rational insight module. One could then classify Norman’s knowledge of (1) as merely a posteriori, because he did not use his rational insight module, but still classify normal human knowledge of (1) and first principles of logic and mathematics as a priori. On that understanding, our informal classification of Norman’s knowledge of (1) as a priori would be in error. By contrast, I suggested that there is no such separate module for rational insight: normal human knowledge of (1) and first principles of logic and mathematics resembles Norman’s in its offline use of the imagination too much to permit a principled distinction between the former as a priori and the latter as a posteriori. To that extent, my paper involved some speculative psychology. That was quite overt: ‘Naturally, far more work would have to be done to confirm the foregoing hints about logical and mathematical knowledge’ (2013: 306) and ‘Cognitive psychology will have much to offer the epistemologist’s attempt to overcome philosophical prejudices and classify according to deeper and less obvious similarities and differences’ (2013: 309). I was betting against the hypothesized development in cognitive psychology; I have seen no evidence since to make me fear that I shall lose the bet.
+
+Implicitly, my 2013 paper argued that such a rational insight module would in any case be redundant. For the paper showed in outline how the kind of truth such a module is supposed to enable us to know can be known (never mind whether a priori or a posteriori) by means of independently attested human cognitive capacities, such as those employed in ordinary spatial reasoning. Of course, the inefficiency of having a cognitively redundant cognitive module does not make it impossible in principle. A capricious scientist or deity could decide to create beings with one. But a module is not a free gift; it takes up space and energy. Our species is not very likely to have evolved with a special module for teaching us stuff we can know anyway. Moreover, on the hypothesis that humans have such an innate module for rational insight into the first principles of logic and mathematics, one would predict a far higher level of proficiency in logic and mathematics to be a human universal than is actually observed. Thus, on present evidence, explanations by appeal to a rational insight module are bad science; they invoke a deus ex machina where none is needed.
+
+Alternatively, if the phrase ‘rational insight’ is used more loosely, without the postulation of a special module, it may cover Norman’s imaginative exercise. That is no threat to my argument. Casullo suggests that since rational insight is supposed to be ‘directed towards abstract entities’, ‘universals such as red and crimson’, it is not perceptual. However, perceiving or (the relevant case) imagining something as red would also involve the universal red, so the involvement of abstract entities does not separate rational insight from imagination. Indeed, imagination might play a constitutive role in our grasp of universals such as red and crimson.
+
+By itself, the postulated role of universals in rational insight (loosely understood) does not rule out knowing (2) by rational insight. For being a recent volume of Who’s Who is a universal too; it is shared by many particular recent volumes of Who’s Who. In such terms, both (1) and (2) state a relation of extensional inclusion between two properties. Even if Norman’s knowledge of (2) counts as non-rational insight, an analogue of my original argument could show that the distinction between rational and non-rational insight is superficial in the same way as the distinction between a priori and a posteriori knowledge.
+
+In emphasizing the need for cognitive science, Casullo says that it ‘remains an open empirical question that cannot be settled with anecdotal armchair evidence whether any particular belief-forming process meets’ the standard of reliability required for reasonable belief, or for knowledge. He insists, ‘No appeal to some perceived threat of scepticism can settle the issue.’ That is over the top. An open question is one to which we do not know the answer. Consider the question, ‘Do people sometimes know by sight that a room contains an armchair?’. It is not open. Without recourse to cognitive science, we know the answer: yes. Indeed, experiments in cognitive science routinely depend in various ways on our pre-theoretic capacities to recognize who knows what in simple cases. Although we can imagine sceptical scenarios in which cognitive science somehow discovers that vision or mathematical reasoning is no more reliable than chance, that does not make it an open question whether humans have visual or mathematical knowledge, any more than our ability to imagine standard sceptical scenarios makes it an open question whether we are brains in vats. If taken seriously, Casullo’s comments grossly underestimate humans’ prescientific knowledge of their own cognitive capacities.
+
+Of the cognitive capacities underlying standard cases of a priori knowledge, we have some prescientific knowledge, though not very much. My suggestion, both when I wrote the 2013 paper and now, is that, although the more speculative elements of the picture fall short of knowledge, they are probable on current evidence.
+
+# 3. The Relevance of Modality
+
+Casullo’s section 3 discusses the contrast between top-down and bottom-up ways of drawing the a priori–a posteriori distinction. One draws it bottom-up by giving examples on each side. For instance, one might give a standard case of mathematical knowledge as a paradigm of a priori knowledge and a standard case of geographical knowledge as a paradigm of a posteriori knowledge. On a simple model, one then projects the distinction to new cases by their comparative similarity to the paradigms on each side. Our informal recognitional capacity for a priori and a posteriori knowledge is something like that.
+
+I conjectured that, for Norman’s knowledge of (1) and (2), what tips the balance is the modal status of the content.2 Bottom-up, we are more inclined to classify his knowledge of (1) as a priori because (1) is necessary, like mathematical truths and other truths known in paradigms of a priority; we are more inclined to classify his knowledge of (2) as a posteriori because (2) is contingent, like geographical truths and other truths known in paradigms of a posteriority. Casullo takes that to mean that the bottom-up distinction just is the metaphysical distinction between necessity and contingency, and so is of no direct epistemological interest. But that is contrary to what I say. In the very passage he quotes, I am explicit that we treat necessity and contingency only as default indicators of a priority and a posteriority respectively, which can be overturned by similarities and differences running the other way (2013: 300). But nothing in Norman’s knowledge of (1) or (2) does overturn the initial default. By contrast, bottom-up we classify Kripke’s cases of the contingent a priori as a priori and his cases of the necessary a posteriori as a posteriori. For example, the similarity of knowledge that stick S is a metre long to mathematical knowledge with respect to the conclusive role of definition and deduction trumps the difference in modal status of the truths known. Again, the similarity of knowledge that water = H_{2}O to knowledge that H_{2}O covers much of the Earth’s surface with respect to the method of discovery trumps the difference in modal status of the truths known. Thus, the bottom-up distinction between a priori knowledge and a posteriori knowledge is far from coextensive with the distinction between knowledge of necessary truths and knowledge of contingent truths. Casullo’s discussion of the bottom-up distinction is nullified by his misunderstanding of it as merely modal.
+
+Casullo further assumes that the problems I raise for the bottom-up approach do not infect the top-down alternative of explicit definition:
+
+Williamson’s argument in support of the claim that the a priori–a posteriori distinction is superficial depends essentially on the bottom-up approach to introducing the distinction. It cannot be extended to the distinction introduced by top-down standards.
+
+However, this assumes that the top-down approach is not answerable to the results of the bottom-up approach. Yet many proponents of the top-down approach have taken it as a condition of adequacy on an explicit definition that it should get the clear cases right—the clear cases, that is, by bottom-up standards. They are still top-down theorists to the extent that, having argued that their explicit definition meets the condition of adequacy, they theorize on the basis of that definition rather than by appeal to bottom-up judgements. Given that condition of adequacy, (2.1) and (2.2) pose just as great a threat of epistemological superficiality to such top-down alternatives as they do to a purely bottom-up approach.3 Admittedly, there is no corresponding threat to a more stipulative version of the top-down approach, which rejects the condition of adequacy, but the stipulative definition would then have to prove its worth by the fruitfulness of the distinction it makes in further theorizing. By contrast, uses of the terms ‘a priori’ and ‘a posteriori’ which respect the condition of adequacy are better placed to appeal to the alleged fruitfulness of the distinction in the philosophical tradition.
+
+The next section considers Casullo’s objections to the paper’s critique of attempts to define the distinction explicitly.
+
+# 4. Experience and Evidence
+
+In the 2013 paper, I briefly argued that attempts to explain the a priori–a posteriori distinction are often unhelpful, owing to unclarity in key terms such as ‘experience’ and ‘evidence’.4 Casullo applies this to claim that, according to me, ‘our puzzlement over the Norman cases arises because either (P1) or (P2) is true’:
+
+(P1)
+When we consider the two Norman cases, we are puzzled as to whether the term ‘experience’ applies.
+(P2)
+When we consider the two Norman cases, we are puzzled as to whether the term ‘evidence’ applies.
+
+He then argues that both (P1) and (P2) are false.
+
+The wording of (P1) and (P2) is infelicitous. After all, we might be puzzled as to what ‘experience’ or ‘evidence’ applies to, rather than whether it applies at all. However, Casullo’s argument does not exploit that infelicity. Here it is for (P1):
+
+(P1) is false since the only epistemically relevant features involved in Williamson’s description of the two Norman cases are the perceptual experiences necessary to develop Norman’s capacity to make reliable visual judgments with the expressions ‘red’, ‘crimson’, and ‘recent volumes of Who’s Who’. But it is not unclear whether the term ‘experience’ in the top-down definition of a priori knowledge applies to perceptual experiences. It is uncontroversial that dependence on perceptual experience is incompatible with a priori knowledge.
+
+This is wrong for at least two reasons.
+
+First, there are the imaginings which mediate Norman’s judgement of (1) and (2). They are ‘epistemically relevant’ by any reasonable standard. Do they count as experience? It is unclear whether the term ‘experience’ in the top-down definition of a priori knowledge applies to imaginings.
+
+Second, it is only uncontroversial that dependence on perceptual experience as evidence is incompatible with a priori knowledge. Dependence on perceptual experience simply to grasp the meaning of a word such as ‘red’ or ‘crimson’ is compatible with a priori knowledge. It is unclear whether Norman’s knowledge of (1) or (2) depends on the relevant long-forgotten perceptual experiences as evidence.5
+
+Thus, Casullo’s quoted argument fails. For all he says, both (P1) and (P2) hold when understood appropriately.
+
+For a positive treatment of the Norman cases, Casullo argues that once we treat the relation between justification and evidence consistently, we can consistently combine (4.2) (which I endorse) with (APJ):6
+
+(APJ)
+$\mathrm{S}$’s belief that $\mathrm{p}$ is justified a priori if and only if $\mathrm{S}$’s justification for the belief that $\mathrm{p}$ does not depend on experience.
+(4.2)
+Experience plays a role in both Norman’s knowledge of (1) and Norman’s knowledge of (2) that is more than purely enabling but less than strictly evidential.
+
+According to Casullo, ‘Williamson’s puzzle vanishes since the conjunction of (APJ) and (4.2) straightforwardly entails the conclusion’ (4.4*):
+
+(4.4*)
+Both Norman’s knowledge of (1) and Norman’s knowledge of (2) are a posteriori.
+
+How are (APJ) and (4.2) supposed to entail (4.4*)? For a start, (APJ) concerns justification while (4.2) and (4.4*) concern knowledge. Even if we ignore that issue, what kind of dependence is meant in (APJ)? Presumably, even an a priori justification can depend on experience for its intelligibility. In effect, Casullo just assumes that only a purely enabling role for experience is compatible with a priori justification.
+
+In any case, (4.4*)’s revisionary classification of Norman’s knowledge of (1) as a posteriori is vulnerable to my argument that it will spread to a much wider class of paradigms of a priori knowledge, including knowledge of first principles of logic and mathematics. Casullo has provided no evidence against the postulated cognitive similarities.
+
+# 5. Moral
+
+In writing my 2013 paper I did my best to be clear, and I am sure that in reading it Casullo did his best to interpret it faithfully. That things went so wrong, subtly but crucially, is an instance of the difficulties of communication in philosophy.
+
+# Acknowledgements
+
+I thank Elia Zardini for helpful comments on an earlier version of this chapter.
+
+# Notes
+
+[1] (E1b) and (E2b) should not be understood as presupposing a reliabilist analysis of knowledge, which my argument does not involve; they just mean that if a reliability condition is required for knowledge, it is met.
+
+[2] As briefly discussed in my Chapter 5 of this volume, the modal difference has to be manifest enough to figure in unreflective perceptions of similarity.
+
+[3] If a top-down account meets the putative adequacy condition, then it will be non-vacuous: there will be examples on both sides of the distinction. The charge of superficiality is directed only against bottom-up accounts and top-down ones that meet the adequacy condition. Compare Casullo’s footnote 4.
+
+[4] Casullo describes the argument as a variation of one in Williamson (2007). Actually, Williamson (2013) makes new points about the content of evidence, for an exchange on which see Boghossian (2020) and Williamson (2020).
+
+[5] We could also treat that as unclarity in the theoretical term ‘depend’, in the sense of ‘epistemically depend’, but never mind for present purposes.
+
+[6] Casullo characterizes the Norman puzzle as the artefact of a mismatch in my treatment of the relation between justification and evidence. According to him, I endorse (APE) (‘$\mathrm{S}$’s belief that $\mathrm{p}$ is justified a priori if and only if $\mathrm{S}$’s evidence for the belief that $\mathrm{p}$ does not depend on experience’) but deny (JE) (‘Justification is a function of evidence’). However, all this is an artefact of his misreading. I cannot reconstruct the details because the views he ascribes to me are so loosely related to the text of Williamson (2013).
+
+# References
+
+Boghossian, Paul 2020: ‘Do we have reason to doubt the importance of the distinction between a priori and a posteriori knowledge? A reply to Williamson’, in Paul Boghossian and Timothy Williamson (eds.), Debating the A Priori. Oxford: Oxford University Press: 137–155.
+
+Boghossian, Paul, and Williamson, Timothy (eds.) 2020: Debating the A Priori. Oxford: Oxford University Press.
+
+Williamson, Timothy 2007: The Philosophy of Philosophy. Oxford: Wiley Blackwell.
+
+Williamson, Timothy 2013: ‘How deep is the distinction between a priori and a posteriori knowledge?’, in Albert Casullo and Joshua Thurow (eds.), The A Priori in Philosophy. Oxford: Oxford University Press: 291–312.
+
+Williamson, Timothy 2016: ‘Abductive philosophy’, The Philosophical Forum, 47: 263–280.
+
+Williamson, Timothy 2020: ‘Reply to Boghossian on the distinction between the a priori and the a posteriori’, in Paul Boghossian and Timothy Williamson (eds.), Debating the A Priori. Oxford: Oxford University Press: 156–167.

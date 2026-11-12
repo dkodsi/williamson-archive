@@ -1,0 +1,112 @@
+# Soames on vagueness
+
+Timothy Williamson
+
+Philosophy and Phenomenological Research 65 (2) (2002): 422–428.
+
+Scott Soames has a justly high reputation for the precision and rigour of his work in the philosophy of language. It is therefore with considerable interest that one turns to the chapter of Understanding Truth on vagueness and the sorites paradox to see what he has to say.
+
+# I
+
+Soames’s account is based on the old idea that borderline cases involve truth-value gaps. He says rather little in justification of this idea, merely that it seems arbitrary where to locate the cut-off point for a vague term and that it is unclear what semantic mechanism could determine that point. The book shows no awareness of work on the epistemicist alternative that borderline cases involve irremediable ignorance of truth-values. Since I have defended that alternative at length elsewhere, I will not labour the point here.
+
+Surprisingly, Soames combines his anti-epistemicist commitments with the following two claims (216-17):
+
+(i)
+Often there will be a sharp line separating things that are $\mathrm{F}$, according to a given conversational standard, from things for which, according to the standard, the predicate is undefined.
+(ii)
+Attempts to display that sharp dividing line for inspection will result in a change of standards, according to which the flanking adjacent items in the progression come to be characterized in the same way (with respect to the predicate).
+
+The mechanism of contextual adjustment in (ii) is similar to one postulated by Hans Kamp in ‘The Paradox of the Heap’ in U. Mönnich (ed.), Aspects of Philosophical Logic (Dordrecht: Reidel, 1981). Soames uses it to explain how sharp semantic lines can be systematically elusive and therefore appear not to exist. But if he is willing to do that in defence of a hidden sharp boundary between truth and undefinedness, would it not be simpler to do it in defence of a hidden sharp boundary between truth and falsity? He could then drop all the complications introduced by the postulation of truth-value gaps (at least with respect to vagueness) and adopt a contextualist form of epistemicism. Soames can hardly take his generic objections to truth-values in borderline cases to be decisive, for they could also be made to the claim that a predicate is either true, false or undefined in a higher-order borderline case. Presumably Soames thinks that he can recognize cases in which it is plausible to postulate a hidden sharp boundary from cases in which it is not, but how he recognizes them I do not know.
+
+Soames’s willingness to defend (i) might give the impression that he denies higher-order vagueness. In fact he acknowledges that there is higher-order vagueness (219-21). But that does not help to elucidate the supposed distinction between cases in which hidden semantic lines are allowed and cases in which they are not. Of course, a formal model can imply such a distinction; the issue is whether a model with that implication is well-motivated. The motivation which Soames supplies is inadequate.
+
+# II
+
+One of the crucial tests for a theory of vagueness is its evaluation of complex sentences. To handle the postulated truth-value gaps, Soames uses the three-valued strong Kleene tables (207). In particular, he treats a conditional with an undefined antecedent and an undefined consequent as undefined. Consider, for example, ‘Small’ as a vague predicate of natural numbers. If it is undefined for both n and $n+1$, then according to Soames this conditional is neither true nor false:
+
+(1)
+$\mathrm{Small}(n) \supset \mathrm{Small}(n+1)$
+
+This provides an undefined instance of the universally quantified major premise of the corresponding sorites paradox for ‘Small’ (Wang’s paradox):
+
+(2)
+$\forall x\,(\mathrm{Small}(x) \supset \mathrm{Small}(x+1))$
+
+On such grounds, Soames regards the major premise of a sorites paradox as not true, and therefore as deserving rejection. But since he believes that it has no false instances, he also regards it as not false; therefore, its negation also deserves rejection (207).
+
+This account has highly counter-intuitive consequences unmentioned by Soames. Surely, if a number is small then any smaller number is small too. Thus the converses of (1) and (2) should be true:
+
+(1_{C})
+$\mathrm{Small}(n+1) \supset \mathrm{Small}(n)$
+(2_{C})
+$\forall x\,(\mathrm{Small}(x+1) \supset \mathrm{Small}(x))$
+
+But Soames’s account makes (1_{C}) and (2_{C}) undefined for exactly the same reason as before; if a conditional has an undefined antecedent and consequent, so has its converse. Thus Soames must reject the generalization ‘The predecessor of a small number is small’.
+
+One might be tempted to suppose that Soames could avoid the problem at the meta-linguistic level. Surely it is at least true to say that if ‘Small’ is true of a number then it is true of any smaller number. Thus, using ‘True’ for the true-of relation, one might replace (1_{C}) and (2_{C}) by these meta-linguistic claims:
+
+(1_{C}T)
+$\mathrm{True}(\text{‘Small’}, n+1) \supset \mathrm{True}(\text{‘Small’}, n)$
+(2_{C}T)
+$\forall x\,(\mathrm{True}(\text{‘Small’}, x+1) \supset \mathrm{True}(\text{‘Small’}, x))$
+
+But a moment’s reflection on higher-order vagueness shows that (1_{C}T) and (2_{C}T) are no improvement on (1_{C}) and (2_{C}). As already noted, Soames allows that his semantic concepts may be vague. It is certainly no easier to say exactly which numbers ‘Small’ is true of than to say exactly which numbers are small. Just as there are successive numbers for which ‘Small’ is undefined, on Soames’s view, so there will be successive numbers for which ‘True’ is undefined when the term in its first argument-place designates ‘Small’. Thus, unless Soames treats higher-order vagueness in an implausibly different way from first-order vagueness, he will have to reject (1_{C}T) (for some n) and (2_{C}T) for the same reason as (1_{C}) and (2_{C}) and as (1) and (2).
+
+Consider another example. Suppose that Barry and Harry are identical twins who are going bald in exactly the same way; their scalps match perfectly. Surely it follows that one twin is bald if and only if the other is. Thus we can assert:
+
+(3)
+$\mathrm{Bald}(\mathrm{Barry}) \equiv \mathrm{Bald}(\mathrm{Harry})$
+
+But if the twins’ scalps are in an intermediate state for which ‘Bald’ is undefined, then the strong Kleene table makes (3) undefined. Thus Soames is committed to implausibly rejecting the claim ‘One twin is bald if and only if the other is’. Again, it would not help Soames to go meta-linguistic. Given higher-order vagueness, a parallel objection applies to the meta-linguistic biconditional:
+
+(3T)
+$\mathrm{True}(\text{‘Bald’}, \mathrm{Barry}) \equiv \mathrm{True}(\text{‘Bald’}, \mathrm{Harry})$
+
+These problems have serious consequences for Soames’s ability to state his account coherently. For example, at one point he says that the following principle ‘really is true’ (215):
+
+(P2*)
+For any two patches of color $\mathrm{x}$ and $\mathrm{y}$ that are perceptually indistinguishable to competent observers under normal conditions, if someone who is presented with $\mathrm{x}$ characterizes the predicate looks green as applying to it, then that person is thereby committed to a standard that counts the predicate as applying to $\mathrm{y}$ as well.
+
+Consider a case in which two patches of colour $\mathrm{x}$ and $\mathrm{y}$ are perceptually indistinguishable to competent observers under normal conditions, and I am presented with $\mathrm{x}$, but it is vague whether I have characterized looks green as applying to $\mathrm{x}$; I assent to the application in a somewhat reluctant, hesitant or frivolous way. Thus, given the view expressed in (P2*), it is also vague whether I am thereby committed to a standard that counts the predicate as applying to $\mathrm{y}$ as well. Thus, on Soames’s view, the conditional in (P2*) has an undefined antecedent and consequent in this instance. Therefore, (P2*) is not true on Soames’s semantics, contrary to his claim.
+
+Here is another example. Soames writes ‘The default determinate-extension of $\mathrm{F}$ is the set of things that the communitywide rules or conventions of the language (plus relevant nonlinguistic facts) determine that the predicate applies to’ (209). By the axiom of extensionality, this set-identity claim entails a universally quantified biconditional:
+
+(4)
+$\begin{aligned} &\forall x\,(x\text{ is in the determinate-extension of }\mathrm{F} \equiv {}\\ &\text{the communitywide rules or conventions of the language plus}\\ &\text{relevant nonlinguistic facts determine that }\mathrm{F}\text{ applies to }x) \end{aligned}$
+
+But Soames admits that ‘is in the determinate extension of $\mathrm{F}$’ (in a given context) may be vague (220). If so, (4) will have at least one undefined instance, for the strong Kleene table for $\equiv$ makes any biconditional undefined if at least one of the flanking sentences is undefined. Consequently, (4) is not true. Thus higher-order vagueness commits Soames to rejecting (4). The problem is quite general. Suppose that Soames, in his theorizing, attempts to lay down a necessary and sufficient condition for a vague concept. That would require him to assert a universally quantified biconditional with at least one instance in which the left-hand side is undefined. But then on his view the universally quantified biconditional is not true, and the attempt to lay down a necessary and sufficient condition has failed. Even $\forall x\,(\mathrm{F}x \equiv \mathrm{F}x)$ is not true on the Kleene semantics if $\mathrm{F}$ has borderline cases.
+
+Since the Kleene semantics gets Soames into so much difficulty, I will ignore it for the remainder of this discussion. As is well known, a supervaluationist approach permits truth-value gaps while avoiding the kind of problem just considered. However, Soames explicitly rejects supervaluationism on the grounds that ‘it violates fundamental truths about the meanings of various logical terms’ (225).
+
+# III
+
+It is integral to Soames’s account that borderline cases are in neither the default determinate-extension nor the default determinate-antiextension of a vague predicate; they are the cases for which speakers have contextual discretion. Suppose, for example, that Harry is borderline for ‘bald’. Then, according to Soames, the conventions of English (plus relevant non-linguistic facts) neither determine that ‘bald’ applies to Harry nor determine that ‘bald’ does not apply to Harry (209). What are these conventions of English?
+
+One might initially suppose the most relevant convention to be this:
+
+(C)
+For all $x$, ‘bald’ applies to $x$ if and only if $x$ is bald.
+
+But Soames cannot accept (C) as a convention of English. On his view, the reference of a vague predicate varies contextually. (C) is no more a convention of English than is this:
+
+(C*)
+For all x, ‘belongs to me’ applies to x if and only if x belongs to me.
+
+As uttered by me, (C*) is false of contexts in which I am not the speaker. Since linguistic conventions are general, they should apply to such contexts. Similarly, (C), as uttered by me, is false of contexts in which the reference of ‘bald’ differs from its reference in my present context. Thus the relevant conventions must be stated non-homophonically.
+
+Soames explains how the default determinate-extension and determinate-antiextension of ‘bald’ are fixed (210):
+
+(i) The predicate is applied to certain specific individuals who are taken as paradigmatic examples of baldness, and it is denied of other specific individuals who are taken as paradigmatic examples of people who are not bald. (ii) It is resolved that other individuals, y, are to be taken as determinate instances of baldness if they bear the relation $\mathrm{R}_{\mathrm{e}}$ — y has a perceptually equivalent amount of hair as x or less hair than x — to someone, x, in the initial sample of paradigmatically bald individuals. (iii) It is further resolved that still other individuals, z, are to be taken as determinate instances of individuals who are not bald if they bear the related relation $\mathrm{R}_{\mathrm{a}}$ — z has a perceptually equivalent amount of hair as w or more hair than w — to someone, w, in the initial sample of individuals who are paradigmatically not bald.
+
+Evidently this is a fantasy. There are no specific individuals who are semantically guaranteed to be bald. Although we can point to certain specific individuals as paradigms of baldness, no convention of English implies that they are not in the antiextension of ‘bald’ and wearing a tight skin-coloured cap. Similarly, there are no specific individuals who are semantically guaranteed not to be bald. Although we can point to certain specific individuals as paradigms of non-baldness, no convention of English implies that they are not in the extension of ‘bald’ and wearing a wig.
+
+If there are semantic conventions of English about ‘bald’, their content is general; they make no reference to specific individuals. For example, it might be a convention of English that ‘bald’ applies to anyone who has no hair. But what of other numbers of hairs? Is there a number n for which it is a convention of English that anyone with at least n hairs is not bald? If so, for which values of n is that a convention? Clearly, it is no easy matter to state the supposed conventions. But the problem goes deeper than that. For, in view of higher-order vagueness, the conventions governing vague terms will themselves be vague. Since the homophonic approach to stating the conventions fails, for the reason noted above, a semantic convention about a vague term t will need to be stated by use of another vague term t*. Soames does not discuss the danger of an infinite regress. Nor would it be attractive to postulate unstatable conventions, for the most powerful accounts of conventions make them a matter of mutual knowledge or belief, as in David Lewis’s classic Convention (Oxford: Blackwell, 1969).
+
+We can exemplify the problem. In stating what has been ‘resolved’, Soames uses the phrase ‘perceptually equivalent’. With little ingenuity, one can construct sorites series to show that it is vague. Of course, there are clear cases of perceptual equivalence and clear cases of perceptual inequivalence. But to put them in a story about ‘perceptually equivalent’ parallel to Soames’s story (i)-(iii) about ‘bald’ is, in addition to its implausibility, merely to postpone the moment at which one must explain how vagueness can occur without conventions or resolutions.
+
+It is doubtful that there are any semantic conventions of the special kind that Soames postulates. The need to postulate conventions for which there is no independent evidence suggests that something is awry in Soames’s theory.
+
+We can reach the same point by another route. Vagueness is not confined to public languages. Thought is vague too. Unless Soames wants to argue that thought is impossible without a public language, he will have to accept that there can be vagueness in the absence of a public language. But his account as given in the book does not apply to such vagueness. Even if there is a language of thought, it does not rely on conventions (see Roy Sorensen, ‘Vagueness within the language of thought’, Philosophical Quarterly 41 (1991): 389-413). One might attempt to construct an account structurally similar to Soames’s of vagueness in thought, but it does not look promising. Consider the most primitive concepts; some and perhaps all of them will be vague. From what source are they supposed to derive the elaborate structure Soames postulates of a default determinate-extension and a default determinate-antiextension?
+
+Some of the conversational mechanisms postulated by Soames may well have a part to play in a full account of vagueness in natural languages. But contextual variation in reference is entirely consistent with epistemicism about vagueness. The parts of Soames’s account that get him into trouble are the parts inconsistent with epistemicism.

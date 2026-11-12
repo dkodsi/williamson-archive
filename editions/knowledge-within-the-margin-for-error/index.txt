@@ -1,0 +1,79 @@
+# Knowledge within the margin for error
+
+Timothy Williamson
+
+Mind 116 (2007): 723–726.
+
+Abstract
+
+Roy Sorensen’s criticism of my use of margin for error principles to explain ignorance in borderline cases fails because it misidentifies the relevant margin for error principles. His alternative explanation in terms of truth-maker gaps is briefly criticized.
+
+Roy Sorensen does not mention that the margin for error principles he criticizes in ‘Knowledge Beyond the Margin for Error’ (Sorensen 2007) are not those my account in Vagueness (Williamson 1994) treats as basic to vagueness. Those he criticizes follow from the more basic margin for error principles only under simplifying conditions. Those simplifying conditions obtain for paradigmatic vague predicates, but not for the more complex predicates he discusses. The margin for error principles basic to vagueness still hold for Sorensen’s examples. He has done no damage to my account.
+
+On my account, vagueness is distinctive because it involves margin for error principles that concern minute shifts in the meaning of vague expressions, or in vague concepts, too minute for speakers or thinkers to discriminate. For example, let ‘small*’ be a vague atomic predicate with a meaning very like that of ‘small’, except that its cut-off point is one less than that for ‘small’. Thus, for all natural numbers $n$:
+
+(1)
+$n$ is small* if and only if $n + 1$ is small.
+
+Someone who believes the proposition that $n$ is small under the guise of a sentence of the form ‘$n$ is small’ could very easily have had a belief they would have expressed by the same (physically individuated) sentence, even if ‘small’ had meant what ‘small*’ actually means. The actual belief is reliable enough to constitute knowledge only if the counterfactual belief is true. Thus (since $n$ is small* in the counterfactual circumstances only if it is actually small*):
+
+(2)
+If one knows that $n$ is small, then $n$ is small*.
+
+Here and below, read ‘one knows that $n$ is small’ as qualified by ‘under the guise of a sentence of the form “$n$ is small”’. The margin for error principle (2) is intimately related to the vagueness of ‘small’. Trivially, given (1), (2) is equivalent to:
+
+(3)
+If one knows that $n$ is small, then $n + 1$ is small.
+
+Sorensen states the margin for error principle in the form of (3) rather than (2). Although the difference does not matter in this case, it is crucial in the more complex cases on which he bases his argument.
+
+Sorensen considers complex vague predicates such as ‘either small or equal to ten’. The analogue of (3) for that predicate is:
+
+$(3')$
+If one knows that $n$ is either small or equal to ten, then $n + 1$ is either small or equal to ten.
+
+As he points out, we should not endorse $(3')$. For all we know, ten is the cut-off point for ‘small’; if so, eleven is not small. Nevertheless, we know that ten is either small or equal to ten. In that case, $(3')$ is false.
+
+However, what matters is the analogue of (2). Since competent speakers are sensitive to the grammatical structure of Sorensen’s complex predicate, and ‘small’ is its only relevantly vague constituent, the proper analogue of (2) is:
+
+$(2')$
+If one knows that $n$ is either small or equal to ten, then $n$ is either small* or equal to ten.
+
+Given (1), $(2')$ is equivalent to:
+
+$(2'')$
+If one knows that $n$ is either small or equal to ten, then either $n + 1$ is small or $n$ is equal to ten.
+
+When $n$ is ten, $(2'')$ is obviously true. When $n$ is any other natural number, $(2'')$ is not interestingly different from (2) for present purposes. Thus Sorensen’s complex predicates pose no threat to the appropriate margin for error principles.
+
+One main advantage of margin for error principles is that they enable us to explain ignorance in borderline cases on independently plausible epistemological grounds: it is only to be expected, given classical principles of logic and semantics. Principles such as (2) and $(2'')$ are simply another manifestation of a more general epistemological phenomenon, inexactness, which occurs even when expressions or concepts are not relevantly vague, as in numerical judgements of quantity made on the basis of unaided perception. For instance, when judging height by naked eye at some distance, this principle typically holds:
+
+(4)
+If one knows that a man is at least $n$ millimetres tall, then he is at least $n + 1$ millimetres tall.
+
+We can construct disjunctive predicates like Sorensen’s in such cases. When it is unproblematic to recognize John, although our naked eye applications of predicates of the form ‘either at least $n$ millimetres tall or exactly the same height as John’ are typically inexact, they are not so in the special case of applying the predicate to John himself. The analogue of $(2'')$ holds in this case:
+
+$(4'')$
+If one knows that a man is either at least $n$ millimetres tall or exactly the same height as John, then he is either at least $n + 1$ millimetres tall or exactly the same height as John.
+
+When the man is John, $(4'')$ is obviously true. When he is any other man, $(4'')$ is not interestingly different from (4) for present purposes. Thus disjunctive predicates like Sorensen’s give rise to relevantly similar phenomena in cases of inexact knowledge not involving vagueness. He has inadvertently helped strengthen the theory he was trying to refute, by extending the comparison between vagueness and inexactness.
+
+Sorensen’s own attempt to explain ignorance in borderline cases postulates truth-maker gaps. According to Sorensen, such truths without truth-makers are unknowable. I regard truth-maker theory as naive and ill-motivated metaphysics. Bracket that view for the sake of argument. If truth does not require a truth-maker, it is unclear why knowledge should. Moreover, granted the apparatus of standard truth-maker theory, Sorensen’s theory gives the wrong results.
+
+Consider a chip very close to the boundary between red and orange. We cannot know that it is red, nor can we know that it is orange. In fact, it is just red. However, we can know that it is either red or orange (if you think that there are a few shades between red and orange, include ‘between red and orange’ as a third disjunct; it will make no difference to the overall argument). Given that known truths require a truth-maker, the known truth that it is either red or orange has a truth-maker. By standard truth-maker theory, a truth-maker for the disjunction that the chip is either red or orange is either a truth-maker for the disjunct that it is red or a truth-maker for the disjunct that it is orange. Since it is not orange, the latter disjunct has no truth-maker. Thus there is a truth-maker for the proposition that the chip is red. But that is simply a standard example of something unknowable by reason of vagueness. Hence truth-maker gaps are not doing the required work. Actually, Sorensen (2001, p. 174) emulates the supervaluationist by postulating truth-makers for disjunctions none of whose disjuncts have a truth-maker. In doing so, he cuts off his account from one of the most plausible candidates for a general principle about truth-makers. Truth-maker theory in Sorensen’s hands is so spineless that its explanatory value is negligible.
+
+A further worry about Sorensen’s appeal to truth-maker gaps is that it is in tension with accounts of truth-bearers that an epistemicist might well find attractive. For example, suppose that ten is the largest small natural number. Then, plausibly, the property (of natural numbers) of being small just is the property of being at most ten. On a Russellian account of propositions (though not of numbers), the proposition that ten is small just consists of ten and the property of being small. One can know that truth under the guise of a relevantly precise sentence such ‘Ten is at most ten’, or better by a sentence that results from replacing ‘at most ten’ by a relevantly precise atomic predicate for the same property, but not under the guise of the sentence ‘Ten is small’. Since the truth can be known under the former guise, it has a truth-maker. Thus the proposition that ten is small has a truth-maker after all.
+
+No doubt epicycles can be added to Sorensen’s theory. It seems more promising to investigate the epistemology of vagueness by means of independently testable epistemological principles.1
+
+# Notes
+
+[1] This piece was written when I held a Tang Chun-I Visiting Professorship at the Chinese University of Hong Kong.
+
+# References
+
+Sorensen, Roy 2001: Vagueness and Contradiction. Oxford: Clarendon Press.
+
+—— 2007: ‘Knowledge Beyond the Margin for Error’, Mind 463, pp. 717–722.
+
+Williamson, Timothy 1994: Vagueness. London: Routledge.

@@ -1,0 +1,33 @@
+# Locke on particles: a reply to Nuchelmans
+
+David Berman and Timothy Williamson
+
+Logique et Analyse 123 (1988): 213–215. With David Berman.
+
+Gabriel Nuchelmans, in “The Historical Background to Locke’s Account of Particles”, Logique et Analyse, 113 (1986): 53–70, criticizes the view that Locke held the unrestricted semantic thesis that all significant words, including particles, signify ideas. “The most recent, and perhaps the most explicit, defender of this universal scope is Berman” (Nuchelmans, p. 53) — in “Particles and Ideas in Locke’s Theory of Meaning”, The Locke Newsletter, 15 (1984): 15–24. This reply will take the positive case for the view that Locke held the unrestricted thesis as already having been made there; its concern is only to rebut the arguments which Nuchelmans advances.
+
+To show that there was a tradition distinguishing particles from other words, such as nouns and verbs, Nuchelmans assembles much valuable and often abstruse evidence, ranging from the thirteenth to the seventeenth century. Within this tradition, particles are treated as syncategorematic words, and
+
+Syncategorematic words […] can perform their semantic function only when they are adjoined to one or more categorematic words. While a categorematic word acquires its meaning by being accompanied by a mental act of conceiving of a thing and thus signifies the thing thought of, the adjoined syncategorematic word expresses a mode or manner in which the thing concerned is apprehended by the mind.
+
+(Nuchelmans, pp. 55–6)
+
+Now granted that there was such a tradition, there seems to be no clear reason for supposing Locke to have been part of it, particularly since he saw himself as clearing away “Vague and insignificant Forms of Speech [which] have so long pass’d for Mysteries of Science” (Essay, “Epistle to the Reader”). Thus we should not assume that, because there was a traditional distinction, Locke was conforming to it; he aimed, particularly in the field of language, at breaking with tradition. And it is because he succeeded that we still study him. Indeed, it is noteworthy that Nuchelmans (in the passage just quoted) characterizes the tradition as one in which categorematic words signify things, whereas it is not in dispute that, for Locke, such words primarily signify ideas.
+
+Secondly, Locke’s semantic theory was not (apart from one exception, as far as we know) seen in the seventeenth or eighteenth century as making only the restricted claim. The one exception, which is noted in Berman (op. cit., p. 22) and to which Nuchelmans calls attention (p. 53), is Berkeley, who did in his Philosophical Commentaries interpret Locke as having held that particles do not stand for ideas. But it should not be forgotten that Berkeley never published these notebook comments, which suggests that he may have decided that Locke did not after all hold the view that he had earlier attributed to him. If Berkeley retained his earlier view, why did he not publish it?
+
+Thirdly, if Nuchelmans is right then Locke was philosophically sensitive to distinctions between parts or speech:
+
+For Locke […] the signification of “only” was as different from the signification of “limitation” as the signification of “hurrah” differs from that of “joy”.
+
+(Nuchelmans, p. 64)
+
+The suggestion is that, on Locke’s view, just as the interjection “hurrah” signifies a certain state of the mind while the corresponding noun “joy” signifies the reflective idea of that state, so the particle “only” signifies a certain act of the mind while the corresponding noun “limitation” signifies the reflective idea of that act. However, Nuchelmans cites no passage in which Locke makes this subtle distinction. It may well be doubted that Locke did think of words other than nouns as differing in signification from the nouns to which they correspond. To take a comparable case, in the chapter inmediately following that on particles Locke writes:
+
+[I]f we observe them, we shall find that our simple Ideas have all abstract, as well as concrete Names, the one whereof is (to speak the Language of Grammarians) a Substantive, the other an Adjective: as Whiteness, White; Sweetness, Sweet.
+
+(Essay, III.viii.2)
+
+In spite of their grammatical differences, the noun (substantive) and the adjective name the same idea. Of course, Locke still needs to distinguish the false proposition Humanity is rationality from the true one A man is rational, but he does so in terms of the nature of the copulative link; in A man is rational we have “the affirming, not one abstract Idea to be another, but one abstract Idea to be join’d to another” (Essay, III.viii.1). Although the case of adjectives is a different one from that of particles, it does emphasize the need for Nuchelmans to ground his interpretation of Locke in the text, which he has not so far done.
+
+We conclude that Nuchelmans has failed to show the relevance of the scholastic tradition he discusses to Locke. His remarks do not undermine the original case for interpreting Locke as having held the unrestricted thesis that all significant words signify ideas.

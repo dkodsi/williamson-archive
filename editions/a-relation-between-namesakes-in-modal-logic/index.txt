@@ -1,0 +1,150 @@
+# A relation between namesakes in modal logic
+
+Timothy Williamson
+
+Bulletin of the Section of Logic 20 (3/4) (1991): 129–137.
+
+Abstract
+
+The closure under a certain rule of the modal system usually called “$K4$” is shown to be the modal system called “$K4$” by Sobociński.
+
+A modal system $S$ provides double cancellation iff for all sentences $A$ and $B$, if $\vdash_S LA \equiv LB$ and $\vdash_S MA \equiv MB$ then $\vdash_S A \equiv B$. It is of course not required that $\vdash_S ((LA \equiv LB) \mathbin{\&} (MA \equiv MB)) \supset (A \equiv B)$. If $S$ is any modal system, there is a smallest normal extension $S+$ of $S$ providing double cancellation (terminology as in [1]). For reasons given in [3], the double cancellation rule may be of some philosophical interest. This note extends the results of [3] and [4] on double cancellation in normal systems.
+
+The name “$K4$” is ambiguous. It is now customarily used for the smallest normal system containing the schema $LA \supset LLA$; this practice is followed here. Sobociński used the same name for the smallest system containing $KT4$ (= $S4$) and the schemata $A \supset (MLA \supset LA)$ and $MLA \equiv LMA$ ([2]); this normal system is here referred to as $K4_{Sob}$. The relation to be established between these namesakes is that $K4+ = K4_{Sob}$; it will also be shown that $K4_{Sob}$ is the only normal extension of $K4$ providing double cancellation in which there is not modal collapse. This extends the results of [3], in which it was shown that $KD4!+ = K4_{Sob}$, where $KD4!$ is the smallest normal system containing the formula $MT$ ($T$ being a constant tautology) and the schema $LLA \equiv LA$, and [4], in which it is shown that $KW+$ is inconsistent, where $KW$ is “provability logic”, the smallest normal system containing $L(LA \supset A) \supset LA$, an extension of $K4$.
+
+Lemma A. $\vdash_{K4+} (A \mathbin{\&} M(A \mathbin{\&} LA)) \supset LA$.
+
+Proof. For any formula $A$, the following are theorems of $K4+$ (where on the right a subsystem of $K4+$ is given in any normal extension of which the reasoning can be carried out; e.g. “$K$” means that the reasoning can be carried out in any normal system):
+
+(1)	$(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA))) \supset A$	$PC$
+(2)	$L(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA))) \supset LA$	1, $K$
+(3)	$M(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA))) \supset MA$	1, $K$
+(4)	$LA \supset (LA \vee \sim M(A \mathbin{\&} LA))$	$PC$
+(5)	$LLA \supset L(LA \vee \sim M(A \mathbin{\&} LA))$	4, $K$
+(6)	$LA \supset LLA$	$K4$
+(7)	$LA \supset L(LA \vee \sim M(A \mathbin{\&} LA))$	5, 6, $PC$
+(8)	$LA \supset L(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	7, $K$
+(9)	$LA \equiv L(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	2, 8, $PC$
+(10)	$A \supset (M(A \mathbin{\&} LA) \vee (A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA))))$	$PC$
+(11)	$MA \supset (MM(A \mathbin{\&} LA) \vee M(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA))))$	10, $K$
+(12)	$MM(A \mathbin{\&} LA) \supset M(A \mathbin{\&} LA)$	$K4$
+(13)	$(A \mathbin{\&} LA) \supset (A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	$PC$
+(14)	$M(A \mathbin{\&} LA) \supset M(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	13, $K$
+(15)	$MM(A \mathbin{\&} LA) \supset M(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	12, 14, $K$
+(16)	$MA \supset M(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	11, 15, $K$
+(17)	$MA \equiv M(A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	3, 16, $PC$
+(18)	$A \equiv (A \mathbin{\&} (LA \vee \sim M(A \mathbin{\&} LA)))$	9, 17, $K4+$
+(19)	$(A \mathbin{\&} M(A \mathbin{\&} LA)) \supset LA$	18, $PC$
+
+Lemma B. $\vdash_{K4+} (A \mathbin{\&} LMA) \supset LA$.
+
+Proof. The following are theorems of $K4+$:
+
+(1)	$L(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset (LA \mathbin{\&} LM(\sim A \mathbin{\&} MA))$	$K$
+(2)	$LA \supset \sim M(\sim A \mathbin{\&} MA)$	$K$
+(3)	$(LA \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset (\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	2, $PC$
+(4)	$(LLA \mathbin{\&} LM(\sim A \mathbin{\&} MA)) \supset L(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	3, $K$
+(5)	$(LA \mathbin{\&} LM(\sim A \mathbin{\&} MA)) \supset L(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	4, $K4$
+(6)	$L(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset L(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	1, 5, $PC$
+(7)	$L(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A)) \supset L(A \mathbin{\&} M(\sim A \mathbin{\&} MA))$	Like 6
+(8)	$L(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \equiv L(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	6, 7, $PC$
+(9)	$(A \mathbin{\&} \sim LA) \supset \sim M(A \mathbin{\&} LA)$	Lemma A
+(10)	$(A \mathbin{\&} M\sim A) \supset L(\sim A \vee M\sim A)$	9, $K$
+(11)	$(A \mathbin{\&} M\sim A) \supset LL(\sim A \vee M\sim A)$	10, $K4$
+(12)	$M(\sim A \mathbin{\&} MA) \supset M\sim A$	$K$
+(13)	$(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset LL(\sim A \vee M\sim A)$	11, 12, $PC$
+(14)	$(M(\sim A \mathbin{\&} MA) \mathbin{\&} LL(\sim A \vee M\sim A)) \supset$
+$M(\sim A \mathbin{\&} MA \mathbin{\&} L(\sim A \vee M\sim A))$	$K$
+(15)	$(\sim A \mathbin{\&} MA) \mathbin{\&} L(\sim A \vee M\sim A) \supset$
+$(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	$K$
+(16)	$M(\sim A \mathbin{\&} MA \mathbin{\&} L(\sim A \vee M\sim A)) \supset$
+$M(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	15, $K$
+(17)	$(M(\sim A \mathbin{\&} MA) \mathbin{\&} LL(\sim A \vee M\sim A)) \supset$
+$M(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	14, 15, $PC$
+(18)	$(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset M(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	13, 17, $PC$
+(19)	$M(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset MM(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	18, $K$
+(20)	$M(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \supset M(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	19, $K4$
+(21)	$M(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A)) \supset M(A \mathbin{\&} M(\sim A \mathbin{\&} MA))$	Like 20
+(22)	$M(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \equiv M(\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	20, 21, $PC$
+(23)	$(A \mathbin{\&} M(\sim A \mathbin{\&} MA)) \equiv (\sim A \mathbin{\&} M(A \mathbin{\&} M\sim A))$	8, 21, $K4+$
+(24)	$\sim(A \mathbin{\&} M(\sim A \mathbin{\&} MA))$	23, $PC$
+(25)	$((\sim M\sim A \mathbin{\&} MA) \mathbin{\&} LMA) \supset LA$	$K$
+(26)	$(A \mathbin{\&} LMA) \supset LA$	24, 25, $PC$
+
+Lemma C. $\vdash_{K4+} LLA \equiv LA$.
+
+Proof. The following are theorems of $K4+$:
+
+(1)	$(LA \mathbin{\&} \sim LA) \supset A$	$K$
+(2)	$(LLA \mathbin{\&} L\sim LA) \supset LA$	1, $K$
+(3)	$LLA \supset (MLA \vee LA)$	2, $K$
+(4)	$MLLA \supset (MMLA \vee MLA)$	3, $K$
+(5)	$MMLA \supset MLA$	$K4$
+(6)	$MLLA \supset MLA$	4, 5, $PC$
+(7)	$LA \supset LLA$	$K4$
+(8)	$MLA \supset MLLA$	7, $K$
+(9)	$MLLA \equiv MLA$	6, 8, $PC$
+(10)	$((LA \vee \sim LLA) \mathbin{\&} LM(LA \vee \sim LLA)) \supset L(LA \vee \sim LLA)$	Lemma B
+(11)	$((LA \vee \sim LLA) \mathbin{\&} LLA) \supset LA$	$PC$
+(12)	$(L(LA \vee \sim LLA) \mathbin{\&} LLLA) \supset LLA$	11, $K$
+(13)	$(LM(LA \vee \sim LLA) \mathbin{\&} LLLA) \supset LLA$	10, 12, $PC$
+(14)	$((LA \vee \sim LLA) \mathbin{\&} M((LA \vee \sim LLA) \mathbin{\&} L(LA \vee \sim LLA))) \supset$
+$L(LA \vee \sim LLA)$	Lemma A
+(15)	$(M((LA \vee \sim LLA) \mathbin{\&} L(LA \vee \sim LLA)) \mathbin{\&} LLLA) \supset LLA$	12, 14, $PC$
+(16)	$MLA \supset M(LA \vee \sim LLA)$	$K$
+(17)	$LMLA \supset LM(LA \vee \sim LLA)$	16, $K$
+(18)	$(LMLA \mathbin{\&} LLLA) \supset LLA$	13, 17, $PC$
+(19)	$(\sim LA \mathbin{\&} LA) \supset (A \mathbin{\&} (LA \vee \sim LLA))$	$PC$
+(20)	$(\sim MLA \mathbin{\&} LLA) \supset (LA \mathbin{\&} L(LA \vee \sim LLA))$	19, $K$
+(21)	$(\sim MLA \mathbin{\&} LLA) \supset ((LA \vee \sim LLA) \mathbin{\&} L(LA \vee \sim LLA))$	20, $PC$
+(22)	$M(\sim MLA \mathbin{\&} LLA) \supset$
+$M((LA \vee \sim LLA) \mathbin{\&} L(LA \vee \sim LLA))$	21, $K$
+(23)	$(M(\sim MLA \mathbin{\&} LLA) \mathbin{\&} LLLA) \supset LLA$	15, 22, $PC$
+(24)	$(\sim LMLA \mathbin{\&} LLLA) \supset M(\sim MLA \mathbin{\&} LLA)$	$K$
+(25)	$(\sim LMLA \mathbin{\&} LLLA) \supset LLA$	23, 24, $PC$
+(26)	$LLLA \supset LLA$	18, 25, $PC$
+(27)	$LLA \supset LLLA$	$K4$
+(28)	$LLLA \equiv LLA$	26, 27, $PC$
+(29)	$LLA \equiv LA$	9, 28, $K4+$
+
+Lemma D. $\vdash_{K4+} MT$.
+
+Proof. The following are theorems of $K4+$:
+
+(1)	$LLMT \equiv LMT$	Lemma C
+(2)	$LL\sim T \equiv L\sim T$	Lemma C
+(3)	$MMT \equiv MT$	2, $K$
+(4)	$MLMT \supset MT$	$K$
+(5)	$MLMT \supset MMT$	3, 4, $PC$
+(6)	$L\sim T \supset LMT$	$K$
+(7)	$ML\sim T \supset MLMT$	6, $K$
+(8)	$(MMT \mathbin{\&} LLMT) \supset MLMT$	$K$
+(9)	$(MMT \mathbin{\&} LMT) \supset MLMT$	8, $K4$
+(10)	$(MMT \mathbin{\&} \sim ML\sim T) \supset MLMT$	9, $K$
+(11)	$MMT \supset MLMT$	7, 10, $PC$
+(12)	$MLMT \equiv MMT$	5, 11, $PC$
+(13)	$LMT \equiv MT$	1, 12, $K4+$
+(14)	$\sim MT \supset LMT$	$K$
+(15)	$MT$	13, 14, $PC$
+
+Lemma E. $K4+ = K4_{Sob}$.
+
+Proof. It is shown in [3] that $KD4!+ = K4_{Sob}$. By Lemmas C and D, $KD4! \subseteq K4+$, so $KD4!+ \subseteq K4++ = K4+$. But $K4 \subseteq KD4!$, so $K4+ \subseteq KD4!+$.
+
+Lemma F. The only normal proper extensions of $K4_{Sob}$ are $\mathit{Triv}$ ($K$ plus $A \equiv LA$) and the inconsistent system.
+
+Proof. Let $S$ be any normal extension of $K4_{Sob}$. By results noted in [3], the frame of any generated submodel of the canonical model of $K4_{Sob}$ consists of either a single reflexive point or two non-simmetrically related reflexive points, and $K4_{Sob}$ is valid on all and only such frames. Since any non-theorem of $S$ is falsified in a generated submodel of the canonical model of $K4_{Sob}$ that is a model of $S$, $S$ has the finite model property, and so by Corollary 8.14 of [1] is characterized by a class $C$ of frames, each of must be of one of the two mentioned kinds (else it would not be a frame for $K4_{Sob}$, and so not for $S$). If $C$ contains a two-point frame, $S = K4_{Sob}$. If $C$ is non-empty but contains only one-point frames, $S = \mathit{Triv}$. If $C$ is empty, $S$ is inconsistent.
+
+Theorem. The normal extensions of $K4$ providing double cancellation are $K4_{Sob}$, $\mathit{Triv}$ and the inconsistent system.
+
+Proof. Any normal extension of $K4$ providing double cancellation is one of the three mentioned systems by Lemmas E and F. $K4_{Sob}$ provides double cancellation by Lemma E. $\mathit{Triv}$ and the inconsistent system provide it trivially.
+
+# References
+
+[1] G. E. Hughes and M. J. Cresswell, A Companion to Modal Logic, (London: Methuen, 1984).
+
+[2] B. Sobociński, Family K of the non-Lewis systems, Notre Dame Journal of Formal Logic, vol. 5 (1964), pp. 313–318.
+
+[3] T. Williamson, Assertion, denial and some cancellation rules in modal logic, Journal of Philosophical Logic, vol. 17 (1988), pp. 299–318.
+
+[4] T. Williamson, Verification, falsification, and cancellation in KT, Notre Dame Journal of Formal Logic, vol. 31 (1990), pp. 286–290.

@@ -1,0 +1,771 @@
+# Evidence of Evidence in Epistemic Logic
+
+Timothy Williamson
+
+In Mattias Skipper and Asbjørn Steglich-Petersen (eds.), Higher-Order Evidence: New Essays (2019), 265–297. Oxford: Oxford University Press.
+
+The slogan ‘Evidence of evidence is evidence’ may sound plausible, but what it means is far from clear. It has often been applied to connect evidence in the current situation to evidence in another situation. The relevant link between situations may be diachronic (White 2006, p. 538): is present evidence of past or future evidence of something present evidence of that thing? Alternatively, the link may be interpersonal (Feldman 2007: 208): is evidence for me of evidence for you of something evidence for me of that thing? Such inter-perspectival links have been discussed because they can destabilize inter-perspectival disagreements. In their own right they have become the topic of a lively recent debate (Fitelson 2012, Feldman 2014, Roche 2014, Tal and Comesaña 2017).
+
+This chapter concerns putative intra-perspectival evidential links. Roughly, is present evidence for me of present evidence for me of something present evidence for me of that thing? Unless such a connection holds between a perspective and itself, it is unlikely to hold generally between distinct perspectives. Formally, the single-perspective case is also much simpler to study. Moreover, it concerns issues about the relation between first-order and higher-order evidence, the topic of this volume.
+
+The formulations in this chapter have not been tailored for optimal fit with previous discussions. Rather, they are selected because they make an appropriate starting-point, simple, significant, and not too ad hoc. The issue is not what people meant all along by ‘Evidence of evidence is evidence’. Rather, the issue is what there is worth meaning by it in the vicinity.
+
+In particular, I will not discuss existential generalizations to the effect that a given hypothesis has some evidential support, in the sense that some part of the evidence supports it. Such principles are usually too weak to be of interest, since from unequivocally negative evidence one can typically carve out a gerrymandered fragment that in isolation points the opposite way—for instance, by selecting a biased sample of data points. Instead, the focus will be on the total evidence.
+
+For the sake of rigour and clarity, evidence will be understood in probabilistic terms. On some probabilistic readings of the slogan ‘Evidence of evidence is evidence’, it can be straightforwardly refuted by standard calculations of probabilities for playing cards, dice, and so on. For example, it might be interpreted as saying that if p is evidence for q, and q is evidence for r, then p is evidence for r. Counterexamples to such transitivity principles are easy to construct, whether ‘p is evidence for q’ is understood as ‘p raises the probability of q’ or as ‘the conditional probability of q on p’ is high (see also Fitelson 2012). This chapter is not concerned with principles refuted by standard first-order probabilistic calculations. The principles it discusses all involve readings of the phrase ‘evidence of evidence’ in terms of second-order evidence, evidence for propositions about evidence: more specifically, second-order probabilities, probabilities of propositions about probabilities.
+
+Formal models will be used throughout, within the framework of epistemic logic, since it provides a natural way of integrating first-level epistemic conditions (such as evidence of a coming storm) and second-level epistemic conditions (such as evidence of evidence of a coming storm). An integrated framework is needed to give a fair chance to the idea that evidence of evidence is evidence. We will be asking questions like this: if the probability on the evidence that the probability on the evidence of a hypothesis H is at least 90% is itself at least 90%, under what conditions does it follow that the probability on the evidence of H is indeed at least 90%, or at least more than 0%? Such principles may remind one of synchronic analogues of more familiar probabilistic reflection principles, and turn out to be sensitive to similar structural features of the underlying epistemic relations (compare Weisberg 2007 and Briggs 2009).
+
+Bridge principles between first-level and higher-level epistemic conditions often turn out to imply versions of highly controversial principles in standard epistemic logic, most notably the contentious principle of so-called positive introspection, that if one knows something, one knows that one knows it, and the more obviously implausible principle of negative introspection, that if one doesn’t know something, one knows that one doesn’t know it (Williamson 2000, pp. 228–37; 2014). To anticipate, various natural formalizations of the intra-perspectival principle that evidence of evidence is evidence also turn out to have such connections, although more complicated ones than usual. Since the overall direction of this chapter is against those principles, it is dialectically fair to use a formal framework that presents them with no unnecessary obstacles.
+
+# 13.1 The formal framework
+
+For clarity, the formal framework will first be explained, though some readers will already be familiar with it. The underlying models come from modal logic, as adapted to single-agent epistemic logic (Hintikka 1962), to which we can add the required probabilistic structure (Williamson 2000).
+
+For present purposes, a frame is an ordered pair <W, R>, where W is a nonempty set and R is a dyadic relation over W, a set of ordered pairs of members of W. Informally, we conceive the members of W as worlds, or as relevantly but non-maximally specific states of affairs, mutually exclusive and jointly exhaustive. We model (coarse-grained) propositions as subsets of W; thus the subset relation corresponds to entailment, set-theoretic intersection to conjunction, union to disjunction, complementation in W to negation, and so on. If w ∈ X, the proposition X is true in the world w; otherwise, X is false in w. We use the relation R to model evidence for a given agent (expressed by ‘one’) at a given time (expressed by the present tense). More precisely, if w and x are worlds (w, x ∈ W) then Rwx (<w, x> ∈ R) if and only if it is consistent with one’s total evidence in w that one is in x. We define the proposition R(w) as {x: Rwx}, which is the strongest proposition to follow from one’s evidence in w; in effect, R(w) is one’s total evidence in w. Since our interest here is in what follows from one’s evidence, and what follows is automatically closed under multi-premise entailment, concerns about the logical omniscience imposed by such models are less pertinent than elsewhere in epistemic logic.
+
+At the very least, the total evidence should be consistent, otherwise it both entails everything and excludes everything. In a probabilistic setting, we want to conditionalize on the evidence, which makes no obvious sense when the evidence is the empty set of worlds. Thus we require that $\mathrm{R}(w)\neq\{\}$; in other words, the relation R is serial in the sense that each world has it to some world. The epistemic interpretation motivates the formal development but plays no further role in it. Formally, we will generalize over every (finite) nonempty set W of entities of any kind and every serial relation R over them.
+
+We need to add probabilities to the frames. We assume W to be finite in order to avoid the complications inherent in infinite probability distributions. There is enough complexity and variety in finite probability distributions for most epistemological modelling purposes. A probabilistic frame is an ordered triple <W, R, Pr> where <W, R> is a frame, W is finite, R is serial, and Pr is a probability distribution over W. Thus Pr maps each subset of W to a real number between 0 and 1, where Pr(W) = 1 and Pr(X ∪ Y) = Pr(X) + Pr(Y) whenever X and Y are disjoint. We impose one further constraint on Pr: it is regular, in the sense that Pr(X) = 0 only if X = {} (the converse follows from the other axioms). The reason for that constraint will emerge shortly. Informally, we regard Pr as the prior probability distribution. For present purposes, it need not be absolutely prior; it may embody one’s previously acquired background information.
+
+Posterior probabilities in a world $w$ are defined by conditioning $\operatorname{Pr}\nolimits$ on one’s total evidence in $w$: thus the posterior probability of $\mathrm{X}$ in $w$, the probability $\operatorname{Pr}\nolimits_w(\mathrm{X})$ of $\mathrm{X}$ on the evidence in $w$, is the prior conditional probability of $\mathrm{X}$ on $\mathrm{R}(w)$. These conditional probabilities are themselves defined in the usual way as ratios of unconditional probabilities, giving this equation:
+
+EVPROB
+$\operatorname{Pr}\nolimits_w(\mathrm{X})=\operatorname{Pr}\nolimits(\mathrm{X}\mid \mathrm{R}(w))=\operatorname{Pr}\nolimits(\mathrm{X}\cap \mathrm{R}(w))/\operatorname{Pr}\nolimits(\mathrm{R}(w))$
+
+Of course, the ratio in EVPROB is well defined only if $\operatorname{Pr}\nolimits(\mathrm{R}(w))>0$. Since R is serial, R(w) is nonempty, but we still need regularity to conclude, from that, that Pr(R(w)) > 0. That is why the constraint was imposed. Informally, the probability of a proposition X on one’s evidence in w is the weighted proportion of worlds consistent with one’s evidence in w in which X is true.
+
+A stronger constraint on Pr than regularity is uniformity, which says that for any two worlds w and x, Pr({w}) = Pr({x}): all worlds have equal weight. In a finite probability space, uniformity entails regularity; uniformity equates Pr(X) with the unweighted proportion of members of X that are members of W. We do not impose uniformity, despite the simplicity it brings. For the members of W may represent less than maximally specific possibilities, which may themselves vary in their level of specificity: in that case, uniformity in the model would require non-uniformity at a level of resolution finer than that represented in the model. Permitting non-uniformity makes for more robust results.
+
+Mathematically, this probabilistic framework is just like the one in Williamson 2000 and 2014. However, there $\mathrm{R}(w)$ was informally explained as what the agent knows in $w$, rather than as the evidence in $w$. This chapter does not impose the equation $\mathrm{E}=\mathrm{K}$ of total evidence with total knowledge. The reason is not any loss of confidence in E = K, but simply a preference for addressing a wider range of views of evidence. Obviously, E = K remains compatible with the present framework. A formal correlate of this difference is that since knowledge entails truth, if R(w) is what the agent knows then w ∈ R(w), so R is reflexive. All reflexive relations are serial but not vice versa. Even without E = K, the assumption that evidence consists of true propositions is attractive (Williamson 2000: 201–2). Nevertheless, for the sake of generality, we do not impose it. Thus the framework allows one’s total evidence to be what one reasonably believes (in some sense that does not entail truth), rather than knows, so long as one’s reasonable beliefs are jointly consistent.
+
+The framework does in effect assume that evidence consists of propositions, true or false. After all, the standard probabilistic operation of conditionalizing on evidence treats evidence as propositional (for more support for the assumption see Williamson 2000: 194–200).
+
+The framework automatically includes within the models non-trivial propositions about probabilities on the evidence. For instance, for any proposition $\mathrm{X}$ and real number $c$, we may define $\mathrm{P}_{\ge c}[\mathrm{X}]$ as $\{w:\operatorname{Pr}\nolimits_w(\mathrm{X})\ge c\}$, the proposition that the probability on one’s evidence of $\mathrm{X}$ is at least $c$, which may be true in some worlds and false in others. Thus $\mathrm{P}_{\ge c}[\mathrm{X}]$ itself receives a probability $\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge c}[\mathrm{X}])$ on one’s evidence in a world $w$, so $\mathrm{P}_{\ge c}[\mathrm{P}_{\ge c}[\mathrm{X}]]$ is in turn well defined: it is the proposition that the probability on one’s evidence that the probability on one’s evidence of $\mathrm{X}$ is at least $c$ is itself at least $c$. Other propositions about probabilities can be defined similarly; for instance, $\mathrm{P}_{>c}[\mathrm{X}]$ is $\{w:\operatorname{Pr}\nolimits_w(\mathrm{X})>c\}$, the proposition that the probability on one’s evidence of $\mathrm{X}$ is greater than $c$.
+
+When interpreting English renderings in which epistemic terms such as ‘one’s evidence’ and ‘the probability of X on one’s evidence’ occur within the scope of further epistemic vocabulary, it is crucial to remember that the embedded occurrences are here to be read de dicto rather than de re. Thus even if the probability of X on one’s evidence is 70%, one cannot substitute ‘70%’ for ‘the probability of X on one’s evidence’ without loss in the scope of another probability operator, for doing so would in effect presuppose that it is certain on one’s evidence that the probability of X on one’s evidence is 70%. To read the terms for probability de re would preclude by fiat the non-rigid behaviour that represents uncertainty in an epistemic modal setting, and so prevent us from addressing the very epistemic issues we want to discuss. De dicto readings will therefore be understood throughout. They are unambiguously written into the definitions of the formal notation, but one must bear that in mind when paraphrasing formulas into natural language.
+
+Of course, the setup just described is not the only formal framework conceivable for theorizing about probabilities on evidence of probabilities on evidence. For instance, one could assign each world its own probability distribution, with no requirement that they all be derived by conditionalization on one’s evidence in the world from a single prior probability distribution. However, that liberalization would have less chance of vindicating any interesting version of the idea that evidence of evidence is evidence.
+
+The present framework is simple, perspicuous, and tightly integrated. In particular, it avoids the ad hoc move of postulating a second probability distribution to handle second-order probabilities, which would also tend to undermine the prospects for inferences from evidence of evidence to evidence, by leaving too many degrees of freedom. In such respects the framework provides a comparatively hospitable environment for those inferences. If they do not thrive here, they are not robust. The framework is also mathematically tractable, permitting us to prove general results and through them to understand what the successes and failures of ‘evidence of evidence’ principles depend on.
+
+We can use the framework to formulate principles of forms such as this:
+
+$$\mathrm{P}_{\ge a}[\mathrm{P}_{\ge b}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge c}[\mathrm{X}]$$
+
+(i)
+
+This says that whenever the probability on the evidence that the probability on the evidence of X is at least b is itself at least a, the probability on the evidence of X is at least c. Such an inclusion is valid on a finite serial frame <W, R> if and only if it holds for every proposition X $\subseteq$ W and every regular probability distribution Pr over W. Given real numbers a, b, c between 0 and 1, under what conditions on <W, R> is (i) valid on that frame?
+
+We shall not be much concerned with validity on a probabilistic frame <W, R, Pr>, where the probability distribution is held fixed rather than generalized over. This is partly for reasons of mathematical tractability: validity on a probabilistic frame tends to be ultra-sensitive to complicated combinatorial effects. Generalizing over probability distributions helps smooth out such complications. But it is anyway unclear what general constraints on the probability distribution might be appropriate, particularly once the worlds are allowed to represent possibilities of varying degrees of specificity, motivating different probabilistic weights. Of course, if the particular set W happens to consist of genuine epistemic situations, which we interpret at face value, both the appropriate accessibility relation R and the appropriate probability distribution Pr may be fixed, but that is to go outside the structural realm in which a formal inquiry proceeds. If two probabilistic frames <W, R, Pr> and <W*, R*, Pr*> are isomorphic, in the sense that some bijection maps W onto W* and induces mappings of R onto R* and Pr onto Pr*, then whatever formal constraint one frame satisfies, so does the other. Features of <W, R, Pr> that depend on the intrinsic natures of the members of W are not formal in that sense. What is hard to motivate is a purely formal constraint passed by <W, R, Pr1> but failed by <W, R, Pr2>, where Pr1 and Pr2 are two regular probability distributions over W. A reasonable default hypothesis is that all regular probability distributions over the given frame <W, R> are equally legitimate, from a formal perspective. But this chapter is intended to open up more questions than it closes down: obviously, readers are welcome to try their hand at formulating well-motivated formal constraints that privilege one probability distribution over another for a given frame <W, R>.
+
+Section 13.2 starts to explore the formal prospects for principles of the rough shape of (i), and to assess the epistemological issues arising when they are interpreted in terms of evidence.
+
+# 13.2 Positive and negative introspection for evidence
+
+Here is a simple example of what might go wrong with evidence of evidence principles. Consider a frame <W, R> with just three worlds, where $\mathrm{W}=\{0,1,2\}$, $\mathrm{R}(0)=\{1\}$, $\mathrm{R}(1)=\mathrm{R}(2)=\{2\}$ (so R is serial, cf. Figure 13.1). Informally, if one is in world 0, it is certain on one’s evidence that one is in world 1; if one is in world 1 or world 2, it is certain on one’s evidence that one is in world 2. Let the proposition X be $\{2\}$, true in world 2 and false in the other two worlds. Then $\mathrm{P}_{\ge1}[\mathrm{X}]$ is true in world 1, so $\mathrm{P}_{\ge1}[\mathrm{P}_{\ge1}[\mathrm{X}]]$ is true in world 0. But in world 0, one is certain on one’s evidence not to be in world 2, so $\mathrm{P}_{>0}[\mathrm{X}]$ is false. In this frame, even the weakest non-trivial evidence of evidence principles fail, because X is certain on one’s evidence to be certain on one’s evidence to be true, but also certain on one’s evidence to be false. A fortiori, any principle of the form $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge b}[\mathrm{X}]]\subseteq \mathrm{P}_{>c}[\mathrm{X}]$ (for fixed a, b, c between 0 and 1) fails in this frame.
+
+A relevant feature of that frame is that R is not reflexive; neither world 0 nor world 1 has R to itself. In both those worlds, one’s total evidence is a falsehood. That is why probability 1 on one’s evidence fails to entail truth. In a reflexive frame, if a proposition X is false at a world w, one’s evidence R(w) contains w, so the probability of {w} conditional on R(w) is Pr({w})/Pr(R(w)), which is nonzero because Pr({w}) is nonzero, since Pr is regular, so the probability of X conditional on R(w) is less than 1 because X excludes {w}. Thus in a reflexive frame, both these principles hold:
+
+$$\mathrm{P}_{\ge1}[\mathrm{P}_{\ge b}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge b}[\mathrm{X}]$$
+
+(ii)
+
+$$\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$$
+
+(iii)
+
+For, in regular frames, $\mathrm{P}_{\ge1}[\mathrm{Y}]$ entails Y for any proposition Y; what is certain is true. If a proposition is certain on one’s evidence to be likely to some degree on one’s evidence, then it is likely to at least that degree on one’s evidence; similarly, if it is likely to some degree on one’s evidence to be certain on one’s evidence, then it is likely to at least that degree on one’s evidence. By contrast, in any non-reflexive frame, $\mathrm{P}_{\ge1}$ is not a truth-entailing operator, for if a world w fails to have R to itself, then the proposition $\mathrm{W}-\{w\}$ (true everywhere except w) is true throughout $\mathrm{R}(w)$, and so certain on one’s evidence in w, even though it is false in w. In effect, for regular probability distributions, $\mathrm{P}_{\ge1}$ is simply the familiar necessity operator $□$, and reflexivity corresponds to the T axiom $□ p\supset p$. Similarly, $\mathrm{P}_{>0}$ is simply the familiar possibility operator $◇$, and another form of the T axiom is $p\supset◇ p$ (every substitution instance of one form is equivalent to a substitution instance of the other form).
+
+![](assets/figure-13-1.png)
+
+Figure 13.1
+
+The principles (ii) and (iii) demonstrate that one should resist any temptation to regard a requirement for evidence to be true as automatically ‘externalist’, and so in conflict with ‘internalist’ evidence of evidence principles. For the truth axiom entails the evidence of evidence principles (ii) and (iii).
+
+Another relevant feature of the above frame is that R is non-transitive: world 0 has R to world 1, and world 1 has R to world 2, but world 0 does not have R to world 2. In modal logic, transitivity corresponds to the 4 axiom $□ p\supset□□ p$, which in epistemic logic is interpreted as the positive introspection principle that if one knows, one knows that one knows. In the present setting, the modal operator $□$ is interpreted as ‘one’s evidence entails that . . .’, which is equivalent to ‘it is certain on one’s evidence that . . .’ ($\mathrm{P}_{\ge1}$), because the regularity of the prior probability distribution guarantees that the conditional probability of a proposition $\mathrm{X}$ on one’s evidence $\mathrm{R}(w)$ is 1 if and only if $\mathrm{R}(w)$ entails (is a subset of) $\mathrm{X}$. Thus transitivity corresponds to the principle that if one’s evidence entails a proposition, then one’s evidence entails that one’s evidence entails that proposition, or equivalently that if the proposition is certain on one’s evidence, then it is certain on one’s evidence to be certain on one’s evidence. So stated, the principle is not of the form we have been considering, since the second-level condition is in the consequent rather than the antecedent. However, the validity of the 4 axiom is equivalent in any frame to the validity of its contraposed form $◇◇ p\supset◇ p$, where the modal operator $◇$ is interpreted in the present setting as ‘it is consistent with one’s evidence that . . .’, which is equivalent to ‘there is a nonzero probability on one’s evidence that . . .’ ($\mathrm{P}_{>0}$), by regularity again. For any frame $\langle \mathrm{W},\mathrm{R}\rangle$ and real number $a$ between 0 and 1, the probability operators $\mathrm{P}_{>a}$ and $\mathrm{P}_{\ge1-a}$ are dual to each other in a sense analogous to that in which $◇$ and $□$ are: just as $\neg□\neg p$ is equivalent to $◇ p$ and $\neg◇\neg p$ is equivalent to $□\mathrm{X}$, so $\mathrm{W}-\mathrm{P}_{\ge1-a}[\mathrm{W}-\mathrm{X}]=\mathrm{P}_{>a}[\mathrm{X}]$ and $\mathrm{W}-\mathrm{P}_{>a}[\mathrm{W}-\mathrm{X}]=\mathrm{P}_{\ge1-a}[\mathrm{X}]$ (since $\operatorname{Pr}\nolimits_w(\mathrm{W}-\mathrm{X})=1-\operatorname{Pr}\nolimits_w(\mathrm{X})$). Since, for regular probability distributions, the operator $\mathrm{P}_{>0}$ is the possibility operator $◇$, the transitivity of $\mathrm{R}$ is necessary and sufficient for the validity on the frame of this principle:
+
+Positive introspection
+$\mathrm{P}_{>0}[\mathrm{P}_{>0}[\mathrm{X}]]\subseteq \mathrm{P}_{>0}[\mathrm{X}]$
+
+If it is consistent with one’s evidence that X is consistent with one’s evidence, then X is consistent with one’s evidence; nonzero evidence of nonzero evidence is nonzero evidence—though of course in a sense in which nonzero evidence for X is compatible with much stronger evidence against X.
+
+Perhaps surprisingly, the validity of Positive Introspection on a frame <W, R> is equivalent to the validity of much weaker principles on that frame, of this form (for 0 < a < 1):
+
+Weak$_a$ Positive Introspection
+$\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{>0}[\mathrm{X}]$
+
+For example, Weak$_{99\%}$ Positive Introspection says that if it is at least 99% probable on one’s evidence that a given proposition is at least 99% probable on one’s evidence, then that proposition is more than 0% probable on one’s evidence. Even that very mild-looking principle, though valid on all transitive frames, is valid on no others, and so requires the full power of Positive Introspection (proposition 1.0; all such references are to the appendix). The same goes for the principle that $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge b}[\mathrm{X}]]\subseteq \mathrm{P}_{>0}[\mathrm{X}]$, since $\mathrm{P}_{\ge c}[\mathrm{P}_{\ge c}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{P}_{\ge b}[\mathrm{X}]]$ $\subseteq$ $\mathrm{P}_{\ge d}[\mathrm{P}_{\ge d}[\mathrm{X}]]$, where 0 < min{a, b} = d ≤ c = max{a, b} < 1.
+
+Weak$_a$ Positive Introspection is weaker than Positive Introspection in the sense that the former may hold on a given non-transitive frame <W, R> for every proposition X $\subseteq$ W while the latter does not for a given regular probability distribution over W. But for Weak$_a$ Positive Introspection to be valid on <W, R> is for it to hold for every proposition X $\subseteq$ W for every regular probability distribution over W. Generalizing over probability distributions erases the sensitivity to the quantitative threshold a in Weak$_a$ Positive Introspection because a sufficiently non-uniform distribution will exceed the threshold in any case of non-transitivity. We will encounter other examples below where the condition for a principle to be valid is strikingly insensitive to the specific numerical value of a probabilistic threshold, because one can concentrate almost all the weight of prior probability on a few ‘rogue’ worlds. Even requiring the prior probability distribution to be uniform would make less difference than one might expect, because one can often simulate the effect of a highly non-uniform distribution with a uniform distribution, by replacing individual worlds with clusters of worlds mutually indiscernible with respect to the accessibility relation R, where the comparative sizes of the clusters approximate the comparative non-uniform probabilities of the original worlds.
+
+If one reads the positive introspection principle for evidence carelessly, it may sound more or less trivial. But it is not, for the truth of one’s total evidence proposition X may not entail that X is at least part of one’s total evidence. Given the equation E = K of one’s total evidence with one’s total evidence, positive introspection for evidence reduces to positive introspection for knowledge.1 Elsewhere, I have argued against the latter principle (Williamson 2000, pp. 114–30; 2014). Thus I am committed to rejecting positive introspection for evidence, though I will not rehearse the details of the argument here. Of course, positive introspection for knowledge still has defenders (Greco 2014, Das and Salow 2018, Dorst 2019; see also the exchange between Hawthorne and Magidor 2009; 2011 and Stalnaker 2009). Further reason to doubt positive introspection for evidence will emerge at the end of this section. However, the principle requires no extensive critique here, for salient evidence of evidence principles turn out to imply even more obviously problematic principles, such as negative introspection.
+
+Negative introspection is equivalent to a principle formulated in the required way, with the second-level condition in the antecedent: if for all one knows one knows something, then one does know that thing. In the language of modal logic, that is the 5 axiom $◇□ p\supset□ p$. It is valid on all and only frames where R is euclidean, in the sense that any points seen from the same point see each other (if $\mathrm{R}xy$ and $\mathrm{R}xz$ then $\mathrm{R}yz$). Since our evidential interpretation of the frame makes $◇$ equivalent to $\mathrm{P}_{>0}$ and $□$ to $\mathrm{P}_{\ge1}$, negative introspection amounts to this principle:
+
+Negative Introspection
+$\mathrm{P}_{>0}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge1}[\mathrm{X}]$
+
+If it is consistent with one’s evidence that one’s evidence entails X, then one’s evidence does entail X. Negative introspection can be shown to entail positive introspection, given the T axiom.
+
+Negative introspection for knowledge has been recognized by most philosophically sophisticated formal epistemologists since Hintikka (1962) as implausible. For example, consider a good case in which you know by sight that there is an apple on the table, and a corresponding bad case in which you appear to yourself to be in the good case, and still believe that there is an apple on the table, but your belief is false, because what looks like an apple is just a wax replica. By hypothesis, the bad case is indistinguishable from the inside from the good case. In the bad case, for all you know you are in the good case, so for all you know you know that there is an apple on the table; but you do not know that there is an apple on the table, for there is no apple on the table. Thus the bad case is a counterexample to negative introspection for knowledge. Given the limitations of our cognitive powers, the possibility of such mild sceptical scenarios follows almost inevitably from an anti-sceptical view of human knowledge. To idealize away such possibilities is to turn one’s back on one of the main phenomena that epistemology is tasked with coming to understand.
+
+Nevertheless, much mainstream epistemic logic outside philosophy, notably in computer science and theoretical economics, has continued to treat negative introspection for knowledge as axiomatic. This has done less harm than one might have expected, because the focus of such work has been on multi-agent epistemic logic, which is mainly concerned with what agents know about what other agents know, and iterations thereof, in particular with common knowledge. When modelling multi-agent epistemic phenomena, it is legitimate to idealize away single-agent epistemic complications, because they constitute noise with respect to the intended object of study. Similarly, in modelling dynamic epistemic phenomena, it is legitimate to idealize away synchronic epistemic complications, because they too constitute noise with respect to the intended object of study. But an idealization may be legitimate at one level of magnification and not at another: the astronomer can sometimes treat planets as point masses; the geologist cannot. Mainstream epistemology turns up the magnification on individual epistemic processes to a level at which negative introspection for knowledge is no longer a legitimate idealization.
+
+What is the relation between negative introspection for knowledge and for evidence? Given E = K, the two interpretations of the principle stand or fall together. In the bad case, for all one knows one knows X, but one doesn’t know X; similarly, it is consistent with one’s evidence that one’s evidence entails X, but one’s evidence doesn’t entail X. Even if one’s evidence is restricted to the contents of one’s non-inferential observational knowledge, mild sceptical scenarios can still arise for it, at least on the sensible assumption that the contents of observation can concern one’s physical environment. If all evidence must be true, then negative introspection requires all evidence to be in principle immune to sceptical scenarios, for example by concerning only mental states that are essentially just as they appear to be to the agent. Such radical foundationalism depends on an antiquated view of the mind which there is no need to argue against here.
+
+The position is more complex for views that allow false evidence. If my evidence may entail that there is an apple on the table, even though there is no apple on the table, then one’s evidence in the bad case may include the proposition that there is an apple on the table after all. For instance, suppose that one’s evidence is just what one rationally takes for granted, and that one can rationally take for granted something false. Then, in effect, negative introspection says that if it is consistent with what one rationally takes for granted that what one rationally takes for granted entails X, then what one rationally takes for granted does entail X. In contraposed form: if what one rationally takes for granted does not entail X, then what one rationally takes for granted entails that what one rationally takes for granted does not entail X. How to assess that principle may not be immediately obvious.
+
+Although negative introspection does not imply that one’s evidence is true, it does imply that one’s evidence entails that one’s evidence is true. More precisely, the consequence is that one’s evidence entails that if one’s evidence entails $\mathrm{X}$, then $\mathrm{X}$ is true. Some such conditionals will be amongst one’s evidence’s false entailments, if it has any. Negative introspection implies the principle because the former corresponds to the euclidean frame condition that if $\mathrm{R}xy$ and $\mathrm{R}xz$ then $\mathrm{R}yz$; putting $z=y$ gives the condition that if $\mathrm{R}xy$ then $\mathrm{R}yy$, which we may restate by calling R quasi-reflexive: every seen world sees itself. In modal logic, quasi-reflexivity corresponds to the quasi-truth principle $□(□ p\supset p)$. It follows from negative introspection in any normal modal logic.2^{,}3 Whether it is rational to take for granted that something is rationally taken for granted only if it is true may again not be obvious. The quasi-reflexivity of the accessibility relation is also equivalent to the validity of the evidence of evidence principle (iii) above on the frame, for any given real number $a$ strictly between 0 and 1 (proposition 3.0): if the probability on one’s evidence that $\mathrm{X}$ is certain on one’s evidence is at least $a$, then the probability of $\mathrm{X}$ on one’s evidence is at least $a$. Again, the exact value of the numerical probability parameter $a$ makes no difference, as long as it is not extremal.
+
+We can consider negative introspection for evidence from a different angle. Imagine various pieces of evidence coming in from various sources. Normally, no one of these evidence propositions entails about itself that it exhausts one’s total evidence. Suppose, for instance, that your evidence includes both the proposition FLASH that there is a flash and the proposition SQUEAK that there is a squeak. FLASH is simply neutral as to whether your evidence also includes SQUEAK, and vice versa. Now suppose that no other evidence comes in. Then the conjunction FLASH & SQUEAK exhausts your evidence, but it does not itself entail that it exhausts your total evidence. For all the conjunction says, your evidence might also include the proposition STINK that there is a stink. Although some special evidence might somehow manage to entail of itself that it exhausts your evidence, there is no reason to expect evidence to do that in general. On almost any view, one’s total evidence is usually much richer than FLASH & SQUEAK, but that does not mean that it entails its own totality. Nor is there any reason to postulate a meta-device, guaranteed to be in perfect working order, for surveying all one’s evidence, including the evidence generated by the meta-device itself. Thus, for the sake of simplicity, we can work with the case where your total evidence is just FLASH & SQUEAK, since it is not structurally misleading. Although it is consistent with your total evidence that your total evidence entails (by including) STINK, your total evidence does not entail STINK, since FLASH & SQUEAK may be true while STINK is false. Hence the case is a counterexample to negative introspection for evidence. Moreover, as a template for counterexamples it works on a wide range of theories of evidence. It does not assume E = K; it does not even assume that all evidence is true. Thus, except under extreme idealizations, negative introspection for evidence is not a reasonable hypothesis.
+
+That simple case also casts doubt on positive introspection for evidence. On the face of it, the flash and the squeak could occur without being part of your evidence, even implicitly. Thus FLASH & SQUEAK does not entail that your evidence entails FLASH & SQUEAK. So if FLASH & SQUEAK just is your evidence, your evidence may entail FLASH & SQUEAK even though your evidence does not entail that your evidence entails FLASH & SQUEAK. Someone might try to avoid that result by positing that one’s evidence consists wholly of propositions that can only be true by being part of one’s evidence, but that idea too threatens to degenerate into radically naive foundationalism.
+
+So far, we have mainly assessed evidence of evidence principles that in effect transcribe principles from epistemic logic into the probabilistic idiom. Sections 13.3 and 13.4 discuss a wider range of evidence of evidence principles, and consider whether they imply problematic forms of introspection, or other problematic epistemic principles.
+
+# 13.3 Threshold Transfer
+
+The simplest interesting frames for single-agent epistemic logic are partitional: the accessibility relation R is an equivalence relation—it is reflexive, symmetric, and transitive—and so partitions W into mutually exclusive, jointly exhaustive subsets of the form R(w). Since any symmetric transitive relation is euclidean, and any reflexive euclidean relation is symmetric, R is an equivalence relation if and only if it is reflexive, transitive, and euclidean. Thus what the class of such frames validate about knowledge is that it entails truth and satisfies positive and negative introspection. We saw in section 13.2 how problematic positive and negative introspection are for both knowledge and evidence. However, simple cases make good starting-points, so we begin by reinterpreting partitional frames in terms of evidence, so that the evidence forms a partition.
+
+We start with principles which identify there being evidence for X with the probability of X on the evidence reaching a fixed threshold. Suppose that accessibility for evidence is an equivalence relation. Consequently, if one’s evidence in a world w is consistent with one’s being in a world x, so Rwx, then one’s evidence in w is the same as one’s evidence in x, so any proposition has the same probability on the evidence in w as in x. This validates a strong principle about posterior probabilities:
+
+Transfer$_a$
+$\mathrm{P}_{>0}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$
+
+In other words, if the probability on one’s evidence that the probability on one’s evidence of X is at least a is itself nonzero, then the probability on the evidence of X is at least a. Transfer$_a$ holds for every proposition X and real number a in any partitional frame. For if $\mathrm{P}_{>0}[\mathrm{P}_{\ge a}[\mathrm{X}]]$ is true in $x$, then $\mathrm{P}_{\ge a}[\mathrm{X}]$ is true at some world $y$ in $\mathrm{R}(x)$; if the frame is partitional, $\mathrm{R}(y)=\mathrm{R}(x)$, so $\operatorname{Pr}\nolimits_y(\mathrm{X})=\operatorname{Pr}\nolimits_x(\mathrm{X})$, so $\mathrm{P}_{\ge a}[\mathrm{X}]$ is true in $x$ too. In such frames, evidence of evidence is always perfect evidence of evidence, so no wonder evidence of evidence is evidence.
+
+Many principles reminiscent of Transfer$_a$ hold only in partitional frames (see, e.g., Williamson 2000, pp. 311–15). However, what was needed to validate Transfer$_a$ was only for R to be quasi-partitional, in the sense that whenever y ∈ R(x), R(x) = R(y), in other words, if Rxy then for all z, Rxz if and only if Ryz. As is easily checked, a relation is quasi-partitional if and only if it is both transitive and euclidean. Transfer$_a$ does not require reflexivity; it can hold even if some evidence is false. An example of a quasi-partitional but not partitional frame is one with just two worlds, 0 and 1, where R(0) = R(1) = {1} (see Figure 13.2). It is not partitional because the world 0 is not in any set of the form R(w). The relation R is non-reflexive, because 0 does not have R to itself. R is also non-symmetric, because R01 but not R10. Nevertheless, Transfer$_a$ holds in such a frame. Conversely, for 0 < a < 1, Transfer$_a$ is valid only on quasi-partitional frames (Appendix, proposition 2.0). Thus Transfer$_a$ is equivalent to quasi-partitionality. Again, the numerical value of the parameter a does not matter, as long as it is not extremal.
+
+Since Transfer requires quasi-partitionality, it implies positive and negative introspection. Given the implausibility of that combination, we must seek weaker evidence of evidence principles, ones that do not make the outer probability operator redundant. Here is a natural candidate:
+
+Threshold$_a$ Transfer
+$\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$
+
+In other words, whenever the probability on the evidence that the probability on the evidence of X is at least a is itself at least a, the probability on the evidence of X is at least a. Taking a as the threshold for something to be probable on the evidence (with a > ½), we can read Threshold$_a$ Transfer as saying that if it is probable on one’s evidence that a hypothesis is probable on one’s evidence, then that hypothesis is probable on one’s evidence.
+
+Transfer entails Threshold$_a$ Transfer for all a. For when a = 0, Threshold$_a$ Transfer is trivial, and when a > 0, $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{>0}[\mathrm{P}_{\ge a}[\mathrm{X}]]$ $\subseteq$ $\mathrm{P}_{\ge a}[\mathrm{X}]$ by Transfer. But not even Threshold$_a$ Transfer for all values of a together entails Transfer.
+
+![](assets/figure-13-2.png)
+
+Figure 13.2
+
+![](assets/figure-13-3.png)
+
+Figure 13.3
+
+Here is an example of a frame on which Threshold$_a$ Transfer is valid while Transfer$_a$ is not. As before there are just two worlds, 0 and 1, where R01 but not R10, and R11, but this time R00 too (cf. Figure 13.3). Thus R is reflexive as well as transitive, though not symmetric. R is also not euclidean (since R01 and R00 but not R10). Transfer$_a$ fails on this frame for any non-extremal value of a and any regular probability distribution. For $\mathrm{P}_{\ge 1}[\{1\}]$ is true at 1 but false at 0, even though $\mathrm{P}_{>0}[\mathrm{P}_{\ge 1}[\{1\}]]$ is true at 0. Since R(0) = {0, 1} while R(1) = {1}, the total evidence propositions are not even mutually exclusive. Nevertheless, Threshold$_a$ Transfer is valid on this frame, whatever the probability distribution and the value of a. This follows from the general result that for all a between 0 and 1, Threshold$_a$ Transfer is valid on every frame that is near-partitional in this sense: whenever y ∈ R(x), either R(y) = R(x) or R(y) = {y}. The new two-world frame is clearly near-partitional. The converse also holds for all a strictly between 0 and 1: every frame on which Threshold$_a$ Transfer is valid is near-partitional (proposition 4.0). This is another instance of the phenomenon already noted in relation to Weak$_a$ Positive Introspection: the validity on a frame of ‘evidence of evidence’ principles with a probabilistic threshold is often insensitive to the value of that parameter. In this case, whenever a and b are both strictly between 0 and 1, Threshold$_a$ Transfer and Threshold$_b$ Transfer are valid on exactly the same frames.
+
+For R(y) to be {y} is for one’s evidence in y to entail all and only truths in the world y: one’s evidence tells the whole truth and nothing but the truth about y. That is a wildly idealized scenario. Thus, in practice, near-partitionality is very close to partitionality, and Threshold$_a$ Transfer very close to Transfer, too close for it to be a useful weakening.
+
+Another way to assess the strength of Threshold$_a$ Transfer is by noting that the propositional modal logic of near-partitional (and serial) frames can be axiomatized by this set of axioms:
+
+D
+$□ p\supset◇ p$
+Q-T
+$□(□ p\supset p)$
+4
+$□ p\supset□□ p$
+Q-5
+$◇ p\supset□(◇ p\vee(q\supset□ q))$
+
+More precisely, the smallest normal modal logic with D, Q-T, 4, and Q-5 as theorems is sound and complete for the class of near-partitional serial frames. D corresponds to seriality, Q-T to quasi-reflexivity, 4 to transitivity, and Q-5 to a slight weakening of the euclidean property. The two disjuncts in the consequent of Q-5 correspond to the two disjuncts in the definition of near-partitionality (in the same order). On the relevant interpretation of the modal operators in terms of evidence, D says that one’s evidence is compatible with what it entails, Q-T that one’s evidence entails that one’s evidence is true, and 4 that one’s evidence obeys positive introspection. Q-5 weakens negative introspection (corresponding to the 5 principle $◇ p\supset□◇ p$, equivalent to the contraposed principle $◇□ p\supset□ p$) by saying that if one’s evidence is consistent with a proposition, then one’s evidence entails that either one’s evidence is consistent with the proposition or any given truth is entailed by one’s evidence.
+
+Positive introspection for evidence was already discussed in section 13.2. As for axiom Q-5, it is scarcely more plausible than negative introspection, even though logically it is slightly weaker. Under E = K, Q-5 implies claims like this about the bad case (at least if one knows E = K): if for all one knows there is no apple on the table, then one knows that either for all one knows there is no apple on the table or if there is life on other planets then one knows that there is life on other planets. But the antecedent is true in the bad case: since there is no apple on the table, for all one knows there is no apple on the table. Thus Q-5, read epistemically, generates the claim that, in the bad case, one knows that either for all one knows there is no apple on the table or if there is life on other planets then one knows that there is life on other planets. But since there is no useful connection between the disjuncts, one’s only way of knowing the disjunction is by knowing one of the disjuncts (sometimes one knows a disjunction without knowing any disjunct, for instance when the disjunction is an instance of the law of excluded middle or the content of some disjunctive testimony, but in such cases there is a useful epistemic connection between the disjuncts). Hence either one knows that for all one knows there is no apple on the table, or one knows that if there is life on other planets then one knows that there is life on other planets. But one does not know that for all one knows there is no apple on the table, because for all one knows one knows that there is an apple on the table. One also does not know that if there is life on other planets then one knows that there is life on other planets, for one has no special access to whether there is life on other planets.
+
+Even if we bracket E = K, and do not assume that all evidence is true, the case in section 13.2 where one’s total evidence is just the conjunction FLASH & SQUEAK raises as severe a problem for Q-5, read in terms of evidence, as it does for negative introspection. Thus weakening negative introspection by the second disjunct in the consequent makes no significant difference to the plausibility of Q-5.
+
+In brief, Threshold$_a$ Transfer principles weaken negative introspection too slightly to regain plausibility.
+
+We can also consider principles intermediate between Threshold$_a$ Transfer and Weak$_a$ Positive Introspection, in other words, principles of the form $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge b}[\mathrm{X}]$ for a > b > 0. For example, we might set $b=a^2$. Such principles are only valid on transitive frames, since they all entail Positive Introspection; the question is where the corresponding frame conditions come between transitivity and near-partitionality. In general, such intermediate principles require far more than transitivity.
+
+In this setting, an important frame condition is quasi-nestedness: <W, R> is quasi-nested if and only if whenever Rwx, Rwy, Rxz, and Ryz, then either Rxy or Ryx. Very roughly, if two points visible from a given point are invisible from each other, then their fields of vision are disjoint. Quasi-nestedness has a long history in epistemic logic, under varying terminology, going back to Geanakoplos (1989) (see Dorst 2018 for much more discussion relevant to connections between quasi-nesting and various probabilistic conditions). One can show that for all a,b ∈ [0,1], the natural-looking Product Rule is valid on every finite serial transitive quasi-nested frame:
+
+Product Rule
+$\operatorname{Pr}\nolimits_{\ge a}[\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]]\subseteq \operatorname{Pr}\nolimits_{\ge ab}[\mathrm{X}]]$
+
+Conversely, any finite serial frame on which the Product Rule is valid for all a,b ∈ [0,1] is transitive and quasi-nested (proposition 15.5). The difference in validity conditions between this principle and Threshold$_a$ Transfer is one way in which the numerical values of the thresholds do make a difference.
+
+Quasi-nesting does not correspond to the validity of a formula in the language of propositional modal logic, for the modal system S4 is sound and complete both for the class of all reflexive transitive frames, many of which are not quasi-nested, and for the class of reflexive transitive tree frames, all of which are quasi-nested (see Blackburn, de Rijke, and Venema 2001, p. 353). Thus no formula of the language is valid in all and only quasi-nested frames. The distinctive consequences of quasi-nesting appear only in a more expressive language, such as one with probability operators.
+
+How plausible is quasi-nesting as a condition on evidence? To see why it is problematic, note that the contrast in sceptical setups between good and bad cases is not all-or-nothing. A case may be good in one respect, bad in another. For example, one may suffer a minor illusion about the size, shape, or distance of a particular building, or the direction from which a particular sound is coming, while continuing to gain large amounts of perceptual evidence about one’s environment in many other respects. Indeed, such mixed cases may be usual in everyday life. For simplicity, consider worlds which differ from each other only in goodness or badness in two independent minor respects, 1 and 2. Let each subset of {1, 2} label the world (or scenario) which is good in the respects it contains and bad in the other respects. Thus world {} is bad in both respects, world {1} is good in respect 1 but bad in respect 2, world {2} is good in respect 2 but bad in respect 1, and world {1, 2} is good in both respects. In line with that interpretation, we naturally identify accessibility with the subset relation, for S $\subseteq$ S* ($\subseteq$ W) just in case there is no respect in which S is good and S* is not (which is what would block accessibility). This accessibility relation is reflexive and transitive, but not symmetric.4 Thus {} has R to all worlds, each of {1} and {2} has R just to itself and {1, 2}, and {1, 2} has R just to itself (see Figure 13.4). Hence quasi-nesting fails, for {} has the accessibility relation R to both {1} and {2}, and they both have R to {1, 2}, but neither of {1} and {2} has R to the other. Quasi-nesting fails similarly in frames corresponding to more than two respects of good case/bad case contrast. Moreover, quasi-nesting is problematic for reasons independent of the KK principle, since the frame in question is transitive.
+
+Although quasi-nesting holds in the two-world non-symmetric frame corresponding to a sceptical scenario in only one respect (since that frame is connected), it is hard to think of any principled reason for permitting the one-respect setup but rejecting all the multiple-respects setups. Thus a principled defence of quasi-nesting would be forced to reject the natural modelling of sceptical scenarios. On its epistemic reading, the Product Rule is correspondingly unreasonable, for many values of a and b (it is trivial when a = 0 or b = 0).
+
+![](assets/figure-13-4.png)
+
+Figure 13.4
+
+![](assets/figure-13-5.png)
+
+Figure 13.5
+
+For a variant of the example, consider frames <W, R> where $\mathrm{W}=\{x\}\cup \mathrm{Y}\cup\{z\}$; $\{x\}$, Y, and $\{z\}$ are pairwise disjoint; $\mathrm{R}(x)=\mathrm{W}$, $\mathrm{R}(y)=\{y,z\}$ for $y\in \mathrm{Y}$, and $\mathrm{R}(z)=\{z\}$ for $z\in Z$; $|\mathrm{Y}|=n^2$ (see Figure 13.5). Informally, think of z as the good case, the members of Y as $n^2$ moderately bad cases, and x as a very bad case. Such frames are reflexive and transitive but neither symmetric nor euclidean. Let Pr be the probability distribution such that $\operatorname{Pr}\nolimits(\{z\})=n/(n^2+n+1)$ and $\operatorname{Pr}\nolimits(\{w\})=1/(n^2+n+1)$ for every world $w\ne z$; thus the good case is given more weight than any one bad case, but less than all the bad cases put together. Then $\operatorname{Pr}\nolimits_y(\{z\})=n/(n+1)$ for $y\in \mathrm{Y}$, and $\operatorname{Pr}\nolimits_z(\{z\})=1$. Thus, for any given $b<1$, $\mathrm{Y}\cup\{z\}\subseteq \mathrm{P}_{\ge b}[\{z\}]$ for sufficiently large n, in which case $\operatorname{Pr}\nolimits_x(\mathrm{P}_{\ge b}[\{z\}])\ge(n^2+n)/(n^2+n+1)$, so for any given $a<1$, $x\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge b}[\{z\}]]$ for sufficiently large n. But $\operatorname{Pr}\nolimits_x(\{z\})=n/(n^2+n+1)$, so for any given $c>0$, $x\notin \mathrm{P}_{\ge c}[\{z\}]$ for sufficiently large n. Thus, for any given non-extremal a, b, c, for sufficiently large n the frame invalidates the principle $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge b}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge c}[\mathrm{X}]$, although it accepts Positive Introspection.
+
+Is there any good reason to deny that such frames do a reasonable job of modelling coherent epistemic situations? Given E = K, or many other views on which evidence consists of true propositions, which may be about the external world, the likely price of denying that such situations can arise is scepticism. Some philosophers propose that evidence can be false. For example, they may suggest that one’s evidence in both bad and good cases is just what one knows in the good case: in effect, one’s evidence is what, for all one knows, one knows. That implies a very different structure for evidential accessibility.5 However, the epistemological cost is high. On that picture, when one is in the bad case, it is certain on one’s evidence that one is not in the bad case. Moreover, in the scenario described at the end of section 12.3, for all one knows, one knows that there is a stink, simply because one’s capacity to survey the totality of one’s knowledge is so limited. Thus, on the envisaged view, one’s evidence entails the falsehood that there is a stink, even though there does not even appear to one to be a stink. That is not an attractive consequence.
+
+Of course, some epistemologists will find the positive consequences of quasi-nesting (combined with transitivity) very attractive. From that perspective, there is good reason to seek a solution to the epistemological problems raised by quasi-nesting. But the positive consequences themselves are no solution.
+
+# 13.4 Comparative Transfer
+
+Probabilistic confirmation can be understood in two ways, absolute and comparative. In the absolute sense, evidence confirms a hypothesis if the probability of the hypothesis on the evidence reaches some fixed threshold (such as 80%). In the comparative sense, evidence confirms a hypothesis if the probability of the hypothesis on the evidence exceeds its prior probability. The absolute sense concerns high probability, the comparative sense higher probability, or probability raising. Various hybrids of the two standards are also conceivable, but it is better to start with the simple contrast. Clearly, evidence of evidence principles can also be read in either the threshold way or the comparative way. Again, various hybrid readings are also conceivable, and again it is better to start with the simpler ones. In section 13.3, threshold readings of ‘evidence of evidence’ principles turned out rather unpromising. This section considers the comparative reading.
+
+Probability-raising is easy to formalize in the present framework, since it provides both the prior probability distribution $\operatorname{Pr}\nolimits$ and, for each world $w$, the posterior probability distribution $\operatorname{Pr}\nolimits_w$ which conditionalizes $\operatorname{Pr}\nolimits$ on one’s (new) evidence in $w$, $\mathrm{R}(w)$. For present purposes, it does not matter whether $\operatorname{Pr}\nolimits$ embodies earlier background evidence or not. Thus the proposition that the (new) evidence has raised the probability of a proposition $\mathrm{X}$ is simply $\{w:\operatorname{Pr}\nolimits_w(\mathrm{X})>\operatorname{Pr}\nolimits(\mathrm{X})\}$, which we notate as $\mathrm{P}_{>}[\mathrm{X}]$. It is just the set of worlds in which the posterior probability of $\mathrm{X}$ is greater than its prior probability. When the ‘evidence of evidence’ slogan is so understood in terms of probability-raising, it becomes this:
+
+Comparative Transfer
+$\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]\subseteq \mathrm{P}_{>}[\mathrm{X}]$
+
+In other words, if the evidence raises the probability that the evidence raises the probability of X, then the evidence does raise the probability of X. What are the prospects for Comparative Transfer? In which frames is it valid?
+
+An initial observation is encouraging: Comparative Transfer is valid on some frames on which Negative and Positive Introspection both fail. In that way it is less demanding than the Threshold Transfer principles. In fact, the validity of the Threshold Transfer principles on a frame is neither necessary nor sufficient for the validity of Comparative Transfer (proposition 14.0). On closer inspection, however, the picture is more complicated and less rosy.
+
+We can start with the case of Positive Introspection, or in modal terms the 4 axiom. Although its validity does not follow from that of Comparative Transfer, the validity of this weakening of it does (corollary 8.1):
+
+$$□□ p\supset□□□ p$$
+
+(iv)
+
+In other words, although the evidence may entail a proposition without entailing that it entails it, if the evidence entails that it entails a proposition, then it entails that it entails that it entails that proposition. In terms of the accessibility relation between worlds, the 4 axiom corresponds to transitivity, in other words, if you can get from x to z in two steps of accessibility, you can get there in one step. For comparison, (iv) corresponds to the feature that if you can get from x to z in three steps of accessibility, you can get there in two. It is hard to see what independent theoretical reason there might be for accepting the weaker principle that would not also be a reason for accepting the stronger. Relevant objections to Positive Introspection for knowledge generalize to objections to the weaker principle (Williamson 2000, pp. 120–1).6 If the proposition that one’s evidence entails SQUEAK is added to one’s evidence, it does not follow that the proposition that it has been added to one’s evidence has itself been added to one’s evidence.
+
+As with previous ‘evidence of evidence’ principles, the problems for Comparative Transfer do not end with (slight weakenings of ) the contested principle of Positive Introspection. They extend to (slight weakenings of) the far more generally rejected principle of Negative Introspection. For example, on any frame on which Comparative Transfer is valid, so is (v):
+
+$$(□ p\supset p)\vee(◇ q\supset□◇ q)$$
+
+(v)
+
+Since p and q are independent variables, (v) says in effect that each world is either reflexive or euclidean: if the former, all instances of the T axiom hold at it, if the latter, all instances of the 5 axiom do. For those (like the author) who hold that all evidence is true, (v) is unproblematic, because it is true thanks to the first disjunct. But for those who hold that evidence may be false, (v) has the effect that Negative Introspection must hold of all propositions whatever whenever one has some false evidence. Epistemologically, it is quite unclear why the T and 5 axioms should play such complementary roles. To turn the screw, (v) requires that if one has false evidence about one topic, then one’s evidence about some completely different topic conforms perfectly to Negative Introspection. But if the T axiom for evidence has false instances in some situations, and Negative Introspection has false instances, it is almost inevitable that in some combined situations both principles will have false instances, perhaps about unrelated topics, which is enough to violate (v). For example, if one’s evidence is consistent with the proposition that one’s evidence entails STINK, even though one’s evidence does not in fact entail STINK, why should that prevent one from getting false evidence about something else, if false evidence is in general an option?
+
+However, even for those who accept the T axiom, Comparative Transfer has problematic consequences. They include weakenings of the B axiom $p\supset□◇ p$, which corresponds to the symmetry of the accessibility relation. B is implausible in epistemic logic, for reasons closely connected to the implausibility of Negative Introspection. Read in terms of knowledge, B says that if something obtains, one knows that for all one knows it obtains. But consider any pair of a good case, in which all goes well, things are as they seem and one has plenty of knowledge, and a bad case, a sceptical scenario in which one seems to oneself to be in the good case but things are not as they seem, much of what one seems to oneself to know is false, and one knows very little. In the good case, one knows things incompatible with being in the bad case. In the bad case, for all one knows one is in the good case, so for all one knows one knows things incompatible with being in the bad case. Thus, if one is in the bad case, one does not know that for all one knows one is in the bad case. Hence the B axiom fails for knowledge. Consequently, on the equation $\mathrm{E}=\mathrm{K}$, the B axiom also fails for evidence.
+
+Even if evidence is not equated with knowledge, the B axiom faces similar counterexamples to those for knowledge. There are two cases to consider: either false evidence is disallowed (R must be reflexive), or false evidence is allowed (R can be non-reflexive).
+
+First, suppose that false evidence is disallowed. Start with a good case where E is true and part of one’s evidence. Typically, there will be a bad case where one’s evidence is consistent with being in the good case, but E is false and so not part of one’s evidence. The bad case may be one which seems from the inside just as the good case does, or it may simply be that in both cases one’s capacity to survey one’s evidence as a whole is imperfect, and in the bad case one cannot ascertain that one’s evidence lacks E and add that fact to one’s evidence. Either way, in the bad case, ¬E is true, but one’s evidence does not entail that one’s evidence is consistent with ¬E, for one’s evidence in the bad case is consistent with being in the good case, where one’s evidence is inconsistent with ¬E. Thus, on its evidential reading, the B axiom fails in the bad case.
+
+Now suppose instead that false evidence is allowed. Typically, the motivation for allowing it is to let one’s evidence in both good and bad cases be the content of appearances common to those cases. Thus one’s evidence is the same in the two cases, but true in the good case and false in the bad case. Since one’s evidence is false in the bad case, one’s evidence in both cases entails that one is not in the bad case. Therefore, since one’s evidence is true in the good case, and entails that one is not in the bad case, one’s evidence in both cases does not entail that one’s evidence is consistent with one’s being in the bad case. Thus, on its evidential reading, the B axiom fails again in the bad case.
+
+In brief, whether false evidence is allowed or not, the B axiom fails on reasonable views of evidence.
+
+As already noted, the validity of Comparative Transfer does not require the validity of the B axiom for evidence. Comparative Transfer is valid on some reflexive but non-symmetric frames, such as the two-world frame <W, R> where W = {good, bad}, R(good) = {good} and R(bad) = {good, bad} (by proposition 9.0). Since that is exactly the problematic structure under discussion, Comparative Transfer may look to be out of the wood. But it is not. For although its validity on a frame does not require the accessibility relation to be symmetric everywhere, it does limit how widespread the failures can be. More specifically, if Comparative Transfer is valid on a finite serial frame <W, R>, then for all worlds w, x, y, z in W, if Rwx, Rxy, and Ryz, then either Rxw, or Ryx, or Rzy. In other words, if there is a chain of three successive links of accessibility, at least one of those links is bidirectional, an instance of symmetry. In the language of modal logic, that frame condition corresponds to this axiom (proposition 7.9):
+
+$$p\supset□(q\supset(◇ p\vee□(r\supset(◇ q\vee□◇ r)))$$
+
+(vi)
+
+The three variables p, q, and r are mutually independent.
+
+To see why (vi) is problematic, consider a three-respect version of the frames used at the end of section 13.3 to show how quasi-nesting can fail. Each subset of {1, 2, 3} labels the world which is good in the respects it contains and bad in the other respects. Thus world {} is bad in all three respects, while world {1, 2, 3} is good in all three respects. As before, we identify accessibility, R, with the subset relation, for S $\subseteq$ S* ($\subseteq$ W) just in case there is no respect in which S is good and S* is not, which is what would block accessibility. Thus R is reflexive and transitive, but not symmetric. In this frame, {} has R to {1}, {1} has R to {1, 2}, and {1, 2} has R to {1, 2, 3}, and none of these R links is reversible: {1} lacks R to {}, {1, 2} lacks R to {1}, and {1, 2, 3} lacks R to {1, 2} (see Figure 13.6). Thus the frame violates the condition, so Comparative Transfer is violated. In terms of (vi) itself, there is a counterexample where p is the proposition that one is in a bad case in respect 1, q is the proposition that one is in the bad case in respect 2, and r is the proposition that one is in the bad case in respect 3.7
+
+For reflexive frames, where evidence is always true, the counterexamples can be slightly simplified, for we only require a chain of two steps of R for one of the steps to be bidirectional. More specifically, if Comparative Transfer is valid on a finite reflexive frame <W, R>, then for all worlds w, x, y in W, if Rwx and Rxy, then either Rxw or Ryx (proposition 7.10). In the language of modal logic, that frame condition corresponds to this axiom (proposition 7.11):
+
+$$p\supset□(q\supset(◇ p\vee□◇ q))$$
+
+(vii)
+
+![](assets/figure-13-6.png)
+
+Figure 13.6
+
+In this case, counterexamples can make do with two respects rather than three. Since the frame just described is already reflexive, there is no need to elaborate.
+
+In brief, although Comparative Transfer is on balance weaker than the Threshold$_a$ Transfer principles, its epistemological consequences are still implausibly strong.
+
+From a technical point of view, Comparative Transfer behaves rather differently from the other principles considered in this chapter. Unlike them, it essentially involves the prior probability distribution $\operatorname{Pr}\nolimits$, in ways that cannot be reduced to the posterior distributions $\operatorname{Pr}\nolimits_w$. Whether it holds at a given world depends on global features of the frame, and can depend on what happens at worlds to which the starting world does not even bear the ancestral of the accessibility relation, for those worlds contribute to the priors with which the posteriors are being compared. One manifestation of this global aspect is that in some cases Comparative Validity is valid on each of two mutually disjoint frames but invalid on their union, even when the two original frames are isomorphic to each other (proposition 13.0). That cannot happen in the standard model theory of ordinary modal logic or the other principles considered in this chapter, because at every stage the generalizations over worlds are restricted by the accessibility relation, and so never cross the boundary between one of the disjoint subframes and the other. As a corollary, by contrast with the Threshold$_a$ Transfer principles, there is no set of formulas in the standard language of propositional modal logic whose validity on a frame is equivalent to the validity of Comparative Transfer, for the class of frames on which such formulas are valid is closed under disjoint unions. Obviously, once we add the operator $\mathrm{P}_{>}$ to the object-language, we can express Comparative Transfer for that language.
+
+In part for the reason just discussed, the model theory is more intricate for Comparative Transfer than for the principles discussed earlier. The partial results in the appendix give some indication of its complexity. They do not include a necessary and sufficient condition, in non-probabilistic terms, for Comparative Transfer to be valid on a frame <W, R>. That is left as an open problem for the interested reader. The epistemological implausibility of Comparative Transfer makes it non-urgent for present purposes.
+
+# 13.5 Conclusion
+
+This chapter has considered by no means all imaginable renderings of the slogan ‘evidence of evidence is evidence’ in the framework of single-agent synchronic epistemic logic with probabilities. However, it has assessed the most natural candidates, with unpromising results: when combined with reasonable views of evidence, they all have epistemologically implausible consequences, which fail even in very mild sceptical scenarios.
+
+To overturn this provisional negative verdict, it will not be enough to formulate another candidate rendering that has not been considered here. Such moves come far too cheap. Rather, what would be needed are serious results to the effect that the candidate principle is valid in a good variety of frames invalidating the implausible introspection principles, or else a properly developed epistemology that somehow makes those introspection principles less implausible.
+
+Table 13.1 Frame conditions
+
+Condition	Label	Relational formula	Modal formula
+Serial	D	$\forall w\,\exists x\,\mathrm{R}wx$	$□ p\supset◇ p$
+Reflexive	T	$\forall w\,\mathrm{R}ww$	$□ p\supset p$
+Quasi-reflexive	Q-T	$\forall w\,\forall x\,(\mathrm{R}wx\supset \mathrm{R}xx)$	$□(□ p\supset p)$
+Symmetric	B	$\forall w\,\forall x\,(\mathrm{R}wx\supset \mathrm{R}xw)$	$p\supset□◇ p$
+Transitive	4	$\forall w\,\forall x\,\forall y\,\allowbreak((\mathrm{R}wx\wedge \mathrm{R}xy)\supset \mathrm{R}wy)$	$□ p\supset□□ p$
+-	(iv)	$\forall w\,\forall x\,\forall y\,\forall z\,\allowbreak((\mathrm{R}wx\wedge \mathrm{R}xy\wedge \mathrm{R}yz)\supset\allowbreak\exists v\,(\mathrm{R}wv\wedge \mathrm{R}vz))$	$□□ p\supset□□□ p$
+Euclidean	5	$\forall w\,\forall x\,\forall y\,\allowbreak((\mathrm{R}wx\wedge \mathrm{R}wy)\supset \mathrm{R}xy)$	$◇ p\supset□◇ p$
+Quasi-partitional		$\forall w\,\forall x\,(\mathrm{R}wx\supset\forall y\,(\mathrm{R}xy=\mathrm{R}wy))$	$4\wedge5$
+Quasi-Euclidean	Q-5	$\forall w\,\forall x\,(\mathrm{R}wx\supset(\forall y\,(\mathrm{R}wy\supset \mathrm{R}xy)\vee\allowbreak\forall y\,(\mathrm{R}xy\supset x=y))$	$◇ p\supset□(◇ p\vee\allowbreak(q\supset□ q))$
+Near-partitional		$\forall w\,\forall x\,(\mathrm{R}wx\supset(\forall y\,(\mathrm{R}xy\leftrightarrow \mathrm{R}wy)\vee\allowbreak\forall y\,(\mathrm{R}xy=x=y))$	$\mathrm{Q\text{-}T}\wedge4\wedge\mathrm{Q\text{-}5}$
+Quasi-nested		$\forall w\,\forall x\,\forall y\,\forall z\,\allowbreak((\mathrm{R}wx\wedge \mathrm{R}wy\wedge \mathrm{R}xz\wedge\allowbreak \mathrm{R}yz)\supset\allowbreak(\mathrm{R}xy\vee \mathrm{R}yx))$	None
+-	(v)	$\forall w\,(\mathrm{R}ww\vee\allowbreak\forall x\,\forall y\,((\mathrm{R}wx\wedge \mathrm{R}wy)\supset\allowbreak \mathrm{R}xy)$	$\mathrm{T}\vee\mathrm{5}$
+-	(vi)	$\forall w\,\forall x\,\forall y\,\forall z\,\allowbreak((\mathrm{R}wx\wedge \mathrm{R}xy\wedge \mathrm{R}yz)\supset\allowbreak(\mathrm{R}xw\vee \mathrm{R}yx\vee \mathrm{R}zy))$	$p\supset□(q\supset(◇ p\vee\allowbreak□(r\supset(◇ q\vee\allowbreak□◇ r)))$
+-	(vii)	$\forall w\,\forall x\,\forall y\,\allowbreak((\mathrm{R}wx\wedge \mathrm{R}xy)\supset\allowbreak(\mathrm{R}xw\vee \mathrm{R}yx))$	$p\supset□(q\supset(◇ p\vee\allowbreak□◇ q))$
+
+If that challenge is unmet, we may tentatively conclude that, in any reasonable sense, evidence of evidence is not always evidence—not always in the single-agent synchronic case, and a fortiori not always in the multi-agent and diachronic cases either.
+
+Of course, none of this means that evidence of evidence is not typically evidence. It would also be useful to have positive results giving less demanding sufficient conditions in the present framework for most evidence of evidence to be evidence, in senses close to those in this chapter.
+
+# Appendix
+
+For convenience, definitions in the main text are repeated here as they arise.
+
+Weak$_a$ Positive Introspection
+$\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]] \subseteq \mathrm{P}_{>0}[\mathrm{X}]$
+
+Proposition 1.0: For $a \in (0,1)$, Weak$_a$ Positive Introspection is valid on a finite serial frame iff it is transitive.
+
+Proof: Suppose that $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]] \subseteq \mathrm{P}_{>0}[\mathrm{X}]$ is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$. Suppose further that $\mathrm{R}xy$, $\mathrm{R}yz$, but not $\mathrm{R}xz$. Thus $y \ne z$. If $\mathrm{W}=\{y,z\}$, define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ thus:
+
+$$
+\operatorname{Pr}\nolimits(\{y\})=1-a
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{z\})=a
+$$
+
+If $\mathrm{W}\ne\{y,z\}$, so $|\mathrm{W}|=n>2$, instead define $\operatorname{Pr}\nolimits$ thus:
+
+$$
+\operatorname{Pr}\nolimits(\{y\})=a(1-a)
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{z\})=a
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{u\})=(1-a)^2/(n-2)
+\quad\text{for }u\notin\{y,z\}.
+$$
+
+The following argument works on both definitions.
+
+Since $z\in \mathrm{R}(y)$, $\operatorname{Pr}\nolimits_y(\{z\})=\operatorname{Pr}\nolimits(\{z\}\cap \mathrm{R}(y))/\operatorname{Pr}\nolimits(\mathrm{R}(y))=\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\mathrm{R}(y))\ge\operatorname{Pr}\nolimits(\{z\})=a$, so $y\in \mathrm{P}_{\ge a}[\{z\}]$. Moreover, since $y\in \mathrm{R}(x)$ and $z\notin \mathrm{R}(x)$, $\operatorname{Pr}\nolimits_x(\{y\})=\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{W}-\{z\})=\operatorname{Pr}\nolimits(\{y\})/(1-a)\ge a(1-a)/(1-a)=a$. Hence $x\in \mathrm{P}_{\ge a}[\{y\}]$, so $\operatorname{Pr}\nolimits_x(\{y\})\ge a$. But $\{y\}\subseteq \mathrm{P}_{\ge a}[\{z\}]$, so $\operatorname{Pr}\nolimits_x(\mathrm{P}_{\ge a}[\{z\}])\ge a$, so $x\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\{z\}]]$. Thus, by hypothesis, $x\in \mathrm{P}_{>0}[\{z\}]$, so $\mathrm{P}_x(\{z\})>0$ since $\mathrm{R}$ is regular, so $z\in \mathrm{R}(x)$, contrary to hypothesis. Thus $\mathrm{R}$ is transitive after all.
+
+Conversely, suppose that $\mathrm{R}$ is transitive and $\operatorname{Pr}\nolimits$ is a regular probability distribution over $\mathrm{W}$. Suppose that $x\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]$. Thus $\operatorname{Pr}\nolimits_x(\mathrm{P}_{\ge a}[\mathrm{X}])\ge a>0$, so there is a $y\in \mathrm{P}_{\ge a}[\mathrm{X}]\cap \mathrm{R}(x)$. Thus $\operatorname{Pr}\nolimits_y(\mathrm{X})\ge a>0$, so there is a $z\in \mathrm{X}\cap \mathrm{R}(y)$. But then $z\in \mathrm{R}(x)$ because $y\in \mathrm{R}(x)$, $z\in \mathrm{R}(y)$, and $\mathrm{R}$ is transitive. Hence $z\in \mathrm{X}\cap \mathrm{R}(x)$, so $\operatorname{Pr}\nolimits_x(\mathrm{X})>0$ because $\operatorname{Pr}\nolimits$ is regular, so $x\in \mathrm{P}_{>0}[\mathrm{X}]$. This shows that $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{>0}[\mathrm{X}]$, as required.
+
+Corollary 1.1: For any $a,b\in(0,1)$ and finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$, Weak$_a$ Positive Introspection is valid on $\langle \mathrm{W},\mathrm{R}\rangle$ iff Weak$_b$ Positive Introspection is.
+
+Transfer$_a$ $\qquad \mathrm{P}_{>0}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$ for $a\in[0,1]$.
+
+A frame $\langle \mathrm{W},\mathrm{R}\rangle$ is quasi-partitional: for all $x\in \mathrm{W}$, if $y\in \mathrm{R}(x)$ then $\mathrm{R}(x)=\mathrm{R}(y)$ (equivalently, $\mathrm{R}$ is transitive and euclidean).
+
+Proposition 2.0: For $a\in(0,1)$, Transfer$_a$ is valid on a finite serial frame iff it is quasi-partitional.
+
+Proof: Suppose that Transfer$_a$ is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$. If $|\mathrm{W}|=1$ the result is trivial, so we may assume that $|\mathrm{W}|=n\ge2$. Let $x,z\in \mathrm{W}$, and $y\in \mathrm{R}(x)$. Choose $b$ so that $\max\{a,1-a\}<b<1$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ by setting:
+
+$$
+\operatorname{Pr}\nolimits(\{z\})=b
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{u\})=(1-b)/(n-1)\quad\text{for }u\ne z.
+$$
+
+If $z\in \mathrm{R}(y)$, $\operatorname{Pr}\nolimits_y(\{z\})=\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\mathrm{R}(y))\ge\operatorname{Pr}\nolimits(\{z\})=b>a$, so $y\in \mathrm{P}_{\ge a}[\{z\}]$. Since $y\in \mathrm{R}(x)$, $x\in \mathrm{P}_{>0}[\mathrm{P}_{\ge a}[\{z\}]]$, so, by Transfer$_a$, $y\in \mathrm{P}_{\ge a}[\{z\}]$, so $z\in \mathrm{R}(x)$. On the other hand, if $z\notin \mathrm{R}(y)$, then $\operatorname{Pr}\nolimits_y(\mathrm{W}-\{z\})=1$, so $y\in \mathrm{P}_{\ge a}[\mathrm{W}-\{z\}]$. Since $y\in \mathrm{R}(x)$, $x\in \mathrm{P}_{>0}[\mathrm{P}_{\ge a}[\mathrm{W}-\{z\}]]$, so $x\in \mathrm{P}_{\ge a}[\mathrm{W}-\{z\}]$ by Transfer$_a$, so $1-\operatorname{Pr}\nolimits_x(\{z\})=\operatorname{Pr}\nolimits_x(\mathrm{W}-\{z\})\ge a$. Hence $\operatorname{Pr}\nolimits_x(\{z\})\le1-a$. But, as before, if $z\in \mathrm{R}(x)$ then $\operatorname{Pr}\nolimits_x(\{z\})\ge b>1-a$. Thus $z\notin \mathrm{R}(x)$. So for all $z\in \mathrm{W}$, $z\in \mathrm{R}(y)$ iff $z\in \mathrm{R}(x)$. Thus $\mathrm{R}(y)=\mathrm{R}(x)$. Hence $\mathrm{R}$ is quasi-partitional. The converse is routine.
+
+Corollary 2.1: For any $a,b\in(0,1)$, Transfer$_a$ is valid on a finite serial frame iff Transfer$_b$ is.
+
+Proposition 3.0: For $a\in(0,1)$, the principle $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$ is valid on a finite serial frame iff it is quasi-reflexive.
+
+Proof: Suppose that $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$ is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$. If $|\mathrm{W}|=1$ the result is trivial, so we may assume that $|\mathrm{W}|=n\ge2$. Let $x,z\in \mathrm{W}$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ just as in the proof of 2.0. Suppose that $z\notin \mathrm{R}(z)$. Thus $\mathrm{R}(z)\subseteq \mathrm{W}-\{z\}$, so $\{z\}\subseteq \mathrm{P}_{\ge1}[\mathrm{W}-\{z\}]$, so $\operatorname{Pr}\nolimits_x(\mathrm{P}_{\ge1}[\mathrm{W}-\{z\}])\ge\operatorname{Pr}\nolimits_x(\{z\})=\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge\operatorname{Pr}\nolimits(\{z\})=b>a$. Hence $x\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{W}-\{z\}]]$. By hypothesis, $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{W}-\{z\}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{W}-\{z\}]$. Thus $x\in \mathrm{P}_{\ge a}[\mathrm{W}-\{z\}]$. By an argument as in the proof of 2.0, we can show that $z\notin \mathrm{R}(x)$. By contraposition, if $z\in \mathrm{R}(x)$ then $z\in \mathrm{R}(z)$. Thus $\mathrm{R}$ is quasi-reflexive.
+
+Conversely, suppose that $\mathrm{R}$ is quasi-reflexive and $\operatorname{Pr}\nolimits$ is a regular probability distribution over $\mathrm{W}$. Suppose that $z\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]$. So $\operatorname{Pr}\nolimits_z(\mathrm{P}_{\ge1}[\mathrm{X}])\ge a$. Let $u\in \mathrm{P}_{\ge1}[\mathrm{X}]\cap \mathrm{R}(z)$. Since $u\in \mathrm{R}(z)$, by quasi-reflexivity $u\in \mathrm{R}(u)$. Hence if $u\notin \mathrm{X}$, $\operatorname{Pr}\nolimits_u(\mathrm{X})<1$ because $\operatorname{Pr}\nolimits$ is regular. So, since $u\in \mathrm{P}_{\ge1}[\mathrm{X}]$, $u\in \mathrm{X}$. Thus $\mathrm{P}_{\ge1}[\mathrm{X}]]\cap \mathrm{R}(z)\subseteq \mathrm{X}$, so $a\le\operatorname{Pr}\nolimits_z(\mathrm{P}_{\ge1}[\mathrm{X}])\le\operatorname{Pr}\nolimits_z(\mathrm{X})$, so $z\in \mathrm{P}_{\ge a}[\mathrm{X}]$. Thus $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$, as required.
+
+Corollary 3.1: For any $a,b\in(0,1)$, one of these principles is valid on a finite serial frame iff the other is: $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$ and $\mathrm{P}_{\ge b}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge b}[\mathrm{X}]$.
+
+Threshold$_a$ Transfer $\qquad \mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$ for $a\in[0,1]$.
+
+A frame $\langle \mathrm{W},\mathrm{R}\rangle$ is near-partitional: for all $x\in \mathrm{W}$, if $y\in \mathrm{R}(x)$ either $\mathrm{R}(y)=\mathrm{R}(x)$ or $\mathrm{R}(y)=\{y\}$.
+
+Proposition 4.0: For $a\in(0,1)$, Threshold$_a$ Transfer is valid on a finite serial frame iff it is near-partitional.
+
+Proof: Suppose that Threshold$_a$ Transfer is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$, but $\langle \mathrm{W},\mathrm{R}\rangle$ is not near-partitional. Thus for some $w$ and $x\in \mathrm{R}(w)$, $\mathrm{R}(x)\ne \mathrm{R}(w)$ and $\mathrm{R}(x)\ne\{x\}$. Since Threshold$_a$ Transfer is valid on $\langle \mathrm{W},\mathrm{R}\rangle$, so is the principle $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$, for $\mathrm{P}_{\ge1}[\mathrm{X}]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$, so $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge1}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$. Thus, by 3.0, $\mathrm{R}$ is quasi-reflexive, so $\{x\}\subseteq \mathrm{R}(x)$, for $x\in \mathrm{R}(w)$. Since $\mathrm{R}(x)\ne\{x\}$, there is a $y\in \mathrm{R}(x)$ with $y\ne x$. Furthermore, by Threshold$_a$ Transfer, the principle $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{>0}[\mathrm{X}]$ is also valid on $\langle \mathrm{W},\mathrm{R}\rangle$, because $\mathrm{P}_{\ge a}[\mathrm{X}]\subseteq \mathrm{P}_{>0}[\mathrm{X}]$. Thus, by 1.0, $\mathrm{R}$ is transitive, so $\mathrm{R}(x)\subseteq \mathrm{R}(w)$; since $\mathrm{R}(x)\ne \mathrm{R}(w)$, there is a $z\in \mathrm{R}(w)-\mathrm{R}(x)$, so $z\ne y$. Moreover, since $x\in \mathrm{R}(x)$, $z\ne x$. Thus $x,y$, and $z$ are mutually distinct. There are two cases:
+
+Case (i): $\mathrm{W}=\{x,y,z\}$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ thus:
+
+$$
+\operatorname{Pr}\nolimits(\{x\})=a(1-a)
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{y\})=a^2
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{z\})=1-a
+$$
+
+Since $\mathrm{R}(x)\subseteq \mathrm{W}-\{z\}$, $\operatorname{Pr}\nolimits(\mathrm{R}(x))\le\operatorname{Pr}\nolimits(\mathrm{W}-\{z\})=1-\operatorname{Pr}\nolimits(\{z\})=a$. Thus, since $y\in \mathrm{R}(x)$:
+
+$$
+\operatorname{Pr}\nolimits_x(\{y\})=\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge a^2/a=a
+$$
+
+Since $y\in \mathrm{R}(x)$, $\mathrm{R}(y)\subseteq \mathrm{R}(x)$ because $\mathrm{R}$ is transitive, so $\operatorname{Pr}\nolimits(\mathrm{R}(y))\le\operatorname{Pr}\nolimits(\mathrm{R}(x))\le a$. Also $y\in \mathrm{R}(y)$, because $\mathrm{R}$ is quasi-reflexive. Thus:
+
+$$
+\operatorname{Pr}\nolimits_y(\{y\})=\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(y))\ge\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge a
+$$
+
+Thus $\{x,y\}\subseteq \mathrm{P}_{\ge a}[\{y\}]$. Moreover, $\{x,y\}\subseteq \mathrm{R}(w)$ because $\mathrm{R}$ is transitive. Since $z\in \mathrm{R}(w)$, $\mathrm{R}(w)=\mathrm{W}$. Hence $\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge a}[\{y\}])\ge\operatorname{Pr}\nolimits_w(\{x,y\})=\operatorname{Pr}\nolimits(\{x,y\})/\operatorname{Pr}\nolimits(\mathrm{R}(w))=\operatorname{Pr}\nolimits(\{x,y\})=a(1-a)+a^2=a$.
+
+So $w\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\{y\}]]$. Hence $w\in \mathrm{P}_{\ge a}[\{y\}]$ because Threshold$_a$ Transfer is valid on $\langle \mathrm{W},\mathrm{R}\rangle$ by hypothesis. But $\mathrm{R}(w)=\mathrm{W}$, so $\operatorname{Pr}\nolimits_w(\{y\})=\operatorname{Pr}\nolimits(\{y\})=a^2<a$ because $a<1$. Hence $w\notin \mathrm{P}_{\ge a}[\{y\}]$, which is a contradiction. Thus $\langle \mathrm{W},\mathrm{R}\rangle$ is near-partitional after all.
+
+Case (ii): $|\mathrm{W}|=n>3$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ thus:
+
+$$
+\operatorname{Pr}\nolimits(\{x\})=a(1-a)/(1+a)
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{y\})=2a^2/(1+a)
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{z\})=(1-a)/(1+a)
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{u\})=a(1-a)/(n-3)(1+a)
+\quad\text{for }u\in W-\{x,y,z\}.
+$$
+
+The argument resembles that of case (i); some overlapping parts are omitted. $\operatorname{Pr}\nolimits(\mathrm{R}(x))\le1-\operatorname{Pr}\nolimits(\{z\})=2a/(1+a)$. Thus $\operatorname{Pr}\nolimits_x(\{y\})=\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge(2a^2/(1+a))/(2a/(1+a))=a$. Similarly, $\operatorname{Pr}\nolimits_y(\{y\})\ge\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge a$. Thus $\{x,y\}\subseteq \mathrm{P}_{\ge a}[\{y\}]$. But $\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge a}[\{y\}])\ge\operatorname{Pr}\nolimits_w(\{x,y\})=\operatorname{Pr}\nolimits(\{x,y\})/\operatorname{Pr}\nolimits(\mathrm{R}(w))\ge\operatorname{Pr}\nolimits(\{x,y\})=(a(1-a)+2a^2)/(1+a)=a$. So $w\in \mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\{y\}]]$. Hence $w\in \mathrm{P}_{\ge a}[\{y\}]$ by Threshold$_a$ Transfer. But $\{x,y,z\}\subseteq \mathrm{R}(w)$. Thus $\operatorname{Pr}\nolimits_w(\{x,y,z\})\le\operatorname{Pr}\nolimits_w(\mathrm{R}(w))$, so $\operatorname{Pr}\nolimits_w(\{y\})=\operatorname{Pr}\nolimits(\{y\})/\operatorname{Pr}\nolimits(\mathrm{R}(w))\le\operatorname{Pr}\nolimits((\{y\})/\operatorname{Pr}\nolimits(\{x,y,z\})=2a^2/(a(1-a)+2a^2+1-a)=2a^2/(1+a^2)$. But $(1-a)^2>0$, so $1>2a/(1+a^2)$, so $a>2a^2/(1+a^2)$, so $\operatorname{Pr}\nolimits_w(\{y\})<a$. Hence $w\notin \mathrm{P}_{\ge a}[\{y\}]$, again a contradiction. Thus $\langle \mathrm{W},\mathrm{R}\rangle$ is near-partitional after all.
+
+Conversely, suppose that $\langle \mathrm{W},\mathrm{R}\rangle$ is semi-partitional. Let $w\in \mathrm{W}$ and $\mathrm{X}\subseteq \mathrm{W}$. Suppose that $\operatorname{Pr}\nolimits_w(\mathrm{X})<a$. We first note (1):
+
+$$
+\{x:\operatorname{Pr}\nolimits_x(\mathrm{X})\ge a\}\cap \mathrm{R}(w)\subseteq \mathrm{X}\cap \mathrm{R}(w)
+$$
+
+For if $\operatorname{Pr}\nolimits_x(\mathrm{X})\ge a>\operatorname{Pr}\nolimits_w(\mathrm{X})$ then $\mathrm{R}(x)\ne \mathrm{R}(w)$, so by near-partitionality $\mathrm{R}(x)=\{x\}$; since $\operatorname{Pr}\nolimits_x(\mathrm{X})>0$, some member of $\mathrm{R}(x)$ belongs to $\mathrm{X}$, so $x\in \mathrm{X}$. But (1) entails (2):
+
+$$
+\operatorname{Pr}\nolimits_w(\{x:\operatorname{Pr}\nolimits_x(\mathrm{X})\ge a\})\le\operatorname{Pr}\nolimits_w(\mathrm{X})<a
+$$
+
+By contraposition, if $\operatorname{Pr}\nolimits_w(\{x:\operatorname{Pr}\nolimits_x(\mathrm{X})\ge a\})\ge a$ then $\operatorname{Pr}\nolimits_w(\mathrm{X})\ge a$. In other words, $\mathrm{P}_{\ge a}[\mathrm{P}_{\ge a}[\mathrm{X}]]\subseteq \mathrm{P}_{\ge a}[\mathrm{X}]$, so Threshold$_a$ Transfer at $a$ is valid on $\langle \mathrm{W},\mathrm{R}\rangle$, as required.
+
+Corollary 4.1: For $a,b\in(0,1)$, Threshold$_a$ Transfer is valid on a finite serial frame iff Threshold$_b$ Transfer is.
+
+Lemma 5.0: Let $\langle \mathrm{W},\mathrm{R}\rangle$ be a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$, $w\in \mathrm{W}$, and $\mathrm{X}\subseteq \mathrm{W}$. Then $\operatorname{Pr}\nolimits(\mathrm{X})<\operatorname{Pr}\nolimits_w(\mathrm{X})$ for some regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$ iff $\mathrm{R}(w)\cap \mathrm{X}\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{X}\ne \mathrm{W}$.
+
+Proof: Suppose that $\mathrm{R}(w)\cap \mathrm{X}\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{X}\ne \mathrm{W}$. Let $x\in \mathrm{R}(w)\cap \mathrm{X}$ and $y\in \mathrm{W}-(\mathrm{R}(w)\cup \mathrm{X}))$, so $x\ne y$. Thus $|\mathrm{W}|=n\ge2$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ thus. If $n=2$, $\operatorname{Pr}\nolimits(\{x\})=1/2$ and $\operatorname{Pr}\nolimits(\{y\})=1/2$. If $n>2$, $\operatorname{Pr}\nolimits(\{x\})=1/3$, $\operatorname{Pr}\nolimits(\{y\})=1/2$, and $\operatorname{Pr}\nolimits(\{z\})=1/6(n-2)$ for $z\in \mathrm{W}-\{x,y\}$.
+
+Either way, since $\mathrm{X}\subseteq \mathrm{W}-\{y\}$, $\operatorname{Pr}\nolimits(\mathrm{X})\le\operatorname{Pr}\nolimits(\mathrm{W}-\{y\})=1/2$. Since $\mathrm{R}(w)\subseteq \mathrm{W}-\{y\}$, $\operatorname{Pr}\nolimits(\mathrm{R}(w))\le\operatorname{Pr}\nolimits(\mathrm{W}-\{y\})=1/2$. But $\operatorname{Pr}\nolimits_w(\mathrm{X})=\operatorname{Pr}\nolimits(\mathrm{X}\cap \mathrm{R}(w))/\operatorname{Pr}\nolimits(\mathrm{R}(w))\ge\operatorname{Pr}\nolimits(\{x\})/\operatorname{Pr}\nolimits(\mathrm{R}(w))\ge(1/3)/(1/2)=2/3>1/2\ge\operatorname{Pr}\nolimits(\mathrm{X})$. For the converse, let $\operatorname{Pr}\nolimits$ be any regular probability distribution on $\langle \mathrm{W},\mathrm{R}\rangle$. First, suppose that $\mathrm{R}(w)\cap \mathrm{X}=\{\}$. Then $\operatorname{Pr}\nolimits_w(\mathrm{X})=0$, so $\operatorname{Pr}\nolimits(\mathrm{X})\ge\operatorname{Pr}\nolimits_w(\mathrm{X})$. Second, suppose that $\mathrm{R}(w)\cup \mathrm{X}=\mathrm{W}$. Then $\mathrm{W}-\mathrm{R}(w)\subseteq \mathrm{X}$, so $\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X}|\mathrm{W}-\mathrm{R}(w))=0$. Hence, by total probability, $\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X})=\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X}\mid \mathrm{R}(\mathrm{w}))\operatorname{Pr}\nolimits(\mathrm{R}(w))+\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X}|\mathrm{W}-\mathrm{R}(w))\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{R}(w))=\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X}\mid \mathrm{R}(\mathrm{w}))\operatorname{Pr}\nolimits(\mathrm{R}(w))\le\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X}\mid \mathrm{R}(\mathrm{w}))=\operatorname{Pr}\nolimits_w(\mathrm{W}-\mathrm{X})$, so $\operatorname{Pr}\nolimits(\mathrm{X})=1-\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{X})\ge1-\operatorname{Pr}\nolimits_w(\mathrm{W}-\mathrm{X})=\operatorname{Pr}\nolimits_w(\mathrm{X})$, as required.
+
+Notation: $\mathrm{R}^{-1}(x)=\{w:\mathrm{R}wx\}$ and $\mathrm{N}_\mathrm{R}=\{w:\mathrm{R}(w)\ne \mathrm{W}\}$.
+
+Comparative Transfer: $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]\subseteq \mathrm{P}_{>}[\mathrm{X}]$.
+
+Proposition 6.0: Let $\langle \mathrm{W},\mathrm{R}\rangle$ be a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$ and $x\in \mathrm{W}$. Then $\mathrm{P}_{>}[\mathrm{P}_{>}[\{x\}]]\subseteq \mathrm{P}_{>}[\{x\}]$ for every regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$ iff, for all $w,x\in \mathrm{W}$, if $\mathrm{R}(w)\cap(\mathrm{R}^{-1}(x)\cap \mathrm{N}_\mathrm{R})\ne\{\}$ and $\mathrm{R}(w)\cup(\mathrm{R}^{-1}(x)\cap \mathrm{N}_\mathrm{R})\ne \mathrm{W}$ then $x\in \mathrm{R}(w)$.
+
+Proof: First note that for any regular probability distribution $\operatorname{Pr}\nolimits$ and $x\in \mathrm{W}$:
+
+$$
+\mathrm{P}_{>}[\{x\}]=\mathrm{R}^{-1}(x)\cap \mathrm{N}_\mathrm{R}.
+$$
+
+For if $x\in \mathrm{R}(w)$ and $\mathrm{R}(w)\ne \mathrm{W}$ then $w\in \mathrm{P}_{>}[\{x\}]$ since $\operatorname{Pr}\nolimits(\mathrm{R}(w))<1$, so $\operatorname{Pr}\nolimits(\{x\})<\operatorname{Pr}\nolimits(\{x\})/\operatorname{Pr}\nolimits(\mathrm{R}(w))=\operatorname{Pr}\nolimits_w(\{x\})$. If $\mathrm{R}(w)=\mathrm{W}$ then $w\notin \mathrm{P}_{>}[\{x\}]$ because $\operatorname{Pr}\nolimits(\{x\})=\operatorname{Pr}\nolimits_w(\{x\})$. If $x\notin \mathrm{R}(w)$ then $w\notin \mathrm{P}_{>}[\{x\}]$ because $\operatorname{Pr}\nolimits_w(\{x\})=0$ and $\operatorname{Pr}\nolimits(\{x\})>0$. Thus it suffices to prove: $\mathrm{P}_{>}[\mathrm{P}_{>}[\{x\}]]\subseteq \mathrm{P}_{>}[\{x\}]$ for every regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$ iff, for all $w\in \mathrm{W}$, if $\mathrm{R}(w)\cap \mathrm{P}_{>}[\{x\}]\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{P}_{>}[\{x\}]\ne \mathrm{W}$ then $x\in \mathrm{R}(w)$.
+
+Suppose that $\mathrm{P}_{>}[\mathrm{P}_{>}[\{x\}]]\subseteq \mathrm{P}_{>}[\{x\}]$ for every regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$, and that $\mathrm{R}(w)\cap \mathrm{P}_{>}[\{x\}]\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{P}_{>}[\{x\}]\ne \mathrm{W}$. By lemma 5.0, $\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\{x\}])<\operatorname{Pr}\nolimits_w(\mathrm{P}_{>}[\{x\}])$ for some regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$, so $w\in \mathrm{P}_{>}[\mathrm{P}_{>}[\{x\}]]$, so $w\in \mathrm{P}_{>}[\{x\}]$ by hypothesis, so $w\in \mathrm{R}^{-1}(x)\cap \mathrm{N}_\mathrm{R}$, so $x\in \mathrm{R}(w)$.
+
+Conversely, suppose: whenever $\mathrm{R}(w)\cap \mathrm{P}_{>}[\{x\}]\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{P}_{>}[\{x\}]\ne \mathrm{W}$, $x\in \mathrm{R}(w)$. Let $\operatorname{Pr}\nolimits$ be a regular probability distribution on $\langle \mathrm{W},\mathrm{R}\rangle$. Suppose that $w\in \mathrm{P}_{>}[\mathrm{P}_{>}[\{x\}]]$. Thus $\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\{x\}])<\operatorname{Pr}\nolimits_w(\mathrm{P}_{>}[\{x\}])$. Then, by 5.0, $\mathrm{R}(w)\cap \mathrm{P}_{>}[\{x\}]\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{P}_{>}[\{x\}]\ne \mathrm{W}$, so by hypothesis $x\in \mathrm{R}(w)$. Therefore $w\in \mathrm{R}^{-1}(x)$, and $\mathrm{R}(w)\ne \mathrm{W}$, so $w\in \mathrm{N}_\mathrm{R}$, so $w\in \mathrm{P}_{>}[\{x\}]$. Thus $\mathrm{P}_{>}[\mathrm{P}_{>}[\{x\}]]\subseteq \mathrm{P}_{>}[\{x\}]$, as required.
+
+Corollary 6.1: If Comparative Transfer is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$, then for all $v,w,x,y,z$, if $\mathrm{R}wy$, $\mathrm{R}yx$, not $\mathrm{R}yv$, not $\mathrm{R}wz$, and either not $\mathrm{R}zx$ or for all $u$ $\mathrm{R}zu$, then $\mathrm{R}wx$.
+
+Corollary 6.2: If Comparative Transfer is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$, then for all $x,y,z,v$, if neither $\mathrm{R}xx$ nor $\mathrm{R}yv$, then if $\mathrm{R}xy$ and $\mathrm{R}yz$ then $\mathrm{R}xz$.
+
+Proof: Substitute x for w and z, and z for x in 6.1.
+
+Proposition 7.0: Let $\langle \mathrm{W},\mathrm{R}\rangle$ be a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$ and $x\in \mathrm{W}$. Then $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{W}-\{x\}]]\subseteq \mathrm{P}_{>}[\mathrm{W}-\{x\}]$ for every regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$ iff, for all $w,x\in \mathrm{W}$, if $x\in \mathrm{R}(w)$ then either $\mathrm{R}(w)\subseteq \mathrm{R}^{-1}(x)$ or $\mathrm{R}^{-1}(x)\subseteq \mathrm{R}(w)$.
+
+Proof: Note that $\mathrm{P}_{>}[\mathrm{W}-\{x\}]=\mathrm{W}-\mathrm{R}^{-1}(x)$. For if $w\in \mathrm{R}^{-1}(x)$ and $\mathrm{R}(w)\ne \mathrm{W}$ then $w\notin \mathrm{P}_{>}[\mathrm{W}-\{x\}]$ because $\operatorname{Pr}\nolimits(\{x\})<\operatorname{Pr}\nolimits_w(\{x\})$ (as in 6.0), so $\operatorname{Pr}\nolimits(\mathrm{W}-\{x\})>\operatorname{Pr}\nolimits_w(\mathrm{W}-\{x\})$. If $\mathrm{R}(w)=\mathrm{W}$ then, again as in 6.0, $w\notin \mathrm{P}_{>}[\{x\}]$. If $w\notin \mathrm{R}^{-1}(x)$ then $w\in \mathrm{P}_{>}[\mathrm{W}-\{x\}]$ because $\operatorname{Pr}\nolimits_w(\mathrm{W}-\{x\})=1$ and $\operatorname{Pr}\nolimits(\mathrm{W}-\{x\})<1$. Thus it suffices to prove: $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{W}-\{x\}]]\subseteq \mathrm{P}_{>}[\mathrm{W}-\{x\}]$ for every regular probability distribution $\operatorname{Pr}\nolimits$ on $\langle \mathrm{W},\mathrm{R}\rangle$ iff, for all $w\in \mathrm{W}$, if $\mathrm{R}(w)\cap \mathrm{P}_{>}[\{x\}]\ne\{\}$ and $\mathrm{R}(w)\cup \mathrm{P}_{>}[\{x\}]\ne \mathrm{W}$ then $w\in \mathrm{W}-\mathrm{R}^{-1}(x)$. The rest of the proof is similar to that of 6.0.
+
+Corollary 7.1: If Comparative Transfer is valid on a finite serial frame <W, R>, then for all w, x, if Rwx then either for all z if Rwz then Rzx or for all z if Rzx then Rwz.
+
+Corollary 7.2: If Comparative Transfer is valid on a finite serial frame <W, R>, then whenever Rwx, either Rww or Rxx.
+
+Proof: By 7.1, substituting x for z in the first disjunct and w for z in the second.
+
+Corollary 7.3: On any finite serial frame on which Comparative Transfer is valid, so is $(□ p\supset p)\vee□(□ q\supset q)$.
+
+Proof: Suppose that $□ p\supset p$ is false at $w\in \mathrm{W}$ in a model based on such a frame $\langle \mathrm{W},\mathrm{R}\rangle$. Thus not $\mathrm{R}ww$. Hence, by 7.2, $\mathrm{R}xx$ for all $x$ such that $\mathrm{R}wx$, so $□(□ q\supset q)$ is true at $w$ in the model.
+
+Corollary 7.4: On any finite serial frame <W, R> on which Comparative Transfer is valid, for all w, x, if Rwx then there is a u such that Rwu and Rux.
+
+Proof: From 7.2.
+
+Corollary 7.5: On any finite serial frame on which Comparative Transfer is valid, so is $□□ p\supset□ p$.
+
+Proof: From 7.4.
+
+Corollary 7.6: On any finite serial frame <W, R> on which Comparative Transfer is valid, for all w, x, y, if Rwx and Rwy but not Rww then Rxy.
+
+Proof: By 7.1, since Rwy, either for all z if Rwz then Rzy or for all z if Rzy then Rwz. The first disjunct implies that Rxy because Rwx. The second disjunct implies that Rww because Rwy.
+
+Corollary 7.7: On any finite serial frame on which Comparative Transfer is valid, so is $(□ p\supset p)\vee(◇□ q\supset□ q)$.
+
+Proof: Suppose that $□ p\supset p$ is false at some $w$ in a model based on such a frame $\langle \mathrm{W},\mathrm{R}\rangle$. Then not $\mathrm{R}ww$. Suppose that $◇□ q$ is true at $w$ in the model, so $□ q$ is true at some $x$ such that $\mathrm{R}wx$. Then whenever $\mathrm{R}wy$, by 7.6 $\mathrm{R}xy$, so $q$ is true at $y$. Thus $□ q$ is true at $w$.
+
+Corollary 7.8: On any finite serial frame <W, R> on which Comparative Transfer is valid, for all w, x, y, z, if Rwx, Rxy, and Ryz, then either Rxw, or Ryx, or Rzy.
+
+Proof: Suppose that Rwx, Rxy, and Ryz. By 7.2, since Rxy, either Rxx or Ryy. Suppose that Rxx. So by 7.1 either for all u if Rxu then Rux or for all u if Rux then Rxu. Hence either if Rxy then Ryx or if Rwx then Rxw; thus either Rxw or Ryx. Similarly, if Ryy then either Ryx or Rzy. Hence either Rxw, or Ryx, or Rzy.
+
+Corollary 7.9: On any finite serial frame on which Comparative Transfer is valid, so is $p\supset□(q\supset(◇ p\vee□(r\supset(◇ q\vee□◇ r)))$.
+
+Proof: Suppose that the formula is false at some $w$ in some model based on the frame. Then $p$ is true and $□(q\supset(◇ p\vee□(r\supset(◇ q\vee□◇ r)))$ at $w$. Hence $q\supset(◇ p\vee□(r\supset(◇ q\vee□◇ r)))$ is false at some $x$ such that $\mathrm{R}wx$. Hence $q$ is true and both $◇ p$ and $□(r\supset(◇ q\vee□◇ r))$ false at $x$. The former implies that not $\mathrm{R}xw$. The latter implies that $r\supset(◇ q\vee□◇ r)$ is false at some $y$ such that $\mathrm{R}xy$, so $r$ is true and both $◇ q$ and $□◇ r$ are false at $y$. The former implies that not $\mathrm{R}yx$. The latter implies that $◇ r$ is false at some $z$ such that $\mathrm{R}yz$. Hence not $\mathrm{R}zy$. That is impossible by 7.8.
+
+Corollary 7.10: On any finite reflexive frame <W, R> on which Comparative Transfer is valid, for all w, x, y, if Rwx and Rxy, then either Rxw or Ryx.
+
+Proof: A simplification of the proof of 7.8.
+
+Corollary 7.11: On any finite reflexive frame on which Comparative Transfer is valid, so is $p\supset□(q\supset(◇ p\vee□◇ q))$.
+
+Proof: A simplification of the proof of 7.9.
+
+Corollary 7.12: Suppose that Comparative Transfer is valid on a finite serial frame <W, R>. Then if Rwx but not Rww, either R(x) = W or R(x) = R(w).
+
+Proof: From 6.2 and 7.6.
+
+Corollary 7.13: If a serial frame <W, R> with |W| ≤ 3 satisfies the necessary conditions in 6.0 and 7.0 for Comparative Transfer to be valid, then Comparative Transfer is valid on <W, R>.
+
+Proof: Suppose that X $\subseteq$ W. If |X| = 1 then by 6.0 $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$ $\subseteq$ $\mathrm{P}_{>}[\mathrm{X}]$; if |X| = 2 then by 7.0 $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$ $\subseteq$ $\mathrm{P}_{>}[\mathrm{X}]$. If |X| = 0 or |X| = 3 then $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$ = {} so the case is trivial.
+
+Proposition 8.0: If Comparative Transfer is valid on a finite serial frame <W, R>, then for all w, x, y, z, if Rwx, Rxy, and Ryz, then for some u, Rwu and Ruz.
+
+Proof: It suffices to derive a contradiction from the hypothesis that Rwx, Rxy, Ryz, and there is no u such that Rwu and Ruz. First note that there are no shortcuts in the chain from w to z, in the sense that not Rwy, not Rxz, and not Rwz. The first two are easy because we can put u = y and u = x respectively; the third follows from 7.4. But by an instance of 6.1: if Rwx, Rxy, not Rxz, not Rwz and not Rzy then Rwy. Thus, since Rwx, Rxy, not Rwz, and not Rwy, it follows that Rzy. By another instance of 6.1: for all v, if Rxy, Ryz, not Ryv, not Rxw, and not Rwz, then Rxz. Thus, since Rxy, Ryz, not Rwz, and not Rxz, this follows:
+
+(*)
+Either Rxw or Ryv for all v.
+
+But by an instance of 7.1: if Rxy then either for all u if Rxu then Ruy or for all u if Ruy then Rxu. Thus, since Rxy, either if Rxw then Rwy or if Rzy then Rxz. But on the initial hypothesis we already have that Rzy, not Rxz, and not Rwy. Thus not Rxw. Hence, by (*), Ryv for all v. But by yet another instance of 7.1: if Rwx, Rxy, not Rxz, not Rwy, and for all v Ryv, then Rwy. This is a final contradiction, since on the initial hypothesis we already have that Rwx, Rxy, not Rxz, not Rwy, and for all v Ryv.
+
+Corollary 8.1: If Comparative Transfer is valid on a finite serial frame, then so too is $□□ p\supset□□□ p$.
+
+Proof: From 7.5 and 8.0 by standard model theory of modal logic.
+
+Proposition 9.0: If $\langle \mathrm{W},\mathrm{R}\rangle$ is a finite serial frame such that whenever $w\in \mathrm{W}$, $x\in \mathrm{R}(w)$, either $\mathrm{R}(w)=\mathrm{W}$ or $\mathrm{R}(x)=\mathrm{W}$ or $\mathrm{R}(x)=\mathrm{R}(w)$, then Comparative Transfer is valid on $\langle \mathrm{W},\mathrm{R}\rangle$.
+
+Proof: If $\mathrm{R}(w)=\mathrm{W}$ then for all $\mathrm{Y}\subseteq \mathrm{W}$, $\operatorname{Pr}\nolimits_w(\mathrm{Y})=\operatorname{Pr}\nolimits(\mathrm{Y})$, so $w\notin \mathrm{P}_{>}[\mathrm{Y}]$.
+
+Suppose that $w\notin \mathrm{P}_{>}[\mathrm{X}]$ and $w\in \mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$. Thus $\mathrm{R}(w)\ne \mathrm{W}$ (let $\mathrm{Y}=\mathrm{P}_{>}[\mathrm{X}]$). Suppose that for all $x\in \mathrm{R}(w)$ either $\mathrm{R}(x)=\mathrm{W}$ or $\mathrm{R}(x)=\mathrm{R}(w)$. If $\mathrm{R}(x)=\mathrm{W}$, then $x\notin \mathrm{P}_{>}[\mathrm{X}]$.
+
+If $\mathrm{R}(x)=\mathrm{R}(w)$ then $\operatorname{Pr}\nolimits_x(\mathrm{X})=\operatorname{Pr}\nolimits_w(\mathrm{X})$, so $x\notin \mathrm{P}_{>}[\mathrm{X}]$ because $w\notin \mathrm{P}_{>}[\mathrm{X}]$. Thus for all $x\in \mathrm{R}(w)$, $x\notin \mathrm{P}_{>}[\mathrm{X}]$. Hence $\operatorname{Pr}\nolimits_w(\mathrm{P}_{>}[\mathrm{X}])=0$, so $w\notin \mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$, contrary to hypothesis.
+
+Corollary 9.1: On some finite serial frames, Comparative Transfer is valid but none of $□ p\supset□□ p$, $◇ p\supset□◇ p$, $p\supset□◇ p$, and $□ p\supset p$ is valid.
+
+Proof: Consider the three-world frame where $\mathrm{W}=\{a,b,c\}$, $\mathrm{R}(a)=\{b\}$, $\mathrm{R}(b)=\mathrm{W}$, and $\mathrm{R}(c)=\{c\}$. By 9.0, Comparative Transfer is valid on $\langle \mathrm{W},\mathrm{R}\rangle$. R is non-transitive, because $\mathrm{R}ab$ and $\mathrm{R}bc$ but not $\mathrm{R}ac$, so $□ p\supset□□ p$ is not valid. R is non-euclidean because $\mathrm{R}ba$ and $\mathrm{R}bc$ but not $\mathrm{R}ac$, so $◇ p\supset□◇ p$ is not valid. R is non-symmetric because $\mathrm{R}bc$ but not $\mathrm{R}cb$, so $p\supset□◇ p$ is not valid. R is non-reflexive because not $\mathrm{R}aa$, so $□ p\supset p$ is not valid.
+
+Proposition 10.0: Let <W, R> be a finite serial frame such that for some x, z ∈ W, x ≠ z, x ∈ R(x) and for all y ∈ W, if y ≠ x then R(y) = {z}. Then Comparative Transfer is valid on <W, R>.
+
+Proof: Let <W, R>, x, z be as specified. Suppose that y ∉ $\mathrm{P}_{>}[\mathrm{X}]$ for some y ∈ W and X $\subseteq$ W.
+
+If y ≠ x then R(y) = {z} = R(z), so y ∉ $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$ (as in the proof of 4.0). Thus it suffices to show that if x ∉ $\mathrm{P}_{>}[\mathrm{X}]$ then x ∉ $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$. There are two cases.
+
+Case (i): $z\in \mathrm{X}$. We may assume that $\mathrm{X}\ne \mathrm{W}$, otherwise $\mathrm{P}_{>}[\mathrm{X}]=\{\}$, so $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]=\{\}$ and we are done. Hence $\operatorname{Pr}\nolimits(\mathrm{X})<1$. Now if $y\ne x$, $\mathrm{R}(y)=\{z\}\subseteq \mathrm{X}$, so $\operatorname{Pr}\nolimits_y(\mathrm{X})=1$, so $y\in \mathrm{P}_{>}[\mathrm{X}]$. Since $x\in \mathrm{R}(x)$, $\mathrm{W}-\mathrm{R}(x)\subseteq \mathrm{P}_{>}[\mathrm{X}]$, so $\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\mathrm{X}]\mid \mathrm{W}-\mathrm{R}(x))=1$. Hence, by the principle of total probability:
+
+$$
+\begin{aligned}
+\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\mathrm{X}])
+&=\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\mathrm{X}]\mid \mathrm{R}(x))\operatorname{Pr}\nolimits(\mathrm{R}(x))+\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\mathrm{X}]\mid \mathrm{W}-\mathrm{R}(x))\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{R}(x))\\
+&=\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])\operatorname{Pr}\nolimits(\mathrm{R}(x))+\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{R}(x))\\
+&\ge\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])\operatorname{Pr}\nolimits(\mathrm{R}(x))+\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])\operatorname{Pr}\nolimits(\mathrm{W}-\mathrm{R}(x))\\
+&=\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])
+\end{aligned}
+$$
+
+Hence $x\notin \mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$, as required.
+
+Case (ii): $z\notin \mathrm{X}$. Hence if $y\ne x$, $\operatorname{Pr}\nolimits_y[\mathrm{X}]=0$, so $y\notin \mathrm{P}_{>}[\mathrm{X}]$. Thus if $x\notin \mathrm{P}_{>}[\mathrm{X}]$, then $\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])=0$, hence $x\notin \mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$ and we are done.
+
+Proposition 11.0: Let <W, R> be a finite serial frame, with some z ∈ W such that for all x ∈ W, R(x) $\subseteq$ {x, z}. Then Comparative Transfer is valid on <W, R>.
+
+Proof: Let <W, R>, z be as specified, and x ∉ $\mathrm{P}_{>}[\mathrm{X}]$. It suffices to show that x ∉ $\mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$. There are two cases.
+
+Case (i): $z\in \mathrm{X}$. As in the proof of 10.0, we may assume that $\mathrm{X}\ne \mathrm{W}$, so $\operatorname{Pr}\nolimits(\mathrm{X})<1$. Observe that $\mathrm{X}\subseteq \mathrm{P}_{>}[\mathrm{X}]$, for if $y\in \mathrm{X}$ then $\mathrm{R}(y)\subseteq\{y,z\}\subseteq \mathrm{X}$, so $\operatorname{Pr}\nolimits_y(\mathrm{X})=1>\operatorname{Pr}\nolimits(\mathrm{X})$, so $y\in \mathrm{P}_{>}[\mathrm{X}]$. Thus $\operatorname{Pr}\nolimits(\mathrm{X})\le\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\mathrm{X}])$. Since $x\notin \mathrm{P}_{>}[\mathrm{X}]$ and $z\in \mathrm{X}$, $\mathrm{P}_{>}[\mathrm{X}]\cap \mathrm{R}(x)\subseteq \mathrm{X}\cap \mathrm{R}(x)$, so $\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])\le\operatorname{Pr}\nolimits_x(\mathrm{X})$. Since $x\notin \mathrm{P}_{>}[\mathrm{X}]$, $\operatorname{Pr}\nolimits_x(\mathrm{X})\le\operatorname{Pr}\nolimits(\mathrm{X})$. Thus $\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])\le\operatorname{Pr}\nolimits_x(\mathrm{X})\le\operatorname{Pr}\nolimits(\mathrm{X})\le\operatorname{Pr}\nolimits(\mathrm{P}_{>}[\mathrm{X}])$, so $x\notin \mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$, as required.
+
+Case (ii): $z\notin \mathrm{X}$. Since $\mathrm{R}(z)=\{z\}$, $\operatorname{Pr}\nolimits_z[\mathrm{X}]=0$, so $z\notin \mathrm{P}_{>}[\mathrm{X}]$. Hence if if $x\notin \mathrm{P}_{>}[\mathrm{X}]$ then $\mathrm{P}_{>}[\mathrm{X}]\cap \mathrm{R}(x)=\{\}$, so $\operatorname{Pr}\nolimits_x(\mathrm{P}_{>}[\mathrm{X}])=0$, so $x\notin \mathrm{P}_{>}[\mathrm{P}_{>}[\mathrm{X}]]$, and we are done.
+
+Proposition 12.0: The condition on R for Comparative Transfer to be valid on a finite serial frame <W, R> is not expressible in first-order logic without identity.
+
+Proof: Let $\mathrm{W}=\{0,1,2\}$, $\mathrm{R}(0)=\{0,1\}$, $\mathrm{R}(1)=\{1\}$, $\mathrm{R}(2)=\{2\}$, $\mathrm{W}\mathord{\text{*}}=\{0,1,2,3\}$, $f$ be the function from $\mathrm{W}\mathord{\text{*}}$ onto $\mathrm{W}$ such that $f0=0$, $f1=1$, $f2=f3=2$, and for all $j,k$ in $\mathrm{W}\mathord{\text{*}}$, $\mathrm{R}\mathord{\text{*}}jk$ iff $\mathrm{R}fjfk$. Thus 2 and 3 are indiscernible in terms of $\mathrm{R}\mathord{\text{*}}$. By standard non-modal model theory, the models $\langle \mathrm{W},\mathrm{R}\rangle$ and $\langle \mathrm{W}\mathord{\text{*}},\mathrm{R}\mathord{\text{*}}\rangle$ satisfy the same formulas in the language of first-order logic with just one predicate letter, which is binary, and without identity. Since for all $j$ in $\mathrm{W}$, $\mathrm{R}(j)\subseteq\{j,2\}$, by 11.0 Comparative Validity is valid on $\langle \mathrm{W},\mathrm{R}\rangle$. But Comparative Transfer is not valid on $\langle \mathrm{W}\mathord{\text{*}},\mathrm{R}\mathord{\text{*}}\rangle$. For let $\operatorname{Pr}\nolimits$ be the uniform probability distribution over $\mathrm{W}\mathord{\text{*}}$, and $\mathrm{X}=\{1,3\}$, so $\operatorname{Pr}\nolimits(\mathrm{X})=1/2$. Now $\operatorname{Pr}\nolimits_0(\mathrm{X})=\operatorname{Pr}\nolimits_2(\mathrm{X})=\operatorname{Pr}\nolimits_3(\mathrm{X})=1/2$, $\operatorname{Pr}\nolimits_1(\mathrm{X})=1$, so $\operatorname{Pr}\nolimits_{>}[\mathrm{X}]=\{1\}$, so $\operatorname{Pr}\nolimits(\operatorname{Pr}\nolimits_{>}[\mathrm{X}])=1/4$. Consequently, $\operatorname{Pr}\nolimits_0(\operatorname{Pr}\nolimits_{>}[\mathrm{X}])=1/2$, so $0\in \operatorname{Pr}\nolimits_{>}[\operatorname{Pr}\nolimits_{>}[\mathrm{X}]]$, but $0\notin \operatorname{Pr}\nolimits_{>}[\mathrm{X}]$. Since $\langle \mathrm{W}\mathord{\text{*}},\mathrm{R}\mathord{\text{*}}\rangle$ differs from $\langle \mathrm{W},\mathrm{R}\rangle$ with respect to the validity of Comparative Transfer but not with respect to which formulas of first-order logic without identity are satisfied, the former cannot be expressed in terms of the latter.
+
+Corollary 12.1: The necessary conditions in 6.0 and 7.0 for Comparative Transfer to be valid on a finite serial frame are not jointly sufficient.
+
+Proof: By 6.1 and 7.1, those necessary conditions are expressible in first-order logic without identity, so by 12.0 they are not jointly sufficient.
+
+Proposition 13.0: There is a finite serial frames on which Comparative Transfer is valid such that Comparative Transfer is not valid on the union of two disjoint copies of that frame.
+
+Proof: Let $\mathrm{W}=\{0,1\}$, $\mathrm{R}(0)=\{0,1\}$, $\mathrm{R}(1)=\{1\}$, $\mathrm{W}\mathord{\text{*}}=\{2,3\}$, $\mathrm{R}\mathord{\text{*}}(2)=\{2,3\}$, $\mathrm{R}\mathord{\text{*}}(3)=\{3\}$; thus $\langle \mathrm{W},\mathrm{R}\rangle$ and $\langle \mathrm{W}\mathord{\text{*}},\mathrm{R}\mathord{\text{*}}\rangle$ are isomorphic. By 9.0, Comparative Transfer is valid on $\langle \mathrm{W},\mathrm{R}\rangle$ and $\langle \mathrm{W}\mathord{\text{*}},\mathrm{R}\mathord{\text{*}}\rangle$. But it is not valid on $\langle \mathrm{W}\cup \mathrm{W}\mathord{\text{*}},\mathrm{R}\cup \mathrm{R}\mathord{\text{*}}\rangle$. For let $\operatorname{Pr}\nolimits$ be the uniform probability distribution over $\mathrm{W}$ and $\mathrm{X}=\{1,2\}$, so $\operatorname{Pr}\nolimits(\mathrm{X})=1/2$. Thus $\operatorname{Pr}\nolimits_0(\mathrm{X})=\operatorname{Pr}\nolimits_2(\mathrm{X})=1/2$, $\operatorname{Pr}\nolimits_1(\mathrm{X})=1$, and $\operatorname{Pr}\nolimits_3(\mathrm{X})=0$, so $\operatorname{Pr}\nolimits_{>}[\mathrm{X}]=\{1\}$, so $\operatorname{Pr}\nolimits(\operatorname{Pr}\nolimits_{>}[\mathrm{X}])=1/4$. Thus $\operatorname{Pr}\nolimits_0(\operatorname{Pr}\nolimits_{>}[\mathrm{X}])=1/2$, so $0\in \operatorname{Pr}\nolimits_{>}[\operatorname{Pr}\nolimits_{>}[\mathrm{X}]]$, but $0\notin \operatorname{Pr}\nolimits_{>}[\mathrm{X}]$.
+
+Proposition 14.0: For $a\in(0,1)$, the validity of Threshold$_a$ Transfer and the validity of Comparative Transfer are independent conditions on a frame.
+
+Proof: The union frame in the proof of 13.0, on which Comparative Transfer is invalid, meets the condition for the validity of Threshold$_a$ Transfer. Conversely, the latter condition entails transitivity, so Threshold$_a$ Transfer is invalid on those non-transitive frames on which Comparative Transfer is valid (see 9.1).
+
+We make the following definitions for a frame $\langle \mathrm{W},\mathrm{R}\rangle$ ($\subset$ expresses proper subsethood): $\langle \mathrm{W},\mathrm{R}\rangle$ is quasi-nested iff for all $w,x,y,z\in \mathrm{W}$, if $\mathrm{R}wx$, $\mathrm{R}wy$, $\mathrm{R}xz$, and $\mathrm{R}yz$, then either $\mathrm{R}xy$ or $\mathrm{R}yx$.
+
+$$
+\mathrm{R}_0(w)=\mathrm{R}(w)\cap\{u:\mathrm{R}(u)=\mathrm{R}(w)\}
+$$
+
+$$
+\begin{aligned}
+\mathrm{R}_1(w)=\mathrm{R}(w)\cap\{u:{}&\mathrm{R}(u)\subset \mathrm{R}(w)\text{ and for no }v\in R(w):\\
+&\mathrm{R}(u)\subset \mathrm{R}(v)\subset \mathrm{R}(w)\}
+\end{aligned}
+$$
+
+Observation 15.0: A quasi-nested serial frame is quasi-reflexive.
+
+Proof: Put x = y in the definition of ‘quasi-nested’.
+
+Proposition 15.1: Let <W, R> be a finite serial transitive quasi-nested frame. If x, y ∈ R₁(w) then either R(x) = R(y) or R(x) ∩ R(y) = {}.
+
+Proof: Suppose that R(x) ∩ R(y) ≠ {}. Hence, for some z, Rxz and Ryz. Since R₁(w) $\subseteq$ R(w), Rwx and Rwy. Thus, since R is quasi-nested, either Rxy or Ryx. Without loss of generality, suppose that Rxy. Thus, since R is transitive, R(y) $\subseteq$ R(x). Suppose that R(x) ≠ R(y). Hence R(y) ⊂ R(x). But x ∈ R₁(w), so R(x) ⊂ R(w). Thus R(y) ⊂ R(x) ⊂ R(w), contradicting the hypothesis that y ∈ R₁(w). Hence R(x) = R(y).
+
+Proposition 15.2: Let <W, R> be a finite serial transitive quasi-nested frame, w ∈ W, and J consist of one member from each equivalence class of the equivalence relation defined by R(x) = R(y) over R₁(w). Then R₀(w) and R(j) for j ∈ J partition R(w). Moreover, if j and k are distinct members of J then R(j) ∩ R(k) = R₀(w) ∩ R(j) = {}.
+
+Proof: By definition, R₀(w) $\subseteq$ R(w) and R(j) ⊂ R(w) for j ∈ J $\subseteq$ R₁(w), so R₀(w) ∪ ($\cup_{j\in\mathrm{J}}\mathrm{R}(j)$) $\subseteq$ R(w). For the converse, let x ∈ R(w). Since R is transitive, R(x) $\subseteq$ R(w). If R(x) = R(w) then x ∈ R₀(w) and we are done, so suppose that R(x) ⊂ R(w). Since W is finite, there is a sequence x₀, x₁, . . ., $x_n$ all in R(w) of maximal length such that x₀ = x and for 0 ≤ i < n, R($x_i$) ⊂ R($x_{i+1}$) ⊂ R(w). So there is no v ∈ R(w) such that R($x_n$) ⊂ R(v) ⊂ R(w), otherwise we could put v = $x_{n+1}$. Thus $x_n$ ∈ R₁(w), so for some k ∈ J: R(k) = R($x_n$). Since x ∈ R(w) and by 15.0 R is quasi-reflexive, x ∈ R(x) = R (x₀) $\subseteq$ R($x_n$) = R(k), so x ∈ $\cup_{j\in\mathrm{J}}\mathrm{R}(j)$. Thus R(w) = R₀(w) ∪ ($\cup_{j\in\mathrm{J}}\mathrm{R}(j)$). Moreover, if j and k are distinct members of J then R(j) ≠ R(k), so R(j) ∩ R(k) = {} by 15.1, and if x ∈ R(j) then by transitivity R(x) $\subseteq$ R(j) ⊂ R(w), so x ∉ R₀(w).
+
+Proposition 15.3: Let $\langle \mathrm{W},\mathrm{R}\rangle$ be a finite serial transitive quasi-nested frame, $b\in[0,1]$, $\mathrm{X}\subseteq \mathrm{W}$, $w\in \mathrm{W}$, and $\operatorname{Pr}\nolimits$ a regular probability distribution on $\langle \mathrm{W},\mathrm{R}\rangle$. Then $b\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge b}[\mathrm{X}])\le\operatorname{Pr}\nolimits_w(\mathrm{X})$.
+
+Proof: We use induction on $|\mathrm{R}(w)|$. The base case is vacuous because $\mathrm{R}$ is serial. Suppose that for all $x\in \mathrm{W}$ such that $|\mathrm{R}(x)|<|\mathrm{R}(w)|$, $b\operatorname{Pr}\nolimits_x(\mathrm{P}_{\ge b}[\mathrm{X}])\le\operatorname{Pr}\nolimits_x(\mathrm{X})$. We have two cases to consider.
+
+Case (i): $\operatorname{Pr}\nolimits_w(\mathrm{X})\ge b$. Hence $b\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge b}[\mathrm{X}])\le b\le\operatorname{Pr}\nolimits_w(\mathrm{X})$, as required.
+
+Case (ii): $\operatorname{Pr}\nolimits_w(\mathrm{X})<b$. Now for all $u\in \mathrm{R}_0(w)$, $\mathrm{R}(u)=\mathrm{R}(w)$, so $\operatorname{Pr}\nolimits_u(\mathrm{X})=\operatorname{Pr}\nolimits_w(\mathrm{X})<b$, so $\mathrm{R}_0(w)\cap \mathrm{P}_{\ge b}[\mathrm{X}]=\{\}$, so $\operatorname{Pr}\nolimits(\mathrm{P}_{\ge b}[\mathrm{X}]\mid \mathrm{R}_0(w))=0$. By 15.2, for any $\mathrm{Y}\subseteq \mathrm{W}$:
+
+($\textit{*}$)
+$\begin{aligned}
+\operatorname{Pr}\nolimits_w(\mathrm{Y})&=\operatorname{Pr}\nolimits(\mathrm{Y}\mid \mathrm{R}(w))=\operatorname{Pr}\nolimits(\mathrm{Y}|\mathrm{R}_0(w)\cup(\cup_{j\in J}\mathrm{R}(j)))\\
+&=\operatorname{Pr}\nolimits(\mathrm{Y}\mid \mathrm{R}_0(w))\operatorname{Pr}\nolimits_w(\mathrm{R}_0(w))\\
+&\quad +\mathrm{\Sigma}_{j\in \mathrm{J}}\operatorname{Pr}\nolimits(\mathrm{Y}\mid \mathrm{R}(j))\operatorname{Pr}\nolimits_w(\mathrm{R}(j))\\
+&=\operatorname{Pr}\nolimits(\mathrm{Y}\mid \mathrm{R}_0(w))\operatorname{Pr}\nolimits_w(\mathrm{R}_0(w))\\
+&\quad +\mathrm{\Sigma}_{j\in \mathrm{J}}\operatorname{Pr}\nolimits_j(\mathrm{Y})\operatorname{Pr}\nolimits_w(\mathrm{R}(j))
+\end{aligned}$
+
+By (*) for $\mathrm{Y}=\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]$:
+
+$$
+\begin{aligned}
+\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge b}[\mathrm{X}])
+&=\operatorname{Pr}\nolimits(\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]\mid \mathrm{R}_0(w))\operatorname{Pr}\nolimits_w(\mathrm{R}_0(w))\\
+&\quad +\mathrm{\Sigma}_{j\in \mathrm{J}}\operatorname{Pr}\nolimits_j(\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}])\operatorname{Pr}\nolimits_w(\mathrm{R}(j))\\
+&=\mathrm{\Sigma}_{j\in \mathrm{J}}\operatorname{Pr}\nolimits_j(\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}])\operatorname{Pr}\nolimits_w(\mathrm{R}(j))
+\end{aligned}
+$$
+
+But if $j\in \mathrm{J}$ then $\mathrm{R}(j)\subset \mathrm{R}(w)$, so $|\mathrm{R}(j)|<|\mathrm{R}(w)|$ because $\mathrm{W}$ is finite, so by the induction hypothesis $b\operatorname{Pr}\nolimits_j(\mathrm{P}_{\ge b}[\mathrm{X}])\le\operatorname{Pr}\nolimits_j(\mathrm{X})$. Thus:
+
+$$
+\begin{aligned}
+\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge b}[\mathrm{X}])
+&=\mathrm{\Sigma}_{j\in J}b\operatorname{Pr}\nolimits_j(\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}])\operatorname{Pr}\nolimits_w(\mathrm{R}(j))\\
+&\le\mathrm{\Sigma}_{j\in \mathrm{J}}\operatorname{Pr}\nolimits_j(\mathrm{X})\operatorname{Pr}\nolimits_w(\mathrm{R}(j)))\\
+&\le(\operatorname{Pr}\nolimits(\mathrm{X}\mid \mathrm{R}_0(w))\operatorname{Pr}\nolimits_w(\mathrm{R}_0(w))
+  +\mathrm{\Sigma}_{j\in \mathrm{J}}\operatorname{Pr}\nolimits_j(\mathrm{X})\operatorname{Pr}\nolimits_w(\mathrm{R}(j)))\\
+&=\operatorname{Pr}\nolimits_w(\mathrm{X})
+\end{aligned}
+$$
+
+by (*) for Y = X, as required. This completes the induction.
+
+Corollary 15.4: Let $\langle \mathrm{W},\mathrm{R}\rangle$ be a finite serial transitive quasi-nested frame, $a,b\in[0,1]$, $\mathrm{X}\subseteq \mathrm{W}$, and $\operatorname{Pr}\nolimits$ a regular probability distribution on $\langle \mathrm{W},\mathrm{R}\rangle$. Then $\operatorname{Pr}\nolimits_{\ge a}[\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]]\subseteq \operatorname{Pr}\nolimits_{\ge ab}[\mathrm{X}]]$.
+
+Proof: For $w\in \operatorname{Pr}\nolimits_{\ge a}[\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]]$, $ab\le b\operatorname{Pr}\nolimits_w(\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}])\le\operatorname{Pr}\nolimits_w(\mathrm{X})$ by 15.3, so $w\in \operatorname{Pr}\nolimits_{\ge ab}[\mathrm{X}]$, as required.
+
+Proposition 15.5: The principle $\operatorname{Pr}\nolimits_{\ge a}[\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]]\subseteq \operatorname{Pr}\nolimits_{\ge ab}[\mathrm{X}]]$ is valid on a finite serial frame for all $a,b\in[0,1]$ if and only if the frame is transitive and quasi-nested.
+
+Proof: Given 15.4, we need only prove the left-to-right direction. Suppose that $\operatorname{Pr}\nolimits_{\ge a}[\operatorname{Pr}\nolimits_{\ge b}[\mathrm{X}]]\subseteq \operatorname{Pr}\nolimits_{\ge ab}[\mathrm{X}]]$ is valid on a finite serial frame $\langle \mathrm{W},\mathrm{R}\rangle$ for all $a,b\in[0,1]$. First, note that $\langle \mathrm{W},\mathrm{R}\rangle$ is transitive by Proposition 1.0 for $a=b>0$. Second, we show that $\langle \mathrm{W},\mathrm{R}\rangle$ is quasi-reflexive. For suppose that $\mathrm{R}wx$ but not $\mathrm{R}xx$, so $w\ne x$. Let $|\mathrm{W}|=n\ge2$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ thus:
+
+$$
+\operatorname{Pr}\nolimits(\{x\})=2/3
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{y\})=1/3(n-1)\quad\text{for }y\ne x.
+$$
+
+Then $\operatorname{Pr}\nolimits_x(\mathrm{W}-\{x\})=1$, so $x\in \operatorname{Pr}\nolimits_{\ge1}[\mathrm{W}-\{x\}]$, so $\operatorname{Pr}\nolimits_w(\operatorname{Pr}\nolimits_{\ge1}[\mathrm{W}-\{x\}])\ge\operatorname{Pr}\nolimits_w(\{x\})\ge2/3$, so $w\in \operatorname{Pr}\nolimits_{\ge2/3}[\operatorname{Pr}\nolimits_{\ge1}[\mathrm{W}-\{x\}]]$, but $\operatorname{Pr}\nolimits_w(\mathrm{W}-\{x\})=1-\operatorname{Pr}\nolimits_w(\{x\})\le1-\operatorname{Pr}\nolimits(\{x\})=1/3$, so $w\notin \operatorname{Pr}\nolimits_{\ge2/3}(\mathrm{W}-\{x\})$.
+
+Finally, we show that $\langle \mathrm{W},\mathrm{R}\rangle$ is quasi-nested. For suppose otherwise. Then for some $w,x,y,z\in \mathrm{W}$, if $\mathrm{R}wx$, $\mathrm{R}wy$, $\mathrm{R}xz$, $\mathrm{R}yz$, but neither $\mathrm{R}xy$ nor $\mathrm{R}yx$; thus $w\ne x$, $w\ne y$, $x\ne z$, and $y\ne z$. Since $\mathrm{R}$ is quasi-reflexive, $\mathrm{R}xx$, $\mathrm{R}yy$, and $\mathrm{R}zz$; thus $x\ne y$. Since $\mathrm{R}$ is transitive, $\mathrm{R}wz$ but neither $\mathrm{R}zx$ (otherwise $\mathrm{R}yx$) nor $\mathrm{R}zy$ (otherwise $\mathrm{R}xy$); thus $w\ne z$. Hence $|\mathrm{W}|=n\ge4$. Define a probability distribution $\operatorname{Pr}\nolimits$ over $\mathrm{W}$ thus:
+
+$$
+\operatorname{Pr}\nolimits(\{x\})=\operatorname{Pr}\nolimits(\{y\})=6/25
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{z\})=12/25
+$$
+
+$$
+\operatorname{Pr}\nolimits(\{u\})=1/25(n-3)
+\quad\text{for }u\notin\{x,y,z\}.
+$$
+
+Since $\{z\}\subseteq \mathrm{R}(z)\subseteq \mathrm{W}-\{x,y\})$, $\operatorname{Pr}\nolimits_z(\{z\})\ge12/13>12/19$. Since $\{x,z\}\subseteq \mathrm{R}(x)\subseteq \mathrm{W}-\{y\}$, $\operatorname{Pr}\nolimits_x(\{z\})=\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\mathrm{R}(x))\ge\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\mathrm{W}-\{y\})=12/19$. Similarly, $\operatorname{Pr}\nolimits_y(\{z\})\ge12/19$. Hence $\{x,y,z\}\subseteq \mathrm{P}_{\ge12/19}[\{z\}]$, so $\operatorname{Pr}\nolimits_w(\mathrm{P}_{\ge12/19}[\{z\}])\ge\operatorname{Pr}\nolimits_w(\{x,y,z\})\ge\operatorname{Pr}\nolimits(\{x,y,z\})=24/25$. Hence $w\in \mathrm{P}_{\ge24/25}[\mathrm{P}_{\ge12/19}[\{z\}]]$. But $\{x,y,z\}\subseteq \mathrm{R}(w)$, so $\operatorname{Pr}\nolimits_w(\{z\})=\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\mathrm{R}(w))\le\operatorname{Pr}\nolimits(\{z\})/\operatorname{Pr}\nolimits(\{x,y,z\})=1/2<(24/25)(12/19)=288/475$, so $w\notin \operatorname{Pr}\nolimits_{\ge288/475}(\{z\})$. Thus the principle $\operatorname{Pr}\nolimits_{\ge24/25}[\operatorname{Pr}\nolimits_{\ge12/19}[\mathrm{X}]]\subseteq \operatorname{Pr}\nolimits_{\ge288/475}[\mathrm{X}]]$ is not valid on the frame, contrary to hypothesis.
+
+# Acknowledgements
+
+Earlier versions of this material were presented at Oxford and a British Academy-funded conference on epistemology in Cambridge; I thank participants for useful suggestions, and Bernhard Salow, Kevin Dorst, and John Hawthorne for valuable discussion and correspondence. Many thanks are also due to Mattias Skipper in his capacity as editor and Kevin Dorst in his capacity as referee for providing detailed constructive comments; space and time do not permit full responses to all of them. More thanks are also due to Skipper for the diagrams.
+
+# Notes
+
+[1] There is a subtlety here, for if E = K is true, why should it follow that the agent knows E = K? If one is an agent who doesn’t know E = K, couldn’t one know that one knows X without knowing that X is part of one’s evidence, or vice versa? In practice, however, the putative counterexamples to positive introspection for knowledge do not depend on whether the agent knows E = K, so one can stipulate that the agent does know it. Thus positive introspection principles for knowledge and for evidence stand or fall together, given E = K, even though, if they fall together, the nonempty class of counterexamples to one differs slightly from the nonempty class of counterexamples to the other. Epistemic logic in any case tends not to treat such subtle differences in mode of presentation as differences in what is known, since it treats knowledge as closed under truth-functional entailment.
+
+[2] In this context a normal modal logic, identified with the set of its theorems, is a set of formulas of a standard language for monomodal propositional logic (with $□$ as the only primitive modal operator) containing all truth-functional tautologies and the K axiom $□(p\supset q)\supset(□ p\supset□ q)$ and closed under uniform substitution, modus ponens, and the rule of necessitation. The correspondence result can be proved by the standard method of canonical models (see, e.g., Hughes and Cresswell 1984, pp. 22–7).
+
+[3] To derive quasi-truth from negative introspection, consider two cases: (a) $p$ truth-functionally entails $□ p\supset p$, so by normality $□ p$ entails $□(□ p\supset p)$; (b) $\neg□ p$ truth-functionally entails $□ p\supset p$, so by normality $□\neg□ p$ entails $□(□ p\supset p)$; but by negative introspection and normality, $\neg□ p$ entails $□\neg□ p$, so $\neg□ p$ entails $□(□ p\supset p)$. Either way, we have $□(□ p\supset p)$.
+
+[4] More generally, we can interpret any set $\mathrm{X}$ as comprising the respects in which things can be epistemically good or bad, yielding a frame in which the worlds are the subsets of $\mathrm{X}$ and the subset relation is accessibility. All such frames are reflexive, transitive and convergent in the sense that if $\mathrm{R}wx$ and $\mathrm{R}wy$ then for some $z$ both $\mathrm{R}xz$ and $\mathrm{R}yz$, which corresponds to the modal axiom $◇□ p\supset□◇ p$. Thus they all validate the modal system proposed as a logic of knowledge in Stalnaker (2006). They are used for a related purpose in the appendix to Salow (2019).
+
+[5] This is one way of interpreting evidential relations over the framework of Stalnaker (2006).
+
+[6] One objection to Positive Introspection for knowledge is that a simple creature with no grasp of the distinction between knowing and not knowing may still know truths about its environment, but without being able to so much as entertain the truth that it knows them. This objection does not generalize against the principle that if you know that you know, then you know that you know that you know, for if you know that you know then in the required sense you do grasp the distinction between knowing and not knowing. However, such objections are too fine-grained for the present setting, where logical omniscience is assumed: if you know one truth but cannot grasp another you presumably cannot grasp their disjunction either, which follows from the truth you do know. For present purposes we are accepting the principle $□ p\supset□(p\vee q)$, which is valid in all standard epistemic models.
+
+[7] See fn. 4 for such frames.
+
+# References
+
+Blackburn, P., M. de Rijke, and Y. Venema (2001). Modal Logic, Cambridge University Press.
+
+Briggs, R. (2009). “Distorted Reflection.” In: The Philosophical Review 118, pp. 59–85.
+
+Das, N. and B. Salow (2018). “Transparency and the KK Principle.” In: Noûs 52, pp. 3–23.
+
+Dorst, K. (2019). “Evidence: A Guide for the Uncertain.” In: Philosophy and Phenomenological Research. Online first.
+
+Feldman, R. (2007). “Reasonable Religious Disagreements.” In: L. Antony (ed.), Philosophers Without God: Meditations on Atheism and the Secular Life, Oxford University Press, pp. 194–214.
+
+Feldman, R. (2014). “Evidence of Evidence is Evidence.” In: J. Matheson and R. Vitz (eds), The Ethics of Belief, Oxford University Press, pp. 284–300.
+
+Fitelson, B. (2012). “Evidence of Evidence is not (Necessarily) Evidence.” In: Analysis 72, pp. 85–8.
+
+Geanakoplos, J. (1989). “Game Theory without Partitions, and Applications to Speculation and Consensus.” Cowles Foundation Discussion Paper, 914, Yale University.
+
+Greco, D. (2014). “Could KK be OK?” In: Journal of Philosophy 111, pp. 169–97.
+
+Hawthorne, J. and O. Magidor (2009). “Assertion, Context, and Epistemic Accessibility.” In: Mind 118, pp. 377–97.
+
+Hawthorne, J. and O. Magidor (2011). “Assertion and Epistemic Opacity.” In: Mind 119: 1087–105.
+
+Hintikka, J. (1962). Knowledge and Belief, Cornell University Press.
+
+Hughes, G. and M. Cresswell (1984). A Companion to Modal Logic, Methuen.
+
+Roche, W. (2014). “Evidence of Evidence is Evidence under Screening-off.” In: Episteme 11, pp. 119–24.
+
+Salow, B. (2019). “Elusive Externalism.” In: Mind 128, pp. 397–427.
+
+Stalnaker, R. (2006). “On Logics of Knowledge and Belief.” In: Philosophical Studies 128, pp. 169–99.
+
+Stalnaker, R. (2009). “On Hawthorne and Magidor on Assertion, Context, and Epistemic Accessibility.” In: Mind 118, pp. 399–409.
+
+Tal, E. and J. Comesaña (2017). “Is Evidence of Evidence Evidence?” In: Noûs 55(1), pp. 96–112.
+
+Weisberg, J. (2007). “Conditionalization, Reflection, and Self-Knowledge.” In: Philosophical Studies 135, pp. 179–97.
+
+White, R. (2006). “Problems for Dogmatism.” In: Philosophical Studies 131, pp. 525–57.
+
+Williamson, T. (2000). Knowledge and its Limits, Oxford University Press.
+
+Williamson, T. (2014). “Very Improbable Knowing.” In: Erkenntnis 79, pp. 971–99.

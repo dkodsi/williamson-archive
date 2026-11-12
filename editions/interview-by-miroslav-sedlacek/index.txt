@@ -1,0 +1,97 @@
+# Interview by Miroslav Sedláček
+
+Timothy Williamson and Miroslav Sedláček
+
+Jazykovědné Aktuality 57 (2020): 122–128.
+
+Britský myslitel Timothy Williamson, původem Švéd (nar. v Uppsale v r. 1955), je mezinárodně uznávaným filozofem. Po absolvování univerzity v Oxfordu přednášel logiku a filozofii na irské Trinity College Dublin a na skotské univerzitě v Edinburghu. Od r. 2000 je profesorem logiky na univerzitě v Oxfordu. Navíc je hostujícím profesorem na řadě univerzit v USA, Norsku, Číně, Austrálii a Novém Zélandu. Od r. 1996 přednáší po celém světě, zdaleka nejen anglosaském. Je prezidentem organizací “Aristotelian Society“ a „Mind Association“ a viceprezidentem „British Logic Colloquium”. Je čestným členem mnoha prestižních akademií a držitelem několika čestných doktorátů. Je autorem mnoha knih a příspěvků. Prof. Williamson ochotně přijal mé pozvání k následujícímu rozhovoru obeznámen s tím, že čtenáři pocházejí z řad české lingvistické obce. Rozhovor proběhl formou osobní emailové komunikace dne 23. 7. 2020. Je ale vyústěním předešlých průběžných konzultací během r. 2020.
+
+Miroslav Sedláček: There are two tendencies in the philosophy of language, referentialism and inferentialism. In terms of semantic compositionality, many linguists today reject the thesis that the meanings of complex expressions depend solely on the meanings of their constituents. You are a strong advocate of referentialism and argue for semantic compositionality. What is your opinion on analyticity in natural language?
+
+Timothy Williamson: Several issues are mixed up here. To a first approximation, a referentialist theory of meaning focuses on relations between linguistic entities and non-linguistic entities, whereas an inferentialist theory of meaning focuses on relations between linguistic entities and other linguistic entities. For referentialists, a paradigm of meaning is the relation of reference between the word ‘square’ and the property of squareness. For inferentialists, a paradigm of meaning is the relation of implication between the word ‘square’ and the word ‘rectangle’. Of course, for both sides it gets much more complicated, but such examples suggest the general idea. I find the referentialist starting-point more promising because, if language were a self-enclosed system, it would be useless for communicating knowledge of the environment, inviting your hearers to act in specific ways, and most of the other uses for which we need language.
+
+A different issue is semantic compositionality. You formulated it as ‘the thesis that the meanings of complex expressions depend solely on the meanings of their constituents’. We should add ‘and the ways in which those constituents are put together’, for ‘The man bit the dog’ and ‘The dog bit the man” differ greatly in meaning, despite having the same basic constituents. I’m not sure that most linguists reject semantic compositionality. Within linguistics, it tends to function as a guiding principle of research in formal semantics. The idea is not that it can be mechanically applied to surface structure, but that a semantic theory should identify an underlying level of structure at which it does apply. For otherwise there would be no systematic explanation of hearers’ ability to understand sentences of their native language which they have never encountered before. Alleged counterexamples to semantic compositionality typically underestimate its abstractness, and fail to consider how dependence on context (including linguistic context) will be factored into the semantic framework. The languages for which we have the most adequate semantic theories are formal languages (as in logic), whose semantics is fully compositional (modulo one or two subtleties1). As semanticists started realizing in the 1960s and 1970s, those formal languages provide surprisingly good models for natural languages.
+
+At first sight, whether you are a referentialist or an inferentialist and whether you are for or against semantic compositionality are two quite different questions. In practice, however, semantic compositionality combines much better with referentialism than with inferentialism, which is another argument in favour of referentialism. Part of the reason is that, linguistically, inference is a relation between sentences rather than words: we typically use sentences rather than single words to articulate the premises and conclusion of an argument. Thus it tends to be much harder for the inferentialist to get down to the semantic building blocks, the individual words or morphemes.
+
+You may be implicitly connecting inferentialism to analyticity by thinking of the inferential connections codified in an inferentialist semantic theory as ‘analytic’. In my book The Philosophy of Philosophy (2007), I argued in effect that no such connections are analytic in the sense that accepting them is a precondition for understanding the language. A linguistically competent native speaker may reject any particular such connection, no matter how obvious it seems, on theoretical grounds. They may be theoretically mistaken, but that does not make them linguistically incompetent. They may become habituated to rejecting the connection, so that the supposedly analytic inference no longer even tempts them. There are no litmus tests for linguistic understanding; it is a more holistic matter.
+
+MS: The argument against relativism is that language is not only contextual, social in nature, a work of community that is shaped by cultural practices, but that its referential function is undeniable. It’s assumed that the precondition of reference and communication itself is the existence of real entities in the world. Your concept of vagueness is based on such assumptions. What do you think motivates attempts to challenge objectivity?
+
+TW: A typical example of a vague word is ‘heap’. There is no agreement as to how many grains are needed to make a heap, and no way to find out. That is the basis of the ancient Greek sorites paradox. In my book Vagueness (1994), I argued that the vagueness consists in our ignorance of where semantic boundaries run, not in the absence of such boundaries. Thus vagueness is quite compatible with the dichotomy of statements into the true and the false, and with classical logic. Everything is either a heap or a non-heap, and not both. I looked carefully at the alternatives, such as fuzzy logic, which replaces the binary true-false distinction with a continuum of degrees of truth from the perfectly true to the perfectly false, and explained why in the end they only make the problem worse. Part of the reason is that they do a bad job of handling the notorious problem of higher-order vagueness—borderline cases of borderline cases, and so on.
+
+Perhaps some people challenge objectivity to escape the fear of being objectively wrong! In the case of vagueness, the problem was that people just didn’t think hard enough about the epistemological problems of applying language in practice, and so failed to see how there could be ignorance in borderline cases, given classical logic. More generally, logicians and semanticists have been in the bad habit of giving semantic solutions to epistemological problems. In my recent book Suppose and Tell: The Semantics and Heuristics of Conditionals (2020), I argue that such a mistake has been made in trying to understand how words like ‘if’ work.
+
+MS: Ludwig Wittgenstein’s conception of meaning has been very influential not only among philosophers but also linguists. However, there have been more interpretations of his “meaning is use” or “language games”. Do you agree with Saul Kripke’s sceptical reading, according to which the Philosophical Investigations imply that it cannot literally be true for any symbol that it expresses some particular concept or meaning?
+
+TW: I’m no Wittgenstein scholar, but I doubt that Wittgenstein intended anything so systematic or revisionary. In his later period, that of Philosophical Investigations, he was an opponent of philosophical theory-building. When he talked of meaning as use (which he restricted to a limited range of cases) and of language games, he intended to correct ways of thinking about language which he regarded as too general and abstract, as losing sight of language as it works in actual contexts. He regarded himself as engaged in an anti-theoretical process of ‘clarification’. In practice, however, especially in his followers, that attitude has tended to result in obscurantist dogmatism, because they would not come clean about the contestable theoretical assumptions underlying their classification of some things as ‘in need of clarification’ and others as acceptable ‘clarifications’ of them. Despite Wittgenstein’s imaginative brilliance, his influence over the past sixty years has overall been harmful. Fortunately, it has drastically declined. His followers marginalized themselves in opposition to most of the interesting new developments in philosophy since his death.
+
+MS: One of the arguments against the view that meaning can be characterized in terms of sufficient and necessary conditions is that human knowledge about the world is based rather on intersubjective beliefs. But you argue in Knowledge and Its Limits (2000) that knowledge comes prior to belief, and is thus itself a state of mind. Are our linguistic expressions more referential than we think?
+
+TW: Knowledge itself does not come before belief, since knowing that something obtains entails believing that it obtains. But thinking about who knows what comes prior to thinking about who believes what; arguably, some non-human apes can do the former without being able to do the latter. In human children, thinking in terms of knowledge seems to develop earlier than thinking in terms of belief. Believing is something like as-if-knowing. This order of priority is not surprising. The paradigm of knowing is seeing, and in practice it is usually quite easy to work out who sees what; it is a matter of sightlines. By contrast, what stands to seeing as believing stands to knowing as as-if-seeing: for example, having a visual image as of a banana, rather than actually seeing a banana. It is usually easier to work out who sees a banana than who has a visual image as of a banana.
+
+Even without issues of inter-subjectivity, I doubt that the programme of analysis in terms of necessary and sufficient conditions would get very far. Given that human cognition is of finite complexity, analysis has to come to an end, maybe quite soon. When you recognize a cat, it is probably not on the basis of a necessary and sufficient condition for ‘cat’. The problem of recognizing members of a natural kind arises for solitary agents too.
+
+MS: Linguistic competence of native speakers is reliable, according to generative linguistics. But that view has been disputed. Speakers do not know the whole semantic spectrum of expressions they use. Meanings are not necessarily fully transparent to them. Do you see this related to your claim that we are “cognitively homeless”?
+
+TW: There are similarities. Both involve neglected micro-ignorance in the most ordinary cases. But my argument for cognitive homelessness is intended to show not just that things are ‘not necessarily fully transparent’ to us but that they are ‘necessarily not fully transparent to us’, given our limited powers of discrimination, which is a general cognitive limitation, not a specifically linguistic one.
+
+MS: It’s common to think that philosophers of language use intuition and linguists rely on empirical data. Do you believe that this distinction is realistic?
+
+TW: No. For a start, philosophers of language and linguists are not disjoint groups. Influential figures such as James Higginbotham and Paul Elbourne have moved between departments of philosophy and departments of linguistics in the course of their careers, without changing their methodology as they did so. Similarly, although Angelika Kratzer is based in a department of linguistics, she is at home with philosophical audiences too. Some students are in a position to apply for positions in departments of philosophy and in departments of linguistics; they go with what they can get.
+
+Semanticists tend to work with sample sentences from their native language, whether they count as ‘philosophers of language’ in a philosophy department or as ‘linguists’ in a linguistics department. The evidence is the same, whether you describe it as consisting of ‘intuitions’ or ‘data’. I have been at many mixed conferences of linguistics and philosophers of language; no terrible culture clash occurred. There are some statistical differences. For example, a cross-linguistic study in semantics is more likely to come from a department of linguistics than from a department of philosophy, but philosophers of language will readily acknowledge its relevance. Corpus-driven studies are also more common in departments of linguistics than in departments of philosophy. A study of which logical principles are validated by a given semantic theory is more likely to come from a department of philosophy. These differences do not show that there is no common subject matter. Sometimes they simply reflect differences in the skill-sets which researchers bring to the same subject matter.
+
+Of course, semanticists and pragmaticists may not be ‘typical linguists’, and philosophers of language may not be ‘typical philosophers’, but that is another indication of the complexity of the disciplinary landscape.
+
+MS: Logicians/philosophers and linguists often work on separate projects focusing on different issues. Do you think that we can hope to see more cooperation and connection between them in the future?
+
+TW: In the English-speaking world, the connections are somewhat better, and have been for a long time. For a start, Noam Chomsky was based for decades at MIT in the Department of Linguistics and Philosophy, which goes back to 1976. Although its two halves are somewhat autonomous, it has produced many philosophers with significant knowledge of linguistics and linguists with significant knowledge of philosophy.
+
+In semantics and pragmatics, many of the theoretical frameworks on which linguists rely were first produced by philosophers and then applied by linguists. For example, intensional (‘possible worlds’) semantics was developed by philosophers such as Rudolf Carnap, Richard Montague, Arthur Prior, Saul Kripke, David Kaplan, and David Lewis, and then became the standard framework for formal semantics—Barbara Hall Partee was one of the key figures in the transition. Similarly, James Higginbotham was a key figure in mediating the transition of ideas from Donald Davidson’s truth-theoretic semantics (such as the treatment of adverbs with quantification over events) into linguistics. The logician Jon Barwise and the philosopher John Perry came up with the first systematic version of situation semantics, to which Angelika Kratzer responded. Other examples are Hans Kamp’s Discourse Representation Theory, Paul Grice’s account of conversational and conventional implicature, and J. L. Austin’s theory of speech acts, later modified by John Searle. These are all theories which emerged in philosophy and were then creatively applied and adapted by linguists.
+
+In my recent work on conditionals, it was very clear that the relevant group of researchers included both many philosophers and many linguists, often focussing on exactly the same issue, which goes back to the ancient Greeks: what are the truth-conditions of conditional statements? Psychologists of reasoning also have important things to say about conditionals.
+
+I see no sign of these channels of communication drying up. I hope that they will extend to other parts of the world where the disciplinary cultures of both linguistics and philosophy have been less conducive to such connections.
+
+MS: Figures in analytic philosophy, such as Frege, Russell, Wittgenstein, Quine, maybe Kripke, are known to linguists. But the name of e.g. David Kaplan is much less reflected, despite his contributions. Do you think that we should know him?
+
+TW: Yes, if you are interested in a rigorous framework for understanding the role of context-dependence in semantics. Kaplan has been the leading figure in showing how to integrate a parameter for the context of utterance into intensional semantics, which demonstrated that context-dependence is quite compatible with semantic compositionality. If you think otherwise, the first thing to do is to work through Kaplan’s seminal work ‘Demonstratives’. He shows how subtle the issues are in unexpected ways. If you hear of a debate as to whether natural languages can contain monsters, it is about a conjecture of Kaplan’s. He is also one of the funniest philosophers of languages.
+
+MS: Which books or papers in analytic philosophy or epistemology would you recommend to students who don’t study philosophy but a particular foreign language (e.g. German)?
+
+TW: On the side of pragmatics, most of the philosophical classics are quite easy to read, including J. L. Austin, How to Do Things with Words (1962), John Searle, Speech Acts (1969), and Paul Grice, Studies in the Way of Words (1989). For semantics, it is harder because so much of the relevant work builds on formal logic. However, one very readable classic is Naming and Necessity (1980), by Saul Kripke. A textbook of formal semantics aimed at linguists is Semantics in Generative Grammar (1997), by Irene Heim and Angelika Kratzer. A short and recent introduction is Meaning: A Slim Guide to Semantics (2011), by Paul Elbourne. A good collection of classic readings on analytic philosophy of language is The Philosophy of Language, edited by A.P. Martinich.
+
+# Poznámka Tazatele
+
+Ze zmíněných autorů existuje následující české vydání:
+
+Austin, J. L. (2000): Jak udělat něco slovy. Praha: Filosofia.
+
+Z česky vydaných publikací lze čtenářům doporučit následující antologie analytické filozofie:
+
+Marvan, T. (2010): Otázka významu: cesty analytické filosofie jazyka. Praha: Togga.
+
+Peregrin, Jaroslav (ed.) (1998). Obrat k jazyku: druhé kolo. Praha: Filosofia.
+
+Valenta, L. (2006): Problémy analytické filozofie. Olomouc: Nakladatelství Olomouc.
+
+Valenta, L. (2018): Filozofie jazyka a vědy. Olomouc: Univerzita Palackého.
+
+Prof. Jaroslav Peregrin osobně doporučuje čtenářům ze svých českých publikací následující:
+
+Kapitoly z analytické filozofie. Praha: Filosofia, 2005.
+
+Filosofie pro normální lidi. Praha: Dokořán, 2008.
+
+Člověk a pravidla. Praha: Dokořán, 2011.
+
+Jak jsme zkonstruovali svou vlastní mysl, Praha: Dokořán, 2014.
+
+Filosofie logiky (spoluautor Marta Vlasáková). Praha: Filosofia, 2017.
+
+Člověk jako normativní tvor. Praha: Academia (v tisku).
+
+# Notes
+
+[1] For example, applying the principle of compositionality to pronouns bound by quantifiers is a surprisingly tricky challenge, related to the difficulty of explaining any difference in meaning between the variables ‘$x$’ and ‘$y$’ in mathematical language, even though ‘$x = y$’ and ‘$x = x$’ obviously differ in meaning.

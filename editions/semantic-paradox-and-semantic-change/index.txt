@@ -1,0 +1,161 @@
+# Semantic paradox and semantic change
+
+Timothy Williamson
+
+In Akihiro Kanamori (ed.), Analytic Philosophy and Logic, vol. 6 (2000), 113–124. Bowling Green: Philosophy Documentation Center.
+
+If semantic paradoxes such as the Liar arise because ‘true’ and other metalinguistic expressions can change their reference with changes of linguistic context, is that due to indexicality (they have the same linguistic meaning as reference changes) or ambiguity (their linguistic meaning itself changes)? An argument from communication that appears to favour the indexicality interpretation is not compelling. This paper defends the ambiguity interpretation. It is left open whether its considerations generalize to other kinds of paradox.
+
+One standard philosophical response to a paradox is to postulate non-obvious contextual shifting in some key term. The technique has been applied to sceptical paradoxes, sorites paradoxes, and semantic paradoxes, with varying degrees of plausibility. ‘Know’, ‘heap’, and ‘true’ are said to change their reference according to the context in which they are uttered. The propounding of the paradoxes is supposed to induce critical changes of context.
+
+A general question arises for this approach. Does the change in the reference of the term reflect a change in its linguistic meaning? If linguistic meaning by itself determined reference, the answer would have to be positive. But for indexical terms linguistic meaning determines reference only relative to the context of utterance, sometimes determining different references relative to different contexts. For example, the linguistic meaning of ‘I’ consists in something like the rule that as used in any context c it refers to the speaker in c. In virtue of this unchanging rule, the reference of ‘I’ varies from context to context. For a given paradox, is the diagnosis that the key term has an unchanging indexical meaning, or that it has a changing meaning and is therefore ambiguous? Of course, the answer may depend on which paradox we are talking about, but the question arises in every case.
+
+To the extent that the question has a received answer, it is that the key term is indexical rather than ambiguous. The obvious argument for this answer appeals to our success in communication. If the statement of the paradox changed the meaning of ‘know’, ‘heap’, or ‘true’, how could we recognize the new sense of the term? Such changes in meaning would apparently undermine the possibility of mutual understanding, perhaps even of self-understanding. Yet we do succeed in communicating with each other, even about the paradoxes. Our reactions to them are not merely idiosyncratic. A single, unchanging indexical meaning, by contrast, would nicely explain our ability to communicate in these cases, just as our grasp of the unchanging meaning of ‘I’ enables us to understand strangers when they refer to themselves as ‘I’.
+
+It is worth remarking that the argument from communication requires the indexical meaning to consist in more than an arbitrary association of contexts with references. If it were merely such an association, the problem of learning the meaning of the indexical term in the first place would be just as hard as the problem of communication facing the alternative claim of semantic change, for the reference of the indexical term in those contexts in which the learner had heard it uttered would give no clue as to its reference in other contexts. Rather, the indexical meaning should consist in a unitary rule, like that for ‘I’, which enables speakers to grasp on the basis of limited experience a general rule by which the reference of the term depends on its context of utterance. Such a rule of reference is also needed to state a correct generalization about its reference. Notoriously, even homophonic generalizations about reference across contexts are false (not trivial) for indexical terms. ‘Now’ as uttered at past or future times does not refer to now; it refers to then. The non-trivial non-homophonic rule that ‘now’ refers to the time of utterance is needed to generalize correctly about its reference. Without such a rule, the indexicality diagnosis of a paradox cannot be fully articulated.
+
+This paper concerns the specific case of the semantic paradoxes. It argues against the indexicality interpretation of reference change; it interprets that change as reflecting a change in meaning. The argument does not immediately generalize to the other paradoxes; their proper treatment will be left as an open question. But the paper will at least show that the general argument from communication for the indexicality approach is much less compelling than it first appears.
+
+To fix ideas, Tyler Burge will be taken as a leading example of the indexicality approach to the semantic paradoxes. Burge diagnoses the semantic paradoxes as illicitly exploiting shifts of context. He postulates a system of levels; for each level i, there is a set of true_{i} sentences and a set of pathological_{i} sentences, and the Tarskian disquotational T-schema holds with respect to ‘true’ for all non-pathological_{i} sentences. The level of ‘true’ is determined contextually; as Kripke emphasized, the level cannot be determined just by the sentence-type in which ‘true’ occurs. To validate individual steps in the paradoxical derivations, one must assign different levels to different occurrences of ‘true’, and the contradictions vanish. On Burge’s view, classical logic is valid.1
+
+That the semantic paradoxes involve context-shifting has some plausibility, as Burge shows. Consider a simple formal version of the Liar. Let ‘L1’ name the sentence $\mathord{\sim}\mathrm{True}(\mathrm{L1})$ (‘L1 is not true’), so:
+
+(1)
+$\mathrm{L1} = \text{‘}\mathord{\sim}\mathrm{True}(\mathrm{L1})\text{’}$
+
+The Tarskian disquotational equivalence for $\mathord{\sim}\mathrm{True}(\mathrm{L1})$ is:
+
+(2)
+$\mathrm{True}(\text{‘}\mathord{\sim}\mathrm{True}(\mathrm{L1})\text{’}) \equiv \mathord{\sim}\mathrm{True}(\mathrm{L1})$
+
+Using (1), we substitute its left-hand side for its right-hand side in (2):
+
+(3)
+$\mathrm{True}(\mathrm{L1}) \equiv \mathord{\sim}\mathrm{True}(\mathrm{L1})$
+
+(3) is logically inconsistent.
+
+When we reflect on the paradox, it seems right to assert ‘Whatever the semantic status of L1, it cannot be true, given this paradox’, and therefore ‘L1 is not true’, i.e., L1. But in originally propounding the paradox, it was not right to assert L1, because it was paradoxical. Indexicality in ‘true’ would explain L1’s change in assertibility.
+
+Context-shifting is particularly vivid in a variant of König and Berry’s paradoxes. Only finitely many natural numbers will ever be named by me. Thus some natural numbers will never be named by me. By the least number principle, there is the least natural number I shall never name; name it ‘Minimus’. I have just named Minimus; contradiction. This is no a priori proof that I shall eventually name all natural numbers. Rather, reflection on an initial use of ‘name’ seems to yield a more inclusive use of the term, and a correspondingly higher value of ‘Minimus’, a process which can be iterated indefinitely. A semantic account of ‘name’ and ‘Minimus’ should not ignore such contextual effects.
+
+Unfortunately, a Strengthened Liar Paradox appears to infects Burge’s approach. He replies to the objection thus:
+
+one might suggest a sentence like (a), ‘(a) is not true at any level’. But this is not an English reading of any sentence in our formalization. Our theory is a theory of ‘true,’ not ‘true at a level’. From our viewpoint, the latter phrase represents a misguided attempt to quantify out the indexical character of ‘true’; it has some of the incongruity of ‘here at some place’. No relativization will “deindexicalize” ‘true’.2
+
+This is unsatisfying. To try to deindexicalize ‘here’ by saying ‘here at some place’ is indeed confused, but English has a perfectly good word for what it is an attempt to say: ‘somewhere’. Quantification over levels certainly appears to make sense; if it does, we can give Burge’s sentence (a) a paradoxical reading, even if that is not the reading it receives in current English, and we must confront that paradox. If that reading is non-indexical, as it apparently is, the Strengthened Liar requires a different solution, which suggests that Burge’s diagnosis does not go deep enough. Burge contests these appearances. In his meta-language, the subscript in ‘true_{i}’ is not a variable of quantification but a schematic letter; if we say that every instance of a schema is true, that use of ‘true’ is itself either indexical or schematic over indexical uses, and a version of Burge’s original diagnosis applies.3
+
+We can consider the problem within a rigorous framework for treating indexicality, provided by David Kaplan. On Kaplan’s account, “If c is a context, then an occurrence of [a sentence] $\mathrm{\phi}$ in c is true iff the content [proposition] expressed by $\mathrm{\phi}$ in this context is true when evaluated with respect to the circumstances of the context.”4 An appropriate level for ‘true’ would constitute one aspect of the context. For Kaplan, the contextual variable ‘c’ is open to quantification; he quantifies on it in defining logical truth as truth in every context.5 How else could we generalize about indexicality? We can therefore construct a paradox about logical truth.
+
+Let $\mathrm{True}(s,c)$ say that the sentence s is true as uttered (with its present meaning) in the context c. Let ‘L2’ name the sentence $\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)$ (‘L2 is true in no context’), so:
+
+(1*)
+$\mathrm{L2} = \text{‘}\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)\text{’}$
+
+Let c_{0} be a context. We cannot generally assert homophonic Tarskian disquotational equivalences for truth in c_{0}; unless c_{0} is the very context of our theorizing, an indexical sentence may express a different content in c_{0} from the one it expresses in the context of our theorizing, so the two sides of the biconditional may differ in truth-value. Thus I do not assert: ‘I live in Edinburgh’ is true as uttered by you if and only if I live in Edinburgh. However, let us assume that L2 expresses the same content in every context, as it appears to do. Then we have the homophonic equivalence:
+
+(2*)
+$\mathrm{True}(\text{‘}\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)\text{’}\mathit{,}c_0) \equiv \forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)$
+
+Using (1*), we substitute its left-hand side for its right-hand side in (2*):
+
+(3*)
+$\mathrm{True}(\mathrm{L2},c_0) \equiv \forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)$
+
+The left-to-right direction of (3*) and universal instantiation give:
+
+(4*)
+$\mathrm{True}(\mathrm{L2},c_0) \supset \mathord{\sim}\mathrm{True}(\mathrm{L2},c_0)$
+
+By propositional logic, (4*) gives:
+
+(5*)
+$\mathord{\sim}\mathrm{True}(\mathrm{L2},c_0)$
+
+Since c_{0} was an arbitrary context, we can generalize on (5*):
+
+(6*)
+$\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)$
+
+We combine (6*) with the right-to-left direction of (3*):
+
+(7*)
+$\mathrm{True}(\mathrm{L2},c_0)$
+
+(5*) and (7*) are contradictories.6
+
+The contentious premise is (2*). It could fail if L2 expressed different contents in different contexts. Like Kaplan, we are not concerned with what the sentence might express if its conventional linguistic meaning were different; what matters is what the sentence with its present meaning expresses with respect to various contexts. In Kaplan’s terminology, the question is whether the character of L2 is a constant function, where the character of e maps each context to the content that e (with its given meaning) expresses in that context. It is hard to see where variation in the character of L2 could come from. The name ‘L2’ itself is not indexical; it names the same thing with respect to each context.7 If we build enough into contexts, including local standards for assigning levels to occurrences of semantic terms, why should ‘true in c’ be indexical? Equally, why should quantification over absolutely all contexts be impossible, or irredeemably indexical?
+
+We can discharge the premise (2*), and turn the argument into a proof by reductio ad absurdum of (8*), with (1*) the only premise:
+
+(8*)
+$\mathord{\sim}\forall c_0\, (\mathrm{True}(\text{‘}\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)\text{’},c_0) \equiv \forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c))$
+
+The homophonic equivalence (2*) does not hold in every context. No mere practical impossibility in fully deindexicalizing ‘true in no context’ would explain (8*); the impossibility would have to be one of deep logical principle. But then the real diagnosis would be whatever explained the impossibility of full deindexicalization, not the mere fact of indexicality, for the latter is consistent with full deindexicalization.
+
+In spite of L2, shifts in the reference of semantic terms may be crucial to the semantic paradoxes. For shifts in the reference of a term constitute indexicality only when the term retains the same (conventional linguistic) meaning throughout. ‘I’ is indexical because we exploit the same meaning when you use it to refer to you and I use it to refer to me. Mere ambiguity does not constitute indexicality, because the shift in reference follows a shift in meaning. In principle, an ambiguous expression like ‘bank’ can have several non-indexical meanings. The paradox of L2 presupposes that ‘true’ does not shift in meaning across contexts, for the justification of (2*) is that since $\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)$ is non-indexical, it expresses the same content in an arbitrary context c_{0} as in the present context; but non-indexicality entails that the same content is expressed in different contexts only with respect to a fixed meaning. This suggests a more radical diagnosis of the semantic paradoxes: perhaps ‘true’ shifts its meaning, not just its reference. Shifts of meaning occur anyway in the case of ‘Minimus’ above. For since it is a name, shifts in its reference constitute shifts in its meaning; in Kaplan’s terminology, names have constant non-indexical characters. Why not accept shifts of meaning for ‘true’ too? That way we can give a uniform account of this and the other semantic paradoxes.
+
+At first sight, the revised diagnosis is very implausible. If ‘true’ shifts its meaning in paradoxical derivations, where does the new meaning come from, and how do we recognize it? I understand your use of ‘I’ to refer to you because I already know what ‘I’ means; I know the general rule that when someone produces ‘I’ it refers to them, so when you produce ‘I’ it refers to you (if you are using ‘I’ with its conventional English meaning). But if you used ‘I’ with a different meaning from mine, how could I know what you meant by it? Surely we can understand ‘true’ throughout the paradoxical derivations without anything like the gestalt shift we experience when we switch from one meaning of an ambiguous expression to another.
+
+However, many shifts of meaning are far less stark than that between two unrelated meanings of an ambiguous word. Consider shifts from literal to metaphorical meanings. Even if, like Davidson, we deny that there is any such thing as metaphorical meaning, we can still consider the relation between the original literal meaning of a word such as ‘pedestrian’ (on foot) and its dead metaphorical meaning (uninspired), a new literal meaning.8 Competent speakers of a language regularly understand metaphors on first hearing, without any special instruction, on the basis of context and their understanding of the words in their original literal meanings. Context guides them in modifying the original meaning. The context of following a paradoxical derivation might guide competent speakers to a new meaning of ‘true’. Still, it does not feel that way; it feels as though we are using ‘true’ in its strictest, most literal sense throughout.
+
+Lay the question of semantic shifts temporarily aside, and consider the meaning of ‘true’ in more detail. To simplify the formulation of the paradoxes, treat ‘true’ as a predicate of sentences in contexts, without prejudice to the nature of primary truth-bearers. One might initially suppose that the homophonic disquotational T-schema is central to the meaning of ‘true’. However, as already noted, for sentences with indexicals the homophonic schema holds only of truth in the present context. Since we talk about truth in contexts other than that in which we are talking, we need something more general. This will do:
+
+(T)
+$\mathrm{Say}(s,c,\mathrm{P}) \supset (\mathrm{True}(s,c) \equiv \mathrm{P})$
+
+Informally: in a fixed context, a sentence, saying that P, is true if and only if P. In instances of (T), names of sentences of any language replace ‘s’, names of contexts replace ‘c’ and declarative sentences of the metalanguage replace ‘P’. One could also read $\mathrm{Say}(s,c,\mathrm{P})$ as ‘In c, s expresses the proposition that P’. Given $\mathrm{Say}(\text{‘}\mathrm{P}\text{’}\mathit{,}c,\mathrm{P})$, we can recover the homophonic biconditional $\mathrm{True}(\text{‘}\mathrm{P}\text{’}\mathit{,}c) \equiv \mathrm{P}$. Thus ‘I live in Edinburgh’ as presently uttered by me is true if and only if I live in Edinburgh, because ‘I live in Edinburgh’ as presently uttered by me says that I live in Edinburgh. We cannot recover the unwanted homophonic biconditional that ‘I live in Edinburgh’ as uttered by you is true if and only if I live in Edinburgh, because ‘I live in Edinburgh’ as uttered by you does not say that I live in Edinburgh. We can treat falsity likewise:
+
+(F)
+$\mathrm{Say}(s,c,\mathrm{P}) \supset (\mathrm{False}(s,c) \equiv \mathord{\sim}\mathrm{P})$
+
+Given classical logic, (T) and (F) together imply the principle of bivalence in an appropriate form:
+
+(B)
+$\mathrm{Say}(s,c,\mathrm{P}) \supset (\mathrm{True}(s,c) \vee \mathrm{False}(s,c))$
+
+In a given context, a sentence that says something is either true or false. No contradictions arise in a system of classical logic with universally quantified forms of (T) and (F) and identities such as (1) and (1*). We can prove consistency by constructing an unintended model of the system in which all formulas of the forms $\mathrm{Say}(s,c,\mathrm{P})$, $\mathrm{True}(s,c)$ and $\mathrm{False}(s,c)$ are treated as false.
+
+If we add substitution instances of $\mathrm{Say}(\text{‘}\mathrm{P}\text{’}\mathit{,}c,\mathrm{P})$ as axioms to the system, semantic paradoxes arise. Of course, we do not want all such formulas as axioms, independently of the semantic paradoxes, if the language contains indexicals. But, by (T) and (8*), we also must not add $\forall c_0\, \mathrm{Say}(\text{‘}\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)\text{’}\mathit{,}c_0,\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c))$, even if $\forall c\,\mathord{\sim}\mathrm{True}(\mathrm{L2},c)$ is non-indexical. Similarly, the Liar shows that we must not add $\exists c\,\exists s\,\mathrm{Say}(s,c,\allowbreak\mathord{\sim}\mathrm{True}(s,c))$; no sentence can say in a context that it is not true in that context. But one can consistently add substitution instances of $\mathrm{Say}(\text{‘}\mathrm{P}\text{’}\mathit{,}c,\mathrm{P})$ as axioms for large classes of non-pathological formulas in place of ‘P’; to this end, one can adapt any of several inductive techniques in the literature for capturing non-pathologicality. The semantic paradoxes are transformed into sound arguments for constraints on what can say what in what contexts.
+
+We still want to know why ‘L2 is true in no context’ does not say in every context that L2 is true in no context. Indeed, given that the sentence is non-indexical, we need to know why it does not say in any context that L2 is true in no context. For it appears to say exactly that.
+
+Encountering a semantic paradox might prompt us to enlarge what we mean by ‘say’. We start with one set of correlative meanings for ‘say’, ‘true’ and ‘false’; we use them to construct a sentence that says nothing in that sense of ‘say’; but reflection on that sentence causes normal speakers to give ‘say’, ‘true’, and ‘false’ a new set of correlative meanings, much like the previous ones except that the sentence in question says something in the new sense of ‘say’; the process can be repeated indefinitely. Normal speakers are not aware of the change, just as they are not aware of many ordinary processes of gradual semantic change. They feel themselves to be going on in the same way, but they are not. They are not applying the old rule to a new case; they are applying a very slightly different rule. As L2 indicates, this is no mere change of context.
+
+Disquotational principles can appear to fix unique conceptual roles for ‘true’ and ‘false’, with no room for changes in meaning small enough to be missed by normal speakers. But (T) and (F) show that the conceptual roles of ‘true’ and ‘false’ are fixed only relative to ‘say’. It is much easier to understand how ‘say’ can undergo changes in meaning small enough to be missed by normal speakers. But small changes in the meaning of ‘say’ induce small changes in the meaning of ‘true’ and ‘false’, for a sentence that says something in one sense and not in another will be true or false in a sense correlative with the former and not in a sense correlative with the latter. What remains fixed is only the relation between ‘say’ and ‘true’ and ‘false’.
+
+Does a Strengthened Liar confound this approach, just as L2 confounded Burge’s? We might let ‘L3’ name the sentence ‘L3 is true in no language’. To mimic the argument of (1*)–(7*) above, we would need to assume that ‘L3 is true in no language’ says in an arbitrary language that L3 is true in no language. But that assumption is false for many languages, in which the constituent words of L3 have quite different meanings. Context-dependence is intralinguistic; language-dependence is interlinguistic. Context-dependence is a feature of individual meanings; we can stipulate a non-indexical meaning for a term by using it to name a given object. By contrast, nothing we do with a given sequence of marks or sounds can ensure that it will not be used to mean something utterly different in another community. We can in principle eliminate mere indexicality on a given dimension by quantifying along that dimension, but the sequence of marks or sounds we make when we produce a quantified sentence is just as open as any other to alternative interpretations in other languages.
+
+We could try to limit the variation by considering only those languages that we shall actually use while considering the paradoxes in what would ordinarily be called ‘English’; call them ‘versions’. Let L4 name the sentence ‘L4 is true in no version’. To mimic the argument of (1*)–(7*) above, we must assume that L4 says in an arbitrary version that L4 is true in no version. We should not accept that assumption. Consider first the counterfactual case in which there is only one version (perhaps nobody encounters the paradox). Use the subscript ‘0’ to assign words their meanings in that version. Then, by (T), the argument shows that L4 does not say_{0} that L4 is true_{0} in no version. Presumably, L4 does not say_{0} anything. In a second case, encounter with the paradox causes us to assign ‘say’ an enlarged meaning; use the subscript ‘1’ to assign words their meanings in this new version. Then L4 says_{1} that L4 is true_{0} in no version, but it neither says_{0} nor says_{1} that L4 is true_{1} in no version. The argument iterates as further versions arise. The role of the subscripts is to disambiguate ‘true’ and ‘say’, as we might disambiguate ‘bank’ by writing ‘bank_{1}’ and ‘bank_{2}’. The subscripts do not represent semantic complexity; ‘1’ is no more an argument of ‘true’ in ‘true_{1}’ than it is of ‘bank’ in ‘bank_{1}’. Thus we cannot quantify on the subscripts; ‘This sentence is true_{i} for no i’ is meaningless. We can understand the conjunction or disjunction of ‘true_{1}’, . . . ‘true_{n}’ if we already understand them individually, but not otherwise. Whatever our present understanding, encountering a paradox can cause us to reach a new understanding. We cannot construct a Strengthened Liar for this approach because we cannot anticipate our future understanding in our present meaning.
+
+Is the present approach a theory of levels? The possible meanings of ‘true’ do not constitute a systematic hierarchy; ‘true’ could mean anything in an alien language. Nor do its actual present and future meanings constitute a systematic hierarchy; they are a matter of historical accident, truncated within a finite time by the extinction of the human species. Even the relation between one meaning of ‘true’ and its successor is in part psychological; encountering a Liar sentence causes us to develop the latter from the former. This is not to deny that there are hierarchies of some possible meanings of ‘true’, as described by various theories in the literature on the paradoxes. Many different hierarchies exist, corresponding to different relations between possible meanings of ‘true’. Read this way, different theories of levels are not rivals; they may be equally true by describing different hierarchies. Some of these hierarchies may even have significant applications. In a given context, we can choose to conform our use of ‘true’ and ‘false’ to one of these hierarchies. But reflection on a given hierarchy of meanings enables us to grasp new meanings outside that hierarchy, and thereby to recognize a new hierarchy. No single hierarchy gives an adequate treatment of all the paradoxes.
+
+Even the term ‘meaning’ is presumably unstable, given its connections with ‘say’, ‘true’ and ‘false’; the meaning of a sentence determines what it says in a context. These instabilities preclude us from stating in one go principles general enough to provide an exhaustive treatment of all semantic paradoxes. Further reflection always uncovers new paradoxes and new solutions. Our ability to conform our use of ‘true’ to different hierarchies in any case makes a unitary solution unlikely. The Protean nature of the material leaves us no alternative to a kind of intellectual opportunism. The present approach offers no more than a loose strategy in handling the paradoxes; if it is right, there is no better to be had, contrary to reasonable prior expectations. It does preserve some general formulas: classical logic, (T), (F). For most purposes, they are what matter. But their application to particular paradoxes is not mechanical; to some extent it must be determined ad hoc. For we may not grasp the relevant concepts until we confront the paradox.
+
+We can call this approach a theory of levels in the minimal sense that it is naturally formulated using an unlimited supply of subscripts on ‘say’, ‘true’, and ‘false’. Methodologically, theories of levels start at a disadvantage. They postulate massive complexity not apparent in the data. Other things being equal, we should prefer a theory without levels. But levels have a habit of returning through the back door. Thus Kripke concedes that his theory of truth requires a meta-language more expressive than the object-language: “The ghost of the Tarski hierarchy is still with us.”9 The repeated failure of attempts to do without levels suggests that they are a genuine phenomenon, not a theoretical fiction.
+
+A word such as ‘true’ stands for slightly different concepts (has slightly different meanings) in successive languages. We no more grasp a single super-concept that encapsulates all the concepts for which ‘true’ might come to stand than we can give a word a single super-meaning that encapsulates all its possible metaphorical extensions. Since the extensibility is not internal to the meanings, we can accept the principle of bivalence: if a sentence says something, it is true or false. Naturally, those words will shift in meaning when ‘say’, ‘true’ and ‘false’ do. We can freely formulate absolutely unrestricted generalizations about everything said, everything true or everything false; but our words will soon receive new meanings.
+
+The nature of a concept is to be graspable, and therefore limited. In the paradoxes, we use a limit to grasp a concept that transcends that limit, a concept with a new limit of its own. The limitless possibility of new concepts never yields limitless concepts. It never yields concepts that violate classical logic and the principle of bivalence.10
+
+# Notes
+
+[1] For a related approach, see Tyler Burge, “Reference and Proper Names,” Journal of Philosophy 70 (1973): 425–39 and Charles Parsons, “The Liar Paradox,” Journal of Philosophical Logic 3 (1974): 381–412; reprinted with a postscript in Recent Essays on Truth and The Liar Paradox, ed. Robert Martin (Oxford: Clarendon Press, 1984).
+
+[2] See Burge, “Semantic Paradox,” Journal of Philosophy 76 (1979): 169–98; reprinted in Martin, op. cit., 108.
+
+[3] Burge, “Semantic Paradox,” in Martin, op. cit., 116.
+
+[4] David Kaplan, “Demonstratives,” Themes from Kaplan, ed. J. Almog, J. Perry, and H. Wettstein (Oxford: Oxford University Press, 1989), 522.
+
+[5] See ibid., 539, and the definition of ‘valid’ at 547. This is not Burge’s metalinguistic quantification over the instances of a schema.
+
+[6] See also Cory Juhl, “A Context-Sensitive Liar,” Analysis 57 (1997): 202–4.
+
+[7] On the non-standard account of proper names in Burge, “Reference and Proper Names,” op. cit., they do have a concealed indexical element. But the argument in the text requires only that we could use ‘L2’ as a genuine non-indexical constant to refer to L2, as we surely can, whether or not we call such a constant a ‘proper name’. In any case, contexts in which ‘L2’ refers to, e.g., a penguin are irrelevant to the paradox.
+
+[8] Donald Davidson, “What Metaphors Mean,” Critical Inquiry 5 (1978): 31–47; reprinted in idem, Inquiries into Truth and Interpretation (Oxford: Clarendon Press, 1984). Davidson criticizes attempts to use similes to state metaphorical truth-conditions on the grounds that similes are trivially true, because “everything is like everything, and in endless ways” (254). On Davidson’s view, the Nazi who says to the rabbi ‘You are like dirt’ says something trivially true. Davidson neglects the possibility that the reference of ‘like’ is context-dependent. If some respects of similarity are irrelevant in some contexts, a simile can be false or non-trivially true. Thus Davidson’s argument leaves at least one candidate account of metaphorical truth-conditions standing.
+
+[9] Saul Kripke, “Outline of a Theory of Truth,” Journal of Philosophy 72 (1975): 714; see also the criticism of levels in Anil Gupta and Nuel Belnap, The Revision Theory of Truth (Cambridge, Mass.: MIT Press,1993), 103f, followed by the invocation of them at 256.
+
+[10] See also Timothy Williamson, “Indefinite Extensibility,” Grazer Philosophische Studien 55 (1998): 1–24, for an application of this approach to the set-theoretic paradoxes and a comparison of it with Michael Dummett’s theory of indefinite extensibility. For the present paper, my thanks go to Michael Glanzberg, Laurence Goldstein, and participants at the 1997 Stirling conference on the philosophy of Michael Dummett for their helpful comments.

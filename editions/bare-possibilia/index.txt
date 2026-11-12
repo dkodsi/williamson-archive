@@ -1,0 +1,261 @@
+# Bare Possibilia
+
+Timothy Williamson
+
+Erkenntnis 48 (1998): 257–273.
+
+0.
+
+The theorems of the simplest and strongest sensible quantified modal logic include the Barcan Formula and its converse. Both formulas face strong intuitive objections. This paper develops a theory of possibilia to meet those objections.
+
+1.
+
+The Barcan Formula is really a schema:
+
+BF
+$\forall x\,□\alpha \supset □\forall x\,\alpha$
+
+The variable $x$ may occur free in $\alpha$; read $\forall x$ and $□$ as ‘everything $x$ [without restriction] is such that’ and ‘it is necessary that’ respectively. $◇$ and $\exists x$ are metalinguistic abbreviations of $\neg□\neg$ and $\neg\forall x\,\neg$. The modalities will be understood here as metaphysical rather than logical or physical. The interpretation of the quantifiers is discussed below. The consequences of BF are more easily grasped when it is stated in the logically equivalent form $◇\exists x\,\alpha \supset \exists x\,◇\alpha$; if there could have been something that was such-and-such, then there is something that could have been such-and-such.1 The Converse Barcan Formula is this schema:
+
+BFC
+$□\forall x\,\alpha \supset \forall x\,□\alpha$
+
+Its consequences too are more easily grasped when it is stated in the logically equivalent form $\exists x\,◇\alpha \supset ◇\exists x\,\alpha$; if there is something that could have been such-and-such, then there could have been something that was such-and-such. Together, BF and BFC imply that ‘everything’ commutes with ‘necessarily’ and ‘something’ with ‘possibly’.
+
+Given that there could have been a golden mountain, BF does not imply that there is a golden mountain, which may nevertheless not exist. It implies only that there is something that could have been a golden mountain: a possible golden mountain in the sense that it possibly is a golden mountain, not in the sense that it is a golden mountain and possibly exists. BF allows one to insist that absolutely all mountains are to be found in ordinary space and time in the ordinary way.
+
+Nevertheless, BF appears to succumb to compelling counterexamples. Read $\alpha$ as ‘Wittgenstein fathered $x$’; although Wittgenstein died childless, it is metaphysically possible that he fathered someone ($◇\exists x\,\alpha$). It follows by BF that there is something that he could have fathered. But what is it? On the plausible assumption that one’s parentage is essential to one, no actual person could have been fathered by Wittgenstein. A non-person seems an even less likely candidate for something that he could have fathered; only the most crudely reductionist view of persons would imply that he could have fathered some actual set of atoms. Apparently, nothing is such that Wittgenstein could have fathered it ($\neg\exists x\,◇\alpha$). To vary the example, let ‘these’ rigidly designate everything that there is, and read $\alpha$ as ‘$x$ is not one of these’. Apparently, there could have been something that is not one of these; indeed, there could have been more things than there actually are. It follows by BF that there is something that could have not been one of these. But whether it is one of these is not itself a contingent matter; if it could have not been one of these, it is not one of these. Thus there is something that is not one of these; but that is a contradiction, for by assumption ‘these’ designates everything that there is.2
+
+BFC also appears to succumb to counterexamples. Read $\alpha$ as ‘nothing is $x$’ ($\neg\exists y\,\ x=y$). Apparently, the river Inn is such that if no part of the earth’s surface had ever been covered by water, nothing would have been it, so something is such that possibly nothing is it ($\exists x\,◇\neg\exists y\,\ x=y$); indeed, there could have been fewer things than there actually are. It follows by BFC that possibly something is such that nothing is it ($◇\exists x\,\neg\exists y\,\ x=y$). But that is impossible, for necessarily everything is something – itself ($□\forall x\,\exists y\,\ x=y$).
+
+2.
+
+BF and BFC are often discussed in relation to the actualist thesis that everything exists (everything actually exists). The anti-actualist is supposed to be in a much better position than the actualist to resist the putative counterexamples. The former can say that there is a non-existent possible child of Wittgenstein, that the sense in which there could have been more things than there actually are is only that there could have been more existents than there actually are, and that the sense in which the Inn could have been nothing is only that it might not have existed. In other words, if possibilia are what could exist, then the anti-actualist can defend BF and BFC by positing non-existent possibilia and quantifying over existent and non-existent possibilia. Given actualism, there are no non-existent possibilia to be quantified over, and BF and BFC look much less attractive.3
+
+Both actualism and anti-actualism are obscure doctrines, for the crucial term ‘exist’ is ambiguous. It has a narrow sense, applicable only to a limited set of categories. In this sense, it is a solecism to say that events exist; they occur. But the actualist does not want to deny that there are events merely because they do not exist in this sense. Nor would it help to define ‘exist’ as ‘have spatio-temporal location’, for the actualist does not want to deny that there are numbers merely because they do not have spatio-temporal location. In some sense there exist prime numbers between 60 and 80, but is that to say anything more than that there are prime numbers between 60 and 80? Thus actualism and anti-actualism are in danger of boiling down to the platitude that everything is and its negation. But when actualists assume without argument that existents might not have existed, they may be reverting to the narrower sense of ‘exist’. A ban on the word ‘exist’ in philosophy would be salutary.4
+
+Actualism and anti-actualism do not become any clearer if they are redefined as the thesis that everything is actual and its negation. If ‘actual’ means actually existing, we are back to ‘exist’. If ‘actual’ means actually being, we are back to the platitudinous interpretation of actualism. If ‘actual’ means something else, what is it?
+
+For these reasons, the ensuing discussion avoids reference to actualism and anti-actualism, although some of the issues raised may be relevant to those obscure doctrines. The putative counterexamples to BF and BFC were stated without use of ‘exist’ or its affiliates, and can be evaluated accordingly. The case against BF and BFC assumes that there is nothing that Wittgenstein could have fathered, that there could have been more things than there actually are, and that possibly nothing is the Inn. These assumptions will be called into question. Before that, however, the logical case for BF and BFC will be stated and examined.
+
+3.
+
+The simplest and strongest sensible quantified modal logic with identity is LPC=S5.5 Its language is the result of adding $□$ to a standard language for the lower predicate calculus with identity but without individual constants or function terms (LPC=). LPC=S5 can be axiomatized thus:
+
+PC
+Every truth-functional tautology is an axiom.
+∀1
+Every formula of the form $\forall x\,\alpha \supset \alpha[y/x]$ is an axiom, where $x$ and $y$ are any variables, $y$ is free for $x$ in $\alpha$ and $\alpha[y/x]$ results from replacing each free occurrence of $x$ in $\alpha$ by $y$.
+=1
+$x=x$ is an axiom, where $x$ is any variable.
+=2
+$x=y \supset (\alpha \supset \beta)$ is an axiom, where $x$ and $y$ are any variables and $\beta$ differs from $\alpha$ at most in having $y$ free at some places where $\alpha$ has $x$ free.
+K
+Every formula of the form $□(\alpha \supset \beta) \supset (□\alpha \supset □\beta)$ is an axiom.
+T
+Every formula of the form $□\alpha \supset \alpha$ is an axiom.
+E
+Every formula of the form $◇\alpha \supset □◇\alpha$ is an axiom.
+MP
+If $\alpha$ and $\alpha \supset \beta$ are theorems then so is $\beta$.
+∀2
+If $\alpha \supset \beta$ is a theorem and $x$ is not free in $\alpha$ then $\alpha \supset \forall x\,\beta$ is a theorem.
+N
+If $\alpha$ is a theorem then so is $□\alpha$.
+
+PC and MP form the non-modal propositional basis of this axiomatization; the addition of ∀1 and ∀2 axiomatizes non-modal first-order quantified logic, to which =1 and =2 add the logic of identity; the addition of K, T, E and N to the propositional basis axiomatizes the propositional modal logic S5. No axioms or rules of inference have been added specifically to govern the interaction of quantifiers and modal operators. Nevertheless, theorems governing their interaction – in particular, BF and BFC – are derivable.6 Proofs are sketched below.
+
+LPC=S5 is sound and complete with respect to an equally simple formal semantics. A model is a triple $\langle \mathrm{W},\mathrm{D},\mathrm{V}\rangle$, where $\mathrm{W}$ and $\mathrm{D}$ are sets and $\mathrm{V}$ is a function mapping each $n$-place predicate letter $\phi$ in the language to a function $\mathrm{V}_\phi$ from $\mathrm{W}$ to the power set of $\mathrm{D}^n$. Intuitively, $\mathrm{W}$ is the set of possible worlds, $\mathrm{D}$ the domain of quantification, and $\mathrm{V}(\phi)$ the intension of $\phi$. With respect to $\langle \mathrm{W},\mathrm{D},\mathrm{V}\rangle$, the truth of a formula $\alpha$ at a world $w\in \mathrm{W}$ relative to an assignment $v$ of members of $\mathrm{D}$ to variables ($w\vDash_v\alpha$) is defined by the obvious recursion:
+
+$\mathrm{V}_{=}(w)=\{\langle d,d\rangle:d\in \mathrm{D}\}$.
+
+If $\phi$ is an $n$-place predicate letter and $x_1,\ldots,x_n$ are any variables, $w\vDash_v\phi x_1,\ldots,x_n$ iff $\langle v(x_1),\ldots,v(x_n)\rangle\in V_\phi(w)$.
+
+$w\vDash_v\neg\alpha$ iff not $w\vDash_v\alpha$.
+
+$w\vDash_v\alpha\supset\beta$ iff either not $w\vDash_v\alpha$ or $w\vDash_v\beta$.
+
+$w\vDash_v\forall x\,\alpha$ iff $w\vDash_{v^*}\alpha$ for every assignment $v^*$ of members of $D$ to variables differing from $v$ at most on $x$.
+
+$w\vDash_v□\alpha$ iff for all $w^*\in W$, $w^*\vDash_v\alpha$.
+
+A formula is valid just in case with respect to every model it is true relative to every assignment at every world.7 Just as no axiom or rule of inference of LPC=S5 specifically governs the interaction of quantifiers and modal operators, so the world parameter $w$ is inert in the semantic clause for $□$, and the assignment parameter $v$ is inert in the clause for $□$. The clause for $\forall$ is motivated simply by quantificational considerations; the clause for $□$ is motivated simply by modal considerations. Nevertheless, it is routine to check that BF and BFC are valid.
+
+The formal semantics is made particularly simple by the use of S5 as the underlying propositional modal logic. In S5, it is never contingent whether something is necessary, so necessity can be treated as truth in all of a fixed set of possible worlds; there is no need to introduce an accessibility relation and equate necessity with truth in all accessible worlds. Although S5 is not beyond dispute as a propositional logic for metaphysical necessity, it has considerable plausibility; in this paper it will simply be assumed.
+
+The formal semantics alone does not fix the meaning of $□$. It does not specify which worlds are metaphysically possible. Perhaps we cannot specify that without using the very modalities in question. But necessity may still be equivalent to truth in all possible worlds, even if the latter concept is less fundamental than the former, and this equivalence may usefully guide our thinking. The formal semantics provides a simple, intuitive hypothesis about which formulas are logical truths, on which LPC=S5 is the right quantified modal logic with identity.
+
+To derive BF in LPC=S5, it is useful to establish the lemma that $\vdash_{\mathrm{LPC=S5}}\ \beta\supset□\gamma$ just in case $\vdash_{\mathrm{LPC=S5}}\ ◇\beta\supset\gamma$. If $\vdash_{\mathrm{LPC=S5}}\ \beta\supset□\gamma$, then $\vdash_{\mathrm{LPC=S5}}\ □(\neg□\gamma\supset\neg\beta)$ by N, so $\vdash_{\mathrm{LPC=S5}}\ ◇\beta\supset◇□\gamma$ by K; but $\vdash_{\mathrm{LPC=S5}}\ ◇□\gamma\supset\gamma$ from E and T, so $\vdash_{\mathrm{LPC=S5}}\ ◇\beta\supset\gamma$. Conversely, if $\vdash_{\mathrm{LPC=S5}}\ ◇\beta\supset\gamma$, then $\vdash_{\mathrm{LPC=S5}}\ □◇\beta\supset□\gamma$ by N and K; but $\vdash_{\mathrm{LPC=S5}}\ \beta\supset□◇\beta$ from E and T, so $\vdash_{\mathrm{LPC=S5}}\ \beta\supset□\gamma$. Note that the proof of the lemma makes no use of quantificational principles. Now $\forall x\,□\alpha\supset□\alpha$ is an instance of ∀1, so by the lemma $\vdash_{\mathrm{LPC=S5}}\ ◇\forall x\,□\alpha\supset\alpha$; since $x$ is not free in $◇\forall x\,□\alpha$, $\vdash_{\mathrm{LPC=S5}}\ ◇\forall x\,□\alpha\supset\forall x\,\alpha$ by ∀2, so $\vdash_{\mathrm{LPC=S5}}\ \forall x\,□\alpha\supset□\forall x\,\alpha$ by another application of the lemma. Unlike BF, BFC is derivable in LPC=S5 without appeal to E or T. For $\forall x\,\alpha\supset\alpha$ is an instance of ∀1, so $\vdash_{\mathrm{LPC=S5}}\ □\forall x\,\alpha\supset□\alpha$ by N and K; since $x$ is not free in $□\forall x\,\alpha$, $\vdash_{\mathrm{LPC=S5}}\ □\forall x\,\alpha\supset\forall x\,□\alpha$ by ∀2. In light of these derivations, one might be inclined to regard it as simply a discovery that BF and BFC are truths of logic.
+
+4.
+
+Unfortunately, the apparent counterexamples to BF and BFC remain. It is therefore prudent to look at systems of quantified modal logic in which BF and BFC are not theorems.
+
+In formal semantic terms, the source of the trouble is the use in LPC=S5 of a single domain of quantification, for intuition seems to indicate that it is contingent what ‘everything’ comprises. Following Kripke, we might therefore give each world $w\in \mathrm{W}$ its own domain $\mathrm{D}(w)$. $\forall x\,\alpha$ is true at $w$ relative to an assignment $v$ if and only if $\alpha$ is true at $w$ relative to every assignment $v^*$ differing from $v$ at most on $x$ such that $v^*(x)\in \mathrm{D}(w)$. An assignment can assign a member of any domain to a variable; we must be able to determine whether $w\vDash_v\phi x$ even when $v(x)$ is not in $\mathrm{D}(w)$, otherwise we could not evaluate $\exists x\,◇\phi x$ properly. Given two worlds $w_1$ and $w_2$ and an object $d$ in $\mathrm{D}(w_1)$ but not in $\mathrm{D}(w_2)$, we can now construct countermodels to both BF and BFC. Let $\phi$ be a one-place predicate letter. If the extension of $\phi$ is $\{d\}$ at $w_1$ and $\{\}$ in every other world, then at $w_2$ $◇\exists x\,\phi x$ is true and $\exists x\,◇\phi x$ false relative to any assignment, so BF is invalidated. Similarly, if the extension of $\phi$ at each world $w$ is $\mathrm{D}(w)$, then at $w_1$ $\exists x\,◇\neg\phi x$ is true (because $w_2\vDash_v\neg\phi x$ if $v(x)$ is $d$) and $◇\exists x\,\neg\phi x$ false relative to any assignment, so BFC is invalidated.8
+
+If domains are relativized to worlds, some axiom schema or rule of inference of LPC=S5 must be rejected. The culprit is ∀1. Its instance $\forall x\,\phi x\supset\phi y$ can fail at a world $w$ relative to an assignment $v$ that assigns $y$ an object outside $\mathrm{D}(w)$. The closed formula $\forall y\,□(\forall x\,\phi x\supset\phi y)$ is correspondingly invalid; both BF and BFC are proved in LPC=S5 by applying necessitation (N) and then universal generalization (∀2) to ∀1 (with intermediate steps). Without ∀1, the axiomatization of quantified modal logic becomes much harder; the required complications are greater than in the formal semantics, and completeness proofs are more convoluted.9 Such complications are a warning sign of philosophical error. From a non-technical perspective, however, the relativization of domains to worlds appears to yield a straightforward approach to quantified modal logic respectful of the intuitions behind the putative counterexamples to BF and BFC. The burden of the next section is that that appearance is quite misleading.
+
+5.
+
+If the informal arguments against BF show anything, they show that it has false instances, not just that it could have had false instances. But consider the quantifiers in the metalanguage used to formulate the evaluation clauses in the formal semantics. The metalanguage is in effect an applied non-modal predicate calculus. On the relativized domains approach, the metalinguistic statement that BF has false instances implies that something in the domain of some world is not in the domain of the actual world. But the latter statement is true only if the domain of ‘something’ in the metalanguage is not restricted to the domain of the actual world. Thus the restriction on quantifiers in the object-language must not be applied to quantifiers in the metalanguage. But then the restriction looks arbitrary. Indeed, the metalanguage can itself be taken as the object-language relative to a metametalanguage; the quantifiers in that object-language cannot be given their intended sense if they are subjected to that restriction. Thus the non-modal relativized domains approach is philosophically unsatisfying; it quantifies in a way that its own theory of quantification cannot account for.10
+
+Certainly, if the quantifiers in BF and BFC are restricted by an arbitrary predicate $\phi$, the result is not in general valid. BF becomes $\forall x\,(\phi x\supset□\alpha)\supset□\forall x\,(\phi x\supset\alpha)$; we can substitute a contradiction for $\alpha$, and the result boils down to $\forall x\,\neg\phi x\supset□\forall x\,\neg\phi x$, which is uncontroversially invalid (read $\phi x$ as ‘$x$ smiles’). Similarly, BFC becomes $□\forall x\,(\phi x\supset\alpha)\supset\forall x\,(\phi x\supset□\alpha)$; we can substitute $\phi x$ for $\alpha$, which makes the antecedent trivially true, with the result $\forall x\,(\phi x\supset□\phi x)$, which is also uncontroversially invalid. But the issue is whether BF and BFC hold when the quantifiers in them are not interpreted as the result of restricting other quantifiers with broader domains.11 The non-modal relativized domains approach gives the quantifiers an irrelevant interpretation. It is mathematically perspicuous, and can be used to establish philosophically significant independence results to the effect that various formulas are not provable on the basis of various axioms and rules of inference; but it does not settle the informal status of BF and BFC.
+
+An approach that is not self-defeating in the way just considered is to do the semantics for a modal object-language in a modal metalanguage.12 In such a metalanguage, the statement that BF has false instances does not imply that something in the domain of some world is not in the domain of the actual world; it merely implies that there could have been something such that actually nothing is it. Even in the modal metalanguage, one can define an operator that behaves formally like a broader quantifier than ‘everything’, in the words ‘necessarily everything actually’. Everything is something, but given the rejection of BF it does not follow that necessarily everything is actually something. However, those who take modal operators as primitive can insist that ‘necessarily everything actually’ is not a quantifier over a broader domain than that of ‘everything’, because there is no broader domain; rather, it is a complex built out of ‘everything’ and modal operators. The structure of the modal metalanguage bears out this contention; by contrast, the structure of the non-modal metalanguage undermined the non-modal relativized domains approach.
+
+The advantage in practice of a non-modal metatheory for a modal object-language is that it allows us to settle questions of formal validity. In effect, they are reduced to questions of non-modal set theory that its accepted axioms decide. For instance, we know that the non-modal relativized domains approach invalidates BF and BFC. A modal metatheory may well be more faithful to the intended meanings of modal terms; because it is so faithful, it does not reduce questions of formal validity to non-modal questions, often with the result that we are left none the wiser as to their answers. Indeed, the more faithfully the metatheory interprets an object-language modal principle, the closer the metalinguistic statement of the object-language principle’s validity is likely to be to a metalinguistic statement of the principle itself, and therefore the less likely it is to help us settle its validity. There may be a general dilemma here. If we are unsure whether to accept BF and BFC, a faithful metatheory will not resolve our doubts.
+
+The foregoing remarks do not yet rehabilitate BF and BFC, for they do not undermine the intuitive force of the supposed counterexamples. What they undermine is only the idea that the relativized domains approach constitutes a satisfactory theoretical underpinning for the supposed counterexamples. It is indeed very hard to understand in principle how BF and BFC could fail.
+
+How, on reflection, could BFC fail? Suppose that necessarily everything is F, but not everything is necessarily F. Thus something ($d$, say) could have not been F. If $d$ had not been F, everything would still have been F. So this situation is possible: everything is F, and it is not the case that $d$ is F. But that situation does not seem possible, for $d$ is a counterexample to the universal generalization; not absolutely everything is F if $d$ isn’t.13 Perhaps $d$ would have lacked some special ontological status if it had not been F, but how is that relevant? The generalization does not say that everything with some special ontological status is F; it simply says that everything is F, without restriction. Again, if it had not been the case that $d$ is F, perhaps it would not have been statable that $d$ is not F, but that too seems irrelevant. For it is we in our actual situation who are formulating the statement that $d$ is not F to describe a counterfactual situation; it is no part of our claim that the statement could have been formulated in those circumstances.14
+
+If we cannot understand how BFC could fail, we also cannot understand how BF could fail, given S5, for BF is derivable in a system that results from adding BFC as an axiom schema to axioms and rules of quantified modal logic that seem compelling in this context.15 We thus have reason to suspect that BF and BFC are something like logical truths. But how should we handle the apparent counterexamples to them?
+
+6.
+
+Start with BFC. The putative counterexample is $□\forall x\,\exists y\,\ x=y\mathbin{\&}\exists x\,◇\neg\exists y\,\ x=y$: necessarily everything is something, yet something (e.g., the Inn) could have been nothing. The present strategy is to defend BF and BFC by defending LPC=S5. Since $□\forall x\,\exists y\,\ x=y$ is easily derivable in LPC=S5, $\forall x\,□\exists y\,\ x=y$ is also derivable. Thus the strategy is committed to the truth of $\forall x\,□\exists y\,\ x=y$. But how can the Inn be necessarily something? Clearly, the Inn might not have had spatiotemporal location. How could something with spatiotemporal location have been something without having spatiotemporal location?
+
+The analogy between modality and tense may help here. Although we cannot argue directly from one case to the other, because it is so unclear how far the analogy extends, the comparison often has heuristic value. Read $□$ as ‘always’ and $\forall x$ as ‘everything $x$ [without restriction] is such that’, with ‘is’ tensed. In brief, tense-logical BFC says that ‘always everything’ implies ‘everything always’. Equivalently, if there is something that was, is or will be such-and-such, then there was, is or will be something that is (then) such-and-such. Always, everything is something. Therefore, by BFC, everything is always something. In particular, the Inn is always something. But it was not the case a billion years ago that the Inn was somewhere; it will not be the case a billion years from now that the Inn is somewhere then; how can it be something at those times? These questions are not devastating. Imagine a time when the Inn has disappeared, but the name ‘Inn’ continues to be used, to lament its passing. Everyone knows that it does not refer to a present river; sceptics begin to suggest that stories about a past river of that name are merely myths. Someone asks whether the name refers to something. Surely the right answer is that it does; it refers to a past river. Thus the Inn is still something that can be referred to, and therefore something. Presumably it is no longer a river, for it should no longer be counted in answer to the question ‘How many rivers are there now?’; but it should be counted in answer to the question ‘How many rivers have there ever been?’. What kind of thing has the Inn become, if it is no longer a river? Given that abstractness is not a temporary property, it has not become an abstract object. The best and most natural answer is just that the Inn was once a river; it is a past river. To insist that it is somehow something more than a past river would be obscurantist, by making it a ghost of a river (past persons are not ghosts). Its characteristic properties concern its past; whether it continues to leave traces in the present is inessential to its nature. In particular, it will continue to be a past river even when there is no one left to refer to it.16 More controversially, why should it not have been a future river even before it had ever run anywhere, and before there was anyone to refer to it?
+
+The modal analogue of a past river is a possible river. The proposal is that even if the Inn had never run, it would still have been a possible river. What is necessary to it is not being in space and time but the possibility of being in space and time; furthermore, although it is not necessarily a river, it may well be necessarily such that if it is in space it is a river. If the Inn had never run, it would have had few interesting non-modal properties, where a modal property is one expressible only by use of modal terms. It would not have been a modal river ghost. And given that abstractness is not a contingent property, it would not have been an abstract object. Without a theory of abstractness, the classification of merely possible rivers as abstract objects assimilates them to paradigmatically abstract objects, such as numbers, sets and directions, which are not contingently abstract.17
+
+What merely possible rivers may affront is the idea that an object’s general modal properties should somehow derive from its general non-modal properties.18 This is a strong form of the claim that hypothetical truths need categorical bases. For if the Inn had never run, from what general non-modal properties of it could its general modal property of being a possible river have derived? Although it would have had the universal non-modal property of being something, and negative general properties such as being a non-river, it would have shared all those with merely possible mountains, which are presumably not possible rivers. But we have no good reason to believe that an object’s general modal properties are traceable to its general non-modal properties. Although we may feel that we can visualize its general non-modal properties in a way in which we cannot visualize its general modal properties, reliance on this kind of primitive imagistic thinking is no way to do philosophy.
+
+On the present view, there are no counterexamples to BFC, only counterexamples to the different claim that if there is something in space and time that could have been such-and-such (e.g., not in space and time), then there could have been something in space and time that was such-and-such. Similarly, there are no counterexamples to BF, only counterexamples to the different claim that if there could have been something in space and time that was such-and-such (e.g., fathered by Wittgenstein), then there is something in space and time that could have been such-and-such. Since Wittgenstein could have fathered someone, there is something that Wittgenstein could have fathered; it is a merely possible person. More generally, there could not have been more or fewer things than there actually are.19
+
+Merely possible members of a kind are needed to make sense of some counting questions. Suppose, for simplicity, that a suit consists of a jacket and a pair of trousers, that necessarily they make a suit just in case they are originally hung together, and that at most one possible suit can be made of a given jacket and pair of trousers. Consider two jackets J1 and J2 and two pairs of trousers T1 and T2, which actually constitute two suits, J1+T1 and J2+T2. If J1 had originally been hung with T2, there would have been a different suit J1+T2; as things actually are, J1+T2 is not a suit; indeed, J1+T2 does not actually seem to be anywhere. Intuitively, the question ‘How many possible suits could be made from J1, J2, T1 and T2?’ has a reading on which the answer is four, even though it is impossible for more than two suits to be made from the set.
+
+In that example, we can refer to specific merely possible suits, using counterfactuals in definite descriptions to fix the reference of ‘J1+T2’ and ‘J2+T1’.20 Such descriptions must be handled with care; for example, ‘the possible child of Wittgenstein’ is improper, because many possible people could have been fathered by Wittgenstein.21 No such difficulty faces treatment of a putative counterexample to BFC, because the object at issue (e.g., the Inn) is actually in space and time, which allows us to establish reference to it in the ordinary way; we use that referential link to discuss the object with respect to situations in which it is not in space and time.22 We can then reflect that people in those situations might be unable to establish reference to the object, if no uniquely identifying description were available to them, but could still express general propositions (e.g., ‘There is a merely possible river’) made true by facts about the object. We can further reflect that we may be in the same predicament with respect to other possible members of the same kind, such as merely possible rivers, to which we cannot establish reference but facts about which nevertheless make true general propositions that we can express – such as BF.
+
+Suppose, for the sake of argument, that referring to something precludes its being a merely possible river. It does not follow that no merely possible river is capable of being referred to by us. For perhaps, if it had been a river, we could have referred to it. Nevertheless, we should not assume that every object is a possible object of reference by us, or anyone else, for what motivates the assumption but ill-concealed verificationism? Perhaps the world contains microscopic particles incapable of being singled out by any thinking being. Although every possible bearer of a name is an object, something may belong to the same general kind as a possible bearer of a name, and be an object too, without itself being a possible bearer of a name.
+
+The difficulty of singling out mere possibilia means that they are not plausible objects of most intentional states. Seeking, for example, should not be construed as a relation to possibilia. Someone may seek the answer to all his problems, even though there is no answer to all his problems; that is not to say that there is a possible answer to all his [actual] problems which he seeks. Perhaps there is no even possible answer to all his problems; perhaps there are many possible answers, none of which is the possible answer he seeks.23 Theories of modality should not be expected to resolve issues about intentionality.
+
+7.
+
+How are possible rivers individuated? In LPC=S5, both the necessity of identity (LI, $x=y\supset□ x=y$) and the necessity of distinctness (LNI, $x\ne y\supset□ x\ne y$) are provable.24 Objects are either necessarily identical or necessarily distinct. It is then easy to derive this schema in LPC=S5:
+
+$\rho{=}$
+$◇\rho x\supset(x=y\equiv◇(\rho x\mathbin{\&}\rho y\mathbin{\&}x=y))$
+
+For $x=y$ gives $□ x=y$ by LI and thence $□(\rho x\supset\rho y)$, from which the right-hand side can be derived from $◇\rho x$ by ordinary modal reasoning. Conversely, the right-hand side gives $◇ x=y$, which gives $x=y$ by LNI. Now read $\rho x$ as ‘$x$ is a river’. Informally, $\rho{=}$ says that a possible river is identical with something just in case they could be the same river. The significance of $\rho{=}$ is that on the right-hand side the notion of identity is in effect restricted to the identity of rivers, rather than possible rivers. ‘Same river’ explains ‘same possible river’.
+
+The point may leave some doubts. It may still be asked: what makes the merely possible river in one world the same thing as the genuinely flowing river in another world? But this doubt is more obscure than that which it calls into question. Its focus is $◇\rho x$ rather than $x=y$, possibilities for objects rather than identities. Why should one find ‘$x$ could be a river’ problematic? Doubts about modality often seem to be epistemological in origin: how can we know whether something that is not so could have been so? For non-verificationists, however, the limits of knowledge about modality are not the limits of modality itself. Of course, it would be self-defeating to make modal claims and then admit that one cannot discover whether they are true. But the central modal claims of this paper are broadly logical claims. Their epistemology will be a special case of the epistemology of logic. Until we have a better understanding of the epistemology of logic, we cannot say whether the epistemology of quantified modal logic is fundamentally more problematic than the epistemology of other branches of logic.
+
+As for the metaphysics of quantified modal logic, LPC=S5 presents a startlingly clear picture. LI and LNI fit well with BF and BFC; what objects there are and their identity, distinctness and number are all necessary matters. Indeed, in LPC=S5 any proposition expressible in terms solely of identity, negation, conjunction, the universal quantifier and necessity is either necessarily true or necessarily false.25 Contingency has its place within a necessary framework of objects.
+
+# Notes
+
+[1] The original Barcan formula in Marcus [= Barcan] 1946 is in existential form, with strict rather than material implication. The difference is unimportant in this context.
+
+[2] For objections to BF and close related principles in tense logic, and intriguing references to relevant earlier discussions, see Prior (1957: 26–36, 112–116 and 1967: 138–151). Parsons (1995) is a more recent discussion of putative counterexamples to BF.
+
+[3] Marcus (1985/86) defends BF on actualist grounds, without explaining the intuitions underlying the apparent counterexamples. Linsky and Zalta (1994, 1996) aim to reconcile BF with actualism by broadening the domain of existents; their view has significant similarities with that to be defended here. They argue against several versions of actualist semantics that invalidate BF.
+
+[4] See further Williamson (1987/88, 1990b).
+
+[5] LPC=S5 and its semantics are slightly adapted from Hughes and Cresswell (1996: 243–244 and 312–313).
+
+[6] See Prior (1956), Kripke (1963) and Hughes and Cresswell (1996: 245–247). Stalnaker (1995) uses a similar methodology of combining principles of non-modal first-order quantified logic with principles of propositional modal logic. He constructs a system in which not even a weakened version of BFC is provable; however, he bases quantified logic on a predicate abstraction operator governed by principles too weak to ensure that abstraction has its normal effect in modal contexts (Williamson, 1996b).
+
+[7] If $\mathrm{W}$ or $\mathrm{D}$ is empty, every formula is vacuously true relative to every assignment at every world in the model, for there are no worlds or assignments.
+
+[8] See Kripke (1963). In semantic frameworks in which $□\alpha$ is true at $w$ just in case $\alpha$ is true at every world accessible from $w$, BF corresponds to the constraint that $\mathrm{D}(w^*)\subseteq \mathrm{D}(w)$ whenever $w^*$ is accessible from $w$ and BFC to the constraint that $\mathrm{D}(w)\subseteq \mathrm{D}(w^*)$ whenever $w^*$ is accessible from $w$. These constraints are equivalent if accessibility is symmetric. In effect, the present semantics for S5 is the special case in which accessibility holds universally, and so is trivially symmetric. The B axiom schema $\alpha\supset□◇\alpha$ corresponds to the symmetry of the accessibility relation. As one might therefore expect, BF is derivable in the weak subsystem LPC=B of LPC=S5, axiomatized by substituting B for T and E in the axiomatization of LPC=S5 in the text (in effect E. J. Lemmon pointed this out in 1965; see Prior (1967: 146)). This is philosophically significant, because Hugh Chandler (1976) and Nathan Salmon (1989) have given purported counterexamples to the 4 schema $□\alpha\supset□□\alpha$, which is derivable in LPC=S5 but not in LPC=B. Salmon suggests that instances of B are not logically true, but not that they are subject to counterexamples. He allows that instances of T are logically true; the reason for this differential treatment of T and B seems to be the greater obviousness of T, but obviousness is hardly a condition of logical truth. Of course, the simplicity of the semantics in the text depends on the use of S5, so that mention of accessibility is unnecessary. For an argument against the purported counterexamples to 4 see Williamson (1990a: 126–143); a reply to Salmon (1993) must await another occasion.
+
+[9] See Garson (1984). Cresswell (1991) uses the complications as an argument for BF.
+
+[10] Although the argument resembles arguments that actualism, the Kripke semantics and the denial of BF form an inconsistent set, it does not use the informal notion of existence.
+
+[11] Even on accounts of the set-theoretic paradoxes on which every domain can be extended to a wider domain, the narrower domain is not primarily given as a restriction of the broader one; rather, the broader domain is given as an extension of the narrower one. In any case, the intuitive objections to BF and BFC do not seem to have anything to do with the paradoxes.
+
+[12] See e.g., Fine (1977) and Peacocke (1979).
+
+[13] Objections to BFC are in effect objections to $\forall y\,□(\forall x\,\alpha\supset\alpha[y/x])$, the result of necessitating and then universally generalizing ∀1, for BFC is derivable from the special case $\forall x\,□(\forall x\,\alpha\supset\alpha)$ of that formula in a system of axioms and rules that are comparatively uncontentious in this context. In particular, consider the Kripke-inspired system LPCK+K, axiomatized by the axiom schemas PC, ∀^{⊃} ($\forall x\,(\alpha\supset\beta)\supset(\forall x\,\alpha\supset\forall x\,\beta)$ for any variable $x$), VQ ($\alpha\equiv\forall x\,\alpha$ for any variable $x$ not free in $\alpha$), ∀1K ($\forall y\,\forall z\,(\forall x\,\alpha\supset\alpha[y/x])$, where $x$, $y$ and $z$ are any variables, $y$ is free for $x$ in $\alpha$ and $\alpha[x/y]$ results from replacing each free occurrence of $x$ in $\alpha$ by $y$) and K, and the rules of inference are MP, N and UG (if $\alpha$ is a theorem, so is $\forall x\,\alpha$ for any variable $x$). See Hughes and Cresswell (1996: 304–309) for more on such systems. By UG and then ∀^{⊃} (twice) applied to an instance of K, $\vdash_{\mathrm{LPCK+K}}\ \forall x\,□(\forall x\,\alpha\supset\alpha)\supset(\forall x\,□\forall x\,\alpha\supset\forall x\,□\alpha)$; by VQ, $\vdash_{\mathrm{LPCK+K}}\ \forall x\,□(\forall x\,\alpha\supset\alpha)\supset{𝐁𝐅𝐂}$.
+
+[14] Prior’s system Q postulates a value of unstatability between truth and falsity, distinguishing $□$ (always true) from $\neg◇\neg$ (never false). See Prior (1957: 41–54). On Prior’s view, $□(\phi a\supset\phi a)$ is false unless $a$ exists at every world, because $\phi a\supset\phi a$ is statable only at worlds at which $a$ exists. This seems to confuse the context of utterance with the context of evaluation. If $a$ exists at this world and $\phi$ is an ordinary predicate, then at this world $\phi a$ and $\phi a\supset\phi a$ express conditions that each world may or may not meet. A world $w$ meets the condition $\alpha\supset\beta$ expresses at this world just in case if $w$ meets the condition $\alpha$ expresses at this world, $w$ meets the condition $\beta$ expresses at this world. Thus every world meets the condition which $\phi a\supset\phi a$ expresses at this world, so this world meets the condition which $□(\phi a\supset\phi a)$ expresses at this world.
+
+[15] BF is derivable in LPCK+S5+BFC, the result of adding T, E and BFC as axiom schemas to LPCK+S5 (see note 13). Since $y$ and $z$ can be the same variable as $x$ in ∀1K, by VQ $\vdash_{\mathrm{LPCK+S5+BFC}}\ \forall x\,(\forall x\,□\alpha\supset□\alpha)$, so $\vdash_{\mathrm{LPCK+S5+BFC}}\ □\forall x\,(\forall x\,□\alpha\supset□\alpha)$ by N. By BFC, $\vdash_{\mathrm{LPCK+S5+BFC}}\ \forall x\,□(\forall x\,□\alpha\supset□\alpha)$. By N and K $\vdash_{\mathrm{LPCK+S5+BFC}}\ □(\forall x\,□\alpha\supset□\alpha)\supset(◇\forall x\,□\alpha\supset◇□\alpha)$, so $\vdash_{\mathrm{LPCK+S5+BFC}}\ □(\forall x\,□\alpha\supset□\alpha)\supset(◇\forall x\,□\alpha\supset\alpha)$ by T and E. By ∀^{⊃} and UG, $\vdash_{\mathrm{LPCK+S5+BFC}}\ \forall x\,□(\forall x\,□\alpha\supset□\alpha)\supset\forall x\,(◇\forall x\,□\alpha\supset\alpha)$. We have already established the antecedent, so $\vdash_{\mathrm{LPCK+S5+BFC}}\ \forall x\,(◇\forall x\,□\alpha\supset\alpha)$. By ∀^{⊃} and VQ, $\vdash_{\mathrm{LPCK+S5+BFC}}\ ◇\forall x\,□\alpha\supset\forall x\,\alpha$. Then N and K give $\vdash_{\mathrm{LPCK+S5+BFC}}\ □◇\forall x\,□\alpha\supset□\forall x\,\alpha$ and T and E give $\vdash_{\mathrm{LPCK+S5+BFC}}\ \forall x\,□\alpha\supset□\forall x\,\alpha$. QED. As in the proof of BF in LPC=S5, B can replace T and E.
+
+[16] In a similar case, Prior (1957: 32–33) is driven to the desperate suggestion that ‘Bucephalus’ is no longer a proper name because Bucephalus no longer exists. He proposes instead to analyse it as a definite description, ‘the Bucephalizer’. Developments in the philosophy of language over the last forty years make this proposal even less plausible than it was when made. Moreover, even if accepted, it would not obviously achieve anything. It enables us to deny that ‘Bucephalus’ now refers to Bucephalus; the sentence ‘Bucephalus ran’ is analysed as something like ‘PAST ((THE $x$: $x$ Bucephalizes) $x$ runs)’. But any problem in assigning Bucephalus to the name in ‘PAST (Bucephalus runs)’ is equally a problem in assigning it to the free variable in ‘$x$ Bucephalizes’ and ‘$x$ runs’. If either assignment is impossible, we cannot use the corresponding sentence to say something true; our ability to do that is what was to be explained. Thus nothing is lost in treating ‘Bucephalus’ as a name. But ‘Bucephalus’ refers now to Bucephalus. Note that a present term $t$ can refer to a past object $o$ even if $t$ was not used to refer to $o$ when $o$ was extant.
+
+[17] Linsky and Zalta, whose approach is in some ways very similar to the present one (although they present it within the framework of actualism and take BF as primitive) waver on this point. They hold, like the present approach, that there are contingently non-spatiotemporal objects. At Linsky and Zalta (1994: 446) they define ‘concrete’ as ‘spatiotemporal’ and ‘abstract’ as ‘not concrete’; thus some abstract objects could have been concrete. At Linsky and Zalta (1996: 293) they say ‘abstract objects are not concrete at any world’. The latter approach is preferable. The inconsistency may be largely terminological.
+
+[18] ‘General’ is intended to exclude non-modal properties such as being the Inn, which is not shared by anything that differs in modal properties from the Inn.
+
+[19] See Ramsey (1927) for an early argument to this effect.
+
+[20] In arguing against mere possibilia, Ruth Barcan Marcus assumes that we can refer only to what we have empirically encountered (1993: 207).
+
+[21] For a careful treatment of definite descriptions in relation to possibilia, although based on an actualist reading of the quantifiers, see Salmon (1987).
+
+[22] Throughout the ensuing discussion, read ‘reference’ as ‘singular reference’.
+
+[23] Linsky and Zalta, in their 1996 response to Tomberlin (1996), propose an account on which ‘the answer to all his problems’ is analysed as ‘the unique (abstract) object which, according to his conception, answers all his problems’. Their account has difficulties with sentences such as ‘He looked for the largest apple, found it and ate it’; although they also allow the more usual reading of the definite description, the sentence does not seem to have any reading on which it implies that he ate an abstract object.
+
+[24] See Hughes and Cresswell (1996: 313–314). Williamson (1990b, 1996a) defends LI and LNI.
+
+[25] Proof: One shows that $\vdash_{\mathrm{LPC=S5}}\ \alpha\supset□\alpha$ by induction on the complexity of $\alpha$. LI and LNI give the basis of the induction. The induction steps for $\mathbin{\&}$ and $□$ are routine exercises in propositional modal logic. For $\neg$, note that if $\vdash_{\mathrm{LPC=S5}}\ \alpha\supset□\alpha$ then $\vdash_{\mathrm{LPC=S5}}\ □\neg□\alpha\supset□\neg\alpha$, so $\vdash_{\mathrm{LPC=S5}}\ \neg\alpha\supset□\neg\alpha$ by E and T. For the induction step for $\forall$, note that if $\vdash_{\mathrm{LPC=S5}}\ \alpha\supset□\alpha$ then $\vdash_{\mathrm{LPC=S5}}\ \forall x\,\alpha\supset\forall x\,□\alpha$, so $\vdash_{\mathrm{LPC=S5}}\ \forall x\,\alpha\supset□\forall x\,\alpha$ by BF.
+
+# Acknowledgements
+
+Thanks to Winfried Löffler for his helpful reply, other participants in the Innsbruck Symposium on Analytical Ontology and a meeting of the Portuguese Philosophical Society in Lisbon for discussion, and Rodrigo Bacellar, Paolo Crivelli, Alex Orenstein and Philip Percival for detailed comments.
+
+# References
+
+Chandler, H.: 1976, ‘Plantinga and the Contingently Possible’, Analysis 36, 106–109.
+
+Cresswell, M.: 1991, ‘In Defence of the Barcan Formula’, Logique et Analyse 135–136, 271–282.
+
+Fine, K.: 1977, ‘Postscript’, in Prior 1977.
+
+Garson, J.: 1984, ‘Quantification in Modal Logic’, in Gabbay, D. and Guenthner, F. (eds.), Handbook of Philosophical Logic, Vol. II, Reidel, Dordrecht.
+
+Hughes, G. and Cresswell, M.: 1996, A New Introduction to Modal Logic, Routledge, London.
+
+Kripke, S.: 1963, ‘Semantical Considerations on Modal Logic’, Acta Philosophica Fennica 16, 83–94.
+
+Linsky, B. and Zalta, E.: 1994, ‘In Defense of the Simplest Quantified Modal Logic’, in James Tomberlin (ed.), Philosophical Perspectives 8: Logic and Language, Ridgeview, Atascadero.
+
+Linsky, B. and Zalta, E.: 1996, ‘In Defense of the Contingently Nonconcrete’, Philosophical Studies 84: 283–294.
+
+Marcus, R. Barcan: 1946, ‘A Functional Calculus of First Order Based on Strict Implication’, The Journal of Symbolic Logic 11, 1–16.
+
+Marcus, R. Barcan: 1985/86, ‘Possibilia and Possible Worlds’, Grazer Philosophische Studien 25–26, 107–133; reprinted in Marcus 1993.
+
+Marcus, R. Barcan: 1993, Modalities: Philosophical Essays, Oxford University Press, Oxford.
+
+Parsons, T.: 1995, ‘Ruth Barcan Marcus and the Barcan Formula’, in Sinnott-Armstrong, Raffman and Asher 1995.
+
+Peacocke, C.: 1978, ‘Necessity and Truth Theories’, Journal of Philosophical Logic 7, 473–500.
+
+Prior, A.: 1956, ‘Modality and Quantification in S5’, The Journal of Symbolic Logic 21, 60–62.
+
+Prior, A.: 1957, Time and Modality, Clarendon Press, Oxford.
+
+Prior, A.: 1967, Past, Present and Future, Oxford University Press, Oxford.
+
+Prior, A.: 1977, Worlds, Times and Selves, University of Massachusetts Press, Amherst.
+
+Ramsey, F.: 1927, ‘Facts and Propositions’, Aristotelian Society 7(Suppl.), 153–170.
+
+Salmon, N.: 1987, ‘Existence’, in James Tomberlin (ed.), Philosophical Perspectives 1: Metaphysics, Ridgeview, Atascadero.
+
+Salmon, N.: 1989, ‘The Logic of What Might Have Been’, The Philosophical Review 98, 3–34.
+
+Salmon, N.: 1993, ‘This Side of Paradox’, Philosophical Topics 21, 187–197.
+
+Sinnott-Armstrong, W., Raffman, D., and Asher, N. (eds.): 1995, Modality, Morality and Belief: Essays in Honor of Ruth Barcan Marcus, Cambridge University Press, Cambridge.
+
+Stalnaker, R.: 1995, ‘The Interaction of Modality with Quantification and Identity’, in Sinnott-Armstrong, Raffman and Asher 1995.
+
+Tomberlin, J.: 1996, ‘Actualism or Possibilism?’, Philosophical Studies 84, 263–281.
+
+Williamson, T.: 1987/88, ‘Equivocation and Existence’, Proceedings of the Aristotelian Society 88, 109–127.
+
+Williamson, T.: 1990a, Identity and Discrimination, Blackwell, Oxford.
+
+Williamson, T.: 1990b, ‘Necessary Identity and Necessary Existence’, in Rudolf Haller and Johannes Brandl (eds.), Wittgenstein – Towards a Re-Evaluation: Proceedings of the 14th International Wittgenstein-Symposium, Vol. I, Holder-Pichler-Tempsky, Vienna.
+
+Williamson, T.: 1996a, ‘The Necessity and Determinacy of Distinctness’, in Sabina Lovibond and Stephen Williams (eds.), Essays for David Wiggins: Identity, Truth and Value, Blackwell, Oxford.
+
+Williamson, T.: 1996b, ‘Review of Sinnott-Armstrong, Raffman and Asher 1995’, Philosophy 71, 167–172.

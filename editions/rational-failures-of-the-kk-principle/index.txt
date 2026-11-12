@@ -1,0 +1,356 @@
+# Rational Failures of the KK Principle
+
+Timothy Williamson
+
+In C. Bicchieri, R. Jeffrey and B. Skyrms (eds.), The Logic of Strategy (1999), 101–118. Oxford: Oxford University Press.
+
+It is tempting to suppose that rational thinkers satisfy the KK principle that if one knows something, then one knows that one knows it.1 This essay investigates a variety of phenomena which cause the KK principle to fail. The failures are rational in the sense that they can be described within a framework on which thinkers know all the logical consequences of what they know. Of course, actual thinkers fail to draw all these consequences; the point of the idealization is that this failure of deductive closure is quite separate from, because not necessary for, the failure of the KK principle. A positive proposal will be made as to the logic of rational knowledge.
+
+The technical framework for the discussion will be the standard possible-worlds semantics for modal logic, interpreted epistemically.2 It is intended radically to idealize the epistemic capacities of actual thinkers, with the aim of showing that not even this radical idealization removes all objections to the KK principle. Section 1 briefly rehearses some elementary epistemic logic; those familiar with such material should go straight to Section 2.
+
+# 1. Epistemic Logic
+
+There is a set $W$ of worlds, thought of as mutually exclusive and jointly exhaustive situations or outcomes (they need not specify features irrelevant to the purpose of the model). The propositions are the subsets of $W$; a proposition $P$ is true in a world $w$ if and only if $w\in P$. Thus negations are complements in $W$, conjunctions are intersections, and so on. For a thinker $S$ in a world $w$, worlds are of two kinds. Some are accessible or epistemically possible; the others are inaccessible or epistemically impossible. Accessibility is a relation $R$ between worlds; different thinkers may have different accessibility relations. $S$ is treated as omniscient about what is true at each world from a world-neutral point of view; what $S$ may not know is which world she is in. If the proposition $P$ is false in some world accessible from $w$, it is false in a world that, for all $S$ in $w$ knows, is actual, so $S$ in $w$ does not know $P$. Conversely, if $S$ in $w$ does not know $P$, there must be a world accessible from $w$ in which $P$ is false, otherwise $S$ would not be perfectly rational. Thus $S$ in $w$ knows $P$ if and only if $P$ is true in every world accessible from $w$. What $S$ knows in each world is determined simply by the pair $\langle W,R\rangle$. Any pair $\langle W,R\rangle$, where $W$ is a set and $R$ is a binary relation on $W$, constitutes a frame. If several thinkers are in question, each has her own accessibility relation, so a frame $\langle W,\{R_i\}_{i\in I}\rangle$ is needed, where $\{R_i\}_{i\in I}$ is an indexed set of binary relations.
+
+A class of frames $\langle W,R\rangle$ determines an epistemic logic. We start with the language of the propositional calculus, with propositional variables $p,q,p',q',\ldots$, negation ($\neg$) and conjunction ($\mathbin{\&}$). Disjunction ($\vee$) and implication ($\rightarrow$) are defined in terms of $\neg$ and $\mathbin{\&}$ in the usual way. We then add a knowledge operator ${𝐊}$ to the language. If the frames are of the form $\langle W,\{R_i\}_{i\in I}\rangle$ ($I$ fixed), an indexed set of knowledge operators $\{{𝐊}_i\}_{i\in I}$ must be added; for simplicity, only one knowledge operator will be discussed. Any mapping $[\ ]$ of the propositional variables to propositions in a frame $\langle W,R\rangle$ determines a mapping of all formulas in the language to propositions in $\langle W,R\rangle$ by
+
+$[\neg A]=W-[A]$
+
+$[A\mathbin{\&}B]=[A]\cap[B]$
+
+$[{𝐊}A]=\{w\in W:\forall x\,\in W\ wRx\Rightarrow x\in[A]\}$.
+
+A formula $A$ is valid in $\langle W,R\rangle$ if and only if for every such mapping $[\ ]$, $[A]=W$, the proposition is true in every world. The epistemic logic $L_C$ determined by a class $C$ of frames is simply the set of formulas valid in every frame in $C$. $L_C$ can easily be shown to have the following properties (writing $\vdash A$ for $A\in L_C$):
+
+(US)
+If $\vdash A$ and $\mathrm{\sigma}$ is a uniform substitution then $\vdash\mathrm{\sigma} A$.
+(Taut)
+For any truth-functional tautology $A$, $\vdash A$.
+(MP)
+If $\vdash A$ and $\vdash A\rightarrow B$ then $\vdash B$.
+(K)
+$\vdash {𝐊}(p\rightarrow q)\rightarrow({𝐊}p\rightarrow {𝐊}q)$.
+(Nec)
+If $\vdash A$ then $\vdash {𝐊}A$.
+
+(US), (Taut), and (MP) are what one would expect of any classical logic. (K) and (Nec) say, in effect, that if a conclusion follows from a (perhaps empty) set of premises, and every premise is known, then the conclusion is known. An epistemic logic satisfying those five constraints is normal.
+
+If $C$ is the class of all frames, $L_C$ is the weakest normal logic. More restricted classes of frames yield stronger logics. For example, if we require $R$ to be reflexive, we gain
+
+(T)
+$\vdash {𝐊}p\rightarrow p$
+
+That is, one knows only what is true. All the frames considered in this paper are reflexive.
+
+The transitivity of $R$ corresponds to the KK principle, known in modal logic as the S4 or 4 axiom:
+
+(4)
+$\vdash {𝐊}p\rightarrow {𝐊}{𝐊}p$
+
+To state the correspondence more exactly: (4) holds in $L_C$ if and only if for every frame $\langle W,R\rangle$ in $C$, $R$ is transitive. It may be helpful to rehearse the argument. Suppose that accessibility is transitive. If ${𝐊}p$ is true in a world $w$, then $p$ is true in every world accessible from $w$, so by transitivity $p$ is true in every world accessible from a world accessible from $w$, so ${𝐊}p$ is true in any world accessible from $w$, so ${𝐊}{𝐊}p$ is true in $w$. Conversely, suppose that $y$ is accessible from $x$ and $z$ from $y$, but $z$ is not accessible from $x$. Assign to $p$ the set of worlds accessible from $x$. Thus $p$ is true in every world accessible from $x$, but not in $z$. Thus ${𝐊}p$ is true in $x$ but not in $y$, so ${𝐊}{𝐊}p$ is not true in $x$.
+
+We can often use an idealized picture of knowledge to single out a class of frames, and explore the implications of the picture by identifying the epistemic logic determined by that class. To undermine the KK principle, we need non-transitive frames. However, we may begin with a picture of knowledge that singles out a class of transitive frames, for it helps to explain the appeal of the KK principle.
+
+# 2. Appearance and Reality
+
+The picture is that rational thinkers know everything about the way things appear to them, and nothing about anything else. For a given rational thinker $S$, there is a function $a$ taking each possible world $w$ to the way things appear to $S$ in $w$, $a(w)$. $S$ is omniscient about this function and about its value for the actual world. Thus if $S$ is in $w$, a world $x$ is epistemically possible just in case $x$ is the same in appearance as $w$; $x$ is accessible from $w$ if and only if $a(x)=a(w)$. $S$ knows a proposition if and only if it is true in every world with the same appearance as the world $S$ is in. Thus accessibility is not just reflexive and transitive, but symmetric as well. We are therefore directed to look at frames $\langle W,R\rangle$ where $R$ is an equivalence relation. The picture does not formally require any further constraints, for whevever $R$ is an equivalence relation, a function like $a$ can be defined.3 The logic determined by these frames is S5, the weakest normal logic satisfying (T) and
+
+(5)
+$\vdash\neg {𝐊}p\rightarrow {𝐊}\neg {𝐊}p$
+
+The KK principle is derivable in S5. In effect, (5) says that if $S$ does not know something, she knows that she does not know it.
+
+There are many objections to (5), even as a principle about rational knowledge. One problem is that it does not allow for the fallibility of the sources of knowledge. If rational thinkers are not to be embarrassingly ignorant, their empirical knowledge will be drawn from sources that occasionally deliver false beliefs. On excellent evidence, $S$ rationally believes the false proposition $P$. Since $P$ is false, $S$ does not know $P$. Now the evidence may be so good that $S$ rationally believes that $S$ knows $P$ (surely rational thinkers often know that they know an empirical proposition, and are therefore willing to believe that they know such a proposition). Thus $S$ fails to believe that she does not know $P$, so $S$ fails to know that she does not know $P$.4 (5) should be avoided. What this indicates about the picture of rational knowledge is that either rational knowledge can go beyond appearances or appearances can be false. Subtler objections to (5) use the idea that a rational thinker’s ability to discriminate between appearances may vary from world to world. These objections need not be pressed, for the failure of the system S5, and in particular of axiom (5), in the logic of rational knowledge will follow in any case from the failure of rational knowledge to satisfy the KK principle. But the objections above, even if accepted, do not undermine the KK principle. For that a different picture of knowledge is needed. Four phenomena will be investigated: plural knowledge; time delays; limited discrimination; margins for error.5
+
+# 3. Plural Knowledge
+
+The KK principle is traditionally formulated for single subjects. However, we may begin by rehearsing its familiar failure for a plurality of subjects. Suppose that Peter and Paul each toss a coin. Each sees which way up his coin landed, and has no idea which way up the other’s coin landed. Both men are rational and understand the structure of the situation. In fact, both coins landed heads. Neither Peter nor Paul is in a position to know that, of course, but each of them knows that at least one coin landed heads. However, Peter does not know that Paul knows that at least one coin landed heads; if Peter did know that, he could work out that Paul’s coin landed heads, for he knows that if Paul knows that at least one coin landed heads then Paul’s coin landed heads. Symmetrically, Paul does not know that Peter knows that at least one coin landed heads. Thus, although Peter and Paul know that at least one coin landed heads, Peter and Paul do not know that Peter and Paul know that at least one coin landed heads. As a plural subject, Peter and Pual fail the KK principle. They both know something, but they do not both know that they both know it; the knowledge they both have is not mutual or common between them. It is just such cases that the concept of common or mutual knowledge is designed to exclude. People have common knowledge of a proposition only if they all know it, they all know that they all know it, they all know that they all know that they all know it, and so on. If “they all know” satisfied the KK principle, this conjunction would collapse into its first conjunct.
+
+For the sake of simplicity, Peter and Paul may each be assumed to satisfy the appearance/reality model of rational knowledge individually. There are just four worlds to consider, depending on the outcome of the two tosses. They form a set $W=\{hh,ht,th,tt\}$; for example, $ht$ is the world in which Peter’s coin lands heads and Paul’s coin lands tails. To Peter, worlds have the same appearance if and only if his coin lands the same way in them. His accessibility relation $R_1$ is an equivalence relation, partitioning $W$ according to the way his coin lands into the two equivalence classes $\{hh,ht\}$ and $\{th,tt\}$. The logic of “Peter knows” is S5; in particular, if Peter knows something, he knows that he knows it. Similarly, Paul’s accessibility relation $R_2$ is an equivalence relation, partitioning $W$ according to the way his coin lands into the two equivalence classes $\{hh,th\}$ and $\{ht,tt\}$. The logic of “Paul knows” is S5; in particular, if Paul knows something, he knows that he knows it.
+
+In a world $w$, it is false that Peter and Paul know a proposition $P$ if and only if either Peter fails to know $P$ or Paul fails to know $P$, that is, if and only if, for some world $x$, either $wR_1x$ or $wR_2x$, where $P$ is false in $x$. Contrapositively, in $w$ Peter and Paul know $P$ if and only if $P$ is true in every world $x$ such that either $wR_1x$ or $wR_2x$. Thus Peter and Paul plurally have an accessibility relation $R$; it is the disjunction of $R_1$ and $R_2$. The notion of a frame can be applied to plural knowledge if it can be applied to singular knowledge. For example, $hhRhh$, $hhRht$ and $hhRth$ but not $hhRtt$. Similarly, $htRhh$, $htRht$ and $htRtt$ but not $htRth$. $R$ is nontransitive, for $hhRht$ and $htRtt$ but not $hhRtt$; consequently, “Peter and Paul know” fails the KK principle. The underlying logical point is a simple one: the disjunction of two equivalence relations need not itself be an equivalence relation; in particular, it need not be transitive. Correspondingly, the conjunction of two operators each with an S5 logic need not itself have an S5 logic. The point generalizes to any number of rational thinkers. The accessibility relation for “each of them knows” is the disjunction of the accessibility relations for each of them. Even if each of the latter is an equivalence relation, the former need not be.6
+
+What is the logic of plural knowledge, on the simplifying assumption that the logic of individual knowledge is S5? Equivalently, what follows about a relation given that it is the disjunction of a number of equivalence relations? The answer is rather complex, for combinatorial reasons, if we fix the number of individual thinkers, and so of equivalence relations. Let $R$ be the disjunction of $n$ equivalence relations $R_1,\ldots,R_n$. Then $R$ has the following property:
+
+(*$_n$)
+If $wRx_1,\ldots,wRx_{n+1}$ then $x_kRx_j$ for some $j,k$ ($1\leq j<k\leq n+1$)
+
+For if $wR_{i(1)}x_1,wR_{i(2)}x_2,\ldots,wR_{i(n+1)}x_{n+1}$, where for $1\leq j\leq n+1$, $1\leq i(j)\leq n$, then for some $j$ and $k$, with $j<k$, $i(j)=i(k)$. Thus $wR_{i(j)}x_j$ and $wR_{i(j)}x_k$. By hypothesis, $R_{i(j)}$ is an equivalence relation, so $x_kR_{i(j)}x_j$, so $x_kRx_j$. (*$_n$) induces the following constraint on the logic of joint knowledge for $n$ thinkers:
+
+(**$_n$)
+$\vdash {𝐊}p_1\vee {𝐊}({𝐊}p_1\rightarrow p_2)\vee {𝐊}({𝐊}(p_1\mathbin{\&}p_2)\rightarrow p_3)\vee\cdots\vee{}$
+${𝐊}({𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_{n-1})\rightarrow p_n)\vee {𝐊}\neg {𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_n)$
+
+For if (**$_n$) is false at a world $w$, there are worlds $x_1,\ldots,x_{n+1}$ such that $wRx_1,\ldots,wRx_{n+1}$, $p_1$ is false at $x_1$, ${𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_{i-1})$ is true and $p_i$ false at $x_i$ ($1<i\leq n$) and ${𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_n)$ is true at $x_{n+1}$. Choose $j$ and $k$ as in (*$_n$). Since $1<k$, ${𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_{k-1})$ is true at $x_k$; since $x_kRx_j$, $p_1\mathbin{\&}\cdots\mathbin{\&}p_{k-1}$ is true at $x_j$; since $j<k$, $p_j$ is therefore true at $x_j$; but $j<n+1$, so this is contrary to hypothesis. Thus (**$_n$) is valid in any class of frames satisfying (*$_n$). For one thinker, (**$_n$) is equivalent to the S5 axiom. For two, it says, for example: either (a) they both know that at least one coin landed heads or (b) they both know that if they both know that at least one coin landed heads then at least one coin landed tails or (c) they both know that it is false that they both know that at least one coin landed heads and at least one coin landed tails (in this example, (c) is true in every world). If $m\leq n$, (**$_m$) implies (**$_n$) in every normal logic.
+
+The strength of (**$_n$) decreases strictly with $n$, for, given $n+1$ or more persons, (**$_n$) is false in Littlewood’s “dirty face” story.7 It is common knowledge that everyone can see every face but her own and that there is no communication. ${𝐊}$ is read as “persons $1,2,\ldots,n+1$ know”, $p_i$ as “either person $i$ has a dirty face or someone else has a clean face.” Suppose that in fact everyone has a dirty face. The first disjunct in (**$_n$), ${𝐊}p_1$, is false because, for all person 1 knows, she has a clean face and everyone else has a dirty face, making $p_1$ false. The $i$th disjunct, ${𝐊}({𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_{i-1})\rightarrow p_i)$, is false because, for all person $i$ knows, she has a clean face and everyone else has a dirty face, making $p_i$ false and ${𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_{i-1})$ true, for everyone other than person $i$ would know that someone other than persons $1,\ldots,i-1$—namely, person $i$—had a clean face, and person $i$ would (and does) know that persons $1,\ldots,i-1$ have dirty faces. Similarly, the final disjunct, ${𝐊}\neg {𝐊}(p_1\mathbin{\&}\cdots\mathbin{\&}p_n)$, is false because person $n+1$ lacks the attributed knowledge. Thus (**$_n$) is false in the envisaged situation. Thus if $m\ne n$, the logic of “S5-like thinkers $1,\ldots,m$ know that” differs from the logic of “S5-like thinkers $1,\ldots,n$ know that.”
+
+Matters are simpler if we ask for the logic of plural knowledge for a varying number of S5-like thinkers. Equivalently, what follows about a relation $R$ given that it is the disjunction of some equivalence relations, but nothing about how many? Since any disjunction of reflexive relations is reflexive, and any disjunction of symmetric relations is symmetric, it follows that $R$ is reflexive and symmetric. In fact, nothing more follows. We can show this by showing that if $R$ is reflexive and symmetric, it is a disjunction of equivalence relations. Treat $R$ as a set of ordered pairs. For each ordered pair $\langle x,y\rangle$, there is an equivalence relation $R_{xy}$ containing just the ordered pairs $\langle x,y\rangle$, $\langle y,x\rangle$ and $\langle z,z\rangle$ for each $z$ in the domain. $R$ is simply the disjunction of all $R_{xy}$ such that $\langle x,y\rangle\in R$.
+
+The logic of plural knowledge for a varying number of S5-like thinkers is thus determined by the class of reflexive symmetric frames. The axiom corresponding to symmetry is known, for no very good reason, as the Brouwerian axiom:
+
+(B)
+$\vdash\neg p\rightarrow {𝐊}\neg {𝐊}p$
+
+(B) is valid in a frame $\langle W,R\rangle$ if and only if $R$ is symmetric. On the present reading, (B) says that if a proposition is false then everyone knows that not everyone knows it. For each thinker $S$ satisfies the axiom by hypothesis (it is a theorem of S5), and so knows that she does not know the proposition, and deduces that not everyone knows it. If (B) is wrong for plural rational knowledge, it is wrong for singular rational knowledge. The logic of plural knowledge for a varying number of S5-like thinkers is the Brouwerian system KTB, the smallest normal epistemic logic satisfying (T) and (B).
+
+The failure of the KK principle for plural knowledge can be generalized. In KTB, for any formula $A$, $\vdash A\rightarrow {𝐊}A$ only in the trivial cases where $\vdash A$ or $\vdash\neg A$.8 For example, the S5 axiom is not a theorem; not is the formula ${𝐊}^np\rightarrow {𝐊}^{n+1}p$, where ${𝐊}^n$ is a sequence of $n$ ${𝐊}$s.
+
+We now turn for the rest of the essay to failures of the KK principle for a single rational individual’s knowledge. When such failures occur, the thinker lacks common knowledge with herself.
+
+# 4. Time Delays
+
+Learning takes time. This is so even if we ignore (as we shall do) the time needed to make inferences. In order to know a fact, we have to react to it, and reaction takes time. This is obvious where learning involves causal interaction with the environment, but there are subtler applications of the same point. We can find one in a puzzle that worried Stoic philosophers. They asked whether the wise man must know that he is wise, and argued that he does not always do so. For consider the very first moment at which he was wise. He did not yet know that he was wise, for he had had no time to react to his wisdom. If he had believed that he was wise, that belief would have been formed in response to a time at which he was not wise; it would be an unwise belief, and fail to constitute knowledge.9 We might update the example by substituting the word “rational” for “wise,” and conclude that there is a time at which the rational man is rational and does not know it. The challenge to the KK principle is clear: at the moment when someone first knows something, how do they know that they know it, not having had time to react to their knowledge?
+
+There is a small mathematical problem with the argument. Suppose that instants of time are ordered like the real numbers. If there is a last instant at which $S$ has never known $P$, there is no first instant at which $S$ knows $P$, for between any two instants a third intervenes. Thus $S$ can satisfy the principle that for any time at which $S$ knows $P$ there is an earlier time at which $P$ was true, even if $S$ has not always known that $P$.10 This model always gives $S$ some time to react, but it requires $S$ to be able to react in arbitrarily short times. $S$ does not satisfy the principle that there is a positive length of time $\mathrm{\delta} t$ such that, for any time $t$, if at $t$ $S$ knows $P$ then $P$ was true at time $t-\mathrm{\delta} t$. Yet one might suspect that, for beings who cannot act faster than the speed of light, the latter principle is what is needed.
+
+Those problems can be avoided by a simple model in which time is discrete; instants are ordered like the positive and negative integers. Assume, for simplicity, that $S$ can react to a fact with only an instant’s delay. The time delay principle in that case says only that if at time $t$ $S$ knows $P$ then at time $t-1$ $P$ was true. We also require that if at time $t$ $S$ knows $P$ then $P$ is true at time $t$, for $S$ knows only what is true (this is axiom (T)). The effect of time delays can best be seen if we idealize away from all other obstacles to knowledge, by imagining a rational thinker who takes in everything, but not instantaneously. This is to assume that it is sufficient as well as necessary for $S$ at $t$ to know $P$ that $P$ be true at both $t-1$ and $t$. This amounts to looking at a single frame $\langle W,R\rangle$ with the integers (i.e., times) as worlds, where $wRx$ if and only if either $x=w$ or $x=w-1$.
+
+Since $R$ is nontransitive, the KK principle fails. For example, if $p$ is assigned the proposition true at all and only nonnegative points, that is, $[p]=\{x:x\geq0\}$, then $[{𝐊}p]=\{x:x\geq1\}$ and $[{𝐊}{𝐊}p]=\{x:x\geq2\}$; hence ${𝐊}p\rightarrow {𝐊}{𝐊}p$ is false at 1. More generally, $[{𝐊}^np]=\{x:x\geq n\}$, so the instance ${𝐊}^np\rightarrow {𝐊}^{n+1}p$ of the KK principle is false at $n$. Each instant repairs one failure of the KK principle and introduces a new one at a higher level. Moreover, there is no time at which ${𝐊}^np$ is true for every $n$, so $S$ never has common knowledge with herself of this proposition. The frame also provides cases in which a proposition is sometimes known but never known to be known. For example, if $[q]=\{0,1\}$ then $[{𝐊}q]=\{1\}$ and $[{𝐊}{𝐊}q]=\{\}$. More generally, if a proposition is false at a time, then at no later time on this model does $S$ have common knowledge with herself of the proposition.
+
+As already indicated, the failure of the KK principle on the frame has nothing to do with the time needed to make inferences. As soon as the rational thinker in question knows a proposition, she knows all its logical consequences; that is guaranteed by the frame theoretic semantics. On the present picture, its interpretation is simply that, as soon as a fact obtains, so do all its logical consequences; thus the thinker has as much time to react to the consequences as to what they are consequences of.
+
+Because each world has $R$ to at most two worlds, the logic of the frame can be shown to contain the following theorem:11
+
+(#)
+$\vdash {𝐊}(p\rightarrow q)\vee {𝐊}(p\rightarrow\neg q)\vee {𝐊}p$
+
+The logic of the frame can be shown to be the weakest normal logic containing both (T) and (#), KT#.12 The failure of the KK principle can be generalized as before. In KT#, for any formula $A$, $\vdash A\rightarrow {𝐊}A$ only if either $\vdash A$ or $\vdash\neg A$.13 A gap between the times at which $A$ is true and the times at which it is known is ruled out only if $A$ must be either always true or always false.
+
+We can avoid the strange principle (#) by using time delays over many instants. For example, we might consider a frame $\langle W,R\rangle$ in which $W$ is the set of real numbers and $wRx$ if and only if $w-1\leq x\leq w$. There are many other ways of realizing the general idea that $wRx$ if and only if $x$ is in an interval of fixed length up to $w$. The logic of such frames is rather sensitive to their mathematical structure. However, in all such frames $R$ will have the property (sometimes known as connectedness) that if $wRx$ and $wRy$ then either $xRy$ or $yRx$ (the former disjunct is realized if $x$ is not earlier than $y$, the latter if $y$ is not earlier than $x$). A frame has that property if and only if it validates this formula:14
+
+(D1)
+$\vdash {𝐊}({𝐊}p\rightarrow q)\vee {𝐊}({𝐊}q\rightarrow p)$
+
+Of course, (D1) will not survive the introduction of obstacles to knowledge beyond time delays.15
+
+# 5. Limited Discrimination
+
+Perfectly rational thinkers need not have perfect eyesight; their powers of discrimination are limited. Detailed examination of a typical case suggests that such limits typically involve failure of the KK principle. The case used here involves a time series, but the point could be made equally well for synchronic discrimination; time delays are no longer the issue.
+
+Our rational thinker is monitoring the growth of a tree. Each morning she goes to see what progress it has made. Her eyesight is not perfect, and it is easiest to imagine that she does not use measuring instruments—but even if she does, they are of limited precision too, and the case is not essentially different. Of course, the tree cannot grow quickly enough for her to see that it is taller than the day before, and on some days it may not grow at all. She is quite aware of this limit to her knowledge. However, she can see that the tree is taller than it was a year ago. Let $h(i)$ be the height of the tree on the $i$th day after it was planted. There is a small quantity $\mathrm{\delta}$ (e.g., a millimeter) of which she knows two things: (a) if the difference in height between days is less than $\mathrm{\delta}$ then she does not know that there is any difference in height at all; (b) the tree cannot grow by as much as $\mathrm{\delta}$ in one day.
+
+Our thinker’s knowledge of the tree’s growth itself grows over time. However, this is not the central feature of the example for present purposes. We can regard her as knowing a proposition just in case she knows it from some time or other onwards. Alternatively, the argument to come could be given in terms of what she knows 5000 days after the tree was planted. One could even give it a synchronic form, by imagining the thinker inspecting a series of photographs of the tree, one for each day. Such differences do not affect the argument.16 Principles (a) and (b) can be symbolized as follows, for any $i$ and $j$:
+
+($a_{i,j}$)
+${𝐊}[(|h(i)-h(j)|<\mathrm{\delta})\rightarrow\neg {𝐊}(h(i)\ne h(j))]$
+($b_i$)
+${𝐊}(|h(i)-h(i+1)|<\mathrm{\delta})$
+
+From these two principles we can use the rationality of the thinker to argue for the following conclusion, for any $i$:
+
+($c_i$)
+${𝐊}{𝐊}(h(0)\ne h(i+1))\rightarrow {𝐊}(h(0)\ne h(i))$
+
+The argument is as follows. Suppose that ${𝐊}(h(0)\ne h(i+1))$, and make two auxiliary assumptions, $|h(0)-h(i+1)|<\mathrm{\delta}\rightarrow\neg {𝐊}(h(0)\ne h(i+1))$ and $|h(i)-h(i+1)|<\mathrm{\delta}$. The supposition and the first auxiliary assumption entail $|h(0)-h(i+1)|\geq\mathrm{\delta}$. By the second auxiliary assumption, $h(0)\ne h(i)$. Now our rational thinker will make this inference for herself, so if she knows the supposition that ${𝐊}(h(0)\ne h(i+1))$ and the two auxiliary assumptions then she knows the conclusion that $h(0)\ne h(i)$. But ($a_{0,i+1}$) says that she knows the first auxiliary assumption and ($b_i$) says that she knows the second. Thus by ($a_{0,i+1}$) and ($b_i$), if she knows the supposition then she knows the conclusion; but that is just what ($c_i$) says.
+
+If the KK principle held, ($c_i$) would simplify to
+
+($d_i$)
+${𝐊}(h(0)\ne h(i+1))\rightarrow {𝐊}(h(0)\ne h(i))$
+
+Since ($c_i$) held for all $i$, so would ($d_i$); but then we can string ($d_0$), ($d_1$), …, ($d_{4999}$) together to reach the conclusion ${𝐊}(h(0)\ne h(5000))\rightarrow {𝐊}(h(0)\ne h(0))$. Since ${𝐊}(h(0)\ne h(0))$ is absurd, that yields $\neg {𝐊}(h(0)\ne h(5000))$. But that conclusion is absurd too, for it says that our rational thinker does not know that the height of the tree is any different after many years than it was at the beginning. What the argument shows is that the KK principle does not enable us to make sense of situations in which thinkers know of limits to their powers of discrimination.
+
+So far the argument has been negative. What we need now is a positive account of limited discrimination on which the KK principle fails. To construct such an account, we specify a world $w_X$ for each subset $X$ of the natural numbers. Let $h_X(i)$ be the height of the tree on day $i$ in world $w_X$. The growth of the tree in $w_X$ is specified recursively:
+
+$h_X(0)=0$
+
+$h_X(i+1)=h_X(i)\qquad\text{if }i\in X$
+
+$h_X(i+1)=h_X(i)+2\mathrm{\delta}/3\qquad\text{otherwise}$
+
+We stipulate that world $w_Y$ is accessible from world $w_X$ if and only if $|h_X(i)-h_Y(i)|\leq2\mathrm{\delta}/3$ for all $i$ (the worlds are too similar to be discriminated). A formula is true at world $w_X$ if and only if the result of subscripting $h$ throughout by $X$ is true.
+
+We can check that schemata ($a_{i,j}$) and ($b_i$) are true at every world in this frame. ($b_i$) is easy: For any $X$ and $i$, $|h_X(i)-h_X(i+1)|<\mathrm{\delta}$ by definition of $h_X$. For ($a_{i,j}$), suppose that $|h_X(i)-h_X(j)|<\mathrm{\delta}$, where $i\leq j$. Let $Y=X\cup\{k:i\leq k<j\}$. Now if $Y$ had at least two members not in $X$, by construction $h_X(j)\geq h_X(i)+4\mathrm{\delta}/3$, contrary to the hypothesis that $|h_X(i)-h_X(j)|<\mathrm{\delta}$. Thus $X$ has at most one member not in $Y$ ($w_X$ and $w_Y$ differ at most in that on one day the tree grows in $w_X$ but not in $w_Y$). But then by construction $h_X(k)\leq h_Y(k)\leq h_X(k)+2\mathrm{\delta}/3$ for all $k$, so $|h_X(k)-h_Y(k)|\leq2\mathrm{\delta}/3$ for all $k$. Thus $w_Y$ is accessible from $w_X$. But $h_Y(j)=h_Y(i)$ by construction. In other words, for any world in which $|h(i)-h(j)|<\mathrm{\delta}$, there is an accessible world in which $h(i)=h(j)$. Thus ($a_{i,j}$) is true at every world in the frame.
+
+We now need to check that the absurd conclusion $\neg {𝐊}(h(0)\ne h(5000))$ is false at some world in the frame: we want a world at which ${𝐊}(h(0)\ne h(5000))$ is true. In fact, we can prove something stronger. There is a world at which for any $i,j,k$ such that $i<j-k$, ${𝐊}^k(h(i)\ne h(j))$ is true: that is, the thinker has $k$ iterations of knowledge that the height of the tree on day $j$ is not what it was on day $i$. For consider $w_{\{\}}$, in which the tree grows every day. Thus $h_{\{\}}(j)=2j\mathrm{\delta}/3$. To prove that ${𝐊}^k(h(i)\ne h(j))$ is true at $w_{\{\}}$, we need to prove that $h_X(i)\ne h_X(j)$ for any $X$ such that $w_X$ is within $k$ steps of accessibility of $w_{\{\}}$. Note that for any $X$, $h_X(i)\leq2i\mathrm{\delta}/3$. By definition of accessibility, if $w_X$ is within $k$ accessibility steps of $w_{\{\}}$, $h_{\{\}}(j)\leq h_X(j)+2k\mathrm{\delta}/3$. Thus if $i<j-k$,
+
+$h_X(i)\leq2i\mathrm{\delta}/3<2(j-k)\mathrm{\delta}/3=h_{\{\}}(j)-2k\mathrm{\delta}/3\leq h_X(j)$
+
+Hence $h_X(i)\ne h_X(j)$, as required. Now put $i=0$, $j=5000$. The result shows that the thinker can have up to 4999 iterations of knowledge that the height of the tree after ten years is not what it was on day 0. That should be enough for most purposes, although it does not amount to common knowledge with herself of the difference in height.
+
+The KK principle must fail in the frame, for all the other premises of the argument to $\neg {𝐊}(h(0)\ne h(5000))$ are true at every world. In fact, the result in the previous paragraph is the best possible, in the sense that if $j<i$, the thinker does not have $j-i$ iterations of knowledge that $h(i)\ne h(j)$ at any world, although she does have every smaller number of iterations at $w_{\{\}}$. To prove that the thinker lacks $j-i$ iterations at world $w_X$, define a sequence of worlds $w_{X(0)},\ldots,w_{X(j-i)}$ by $X(k)=X\cup\{m:i\leq m<i+k\}$. Thus $X(0)=X$. Now each $X(k)$ differs from $X(k+1)$ in at most one member; by an earlier argument, it follows that $w_{X(k+1)}$ is accessible from $w_{X(k)}$. Thus one can reach $w_{X(j-i)}$ in $j-i$ accessibility steps from $w_X$. But $X(j-i)=X\cup\{m:i\leq m<j\}$, so $h_{X(j-i)}(i)=h_{X(j-i)}(j)$. Hence ${𝐊}^{j-i}(h(i)\ne h(j))$ is false at $w_X$. The nontransivity of accessibility in this frame is no surprise, for one world was defined to be accessible from another just in case they were “not too different.” Being not too different is a nontransitive relation, for many small differences can add up to a big one. Of course, there is a huge variety of ways in which differences can be measured, depending on how much weighting is given to the various respects in which the worlds differ; the relevant weights will be determined by the kind of knowledge at issue and other contextual factors.
+
+Being not too different is a reflexive and symmetric relation. The accessibility relation used here is obviously reflexive and symmetric. Thus the logic of the frame is at least as strong as the Brouwerian system KTB—the logic which was seen in Section 2 to be characteristic of plural knowledge for thinkers who are individually S5-like. KTB is indeed the logic for fixed margins for error in the following sense. Let $C$ be the class of frames $\langle W,R\rangle$ such that for some metric $d$ on $W$ and some $\mathrm{\varepsilon}>0$, for all $x,y$ in $W$, $xRy$ if and only if $d(x,y)<\mathrm{\varepsilon}$ ($\mathrm{\varepsilon}$ is the margin for error); then $L_C$ is precisely KTB. For any such $R$ is reflexive and symmetric by the definition of a metric; conversely, if $R$ is reflexive and symmetric, we can define a suitable metric $d$ by
+
+$d(x,x)=0$
+
+$d(x,y)=2\quad\text{if }xRy\text{ but }x\ne y$
+
+$d(x,y)=4\quad\text{if not }xRy$
+
+Put $\mathrm{\varepsilon}=3$. Thus $C$ is the class of reflexive symmetric frames, so $L_C$ is KTB.
+
+The small differences defining accessibility can be thought of as margins for error. Even a rational thinker knows which world she is in only to within a margin for error. She knows a proposition $P$ in a world only if $P$ is true in all sufficiently similar worlds. Every iteration of the knowledge operator requires $P$ to leave a further margin for error. Since $P$ may leave only finitely many margins for error, the KK principle fails.17
+
+# 6. Margins for Error
+
+The examples considered so far have all been characterized by logics with theorems that look too strong when interpreted in terms of rational knowledge: (**$_n$), (B), (#), (D1). Moreover, if we tried to combine these axioms, we should find ourselves back with the KK principle. For example, accessibility is symmetric in any frame for (B) and connected (in a sense explained above) in any frame for (D1); but it is easy to show that any symmetric connected relation is transitive, so accessibility is transitive in any frame for both (B) and (D1).18 Yet the two axioms characterize different realizations of the same underlying intuition about margins for error. Time delays are essentially temporal margins for error, and validate (D1) when they are the only obstacles to knowledge; spatial margins for error like those in Section 4 validate (B) when they are the only obstacles. The question is what logic results from a less restrictive conception of the obstacles to knowledge.
+
+The minimal logic for rational knowledge is KT, sometimes known as T, the weakest normal system containing axiom (T)—that is, the weakest in which knowledge entails truth and is closed under logical consequence. Might there be some additional principle in common between the stronger systems considered in Sections 2 to 4 that ought to be included in a logic for rational knowledge? We can show that there is no such principle if we assume that rational knowledge is subject to variable margins for error, by showing that KT is the logic for such knowledge. Thus, in determining the logic for rational knowledge, we need not consider any obstacle to knowledge beyond variable margins for error, since consideration of them already forces us to the minimal system.
+
+A fixed margin for error principle has the following form: For every proposition $P$ of the relevant kind, $P$ is known in world $w$ only if $P$ is true in every world $x$ for which $d(w,x)<\mathrm{\varepsilon}$. Think of this as a schema, whose instances we specify by specifying the relevant kind of proposition, the metric $d$, and the constant $\mathrm{\varepsilon}>0$. A variable margins for error principle has this form: For every proposition $P$ of the relevant kind, $P$ is known in world $w$ only if for some $\mathrm{\delta}>0$ $P$ is true in every world $x$ for which $d(w,x)<\mathrm{\varepsilon}+\mathrm{\delta}$. A margin $\mathrm{\varepsilon}$ wide is just not enough for safety, but anything wider will do.
+
+If one puts $\mathrm{\varepsilon}=0$ in a variable margins for error principle, it says that $P$ is true at every world in some open neighbourhood of $w$. This would express the idea that although the rational thinker’s knowledge cannot be perfectly precise, it can attain any degree of precision short of perfection. This idea is quite consistent with the KK principle, for if $P$ is true at every world in some open neighbourhood of $w$, then for every world $x$ in that neighbourhood, $P$ is true in every world in some open neighbourhood of $x$. Thus when a variable margins for error principle with $\mathrm{\varepsilon}=0$ is the only obstacle to knowledge, the KK principle holds. However, in many situations a rational thinker’s knowledge cannot be made arbitrarily precise. She cannot make her eyesight arbitrarily good just by concentrating hard enough. For situations of this kind we need $\mathrm{\varepsilon}>0$.
+
+The idea of variable margins for error takes us just beyond the idea of a standard frame $\langle W,R\rangle$. In effect, we have a family of accessibility relations $R_{\mathrm{\delta}}$, where $wR_{\mathrm{\delta}} x$ if and only if $d(w,x)<\mathrm{\varepsilon}+\mathrm{\delta}$; the formula ${𝐊}p$ is true at $w$ if and only if, for some $\mathrm{\delta}$, the formula $p$ is true in every world $x$ such that $wR_{\mathrm{\delta}} x$. The following definition will help:
+
+A variable margin frame is a triple $\langle W,d,\mathrm{\varepsilon}\rangle$, where $W$ is a set, $d$ is a metric on $W$ and $\mathrm{\varepsilon}$ is a positive real number.
+
+A valuation $\boldsymbol{[}\ \boldsymbol{]}$ on such a frame is any mapping of formulas to propositions (subsets of $W$) such that for all formulas $A$ and $B$:
+
+$\boldsymbol{[}\neg A\boldsymbol{]}=W-\boldsymbol{[}A\boldsymbol{]}$
+
+$\boldsymbol{[}A\mathbin{\&}B\boldsymbol{]}=\boldsymbol{[}A\boldsymbol{]}\cap\boldsymbol{[}B\boldsymbol{]}$
+
+$\boldsymbol{[}{𝐊}A\boldsymbol{]}=\{w\in W:\exists\mathrm{\delta}>0\ \forall x\,\in W\ d(w,x)<\mathrm{\varepsilon}+\mathrm{\delta}\Rightarrow x\in\boldsymbol{[}A\boldsymbol{]}\}$
+
+A formula $A$ is valid on a variable margin frame $\langle W,d,\mathrm{\varepsilon}\rangle$ if and only if for every valuation $\boldsymbol{[}\ \boldsymbol{]}$ on the frame, $\boldsymbol{[}A\boldsymbol{]}=W$. It turns out that a formula is valid on every variable margin frame if and only if it is a theorem of KT (see Appendix). Thus KT is the appropriate logic for knowledge subject to variable margins for error.19
+
+As usual, the failure of the KK principle can be generalized. For any formula of the KK principle can be generalized. for any formula $A$, if $A\rightarrow {𝐊}A$ is a theorem of KT, then either $A$ is a theorem of KT or $\neg A$ is.20
+
+Since metrics are by definition symmetric, ($d(x,y)=d(y,x)$), the failure of the (B) axiom in variable margin frames may seem surprising. To see what is going on, consider any example. Let $W$ be the set of real numbers, $d(x,y)=|x-y|$, $\mathrm{\varepsilon}=1$, and $\boldsymbol{[}p\boldsymbol{]}=\{w:w\ne0\}$. Then $\boldsymbol{[}{𝐊}p\boldsymbol{]}=\{w:\exists\mathrm{\delta}>0\ \forall x\,\ |w-x|<1+\mathrm{\delta}\Rightarrow x\ne0\}=\{w:w<-1\text{ or }1<w\}$. Hence $\boldsymbol{[}{𝐊}\neg {𝐊}p\boldsymbol{]}=\{w:\exists\mathrm{\delta}>0\ \forall x\,\ |w-x|<1+\mathrm{\delta}\Rightarrow-1\leq x\leq1\}=\{\}$. Thus $0\notin\boldsymbol{[}\neg p\rightarrow {𝐊}\neg {𝐊}p\boldsymbol{]}$, so (B) is not valid on $\langle W,d,\mathrm{\varepsilon}\rangle$.
+
+One obvious issue for further research is the extension of the preceding ideas to probabilistic concepts. The failure of the KK principle may correspond to the existence of cases in which $S$ assigns a probability of 1 to the proposition $A$, but assigns a probability of less than 1 to the propositions that she assigns a probability of 1 to $A$. The phenomena discussed here suggest that there need be nothing irrational in such a probability distribution.21
+
+# Appendix
+
+Theorem
+A is valid on every variable margin frame if and only if $\vdash_{\mathrm{KT}}A$.
+
+Sketch of proof. (I) Soundness. Let $\langle W,d,\mathrm{\varepsilon}\rangle$ be a variable margin frame. We need to show that the axioms of KT are all valid on $\langle W,d,\mathrm{\varepsilon}\rangle$ and that the rules of inference of KT all preserve validity. Of these, only the axiom ${𝐊}(p\rightarrow q)\rightarrow({𝐊}p\rightarrow {𝐊}q)$ is worth looking at. Suppose that $w\in\boldsymbol{[}{𝐊}(p\rightarrow q)\boldsymbol{]}\cap\boldsymbol{[}{𝐊}p\boldsymbol{]}$. Then there are $\mathrm{\delta}_1,\mathrm{\delta}_2$ such that $d(w,x)<\mathrm{\varepsilon}+\mathrm{\delta}_1$ implies $x\in\boldsymbol{[}p\rightarrow q\boldsymbol{]}$ and $d(w,x)<\mathrm{\varepsilon}+\mathrm{\delta}_2$ implies $x\in\boldsymbol{[}p\boldsymbol{]}$. Let $\mathrm{\delta}=\min\{\mathrm{\delta}_1,\mathrm{\delta}_2\}$. Then $d(w,x)<\mathrm{\varepsilon}+\mathrm{\delta}$ implies $x\in\boldsymbol{[}p\rightarrow q\boldsymbol{]}$ and $x\in\boldsymbol{[}p\boldsymbol{]}$, so it implies $x\in\boldsymbol{[}q\boldsymbol{]}$. Hence $w\in\boldsymbol{[}{𝐊}q\boldsymbol{]}$. The rest is routine. Thus every theorem of KT is valid on every variable margin frame.
+
+(II) Completeness. Suppose that not $\vdash_{\mathrm{KT}}A_0$. Since KT is complete for reflexive frames, there is a frame $\langle W,R\rangle$ and a mapping $[\ ]$ from formulas to subsets of $W$ such that $[A_0]\ne W$ and for all formulas $A$ and $B$:
+
+$[\neg A]=W-[A]$
+
+$[A\mathbin{\&}B]=[A]\cap[B]$
+
+$[{𝐊}A]=\{w\in W:\forall x\,\in W\ wRx\Rightarrow x\in[A]\}$
+
+We use $\langle W,R\rangle$ to construct a variable margin frame $\langle W^*,d,\mathrm{\varepsilon}\rangle$ on which $A_0$ is not valid. Put
+
+$W^*=\{\langle x,y,i\rangle:x\in W,\ y\in W,\ yRx,\ i\in{𝐍}\}.$
+
+$\begin{array}{lll}
+d(\langle w,x,i\rangle,\langle y,z,j\rangle)&=0&\text{if }w=y,\ x=z\text{ and }i=j,\\
+\text{otherwise}&=1&\text{if }w=z\text{ and }x=y,\\
+&=(i+2)/(i+1)&\text{if }w\ne z\text{ but }w=y,\\
+&=(j+2)/(j+1)&\text{if }w=z\text{ but }x\ne y,\\
+&=2&\text{if }w\ne z\text{ and }x\ne y.
+\end{array}$
+
+$d$ is easily seen to be a metric. Thus $\langle W^*,d,1\rangle$ is a variable margin frame. We can define a valuation $\boldsymbol{[}\ \boldsymbol{]}$ on $\langle W^*,d,1\rangle$ by setting $\boldsymbol{[}p_i\boldsymbol{]}=\{\langle w,x,i\rangle\in W^*:w\in[p_i]\}$ for each propositional variable $p_i$ and letting the recursive clauses in the definition of a valuation do the rest.
+
+Lemma
+$\boldsymbol{[}A\boldsymbol{]}=\{\langle w,x,i\rangle\in W^*:w\in[A]\}$ for every formula $A$.
+
+Proof. By induction of the complexity of $A$.
+
+Basis: by definition of $\boldsymbol{[}\ \boldsymbol{]}$.
+
+Induction step: Suppose $\boldsymbol{[}A\boldsymbol{]}=\{\langle w,x,i\rangle\in W^*:w\in[A]\}$. We must show $\boldsymbol{[}{𝐊}A\boldsymbol{]}=\{\langle w,x,i\rangle\in W^*:w\in[{𝐊}A]\}$ (the cases of $\mathbin{\&}$ and $\neg$ are trivial).
+
+Suppose $\langle w,x,i\rangle\in\boldsymbol{[}{𝐊}A\boldsymbol{]}$. We must show $w\in[{𝐊}A]$. Suppose $wRy$. We must show $y\in[A]$. Now for some $\mathrm{\delta}>0$, $d(\langle w,x,i\rangle,\langle y,w,j\rangle)<1+\mathrm{\delta}$ implies $\langle y,w,j\rangle\in\boldsymbol{[}A\boldsymbol{]}$ for $j\in{𝐍}$.
+
+By definition of $d$,
+
+$d(\langle w,x,i\rangle,\langle y,w,j\rangle)\leq(j+2)/(j+1)\qquad\text{for }j\in{𝐍}$
+
+For large enough $j$, $(j+2)/(j+1)<1+\mathrm{\delta}$, so
+
+$d(\langle w,x,i\rangle,\langle y,w,j\rangle)<1+\mathrm{\delta}$
+
+Thus for some $j$, $\langle y,w,j\rangle\in\boldsymbol{[}A\boldsymbol{]}$. By induction hypothesis, $y\in[A]$, as required. Thus $w\in[{𝐊}A]$.
+
+Conversely, suppose $w\in[{𝐊}A]$. We must show $\langle w,x,i\rangle\in\boldsymbol{[}{𝐊}A\boldsymbol{]}$. The value $1/(i+1)$ for $\mathrm{\delta}$ will do. Suppose
+
+$d(\langle w,x,i\rangle,\langle y,z,j\rangle)<(i+2)/(i+1)$
+
+We must show $\langle y,z,j\rangle\in\boldsymbol{[}A\boldsymbol{]}$. Since $(i+2)/(i+1)\leq2$, the inequality implies, given the definition of $d$, that either $w=y$, $x=z$ and $i=j$ or $w=z$. In the former case, note that, $w\in[A]$ (since $w\in[{𝐊}A]$ and $R$ is reflexive), so by induction hypothesis $\langle y,z,j\rangle=\langle w,x,i\rangle\in\boldsymbol{[}A\boldsymbol{]}$. In the latter case ($w=z$), since $\langle y,z,j\rangle\in W^*$, $zRy$, that is, $wRy$. Since $w\in[{𝐊}A]$, $y\in[A]$, so by induction hypothesis $\langle y,z,j\rangle\in\boldsymbol{[}A\boldsymbol{]}$. Thus $\langle w,x,i\rangle\in\boldsymbol{[}{𝐊}A\boldsymbol{]}$. This completes the proof of the lemma. ■
+
+To complete the proof of the theorem, we need to show $\boldsymbol{[}A_0\boldsymbol{]}\ne W^*$, for then $A_0$ is not valid on all variable margin frames. Now for some $w\in W$, $w\notin[A_0]$. But $wRw$, since $r$ is reflexive, so $\langle w,w,0\rangle\in W^*$; by the lemma $\langle w,w,0\rangle\notin\boldsymbol{[}A_0\boldsymbol{]}$, so $\boldsymbol{[}A_0\boldsymbol{]}\ne W^*$. ■
+
+# Notes
+
+[1] Lenzen (1978, 69–77) surveys earlier discussion of the KK principle. Among later work may be mentioned Wiggins (1979) and Sorensen (1988, 242–43 and 313–17).
+
+[2] Chellas (1980) and Hughes and Cresswell (1984) give detailed expositions of the possible-worlds semantics for modal logic. The use of similar techniques in epistemic logic goes back at least to Hintikka (1962); for an elementary survey see Halpern (1986).
+
+[3] Mathematically, the appearance/reality model is equivalent to the game theoretic model of knowledge by means of information partitions.
+
+[4] See Hintikka (1962, 106), Lenzen (1978, 79), Humberstone (1988, 187).
+
+[5] The appearance/reality model is not the only source of support for the KK principle. For example, if knowledge were equated with provability from a fixed stock of assumptions, it would satisfy the KK principle, for if a proposition is provable then it is provably provable; (5) is not validated, for unprovability does not entail provable unprovability. For the modal logic of provability in formal systems extending arithmetic, see Boolos (1979) or Smoryński (1985). However, this logic lacks the theorem ${𝐊}p\rightarrow p$, and so is not a suitable logic for knowledge; it also has the theorem ${𝐊}\neg {𝐊}p\rightarrow {𝐊}(p\mathbin{\&}\neg p)$. These particular results are avoided if one looks at the logic of “formally provable and true” rather than “formally provable”, but even this logic has the theorem $\neg {𝐊}\neg({𝐊}p\vee {𝐊}\neg p)$, so that it is unacceptable as a logic of knowledge (see Boolos 1979, 160–61 for related results). Thus a concept of informal provability would be needed. The considerations below will undermine this model too. In particular: if someone knows the assumptions in the fixed stock but does not know that she knows them, her knowledge that she has deduced a conclusion from them will not give her knowledge that she knows that conclusion. For connections between common knowledge and the failure of (5) for provability, see Shin (1993).
+
+[6] See Aumann (1976).
+
+[7] See Littlewood (1953) and Fudenberg and Tirole (1991, 544–48).
+
+[8] See Williamson (1992b) for a proof.
+
+[9] See Sedley (1977, 94).
+
+[10] It may be objected that if a proposition is true at any time then it is true at every time. However, we can speak of a state of affairs (e.g., someone’s being wise) obtaining at one time and not at another. The knowledge discussed in Section 3 may be regarded as knowledge of states of affairs. The intuition is that a state of affairs can be known to obtain only if it has been obtaining for some time. This complication is ignored in the text. Note that even if the intuition holds good only for a limited range of states of affairs, the objection to the KK principle remains provided that for each state of affairs $X$ in the range, the range also includes the state of affairs of $X$’s being known to obtain.
+
+[11] Proof. If (#) is invalid in a frame, there are worlds $w,x,y,z$ and an assignment of propositions to formulas such that $wRx$, $wRy$, $wRz$ $p\rightarrow q$ is false at $x$, $p\rightarrow\neg q$ is false at $y$ and $p$ is false at $z$. Hence $p$ is true and $q$ false at $x$, and $p$ is true and $q$ true at $y$. Hence $x,y$, and $z$ are distinct.
+
+[12] Sketch of proof. Let $\langle W,R\rangle$ be the frame described in the text. If $\vdash_{\mathrm{KT\#}}A$, $A$ is valid on $\langle W,R\rangle$ for reasons already given. Suppose that not $\vdash_{\mathrm{KT\#}}A$. Then $A$ is false at some world $w$ in the canonical model of KT#; this model is based on a frame in which every world can access itself and at most one other world. Now $A$ is false at $w$ in the submodel of the canonical model generated by $w$, so $A$ is not valid on the frame of this submodel. The latter frame is a $p$-morphic image of $\langle W,R\rangle$. By the $p$-morphism theorem, $A$ is not valid on $\langle W,R\rangle$ (for background see Hughes and Cresswell 1984, 16–29 and 70–73).
+
+[13] Sketch of proof: Let KD! be the smallest normal system having the theorem $\neg {𝐊}p\equiv {𝐊}\neg p$. Define two mappings $s$ and $t$ from formulas to formulas inductively as follows: $sp_i=tp_i=p_i$ for each propositional variable $p_i$; $s\neg A=\neg sA$; $t\neg A=\neg tA$; $s(A\mathbin{\&}B)=sA\mathbin{\&}sB$; $t(A\mathbin{\&}B)=tA\mathbin{\&}tB$; $s{𝐊}A=sA\mathbin{\&}{𝐊}sA$; $t{𝐊}A=(tA\vee {𝐊}\neg tA)\rightarrow {𝐊}tA$. One can show by induction on the length of proofs in standard proof systems for KT# and KD! (with MP and Nec as the only rules of inference) that if $\vdash_{\mathrm{KT\#}}A$ then $\vdash_{\mathrm{KD!}}sA$ and if $\vdash_{\mathrm{KD!}}A$ then $\vdash_{\mathrm{KT\#}}tA$. One can also show by induction on the complexity of $A$ that $\vdash_{\mathrm{KT\#}}A\equiv tsA$. Now suppose $\vdash_{\mathrm{KT\#}}A\rightarrow {𝐊}A$. Hence $\vdash_{\mathrm{KD!}}s(A\rightarrow {𝐊}A)$. But $s(A\rightarrow {𝐊}A)=sA\rightarrow(sA\mathbin{\&}{𝐊}sA)$, so $\vdash_{\mathrm{KD!}}sA\rightarrow {𝐊}sA$. By a result of Williamson (1992b), either $\vdash_{\mathrm{KD!}}sA$ or $\vdash_{\mathrm{KD!}}\neg sA$, that is, $\vdash_{\mathrm{KD!}}s\neg A$. Hence $\vdash_{\mathrm{KT\#}}tsA$ or $\vdash_{\mathrm{KT\#}}ts\neg A$. But $\vdash_{\mathrm{KT\#}}A\equiv tsA$ and $\vdash_{\mathrm{KT\#}}\neg A\equiv ts\neg A$, so $\vdash_{\mathrm{KT\#}}A$ or $\vdash_{\mathrm{KT\#}}\neg A$.
+
+[14] See Hughes and Cresswell (1984, 30–31).
+
+[15] An argument like that of Section 4 is discussed in more detail in Williamson (1992a), where various objections are rebutted and connections with the paradoxes of the Surprise Examination and Iterated Prisoner’s Dilemma are made.
+
+[16] The knowledge in question is not restricted to direct perceptual knowledge (otherwise deductive closure would fail even for a perfectly rational subject). It may therefore be objected that our thinker can know that $h(i)\ne h(j)$ even when $|h(i)-h(j)|=2\mathrm{\delta}/3$. For a $k$ can exist such that $|h(i)-h(k)|=4\mathrm{\delta}/3$ and $|h(j)-h(k)|=2\mathrm{\delta}/3$, so that she can directly discriminate $h(i)$ but not $h(j)$ from $h(k)$; why cannot she use this fact indirectly to discriminate $h(i)$ from $h(j)$? The fallacy in this objection is the assumption that the subject is always in a position to know whether she has discriminated successfully or not. Since discrimination between $h(i)$ and $h(j)$ is represented as ${𝐊}(h(i)\ne h(j))$, the assumption combines special cases of the (4) and (5) axioms. If it were true, a rational subject with terrible eyesight and a terrible memory could work out many years later on exactly which days the tree had grown, by arguments of the above form. For small enough $\mathrm{\delta}$, (a) is compelling even for inferential knowledge.
+
+[17] One might attempt to restore the KK principle by equating knowledge of $p$ with the infinite conjunction $\bigwedge_{0\leq n}{𝐊}^np$, rather than with ${𝐊}p$. This corresponds to replacing the original nontransitive accessibility relation by its transitive ancestral. However, the resulting notion is too strong to be of much interest. For example, by what is shown in the text our thinker will not know that $h(i)\ne h(j)$ in the new sense, no matter how much the tree has grown from $i$ to $j$. The new notion fails to discriminate between relevantly different cases. Nor can one recover the old, discriminating notion of knowledge as true belief of high probability, for the former notion, unlike the probabilistic one, satisfies the principle $({𝐊}p\mathbin{\&}{𝐊}q)\rightarrow {𝐊}(p\mathbin{\&}q)$.
+
+[18] Correspondingly, (4) is a theorem of KBD1, the smallest normal logic containing (B) and (D1). For otherwise it would be invalid on the frame of the canonical model for KBD1; but this frame can be shown to be symmetric and connected in the sense defined in the text, and therefore transitive.
+
+[19] The remark in the text assumes that every metric can be realized in some possible epistemic situation. This assumption can be weakened to: Every metric on a countable domain can be realized in some possible epistemic situation. For since KT has the finite model property (Hughes and Cresswell 1984, 142–43), the frame $\langle W,R\rangle$ in the completeness leg of the theorem in the Appendix may be taken to be finite, in which case $W^*$ will be countable by construction.
+
+[20] See Williamson (1992b) and Chellas and Segerberg (1994).
+
+[21] See also Williamson (1992a, 237–39). The approach of Monderer and Samet (1989) to common belief can be generalized to a context in which the KK principle fails as follows. Let $\langle\mathrm{\Omega},\mathrm{\Sigma},\mu\rangle$ be a probability space, $I$ a set of agents, and $R_i$ a (possibly nontransitive) accessibility relation on $\mathrm{\Omega}$ such that if $\omega\in\mathrm{\Omega}$, $\{\pi:\omega R_i\pi\}$ is an event. For any event $C$, $i\in I$, $\omega\in\mathrm{\Omega}$, and $0\leq p\leq1$, $i$ $p$-believes $C$ at $\omega$ ($\omega\in B_i^p(C)$) just in case $\mu(C\mid\{\pi:\omega R_i\pi\})\geq p$. Now put $E^p(C)=\bigcap_{n\geq1}C^n$, where $C^0=C$ and, for $n\geq1$, $C^n=\bigcap_{m<n}\bigcap_{i\in I}B_i^p(C^m)$. Then $C$ is common $p$-belief at $\omega$ iff $\omega\in E^p(C)$.
+
+# References
+
+Aumann, R. 1976. “Agreeing to disagree,” Annals of Statistics 4: 1236–39.
+
+Boolos, G. 1979. The Unprovability of Consistency (Cambridge: Cambridge University Press).
+
+Chellas, B. F. 1980. Modal Logic (Cambridge: Cambridge University Press).
+
+Chellas, B. F. and Segerberg, K. 1994. “Modal logics with the Macintosh Rule,” Journal of Philosophical Logic, 23: 67–86.
+
+Fudenberg, D. and Tirole, J. 1991. Game Theory (Cambridge, Mass.: MIT Press).
+
+Halpern, J. Y. 1986. “Reasoning about knowledge: an overview,” in J. Y. Halpern, ed., Theoretical Aspects of Reasoning about Knowledge: Proceedings of the 1986 Conference (Los Altos: Morgan Kaufmann): 1–17.
+
+Hintikka, J. 1962. Knowledge and Belief (Ithaca: Cornell University Press).
+
+Hughes, G. E. and Cresswell, M. J. 1984. A Companion to Modal Logic (London: Methuen).
+
+Humberstone, I. L. 1988. “Some epistemic capacities,” Dialectica 42: 183–200.
+
+Lenzen, W. 1978. “Recent work in epistemic logic,” Acta Philosophica Fennica 30: 1–219.
+
+Littlewood, J. E. 1953. A Mathematician’s Miscellany (London: Methuen).
+
+Monderer, D. and Samet, D. 1989. “Approximating common knowledge with common belief,” Games and Economic Behaviour 1: 170–90.
+
+Sedley, D. N. 1977. “Diodorus Cronus and Hellenistic philosophy,” Proceedings of the Cambridge Philological Society 23: 74–120.
+
+Shin, H. S. 1993. “Logical structure of common knowledge,” Journal of Economic Theory, 60: 1–13.
+
+Smoryński, C. 1985. Self-reference and Modal Logic (New York: Springer).
+
+Sorensen, R. A. 1988. Blindspots (Oxford: Clarendon Press).
+
+Wiggins, D. R. P. 1979. “On knowing, knowing that one knows and consciousness,” in E. Saarinen, R. Hilpinen, I. Niiniluoto and M. Provence Hintikka, eds., Essays in Honour of Jaakko Hintikka (Dordrecht: Reidel): 237–48.
+
+Williamson, T. 1992a. “Inexact knowledge,” Mind 101: 217–42.
+
+Williamson, T. 1992b. “An alternative rule of disjunction in modal logic,” Notre Dame Journal of Formal Logic 33: 89–100.

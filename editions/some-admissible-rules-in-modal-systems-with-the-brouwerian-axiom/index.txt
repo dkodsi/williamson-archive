@@ -1,0 +1,649 @@
+# Some Admissible Rules in Modal Systems with the Brouwerian Axiom
+
+Timothy Williamson
+
+Journal of the IGPL 4 (2) (1996): 283–303.
+
+Abstract
+
+The paper studies the admissibility of some cancellation rules in normal modal systems with the Brouwerian axiom. For example, KDB and KTB are proved to admit the following rule: if $\vdash\neg(\alpha\mathbin{\wedge}\beta)$ and $\vdash◇\alpha\equiv◇\beta$ then $\vdash\neg(\alpha\mathbin{\vee}\beta)$. Two notions of the preservation of validity by a rule on a frame are defined; on both, the preservation of validity by the preceding rule is shown not to be a first-order condition. A speculative connection is suggested with logics of vagueness.
+
+# 1 Introduction
+
+This paper investigates the admissibility, in normal modal systems $L$ with the ‘Brouwerian’ axiom (B) $p\supset□◇ p$, of the following rules of proof:
+
+(CANCEL)
+If $\vdash_L□\alpha\equiv□\beta$ then $\vdash_L\alpha\equiv\beta$
+(DCANCEL)
+If $\vdash_L□\alpha\equiv□\beta$ and $\vdash_L◇\alpha\equiv◇\beta$ then $\vdash_L\alpha\equiv\beta$
+
+Here $\alpha$ and $\beta$ may be any wffs. Various restrictions on them will also be considered, for CANCEL and DCANCEL provoke modal collapse (the theorem $□ p\equiv p$) or near-collapse in many Brouwerian systems (Section 3). Some restricted versions of CANCEL and DCANCEL are established for the systems KDB and KTB (Section 4). In some cases the restrictions are on the complexity of $\alpha$ and $\beta$. KDB and KTB are also shown to admit the following rule, which is equivalent for normal systems to a restriction of DCANCEL:
+
+(EXC)
+If $\vdash_L\neg(\alpha\mathbin{\wedge}\beta)$ and $\vdash_L◇\alpha\equiv◇\beta$ then $\vdash_L\neg(\alpha\mathbin{\vee}\beta)$
+
+Brouwerian systems also provide insight into more general questions about the admissibility of rules in modal logic (Section 5). Senses are distinguished in which a rule may preserve the validity of formulas on a frame either framewise or modelwise. DCANCEL and EXC are shown to preserve validity framewise but not modelwise on some frames for Brouwerian systems (5.10). These examples are also of interest for the correspondence theory of admissible rules, for validity preservation in either sense by DCANCEL or EXC is not a first-order condition on a frame (5.7–5.9).
+
+The methods used below to establish the admissibility of rules are semantic, in the tradition of Lemmon and Scott [4]. The admissibility of rules like those above can also be studied by syntactic methods (see [11] for examples and further references). It would be illuminating, but seems to be hard, to apply such methods to rules in Brouwerian systems. For a general framework for the investigation of rules in modal systems see [1].
+
+Another motivation for the study is philosophical. Interpret $□\alpha$ as meaning ‘$\alpha$ is assertible’; thus $◇\alpha$ means ‘$\alpha$ is not deniable’. Then CANCEL may be read as saying that two wffs with the same assertibility conditions have the same truth conditions, i.e. that assertibility conditions determine truth conditions. Similarly, DCANCEL may be read as saying that two wffs with the same assertibility conditions and the same deniability conditions have the same truth conditions, i.e. that assertibility conditions and deniability conditions jointly determine truth conditions. So far, such readings are quite programmatic; non-logical constraints on assertibility and deniability for atomic wffs have also been ignored. This motivation is elaborated in [6]. [6] and [8] investigate the admissibility of the rules in systems with the 4 axiom $□ p\supset□□ p$, corresponding to the principle that what is assertible is assertibly assertible.
+
+Now consider inexact knowledge, e.g. rough estimates based on perception. A margin for error may be necessary and sufficient for assertibility, i.e. $\alpha$ is assertible at a world $w$ just in case $\alpha$ is true at all worlds relevantly similar enough to $w$ to be indiscriminable from it ([9] and [10]). Thus $□$ has a possible worlds semantics, with sufficient similarity as the accessibility relation. Given a suitable metric $d$ on the set of worlds, $x$ might be accessible from $w$ just in case $d(w,x)<c$ for some fixed real number $c>0$. This view requires accessibility to be reflexive and symmetric. It requires no more, for any reflexive symmetric relation is of the form $d(w,x)<c$ for some constant $c$ and metric $d$ ([9]). Thus accessibility need not be transitive, and the 4 axiom is invalid. Reflexive symmetric models characterize the ‘Brouwerian’ system KTB, the smallest normal system with B (for symmetry) and the T axiom $□ p\supset p$ (for reflexivity).
+
+Vagueness is a source of inexactness. One might read $□\alpha$ as ‘$\alpha$ is clear’, and think of worlds as interpretations: $\alpha$ is clear for an interpretation $w$ just in case $\alpha$ is true for every interpretation $x$ that $w$ permits; $w$ permits $x$ just in case $x$ is relevantly similar enough to $w$ (permitting might be epistemic or semantic). Thus KTB becomes a highly idealized logic of vagueness. The 4 axiom fails because what is clear need not be clearly clear (higher-order vagueness). Of course, the underlying logic of KTB is classical; it is controversial whether classical logic is appropriate for vague languages (see [12] for more discussion). CANCEL now says that wffs with the same clarity conditions have the same truth conditions, i.e. that clarity conditions determine truth conditions; similarly for DCANCEL. Since a system can admit CANCEL or DCANCEL without suffering modal collapse, this is not to equate clarity conditions with truth conditions. Results below show that if KTB is the logic of vagueness, this ‘intermediate’ position is consistent for a large class of not too complex formulas but not for all formulas (see 3.2).
+
+# 2 Notation
+
+A standard language for propositional modal logic is used: a denumerable infinity of propositional variables $p,q,r,\ldots$, the 0-place operators connectives $\top$ (truth) and $\bot$ (falsity), the 1-place operators $\neg$ (negation), $□$ (read in Section 1 as verifiability) and $◇$ (read in Section 1 as unfalsifiability), and the 2-place operators $\supset$ (material conditional), $\equiv$ (material biconditional), $\wedge$ (conjunction) and $\vee$ (disjunction). For most purposes, only $\bot$, $\supset$ and $□$ need be taken as primitive, with the usual definitions of the other operators; it will occasionally be convenient to take the primitives as $□$, $◇$, $\neg$, $\wedge$ and $\vee$. The metalinguistic variables $\alpha,\beta,\gamma,\ldots$ range over all wffs; the metalinguistic variable $p_i$ ranges over all propositional variables. $□^0\alpha=\alpha$; $□^{n+1}\alpha=□^n□\alpha$.
+
+A normal system is a set of wffs $L$ containing all theorems of PC (classical propositional calculus) and the wff $□(p\supset q)\supset(□ p\supset□ q)$ and closed under uniform substitution, modus ponens and necessitation. We write $\vdash_L\alpha$ for $\alpha\in L$. When $◇$ is taken as primitive, a normal system is also required to contain the wff $◇ p\equiv\neg□\neg p$. $\mathrm{KX}_1\ldots\mathrm{X}_n$ is the intersection of all normal systems containing the wffs $\mathrm{X}_1,\ldots,\mathrm{X}_n$. For convenience, all names of axioms used below are listed here:
+
+$\mathrm{B}$
+$p\supset□◇ p$
+$\mathrm{G}_1$
+$◇□ p\supset□◇ p$
+$\mathrm{D}$
+$◇\top$
+$\mathrm{T}$
+$□ p\supset p$
+$\mathrm{T!}$
+$□ p\equiv p$
+$\mathrm{T^2!}$
+$□□ p\equiv p$
+$\mathrm{Alt}_2$
+$[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset□ p$
+$\text{¶}$
+$□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset p$
+$\text{¶}'$
+$□[\{◇(p\wedge q)\wedge◇(p\wedge\neg q)\}\vee\{◇(p\wedge r)\wedge◇(p\wedge\neg r)\}]\supset p$
+$\ddagger$
+$p\equiv[◇□ p\vee(□◇ p\wedge\neg◇□□◇ p)]$
+
+KD, KT, KTB, KT4, KTB4 and KT! are the systems often known as D, T, B, S4, S5 and Triv respectively. A system is trivial iff it contains Triv. The citation of a system in justifying a line of a proof means that the transition being justified can be made in all normal extensions of that system.
+
+A model is a triple $\langle W,R,V\rangle$, where $W$ is a non-empty set (of ‘points’), $R$ is a binary relation on $W$ (‘accessibility’), and $V$ is a binary function from wffs and points to $\{0,1\}$ such that: $V(\neg\alpha,w)=1-V(\alpha,w)$; $V(\alpha\wedge\beta,w)=V(\alpha,w)\cdot V(\beta,w)$; $V(□\alpha,w)=1$ just in case $V(\alpha,x)=1$ for all $x\in W$ such that $wRx$. Informally, if $V(\alpha,w)=1$ ($0$) then $\alpha$ is true (false) at $w$. A frame is a pair $\langle W,R\rangle$ where $W$ and $R$ are as above. $\langle W,R\rangle$ is cohesive iff the smallest equivalence relation containing $R$ is $W\times W$. For $u,v\in W$, $uR^0v$ iff $u=v$; $uR^{n+1}v$ iff for some $w\in W$, $uR^nw$ and $wRv$. $\alpha$ is valid in a model $\langle W,R,V\rangle$ iff $V(\alpha,w)=1$ for all $w\in W$. $\alpha$ is valid on a frame $\langle W,R\rangle$ iff $\alpha$ is valid in every model $\langle W,R,V\rangle$. $\langle W,R,V\rangle$ is a model of a system $L$ iff $\alpha$ is valid in $\langle W,R,V\rangle$ for all $\alpha\in L$. $\langle W,R\rangle$ is a frame for $L$ iff every model $\langle W,R,V\rangle$ is a model of $L$.
+
+The modal depth $\#\alpha$ of $\alpha$ is defined as usual: $\#p_i=0$; $\#\bot=0$; $\#(\alpha\supset\beta)=\mathit{max}\{\#\alpha,\#\beta\}$; $\#□\alpha=1+\#\alpha$.
+
+# 3 Some Inadmissible Rules in Some Extensions of KB
+
+We begin with some results to the effect that only very strong extensions of KB admit CANCEL and DCANCEL. In particular, CANCEL produces modal near-collapse in normal extensions of KB; on the interpretation sketched in Section 1, assertibility conditions do not determine truth conditions in these systems. By contrast, weak non-Brouwerian systems such as K and KD do admit CANCEL (see [4] and [11] for more results on CANCEL). These results leave us with two lines of inquiry. We can seek restrictions of the rules that are admissible in the weaker extensions of KB of most interest, such as KDB and KTB. Alternatively, we can seek stronger systems in which DCANCEL is admissible. Section 4 does the first; with rather less success, Section 5 does the second.
+
+Proposition 3.1
+A normal extension of KB admits CANCEL if and only if it is either KT²! or trivial.
+
+Proof. Let $L$ be any normal extension of KB that admits CANCEL. Then the following wffs are theorems of $L$:
+
+(1)	$□◇□ p\equiv□ p$	$\mathrm{KB}$
+(2)	$◇□ p\equiv p$	$1\ \mathrm{CANCEL}$
+(3)	$◇□□ p\equiv□ p$	$2\ \mathrm{US}$
+(4)	$\neg□(p\wedge\neg□□ p)$	$3\ \mathrm{K}$
+(5)	$\neg◇□(p\wedge\neg□□ p)$	$4\ \mathrm{K}$
+(6)	$\neg(p\wedge\neg□□ p)$	$2,5\ \mathrm{US}$
+(7)	$◇□\top\equiv\top$	$2\ \mathrm{US}$
+(8)	$□□ p\supset◇□ p$	$7\ \mathrm{K}$
+(9)	$□□ p\supset p$	$2,8\ \mathrm{PC}$
+(10)	$□□ p\equiv p$	$6,9\ \mathrm{PC}$
+
+Thus $L$ contains KT²!. By standard correspondence theory, if $L$ is valid on a frame consisting of two irreflexive points each accessible from the other, then $L$ is KT²!; if $L$ is not valid on such a frame, then $L$ is trivial. Evidently, any normal extension of KT²! admits CANCEL. $\blacksquare$
+
+Proposition 3.2
+KB, KDB, KTB, KB4 and KTB4 ($=$ S5) do not admit CANCEL.
+
+Proof. From 3.1. $\blacksquare$
+
+The systems KB, KDB and KTB also fail to admit the rule DCANCEL; on the interpretation sketched in Section 1, assertibility conditions and deniability conditions do not jointly determine truth conditions in these systems. Indeed, they are not closed under the restriction of DCANCEL to the special case in which $\alpha\supset\beta$ is a theorem. By contrast, the non-Brouwerian systems K, KD and KT do admit DCANCEL ([7]). Consider the rule:
+
+(INC)
+If $\vdash_L\alpha\supset\beta$, $\vdash_L□\beta\supset□\alpha$ and $\vdash_L◇\beta\supset◇\alpha$ then $\vdash_L\beta\supset\alpha$.
+
+Any normal system admits INC if it admits DCANCEL, for if $\vdash_L\alpha\supset\beta$ then $\vdash_L□\alpha\supset□\beta$ and $\vdash_L◇\alpha\supset◇\beta$ by normality. Now consider the wff:
+
+(¶)
+$□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset p$
+
+Proposition 3.3
+If $L$ is a normal extension of KB, then $L$ admits INC if and only if $\vdash_L$ ¶.
+
+Proof. Let $L$ be a normal extension of KB.
+
+$(\Rightarrow)$ Suppose that $L$ admits INC. Then the following are theorems of $L$:
+
+(1)	$(p\wedge q)\supset[(p\wedge q)\vee\neg\text{¶}]$	$\mathrm{PC}$
+(2)	$◇□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset[◇(p\wedge q)\wedge◇(p\wedge\neg q)]$	$\mathrm{KB}$
+(3)	$\begin{aligned}&[(p\wedge q)\vee\neg\text{¶}]\supset{}\\&\{(p\wedge q)\vee□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\}\end{aligned}$	$\mathrm{PC}$
+(4)	$\begin{aligned}&◇[(p\wedge q)\vee\neg\text{¶}]\supset{}\\&\{◇(p\wedge q)\vee◇□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\}\end{aligned}$	$3\ \mathrm{K}$
+(5)	$◇[(p\wedge q)\vee\neg\text{¶}]\supset◇(p\wedge q)$	$2,4\ \mathrm{PC}$
+(6)	$\begin{aligned}&\{□[(p\wedge q)\vee\neg\text{¶}]\wedge\neg□(p\wedge q)\}\supset{}\\&◇□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\end{aligned}$	$3\ \mathrm{K}$
+(7)	$\{□[(p\wedge q)\vee\neg\text{¶}]\wedge\neg□(p\wedge q)\}\supset◇(p\wedge\neg q)$	$2,6\ \mathrm{PC}$
+(8)	$[(p\wedge q)\vee\neg\text{¶}]\supset\neg(p\wedge\neg q)$	$\mathrm{PC}$
+(9)	$□[(p\wedge q)\vee\neg\text{¶}]\supset\neg◇(p\wedge\neg q)$	$8\ \mathrm{K}$
+(10)	$□[(p\wedge q)\vee\neg\text{¶}]\supset□(p\wedge q)$	$7,9\ \mathrm{PC}$
+(11)	$[(p\wedge q)\vee\neg\text{¶}]\supset(p\wedge q)$	$1,10,5\ \mathrm{INC}$
+(12)	$p\supset\text{¶}$	$\mathrm{PC}$
+(13)	$\text{¶}$	$11,12\ \mathrm{PC}$
+
+$(\Leftarrow)$ Suppose that ¶ is a theorem of $L$. Then if (1)–(3) are theorems of $L$, so are (4)–(11):
+
+(1)	$\alpha\supset\beta$	$\text{Hypothesis}$
+(2)	$□\beta\supset□\alpha$	$\text{Hypothesis}$
+(3)	$◇\beta\supset◇\alpha$	$\text{Hypothesis}$
+(4)	$□[◇((\beta\supset\alpha)\wedge\beta)\wedge◇((\beta\supset\alpha)\wedge\neg\beta)]\supset(\beta\supset\alpha)$	$\mathrm{K}\text{¶}$
+(5)	$◇(\beta\wedge\neg\alpha)\supset◇((\beta\supset\alpha)\wedge\neg\beta)$	$2\ \mathrm{K}$
+(6)	$◇(\beta\wedge\neg\alpha)\supset◇\alpha$	$3\ \mathrm{K}$
+(7)	$◇\alpha\supset◇((\beta\supset\alpha)\wedge\beta)$	$1\ \mathrm{K}$
+(8)	$◇(\beta\wedge\neg\alpha)\supset[◇((\beta\supset\alpha)\wedge\beta)\wedge◇((\beta\supset\alpha)\wedge\neg\beta)]$	$5,6,7\ \mathrm{PC}$
+(9)	$□◇(\beta\wedge\neg\alpha)\supset□[◇((\beta\supset\alpha)\wedge\beta)\wedge◇((\beta\supset\alpha)\wedge\neg\beta)]$	$8\ \mathrm{K}$
+(10)	$(\beta\wedge\neg\alpha)\supset□◇(\beta\wedge\neg\alpha)$	$\mathrm{KB}$
+(11)	$\beta\supset\alpha$	$10,9,4\ \mathrm{PC}$
+
+Thus $L$ admits INC. $\blacksquare$
+
+Proposition 3.4
+If $L$ is a normal extension of KB and admits INC, then any normal extension of $L$ admits INC.
+
+Proof. From 3.3. $\blacksquare$
+
+Proposition 3.5
+If $L$ is a normal extension of KB and admits INC, then $\vdash_L(□◇ p\wedge\neg◇□□◇ p)\supset p$, $\vdash_L◇□□◇◇ p\equiv□◇ p$, $\vdash_L◇\top$.
+
+Proof. Exercise (from 3.3). $\blacksquare$
+
+Proposition 3.6
+If $L$ is a normal extension of KB and admits DCANCEL, then $\vdash_L$ ¶, $\vdash_L(□◇ p\wedge\neg◇□□◇ p)\supset p$, $\vdash_L◇□□◇◇ p\equiv□◇ p$, $\vdash_L◇\top$.
+
+Proof. From 3.3 and 3.5. $\blacksquare$
+
+Proposition 3.7
+KB, KDB, KTB, KB4 and KTB4 admit neither INC nor DCANCEL.
+
+Proof. Consider a model $\langle W,R,V\rangle$ in which $W=\{u,v,w\}$, $R=W\times W$, $V(p,u)=V(p,v)=V(q,u)=1$ and $V(p,w)=V(q,v)=0$. Then $V(\text{¶},w)=0$. $\langle W,R,V\rangle$ is a model of all the systems mentioned. $\blacksquare$
+
+Some easy negative results about normal extensions of KB4 will be noted here, to explain the absence of such systems from later sections. For general results on CANCEL and DCANCEL in extensions of K4 see [6] and [8].
+
+Proposition 3.8
+If $L$ is a normal extension of KB4, then $L$ admits INC if and only if $L$ is either KTB4Alt₂ or trivial.
+
+Proof. Let $L$ be a normal extension of KB4. $(\Rightarrow)$ Suppose that $L$ admits INC. By 3.5, $\vdash_L◇\top$, so $L$ extends KDB4, which is easily shown to be KTB4, i.e. S5. Thus the following are theorems of $L$:
+
+(1)	$□\text{¶}$	$3.3\ \mathrm{K}$
+(2)	$□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset□ p$	$1\ \mathrm{K4}$
+(3)	$[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset□[◇(p\wedge q)\wedge◇(p\wedge\neg q)]$	$\mathrm{KB4}$
+(4)	$[◇(p\wedge q)\wedge◇(p\wedge\neg q)]\supset□ p$	$2,3\ \mathrm{PC}$
+
+Thus $L$ contains KTB4Alt₂. By standard correspondence theory, if $L$ is valid on a frame consisting of two reflexive points each accessible from the other, then $L$ is KTB4Alt₂; if $L$ is not valid on such a frame, then $L$ is trivial.
+
+$(\Leftarrow)$ It is easy to show that if $L$ extends KTAlt₂ then $\vdash_L$ ¶, so $L$ admits INC by 3.3. $\blacksquare$
+
+3.8 may be compared with 3.1. The latter implies that CANCEL is admissible in an extension L of KB just when L is valid on a cohesive irreflexive symmetric two-point frame, the former that INC is admissible in an extension L of KB4 just when L is valid on a cohesive reflexive symmetric two-point frame.
+
+This is a convenient point to introduce another restriction of DCANCEL that will figure in Section 4, and to note its trivializing effect on normal extensions of KB4. Just as INC restricts DCANCEL to the case in which one proposition includes the other, so the following rule restricts DCANCEL to the case in which one proposition excludes the other:
+
+(EXC)
+If $\vdash_L\neg(\alpha\wedge\beta)$ and $\vdash_L◇\alpha\equiv◇\beta$ then $\vdash_L\neg(\alpha\vee\beta)$.
+
+By obvious manipulations, EXC is equivalent to the rule that if $\vdash_L\alpha\vee\beta$ and $\vdash_L□\alpha\equiv□\beta$ then $\vdash_L\alpha\wedge\beta$.
+
+Proposition 3.9
+If a normal system admits DCANCEL, then it admits EXC.
+
+Proof. Let $L$ be a normal system that admits DCANCEL. Then if (1) and (2) are theorems of $L$, so are (3)–(7).
+
+(1)	$\neg(\alpha\wedge\beta)$	$\text{Hypothesis}$
+(2)	$◇\alpha\equiv◇\beta$	$\text{Hypothesis}$
+(3)	$□\alpha\supset□\bot$	$1,2\ \mathrm{K}$
+(4)	$□\alpha\supset□\beta$	$3\ \mathrm{K}$
+(5)	$□\beta\supset□\alpha$	$\text{Like 4}$
+(6)	$\alpha\equiv\beta$	$2,4,5\ \mathrm{DCANCEL}$
+(7)	$\neg(\alpha\vee\beta)$	$1,6\ \mathrm{PC}$
+
+$\blacksquare$
+
+Proposition 3.10
+If a normal extension of KB admits EXC, then it contains KDB.
+
+Proof. Let $L$ be a normal extension of KB that admits EXC. Then the following are theorems of $L$.
+
+(1)	$\neg(\bot\wedge□\bot)$	$\mathrm{PC}$
+(2)	$\neg◇\bot$	$\mathrm{K}$
+(3)	$◇□\bot\supset\bot$	$\mathrm{KB}$
+(4)	$◇\bot\equiv◇□\bot$	$2,3\ \mathrm{PC}$
+(5)	$\bot\equiv□\bot$	$1,4\ \mathrm{EXC}$
+(6)	$◇\top$	$5\ \mathrm{K}$
+
+$\blacksquare$
+
+Proposition 3.11
+If $L$ is a normal extension of KB4, then $L$ admits EXC if and only if $L$ is trivial.
+
+Proof. Let $L$ be a normal extension of KB4. If $L$ admits EXC, the following are theorems of $L$:
+
+(1)	$(p\wedge◇\neg p)\supset(□◇ p\wedge◇\neg p)$	$\mathrm{KB}$
+(2)	$(□◇ p◇\neg p)\supset◇(\neg p\wedge◇ p)$	$\mathrm{K}$
+(3)	$◇(p\wedge◇\neg p)\supset◇◇(\neg p\wedge◇ p)$	$1,2\ \mathrm{K}$
+(4)	$◇(p\wedge◇\neg p)\supset◇(\neg p\wedge◇ p)$	$3\ \mathrm{K4}$
+(5)	$◇(\neg p\wedge◇ p)\supset◇(p\wedge◇\neg p)$	$\text{Like 4}$
+(6)	$◇(p\wedge◇\neg p)\equiv◇(\neg p\wedge◇ p)$	$4,5\ \mathrm{PC}$
+(7)	$(p\wedge◇\neg p)\equiv(\neg p\wedge◇ p)$	$6\ \mathrm{EXC}$
+(8)	$p\supset□ p$	$7\ \mathrm{K}$
+(9)	$\neg p\supset□\neg p$	$7\ \mathrm{K}$
+(10)	$\neg p\supset◇\neg p$	$9\ 3.10$
+(11)	$□ p\equiv p$	$8,10\ \mathrm{K}$
+
+$\blacksquare$
+
+# 4 Some Admissible Rules in KDB and KTB
+
+We can trace a line beyond which CANCEL fails in KB and KDB by seeing where a standard semantic proof of the admissibility of CANCEL in K and KD breaks down. Such a proof uses contraposition; it takes a point $v$ in a model of the system in question at which $\alpha\equiv\beta$ is false, adds a point $u$ that has $R$ to $v$ but to no other point, and notes that $□\alpha\equiv□\beta$ is false at $u$ ([4]). For this method to work, the enlarged model must still be a model of the system. K meets the assumption because it requires nothing of $R$, and KD because it requires only that $R$ be serial, i.e. that no point be a dead end, a requirement automatically met at $u$, the only new point. The assumption is met even by KDG₁, where G₁ is $◇□ p\supset□◇ p$, a weakening of B that corresponds to the requirement that $R$ be incestual, i.e. if $wRx$ and $wRy$ then there is a point $z$ such that $xRz$ and $yRz$. However, the assumption is not met by KG₁, for if $w=u$ and $x=y=v$, there is no such $z$ if $v$ is a dead end; indeed, KG₁ fails to admit CANCEL, for $\vdash_{KG_1}□◇\top\equiv□\top$ but not $\vdash_{KG_1}◇\top\equiv\top$. When the method of proof is applied to an extension of KB, the problem is that $R$ is not symmetric in the enlarged model as originally specified, because $uRv$ but not $vRu$, so B may not be valid. If $R$ is made symmetric by the extra stipulation that $vRu$, then $v$ has $R$ to more points in the enlarged model than in the old one, so $\alpha\equiv\beta$ may no longer be false at $v$ in the enlarged model.
+
+Whether the stipulation that $vRu$ does indeed alter the truth-value of $\alpha$ or $\beta$ at $v$ depends partly on their structure, e.g. it cannot do so unless they contain $□$ or $◇$. If $v$ was a dead end in the original model, then the stipulation can alter the truth-value of a wff as simple as $□\bot$. However, if we work in KDB, then $v$ was not a dead end; some point $w$ was accessible from $v$ in the original model. By assigning the same truth-values to propositional variables at $u$ as at $w$, we desensitivize many wffs to the addition of $u$. Thus CANCEL is admissible in KDB when restricted to a class of simple wffs. 4.2 makes this rigorous.
+
+On the interpretation sketched in Section 1, 4.2 will show that assertibility conditions determine truth conditions in KDB for wffs in which a certain kind of embedding is forbidden. Similarly, 4.3 will show that assertibility conditions and deniability conditions jointly determine truth conditions in KTB for those wffs.
+
+It is convenient to begin by considering restrictions of a simpler rule:
+
+(DEPOS)
+If $\vdash_L◇\alpha$ then $\vdash_L\alpha$.
+
+Any normal system that admits CANCEL also admits DEPOS, for if $\vdash_L◇\alpha$ then $\vdash_L□\neg\alpha\equiv□\bot$ by normality, so $\vdash_L\neg\alpha\equiv\bot$ by CANCEL, so $\vdash_L\alpha$. Conversely, any normal extension of KD that admits DEPOS also admits CANCEL, for if $\vdash_L□\alpha\equiv□\beta$ then $\vdash_L□\alpha\supset◇\beta$ and $\vdash_L□\beta\supset◇\alpha$ by D, so $\vdash_L◇(\alpha\supset\beta)$ and $\vdash_L◇(\beta\supset\alpha)$ by normality, so $\vdash_L\alpha\supset\beta$ and $\vdash_L\beta\supset\alpha$, so $\vdash_L\alpha\equiv\beta$. KB is a normal system that admits DEPOS vacuously, since it has no theorems of the form $◇\alpha$, but does not admit CANCEL, by the example used above to show that KG₁ does not admit CANCEL.
+
+For the purposes of 4.1–4.3, it is convenient to take the primitive operators as $\neg$, $\wedge$, $\vee$, $□$ and $◇$.
+
+Proposition 4.1
+If $\alpha$ is any wff in which $□$ does not occur in the scope of $◇$, and $\neg$ occurs only immediately in front of propositional variables, and $\vdash_{KDB}◇\alpha$, then $\vdash_{KDB}\alpha$.
+
+Proof. Let $\alpha$ have the above form, and suppose that not $\vdash_{KDB}\alpha$. By the standard completeness theorem for KDB, there is a model $\langle W,R,V\rangle$, where $R$ is serial and symmetric, and a point $v\in W$ such that $V(\alpha,v)=0$. Since $R$ is serial, we can pick a point $w$ such that $vRw$. We can also pick $u\notin W$. Define a new model $\langle W',R',V'\rangle$ by:
+
+$$
+\begin{aligned}
+W'&=W\cup\{u\}\\
+R'&=R\cup\{\langle u,v\rangle,\langle v,u\rangle\}\\
+V'(p_i,x)&=V(p_i,x) &&\text{for }x\in W\\
+V'(p_i,u)&=V(p_i,w)
+\end{aligned}
+$$
+
+$V'$ is extended to complex wffs as in the definition of a model.
+
+Claim I: If $\beta$ is any wff in which $□$ does not occur and $\neg$ occurs only immediately in front of propositional variables, then $V'(\beta,x)=V(\beta,x)$ for all $x\in W$ and $V'(\beta,u)\leq V(\beta,w)$.
+
+Proof: By induction on the complexity of $\beta$. Only the induction step for $◇$ is given here. The induction hypothesis (IH) is that $V'(\beta,x)=V(\beta,x)$ for all $x\in W$ and $V'(\beta,u)\leq V(\beta,w)$. Let $x\in W$. Suppose that $V(◇\beta,x)=1$. Then for some $y\in W$, $xRy$ and $V(\beta,y)=1$. By IH, $V'(\beta,y)=1$. Since $R\subseteq R'$, $xR'y$. Thus $V'(◇\beta,x)=1$. Conversely, suppose that $V'(◇\beta,x)=1$. Then, for some $y$, $xR'y$ and $V'(\beta,y)=1$. If $y\in W$ then $xRy$ and, by IH, $V(\beta,y)=1$, so $V(◇\beta,x)=1$. If $y=u$ then, by IH, $1\leq V(\beta,w)$; moreover, $x=v$ by definition of $R'$, so $xRw$ since $vRw$; thus $V(◇\beta,x)=1$. Thus $V'(◇\beta,x)=V(◇\beta,x)$. Finally, suppose that $V'(◇\beta,u)=1$. Then $V'(\beta,v)=1$, so $V(\beta,v)=1$ by IH; but $wRv$ because $vRw$ and $R$ is symmetric, so $V(◇\beta,w)=1$. Thus $V'(◇\beta,u)\leq V(◇\beta,w)$.
+
+Claim II: If $\beta$ is any wff in which $□$ does not occur in the scope of $◇$, and $\neg$ occurs only immediately in front of propositional variables, then $V'(\beta,x)\leq V(\beta,x)$ for all $x\in W$.
+
+Proof: By induction on the complexity of $\beta$. Only the induction steps for $◇$ and $□$ are given here. If $◇\beta$ is of the requisite form, then $□$ does not occur in $\beta$, so $◇\beta$ meets the condition of claim I, so $V'(◇\beta,x)=V(◇\beta,x)$ for $x\in W$. For $□$, suppose that $V'(\beta,y)\leq V(\beta,y)$ for all $y\in W$. Let $x\in W$. If $V(□\beta,x)=0$ then $V(\beta,y)=0$ for some $y\in W$ such that $xRy$, so $V'(\beta,y)=0$ by induction hypothesis; since $R\subseteq R'$, $xR'y$, so $V'(□\beta,x)=0$. Thus $V'(□\beta,x)\leq V(□\beta,x)$.
+
+The proof can now be completed. Since $V(\alpha,v)=0$ and $\alpha$ meets the conditions of claim II, $V'(\alpha,v)=0$. By definition of $R'$, $V'(◇\alpha,u)=0$. The definition of $R'$ makes it serial and symmetric, since $R$ is. By the standard soundness theorem for KDB, $\langle W',R',V'\rangle$ is a model for KDB, so not $\vdash_{KDB}◇\alpha$. $\blacksquare$
+
+Proposition 4.2
+If $\alpha$ and $\beta$ are any wffs in which $□$ does not occur in the scope of $◇$, $◇$ does not occur in the scope of $□$, and $\neg$ occurs only immediately in front of propositional variables, and $\vdash_{KDB}□\alpha\equiv□\beta$, then $\vdash_{KDB}\alpha\equiv\beta$.
+
+Proof. Let $\alpha$ and $\beta$ meet the conditions of the proposition. By D, $\vdash_{KDB}□\alpha\supset◇\beta$ and $\vdash_{KDB}□\beta\supset◇\alpha$. By normality, $\vdash_{KDB}◇(\neg\alpha\vee\beta)$ and $\vdash_{KDB}◇(\neg\beta\vee\alpha)$. Let $\alpha^*$ and $\beta^*$ result from working $\neg$ through $\neg\alpha$ and $\neg\beta$ respectively until it occurs only immediately in front of propositional variables, interchanging $\wedge$ with $\vee$ and $□$ with $◇$; thus $□$ does not occur in the scope of $◇$ and $◇$ does not occur in the scope of $□$ in $\alpha^*$ and $\beta^*$. By normality, $\vdash_K\neg\alpha\equiv\alpha^*$ and $\vdash_K\neg\beta\equiv\beta^*$, so $\vdash_{KDB}◇(\alpha^*\vee\beta)$ and $\vdash_{KDB}◇(\beta^*\vee\alpha)$. $\alpha^*\vee\beta$ and $\beta^*\vee\alpha$ meet the conditions of 4.1, so $\vdash_{KDB}\alpha^*\vee\beta$ and $\vdash_{KDB}\beta^*\vee\alpha$, so $\vdash_{KDB}\neg\alpha\vee\beta$ and $\vdash_{KDB}\neg\beta\vee\alpha$, so $\vdash_{KDB}\alpha\equiv\beta$. $\blacksquare$
+
+Propositions 4.1 and 4.2 are best possible results, in the sense that $\vdash_{KDB}◇(\neg p\vee◇□ p)$ but not $\vdash_{KDB}\neg p\vee◇□ p$; $\vdash_{KDB}□◇□ p\equiv□ p$ but not $\vdash_{KDB}◇□ p\equiv p$; $\vdash_{KDB}□(p\wedge□◇\neg p)\equiv□\bot$ but not $\vdash_{KDB}(p\wedge□◇\neg p)\equiv\bot$.
+
+4.1 and 4.2 do not apply to KTB, for $\vdash_{KT}◇(\neg p\vee□ p)$ and $\vdash_{KT}□(p\wedge◇\neg p)\equiv□\bot$; thus any extension of KT to which 4.1 or 4.2 applies is trivial. However, KT does admit the rule DCANCEL, as does KTG₁, which is intermediate between KT and KTB ([7]). By a modification of the semantic proof in [7] like that used for 4.1 and 4.2, we can establish the admissibility in KTB of a restriction of DCANCEL to a limited class of wffs.
+
+Recall that for 4.3 the primitive operators are assumed to be $\neg$, $\wedge$, $\vee$, $□$ and $◇$.
+
+Proposition 4.3
+If $\alpha$ and $\beta$ are any wffs in which $□$ does not occur in the scope of $◇$, $◇$ does not occur in the scope of $□$, and $\neg$ occurs only immediately in front of propositional variables, and $\vdash_{KTB}□\alpha\equiv□\beta$ and $\vdash_{KTB}◇\alpha\equiv◇\beta$, then $\vdash_{KTB}\alpha\equiv\beta$.
+
+Proof. Suppose that $\alpha$ and $\beta$ are wffs of the above form such that $\vdash_{KTB}□\alpha\equiv□\beta$ and $\vdash_{KTB}◇\alpha\equiv◇\beta$ but not $\vdash_{KTB}\alpha\equiv\beta$. By the standard completeness theorem for KTB, there is a model $\langle W,R,V\rangle$, where $R$ is reflexive and symmetric, and a point $v\in W$ such that $V(\alpha\equiv\beta,v)=0$. Suppose without loss of generality that $V(\alpha,v)=1$ and $V(\beta,v)=0$. We construct a new model $\langle W',R',V'\rangle$ as follows. Let $k=\mathit{max}\{\#\alpha,\#\beta\}$ (the modal depth of $\alpha\equiv\beta$). Choose $u_1,\ldots,u_{k+1},t_1,\ldots,t_{k+1}$ such that $u_i\notin W$, $t_i\notin W$, $u_i\ne t_j$, $u_i=u_j$ or $t_i=t_j$ only if $i=j$ ($1\leq i,j\leq k+1$). For convenience label $v$ as $u_0$. Set:
+
+$$
+\begin{aligned}
+W'={}&W\cup\{u_1,\ldots,u_{k+1},t_1,\ldots,t_{k+1}\}\\
+R'={}&R\cup\{\langle u_{i+1},u_i\rangle,\langle u_i,u_{i+1}\rangle,\langle t_{i+1},u_i\rangle,\langle u_i,t_{i+1}\rangle\mid0\leq i\leq k\}\\
+&\quad\cup\{\langle u_i,u_i\rangle,\langle t_i,t_i\rangle\mid1\leq i\leq k+1\}\\
+V'(p_i,x)={}&V(p_i,x)\quad\text{for }x\in W\\
+V'(p_i,u_j)={}&V(p_i,t_j)=V(p_i,u_0)\quad\text{for }1\leq j\leq k+1
+\end{aligned}
+$$
+
+The plan is to show that $\alpha$ and $\beta$ have the same truth values at $u_0$ ($=v$) under $V'$ as under $V$, that this forces their truth values to alternate as one moves down the sequence $u_0,\ldots,u_{k+1}$, and that such alternation is impossible once the number of steps of $R'$ to $u_0$ exceeds $k$. A picture may help:
+
+![](assets/frame-292.png)
+
+Claim I: If $\gamma$ is any wff in which $□$ does not occur, and $\neg$ occurs only immediately in front of propositional variables, then (I1) $V'(\gamma,w)=V(\gamma,w)$ for all $w\in W$; (I2) $V'(\gamma,u_i)=V'(\gamma,t_i)$ for $1\leq i\leq k+1$; (I3) $V'(\gamma,u_j)\leq V'(\gamma,u_i)$ for $0\leq i<j\leq k+1$; (I4) if $\#\gamma\leq i<j\leq k+1$ then $V'(\gamma,u_i)=V'(\gamma,u_j)$. Proof: By induction on the complexity of $\gamma$. Only the induction step for $◇$ is given here. Suppose that: (IH1) $V'(\gamma,w)=V(\gamma,w)$ for all $w\in W$; (IH2) $V'(\gamma,u_i)=V'(\gamma,t_i)$ for $1\leq i\leq k+1$; (IH3) $V'(\gamma,u_j)\leq V'(\gamma,u_i)$ for $0\leq i<j\leq k+1$; (IH4) if $\#\gamma\leq i<j\leq k+1$ then $V'(\gamma,u_i)=V'(\gamma,u_j)$.
+
+(I1) Let $w\in W$. Suppose that $V'(◇\gamma,w)=1$. Then $V'(\gamma,x)=1$ for some $x\in W'$ such that $wR'x$. By definition of $R'$, either (i) $x\in W$ and $wRx$ or (ii) $w=u_0$ and either $x=u_1$ or $x=t_1$. In case (i), $V(\gamma,x)=1$ by IH1, so $V(◇\gamma,w)=1$. In case (ii), $1=V'(\gamma,u_1)=V'(\gamma,t_1)\leq V'(\gamma,u_0)$ by IH2 and IH3, so $V(\gamma,u_0)=1$ by IH1, since $u_0\in W$, so $V(◇\gamma,w)=V(◇\gamma,u_0)=1$, since $u_0Ru_0$. Thus if $V'(◇\gamma,w)=1$ then $V(◇\gamma,w)=1$. Conversely, suppose that $V(◇\gamma,w)=1$. Then $V(\gamma,x)=1$ for some $x\in W$ such that $wRx$, so $wR'x$ and $V'(\gamma,x)=1$ by IH1, so $V'(◇\gamma,w)=1$. Thus $V'(◇\gamma,w)=V(◇\gamma,w)$.
+
+(I2) Let $1\leq i\leq k+1$. Suppose that $V'(◇\gamma,u_i)=1$. Then $V'(\gamma,w)=1$ for some $w\in\{u_{i-1},u_i,u_{i+1},t_{i+1}\}$ (the latter two points exist only if $i<k+1$). By IH2 and IH3, $V'(\gamma,t_{i+1})=V'(\gamma,u_{i+1})\leq V'(\gamma,u_i)\leq V'(\gamma,u_{i-1})$ by definition of $R'$. Hence $V'(\gamma,u_{i-1})=1$. Since $t_iR'u_{i-1}$, $V'(◇\gamma,t_i)=1$. Conversely, suppose that $V'(◇\gamma,t_i)=1$. Then $V'(\gamma,w)=1$ for some $w\in\{u_{i-1},t_i\}$. If $V'(\gamma,u_{i-1})=1$ then $V'(◇\gamma,u_i)=1$ because $u_iR'u_{i-1}$. If $V'(\gamma,t_i)=1$ then $V'(\gamma,u_i)=1$ by IH2, so $V'(◇\gamma,u_i)=1$ because $u_iR'u_i$. Thus $V'(◇\gamma,u_i)=V'(◇\gamma,t_i)$.
+
+(I3) Let $0\leq i<j\leq k+1$. If $V'(◇\gamma,u_j)=1$ then $V'(\gamma,u_{j-1})=1$ by an argument like one under I2, so $V'(\gamma,u_i)=1$ by IH3, so $V'(◇\gamma,u_i)=1$. Thus $V'(◇\gamma,u_j)\leq V'(◇\gamma,u_i)$.
+
+(I4) Let $\#◇\gamma\leq i<j\leq k+1$. Thus $\#\gamma\leq i-1<j-1\leq k$. Suppose that $V'(◇\gamma,u_i)=1$. As under I2, $V'(\gamma,u_{i-1})=1$. By IH4, $V'(\gamma,u_{j-1})=1$, so $V'(◇\gamma,u_j)=1$. Thus $V'(◇\gamma,u_i)\leq V'(◇\gamma,u_j)$. By I3, $V'(◇\gamma,u_i)=V'(◇\gamma,u_j)$. This completes the induction step for $◇$.
+
+Claim II: If $\gamma$ is any wff in which $◇$ does not occur, and $\neg$ occurs only immediately in front of propositional variables, then $V'(\gamma,w)=V(\gamma,w)$ for all $w\in W$; $V'(\gamma,u_i)=V'(\gamma,t_i)$ for $1\leq i\leq k+1$; $V'(\gamma,u_i)\leq V'(\gamma,u_j)$ for $0\leq i<j\leq k+1$; if $\#\gamma\leq i<j\leq k+1$ then $V'(\gamma,u_i)=V'(\gamma,u_j)$. Proof: Dual to that of claim I in the obvious way.
+
+Claim III: If $\gamma$ is any wff in which $□$ does not occur in the scope of $◇$, $◇$ does not occur in the scope of $□$, and $\neg$ occurs only immediately in front of propositional variables, then $V'(\gamma,w)=V(\gamma,w)$ for all $w\in W$; $V'(\gamma,u_i)=V'(\gamma,t_i)$ for $1\leq i\leq k+1$; if $\#\gamma\leq i<j\leq k+1$ then $V'(\gamma,u_i)=V'(\gamma,u_j)$. Proof: An obvious induction on the complexity of $\gamma$, using claims I and II.
+
+Claim IV: For $0\leq i\leq k+1$, if $i$ is even then $V'(\alpha,u_i)=1$ and $V'(\beta,u_i)=0$; if $i$ is odd then $V'(\alpha,u_i)=0$ and $V'(\beta,u_i)=1$. Proof: By induction on $i$. Basis. Since $u_0\in W$ and $\alpha$ and $\beta$ are of the form described in claim III, $V'(\alpha,u_0)=V(\alpha,u_0)=1$ and $V'(\beta,u_0)=V(\beta,u_0)=0$. Induction step. Let $i\leq k$. Suppose that $V'(\alpha,u_i)=1$ and $V'(\beta,u_i)=0$. Since $R'$ is reflexive and symmetric, $\langle W',R',V'\rangle$ is a model of KTB by the standard soundness theorem. But $\vdash_{KTB}◇\alpha\equiv◇\beta$, so $V'(◇\alpha\equiv◇\beta,t_{i+1})=1$. Since $t_{i+1}R'u_i$, $V'(◇\alpha,t_{i+1})=1$. Hence $V'(◇\beta,t_{i+1})=1$. Thus $V'(\beta,w)=1$ for some $w\in\{u_i,t_{i+1}\}$. Since $V'(\beta,u_i)=0$, $V'(\beta,t_{i+1})=1$. By claim III, $V'(\beta,u_{i+1})=V'(\beta,t_{i+1})=1$. Again, $\vdash_{KTB}□\alpha\equiv□\beta$ holds, so $V'(□\alpha\equiv□\beta,t_{i+1})=1$; since $V'(\beta,u_i)=0$, $V'(□\beta,t_{i+1})=0$, so $V'(□\alpha,t_{i+1})=0$; since $V'(\alpha,u_i)=1$, $V'(\alpha,t_{i+1})=V'(\alpha,u_{i+1})=0$. By a parallel argument, if $V'(\alpha,u_i)=0$ and $V'(\beta,u_i)=1$ then $V'(\alpha,u_{i+1})=1$ and $V'(\beta,u_{i+1})=0$.
+
+The proof can now be completed. Since $k=\mathit{max}\{\#\alpha,\#\beta\}$, $V'(\alpha,u_k)=V'(\alpha,u_{k+1})$ by claim III. But $V'(\alpha,u_k)\ne V'(\alpha,u_{k+1})$ by claim IV. This refutes the assumption that not $\vdash_{KTB}\alpha\equiv\beta$. $\blacksquare$
+
+One might be tempted to interpret 4.2 and 4.3 by supposing that the distinctive consequences of the B axiom show up in KDB and KTB only when $◇$ occurs in the scope of $□$ (as in the B axiom itself) or vice versa. However, this supposition is false. The wff $\neg p\vee□\neg q\vee◇(q\wedge◇ p)$ meets the conditions of 4.2 and 4.3; it is a theorem of KB, KDB and KTB, but not of KD or KT. Indeed, it is a theorem of a normal system $L$ if and only if $L$ extends KB, for it has the substitution instance $\neg p\vee□\neg\neg◇ p\vee◇(\neg◇ p\wedge◇ p)$. Thus KDB and KTB can be recovered as the smallest normal systems containing the fragments of them to which 4.2 and 4.3 apply; nevertheless, the fragments admit more rules than the systems do themselves.
+
+KDB and KTB also admit EXC, which restricts CANCEL and DCANCEL by constraining the logical relation between $\alpha$ and $\beta$, rather than $\alpha$ and $\beta$ individually. Henceforth, it may be assumed that the primitive operators are $\bot$, $\supset$ and $□$.
+
+Proposition 4.4
+KDB admits EXC, i.e. if $\vdash_{KDB}\neg(\alpha\wedge\beta)$ and $\vdash_{KDB}◇\alpha\equiv◇\beta$ then $\vdash_{KDB}\neg(\alpha\vee\beta)$.
+
+Proof. Suppose that $\vdash_{KDB}\neg(\alpha\wedge\beta)$ and $\vdash_{KDB}◇\alpha\equiv◇\beta$ but not $\vdash_{KDB}\neg(\alpha\vee\beta)$. By a simple modification of the proof of theorem 7.10 in [2]: 121, KDB is characterized by the frame $\langle U,R\rangle$, defined as follows. $U$ is the set of all finite sequences of natural numbers. $\langle\rangle$ is the null sequence; if $u\in U$ and $n\in\mathbb N$ then $un$ is the concatenation of $u$ with $\langle n\rangle$; $l u$ is the length of $u$, so $l\langle\rangle=0$ and $l un=l u+1$. For $u,v\in U$, $uRv$ iff for some $n\in\mathbb N$ either $u=vn$ or $v=un$. Moreover, the proof in [2] shows that any non-theorem of KDB can be falsified at $\langle\rangle$. Thus for some model $\langle U,R,V\rangle$ of KDB, $V(\alpha\vee\beta,\langle\rangle)=1$. Now define a new model $\langle U,R,V'\rangle$ of KDB on the same frame by:
+
+$$
+\begin{aligned}
+V'(p_i,u)&=V(p_i,u)&&\text{if }l u\leq\#(\alpha\vee\beta)\\
+V'(p_i,u)&=1&&\text{if }l u>\#(\alpha\vee\beta)
+\end{aligned}
+$$
+
+Claim I: For any wff $\gamma$ and $u\in U$, if $\#\gamma+l u\leq\#(\alpha\vee\beta)$ then $V'(\gamma,u)=V(\gamma,u)$. Proof: A routine induction on the complexity of $\gamma$. The crucial fact in the induction step for $□$ is that if $uRv$ then $l v\leq l u+1$.
+
+Claim II: For any wff $\gamma$ and $u,v\in U$, if $\#\gamma+\#(\alpha\vee\beta)<\mathit{min}\{l u,l v\}$ then $V'(\gamma,u)=V'(\gamma,v)$. Proof: Another routine induction on the complexity of $\gamma$. The crucial facts in the induction step for $□$ are that $R$ is serial and that if $uRv$ then $l u\leq l v+1$.
+
+Claim III: For any $u\in U$, if $2\cdot\#(\alpha\vee\beta)+1<l u$ then $V'(\alpha\vee\beta,u)=0$. Proof: Suppose that $2\cdot\#(\alpha\vee\beta)+1<l u$ but $V'(\alpha\vee\beta,u)=1$. Thus $V'(\alpha,u)=1$ or $V'(\beta,u)=1$. Assume without loss of generality that $V'(\alpha,u)=1$. Let $uRv$. Hence $l u\leq l v+1$, so $\#\alpha+\#(\alpha\vee\beta)\leq2\cdot\#(\alpha\vee\beta)<l v$; moreover $\#\alpha+\#(\alpha\vee\beta)<2\cdot\#(\alpha\vee\beta)+1<l u$. Thus, by claim II, $V'(\alpha,v)=V'(\alpha,u)=1$. Hence $V'(□\alpha,u)=1$. Since $\vdash_{KDB}□\alpha\supset◇\alpha$, $V'(◇\alpha,u)=1$. Since $\vdash_{KDB}◇\alpha\equiv◇\beta$, $V'(◇\beta,u)=1$. But $\vdash_{KDB}\neg(\alpha\wedge\beta)$, so $\vdash_{KDB}◇\beta\supset◇\neg\alpha$, and therefore $V'(◇\neg\alpha,u)=1$, contradicting $V'(□\alpha,u)=1$. This proves the claim.
+
+Claim IV: For some $u\in U$, $V'(\alpha\vee\beta,u)=1$ and for all $v\in U$, if $l u<l v$ then $V'(\alpha\vee\beta,v)=0$. Proof: Set $X=\{m\in\mathbb N:\text{ for some }u\in U,\ m=l u\text{ and }V'(\alpha\vee\beta,u)=1\}$. Since $l\langle\rangle=0$, by claim I $V'(\alpha\vee\beta,\langle\rangle)=V(\alpha\vee\beta,\langle\rangle)=1$. Thus $0\in X$. By claim III, if $m\in X$ then $m\leq2\cdot\#(\alpha\vee\beta)+1$. Thus $X$ contains a greatest member. Choose $u$ accordingly.
+
+The proof can now be completed. Take $u$ as in claim IV. Suppose without loss of generality that $V'(\alpha,u)=1$. Since $u0Ru$, $V'(◇\alpha,u0)=1$. Since $\vdash_{KDB}◇\alpha\equiv◇\beta$, $V'(◇\beta,u0)=1$. Thus $V'(\beta,v)=1$ for some $v$ such that $u0Rv$. Hence $V'(\alpha\vee\beta,v)=1$. By definition of $R$, either $v=u$ or $v=u0n$ for some $n\in\mathbb N$. In the latter case $l v=l u+2$, contradicting the choice of $u$. Thus $v=u$, so $V'(\alpha,u)=V'(\beta,u)=1$, contradicting $\vdash_{KDB}\neg(\alpha\vee\beta)$. $\blacksquare$
+
+Proposition 4.5
+KTB admits EXC, i.e. if $\vdash_{KTB}\neg(\alpha\wedge\beta)$ and $\vdash_{KTB}◇\alpha\equiv◇\beta$ then $\vdash_{KTB}\neg(\alpha\vee\beta)$.
+
+Proof. Make $R$ in the proof of 4.4 reflexive, and proceed as before with only minor modifications. $\blacksquare$
+
+# 5 Rules and Frames
+
+Another question has been left outstanding: what normal extensions of KB admit DCANCEL? By 3.3, every such extension contains KB¶. In order to apply this result, one would like a tractable semantic characterization of ¶. For example, one would like to know whether KB¶ ($=$ KDB¶) or KTB¶ admits DCANCEL. A semantic proof of admissibility would presumably exploit a completeness theorem for the system in question with respect to some class of frames. Unfortunately, ¶ resists the standard techniques of correspondence theory. Of course, if a system does not admit DCANCEL, that should be much more straightforward to prove. But whether DCANCEL is admissible in KB¶ or KTB¶ or not, one would in any case like a semantic criterion for the admissibility of INC in extensions of KB. By the same token, such a criterion is lacking. The results that follow are therefore partial ones, but may nevertheless shed some light on the correspondence, or lack of it, between admissible rules and semantic conditions.
+
+A natural candidate for a semantic condition on a frame $\langle W,R\rangle$ corresponding to ¶ is the following:
+
+$$
+\begin{aligned}
+&\forall w\,\in W\ \exists x\,\in W[wRx\text{ and }\forall y,z\in W\,\ \{(xRy\text{ and }xRz\text{ and }y\ne z)\Rightarrow\\
+&\qquad (y=w\text{ or }z=w)\}]
+\end{aligned}
+$$
+
+(♡)
+
+A one-way correspondence indeed holds, but its converse fails.
+
+Proposition 5.1
+If a frame $\langle W,R\rangle$ meets $\heartsuit$, then ¶ is valid on $\langle W,R\rangle$.
+
+Proof. Routine.
+
+Proposition 5.2
+¶ is valid on at least one frame that does not meet $\heartsuit$.
+
+Proof. Consider the following irreflexive symmetric intransitive frame:
+
+![](assets/frame-296.png)
+
+Thus $W=\{0,1\}^3$ and, for $w,x\in W$, $wRx$ iff $w$ and $x$ differ on exactly one coordinate. $\langle W,R\rangle$ does not meet $\heartsuit$. Nevertheless, ¶ is valid on $\langle W,R\rangle$. For suppose that $V(\text{¶},w)=0$ for some $V$ and $w\in W$. Assume without loss of generality that $w=\langle0,0,0\rangle$. Thus $V(p,\langle0,0,0\rangle)=0$ and $V(□[◇(p\wedge q)\wedge◇(p\wedge\neg q)],\langle0,0,0\rangle)=1$. Hence $V(◇(p\wedge q),\langle0,0,1\rangle)=1$, so either $V(p\wedge q,\langle1,0,1\rangle)=1$ or $V(p\wedge q,\langle0,1,1\rangle)=1$. Assume without loss of generality that $V(p\wedge q,\langle1,0,1\rangle)=1$. Since $V(◇(p\wedge\neg q),\langle0,0,1\rangle)=1$, $V(p\wedge\neg q,\langle0,1,1\rangle)=1$. Since $V(◇(p\wedge q),\langle0,1,0\rangle)=1$, $V(p\wedge q,\langle1,1,0\rangle)=1$. Thus $V(p\wedge\neg q,\langle0,0,0\rangle)=V(p\wedge\neg q,\langle1,1,0\rangle)=V(p\wedge\neg q,\langle1,0,1\rangle)=0$, so $V(◇(p\wedge\neg q),\langle1,0,0\rangle)=0$, which is impossible. Thus ¶ is valid on $\langle W,R\rangle$. $\blacksquare$
+
+Proposition 5.3
+KB¶ is not complete with respect to any class of frames all of which meet $\heartsuit$.
+
+Proof. Let $\text{¶}'=□\bigl[\{◇(p\wedge q)\wedge◇(p\wedge\neg q)\}\vee\{◇(p\wedge r)\wedge◇(p\wedge\neg r)\}\bigr]\supset p$.
+
+It is routine to check that ¶′ is valid on any frame meeting $\heartsuit$. Thus if KB¶ is complete with respect to a class of such frames, $\vdash_{KB¶}\text{¶}'$. Then ¶′ is valid on the frame $\langle W,R\rangle$ cited in the proof of 5.2. But for $w\in W$ we can set $V(p,w)=1$ iff $w\ne\langle0,0,0\rangle$; $V(q,w)=1$ iff $w=\langle0,1,1\rangle$; $V(r,w)=1$ iff $w=\langle1,0,1\rangle$. Then $V(\text{¶}',\langle0,0,0\rangle)=0$, so ¶′ is not valid on $\langle W,R\rangle$. $\blacksquare$
+
+In order to go further, we need some terminology to discuss the relation between rules and frames. First, we express a rule as a sequent $\Gamma\Vdash\Delta$, where $\Gamma$ and $\Delta$ are sets of wffs. In all cases of present interest, $\Delta$ is a singleton set. A logic $L$ admits the rule $\Gamma\Vdash\Delta$ just in case for every substitution $\sigma$, if $\vdash_L\sigma\gamma$ for all $\gamma\in\Gamma$ then $\vdash_L\sigma\delta$ for some $\delta\in\Delta$. Thus the rule CANCEL is the sequent $□ p\equiv□ q\Vdash p\equiv q$; DCANCEL is $□ p\equiv□ q,◇ p\equiv◇ q\Vdash p\equiv q$; DEPOS is $◇ p\Vdash p$; INC is $p\supset q,□ q\supset□ p,◇ q\supset◇ p\Vdash q\supset p$.
+
+We say that a rule $\Gamma\Vdash\Delta$ preserves validity modelwise on a frame $\langle W,R\rangle$ just in case for all models $\langle W,R,V\rangle$, if $\gamma$ is valid in $\langle W,R,V\rangle$ for all $\gamma\in\Gamma$ then $\delta$ is valid in $\langle W,R,V\rangle$ for some $\delta\in\Delta$. Note that it would make no difference to require that for all substitutions $\sigma$, if $\sigma\gamma$ is valid in $\langle W,R,V\rangle$ for all $\gamma\in\Gamma$ then $\sigma\delta$ is valid in $\langle W,R,V\rangle$ for some $\delta\in\Delta$; this is because, for every model $\langle W,R,V\rangle$ and substitution $\sigma$, there is a model $\langle W,R,V_\sigma\rangle$ such that for every wff $\alpha$, $\sigma\alpha$ is valid in $\langle W,R,V\rangle$ iff $\alpha$ is valid in $\langle W,R,V_\sigma\rangle$. In contrast, a rule $\Gamma\Vdash\Delta$ preserves validity framewise on a frame $\langle W,R\rangle$ just in case for all substitutions $\sigma$, if $\sigma\gamma$ is valid on $\langle W,R\rangle$ for all $\gamma\in\Gamma$ then $\sigma\delta$ is valid on $\langle W,R\rangle$ for some $\delta\in\Delta$. Here the reference to substitutions is clearly essential. (See [1] for more on notions of validity for rules.)
+
+Evidently, if a rule preserves validity modelwise on a frame, then it preserves validity framewise on that frame. The converse, however, is false. Consider, for example, Porte’s rule $◇ p\wedge◇\neg p\Vdash\bot$, of which EXC is a kind of generalization ([5]). It vacuously preserves validity framewise on any frame $\langle W,R\rangle$. To check this, first note that for any substitution $\sigma$, $◇\sigma p\wedge◇\neg\sigma p$ is valid in $\langle W,R\rangle$ only if $\langle W,R\rangle$ is serial. Thus we may assume that $\langle W,R\rangle$ is serial. Now set $V(p_i,w)=1$ for all $w\in W$ and $p_i$, and note by induction on the complexity of $\alpha$ that either $V(\alpha,w)=0$ for all $w\in W$ or $V(\alpha,w)=1$ for all $w\in W$, for any wff $\alpha$; hence $V(◇\sigma p\wedge◇\neg\sigma p,w)=0$ for all $w\in W$, so $◇\sigma p\wedge◇\neg\sigma p$ is not valid on $\langle W,R\rangle$. However, on many frames Porte’s rule fails to preserve validity modelwise. For example, if we set $W=\{u,v\}$, $R=W\times W$, $V(p,u)=1$ and $V(p,v)=0$, then $◇ p\wedge◇\neg p$ is valid on $\langle W,R,V\rangle$ but $\bot$ is not.
+
+For any frame $\langle W,R\rangle$, let $L(\langle W,R\rangle)$ be the set of wff that are valid on $\langle W,R\rangle$; this is always a normal system. Thus $L(\langle W,R\rangle)$ admits the rule $\Gamma\Vdash\Delta$ just in case $\Gamma\Vdash\Delta$ preserves validity framewise on $\langle W,R\rangle$. Now when a system $L$ is valid on a frame $\langle W,R\rangle$, $L\subseteq L(\langle W,R\rangle)$; so if in addition $\Gamma\Vdash\{\sigma\}$ preserves validity framewise on $\langle W,R\rangle$, then $L(\langle W,R\rangle)$ is an upper bound for the least normal system that contains $L$ and admits $\Gamma\Vdash\{\sigma\}$ (note that no such system need exist when the conclusion of the rule is multi-membered). A fortiori, if $\Gamma\Vdash\{\sigma\}$ preserves validity modelwise on $\langle W,R\rangle$, then $L(\langle W,R\rangle)$ is an upper bound for that system. In general, we may expect to impose tighter bounds by seeking frames on which the rule preserves validity framewise rather than modelwise. In practice, however, it may be hard to show that a rule preserves validity framewise on a frame except by showing that it preserves validity modelwise on that frame.
+
+Two previous results can easily be adapted to these notions.
+
+Proposition 5.4
+KB¶ is valid on $\langle W,R\rangle$ just in case $\langle W,R\rangle$ is symmetric and INC preserves validity modelwise on $\langle W,R\rangle$.
+
+Proof. If KB¶ is valid on $\langle W,R\rangle$, and (1)–(3) in the $(\Leftarrow)$ direction of the proof of 3.3 are valid in a model $\langle W,R,V\rangle$, then (4)–(15) in that proof are also valid in $\langle W,R,V\rangle$. It is crucial here that the proof of 3.3 does not involve uniform substitution on any of (1)–(3), for validity in a model is not closed under uniform substitution. Conversely, if $\langle W,R\rangle$ is symmetric, $\mathrm{KB}\subseteq L(\langle W,R\rangle)$, and if INC preserves validity modelwise on $\langle W,R\rangle$, then $L(\langle W,R\rangle)$ admits INC, so $\vdash_{L(\langle W,R\rangle)}\text{¶}$ by 3.3; hence $\mathrm{KB¶}\subseteq L(\langle W,R\rangle)$, so KB¶ is valid on $\langle W,R\rangle$. $\blacksquare$
+
+Proposition 5.5
+If $\langle W,R\rangle$ is symmetric and meets $\heartsuit$, then INC preserves validity modelwise on $\langle W,R\rangle$.
+
+Proof. By 5.1 and 5.4. $\blacksquare$
+
+We should like to impose bounds on the closures of systems such as KB and KTB under the rule DCANCEL. For any system $L$, let $\mathrm{DCANCEL}(L)$ be the intersection of all normal systems that admit DCANCEL and contain $L$. Thus $\mathrm{DCANCEL}(L)$ is the smallest normal system that admits DCANCEL and contains $L$. We consider $\mathrm{DCANCEL}(\mathrm{KB})$ first.
+
+By 3.3, $\mathrm{KB¶}\subseteq\mathrm{DCANCEL}(\mathrm{KB})$. If DCANCEL preserves validity framewise on a symmetric frame $\langle W,R\rangle$, then $\mathrm{DCANCEL}(\mathrm{KB})\subseteq L(\langle W,R\rangle)$. Since it has not been decided whether $\mathrm{DCANCEL}(\mathrm{KB})=\mathrm{KB¶}$, 5.3 leaves it open that $\mathrm{DCANCEL}(\mathrm{KB})=L(\langle W,R\rangle)$ for some frame $\langle W,R\rangle$ meeting $\heartsuit$. If so, $\nvdash_{DCANCEL(\mathrm{KB})}\text{¶}'$. It has certainly not been shown that $\mathrm{DCANCEL}(\mathrm{KB})\subseteq L(\langle W,R\rangle)$ for every symmetric frame meeting $\heartsuit$.
+
+For the special case of the rules CANCEL, DCANCEL, EXC and INC on finite symmetric frames, the difference between preserving validity modelwise and preserving it framewise disappears. More generally, the difference disappears on any bounded symmetric frame, where $\langle W,R\rangle$ is bounded just in case there is an $n\in\mathbb N$ such that for all $u,v\in W$ and $i\in\mathbb N$, if $uR^iv$ then for some $m\leq n$, $uR^mv$.
+
+Proposition 5.6
+If DCANCEL (CANCEL, EXC, INC) preserves validity framewise on a bounded symmetric frame $\langle W,R\rangle$, then it preserves validity modelwise on $\langle W,R\rangle$.
+
+Proof. Let $\langle W,R\rangle$ be a bounded symmetric frame. Thus there is an $n\in\mathbb N$ such that for all $u,v\in W$ and $i\in\mathbb N$, if $uR^iv$ then for some $m\leq n$, $uR^mv$. Hence for any model $\langle W,R,V\rangle$, wff $\alpha$ and $u\in W$, if $V(\bigwedge_{0\leq m\leq n}□^m\alpha,u)=1$ then $V(□^i\alpha,u)=1$ for all $i\in\mathbb N$. Thus $V\left(\left[\bigwedge_{0\leq m\leq n}□^m\alpha\right]\supset□\left[\bigwedge_{0\leq m\leq n}□^m\alpha\right],u\right)=1$. Suppose that DCANCEL preserves validity framewise on $\langle W,R\rangle$ (the arguments for CANCEL, EXC and INC are similar). Thus $L(\langle W,R\rangle)$ admits DCANCEL. By 3.6, $L(\langle W,R\rangle)$ extends KD. Since $\langle W,R\rangle$ is symmetric, $L(\langle W,R\rangle)$ extends KDB. Let $\alpha$ and $\beta$ be any wffs. Set
+
+$$
+\phi=\bigwedge_{0\leq m\leq n}□^m[(□\alpha\equiv□\beta)\wedge(◇\alpha\equiv◇\beta)].
+$$
+
+The following are all theorems of $L(\langle W,R\rangle)$:
+
+(1)	$\phi\supset□\phi$	$\text{as above}$
+(2)	$□(\alpha\wedge□\phi)\supset□\alpha$	$\mathrm{K}$
+(3)	$□(\alpha\wedge□\phi)\supset□□\phi$	$\mathrm{K}$
+(4)	$□□\phi\supset◇□\phi$	$\mathrm{KD}$
+(5)	$◇□\phi\supset\phi$	$\mathrm{KB}$
+(6)	$\phi\supset(□\alpha\equiv□\beta)$	$\mathrm{PC}$
+(7)	$□(\alpha\wedge□\phi)\supset(□\alpha\equiv□\beta)$	$3,4,5,6\ \mathrm{PC}$
+(8)	$□(\alpha\wedge□\phi)\supset□\beta$	$2,7\ \mathrm{PC}$
+(9)	$□(\alpha\wedge□\phi)\supset□(\beta\wedge□\phi)$	$8\ \mathrm{K}$
+(10)	$◇(\alpha\wedge□\phi)\supset◇\alpha$	$\mathrm{K}$
+(11)	$◇(\alpha\wedge□\phi)\supset◇□\phi$	$\mathrm{K}$
+(12)	$◇(\alpha\wedge□\phi)\supset\phi$	$5,11\ \mathrm{PC}$
+(13)	$\phi\supset(◇\alpha\equiv◇\beta)$	$\mathrm{PC}$
+(14)	$◇(\alpha\wedge□\phi)\supset(◇\alpha\equiv◇\beta)$	$12,13\ \mathrm{PC}$
+(15)	$◇(\alpha\wedge□\phi)\supset◇\beta$	$10,14\ \mathrm{PC}$
+(16)	$(◇\beta\wedge□□\phi)\supset◇(\beta\wedge□\phi)$	$\mathrm{K}$
+(17)	$□\phi\supset□□\phi$	$1\ \mathrm{K}$
+(18)	$◇(\alpha\wedge□\phi)\supset□□\phi$	$12,1,17\ \mathrm{PC}$
+(19)	$◇(\alpha\wedge□\phi)\supset◇(\beta\wedge□\phi)$	$15,18,16\ \mathrm{PC}$
+(20)	$□(\alpha\wedge□\phi)\equiv□(\beta\wedge□\phi)$	$9\ \text{symmetry}$
+(21)	$◇(\alpha\wedge□\phi)\equiv◇(\beta\wedge□\phi)$	$19\ \text{symmetry}$
+(22)	$(\alpha\wedge□\phi)\equiv(\beta\wedge□\phi)$	$20,21\ \mathrm{DCANCEL}$
+
+Now let $\langle W,R,V\rangle$ be any model on the frame. Suppose that $□\alpha\equiv□\beta$ and $◇\alpha\equiv◇\beta$ are valid in $\langle W,R,V\rangle$. Then $□\phi$ is valid in $\langle W,R,V\rangle$. Moreover, $(\alpha\wedge□\phi)\equiv(\beta\wedge□\phi)$ is valid in $\langle W,R,V\rangle$ since it is a theorem of $L(\langle W,R\rangle)$. Hence $\alpha\equiv\beta$ is valid in $\langle W,R,V\rangle$. Thus DCANCEL preserves validity modelwise on $\langle W,R\rangle$. $\blacksquare$
+
+One application of 5.6 is to the frame used in the proof of 5.2. DCANCEL and EXC do not preserve validity modelwise on this frame, for if $V(p,\langle i,j,k\rangle)=1$ just in case $k=0$, then $◇ p$ and $◇\neg p$ are valid in the model, so $◇ p\equiv◇\neg p$ and $□ p\equiv□\neg p$ are, but $p\equiv\neg p$ is not. The frame is bounded because finite, and symmetric, so by 5.6 DCANCEL and EXC do not preserve validity framewise on it. Thus the logic of the frame does not provide us with a normal extension of KB that admits DCANCEL without having ¶′ as a theorem.
+
+More positively, 5.6 gives us a decision procedure for determining whether DCANCEL (EXC, INC) is admissible in $L(\langle W,R\rangle)$, where $\langle W,R\rangle$ is any finite frame (presented in some canonical way). We need only determine whether the rule preserves validity modelwise on $\langle W,R\rangle$, which we can do by considering a finite number of models (recall that the definition of ‘preserves validity modelwise’ does not involve quantification over all substitutions). Nevertheless:
+
+Proposition 5.7
+That DCANCEL preserves validity modelwise is not a first-order condition (on finite symmetric frames).
+
+Proof. Where $\mathbb I$ is the set of positive and negative integers, let $[i]_n$ be the equivalence class of $i\in\mathbb I$ under the relation $i\equiv j\pmod n$. For $n\geq1$, define $\langle W_n,R_n\rangle$ by:
+
+$$
+\begin{aligned}
+&W_n=\{[i]_n:i\in\mathbb I\}\\
+&[i]_nR_n[j]_n\text{ iff either }[i]_n=[j+1]_n\text{ or }[j]_n=[i+1]_n
+\end{aligned}
+$$
+
+Claim I: DCANCEL preserves validity modelwise in $\langle W_{4n+i},R_{4n+i}\rangle$ for $i\in\{1,2,3\}$.
+
+Proof: Suppose that $□ p\equiv□ q$ and $◇ p\equiv◇ q$ are valid in a model $\langle W_{4n+i},R_{4n+i},V\rangle$ but that $p\equiv q$ is not. Thus for some $j\in\mathbb I$, $V(p\equiv q,[j]_{4n+i})=0$. Suppose without loss of generality that $V(p,[j]_{4n+i})=1$ and $V(q,[j]_{4n+i})=0$. By assumption, $V(□ p\equiv□ q,[j+1]_{4n+i})=1$. Since $[j+1]_{4n+i}R_{4n+i}[j]_{4n+i}$ and $V(q,[j]_{4n+i})=0$, $V(□ q,[j+1]_{4n+i})=0$, so $V(□ p,[j+1]_{4n+i})=0$. Since $V(p,[j]_{4n+i})=1$, $V(p,[j+2]_{4n+i})=0$. By a similar argument, $V(q,[j+2]_{4n+i})=1$. Repeating the argument, $V(p,[j+4]_{4n+i})=1$ and $V(q,[j+4]_{4n+i})=0$, so $V(p,[j+6]_{4n+i})=0$ and $V(q,[j+6]_{4n+i})=1$.
+
+By induction, $V(p,[j+4m+2]_{4n+i})=0$ and $V(q,[j+4m+2]_{4n+i})=1$ for all $m\in\mathbb N$. But this is impossible if $i\in\{1,2,3\}$, for $V(p,[j]_{4n+i})=1$ and
+
+$$
+\begin{array}{rcl}
+{[j+4\cdot2n+2]}_{4n+1}&=&[j]_{4n+1}\\
+{[j+4n+2]}_{4n+2}&=&[j]_{4n+2}\\
+{[j+4\cdot(2n+1)+2]}_{4n+3}&=&[j]_{4n+3}
+\end{array}
+$$
+
+Claim II: DCANCEL does not preserve validity modelwise in $\langle W_{4n},R_{4n}\rangle$ ($n>0$).
+
+Proof: Since $4n$ is divisible by 4, we can define:
+
+$$
+\begin{aligned}
+V(p,[j]_{4n})&=1\text{ iff }[j]_4=[0]_4\\
+V(q,[j]_{4n})&=1\text{ iff }[j]_4=[2]_4
+\end{aligned}
+$$
+
+It is easy to check that $V(□ p,[j]_{4n})=V(□ q,[j]_{4n})=0$ for all $j$, that $V(◇ p,[j]_{4n})=V(◇ q,[j]_{4n})=1$ if $j$ is odd and that $V(◇ p,[j]_{4n})=V(◇ q,[j]_{4n})=0$ if $j$ is even. Thus $□ p\equiv□ q$ and $◇ p\equiv◇ q$ are valid in $\langle W_{4n},R_{4n},V\rangle$ but $p\equiv q$ is not.
+
+Now suppose that there is a sentence $\pi$ of the first-order predicate calculus with just one non-logical expression, a dyadic predicate $\underline{R}$, such that when $\langle W,R\rangle$ is a finite symmetric frame, $\langle W,R\rangle$ is a model of $\pi$ iff DCANCEL preserves validity modelwise in $\langle W,R\rangle$. Let $\Sigma$ be the following infinite set of sentences:
+
+$$
+\begin{array}{l}
+\forall x\,\ \neg \underline{R}xx\\
+\forall x\,\ \exists!_2y\ \underline{R}xy\\
+\forall x\,\ \exists!_2y\ (\underline{R}^2xy\wedge\neg \underline{R}xy)\\
+\forall x\,\ \exists!_2y\ (\underline{R}^3xy\wedge\neg \underline{R}xy\wedge\neg \underline{R}^2xy)\\
+\cdots
+\end{array}
+$$
+
+By claim I, any finite subset of $\Sigma\cup\{\pi\}$ has a model in $\langle W_{4n+i},R_{4n+i}\rangle$ when $n$ is large enough. By the compactness theorem, $\Sigma\cup\{\pi\}$ has a model. By the upward Löwenheim–Skolem theorem, $\Sigma\cup\{\pi\}$ has a model of cardinality $\aleph_1$, for any model of $\Sigma$ must be infinite. Similarly, by claim II, any finite subset of $\Sigma\cup\{\neg\pi\}$ has a model in $\langle W_{4n},R_{4n}\rangle$ when $n$ is large enough. By the compactness and upward Löwenheim–Skolem theorems, $\Sigma\cup\{\neg\pi\}$ has a model of cardinality $\aleph_1$. But that is impossible, for $\Sigma$ is $\aleph_1$-categorical. To see this, note that any model of $\Sigma$ consists of isomorphic copies of the frame $\langle W_\infty,R_\infty\rangle$, where $W_\infty=\mathbb I$ and $iR_\infty j$ iff either $i=j+1$ or $j=i+1$. Since each copy is of cardinal $\aleph_0$, a model of $\Sigma$ of cardinality $\aleph_1$ must contain exactly $\aleph_1$ copies. $\blacksquare$
+
+Proposition 5.8
+That EXC preserves validity modelwise is not a first-order condition (on finite symmetric frames).
+
+Proof. Just as for 5.7. Note that in the proof of claim II, $\neg(p\wedge q)$ is valid in $\langle W_{4n},R_{4n},V\rangle$. $\blacksquare$
+
+Proposition 5.9
+That DCANCEL (EXC) preserves validity framewise is not a first-order condition (on finite symmetric frames).
+
+Proof. From 5.7 (5.8) and 5.6. $\blacksquare$
+
+Similar reasoning shows that the boundedness condition cannot be dropped from 5.6.
+
+Proposition 5.10
+If $\langle W,R\rangle$ is a symmetric frame, then DCANCEL (EXC) preserves validity framewise but not modelwise on the frame $\langle W^\wedge,R^\wedge\rangle$, where
+
+$$
+\begin{aligned}
+W^\wedge&=W\times\mathbb N\\
+\langle u,i\rangle R^\wedge\langle v,j\rangle\quad\text{iff either}\quad
+&(a)\ i=j=0\text{ and }uRv\text{ or}\\
+&(b)\ u=v\text{ and }i=j+1\text{ or}\\
+&(c)\ u=v\text{ and }j=i+1\qquad (u,v\in W;\ i,j\in\mathbb N)
+\end{aligned}
+$$
+
+Proof. DCANCEL (EXC) can be shown not to preserve validity modelwise on $\langle W^\wedge,R^\wedge\rangle$ by an easy modification of the argument for claim II in the proof of 5.7.
+
+Suppose that DCANCEL does not preserve validity framewise on $\langle W^\wedge,R^\wedge\rangle$. Thus there are wffs $\alpha$ and $\beta$ such that $□\alpha\equiv□\beta$ and $◇\alpha\equiv◇\beta$ are valid on $\langle W^\wedge,R^\wedge\rangle$ but $\alpha\equiv\beta$ is not. Thus there is a model $\langle W^\wedge,R^\wedge,V\rangle$ and $\langle w,h\rangle\in W^\wedge$ such that $V(\alpha\equiv\beta,\langle w,h\rangle)=0$. Assume without loss of generality that $V(\alpha,\langle w,h\rangle)=1$ and $V(\beta,\langle w,h\rangle)=0$. Let $\langle W^\wedge,R^\wedge,V^\wedge\rangle$ be a new model such that:
+
+$$
+\begin{aligned}
+V^\wedge(p_i,\langle u,j\rangle)&=V(p_i,\langle u,j\rangle)&&\text{if }j\leq h+\mathit{max}\{\#\alpha,\#\beta\}\\
+V^\wedge(p_i,\langle u,j\rangle)&=1&&\text{if }j>h+\mathit{max}\{\#\alpha,\#\beta\}
+\end{aligned}
+$$
+
+Claim I: If $j+\#\gamma\leq h+\mathit{max}\{\#\alpha,\#\beta\}$ then $V^\wedge(\gamma,\langle u,j\rangle)=V(\gamma,\langle u,j\rangle)$.
+
+Proof: A routine induction on the complexity of $\gamma$.
+
+Claim II: If $\#\gamma+h+\mathit{max}\{\#\alpha,\#\beta\}<\mathit{min}\{j,k\}$ then $V^\wedge(\gamma,\langle u,j\rangle)=V^\wedge(\gamma,\langle u,k\rangle)$.
+
+Proof: Another routine induction on the complexity of $\gamma$.
+
+By claim I, $V^\wedge(\alpha,\langle w,h\rangle)=1$ and $V^\wedge(\beta,\langle w,h\rangle)=0$. By an easy modification of the argument for claim I in the proof of 5.7, $V^\wedge(\alpha,\langle w,h+4n\rangle)=1$, $V^\wedge(\beta,\langle w,h+4n\rangle)=0$, $V^\wedge(\alpha,\langle w,h+4n+2\rangle)=0$, $V^\wedge(\beta,\langle w,h+4n+2\rangle)=1$ for all $n\in\mathbb N$, since $□\alpha\equiv□\beta$ and $◇\alpha\equiv◇\beta$ are valid on $\langle W^\wedge,R^\wedge\rangle$. This contradicts claim II, according to which $V^\wedge(\alpha,\langle w,h+4(\#\alpha+\mathit{max}\{\#\alpha,\#\beta\})\rangle)
+=V^\wedge(\alpha,\langle w,h+4(\#\alpha+\mathit{max}\{\#\alpha,\#\beta\})+2\rangle)$.
+
+$\blacksquare$
+
+As a curiosity, it may be mentioned that there are weaker extensions of KB than KT²! in which $p$ is equivalent to a modal function of $□ p$ and $◇ p$; such systems automatically admit DCANCEL. Consider the wff:
+
+$$
+p\equiv[◇□ p\vee(□◇ p\wedge\neg◇□□◇ p)]
+$$
+
+(‡)
+
+K‡ is an extension of KB, indeed of KB¶. It admits DCANCEL, as of course do all its normal extensions. An example of a frame $\langle W,R\rangle$ on which K‡ is valid is given by setting $W=\mathbb N$ and $R=\{\langle0,n\rangle,\langle n,0\rangle,\langle n,n\rangle:n\geq1\}$. A frame on which K‡ is not valid is $\langle W_4,R_4\rangle$ from the proof of 5.7.
+
+It remains to discuss frames for KTB. The author does not know whether DCANCEL(KTB) is trivial. A negative result is:
+
+Proposition 5.11
+If EXC or DCANCEL preserves validity modelwise on a reflexive symmetric frame $\langle W,R\rangle$, then $R=\{\langle w,w\rangle:w\in W\}$.
+
+Proof. For $u,v\in W$, put $u\approx v$ iff $uR^nv$ for some $n\in\mathbb N$. Since $R$ is symmetric, $\approx$ is an equivalence relation. Let $[u]$ be the $\approx$-equivalence class of $u$, and let $W/{\approx}$ be the set of all such equivalence classes. For $X\in W/{\approx}$ and $u,v\in X$, let $d_X(u,v)$ be the least $n$ such that $uR^nv$. $d_X$ is easily shown to be a metric on $X$. For each $X\in W/{\approx}$, choose $f(X)\in X$. Let $\langle W,R,V\rangle$ be a model such that for $w\in W$:
+
+$$
+\begin{aligned}
+V(p,w)=1&\text{ iff }[w]\ne\{w\}\text{ and }d_{[w]}(w,f([w]))\text{ is even}\\
+V(q,w)=1&\text{ iff }[w]\ne\{w\}\text{ and }d_{[w]}(w,f([w]))\text{ is odd}
+\end{aligned}
+$$
+
+Claim I: $V(□ p,w)=0$ for all $w\in W$. Proof:
+
+Case (a): $d_{[w]}(w,f([w]))=0$. Thus $w=f([w])$. If $[w]=\{w\}$, then $V(□ p,w)=0$ by definition of $V$. Otherwise $wRx$ for some $x\in W$ such that $w\ne x$. Thus $[x]=[w]$, so $d_{[x]}(x,f([x]))=d_{[w]}(x,f([w]))=d_{[w]}(x,w)=1$. Hence $V(p,x)=0$, so $V(□ p,w)=0$.
+
+Case (b): $d_{[w]}(w,f([w]))=2n>0$. Thus for some $x\in W$, $f([w])R^{2n-1}x$ and $xRw$. Hence $d_{[x]}(x,f([x]))=d_{[x]}(x,f([w]))=2n-1$, so $V(p,x)=0$. Since $R$ is symmetric, $wRx$, so $V(□ p,w)=0$.
+
+Case (c): $d_{[w]}(w,f([w]))=2n+1$. Thus $V(p,w)=0$. Since $R$ is reflexive, $V(□ p,w)=0$.
+
+Claim II: $V(□ q,w)=0$ for all $w\in W$. Proof: Similar to cases (b) and (c) for claim I.
+
+Claim III: $V(◇ p,w)=1$ iff $[w]\ne\{w\}$. Proof: If $[w]=\{w\}$ then $V(p,w)=0$ and $wRx$ only if $x=w$, so $V(◇ p,w)=0$. If $[w]\ne\{w\}$ then $V(p,x)=V(\neg q,x)$ for all $x\in[w]$, so $V(◇ p,w)=V(\neg□ q,w)=1$ by claim II.
+
+Claim IV: $V(◇ q,w)=1$ iff $[w]\ne\{w\}$. Proof: As for claim III.
+
+We can now complete the proof. $□ p\equiv□ q$ and $◇ p\equiv◇ q$ are valid in $\langle W,R,V\rangle$ by claims I–II and III–IV respectively; $\neg(p\wedge q)$ is obviously valid in $\langle W,R,V\rangle$. Given that DCANCEL or EXC preserves validity modelwise on $\langle W,R\rangle$, $\neg(p\vee q)$ is valid in $\langle W,R,V\rangle$. By definition of $V$, $[w]=\{w\}$ for all $w\in W$, so $R=\{\langle w,w\rangle:w\in W\}$. $\blacksquare$
+
+Proposition 5.12
+If EXC or DCANCEL preserves validity framewise on a bounded reflexive symmetric frame $\langle W,R\rangle$, then $R=\{\langle w,w\rangle:w\in W\}$.
+
+Proof. From 5.6 and 5.11. $\blacksquare$
+
+Proposition 5.13
+There is a reflexive symmetric frame $\langle W,R\rangle$ such that $R\ne\{\langle w,w\rangle:w\in W\}$ on which EXC preserves validity framewise and INC preserves validity modelwise.
+
+Proof. Let $U$ be the set of all finite sequences of natural numbers.
+
+Set: $W=U\times\{0,1\}$ and $\langle u,i\rangle R\langle v,j\rangle$ iff either (i) for some $n\in\mathbb N$ $i=j=0$ and $u=vn$ or $v=un$ or (ii) $u=v$ ($u,v\in U$; $i,j\in\{0,1\}$)
+
+Since $R$ is symmetric and meets $\heartsuit$, INC preserves validity modelwise on $\langle W,R\rangle$ by 5.5. EXC can be shown to preserve validity framewise on $\langle W,R\rangle$ by a simple modification of the reasoning used to prove 4.4. $\blacksquare$
+
+The proof of 5.13 raises the question: does DCANCEL preserve validity framewise on the frame constructed there? An answer to this question might contribute to the solution of some of the problems set above, including notably:
+
+Problem. Axiomatize DCANCEL(KB) and DCANCEL(KTB), and determine whether they are complete.
+
+# Acknowledgements
+
+The author has been helped by correspondence with Lloyd Humberstone, by unpublished work of his abstracted in [3], and by comments from two anonymous referees. The paper was written when the author was a Fellow of University College Oxford.
+
+# References
+
+[1] R. Fagin, J. Y. Halpern and M. Y. Vardi. What is an inference rule? Journal of Symbolic Logic, 57:1018–1045, 1992.
+
+[2] G. E. Hughes and M. J. Cresswell. A Companion to Modal Logic, London,. Methuen, London, 1984.
+
+[3] I. L. Humberstone. A more discriminating approach to modal logic. Journal of Symbolic Logic, 51:503–504, 1986.
+
+[4] E. J. Lemmon and D. S. Scott. The “Lemmon notes”: An introduction to modal logic. Blackwells, Oxford, 1977.
+
+[5] J. Porte. The deducibilities of S5. Journal of Philosophical Logic, 10:409–422, 1981.
+
+[6] T. Williamson. Assertion, denial and some cancellation rules in modal logic. Journal of Philosophical Logic, 17:299–318, 1988.
+
+[7] T. Williamson. Verification, falsification, and cancellation in KT. Notre Dame Journal of Formal Logic, 31:286–290, 1990.
+
+[8] T. Williamson. A relation between namesakes in modal logic. Bulletin of the Section of Logic, Polish Academy of Sciences, 20:129–137, 1991.
+
+[9] T. Williamson. An alternative rule of disjunction in modal logic. Notre Dame Journal of Formal Logic, 33:89–100, 1992.
+
+[10] T. Williamson. Inexact knowledge. Mind, 101:217–242, 1992.
+
+[11] T. Williamson. Some admissible rules in nonnormal modal systems. Notre Dame Journal of Formal Logic, 34:378–400, 1993.
+
+[12] T. Williamson. Vagueness. Routledge, London, 1994.

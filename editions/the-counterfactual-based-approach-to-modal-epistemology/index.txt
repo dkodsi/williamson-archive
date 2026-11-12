@@ -1,0 +1,262 @@
+# The counterfactual-based approach to modal epistemology
+
+Timothy Williamson
+
+In Otávio Bueno and Scott A. Shalkowski (eds.), The Routledge Handbook of Modality (2020), 188–197. Routledge.
+
+# 17.1 Objective Modalities
+
+In ‘Naming and Necessity’, Saul Kripke compellingly separated the metaphysical distinction between necessary and contingent from the epistemological distinction between a priori and a posteriori and the semantic distinction between analytic and synthetic. Although he introduces the distinction as one of metaphysics in (he hopes) a nonpejorative sense, when drawing it he invokes no metaphysical theory. Rather, his diagnostic question is in ordinary English: given a truth, ‘might it have been otherwise?’ If yes, it is contingent; if no, necessary (Kripke 1972: 261, 1980: 35–36). His treatment of necessity is rooted in vivid examples, described in ordinary language. The point of assigning the distinction to metaphysics is not to mystify or elevate it, but to clarify it by avoiding confusions with what belongs to epistemology or semantics. Once we get the point, Kripke trusts, we can apply the distinction accurately to various cases, by thinking clearly about them. We have epistemological access to it, but it does not belong to epistemology.
+
+Although ‘Naming and Necessity’ always had its critics, it quickly became the canonical text for the contemporary metaphysical distinction and has remained so ever since. But how do we know what is necessary, and what contingent, in Kripke’s sense? The question is potentially misleading, since it may suggest that only one way of knowing is available, whereas a robust distinction can usually be detected in several different ways. However, a specific kind of epistemological access to the distinction is particularly relevant to Kripke’s discussion, since it is the kind on which he relies, as do many other philosophers past and present. This access is not perceptual, even though we arguably sometimes learn by perception how things could have been otherwise (Strohminger 2015); we do not use perception to think through Kripke’s examples. Nor is the access inductive, even though we arguably sometimes learn by induction how things could have been otherwise (Roca-Royes 2016); we do not use induction to think through the examples. Nor does the access always depend on natural science, even though natural science arguably teaches us how things could have been otherwise (Williamson 2016a); we do not use natural science to think through many of the examples. For similar reasons, the access does not depend on knowledge of a developed philosophical theory. Rather, clear-headed but more or less common-sense pre-theoretic reflection on cases is supposed to yield some a priori knowledge of necessity and possibility.1 When Kripke discusses the distinction between the properties an object has necessarily (or essentially) and those it has contingently (or accidentally), he insists ‘it is very far from being true that this idea . . . is a notion which has no intuitive content, which means nothing to the ordinary man’ (1972: 265, 1980: 41).
+
+Excluding epistemological and semantic readings by itself does not narrow down Kripke’s diagnostic ‘might it have been otherwise?’ to just one reading. It is still open to a variety of readings that are, if not metaphysical, at least objective, or in linguists’ terminology ‘circumstantial’ or ‘dynamic’ (Kratzer 1977, Portner 2009). The conversational context may exclude various outlandish possibilities. For instance, the truth-value in everyday contexts of ‘It might have fallen on your head’ may depend on how easily you could have been standing one metre to the left. Although Kripke ignores such mundane readings when introducing his distinction, a further effect of his label ‘metaphysical’ is to rule them out as unintended, and so to achieve more or less maximal inclusiveness over objective possibilities; the context of abstract philosophical discussion also contributes to that effect. He does mention physical necessity, itself presumably a kind of objective necessity, but far more demanding than what matters in most everyday contexts. Indeed, he ‘suggests that a good deal of what contemporary philosophy regards as mere physical necessity is actually necessary tout court’, concluding ‘The question how far this can be pushed is one I leave for further work’ (Kripke 1972: 769, 1980: 164). The phrase ‘necessary tout court’ may indicate a conception of other kinds of objective possibility as restrictions of metaphysical possibility, making the latter the maximally inclusive kind of objective possibility (Williamson 2016a).
+
+If Kripke is drawing on ordinary ways of thinking and knowing about kinds of objective possibility, those ways may well be primarily geared to the restricted kinds of objective possibility mainly at issue in ordinary contexts, like the perceptual, inductive, and some natural scientific modes of access. Such ordinary knowledge of restricted objective modalities includes knowing that one can reach the lower shelves but not the upper ones, or that it can easily snow in January but not in July. That knowledge is paradigmatically a posteriori, not a priori. Thus, common sense a priori knowledge of objective modality looks anomalous.
+
+Kripke shows how a priori and a posteriori knowledge of modality can combine. For instance, we know only a posteriori that this table was not made of ice, but we know a priori that if it is not made of ice, then it is necessarily not made of ice. By deduction, we can come to know (not purely a priori) that it is necessarily not made of ice (Kripke 1971: 153). Perhaps, then, we come to know (a posteriori) restricted modal facts about our local region of modal space by deduction from our a priori knowledge of unrestricted modal facts about the layout of global modal space and our a posteriori knowledge about where we are in that space. But that proposal makes more problems than it solves. How do we know a priori the layout of modal space, for instance, that if the table is not made of ice, then it is necessarily not made of ice? To know our local region of modal space, we need not go on a detour through knowledge of global modal space; instead, we can use cognitive capacities aimed directly at the local region.
+
+A plausible account of the kind of knowledge of metaphysical modality exemplified in ‘Naming and Necessity’ should anchor it in cognitive capacities that could evolve in species like ours without miraculous luck. If philosophers claim a special faculty for intuiting or conceiving, whose function is to detect the metaphysical distinction between necessity and contingency, one wonders how on earth humans came to be designed with a special gift for metaphysics.
+
+The counterfactual-based approach to the epistemology of metaphysical modality enables us to avoid awarding ourselves such implausible privileges. It starts from ordinary counterfactual conditionals such as ‘If she hadn’t moved, she wouldn’t have been noticed’. Such conditionals play an important role in ordinary thought about causal relations. We use them in learning from past experience and planning for the future. Our sensitivity to such relations has survival value. The next section explains some logical relations between counterfactual conditionals and metaphysical modality, and, schematically, their potential to underpin corresponding epistemological relations. The final section fills in some of the epistemology.
+
+# 17.2 Counterfactuals and Metaphysical Modality
+
+Although counterfactuals can be given epistemic readings (Edgington 2008, Vetter 2016, Williamson 2016b, 2020: 251–253), their salient reading is usually objective; that is their intended reading throughout this chapter.
+
+Henceforth, $□ {𝐀}$ abbreviates ‘It’s metaphysically necessary that $\mathrm{A}$’; $\boldsymbol{\lozenge} {𝐀}$, ‘It’s metaphysically possible that $\mathrm{A}$’; ${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$, the counterfactual ‘would’ conditional with antecedent ‘$\mathrm{A}$’ and consequent ‘$\mathrm{C}$’; $\boldsymbol{\to}$, the material conditional; $\leftrightarrow$, the material biconditional; $\boldsymbol{\neg}$, negation; $\mathbin{\boldsymbol{\&}}$, conjunction; $\bot$, an absurdity; $\forall$ and $\exists$, quantifiers binding ‘propositional’ variables in sentence position.
+
+Two logical principles link counterfactuals to metaphysical modality:
+
+NECESSITY
+$□ \boldsymbol{(} {𝐀} \boldsymbol{\to} {𝐂} \boldsymbol{)} \boldsymbol{\to} \boldsymbol{(} {𝐀} \mathbin{□\!\to} {𝐂} \boldsymbol{)}$
+POSSIBILITY
+$\boldsymbol{(} {𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂} \boldsymbol{)} \boldsymbol{\to} \boldsymbol{(} \lozenge {𝐀} \boldsymbol{\to} \lozenge {𝐂} \boldsymbol{)}$
+
+In effect, NECESSITY says that if ${𝐀}$ couldn’t hold without ${𝐂}$, then ${𝐀}$ wouldn’t hold without ${𝐂}$; POSSIBILITY says that if ${𝐀}$ wouldn’t hold without ${𝐂}$, then if ${𝐀}$ could hold, so could ${𝐂}$.
+
+These principles are plausible, but not undeniable. One difference between them is that POSSIBILITY is plausible for a wide range of restricted kinds of objective possibility in place of metaphysical possibility, whereas NECESSITY is implausible for any kind of objective necessity more restricted than metaphysical necessity. For instance, when we restrict $\boldsymbol{\lozenge}$ and $□$ to easy possibilities, POSSIBILITY still looks fine (if ${𝐀}$ wouldn’t hold without ${𝐂}$, and ${𝐀}$ could easily hold, so could ${𝐂}$), but NECESSITY looks wrong (for instance, when ${𝐂}$ = $\boldsymbol{\neg} {𝐀}$, if ${𝐀}$ could hold but not easily, then ${𝐀}$ couldn’t easily hold without $\boldsymbol{\neg} {𝐀}$ holding, but it doesn’t follow that ${𝐀}$ wouldn’t hold without $\boldsymbol{\neg} {𝐀}$ holding). Predictably, even under the intended metaphysical reading of the modal operators, NECESSITY has had more critics than POSSIBILITY. They deny its corollary that a metaphysically impossible antecedent counterfactually implies everything (Nolan 1997; Kment 2006, 2014; Lowe 2012; Brogaard and Salerno 2013; Berto, French, Priest, and Ripley 2018). They even deny that a contradiction counterfactually implies everything, a principle validated by all standard possible world semantics for counterfactuals (Stalnaker 1968; Lewis 1973; Kratzer 1977). For instance, they deny that if this shirt were green and not green, it would be red. To do so, many of them construct an impossible ‘world’ (a set of sentences) that verifies ‘This shirt is green and not green’ without verifying ‘This shirt is red’. Space does not permit such non-standard theories of counterfactuals to be assessed in detail here. They drift towards an irrelevant epistemic reading of counterpossibles, since they provide no robust sense in which what matters for the truth-value of the conditional are the objective states of affairs expressed by the antecedent and consequent, irrespective of the wording used to express them. Arguably, the supposed counterexamples to the vacuous truth of counterpossibles are artefacts of uncritical reliance on unreflective heuristics for evaluating counterfactuals that work for the most part but fail in some cases (Williamson 2017). In what follows, we assume NECESSITY and POSSIBILITY with the metaphysical reading of the modal operators, to see where they take us.2
+
+Given elementary principles of modal logic and the logic of counterfactuals, NECESSITY and POSSIBILITY entail three characterizations each of metaphysical necessity and possibility in terms of the counterfactual conditional (Williamson 2007: 156–159):
+
+$\boldsymbol{(} \mathbf{1} □ \boldsymbol{)}$
+$□ {𝐀} \leftrightarrow \boldsymbol{(} \boldsymbol{\neg} {𝐀} \mathbin{□\!\to} \bot \boldsymbol{)}$
+
+${𝐀}$ must hold just if it wouldn’t fail without absurdity.
+
+$\boldsymbol{(} \mathbf{1} \boldsymbol{\lozenge} \boldsymbol{)}$
+$\boldsymbol{\lozenge} {𝐀} \leftrightarrow \boldsymbol{\neg} \boldsymbol{(} {𝐀} \mathbin{□\!\to} \bot \boldsymbol{)}$
+
+${𝐀}$ could hold just if it’s not that it wouldn’t hold without absurdity.
+
+$\boldsymbol{(} \mathbf{2} □ \boldsymbol{)}$
+$□ {𝐀} \leftrightarrow \boldsymbol{(} \boldsymbol{\neg} {𝐀} \mathbin{□\!\to} {𝐀} \boldsymbol{)}$
+
+${𝐀}$ must hold just if even if it failed, it would hold.
+
+$\boldsymbol{(} \mathbf{2} \boldsymbol{\lozenge} \boldsymbol{)}$
+$\boldsymbol{\lozenge} {𝐀} \leftrightarrow \boldsymbol{\neg} \boldsymbol{(} {𝐀} \mathbin{□\!\to} \boldsymbol{\neg} {𝐀} \boldsymbol{)}$
+
+${𝐀}$ could hold just if it’s not that it wouldn’t hold without failing.
+
+$\boldsymbol{(} \mathbf{3} □ \boldsymbol{)}$
+${𝐀} \leftrightarrow \forall {𝐩}\, \boldsymbol{(} {𝐩} \mathbin{□\!\to} {𝐀} \boldsymbol{)}$
+
+${𝐀}$ must hold just if it would hold whatever held.
+
+$\boldsymbol{(} \mathbf{3} \boldsymbol{\lozenge} \boldsymbol{)}$
+${𝐀} \leftrightarrow \exists {𝐩}\, \boldsymbol{\neg} \boldsymbol{(} {𝐩} \mathbin{□\!\to} \boldsymbol{\neg} {𝐀} \boldsymbol{)}$
+
+${𝐀}$ could hold just if something isn’t such that if it held, ${𝐀}$ would fail.
+
+Several of these biconditionals sound odd, because a normal conversational implicature of uttering a conditional is the possibility of its antecedent (otherwise, why bother uttering it?), but conversational oddity is compatible with truth.
+
+We cannot treat $(1□)$, $(2□)$, and $(3□)$ as all definitions, giving the meaning of $□$, for the right-hand sides of the three biconditionals are not synonymous with each other—they differ in semantic structure—and so cannot all be synonymous with the shared left-hand side. Similarly, we cannot treat $( 1 \lozenge )$, $( 2 \lozenge )$, and $( 3 \lozenge )$ as all definitions, giving the meaning of $\boldsymbol{\lozenge}$. Plausibly, none of the six biconditionals pairs synonyms. Nevertheless, they tightly constrain metaphysical modality in terms of the familiar, practically indispensable counterfactual conditional. They prevent the metaphysical distinction from floating free of ordinarily intelligible ways of thinking.
+
+If we know NECESSITY and POSSIBILITY, we can come to know the biconditionals by deduction, and in principle use them to derive knowledge of metaphysical modality from knowledge of counterfactual connections. A natural concern is that even if we are good at knowing about ordinary counterfactual connections, the biconditionals involve extraordinary counterfactuals. The reliability of our cognitive capacities for the former might not extend to the latter (Roca-Royes 2011, Gregory 2017). Our competence with counterfactuals might reach its epistemic limits just when we need it for metaphysical modality.
+
+To see that the concern is exaggerated, just consider any opposed pair of ordinary counterfactuals ${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ and ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$ that our ordinary cognitive capacities can handle. ${𝐀}$ and ${𝐂}$ may describe the behaviour of familiar everyday objects. By hypothesis, we know whether each counterfactual holds. Thus, we know which of these four cases obtains:
+
+(i)
+${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ and ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$ both hold.
+(ii)
+${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ holds; ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$ fails.
+(iii)
+${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ fails; ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$ holds.
+(iv)
+${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ and ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$ both fail.3
+
+In each case, we can reach a non-trivial conclusion about metaphysical modality:
+
+Given (i), by the elementary logic of counterfactuals, ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{(} {𝐂} \mathbin{\boldsymbol{\&}} \boldsymbol{\neg} {𝐂} \boldsymbol{)}$ holds. But by elementary modal logic, a contradiction is impossible. Thus, using POSSIBILITY, we can derive $\boldsymbol{\neg} \boldsymbol{\lozenge} {𝐀}$.
+
+Given (ii), we have $\boldsymbol{\neg} \boldsymbol{(} {𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂} \boldsymbol{)}$, so by modus tollens on NECESSITY, we have $\boldsymbol{\neg} □ \boldsymbol{(} {𝐀} \boldsymbol{\to} \boldsymbol{\neg} {𝐂} \boldsymbol{)}$, and so by elementary modal logic, we can derive $\boldsymbol{\lozenge} \boldsymbol{(} {𝐀} \mathbin{\boldsymbol{\&}} {𝐂} \boldsymbol{)}$.
+
+Given (iii), similarly to (ii), we can derive $\boldsymbol{\lozenge} \boldsymbol{(} {𝐀} \mathbin{\boldsymbol{\&}} \boldsymbol{\neg} {𝐂} \boldsymbol{)}$.
+
+Given (iv), as in (ii) and (iii), we can derive $\boldsymbol{\lozenge} \boldsymbol{(} {𝐀} \mathbin{\boldsymbol{\&}} {𝐂} \boldsymbol{)} \mathbin{\&} \boldsymbol{\lozenge} \boldsymbol{(} {𝐀} \mathbin{\boldsymbol{\&}} \boldsymbol{\neg} {𝐂} \boldsymbol{)}$.
+
+Thus, in each case, we can know something non-trivial about metaphysical modality by deduction from what by hypothesis is knowledge of ordinary counterfactual connections. Ordinary counterfactuals are inextricably linked to extraordinary ones.
+
+Sceptics about metaphysical modality claim that we cannot know anything much about metaphysical modality. Given the preceding argument, such a sceptic must also be a sceptic about ordinary counterfactual connections (or about logic), claiming that we cannot know much about them, either. That is presumably a scepticism too far.
+
+Of course, that argument does not show that with our ordinary cognitive capacities we can know the metaphysical modal status of a given philosophically controversial proposition. For instance, it does not show that we can know whether zombies are metaphysically possible. There might be no suitable pair ${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ and ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$. But that was to be expected. If there were an ordinary route to such knowledge, the proposition would not be so controversial. We have no reason to expect ourselves to be potentially omniscient about metaphysical modality.
+
+Obviously, if we can know something in a given way, it doesn’t follow that we do know it that way (Jenkins 2008). We may know it another way, or not at all. The sort of common-sense knowledge of metaphysical modality invoked by Kripke seems not to use any elaborate formal reasoning—though his account of our knowledge that the table is necessarily not made of ice does posit a subtle deductive step we were probably unaware of taking.
+
+There is a more reasonable line of thought. $(1□)$–$( 3 \lozenge )$ show that the cognitive systems with which we gain ordinary knowledge of counterfactual connections are sensitive to the right factors to provide knowledge of metaphysical modality. It is therefore a very uneconomical hypothesis that our actual ordinary knowledge of metaphysical modality comes from some quite different cognitive system. The default hypothesis is that what we have identified as capable of doing the job is what does do the job. It is open to anyone to argue for an alternative explanation, but they had better specify what the alternative cognitive system is, how it can generate ordinary knowledge of metaphysical modality, and why it is natural for us to have such a system; otherwise, the default remains in place. At present, the abductive evidence arguably favours a broadly counterfactual approach to common-sense knowledge of metaphysical modality, by inference to the best explanation.4
+
+Connections between the epistemology of metaphysical modality and the epistemology of counterfactuals are close to the surface of ‘Naming and Necessity’. For instance, when discussing the idea of transworld identification, Kripke writes (1972: 271, 1980: 50):
+
+given certain counterfactual vicissitudes in the history of the molecules of a table, T, one may ask whether T would exist, in that situation, or whether a certain bunch of molecules, which in that situation would constitute a table, constitute the very same table T.
+
+Again, discussing the necessity of origin, he says: ‘it seems to me that anything coming from a different origin would not be this object’ (1972: 314, 1980: 113). We can formalize the claim as a universally quantified counterfactual, with ${𝐨}$ for ‘this object’, ${𝐃}$ for ‘comes from a different origin’, and quantification over individuals:5
+
+ORIGIN1
+$\forall {𝐱}\, \boldsymbol{(} {𝐃} {𝐱} \mathbin{□\!\to} {𝐱} \ne {𝐨} \boldsymbol{)}$
+
+Instantiating ${𝐨}$ for ${𝐱}$ gives:
+
+ORIGIN2
+${𝐃} {𝐨} \mathbin{□\!\to} {𝐨} \ne {𝐨}$
+
+Since the consequent is absurd, a version of $(1□)$ yields:
+
+ORIGIN3
+$□ \boldsymbol{\neg} {𝐃} {𝐨}$
+
+This object could not have come from a different origin.
+
+So far, the discussion has been deliberately neutral over the epistemology of ordinary knowledge of counterfactuals, in order to bring out the structure of the position more clearly. But of course the abductive case for the counterfactual-based approach involves a more substantive epistemology of that ordinary knowledge. The final section sketches such an epistemology and its application to ordinary knowledge of metaphysical modality.
+
+# 17.3 Knowledge of Counterfactuals and Knowledge of Metaphysical Modality6
+
+The normal human way to evaluate a conditional with antecedent ${𝐀}$ and consequent ${𝐂}$ is by supposing ${𝐀}$ and then evaluating ${𝐂}$ under that supposition.7 To do so, one develops the supposition ‘offline’ in ways that resemble updating on the new information ${𝐀}$ ‘online’, though with significant differences. By default one uses background information and forms of reasoning, except where ${𝐀}$ somehow makes them inappropriate (online updating sometimes involves belief revision, too). The development sometimes involves deductive reasoning, but it is often an imaginative exercise, though still reality-oriented. What would happen if the boss had a nervous breakdown? To a first approximation, if one accepts ${𝐂}$ under the supposition, one accepts the conditional; if one rejects ${𝐂}$ under the supposition, one rejects the conditional. If one suspends judgment on ${𝐂}$ under the supposition, one may suspend judgment on the conditional, pleading ignorance. Alternatively, if one regards ignorance as not responsible for one’s failure to decide ${𝐂}$, one may treat ${𝐂}$ and $\boldsymbol{\neg} {𝐂}$ as each rejected under the supposition, and reject each corresponding conditional, too.8 If much is at stake, one may repeat the procedure several times, hoping to achieve a robust outcome.
+
+The process of development is subtly different for indicative and subjunctive conditionals. The indicative ‘I am thinner than I am’ is an outright inconsistent supposition. The indicative ‘I was thinner than I am’ with an ordinary past tense ‘was’ is an unproblematic supposition, and indeed true: I have put on weight. But the supposition ‘I was thinner than I am’ also has a ‘subjunctive’ reading, on which ‘was’ takes us not to a past situation but to a counterfactual alternative to the present situation. Both readings of ‘I was thinner than I am’ require one to keep track of two contrasted situations from within the supposition. The subjunctive reading is the relevant one for what we have called ‘counterfactual’ conditionals.
+
+Supposing ${𝐀}$ and then developing the counterfactual supposition is a ‘more a priori’ procedure than learning ${𝐀}$ from experience and then updating on it. Even so, evaluating ordinary counterfactuals is typically a posteriori: ‘If you flicked that switch, the heating would go off’. But, unsurprisingly, by putting enough into ${𝐀}$ and not too much into ${𝐂}$, one can construct cases where one can get from ${𝐀}$ to ${𝐂}$ by what looks like purely a priori reasoning. That is just an extreme case of a tendency built into the suppositional procedure.
+
+How does all this apply to metaphysical modality? Consider the Kripke-inspired example ORIGIN1–ORIGIN3. One makes the counterfactual supposition ${𝐃} {𝐱}$ (‘${𝐱}$ comes from a different origin [from its actual one]’), where ‘${𝐱}$’ works like an arbitrary name; one distinguishes the counterfactual situation from the actual one. One adds ${𝐱} \boldsymbol{\ne} {𝐨}$ under the counterfactual supposition. One therefore accepts the open conditional ${𝐃} {𝐱} \mathbin{□\!\boldsymbol{\to}} {𝐱} \boldsymbol{\ne} {𝐨}$. Since ‘${𝐱}$’ was arbitrary, one also accepts its universal generalization ORIGIN1. One then derives ORIGIN2 and ORIGIN3 as before. But there was really no need to go through the counterfactual conditionals. Having added ${𝐱} \boldsymbol{\ne} {𝐨}$ under the counterfactual supposition ${𝐃} {𝐱}$, one already has what it takes for accepting ORIGIN3 itself.
+
+What entitled us to add ${𝐱} \boldsymbol{\ne} {𝐨}$ to the counterfactual supposition in the first place? If adding ${𝐱} \boldsymbol{\ne} {𝐨}$ requires already knowing something about origin to be metaphysically necessary, we have made little or no progress towards clarifying the epistemology of metaphysical modality. This is an instance of the general issue of what to hold fixed under a counterfactual supposition, Goodman’s problem of cotenability. Some critics have taken it to undermine the counterfactual approach (Tahko 2012).
+
+Obviously, for proponents of the counterfactual-based approach to posit a black box for assessing metaphysical modal status as a separate module within the suppositional procedure would be to give the game away. But they have no need of such a black box.
+
+An analogy may help here. Imagine a philosopher arguing that we must have innate knowledge of epistemology because, unless we already know some epistemology, we can’t acquire any knowledge, since we don’t know which cognitive methods are epistemologically sound. His argument is clearly bogus. Knowing nothing about epistemology, one can acquire knowledge by unreflectively employing cognitive methods that are in fact epistemologically sound. Many nonhuman animals do just that. Later, we may reflect on our cognitive methods, and—by using them!—acquire knowledge of epistemology, perhaps even of the soundness of those very methods. Often, practice precedes theory. Such knowledge will not satisfy committed sceptics, but since nothing will satisfy them, that test is unreasonable.
+
+Similarly, knowing nothing about metaphysical modality, we can acquire knowledge about counterfactual connections by unreflectively employing normal human methods for assessing counterfactual conditionals. Later, we may use them to make and apply the distinction between metaphysical necessity and metaphysical contingency, and reflect that they commit one to applying the distinction in some ways rather than others—just as normal human methods for acquiring perceptual knowledge commit one to classifying objects by shape in some ways rather than in others.
+
+There are general patterns in what we hold fixed and what we don’t when developing a counterfactual supposition, depending on what the supposition is. One manifestation of those patterns is that developing some suppositions yields a contradiction, while developing others does not. We classify the former suppositions as metaphysically impossible, the latter as metaphysically possible. Obviously, that does not mean that judgments of metaphysical necessity were inputs to the process. It does not even mean that we have, as it were, a separate list in our brains of the parameters to be held fixed between actual and counterfactual situations no matter what supposition is being developed.
+
+Here is another analogy. Imagine a deductive reasoner who starts with a hard-wired system of natural deduction, with standard introduction and elimination rules for the usual logical connectives. Those rules concern reasoning with arbitrary sets of auxiliary assumptions (side premises). Nevertheless, the rules allow some conclusions to be reached from the empty set of assumptions. Those conclusions are the logical truths. Obviously, that does not mean that judgments of logical truth were inputs to the reasoning. It does not even mean that some logical truths play a special role in the rules, presumably as axioms: there are no axioms in a standard natural deduction system (say, for first-order logic without identity). Recognizing logical truths is just a by-product of a system mainly designed for recognizing the logical consequences of non-logical assumptions. Likewise, recognizing metaphysically necessities may be just by-products of a system mainly designed for recognizing the counterfactual consequences of metaphysically contingent suppositions.
+
+Of course, our theoretical understanding of the imaginative process of developing a counterfactual supposition is much less clear than our theoretical understanding of formal systems of natural deduction. We have only a rough idea of the general patterns. But, given the practical constraints under which those patterns evolved, it would be surprising if they reserved special treatment for the practically unimportant class of metaphysical necessities. Their treatment is likely to be a by-product of more general patterns. That would fit well with the observation in Section 17.2 that classifications of metaphysical modality are logical corollaries of assessments of ordinary counterfactual connections, in cases (i)–(iv).
+
+Similar comments apply to talk of conceivability and inconceivability as guides to metaphysical possibility and impossibility. To treat such conceivability as an isolated sui generis mental phenomenon is psychologically implausible. ‘Conceiving’ is better understood as merely one aspect of the far broader phenomenon of imagining. A good account of conception should emerge as a corollary of a more general theory of imagination.
+
+It has been questioned whether the imaginative process of developing counterfactual suppositions is really needed for evaluating ascriptions of metaphysical modality (Yli-Vakkuri 2013). Sometimes, we can reach the required conclusions by purely deductive reasoning from nonmodal premises about identity and distinctness. For the substitution of one atomic term for another with the same reference in the context of a non-epistemic counterfactual conditional should leave its truth-value intact, since counterfactual connections depend on the objects, properties, and relations at issue, not on how they are described.9 Thus, from ${𝐱} \boldsymbol{=} {𝐲}$ and the trivial truth ${𝐱} \boldsymbol{\ne} {𝐲} \mathbin{□\!\boldsymbol{\to}} {𝐱} \boldsymbol{\ne} {𝐲}$, we can derive ${𝐱} \boldsymbol{\ne} {𝐲} \mathbin{□\!\boldsymbol{\to}} {𝐱} \boldsymbol{\ne} {𝐱}$ by substitution, which corresponds to a standard proof of the necessity of identity (compare $(1□)$). Yli-Vakkuri argues that we can take this process much further, using the necessity of property identity. For instance, a proof in his style of ORIGIN3 ($□ \boldsymbol{\neg} {𝐃} {𝐨}$) starts from the property identity ${𝛌} {𝐱} \boldsymbol{(} {𝐱} \boldsymbol{=} {𝐨} \boldsymbol{)} \boldsymbol{=} {𝛌} {𝐱} \boldsymbol{(} {𝐱} \boldsymbol{=} {𝐨} \mathbin{\boldsymbol{\&}} \boldsymbol{\neg} {𝐃} {𝐨} \boldsymbol{)}$ (the property of being this object is the property of both being this object and not coming from a different origin from its actual one). If the properties are identical, they are necessarily identical, so necessarily coextensive, so it is impossible for ${𝐨}$ to come from a different origin. However, the property identity claim is not immediately compelling. The natural human way to test it is by asking oneself whether this object could have come from a different origin, and imaginatively developing the counterfactual supposition that it did come from a different origin. Kripke’s suggestion that ‘anything coming from a different origin would not be this object’ (ORIGIN1) is just a slight variation on this theme: it answers the original question by making a counterfactual supposition (${𝐃} {𝐱}$) overtly neutral on the identity of the thing, but when developed it takes us to the conclusion that the thing is not this object (${𝐱} \boldsymbol{\ne} {𝐨}$). In practice, without such an imaginative exercise, however rudimentary, we seem unable to access the identity of the properties. Although perception, induction, natural science, and logic also contribute to our knowledge of objective modality, it is very doubtful that they can ever fully take over the cognitive role of the imagination.
+
+Intriguing questions also arise as to how we know the logic of counterfactuals and metaphysical modality. Arguably, an abductive methodology is needed to assess candidate laws (Williamson 2013a: 423–429). Such a methodology needs evidence to work on, for instance in the shape of non-general truths expressed with the counterfactual conditional and modal operators. We use our imaginations in generating such data.
+
+There is no reason to limit the cognitive reach of the imagination to counterfactual conditionals and their equivalents. We can also use it to gain knowledge of necessity and possibility in more restricted senses (Williamson 2016c). For instance, through an imaginative exercise, one might work out whether it is possible to get into the bank vaults undetected: metaphysical possibility is not the modality of interest. Facts about both such restricted modalities may in turn have implications for metaphysical modality (Williamson 2017). But counterfactual conditionals are of special relevance to metaphysical modality given the logical relations between them (Section 17.2). By studying the epistemology of counterfactual conditionals, we study a cognitive system of major practical utility that also has the power to draw a key metaphysical distinction. Although psychology is no substitute for epistemology, in the long run, a deeper psychological understanding of our use of the imagination in assessing counterfactuals may help us to understand its use in assessing ascriptions of necessity and possibility, without resort to fantasies of surveying worlds with the mind’s eye.10
+
+# Notes
+
+[1] Williamson (2013b) argues that the distinction between a priori and a posteriori knowledge is epistemologically superficial, on grounds related to the argument of Section 17.3. For brevity, to relate the discussion to Kripke’s work, I follow him in using the distinction.
+
+[2] Kment (2006) and Berto, French, Priest, and Ripley (2018) discuss accounts of metaphysical modality in terms of counterfactuals that do not assume NECESSITY. Readers should note that the account in Williamson (2007) was written with something like the semantics of counterfactuals given by Lewis (1973) in mind. Much more recently, I have come to the conclusion that counterfactual conditionals are contextually restricted strict conditionals, in English compositionally derived from the material conditional expressed by ‘if’ and a contextually restricted necessity operator expressed by ‘would’ (Williamson 2020). This has non-trivial consequences for the logic of counterfactuals. Fortunately, the differences do not impact very much on the epistemological issues discussed in this chapter, though more of the work has to be done by pragmatic constraints on the contextual restriction, rather than by purely logical principles; for the relation between the two accounts with respect to the modal aspect of thought experiments, see Williamson (2020: 229–241).
+
+[3] The principle of Conditional Excluded Middle (valid in Stalnaker’s logic for counterfactuals, invalid in Lewis’s) asserts the disjunction of ${𝐀} \mathbin{□\!\boldsymbol{\to}} {𝐂}$ and ${𝐀} \mathbin{□\!\boldsymbol{\to}} \boldsymbol{\neg} {𝐂}$ and so excludes case (iv) (though it may be held to be ‘indeterminate’ which disjunct holds). The principle has been coming back into favour (Williams 2010). However, the data in its favour may come from over-reliance on a fallible heuristic (Williamson 2017 and 2020).
+
+[4] Kroedel (2012) argues that psychological evidence favours an account more closely related to $(3□)$–$( 3 \lozenge )$ than to the other two pairs.
+
+[5] Subtle issues arise over the interaction of quantifiers and conditionals (Williamson 2007: 305–308, 2013a: 127–128).
+
+[6] For more details of the account defended here see Williamson (2005, 2007: 141–178, 2020) and, for the connection with imagination, Williamson (2016c). Hill (2006) makes a similar connection between the epistemology of counterfactuals and the epistemology of metaphysical modality.
+
+[7] See Evans and Over (2004) and Williamson (2020) for suppositional accounts of the psychology of conditionals.
+
+[8] If rejecting a conditional involves accepting its negation, one thereby violates Conditional Excluded Middle.
+
+[9] Opponents of NECESSITY may resist this claim; see Section 17.2 for discussion.
+
+[10] Further challenges to the counterfactual-based approach and responses include Peacocke (2011), Williamson (2011), Vetter (2016), and Williamson (2016b).
+
+# References
+
+Berto, F., French, R., Priest, G., and Ripley, D. (2018) ‘Williamson on counterpossibles’, Journal of Philosophical Logic, 47: 693–713.
+
+Brogaard, B., and Salerno, J. (2013) ‘Remarks on counterpossibles’, Synthese, 190: 639–660.
+
+Edgington, D. (2008) ‘Counterfactuals’, Proceedings of the Aristotelian Society, 108: 1–21.
+
+Evans, J., and Over, D. (2004) If, Oxford: Oxford University Press.
+
+Gregory, D. (2017) ‘Counterfactual reasoning and knowledge of possibilities’, Philosophical Studies, 58: 821–835.
+
+Hill, C. (2006) ‘Modality, modal epistemology, and the metaphysics of consciousness’, in S. Nichols (ed.), The Architecture of Imagination, Oxford: Oxford University Press.
+
+Jenkins, C. (2008) ‘Modal knowledge, counterfactual knowledge and the role of experience’, Philosophical Quarterly, 58: 693–701.
+
+Kment, B. (2006) ‘Counterfactuals and the analysis of necessity’, Philosophical Perspectives, 20: 237–302.
+
+———. (2014) Modality and Explanatory Reasoning, Oxford: Oxford University Press.
+
+Kratzer, A. (1977) ‘What “must” and “can” must and can mean’, Linguistics and Philosophy, 1: 337–355.
+
+Kripke, S. (1971) ‘Identity and necessity’, in M. Munitz (ed.), Identity and Individuation, New York: New York University Press.
+
+———. (1972) ‘Naming and necessity’, in D. Davidson and G. Harman (eds.), Semantics of Natural Language, Dordrecht: Reidel.
+
+———. (1980) Naming and Necessity, Oxford: Blackwell.
+
+Kroedel, T. (2012) ‘Counterfactuals and the epistemology of modality’, Philosophers’ Imprint, 12.
+
+Lewis, D. (1973) Counterfactuals, Oxford: Blackwell.
+
+Lowe, E.J. (2012) ‘What is the source of our knowledge of modal truths?’ Mind, 121: 919–950.
+
+McCullagh, M., and Yli-Vakkuri, J. (eds.) (2017) Williamson on Modality, London: Routledge.
+
+Nolan, D. (1997) ‘Impossible worlds: a modest approach’, Notre Dame Journal of Formal Logic, 38: 535–572.
+
+Peacocke, C. (2011) ‘Understanding, modality, logical operators’, Philosophy and Phenomenological Research, 82: 472–480.
+
+Portner, P. (2009) Modality, Oxford: Oxford University Press.
+
+Roca-Royes, S. (2011) ‘Modal knowledge and counterfactual knowledge’, Logique et Analyse, 54: 537–552.
+
+———. (2016) ‘Similarity and possibility: an epistemology of de re possibility for concrete entities’, in B. Fischer and F. Leon (eds.), Modal Epistemology after Rationalism, New York: Springer.
+
+Stalnaker, R. (1968) ‘A theory of conditionals’, American Philosophical Quarterly Monographs 2: 98–112.
+
+Strohminger, M. (2015) ‘Perceptual knowledge of nonactual possibilities’, Philosophical Perspectives, 29: 363–375.
+
+Tahko, T. (2012) ‘Counterfactuals and modal epistemology’, Grazer Philosophische Studien, 86: 93–115.
+
+Vetter, B. (2016) ‘Williamsonian modal epistemology, possibility based’, Canadian Journal of Philosophy, 46: 766–795, and in McCullagh and Yli-Vakkuri (2017).
+
+Williams, J.R.G. (2010) ‘Defending conditional excluded middle’, Noûs: 44: 650–668.
+
+Williamson, T. (2005) ‘Armchair philosophy, metaphysical modality and counterfactual thinking’, Proceedings of the Aristotelian Society, 105: 1–23.
+
+———. (2007) The Philosophy of Philosophy, Oxford: Blackwell.
+
+———. (2011) ‘Reply to Peacocke’, Philosophy and Phenomenological Research, 82: 481–487.
+
+———. (2013a) Modal Logic as Metaphysics, Oxford: Oxford University Press.
+
+———. (2013b) ‘How deep is the distinction between a priori and a posteriori knowledge?’ in A. Casullo and J. Thurow (eds.), The A Priori in Philosophy, Oxford: Oxford University Press.
+
+———. (2016a) ‘Modal science’, Canadian Journal of Philosophy, 46: 453–492, and in McCullagh and Yli-Vakkuri (2017).
+
+———. (2016b) ‘Reply to Vetter’, Canadian Journal of Philosophy, 46: 796–802, and in McCullagh and Yli-Vakkuri (2017).
+
+———. (2016c) ‘Knowing and imagining’, in A. Kind and P. Kung (eds.), Knowledge through Imagination, Oxford: Oxford University Press.
+
+———. (2017) ‘Counterpossibles in semantics and metaphysics’, Argumenta, 4.
+
+———. (2020) Suppose and Tell: The Semantics and Heuristics of Conditionals, Oxford: Oxford University Press.
+
+Yli-Vakkuri, J. (2013) ‘Modal scepticism and counterfactual knowledge’, Philosophical Studies, 162: 605–623.

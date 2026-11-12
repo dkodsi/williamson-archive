@@ -1,0 +1,472 @@
+# Is Knowing a State of Mind?
+
+Timothy Williamson
+
+Mind 104 (415) (1995): 533–565.
+
+# I
+
+Let there be no vulgar suspense: the title will be answered in the affirmative. What takes longer is to clarify its meaning.
+
+Expected answers are dull. One might expect knowing to be a state of mind, simply because knowing that $P$ involves the paradigmatic mental state of believing that $P$.1 However, that ground implies only that there is a mental state being in which is necessary for knowing that $P$. The title, in contrast, is to be read as the question whether there is a mental state being in which is necessary and sufficient for knowing that $P$. In short, is knowing merely a state of mind? This is the question to which an affirmative answer may be unexpected.
+
+On a standard view, believing is merely a mental state but knowing is not, for knowing that $P$ requires it to be true that $P$, which concerns the external environment (when the proposition that $P$ does). Knowing, unlike believing, is factive; that is incontestable. However, the inference from that premise to the conclusion that knowing is not a mental state contestably assumes that no necessary condition for a mental state concerns the external environment. In current jargon, the argument assumes an internalist conception of mind (to be defined below). An externalist conception frees one to affirm that knowing is a mental state. Until now, few externalists have realized that they have this freedom. Many have accepted a traditional view of knowing on which it would not be a mental state, as understood here. Externalists will be advised to reject that traditional view.
+
+The issue ramifies. On the internalist conception, knowing is a metaphysical hybrid, a mixture of mental states together with mind-independent conditions on the external world. The internalist naturally tries to break the mixture down into its elements, to analyse knowing in terms of believing, truth and further factors. The failure of so many attempts to carry out this programme suggests that it may be misconceived. Even so-called externalist analyses of knowledge, whose further factors are causal or counterfactual, manifest the internalist assumption that believing is somehow more basic than knowing. A thoroughly externalist account of knowledge will dispense with this reductionist programme. An alternative becomes available on which knowledge is not a metaphysical hybrid, because it cannot be broken down into such elements. A modest externalist account is based on the notion of a factive mental state, a notion that also applies to seeing and remembering, for example. What will be proposed is that knowing is the most general kind of factive mental state.
+
+The paper is organized as follows. §II orients the question with respect to some traditional issues about scepticism and self-knowledge. §III explains an incompatibility between the view of knowing as a factive mental state and standard analyses of it as a conjunction of believing, truth and other factors, and blames the latter. §IV considers the incompatibility between the view of knowing as a factive mental state and internalism, arguing that the former is simply the extension of a widespread externalism about the contents of thought to the attitudes taken in thought to those contents. §V presents the positive account, distinguishes it from analyses of the traditional kind, and gestures towards the possibility of understanding epistemology in terms of the metaphysics of states. §VI discusses the relation between knowing and believing, argues that the present view is neutral on whether believing is necessary for knowing, and insists that what matters is the rejection of a conjunctive account of knowing, not the acceptance of a disjunctive account of believing.
+
+# II
+
+The conception of knowing as a mental state can look like a confusion between objective and subjective certainty. The conception may even be diagnosed as Descartes’ central mistake. Did he not seek a mental state sufficient for knowing that $P$? Was not clearly and distinctly conceiving that $P$ his candidate? And does not the failure of his epistemological programme manifest the impossibility of a mental state of the required kind?
+
+On the view to be developed here, if Descartes sought a mental state sufficient for knowing, his mistake lay elsewhere: perhaps in the view (if he held it) that one must always be in a position to know what mental state one is in. Prichard, who also took knowing to be a mental state, held that one is always in a position to know whether one knows or merely believes (Prichard 1950, p. 86). Few would now claim such powers of discrimination. Indeed, one cause of denials that knowing is a state of mind may be the assumption that one must always be in a position to know whether one is in a given state of mind.
+
+One is certainly not always in a position to know whether one knows that $P$ (for almost any value of “$P$”), however alert and conceptually sophisticated one is. The point is most vivid when the subject believes falsely that $P$. Consider, for example, the situation of a generally well-informed citizen N.N. who has not yet heard the news from the theatre where Lincoln has just been assassinated. Since Lincoln is dead, he is no longer President, so N.N. no longer knows that Lincoln is President (knowing is factive). However, N.N. is in no position to know that anything is amiss.2 He continues reasonably to believe that Lincoln is President; moreover, this seems to him to be just another item of general knowledge; N.N. continues reasonably to believe that he knows that Lincoln is President. Although N.N. does not know that Lincoln is President, he is in no position to know that he does not know that Lincoln is President.3 There are also cases in which one knows that $P$ without being in a position to know that one knows that $P$, but they involve more delicate issues that would be a distraction here.4 The former kind of case is enough for present purposes.
+
+Let Transparency be the thesis that for every mental state $S$, whenever one is suitably alert and conceptually sophisticated, one is in a position to know whether one is in $S$. Given Transparency, knowing that $P$ is not a mental state (for almost any value of “$P$”).
+
+Transparency is false, however, and can be shown to be so by reference to paradigmatic mental states. For example, one is sometimes in no position to know whether one is in the mental state of hoping that $P$. I believe that I do not hope for a particular result to a match; I am conscious of nothing but indifference; then my disappointment at one outcome reveals my hope for another. When I had that hope, I was in no position to know that I had it. Indeed, it is hard to find a non-trivial mental state for which Transparency holds. It fails for the state of believing that $P$, for the difference between believing that $P$ and merely fancying that $P$ depends in part on one’s dispositions to action in counterfactual circumstances, and one is not always in a position to know what those dispositions are. Transparency is even doubtful for the state of being in pain; with too much self-pity one may mistake an itch for a pain, with too little one may mistake a pain for an itch. Even if Transparency holds for a few mental states, it fails for others; the premise of the argument from Transparency to the denial that knowing that $P$ is a mental state is false. Given that knowing that $P$ is a mental state, one will not expect knowing whether one is in it to be always easy.
+
+It does not follow that there is no asymmetry at all between knowledge of one’s own mental states and knowledge of the mental states of others. Failures of Transparency may be essentially abnormal. We may have non-observational knowledge of our own mental states and not of the mental states of others. But then the same may be said of knowing: we may have non-observational knowledge of our own knowledge and ignorance and not of the knowledge and ignorance of others. Any requirement of privileged access met by all mental states is met by the state of knowing that $P$.
+
+The failure of Transparency helps to clarify the relation between the thesis that knowing is a mental state and a traditional pattern of sceptical argument. The sceptic argues that a subject with a true belief could have been in exactly the same mental state (i.e. in the same total set of mental states) even if the belief had been false. He concludes that, since the belief fails to constitute knowledge in the latter case, it equally fails to do so in the former. The sceptical argument assumes something like this: if one’s mental state is exactly the same in two situations, then one’s knowledge is also the same. On the account to be developed here, that assumption is correct, although not quite in the way that the sceptic imagines.
+
+The sceptic supposes that a difference in knowledge would require some prior difference in mental state that the subject could detect. On the present account, a difference in knowledge would constitute a difference in mental state. This difference need not be detectable by the subject who lacks knowledge. Thus the sceptic’s assumption is correct for reasons that undermine his argument. He claims to have constructed a case in which the belief is false although the mental state is exactly the same. But the most that he has really shown about the case is that the belief is false and one’s situation is not discriminably different. He has not shown that one cannot be in different mental states in indiscriminable situations. Indeed, since we are sometimes in no position to know whether we are in a given mental state, as argued above, surely one can be in different mental states in situations between which one cannot discriminate.5
+
+Could the sceptic appeal directly to the indiscriminability of the situations, without assuming the mental states to be identical? Even that is dubious. The indiscriminability of the two situations may be asymmetrical. If one is in the bad situation, in which one’s belief is false, then, for all one knows, one is in the good situation, in which one’s belief is true. Thus one cannot discriminate between the bad situation, presented indexically as “my present situation”, and the good situation, presented descriptively as “the good situation”. But the discriminability of two situations depends on the way in which they are presented. What the sceptic needs to show is that one cannot discriminate between the good situation, presented indexically as “my present situation”, and the bad situation, presented descriptively as “the bad situation”. Naturally, one can make that discrimination only if one is in the good situation, for only then can it be presented as “my present situation”. Since making the discrimination is a matter of knowing that one’s present situation is not the bad one, i.e. of knowing one’s belief not to be false, the claim that one cannot make it is tantamount to the sceptic’s conclusion. The claim is not available to the sceptic as a premise.6
+
+If the present account of knowledge is correct, then the sceptical arguments at issue are not compelling. Indeed, the account need only be defensible for them not to be compelling. Thus one route into scepticism is blocked. It is not the purpose of this paper to argue that all are; there are too many “refutations of scepticism” as it is. Moreover, if someone has already taken the route into scepticism, before it was blocked, and become genuinely undecided, at least in principle, as to what his situation is, then the blocking of the route now will be too late to rescue him. Nothing said here should convince someone who has given up ordinary beliefs that they did in fact constitute knowledge, for nothing said here should convince him that they were true. The trick is never to give them up. This is the usual case with philosophical treatments of scepticism: they are better at prevention than at cure.
+
+The purpose of these remarks has been to give a feel for the view that knowing is a state of mind. The content of the view must now be examined more explicitly. The notion of a mental state will not be formally defined, for that would require a formal definition of the mental. Rather, reflection on the intuitive notion of a mental state will help to clarify its workings. A less informal account will be provided in §V.
+
+# III
+
+To call knowing a mental state is to assimilate it, in a certain respect, to paradigmatic mental states such as believing, desiring and being in pain. It is also to contrast it with various non-examples of mental states. Perhaps the most revealing contrast is between knowing and believing truly.
+
+Believing truly that $P$ is not a mental state, at least, not when “$P$” is replaced by a sentence such as “It is raining” that expresses an everyday contingent proposition about the external environment. Intuitively, there is no mental state being in which is necessary and sufficient for believing truly that it is raining, just as there is no mental state being in which is necessary and sufficient for believing while Rome burns that it is raining. There is a mental state of believing that it is raining, and there is—on the present account—a mental state of knowing that it is raining, but there is no intermediate mental state of believing truly that it is raining (this is a statement, not an argument). Let $S_1$ be knowing that it is raining, $S_2$ be believing truly that it is raining and $S_3$ be believing that it is raining. Then, we may assume, necessarily, everything that is in $S_1$ is in $S_2$; necessarily, everything that is in $S_2$ is in $S_3$. Nevertheless, although $S_1$ and $S_3$ are mental states, $S_2$ is not a mental state.
+
+That something sandwiched between two mental states need not itself be a mental state is not as paradoxical as it may sound. Consider an analogy: the notion of a geometrical property. Let $\pi_1$ be the property of being an equilateral triangle, $\pi_2$ the property of being a triangle whose sides are indiscriminable in length to the naked human eye, and $\pi_3$ the property of being a triangle.7 Necessarily, everything that has $\pi_1$ has $\pi_2$ (by the indiscriminability of identicals); necessarily, everything that has $\pi_2$ has $\pi_3$. Nevertheless, although $\pi_1$ and $\pi_3$ are geometrical properties, $\pi_2$ is not a geometrical property (it varies with variations in human eyesight). Something sandwiched between two geometrical properties need not itself be a geometrical property. Similarly, there is no structural reason why something sandwiched between two mental states should itself be a mental state.
+
+The point is general. If $S$ is a mental state and $C$ a non-mental condition, there need be no mental state $S\text{*}$ such that, necessarily, one is in $S\text{*}$ if and only if one is in $S$ and $C$ is met. The non-existence of such an $S\text{*}$ is quite consistent with-the existence of a mental state $S\text{**}$ such that, necessarily, one is in $S\text{**}$ only if (but not: if) one is in $S$ and $C$ is met. A mental state can guarantee that conjunction only by guaranteeing more than that conjunction.
+
+If the denial that believing truly is a mental state does not immediately convince, think of it this way. Even if believing truly is a mental state in some liberal sense of the latter term, there is also a more restrictive but still reasonable sense in which believing truly is not a mental state but the combination of a mental state with a non-mental condition. The present claim is that knowing is a mental state in every reasonable sense of that term: there is no more restrictive but still reasonable sense of “mental” in which knowing can be factored like believing truly into a combination of mental states with non-mental conditions. A sense of “mental” is reasonable if it is reasonably like an ordinary sense of the word. Although the present claim is therefore vague, it is at least clear enough to be disputed.
+
+Strictly speaking, one must distinguish between a conceptual and a metaphysical point. The weaker conceptual point is that it is not a priori that believing truly is a mental state. Formally, this schema is rejected:
+
+(1)
+It is a priori that there is a mental state $S$ such that for all nomically possible worlds $w$, times $t$ and subjects $x$, $x$ is in $S$ at $t$ in $w$ if and only if $x$ believes truly at $t$ in $w$ that $P$.8
+
+The stronger metaphysical point is that believing truly is not a mental state at all. Formally, this schema is rejected:
+
+(2)
+There is a mental state $S$ such that for all nomically possible worlds $w$, times $t$ and subjects $x$, $x$ is in $S$ at $t$ in $w$ if and only if $x$ believes truly at $t$ in $w$ that $P$.
+
+Trivially, the metaphysical point entails the conceptual one. The converse fails, for the existence of a mental state of the required kind might be a matter of a posteriori necessity. The conceptual point is more obvious than the metaphysical one: it is easier to see that the conjunction of a mental state (believing that $P$) with a non-conceptual condition (the truth of the belief) is not guaranteed a priori to pick out a mental state than to see that it actually fails to pick out such a state. Nevertheless, once the conceptual point has been conceded, any principled reason to resist the metaphysical point seems to have been removed. We have no a posteriori reason to postulate the existence of a mental state of the required kind; if such a state did exist, that would be a sort of bizarre metaphysical coincidence. In contrast, on the account below, it is a priori that knowing is a mental state.
+
+One can reformulate the point by allowing, as above, that there are several reasonable senses of “mental”. The claim is that, in each of them, it is a priori that knowing is a mental state, while there is at least one reasonable sense in which it is false, and therefore not a priori, that believing truly is a mental state, and true that it is a combination of a mental state with a non-mental condition. For given any ordinary sense of “mental”, mental$_1$, there is a sense of “mental”, mental$_2$, close enough to the former to count as reasonable, such that a combination of conditions counts as mental$_2$ only if each condition is mental$_1$; one might read “mental$_2$” as “purely mental$_1$”. For most values of “$P$”, its being true that $P$ is not a mental$_1$ condition, so believing truly that $P$ is not a mental$_2$ state. Just as the state of knowing cannot be analysed into such a combination, so the concept of knowing cannot be analysed into the combination of concepts of states as mental with concepts of conditions as non-mental (where grasp of a concept involves implicit grasp of any concepts into which it is analysed).
+
+In at least one reasonable sense of “mental”, the concept of having a true belief that $P$ is not a concept of it as a mental state, for truth is a non-mental condition. By the same token, the concept of having a justified true belief that $P$ is not a concept of it as a mental state. The point applies to any conjunction of concepts of mental states with concepts of irredundant non-mental conditions. Its implications are therefore radical, for all standard analyses of the concept of knowing that $P$ take the form of a conjunction of concepts of mental states, in particular of believing that $P$, with concepts of non-mental conditions, in particular of its being true that $P$; the latter condition is irredundant, in the sense that it does not follow from the purely mental conditions in the putative analyses. On the present view, every analysis of the concept of knowing that $P$ of the standard kind is incorrect as an analysis, for its analysans is distinct from its analysandum. In at least one reasonable sense of “mental”, the concept of knowing that $P$ is a concept of a state as mental while an analysis of the standard kind, with an irredundant non-mental conjunct, is not a concept of a state as mental.
+
+To distinguish the concept of knowing from the complex concept identified with it by an analysis of the standard kind is not yet to deny that the latter provides correct necessary and sufficient conditions for the former. Distinct concepts may have the same extension in all nomically possible worlds. However, there is at least one reasonable sense of “mental”, mental$_2$ above, in which a state for which the complex concept provides a necessary and sufficient condition is not a mental state, but rather a combination of the mental states specified in the analysans with non-mental conditions. In contrast, the state of knowing cannot, it is claimed, be analysed into such a combination.
+
+Experience confirms inductively what the present account implies, that no analysis of the concept of knowing of the standard kind is correct. Indeed, the candidate concepts turn out to be, not merely distinct from, but not even coextensional in all nomically possible worlds with, the target concept. Since Gettier refuted the traditional analysis of knowing as having a justified true belief in 1963, a succession of increasingly complex analyses have been overturned by increasingly complex counter-examples, which is just what the present view would have led one to expect.9 What the counter-examples add to the failure of the conceptual claim (1) is the failure of the weaker metaphysical claim (2).
+
+Even if some sufficiently complex analysis never succumbed to counter-examples, that would not entail the identity of the analysans with the concept of knowing. Indeed, the identification of the concepts might well lead to more puzzlement rather than less. For knowing matters; the difference between knowing and not knowing is very important to us. This importance would be hard to understand if the concept of knowing were the more or less ad hoc sprawl that analyses have had to become; why should we care so much about that?10
+
+On quite general grounds, one would not expect the concept of knowing to have a non-trivial analysis in somehow more basic terms. Not all concepts have such analyses, on pain of infinite regress; the history of analytic philosophy suggests that those of most philosophical interest do not. “Bachelor” is a peculiarity, not a prototype. Attempts to analyse the concepts of meaning and causing, for example, have been no more successful than attempts to analyse the concept of knowing, succumbing to the same pattern of counter-examples and epicycles. The analysans does not merely fail to be the same concept as the analysandum; it fails even to be necessary and sufficient. The pursuit of analyses is a degenerating research programme.11
+
+The programme of analysis had its origin in great philosophical visions. Consider, for example, Russell’s Principle of Acquaintance: “Every proposition which we can understand must be composed wholly of constituents with which we are acquainted”.12 There may well be a reading on which it is correct. However, when the principle is combined with Russell’s extreme empiricist conception of acquaintance, it forces analysis to go deeper than the surface constituents of the evidently intelligible propositions of science and common sense, for extreme empiricism permits us no acquaintance with those surface constituents.13 In such a context, the programme of analysis has a philosophical point. Now the visions that gave it a point are no longer serious options. Yet philosophers continued to pursue it long after the original motivation had gone. Correct deep analyses would doubtless still be interesting if they existed; what has gone is the reason to believe that they do exist.
+
+While the general point is conceded, it might nevertheless be claimed that we have special reason to expect an analysis of knowing. For we already have the necessary condition that what is known is true, and perhaps also believed; we might expect to reach a necessary and sufficient condition by adding whatever knowing has that believing truly may lack. But that expectation is based on a fallacy. If $G$ is necessary for $F$, there need be no further condition $H$, specifiable independently of $F$, such that the conjunction of $G$ and $H$ is necessary and sufficient for $F$. Being coloured, for example, is necessary for being red, but if one seeks a further condition whose conjunction with being coloured is necessary and sufficient for being red, one finds only conditions specified in terms of “red”: being red; being red if coloured. Necessary conditions need not be conjuncts of necessary and sufficient conditions in any non-trivial sense. The existence of necessary conditions for knowing is no reason to expect it to be analysable.14
+
+The working hypothesis should be that the concept of knowing cannot be analysed into more basic concepts. To say that is not to say that no reflective understanding of it is possible. §V will present a modest positive account of the concept of knowing that is not an analysis of it in the traditional sense.
+
+# IV
+
+The attempt to analyse knowing in terms of believing may have a deeper motive: internalism. Internalists (in the relevant sense) hold that one’s mental states are determined by one’s internal physical states; thought is located in the head.15 Knowing that it is raining is not determined by one’s internal physical states; it also depends on the state of the weather, for knowing that it is raining requires rain. Thus internalists must deny that knowing that it is raining is a mental state. For them, knowing is a metaphysical hybrid, a mixture of mental states and non-mental conditions on the external environment. Naturally, therefore, they seek to analyse the phenomenon into its constituents. Since believing may appear to be determined by one’s internal physical states, and therefore to qualify as a mental state by internalist lights, it is an obvious candidate constituent.
+
+Internalists who regard knowing itself as complex do not thereby commit themselves to the same view of the concept of knowing. A simple concept might be defined by ostension of complex exemplars. The emphasis will therefore be on metaphysical rather than conceptual issues.
+
+The argument from internalism to the denial that knowing is a mental state may usefully be stated in more detail. First, assume that knowing that $P$ is a mental state:
+
+(3)
+There is a mental state $S$ such that for all nomically possible worlds $w$, times $t$ and subjects $x$, $x$ is in $S$ at $t$ in $w$ if and only if $x$ knows at $t$ in $w$ that $P$.
+
+Given (3), any difference in knowing involves a difference in states of mind. That is, (3) entails that knowing that $P$ supervenes on one’s mental state:
+
+(4)
+For all nomically possible worlds $w$ and $w\text{*}$, times $t$ and $t\text{*}$ and subjects $x$ and $x\text{*}$, if $x$ is in exactly the same mental state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$, then $x$ knows at $t$ in $w$ that $P$ if and only if $x\text{*}$ knows at $t\text{*}$ in $w\text{*}$ that $P$.
+
+The argument from (3) to (4) is immediate if one defines “$x$ is in exactly the same mental state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$” as “for all mental states $S$, $x$ is in $S$ at $t$ in $w$ if and only if $x\text{*}$ is in $S$ at $t\text{*}$ in $w\text{*}$”.16 But (4) could stand on its own, without such an analysis of the equivalence relation of exact sameness of mental state; then, unlike (3), it would involve no commitment to an ontology of mental states or the consequent problems of individuating states.
+
+Whether or not (4) is derived from (3), it is commensurable with the internalist premise that one’s mental state supervenes on one’s physical state:
+
+(5)
+For all nomically possible worlds $w$ and $w\text{*}$, times $t$ and $t\text{*}$ and subjects $x$ and $x\text{*}$, if $x$ is in exactly the same internal physical state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$, then $x$ is in exactly the same mental state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$.
+
+Together, (4) and (5) entail that knowing that $P$ supervenes on one’s internal state, for supervenience is transitive:
+
+(6)
+For all nomically possible worlds $w$ and $w\text{*}$, times $t$ and $t\text{*}$ and subjects $x$ and $x\text{*}$, if $x$ is in exactly the same internal physical state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$, then $x$ knows at $t$ in $w$ that $P$ if and only if $x\text{*}$ knows at $t\text{*}$ in $w\text{*}$ that $P$.
+
+(6) is uncontroversially false, at least for replacements of “$P$” by sentences that express everyday contingent propositions about the external environment. Of two people in exactly the same internal physical state, one may know that it is raining while the other, as the result of an elaborate hoax, believes falsely that it is. One can know that $P$, all but for the state of the environment, without knowing that $P$, in the sense that one can be in exactly the same internal physical (not: mental) state as someone who knows that $P$ without oneself knowing that $P$.17 Since internalists accept (5), they deny (4), the other premise from which (6) was deduced. Since (3) entails (4), they also reject (3).
+
+Having denied that knowing is a mental state, internalists naturally seek to factorize it into mental and non-mental components. They may be encouraged by the idea that the mental component of knowing is simply and obviously believing. Such an idea seems to be expressed in a remark by Stephen Stich, endorsed by Jaegwon Kim: “what knowledge adds to belief is psychologically irrelevant”.18 In present terms, the claim that knowing that $P$ adds nothing mental to believing that $P$ comes to this:
+
+(7)
+For all nomically possible worlds $w$, times $t$ and subjects $x$, if $x$ believes at $t$ in $w$ that $P$ then for some nomically possible world $w\text{*}$, time $t\text{*}$ and subject $x\text{*}$, $x$ is in exactly the same mental state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$, and $x\text{*}$ knows at $t\text{*}$ in $w\text{*}$ that $P$.
+
+For if (7) is false, someone can believe that $P$ while in a total mental state $T$ incompatible with knowing that $P$; but then the information that $x$ knows that $P$ adds something psychological to the information that $x$ believes that $P$, for it tells one that $x$ is not in the mental state $T$. Thus if knowing that $P$ adds nothing mental to believing that $P$, (7) holds. Conversely, if (7) holds, then knowing that $P$ imposes no constraints on one’s mental state beyond those already imposed by believing that $P$, so knowing that $P$ adds nothing mental to believing that $P$.
+
+(7) fails, for reasons independent of internalism. One kind of case involves substitutions for “$P$” of false propositions about the subject’s own mental state. For example, one can substitute “he is alert” for “$P$”; the reference of “he” will change from $x$ to $x\text{*}$ as the subject of the attitude changes, but examples of this kind are not objectionable to the internalist. Now suppose that $x$ falsely believes that he is alert. Since one’s level of alertness is itself a feature of one’s mental state, if $x\text{*}$ is in exactly the same mental state as $x$, then $x\text{*}$ is not alert, and therefore does not know that he is alert. Thus (7) fails. Counter-examples also occur when someone believes a necessarily false proposition. It is possible falsely to believe that $79+89=158$; it is impossible to know that $79+89=158$.
+
+The internalist might suppose the remedy to lie in the revised claim that knowing that $P$ adds nothing mental to believing truly that $P$:
+
+(8)
+For all nomically possible worlds $w$, times $t$ and subjects $x$, if $x$ believes truly at $t$ in $w$ that $P$ then for some nomically possible world $w\text{*}$, time $t\text{*}$ and subject $x\text{*}$, $x$ is in exactly the same mental state at $t$ in $w$ as $x\text{*}$ is at $t\text{*}$ in $w\text{*}$, and $x\text{*}$ knows at $t\text{*}$ in $w\text{*}$ that $P$.
+
+Even (8), however, is subject to counter-examples that are independent of externalism. Someone may believe truly that garlic is healthy to eat for reasons so confused and irrational as to be incompatible with knowing that garlic is healthy to eat; since his confusion and irrationality is an aspect of his mental state, no one could be in exactly the same mental state and know that garlic is healthy to eat. Attempts to rule out such cases will be plagued by notorious difficulties in stating a correct justification condition on knowledge (see Shope 1983, pp. 45–118).
+
+Even if (8) had been defensible, it would not have solved the original problem, which was, in internalist terms, to isolate the mental component of knowing, to say what mental state knowing adds nothing mental to. By specifying that the belief be true, (8) fails to do that. This latter objection is not met by a justification condition added to (8).
+
+There is no easy way for the internalist to fence off the mental implications of knowing. That is not to say that the programme cannot succeed: just that we have no reason independent of internalism to expect it to succeed.
+
+It is not the present aim to refute internalism. Rather, a comparison will be drawn between more familiar disputes between internalists and externalists, over the contents of propositional attitudes, and the present dispute, over the attitudes to those contents. Externalism about the attitudes is as defensible as externalism about the contents. The status of externalism in general will be left to the reader to decide.
+
+The semantics of ascriptions of content in natural languages is uncongenial to internalism. The predicate “thinks that water is wet”, for example, seems to be wide, in the sense that its application does not supervene on internal physical states. The familiar story is set before the science of chemistry has developed. On Twin Earth, all the superficial properties of H$_2$O on Earth are possessed by the chemically quite different compound XYZ. When Oscar on Earth says “Water is wet”, he expresses the thought that water is wet. When Twin Oscar on Twin Earth says “Water is wet”, he expresses a different thought; he is not thinking about water, i.e. H$_2$O, but about XYZ. Oscar and Twin Oscar are in exactly the same internal physical state, but the former thinks that water is wet while the latter does not.19 Alternatively, suppose that Tweedledum and Tweedledee are in exactly the same internal physical state, each thinking that his twin is fat but that he is not. Each can correctly describe the situation by saying “You think that I am fat; I do not think that I am fat”. The predicate “thinks that I am fat”, as used in a fixed context, is wide.20
+
+The internalist, while probably forced to concede that content ascriptions in natural languages are wide rather than narrow, may nevertheless insist that they fail to reflect the structure of the underlying facts. On this view, such ascriptions characterize the subject by reference to a mixture of genuinely mental states and conditions on the external environment. The challenge to such an internalist is to make good this claim by isolating a level of description of contentful attitudes that is both narrow and genuinely mental, not merely neurophysiological. If there is a mixture, it should be possible to separate its constituents. The wideness of content ascriptions in natural languages shows that the required level of description does not simply lie to hand, but must be constructed; its effect is therefore to put the burden of proof on the internalist.
+
+Parallel considerations apply to internalism about the attitudes themselves. The semantics of factive constructions such as “$x$ knows that $P$”, “$x$ sees that $P$” and “$x$ remembers that $P$” are blatantly wide. While conceding this, the internalist nevertheless insists that such constructions fail to reflect the structure of the underlying facts. They are held to characterize the subject by reference to a mixture of genuinely mental states and conditions on the external environment. As before, the challenge is to make good this claim by isolating a level of description that is both narrow and genuinely mental. The effect of the wide semantics is again to put the burden of proof on the internalist.
+
+One motive for internalism is the combination of the idea that genuine states are causally efficacious with the idea that mental states are causally efficacious only if narrow. No action at a distance: causation is viewed as local, involving only narrow mental states. Since the property of judging that there is a glass of water in front of one is wide, this internalist denies that it is causally efficacious, locating causal efficacy in the narrow property that Oscar shares with Twin Oscar; after all, their subsequent physical movements are exactly the same. Similarly, this internalist will deny that the wide state of knowing that there is a container of liquid in front of one is causally efficacious, locating causal efficacy in the supposedly narrow state of believing that there is a container of liquid in front of one, the state that the knower shares with the victim of a sceptical scenario.
+
+Much needs to be probed and questioned in these internalist ideas. One should not assume that the notion of causal efficacy is clear, or derived from fundamental science, or known to apply only to local connections. Nevertheless, suspicion is legitimate of a purported mental state reference to which never plays an essential role in causal explanation. In the case of wide contents, a standard externalist move is to argue that attributions of them do play an essential role in causal explanations whose explananda are themselves characterized in wide terms. For example, Oscar drank the water while Twin Oscar did not. This description of Oscar’s action is not capricious, for it is the very one under which he intended the action, and therefore the one to be used when we are trying to see how the action made sense from his point of view. Since our explanandum is that Oscar drank the water, our explanans will naturally involve wide descriptions of Oscar not true of Twin Oscar, such as “He believed that drinking the water would quench his thirst”.
+
+Similar considerations apply to the role of factive attitudes in causal explanation. Consider a causal explanation as simple as “He dug up the treasure because he knew that it was buried under the tree and he wanted to get rich”. Note that the explanandum (“He dug up the treasure”) makes reference to objects in the environment (the treasure) as well as to the subject’s immediate physical movements. The internalist cannot substitute “believe” for “know” in the explanation without loss, for the revised explanans, unlike the original, does not entail that the treasure was where he believed it to be; the connection between explanans and explanandum is therefore weakened. The explanans does less to raise the probability of the explanandum. As usual, the internalist may react by substituting “believe truly” for “believe”. The new explanation is “He dug up the treasure because he believed truly that it was buried under the tree and he wanted to get rich”. That may be deemed as satisfactory as the original explanation, although it sounds much less natural. However, even the substitution of “believe truly” for “know” sometimes involves explanatory loss.
+
+A burglar spends all night ransacking a house, risking discovery by staying so long. We ask what features of the situation when he entered the house led to that result. A reasonable answer is that he knew that there was a diamond in the house. To say just that he believed truly that there was a diamond in the house would be to give a worse explanation, one whose explanans and explanandum are less closely connected. For one possibility consistent with the new explanans is that he entered the house with a true belief that there was a diamond in it derived from false premises. For example, his only reason for believing that there was a diamond in the house might have been that someone told him that there was a diamond under the bed, when in fact the only diamond was in a drawer. He would then probably have given up his true belief that there was a diamond in the house on discovering the falsity of his belief that there was a diamond under the bed, and abandoned the search. In contrast, if he knew that there was a diamond in the house, his knowledge was not essentially based on a false premise. Given suitable background conditions, the probability of his ransacking the house all night, conditional on his having entered it believing truly but not knowing that there was a diamond in it, will be lower than the probability of his ransacking it all night, conditional on his having entered it knowing that there was a diamond in it. It follows that the probability of his ransacking the house all night, conditional on his having entered it believing truly that there was a diamond in it, is lower than the probability of his ransacking it all night, conditional on his having entered it knowing that there was a diamond in it.21 In this case, the substitution of “believe truly” for “know” weakens the explanation, by lowering the probability of the explanandum conditional on the explanans.22 The substitution of “believe” without “truly” for “know” would do even worse.
+
+One might be puzzled for a moment by the thought that, in the circumstances, the burglar’s true belief constituted his knowledge. Were the effects not the same whatever one calls it? However, this thought does not address the original problem, which concerned the causal efficacy of a general state. Different people can share the state of knowing that there was a diamond in the house; this state cannot be equated with, since it is not necessary for, believing truly that there was a diamond in the house. No doubt the particular circumstances that in some sense realize the state in a given case can be described in many different ways; what matters is how relevant those descriptions are to an understanding of the effect in question. It emerged above that the description “knows that $P$” is sometimes more relevant than the description “believes truly that $P$”.
+
+In order to prove that reference to states of knowing is essential to the power of a causal explanation, one would need to show that it could not be eliminated in favour of any combination of believing, truth, etc. There are infinitely many potential substitutes that might be proposed. All that can be done here is to sketch a general strategy for dealing with them. Given a potential substitute, suppose that it does not provide a necessary and sufficient condition for knowing. One then constructs possible cases in which the failure of necessity or sufficiency makes a causal difference, making the proposed substitute not even causally equivalent to knowing. The potential substitute avoids this problem only if it does provide a necessary and sufficient condition for knowing. Thus the search for a substitute for knowing in causally explanatory contexts is forced to recapitulate the history of attempts to analyse knowing in terms of believing, truth, etc., a history which shows no sign of ending in success.
+
+For example, the substitution of “believe truly without reliance on false lemmas” for “know” can bring causal explanatory loss. Variants of the previous case can be constructed in which the burglar enters the house believing truly that there is a diamond in it without reliance on false lemmas, yet fails to know in virtue of misleading evidence that he does not then possess, but may discover in the course of his search, in which case he will abandon the search. The argument for explanatory loss runs as before. Although knowing is not invulnerable to destruction by later evidence, its nature is to be robust in that respect. Stubbornness in one’s beliefs, an irrational insensitivity to counter-evidence, is a different kind of robustness; it cannot replace knowing in all causal explanatory contexts for the simple reason that those who know that $P$ often lack a stubborn belief that $P$. The burglar’s beliefs need not be stubborn. Similarly, he need not feel certain of them; subjective certainty cannot always replace knowing. The same applies to believing truly on the best possible evidence, for the example can be so constructed that the burglar’s evidence, although good, is not the best possible. When one works through enough examples of this kind, it becomes very plausible that knowing can figure ineliminably in causal explanations. It is causally efficacious in its own right if any mental state is.23
+
+The preceding remarks by no means exhaust the internalist challenge, but must suffice for the present. In response to that challenge, one overall argumentative strategy is to show that objections to the involvement of factive attitudes in genuine mental states are sound only if corresponding objections to the involvement of wide contents in genuine mental states are also sound. For example, the fact that a difference in the external environment can constitute a difference in knowing hardly shows that knowing is not a mental state unless the fact that a difference in the external environment can constitute a difference in wide content shows that believing a wide content is not a mental state24. In this respect the present account of knowing is as well or badly placed as externalism in general.
+
+# V
+
+Knowing does not factorize as standard analyses require. Nevertheless, some positive account of the concept can be given. That sketched below will appear thin by comparison with standard analyses, which may not be a vice. Indeed, its thinness will clarify the importance of the concept as more complex accounts do not.
+
+The main idea is simple. Call a propositional attitude factive just in case, necessarily, one has it only to truths. Examples include the attitudes of seeing, knowing and remembering. Not all factive attitudes constitute states; forgetting is a process. Call those attitudes that do constitute states stative. The proposal is that knowing is the most general factive stative attitude, that which one has to a proposition if one has any factive stative attitude to it at all. Apparent counter-examples to this conjecture will be discussed below. The point of the conjecture is to enable one to understand the central role of the concept of knowing in our thought. It matters to us because factive stative attitudes matter to us.
+
+To picture the proposal, compare the state of knowing with the property of being coloured, the colour property that something has if it has any colour property at all. If something is coloured, then it has a more specific colour property; it is red or green or …. Although its specific colour may happen to lack a name in our language, we could always introduce such a name, perhaps pointing to the thing as a paradigm. One may say that being coloured is being red or green or …, if the list is understood as open-ended, and the concept of being coloured is not identified with the disjunctive concept (one can grasp the concept of being coloured without grasping the concept of being green, therefore without grasping the disjunctive concept). Similarly, if one knows that $P$, then there is a specific way in which one knows; one can see or remember or … that $P$. Although the specific way in which one knows may happen to lack a name in our language, we could always introduce such a name, perhaps pointing to the case as a paradigm. One may say that knowing that $P$ is seeing or remembering or … that $P$, if the list is understood as open-ended, and the concept of knowing is not identified with the disjunctive concept (one can grasp the concept of knowing without grasping the concept of seeing, therefore without grasping the disjunctive concept).
+
+One can give substance to the category of factive stative attitudes by describing its realization in a natural language. The characteristic expression of a factive stative attitude in language is a factive mental state operator (FMSO). Syntactically, an FMSO $\varphi$ has the combinatorial properties of a verb. Semantically, $\varphi$ is an unanalysable expression; that is, $\varphi$ is not synonymous with any complex expression whose meaning is composed of the meanings of its parts. A fortiori, $\varphi$ is not itself such an expression. $\varphi$ also meets three further conditions. First, $\varphi$ typically takes as subject a term for something animate and as object a term consisting of “that” followed by a sentence. Second, $\varphi$ is factive, in the sense that the form of inference from “$t$ $\varphi$s that $P$” to “$P$” is deductively valid.25 Third, “$t$ $\varphi$s that $P$” attributes a propositional attitude to $t$. On the present view, “know” and “remember” are typical FMSOs. Even with the following glosses, these remarks do not constitute a rigorous definition of “FMSO”, but they should make its extension reasonably clear.
+
+First, “$t$ $\varphi$s that $P$” is required to have “$P$” as a deductive consequence, not as a mere cancellable presupposition. There is a use of the verb “guess” on which “$t$ guessed that $P$” in some sense presupposes “$P$”. However, this presupposition is cancellable by context, as the logical and linguistic propriety of the following sentences shows:
+
+(9)
+I guessed incorrectly that he was guilty.
+(10)
+I guessed that he was guilty and you guessed that he was innocent.
+
+In contrast, the substitution of “knew” for “guessed” in (9) or (10) yields a contradiction. Incidentally, therefore, the implication from “$t$ does not know that $P$” to “$P$” is not like that from “$t$ knows that $P$” to “$P$”, for only the former is cancellable. The following sentences are logically and linguistically proper:
+
+(11)
+I did not know that he was guilty, for he was innocent.
+(12)
+I did not know that he was guilty and you did not know that he was innocent.
+
+In contrast, the substitution of “knew” for “did not know” in (11) or (12) yields a contradiction. If $\varphi$ is an FMSO, the implication from “$t$ $\varphi$s that $P$” to “$P$” is not cancellable.26
+
+Second, FMSOs are stative: they are used to denote states, not processes. This distinction is linguistically marked by the impropriety of progressive tenses. Consider:
+
+(13)
+She is proving that there are infinitely many primes.
+(14)
+The shoes are hurting her.
+*(15)
+She is knowing that there are infinitely many primes.
+*(16)
+She is believing that there are infinitely many primes.
+*(17)
+The shoes are fitting her.
+
+(15)–(17) are deviant because “know”, “believe” and “fit” (on the relevant reading), unlike “prove” and “hurt”, are stative. Of course, a verb may have both stative and non-stative readings, as in (18):
+
+?(18)
+She is remembering that there are infinitely many primes.
+
+On the salient reading of “remember”, (18) is deviant, but it might correctly be used to say that she is in the process of recalling that there are infinitely many primes.27
+
+Third, an FMSO denotes a subject’s attitude to a proposition. Thus “$t$ $\varphi$s that $P$” entails “$t$ grasps the proposition that $P$”. To know that there are infinitely many primes, one must grasp the proposition that there are infinitely many primes, so “know” passes the test. A verb with a sense like “is responsible for its being the case that” would fail it. Thus, given that “see” and “remember” are FMSOs, one can see that Olga is playing chess or remember that she was playing chess only if one has a concept of chess. This is not to deny that one’s perceptions and memories may have a content that one lacks the concepts to express; the point is just that the English constructions “see that $P$” and “remember that $P$” do not ascribe such content. Other constructions with those verbs behave differently; one does not need a concept of chess to see or remember Olga playing chess.
+
+Fourth, an FMSO is semantically unanalysable. An artificial verb stipulated to mean the same as “believe truly” would not be an FMSO. A semantically analysable expression has a more complex semantic role than that of simply denoting an attitude; its proper treatment would require an account of the meanings from which its meaning is composed. Thus it is best at this stage to concentrate on semantically unanalysable expressions. Verbs such as “know” and “remember” will be assumed to be semantically unanalysable. However, an FMSO is not required to be syntactically unanalysable. In English and some other languages, for example, the addition of the auxiliary “can” often forms an FMSO (Vendler 1967, pp. 104-6). Consider the following pair:
+
+(19)
+She felt that the bone was broken.
+(20)
+She could feel that the bone was broken.
+
+The “could” in (20) is not the “could” of ability; (20) does not mean anything like:
+
+(21)
+She had the ability to feel that the bone was broken.
+
+A rough paraphrase of the salient reading of (19) would be: “She intuitively believed that the bone was broken”. A rough paraphrase of the salient reading of (20) would be: “She knew by the sense of touch that the bone was broken”. (20), unlike (19), entails “The bone was broken”. Thus “could feel” differs from “felt” in two ways: it is factive, and it is perceptual. Neither of these differences would occur if “could feel” were semantically analysable into “could” and “feel”, for that would assimilate “could feel” to “had the ability to feel”, which is neither factive nor perceptual. “Could feel” is semantically fused. It is an FMSO; “feel” is not.
+
+“Hear” is like “feel” in this respect. Consider:
+
+(22)
+She heard that the volcano was erupting.
+(23)
+She could hear that the volcano was erupting.
+
+A rough paraphrase of the salient reading of (22) would be: “She heard a report that the volcano was erupting”. A rough paraphrase of the salient reading of (23) would be: “She knew by the sense of hearing that the volcano was erupting”. (23), unlike (22), entails “The volcano was erupting”. Thus “could hear” differs from “heard” in two ways: it is factive, and it is more directly perceptual. Neither of these differences would occur if “could hear” were semantically a compound of “could” and “hear”. “Could hear” is an FMSO; “hear” is not.
+
+“Could see” differs from “see” in only one of the two ways. Consider:
+
+(24)
+She saw that the stock market had crashed.
+(25)
+She could see that the stock market had crashed.
+
+Both (24) and (25) entail “The stock market had crashed”; there is no difference in factiveness. However, they are naturally read in such a way that (24) would be true and (25) false if she simply saw a newspaper report of the crash; (25) might be true if she saw investors lining the window ledges. In such cases, one could insert “the news” before “that” in (24) but not in (25) (not even when she has inferred the crash from newspaper reports of other events). In this way, “could see” is more directly perceptual than “saw”. This does not prevent both from being FMSOs.
+
+The notion of an FMSO should by now be clear enough to be workable; it can be projected onto new cases. Moreover, it has been explained without essential reference to the notion of knowing, although “know” is an example of an FMSO. It will now be proposed that “know” has a special place in the class of FMSOs.
+
+The proposal is that if $\varphi$ is any FMSO, then “$t$ $\varphi$s that $P$” entails “$t$ knows that $P$”. If you see that it is raining, then you know that it is raining. If you remember that it was raining, then you know that it was raining. Such entailments are plausible but not uncontroversial.28
+
+It is sometimes alleged that one can perceive or remember that $P$ without knowing that $P$, because one fails to believe or to be justified in believing that $P$. Other evidence may give one reason to think that one is only hallucinating what one is in fact perceiving, or only imagining what one is in fact remembering; one abandons the belief, or retains it without justification; either way (it is alleged) one fails to know.29 However, such cases put more pressure on the link between knowing and believing or having justification than they do on the link between perceiving or remembering and knowing. If you really do see that it is raining, which is not simply to see the rain, then you know that it is raining; seeing that $P$ is a way of knowing that $P$. You may not know that you see that it is raining, and consequently may not know that you know that it is raining, but neither condition is necessary for knowing that it is raining. Similarly, if you really do remember that it was raining, which is not simply to remember the rain, then you know that it was raining; remembering that $P$ is a way of knowing that $P$. You may not know that you remember that it was raining, and consequently may not know that you know that it was raining, but neither condition is necessary for knowing that it is raining. But it is far from obvious that you do see or remember that it is or was raining in the cases at issue, and an account will now be suggested on which you do not.
+
+There is a distinction between seeing that $P$ and seeing a state of affairs in which $P$. One difference is that only the former requires the perceiver to grasp the proposition that $P$. A normal observer in normal conditions who has no concept of chess can see a state of affairs in which Olga is playing chess, by looking in the right direction, but cannot see that Olga is playing chess, because he does not know what he sees to be a state of affairs in which Olga is playing chess. The present cases suggest another difference between the two notions of seeing. By looking in the right direction, you can see a state of affairs in which it is raining. In the imagined case, moreover, you have the concepts needed to grasp the proposition that it is raining. Nevertheless, you cannot see that it is raining, precisely because you do not know what you see to be a state of affairs in which it is raining (given the unfavourable evidence). On this account, the case is a counter-example neither to the claim that seeing implies knowing nor to the claim that knowing implies believing.
+
+Similarly, there is a distinction between remembering that $P$ and remembering a state of affairs in which $P$. One difference is that only the former requires the rememberer to grasp the proposition that $P$. Someone whose memory is functioning normally but who has no concept of chess can remember a state of affairs in which Olga was playing chess, but cannot remember that Olga was playing chess, because he does not know what he remembers to be a state of affairs in which Olga was playing chess. The present cases suggest another difference between the two notions of remembering. You can remember a state of affairs in which it was raining. In the imagined case, moreover, you have the concepts needed to grasp the proposition that it was raining. Nevertheless, you cannot remember that it was raining, precisely because you do not know what you remember to be a state of affairs in which it was raining (given the unfavourable evidence). On this account, the case is a counter-example neither to the claim that remembering implies knowing nor to the claim that knowing implies believing.
+
+The discussion of FMSOs may be summarized in three principles:
+
+(26)
+If $\varphi$ is an FMSO, from “$t$ $\varphi$s that $P$” one may infer “$P$”.
+(27)
+“Know” is an FMSO.
+(28)
+If $\varphi$ is an FMSO, from “$t$ $\varphi$s that $P$” one may infer “$t$ knows that $P$”.
+
+The latter two principles characterize the concept of knowing uniquely, up to logical equivalence, in terms of the concept of an FMSO. For let “shnow” be any term governed by (27′) and (28′), the results of substituting “shnow” for “know” in (27) and (28) respectively. By (27) and (28′), from “$t$ knows that $P$” one may infer “$t$ shnows that $P$”. Similarly, by (27′) and (28), from “$t$ shnows that $P$” one may infer “$t$ knows that $P$”. Thus “shnow” is logically equivalent to “know” (note that this argument would fail if (28) held only for most FMSOs). More simply, “know” is the most general FMSO, the one that applies if any FMSO at all applies.
+
+In the material mode, the claim is that knowing is the most general stative propositional attitude such that, for all appropriate substitutions for “$P$”, necessarily if one has it to the proposition that $P$ then $P$. This is not quite to claim that, for all appropriate substitutions for “$P$”, knowing that $P$ is the most general mental state such that necessarily if one is in it then $P$. The latter claim fails for necessarily true propositions: any mental state whatsoever is such that necessarily if one is in it then $5 + 7 = 12$, but it does not follow that being in any mental state whatsoever is sufficient for knowing that $5 + 7 = 12$.
+
+It is vital to this account of “know” that “believe truly” does not count as an FMSO. If it did, (28) would permit the invalid inference from “$t$ believes truly that $P$” to “$t$ knows that $P$”. The mental state is believing that $P$, not believing truly that $P$. To entail knowing, the mental state itself must be sufficient for truth. The condition of semantic unanalysability ensures that “believe truly” does not count as an FMSO.
+
+On this account, the importance of knowing to us becomes as intelligible as the importance of truth. Factive mental states are important to us as states whose essence includes a matching between mind and world, and knowing is important to us as the most general factive stative attitude.30^{,}31 Of course, something needs to be said about the nature and significance of this matching, but that is a further problem.
+
+The account is explicitly not a decomposition of the concept of knowing; if “know” were semantically analysable, it would not be an FMSO. It would certainly be quite implausible to claim that everyone who thinks that John knows that it is raining thereby thinks that John has the most general stative propositional attitude such that, for all appropriate substitutions for “$P$”, necessarily if one has it to the proposition that $P$ then $P$, to the proposition that it is raining. What, then, is the status of the account?
+
+Consider an analogy. Identity is uniquely characterized, up to logical equivalence, by the principles of reflexivity and Leibniz’s Law, just as knowing is uniquely characterized, up to logical equivalence, by (27) and (28). However, it would be quite implausible to claim that everyone who thinks that Istanbul is Constantinople thereby thinks that Istanbul bears to Constantinople the reflexive relation that obeys Leibniz’s Law. The metalogical concepts used in formulating Leibniz’s Law are far more sophisticated than the concepts used in thinking that Istanbul is Constantinople. In order to have the concept of identity, one must reason according to Leibniz’s Law, but that does not require one to have the metalogical concepts used in formulating Leibniz’s Law (if it did, there would be an obvious danger of an infinite regress). Similarly, in order to have the concept of knowing, one must reason according to (26)–(28), but that does not require one to have the meta-linguistic concepts used in formulating (26)–(28).
+
+It is no straightforward matter to say what it is for a subject to reason according to rules that the subject cannot formulate. Nevertheless, some such notion does seem to be needed, independently of the account of knowing; the latter can avail itself of that notion, whatever exactly it proves to be.32
+
+The present account of knowing makes no use of such concepts as justification, causation and reliability. Yet knowing seems to be highly sensitive to such factors over wide ranges of cases. Any adequate account of knowing should enable one to understand these connections. This challenge is not limited to the present account: standard accounts of knowing in terms of justification must enable one to understand its sensitivity to causal factors, and standard accounts of knowing in terms of causal factors must enable one to understand its sensitivity to justification; neither task is trivial.
+
+The present account will meet the challenge by exploiting the metaphysics of states. For example, a form of the essentiality of origins may apply to states; a necessary condition of being in a specific state may be having entered it in a specific way. States of perceiving and remembering may have this feature, requiring entry along a specific kind of causal path. Thus the importance of causal factors in many cases of knowing is quite consistent with the present account. More obviously, having an inferential justification of a specific kind may be essential to being in a specific state; having a proof is clearly a factive mental state. Thus the importance of justification in many cases of knowing is equally consistent with the present account. Of course, these remarks merely adumbrate a strategy, without carrying it out. The hard work of thinking through such cases in detail will not be attempted here. At its grandest—far grander than would suffice for the defensibility of the present account of knowing—the project would be to reduce epistemology to the metaphysics of mental states.
+
+# VI
+
+The account of knowing in § V makes no essential mention of believing. Formally, it is consistent with many different accounts of the relation between the two concepts. Historically, however, the view of knowing as a mental state has been associated with the view that knowing entails not believing; Prichard is a case in point (1950, pp. 86-8). On standard analyses of knowing, in contrast, knowing entails believing. On some intermediate views, knowing is consistent both with believing and with not believing. It is therefore natural to ask how far the present account of knowing constrains the relation between knowing and believing.
+
+The following schema is a mild version of the claim that knowing involves believing:
+
+(29)
+For all nomically possible worlds $w$, times $t$ and subjects $x$, if $x$ knows at $t$ in $w$ that $P$ then $x$ believes at $t$ in $w$ that $P$.
+
+If (29) has a false instance, that state of knowing that $P$ does not imply the state of believing that $P$. A stronger schema is this:
+
+(30)
+It is a priori that for all nomically possible worlds $w$, times $t$ and subjects $x$, if $x$ knows at $t$ in $w$ that $P$ then $x$ believes at $t$ in $w$ that $P$.
+
+If (30) has a false instance, even if (29) has not, then the programme of analysing the concept of knowing as a conjunction of believing with truth and other factors is stillborn. Once the programme has been abandoned, (30) can be examined without prior need for its vindication.
+
+The inference from “$S$ knows that $P$” to “$S$ believes that $P$” does not sound trivially valid, as the inference from “$S$ knows that $P$” to “$P$” does. When the unconfident examinee, taking himself to be guessing, reliably gives correct dates as a result of forgotten history lessons, it is not a clear misuse of English to classify him as knowing that the battle of Agincourt was in 1415 without believing that it was. But intuitions differ over such cases; they do not constitute clear counter-examples to (29) or (30).33
+
+There is a wide grammatical divergence between the verbs “know” and “believe” not suggestive of closely connected terms. For example, in a context in which I have predicted that it will rain, “You know what I predicted” has a reading on which it is true if and only if you know that I predicted that it will rain, whereas “You believe what I predicted” has no reading on which it is true if and only if you believe that I predicted that it will rain. One explanation of such facts, proposed by Vendler, is that “know” and “believe” take different objects: what one knows is a fact, what one believes a proposition (a fact not being a true proposition). Such an explanation will not be endorsed here, but should be taken seriously. Although it is not strictly inconsistent with (30), and a fortiori not with (29), it does make it hard to see why (29) or (30) should be true. The status of (29) and (30) needs to be settled by argument, not taken for granted.34
+
+The present account of knowing might be taken as inconsistent with (30), on the grounds that it provides no basis for an a priori connection. That would be a mistake. The basis of the connection might lie in the concept of believing rather than in the concept of knowing; that not every necessary condition is a conjunct of a conjunctive analysis was already noted in § III. Most simply, the concept of believing might be analysable as a disjunction of the concept of knowing with other concepts. The word “opine” will be used as a term of art for the rest of the disjunction; for simplicity, opining may be assumed to be incompatible with knowing. On this analysis, $x$ believes that $P$ if and only if $x$ either knows that $P$ or opines that $P$. A similar view has been proposed by McDowell, building on the disjunctive account of perceptual experience developed by Hinton and Snowdon.35 In McDowell’s terminology, believing is not the highest common factor of knowing and opining. There is no such common factor. Rather, knowing and opining are radically different states, although instances of the latter are easily mistaken for instances of the former. To know that $P$ is to be acquainted with the fact that $P$; to opine that $P$ is to be acquainted with no more than the proposition that $P$. Knowing and opining are contrasted somewhat as Vendler contrasts knowing and believing.
+
+Not all those who advocate a disjunctive conception would claim that it provides a conceptual analysis. There are indeed difficulties for that claim, in addition to the generally dim prospects for conceptual analysis evoked in § III. If the concept of believing is the disjunction of the concepts of knowing and of opining, then it must be possible to grasp the concept of opining without a prior grasp of the concept of believing (otherwise, since grasping a disjunction involves grasping its disjuncts, it would be impossible to grasp the concept of opining for the first time). Now “opine” was introduced as a term of art; how is it to be explained? The natural explanation is that to opine that $P$ is to have a mere belief that $P$, which is presumably to believe that $P$ without knowing that $P$, but that explanation uses the concept of believing. The explanation that to opine that $P$ is to be of the mere opinion that $P$ is unlikely to do better, for “be of the opinion” seems to be an approximate synonym of “believe”. In particular, once it is conceded (as it is by the disjunctive conception) that “know” implies “believe”, there seems to be little reason to deny that “know” implies “be of the opinion” too.
+
+One might try to explain “opine” in terms of “know”. As a first attempt: $x$ opines that $P$ if and only if $x$ has an attitude to the proposition that $P$ that $x$ cannot discriminate from knowing, i.e. which is, for all $x$ knows, knowing.36 Such an account has the attractive feature that it makes the case of knowing central to the explanation of believing.37 However, it does not help a disjunctive analysis of believing. For if $x$ knows that $P$, then trivially $x$ has an attitude to the proposition that $P$ that $x$ cannot discriminate from knowing; one cannot discriminate something from itself. Thus “$x$ knows that $P$”, the first disjunct, entails “$x$ opines that $P$”, the second; the whole disjunction would therefore be equivalent to its second disjunct, and the disjunctive form of the analysans would be a mere artifact of conceptual redundancy. To tack the qualification “and $x$ does not know that $P$” onto the end of the definition of “opine” would make no significant difference, for since the disjunctive analysans would still be equivalent to the previous definition of “opine”, its disjunctive form would remain a mere artifact.
+
+Alternatively, “opine” might be explained as the disjunction of several more specific disjuncts, such as “be under the illusion”, “be irrationally certain” and so on. However, it is very doubtful that, without use of the concept of believing, one can extend such a list to include all the different ways in which someone can believe without knowing. Those ways seem to be indefinitely various. How could one even specify, without use of the concept of believing, all the states in which someone can believe falsely that $P$? If the list of disjuncts is open-ended, there seems to be no way of grasping how to go on without realizing that one must list the ways in which someone can believe without knowing. Thus the explanation of “opine” illicitly relies on a prior grasp of the concept of belief.
+
+The phenomenon just noted also threatens more metaphysical disjunctive accounts that do not attempt conceptual analysis, restricting their claims to the underlying facts in virtue of which the concepts apply. Such an account of believing might deny that believing is itself a unified state, insisting that it is nomically necessary but not a priori that $x$ believes that $P$ if and only if $x$ is in either the state of knowing that $P$ or the state of opining that $P$. Since conceptual analysis is no longer in question, the replacement of “opining” by “merely believing” is not objectionable on grounds of circularity. The trouble is rather that there is no more reason to regard merely believing that $P$ as a unified mental state than to regard believing that $P$ as such. What unifies Gettier cases with cases of unjustified false belief is simply that in both the subject believes without knowing; a good taxonomy of believing would not classify them together on the basis of some positive feature that excludes knowing. Moreover, it is hard to see how such a taxonomy could describe every species of believing without using that concept. But if a good taxonomy of believing does use the concept of believing, that undermines the denial that believing is a unified state.38
+
+A strictly disjunctive account of believing is unlikely to be available, at either the conceptual or the metaphysical level. However, the disjunctive account was brought into play as a simple means to reconcile the account of knowing in § V with (30), the claim that it is a priori that believing is necessary for knowing. There are other means to that end. A non-disjunctive analysis of the concept of believing might also provide a basis for (30). For example, (30) is a corollary of the claim that it is a priori that $x$ believes that $P$ if and only if $x$ is in a state whose content is that $P$ and which $x$ cannot discriminate from knowing, i.e. which is, for all $x$ knows, knowing. That claim is consistent with the account in § V. Unfortunately, although such an analysis provides a reasonable approximation to our concept of believing, it does not fully capture that concept. It incorrectly classifies as believing that it will rain a primitive creature who lacks the concept of knowing and merely hopes that it will rain; it incorrectly classifies as not believing that there is a god someone who consciously takes a leap of faith, knowing that she does not know that there is a god. Attempts to repair this analysis are no more likely to succeed than attempts to repair the analysis of knowing as having a justified true belief.
+
+The mistake was to suppose that if it is a priori that knowing is sufficient for believing, then that fact must be explained by an analysis of one concept in terms of the other. Consider the analogous fact that it is a priori that being crimson is sufficient for being red. One can grasp either of those colour concepts without grasping the other, by being shown examples of its application and non-application. Nevertheless, it seems to be a priori that if something is crimson then it is red. Neither concept relies on the other in demarcating conceptual space, but the area demarcated by one is manifestly within the area demarcated by the other.
+
+The account of knowing in § V is quite consistent with the claim that knowing entails believing, to be exact, with (30) and therefore with (29). For all it says, the area of conceptual space demarcated by the concept of knowing is manifestly within the area independently demarcated by the concept of believing. The account is equally consistent with the claim that knowing does not entail believing, to be exact, with the denial of (29), and therefore with the denial of (30). For all it says, the area demarcated by the concept of knowing overlaps the area outside that demarcated by the concept of believing.
+
+As for the claim that knowing excludes believing, it can be read either metaphysically, as the result of substituting “fails to believe” for “believes” in (29), or conceptually, as the result of making that substitution in (30). On either reading, it is quite implausible. Whether I know that $P$ on being told that $P$ depends constitutively on whether my informant knew that $P$ (amongst other factors). Whether I believe that $P$ on being told that $P$ does not depend constitutively on whether my informant knew that $P$; but it would have to if knowing excluded believing. Of course, when one is in a position to describe someone as knowing that $P$, it is conversationally misleading simply to describe her as believing that $P$, but that is not to say that it is false. Not all believing is mere believing.
+
+Although the letter of disjunctive accounts has been rejected, the spirit may have been retained. For on the account in § V, believing is not the highest common factor of knowing and mere believing, simply because it is not a factor of knowing at all (whether or not is a necessary condition). Since that point is consistent with the claim that believing is common to knowing and mere believing, the claim is harmless. It no more makes the difference between knowing and mere believing accidental than the fact that continuity is common to straight and curved lines makes the difference between straight and curved accidental. To know is not merely to believe while various other conditions are met; it is to be in a new kind of state, whose essence involves the world. What is required is not acceptance of a disjunctive account of believing but rejection of a conjunctive account of knowing.
+
+Mere believing may be a kind of botched knowing. A further hypothetical connection between knowing and believing is this: only knowers are believers, because only knowers have any propositional attitudes at all.
+
+# Acknowledgements
+
+Material in this paper was used in talks and classes at Oxford University, the Catholic University of Lublin, New York University, the University of New Mexico, Yale University, M.I.T., the University of St. Andrews, the University of North Carolina at Chapel Hill, the Classical University of Lisbon and the University of Sussex; too many people improved it with their questions to be thanked individually. Peter Lipton, Roy Sorensen, Tim Cleveland, Pedro Hecht, Jonathan Dancy, Bill Brewer, Lloyd Humberstone, Mark Sainsbury, Scott Sturgeon and Mike Martin provided useful written comments. Discussions with John Campbell, Jonathan Dancy, Kit Fine, Elizabeth Fricker and James Higginbotham have also been very helpful.
+
+# Notes
+
+[1] Three clarifications: (a) only propositional knowledge will be considered; (b) the phrases “state of mind” and “mental state” will be used interchangeably; (c) the assumption that knowing entails believing will be examined in § VI.
+
+[2] If our man has been convinced by the argument of Descartes’ Meditations, he will regard it as preserving him from philosophical scepticism.
+
+[3] Hintikka (1962, p. 106) presents a similar case.
+
+[4] Williamson (1992) argues on grounds compatible with the present account that one can know that $P$ without being in a position to know that one knows that $P$.
+
+[5] For the bearing of a similar view of knowledge on sceptical issues see McDowell (1982). The non-transitivity of indiscriminability between situations is another reason for not equating it with identity of mental state.
+
+[6] On this kind of asymmetry of discrimination see Williams (1978, p. 309-313) and Humberstone (1988). Two further sceptical tactics are: (i) to consider a subject whose situation is oscillating over time between the good one and the bad one; (ii) to work with the relation of apparent identity rather than with that of indiscriminability. Ad (i): that subject may indeed be unable to discriminate between the good situation, presented indexically as “my present situation”, and the bad situation, presented indexically as “my situation five minutes ago”, and therefore lack the relevant knowledge. It does not follow that one lacks that knowledge even if one’s situation is not in fact oscillating. Ad (ii): apparent identity does differ from indiscriminability, for the two lines in the Müller-Lyer illusion are indiscriminable (because identical) in length, but do not look identical in length. However, an analogue of the point in the text about the modes of presentation of the two situations still makes difficulty for this version of the sceptic’s argument. Perhaps the subject has the same sensations in both cases, but so what? It should also be noted that anti-sceptical claims about the context-dependence of “know” are compatible with the present account, for “mental state” may be context-dependent too.
+
+[7] In the relevant sense, a triangle is a physical shape of a particular size. Count all lines as indiscriminable in length to the naked human eye in situations in which there are no human eyes.
+
+[8] From the perspective of a world $w$, a world $w\text{*}$ is nomically possible just in case all the natural laws of $w$ hold in $w\text{*}$. The use of nomic rather than metaphysical necessity is simply for commensurability with § IV, where the former is preferred in order not to make the internalist supervenience claim (5) stronger than it needs to be. As for the quantification over possible worlds, no objection is made here to reductionist accounts of it.
+
+[9] See Shope (1983) for the history of a decade of research into the analysis of knowing after Gettier (1963); an equally complex book could be written on post-1983 developments. Not all this work aims to provide an analysis in the traditional sense; see Shope (1983, pp. 34–44).
+
+[10] Craig (1990) interestingly attempts to explain the point of the concept of knowledge in the light of the failure of analyses of the standard kind. However, on the present view the approach remains too close to the traditional programme, for it takes as its starting our need for true beliefs about our environment (p. 11), as though this were somehow more basic than our need for knowledge of our environment. It is no reply that believing truly is as useful as knowing, for it is agreed that the starting point should be more specific than “useful mental state”; why should it be specific in the manner of “believing truly” rather than in that of “knowing”?
+
+[11] For a sophisticated defence of conceptual analysis see Smith (1994, pp. 29–56, 161–4). However, the kind of non-reductive analysis that Smith defends constitutes little threat to the claim that knowing is a mental state in every reasonable sense of the latter term. Moreover, no positive reason is provided to suppose that a concept such as knowing can be non-trivially analysed even in the non-reductive sense. Much more needs to be said about the possible standards for conceptual analysis than can be said here.
+
+[12] Russell (1910–11), Salmon and Soames (1988, p. 23); Russell calls it “The fundamental epistemological principle in the analysis of propositions containing descriptions”.
+
+[13] In effect, Evans (1982) combines the Principle of Acquaintance with a conception of acquaintance much less extreme than Russell’s. Of course, Russell’s extreme empiricism on this point is not a mere extraneous dogma; it is an attempt to solve puzzles about identity and non-existence of denotation in intentional contexts. Unfortunately, the cure is worse than the disease.
+
+[14] A further ground for suspicion of analyses of the concept of knowing in terms of the concept of believing is that they seem to imply that the latter concept is acquired before the former. Data on child development suggest, if anything, the reverse order (see Perner 1993, pp. 145–203 for discussion of relevant work). Crudely: children understand ignorance before they understand error. Naturally, the data can be interpreted in various ways, and their bearing on the order of analysis depends on subtle issues in the theory of concepts.
+
+[15] The characterization of internalism in the text is not fully general, for it neglects radically dualist versions. The form of the argument would be little changed if “physical state” were replaced by “phenomenal state”, read internalistically. For simplicity, the text focuses on the currently most popular version of internalism.
+
+[16] Whether, conversely, (4) entails (3) depends on whether what supervenes on one’s mental state is itself a mental state, a question not settled here.
+
+[17] There is no corresponding sense in which something can be red, all but for being coloured; in this sense “know” is more complex than the example of “red” used in § III. But it does not follow that the distinction between what supervenes on internal physical state and what does not has any more significance for mental states than the distinction between what supervenes on weight and what does not.
+
+[18] Stich (1978, p. 574), quoted in Kim (1993, p. 188). Kim (1993, pp. 175–93) is a clear statement of the kind of view opposed here.
+
+[19] See Putnam (1973). The influence of Burge’s work, e.g. Burge (1986), will also be obvious.
+
+[20] Predicates such as “loves Mary” and “hates Mary” are also wide, for their application depends on a relation to the particular individual named.
+
+[21] The argument as stated assumes: (a) knowing entails believing; (b) the probability of his having entered the house not knowing that there was a diamond in it, conditional on his having entered it believing truly that there was a diamond in it, is non-zero. (a) may be an over-simplification (see § VI); if so, its restriction to the case at hand remains plausible and is all the argument requires. (b) is obvious in the relevant cases. The relevant fact about probability is that if $Y$ entails $X$ and $\operatorname{Prob}(\neg Y\mid X)>0$ then $\operatorname{Prob}(Z\mid X\mathbin{\wedge}\neg Y)<\operatorname{Prob}(Z\mid Y)$ just in case $\operatorname{Prob}(Z\mid X)<\operatorname{Prob}(Z\mid Y)$.
+
+[22] It is not assumed that lowering the probability of the explanandum conditional on the explanans strictly entails loss of explanatory power: just that it results in such a loss when, as here, there are no compensating gains.
+
+[23] See Pettit (1986) and Child (1994, pp. 204–16) for more discussion of related issues.
+
+[24] A similar response can be made to the argument that knowing is not a mental state in the way that believing is because “know” is a normative term. Belief attributions have a normative element too, for to have any mental attitude to a content one must have some minimal ability to deal rationally with that content, and “rational” is at least as normative a term as “know”.
+
+[25] The scrupulous will read quotation marks as corner quotes where appropriate.
+
+[26] See Grice (1989, pp. 44–6, 279–80) for cancellability and the presuppositions of “know” respectively.
+
+[27] See Vendler (1967, p. 104) for more on the linguistic marks of statives.
+
+[28] See Unger (1975, pp. 158–83) for a good discussion.
+
+[29] Steup (1992) is a recent example of such a view.
+
+[30] The states in question are general: different people can be in them at different times. No claim is made about the essences of state tokens; indeed, the idea of a state token is of doubtful coherence. With respect to general states, the claims of necessity are de re, not just de dicto. Given (3) above, the de dicto claim “Necessarily for all $x$ if $x$ knows that $P$ then $P$” implies the de re claim “There is a mental state $S$ such that necessarily for all $x$ if $x$ is in $S$ then $P$”.
+
+[31] Someone who denies that the concept characterized in the text is our concept of knowing might think that it is more useful than the latter.
+
+[32] The present account of knowing is consistent with the main features of a theory of concepts such as that in Peacocke (1992), on which an account of a concept gives necessary and sufficient conditions for possession of the concept without any need to decompose the concept itself. However, the account is not committed to any general programme of that kind.
+
+[33] See Radford (1966), Armstrong (1973, pp. 138–149) and Shope (1983, pp. 178–87) for further discussion of such cases.
+
+[34] See Austin (1946), Vendler (1972, pp. 89–119) and Shope (1983, pp. 171–8, 191–2) for further discussion of grammatical differences between “know” and “believe”.
+
+[35] See Hinton (1967 and 1973), Snowdon (1980-81 and 1990), McDowell (1982) and Child (1994, pp. 143–64). That the disjuncts in a disjunctive account be mutually exclusive is not required by logic, although it may be by some philosophical applications (as it is by McDowell’s).
+
+[36] Contrast: $x$ opines that $P$ if and only if $x$ is in a state that $x$ cannot discriminate from knowing that $P$, i.e. that is, for all $x$ knows, knowing that $P$. The form in the text is preferable, for Twin Oscar is in a state that he cannot discriminate from knowing that water is wet, but does not believe, and therefore does not opine, that water is wet.
+
+[37] One attraction of an explanation of believing to which the case of knowing is central is that it opens the prospect of explaining the impossibility, remarked by Hume, of believing that $P$ at will in terms of the impossibility of knowing that $P$ at will.
+
+[38] Similar objections apply to disjunctive accounts of perception, appearance and experience.
+
+# References
+
+Armstrong, D.M. 1973: Belief, Truth and Knowledge. Cambridge, Cambridge University Press.
+
+Austin, J.L. 1946: “Other minds”. Proceedings of the Aristotelian Society, Supplementary Volume, 20: pp. 48–187.
+
+Burge, T. 1986: “Cartesian error and the objectivity of perception”, in Pettit and McDowell (1986).
+
+Child, T.W. 1994: Causality, Interpretation and the Mind. Oxford: Clarendon Press.
+
+Craig, E.J. 1990: Knowledge and the State of Nature: An Essay in Conceptual Synthesis. Oxford: Clarendon Press.
+
+Dancy, J. (ed.) 1988: Perceptual Knowledge. Oxford: Oxford University Press.
+
+Dancy, J. and Sosa, E. (eds.) 1992: A Companion to Epistemology. Oxford: Blackwell.
+
+Evans, M.G.J. 1982: The Varieties of Reference. Oxford: Clarendon Press.
+
+Gettier, E. 1963: “Is justified true belief knowledge?”, Analysis, 23, pp. 121–3.
+
+Grice, H.P. 1989: Studies in the Way of Words. Cambridge, Mass.: Harvard University Press.
+
+Hintikka, K.J.J. 1962: Knowledge and Belief. Ithaca: Cornell University Press.
+
+Hinton, J.M. 1967: “Visual experiences”. Mind, 85, pp. 217–227.
+
+Hinton, J.M. 1973: Experiences. Oxford: Oxford University Press.
+
+Humberstone, I.L. 1988: “Some epistemic capacities”. Dialectica, 42, pp. 183–200.
+
+Kim, J. 1993: Supervenience and Mind. Cambridge, Cambridge University Press.
+
+McDowell, J.H. 1982: “Criteria, defeasibility and knowledge”, Proceedings of the British Academy, 68, pp. 455–79. Reprinted with revisions and additions in Dancy (1988).
+
+Peacocke, C.A.B. 1992: A Study of Concepts. Cambridge, Mass.: MIT Press.
+
+Perner, J. 1993: Understanding the Representational Mind. Cambridge, Mass.: MIT Press.
+
+Pettit, P. 1986: “Broad-minded explanation and psychology”, in Pettit and McDowell (1986).
+
+Pettit, P. and McDowell, J.H. (eds.) 1986: Subject, Thought and Context. Oxford: Clarendon Press.
+
+Prichard, H.A. 1950: Knowledge and Perception. Oxford: Clarendon Press.
+
+Putnam, H. 1973: “Meaning and reference”. Journal of Philosophy, 70, pp. 699–711.
+
+Radford, C. 1966: “Knowledge—by examples”. Analysis, 27, pp. 1–11.
+
+Russell, B.A.W. 1910–11: “Knowledge by acquaintance and knowledge by description”. Proceedings of the Aristotelian Society, 11, pp. 108–28. Reprinted in Salmon and Soames (1988).
+
+Salmon, N.U., and Soames, S. (eds.) 1988: Propositions and Attitudes. Oxford: Oxford University Press.
+
+Shope, R.K. 1983: The Analysis of Knowing: A Decade of Research. Princeton: Princeton University Press.
+
+Smith, M. 1994: The Moral Problem. Oxford: Blackwell.
+
+Snowdon, P. 1980–81: “Perception, vision and causation”. Proceedings of the Aristotelian Society, 81, pp. 175–92.
+
+Snowdon, P. 1990: “The objects of perceptual experience”. Proceedings of the Aristotelian Society, Supplementary Volume, 64, pp. 121–50.
+
+Steup, M. 1992: “Memory”, in Dancy and Sosa (1992).
+
+Stich, S.P. 1978: “Autonomous psychology and the belief-desire thesis”. The Monist, 61, pp. 573–91.
+
+Unger, P. 1975: Ignorance: A Case for Scepticism. Oxford: Oxford University Press.
+
+Vendler, Z. 1967: Linguistics in Philosophy. Ithaca: Cornell University Press.
+
+Vendler, Z. 1972: Res Cogitans. Ithaca: Cornell University Press.
+
+Williams, B.A.O. 1978: Descartes: The Project of Pure Enquiry. London: Penguin.
+
+Williamson, T. 1992: “Inexact knowledge”. Mind, 101, pp. 217–42.

@@ -1,0 +1,368 @@
+# Barcan formulas in second-order modal logic
+
+Timothy Williamson
+
+In M. Frauchiger (ed.), Modalities, Identity, Belief, and Moral Dilemmas: Themes from Barcan Marcus (2015), 51–74. Berlin, Boston, Peking: De Gruyter.
+
+Second-order logic and modal logic are both, separately, major topics of philosophical discussion. Although both have been criticized by Quine and others, increasingly many philosophers find their strictures uncompelling, and regard both branches of logic as valuable resources for the articulation and investigation of significant issues in logical metaphysics and elsewhere. One might therefore expect some combination of the two sorts of logic to constitute a natural and more comprehensive background logic for metaphysics. So it is somewhat surprising to find that philosophical discussion of second-order modal logic is almost totally absent, despite the pioneering contribution of Barcan (1947).
+
+Two contrary explanations initially suggest themselves. One is that the topic of second-order modal logic is too hard: multiplying together the complexities of second-order logic and of modal logic produces an intractable level of technical complication. The other explanation is that the topic is too easy: its complexities are just those of second-order logic and of modal logic separately, combining which provokes no special further problems of philosophical interest. These putative explanations are less opposed than they first appear, since some complexity is boring and routine. Nevertheless, separately and even together they are not fully satisfying. For the technical complexities of second-order modal logic are no worse than those of many other branches of logic to which philosophers appeal: the results in this paper are proved in a few lines. Nor are the complexities philosophically unrewarding. As we shall see, the interaction of second-order quantifiers with modal operators raises deep issues in logical metaphysics that cannot be factorized into the issues raised by the former and the issues raised by the latter.
+
+Such fruitful interaction is already present in the case of first-order modal logic. The Barcan formula, introduced in Barcan (1946), raises fundamental issues about the contingency or otherwise of existence, issues that arise neither in first-order non-modal logic nor in unquantified modal logic. For second-order modal logic there are both first-order and second-order Barcan formulas. Perhaps surprisingly, the issues about the status of the second-order Barcan formula are not simply higher-order analogues of the issues about the status of the first-order Barcan formula. Nevertheless, reflection on the status of the second-order Barcan formula and related principles casts new light on the controversy about the status of the first-order Barcan formula. We begin by sketching some of the issues around the first-order Barcan formula, before moving to the second-order case.
+
+1. A standard language L1 for first-order modal logic has countably many individual variables ${𝐱}$, ${𝐲}$, ${𝐳}$, …, an appropriate array of atomic predicates (non-logical predicate constants and the logical constant =), the usual truth-functors ($\boldsymbol{\neg}$, &, ∨ , $\boldsymbol{\to}$, $\boldsymbol{\leftrightarrow}$), modal operators ($\lozenge$, □) and first-order quantifiers (∃, ∀). Of those operators, $\boldsymbol{\neg}$, &, $\lozenge$ and ∃ are treated as primitive. In what follows, we have in mind readings of the modal operators on which they express metaphysical possibility and necessity respectively.
+
+The Barcan formula is really a schema with infinitely many instances. Contraposed in existential form it is:
+
+BF
+$\boldsymbol{\lozenge}\exists {𝐱}\,{𝐀}\boldsymbol{\to}\exists {𝐱}\,\boldsymbol{\lozenge} {𝐀}$
+
+Here ${𝐱}$ is any variable and ${𝐀}$ any formula, typically containing free occurrences of ${𝐱}$ (and possibly of other variables). We can informally read BF as saying that if there could have been an object that met a given condition, then there is an object that could have met the condition. We also consider the converse of the Barcan formula:
+
+CBF
+$\exists {𝐱}\,\boldsymbol{\lozenge} {𝐀}\boldsymbol{\to}\boldsymbol{\lozenge}\exists {𝐱}\,{𝐀}$
+
+We can informally read CBF as saying that if there is an object that could have met the condition, then there could have been an object that met the condition.
+
+Any philosophical assessment of BF and CBF must start by acknowledging that there seem to be compelling counterexamples to both of them. The counterexamples flow naturally from a standard conception of existence as thoroughly contingent, at least in the case of ordinary spatiotemporal objects.
+
+For BF, read ${𝐀}$ as ‘${𝐱}$ is a child of Ludwig Wittgenstein’ (in the biological sense of ‘child’). Then the antecedent of BF says that there could have been an object that was a child of Ludwig Wittgenstein. That is true, for although Wittgenstein had no child, he could have had one. On this reading, the consequent of BF says that there is an object that could have been a child of Ludwig Wittgenstein. That seems false, given plausible-looking metaphysical assumptions. For what is the supposed object? It is not the child of other parents, for by the essentiality of origin no child could have had parents other than its actual ones. Nor is it a collection of atoms, for although such a collection could have constituted a child, it could not have been identical with a child. There seems to be no good candidate to be the supposed object. Thus BF seems false on this reading.
+
+For CBF, read ${𝐀}$ as ‘${𝐱}$ does not exist’, in the sense of ‘exist’ as ‘be some object or other’. Then the antecedent of CBF says that there is an object that could have not existed. That seems true: it seems that each one of us is such an object. For example, my parents might never have met, and if they had not I would never have existed; I would not have been any object at all. On this reading, the consequent of CBF says that there could have been an object that did not exist. That is false; there could not have been an object that was no object at all. Thus CBF seems false on this reading.
+
+Kripke (1963) provided a formal semantics (model theory) for first-order modal logic that invalidates BF and CBF and thereby appears to vindicate the informal counterexamples to them. Here is a slightly reformulated version of his account. A model is a quintuple $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$ where $\mathrm{W}$ and $\mathrm{D}$ are nonempty sets, $w_0\in \mathrm{W}$, dom is a function mapping each $w\in \mathrm{W}$ to $\operatorname{dom}(w)\subseteq \mathrm{D}$, and int is a function mapping each non-logical n-place atomic predicate ${𝐅}$ to a function $\operatorname{int}({𝐅})$ mapping each $w\in \mathrm{W}$ to $\operatorname{int}({𝐅})(w)\subseteq\operatorname{dom}(w)^n$. Informally, we can envisage $\mathrm{W}$ as the set of possible worlds, of which $w_0$ is the actual world, for $w\in \mathrm{W}$ $\operatorname{dom}(w)$ as the set of objects that exist in the world $w$, $\operatorname{int}({𝐅})$ as the intension of ${𝐅}$ and $\operatorname{int}({𝐅})(w)$ as the extension of ${𝐅}$ with respect to $w$. However, these informal glosses play no essential role in the formal model theory itself.
+
+Several features of the models are worth noting.
+
+First, it is a variable domains model theory: different domains can be associated with different worlds. This is crucial to the formal counter-models to BF and CBF, and reflects the conception of existence as a thoroughly contingent matter.
+
+Second, the extension of each atomic predicate in a world comprises only things that exist in that world; in this sense the model theory respects what is sometimes called ‘serious actualism’. An object cannot even be self-identical with respect to a world in which it does not exist, because there is nothing there to be self-identical. This feature of the models is imposed here in order not to undermine the conception of existence as thoroughly contingent, since to put a non-existent object into the extension of a predicate is hardly to take its non-existence seriously.
+
+Third, although the set D from which members of the domains of worlds are drawn is nonempty ― to ensure that values can be assigned to the individual variables ― it is not required that individuals exist in any world. Models with empty worlds are allowed; even models in which all worlds are empty are allowed.
+
+Fourth, the models do not include an accessibility relation R that would enable a restriction of the semantic clauses for the modal operators to accessible worlds. Consequently, at the propositional level they validate the strong modal logic S5, in which all necessities are necessarily necessary and all possibilities are necessarily possible. The accessibility relation is omitted only for simplicity; it could easily be added if desired.
+
+We now define what it is for a formula of L1 to be true in a model. As usual, we first define the truth of a formula relative to an assignment at a world in a model. We assume a model $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$ given and leave reference to it tacit. An assignment is a function from all variables to members of $\mathrm{D}$. ‘$w,a\mathrel{\mathord{|}\mathord{=}} {𝐀}$’ means that the formula ${𝐀}$ is true at $w\in \mathrm{W}$ on assignment $a$. We define this relation recursively, letting ${𝐅}$ be an n-place atomic predicate, ${𝐯},{𝐯}_{\mathbf{1}},\ldots,{𝐯}_{\boldsymbol{n}}$ (first-order) variables and $a[{𝐯}/o]$ the assignment like $a$ except that it assigns $o$ to ${𝐯}$:
+
+$w,a\mathrel{\mathord{|}\mathord{=}} {𝐅}{𝐯}_{\mathbf{1}}\boldsymbol{\ldots} {𝐯}_{\boldsymbol{n}}$ iff $\mathopen{<} a({𝐯}_{\mathbf{1}}),\ldots,a({𝐯}_{\boldsymbol{n}})\mathclose{>}\in\operatorname{int}({𝐅})(w)$
+
+$w,a\mathrel{\mathord{|}\mathord{=}} {𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{2}}$ iff $\mathopen{<} a({𝐯}_{\mathbf{1}}),a({𝐯}_{\mathbf{2}})\mathclose{>}\in\{\mathopen{<} o,o\mathclose{>}:o\in\operatorname{dom}(w)\}$
+
+$w,a\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\neg} {𝐀}$ iff not $w,a\mathrel{\mathord{|}\mathord{=}} {𝐀}$
+
+$w,a\mathrel{\mathord{|}\mathord{=}} {𝐀}\mathbin{\boldsymbol{\&}}{𝐁}$ iff $w,a\mathrel{\mathord{|}\mathord{=}} {𝐀}$ and $w,a\mathrel{\mathord{|}\mathord{=}} {𝐁}$
+
+$w,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐯}\,{𝐀}$ iff for some $o\in\operatorname{dom}(w)$: $w,a[{𝐯}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}$
+
+$w,a\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\lozenge} {𝐀}$ iff for some $w\textit{*}\in \mathrm{W}$: $w\textit{*},a\mathrel{\mathord{|}\mathord{=}} {𝐀}$
+
+${𝐀}$ is true at $w$ if and only if for all assignments $a$: $w,a\mathrel{\mathord{|}\mathord{=}} {𝐀}$. ${𝐀}$ is true in the model if and only if it is true at $w_0$. ${𝐀}$ is valid if and only if it is true in all models.
+
+A formula ${𝐀}$ can be true at the actual world of a model without being true at every world in the model; in that case, ${𝐀}$ is true in the model but $□ {𝐀}$ is not. However, if ${𝐀}$ is untrue at $w$ in the model $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$ then ${𝐀}$ is also untrue at $w$ in the distinct model $\mathopen{<} \mathrm{W},w,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$, and therefore untrue in $\mathopen{<} \mathrm{W},w,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$. Contrapositively, if ${𝐀}$ is valid, then $□ {𝐀}$ is also valid.1 Indeed, if ${𝐀}$ is valid, so is any closure of ${𝐀}$, that is, any result of prefixing ${𝐀}$ by universal quantifiers and necessity operators in any order. It will be convenient in what follows to treat any closure of an instance of a schema (such as BF or CBF) as itself an instance of that schema. For instance, $□\boldsymbol{(}\boldsymbol{\lozenge}\exists {𝐱}\,{𝐀}\boldsymbol{\to}\exists {𝐱}\,\boldsymbol{\lozenge} {𝐀}\boldsymbol{)}$ will count as an instance of BF. A schema is valid if and only if all its instances are valid; it is valid in a model if and only if all its instances are true in that model.
+
+It is a purely mathematical exercise to show that BF and CBF are invalid on the Kripke semantics, by providing a model in which instances of them are not true. The same counter-model will do for both. Consider $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$, where $\mathrm{W}=\{0,1\}$, $w_0=0$, $\mathrm{D}=\{2,3\}$, $\operatorname{dom}(0)=\{2\}$, $\operatorname{dom}(1)=\{3\}$. For BF, let $a({𝐲})=3$ and observe that $0,a\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\lozenge}\exists {𝐱}\,{𝐱}\boldsymbol{=}{𝐲}$ but not $0,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐱}\,\boldsymbol{\lozenge} {𝐱}\boldsymbol{=}{𝐲}$; thus not $0,a\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\lozenge}\exists {𝐱}\,{𝐱}\boldsymbol{=}{𝐲}\boldsymbol{\to}\exists {𝐱}\,\boldsymbol{\lozenge} {𝐱}\boldsymbol{=}{𝐲}$, so that instance of BF is not true in the model. For CBF, observe that $\exists {𝐱}\,\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐱}$ but not $\boldsymbol{\lozenge}\exists {𝐱}\,\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐱}$ is true at 0; thus $\exists {𝐱}\,\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐱}\boldsymbol{\to}\boldsymbol{\lozenge}\exists {𝐱}\,\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐱}$ is not true in the model. Such counter-models to BF and CBF look like formal analogues of informal counter-examples to them such as those presented above.
+
+Kripke established general correspondence results between the structure of models and the validity of BF and CBF. For models of the present simple sort, lacking the accessibility relation R, his results boil down to this: both BF and CBF are valid in a model where all worlds have the same domain; both BF and CBF are invalid in a model where not all worlds have the same domain.2 We seem to have compelling reason not to impose the restrictions on models required for the validity of BF and CBF: since there could have existed an object that does not actually exist (such as a child of Wittgenstein), something may exist in some world without existing in the actual world; since there exists an object that could have failed to exist, something may exist in the actual world without existing in every world.
+
+On further reflection, the case against BF and CBF looks much less solid. Consider first the role of the Kripke semantics. Obviously, the mere mathematical fact that BF and CBF are invalid over some class of formal models by itself shows nothing about whether they have false instances on their intended interpretation, on which the symbol $\boldsymbol{\lozenge}$ expresses metaphysical possibility. The question is how the formal models correspond to the intended interpretation.
+
+The problem is most immediate for a Kripke counter-model to an unnecessitated instance of BF. Such a model must have some $w\in \mathrm{W}$ and some $o\in\operatorname{dom}(w)$ such that $o\notin\operatorname{dom}(w_0)$. But, on the intended interpretation, $w_0$ is the actual world and $\operatorname{dom}(w_0)$ contains everything that exists in the actual world, in other words, whatever there actually is ― and whatever there is, there actually is. For on the metaphysically relevant readings of BF and CBF, their quantifiers are not restricted by some property of existence that excludes some of what there is.3 But if there is such a counter-model, then there is such an element $o$ of its domain $\mathrm{D}$, so there is such an object $o$, so it should be that $o\in\operatorname{dom}(w_0)$ after all, contrary to hypothesis. Therefore, no Kripke counter-model to unnecessitated BF is an intended model ― even though the proposed informal counterexamples concern such unnecessitated instances. Someone might still claim that a Kripke counter-model to unnecessitated BF somehow formal represents a genuine counter-example to an unnecessitated instance of BF on its intended interpretation: some but not all of the objects there are would formally represent all of the objects there are. But the mere existence of the formal representation itself would not constitute any positive reason to think that there really was a counter-example to unnecessitated BF on its intended interpretation. The existence of a Kripke counter-model to BF is an elementary non-modal mathematical fact; it is no evidence for the modal claim that there could have been some objects other than all the actual objects. The Kripke semantics provides no objection to unnecessitated BF independent of the apparent informal counter-instances. It merely provides an elegant and tractable formal representation of the structure of those apparent counter-instances, and serves as a useful algebraic instrument for establishing mathematical results about quantified modal logic, such as the independence of BF from various other principles.
+
+The same moral applies to CBF and necessitated BF, even though the problem for Kripke counter-models to them is less blatant than for unnecessitated BF. The attempt to construe the counter-model as intended does not run into the same immediate contradiction, since CBF and necessitated BF have counter-models in which dom(w_{0}) is the whole of D; then we only need dom(w) to be a proper subset of D for some counterfactual world w.4 Nevertheless, the mere existence of Kripke counter-models to CBF and necessitated BF is just an elementary non-modal mathematical fact. It is no evidence that there really is a counter-instance to CBF or necessitated BF on its intended interpretation, that some objects could have failed to exist. Again, the Kripke semantics provides no objection to CBF or necessitated BF independent of the apparent informal counter-instances.
+
+Thus the whole weight of the objection to BF and CBF falls on the informal putative counter-instances. But they too establish less than they seemed to at first sight. For BF, ${𝐀}$ was read as ‘${𝐱}$ is a child of Ludwig Wittgenstein’. On this reading, the antecedent of BF is obviously true, but its consequent is not obviously false. There is indeed nothing concrete that could have been a child of Wittgenstein, but that does not eliminate the alternative that there is something non-concrete that could have been a child of Wittgenstein (in which case it would have been concrete). Such a contingently non-concrete object is a possible child of Wittgenstein not in the sense of being a child of Wittgenstein that contingently fails to exist (necessarily, every child of Wittgenstein has concrete existence) but in the sense of being something that could have been a child of Wittgenstein. For CBF, ${𝐀}$ was read as ‘${𝐱}$ does not exist’, in the sense of ‘exist’ as ‘be some object or other’. On this reading, the consequent of CBF is obviously false, but its antecedent is not obviously true. There could indeed have failed to be any such concrete object as you or me, but that does not prove that there could have failed to be any such concrete or non-concrete objects as you and me; perhaps we could have been contingently non-concrete objects. Thus an ontology that allows for contingently non-concrete objects is compatible with the conjunction of BF and CBF. It can explain away the apparent counter-instances to them as based on a neglect of that category.5
+
+However, it is one thing to specify a consistent ontology on which BF and CBF hold, quite another to provide positive reason to accept that ontology. Why should we think that there can be contingently non-concrete objects? Elsewhere, I have given some tentative philosophical arguments for such an ontology.6 Furthermore, first-order modal logic with BF and CBF is technically simpler and more streamlined than first-order modal logic without them, so considerations of systematicity tell in favour of BF and CBF.7 The present paper comes at the issue from a different angle, by assessing the status of BF and CBF in second-order modal logic. Basic forms of second-order reasoning turn out to be hamstrung without a strong comprehension principle that is hard to reconcile with the rejection of BF and CBF in any metaphysically plausible way.
+
+2. Suppose that Alice does not smoke, although she could have smoked. Then there is something that Alice does not do, although she could have done it. The simplest formal counterpart of that valid argument involves quantification into predicate position, with a premise of the form $\boldsymbol{\neg} {𝐒}{𝐚}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge} {𝐒}{𝐚}$ and a conclusion of the form $\exists {𝐗}\,\boldsymbol{(}\boldsymbol{\neg} {𝐗}{𝐚}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge} {𝐗}{𝐚}\boldsymbol{)}$, where the second-order variable ${𝐗}$ occupies the position of the monadic predicate ${𝐒}$. We should not think of second-order variables as restricted to ‘genuine properties’ that are fundamental in physics or imply significant similarity between their exemplars. The property of smoking is not fundamental in physics, and if this is green, that is red and the other is blue then in the relevant sense it follows that there is something that this and that are but the other is not, namely red or green, even though it does not imply significant similarity between its exemplars. Some of the most important uses of second-order logic are mathematical, where second-order quantification is needed to capture the intended interpretation of the principle of mathematical induction, the definition of the ancestral of a relation and the separation principle about the existence of sets: in many mathematical applications, the predicates fed into those principles are not guaranteed to express ‘genuine properties’. Thus we should read the second-order quantification as plenitudinous, not sparse. Any predicate will do to fix a value for a second-order variable. In the standard model theory for second-order logic, this idea is captured by having the second-order quantifiers range over all subsets of the domain over whose members the first-order quantifiers range.8
+
+We can extend the standard model theory of second-order logic to the modal case, by using Kripke models. As already seen, the opponent of BF and CBF should assign an instrumental role to Kripke models, rather than taking any of them to capture the intended interpretation of the language. Still, they give clues as to which principles of second-order modal logic may be expected to hold. We shall later see how to do without them.
+
+We expand the first-order language L1 to a second-order language L2 by adding countably many variables ${𝐗}$, ${𝐘}$, ${𝐙}$, … that take the syntactic position of 1-place atomic predicates.9 With the usual harmless ambiguity, we use the same symbol (∃) for first-order and second-order quantifiers.
+
+In a standard model for a second-order non-modal language, the domain of the first-order quantifiers fixes the domain of the second-order quantifiers, so the latter requires no independent specification. Thus a model for a first-order non-modal language serves equally well as a standard model for the corresponding second-order non-modal language.10 The same holds in the modal case.11 A Kripke model is a quintuple $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\operatorname{dom},\operatorname{int}\mathclose{>}$, just as before.
+
+An n-place intension is any function $f$ mapping each $w\in \mathrm{W}$ to $f(w)\subseteq\operatorname{dom}(w)^n$. Since the original Kripke semantics simply associated each n-place atomic predicate ${𝐅}$ with an intension $\operatorname{int}({𝐅})$, and the second-order variables occupy the position of 1-place predicates, in the new semantics we simply require an assignment $a$ to map each second-order variable ${𝐕}$ to a 1-place intension $a({𝐕})$, in addition to assigning values from $\mathrm{D}$ to the first-order variables as before. The use of intensions would not have been plausible if we had been using the plural interpretation of the second-order quantifiers (Boolos 1984), for the latter requires extensionality: if every one of these things is one of those things and vice versa then these things just are those things, and nothing could have been one of these things without being one of those things or vice versa, whereas two intensions can coincide in extension at one world without coinciding in extension at another.12 But that is exactly right for properties: two properties can coincide in extension at one world without coinciding in extension at another.
+
+All the original semantic clauses remain unchanged. We add the obvious semantic clause for second-order variables in atomic formulas:
+
+$w,a\mathrel{\mathord{|}\mathord{=}} {𝐕}{𝐯}$ iff $a({𝐯})\in a({𝐕})(w)$
+
+We also add the obvious semantic clause for the second-order quantifier:
+
+$w,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐕}\,{𝐀}$ iff for some 1-place intension $\mathrm{I}$: $w,a[{𝐕}/\mathrm{I}]\mathrel{\mathord{|}\mathord{=}} {𝐀}$
+
+Strikingly, this standard semantics validates the second-order versions of BF and CBF, even though it invalidates their first-order versions as before (since the domains of the first-order quantifiers are still allowed to vary between worlds):
+
+BF2
+$\boldsymbol{\lozenge}\exists {𝐗}\,{𝐀}\boldsymbol{\to}\exists {𝐗}\,\boldsymbol{\lozenge} {𝐀}$
+CBF2
+$\exists {𝐗}\,\boldsymbol{\lozenge} {𝐀}\boldsymbol{\to}\boldsymbol{\lozenge}\exists {𝐗}\,{𝐀}$
+
+Since the intensions over which the second-order quantifiers range are restricted to those that for each world deliver a subset of its first-order domain as the extension, they are sensitive to the variability of the first-order domains. For instance, the intension corresponding to self-identity delivers at each world the first-order domain of that world as the extension, so those extensions vary exactly as much as the first-order domains. However, that cross-world variation in extension within an intension induces no cross-world variation in the domain of the second-order quantifiers (the set of 1-place intensions). As is visible in the semantic clause for the second-order quantifier, the restriction on the set of intensions is independent of the world of evaluation: the parameter ‘w’ does not occur in the phrase ‘for some 1-place intension I’, whereas it occurs essentially in the corresponding phrase ‘for some o ∈ dom(w)’ in the semantic clause for the first-order quantifier. In a quite natural way, without ad hoc stipulation, the second-order quantifier has a fixed domain even though the first-order domain does not.13 Consequently, BF2 and CBF2 are validated, even though BF and CBF are not. Metaphorically, it is not just that the value of a second-order variable can be used to describe every possible world from an external perspective, as the opponent of BF and CBF may maintain with respect to the value of a first-order variable: the value of the second-order variable is present in every possible world, because it is there available to be quantified over, unlike a contingently non-existent object.
+
+The semantics also validates this strong comprehension principle:
+
+CP^{+}
+$\exists {𝐗}\,□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$
+
+Here ${𝐀}$ is a formula in which any first-order variable and any second-order variable other than ${𝐗}$ can occur free.
+
+To check the validity of CP^{+}, fix a model <W, $w$_{0}, D, dom, int> and assignment a. Let I be the intension such that for each $w$ ∈ W, I($w$) = {o ∈ dom($w$): $w$, a[${𝐱}$/o] |= ${𝐀}$}. Then for any $w$ ∈ W, o ∈ dom($w$): $w$, a[${𝐗}$/I][${𝐱}$/o] |= ${𝐗}{𝐱}$ if and only if o ∈ I($w$) if and only if $w$, a[${𝐱}$/o] |= ${𝐀}$ if and only if $w$, a[${𝐗}$/I][${𝐱}$/o] |= ${𝐀}$ (since ${𝐗}$ is not free in ${𝐀}$). Therefore for any $w$∈W: $w$, a[${𝐗}$/I] |= ∀ ${𝐱} \boldsymbol{(}{𝐗}{𝐱} \boldsymbol{\leftrightarrow}  {𝐀}\boldsymbol{)}$. Hence $w$_{0}, a[${𝐗}$/I] |= □∀ ${𝐱} \boldsymbol{(}{𝐗}{𝐱} \boldsymbol{\leftrightarrow}  {𝐀}\boldsymbol{)}$. Thus $w$_{0}, a |= $\exists {𝐗}\,□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$, as required.
+
+A tension begins to emerge between the strong comprehension principle and the failure of first-order BF and CBF. Since (1) is a closure of CP^{+}, it too is valid:
+
+(1)
+$□\forall {𝐲}\,□\exists {𝐗}\,□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$
+
+Let ${𝐀}$ be $\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}$. Thus (2) counts as a valid instance of (1) and CP^{+}:
+
+(2)
+$□\forall {𝐲}\,□\exists {𝐗}\,□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}\boldsymbol{)}$
+
+Loosely paraphrased, (2) says that negative haecceities have necessary existence: thus there would have been the property of not being me, even if there had not been me. Necessarily, if there is me, then everything but me has that property; if there is not me, then everything has it. But how can a property that (negatively) tracks my existence exist in worlds in which I don’t? Doesn’t the property exist only if I do, to fix its application conditions?14 More generally, (2) (even without the initial necessity operator) is hard to reconcile with the possible non-existence of any actual object, and therefore with the negation of any instance of CBF. For similar reasons, (2) (with the initial necessity operator) is hard to reconcile with the negation of any instance of BF. For if there could have been an object that actually is not, by (2) there would have necessarily been a negative haecceity for that object, even in the actual world, in which by hypothesis the object itself is absent.15
+
+Is there a plausible metaphysics on which there can be my negative haecceity without me? That combination suggests a conception of the negative haecceity as purely qualitative. But then the nature of objects must permit them to be uniquely determined by purely qualitative properties, for negative haecceity cannot be shared.16 For example, suppose that the same qualitative possibilities are open to Tweedledee and Tweedledum. If there had been no Tweedledee and no Tweedledee, and no other particulars specifically related to them, on this conception there would still have been their purely qualitative negative haecceities, one tracking only Tweedledee and the other tracking only Tweedledee: but how could something purely qualitative uniquely determine one of them at the expense of the other? Thus a highly contentious form of the identity of indiscernibles might well be required: no possible qualitative sameness without necessary numerical identity whenever either object exists.17 This seems to make the nature of the objects themselves purely qualitative. But they must not be purely qualitative in the same way as the negative haecceities themselves, for the latter way of being purely qualitative is supposed to grant the negative haecceities necessary existence, whereas the opponent of BF and CBF was trying to defend the possibility of contingent existence for ordinary objects. The view might be of particulars as bundles of necessarily existing purely qualitative universals, contingently bundled together by a primitive purely qualitative higher-order multigrade compresence relation and individuated by the universals in the bundle. Such a view has no independent plausibility, and it gets worse when one tries to flesh it out with an account of the cross-world identity of bundles in a way that would avoid the Tweedledum-Tweedledee problem. All of this constitutes a heavy metaphysical burden for the opponent of BF and CBF. Although the second-order modal logic validated by Kripke models with variable first-order domains is formally consistent, it is philosophically very unattractive.
+
+At this point, the opponent of BF and CBF may reflect that they had independent grounds for confining the Kripke semantics to a merely instrumental role (in what follows, talk of worlds is still occasionally used for heuristic or instrumental purposes, but plays no essential philosophical role). The fact that the semantics validates CP^{+} (including all its closures) does not commit them to accepting that principle. They might limit themselves to this comprehension principle CP, a natural weakening of CP^{+} obtained by dropping the intermediate necessity operator:
+
+CP
+$\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$
+
+Like CP^{+}, CP counts as including all its closures. Thus the opponent of BF and CBF might still assert $□\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$, but not the result of moving the existential quantifier outside the necessity operator. The instance of CP corresponding to (2) as an instance of CP^{+} is only:
+
+(3)
+$□\forall {𝐲}\,□\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}\boldsymbol{)}$
+
+For a world in which I exist, (3) yields a property that everything in that world except me has in that world, but (3) says nothing about what has that property in other worlds; in particular, it does not require the property to be my negative haecceity. For a world in which I do not exist, (3) yields a property that everything in that world has in that world, but again (3) says nothing about what has that property in other worlds; in particular, it does not require the property to be my negative haecceity ― it could be the universal property of self-identity, for example.
+
+In order to check that the move from CP^{+} to CP really does have the claimed benefits for opponents of BF and CBF, we must establish that CP does not entail CP^{+} or (2) by uncontentious reasoning. The notion of uncontentious reasoning here is vague, since for present purposes we can no longer rely on the Kripke semantics as a standard of validity. However, we can use the following more liberal model theory. A model is a sextuple <W, $w$_{0}, D, D2, dom, int> where all the other components are as before but D2 is a nonempty subset of the set of all 1-place intensions in the previous sense. The semantics is just as before, except that second-order variables are assigned values in D2 (although 1-place atomic predicates may be assigned values outside D2; in some sense they are not required to express properties) and the clause for the second-order quantifier is this:
+
+$w,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐕}\,{𝐀}$ iff for some $\mathrm{I}\in \mathrm{D2}$: $w,a[{𝐕}/\mathrm{I}]\mathrel{\mathord{|}\mathord{=}} {𝐀}$
+
+Thus D2 is the domain for the second-order quantifiers. When D2 is the set of all 1-place intensions for the model, we are back with the previous case; when D2 is a proper subset of that set, we have the modal analogue of a Henkin model for second-order logic.18 Let us call all the sextuple models Henkin-Kripke models. For present purposes, we may reasonably assume that any argument that fails in some Henkin-Kripke model to preserve truth is contentious in the relevant sense. We do not assume that any argument that preserves truth in all Henkin-Kripke models is uncontentious in the corresponding sense. For instance, since D2 is a constant, world-independent domain, the Henkin-Kripke semantics still validates BF2 and CBF2, but we can remain neutral for the time being on whether they are uncontentious in the relevant sense. Nor do we claim that CP itself is uncontentious; it is untrue in some Henkin-Kripke models, even when there is only one world, since the semantics does not require D2 to discriminate all subsets of the first-order domain. The opponent of BF and CBF can still defend CP and its closures without claiming them to be uncontentious. The present task is just to find a Henkin-Kripke model in which CP is valid but (2) is not true, for then it is reasonable to hold that in the relevant sense CP does not entail (2).
+
+We can define such a model $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\mathrm{D2},\operatorname{dom},\operatorname{int}\mathclose{>}$ where $\mathrm{W}=\{0,1\}$, $w_0=0$, $\mathrm{D}=\operatorname{dom}(0)=\operatorname{dom}(1)=\{2\}$, and $\mathrm{D2}=\{\mathrm{I}_{\mathrm{yn}},\mathrm{I}_{\mathrm{ny}}\}$, $\mathrm{I}_{\mathrm{yn}}(0)=\{2\}$, $\mathrm{I}_{\mathrm{yn}}(1)=\{\}$, $\mathrm{I}_{\mathrm{ny}}(0)=\{\}$, $\mathrm{I}_{\mathrm{ny}}(1)=\{2\}$. CP is valid in the model, because for any assignment $a$: either $\{o\in\operatorname{dom}(0):0,a[{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}\}=\{2\}$, in which case $0,a[{𝐗}/\mathrm{I}_{\mathrm{yn}}]\mathrel{\mathord{|}\mathord{=}}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$, or $\{o\in\operatorname{dom}(0):0,a[{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}\}=\{\}$, in which case $0,a[{𝐗}/\mathrm{I}_{\mathrm{ny}}]\mathrel{\mathord{|}\mathord{=}}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$; either way, $0,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$; similarly, $1,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$; thus for any world $w$: $w,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$. But CP^{+} is invalid and (2) untrue in the model. For all first-order variables are assigned the same value, 2, which is in the domain of both worlds, so for any assignment $a$ and $w\in \mathrm{W}$, $\{o\in\operatorname{dom}(w):w,a[{𝐱}/o]\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}\}=\{\}$; hence if $0,a\mathrel{\mathord{|}\mathord{=}}□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}\boldsymbol{)}$ then $a({𝐗})(0)=a({𝐗})(1)=\{\}$, which is impossible since $\mathrm{I}_{\mathrm{yn}}(0)=\mathrm{I}_{\mathrm{ny}}(1)=\{2\}$.
+
+However, CP is very weak. For example, it does not entail the schema (4):
+
+(4)
+$\forall {𝐱}\,\boldsymbol{(}\boldsymbol{(}{𝐀}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐀}\boldsymbol{)}\boldsymbol{\to}\exists {𝐗}\,\boldsymbol{(}{𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}\boldsymbol{)}\boldsymbol{)}$
+
+A typical instance of (4) can be paraphrased as ‘Whoever is contingently happy is contingently something’. That is just the kind of harmless truth that motivates second-order modal logic. We can show that CP does not entail (4) by considering a different model $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\mathrm{D2},\operatorname{dom},\operatorname{int}\mathclose{>}$, where $\mathrm{W}$, $w_0$, $\mathrm{D}$ and dom are as before, but $\mathrm{D2}={}$$\{\mathrm{I}_{\mathrm{yy}},\mathrm{I}_{\mathrm{nn}}\}$, $\mathrm{I}_{\mathrm{yy}}(0)=\{2\}$, $\mathrm{I}_{\mathrm{yy}}(1)=\{2\}$, $\mathrm{I}_{\mathrm{nn}}(0)=\{\}$, $\mathrm{I}_{\mathrm{nn}}(1)=\{\}$, and for some 1-place predicate constant ${𝐅}$ $\operatorname{int}({𝐅})=\mathrm{I}_{\mathrm{yn}}$. CP is valid in this model, for a reason like that for the previous model. Now for any assignment $a$: $0,a\mathrel{\mathord{|}\mathord{=}} {𝐅}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐅}{𝐱}$. But both $0,a[{𝐗}/\mathrm{I}_{\mathrm{yy}}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$ and $1,a[{𝐗}/\mathrm{I}_{\mathrm{yy}}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$ so not $0,a[{𝐗}/\mathrm{I}_{\mathrm{yy}}]\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}$, so not $0,a[{𝐗}/\mathrm{I}_{\mathrm{yy}}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}$, and not $0,a[{𝐗}/\mathrm{I}_{\mathrm{nn}}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$ so not $0,a[{𝐗}/\mathrm{I}_{\mathrm{nn}}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}$. Therefore not $0,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐗}\,\boldsymbol{(}{𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}\boldsymbol{)}$. Thus (4) is not true at 0.
+
+By contrast, (4) is true in any Henkin-Kripke model in which CP^{+} is valid. For suppose that CP^{+} is valid in $\mathopen{<} \mathrm{W},w_0,\mathrm{D},\mathrm{D2},\operatorname{dom},\operatorname{int}\mathclose{>}$. We may assume that ${𝐗}$ does not occur free in ${𝐀}$ in (4) (otherwise a slight complication in the argument is needed). Then for some $\mathrm{I}\in \mathrm{D2}$ and any assignment $a$, $w_0,a[{𝐗}/\mathrm{I}]\mathrel{\mathord{|}\mathord{=}}□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$, so for any $w\in \mathrm{W}$ $\{o\in\operatorname{dom}(w):w,a[{𝐗}/\mathrm{I}][{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}\}=\{o\in\operatorname{dom}(w):w,a[{𝐗}/\mathrm{I}][{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}\}=\{o\in\operatorname{dom}(w):w,a[{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}\}$. Suppose that $w_0,a[{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐀}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐀}$ where $o\textit{*}\in w_0$. Now $\{o\in\operatorname{dom}(w_0):w_0,a[{𝐗}/\mathrm{I}][{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}\}=\{o\in\operatorname{dom}(w_0):w_0,a[{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}\}$ and $w_0,a[{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐀}$, so $w_0,a[{𝐗}/\mathrm{I}][{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$. Moreover, for some $w\in \mathrm{W}$ not $w,a[{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐀}$. If $o\textit{*}\in\operatorname{dom}(w)$ then not $w,a[{𝐗}/\mathrm{I}][{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$ because $\{o\in\operatorname{dom}(w):w,a[{𝐗}/\mathrm{I}][{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}\}=\{o\in\operatorname{dom}(w):w,a[{𝐱}/o]\mathrel{\mathord{|}\mathord{=}} {𝐀}\}$. If $o\textit{*}\notin\operatorname{dom}(w)$ then not $w,a[{𝐗}/\mathrm{I}][{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$ because $\mathrm{I}(w)\subseteq\operatorname{dom}(w)$ by definition of a model. Either way, not $w,a[{𝐗}/\mathrm{I}][{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$, so $w_0,a[{𝐗}/\mathrm{I}][{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}$. Thus $w_0,a[{𝐗}/\mathrm{I}][{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}$, so $w_0,a[{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}}\exists {𝐗}\,\boldsymbol{(}{𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}\boldsymbol{)}$. Thus for any $o\textit{*}\in w_0$: $w_0,a[{𝐱}/o\textit{*}]\mathrel{\mathord{|}\mathord{=}}\boldsymbol{(}{𝐀}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐀}\boldsymbol{)}\boldsymbol{\to}\exists {𝐗}\,\boldsymbol{(}{𝐗}{𝐱}\mathbin{\boldsymbol{\&}}\boldsymbol{\lozenge}\boldsymbol{\neg} {𝐗}{𝐱}\boldsymbol{)}$, so $w_0,a\mathrel{\mathord{|}\mathord{=}}(4)$, as required.
+
+Another example of the weakness of CP is that it does not entail:
+
+(5)
+$\boldsymbol{(}\forall {𝐱}\,\boldsymbol{(}{𝐀}\boldsymbol{\leftrightarrow} {𝐁}\boldsymbol{)}\mathbin{\boldsymbol{\&}}\boldsymbol{\neg}□\forall {𝐱}\,\boldsymbol{(}{𝐀}\boldsymbol{\leftrightarrow} {𝐁}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\exists {𝐗}\,\exists {𝐘}\,\boldsymbol{(}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐘}{𝐱}\boldsymbol{)}\mathbin{\boldsymbol{\&}}\boldsymbol{\neg}□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐘}{𝐱}\boldsymbol{)}$
+
+A typical instance of (5) can be roughly paraphrased as ‘If it is contingent that all and only cordates are renates, then there are contingently coextensive properties’. That is another example the kind of harmless truth that motivates second-order modal logic. The underivability of (5) can be established by exactly the same model as for (4). For $0,a\mathrel{\mathord{|}\mathord{=}}\forall {𝐱}\,\boldsymbol{(}{𝐅}{𝐱}\boldsymbol{\leftrightarrow} {𝐱}\boldsymbol{=}{𝐱}\boldsymbol{)}\mathbin{\boldsymbol{\&}}\boldsymbol{\neg}□\forall {𝐱}\,\boldsymbol{(}{𝐅}{𝐱}\boldsymbol{\leftrightarrow} {𝐱}\boldsymbol{=}{𝐱}\boldsymbol{)}$; yet not $0,a\mathrel{\mathord{|}\mathord{=}}\exists {𝐗}\,\exists {𝐘}\,\boldsymbol{(}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐘}{𝐱}\boldsymbol{)}\mathbin{\boldsymbol{\&}}\boldsymbol{\neg}□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐘}{𝐱}\boldsymbol{)}$ because the only two intensions in the domain of the second-order quantifiers are not coextensive at any world. By contrast, (5) is true in any Henkin-Kripke model in which CP^{+} is valid.
+
+Both (4) and (5) are examples of principles that might have failed if we had read the second-order quantifiers as plural quantifiers.19 However, some principles that do hold on the plural interpretation also cannot be derived from CP. For example, CP does not guarantee that properties are closed under conjunction. That is, we cannot derive (6) from CP:
+
+(6)
+$\forall {𝐘}\,\forall {𝐙}\,\exists {𝐗}\,□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{(}{𝐘}{𝐱}\mathbin{\boldsymbol{\&}}{𝐙}{𝐱}\boldsymbol{)}\boldsymbol{)}$
+
+To see this, recall the model used above to show that (4) cannot be derived from CP. Let a(${𝐘}$) = I_{yn} and a(${𝐙}$) = I_{ny}. If $w$, a |= □∀ ${𝐱} \boldsymbol{(}{𝐗}{𝐱} \boldsymbol{\leftrightarrow}  \boldsymbol{(}{𝐘}{𝐱} \mathbin{\boldsymbol{\&}} {𝐙}{𝐱}\boldsymbol{)}\boldsymbol{)}$ then a(${𝐗}$) = I_{nn}, but in this model I_{nn} ∉ D2, so (6) is not true at any world in this model. In fact, we can use the very same model to prove that CP does not entail that the second-order domain is closed under any Boolean combinations of ${𝐘}{𝐱}$ and ${𝐙}{𝐱}$ except for $\boldsymbol{\neg} {𝐘}{𝐱}$, $\boldsymbol{\neg} {𝐙}{𝐱}$ and the two trivial cases of ${𝐘}{𝐱}$ and ${𝐙}{𝐱}$ themselves. Moreover, we can rule out the cases of negation by considering a third Henkin-Kripke model like the previous ones except that D2 = {I_{yn}, I_{ny}, I_{nn}}. CP remains valid in this model because we have merely extended the domain of the second-order variables. But (7) is untrue in the model:
+
+(7)
+$\forall {𝐘}\,\exists {𝐗}\,□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐘}{𝐱}\boldsymbol{)}$
+
+For if $a({𝐘}\boldsymbol{)}=\mathrm{I}_{\mathrm{nn}}$, $w,a\mathrel{\mathord{|}\mathord{=}}□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐘}{𝐱}\boldsymbol{)}$ only if $a({𝐗})=\mathrm{I}_{\mathrm{yy}}$, but $\mathrm{I}_{\mathrm{yy}}\notin \mathrm{D2}$, so (7) is not true in this model. Thus CP does not entail that the second-order domain is closed under any non-trivial binary Boolean combination. By contrast, (6), (7) and corresponding claims for all other Boolean combinations just are instances of CP^{+}. In such respects CP^{+} yields a far more systematic theory of the second order than does CP.
+
+For simplicity, the models used to establish the independence of (4)-(7) from CP had a constant first-order domain, so BF and CBF are true in these models. Thus the models also show that (4)-(7) are not derivable from CP even with the help of BF and CBF.20 We could also establish the independence of (4)-(7) from CP using models with varying first-order domains.
+
+Quite independently of issues about contingent existence, CP is just too weak to be a satisfying comprehension principle. The opponent of BF and CBF who wishes to deny (2) needs some other diagnosis of what is wrong with it. At this point the natural suggestion for them is that cross-world variability in the first-order domain induces a corresponding cross-world variability in the second-order domain: roughly speaking, what properties there are depends on what objects there are: a property can in some sense ‘involve’ objects, as my negative haecceity involves me, and there could have been no property without the objects it involves. When the schematic letter ‘${𝐀}$’ in CP^{+} is replaced by a formula with parameters, that is, free variables other than ${𝐱}$, one should not assert that the corresponding property would have existed even if the values of those variables had not.
+
+Of course, this line of thought does not warrant a blanket ban on all instances of the comprehension schema with such parameters. Indeed, the legitimacy of such instances is essential if second-order quantification is to serve its central logical and mathematical functions. For example, consider the second-order principle of mathematical induction in a suitably extended language (where ${𝐬}$ expresses the successor function):
+
+MI
+$\forall {𝐗}\,\boldsymbol{(}\boldsymbol{(}{𝐗}\mathbf{0}\mathbin{\boldsymbol{\&}}\forall {𝐧}\,\boldsymbol{(}{𝐗}{𝐧}\boldsymbol{\to} {𝐗}{𝐬}{𝐧}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐧}\,{𝐗}{𝐧}\boldsymbol{)}$
+
+We need MI to entail consequences such as (8):
+
+(8)
+$\forall {𝐲}\,\boldsymbol{(}\boldsymbol{(}{𝐑}{𝐲}\mathbf{0}\mathbin{\boldsymbol{\&}}\forall {𝐧}\,\boldsymbol{(}{𝐑}{𝐲}{𝐧}\boldsymbol{\to} {𝐑}{𝐲}{𝐬}{𝐧}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐧}\,{𝐑}{𝐲}{𝐧}\boldsymbol{)}$
+
+But to derive (8) from MI we require ∀ ${𝐲}$ ∃ ${𝐗}$ ∀ ${𝐧} \boldsymbol{(}{𝐗}{𝐧} \boldsymbol{\leftrightarrow}  {𝐑}{𝐲}{𝐧}\boldsymbol{)}$, an instance of comprehension with parameters. Rather, the proposal is to permit such instances, but with a restriction to possibilities in which the values of the parameters exist. For instance, (2) might be replaced by (9):
+
+(9)
+$□\forall {𝐲}\,□\boldsymbol{(}{𝐲}\boldsymbol{=}{𝐲}\boldsymbol{\to}\exists {𝐗}\,□\boldsymbol{(}{𝐲}\boldsymbol{=}{𝐲}\boldsymbol{\to}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}\boldsymbol{)}\boldsymbol{)}$
+
+More generally, CP* would replace CP, where ${𝐯}_{\mathbf{1}}$, …, ${𝐯}_{{𝐧}}$ are all the parameters in ${𝐀}$:
+
+CP*
+$\boldsymbol{(}{𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{1}}\mathbin{\boldsymbol{\&}}\boldsymbol{\ldots}\mathbin{\boldsymbol{\&}}{𝐯}_{{𝐧}}\boldsymbol{=}{𝐯}_{{𝐧}}\boldsymbol{)}\boldsymbol{\to}\exists {𝐗}\,□\boldsymbol{(}\boldsymbol{(}{𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{1}}\mathbin{\boldsymbol{\&}}\boldsymbol{\ldots}\mathbin{\boldsymbol{\&}}{𝐯}_{{𝐧}}\boldsymbol{=}{𝐯}_{{𝐧}}\boldsymbol{)}\boldsymbol{\to}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}\boldsymbol{)}$
+
+An appropriate model theory would further liberalize the Henkin-Kripke semantics, by permitting variation in the second-order domain (although not all such models validate CP*). In an important respect, CP* is closer to CP^{+} than to CP, because it has the crucial occurrence of □ between ∃ ${𝐗}$ and ∀ ${𝐱}$.
+
+Two other variants on the same theme are:
+
+CP*a
+$\forall {𝐯}_{\mathbf{1}}\,\boldsymbol{\ldots}\forall {𝐯}_{{𝐧}}\,\exists {𝐗}\,□\boldsymbol{(}\boldsymbol{(}{𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{1}}\mathbin{\boldsymbol{\&}}\boldsymbol{\ldots}\mathbin{\boldsymbol{\&}}{𝐯}_{{𝐧}}\boldsymbol{=}{𝐯}_{{𝐧}}\boldsymbol{)}\boldsymbol{\to}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}\boldsymbol{)}$
+CP**
+$\exists {𝐗}\,□\boldsymbol{(}\boldsymbol{(}{𝐄}{𝐗}\boldsymbol{\to}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}\boldsymbol{)}\mathbin{\boldsymbol{\&}}\boldsymbol{(}{𝐄}{𝐗}\boldsymbol{\leftrightarrow}\boldsymbol{(}{𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{1}}\mathbin{\boldsymbol{\&}}\boldsymbol{\ldots}\mathbin{\boldsymbol{\&}}{𝐯}_{{𝐧}}\boldsymbol{=}{𝐯}_{{𝐧}}\boldsymbol{)}\boldsymbol{)}\boldsymbol{)}$
+
+Under elementary assumptions, CP*a is logically equivalent to CP* (CP* has the advantage of articulating the existential condition on ${𝐯}_{\mathbf{1}}$, …, ${𝐯}_{{𝐧}}$ uniformly in its two occurrences). In CP**, ${𝐄}$ is a new second-order existence predicate (questions might be raised about the intelligibility of such a predicate, but since it is built into the underlying philosophical motivation for these principles, it hardly constitutes an additional cost). CP** logically entails CP* and CP*a. The converse fails in the absence of special principles about ${𝐄}$ (which does not occur in CP* and CP*a). The ensuing discussion will apply to all three versions.21
+
+Unfortunately for the opponent of BF and CBF, CP* is problematic in at least two ways. First, it assumes that the object-dependence of the property corresponding to ${𝐀}$ is exhausted by the explicit parameters in ${𝐀}$. But object-dependence can arise in other ways. If it is explicit in a proper name ${𝐜}$ (in an extended language) rather than a variable, it can be dealt with simply by adding another conjunct ${𝐜}\boldsymbol{=}{𝐜}$ to both occurrences of the existential condition ${𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{1}}\mathbin{\boldsymbol{\&}}\boldsymbol{\ldots}\mathbin{\boldsymbol{\&}}{𝐯}_{{𝐧}}\boldsymbol{=}{𝐯}_{{𝐧}}$ in CP*.22 But it might be purely implicit, in the intended interpretation of a non-logical atomic predicate. No obvious modification of CP* or CP*a handles this problem. We could avoid it by dropping the sufficient condition for ${𝐄}{𝐗}$ in CP**:
+
+CP**−
+$\exists {𝐗}\,□\boldsymbol{(}{𝐄}{𝐗}\boldsymbol{\to}\boldsymbol{(}\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}\mathbin{\boldsymbol{\&}}{𝐯}_{\mathbf{1}}\boldsymbol{=}{𝐯}_{\mathbf{1}}\mathbin{\boldsymbol{\&}}\boldsymbol{\ldots}\mathbin{\boldsymbol{\&}}{𝐯}_{{𝐧}}\boldsymbol{=}{𝐯}_{{𝐧}}\boldsymbol{)}\boldsymbol{)}$
+
+However, without a sufficient condition for ${𝐄}{𝐗}$, CP**− will not enable us to discharge it as an extra assumption; unlike CP**, CP**− will not entail CP*. In effect, we shall be unable to establish unconditionally any non-trivial instance of comprehension.
+
+A second problem arises thus. In second-order logic, we can explicitly define the reflexive ancestral of a relation. Consider a two-place atomic predicate ${𝐑}$. To be specific, let ${𝐑}\textbf{*}{𝐯}_{\mathbf{1}}{𝐯}_{\mathbf{2}}$ abbreviate the formula $\forall {𝐘}\,\boldsymbol{(}\forall {𝐮}\,\forall {𝐯}\,\boldsymbol{(}{𝐑}{𝐮}{𝐯}\boldsymbol{\to}\boldsymbol{(}{𝐘}{𝐮}\boldsymbol{\to} {𝐘}{𝐯}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\boldsymbol{(}{𝐘}{𝐯}_{\mathbf{1}}\boldsymbol{\to} {𝐘}{𝐯}_{\mathbf{2}}\boldsymbol{)}\boldsymbol{)}$. Then by elementary reasoning we can derive:
+
+(10)
+$\forall {𝐗}\,\boldsymbol{(}\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐗}{𝐰}\boldsymbol{\to} {𝐗}{𝐱}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}\textbf{*}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐗}{𝐰}\boldsymbol{\to} {𝐗}{𝐱}\boldsymbol{)}\boldsymbol{)}\boldsymbol{)}$
+
+If a property is inherited from parent to child, it is inherited from ancestor to descendant. But for the definition of the ancestral to have its intended effect, we should also have as a logical truth every instance of (10):
+
+(11)
+$\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐀}\boldsymbol{\to} {𝐀}_{{𝐱}}^{{𝐰}}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}\textbf{*}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐀}\boldsymbol{\to} {𝐀}_{{𝐱}}^{{𝐰}}\boldsymbol{)}\boldsymbol{)}$
+
+Here ${𝐀}_{{𝐱}}^{{𝐰}}$ results from substituting ${𝐱}$ for all free occurrences of ${𝐰}$ in ${𝐀}$, ${𝐱}$ is free for ${𝐰}$ in ${𝐀}$ and does not occur free in ${𝐀}$. Irrespective of the specific content of ${𝐀}$, (11) should be an uncontroversial truth of second-order logic, for an object o has the ancestral of a relation R to an object o′ if and only if o′ is reachable from o by a finite number of R-steps, that is, steps in which one moves from an object to another object where the former has R to the latter. For any particular finite number n, we can define what it is for o′ to be reachable from o in n R-steps in first-order terms; if we substitute the corresponding formula for ${𝐑}\textbf{*}{𝐰}{𝐱}$ in (11), the result is a truth of first-order logic, irrespective of the specific content of ${𝐀}$. In effect, (11) simply asserts a generalization each of whose instances is a first-order logical truth. Thus (11) should be an uncontroversial truth of second-order logic. It should be derivable from the definition of ${𝐑}\textbf{*}$ and general principles of second-order logic. A standard derivation of (11) requires an instance of comprehension for the formula ${𝐀}$. The relevant comprehension principle is simply CP; the stronger principle CP^{+} is not needed here.
+
+The reasoning that supported (11) also supports its closures, such as:
+
+(12)
+$\forall {𝐲}\,□\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐀}\boldsymbol{\to} {𝐀}_{{𝐱}}^{{𝐰}}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}\textbf{*}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐀}\boldsymbol{\to} {𝐀}_{{𝐱}}^{{𝐰}}\boldsymbol{)}\boldsymbol{)}$
+
+For instance, if we substitute for ${𝐑}\textbf{*}{𝐰}{𝐱}$ a first-order formula corresponding to the claim that one object is two R-steps from another, the result is (13):
+
+(13)
+$\forall {𝐲}\,□\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}{𝐀}\boldsymbol{\to} {𝐀}_{{𝐱}}^{{𝐰}}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}\exists {𝐳}\,\boldsymbol{(}{𝐑}{𝐰}{𝐳}\mathbin{\boldsymbol{\&}}{𝐑}{𝐳}{𝐱}\boldsymbol{)}\boldsymbol{\to}\boldsymbol{(}{𝐀}\boldsymbol{\to} {𝐀}_{{𝐱}}^{{𝐰}}\boldsymbol{)}\boldsymbol{)}$
+
+This is a theorem of any standard system of first-order modal logic (without BF or CBF). The same applies to the corresponding formula for any other natural number. Thus (12) itself should be an uncontroversial truth of second-order modal logic, irrespective of the particular content of ${𝐀}$. It should be derivable from the definition of ${𝐑}\textbf{*}$ and general principles of second-order modal logic. Just as (12) is a closure of (11), so the instance of comprehension needed for a standard derivation of (12) is the corresponding closure of the instance of CP needed for a standard derivation of (11):
+
+(14)
+$\forall {𝐲}\,□\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐀}\boldsymbol{)}$
+
+Now consider the case of (12) in which $\boldsymbol{\lozenge} {𝐒}{𝐱}{𝐲}$ is substituted for ${𝐀}$ (think of ${𝐒}$ as expressing some genuine binary relation):
+
+(15)
+$\forall {𝐲}\,□\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}\boldsymbol{\lozenge} {𝐒}{𝐰}{𝐲}\boldsymbol{\to}\boldsymbol{\lozenge} {𝐒}{𝐱}{𝐲}\boldsymbol{)}\boldsymbol{)}\boldsymbol{\to}\forall {𝐰}\,\forall {𝐱}\,\boldsymbol{(}{𝐑}\textbf{*}{𝐰}{𝐱}\boldsymbol{\to}\boldsymbol{(}\boldsymbol{\lozenge} {𝐒}{𝐰}{𝐲}\boldsymbol{\to}\boldsymbol{\lozenge} {𝐒}{𝐱}{𝐲}\boldsymbol{)}\boldsymbol{)}$
+
+The reason for which (12) is a truth of second-order modal logic applies in particular to (15), since it did not depend on the particular content of ${𝐀}$. The instance of a closure of CP required for a standard derivation of (15) is the corresponding case of (14):
+
+(16)
+$\forall {𝐲}\,□\exists {𝐗}\,\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\lozenge} {𝐒}{𝐱}{𝐲}\boldsymbol{)}$
+
+But the metaphysical objection the opponent of BF and CBF is currently levelling against CP^{+}, the one supposed to motivate CP* instead, applies equally to (16). For (16) requires a value of ${𝐗}$ corresponding to $\boldsymbol{\lozenge} {𝐒}{𝐱}{𝐲}$ (for a fixed value of ${𝐲}$) to exist even in counterfactual circumstances in which the object assigned to ${𝐲}$ does not. Yet (15) is a truth of second-order modal logic even without a restriction of the necessity operator by that existence condition (${𝐲}\boldsymbol{=}{𝐲}$). Thus the cost of the metaphysical objection to CP^{+} is an unwarranted restriction on legitimate principles of second-order modal logic.
+
+We cannot argue for (15) by using a value of ${𝐗}$ to describe from an external perspective circumstances in which that value did not exist, for the definition of the ancestral in effect quantifies only over properties that do exist in the circumstances in question.
+
+It might be claimed that the extension of $\boldsymbol{\lozenge} {𝐒}{𝐱}{𝐲}$ for a fixed value of ${𝐲}$ in circumstances in which that value would not exist could somehow be demarcated independently of that value. But we are not looking for ad hoc existential claims. We want a comprehension principle that will enable us to carry out valid second-order modal reasoning. It looks as though the existential qualifications in CP* prevent it from adequately doing so.
+
+The challenge to opponents of BF and CBF is to formulate a comprehension principle for second-order modal logic adequate by normal logical standards and compatible with a tenable metaphysics on which BF and CBF fail. If they cannot produce such a principle, the case for BF, CBF and their second-order counterparts will be very strong indeed.23
+
+# Acknowledgements
+
+* Earlier versions of this material were presented at a workshop on philosophical logic at Oxford University, colloquia at Texas A&M University and Rice University, and of course at the 2008 International Lauener Symposium on Analytical Philosophy in honour of Ruth Barcan Marcus in Berne. I thank participants in all these events for helpful questions, and Øystein Linnebo and Gabriel Uzquiano for detailed written comments. An AHRC Research Leave Award provided funding for research on the topic of this paper.
+
+# Notes
+
+[1] The point depends on the fact that the selection of one member of W as the actual world plays no role in the definition of truth at a world in the model. If the language included a rigidifying ‘actually’ operator, the selected world would play a distinctive in its semantic clause, and the validity of ${𝐀}$ would no longer imply that of $□ {𝐀}$. That does not affect the arguments in this paper.
+
+[2] In this simple setting, BF is valid in a given model if and only if CBF. In more complex settings, where an accessibility relation is introduced or the necessitations of instances of BF and CBF are not themselves counted as instances of them, either schema may be valid in a model when the other is not. Those complications too do not affect the arguments of this paper.
+
+[3] We will therefore not be concerned with the denial of BF or CBF by modal realists such as David Lewis, since that depends on a restriction of the quantifier to what is in the given world in a literal sense of ‘in’. For Lewis, our unrestricted quantifiers range over everything in every world, as do those of speakers in other worlds. He provides no conception of contingent existence in the most interesting, radical sense.
+
+[4] The problems remains that by Russell’s paradox there are too many actual objects (such as sets) to constitute a set, whereas $\operatorname{dom}(w_0)$ must be a set; but this is a quite general difficulty for the notion of an intended model in a set-theoretic framework, and has no special connection with modal issues. See Williamson 2000a for discussion.
+
+[5] Such a defence of BF and CBF is provided in Williamson 1990, 1998, 2000b, Linsky and Zalta 1994 and 1996 and Parsons 1995. Marcus 1985/1986 suggests a different sort of defence of BF.
+
+[6] See Williamson 1998, 2000a, 2002.
+
+[7] See Cresswell 1991, Linsky and Zalta 1994 and Williamson 1998.
+
+[8] For the model theory of second-order logic see Shapiro 1991.
+
+[9] We could add n-place predicate variables for each n, but for present purposes that complication is unnecessary.
+
+[10] For reasons explained in Williamson 2003, the talk of ‘values’ of second-order variables (whether they are sets or objects of some other kind) constitutes an undesirable and unnecessary reduction of the second-order to the first-order, by doing the semantics of a second-order language in a first-order meta-language. For present purposes such talk is harmless; we will not take the trouble to eliminate it.
+
+[11] A recent introduction to higher-order modal logic is Muskens 2007, although its focus is mainly on non-standard models.
+
+[12] I hope to discuss second-order modal logic and the problems it raises for BF and CBF under the plural interpretation in another work.
+
+[13] See also Parsons 1983: 336.
+
+[14] The objection to the idea that negative haecceities can exist in the absence of the individuals whose negative haecceities they are resembles a widespread objection to Plantinga’s interpretation of quantified modal logic. Plantinga requires individual essences to exist even in the absence of the individuals whose individual essences they are. See Fine 1985 and Plantinga 1983, 1985.
+
+[15] The argument at this point relies on an S5-like conception of modality: if something could have been necessary, it could have held in this actual world.
+
+[16] From $□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐲}\boldsymbol{)}\mathbin{\boldsymbol{\&}}□\forall {𝐱}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐱}\boldsymbol{=}{𝐳}\boldsymbol{)}$ we easily derive $□\forall {𝐱}\,\boldsymbol{(}{𝐱}\boldsymbol{=}{𝐲}\boldsymbol{\leftrightarrow} {𝐱}\boldsymbol{=}{𝐳}\boldsymbol{)}$ from which $□\boldsymbol{(}\boldsymbol{(}{𝐲}\boldsymbol{=}{𝐲}\vee {𝐳}\boldsymbol{=}{𝐳}\boldsymbol{)}\boldsymbol{\leftrightarrow} {𝐲}\boldsymbol{=}{𝐳}\boldsymbol{)}$ follows (since self-identity requires existence on the semantics). Thus the semantics allows no sense in which two possible individuals can share a negative haecceity.
+
+[17] Various weak forms of the identity of indiscernibles are derivable in the second-order modal logic, such as $□\forall {𝐱}\,□\forall {𝐲}\,□\boldsymbol{(}\forall {𝐗}\,\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow} {𝐗}{𝐲}\boldsymbol{)}\boldsymbol{\to}\boldsymbol{(}\boldsymbol{(}{𝐱}\boldsymbol{=}{𝐱}\vee {𝐲}\boldsymbol{=}{𝐲}\boldsymbol{)}\boldsymbol{\to} {𝐱}\boldsymbol{=}{𝐲}\boldsymbol{)}\boldsymbol{)}$, but they are philosophically uncontentious since the relevant reading of the second-order quantifier involves no restriction to the purely qualitative (in the obvious proof, one substitutes ${𝐱}\boldsymbol{=}{𝐱}$ for ${𝐗}{𝐱}$, then ${𝐲}\boldsymbol{=}{𝐲}$ for ${𝐗}{𝐲}$).
+
+[18] See Shapiro 1991: 73-76.
+
+[19] See Boolos 1984. Note that if ‘some things’ implies ‘at least one thing’ then a clause must be added to the interpretation to allow the value of a second-order variable to have an empty extension (as mathematical applications require).
+
+[20] Note that (7) is equivalent to $\forall {𝐘}\,\exists {𝐗}\,□\forall {𝐱}\,□\boldsymbol{(}{𝐗}{𝐱}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐘}{𝐱}\boldsymbol{)}$ in Henkin-Kripke models with constant first-order domains (and no accessibility relation) but not in all those with variable domains; likewise for the corresponding closure principles for other Boolean combinations. The stronger formulation of closure is inappropriate in the current setting, since it automatically fails when the first-order domain varies, for if $a({𝐱})\notin\operatorname{dom}(w)$ then $w,a\mathrel{\mathord{|}\mathord{=}}\boldsymbol{\neg} {𝐘}{𝐱}$ but not $w,a\mathrel{\mathord{|}\mathord{=}} {𝐗}{𝐱}$ since $\mathrm{I}(w)\subseteq\operatorname{dom}(w)$ for any $\mathrm{I}\in \mathrm{D2}$.
+
+[21] CP*b is the closest of the three formulas to a suggestion by Øystein Linnebo that prompted the discussion of CP*-like principles.
+
+[22] The corresponding modification of CP*a is hybrid in structure between CP* and CP*a, which is another slight reason to prefer the formulation CP*.
+
+[23] The argument for BF and CBF in this paper arose from further reflection on the argument for the same conclusion in Williamson 2002 (which itself traces back to considerations in Prior 1967, and even further). The first step was to replace first-order quantification over propositions (such as the proposition that I do not exist) by second-order quantification into sentence position (‘propositional quantification’). In place of (2), that yields something like $□\forall {𝐲}\,□\exists {𝐏}\,□\boldsymbol{(}{𝐏}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐲}\boldsymbol{=}{𝐲}\boldsymbol{)}$. However, the dependence of ${𝐏}$ on ${𝐲}$ required for the argument is not straightforward, for $□\boldsymbol{(}{𝐏}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐲}\boldsymbol{=}{𝐲}\boldsymbol{)}\mathbin{\boldsymbol{\&}}□\boldsymbol{(}{𝐏}\boldsymbol{\leftrightarrow}\boldsymbol{\neg} {𝐳}\boldsymbol{=}{𝐳}\boldsymbol{)}$ does not entail ${𝐲}\boldsymbol{=}{𝐳}$, only $□\boldsymbol{(}{𝐲}\boldsymbol{=}{𝐲}\boldsymbol{\leftrightarrow} {𝐳}\boldsymbol{=}{𝐳}\boldsymbol{)}$ (similarly, the dependence of the proposition that I do not exist on me is not straightforward on a coarse-grained conception of propositions as sets of possible worlds). The second step was therefore to replace quantification into sentence position by quantification into monadic predicate position, as in (2), which has the further advantage that the logical and mathematical reasons for using such quantification are much stronger. The considerations in this paper can also be used against the response in Rumfitt 2003 to Williamson 2002, but this is not the place to elaborate.
+
+# References
+
+Barcan, R. C. [Marcus, R. B.] 1946. ‘A functional calculus of first order based on strict implication’, The Journal of Symbolic Logic 11: 1-16.
+
+Barcan, R. C. [Marcus, R. B.] 1947. ‘The identity of individuals in a strict functional calculus of second order’, The Journal of Symbolic Logic 12: 12-15.
+
+Boolos, G. 1984. ‘To be is to be a value of a variable (or to be some values of some variables)’, The Journal of Philosophy 81: 430-449.
+
+Cresswell, M. 1991. ‘In defence of the Barcan formula’, Logique et Analyse 135/136: 271-282.
+
+Fine, K. 1977. ‘Postscript’, in Prior and Fine 1977.
+
+Fine, K. 1985. ‘Plantinga on the reduction of possibilist discourse’, in Tomberlin and van Inwagen 1985.
+
+Kripke, S. 1963. ‘Semantical considerations on modal logic’, Acta Philosophica Fennica 16: 83-94.
+
+Linsky, B. and Zalta, E. 1994. ‘In defense of the simplest quantified modal logic’, in J. Tomberlin, ed., Philosophical Perspectives 8: Logic and Language. Atascadero: Ridgeview.
+
+Linsky, B., and Zalta, E. 1996. ‘In defense of the contingently nonconcrete’, Philosophical Studies 84: 283-294.
+
+Marcus, R. B. [Barcan, R. C.] 1985/1986. ‘Possibilia and possible worlds’, Grazer Philosophische Studien 25-26: 107-133. Reprinted in Marcus 1993.
+
+Marcus, R. B. [Barcan, R. C.] 1993. Modalities: Philosophical Essays, Oxford: Oxford University Press.
+
+Muskens, R. 2007. ‘Higher order modal logic’, in P. Blackburn, J. van Benthem and F. Wolter, eds., Handbook of Modal Logic, Amsterdam: Elsevier.
+
+Parsons, C. 1983. Mathematics in Philosophy: Selected Essays, Ithaca: Cornell University Press.
+
+Parsons, T. 1995. ‘Ruth Barcan Marcus and the Barcan Formula’, in W. Sinnott Armstrong, D. Raffman and N. Asher, eds., Modality, Morality and Belief: Essays in Honor of Ruth Barcan Marcus, Cambridge: Cambridge University Press.
+
+Plantinga, A. 1983. ‘On existentialism’, Philosophical Studies 44: 1-20.
+
+Plantinga, A. 1985. ‘Reply to Kit Fine’, in Tomberlin and van Inwagen 1985.
+
+Prior, A. N. 1967. Past, Present and Future, Oxford: Clarendon Press.
+
+Prior, A. N., and Fine, K. 1977. Worlds, Times and Selves. London: Duckworth.
+
+Rumfitt, I. 2003. ‘Contingent existents’, Philosophy 78: 461-481.
+
+Shapiro, S. 1991. Foundations without Foundationalism: A Case for Second-Order Logic. Oxford: Oxford University Press.
+
+Tomberlin, J., and van Inwagen, P. 1985. Alvin Plantinga, Dordrecht: Reidel.
+
+Williamson, T. 1990. ‘Necessary identity and necessary existence’, in R. Haller and J. Brandl, eds., Wittgenstein − Towards a Re-Evaluation: Proceedings of the 14^{th} International Wittgenstein Symposium, vol. 1. Vienna: Holder − Pichler − Tempsky.
+
+Williamson, T. 1998. ‘Bare possibilia’, Erkenntnis 48: 257-273
+
+Williamson, T. 2000a. ‘Existence and contingency’, Proceedings of the Aristotelian Society 100: 117-139.
+
+Williamson, T. 2000b. ‘The necessary framework of objects’, Topoi 19: 201-208.
+
+Williamson, T. 2002. ‘Necessary existents’, in A. O’Hear, ed., Logic, Thought and Language, Cambridge: Cambridge University Press.
+
+Williamson, T. 2003. ‘Everything’, in J. Hawthorne and D. Zimmerman, eds., Philosophical Perspectives 17: Language and Philosophical Linguistics. Oxford: Blackwell.

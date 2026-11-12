@@ -1,0 +1,104 @@
+# Reflections on Priest’s Reflections
+
+Timothy Williamson
+
+Problemos, supplement (2024): 20–26.
+
+In ‘Reflections on Williamson on Logic and Validity’ (Priest 2024), Graham Priest responds to my article Is Logic about Validity? (Williamson 2025, forthcoming). He maps both extensive areas of agreement between us on logic and extensive areas of disagreement. I will briefly comment on his remarks.
+
+# Logic and the World
+
+I argued that the central part of logic is not about validity or any other metalinguistic matter, but instead asks very general structural questions about the world. By ‘the world’ here I meant, like contemporary philosophers usually do, in the widest sense how things are. The questions are structural in the sense that they abstract from more specific subject matters, as mathematical questions also do. I mentioned Priest as one of those who hold the contrary view that (in his words, quoted in his response) “The central notion of logic is validity.” I criticized that view as comparable to the view that physics is centrally about the semantics of physical theories, rather than about the physical world.
+
+In response, Priest acknowledges that logic also delivers very general truths about the world such as I had in mind, perhaps the law of excluded middle formulated as a higher-order universal generalization, since such non-metalinguistic issues cannot be eliminated from metalinguistic issues of validity. Thus, we agree that part of logic is about non-metalinguistic matters. However, to develop the analogy with physics, Priest’s view is analogous to the view that physics is centrally about the semantics of physical theories but, since non-metalinguistic issues about the physical world cannot be eliminated from metalinguistic issues about the semantics of physical theories, physics must also have a part about the physical world. That looks like a perverse order of priorities.
+
+Priest’s validity-centred approach re-emerges later in his reflections, when he quotes a passage about scientific strength from my article and objects that, even if the valid principles of a non-classical logic NL form a proper subset of the valid principles of classical logic CL, “it is not true that CL answers more questions about logic than NL.” His stated reason is that the logic will always give an answer to the question whether a given inference is valid. That is exactly the mistake my article was devoted to clearing up. The symbol for validity belongs to the meta-language, not to the object-language. The strength of a logic varies with the informativeness of what it says in the object-language, its theorems, not with the informativeness of a description in the meta-language of which inferences are valid and which invalid. As Priest indicates, all logics for a given object-language will be equally informative in the latter respect; it is irrelevant to abductive comparisons between rival logics. In the case he envisages, CL is logically stronger (in the standard sense) than NL, because CL says more in the object-language than NL does; CL is therefore scientifically stronger than NL too. Similarly, closing a set of non-logical scientific principles under CL will typically give a stronger scientific theory than does closing the same set under NL, which gives the former theory an abductive head-start over the latter. Thus, the strength of a logic in the object-language, not the strength of a corresponding theory about validity in the meta-language, is what matters in abductive comparisons between logics.
+
+Priest is clearly doing his best to understand my perspective. That he garbles it so badly indicates how much the validity-centred conception can distort the understanding of logic, and of how to compare logics abductively.
+
+# Logical and Scientific Strength
+
+Priest and I agree that the theory choice in logic is properly made with the same general abductive methodology as in other sciences, emphasizing criteria such as strength and simplicity as well as fit with evidence. Strength is understood as informativeness. In the easiest case, one logic is stronger than another when every theorem of the latter is also a theorem of the former, but not vice versa. Thus, the former tells us everything about the world that the latter tells us, and more besides. However, we want a logic not only to tell us in its own right about the world but also to enable us to draw consequences from statements made on non-logical grounds; in particular, it should serve as a background logic for theories in other domains. Thus, the strength a logic confers on those other theories is relevant to abductive comparisons between them, and so indirectly to abductive comparisons between logics themselves, as vital components of the theoretical packages under comparison in other domains.
+
+Sometimes two logics are logically incomparable in the sense that each has a theorem the other lacks. In the purely logical sense, neither is as strong as the other. In a less formal sense, however, one may still be more informative than the other, just as ‘Every F is a G’ is typically a more informative statement than ‘Some F is not a G’, even though neither entails the other. A universal generalization entails each of its instances; a typical existential generalization does not. We can call comparative informativeness in this informal sense scientific strength. It is an abductive virtue of scientific theories. When two logics are logically incomparable, one of them may still be scientifically stronger than the other.
+
+As I have often emphasized, classical logic has a key advantage in strength over most of its non-classical competitors. Many of them give up some classical theorems without adding any new theorems of their own; they are logically weaker than classical logic. Even when the competitor is contra-classical because it has a theorem that classical logic lacks, very often, the competitor is still scientifically weaker than classical logic, because the new theorems are less informative than the classical theorems they replace. For instance, the contra-classical logic may drop a universal generalization and replace it with a theorem to the effect that there is an (unspecified) exception to the classical generalization. In such cases, classical logic still beats its contra-classical competitor in the abductive virtue of strength.
+
+Priest briefly mentions an interesting class of contra-classical logics that may not be scientifically weaker than classical logic: connexive logics. They include general principles about the conditional → that are absent from classical logic (which treats → as the material conditional) and, if added to it, would result in inconsistency. In Priest’s formulation:
+
+Aristotle
+$\vdash \neg(A \to \neg A)$
+Boethius
+$A \to B \vdash \neg(A \to \neg B)$
+
+One can derive Aristotle from Boethius on the uncontested assumption $\neg A \to A$. Both principles are general schemata: one can substitute any sentences of the language for the schematic letters ‘$A$’ and ‘$B$’. Both principles resonate with speakers of natural languages: one resists asserting ‘If it’s raining, it’s not raining’ or asserting ‘If it’s raining, it’s hot’ together with ‘If it’s raining, it’s not hot’. Has classical logic any abductive advantage over connexive logics?
+
+One can interpret some connexive logics as simply extensions of classical logic with a new conditional → as well as the material conditional, which is already definable in terms of negation and disjunction, or of negation and conjunction; connexive logics normally treat those other operators classically. For example, one can define → as a modal operator that obeys both Aristotle and Boethius in a classical modal logic (Pizzi and Williamson 1997). On that interpretation, connexive logics are not really competing with classical logic.
+
+To make connexive logics genuine competitors of classical logic, we can consider them both as logics of the same conditional →, interpreted by the standard ‘if’ of natural language. In effect, they are rival logics of ‘if’. At this point, the most obvious advantage of classical logic over connexive logics is with respect to simplicity rather than strength. Classical logic is manifestly simpler than connexive logics in both its semantics and its proof theory. Classical logicians can give the semantics of → by the standard truth-table. Connexive logicians take → to be non-truth-functional, which forces its semantics to be of some less simple kind. Proof-theoretically, the classical logic of the material conditional is best given by the natural deduction introduction and elimination rules for →, unrestricted conditional proof and modus ponens. These are indeed as natural as the phrase ‘natural deduction’ advertises, and simpler than the proof rules for a connexive conditional, unless the connexive logic is made so weak as to give classical logic a large abductive advantage over it in scientific strength.
+
+Connexive logicians may claim that connexive logic fits our actual use of ‘if’ better than classical logic does (we are still interpreting → in both classical and connexive logic like ‘if’ in English). Yet, that claim is dubious. The natural deduction rules for → feel very natural when it is read as ‘if’, and are valid on the truth-functional semantics but not on a semantics for connexive logic. Moreover, Boethius forces one, on pain of inconsistency, to reject the natural principle that a conjunction implies its conjuncts (substitute $B \wedge \neg B$ for A).
+
+The pre-reflective appeal of both connexive principles is easily explained in terms of our tendency to assess conditionals as we assess their consequents on the supposition of their antecedents, which is arguably our primary heuristic for assessing ‘if’ statements in natural language: we like Aristotle because we dislike $\neg A$ on the supposition $A$, and we like Boethius because we dislike the combination of $B$ with $\neg B$ on the supposition $A$.
+
+Alas, the suppositional heuristic is provably inconsistent, so its deliverances cannot all be correct. In a precise sense, the truth-functional semantics can be shown to be the best near-fit to the suppositional heuristic (Williamson 2020 supports these claims about ‘if’).
+
+In short, when connexive logics are interpreted as competing with classical logic, although they are not severely disadvantaged by any lack of scientific strength, they still come well behind in the abductive comparison.
+
+# Logic and Mathematics
+
+Priest questions my claims about the role of classical logic in standard mathematics and its applications (Williamson 2018 features a much more detailed discussion of this topic).
+
+On the role of classical logic in the history of mathematics, Priest writes:
+
+Mathematics has been applied for millennia, and classical (aka Frege/Russell) logic was invented only just over 100 years ago. Of course, mathematicians reasoned before that, but the reasoning was informal and did not answer to any formal logic.
+
+That is cheap. Obviously, in the past, mathematicians were not checking their proofs against an explicitly formulated formal logic; they rarely do that even in the present. But for millennia they surely have reasoned by principles such as conditional proof, modus ponens, reductio ad absurdum, proof by cases, excluded middle, disjunctive syllogism, and so on, sometimes even by using those labels. Consider the introduction and elimination rules for negation, conjunction, disjunction, the conditional, identity, and the universal and existential quantifiers, in a standard system of natural deduction. Although it took Gerhard Gentzen in the 1930s to formalize those rules explicitly, mathematicians were implicitly relying on something very like them in their reasoning, when they needed them, and still do, usually with no special training in logic. Those rules suffice for deriving all of core classical logic. If Priest wants to deny that classical logic was implicit in mathematical practice long before Frege and Russell, he will need far more evidence than the superficial charge of anachronism.
+
+Priest does mention in support the case of infinitesimals:
+
+[T]he reasoning that was actually used for the infinitesimal calculus from its discovery/invention till the 19th century could not have been classical, since it took infinitesimals to behave in a contradictory fashion.
+
+Again, this is too quick. In The Structure of Scientific Revolutions, Thomas Kuhn argued that any scientific paradigm faces anomalies, objections its proponents do not know how to resolve. That does not mean that they are not committed to the paradigm; they are just hoping that, sooner or later, it will be resolved somehow, or perhaps deceiving themselves into thinking that it already has been resolved, while being uneasily aware that some questions are better left unasked. An eighteenth-century mathematician committed to the calculus with infinitesimals as an evidently successful practice but uneasily aware of hard philosophical-sounding questions about what happens to infinitesimals at the limit might just get on with calculating in the usual way, without dreaming of true contradictions or the like. Similarly, a modern mathematician familiar with elementary classical logic, elementary set theory, and even Russell’s paradox but not with any axiomatic set theory that resolves it, may implicitly use an unrestricted comprehension principle for sets in their everyday mathematical practice, which they vaguely assume to be unthreatened by the solution, whatever it is, to the paradox, without dreaming of revisions to classical logic. More generally, one can rely on a logic in one’s reasoning while also holding that there are some topics one had better not reason about. The mindset of early modern mathematicians calculating with infinitesimals is a matter for delicate historical investigation, but inconsistencies in their practice make poor evidence that they were using a non-classical logic.
+
+Priest (2024) writes, “I do not think that pure mathematics requires classical logic” and gives a few examples of local mathematical theories developed with a background non-classical logic. But I never denied that one can do some pure mathematics without classical logic. The question is whether one can develop anything like the whole edifice of mainstream modern mathematics from a non-classical starting-point.
+
+In response, Priest follows the usual recapture tactics by adding classical principles to recover classical logic locally. One of his examples concerns intuitionist logic. He says that intuitionists can reason classically about a finite domain by adding excluded middle for statements about that domain. This is at least principled, since intuitionist objections to exclude middle arise only for infinite domains. But the point is more limited than it sounds. It does not enable intuitionists to apply classical mathematics to finite domains of physical object, for most classical mathematics still depends on quantification over infinite domains, such as the real numbers. Indeed, intuitionistic mathematics already includes restricted versions of excluded middle wherever it can, consistently with its underlying motivation, so Priest’s point does not mitigate its observed limitations.
+
+A case closer to Priest’s heart is that of paraconsistent logic. He writes:
+
+a paraconsistent logician can reason classically about consistent domains. They just add the rule:
+
+Exp $\quad (A \wedge \neg A) \vdash \bot$
+
+as “contingently” preserving truth in the domain. This is a version of Explosion, and rules out inconsistency on pain of triviality.
+
+He does not explain what makes a domain ‘consistent’. The only criterion on offer is just that Exp preserves truth in it, so the use of Exp is effectively ad hoc. This is a strike against the paraconsistent logician’s use of Exp on the abductive methodology Priest himself endorses: his list of standard abductive virtues is ‘simplicity, strength, unifying power, non-adhocness, consistency’. More specifically: for which sentences A is the paraconsistent logician allowed to apply Exp? Not for all sentences in the standard language of pure mathematics, if the paraconsistent logician follows Priest in taking Exp to fail for set-theoretic paradoxes such as Russell’s and Burali-Forti’s.
+
+More generally, playing the classical-recapture card does not enable Priest to make a plausible case that non-classical mathematics can be a serious abductive competitor to standard classical mathematics.
+
+Priest concludes his paper with a recapture-dependent consideration about the strength of his favored paraconsistent ‘logic of paradox’ LP:
+
+all classical models are (standard) LP models, but not vice versa. So any situation about which a classical logician can reason, can be reasoned about by an LP logician (by adding Exp); but not vice versa. So there is a clear sense in which LP is a stronger logic than classical logic.
+
+That form of argument is quite generic. It applies to any logic that waters down classical logic by adding further models. It also applies to any logic $\mathit{LP}^{\text{–}}$ that waters down LP by adding even more models to invalidate some LP-valid inferences: any situation about which an LP logician can reason can be reasoned about by an $\mathit{LP}^{\text{–}}$ logician (by temporarily adding the omitted principles of LP), but not vice versa. Thus, by Priest’s way of reckoning, there is a clear sense in which $\mathit{LP}^{\text{–}}$ is a stronger logic than LP.
+
+Likewise, consider any physical theory T comprising a non-redundant set of basic principles, and let $T^{\text{–}}$ be a physical theory that waters down T by omitting one of its basic principles; thus, every model of T is also a model of $T^{\text{–}}$ but some models of $T^{\text{–}}$ are not models of T. So, any situation about which a physicist who accepts T can be reasoned about by a physicist who accepts only $T^{\text{–}}$ (by temporarily adding the omitted principles of T), but not vice versa. Thus, by Priest’s way of reckoning, there is a clear sense in which $T^{\text{–}}$ is a stronger physical theory than T. But, whatever that ‘clear sense’ is, it is not the one relevant to abductive theory-comparison, for, by abductive standards, it is a clear case where T is stronger than $T^{\text{–}}$. Since Priest and I are not equivocating (I assume) in applying the same general account of abductive methodology to both logic and other sciences, Priest’s ‘clear sense’ is not the one relevant to abductive theory-comparison in logic either. In the sense relevant to abductive comparisons between logics, which is also the standard sense in logic, LP is a stronger logic than $\mathit{LP}^{\text{–}}$, and classical logic is stronger than LP.
+
+Priest has found an ingenious way of confusing the abductive issue, by dressing up weakness as strength and strength as weakness. His confusion seems to be a product of two factors: allowing ad hoc strengthenings of a logic to figure unpenalized in abductive comparisons, and equivocating between the logic itself in the object-language and a description of the logic in the meta-language. Both factors are visible in the quoted passage: the recapture tactic in the parenthetical reference to Exp, and the shift to the meta-language in the reference to models.
+
+# Conclusion
+
+Priest and I agree that an abductive methodology is appropriate for comparative assessments of competing scientific theories, including competing logics. Unfortunately, his application of the methodology to logic is vitiated by both equivocation between theories in the object-language and theories in the meta-language in assessing the abductive virtue of strength and neglect of the abductive vices of ad hoc moves and extra complexity. Such fallacies may be needed to make non-classical logics look like serious abductive competitors of classical logic.
+
+# References
+
+Pizzi, C., and Williamson, T., 1997: ‘Strong Boethius’ Thesis and consequential implication. Journal of Philosophical Logic 26: 569–588.
+
+Priest, G., 2024: Reflections on Williamson on Logic and Validity, Problemos Priedas, THIS ISSUE.
+
+Williamson, T., 2018: Alternative Logics and Applied Mathematics’, Philosophical Issues, 28(1): 399-424.
+
+Williamson, T., 2020. Suppose and Tell: The Semantics and Heuristics of Conditionals. Oxford: Oxford University Press.
+
+Williamson, T., 2025: Is Logic the Study of Validity?’ in Brendel, E., Carrara, M., Ferrari, F., Hjortland, O., Sagi, G., Sher, G., and Steinberger, F. (Eds.), The Oxford Handbook of the Philosophy of Logic. Oxford: Oxford University Press, forthcoming.

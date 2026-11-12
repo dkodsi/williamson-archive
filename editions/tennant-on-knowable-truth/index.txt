@@ -1,0 +1,278 @@
+# Tennant on knowable truth
+
+Timothy Williamson
+
+Ratio 13 (2000): 99–114.
+
+Abstract
+
+The paper responds to Neil Tennant’s recent discussion of Fitch’s so-called paradox of knowability in the context of intuitionistic logic. Tennant’s criticisms of the author’s earlier work on this topic are shown to rest on a principle about the assertibility of disjunctions with the absurd consequence that everything we could make true already is true. Tennant restricts the anti-realist principle that truth implies knowability in order to escape Fitch’s argument, but a more complex variant of the argument is shown to elicit from his restricted principle exactly the consequences which it was intended to avoid.
+
+A diffuse philosophical tendency cannot be refuted once and for all by a single rigorous argument. Nevertheless, such an argument can severely constrain the forms in which the tendency is expressed. A case in point involves the tendency labelled ‘anti-realism’ and a now celebrated argument, sometimes known as the paradox of knowability, introduced into discussion by Frederick Fitch. In earlier work I sketched a form of anti-realism on which Fitch’s argument fails to reach its final conclusion. Naturally, my aim was not to endorse that form of anti-realism; I find it deeply implausible. But that does not distinguish it from other forms of anti-realism, and such dispositions are not invariant across persons. My aim was rather to see what forms of anti-realism must be argued against in some way beyond Fitch’s. Neil Tennant has recently criticized the envisaged anti-realist response to Fitch, and proposed an alternative anti-realist response of his own. In this paper I explain why both Tennant’s criticism and his alternative fail. His proposal collapses into the one he criticizes. The result illustrates a more general point: that moderate forms of anti-realism tend to be the least stable.
+
+# §1.
+
+Anti-realists argue that truth is epistemically constrained. Their arguments are too complex, elusive and at least vaguely familiar to formulate here; we can gesture at them thus: a sentence s as uttered in some context expresses the content that P only if the link between s and the condition that P is made by the way speakers of the language use s; their use must be sensitive to whether the condition obtains; that requires of them the capacity in principle to recognize that it obtains, when it does so; thus P only if speakers of the language can in principle recognize that P. In brief: all truths are knowable. We can formalize the anti-realist conclusion in a schema:
+
+(1)
+$\mathrm{\phi} \rightarrow ◇ K\mathrm{\phi}$
+
+Here $◇$ and $K$ abbreviate ‘it is possible that’ and ‘someone sometime knows that’ respectively; $\mathrm{\phi}$ is to be replaced by declarative sentences.1 The relevant sense of ‘possible’ is not merely epistemic, because the anti-realist takes sensitivity to whether a condition obtains to require a genuine recognitional capacity (an ‘ontic’ possibility of knowing), not a mere incapacity to recognize one’s ignorance (an epistemic possibility of knowing). According to (1), the truth really could have been known.
+
+Much in the anti-realist arguments deserves to be questioned. Fitch (1963) introduced a direct objection to their conclusion with an apparent reductio ad absurdum of (1). It requires two highly plausible principles about knowledge: only truths are known, and known conjunctions have known conjuncts.2 Consequently:
+
+(2)
+$K\mathrm{\phi} \rightarrow \mathrm{\phi}$
+(3)
+$K(\mathrm{\phi} \wedge \mathrm{\psi} \rightarrow K\mathrm{\phi} \wedge K\mathrm{\psi})$
+
+(2) and (3) entail that nothing is ever known to be an always unknown truth. For (2) yields $K(\mathrm{\phi} \wedge \neg K\mathrm{\phi}) \rightarrow (\mathrm{\phi} \wedge \neg K\mathrm{\phi})$ and therefore $K(\mathrm{\phi} \wedge \neg K\mathrm{\phi} \rightarrow \neg K\mathrm{\phi})$ while (3) yields $K(\mathrm{\phi} \wedge \neg K\mathrm{\phi}) \rightarrow (K\mathrm{\phi} \wedge K\neg K\mathrm{\phi})$ and therefore $K(\mathrm{\phi} \wedge \neg K\mathrm{\phi}) \rightarrow K\mathrm{\phi}$, so together they give:
+
+(4)
+$\neg K(\mathrm{\phi} \wedge \neg K\mathrm{\phi})$
+
+(2) and (3) are intended as necessary constraints on knowledge, and the propositional logic used to derive (4) from (2) and (3) is necessarily truth-preserving, so by a variant of the rule of necessitation in modal logic we can conclude that what (4) says is not could not have been:
+
+(5)
+$\neg◇ K(\mathrm{\phi} \wedge \neg K\mathrm{\phi})$
+
+Consider the special case of (1) with $\mathrm{\phi} \wedge \neg K\mathrm{\phi}$ in place of $\mathrm{\phi}$:
+
+(6)
+$(\mathrm{\phi} \wedge \neg K\mathrm{\phi}) \rightarrow ◇ K(\mathrm{\phi} \wedge \neg K\mathrm{\phi})$
+
+(5) and (6) yield:
+
+(7)
+$\neg(\mathrm{\phi} \wedge \neg K\mathrm{\phi})$
+
+In classical logic, (7) is equivalent to:
+
+(8)
+$\mathrm{\phi} \rightarrow K\mathrm{\phi}$
+
+(8) is deeply implausible. In effect, it says that any truth is known. As one instance, it says that there is a fragment of Roman pottery at a certain spot only if someone sometime knows that there is a fragment of Roman pottery there. The corresponding instance of (1) for the same value of $\mathrm{\phi}$ is quite plausible: there is a fragment of Roman pottery there only if it is possible that someone sometime knows that there is a fragment of Roman pottery there. But according to (8), there is a fragment of Roman pottery there only if the possibility of knowing is actualized; that claim seems quite unwarranted. Although (by (4)) the attempt to identify a particular example of an unknown truth would be self-defeating, we surely have ample indirect evidence for the general claim that not all truths are ever known. Of course, some believe that an omniscient god makes (8) true, but that debate is not very pertinent here. For if we restrict the substitutions for $\mathrm{\phi}$ to sentences of our language, the anti-realist motivation for (1) allows us to read ‘someone’ in the definition of $K$ as ‘some member of our speech community’; the links between sentences of English and their contents are made by human speakers of English without divine aid. ‘There is a fragment of Roman pottery at that spot’ is a sentence of our language; surely not all truths expressible in our language will at some time be known by some member of our speech community. $K$ will henceforth be understood with that restricted reading. We should therefore reject schema (8). Given that (8) was derived from (1) using uncontentious principles, we should reject (1).
+
+The seminal presentation of the case for (1) is Michael Dummett’s. Notoriously, he integrates it with a case for a comprehensive anti-realist reconception of meaning in terms of verification-conditions rather than truth-conditions, which, he argues, will invalidate classical logic, in particular the law of excluded middle, and justify its replacement by something like intuitionistic logic. The latter was originally proposed as the logic of intuitionistic mathematics, and its intended semantics reflects that role, being formulated in terms of the notion of proof. Since the notion of proof is inappropriate to empirical statements, Dummett envisages a generalized intuitionistic semantics in which a broader notion of verification plays the key role. Whether or not his argument is compelling, it is pertinent to ask how the attempted reductio ad absurdum of (1) fares under intuitionistic logic, which we may provisionally suppose the anti-realist defender of (1) to have adopted.
+
+The argument from (1) to (7) is intuitionistically acceptable, but the step from (7) to (8) is not. (7) is intuitionistically equivalent to:
+
+(9)
+$\neg K\mathrm{\phi} \rightarrow \neg\mathrm{\phi}$
+
+Intuitionistically, we cannot delete the negations in contraposing (9) to reach (8).3 Intuitionists can consistently accept (9) while denying that all truths are known. Since (7) generalizes, they must deny that there is an unknown truth: on their constructivist understanding of the existential quantifier, one could in any case verify that one could never verify that existential claim, because (by (4)) one could never verify a particular instance of it. Intuitionistically, to verify that one could never verify $\mathrm{\psi}$ is to verify $\neg\mathrm{\psi}$. Denying that there is an unknown truth does not commit one intuitionistically to asserting that all truths are known. Given (9), the intuitionist can consistently deny the universal generalization of (8) but cannot consistently deny any particular instance of (8), for (9) is intuitionistically equivalent to the double negation of (8). In this respect, the intuitionistic status of $\mathrm{\phi} \rightarrow K\mathrm{\phi}$ given (9) is exactly like that of the law of excluded middle. For the intuitionist can consistently deny the universal generalization of $\mathrm{\phi} \vee \neg\mathrm{\phi}$ but cannot consistently deny any particular instance of it, because $\neg\neg(\mathrm{\phi} \vee \neg\mathrm{\phi})$ is intuitionistically valid.4 Call an anti-realist position on which (7) is valid and (8) invalid moderately hard anti-realism. It is opposed to very hard anti-realism, on which both (7) and (8) are valid, and soft anti-realism, on which both (7) and (8) are invalid.5 A consistent moderately hard anti-realist view can be worked out in some detail within the framework of intuitionistic logic (Williamson 1982, 1988, 1992). Moderately hard anti-realists may regard the Fitch problem as a further reason for anti-realists in general to adopt intuitionistic rather than classical logic, since their response to the problem depends on a distinction available within intuitionistic but not classical logic.
+
+Of course, (9) itself is a deeply problematic consequence of (1). According to (9), what is never known is not true: thus if no one ever knows that there is a fragment of Roman pottery at a certain spot, there is no fragment of Roman pottery there. That sounds as bad as (8). But there are differences. (8) eliminates the distinction between $\mathrm{\phi}$ and $K\mathrm{\phi}$, for (8) and its uncontentious converse (2) yield $\mathrm{\phi} \leftrightarrow  K\mathrm{\phi}$, and therefore $\mathrm{\Sigma} (\mathrm{\phi} ) \leftrightarrow  \mathrm{\Sigma} (K\mathrm{\phi} )$ for any sentential context $\mathrm{\Sigma} ()$ defined with the standard intuitionistic connectives (in particular, of course, $\neg \mathrm{\phi} \leftrightarrow  \neg  K\mathrm{\phi} )$. Although (9) eliminates the distinction between $\neg \mathrm{\phi}$ and $\neg  K\mathrm{\phi}$, since (9) and (2) yield $\neg \mathrm{\phi} \leftrightarrow  \neg  K\mathrm{\phi}$, and therefore $\mathrm{\Sigma} (\neg \mathrm{\phi} ) \leftrightarrow  \mathrm{\Sigma} (\neg  K\mathrm{\phi} )$, it does not eliminate the distinction between $\mathrm{\phi}$ and $K\mathrm{\phi}$, as the underivability of (8) from (9) shows. The moderately hard anti-realist loses fewer distinctions than does the very hard anti-realist. Indeed, the former can deny the universal generalization of (8), while the latter must assert it. Thus the moderately hard anti-realist, unlike the very hard anti-realist, can assert a gap between what is true and what is ever known. It is just that the acknowledgement of the gap is essentially general; it cannot be made at the level of an individual sentence.
+
+But how can the moderately hard anti-realist mitigate the implausibility of particular instances of (9)? If one knew that human life was about to be eliminated by a huge meteorite, might one not be entitled to assert that no one will ever know that there is a fragment of Roman pottery at that spot without being entitled to assert that there is no fragment of Roman pottery there?6 Such examples suggest that intuitionistic $\neg$ does not correctly formalize the negation that we apply to empirical sentences, such as those of the form $K\mathrm{\phi}$. Dummett distinguishes the negation of intuitionistic mathematics from empirical negation (1977: 337). That is not to say that intuitionistic negation cannot meaningfully be applied to empirical sentences; rather, another negation operator may be needed as well to interpret ‘not’ in empirical discourse. Empirical negation must itself behave non-classically if moderately hard anti-realism is not to collapse into very hard anti-realism, for otherwise it could be substituted for $\neg$ in the derivation of (8), but it must not behave non-classically in exactly the same ways as $\neg$, otherwise it would offer no advantage. Major difficulties face the attempt to add such an operator (Williamson 1994). In what follows, I continue to assume that the anti-realist employs intuitionistic negation, without seeking to minimize the associated problems. Moderately hard anti-realism remains a deeply problematic position. Nevertheless, it avoids the most drastic consequences of very hard anti-realism, and an adequate critique of it will not simply cite Fitch.
+
+Of those engaged in the refinement of Dummett’s programme and the generalization of intuitionistic semantics to empirical language, one of the most active has been Neil Tennant (1987, 1997). In his recent analysis of the Fitch problem, he argues that moderately hard anti-realism is an unstable position, and proposes an alternative soft anti-realist strategy based on restricting the knowability principle (1) (1997: 245–279).7 §2 below shows that his objection to moderately hard anti-realism is fallacious. §3 shows that under rather general conditions his restricted version of (1) still implies (7), so that his would-be soft anti-realism collapses into the moderately or very hard view.
+
+# §2.
+
+Tennant objects to moderately hard anti-realism that it is unstable because in the crucial test cases for the Fitch argument the distinction between (7) and (8) collapses. He correctly points out that in the examples I use to illustrate the argument, I instantiate ‘$\mathrm{\phi}$’ with a decidable sentence: we have a decision procedure whose application would result in a verification or falsification of $\mathrm{\phi}$. This is the simplest and most vivid form of the problem that Fitch raises, and a crucial test for any adequate treatment. Tennant also correctly points out that (7) is intuitionistically equivalent to (8) when $K\mathrm{\phi}$ is decidable. He then attempts to argue that $K\mathrm{\phi}$ is decidable if and only if $\mathrm{\phi}$ is decidable. If he is right, moderately hard anti-realism fails the crucial test.
+
+Tennant’s objection is sustained if he can demonstrate that $K\mathrm{\phi}$ is decidable whenever $\mathrm{\phi}$ is; the converse does not concern us here. I will argue that his supposed demonstration that the decidability of $\mathrm{\phi}$ implies that of $K\mathrm{\phi}$ is fallacious. Here it is:
+
+Suppose that $\mathrm{\phi}$ is decidable. Then here is a decision method for $K\mathrm{\phi}$: apply the given decision method for $\mathrm{\phi}$. If you thereby determine that $\mathrm{\phi}$ is true, then you know that $\mathrm{\phi}$. So you have determined that $K\mathrm{\phi}$ is true. If, on the other hand, you determine that $\mathrm{\phi}$ is false, then you have determined that $K\mathrm{\phi}$ is false, because no one could ever know a falsehood. So if $\mathrm{\phi}$ is decidable, then so is $K\mathrm{\phi}$. (1997: 262)
+
+Our possession of a decision procedure for $K\mathrm{\phi}$ entitles us to assert:8
+
+(10)
+$K\mathrm{\phi} \vee \neg K\mathrm{\phi}$
+
+Intuitionistically, (7) and (10) entail (8). If Tennant is right, the distinction between moderately and very hard anti-realism collapses in paradigms of the cases where it was supposed to help.
+
+Why does Tennant suppose that our possession of a decision procedure for $K\mathrm{\phi}$ entitles us to assert (10)? He is relying on a principle about the assertibility of disjunctions:
+
+(DIS)
+Our possession of a method whose application will either verify $\mathrm{\phi}$ or verify $\mathrm{\psi}$ entitles us to assert $\mathrm{\phi} \vee \mathrm{\psi}$.
+
+(DIS) allows us to assert the disjunction in advance of actually applying the method.9 Since the application of Tennant’s decision procedure will either verify $K\mathrm{\phi}$ or verify $\neg K\mathrm{\phi}$, by (DIS) our mere possession of the decision procedure, in advance of actually applying it, entitles us to assert $K\mathrm{\phi} \vee \neg K\mathrm{\phi}$. (DIS) sounds very plausible. It is surely correct when $\mathrm{\phi}$ and $\mathrm{\psi}$ are mathematical.
+
+Nevertheless, we can easily see that Tennant’s argument must be unsound. For if it were sound, there would also be a sound argument for a much stronger conclusion, namely, that our possession of a decision procedure for $\mathrm{\phi}$ entitles us to assert this:
+
+(11)
+$K\mathrm{\phi} \vee K\neg\mathrm{\phi}$
+
+We can argue for this conclusion in Tennant’s style:
+
+Suppose that $\mathrm{\phi}$ is decidable. Then apply the given decision method for $\mathrm{\phi}$. If you thereby determine that $\mathrm{\phi}$ is true, then you know that $\mathrm{\phi}$. So you have determined that $K\mathrm{\phi}$ is true. If, on the other hand, you determine that $\mathrm{\phi}$ is false, then you know that $\neg\mathrm{\phi}$. So you have determined that $K\neg\mathrm{\phi}$ is true.
+
+The reasoning for the case where $\mathrm{\phi}$ is true is Tennant’s own; the reasoning for the case where $\mathrm{\phi}$ is false in effect substitutes $\neg\mathrm{\phi}$ for $\mathrm{\phi}$ in that reasoning. By (DIS), we can conclude that our mere possession of the decision procedure for $\mathrm{\phi}$ entitles us to assert (11). Now (11) is equivalent to the proposition that someone sometime will know whether $\mathrm{\phi}$ holds, for each disjunct entails that proposition, which in turn entails (11). But only very hard anti-realists claim that whenever $\mathrm{\phi}$ is decidable, someone sometime will know whether $\mathrm{\phi}$ holds. Mere possession of the decision procedure does not entitle us to assert that anyone will ever have that knowledge. For in advance of applying the procedure, we may have no reason to think that it will ever be applied; indeed, we may have reason to think that it will never be applied. Perhaps its application is costly in time and other scarce cognitive resources and $\mathrm{\phi}$ is a proposition whose truth-value is unlikely ever to be of interest to anyone. Moreover, it may be unlikely that anyone will ever come to know whether $\mathrm{\phi}$ holds without applying such a decision procedure.
+
+We can accept the Tennant-style argument for the proposition that if $\mathrm{\phi}$ is decidable then we have a method whose application will either verify $K\mathrm{\phi}$ or verify $K\neg \mathrm{\phi}$. Nevertheless, our mere possession of that method does not entitle us to assert $K\mathrm{\phi} \vee  K\neg \mathrm{\phi}$. Thus the problem lies with (DIS). What has gone wrong is that the application of the decision procedure for $\mathrm{\phi}$ brings about the state of affairs expressed by (11). That is why our mere possession of the method is not enough. To assert (11), we need some reason to think that someone sometime will apply the method. Exactly the same problem affects Tennant’s assumption that we are entitled to assert (10) whenever $\mathrm{\phi}$ is decidable. For, if $\mathrm{\phi}$ is true, the application of the decision method for $\mathrm{\phi}$ brings about the state of affairs expressed by $K\mathrm{\phi}$. Our mere possession of the method, in advance of actually applying it, does not entitle us to assert (10). If our possession of a decision method for $\mathrm{\alpha}$ entitles us to assert $\mathrm{\alpha} \vee  \neg \mathrm{\alpha}$, then Tennant is mistaken in claiming that our possession of a decision method for $\mathrm{\phi}$ puts us in possession of a decision method for $K\mathrm{\phi}$. Alternatively, if we did count his procedure as a decision method for $K\mathrm{\phi}$, then mere possession of a decision method in that weak sense for $K\mathrm{\phi}$ would not entitle us to assert $K\mathrm{\phi} \vee  \neg  K\mathrm{\phi}$, and his argument would still fail because we could not bridge the gap from (7) to (8).10
+
+For a more dramatic example of the fallacy, consider a paradigm of a potentially undecidable sentence, ‘A city was, is or will be built on this spot’ (compare Dummett 1959). Assume that no city has ever been built on the spot, and there is no present plan to build one, but equally no special reason why one should never be built there. For the Dummettian anti-realist, we are not entitled to assert ‘Either a city was, is or will be built on this spot or no city was, is or will be built on this spot’, for we have no procedure for determining which disjunct holds. Now imagine someone claiming:
+
+We do have a decision method for the sentence. For you can in principle build a city on this spot. Having done so, you will have determined that a city was, is or will be built on this spot.
+
+Although we have the capacity in principle to build a city on the spot, it does not put us in possession of a decision procedure in the relevant sense, for by intuitionistic standards it does not entitle us to assert ‘Either a city was, is or will be built on this spot or no city was, is or will be built on this spot’ in advance of exercising the capacity. Indeed, the problem for (DIS) is even worse, for we can take both $\mathrm{\phi}$ and $\mathrm{\psi}$ in it to be ‘A city was, is or will be built on this spot’. We possess a method (building a city) whose application will verify ‘A city was, is or will be built on this spot’. Therefore, by (DIS) we are now entitled to assert ‘Either a city was, is or will be built on this spot or a city was, is or will be built on this spot’. Since even in intuitionistic logic $\mathrm{\phi} \vee  \mathrm{\phi}$ is trivially equivalent to $\mathrm{\phi}$, we are now entitled to assert ‘A city was, is, or will be built on this spot’, in advance of building one or even planning to do so. That is absurd. More generally, such an argument would conclude that whenever one has the power in principle to make $\mathrm{\phi}$ true, one is entitled to assert $\mathrm{\phi}$ in advance of exercising that power. That conclusion involves one in contradictions, since one often has both the power to make $\mathrm{\phi}$ true and the power to make $\neg \mathrm{\phi}$ true, for example when $\mathrm{\phi}$ is ‘I will count to a thousand by midnight’.11 By (DIS), one is now both entitled to assert $\mathrm{\phi}$ and entitled to assert $\neg \mathrm{\phi}$, irrespective of one’s intentions. Evidently (DIS) can fail for sentences whose truth-values depend on our will; more specifically, it fails when the truth-value of $\mathrm{\phi}$ or of $\mathrm{\psi}$ depends on whether the method is actually applied. Of course this problem does not arise when $\mathrm{\phi}$ and $\mathrm{\psi}$ are mathematical.
+
+If (DIS) does not govern the assertibility of disjunctions, what does? Intuitionistic semantics relies on some notion of canonical verification (Dummett 1977: 389–403). One is entitled to make an assertion for which one lacks a canonical verification, if one knows that such a verification exists. The existence of the verification does not consist in its being possessed by anyone; nevertheless, since the intuitionist conceives it as essentially capable of being possessed by someone, it does not import any sort of platonism inconsistent with the intuitionistic view.12 The natural suggestion is then that a canonical verification of a disjunction consists of a canonical verification of a disjunct. We may be entitled to assert a disjunction without being entitled to assert any disjunct, because we know that a canonical verification exists for some disjunct without knowing which. We are in that position with respect to $\mathrm{\phi} \vee \neg\mathrm{\phi}$ when we have a genuine decision procedure for $\mathrm{\phi}$ but have not yet applied it. But if we possess Tennant’s purported decision procedure for $K\mathrm{\phi}$ without having applied it, we do not thereby know that a canonical verification for $K\mathrm{\phi}$ or a canonical verification for $\neg  K\mathrm{\phi}$ exists, even though we know how to bring such a canonical verification into existence. Consequently, we do not know that a canonical verification for $K\mathrm{\phi} \vee  \neg K\mathrm{\phi}$ exists; so we are not entitled to assert the disjunction.
+
+On an adequate understanding of intuitionistic semantics, the decidability of $\mathrm{\phi}$ does not imply the decidability of $K\mathrm{\phi}$ in any sense conducive to (10). Tennant fails in his attempt to collapse (7) into (8) for decidable $\mathrm{\phi}$. He has located no instability in moderately hard anti-realism.
+
+# §3.
+
+Tennant’s positive response to Fitch’s argument is to construct and defend a modified knowability principle. Having defined a sentence $\mathrm{\phi}$ to be Cartesian if and only if the contradiction $\bot$ does not follow from $K\mathrm{\phi}$, he endorses this restricted variant of (1), formulated as a rule of inference:
+
+($◇ KC$)
+$\mathrm{\phi}$; ergo $◇ K\mathrm{\phi}$, where $\mathrm{\phi}$ is Cartesian.13
+
+Intuitively: $(◇ KC)$ says that truth entails knowability except when Fitch’s problem occurs. Tennant admits that it may be undecidable whether a given step is an instance of a rule like $(◇ KC)$, because it is undecidable whether $\bot$ follows from $K\mathrm{\phi}$. He claims that this does not matter, on the grounds that we will apply it only when we do know that the condition is met. Since $(◇ KC)$ is intended for use only in a few philosophical arguments, not for systematic application in mathematics or science, the undecidability does not defeat its purpose.
+
+Tennant’s rule looks desperately ad hoc. But that is not the worst of its problems. The point of restricting $(◇ KC)$ to Cartesian cases is to enable the soft anti-realist to avoid asserting (8), that something is true only if known. Since Tennant holds that (7) collapses into (8) when $\mathrm{\phi}$ is decidable, his soft anti-realist rejects (7) too. The restriction on $(◇ KC)$ blocks the original derivation of (7) from (1). But Tennant has overlooked a more complex derivation of (7) from $(◇ KC)$ and some plausible assumptions.
+
+The argument will be conducted in Tennant’s preferred background logic, which is not the standard intuitionistic one but his weaker system IR of intuitionistic relevance logic (Tennant 1997: 343-4). The differences do not affect the argument below. For definiteness, let $\mathrm{\phi}$ be the decidable sentence ‘There is a fragment of Roman pottery at that spot’ (we assume a suitable context). Introduce a name ‘$n$’ by the stipulation that it is to designate (rigidly) the number of books actually now on my table. Let $E$ be the predicate ‘is even’.
+
+We first argue that the conjunction $\mathrm{\phi} \wedge  (K\mathrm{\phi} \rightarrow En)$ is Cartesian. For suppose that $K(\mathrm{\phi} \wedge  (K\mathrm{\phi} \rightarrow En))$ is inconsistent. Then this story contains an inconsistency:
+
+I find a fragment of Roman pottery at this spot and identify it correctly; I thereby come to know that there is a fragment of Roman pottery there. I also count the books actually now on my table and discover that the number is even; I deduce that if someone sometime knows that there is a fragment of Roman pottery at that spot then $n$ is even.14 By putting the two pieces of knowledge together, I acquire the knowledge expressed by the conjunction $\mathrm{\phi} \wedge  (K\mathrm{\phi} \rightarrow En)$. Thus $K(\mathrm{\phi} \wedge  (K\mathrm{\phi} \rightarrow En))$ is true.
+
+But the story is obviously consistent. Of course, $n$ may in fact be odd, in which case, since that number could not have been even, the story expresses an impossible state of affairs. Nevertheless, the story itself is still consistent; one cannot discern by reason alone that the description which fixes the reference of ‘$n$’ picks out an odd number. Someone who asserts $En$ because he failed to see one of the books is not guilty of an inconsistency. A more liberal interpretation of inconsistency might trivialize $◇ KC$; it is not what Tennant intends. Thus $\bot$ does not follow from $K(\mathrm{\phi} \wedge  (K\mathrm{\phi} \rightarrow En))$, so $\mathrm{\phi} \wedge  (K\mathrm{\phi} \rightarrow En)$ is Cartesian.
+
+Let $\vdash$ be the consequence relation of a system of epistemic logic based on IR with the additional rule $(◇ KC)$ and the axiom schemas (2) and (3).15 Since its condition is met in this case, $(◇ KC)$ gives:
+
+(12)
+$\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En) \vdash ◇ K(\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En))$
+
+Moreover:
+
+(13)
+$\mathrm{\phi} \wedge \neg K\mathrm{\phi} \vdash \mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En)$
+
+For $\neg\mathrm{\alpha} \vdash \mathrm{\alpha} \rightarrow \mathrm{\beta}$ holds even in IR (Tennant 1997: 344); from $\neg K\mathrm{\phi} \vdash K\mathrm{\phi} \rightarrow En$ we can derive (13) by the rules for $\wedge$. (12) and (13) yield:
+
+(14)
+$\mathrm{\phi} \wedge \neg K\mathrm{\phi} \vdash ◇ K(\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En))$
+
+The next step is an argument following Fitch for:
+
+(15)
+$K(\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En)) \vdash En$
+
+Now (3) and $\wedge$-elimination yield $K(\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En)) \vdash K\mathrm{\phi}$, while (2) and $\wedge$-elimination yield $K(\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En)) \vdash K\mathrm{\phi} \rightarrow En)$, and even in IR we can then move to (15).16 Since the rules used to derive (15) are truth-preserving in all possible situations, not just the actual one, if the premise of (15) expresses a possibility, so does its conclusion (if $\mathrm{\alpha} \rightarrow \mathrm{\beta}$ is a theorem of a normal modal logic, so is $◇\mathrm{\alpha} \rightarrow ◇\mathrm{\beta}$):
+
+(16)
+$◇ K(\mathrm{\phi} \wedge (K\mathrm{\phi} \rightarrow En)) \vdash ◇ En$
+
+(14) and (16) yield:
+
+(17)
+$\mathrm{\phi} \wedge \neg K\mathrm{\phi} \vdash ◇ En$
+
+We can strengthen (17) to:
+
+(18)
+$\mathrm{\phi} \wedge \neg K\mathrm{\phi} \vdash En$
+
+For it is not contingent whether $n$ is even. Since I can count the books on my table, it is decidable whether $n$ is even; hence $n$ is either odd or even; but if $n$ is odd, it could not have been even, for the mathematical properties of numbers are not contingent; thus $n$ could have been even only if it is even ($En \vee \neg En$, $\neg En \rightarrow \neg◇ En$, $◇ En \vdash En)$.17 We can now repeat the argument for (18) with ‘odd’ in place of ‘even’ to derive:
+
+(19)
+$\mathrm{\phi} \wedge \neg K\mathrm{\phi} \vdash \neg En$
+
+But (18) and (19) yield:
+
+(20)
+$\vdash \neg(\mathrm{\phi} \wedge \neg K\mathrm{\phi})$
+
+(20) makes (7) a theorem. But the point of Tennant’s restricted knowability principle $(◇ KC)$ was precisely to enable the soft anti-realist not to assert (7), which on Tennant’s view collapses into (8), the principle definitive of hard anti-realism. Thus Tennant’s restriction is futile.
+
+Should Tennant’s anti-realist seek a knowability principle with a stronger restriction to avoid (7)? The natural suspicion is that such a restriction would have to be very draconian indeed. But the search is in any case ill-motivated. The original knowability principle (1) was the outcome of an anti-realist argument (albeit a very dubious argument). If (1) has false consequences, then something must be wrong with the argument. If the argument is irreparably fallacious, one has lost one’s reason for postulating any knowability principle at all, restricted or unrestricted. If the argument can be repaired, the nature of the repairs should dictate the nature of the restrictions on the resultant knowability principle.18 Tennant does not indicate any form of anti-realist argument that would motivate the restriction in $(◇ KC)$. To say that $\mathrm{\phi}$ is Cartesian is not to explain on anti-realist terms how $\mathrm{\phi}$ could be unknowably true, how speakers’ use of $\mathrm{\phi}$ could be sensitive to a condition they could not in principle recognize to obtain or how $\mathrm{\phi}$ could express its content without such sensitivity; it is merely to say that broadly logical considerations rule out knowledge of its truth. Without such an explanation, from the perspective of principled anti-realism it is quite premature to endorse $(◇ KC)$ or anything like it.
+
+If Fitch’s argument does not refute all forms of anti-realism, it certainly shows how much remains to be done before there is a working anti-realist semantics for empirical language.
+
+# Acknowledgements
+
+Thanks to Peter Milne and Peter Pagin for comments on a draft of this paper.
+
+# Notes
+
+[1] Tennant briefly considers other possible readings of $K$. He complains (1997: 270) that ‘Williamson […] appears not to have anticipated the possibility’ of interpreting $K$ in Fitch’s argument as ‘it is known at t that’ for a particular time t. He has overlooked the discussions of such readings of the argument at Williamson 1982: 204, 1988: 425–8 and 1994: 141, 144. It is unnecessary to add to them here.
+
+[2] For difficulties facing the attempt to evade Fitch’s argument by denying (3) see Williamson 1993.
+
+[3] Williamson 1992 proves model-theoretically that (8) is not derivable from (1)-(7) and (9) in a strong system of intuitionist modal epistemic logic.
+
+[4] See Williamson 1982: 206. Tennant (1997: 267–8) objects that $\neg(\mathrm{\phi} \rightarrow K\mathrm{\phi})$ is not intuitionistically inconsistent given (1) (and the other principles used to derive (9)) unless it intuitionistically implies both $\mathrm{\phi}$ and $\neg K\mathrm{\phi}$, and that, intuitionistically, although it implies $\neg K\mathrm{\phi}$ and $\neg\neg\mathrm{\phi}$ it does not in general imply $\mathrm{\phi}$ (it does in the special case when $\mathrm{\phi}$ is decidable, but then $\mathrm{\phi} \vee \neg\mathrm{\phi}$ holds and the analogy is not useful). The objection rests on an error. Intuitionistically, $\neg K\mathrm{\phi}$ and $\neg\neg\mathrm{\phi}$ imply $\neg(\neg K\mathrm{\phi} \rightarrow \neg\mathrm{\phi})$, the negation of (9); thus $\neg(\mathrm{\phi} \rightarrow K\mathrm{\phi})$ is intuitionistically inconsistent given (1) (and the other principles used to derive (9)) although it does not intuitionistically imply $\mathrm{\phi}$.
+
+[5] This adapts Tennant’s terminology (1997: 261).
+
+[6] For related points see Percival 1990. Other discussions of Fitch’s argument in the context of intuitionistic logic include Wright 1993: 427-30, Cozzo 1994, Pagin 1994, Usberti 1995: 65–66, 121–8.
+
+[7] Tennant (1997: 276–8) also rejects the attempt in Edgington 1985 to reconstrue the knowability principle by means of something like an ‘actually’ operator, for reasons given in Williamson 1987 and Wright 1993: 426–32. See also Percival 1991. Edgington’s idea is developed rigorously in different ways by Rabinowicz and Segerberg 1994 and Lindström 1997, but neither paper answers the philosophical objections.
+
+[8] Tennant (1997: 268) is explicit that if $\mathrm{\phi}$ is decidable then $\mathrm{\phi} \vee  \neg \mathrm{\phi}$ is intuitionistically acceptable.
+
+[9] The phrase ‘possession of a method whose application will …’ is to be read as implying ‘recognition that application of the method will …’.
+
+[10] Strictly speaking, in intuitionistic logic we do not need (10) to get from (7) to (8); the weaker $\neg \neg  K\mathrm{\phi} \rightarrow  K\mathrm{\phi}$ would suffice. But the same considerations apply; the purported decision procedure would entitle us to assert $\neg \neg  K\mathrm{\phi} \rightarrow  K\mathrm{\phi}$ only by entitling us to assert (8).
+
+[11] Any incompatibility between free will and determinism is irrelevant here. That I am causally determined not to apply a method is compatible with my possession of it in the relevant sense.
+
+[12] For more detail see Williamson 1982: 206–7 and 1988: 429–32, where the idea is used to show the invalidity of an argument for $\mathrm{\phi} \rightarrow  K\mathrm{\phi}$ from intuitionistic semantics and the premise that its consequent is assertible whenever its antecedent is (see Hart 1979: 165, Wright 1993: 430); the existence of a canonical verification of $\mathrm{\phi}$ does not entail the existence of a canonical verification of $K\mathrm{\phi}$. Tennant describes this objection as ‘compelling’ (1997: 264).
+
+[13] For $(◇ KC)$ to be a well-defined rule, the notion of consequence used to define ‘Cartesian’ should be given independently of $(◇ KC)$ and cannot be assumed to be closed under it (see Tennant 1997: 275). This does not affect the argument in the text.
+
+[14] $\mathrm{\beta} \vdash \mathrm{\alpha} \rightarrow \mathrm{\beta}$ in IR (Tennant 1997: 342).
+
+[15] $\vdash$ may differ from the consequence relation used to define ‘Cartesian’. Tennant uses the weaker inference rules $K(\mathrm{\phi} \wedge \mathrm{\psi}) \vdash K\mathrm{\phi}$ and from $\mathrm{\Delta}, \mathrm{\phi} \vdash \bot$ to $\mathrm{\Delta}, K\mathrm{\phi} \vdash \bot$ in place of (3) and (2) respectively (1997: 259-60). Nevertheless his discussion makes clear that we can reasonably treat instances of (2) and (3) as theorems of epistemic logic.
+
+[16] The cut rule used to chain inferences together does not hold unrestrictedly in IR, but fails only in case of a redundant premise or conclusion, which (15) does not contain.
+
+[17] For the reason sketched in §1, the argument assumes a nonepistemic reading of $◇$. The mere epistemic possibility that $n$ is even does not entail that $n$ is even. $(◇ KC)$ is in any case unpromising on an epistemic reading of $◇$. If $◇$ is read as ‘for all we know’, we can choose an example in which it is in fact known whether $n$ is even, on which assumption $◇ En$ is true only if $En$ is, and a form of the problem in the text can still be raised. A reading of $◇$ as ‘for all we know a priori’ tends to trivialize $(◇ KC)$ by making $◇  K\mathrm{\phi}$ say little more than that $\mathrm{\phi}$ is Cartesian.
+
+[18] A failure to fit the philosophical arguments for anti-realism may also affect the revisions of the knowability principle proposed in Edgington 1985, Melia 1991, Rabinowicz and Segerberg 1994, Kvanvig 1995 and Lindström 1997, although the point cannot be argued here. The upshot of the treatment of Fitch’s argument in Usberti 1995 is a much more drastic restriction of $\mathrm{\phi}$ in (1) to mathematical sentences, which excludes those containing $K$. The proposal is grounded in Usberti’s anti-Dummettian analysis of the arguments for an intuitionistic approach (see also Williamson 1998). For a discussion of Fitch’s argument in the context of classical logic see chapter 12 of Williamson 2000.
+
+# References
+
+Cozzo, C. (1994). ‘What Can we Learn from the Paradox of Knowability?’. Topoi, 13, 71–8.
+
+Dummett, M. A. E. (1959). ‘Truth’. Proceedings of the Aristotelian Society, 59, 141–62.
+
+Dummett, M. A. E. (1977). Elements of Intuitionism. Oxford: Clarendon Press.
+
+Edgington, D. (1985). ‘The Paradox of Knowability’. Mind, 94, 557–568.
+
+Fitch, F. B. (1963). ‘A Logical Analysis of Some Value Concepts’. The Journal of Symbolic Logic, 28, 135–42.
+
+Hart, W. D. (1979). ‘The Epistemology of Abstract Objects: Access and Inference’. Aristotelian Society, sup. 53, 152–65.
+
+Kvanvig, J. (1995). ‘The Knowability Paradox and the Prospects for Anti-Realism.’ Noûs, 29, 481–500.
+
+Lindström, S. (1997). ‘Situations, Truth and Knowability: A Situation-Theoretic Analysis of a Paradox by Fitch’, in E. Ejerhed and S. Lindström (eds.), Logic, Action and Cognition – Essays in Philosophical Logic. Dordrecht: Kluwer.
+
+Melia, J. (1991). ‘Anti-Realism Untouched’. Mind, 100, 341–2.
+
+Pagin, P. (1994). ‘Knowledge of Proofs’. Topoi, 13, 93–100.
+
+Percival, P. (1990). ‘Fitch and Intuitionistic Knowability’. Analysis, 50, 182–7.
+
+Percival, P. ‘Knowability, Actuality and the Metaphysics of Context-Dependence’. Australasian Journal of Philosophy, 69, 82–97.
+
+Rabinowicz, W. and Segerberg, K. (1994). ‘Actual Truth, Possible Knowledge’. Topoi, 13, 101–15.
+
+Tennant, N. (1987). Anti-Realism and Logic: Truth as Eternal. Oxford: Clarendon Press.
+
+Tennant, N. (1997). The Taming of the True. Oxford: Clarendon Press.
+
+Usberti, G. (1995). Significato e Conoscenza: Per una Critica del Neoverificazionismo. Milan: Guerini Scientifica.
+
+Williamson, T. (1982). ‘Intuitionism Disproved?’. Analysis, 42, 203–7.
+
+Williamson, T. (1987). ‘On the Paradox of Knowability’. Mind, 96, 256–61.
+
+Williamson, T. (1988). ‘Knowability and Constructivism’. The Philosophical Quarterly, 38, 422–32.
+
+Williamson, T. (1992). ‘On Intuitionistic Modal Epistemic Logic’. Journal of Philosophical Logic, 21, 63–89.
+
+Williamson, T. (1993). ‘Verificationism and Non-Distributive Knowledge’. Australasian Journal of Philosophy, 71, 78–86.
+
+Williamson, T. (1994). ‘Never Say Never’. Topoi, 13, 135–45.
+
+Williamson, T. (1998). Review of Usberti 1995. Dialectica, 52, 63–69.
+
+Williamson, T. (2000). Knowledge and its Limits. Oxford: Oxford University Press, forthcoming.
+
+Wright, C. J. G. (1993). Realism, Meaning and Truth, 2nd ed. Oxford: Blackwell.

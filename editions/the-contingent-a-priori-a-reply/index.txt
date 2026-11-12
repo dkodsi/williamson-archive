@@ -1,0 +1,52 @@
+# The contingent a priori: a reply
+
+Timothy Williamson
+
+Analysis 48 (1988): 218–221.
+
+IN ‘Reference and Contingency’, Monist 62 (1979) pp. 161–89, Gareth Evans tried to explain how a priori knowledge of contingent truths is possible by arguing that indexical features of the truths in question make them contingent only in a superficial sense. In ‘The Contingent A Priori: Has it Anything to do with Indexicals?’, Analysis 46.3, June 1986, pp. 113–7, I suggested that his explanation is inadequate, since a priori knowledge is also possible of deeply contingent truths with no relevant indexical features. Graham Oppy disagrees; in ‘Williamson and the Contingent A Priori’, Analysis 47.4, October 1987, pp. 188–93, he claims to have detected hidden indexicality in my examples.
+
+I argued that beliefs formed by the following method (M) constitute a priori knowledge:
+
+(M)
+Given a valid deduction from the premiss that someone believes that $P$ to the conclusion that $P$, believe that $P$.
+
+If one puts ‘There is at least one believer’ for ‘$P$’, the a priori knowledge is of a non-indexical contingent truth. It will not be necessary to rehearse the details of this argument in order to explain why I do not find Oppy’s objections persuasive.
+
+One problem with Oppy’s discussion is that most of it deals not with (M) but with the following rule of inference not mentioned in my paper:
+
+APK
+$\begin{aligned}Bxp &\to p\\ &\therefore p\end{aligned}$
+
+Here ‘$Bxp$’ means ‘$x$ believes that $p$’; since Oppy also uses ‘$\to$’ in formalizing MP, it is presumably the material conditional. He seems to read (M) as involving the use of APK. My claim, it is said, would then be that APK is a ‘pragmatically justified rule of inference — i.e. APK is analogous to the rule of MP… except that it is only truth-preserving when used’ (p. 190). Oppy toys with the objection that APK would not be truth-preserving when used by a machine in a subject-less world (ibid.; he does not explain how a computer not programmed by any subject nor interacting with one and by hypothesis incapable of beliefs can use inference rules and input and output truths and falsehoods). Now, of course, APK would not be truth-preserving even when used by an ordinary believer. For one can use inference rules to go from one supposition to another as well as from one belief to another; if $p$ is false and believed by no one, APK will take you from the vacuously true supposition $Bxp \to p$ to the false supposition $p$. The best that can be said for APK is that if $x$ has the true belief $Bxp \to p$ and $x$ has the belief $p$ then the latter is true too. Thus APK, far from clarifying (M), needs to be regimented into a similar form:
+
+(MAPK)
+Given the belief that if someone believes that $P$ then $P$, believe that $P$.
+
+My argument could have been cast in terms of (MAPK), although it was not. The idea would be that (MAPK) yields a priori knowledge as output given a priori knowledge as input; thus it would process a priori knowledge of the necessary truth that if someone believes that there is at least one believer then there is at least one believer into a priori knowledge of the contingent truth that there is at least one believer. Both (M) and (MAPK) should be thought of as something like abstract mechanisms for generating beliefs, not as inference rules. There are certainly empirical questions about the realization of such mechanisms within human psychology, but that is another issue.
+
+Oppy’s main objection to me (pp. 192–3) is that APK preserves truth only when its premiss and conclusion are evaluated relative to the world in which it is used; hence the conclusion $p$ should be qualified by ‘(in this world)’ — an indexical expression. Thus the argument would yield a priori knowledge only of the indexical (and necessary) truth
+
+(1a)
+There is at least one believer (in this world).
+
+What Oppy does not point out is that on Evans’s account, some version of which he is defending, we can readily have a priori knowledge of
+
+(1b)
+If there is at least one believer (in this world) then there is at least one believer.
+
+Since use of modus ponens preserves a priori knowledge, one could know a priori by inference
+
+(1)
+There is at least one believer.
+
+(1) is my original instance of a non-indexical contingent truth known a priori. Of course, this route to knowledge of (1) involves indexicality, but that would scarcely save Evans’s explanation; (1) remains deeply contingent. The point is academic, however, since Oppy’s indexical qualification of APK anyway fails to make it truth-preserving; the earlier remark about suppositions still applies. APK should be replaced by (MAPK), which has no need of indexical qualifications such as ‘(in this world)’; to believe that $P$ is to believe it about one’s own world (which is not to say that all beliefs are indexical). Similarly, (M) stands in no need of indexical qualifications.
+
+If, following Oppy, one tries to make (MAPK) generate the belief that there is at least one believer about a subject-less world $w$, one will presumably put ‘In $w$ there is at least one believer’ for ‘$P$’; but (MAPK) will then output the false belief that in $w$ there is at least one believer only when given as input the false belief that if someone believes that in $w$ there is at least one believer then in $w$ there is at least one believer; garbage in equals garbage out. One might well be worried about (MAPK) if one confused it with a method for forming beliefs such as:
+
+(MAPK’)
+Given a belief that in all $F$ worlds if someone believes that $P$ then $P$, form the belief that in all $F$ worlds $P$.
+
+Given as input the vacuously true belief that in all believer-less worlds if someone believes that there is at least one believer then there is at least one believer, (MAPK’) does indeed yield as output the false belief that in all believer-less worlds there is at least one believer. Needless to say, (MAPK) can be truth-preserving even though (MAPK’) is not.
+
+I thus find no reason to modify my original argument. One other question raised by Oppy (at pp. 190–1) deserves to be mentioned. Can I understand (1) without already knowing that I am a believer? (There is no need to restrict the question, as Oppy does, to worlds in which I am the only subject.) He does not press the issue, since a negative answer is not obviously correct. What should also be noted is that even if a negative answer were correct, it would constitute no objection to my argument. For it would not show my a priori knowledge (with understanding) of the contingent truth that there is at least one believer to be indexical-dependent in any sense not applicable to my a priori knowledge of the necessary truth that all believers are believers. My ability to know that there is at least one believer by existential generalization from my knowledge that I exist does not undercut my ability to know it a priori by means of (M).

@@ -1,0 +1,62 @@
+# The contingent a priori: has it anything to do with indexicals?
+
+Timothy Williamson
+
+Analysis 46 (1986): 113–117.
+
+# I
+
+‘CAN some contingent truths be known a priori?’: when this question is raised in modern philosophy – as, following Kripke, it often has been – it generally introduces a discussion of certain examples which seem to turn on indexical or indexical-like words (Nathan Salmon lists most of the important work on the topic at pp. 77-8 of Reference and Essence, Blackwell 1982; I have also been helped by Graeme Forbes’s typescript ‘States of Affairs, Bedeutung and the Contingent A Priori’, 1985, and subsequent correspondence). Sometimes the indexicality is quite obvious, as in ‘I am here now’, sometimes it appears only on analysis, as in ‘If anyone uniquely invented the zip, Julius did’, where by stipulation ‘Julius’ rigidly designates the inventor of the zip (if there is one), for the rigidity of ‘Julius’ can be expressed by means of the ‘actually’ operator, which is at least formally analogous to an indexical (cf. Martin Davies Meaning, Quantification, Necessity, Routledge 1981, pp. 230-8 on the similar metre rod example). Moreover, this indexicality has been exploited in a well known argument that what is known a priori can be contingent only in a superficial way (Gareth Evans ‘Reference and Contingency’ Monist 62 (1979) pp. 161-89; technical details are omitted, since deep and superficial contingency coincide for sentences, such as those considered below, without ‘actually’ or similar operators). The purpose of this note is to argue that there are deeply contingent a priori truths which in no way turn on indexicals. I do not deny that there are also contingent a priori truths which do turn on indexicals, but we are unlikely to get clear on the contingent a priori in general if we take it to be essentially tied up with indexicals when in fact it is not.
+
+Consider the following example:
+
+(1)
+There is at least one believer
+
+To keep (1) free of indexicals, the verb in it should be read tenselessly. A believer is anyone who has beliefs. For the moment, I assume (1) to be a contingent truth: I show later how it can be modified to meet someone who thinks that at least one believer – God – necessarily exists. Now since it is impossible to believe (1) falsely, it seems that one can know (1) a priori. Note that (1) is contingent in the deep sense in which Evans suggests that a contingent a priori truth would be persistently puzzling (technically, possible worlds semantics can evaluate (1) as false even with respect to a world which it is treating as actual): if there is a paradox about the contingent a priori, it has not been dissolved by Evans.
+
+However, it might be replied that, although (1) does not contain indexicals, one can know (1) a priori only if one infers it from the vaguely Cartesian proposition:
+
+(2)
+I am a believer
+
+Therefore, it might be continued, one’s knowledge of (1) is a priori only if one’s knowledge of (2) is a priori. Moreover, since (2) entails (1), (1) is contingent only if (2) is contingent. Thus, the objection would go, (1) is contingent a priori only if (2) is contingent a priori, and (2) does involve an indexical. At this point, the objection could be rounded off either by a mild moral or by a severe one. The mild moral would concede that (2) is a contingent a priori truth, but claim that this turns on its indexicality, that I could not know the truth of what results from replacing ‘I am’ in (2) by ‘N.N. is’ (where ‘N.N.’ is my name); thus the link between the contingent a priori and indexicals would remain. Note that this mild moral would not help Evans, for (1) and (2) remain deeply contingent a priori truths in his sense. The severe moral (which is inconsistent with the mild one) would deny that (2) can be known a priori at all, and consequently that (1) can be known a priori either, on the grounds that (2) can be known only by a posteriori introspection, observation of one’s own behaviour or the like. This severe moral would help Evans, since neither (1) nor (2), however deeply contingent, would be a priori.
+
+I shall answer both lines of objection by denying that one can know (1) a priori only by inferring it from (2). Consider the following method for forming beliefs:
+
+(M)
+Given a valid deduction from the premise that someone believes that $P$ to the conclusion that $P$, believe that $P$
+
+It is logically necessary (and, therefore, a priori) that any belief which one forms by use of (M) is true. Since (M) is an absolutely reliable method for forming true beliefs, any reasonable theory of knowledge should count a belief that $P$ which has been formed by use of (M) as a case of knowledge that $P$. Moreover, since one can know a priori that (M) is absolutely reliable, the knowledge which it gives should be a priori (note also that (M) appeals only to ratiocination). In other words, if one comes to believe that $P$ by use of (M), one knows a priori that $P$.
+
+Now replace ‘$P$’ in (M) by (1). In order to apply (M) here, one needs a valid deduction to the conclusion (1) from the premise:
+
+(3)
+Someone believes that there is at least one believer
+
+Such an inference is, of course, trivially valid. Now the crucial point is that (M) does not require us to derive a priori knowledge of (1) from a priori knowledge of (3). If it did, we should be in difficulties. For a priori knowledge of (3) might in turn have to be derived from a priori knowledge of:
+
+(4)
+I believe that there is at least one believer
+
+But the attempt to derive a priori knowledge of (1) from a priori knowledge of (4) (via (3)) is open to just the same objections as were levelled against the attempt to derive it directly from a priori knowledge of (2); in both cases, the indexical ‘I’ would be crucial. Fortunately, (M) avoids these problems. For it gives the valid deduction from (3) to (1) as by itself a sufficient reason to believe (1); (4) is irrelevant. Thus one can come to believe (1) by use of (M): so, by the conclusion of the previous paragraph, one can know the contingent truth (1) a priori. This way of coming to know (1) did not exploit indexical or indexical-like words at any point.
+
+(1) can be modified to accommodate a religious believer. Consider:
+
+(1′)
+There is at least one fallible believer
+
+One is fallible, in the required sense, if and only if not all of one’s beliefs are true. Presumably, it is possible that no believer other than God exists and impossible that God is fallible: hence (1′) is a contingent truth. In order to use (M) to gain a priori knowledge of (1′), one needs a valid deduction to the conclusion (1′) from the premise:
+
+(3′)
+Someone believes that there is at least one fallible believer
+
+Here is such a deduction: suppose that (3′) is true; consider any $x$ who believes that there is at least one fallible believer; either $x$ is fallible or $x$ is not fallible; if $x$ is fallible, $x$ is a fallible believer, so (1′) follows by existential introduction; if $x$ is not fallible, all of $x$’s beliefs are true, so $x$’s belief in (1′) is true; either way, (1′) is true. Thus one can come to believe (1′) by use of (M): so, by the conclusion of the previous paragraph but one, one can know the contingent truth (1′) a priori. This way of coming to know (1′) did not exploit indexical or indexical-like words at any point. Incidentally, the reader might care to imagine the following situation: there are (up to now) no believers except for a necessarily not fallible one, who is now in the act of coming to know (1′) a priori.
+
+Intuitively, (1) is a much less puzzling case of the contingent a priori than, for example, ‘If anyone uniquely invented the zip, Julius did’. With the latter, a linguistic stipulation seems to summon substantive knowledge out of thin air, and Evans’s deflationary tactics are apposite. In contrast, (1) is the kind of proposition which we should expect, for good Kantian reasons, to be contingent a priori; those reasons are articulated in (M).
+
+# II
+
+In arguing that (M) gives a priori knowledge, I appealed to our grasp of the concept of the a priori, but not to any formal definition. This was because it is very hard to find a non-trivial definition of the a priori which does not clearly deviate in extension from the concept to be defined. Indeed, traditional definitions seem not to apply to any necessary truths, let alone contingent ones. For example, Kant himself, in the Critique of Pure Reason, defines knowledge to be a priori if it is ‘absolutely independent of all experience’ (B3, Kemp Smith’s translation). Is our mathematical knowledge absolutely independent of such experiences as checking through a proof we had written out some time before, or listening to a teacher tell us that our answer to an exercise was correct? (cf. Paul Teller ‘Computer Proof’ Journal of Philosophy 77, 1980, pp. 797-803; Michael Detlefsen and Mark Luker ‘The Four Color Theorem and Mathematical Proof’ ibid. pp. 803-20; Philip Kitcher The Nature of Mathematical Knowledge, (Oxford University Press 1983)). Tamara Horowitz (‘A Priori Truth’ Journal of Philosophy 82, 1985, pp. 225-39) has recently given a new definition, on the basis of which she accepts examples of the contingent a priori similar to (1) (ibid. p. 233). Roughly, Horowitz defines a truth $p$ to be a priori if and only if everyone necessarily has enough experience to know that $p$ whenever they exist and have the concepts in $p$ and $p$ is true. However, this condition seems to be neither sufficient nor necessary for a truth to be a priori. For let $p$ be the proposition that no one has the concept of a joke; since anyone who has the concepts in $p$ has the concept of a joke, the truth of $p$ is incompatible with anyone’s having the concepts in $p$; thus Horowitz’s conditional is vacuously satisfied, since its antecedent is self-contradictory; hence had $p$ been true, as it could have been, it would have met the condition – but it would not have been a priori, for it is impossible to know that $p$. Conversely, someone could have the concepts in a mathematical truth $p$ without in Horowitz’s sense having enough experience to know that $p$, because they did not have all the concepts in any proof of $p$, even though such proofs existed; hence $p$ would fail the condition – but it would still be a priori (for Horowitz, mathematical truths are paradigms of the a priori). Similar examples to the latter also suggest that Philip Kitcher’s definition (op. cit. p. 24) does not give a necessary condition for a priori knowledge, although it may give a sufficient one (if so, it could be used to defend the claim that (M) yields a priori knowledge – in Kitcher’s terminology, the use of (M) could be an a priori warrant). I certainly know of no definition of the a priori which is plausible enough to be relied on as a test of whether a given truth is a priori.
+
+However, to claim that (M) guarantees a priori knowledge is in effect to lay down the following condition as sufficient for $P$ to be knowable a priori: it is impossible to believe falsely that $P$ (I assume bivalence). One then naturally wonders whether this condition is not also necessary.

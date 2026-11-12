@@ -1,0 +1,300 @@
+# Definiteness and knowability
+
+Timothy Williamson
+
+The Southern Journal of Philosophy 33 (Spindel Conference supplement) (1995): 171–191.
+
+Suppose that one uses classical logic and a disquotational principle for truth in a vague language. Must one then accept that vagueness is an epistemic phenomenon, a matter of unknowable truths as to the location of sharp cut-off points? The question is worth asking, for quite a few philosophers would like to use classical logic and a disquotational principle for truth in a vague language without accepting that vagueness is an epistemic phenomenon.1 This paper investigates the question. It finds no plausible way of substantiating that possibility. The final section sketches an epistemic account of vagueness, in order to refute the allegation made by some of those philosophers that such an account confuses vagueness with unrelated epistemic phenomena. The upshot is a disjunction: either classical logic fails, or the disquotational principle does, or vagueness is an epistemic phenomenon. To complete the argument for the third disjunct, one would need to argue against the first and second. That is done elsewhere.2
+
+# I
+
+The claim that vagueness is an epistemic phenomenon will be taken to have some rough initial intelligibility. The development of the argument through the paper will elucidate it further. Of course, if vagueness were defined to be non-epistemic, then the claim would be self-contradictory. Such a definition is unhelpful, however, for it becomes controversial whether any expression generally classified as vague really is vague in the defined sense. It is better to define an expression as vague if and only if it is capable of yielding borderline cases, where the notion of a borderline case is introduced by examples. One can then go on to investigate the underlying nature of the phenomenon so identified, without having prejudged the issue by one’s choice of terminology. Vagueness is, for example, whatever it is that causes the trouble in the sorites paradox, which confronts one with borderline cases for ‘heap’.
+
+Some initial remarks will help to clarify the assumptions that may or may not lead to an epistemic view of vagueness. Classical logic is to be understood as including not just standard theorems, such as the law of excluded middle, but also standard rules of inference, such as conditional proof, contraposition, reductio ad absurdum and argument by cases.3 It will be used in the metalanguage, not just in the object-language; the former is conceived as an extension of the latter. The disquotational principle for truth will be taken in the form:
+
+(T)
+‘$P$’ is true if and only if $P$.
+
+The schema (T) is not claimed to be the whole truth about truth; it is merely claimed to be at least part of the truth. The combination of classical logic with (T) will be called ‘orthodoxy’.
+
+The attribution of truth to declarative sentence types, as in (T), is not wholly felicitous. An indexical sentence type such as ‘I am hungry’ is used to say different things in different contexts. It is not usually the case that ‘I am hungry’ as uttered by you is true if and only if I am hungry. Utterances or the propositions they express may seem better suited to bear truth. However, (T) can be protected from the effects of indexicality by the understanding that truth is attributed on the left-hand side with respect to the very context in which the right-hand side is uttered (the bearing of context dependence on vagueness will be discussed later). Some restriction on (T) may also be needed to avoid Liar-like paradoxes. The attribution of truth to sentence types is convenient for bookkeeping purposes; handled with care, it should not distort the issues to be discussed.
+
+On certain conditions, (T) follows from a more general quasi-Tarskian schema:
+
+(T+)
+If in a context $c$ a sentence $s$ says that $P$, then $s$ is true in $c$ if and only if $P$.
+
+What $s$ says in $c$ is the proposition that $s$ in $c$ is used to express. If one combines (T+) with the assumption that in the context in which the right-hand side of (T) is uttered the sentence ‘$P$’ says that $P$, one can derive (T) as understood above. The immediate rationale for (T+) is this: given that $s$ says, e.g., that snow is white, what it is for $s$ to be true is simply for grass to be green. This underwrites the biconditional ‘$s$ is true if and only if $P$’, rather than some weakened principle, just as the fact that, given that $b$ is 3 mm long, what it is for $a$ to be longer than $b$ is simply for $a$ to be more than 3 mm long underwrites the biconditional ‘$a$ is longer than $b$ if and only if $a$ is more than 3 mm long’, rather than some weakened principle.
+
+(T+) also helps to explain why (T), if unrestricted, would fail for indexical sentences when the context shifts, for it may shift to a context in which ‘$P$’ does not say that $P$, either because it says that something else is the case or because it does not say that anything is the case. A shift of this kind may be occurring when (T) leads to trouble in Liar-like paradoxes; it is by no means obvious that they involve any violation of (T+).4
+
+Both (T) and (T+) are subject to a further, informal constraint. The declarative sentence substituted for ‘$P$’ must say that something is the case, in that very context. For example, it should presumably not contain a demonstrative singular term that fails to pick anything out in the context, lest the relevant instances of (T) and (T+) fail to say that anything is the case. Optimists might suppose that possible substitutions for ‘$P$’ could be drawn from a language without context dependence in which such problems would not arise. Note that no such restrictions are needed on the sentence referred to by the singular term substituted for ‘$s$’ in (T+); at that point the sentence is mentioned rather than used, unlike the sentence substituted for ‘$P$’ on the right-hand sides of (T) and (T+), so failures in it do not infect the relevant instances of (T+).
+
+At least one view does combine classical logic and (T+) with the denial that vagueness is an epistemic phenomenon in a way that seems at any rate not formally inconsistent. This is the view that vague sentences do not say that anything is the case, in borderline cases if not elsewhere. Thus, if ‘b’ is a borderline case for ‘bald’, to say ‘b is bald’ or ‘b is not bald’ is to make an utterance without propositional content. One says nothing by uttering either sentence, so neither is true. Thus, the corresponding antecedents of (T+), ‘in $c$ “$b$ is bald” says that $P$’ and ‘in $c$ “$b$ is not bald” says that $P$’, fail whatever legitimate substitution is made for ‘$P$’, and (T+) holds vacuously. The substitution of ‘$b$ is bald’ or ‘$b$ is not bald’ for ‘$P$’ in (T+) would not itself be legitimate on the view in question, for it would violate the informal constraint above that the substituted sentence should in context say that something is the case. For the same reason, (T) would have no relevant instance. Thus, there would be no relevant true sentence, and therefore nothing for speakers of the language to be ignorant of. On this view, vagueness is not an epistemic phenomenon.
+
+No attempt will be made here to argue against that extreme view.5 Many of the philosophers who wish to accept orthodoxy while denying that vagueness is an epistemic phenomenon are willing to instantiate (T) with vague sentences even in borderline cases. They allow that ‘$b$ is bald’ is true if and only if $b$ is bald; ‘$b$ is bald’ says that $b$ is bald, even if $b$ is borderline for ‘bald’.6 It is with this combination of views that the paper will be concerned. Such instances of (T) will therefore be taken as part of orthodoxy.
+
+It can now be argued that, given orthodoxy, vagueness is an epistemic phenomenon in at least a minimal sense.
+
+Let ‘$P$’ be a vague sentence in a paradigmatic borderline case, by which the notion of vagueness was defined above. If the language does not already include a negation sign, add one.7 Thus, ‘Not $P$’ is another vague sentence. The law of excluded middle tells us that either $P$ or not $P$. By two instances of (T), ‘$P$’ is true if and only if $P$, and ‘Not $P$’ is true if and only if not $P$. By classical logic, one deduces:
+
+(1)
+Either ‘$P$’ is true or ‘Not $P$’ is true.
+
+Since the truth of ‘Not $P$’ is equivalent to the falsity of ‘$P$’, this is just a form of the familiar entailment from the law of excluded middle and the disquotational principle to the principle of bivalence.
+
+By hypothesis, the case is paradigmatically borderline, so there is no question of finding out whether $P$, of coming to know that $P$ or to know that not $P$.8 Paradigmatic borderline cases are chosen for the peculiar way in which they throw competent speakers of the language into uncertainty. If a few assert that $P$, a few others deny that $P$. Many hesitate, or refuse to give a verdict. Speakers typically agree on reflection that the case is borderline, that it is unclear whether $P$, and that assertions and denials that $P$ are not expressions of knowledge. In circumstances of explicit or implicit stipulation, the utterance of ‘$P$’ by $x$ may bring it about that $x$ must be interpreted as meaning something true by ‘$P$’, while the utterance of its negation by $y$ brings it about that $y$ must be interpreted as meaning something false by ‘$P$’, so that the apparent disagreement dissolves. However, even if $x$ and $y$ use assertion and denial of ‘$P$’ respectively to express knowledge, that is irrelevant, for the relevant senses of ‘$P$’ are the poststipulative ones, which are precise in relevant respects, whereas the sense of ‘$P$’ in which it has a borderline case is the vague prestipulative one, in which neither the assertion of ‘$P$’ nor its denial expresses knowledge.
+
+Call a sentence $s$ knowably true in a context $c$ if and only if in $c$: $s$ is true and, for some substitution for ‘$P$’, means are available to normal competent speakers of the language of $s$ to come to know that $P$, where $s$ says that $P$.9 A sentence is unknowably true in a context if and only if it is true but not knowably true in that context. A sentence might be unknowably true in this sense even if by extraordinary means (such as divine revelation) some normal competent speaker did acquire the relevant knowledge. What is obvious in the envisaged context, a paradigmatic borderline case, is just that normal competent speakers of the language have no means available to them to decide the matter, and the definitions were tailored accordingly. The unavailability of knowledge may now be stated metalinguistically:
+
+(2)
+‘$P$’ is not knowably true and ‘Not $P$’ is not knowably true.10
+
+By itself, (2) does not assert that either ‘$P$’ or ‘Not $P$’ is unknowably true, for a sentence can fail to be knowably true without being unknowably true, by not being true at all. However, in combination with (1), (2) does yield:
+
+(3)
+Either ‘$P$’ is unknowably true or ‘Not $P$’ is unknowably true.
+
+Either way, some sentence is unknowably true. The speakers’ ignorance has an object. The paradigmatic borderline cases used to define vagueness exemplify this epistemic phenomenon.
+
+Does it follow that those who accept orthodoxy must regard vagueness as characterizable in epistemic terms? What has been shown is that they must regard it as involving the presence of unknowable truths, but it does not follow that they must regard it as constituted by that presence. Indeed, it is plausible that if some unknowable truths turn on vagueness, then many others do not (Goldbach’s Conjecture is an obvious candidate). If one thinks that (2) is a necessary condition for a case to be borderline, one should not also think that it is sufficient.
+
+The point just made may seem to show that those who accept orthodoxy should not regard vagueness as an epistemic phenomenon. However, that would be too hasty. A particular epistemic condition, (2), has turned out not to be necessary and sufficient for a case to be borderline, but it does not follow that no epistemic condition is necessary and sufficient. For instance, vagueness might consist in a specific kind of unknowability. It could even be conceded that the vagueness explains the unknowability rather than vice versa, for a specific epistemic factor might explain the more general fact of unknowability in this case. These suggestions will be elaborated at the end of the paper. The question ‘Is vagueness an epistemic phenomenon?’ is in any case a vague one. What is needed is an investigation of the attempt, constrained by orthodoxy, to characterize vagueness in non-epistemic terms.
+
+# II
+
+It is standardly suggested that borderline cases should be characterized in terms of a notion of indefiniteness, rather than unknowability. One introduces a notion of the definitely true on the understanding that a necessary and sufficient condition for the case to be borderline is:11
+
+(4)
+‘$P$’ is not definitely true and ‘Not $P$’ is not definitely true.
+
+(4) differs from (2) only in having ‘definitely’ where (2) has ‘knowably’. Of course, if a sentence is definitely true, then it is true. If it is true but not definitely true, say that it is indefinitely true. Given orthodoxy, just as (2) entails (3), so (4) entails:
+
+(5)
+Either ‘$P$’ is indefinitely true or ‘Not $P$’ is indefinitely true.
+
+Either way, some sentence is indefinitely true. On the envisaged view, it is the presence of indefinite truths that is distinctive of borderline cases, not the presence of unknowable truths.
+
+As already seen, (2) is not sufficient for a case to be borderline. Since (4) is sufficient for that by hypothesis, (2) is not sufficient for (4). Thus, the following principle is not valid for every sentence $s$ in every context:
+
+(6)
+If $s$ is definitely true then $s$ is knowably true.
+
+For if (6) were valid, one could use it to argue contrapositively from (2) to (4), substituting ‘$P$’ and ‘Not $P$’ for ‘$s$’ in (6). The invalidity of (6) will presumably be part of the case for not regarding definiteness as an epistemic notion.
+
+On the other hand, (2) is necessary for a case to be borderline; if the answer were known, the case would not be borderline. Since (4) is by hypothesis sufficient for the case to be borderline, (4) is sufficient for (2). It follows that the converse of (6) is valid:
+
+(7)
+If $s$ is knowably true then $s$ is definitely true.
+
+One can argue for the validity of (7) as follows, taking $s$, without loss of generality, to be ‘$P$’ (which is not now assumed to be a borderline case). As before, add negation to the language if it is not already there. Suppose that ‘$P$’ is not definitely true. By excluded middle, ‘Not $P$’ is either definitely true or not definitely true. If ‘Not $P$’ is definitely true then it is true, so ‘$P$’ is not true (by (T) and classical logic), so ‘$P$’ is not knowably true. On the other hand, if ‘Not $P$’ is not definitely true then, since ‘$P$’ is by hypothesis not definitely true, (4) holds; since (4) has just been seen to be sufficient for (2) (for arbitrary ‘$P$’), (2) holds, so ‘$P$’ is again not knowably true. Thus, if ‘$P$’ is not definitely true then it is not knowably true; (7) follows. Knowable truth implies definite truth, but not vice versa.
+
+One may add that definite truth implies truth, but not vice versa. If $s$ is definitely true then it is true; the converse principle fails, for it would make (4) inconsistent with (1), and therefore with orthodoxy, whereas (4) was supposed to hold in borderline cases. Thus, definiteness lies strictly between knowability and truth in extension.
+
+What, however, is definiteness? More specifically: can it be given a manifestly non-epistemic characterization that is consistent with orthodoxy? Attempts to do so will be examined, and found wanting. A manifestly epistemic characterization of definiteness will then be provided.
+
+# III
+
+An initial attempt to give a non-epistemic characterization of definiteness consistent with orthodoxy might run as follows. Let $a$ be an arrangement of grains such that neither ‘$a$ is a heap’ nor ‘$a$ is not a heap’ is definitely true. The case is borderline. The reason, it is suggested, is that ‘heap’ is not defined for this case. The semantic rules for ‘heap’ stipulate that it applies when a condition C+ holds and fails to apply when a disjoint condition C- applies, but make no stipulation either way for a case such as that of $a$ in which neither C+ nor C- applies. ‘Heap’ is only partially defined. Speakers of English have had no practical need to make it precise.12
+
+On a view of the kind envisaged, it is no wonder that knowable truth implies definite truth and not vice versa. Speakers cannot be expected to know the application of a term where that application has not even been defined. On the other hand, where the application has been defined, they might still be unable to know what it is, for they might be unable to know the relevant non-semantic facts. On this view, definiteness seems to be a semantic matter, not an epistemic one.
+
+What is a wonder, on the proposed view, is that truth does not imply definiteness. Given orthodoxy, either ‘$a$ is a heap’ or ‘$a$ is not a heap’ is indefinitely true. Yet, if the indefinite is simply the undefined, what room is there for indefinite truth? Compare the perverse supposition that since ‘$0/0$’ is undefined, it refers to an indefinite object. How can an undefined question have a right answer?
+
+To meet the difficulty, a more substantive account is needed of definite truth. One might start with the proposal that a sentence is definitely true just in case its truth follows from the semantic rules governing it and the facts (all relative to a context); the semantic rules alone would not suffice, of course, for many highly empirical sentences are definitely true. However, this proposal will not do in its present form, for it has no defense against the obvious objection that if $s$ is true then it is a fact that $s$ is true, so the truth of $s$ follows from the facts (even without the semantic rules), which would imply that all true sentences are definitely true, contrary to the truth of (5) in borderline cases.
+
+The obvious revision is the proposal that $s$ is definitely true just in case its truth follows from semantic rules and the nonsemantic facts, or (since $s$ might itself be metalinguistic) from semantic rules and the facts that $s$ is about. Both the notion of a semantic rule and that of the facts that a sentence is about are hazy, but the revised proposal faces a more urgent problem.
+
+Any adequate semantic account of the sentence ‘$a$ is a heap’ as used here and now should imply at least this instance of (T): ‘$a$ is a heap’ is true if and only if $a$ is a heap. Thus, if ‘$a$ is a heap’ is true, $a$ is a heap, and the latter is a fact that the sentence is about. It follows from this fact and the biconditional, hence from this fact and semantic rules, that the sentence is true. In other words, the revised proposal still has the effect that ‘$a$ is a heap’, if true, is definitely true, which is just what it was intended to avoid.
+
+The spirit of the original proposal seems to be that, even if $a$ is a heap, it is not a fact of the relevant kind that it is. Moreover, it is because ‘$a$ is a heap’ is vague that it does not state a fact of the relevant kind. This suggests a third proposal: $s$ is definitely true just in case its truth follows from semantic rules and precise facts or truths. Now one might well doubt that there could be the required precise truths, if that would imply the possibility of a perfectly precise language capable of describing the empirical world. But even if such a language were possible, the new proposal would do nothing to elucidate a way in which vagueness might be a non-epistemic phenomenon.
+
+Vagueness was characterized in terms of definite truth, and definite truth in terms of precision, which is simply the contradictory of vagueness over the relevant class. Although this circularity may not void the account of all interest, it does mean that the account does not imply that vagueness is not an epistemic phenomenon. If the input notion of precision is nonepistemic, then the output notion of vagueness will also be non-epistemic, but if the input notion of precision is epistemic, then the output notion of vagueness will also be epistemic. The problem of elucidating a non-epistemic notion of precision (consistent with orthodoxy) is equivalent to the original problem of elucidating a non-epistemic notion of vagueness (consistent with orthodoxy). The new proposal makes no progress towards solving it.
+
+The proposal in question leaves the point of the notion of vagueness quite mysterious. By the disquotational principle, vague truths as well as precise ones (if any) can be formulated in the metalanguage. Why should one be interested in what follows from a particular subclass of those truths, together with semantic rules? No explanation has been provided.
+
+Since qualifications of the notion of a fact in the original proposal have been unavailing, one might try qualifying the notion of a semantic rule. More specifically, one might concentrate on rules of warranted assertion rather than on rules of truth. For even if either ‘$a$ is a heap’ or ‘$a$ is not a heap’ is true, it does not follow that either ‘$a$ is a heap’ or ‘$a$ is not a heap’ is warrantedly assertible. In a borderline case speakers may have no warrant either way; this is quite consistent with orthodoxy. One might therefore propose that a sentence is definitely true in just those contexts in which it is both true and warrantedly assertible. This proposal, however, is open to the objection sometimes made to epistemic accounts, that they fail to distinguish vagueness from unrelated kinds of unknowability. Goldbach’s Conjecture and its negation may simultaneously fail to be warrantedly assertible. It would not help to speak of warranted assertibility for hypothetical speakers who knew all the facts, for that would merely raise again the earlier problem: if $a$ is a heap, why is that not itself a fact of the relevant kind?
+
+A subtler suggestion is that the semantic rules governing assent to a sentence distinguish between what is permitted and what is mandatory.13 Might the characteristic of a borderline case be that assent is permitted without being mandatory? In contrast, assent to Goldbach’s Conjecture or to its negation would not even be permitted in the absence of a proof either way. This suggestion does better than the previous one, but it still fails to distinguish vagueness from some unrelated epistemic phenomena. For example, some speakers require more inductive evidence than others do before assenting to an empirical generalization. It does not follow that either the former group or the latter (perhaps both) is in breach of linguistic rules. The language does not specify a unique standard of inductive caution. If the gap between permitted and mandatory assent occurs anywhere, it occurs here. Yet, there need be no relevant vagueness in the empirical generalization. Thus, the gap between permitted and mandatory assent is not distinctive of vagueness.
+
+To summarize the results so far: accounts of definiteness in terms of rules of truth leave no room for indefinite truth; accounts in terms of rules of assertion make no distinction between vagueness and unrelated epistemic phenomena. Either way, vagueness has not been adequately characterized.
+
+At this point one might decide that one cannot make non-epistemic sense of vagueness by considering a sentence in a context in isolation from other sentences and contexts. One might therefore propose to bring other sentences or contexts into the analysis. That could be done in several ways. One could postulate that a vague utterance is an utterance of more than one sentence or has more than one context. Alternatively, one could allow that it is the utterance of a single sentence in a single context, but postulate that it is a vague matter which sentence has been uttered in which context.14 Such strategies will be briefly considered.
+
+The utterance ‘$a$ is a heap’ is by ordinary standards the utterance of a single sentence. If it is held that in reality many sentences were uttered, a special way of individuating sentences must be in play. For example, sentences might be regarded as abstract objects with precise truth conditions that contribute to their individuation. Say that a sentence $s$ is co-uttered with a sentence $s$* in a context $c$ just in case in $c$ some utterance of $s$ is also an utterance of $s$*. It might then be said: $s$ is definitely true in $c$ just in case in $c$ every sentence co-uttered with $s$ is true. The utterance of ‘$a$ is a heap’ in a borderline case is supposed to instantiate many sentences with slightly different precise truth conditions, some true and some false in that context. Since the true sentences are co-uttered with false ones, they are indefinitely true.
+
+Call the many nonstandardly individuated co-uttered sentences sharpened, and the original standardly individuated sentence unsharpened. One can still ask for the truth-value of unsharpened sentences. If the apparatus of sharpened sentences is to have explanatory value, truth for unsharpened sentences is presumably to be explained in terms of truth for sharpened ones. The only explanation to hand is that an unsharpened sentence is true just in case all the corresponding co-uttered sharpened sentences are true (in a given context). Thus, neither the unsharpened sentence ‘$a$ is a heap’ nor its unsharpened negation will be true in a borderline case. Given classical logic, the disquotational principle must fail for unsharpened sentences. The envisaged view preserves orthodoxy for sharpened sentences, but not for unsharpened ones.15
+
+The force of the disquotational principle does not depend on nonstandard forms of individuation. According to the original intuition, if $a$ is a heap then the unsharpened ‘$a$ is a heap’ is true; if $a$ is not a heap then the unsharpened ‘$a$ is not a heap’ is true, so the unsharpened ‘$a$ is a heap’ is not true. For the unsharpened sentence ‘$a$ is a heap’ says that $a$ is a heap, and its unsharpened negation says that $a$ is not a heap. The spirit of orthodoxy requires the disquotational principle for unsharpened sentences, not merely for sharpened ones, just as it requires classical logic for the former, not merely for the latter. Orthodoxy will henceforth be understood in that sense.
+
+Truth for unsharpened sentences is thus not explicable in terms of truth for sharpened ones in any straightforward way. Indeed, an unsharpened sentence will be opposite in truth-value to many of the corresponding sharpened sentences. Some explanation is therefore needed of the relevance of the latter to the vagueness of the former. The intended connection seems to be a constraint on the correspondence relation: whenever an unsharpened sentence is definitely true, all the corresponding sharpened sentences are true. The problem, of course, is that the constraint uses the notion of definiteness. If this notion turns out to be epistemic, then so does the notion of vagueness that it generates. The original problem returns. The nonstandard individuation of sentences has not helped to elucidate a way, consistent with orthodoxy, for definiteness to be non-epistemic. The multiplication of sentences in a single utterance will therefore be abandoned.
+
+Similar remarks apply to the multiplication of contexts of a single utterance. If contexts were individuated in a sharpened way, it might be claimed that speakers never single out a unique context. In a borderline case, the sentence at issue is true in some relevant contexts and false in others. On such an account, the ordered pair of a sentence and a sharpened context behaves like a sharpened sentence on the previous account. Now orthodoxy does not restrict the disquotational principle for truth to sharpened contexts. As uttered by a competent speaker of English at a time (an ordinary unsharpened context), meaning what it does here and now, ‘$a$ is a heap’ is true if and only if $a$ is a heap, and its negation is true if and only if $a$ is not a heap. For ‘$a$ is a heap’ then says that $a$ is a heap. If it has the opposite truth-value in some sharpened context, the attempt to explain the relevance of that fact to vagueness in the unsharpened context will again require a notion of definiteness to constrain the correspondence relation between sharpened and unsharpened contexts: whenever a sentence is definitely true in an unsharpened context, it is true in the corresponding sharpened contexts. That notion of definiteness must be shown to be non-epistemic, and the original problem returns. The multiplication of contexts of a single utterance has not advanced its solution. It will therefore be assumed that what is at issue is the vagueness of a single sentence in a single context.16
+
+Even if an utterance is of a single sentence in a single context, it may be unclear what the sentence says, or what the context is. Vagueness might be traced to such unclarity. But if the unclarity is epistemic, then so is vagueness. To show the unclarity to be non-epistemic is again the original problem.
+
+In an attempt to eliminate the circularity, it might be suggested that vagueness simply is variation in reference from context to context. This account is obviously non-epistemic; the set of relevant contexts is not constrained by some notion that might turn out to be tantamount to definiteness. Equally obviously, the account is incorrect. Context dependence is consistent with precision. The variation in reference of ‘I’ from context to context does not by itself amount to vagueness; if ‘I’ is vague, that is for other reasons. If vagueness were context dependence, definite truth would be something like truth in all contexts; but that is inconsistent with the requirement that knowable truth in a context entail definite truth in that context (i.e., (7)), for a sentence such as ‘I am hungry’ can be knowably true in one context without being true in all contexts. Conversely, although vague expressions tend to be context dependent, vagueness does not in principle require context dependence. If a term $t$ meant in all contexts what I mean now by ‘heap’, $t$ would still be vague. The only contexts relevant to the vagueness of an expression in a context $c$ are those that cannot clearly be distinguished from $c$. Vagueness is not mere context dependence.
+
+The argument of this section has perforce been somewhat sketchy, for it is hard to give a detailed survey of all possible attempts to explain definiteness in non-epistemic terms. Nevertheless, a pattern has emerged. Those attempts that are neither refuted by counterexamples nor inconsistent with orthodoxy invoke notions essentially equivalent to definiteness. No analysis into more basic terms is found.
+
+It is important to be clear about the nature of the problem. It is not that the absence of a reductive analysis of definiteness shows the notion to be problematic or incoherent. Most notions have no reductive analysis. The problem is rather that, in the absence of such an analysis, definiteness has not been shown not to be an epistemic notion. Circular accounts leave open the possibility that it is epistemic.
+
+Definiteness may be asserted to be non-epistemic but, given the way in which the notion was introduced, it cannot be stipulated to be non-epistemic. The notion of the definitely true was introduced on the understanding that a necessary and sufficient condition for a case to be borderline is (4), i.e., that neither the sentence in question nor its negation be definitely true. The stipulation that definiteness is non-epistemic might turn out to be inconsistent with this understanding; that is the original problem. If a new notion of definiteness is introduced under the stipulation that it is non-epistemic, then its relevance to the phenomenon of vagueness remains to be established.
+
+What the orthodox opponent of the epistemic view must provide is an argument to show that no epistemic notion could satisfy the understanding on which definiteness was introduced. For example, it might be argued that any epistemic notion would entail knowability, so that (4) would be too weak to be sufficient to make the case borderline, contrary to the understanding on which the notion of definite truth was introduced. The best way to meet such suspicions is to provide an epistemic account of vagueness. Such an account will now be sketched.17
+
+# IV
+
+It is plausible that if vagueness does involve ignorance, that ignorance is of a peculiarly semantic kind. Yet, if semantic ignorance is ignorance as to what an expression means, then the epistemic view implies that ordinarily competent speakers of a language do not know what its vague expressions mean. That is implausible. Ordinarily competent speakers of English know that ‘heap’ means heap, and knowing that is knowing what ‘heap’ means.
+
+Do speakers know which property ‘heap’ demarcates? They know that it demarcates the property of heaphood, but it is not clear whether that counts as knowing which property ‘heap’ demarcates. The ‘know which’ construction is notoriously slippery. It makes best sense when there are canonical terms for the items at issue, as the numerals are canonical terms for the natural numbers. There are canonical terms for properties only in very limited contexts. The question whether speakers know which property ‘heap’ demarcates is not a fruitful one.18
+
+Fortunately, the epistemic view can appeal to a different kind of semantic ignorance. To know what an expression means is not necessarily to know what it does not mean. A speaker might know that ‘heap’ means heap without knowing that it does not mean heap*, where meaning heap and meaning heap* are incompatible but extremely similar and not obviously incompatible semantic properties. An expression with one property would be indiscriminably different in meaning from an expression with the other from the point of view of ordinary speakers. Although they know that ‘heap’ means heap, they are in no position to infer that it does not mean heap*; for all they know, it does mean heap*. No wonder, then, that they are bemused by a heap that is not a heap*, or a heap* that is not a heap: in other words, by a borderline case. This possibility will be substantiated in what follows.19
+
+Suppose that $n$ grains can make a heap while $n - 1$ grains cannot. (By classical logic, there is such a number $n$, given that 10,000 grains can make a heap while 0 cannot.) Since the cut-off point for ‘heap’ is not fixed by nature, the word could easily have been used in such a way that its cut-off came at $n + 1$ rather than $n$. Then ‘$n$ grains can make a heap’ would not have been true. That is not to say that $n$ grains would not have been able to make a heap, for in that counterfactual situation ‘heap’ would not have meant heap; it would have meant something different from what it actually means. Indeed, since $n$ grains can make a heap, it may well be necessary that $n$ grains can make a heap, by the S5 principle that what is possible is necessarily possible. It does not follow that it is necessary that the sentence ‘$n$ grains can make a heap’ is true, for it is not necessary that the sentence means what it actually means.
+
+The preceding remarks assume that the meaning of an expression is not an essential property of it. In the ordinary sense of the word ‘word’, a given word can change in meaning over time. Although one could individuate linguistic types so finely that their meanings were essential to them, the argument above could be restated in terms of two fine-grained types, both pronounced ‘heap’. It is more convenient, and for present purposes harmless, to individuate linguistic types in the ordinary coarse-grained way.
+
+Someone who says ‘$n$ grains can make a heap’ in a borderline case utters a true sentence that could very easily have been false. Moreover, it might very easily still have been uttered on that occasion even if it had been false. No doubt, if it had been false, speakers’ dispositions to utter it would have been at least slightly different. For if the dispositions had been the same, the meaning would have been the same too; that meaning supervenes on use may be granted for the sake of argument. (If, more plausibly, meaning depends on the combination of the nonlinguistic environment with use, the state of that environment may be held constant between the actual and the counterfactual situation). Crucially, such shifts in use need not be uniform. Speakers’ dispositions to utter vague sentences are not rigidly coordinated; one part may move while another does not. A slight shift in the overall pattern can leave intact the disposition to utter a given sentence in a given situation when the case is borderline, even though the shift reverses the truth-value of the sentence. Speakers cannot make their use on each occasion perfectly sensitive to the implications for meaning of their use on every other occasion.
+
+Speakers cannot overcome the difficulty by surveying the totality of their dispositions to use a given word in a way that would permit them to draw out its implications for meaning. That is impossible for two reasons.
+
+First, a complete survey of use cannot be carried out. It is not just that, in practice, the data about an individual speaker are unmanageably complex, and a fortiori the data about a whole community. The required data are infinite. For example, there are infinitely many ways in which you could be presented with someone’s financial circumstances and asked ‘Is she poor?’; all of them are relevant to the meaning of the vague word ‘poor’. Worse, the data concern dispositions not all of which can be manifested in the same possible world. For example, the dispositions relevant to the meaning of ‘poor’ include both those concerning your response to the question ‘Is $a$ poor?’ when you have never been asked ‘Is $b$ poor?’ and those concerning your response to the question ‘Is $b$ poor?’ when you have never been asked ‘Is $a$ poor?’.
+
+Second, even if the complete survey of use could be carried out, there is no systematic procedure for inferring semantic facts from the data. Attempts to formulate such a procedure for clear cases (for example, by polling speakers) result in more or less crude forms of verificationism. If use determines meaning, it does so non-algorithmically.
+
+There is no need to decide here whether one of these two obstacles is more fundamental than the other. Together they block a route to knowledge of a term’s application that is in any case far from that taken by ordinary speakers. In applying a term, one does not view the practice of using it as an external observer might; one simply engages in the practice. What has just been noted is that the adoption of the external viewpoint would not enable one to perfect one’s engagement in the practice; it would not make the application of the term perfectly clear.
+
+The utterance of a true sentence in a borderline case manifests a disposition that could very easily have been manifested by the utterance of a false sentence. In this respect the speaker is unreliable, uttering a true sentence by luck as much as by judgment. The utterance is therefore not an expression of knowledge. Whatever else knowledge requires, it requires at least a modicum of reliability. In a borderline case, the speaker who says that $n$ grains can make a heap, when it is true that they can, still does not know that they can. The sentence ‘$n$ grains can make a heap’ is unknowably true.
+
+The explanation just given of the unknowability is distinctively semantic, for the possibilities to which it appeals are ones in which the word ‘heap’ differs in meaning, not ones in which heaps differ in nature. Yet, the explanation does not threaten speakers’ knowledge that ‘heap’ means heap, for it does not attribute to them in the counterfactual situation a false belief that ‘heap’ means heap. If ‘heap’ means heap* in that situation, the competent speaker’s false belief is that $n$ grains can make a heap*; that is the belief expressed there by the utterance ‘$n$ grains can make a heap’. The explanation is quite consistent with the view that the content of the competent speaker’s belief as to what ‘heap’ means is determined by the very factors that determine what ‘heap’ means, so that the former is guaranteed to vary with the latter.20 On this view, the competent speaker in the counterfactual situation knows that ‘heap’ means heap*, just as the competent speaker in the actual situation knows that ‘heap’ means heap.
+
+It does not follow that, as a competent speaker, one knows in the counterfactual situation that ‘heap’ does not mean heap, or in the actual situation that ‘heap’ does not mean heap*. One may lack the concept of a heap in the counterfactual situation, or the concept of a heap* in the actual one. Suppose, however, that one has the other concept too, perhaps by understanding another word ‘heap*’ with that meaning. Even so, one may be in no position to know that the two words differ in meaning. Although one is disposed to use ‘heap’ and ‘heap*’ differently in some contexts, and may know that one is so disposed, that does not put one in a position to know that the overall difference in use amounts to a difference in meaning. For example, it may not be clear that one’s slightly greater propensity to use ‘heap’ rather than ‘heap*’ in certain circumstances is more than a matter of taste or coloring. The two words may be indiscriminably different in meaning to someone who understands both. Not every difference in use constitutes a difference in meaning—at least, when meaning is restricted to factors that contribute to the truth-conditions of containing sentences, the factors relevant to the difference in truth-value of ‘$n$ grains can make a heap’ between the two situations.
+
+Of course, the ordinary person’s conceptual repertoire does not include both the concept of a heap and the concept of a heap*; consideration of the counterfactual possibility in which it does so should not be central to the argument. What does matter is that one cannot discriminate between the concept of a heap, as presented from within the practice of using it, and the concept of a heap*, as presented in a way that stipulates its application to the cases in question.
+
+The main point can be stated without talk of meanings or concepts. A disposition manifested by the utterance of a sentence when true in a borderline case could very easily have been manifested by the utterance of that sentence when false. The two situations differ (but only very slightly) in the speaker’s dispositions to use the sentence; they need not differ at all in the state of the world outside the speaker. Speakers’ inability to be reliably sensitive to the difference explains their ignorance in borderline cases.
+
+The foregoing explanation of unknowability in borderline cases is unlike any appropriate to kinds of unknowability unrelated to vagueness. Someone who asserts Goldbach’s Conjecture without proof does not express knowledge, even if the Conjecture happens to be true, but that is not to be explained by the possibility of situations in which the speaker utters the words of Goldbach’s Conjecture while being disposed to use them slightly differently, in such a way that a different and false conjecture is expressed. Those situations seem remote and irrelevant; insensitivity to shades of meaning is not the problem in the mathematical case.21 The kind of unknowability distinctive of vagueness has not been confused with unrelated kinds of unknowability.22
+
+Much more can be said about the structure of speakers’ knowledge and ignorance in borderline cases. For example, the analysis of sorites paradoxes reveals that there are numbers $n$ for which speakers know that $n$ grains can make a heap but cannot know that they know that $n$ grains can make a heap.23 However, enough has been said to show that vagueness might be an epistemic phenomenon while being so in a distinctively semantic way.24
+
+# Acknowledgements
+
+I wrote much of this paper while enjoying the hospitality of the Department of Linguistics and Philosophy at the Massachusetts Institute of Technology as a Visiting Professor. Material from an earlier version was used in a talk at the Graduate School, City University New York, and in a graduate class at M.I.T. Hartry Field, Jerrold Katz, Alex Orenstein, Rohit Parikh, Paul Horwich, Jason Stanley, Judy Thomson, and others made helpful comments. At the Spindel Conference, the paper benefited from the comments of Graeme Forbes, David Sanford, William Throop, Achille Varzi, and Crispin Wright, among others, in addition to Jamie Tappenden’s stimulating reply. I thank the University of Oxford and the British Academy for relevant funding.
+
+# Notes
+
+[1] An explicit version of the envisaged view is in Field, “Disquotational Truth and Factually Defective Discourse,” 1994. Burns, Vagueness: An Investigation into Natural Languages and the Sorites Paradox, 1991 may also be an example. Although Horwich, Truth, 1990: 81–87 can be read as defending a view of vagueness as an epistemic phenomenon, he informs me that he did not intend this interpretation; since his book uses classical logic and defends a disquotational principle for truth, the tenability or otherwise of the envisaged view is pertinent to it. Przelecki, “The Semantics of Open Concepts,” 1979 may be a similar case. Sperber and Wilson, “Loose Talk,” 1985–6 might also be congenial to the envisaged view. Attempts to preserve classical logic and a disquotational principle by stipulating precise meanings will not be considered, since the issue concerns reasoning in a vague language. Traditional supervaluationism is also not a form of the envisaged view, since it rejects the disquotational principles (T) and (T+) for truth (Fine, “Vagueness, Truth and Logic,” 1975: 297; Williamson, Vagueness, 1994: 162–164). However, a variant of supervaluationism that identifies truth with disquotational truth rather than with super-truth is a form of the envisaged view (McGee and McLaughlin, “Distinctions Without a Difference,” 1995).
+
+[2] Williamson, Vagueness, 1994.
+
+[3] The cited rules are rejected by some forms of supervaluationism (Fine, “Vagueness, Truth and Logic,” 1975: 290; Williamson, Vagueness, 1994: 147–153).
+
+[4] A good account of the semantic paradoxes might require ‘says’ and ‘true’ in (T+) to be indexed to a level in a hierarchy of some kind.
+
+[5] See, however, Williamson, Vagueness, 1994: 165–184.
+
+[6] Evans and McDowell, Truth and Meaning, 1976: xi.
+
+[7] Since any two operators that obey the classical natural deduction rules for negation are equivalent, as is easily shown, the stipulation in the text is unequivocal.
+
+[8] For the case of ‘heap’, the claim in the text is ingeniously denied in Hart, “Hat-Tricks and Heaps,” 1991–92. However, the argument there does not extend to ‘large heap’. See Williamson, Vagueness, 1994: 212–215 for discussion of attempts to treat borderline cases as decidable. Not even the specification of a context of practical purposes etc. always enables one to find out whether the term applies.
+
+[9] Since a contingently false sentence s such as ‘Napoleon I died in 1815’ would have been known to be true if it had been true, there is a sense in which it is possible that it is known that s is true; ‘knowably true’ as defined in the text cannot be factorized in this way.
+
+[10] An object-language variant of (2) is (2′): ‘It is not knowable that P and it is not knowable that not $P$’. It may be noted that supervaluationists would presumably accept (2) and (2′), since both are clearly true. This requires them not to sharpen occurrences of ‘$P$’ within the scope of propositional attitude constructions such as ‘knowable that’, since there need be no ignorance of the application of fully sharpened expressions in a borderline case (Fine, “Vagueness, truth and logic,” 1975: 289).
+
+[11] ‘Definitely’ is often used as a sentence operator in the object-language rather than, as here, an adverb qualifying ‘is true’ in the metalanguage. The argument could be rephrased in terms of an object language sentence operator, but the metalinguistic adverb is convenient when disquotation is at issue.
+
+[12] The account in the text might be considered as a variant on supervaluationism in which truth is identified with Tarskian truth rather than with super-truth, but definiteness is still explained in terms of admissible sharpenings (compare McGee and McLaughlin, “Distinctions Without a Difference,” 1995). The problems to be developed would then concern the notion of admissibility.
+
+[13] Dummett, The Logical Basis of Metaphysics, 1991: 79.
+
+[14] The view that languages themselves are precise, so that vagueness concerns only what language is being spoken, is proposed in Lewis, Convention: A Philosophical Study, 1969, ch. 5. In Lewis, “General Semantics,” 1970, and “Scorekeeping in a Language Game,” 1979, however, supervaluationism is adopted.
+
+[15] In effect, the envisaged view is a form of supervaluationism.
+
+[16] Accounts of vagueness that emphasize context dependence include Kamp, “The Paradox of the Heap,” 1981 and Pinkal, “On the Limits of Lexical Meaning,” 1983.
+
+[17] Epistemic views of vagueness are defended in Cargile, “The Sorites Paradox, 1969, and Paradoxes: A Study in Form and Predication, 1979; Campbell, “The Sorites Paradox,” 1974; Scheffler, Beyond the Letter, 1979; Sorensen, Blindspots, 1988: 217–252; Williamson, “Vagueness and Ignorance,” 1992b, and Vagueness, 1994; they are criticized in Heller, The Ontology of Physical Objects: Four-Dimensional Hunks of Matter, 1990: 89-106; Simons, “Vagueness and Ignorance,” 1992; Horgan, “Robust Vagueness and the Forced-March Sorites Paradox,” 1994. The Stoics seem to have held an epistemic view of sorites paradoxes; Williamson, Vagueness, 1994: 12–27.
+
+[18] See Williamson 1995 for more on the properties demarcated by vague terms.
+
+[19] The account in the text of the use of vague expressions is defended at greater length, and integrated with an account of understanding for such expressions, in Williamson, “Vagueness and Ignorance,” 1992b, and Vagueness, 1994: 205–212.
+
+[20] The gesture in the text is towards accounts such as Davidson, “Knowing One’s Own Mind,” 1987 and Burge, “Individualism and Self-Knowledge,” 1988.
+
+[21] It is not denied that there are obstacles to knowledge independent of vagueness that involve change in the proposition expressed by given words. For example, a word (e.g., ‘water’) may vary in reference between the actual situation and a sceptical scenario. However, in such a case the semantic difference is parasitic on a difference in the relevant aspect of the world, in contrast to the case of vagueness.
+
+[22] The argument in the text provides the basis for a reply to the interesting suggestion, made by Vann McGee in discussion, that epistemic and non-epistemic readings of ‘Definitely’ as a sentence operator might be logically discriminable on the grounds that the latter and not the former satisfies the Barcan-like formula $\forall x\,\mathrm{Definitely}\,P(x) \rightarrow\mathrm{Definitely}\,\forall x\,P(x)$. The principle is indeed likely to fail in mathematical examples when ‘Definitely’ is read simply as ‘knowably’. However, it has emerged that the epistemic theorist should not read it in that simple way, but rather as requiring only the absence of an obstacle to knowledge of the specific kind discussed in the text. On this reading, the principle will fail only if it is vague what the domain of quantification is: but in that case it should fail on the non-epistemic reading too.
+
+[23] Williamson, “Vagueness and Ignorance,” 1992a, and Vagueness, 1994: 216–247.
+
+[24] In his reply to the paper (Tappenden, “Some Remarks on Vagueness and a Dynamic Conception of Language,” 1994), Jamie Tappenden discusses some interesting cases that he takes to make trouble for both the epistemic view of vagueness and its traditional rivals, he argues against the antecedent of the conditional for which this paper is arguing. His cases instantiate something like the following schema: a body of stipulations entails that $P$ or $Q$, and not both, but neither entails that $P$ nor entails that $Q$. When the suppositions that $P$ and that $Q$ look perfectly symmetrical, can one of them really be unknowably the case? (I once used the case of incomplete stipulations against the epistemic view myself; see Williamson, Identity and Discrimination, 1990: 107.) This is not the place for a full discussion, but the following points provide the framework for a treatment compatible with the epistemic view. The stipulation that $R$ does not always bring it about that $R$. This is obvious if I make inconsistent stipulations or stipulate that I shall live for ever. Less obviously, a consistent stipulation that $R$ about the kind of thing that is open to stipulation may still fail to bring it about that $R$. For example, if I merely stipulate that the nonce-word ‘fidge’ is to be meaningful, without making any stipulation as to what it is to mean, then ‘fidge’ is not meaningful. Thus, if it is stipulated that $P$ or $Q$, it does not follow that $P$ or $Q$; the disjunction may fail in cases of the kind that Tappenden discusses. This is not to say that the stipulation is inert; it may remain ‘on the books’, so that a subsequent stipulation that it is not to be the case that $P$ may bring it about that $Q$. Note also that a body of stipulations may bring about the stipulated effect in all ordinary cases without doing so in a few anomalous cases; this is the likely result of an abstruse inconsistency or incompleteness of the special kind above in a constitution. Of course, an account of the foregoing kind (which is not the only one compatible with the epistemic view) will need to be tested in detail against particular cases. A deeper understanding of the efficacy of stipulations is needed by everyone.
+
+# References
+
+Burge, T. 1988. Individualism and self-knowledge. Journal of Philosophy 85: 649–663.
+
+Burns, L. C. 1991. Vagueness: An Investigation into Natural Languages and the Sorites Paradox. Dordrecht: Kluwer.
+
+Campbell, R. 1974. The sorites paradox. Philosophical Studies 26: 175–191.
+
+Cargile, J. 1969. The sorites paradox. British Journal for the Philosophy of Science 20: 193–202.
+
+Cargile, J. 1979. Paradoxes: A Study in Form and Predication. Cambridge: Cambridge University Press.
+
+Davidson, D. 1987. Knowing one’s own mind. Proceedings and Addresses of the American Philosophical Association 60: 441–458.
+
+Dummett, M. A. E. 1991. The Logical Basis of Metaphysics. London: Duckworth.
+
+Evans, M. G. J. and McDowell, J. H. (eds.). 1976. Truth and Meaning. Oxford: Oxford University Press.
+
+Field, H. H. 1994. Disquotational truth and factually defective discourse. Philosophical Review 103: 405–452.
+
+Fine, K. 1975. Vagueness, truth and logic. Synthese 30: 265–300.
+
+Hart, W. D. 1991-92. Hat-tricks and heaps. Philosophical Studies (Dublin) 33: 1–24.
+
+Heller, M. 1990. The Ontology of Physical Objects: Four-Dimensional Hunks of Matter. Cambridge: Cambridge University Press.
+
+Horgan, T. 1994. Robust vagueness and the forced-march sorites paradox. Philosophical Perspectives 8: 159–188.
+
+Horwich, P. 1990. Truth. Oxford: Blackwell.
+
+Kamp, H. 1981. The paradox of the heap. In U. Mönnich (ed.) Aspects of Philosophical Logic. Dordrecht: Reidel.
+
+Lewis, D. K. 1969. Convention: A Philosophical Study. Cambridge: Harvard University Press.
+
+Lewis, D. K. 1970. General semantics. Synthese 22: 18–67; reprinted in Lewis 1983.
+
+Lewis, D. K. 1979. Scorekeeping in a language game. Journal of Philosophical Logic 8: 339–359; reprinted in Lewis 1983.
+
+Lewis, D. K. 1983. Philosophical Papers, vol. 1, Oxford: Oxford University Press.
+
+McGee, V., and McLaughlin, B. 1994. Distinctions without a difference. Southern Journal of Philosophy 33: 203–251.
+
+Pinkal, M. 1983. On the limits of lexical meaning. In R. Bäuerle, C. Schwarze and A. von Stechow (eds) Meaning, Use and Interpretation. Berlin: de Gruyter.
+
+Przelecki, M. 1979. The semantics of open concepts. In J. Pelc (ed.) Semiotics in Poland, Warsaw: Polish Scientific Publications.
+
+Scheffler, I. 1979. Beyond the Letter. London: Routledge & Kegan Paul.
+
+Simons, P. 1992. Vagueness and ignorance. Aristotelian Society suppl. 66: 163–177.
+
+Sorensen, R. A. 1988. Blindspots. Oxford: Clarendon Press.
+
+Sperber, D. and Wilson, D. 1985–6. Loose talk. Proceedings of the Aristotelian Society 86: 153–171.
+
+Tappenden, J. 1995. Some remarks on vagueness and a dynamic conception of language. Southern Journal of Philosophy, this volume.
+
+Williamson, T. 1990. Identity and Discrimination. Oxford: Blackwell.
+
+Williamson, T. 1992a. Inexact knowledge. Mind 101: 217–242.
+
+Williamson, T. 1992b. Vagueness and ignorance. Aristotelian Society sup. 66: 145–162.
+
+Williamson, T. 1994. Vagueness. London: Routledge.
+
+Williamson, T. 1995. Vagueness and internal realism. typescript.

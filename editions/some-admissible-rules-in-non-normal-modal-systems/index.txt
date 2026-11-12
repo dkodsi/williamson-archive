@@ -1,0 +1,749 @@
+# Some Admissible Rules in Nonnormal Modal Systems
+
+Timothy Williamson
+
+Notre Dame Journal of Formal Logic 34 (3) (1993): 378–400.
+
+Abstract Epistemic logics for subjects of bounded rationality are in effect nonnormal modal logics. Admissible rules are of interest in such logics. However, the usual methods for establishing admissibility employ Kripke models and are therefore inappropriate for nonnormal logics. This paper extends syntactic methods for a variety of rules (e.g. the rule of disjunction) and nonnormal logics. In doing so it answers a question asked by Chellas and Segerberg.
+
+1 Introduction The admissibility of a rule by a logic depends only on the logic’s set of theorems. It does not depend on a choice of semantics or proof system (for which reason the phrase “rule of proof” is not ideal; but see Humberstone [4]). However, the usual methods of proving the admissibility of a rule in modal logic are semantic; they use standard “possible worlds” model theory. This semantic treatment is applicable only to normal model systems (see below). Thus the usual methods do not allow one to prove the admissibility of a rule in a nonnormal modal system. The aim of this paper is to extend the use of syntactic methods for proving admissibility, methods applicable to both normal and nonnormal systems.
+
+An important example is the rule of disjunction. A system $S$ provides (admits) this rule just in case for all formulas $A_1,\ldots,A_n$:
+
+$$
+\begin{aligned}
+\text{if }&\vdash_S□ A_1\vee\cdots\vee□ A_n\\
+\text{then }&\vdash_S A_i\text{ for some }i\ (1\leq i\leq n).
+\end{aligned}
+$$
+
+Lemmon and Scott established the rule of disjunction for a variety of modal systems by a model-theoretic technique that is now standard (Lemmon and Scott [9] pp. 44–46 and 79–81; Chellas [1] pp. 181–182; Hughes and Cresswell [3] pp. 96–100; see also Kripke [5], Lemmon [8], McKinsey and Tarski [10] and Segerberg [13]). Powerful though such techniques are, they are restricted to systems amenable to the model theory in question. Thus if a modal logic is nonnormal, because it lacks the rule of necessitation RN (if $\vdash A$ then $\vdash□ A$) or the K axiom schema ($□(A\to B)\to(□ A\to□ B)$), it cannot be shown in the standard way to admit the rule of disjunction. Such a limitation is serious for two reasons.
+
+(a) If the admissibility of a rule is preserved when a normal system is weakened to a nonnormal one by the dropping of necessitation or the K schema (as is often the case), a model-theoretic technique obscures the generality of the phenomenon.
+
+(b) The formalism of modal logic is often applied to epistemic or doxastic issues, with $□$ read as “it is known that” or “it is believed that.” Normality is then equivalent to the closure of knowledge or belief under logical consequence: unbounded rationality. If one wishes to avoid this idealization, one will use a nonnormal logic. Even if one makes the idealization about individual subjects, but reads $□$ as “someone knows that” or “someone believes that,” one may reject the schema $(□ A\wedge□ B)\to□(A\wedge B)$ on the grounds that the perfect logicians who know or believe that $A$ may not include any of the perfect logicians who know or believe that $B$, and normality is again lost. Yet one would still like to know what rules are admissible in the nonnormal epistemic or doxastic logic.
+
+Standard “possible worlds” model theory can be generalized for systems without the rule of necessitation by the introduction of nonnormal worlds at which everything is possible. As a byproduct, Kripke showed that the nonnormal logics S2 and S3 admit the rule: if $\vdash□ A\vee□ B$, then either $\vdash□ A$ or $\vdash□ B$ (Kripke [6], p. 220). However, this semantics still enforces the K schema and the rule RM that if $\vdash A\to B$ then $\vdash□ A\to□ B$. A much wider generalization is to neighbourhood semantics or minimal models, but this still enforces the rule RE that if $\vdash A\equiv B$ then $\vdash□ A\equiv□ B$ ([1] pp. 207–210; by definition, the classical logics of [13] admit RE). Similar remarks apply to the use of algebraic semantics (for a recent example of its application to problems of admissibility in modal logic see Rybakov [12]). Even this form of deductive closure is too strong for many epistemic and doxastic applications. It is avoided in the impossible worlds semantics of Rantala [11], but there the K schema is valid; yet real knowledge or belief cannot be assumed to be closed under modus ponens.
+
+The proper response to the problem is not to seek further generalizations of the semantics, not least because anything general enough may be too trivial to be of use in establishing the admissibility of rules. It is more natural to develop a nonsemantic approach.
+
+2 Framework The language is standard, with a countably infinite class of propositional variables $p_0,p_1,p_2,\ldots$; the only primitive operators are the 0-place $\bot$ (falsity), the 1-place $□$ and the 2-place $\to$ (material conditional). Other operators are treated as metalinguistic abbreviations, e.g. $\neg A$ for $A\to\bot$, $\top$ for $\neg\bot$, $◇ A$ for $\neg□\neg A$. $□^0A=A$; $□^{i+1}A=□^i□ A$. “$A$”, “$B$”, “$C$”, … are metalinguistic variables over all wff; “$p$”, “$q$” and “$r$” are metalinguistic variables over propositional variables. A function $\sigma$ from wff to wff is a substitution iff $\sigma\bot=\bot$, $\sigma□ A=□\sigma A$ and $\sigma(A\to B)=\sigma A\to\sigma B$ for all $A$ and $B$. If $X$ is a set of wff, $\sigma X=\{\sigma A:A\in X\}$. The modal degree $\#A$ of $A$ is defined as usual: $\#p=\#\bot=0$; $\#(A\to B)=\mathit{max}\{\#A,\#B\}$; $\#□ A=\#A+1$.
+
+A theory is a set of wff containing all classical truth-functional tautologies and closed under modus ponens (MP). A logic is a theory closed under the rule of uniform substitution (US). A subtheory (sublogic) of a theory is a subset of it that is a theory (logic). PC, the set of all classical truth-functional tautologies, is the smallest theory and the smallest logic. If $S$ is a theory, $\vdash_S A$ just in case $A\in S$. If $X$ is a set of wff, $X\vdash_S A$ just in case $\vdash_S B\to A$ for some conjunction $B$ of members of $X$. A logic is normal just in case it contains schema K and is closed under the rule of necessitation. The closure of a logic $\mathcal L$ under a set of inference rules is the intersection of all logics containing $\mathcal L$ that admit those rules.
+
+A rule is treated as a sequent $X\Vdash Y$, where $X$ and $Y$ are sets of wff (written without { and }).
+
+Definition 2.1 $S$ admits the rule $X\Vdash Y$ just in case for every substitution $\sigma$, if $\vdash_S\sigma A$ for all $A\in X$ then $\vdash_S\sigma B$ for some $B\in Y$.
+
+Thus the rule of necessitation RN is treated as a sequent $p\Vdash □ p$, the rule RE as $p\equiv q\Vdash □ p\equiv□ q$, and Lemmon and Scott’s rule of disjunction (for fixed $n$) as the sequent
+
+$$
+□ p_1\vee\cdots\vee□ p_n\Vdash p_1,\ldots,p_n.
+$$
+
+A special class of rules is of particular importance:
+
+Definition 2.2 $X\Vdash Y$ is a $□$-introduction rule just in case for some wff $G_1,\ldots,G_k$ and $H$, $Y=\{(\bigwedge_{i\leq k}□ G_1)\to□^{h}\}$ and $X\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$, where $X$, $G_i$ and $H$ are nonmodal (i.e., $\#A=0$ for $A\in X\cup\{G_1,\ldots,G_k,H\}$).
+
+The special case $k=0$ is allowed, where the rule is in effect $X\Vdash □ H$, and $X\vdash_{\mathrm{PC}}H$. Some $□$-introduction rules are:
+
+$$
+p\Vdash □ p
+$$
+
+RN
+
+$$
+p\to q\Vdash □ p\to□ q
+$$
+
+RM
+
+$$
+(p\wedge q)\to r\Vdash (□ p\wedge□ q)\to□ r
+$$
+
+RR
+
+$$
+p\equiv q\Vdash □ p\to□ q
+$$
+
+RE
+
+Note that a theory admits $p\equiv q\Vdash □ p\to□ q$ just in case it admits $p\equiv q\Vdash □ p\equiv□ q$. The rule of disjunction is obviously not a $□$-introduction rule, even for $n=1$; nor are $p\vee q\Vdash □ p\vee□ q$ and $\neg p\Vdash \neg□ p$, for their conclusions are of the wrong form.
+
+The case $X=\{\}$ is also allowed, where $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$. $□$-introduction rules of this special kind will prove important, and deserve a special name:
+
+Definition 2.3 $X\Vdash Y$ is an axiomatic $□$-introduction rule just in case it is a $□$-introduction rule and $X=\{\}$.
+
+Some axiomatic $□$-introduction rules are:
+
+$$
+\begin{array}{l}
+\Vdash □\top\\
+\Vdash (□(p\to q)\wedge□ p)\to□ q\\
+\Vdash (□ p\wedge□ q)\to□(p\wedge q)\\
+\Vdash □(p\wedge q)\to□ p\\
+\Vdash □(p\wedge q)\to□ q
+\end{array}
+$$
+
+$\Vdash □ p$ is not an axiomatic $□$-introduction rule, since not $\vdash_{\mathrm{PC}}p$.
+
+Proposition 2.4 A logic $\mathcal L$ is normal just in case $\mathcal L$ admits all $□$-introduction rules.
+
+Proof: If $\mathcal L$ admits all $□$-introduction rules, it admits RN and the rule $\Vdash (□(p\to q)\wedge□ p)\to□ q$, so every instance of the K schema is a theorem; thus $\mathcal L$ is normal. Conversely, let $\mathcal L$ be normal, $X\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ a $□$-introduction rule, and $\sigma$ a substitution. Suppose that $\vdash_{\mathcal L}\sigma A$ for all $A\in X$. By definition of a $□$-introduction rule, $X\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$, so $\sigma X\vdash_{\mathrm{PC}}\sigma((\bigwedge_{i\leq k}G_i)\to H)$. Hence $\vdash_{\mathcal L}\sigma((\bigwedge_{i\leq k}G_i)\to H)$, i.e. $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$. Since $\mathcal L$ is normal, $\vdash_{\mathcal L}(\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H$, i.e. $\vdash_{\mathcal L}\sigma((\bigwedge_{i\leq k}□ G_i)\to□ H)$. Thus $\mathcal L$ admits the rule.
+
+3 Cancellation rules The aim is to find ways of establishing the admissibility of rules generalizable to theories in which not all $□$-introduction rules are admissible. Chellas gives an example of the kind of proof we are after ([1] pp. 124–125), in showing that the weakest normal logic K admits the rule
+
+$$
+□ p\to□ q\Vdash p\to q.
+$$
+
+In other words, for any wff $A$ and $B$, if $\vdash_{{𝐊}}□ A\to□ B$ then $\vdash_{{𝐊}}A\to B$ (on an epistemic reading, this rule has a constructivist flavor: if knowledge of $A$ entails knowledge of $B$ then $A$ entails $B$). Chellas uses a mapping $\tau$ from wff to wff, defined as follows:
+
+$$
+\begin{aligned}
+\tau p_i&=p_i\\
+\tau\bot&=\bot\\
+\tau(A\to B)&=\tau A\to\tau B\\
+\tau□ A&=A
+\end{aligned}
+$$
+
+Consider an axiomatization of K with all truth-functional tautologies and all wff of the form $□(A\to B)\to(□ A\to□ B)$ as the only axioms and MP and RN as the only primitive rules of inference (note that US is a derived rule). One can show by induction on $n$ that if $\vdash_{{𝐊}}A$ with a proof of $n$ lines then $\vdash_{{𝐊}}\tau A$, as follows. If $A$ is a truth-functional tautology, so is $\tau A$, for $\tau$ commutes with all truth-functional operators. $\tau(□(A\to B)\to(□ A\to□ B))=(A\to B)\to(A\to B)$, a truth-functional tautology. Thus $\tau$ maps axioms to axioms. Now assume the induction hypothesis for all proofs of less than $n$ lines, and that $\vdash_{{𝐊}}A$ with a proof of $n$ lines. If $A$ is an axiom we are done. If $A$ was derived by MP, then, for some $B$, $\vdash_{{𝐊}}B$ and $\vdash_{{𝐊}}B\to A$ with proofs of less than $n$ lines; by induction hypothesis, $\vdash_{{𝐊}}\tau B$ and $\vdash_{{𝐊}}\tau(B\to A)$, i.e. $\vdash_{{𝐊}}\tau B\to\tau A$; by MP, $\vdash_{{𝐊}}\tau A$. If $A$ was derived by RN, then $A=□ B$ for some $B$ such that $\vdash_{{𝐊}}B$; but $\tau A=\tau□ B=B$. This completes the induction. For any wff $A$, if $\vdash_{{𝐊}}A$ then $\vdash_{{𝐊}}\tau A$; in brief, K is closed under $\tau$. Thus if $\vdash_{{𝐊}}□ A\to□ B$ then $\vdash_{{𝐊}}\tau(□ A\to□ B)$; but $\tau(□ A\to□ B)=A\to B$. Hence K admits the rule $□ p\to□ q\Vdash p\to q$.
+
+The aim of this section is to make a detailed case study of the mapping $\tau$ and its use in proving results of this kind. Later sections study other mappings. Two kinds of generalization of the result just proved are possible. We can generalize on the rule $□ p\to□ q\Vdash p\to q$, and we can generalize on the system K. We begin with the former.
+
+The closure of K under $\tau$ implies that K also admits all of the following rules:
+
+$$
+\begin{gathered}
+□ p\to◇ q\Vdash p\to q\\
+◇ p\to□ q\Vdash p\to q\\
+◇ p\to◇ q\Vdash p\to q\\
+□ p\equiv□ q\Vdash p\equiv q\\
+□ p\equiv◇ q\Vdash p\equiv q\\
+◇ p\equiv◇ q\Vdash p\equiv q\\
+□ p\Vdash p\\
+◇ p\Vdash p
+\end{gathered}
+$$
+
+The same proof technique works, for $\tau◇ A=\tau\neg□\neg A=\neg\neg A$, and it does not matter what truth-functional operator takes the place of $\to$. Thus a general class of rules needs to be studied.
+
+Definition 3.1 $\sigma_□$ is the substitution such that $\sigma_□ p=□ p$ for every propositional variable $p$.
+
+Definition 3.2 $X\Vdash Y$ is a cancellation rule just in case $X=\{\sigma_□ A\}$ and $Y=\{A\}$ for some nonmodal wff $A$ ($\#A=0$).
+
+Thus the following are cancellation rules: $□ p\to□ q\Vdash p\to q$; $□ p\equiv□ q\Vdash p\equiv q$, and $□ p\Vdash p$. $□ p\to◇ q\Vdash p\to q$, for example, is not a cancellation rule, but is admitted by a theory whenever the cancellation rule $□ p\to\neg□\neg q\Vdash p\to\neg\neg q$ is.
+
+Proposition 3.3 If a theory is closed under $\tau$ then it admits all cancellation rules.
+
+Proof: Let $S$ be a theory closed under $\tau$, $\sigma_□ A\Vdash A$ a cancellation rule and $\sigma$ a substitution. What needs to be shown is that if $\vdash_S\sigma\sigma_□ A$ then $\vdash_S\sigma A$. Suppose $\vdash_S\sigma\sigma_□ A$. By hypothesis, $\vdash_S\tau\sigma\sigma_□ A$. Thus it suffices to show by induction on the complexity of $A$ that $\tau\sigma\sigma_□ A=\sigma A$. Now $\tau\sigma\sigma_□ p=\tau\sigma□ p=\tau□\sigma p=\sigma p$ and $\tau\sigma\sigma_□\bot=\bot=\sigma\bot$. If $\tau\sigma\sigma_□ B=\sigma B$ and $\tau\sigma\sigma_□ C=\sigma C$ then $\tau\sigma\sigma_□(B\to C)=\tau\sigma\sigma_□ B\to\tau\sigma\sigma_□ C=\sigma B\to\sigma C=\sigma(B\to C)$. This completes the induction; the case of $□ B$ does not arise, for $\#A=0$ by definition of a cancellation rule.
+
+We shall be concerned with proofs that a system admits all cancellation rules. Proposition 3.5 shows that not every such result can be proved as for K, by means of $\tau$. Proposition 3.4 is a lemma of general use, formulated relative to a particular choice of truth-functional primitives in the language.
+
+Proposition 3.4 If $\theta$ is a mapping from wff to wff such that $\theta\bot=\bot$, and for all wff $B$ and $C$, $\theta(B\to C)=\theta B\to\theta C$, then $\mathrm{PC}$ is closed under $\theta$.
+
+Proof: If $\vdash_{\mathrm{PC}}B$ then $B=\sigma A$ for some substitution $\sigma$ and some wff $A$ such that $\#A=0$ and $\vdash_{\mathrm{PC}}A$. Define $\sigma_\theta$ as the substitution such that $\sigma_\theta p_i=\theta\sigma p_i$ for all $i$. One can then show that $\sigma_\theta A=\theta\sigma A$ by induction on the complexity of $A$. Since PC is closed under US, $\vdash_{\mathrm{PC}}\sigma_\theta A$, i.e. $\vdash_{\mathrm{PC}}\theta\sigma A$, i.e. $\vdash_{\mathrm{PC}}\theta B$.
+
+Proposition 3.5 Not every normal logic that admits all cancellation rules is closed under $\tau$.
+
+Proof: Let $\mathcal L$ be the smallest normal logic containing $p\equiv□□ p$. $\mathcal L$ admits all cancellation rules but is not closed under $\tau$. A semantic proof of this uses standard correspondence theory: $\mathcal L$ is the logic of a two-point frame in which each point is accessible from the other but not from itself, but $\tau(p\equiv□□ p)=p\equiv□ p$, which is not valid on that frame. However, in the spirit of this paper a syntactic proof of the same result will be sketched. One first shows that $\vdash_{\mathcal L}□(p\to q)\equiv(□ p\to□ q)$ and $\vdash_{\mathcal L}□\bot\equiv\bot$. Then let $\sigma_□ A\Vdash A$ be a cancellation rule and $\sigma$ a substitution. By induction on the complexity of $A$, $\vdash_{\mathcal L}\sigma_□ A\equiv□ A$; hence $\vdash_{\mathcal L}□\sigma\sigma_□ A\equiv\sigma A$. Thus if $\vdash_{\mathcal L}\sigma\sigma_□ A$, by RN $\vdash_{\mathcal L}□\sigma\sigma_□ A$, so $\vdash_{\mathcal L}\sigma A$. Thus $\mathcal L$ admits the cancellation rule $\sigma_□ A\Vdash A$. To show that $\mathcal L$ is not closed under $\tau$, let $\sigma_\pi$ be the substitution such that $\sigma_\pi p_{2i}=p_{2i+1}$ and $\sigma_\pi p_{2i+1}=p_{2i}$ for all $i$, and define a mapping $\pi$ on wff by:
+
+$$
+\begin{aligned}
+\pi p_i&=p_{2i}\\
+\pi\bot&=\bot\\
+\pi(A\to B)&=\pi A\to\pi B\\
+\pi□ A&=\sigma_\pi\pi A
+\end{aligned}
+$$
+
+Axiomatize $\mathcal L$ with all theorems of PC and wff of the forms $□(A\to B)\to(□ A\to□ B)$ and $A\equiv□□ A$ as axioms and MP and RN as the only rules of inference. By induction on the length of proofs (using 3.4), if $\vdash_{\mathcal L}A$ then $\vdash_{\mathrm{PC}}\pi A$ (the converse also holds, but need not be proved). Finally, if $\mathcal L$ is closed under $\tau$, $\vdash_{\mathcal L}\tau(p_0\equiv□□ p_0)$, i.e. $\vdash_{\mathcal L}p_0\equiv□ p_0$, so $\vdash_{\mathrm{PC}}\pi(p_0\equiv□ p_0)$, i.e. $\vdash_{\mathrm{PC}}p_0\equiv p_1$, which is absurd.
+
+In spite of 3.5, there is a close connection between the mapping $\tau$ and the admissibility of cancellation rules. A logic $\mathcal L$ can admit all cancellation rules “because it is weak,” in the sense that every sublogic of $\mathcal L$ (i.e. every logic all of whose theorems are theorems of $\mathcal L$) also admits all cancellation rules. This property of $\mathcal L$ turns out to be equivalent to the property that $\tau$ maps every theorem of $\mathcal L$ to a theorem of PC. A strongest logic with this “weakness property” will be identified. Normal logics, such as K, lack this weakness property, for $□□\top$ is a theorem of K while $\tau□□\top=□\top$ is not a theorem of PC; correspondingly, the weakest logic containing $□□\top$ is included in K but does not admit the cancellation rule $□ p\Vdash p$. However, it will be shown that if $\mathcal L$ has the weakness property, then the closure of $\mathcal L$ under any set of $□$-introduction rules is closed under $\tau$ and therefore admits all cancellation rules. K and a number of other normal logics are the closures of logics with the weakness property under the set of all $□$-introduction rules. In this way we can achieve a wide generalization of the result about K.
+
+Some preliminary lemmas are needed for the proof of the results just mentioned. In particular, it helps to consider wff without propositional variables, for if $A$ is any such wff, $A$ is the premise and $\tau A$ the conclusion of an instance of a cancellation rule (see 3.9). Wff with propositional variables do not in general have this feature: for example, the proof of 3.5 shows that no cancellation rule has an instance of which $p\equiv□□ p$ is the premise and $\tau(p\equiv□□ p)=(p\equiv□ p)$ the conclusion. 3.8 (for which 3.6 and 3.7 are preliminaries) shows that if $\tau$ maps a theorem of some logic to a nontheorem of PC, then it maps a theorem of that logic containing no propositional variables to a nontheorem of PC.
+
+For $k\geq0$, let $\sigma_k$ be the substitution such that for all $i$, $\sigma_kp_i=□^{(i+1)(k+2)}\bot$.
+
+Define a mapping $\mu_k$ by:
+
+$$
+\begin{aligned}
+\mu_kp_i&=p_i\\
+\mu_k\bot&=\bot\\
+\mu_k(A\to B)&=\mu_kA\to\mu_kB\\
+\mu_k□ A&=p_i\quad\text{if }A=□^h\bot\text{ where }h+1\leq(i+1)(k+2)\leq h+2\\
+&=□\mu_kA\quad\text{otherwise.}
+\end{aligned}
+$$
+
+We must check that $\mu_k$ is well defined: if $h+1\leq(i+1)(k+2)\leq h+2$ and $h+1\leq(j+1)(k+2)\leq h+2$ then $i=j$. Otherwise $(i+1)(k+2)$ and $(j+1)(k+2)$ differ by at most 1; since they are both multiples of $k+2$, they differ by at least 2 if they differ at all; thus $(i+1)(k+2)=(j+1)(k+2)$, so $i=j$.
+
+Proposition 3.6 If $\#A\leq k$ then $\mu_k\sigma_kA=A$.
+
+Proof: By induction on the complexity of $A$.
+
+Basis. $\mu_k\sigma_kp_i=\mu_k□^{(i+1)(k+2)}\bot=p_i$. The cases of $\bot$ and $\to$ are standard.
+
+Induction step for $□$. The induction hypothesis is that $\mu_k\sigma_kA=A$ and $\#□ A\leq k$. Suppose for a contradiction that $\sigma_kA=□^h\bot$ where $h+1\leq(i+1)(k+2)\leq h+2$. If $A$ contained $\to$, $\sigma_kA$ would contain $\to$, which is impossible, since $□^h\bot$ does not. Thus for some $m,n$, either $A=□^m\bot$ or $A=□^mp_n$. In the former case, $\sigma_kA=□^m\bot$. In the latter, $\sigma_kA=□^{(n+1)(k+2)+m}\bot$. Hence $h=m$ or $h=(n+1)(k+2)+m$. Since $h+1\leq(i+1)(k+2)\leq h+2$, either $m+1$ or $m+2$ is a multiple of $k+2$; since $m+1\ne0$ and $m+2\ne0$, $k+2\leq m+2$, so $k<m+1=\#□ A$. But $\#□ A\leq k$ by induction hypothesis, so the supposition cannot arise. Thus by definition of $\mu_k$, $\mu_k\sigma_k□ A=\mu_k□\sigma_kA=□\mu_k\sigma_kA=□ A$ by induction hypothesis.
+
+Proposition 3.7 If $\#A\leq k+1$ then $\mu_k\tau\sigma_kA=\tau A$.
+
+Proof: By induction on the complexity of $A$.
+
+Basis. $\mu_k\tau\sigma_kp_i=\mu_k\tau□^{(i+1)(k+2)}\bot=\mu_k□^{(i+1)(k+2)-1}\bot=p_i=\tau p_i$. The cases of $\bot$ and $\to$ are standard.
+
+Induction step for $□$. The induction hypothesis is that $\mu_k\tau\sigma_kA=\tau A$ and $\#□ A\leq k+1$, so $\#A\leq k$. By 3.6, $\mu_k\tau\sigma_k□ A=\mu_k\tau□\sigma_kA=\mu_k\sigma_kA=A=\tau□ A$.
+
+Proposition 3.8 If $\vdash_{\mathrm{PC}}\tau\sigma B$ for every substitution $\sigma$ such that $\sigma B$ contains no propositional variables, then $\vdash_{\mathrm{PC}}\tau B$.
+
+Proof: Let $\#B=k$. By definition of $\sigma_k$, $\sigma_kB$ contains no propositional variables. If $\vdash_{\mathrm{PC}}\tau\sigma_kB$ then $\vdash_{\mathrm{PC}}\mu_k\tau\sigma_kB$ by 3.4, so $\vdash_{\mathrm{PC}}\tau B$ by 3.7.
+
+Proposition 3.9 If $B$ contains no propositional variables, then there is a wff $A$ such that $\#A=0$ and a substitution $\sigma$ such that $\sigma\sigma_□ A=B$ and $\sigma A=\tau B$.
+
+Proof: Let “$C$” be the Gödel number of the wff $C$ on some standard enumeration such that every natural number is the number of some wff. Let $\sigma^{“”}$ be the substitution such that $\sigma^{“”}p_{“C”}=C$ for every wff $C$. Define a mapping $\lambda$ as follows:
+
+$$
+\begin{aligned}
+\lambda p_i&=p_i\\
+\lambda\bot&=\bot\\
+\lambda(C\to D)&=\lambda C\to\lambda D\\
+\lambda□ C&=p_{“C”}.
+\end{aligned}
+$$
+
+Evidently $\#\lambda C=0$ for any wff $C$. We now show by induction on the complexity of $B$ that if $B$ contains no propositional variables then $\sigma^{“”}\sigma_□\lambda B=B$ and $\sigma^{“”}\lambda B=\tau B$. The only interesting case is the induction step for $□$, where $\sigma^{“”}\sigma_□\lambda□ B=\sigma^{“”}\sigma_□ p_{“B”}=\sigma^{“”}□ p_{“B”}=□\sigma^{“”}p_{“B”}=□ B$ and $\sigma^{“”}\lambda□ B=\sigma^{“”}p_{“B”}=B=\tau□ B$ (without use of the induction hypothesis). Put $A=\lambda B$ and $\sigma=\sigma^{“”}$.
+
+Proposition 3.10 Either $\#A=\#\tau A=0$ or $\#A=1+\#\tau A$.
+
+Proof: By induction on the complexity of $A$.
+
+Proposition 3.11 If every sublogic of the logic $\mathcal L$ admits all cancellation rules, then $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$.
+
+Proof: Suppose that every sublogic of $\mathcal L$ admits all cancellation rules. It suffices to show that if $A$ contains no propositional variables then $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$. For if $\vdash_{\mathcal L}B$ then $\vdash_{\mathcal L}\sigma B$ by US for every substitution $\sigma$ such that $\sigma B$ contains no propositional variables, so it will follow that $\vdash_{\mathrm{PC}}\tau\sigma B$, so $\vdash_{\mathrm{PC}}\tau B$ by 3.8. We show that if $A$ contains no propositional variables then $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$ by induction on $\#A$.
+
+Basis. Suppose that $\vdash_{\mathcal L}A$ and $\#A=0$. Thus $\tau A=A$. Unless $\vdash_{\mathrm{PC}}A$, $\mathcal L$ is inconsistent (by US; $A$ is nonmodal). If $\mathcal L$ is inconsistent, K4 is a sublogic of $\mathcal L$, and does not admit all cancellation rules (e.g. $□ p\to□ q\Vdash p\to q$). Thus $\vdash_{\mathrm{PC}}A$, i.e. $\vdash_{\mathrm{PC}}\tau A$.
+
+Induction step. Suppose that $\#A=n+1$, $A$ contains no propositional variables and $\vdash_{\mathcal L}A$, and that for all $B$ if $\#B\leq n$ and $B$ contains no propositional variables then $\vdash_{\mathcal L}B$ implies $\vdash_{\mathrm{PC}}\tau B$. Put $\mathcal L^*=\{B:\vdash_{\mathrm{PC}}(\tau A\to A)\to B\}$. We first show that $\mathcal L^*$ is a logic. It evidently contains all truth-functional tautologies and is closed under MP. Thus we need only check that $\mathcal L^*$ is closed under US. Let $\sigma$ be any substitution. Suppose that $\vdash_{\mathcal L^*}B$. Thus $\vdash_{\mathrm{PC}}(\tau A\to A)\to B$, so $\vdash_{\mathrm{PC}}\sigma((\tau A\to A)\to B)$, i.e. $\vdash_{\mathrm{PC}}\sigma(\tau A\to A)\to\sigma B$. Since $\tau A\to A$ contains no propositional variables, $\sigma(\tau A\to A)=\tau A\to A$. Thus $\vdash_{\mathrm{PC}}(\tau A\to A)\to\sigma B$, so $\vdash_{\mathcal L^*}\sigma B$. Thus $\mathcal L^*$ is a logic. Moreover, $\mathcal L^*$ is a sublogic of $\mathcal L$. For suppose $\vdash_{\mathcal L^*}B$, so $\vdash_{\mathrm{PC}}(\tau A\to A)\to B$, so $\vdash_{\mathcal L}(\tau A\to A)\to B$; but $\vdash_{\mathcal L}A$ by assumption, so $\vdash_{\mathcal L}\tau A\to A$; thus $\vdash_{\mathcal L}B$. We can now show that $\vdash_{\mathrm{PC}}\tau A$, as required to complete the induction step. Since $\mathcal L^*$ is a sublogic of $\mathcal L$, by assumption it admits all cancellation rules. By 3.9, there is a cancellation rule with an instance of which $\tau A\to A$ is the premise and $\tau(\tau A\to A)=\tau\tau A\to\tau A$ is the conclusion. Now $\vdash_{\mathrm{PC}}(\tau A\to A)\to(\tau A\to A)$, so $\vdash_{\mathcal L^*}\tau A\to A$; since $\mathcal L^*$ admits the cancellation rule, $\vdash_{\mathcal L^*}\tau\tau A\to\tau A$, i.e.,
+
+$$
+\vdash_{\mathrm{PC}}(\tau A\to A)\to(\tau\tau A\to\tau A).
+$$
+
+(1)
+
+Since $\mathcal L$ is a sublogic of itself, by assumption it admits all cancellation rules. By 3.9 again, there is a cancellation rule with an instance of which $A$ is the premise and $\tau A$ is the conclusion. Since $\vdash_{\mathcal L}A$, $\vdash_{\mathcal L}\tau A$. But $\#A=n+1$, so by 3.10 $\#\tau A=n$. Thus the induction hypothesis can be applied to $\tau A$, yielding:
+
+$$
+\vdash_{\mathrm{PC}}\tau\tau A.
+$$
+
+(2)
+
+By (1) and (2):
+
+$$
+\vdash_{\mathrm{PC}}(\tau A\to A)\to\tau A.
+$$
+
+(3)
+
+From (3) by truth-functional logic (Peirce’s Law):
+
+$$
+\vdash_{\mathrm{PC}}\tau A.
+$$
+
+(4)
+
+This completes the induction.
+
+Proposition 3.12 If $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$ for all $A$, then every sublogic of $\mathcal L$ admits all cancellation rules.
+
+Proof: By 3.3, since PC is a sublogic of $\mathcal L$.
+
+3.11 and 3.12 imply that there is a largest logic $\mathcal L_0$ such that all its sublogics admit all cancellation rules, for we can put $\mathcal L_0=\{A:\vdash_{\mathrm{PC}}\tau\sigma A\text{ for every substitution }\sigma\}$. It is easy to see that $\mathcal L_0$ is a logic; by 3.12 every sublogic of $\mathcal L_0$ admits all cancellation rules; by 3.11 every logic $\mathcal L$ of which every sublogic admits all cancellation rules is a sublogic of $\mathcal L_0$ (since $\mathcal L$ must be closed under US). Note that $\mathcal L_0$ is not the same as $\{A:\vdash_{\mathrm{PC}}\tau A\}$. For example, $\tau(p\to□ p)=p\to p$ is a theorem of PC, but $p\to□ p$ is not a theorem of $\mathcal L_0$, for it has the substitution instance $□ p\to□□ p$, and $\tau(□ p\to□□ p)=p\to□ p$ is not a theorem of PC. The next task is to identify $\mathcal L_0$.
+
+Definition 3.13 If $A_1,\ldots,A_n$ are some wff, ${𝐊}^{\sim}A_1\ldots A_n$ is the smallest logic containing $A_1,\ldots,A_n$ and closed under all axiomatic $□$-introduction rules.
+
+Proposition 3.14 ${𝐊}^{\sim}A_1\ldots A_n$ is axiomatizable with $\mathrm{MP}$ as the only rule of inference and the following axioms: $B$ and $□ B$ for all $B$ such that $\vdash_{\mathrm{PC}}B$; $(□(B\to C)\wedge□ B)\to□ C$ for all $B,C$; all substitution instances of $A_1,\ldots,A_n$.
+
+Proof: The axiomatized system is clearly a logic; call it $\mathcal L$. $\mathcal L$ is a sublogic of ${𝐊}^{\sim}A_1\ldots A_n$, for if $\vdash_{\mathrm{PC}}B$ ($\#B=0$), $\Vdash □ B$ is an axiomatic $□$-introduction rule, and $\Vdash (□(p\to q)\wedge□ p)\to□ q$ is another such rule. To show that ${𝐊}^{\sim}A_1\ldots A_n$ is a sublogic of $\mathcal L$, it suffices to show that $\mathcal L$ admits every axiomatic $□$-introduction rule $\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$, i.e. $\vdash_{\mathcal L}(\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H$ for every substitution $\sigma$. Since $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$ by definition of an axiomatic $□$-introduction rule, $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$. Thus $\vdash_{\mathcal L}□((\bigwedge_{i\leq k}\sigma G_i)\to\sigma H)$, so $\vdash_{\mathcal L}□(\bigwedge_{i\leq k}\sigma G_i)\to□\sigma H$ by the K axiom. Thus it suffices to show $\vdash_{\mathcal L}(□ p\wedge□ q)\to□(p\wedge q)$, for then $\vdash_{\mathcal L}(\bigwedge_{i\leq k}□\sigma G_i)\to□(\bigwedge_{i\leq k}\sigma G_i)$. But $\vdash_{\mathcal L}□(p\to(q\to(p\wedge q)))$ and the result follows by the K axiom again.
+
+For example, Lemmon’s system 0.5 is ${𝐊}^{\sim}{𝐓}$, where T is the wff $□ p\to p$ (Lemmon [7]). Note that ${𝐊}^{\sim}A_1\ldots A_n$ is not in general a normal logic (e.g. ${𝐊}^{\sim}$ does not contain the theorem $□□\top$).
+
+D and Alt1 are the wff $□\neg p\to\neg□ p$ and $\neg□ p\to□\neg p$ respectively. It will be shown that $\mathcal L_0$, the largest logic of which every sublogic admits all cancellation rules, is ${𝐊}^{\sim}\mathbf{DAlt1}$. The crucial property of ${𝐊}^{\sim}\mathbf{DAlt1}$ is that $□$ commutes in it with all truth-functional operators (see 3.16); ${𝐊}^{\sim}\mathbf{DAlt1}$ is in fact the smallest logic with this property. Given 3.11, it suffices to show that for every logic $\mathcal L$, $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$ for all $A$ if and only if $\mathcal L$ is a sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$. The next propositions are preliminaries to this result.
+
+Define two auxiliary mappings $\alpha$ and $\beta$ on wff by:
+
+$$
+\begin{aligned}
+\alpha p_i&=p_i&\qquad \beta p_i&=p_i\\
+\alpha\bot&=\bot&\beta\bot&=\bot\\
+\alpha(A\to B)&=\alpha A\to\alpha B&\beta(A\to B)&=\beta A\to\beta B\\
+\alpha□ p_i&=p_i&\beta□ A&=□□ A\\
+\alpha□ A&=□\alpha A\quad\text{if }A=p_i\text{ for no }i.
+\end{aligned}
+$$
+
+Proposition 3.15 $\alpha\sigma_□ A=A$.
+
+Proof: By induction on the complexity of $A$.
+
+Basis. $\alpha\sigma_□ p_i=\alpha□ p_i=p_i$. The cases of $\bot$ and $\to$ are standard.
+
+Induction step for $□$. Suppose that $\alpha\sigma_□ A=A$. Now $\sigma_□ A=p_i$ for no $i$, by definition of $\sigma_□$, so $\alpha\sigma_□□ A=\alpha□\sigma_□ A=□\alpha\sigma_□ A=□ A$ by induction hypothesis.
+
+Proposition 3.16 $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\bot\equiv□\bot$; $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}□(p\to q)\equiv(□ p\to□ q)$.
+
+Proof: For the former, note that $\Vdash □\neg\bot$ is an axiomatic $□$-introduction rule, so $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}□\neg\bot$, and $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}□\neg\bot\to\neg□\bot$ by D. For the latter, left to right: $\Vdash (□(p\to q)\wedge□ p)\to□ q$ is an axiomatic $□$-introduction rule. Right to left: note that $\Vdash □ q\to□(p\to q)$ and $\Vdash □\neg p\to□(p\to q)$ are axiomatic $□$-introduction rules and $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\neg□ p\to□\neg p$ by Alt1.
+
+Proposition 3.17 For all $A$, $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□ A\equiv A$.
+
+Proof: By induction on the complexity of $A$.
+
+Basis. $\alpha\beta\tau\sigma_□ p_i=\alpha\beta\tau□ p_i=\alpha\beta p_i=\alpha p_i=p_i$, so $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□ p_i\equiv p_i$. $\alpha\beta\tau\sigma_□\bot=\bot$, so $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□\bot\equiv\bot$.
+
+The induction step for $\to$ is standard. For $□$, there are four cases.
+
+Case 1: $□ p_i$: $\alpha\beta\tau\sigma_□□ p_i=\alpha\beta\tau□\sigma_□ p_i=\alpha\beta\sigma_□ p_i=\alpha\beta□ p_i=\alpha□□ p_i=□\alpha□ p_i=□ p_i$. Thus $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□□ p_i\equiv□ p_i$.
+
+Case 2: $□\bot$: $\alpha\beta\tau\sigma_□□\bot=\alpha\beta\tau□\bot=\alpha\beta\bot=\bot$. The result follows by 3.16.
+
+Case 3: $□□ B$: $\alpha\beta\tau\sigma_□□□ B=\alpha\beta\tau□□\sigma_□ B=\alpha\beta□\sigma_□ B=\alpha□□\sigma_□ B=□\alpha□\sigma_□ B=□□\alpha\sigma_□ B$ (since $\sigma_□ B=p_i$ is impossible) $=□□ B$ by 3.15.
+
+Case 4: $□(B\to C)$: Since $□ B$ and $□ C$ are less complex (shorter) than $□(B\to C)$, $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□□ B\equiv□ B$ and $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□□ C\equiv□ C$ by induction hypothesis. Now $\alpha\beta\tau\sigma_□□(B\to C)=\alpha\beta\tau□\sigma_□(B\to C)=\alpha\beta\sigma_□(B\to C)=\alpha\beta\sigma_□ B\to\alpha\beta\sigma_□ C=\alpha\beta\tau□\sigma_□ B\to\alpha\beta\tau□\sigma_□ C=\alpha\beta\tau\sigma_□□ B\to\alpha\beta\tau\sigma_□□ C$. Hence $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□□(B\to C)\equiv(□ B\to□ C)$ by hypothesis. Thus $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□□(B\to C)\equiv□(B\to C)$ by 3.16.
+
+Proposition 3.18 If $\mathcal L$ is a logic such that $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$ for all $A$, then $\mathcal L$ is a sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$.
+
+Proof: Suppose that $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$ for all $A$, and $\vdash_{\mathcal L}B$. Since $\mathcal L$ is a logic, $\vdash_{\mathcal L}\sigma_□ B$. By hypothesis, $\vdash_{\mathrm{PC}}\tau\sigma_□ B$. By 3.4, $\vdash_{\mathrm{PC}}\alpha\beta\tau\sigma_□ B$. By 3.17, $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□ B\equiv B$. Hence $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}B$.
+
+Proposition 3.19 If $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}B$ then $\vdash_{\mathrm{PC}}\tau B$.
+
+Proof: Axiomatize ${𝐊}^{\sim}\mathbf{DAlt1}$ as in 3.14, and use induction on the length of proofs. If $\vdash_{\mathrm{PC}}B$ then $\vdash_{\mathrm{PC}}\tau B$ by 3.4; moreover $\tau□ B=B$ so $\vdash_{\mathrm{PC}}\tau□ B$. $\tau((□(B\to C)\wedge□ B)\to□ C)=((B\to C)\wedge B)\to C$ and $\tau(\neg□ B\equiv□\neg B)=(\neg B\equiv\neg B)$. The induction step (MP) is obvious.
+
+Theorem 3.20 For a logic $\mathcal L$, (i)–(iii) are equivalent: (i) Every sublogic of $\mathcal L$ admits all cancellation rules. (ii) $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau A$ for all $A$. (iii) $\mathcal L$ is a sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$.
+
+Proof: (i) implies (ii) by 3.11; (ii) implies (i) by 3.12; (ii) implies (iii) by 3.18; (iii) implies (ii) by 3.19.
+
+Proposition 3.21 If $\mathcal L$ is the closure of a subtheory of ${𝐊}^{\sim}\mathbf{DAlt1}$ under a set of $□$-introduction rules, then $\mathcal L$ admits all cancellation rules.
+
+Proof: Axiomatize $\mathcal L$ with all theorems of the subtheory of ${𝐊}^{\sim}\mathbf{DAlt1}$ as axioms and MP and all $□$-introduction rules in the set as the rules of inference, and show by induction on the length of proofs that $\vdash_{\mathcal L}A$ implies $\vdash_{\mathcal L}\tau A$. By 3.3 and 3.20, it suffices to show that if $\sigma$ is a substitution, $X\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ is a $□$-introduction rule and for all $A\in X$, $\vdash_{\mathcal L}\sigma A$, then $\vdash_{\mathcal L}\tau\sigma((\bigwedge_{i\leq k}□ G_i)\to□ H)$, i.e. $\vdash_{\mathcal L}\tau((\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H)$, i.e. $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$. But by definition of a $□$-introduction rule, $X\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$, so $\sigma X\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$, so $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$.
+
+Recall that a modal logic is classical (monotone, regular) just in case it is closed under the $□$-introduction rule RE (RM, RR) and normal just in case it is closed under all $□$-introduction rules. 3.21 yields:
+
+Proposition 3.22 If $\mathcal L$ is the smallest classical (monotone, regular, normal) logic containing a given sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$ then $\mathcal L$ admits all cancellation rules.
+
+Note that if $\mathcal L$ is axiomatized by the addition of all $□$-introduction rules to a sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$, and $\mathcal L'$ is a normal sublogic of $\mathcal L$, it does not follow that $\mathcal L'$ can be axiomatized by the addition of some $□$-introduction rules to some sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$. Consider, for example, KDG, the smallest normal logic containing the D axiom, $□\neg p\to\neg□ p$, and the G axiom $◇□ p\to□◇ p$. KDG can be axiomatized by the addition of all $□$-introduction rules to the sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$ generated by $□ p\to◇ p$ and $(◇□ p\to□□ p)\vee□◇ p$. Thus KDG admits all cancellation rules. However, its normal sublogic KG does not, for $\vdash_{{𝐊𝐆}}□◇\top$ but not $\vdash_{{𝐊𝐆}}◇\top$. Thus KG cannot be axiomatized by the addition of any set of $□$-introduction rules to any sublogic of ${𝐊}^{\sim}\mathbf{DAlt1}$.
+
+4 Cancellation rules in systems with T axioms It is natural to study nonnormal logics with the T axiom $□ p\to p$. For example, if $□$ is read as “it is known that,” the T axiom should hold, since knowledge entails truth, yet ordinary knowledge is not closed under logical consequence. Logics with the T axiom are not in general closed under the mapping $\tau$, for although $\tau$ maps the T axiom itself to the PC theorem $p\to p$, $\tau$ maps its instance $□\neg□ p\to\neg□ p$ to $\neg□ p\to\neg p$, whose addition to a logic with the T axiom yields modal collapse. Indeed, logics with the T axiom do not in general admit all cancellation rules. For example, we have $\vdash_{{𝐊𝐓}}\neg□(p\wedge\neg□ p)$ but not $\vdash_{{𝐊𝐓}}\neg(p\wedge\neg□ p)$, so that KT does not admit the cancellation rule $\neg□ p\Vdash \neg p$. Nevertheless, it is natural to ask whether logics with the T axiom admit modified forms of cancellation rules. This section gives a limited positive answer to that question.
+
+We can adapt the mapping $\tau$ to logics with the T axiom by combining it with the following mapping $\upsilon$:
+
+$$
+\begin{aligned}
+\upsilon p_i&=p_i\\
+\upsilon\bot&=\bot\\
+\upsilon(A\to B)&=\upsilon A\to\upsilon B\\
+\upsilon□ A&=\upsilon A\wedge□ A
+\end{aligned}
+$$
+
+Consider the mapping $\tau\upsilon$. $\tau\upsilon□ A=\tau(\upsilon A\wedge□ A)=\tau\upsilon A\wedge A$; hence $\tau\upsilon(□ A\to$$A)=(\tau\upsilon A\wedge A)\to\tau\upsilon A$. Thus $\tau\upsilon$ maps all substitution instances of the T axiom to PC theorems. It will play the role played by $\tau$ in the previous section.
+
+We begin with some consequences of closure under $\tau\upsilon$ for the admissibility of rules (4.1–4.4) and then ask what logics are closed under $\tau\upsilon$ (4.6–4.15).
+
+Proposition 4.1 If a logic $\mathcal L$ is closed under $\tau\upsilon$ then $\mathcal L$ admits the cancellation rule $\bigvee_{i\leq k}□ p_i\Vdash \bigvee_{i\leq k}p_i$ for all $k$.
+
+Proof: For any substitution $\sigma$, $\tau\upsilon(\bigvee_{i\leq k}□\sigma p_i)=\bigvee_{i\leq k}(\tau\upsilon\sigma p_i\wedge\sigma p_i)$.
+
+Note in particular the case $k=1$, sometimes known as denecessitation: if $\vdash_{\mathcal L}□ A$ then $\vdash_{\mathcal L}A$. If $\mathcal L$ has the T axiom, it automatically admits that cancellation rule. A wide class of logics without the T axiom were shown to admit all cancellation rules in the previous section. 4.1 is useful in proving the admissibility of the rule for logics with a weakened version of the T axiom. For example, Lemmon and Scott discuss the schemata L ($◇\top\to(□ A\to A)$), N (substitution instances of T in which every occurrence of a propositional variable is within the scope of a $□$) and N$_0$ ($□(□ A\vee□ B)\to(□ A\vee□ B)$). A variety of logics with such axioms can be shown to be closed under $\tau\upsilon$. The next propositions concern less obvious rules.
+
+Proposition 4.2 If a logic $\mathcal L$ is closed under $\tau\upsilon$ then $\mathcal L$ admits the rule $\bigvee_{i\leq k}◇□ p_i\Vdash \bigvee_{i\leq k}(p_i\vee□ p_i)$ for all $k$.
+
+Proof: For any substitution $\sigma$, $\vdash_{\mathrm{PC}}\tau\upsilon(\bigvee_{i\leq k}◇□\sigma p_i)\equiv\bigvee_{i\leq k}((\tau\upsilon\sigma p_i\wedge\sigma p_i)\vee□\sigma p_i)$.
+
+Proposition 4.3 Either $\#A=\#\tau\upsilon A=0$ or $\#A=1+\#\tau\upsilon A$.
+
+Proof: By induction on the complexity of $A$.
+
+Proposition 4.4 If a logic $\mathcal L$ is closed under $\tau\upsilon$ then $\mathcal L$ admits the rule $□ p\equiv□ q,◇ p\equiv◇ q\Vdash p\equiv q$.
+
+Proof: Suppose that $\mathcal L$ is closed under $\tau\upsilon$ and $\vdash_{\mathcal L}□ A\equiv□ B$ and $\vdash_{\mathcal L}◇ A\equiv◇ B$, so $\vdash_{\mathcal L}□\neg A\equiv□\neg B$. By assumption, $\vdash_{\mathcal L}\tau\upsilon(□ A\equiv□ B)$ and $\vdash_{\mathcal L}\tau\upsilon(□\neg A\equiv□\neg B)$, i.e. $\vdash_{\mathcal L}(\tau\upsilon A\wedge A)\equiv(\tau\upsilon B\wedge B)$ and $\vdash_{\mathcal L}(\neg\tau\upsilon A\wedge\neg A)\equiv(\neg\tau\upsilon B\wedge\neg B)$. Thus $\vdash_{\mathcal L}(A\wedge\neg B)\to(\neg\tau\upsilon A\wedge\tau\upsilon B)$ and $\vdash_{\mathcal L}(\neg A\wedge B)\to(\tau\upsilon A\wedge\neg\tau\upsilon B)$, i.e. $\vdash_{\mathcal L}(A\wedge\neg B)\to\tau\upsilon(\neg A\wedge B)$ and $\vdash_{\mathcal L}(\neg A\wedge B)\to\tau\upsilon(A\wedge\neg B)$. Let $(\tau\upsilon)^0C=C$ and $(\tau\upsilon)^{n+1}C=\tau\upsilon(\tau\upsilon)^nC$. By repeated use of closure under $\tau\upsilon$, for all $n$, $\vdash_{\mathcal L}(\tau\upsilon)^n(A\wedge\neg B)\to(\tau\upsilon)^{n+1}(\neg A\wedge B)$ and $\vdash_{\mathcal L}(\tau\upsilon)^n(\neg A\wedge B)\to(\tau\upsilon)^{n+1}(A\wedge\neg B)$. By 4.3, $n$ can be chosen so that $\#(\tau\upsilon)^n(A\wedge\neg B)=\#(\tau\upsilon)^n(\neg A\wedge B)=0$. Then, by definition of $\tau\upsilon$, $(\tau\upsilon)^{n+1}(A\wedge\neg B)=(\tau\upsilon)^n(A\wedge\neg B)=(\tau\upsilon)^nA\wedge\neg(\tau\upsilon)^nB$ and $(\tau\upsilon)^{n+1}(\neg A\wedge B)=(\tau\upsilon)^n(\neg A\wedge B)=\neg(\tau\upsilon)^nA\wedge(\tau\upsilon)^nB$. Hence $\vdash_{\mathcal L}((\tau\upsilon)^nA\wedge\neg(\tau\upsilon)^nB)\to(\neg(\tau\upsilon)^nA\wedge(\tau\upsilon)^nB)$ and $\vdash_{\mathcal L}(\neg(\tau\upsilon)^nA\wedge(\tau\upsilon)^nB)\to((\tau\upsilon)^nA\wedge\neg(\tau\upsilon)^nB)$. Hence $\vdash_{\mathcal L}\neg((\tau\upsilon)^nA\wedge\neg(\tau\upsilon)^nB)$ and $\vdash_{\mathcal L}\neg(\neg(\tau\upsilon)^nA\wedge(\tau\upsilon)^nB)$, i.e. $\vdash_{\mathcal L}\neg(\tau\upsilon)^n(A\wedge\neg B)$ and $\vdash_{\mathcal L}\neg(\tau\upsilon)^n(\neg A\wedge B)$. If $n>0$, $\vdash_{\mathcal L}(\tau\upsilon)^{n-1}(A\wedge\neg B)\to(\tau\upsilon)^n(\neg A\wedge B)$ and $\vdash_{\mathcal L}(\tau\upsilon)^{n-1}(\neg A\wedge B)\to(\tau\upsilon)^n(A\wedge\neg B)$, so $\vdash_{\mathcal L}\neg(\tau\upsilon)^{n-1}(A\wedge\neg B)$ and $\vdash_{\mathcal L}\neg(\tau\upsilon)^{n-1}(\neg A\wedge B)$. Continuing the process, $\vdash_{\mathcal L}\neg(\tau\upsilon)^0(A\wedge\neg B)$ and $\vdash_{\mathcal L}\neg(\tau\upsilon)^0(\neg A\wedge B)$, i.e. $\vdash_{\mathcal L}\neg(A\wedge\neg B)$ and $\vdash_{\mathcal L}\neg(\neg A\wedge B)$, so $\vdash_{\mathcal L}A\equiv B$.
+
+See Williamson [14] for brief discussion of the philosophical interest of the “double cancellation” rule established by 4.4 on an epistemic reading of $□$ (the method of proof used for 4.4 can be seen as a generalized syntactic version of the main semantic construction in [14]).
+
+We now ask what logics are closed under $\tau\upsilon$. The role of ${𝐊}^{\sim}\mathbf{DAlt1}$, the largest logic all of whose theorems are mapped by $\tau$ to PC theorems, will be played by ${𝐊}^{\sim}\mathbf{TAlt2}$, the smallest logic closed under all axiomatic $□$-introduction with as additional axioms T and the wff Alt2:
+
+Definition 4.5 Alt2 is $□(p\to q)\vee□(p\to\neg q)\vee□ p$.
+
+One can think of T and Alt2 as together saying that each world can see itself and at most one other world, just as one can think of D and Alt1 as saying that each world can see exactly one world, although this interpretation is of merely heuristic value in the context of nonnormal logics. The point is not that Alt1 or Alt2 is plausible on some reading of $□$, but that they are so strong that many systems of interest can be axiomatized by the addition of $□$-introduction rules to sublogics of ${𝐊}^{\sim}\mathbf{DAlt1}$ or ${𝐊}^{\sim}\mathbf{TAlt2}$. The following propositions lead to a characterization of some interrelations between ${𝐊}^{\sim}\mathbf{DAlt1}$, ${𝐊}^{\sim}\mathbf{TAlt2}$ and $\tau\upsilon$. After that, closure under $\tau\upsilon$ will be used to establish the admissibility of various rules.
+
+Proposition 4.6 $\vdash_{\mathrm{PC}}\tau\upsilon\sigma_□ A\equiv\tau\sigma_□\upsilon A$.
+
+Proof: By induction on the complexity of $A$.
+
+Basis: $\tau\upsilon\sigma_□ p_i=\tau\upsilon□ p_i=\tau\upsilon p_i\wedge p_i=p_i\wedge p_i$; $\tau\sigma_□\upsilon p_i=\tau\sigma_□ p_i=\tau□ p_i=p_i$. The cases of $\bot$ and $\to$ are standard.
+
+Induction step for $□$. Suppose that $\vdash_{\mathrm{PC}}\tau\upsilon\sigma_□ A\equiv\tau\sigma_□\upsilon A$. $\tau\upsilon\sigma_□□ A=\tau\upsilon□\sigma_□ A=\tau\upsilon\sigma_□ A\wedge\sigma_□ A$. But $\tau\sigma_□\upsilon□ A=\tau\sigma_□(\upsilon A\wedge□ A)=\tau(\sigma_□\upsilon A\wedge□\sigma_□ A)=\tau\sigma_□\upsilon A\wedge\sigma_□ A$. By induction hypothesis, $\vdash_{\mathrm{PC}}\tau\upsilon\sigma_□□ A\equiv\tau\sigma_□\upsilon□ A$.
+
+Proposition 4.7 If $\mathcal L$ is a logic and $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau\upsilon A$ for all $A$, then $\vdash_{\mathcal L}A$ implies $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon A$ for all $A$.
+
+Proof: Suppose that $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau\upsilon A$ for all $A$, and $\vdash_{\mathcal L}B$. Since $\mathcal L$ is a logic, $\vdash_{\mathcal L}\sigma_□ B$. By assumption, $\vdash_{\mathrm{PC}}\tau\upsilon\sigma_□ B$. By 4.6, $\vdash_{\mathrm{PC}}\tau\sigma_□\upsilon B$. By 3.4, $\vdash_{\mathrm{PC}}\alpha\beta\tau\sigma_□\upsilon B$. By 3.17, $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\alpha\beta\tau\sigma_□\upsilon B\equiv\upsilon B$. Hence $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon B$.
+
+The following mapping will be used to translate theorems of ${𝐊}^{\sim}\mathbf{DAlt1}$ into theorems of ${𝐊}^{\sim}\mathbf{TAlt2}$:
+
+$$
+\begin{aligned}
+\varphi p_i&=p_i\\
+\varphi\bot&=\bot\\
+\varphi(A\to B)&=\varphi A\to\varphi B\\
+\varphi□ A&=□ A\vee(\neg A\wedge\neg□\neg A).
+\end{aligned}
+$$
+
+Proposition 4.8 If $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}A$ then $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi A$.
+
+Proof: Axiomatize ${𝐊}^{\sim}\mathbf{DAlt1}$ as in 3.14 and use induction on the length of proofs. If $\vdash_{\mathrm{PC}}A$ then $\vdash_{\mathrm{PC}}\varphi A$ by 3.4, so $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi A$; moreover $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}□ A$ since ${𝐊}^{\sim}\mathbf{TAlt2}$ admits all axiomatic $□$-introduction rules, so $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi□ A$ by definition of $\varphi$. To show $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi((□(A\to B)\wedge□ A)\to□ B)$, consider the following sequence of theorems of ${𝐊}^{\sim}\mathbf{TAlt2}$:
+
+(1)	$(□(A\to B)\wedge□ A)\to□ B$	$\text{Ax }□\text{-int}$
+(2)	$(□(A\to B)\wedge□ A)\to\varphi□ B$	$1,\text{ def }\varphi$
+(3)	$(□ A\wedge□\neg B)\to□\neg(A\to B)$	$\text{Ax }□\text{-int}$
+(4)	$((\neg(A\to B)\wedge\neg□\neg(A\to B))\wedge□ A)\to(\neg B\wedge\neg□\neg B)$	$3$
+(5)	$((\neg(A\to B)\wedge\neg□\neg(A\to B))\wedge□ A)\to\varphi□ B$	$4,\text{ def }\varphi$
+(6)	$(\varphi□(A\to B)\wedge□ A)\to\varphi□ B$	$2,5,\text{ def }\varphi$
+(7)	$\varphi□(A\to B)\to((A\to B)\to□(A\to B))$	$\text{def }\varphi$
+(8)	$\varphi□(A\to B)\to(\neg A\to□(A\to B))$	$7$
+(9)	$(□(A\to B)\wedge□\neg B)\to□\neg A$	$\text{Ax }□\text{-int}$
+(10)	$(\varphi□(A\to B)\wedge(\neg A\wedge\neg□\neg A))\to\neg□\neg B$	$8,9$
+(11)	$□(\neg A\to B)\vee□(\neg A\to\neg B)\vee□\neg A$	$\text{Alt2}$
+(12)	$(□(A\to B)\wedge□(\neg A\to B))\to□ B$	$\text{Ax }□\text{-int}$
+(13)	$(\varphi□(A\to B)\wedge(\neg A\wedge\neg□\neg A))\to(□ B\vee□(\neg A\to\neg B))$	$8,11,12$
+(14)	$□(\neg A\to\neg B)\to(\neg A\to\neg B)$	$\text{T}$
+(15)	$(\varphi□(A\to B)\wedge(\neg A\wedge\neg□\neg A))\to(□ B\vee(\neg B\wedge\neg□\neg B))$	$10,13,14$
+(16)	$(\varphi□(A\to B)\wedge(\neg A\wedge\neg□\neg A))\to\varphi□ B$	$15,\text{ def }\varphi$
+(17)	$(\varphi□(A\to B)\wedge\varphi□ A)\to\varphi□ B$	$6,16,\text{ def }\varphi$
+
+The proof that $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi(\neg□ A\equiv□\neg A)$ is simpler and not given here. The induction step for MP is standard.
+
+Proposition 4.9 $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}A\equiv\varphi\upsilon A$.
+
+Proof: By induction on the complexity of $A$. The only interesting case is the induction step for $□$. Suppose that $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}A\equiv\varphi\upsilon A$. Now $\varphi\upsilon□ A=\varphi(\upsilon A\wedge□ A)=\varphi\upsilon A\wedge(□ A\vee(\neg A\wedge\neg□\neg A))$. By hypothesis, $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi\upsilon□ A\equiv(A\wedge(□ A\vee(\neg A\wedge\neg□\neg A)))$. But $\vdash_{\mathrm{PC}}(A\wedge(□ A\vee(\neg A\wedge\neg□\neg A)))\to□ A$, and since $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}□ A\to A$, $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}□ A\equiv(A\wedge(□ A\vee(\neg A\wedge\neg□\neg A)))$. Hence $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}□ A\equiv\varphi\upsilon□ A$.
+
+Proposition 4.10 If $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}A$ then $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon A$.
+
+Proof: Axiomatize ${𝐊}^{\sim}\mathbf{TAlt2}$ as in 3.14 and use induction on the length of proofs. If $\vdash_{\mathrm{PC}}A$ then $\vdash_{\mathrm{PC}}\upsilon A$ by 3.4, so $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon A$; moreover $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}□ A$ since ${𝐊}^{\sim}\mathbf{DAlt1}$ admits all axiomatic $□$-introduction rules, so $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon□ A$ by definition of $\upsilon$. $\upsilon((□(A\to B)\wedge□ A)\to□ B)=(((\upsilon A\to\upsilon B)\wedge□(A\to B))\wedge(\upsilon A\wedge□ A))\to(\upsilon B\wedge□ B)$, which is a theorem of ${𝐊}^{\sim}\mathbf{DAlt1}$ since $(□(A\to B)\wedge□ A)\to□ B$ is. For the T axiom, $\upsilon(□ A\to A)=(\upsilon A\wedge□ A)\to\upsilon A$, a PC theorem. For an instance $X$ of axiom Alt2, $\upsilon X=\upsilon(□(A\to B)\vee□(A\to\neg B)\vee□ A)=((\upsilon A\to\upsilon B)\wedge□(A\to B))\vee((\upsilon A\to\neg\upsilon B)\wedge□(A\to\neg B))\vee(\upsilon A\wedge□ A)$. To prove $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon X$, consider the following theorems of ${𝐊}^{\sim}\mathbf{DAlt1}$:
+
+(1)	$□ B\to□(A\to B)$	$\text{Ax }□\text{-int}$
+(2)	$(\neg\upsilon A\wedge□ B)\to((\upsilon A\to\upsilon B)\wedge□(A\to B))$	$1$
+(3)	$(\neg\upsilon A\wedge□ B)\to\upsilon X$	$2,\text{ def }\upsilon$
+(4)	$(\neg\upsilon A\wedge□\neg B)\to((\upsilon A\to\neg\upsilon B)\wedge□(A\to\neg B))$	$\text{As }2$
+(5)	$\neg□ B\to□\neg B$	$\text{Alt1}$
+(6)	$(\neg\upsilon A\wedge\neg□ B)\to((\upsilon A\to\neg\upsilon B)\wedge□(A\to\neg B))$	$4,5$
+(7)	$(\neg\upsilon A\wedge\neg□ B)\to\upsilon X$	$6,\text{ def }\upsilon$
+(8)	$\neg\upsilon A\to\upsilon X$	$3,7$
+(9)	$\neg□ A\to□\neg A$	$\text{Alt1}$
+(10)	$□\neg A\to□(A\to B)$	$\text{Ax }□\text{-int}$
+(11)	$(\upsilon A\wedge\upsilon B\wedge\neg□ A)\to((\upsilon A\to\upsilon B)\wedge□(A\to B))$	$9,10$
+(12)	$(\upsilon A\wedge\upsilon B\wedge\neg□ A)\to\upsilon X$	$11,\text{ def }\upsilon$
+(13)	$(\upsilon A\wedge\neg\upsilon B\wedge\neg□ A)\to((\upsilon A\to\neg\upsilon B)\wedge□(A\to\neg B))$	$\text{As }11$
+(14)	$(\upsilon A\wedge\neg\upsilon B\wedge\neg□ A)\to\upsilon X$	$13,\text{ def }\upsilon$
+(15)	$(\upsilon A\wedge\neg□ A)\to\upsilon X$	$12,14$
+(16)	$(\upsilon A\wedge□ A)\to\upsilon X$	$\text{Def }\upsilon$
+(17)	$\upsilon A\to\upsilon X$	$15,16$
+(18)	$\upsilon X$	$8,17$
+
+The induction step for MP is standard.
+
+Proposition 4.11 For a logic $\mathcal L$, $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau\upsilon A$ for all $A$ if and only if $\mathcal L$ is a sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$.
+
+Proof: For the “only if,” suppose that $\vdash_{\mathcal L}A$ implies $\vdash_{\mathrm{PC}}\tau\upsilon A$ for all $A$. If $\vdash_{\mathcal L}B$ then by 4.7 $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon B$; so by 4.8 $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}\varphi\upsilon B$; so by 4.9 $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}B$. Thus $\mathcal L$ is a sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$. For the “if,” what needs to be shown is that $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}A$ implies $\vdash_{\mathrm{PC}}\tau\upsilon A$. But if $\vdash_{{𝐊}^{\sim}\mathbf{TAlt2}}A$ then by 4.10 $\vdash_{{𝐊}^{\sim}\mathbf{DAlt1}}\upsilon A$; so by 3.19 $\vdash_{\mathrm{PC}}\tau\upsilon A$.
+
+Proposition 4.12 If $\mathcal L$ is the closure of a sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$ under a set of $□$-introduction rules, then $\mathcal L$ is closed under $\tau\upsilon$.
+
+Proof: Axiomatize $\mathcal L$ with all theorems of the sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$ as axioms and MP and all $□$-introduction rules in the set as the rules of inference. We show by induction on the length of proofs that $\vdash_{\mathcal L}A$ implies $\vdash_{\mathcal L}\tau\upsilon A$. By 4.11, it suffices to show that if $\sigma$ is a substitution, $Y\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ is a $□$-introduction rule, and for all $A\in Y$ both $\vdash_{\mathcal L}\sigma A$ and (the induction hypothesis) $\vdash_{\mathcal L}\tau\upsilon\sigma A$, then $\vdash_{\mathcal L}\tau\upsilon\sigma((\bigwedge_{i\leq k}□ G_i)\to□ H)$, i.e. $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\tau\upsilon□\sigma G_i)\to\tau\upsilon□\sigma H$, i.e. $\vdash_{\mathcal L}(\bigwedge_{i\leq k}(\tau\upsilon\sigma G_i\wedge\sigma G_i))\to(\tau\upsilon\sigma H\wedge\sigma H)$. For the latter it is sufficient that $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$ and $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\tau\upsilon\sigma G_i)\to\tau\upsilon\sigma H$. By definition of a $□$-introduction rule, $Y\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$, so for some members $F_1,\ldots,F_m$ of $Y$, $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq m}F_i\wedge\bigwedge_{i\leq k}G_i)\to H$, so $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq m}\sigma F_i\wedge\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$. By assumption $\vdash_{\mathcal L}\bigwedge_{i\leq m}\sigma F_i$, so $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$. Moreover, by 3.4 $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq m}\tau\upsilon\sigma F_i\wedge\bigwedge_{i\leq k}\tau\upsilon\sigma G_i)\to\tau\upsilon\sigma H$. By assumption $\vdash_{\mathcal L}\bigwedge_{i\leq m}\tau\upsilon\sigma F_i$, so $\vdash_{\mathcal L}(\bigwedge_{i\leq k}\tau\upsilon\sigma G_i)\to\tau\upsilon\sigma H$.
+
+Proposition 4.13 If $\mathcal L$ is the smallest classical (monotone, regular, normal) logic containing a given sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$ then $\mathcal L$ is closed under $\tau\upsilon$.
+
+Proof: From 4.12.
+
+Proposition 4.14 If $\mathcal L$ is the closure of a sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$ under a set of $□$-introduction rules then $\mathcal L$ admits the rules $\bigvee_{i\leq k}□ p_i\Vdash \bigvee_{i\leq k}p_i$, $\bigvee_{i\leq k}◇□ p_i\Vdash \bigvee_{i\leq k}(p_i\vee□ p_i)$, and $□ p\equiv□ q,◇ p\equiv◇ q\Vdash p\equiv q$.
+
+Proof: From 4.12 by 4.1, 4.2 and 4.4.
+
+Proposition 4.15 If $\mathcal L$ is the smallest classical (monotone, regular, normal) logic containing a given sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$ then $\mathcal L$ admits the rules $\bigvee_{i\leq k}□ p_i\Vdash \bigvee_{i\leq k}p_i$, $\bigvee_{i\leq k}◇□ p_i\Vdash \bigvee_{i\leq k}(p_i\vee□ p_i)$, and $□ p\equiv□ q,◇ p\equiv◇ q\Vdash p\equiv q$.
+
+Proof: From 4.14.
+
+The scope of 4.14 and 4.15 is quite wide; in practice, however, it is sometimes easier to show directly that a logic is closed under $\tau\upsilon$ than to show that it is the closure of a sublogic of ${𝐊}^{\sim}\mathbf{TAlt2}$ under a set of $□$-introduction rules (the normal logic KTG is a case in point).
+
+5 Lemmon and Scott’s rule of disjunction The mappings $\tau$ and $\tau\upsilon$ allow one to establish the admissibility of the special case of Lemmon and Scott’s rule of disjunction where $n=1$, the rule $□ p\Vdash p$, in various systems. However, they do not allow one to establish the rule for $n>1$. If $\mathcal L$ is closed under $\tau$ or $\tau\upsilon$ and $\vdash_{\mathcal L}□ A\vee□ B$ then $\vdash_{\mathcal L}A\vee B$, but it does not follow that $\vdash_{\mathcal L}A$ or $\vdash_{\mathcal L}B$. A different mapping is needed; it is defined below. A detailed investigation like that of the previous sections will not be carried out. Rather, a few typical results will be given. They concern subsystems of the provability logics KW and KT4Grz (= KGrz), where W is Löb’s axiom $□(□ p\to p)\to□ p$ and Grz is Grzegorczyk’s axiom $□(□(p\to□ p)\to p)\to p$.
+
+Let $S$ be a theory. Define a mapping $\delta_S$:
+
+$$
+\begin{aligned}
+\delta_Sp_i&=p_i\\
+\delta_S\bot&=\bot\\
+\delta_S(A\to B)&=\delta_SA\to\delta_SB\\
+\delta_S□ A&=\top\quad\text{if }\vdash_S A\\
+&=\bot\quad\text{otherwise.}
+\end{aligned}
+$$
+
+Proposition 5.1 If a theory $S$ is closed under $\delta_S$ then $S$ admits the rule of disjunction.
+
+Proof: Suppose $\vdash_S\bigvee_{i\leq k}□ A_i$. By assumption, $\vdash_S\delta_S\bigvee_{i\leq k}□ A_i$, which is to say, $\vdash_S\bigvee_{i\leq k}\delta_S□ A_i$. Unless $\vdash_S A_i$ for some $i\leq k$, $\bigvee_{i\leq k}\delta_S□ A_i=\bigvee_{i\leq k}\bot$, in which case $S$ is inconsistent and $\vdash_S A_i$ for any $i\leq k$.
+
+Löb’s rule is the rule $□ p\to p\Vdash p$. It is well known that KW can be axiomatized by the addition of Löb’s rule to K.
+
+Proposition 5.2 If $S$ is axiomatized by all $\mathrm{PC}$ theorems, $\mathrm{MP}$, a set of $□$-introduction rules and possibly Löb’s rule, then $\vdash_S A$ implies $\vdash_{\mathrm{PC}}\delta_SA$.
+
+Proof: By induction on the length of proofs in the axiomatization of $S$. If $\vdash_{\mathrm{PC}}A$ then $\vdash_{\mathrm{PC}}\delta_SA$ by 3.4. The case of MP is trivial. Let $Y\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ be a $□$-introduction rule and $\sigma$ a substitution. We need to show that if $\vdash_S\sigma A$ and $\vdash_{\mathrm{PC}}\delta_S\sigma A$ for all $A\in Y$ then $\vdash_{\mathrm{PC}}\delta_S((\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H)$, i.e. $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\delta_S□\sigma G_i)\to\delta_S□\sigma H$. There are two cases.
+
+Case 1: $\vdash_S\sigma G_i$ for all $i\leq k$. By definition of a $□$-introduction rule, $Y\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}G_i)\to H$, so $\sigma Y\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$. Since $\vdash_S\sigma A$ for all $A\in Y$, $\vdash_S(\bigwedge_{i\leq k}\sigma G_i)\to\sigma H$, so by assumption $\vdash_S\sigma H$. Thus $\delta_S□\sigma G_i=\delta_S□\sigma H=\top$ for $i\leq k$, so $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\delta_S□\sigma G_i)\to\delta_S□\sigma H$.
+
+Case 2: $\vdash_S\sigma G_i$ fails for some $i\leq k$. Then $\delta_S□\sigma G_i=\bot$ for some $i\leq k$, so $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\delta_S□\sigma G_i)\to\delta_S□\sigma H$.
+
+For Löb’s rule, we need to show that if $S$ admits Löb’s rule, $\vdash_S□ A\to A$ and $\vdash_{\mathrm{PC}}\delta_S□ A\to\delta_SA$ then $\vdash_{\mathrm{PC}}\delta_SA$. But then $\vdash_S A$, so $\delta_S□ A=\top$, so $\vdash_{\mathrm{PC}}\top\to\delta_SA$, so $\vdash_{\mathrm{PC}}\delta_SA$.
+
+Proposition 5.3 If $S$ is axiomatized by all $\mathrm{PC}$ theorems, $\mathrm{MP}$, a set of $□$-introduction rules and possibly Löb’s rule, then $S$ admits the rule of disjunction.
+
+Proof: From 5.1 and 5.2.
+
+Many variations can be played on the theme of 5.3. For example, we can add some or all substitution instances of the 4 axiom $□ p\to□□ p$ to the axiomatization of $S$, provided that $S$ admits the rule RN. Alternatively, we could add some or all substitution instances of the 4 axiom and Löb’s axiom, without insisting on RN, if we revised the definition of $\delta_S$ so that the condition for $\delta_S□ A=\top$ was $\vdash_S□ A$ rather than $\vdash_S A$; this would yield the rule $\bigvee_{i\leq k}□ p_i\Vdash \{□ p_i:i\leq k\}$ rather than Lemmon and Scott’s rule of disjunction (neither rule need imply the other in the absence of RN).
+
+In order to cope with the T axiom in KT4Grz, we need a mapping that stands to $\delta_S$ as $\tau\upsilon$ stood to $\tau$ in Section 3. The composite $\delta_S\upsilon$ would do, but an equivalent variant of it is more concise:
+
+$$
+\begin{aligned}
+\delta^*_Sp_i&=p_i\\
+\delta^*_S\bot&=\bot\\
+\delta^*_S(A\to B)&=\delta^*_SA\to\delta^*_SB\\
+\delta^*_S□ A&=\delta^*_SA\quad\text{if }\vdash_S A\\
+&=\bot\quad\text{otherwise.}
+\end{aligned}
+$$
+
+Proposition 5.4 If a theory $S$ is closed under $\delta^*_S$ then $S$ admits the rule of disjunction.
+
+Proof: As for 5.1.
+
+Proposition 5.5 If $S$ is axiomatized by all $\mathrm{PC}$ theorems, any set of instances of axioms $\mathrm{T}$, 4 and $\mathrm{Grz}$, with $\mathrm{MP}$ and some $□$-introduction rules including $\mathrm{RN}$, then $\vdash_S A$ implies $\vdash_{\mathrm{PC}}\delta^*_SA$.
+
+Proof: By induction on the length of proofs. The cases of PC theorems and MP are as before. For T, $\delta^*_S(□ A\to A)$ is either $\delta^*_SA\to\delta^*_SA$ or $\bot\to\delta^*_SA$. For 4, if $\vdash_S A$ then $\vdash_S□ A$ by RN, so $\delta^*_S(□ A\to□□ A)=\delta^*_SA\to\delta^*_S□ A=\delta^*_SA\to\delta^*_SA$; if not $\vdash_S A$ then $\delta^*_S(□ A\to□□ A)=\bot\to\delta^*_S□□ A$. For Grz, suppose that $\vdash_S□(□(A\to□ A)\to A)\to A$. If $\vdash_S□(A\to□ A)\to A$ then $\vdash_S□(□(A\to□ A)\to A)$ by RN, so $\vdash_S A$ by MP, so $\vdash_S□ A$ by RN again, so $\vdash_S A\to□ A$; hence $\delta^*_S(□(□(A\to□ A)\to A)\to A)=\delta^*_S□(□(A\to□ A)\to A)\to\delta^*_SA=\delta^*_S(□(A\to□ A)\to A)\to\delta^*_SA=(\delta^*_S□(A\to□ A)\to\delta^*_SA)\to\delta^*_SA=(\delta^*_S(A\to□ A)\to\delta^*_SA)\to\delta^*_SA=((\delta^*_SA\to\delta^*_S□ A)\to\delta^*_SA)\to\delta^*_SA=((\delta^*_SA\to\delta^*_SA)\to\delta^*_SA)\to\delta^*_SA$, a PC theorem. If not $\vdash_S□(A\to□ A)\to A$ then $\delta^*_S(□(□(A\to□ A)\to A)\to A)=\bot\to\delta^*_SA$. Finally, let $Y\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ be a $□$-introduction rule and $\sigma$ a substitution. We need to show that if $\vdash_S\sigma A$ and $\vdash_{\mathrm{PC}}\delta^*_S\sigma A$ for all $A\in Y$ then $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\delta^*_S□\sigma G_i)\to\delta^*_S□\sigma H$. There are two cases.
+
+Case 1: $\vdash_S\sigma G_i$ for all $i\leq k$. As in 5.2, $\vdash_S\sigma H$. Thus $\delta^*_S□\sigma G_i=\delta^*_S\sigma G_i$ for $i\leq k$ and $\delta^*_S□\sigma H=\delta^*_S\sigma H$, so $(\bigwedge_{i\leq k}\delta^*_S□\sigma G_i)\to\delta^*_S□\sigma H=(\bigwedge_{i\leq k}\delta^*_S\sigma G_i)\to\delta^*_S\sigma H$. As in the proof of 4.12, for some members $A_1,\ldots,A_m$ of $Y$, $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq m}\sigma A_i)\to((\bigwedge_{i\leq k}\sigma G_i)\to\sigma H)$. By 3.4, $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq m}\delta^*_S\sigma A_i)\to((\bigwedge_{i\leq k}\delta^*_S\sigma G_i)\to\delta^*_S\sigma H)$. By induction hypothesis, $\vdash_{\mathrm{PC}}\bigwedge_{i\leq m}\delta^*_S\sigma A_i$, so $\vdash_{\mathrm{PC}}(\bigwedge_{i\leq k}\delta^*_S\sigma G_i)\to\delta^*_S\sigma H$, as required.
+
+Case 2: $\vdash_S\sigma G_i$ fails for some $i\leq k$. The argument is as in 5.2.
+
+Proposition 5.6 If $S$ is axiomatized by all $\mathrm{PC}$ theorems, any set of instances of axioms $\mathrm{T}$, 4 and $\mathrm{Grz}$, with $\mathrm{MP}$ and a set of $□$-introduction rules including $\mathrm{RN}$, then $S$ provides the rule of disjunction.
+
+Proof: From 5.4 and 5.5.
+
+As before, many variations are possible. For example, the use of $\delta^*_S$ can be extended to systems with instances of the D axiom, McKinsey’s axiom M ($□◇ p\to◇□ p$) and Lemmon and Scott’s variant on it M$^\infty$ ($◇\bigwedge_{i\leq k}(◇ p_i\to□ p_i)$, $k\geq1$) as axioms. The method subsumes many results in [9] on the admissibility of the rule of disjunction, e.g. in K, KD, KT, KN, KL, ${𝐊𝐌}^\infty$, K4, KD4, K4N (= $\mathbf{KD4N}_0$), K4L, K4M (= $\mathbf{K4M}^\infty$), KT4M and KT4M (= $\mathbf{KT4M}^\infty$). Other examples are KM, KDM and KTM. The method also applies to the smallest classical (monotone, regular) systems containing the axiom sets in question.
+
+6 Other rules Chellas and Segerberg [2] investigate what they call the MacIntosh rule:
+
+$$
+p\to□ p\Vdash ◇ p\to p.
+$$
+
+$S$ provides the MacIntosh rule just in case whenever $\vdash_S A\to□ A$ then $\vdash_S◇ A\to A$. Chellas and Segerberg prove semantically that KD and KT provide the rule, and ask for syntactic proofs. These are supplied below. As before, they extend to some nonnormal logics with D or T as an axiom schema.
+
+The MacIntosh rule will be established as a corollary of the rule of margins:
+
+$$
+p\to□ p\Vdash p,\neg p.
+$$
+
+$S$ provides the rule of margins just in case whenever $\vdash_S A\to□ A$ then either $\vdash_S A$ or $\vdash_S\neg A$. Some applications of the rule of margins in epistemic logic are proposed in Williamson [15] and [16]; they give reason to investigate the rule in the context of nonnormal logics. The systems discussed below are quite natural ones, considered as epistemic logics for subjects of bounded rationality.
+
+The rule of margins will in turn be established as a corollary of the alternative rule of disjunction, which for a fixed $n$ is the sequent:
+
+$$
+\left\{p_0\vee\bigvee_{1\leq i\leq n}□^{j(i)}p_i:j(i)\geq0\right\}\Vdash \{p_i:1\leq i\leq n\}.
+$$
+
+$S$ provides the alternative rule of disjunction just in case whenever $\vdash_S A_0\vee□^{j(1)}A_1\vee\cdots\vee□^{j(n)}A_n$ for all $j(1),\ldots,j(n)\geq0$, then $\vdash_S A_i$ for some $i$. The rule of margins and the alternative rule of disjunction are investigated in the context of normal logics in [15] and Williamson [17].
+
+For the case of KD, what is needed is a mapping $\delta_{S,i}$ that acts like $\delta_S$ after going through $i$ nestings of $□$, so that $\delta_{S,0}$ is $\delta_S$; the second subscript works as a delay mechanism:
+
+$$
+\begin{aligned}
+\delta_{S,m}p_i&=p_i\\
+\delta_{S,m}\bot&=\bot\\
+\delta_{S,m}(A\to B)&=\delta_{S,m}A\to\delta_{S,m}B\\
+\delta_{S,0}□ A&=\top\quad\text{if }\vdash_S A\\
+&=\bot\quad\text{otherwise}\\
+\delta_{S,m+1}□ A&=□\delta_{S,m}A
+\end{aligned}
+$$
+
+Proposition 6.1 Let $S$ be axiomatized by all $\mathrm{PC}$ theorems and $\{\neg□^i\bot:i>0\}$ with $\mathrm{MP}$ and a set of $□$-introduction rules. If $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^{j(i)}A_i$ for some $j(1),\ldots,j(n)>\#A_0$, then $\vdash_S A_i$ for some $i$ ($0\leq i\leq n$).
+
+Proof:
+
+Claim (i): $\vdash_S\delta_{S,m}\neg□^i\bot$ for all $i,m$.
+
+Proof of Claim (i): If $i\leq m$, $\delta_{S,m}\neg□^i\bot=\neg□^i\delta_{S,m-i}\bot=\neg□^i\bot$. If $m<i$, $\delta_{S,m}\neg□^i\bot=\neg□^m\delta_{S,0}□□^{i-m-1}\bot$; but not $\vdash_S□^{i-m-1}\bot$ since it is easy to show that if $\vdash_S A$ then the result of deleting all modal operators in $A$ is a theorem of PC; hence $\delta_{S,0}□□^{i-m-1}\bot=\bot$, so $\delta_{S,m}\neg□^i\bot=\neg□^m\bot$. In both cases, $\vdash_S\delta_{S,m}\neg□^i\bot$.
+
+Claim (ii): For all $A$, if $\vdash_S A$ then $\vdash_S\delta_{S,m}A$.
+
+Proof of Claim (ii): By induction on $m$.
+
+Basis: $m=0$. Since $\delta_{S,0}$ is $\delta_S$, an argument like that for 5.2 can be used, with Claim (i) supplying the only new point.
+
+Induction step: Suppose that (ii) holds for $m$. We conclude that it holds for $m+1$ by induction on the length of proofs in $S$. Given (i), the only interesting case concerns a $□$-introduction rule $Y\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ used in the axiomatization of $S$. It suffices to show that if $\sigma$ is a substitution, and $\vdash_S\sigma B$ for all $B\in Y$, then $\vdash_S\delta_{S,m+1}((\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H)$. By induction hypothesis, $\vdash_S\delta_{S,m}\sigma B$ for all $B\in Y$. Let $\sigma^\wedge$ be the substitution such that $\sigma^\wedge p_i=\delta_{S,m}\sigma p_i$. By induction on the complexity of $B$, if $\#B=0$ then $\sigma^\wedge B=\delta_{S,m}\sigma B$. Now for all $B\in Y$, $\#B=0$, so $\sigma^\wedge B=\delta_{S,m}\sigma B$, so $\vdash_S\sigma^\wedge B$ by the above. Since $S$ provides the rule, $\vdash_S(\bigwedge_{i\leq k}□\sigma^\wedge G_i)\to□\sigma^\wedge H$. But $\#G_i=\#H=0$, so $\sigma^\wedge G_i=\delta_{S,m}\sigma G_i$ and $\sigma^\wedge H=\delta_{S,m}\sigma H$. Thus $\vdash_S(\bigwedge_{i\leq k}□\delta_{S,m}\sigma G_i)\to□\delta_{S,m}\sigma H$. But $\delta_{S,m+1}((\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H)=(\bigwedge_{i\leq k}□\delta_{S,m}\sigma G_i)\to□\delta_{S,m}\sigma H$.
+
+Claim (iii): If $\#A\leq m$ then $\delta_{S,m}A=A$.
+
+Proof of Claim (iii): By induction on the complexity of $A$.
+
+Claim (iv): $S$ admits the rule of disjunction. $S$ is closed under $\delta_S$ by (ii) for $m=0$; the result follows by 5.1.
+
+Now suppose that $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^{j(i)}A_i$ for some $j(1),\ldots,j(n)>\#A_0$. Let $m=\#A_0$. $\vdash_S\delta_{S,m}(A_0\vee\bigvee_{1\leq i\leq k}□^{j(i)}A_i)$ by (ii). Now $\delta_{S,m}A_0=A_0$ by (iii); since $j(i)>m$ by assumption, $\delta_{S,m}□^{j(i)}A_i=□^m\delta_{S,0}□□^{j(i)-m-1}A_i$. Thus $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^m\delta_{S,0}□□^{j(i)-m-1}A_i$. There are two subcases.
+
+Subcase 1: $\vdash_S□^{j(i)-m-1}A_i$ for no $i$. Thus for all $i$, $\delta_{S,0}□□^{j(i)-m-1}A_i=\bot$, so $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^m\bot$. But $\vdash_S\neg□^m\bot$, so $\vdash_S A_0$.
+
+Subcase 2: $\vdash_S□^{j(i)-m-1}A_i$ for some $i$. By repeated application of (iv), $\vdash_S A_i$.
+
+Proposition 6.2 If $S$ is the closure of $\{\neg□^i\bot:i>0\}$ under some $□$-introduction rules then $S$ provides the alternative rule of disjunction.
+
+Proof: Immediate from 6.1.
+
+Proposition 6.3 If $S$ is the closure of $\{\neg□^i\bot:i>0\}$ under some $□$-introduction rules including $\mathrm{RM}$ then $S$ admits the rule of margins.
+
+Proof: Suppose $\vdash_S A\to□ A$. By RM, $\vdash_S□^iA\to□^{i+1}A$ for all $i$, so $\vdash_S A\to□^iA$ and $\vdash_S\neg A\vee□^iA$ for all $i$, so $\vdash_S\neg A$ or $\vdash_S A$ by 6.2.
+
+Proposition 6.4 If $S$ is the closure of $\{\neg□^i\bot:i>0\}$ under some $□$-introduction rules including $\mathrm{RM}$ and $\mathrm{RN}$ then $S$ admits the MacIntosh rule.
+
+Proof: Suppose $\vdash_S A\to□ A$. By 6.3, either $\vdash_S A$ or $\vdash_S\neg A$. If $\vdash_S A$, then $\vdash_S\neg□\neg A\to A$. If $\vdash_S\neg A$, then $\vdash_S□\neg A$ by RN, so $\vdash_S\neg□\neg A\to A$.
+
+The next proposition shows that 6.3 and 6.4 would be false if the qualification about RM were omitted.
+
+Proposition 6.5 There is a set of $□$-introduction rules including $\mathrm{RN}$ under which the closure of $\{\neg□^i\bot:i>0\}$ admits neither the rule of margins nor the MacIntosh rule.
+
+Proof: Let $S$ be the closure of $\{\neg□^i\bot:i>0\}$ under the $□$-introduction rules RN and $\Vdash □\neg\top\to□(\bot\vee p)$. The weakness of $S$ makes the latter rule quite different from $\Vdash □\bot\to□ p$, since $S$ is highly sensitive to syntactic differences between truth-functionally equivalent wff. The proof will exploit this fact; the strategy is to show that if $S$ admits the MacIntosh rule then $\vdash_S◇\top$, but that the latter is impossible. By the second rule, $\vdash_S□\neg\top\to□(\bot\vee□\neg\top)$, so $\vdash_S(\bot\vee□\neg\top)\to□(\bot\vee□\neg\top)$. Suppose that $S$ provides the MacIntosh rule. Then $\vdash_S\neg□\neg(\bot\vee□\neg\top)\to(\bot\vee□\neg\top)$. By the proof of 6.1, $S$ is closed under $\delta_{S,0}$, i.e. $\delta_S$, so $\vdash_S\delta_S(\neg□\neg(\bot\vee□\neg\top)\to(\bot\vee□\neg\top))$, i.e. $\vdash_S\neg\delta_S□\neg(\bot\vee□\neg\top)\to(\bot\vee\delta_S□\neg\top)$. Now $\delta_S□\neg\top=\bot$, for otherwise $\vdash_S\neg\top$, which is impossible since the result of deleting all occurrences of $□$ in a theorem of $S$ is a theorem of PC; hence $\vdash_S\delta_S□\neg(\bot\vee□\neg\top)$. Thus $\delta_S□\neg(\bot\vee□\neg\top)\neq\bot$, so $\vdash_S\neg(\bot\vee□\neg\top)$ by definition of $\delta_S$; thus $\vdash_S\neg□\neg\top$. Define a mapping $\eta$ by:
+
+$$
+\begin{aligned}
+\eta p_i&=p_i\\
+\eta\bot&=\bot\\
+\eta(A\to B)&=\eta A\to\eta B\\
+\eta□ A&=\bot\quad\text{if }A=□^i\bot\text{ for some }i\geq0\\
+&=\top\quad\text{otherwise.}
+\end{aligned}
+$$
+
+It is easy to show by induction on the length of proofs that if $\vdash_S A$ then $\vdash_{\mathrm{PC}}\eta A$. Thus since $\vdash_S\neg□\neg\top$, $\vdash_{\mathrm{PC}}\eta\neg□\neg\top$; but $\neg\top\neq□^i\bot$ ($\bot$ is primitive), so $\eta□\neg\top=\top$, so $\eta\neg□\neg\top=\neg\top$; thus $\vdash_S\neg\top$, which is impossible. Thus $S$ does not provide the MacIntosh rule. Since the argument from 6.3 to 6.4 used only RN, $S$ does not provide the rule of margins either.
+
+The next proposition shows that 6.4 would be false if the qualification about RN were omitted.
+
+Proposition 6.6 The closure of $\{\neg□^i\bot:i>0\}$ under $\mathrm{RM}$ does not provide the MacIntosh rule.
+
+Proof: Let the system be $S$. Put $\nu□ A=\bot$ for all $A$, and let $\nu$ commute with the other operators. It is easy to show by induction on the length of proofs in $S$ that if $\vdash_S A$ then $\vdash_{\mathrm{PC}}\nu A$. Thus we cannot have $\vdash_S\neg□\neg\bot\to\bot$; but $\vdash_S\bot\to□\bot$.
+
+Examples like those in 6.5 and 6.6 can be given to show the need for the qualifications to the propositions below. There is room for further investigation in this area. For example, the system $S$ in the proof of 6.5 does not provide the rule RE, since not $\vdash_S□\bot\equiv□\neg\top$. Is there a set of $□$-introduction rules including RN and RE under which the closure of $\{\neg□^i\bot:i>0\}$ does not provide both the rule of margins and the MacIntosh rule? In any case, some results are still obtainable when RM is weakened to RE.
+
+Proposition 6.7 If $S$ is the closure of $\{\neg□^i\bot:i>0\}$ under some $□$-introduction rules including $\mathrm{RE}$ then $S$ admits the rule $p\equiv□ p\Vdash p,\neg p$.
+
+Proof: Suppose that $S$ admits RE and $\vdash_S A\equiv□ A$. By RE, $\vdash_S□^iA\equiv□^{i+1}A$ for all $i$, so for all $i$ $\vdash_S A\equiv□^iA$ and $\vdash_S\neg A\vee□^iA$, so $\vdash_S\neg A$ or $\vdash_S A$ by 6.2.
+
+Proposition 6.8 If $S$ is the closure of $\{\neg□^i\bot:i>0\}$ under some $□$-introduction rules including $\mathrm{RE}$ and $\mathrm{RN}$ then $S$ admits the rule $p\equiv□ p\Vdash ◇ p\equiv p$.
+
+Proof: From 6.7 as 6.4 was proved from 6.3.
+
+Proposition 6.9 The closure of $\{\neg□\bot\}$ under some $□$-introduction rules including $\mathrm{RE}$ is the closure of $\{\neg□^i\bot:i>0\}$ under those rules.
+
+Proof: It suffices to show that if $S$ admits RE and $\vdash_S\neg□\bot$ and $\vdash_S\neg□^i\bot$ then $\vdash_S\neg□^{i+1}\bot$. But if $\vdash_S\neg□^i\bot$ then $\vdash_S\bot\equiv□^i\bot$, so by RE $\vdash_S□\bot\equiv□^{i+1}\bot$, so $\vdash_S\neg□^{i+1}\bot$ iff $\vdash_S\neg□\bot$.
+
+Proposition 6.10 If $\mathcal L$ is the closure of the $\mathrm{D}$ schema $□ A\to◇ A$ under some $□$-introduction rules including $\mathrm{RM}$, then there is a set of $□$-introduction rules including those rules under which $\mathcal L$ is the closure of $\{\neg□^i\bot:i>0\}$.
+
+Proof: It suffices to show that $\{\neg□^i\bot:i>0\}$ is a consequence of D by RM and that D is a consequence of $\{\neg□^i\bot:i>0\}$ by RM and the $□$-introduction rule $\Vdash (□ p\wedge□\neg p)\to□\bot$. The latter is trivial. For the former, suppose that $S$ admits RM and contains D. Since $\vdash_S\bot\to\neg\bot$, $\vdash_S□\bot\to□\neg\bot$ by RM; but $\vdash_S□\bot\to\neg□\neg\bot$ by D, so $\vdash_S\neg□\bot$. The result follows by 6.9.
+
+Proposition 6.9 allows $\{\neg□^i\bot:i>0\}$ to be replaced by $\{\neg□\bot\}$ in propositions 6.3, 6.4, 6.6, 6.7 and 6.8 (recall that any theory providing RM also provides RE). Similarly, proposition 6.10 allows $\{\neg□^i\bot:i>0\}$ to be replaced by the D schema (i.e. the set of its instances) in propositions 6.3, and 6.4; it also gives modified versions of 6.1 and 6.2 in which $S$ is the closure of the D schema under some $□$-introduction rules including RM.
+
+We now turn to the T schema. Mappings $\delta^*_{S,m}$ will be used that stand to the $\delta_{S,m}$ mappings as $\delta^*_S$ stands to $\delta_S$ (thus $\delta^*_{S,0}=\delta^*_S$):
+
+$$
+\begin{aligned}
+\delta^*_{S,m}p_i&=p_i\\
+\delta^*_{S,m}\bot&=\bot\\
+\delta^*_{S,m}(A\to B)&=\delta^*_{S,m}A\to\delta^*_{S,m}B\\
+\delta^*_{S,0}□ A&=\delta^*_{S,0}A\quad\text{if }\vdash_S A\\
+&=\bot\quad\text{otherwise}\\
+\delta^*_{S,m+1}□ A&=\delta^*_{S,m+1}A\wedge□\delta^*_{S,m}A
+\end{aligned}
+$$
+
+Proposition 6.11 Let $S$ be axiomatized by all $\mathrm{PC}$ theorems and the $\mathrm{T}$ schema with $\mathrm{MP}$ and a set of $□$-introduction rules including $\mathrm{RE}$. If $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^{j(i)}A_i$ for some $j(1),\ldots,j(n)>\#A_0$, then $\vdash_S A_i$ for some $i$ ($0\leq i\leq n$).
+
+Proof: The strategy is a variant of that used for 6.1.
+
+Claim (i): If $\vdash_S A$ then $\vdash_S\delta^*_{S,0}A$. Since $\delta^*_{S,0}=\delta^*_S$, the argument is as for 5.5 (where RN was not used at the relevant points).
+
+Claim (ii): For all $m$, if $\vdash_S A$ then $\vdash_S\delta^*_{S,m}A$. We show this by induction on the length of proofs, assuming (i).
+
+Basis. PC theorems are unproblematic. For the T axiom, $\delta^*_{S,m+1}(□ A\to A)=(\delta^*_{S,m+1}A\wedge□\delta^*_{S,m}A)\to\delta^*_{S,m+1}A$.
+
+Induction step. MP is unproblematic. It suffices to show that if a $□$-introduction rule $Y\Vdash (\bigwedge_{i\leq k}□ G_i)\to□ H$ is used in the axiomatization of $S$, $\sigma$ is a substitution, and both $\vdash_S\sigma B$ and $\vdash_S\delta^*_{S,m}\sigma B$ for all $B\in Y$, then $\vdash_S\delta^*_{S,m+1}((\bigwedge_{i\leq k}□\sigma G_i)\to□\sigma H)$, i.e. $\vdash_S(\bigwedge_{i\leq k}(\delta^*_{S,m+1}\sigma G_i\wedge□\delta^*_{S,m}\sigma G_i))\to(\delta^*_{S,m+1}\sigma H\wedge□\delta^*_{S,m}\sigma H)$. Thus it suffices to prove $\vdash_S(\bigwedge_{i\leq k}\delta^*_{S,m+1}\sigma G_i)\to\delta^*_{S,m+1}\sigma H$ and $\vdash_S(\bigwedge_{i\leq k}□\delta^*_{S,m}\sigma G_i)\to□\delta^*_{S,m}\sigma H$. The former can be proved by an argument like one in the proof of 4.12 (with $\delta^*_{S,m+1}$ in place of $\tau\upsilon$), the latter by one as in the proof of 6.1.
+
+Claim (iii): For all $m$, if $\#A\leq m$ then $\vdash_S A\equiv\delta^*_{S,m}A$. Proof by induction on the complexity of $A$. The only interesting case is the induction step for $□$. Suppose that $\#□ A\leq m+1$, so $\#A\leq m$. By the induction hypothesis, $\vdash_S A\equiv\delta^*_{S,m}A$. By RE, $\vdash_S□ A\equiv□\delta^*_{S,m}A$. By T, $\vdash_S□ A\to A$; again by the induction hypothesis, $\vdash_S A\equiv\delta^*_{S,m+1}A$, so $\vdash_S□ A\to\delta^*_{S,m+1}A$. Thus $\vdash_S□ A\equiv(\delta^*_{S,m+1}A\wedge□\delta^*_{S,m}A)$, i.e. $\vdash_S□ A\equiv\delta^*_{S,m+1}□ A$.
+
+Now suppose that $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^{j(i)}A_i$ for some $j(1),\ldots,j(n)>\#A_0$. Let $m=\#A_0$. Thus $\vdash_S\delta^*_{S,m}(A_0\vee\bigvee_{1\leq i\leq k}□^{j(i)}A_i)$ by (i) and (ii). Now $\vdash_S A_0\equiv\delta^*_{S,m}A_0$ by (iii). Since $j(i)>m$, it is also easy to prove that $\vdash_S\delta^*_{S,m}□^{j(i)}A_i\to□^m\delta^*_{S,0}□□^{j(i)-m-1}A_i$. Thus $\vdash_S A_0\vee\bigvee_{1\leq i\leq k}□^m\delta^*_{S,0}□□^{j(i)-m-1}A_i$. The rest is as for 6.1, with T in place of (iv).
+
+Proposition 6.12 If $S$ is the closure of the $\mathrm{T}$ schema under some $□$-introduction rules including $\mathrm{RE}$ then $S$ admits the alternative rule of disjunction.
+
+Proof: Immediate from 6.11.
+
+Proposition 6.13 If $S$ is the closure of the $\mathrm{T}$ schema under some $□$-introduction rules including $\mathrm{RE}$ then $S$ admits the rule of margins.
+
+Proof: Suppose that $\vdash_S A\to□ A$. By T, $\vdash_S□ A\to A$, so $\vdash_S A\equiv□ A$. The proof then proceeds as for proposition 6.7, by appeal to 6.12 rather than to 6.2.
+
+Proposition 6.14 If $S$ is the closure of $\mathrm{T}$ under some $□$-introduction rules including $\mathrm{RE}$ and $\mathrm{RN}$ then $S$ admits the MacIntosh rule.
+
+Proof: As for 6.4, by appeal to 6.13 rather than to 6.3.
+
+If one considers the set of all $□$-introduction rules, propositions 6.4 and 6.14 say that KD and KT respectively provide the MacIntosh rule. These results were proved syntactically, as requested by Chellas and Segerberg.
+
+# References
+
+[1] Chellas, B. F., Modal Logic: An Introduction, Cambridge University Press, Cambridge, 1980.
+
+[2] Chellas, B. F. and K. Segerberg, “Modal logics with the MacIntosh rule,” Journal of Philosophical Logic, forthcoming.
+
+[3] Hughes, G. E. and M. J. Cresswell, A Companion to Modal Logic, Methuen, London, 1984.
+
+[4] Humberstone, I. L., “A more discriminating approach to modal logic” (abstract), The Journal of Symbolic Logic, vol. 51 (1986), pp. 503–504.
+
+[5] Kripke, S. A., “Semantical analysis of modal logic I. Normal propositional calculi,” Zeitschrift für Logik und Grundlagen der Mathematik, vol. 9 (1963), pp. 67–96.
+
+[6] Kripke, S. A., “Semantical analysis of modal logic II. Nonnormal modal propositional calculi,” pp. 206–220 in The Theory of Models, edited by J. W. Addison, L. Henkin, and A. Tarski, North-Holland, Amsterdam, 1965.
+
+[7] Lemmon, E. J., “New foundations for Lewis modal systems,” The Journal of Symbolic Logic, vol. 22 (1957), pp. 176–186.
+
+[8] Lemmon, E. J., “An extension algebra and the modal system T,” Notre Dame Journal of Formal Logic, vol. 1 (1960), pp. 3–12.
+
+[9] Lemmon, E. J. and D. S. Scott, The “Lemmon Notes”: An Introduction to Modal Logic, edited by K. Segerberg, Blackwell, Oxford, 1977.
+
+[10] McKinsey, J. C. C. and A. Tarski, “Some theorems about the sentential calculi of Lewis and Heyting,” The Journal of Symbolic Logic, vol. 13 (1948), pp. 1–15.
+
+[11] Rantala, V., “Impossible worlds semantics and logical omniscience,” Acta Philosophica Fennica, vol. 35 (1982), pp. 106–115.
+
+[12] Rybakov, V. V., “Problems of substitution and admissibility in the modal system Grz and in intuitionistic propositional calculus,” Annals of Pure and Applied Logic, vol. 50 (1990), pp. 71–106.
+
+[13] Segerberg, K., An Essay in Classical Modal Logic, Filosofiska Studier, Uppsala, 1971.
+
+[14] Williamson, T., “Verification, falsification and cancellation in KT,” Notre Dame Journal of Formal Logic, vol. 31 (1990), pp. 286–290.
+
+[15] Williamson, T., “An alternative rule of disjunction in modal logic,” Notre Dame Journal of Formal Logic, vol. 33 (1992), pp. 89–100.
+
+[16] Williamson, T., “Inexact knowledge,” Mind, vol. 101 (1992), pp. 217–242.
+
+[17] Williamson, T., “Nongenuine MacIntosh logics,” Journal of Philosophical Logic, forthcoming.

@@ -1,0 +1,692 @@
+# Conditionalizing on Knowledge
+
+Timothy Williamson
+
+The British Journal for the Philosophy of Science 49 (1) (1998): 89–121.
+
+ABSTRACT
+
+A theory of evidential probability is developed from two assumptions: (1) the evidential probability of a proposition is its probability conditional on the total evidence; (2) one’s total evidence is one’s total knowledge. Evidential probability is distinguished from both subjective and objective probability. Loss as well as gain of evidence is permitted. Evidential probability is embedded within epistemic logic by means of possible worlds semantics for modal logic; this allows a natural theory of higher-order probability to be developed. In particular, it is emphasized that it is sometimes uncertain which propositions are part of one’s total evidence; some surprising implications of this fact are drawn out.
+
+1 Evidential probability
+
+2 Uncertain evidence
+
+3 Evidence and knowledge
+
+4 Epistemic accessibility
+
+5 A puzzling phenomenon
+
+Appendix I: Proofs
+
+Appendix II: A non-symmetric epistemic model
+
+# 1 Evidential Probability
+
+When we give evidence for our theories, the propositions we cite are themselves uncertain. Probabilistic theories of evidence have notorious difficulty in accommodating that obvious fact. This paper embeds the fact in a probabilistic theory of evidence. The analysis of uncertainty leads naturally to a simple theory of higher-order probabilities. The first step is to focus on the relevant notion of probability.
+
+Given a scientific hypothesis $h$, we can intelligibly ask: how probable is $h$ on present evidence? We are asking how much the evidence tells for or against the hypothesis. We are not asking what objective physical chance or frequency of truth $h$ has. A proposed law of nature may be quite improbable on present evidence even though its objective chance of truth is 1 (that the evidence bearing on $h$ may include evidence about objective chances or frequencies is irrelevant). Equally, we are not asking about anyone’s actual degree of belief (credence) in $h$. Present evidence may tell strongly against $h$, even though everyone is irrationally certain of $h$.
+
+Is the probability of $h$ on our evidence the credence a perfectly rational being with our evidence would give to $h$? That suggestion comes closer to what is intended, but not close enough. It fails in the way counterfactual analyses usually fail, by ignoring side-effects of the conditional’s antecedent on the truth-value of the analysandum.1 For example, to say that the hypothesis that there are no perfectly rational beings is very probable on our evidence is not to say that a perfectly rational being with our evidence would be very confident that there are no perfectly rational beings. To make the point more carefully, let $p$ be a logical truth such that in this imperfect world it is very probable on our evidence that no one has great credence in $p$. There are such logical truths, although in the nature of the case we cannot be confident that we have identified an example; for all we know, the proposition that Goldbach’s Conjecture is a theorem of first-order Peano Arithmetic is one.2 Let $h$ be the hypothesis that no one has great credence in $p$. By assumption, $h$ is very probable on our evidence. On the view in question, a perfectly rational being with our evidence would therefore have great credence in $h$. Since $p$ is a logical truth, $h$ is logically equivalent to the conjunction $p\mathbin{\&}h$; since a perfectly rational being would have the same credence in logically equivalent hypotheses, it would have great credence in $p\mathbin{\&}h$. But that is absurd, for $p\mathbin{\&}h$ is of the Moore-paradoxical form ‘$\mathrm{A}$ and no one has great credence in the proposition that $\mathrm{A}$’; to have great credence in $p\mathbin{\&}h$ would be self-defeating and irrational. One can have great credence in a true proposition of that form only by irrationally having greater credence in the conjunction than in its first conjunct. Thus the probability of a hypothesis on our evidence does not always coincide with the credence a perfectly rational being with our evidence would have in it.3
+
+Thus we cannot use decision theory as a guide to evidential probability. Suppose, for example, that anyone whose credences have distribution P is vulnerable to a Dutch Book. It may follow that the credences of a perfectly rational being would not have distribution P, if a perfectly rational being would not be vulnerable to a Dutch Book, but it would be fallacious to conclude that probabilities on our evidence do not have distribution P, for those probabilities need not coincide with the hypothetical credences of a perfectly rational being. Perhaps only an imperfectly rational being could have exactly our evidence, which includes our evidence about ourselves. The irrationality of distributing credence according to the probabilities on one’s evidence may simply reflect one’s limited rationality, as reflected in one’s evidence. But it would be foolish to respond by confining evidential probability to the evidence of a perfectly rational creature. That would largely void the notion of interest; we care about probabilities on our evidence.
+
+For all that has been said, any agent with credences that fail to satisfy subjective Bayesian constraints may be eo ipso subject to rational criticism. This would apply in particular to the agent’s beliefs about probabilities on its evidence. But it would apply equally to the agent’s beliefs about objective physical chances, or anything else. Just as it implies nothing specific about objective physical chances, so it implies nothing specific about probabilities on evidence.
+
+What then are probabilities on evidence? We should resist demands for an operational definition; such demands are as damaging in the philosophy of science as they are in science itself. To require mathematicians to give a precise definition of ‘set’ would be to abolish set theory. Sometimes the best policy is to go ahead and theorize with a vague but powerful notion. One’s original intuitive understanding becomes refined as a result, although rarely to the point of a definition in precise pretheoretic terms. That policy will be pursued here. The discussion will assume an initial probability distribution $\mathrm{P}$. $\mathrm{P}$ does not represent actual or hypothetical credences. Rather, $\mathrm{P}$ measures something like the intrinsic plausibility of hypotheses prior to investigation (this notion of intrinsic plausibility can vary in extension between contexts). $\mathrm{P}$ will be assumed to satisfy a standard set of axioms for the probability calculus: $\mathrm{P}(p)$ is a nonnegative real number for every proposition $p$; $\mathrm{P}(p)=1$ whenever $p$ is a logical truth; $\mathrm{P}(p\vee q)=\mathrm{P}(p)+\mathrm{P}(q)$ whenever $p$ is inconsistent with $q$. If $\mathrm{P}(q)>0$, the conditional probability of $p$ on $q$, $\mathrm{P}(p\mid q)$, is defined as $\mathrm{P}(p\mathbin{\&}q)/\mathrm{P}(q)$. $\mathrm{P}(p)$ is taken to be defined for all propositions; the standard objection that the subject may never have considered $p$ is irrelevant to the non-subjective probability $\mathrm{P}$. But $\mathrm{P}$ is not assumed to be syntactically definable. Carnap’s programme is moribund. The difference between green and grue is not a formal one.
+
+Consider an analogy. The concept of possibility is vague and cannot be defined syntactically. But that does not show that it is spurious. In fact, it is indispensable. Moreover, we know some sharp structural constraints on it: for example, that a disjunction is possible if and only if at least one of its disjuncts is possible. The present suggestion is that probability is in the same boat as possibility, and none the worse for that.
+
+On the view to be defended here, the probability of a hypothesis $h$ on total evidence $e$ is $\mathrm{P}(h\mid e)$. An account will be given of when a proposition $e$ constitutes one’s total evidence. The best that evidence can do for a hypothesis is to entail it (so $\mathrm{P}(h\mid e)=1$); the worst that evidence can do is to be inconsistent with it (so $\mathrm{P}(h\mid e)=0$). Between those extremes, the initial probability distribution provides a continuum of intermediate cases, in which the evidence comes more or less close to requiring or ruling out the hypothesis.
+
+The axioms entail that logically equivalent propositions have the same probability on given evidence. The reason is not that a perfectly rational being would have the same credence in them, for the irrelevance of such beings to evidential probability has already been noted. The axioms are not idealizations, false in the real world. Rather, they stipulate what kind of thing we are choosing to study. We are using a notion of probability which (like the notion of incompatibility) is insensitive to differences between logically equivalent propositions. We thereby gain mathematical power and simplicity at the loss of some descriptive detail (e.g. in the epistemology of mathematics): a familiar bargain.
+
+The characterization of the prior distribution for evidential probability is blatantly vague. If that seems to disadvantage it with respect to subjective Bayesian credences, which can be more precisely defined in terms of consistent betting behaviour, the contrast in precision disappears in epistemological applications. Given a finite body of evidence $e$, almost any posterior distribution results from a sufficiently eccentric prior distribution by Bayesian updating on $e$. Theorems on the ‘washing out’ of differences between priors by updating on evidence apply only ‘in the limit’; they tell us nothing about where we are now.4 Successful Bayesian treatments of specific epistemological problems (e.g. Hempel’s paradox of the ravens) assume that subjects have ‘reasonable’ prior distributions. We judge a prior distribution reasonable if it complies with our intuitions about the intrinsic plausibility of hypotheses. This is the same sort of vagueness as infects the present approach, if slightly better hidden.
+
+One strength of Bayesianism is that the mathematical structure of the probability calculus allows it to make illuminating distinctions that other approaches miss and to provide a qualitatively fine-grained analysis of epistemological problems, given assumptions about all reasonable prior distributions. That strength is common to subjective and objective Bayesianism, for it depends on the structure of the probability calculus. On the present approach, which can be regarded as a form of objective Bayesianism, the axioms of probability theory embody substantive assumptions, as the axioms of set theory do. For example, the restriction of probabilities to real numbers limits the number of gradations in probability to the cardinality of the continuum. Just as the axioms of set theory refine our notion of set, so the axioms of probability theory refine our notion of evidential probability.
+
+Those remarks are not intended to smother all doubts about the initial probability distribution. Their aim is to justify the procedure of tentatively postulating such a distribution, in order to see what use can be made of it in developing a theory of evidential probability. That is the focus of this paper.5
+
+# 2 Uncertain Evidence
+
+Suppose that evidential probabilities are indeed probabilities conditional on the evidence. Then, trivially, the evidence itself has evidential probability 1. $\mathrm{P}(e\mid e)=1$ whenever it is defined. Does this require evidence to be absolutely certain? If so, how can evidential probabilities fit into a non-Cartesian epistemology?
+
+Given that evidential probabilities are probabilities conditional on the evidence, one cannot avoid attributing evidential probability 1 to the evidence by denying that evidence is propositional, for the probabilities of hypotheses conditional on the evidence are defined only if evidence is propositional. $\mathrm{P}(h\mid e)=\mathrm{P}(h\mathbin{\&}e)/\mathrm{P}(e)$; this equation makes sense only if $e$ is propositional. Since the present approach identifies evidential probabilities with probabilities conditional on the evidence, it is committed to treating evidence as propositional.6
+
+We should question the association between evidential probability 1 and absolute certainty. For subjective Bayesians, probability 1 is the highest possible degree of belief, which presumably is absolute certainty. If one’s credence in $p$ is 1, one should be willing to accept a bet on which one gains a penny if $p$ is true and is tortured horribly to death if $p$ is false. Few propositions pass that test. But since evidential probabilities are not actual or counterfactual credences, why should evidential probability 1 entail absolute certainty?
+
+There is a further link between probability 1 and certainty. Bayesian accounts of learning from experience give a significance to probability 1 which does not depend on any identification of probabilities with actual or counterfactual credences. Suppose that the new evidence gained on some occasion is $e$. On the standard Bayesian account of this simple case, probabilities should be updated by conditionalization on $e$. The updated unconditional probability of $p$ is its previous probability conditional on $e$:
+
+$$\mathrm{P}_{\mathrm{new}}(p)=\mathrm{P}_{\mathrm{old}}(p\mid e)=\mathrm{P}_{\mathrm{old}}(p\mathbin{\&}e)/\mathrm{P}_{\mathrm{old}}(e)\qquad(\mathrm{P}_{\mathrm{old}}(e)\ne0)$$
+
+BCOND
+
+We can interpret BCOND as a claim about evidential probabilities. Note that $\mathrm{P}_{\mathrm{old}}$ is not absolutely prior probability $\mathrm{P}$, but probability on all the evidence gained prior to $e$. Suppose further, as Bayesians often do, that such conditionalization is the only form of updating which the probabilities undergo. By BCOND, $\mathrm{P}_{\mathrm{new}}(e)=1$. When $\mathrm{P}_{\mathrm{new}}$ is updated to $\mathrm{P}_{\mathrm{vnew}}$ by conditionalization on still newer evidence $f$, $\mathrm{P}_{\mathrm{vnew}}(e)=\mathrm{P}_{\mathrm{new}}(e\mid f)=\mathrm{P}_{\mathrm{new}}(e\mathbin{\&}f)/\mathrm{P}_{\mathrm{new}}(f)=1$ whenever conditionalization on $f$ is defined. Thus $e$ will retain probability 1 through all further conditionalizations; since no other form of updating is contemplated, $e$ will retain probability 1. Once a proposition has been evidence, its status is as good as evidence ever after; probability 1 is a lifetime’s commitment. On this model of updating, when a proposition becomes evidence it acquires an epistemically privileged feature which it cannot subsequently lose. How can that be? Surely any proposition learnt from experience can in principle be epistemically undermined by further experience.
+
+What propositions could attain that unassailable epistemic status? Science treats as evidence propositions such as ‘13 of the 20 rats injected with the drug died within 24 hours’; one may discover tomorrow that a disaffected laboratory technician had substituted dead rats for living ones. The Cartesian move is to find certainty in propositions about one’s own current mental state (‘I seem to see a dead rat’; ‘My current degree of belief that 13 of the 20 rats died is 0.97’). Arguably, we are fallible even about our own current mental states.7 But even if that point is waived, and we are assumed to be infallible about a mental state when we are in it, we do not remain infallible about it later. However certain I am today of the proposition that I now express by the sentence ‘I seem to see a dead rat’, I may be uncertain tomorrow of the same proposition, then expressed by the sentence ‘Yesterday I seemed to see a dead rat’; I can wonder whether I really remember seeming to see a dead rat, or only imagine it.8 We are uncontroversially fallible about our own past mental states. We are likewise fallible about the mental states of others. You can doubt whether I seem to myself to see a dead rat; even if I tell you that I seem to myself to see one, you may wonder whether I am lying. Yet science relies on intersubjectively available evidence. Even Bayesian epistemologists assume that evidence is intersubjectively available. Consider, for instance, the arguments that individual differences between prior probability distributions are ‘washed out’ in the long run by conditionalization on accumulating evidence; they typically assume that different individuals are conditionalizing on the same evidence.9 If we start with different prior probabilities, and I conditionalize on evidence about my mental state while you conditionalize on evidence about your mental state, our posterior probabilities need not converge.
+
+The point generalizes. It is tempting to make a proposition $p$ certain for a subject S at a time $t$ by attributing a special authority to S’s belief at $t$ in $p$. But then belief in $p$ by other subjects or at other times has a special lack of authority, because it is trumped by S’s belief at $t$. For example, to the extent to which eyewitness reports of an event have a special status, non-eyewitness reports are vulnerable to being overturned by them. Thus it is hard to see how any empirical proposition could have the intertemporal and intersubjective certainty which the conditionalization account demands of evidence.
+
+The standard response is to generalize Bayesian conditionalization to Jeffrey conditionalization (probability kinematics). For a proposition $p$, in Bayesian conditionalization on $e$ ($0<\mathrm{P}_{\mathrm{old}}(e)<1$):
+
+$$\mathrm{P}_{\mathrm{old}}(p)=\mathrm{P}_{\mathrm{old}}(e)\mathrm{P}_{\mathrm{old}}(p\mid e)+\mathrm{P}_{\mathrm{old}}(\mathord{\sim} e)\mathrm{P}_{\mathrm{old}}(p\mid\mathord{\sim} e)$$
+
+(i)
+
+$$\mathrm{P}_{\mathrm{new}}(p)=\mathrm{P}_{\mathrm{new}}(e)\mathrm{P}_{\mathrm{old}}(p\mid e)+\mathrm{P}_{\mathrm{new}}(\mathord{\sim} e)\mathrm{P}_{\mathrm{old}}(p\mid\mathord{\sim} e)$$
+
+(ii)
+
+For BCOND, the weights $\mathrm{P}_{\mathrm{new}}(e)$ and $\mathrm{P}_{\mathrm{new}}(\mathord{\sim} e)$ in (ii) are 1 and 0 respectively. Probabilities conditional on $e$ are unchanged ($\mathrm{P}_{\mathrm{new}}(p\mid e)=\mathrm{P}_{\mathrm{old}}(p\mid e)$). What has changed is their weight in determining unconditional probabilities; it has increased from $\mathrm{P}_{\mathrm{old}}(e)$ to 1. But when experience makes $e$ more probable without making it certain, Jeffrey conditionalization allows us to retain (ii) ((i) is automatic) and make $\mathrm{P}_{\mathrm{new}}(e)$ larger than $\mathrm{P}_{\mathrm{old}}(e)$ without making it 1. This increases the weight of probabilities conditional on $e$ at the expense of probabilities conditional on $\mathord{\sim} e$, while giving some weight to both. More generally, experience may cause us to redistribute probability amongst various possibilities, whilst leaving probabilities conditional on those possibilities fixed. Let $\{e_1,\ldots,e_n\}$ be a partition (i.e. as a matter of logic, exactly one proposition in the set is true) such that $\mathrm{P}_{\mathrm{old}}(e_i)>0$ for $1\le i\le n$.10 Then $\mathrm{P}_{\mathrm{new}}$ comes from $\mathrm{P}_{\mathrm{old}}$ by Jeffrey conditionalization with respect to $\{e_1,\ldots,e_n\}$ just in case every proposition $p$ satisfies:
+
+$$\mathrm{P}_{\mathrm{new}}(p)=\displaystyle\sum_{1\le i\le n}\mathrm{P}_{\mathrm{new}}(e_i)\mathrm{P}_{\mathrm{old}}(p\mid e_i)$$
+
+JCOND
+
+Bayesian conditionalization is just the special case where $\{e_1,\ldots,e_n\}=\{e,\mathord{\sim} e\}$ and $\mathrm{P}_{\mathrm{new}}(e)=1$.
+
+Jeffrey conditionalization cannot reduce probabilities from 1. If $\mathrm{P}_{\mathrm{old}}(p)=1$ then $\mathrm{P}_{\mathrm{new}}(p)=1$ by JCOND. The idea is rather that no empirical proposition need acquire probability 1 when one learns from experience. On the approach of this paper, by contrast, evidence must have evidential probability 1, and some empirical propositions must be evidence if evidential probabilities are ever to change. Should the present approach be modified to permit Jeffrey conditionalization?
+
+The updating of evidential probability by Jeffrey conditionalization is hard to integrate with any adequate epistemology, because we have no substantive answer to the question: what should the new weights $\mathrm{P}_{\mathrm{new}}(e_i)$ be? Indeed, if sufficiently fine partitions are used, any probability distribution $\mathrm{P}_{\mathrm{new}}$ is the outcome of any probability distribution $\mathrm{P}_{\mathrm{old}}$ by JCOND, provided only that $\mathrm{P}_{\mathrm{new}}(p)=1$ whenever $\mathrm{P}_{\mathrm{old}}(p)=1$ and the set of relevant propositions is finite.11 Arguably, the same applies to BCOND.12 But there is a simple schematic answer to the epistemological question ‘Which instances of BCOND update evidential probability?’: those in which $e$ is one’s new evidence. Although that answer immediately raises the further question ‘What is one’s evidence?’, it still constitutes progress, for it divides the theoretical labour, allowing other work in epistemology and in philosophy of science to provide Bayesianism with its theory of evidence. To the parallel question ‘Which instances of JCOND update evidential probability?’, no such simple answer will do. Jeffrey conditionalization is not conditionalization on evidence-constituting propositions. Moreover, the weights $\mathrm{P}(e_i)$ are highly sensitive to background knowledge. When I see a cloth by candlelight, the new probability that it is green depends on my prior knowledge about its colour, the reliability of my eyesight and the lighting conditions. Attempts to isolate an evidential input in JCOND have not met with success.13 Jeffrey conditionalization seems not to admit the kind of articulation which would allow work in other areas of epistemology and of philosophy of science to provide it with a standard of appropriateness for the weights. Without such a standard, an account based on Jeffrey conditionalization promises little insight.
+
+Jeffrey evades the normative question by emphasizing the involuntariness of perceptual beliefs. He denies that sense experience provides reasons for belief: it is a mere cause, and none the worse for that.14 However, normative questions arise even for involuntary beliefs. When the sight of a black cat causes a superstitious man to believe that disaster is about to strike, it may be improbable on his evidence that disaster is about to strike. Although most perceptual beliefs are involuntary, Jeffrey himself is willing to judge them by norms, for he regards Bayesianism as a normative theory, not a descriptive one.15
+
+The problem about the certainty of evidence arose from the combination of two claims:
+
+PROPOSITIONALITY The evidential probability of a proposition is its probability conditional on evidence propositions.
+
+MONOTONICITY Once a proposition has evidential probability 1, it keeps it thereafter.
+
+For PROPOSITIONALITY entails that evidence propositions have evidential probability 1, which by MONOTONICITY implies that they have that status ever after, which is epistemologically implausible. Accounts based on Jeffrey conditionalization retain MONOTONICITY but reject PROPOSITIONALITY; however, they do not yield a non-empty account of evidential probability. A more promising strategy is to retain PROPOSITIONALITY and reject MONOTONICITY. It will be pursued here. PROPOSITIONALITY will henceforth be assumed.
+
+Both BCOND and JCOND allow propositions to acquire probability 1, but not to lose it. They are asymmetric between past and future. Thus a model on which all updating is by Jeffrey or Bayesian conditionalization embodies the empirical assumption that evidence is cumulative, in the sense of MONOTONICITY. In many cases this assumption is false. Bayesians have forgotten forgetting. I toss a coin, see it land heads, put it back in my pocket and fall asleep; when I wake up I have forgotten how it landed. When I see it land heads, the proposition $e$ that it landed heads is part of my evidence; $e$ has probability 1 on my evidence. When I wake, $e$ presumably has probability $1/2$ on my evidence. No sequence of Bayesian or Jeffrey conditionalizations produced this change in my evidential probabilities. Yet I have not been irrational. I did my best to memorize the result of the toss, and even tried to write it down, but I could not find a pen, and the drowsiness was overwhelming. Forgetting is not irrational; it is just unfortunate. MONOTONICITY is sometimes a useful idealization; it is not inherent in the nature of rationality.16
+
+A proposition can lose the status of evidence for me even when in the usual sense I forget nothing. I see one red and one black ball put into an otherwise empty bag, and am asked the probability that on the first ten thousand draws with replacement a red ball is drawn each time. I reply ‘$1/2^{10,000}$’. Part of my evidence is the proposition $e$ that a black ball was put into the bag; my calculation relies on it. Now suppose that on the first ten thousand draws a red ball is drawn each time, a contingency which my evidence does not rule out in advance, since its evidential probability is nonzero. But when I have seen it happen, I will rationally come to doubt $e$; I will falsely suspect that the ball only looked black by a trick of the light. Thus $e$ will no longer form part of my evidence. The traditionalist claim that the possibility of later doubt shows that $e$ never was part of my evidence presupposes an untenably Cartesian epistemology.
+
+On standard Bayesian accounts of updating, the only present trace of past evidence is in present probabilities. No separate record is kept of evidence, off which a proposition can be struck. But a theory of evidential probability can keep separate track of evidence and still preserve much of the Bayesian framework.17 Let $\mathrm{P}$ be the prior probability distribution, $e_w$ the conjunction of all old and new evidence for some individual or community S in a circumstance $w$, and $\mathrm{P}_w(p)$ the evidential probability of a proposition $p$ for S in $w$. The proposal is that $\mathrm{P}_w$ is the conditionalization of $\mathrm{P}$ on $e_w$,
+
+$$\mathrm{P}_w(p)=\mathrm{P}(p\mid e_w)=\mathrm{P}(p\mathbin{\&}e_w)/\mathrm{P}(e_w)\qquad(\mathrm{P}(e_w)>0)$$
+
+ECOND
+
+ECOND formalizes PROPOSITIONALITY. It allows MONOTONICITY to fail, for if one forgets something between $t$ and a later time $t\text{*}$, being in circumstances $w$ and $w\text{*}$ at $t$ and $t\text{*}$ respectively, then $e_{w\text{*}}$ need not entail $e_w$, so possibly $\mathrm{P}_{w\text{*}}(e_w)<1$ even though $\mathrm{P}_w(e_w)=1$. Thus a proposition can decrease in probability from 1. In that sense, evidence need not be certain.
+
+When no evidence is lost between $w$ and $w\text{*}$, $e_{w\text{*}}$ is equivalent to $e_w\mathbin{\&}f$, where $f$ is the conjunction of the new evidence gained in that interval, and ECOND implies that $\mathrm{P}_{w\text{*}}$ results from conditionalizing $\mathrm{P}_w$ on the new evidence $f$. Formally, for any proposition $p$:
+
+$\begin{aligned}
+\mathrm{P}_{w\text{*}}(p)&=\mathrm{P}(p\mathbin{\&}e_w\mathbin{\&}f)/\mathrm{P}(e_w\mathbin{\&}f)\\
+&=(\mathrm{P}(p\mathbin{\&}e_w\mathbin{\&}f)/\mathrm{P}(e_w))/(\mathrm{P}(e_w\mathbin{\&}f)/\mathrm{P}(e_w))\\
+&=\mathrm{P}_w(p\mathbin{\&}f)/\mathrm{P}_w(f)=\mathrm{P}_w(p\mid f)
+\end{aligned}$
+
+BCOND is the special case of ECOND when evidence is cumulative. Thus Bayesian conditionalization can be recovered when needed.
+
+The distribution $\mathrm{P}$ is conceptually rather than temporally prior; it need not coincide with $\mathrm{P}_w$ for any circumstance $w$ that some subject is in at some time, for $\mathrm{P}$ is not a distribution of credences, and the subject may have non-trivial evidence at every time. An incidental advantage of this approach is that it helps with the problem of old evidence.18 One would like to say that $e$ confirms $h$ just in case the conditional probability of $h$ on $e$ is higher than the unconditional probability of $h$. If $e$ is already part of the evidence then its probability is 1, and the conditional probabilities are identical; yet old evidence does sometimes confirm hypotheses. Appeals are sometimes made to probabilities in past or counterfactual circumstances in which the evidence does not include $e$, but they produce anomalous results, because the evidence in those circumstances may be distorted by irrelevant factors.
+
+Example: A coin is tossed ten times. Let $h$ be the hypothesis that it landed the same way each time. The initial probability of $h$ is $1/2^9$. Witness A says ‘I saw the first six tosses; it landed heads each time’. Witness B then says ‘I saw the last four tosses; it landed tails each time’; let $e$ be the proposition that B said this. We have no reason to doubt A and B; if they are both telling the truth, $h$ is false. But B’s statement causes A to break down; he admits that he was lying, and has no relevant knowledge. If B had not made his statement, A would not have withdrawn his, and there would have been no reason to suspect that he was lying. Thus in the nearest past or counterfactual circumstances in which $e$ was not part of our evidence, the conditional evidential probability of $h$ on $e$ is lower than the unconditional evidential probability of $h$. Nevertheless, in our present situation, $e$ does confirm $h$, for since we still have no reason to doubt B, the probability of $h$ on our evidence is around $1/2^6$. Once we have the prior probability distribution $\mathrm{P}$, we can say that $\mathrm{P}(h\mid e)>\mathrm{P}(h)$.19 Of course, these remarks are schematic, but at least the general form of the solution does not introduce the irrelevant complications consequent on an identification of the probabilities with past or counterfactual credences.
+
+# 3 Evidence and Knowledge
+
+Which propositions are one’s evidence? Without a substantive conception of evidence, probabilistic epistemology is empty; in practice, it has taken the existence of such a conception for granted without itself supplying one.
+
+Different conceptions of evidence are compatible with ECOND. A simple, natural proposal is that one’s evidence is one’s body of knowledge. More precisely, the total evidence $e_w$ of an individual or community S in a circumstance $w$ is the conjunction of all the propositions S knows in $w$. Call that equation E = K.20 Since evidence can lose probability 1, the defeasibility of knowledge by later evidence is no objection to E = K. When I see the black ball put into the bag, the proposition that a black ball was put into the bag becomes part of my evidence because I know that a black ball was put into the bag. When I have seen a red ball drawn each time on the first ten thousand draws, that further evidence undermines my knowledge that a black ball was put into the bag, and the previously known proposition ceases to be part of my evidence. Since only true propositions are known, evidence consists entirely of true propositions, but one true proposition can cast doubt on another.
+
+Subjective Bayesians might identify one’s evidence with one’s beliefs (understood as propositions of subjective probability 1) rather than with one’s knowledge (E = B). Given E = B, one can manufacture evidence for one’s favourite theories simply by getting oneself into a state of certainty about appropriate propositions (e.g. that one has just seen one’s guru perform a miracle). That does not capture the spirit of the injunction to proportion one’s belief to one’s evidence.
+
+No positive argument will be developed here for E = K.21 The rest of the paper develops the conjunction of E = K with ECOND as a theory of evidential probabilities, in a way which indicates at least their mutual coherence. The concept of knowledge is sometimes regarded as a kind of survival from stone age thinking, to be replaced by probabilistic concepts for the purposes of serious twentieth-century epistemology. That view assumes that the probabilistic concepts do not depend on the concept of knowledge. If E = K and ECOND are true, that assumption is false. The concepts of knowledge and evidential probability are complementary; neither can replace the other.
+
+Some initially surprising results of the theory stem from the fact that we are not always in a position to know whether we know something; by E = K, we are not always in a position to know whether something is part of our evidence. This consequence is independently plausible. Whether something is part of our evidence does not depend solely on whether we believe it to be part of our evidence. That $p$ is part of our evidence is a non-trivial condition; arguably, no non-trivial condition is such that whenever it obtains one is in a position to know that it obtains.22 But if we are not always in a position to know whether something is part of our evidence, how can we use evidence? We shall sometimes not be in a position to know the probability of a proposition on our evidence. How then can we follow the rule ‘Proportion your belief in a proposition to its probability on your evidence’?
+
+There is a recurrent temptation to suppose that we can follow a rule only if it is always cognitively transparent to us whether we are complying with it. On this view, if we are sometimes not in a position to know whether we are $\phi$ing when C, then we cannot follow the rule ‘$\phi$ when C’; at best we can follow the rule ‘Do what appears to you to be $\phi$ing when it appears to you that C’. For instance, we cannot follow the rule ‘Add salt when the water boils’ because we are not always in a position to know whether something is really salt, water or boiling; at best we can follow the rule ‘Do what appears to you to be adding salt when what appears to you to be water appears to you to boil’. Can we even follow the modified rule? That something appears to us to be so is itself a non-trivial condition. But we can follow the rule ‘Add salt when the water boils’, even though we occasionally make mistakes in doing so. It is enough that we often know whether the condition obtains. Compliance with a non-trivial rule is never a perfectly transparent condition. We use rules about evidence for our beliefs because they are often less opaque than rules about the truth of our beliefs; perfect transparency is neither possible nor necessary.
+
+Just as we can follow the rule ‘Add salt when the water boils’, so we can follow the rule ‘Proportion your belief in a proposition to its probability on your evidence’. Although we are sometimes reasonably mistaken or uncertain as to what our evidence is and how probable a proposition is on it, we often enough know enough about both to be able to follow the rule. It is easier to follow than ‘Believe a proposition if it is true’, but not perfectly easy. And just as adding salt when the water boils is not equivalent to doing one’s rational utmost to add salt when the water boils, so proportioning one’s belief in a proposition to its probability on one’s evidence is not equivalent to doing one’s rational utmost to proportion one’s belief in a proposition to its probability on one’s evidence. The content of a rule cannot be reduced to what it is rational to do in attempting to comply with it. Evidential probabilities are not rational credences.
+
+The next task is to develop a formal framework for the combination of E = K with ECOND, by appropriating some ideas from epistemic logic.23 Within this framework, the failure of cognitive transparency for evidential probabilities will receive a formal analysis.
+
+# 4 Epistemic Accessibility
+
+Start with a set of mutually exclusive and jointly exhaustive circumstances. Each circumstance will be required to answer the question ‘What evidence have I?’, and so will need to specify a subject (to interpret ‘I’) and a time (to interpret the present tense of ‘have’).24 Thus a circumstance is not an ordinary possible world; my circumstances and yours today and yesterday are four distinct circumstances in the actual world. Circumstances are more like centred worlds. In a given application, circumstances need be specific only in relevant respects (a set of all circumstances is assumed). The relevant propositions are true or false in each circumstance, and closed under truth-functional combinations. Assume that for each set of circumstances, some proposition is true in every circumstance in the set and false in every other circumstance. The truth of a proposition may vary with the subject or time of the circumstance, even if all other features are fixed. Thus the proposition that one is sitting may be true in my actual circumstance now and false in my actual circumstance a minute ago.25
+
+Let $\mathrm{P}$ be a prior probability distribution as in section 1. $\mathrm{P}$ is assumed to satisfy the axioms of the probability calculus as stated in terms of circumstances. Thus $\mathrm{P}(p)=1$ whenever $p$ is true in every circumstance; $\mathrm{P}(p\vee q)=\mathrm{P}(p)+\mathrm{P}(q)$ whenever $p$ and $q$ are in no circumstance both true. Consequently, if $p$ and $q$ are true in exactly the same circumstances, $\mathrm{P}(p)=\mathrm{P}(q)$.26 For any set $\mathrm{S}$ of circumstances, some proposition is true at exactly the circumstances in $\mathrm{S}$, and all such propositions are equiprobable; thus the assignment of probabilities to propositions induces a unique assignment of probabilities to set of circumstances. Conversely, an assignment of probabilities to sets of circumstances induces a unique assignment of probabilities to propositions.
+
+Propositions are known or not known in circumstances; propositions about which propositions one knows are true or false in circumstances. A circumstance’s subject, time and world parameters fix an answer to the question ‘What do I know?’ The account will not assume any general principle about knowledge, except that a proposition is true in any circumstance in which it is known. In particular, it will not assume logical omniscience; if $p$ and $q$ are true in exactly the same circumstances, one may know $p$ and not know $q$. Call a circumstance $x$ epistemically accessible (‘accessible’ for short) from a circumstance $w$ just in case every proposition one knows in $w$ is true in $x$. A circumstance is accessible if, for all one knows, one is in it. Since knowledge implies truth, every circumstance is accessible from itself. A proposition $p$ is consistent with propositions $q_1,\ldots,q_n$ just in case all of $p$ and $q_1,\ldots,q_n$ are true in some circumstance; thus, in a circumstance $w$, $p$ is consistent with what one knows just in case $p$ is true in some circumstance accessible from $w$ (compare the standard possible worlds semantics for $◇$). Similarly, $p$ follows from $q_1,\ldots,q_n$ just in case $p$ is true in every circumstance in which all of $q_1,\ldots,q_n$ are true; thus, in a circumstance $w$, $p$ follows from what one knows just in case $p$ is true in every circumstance accessible from $w$ (compare the standard possible-worlds semantics for $□$). Trivially, if one knows a proposition then it follows from what one knows, but the converse may fail, since one need not know that which follows from what one knows.
+
+Now assume ECOND and E = K; in all circumstances, evidential probabilities are probabilities conditional on one’s evidence and one’s evidence is what one knows. For any circumstance $w$, $e_w$ is the conjunction of the subject’s evidence in $w$. By E = K, $e_w$ is true in all and only the circumstances accessible from $w$. $\mathrm{P}_w$ is the distribution of evidential probabilities for one in $w$. ECOND says that $\mathrm{P}_w$ results from conditionalizing the appropriate prior distribution $\mathrm{P}$ on $e_w$.
+
+When the set of circumstances is at most countably infinite, a further natural constraint on $\mathrm{P}$ is that it be regular, in the sense that $\mathrm{P}(p)=0$ only if $p$ is true in no circumstance: the probability distribution does not rule out any circumstance in advance.27 The most natural distributions are those for which there is a finite number $n$ of circumstances, and $\mathrm{P}(p)=m/n$ whenever $p$ is true in exactly $m$ circumstances, but such uniformity in $\mathrm{P}$ will not be assumed. Since knowledge entails truth, $e_w$ is always true in $w$. Thus when $\mathrm{P}$ is regular, $\mathrm{P}(e_w)>0$ for each $w$, so ECOND defines evidential probabilities everywhere. Regularity also entails that the evidential probability of $p$ is 1 only if $p$ follows from one’s evidence, for if $p$ is false in some circumstance in which $e_w$ is true, then $\mathrm{P}(\mathord{\sim} p\mathbin{\&}e_w)>0$, so $\mathrm{P}_w(p)<1$. Regularity likewise entails that $p$ follows from what one knows if and only if the evidential probability of $p$ is 1, and that $p$ is consistent with what is known if and only if the evidential probability of $p$ is nonzero.
+
+Propositions about evidential probability are themselves true or false in circumstances. For example, the proposition that $p$ is more probable than not on the evidence is true in $w$ just in case $\mathrm{P}_w(p)>\tfrac12$.28 Thus propositions about evidential probability themselves have probabilities.29
+
+In the manner of possible worlds semantics, conditions on accessibility correspond to conditions on knowledge, which in turn have implications for evidential probabilities. For example, accessibility is transitive just in case for every proposition $p$ in every circumstance, if $p$ follows from what one knows then that $p$ follows from what one knows itself follows from what one knows (compare the S4 axiom $□ p\supset□□ p$ in modal logic). The latter condition follows from the notorious ‘KK’ principle that when one knows $p$, one knows that one knows $p$; it is slightly weaker, but not in ways which should make it much less controversial.30 For a regular probability distribution, transitivity is equivalent to the condition that when $p$ has evidential probability 1, the proposition that $p$ has evidential probability 1 itself has evidential probability 1.
+
+Accessibility is symmetric just in case for every proposition $p$ in every circumstance, if $p$ is true then that $p$ is consistent with what one knows follows from what one knows (compare the Brouwerian axiom $p\supset□◇ p$). For a regular probability distribution, symmetry is equivalent to the condition that when $p$ is true, the proposition that $p$ has nonzero evidential probability has evidential probability 1. There is good reason to doubt that accessibility is symmetric. Let $x$ be a circumstance in which one has ordinary perceptual knowledge that the ball taken from the bag is black. In some circumstance $w$, the ball taken from the bag is red, but freak lighting conditions cause it to look black, and everything one knows is consistent with the hypothesis that one is in $x$. Thus $x$ is accessible from $w$, because every proposition one knows in $w$ is true in $x$; but $w$ is not accessible from $x$, because the proposition that the ball taken from the bag is black, which one knows in $x$, is false in $w$. Let $p$ be the proposition that the ball taken from the bag is red. In $w$, $p$ is true, but that $p$ is consistent with what one knows does not follow from what one knows, for what one knows is consistent with the hypothesis that one knows $\mathord{\sim} p$.31 On a regular probability distribution, the evidential probability in $w$ of the proposition that $p$ has nonzero evidential probability falls short of 1.
+
+Such examples depend on less than Cartesian standards for knowledge and evidence; Bayesian epistemology must learn to live with such standards. Moreover, failures of symmetry can result from processing constraints, even when false beliefs are not at issue.32 For a crude example, imagine a creature that knows all the propositions recorded in its memory; pretend that it is somehow physically impossible for false propositions to be recorded there. Unfortunately, there is no limit to the time taken to deliver propositions from memory to the creature’s central processing unit. Now toadstools are in fact poisonous for the creature, but it has no memory of any proposition relevant to this fact. It wonders whether it knows that toadstools are not poisonous. It searches for relevant memories. At any time, it has recovered no relevant memory, but for all it knows that is merely because the delivery procedure is slow, and in a moment the memory that toadstools are not poisonous will be delivered, in which case it will have known all along that they are not poisonous. Everything it knows in the actual circumstance $w$ is true in a circumstance $x$ in which it knows that toadstools are not poisonous; thus $x$ is accessible from $w$. But $w$ is not accessible from $x$, because something it knows in $x$ (that toadstools are not poisonous) is false in $w$. Although in $w$ the proposition $p$ that toadstools are poisonous is true, that $p$ is consistent with what it knows does not itself follow from what it knows.
+
+Epistemic logic and probability theory are happily married because the posterior probabilities in $w$ result from conditionalizing on the set of circumstances epistemically accessible from $w$. This idea has become familiar in decision theory in the context of standard treatments of the concept of common knowledge.33 As usual, the proposition that $p$ is common knowledge is analysed as the infinite conjunction of $p$, the proposition that everyone knows $p$, the proposition that everyone knows that everyone knows $p$, and so on; thus the analysis of common knowledge requires an account of knowledge. Something like the framework above is used, with a separate accessibility relation $\mathrm{R}_\mathrm{\alpha}$ for each agent $\mathrm{\alpha}$ but a common prior probability distribution; different agents can have different posterior probabilities in the same circumstance because they have different sets of accessible circumstances to conditionalize on. ‘$\mathrm{\alpha}$ knows $p$’ ($\mathrm{K}_\mathrm{\alpha} p$) is given the semantics of ‘$p$ follows from what one knows’ with respect to the accessibility relation $\mathrm{R}_\mathrm{\alpha}$; thus knowledge is treated as closed under logical consequence (contrast the present account). Furthermore, in decision theory accessibility is usually required to be an equivalence relation (symmetric and transitive as well as reflexive) for each agent. On this model, the agent partitions the set of circumstances into a set of mutually exclusive and jointly exhaustive sets; in $w$, the agent knows just those propositions true in every circumstance belonging to the same member of the partition as $w$. Informally, imagine that each circumstance presents a particular appearance to the agent, who knows all about appearances and nothing more; thus one circumstance is epistemically accessible from another if and only if they have exactly the same appearance, which is an equivalence relation. The corresponding propositional logic of knowledge is the modal system S5, with $\mathrm{K}_\mathrm{\alpha}$ in place of $□$; one can axiomatize it by taking as axioms all truth-functional tautologies and formulas of the forms $\mathrm{K}_\mathrm{\alpha}(\mathrm{A}\supset \mathrm{B})\supset(\mathrm{K}_\mathrm{\alpha} \mathrm{A}\supset \mathrm{K}_\mathrm{\alpha} \mathrm{B})$, $\mathrm{K}_\mathrm{\alpha} \mathrm{A}\supset \mathrm{A}$ and $\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}\supset \mathrm{K}_\mathrm{\alpha}\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}$, and as rules of inference modus ponens and epistemization (if $\mathrm{A}$ is a theorem, so is $\mathrm{K}_\mathrm{\alpha} \mathrm{A}$). One of the earliest results to be proved on the basis of assumptions tantamount to these was Aumann’s ‘[no] agreeing to disagree’ theorem: when the posterior probabilities of $p$ for two agents are common knowledge, they are identical.34
+
+Earlier examples expose some of the idealizations implicit in the partitional model of knowledge. In particular, the counterexamples to the symmetry of accessibility, and so to the Brouwerian schema $\mathord{\sim} \mathrm{A}\supset \mathrm{K}_\mathrm{\alpha}\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}$, are equally counterexamples to the S5 schema $\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}\supset \mathrm{K}_\mathrm{\alpha}\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}$, given the uncontentious principle that knowledge implies truth ($\mathrm{K}_\mathrm{\alpha} \mathrm{A}\supset \mathrm{A}$). Some progress has been made in generalizing results such as Aumann’s to weaker assumptions about knowledge.35 It can be argued that, even when logical omniscience is assumed, the propositional logic of knowledge is not S5 but the modal system KT (alias T), which one can axiomatize by dropping the axiom schema $\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}\supset \mathrm{K}_\mathrm{\alpha}\mathord{\sim} \mathrm{K}_\mathrm{\alpha} \mathrm{A}$ from the axiomatization above.36 What KT assumes about knowledge, in addition to logical omniscience, is just that knowledge implies truth. When $\mathrm{K}_\mathrm{\alpha} \mathrm{A}$ is read as ‘it follows from what one knows that $\mathrm{A}$’, rather than as ‘One knows that $\mathrm{A}$’ (where $\mathrm{\alpha}$ is the agent of the circumstance), logical omniscience becomes unproblematic for $\mathrm{K}_\mathrm{\alpha}$, whatever $\mathrm{\alpha}$’s logical imperfections.
+
+The exposition of the present theory of probabilities on evidence has now been completed, and some readers may wish to stop at this point. However, deviations from the partitional model generate a phenomenon which seems to threaten the proposed marriage of knowledge and probability. The aim of the final section is to understand that phenomenon.
+
+# 5 A Puzzling Phenomenon
+
+The paradoxical phenomenon can be illustrated thus. There are just three circumstances: $w_1$, $w_2$, and $x$. As in the diagram, $x$ is accessible from each circumstance; each of $w_1$ and $w_2$ is accessible only from itself.
+
+![](assets/source-107-diagram.png)
+
+Thus accessibility is reflexive and transitive, but not symmetric. For simplicity, the subject will be treated as logically omniscient; the paradoxical phenomenon does not depend on the failure of knowledge to be deductively closed. Since the only circumstance accessible from $x$ is $x$ itself, if one is in $x$ then one knows that one is in $x$. Since the circumstances accessible from $w_i$ are $x$ and $w_i$, if one is in $w_i$ then one knows that one is in either $w_i$ or $x$, but one does not know which; for all one knows, one knows that one is in $x$. In $w_i$, although one is not in $x$, and therefore does not know that one is in $x$, one does not know that one does not know that one is in $x$. This is just the failure of the Brouwerian and S5 axioms for knowledge in a non-symmetric model.
+
+The prior probability distribution is uniform; each circumstance has a prior probability of $\tfrac13$. Let $p$ be the proposition that one is in $w_1$ or $w_2$. The prior probability of $p$ is $\tfrac23$. If one is in $x$, then $p$ is false in all accessible worlds, so its posterior probability is 0. If one is in $w_i$, then $p$ is true in just one of the two accessible worlds, so its posterior probability is $\tfrac12$. Thus one knows in advance that the posterior probability of $p$ will be either 0 or $\tfrac12$, and so in any case lower than its initial probability.37 But if one knows in advance that when the evidence comes in the probability of $p$ on the evidence will drop from $\tfrac23$ to at most $\tfrac12$, why is that known feature of the future evidence not anticipated by lowering the prior probability of $p$ to at most $\tfrac12$? Surely the posterior probabilities are a better guide to the truth than the prior probabilities are, because they are based on more evidence.38
+
+A money pump argument makes the problem vivid. Consider a ticket which entitles one to £6 if $p$ is true and to nothing if $p$ is false. The initial probability that the ticket entitles one to £6 is $\tfrac23$. Given standard Bayesian decision theory, one should be willing to pay up to $\tfrac23£6+\tfrac13£0=£4$ in advance for the ticket. But the posterior probability that the ticket entitles one to £6 is at most $\tfrac12$, so once the evidence is in one should be willing to sell the ticket for any price from $\tfrac12£6+\tfrac12£0=£3$ upwards. Indeed, if the evidence shows that one is in $x$, then one knows that the ticket is worthless. A shark can apparently pump money out of one by selling one many such tickets for £4 before the evidence is in and buying them back afterwards for £3 or £0, depending on circumstances.39 Moreover, one knows all that in advance. Is there not something irrational in such an assignment of probabilities?
+
+Reasons emerged in Section 1 to deny that decision-theoretic arguments have a direct bearing on evidential probabilities. Such arguments are especially dubious when (as above) the probabilities do not all belong to the same circumstance. Nevertheless, the money pump argument provides an intuitive framework for generalizing the problem. For simplicity, let the circumstances form a finite set $\mathrm{W}$. It will be convenient to treat the bearers of probability as subsets of $\mathrm{W}$. For $w\in \mathrm{W}$, let $\mathrm{R}(w)$ be the set of circumstances to which $w$ bears the accessibility relation $\mathrm{R}$. Since $e_w$ is true in exactly the circumstances in $\mathrm{R}(w)$, the posterior probability $\mathrm{P}_w(\mathrm{X})$ of $\mathrm{X}$ in $w$ is $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$ by ECOND ($\mathrm{X}\subseteq \mathrm{W}$). The expectation $\mathrm{E}(\mathrm{P}_w(\mathrm{X}))$ of the random variable $\mathrm{P}_w(\mathrm{X})$ is therefore $\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$. The identity of prior and expected posterior probabilities comes to this:
+
+$$\mathrm{P}(\mathrm{X})=\displaystyle\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$$
+
+EXP
+
+Consider a ticket which entitles one to £$n$ if one’s circumstance is in $\mathrm{X}$ and to nothing otherwise. Suppose that before the evidence is in one buys the ticket at its expected (monetary) value at that time; after the evidence is in one sells the ticket at its expected value at that later time. What is one’s expected profit or loss over the two transactions? The buying price is $\mathrm{P}(\mathrm{X})£n$. The expected selling price is the expected posterior probability of $\mathrm{X}$ times £$n$ (in the example above, the prior probability of $p$ was $\tfrac23$; its expected posterior probability was $\tfrac13 0+\tfrac23\tfrac12=\tfrac13$; the expected profit was $\tfrac13£6-\tfrac23£6$, a loss of £2). Thus if the left-hand side of EXP is less or greater than its right-hand side, one’s expected profit over the two transations is positive or negative respectively. Since the prior and expected posterior probabilities of $\mathrm{W}-\mathrm{X}$ are one minus the prior and expected posterior probabilities of $\mathrm{X}$, an expected profit on the two transactions with respect to $\mathrm{X}$ implies an expected loss on the corresponding transactions with respect to $\mathrm{W}-\mathrm{X}$. Thus unless EXP holds, the transactions make one a money pump with respect to some proposition.40
+
+One response to the strange situation is to deny that it can arise. On this view, the money pump argument shows that no probability distribution $\mathrm{P}$ on a set of circumstances $\mathrm{W}$ with an epistemic accessibility relation $\mathrm{R}$ can violate EXP for any $\mathrm{X}\subseteq \mathrm{W}$; the diagram above does not picture a genuine possibility. It can be proved that, given a relation $\mathrm{R}$ on a finite set $\mathrm{W}$, EXP holds for every regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ and $\mathrm{X}\subseteq \mathrm{W}$ if and only if $\mathrm{R}$ is an equivalence relation on $\mathrm{W}$ (Appendix I, Proposition 5). In partitional models of knowledge, expected posterior probabilities always coincide with prior probabilities; any deviation from partitionality makes them diverge on a suitable probability distribution.41
+
+Although the interpretation of $\mathrm{R}$ as an accessibility relation for knowledge automatically requires $\mathrm{R}$ to be reflexive, one cannot escape the result just by allowing $\mathrm{R}$ to be non-reflexive and reinterpreting it as an accessibility relation for (say) rational belief, in the sense that $x$ is accessible from $w$ just in case whatever the subject rationally believes in $w$ is true in $x$. The aforementioned result holds provided that any member of $\mathrm{W}$ has $\mathrm{R}$ to at least one member of $\mathrm{W}$, not necessarily itself (i.e. $\mathrm{R}$ is serial). The accessibility relation for rational belief is non-serial only when (if ever) rational beliefs are inconsistent. In that case $\mathrm{R}(w)$ is sometimes empty, so the expected posterior probability is not well defined. If $\mathrm{R}$ is serial, then $\mathrm{R}(w)$ is always non-empty; given regularity, the expected posterior probability is then well-defined. If the accessibility relation is serial but not reflexive, then expected posterior probabilities diverge from prior probabilities on a suitable probability distribution.
+
+If epistemic accessibility had to be an equivalence relation, EXP would always hold. But the counterexamples to partitionality have not lost their force. Of course, realistic examples involve far more complex epistemic situations than that illustrated above. Nevertheless, one can begin to understand the mechanics underlying non-partitionality by filling out the example above of the circumstances $w_1$, $w_2$, and $x$ in some detail.
+
+A simple creature monitors the ambient temperature by means of two detectors. When it is not cold, the first detector is activated and causes the information that it is not cold to be stored; otherwise the first detector is inactive. When it is not hot, the second detector is activated and causes the information that it is not hot to be stored; otherwise the second detector is inactive. The relevant three circumstances are $w_1$ (it is hot), $w_2$ (it is cold) and $x$ (it is neither hot nor cold). In $w_1$, only the information that it is not cold is stored. In $w_2$, only the information that it is not hot is stored. In $x$, both the information that it is not hot and the information that it is not cold is stored. Unfortunately, the creature has no capacity to survey what it has stored and detect that a particular piece of information is not stored. Hence in $w_1$ it cannot detect that the information that it is not hot is not stored, and infer that it is hot. Similarly, in $w_2$ it cannot infer that it is cold. Since it never stores false information, we can reasonably treat it as knowing the stored information and no more. Thus the circumstances epistemically accessible from $w_1$ are $w_1$ and $x$; the circumstances accessible from $w_2$ are $w_2$ and $x$; the only circumstance accessible from $x$ is $x$ itself. Let the three circumstances be equiprobable in advance, and treated as such by the creature. Then the epistemic situation is exactly that depicted in the diagram above.
+
+If we like, we can elaborate the story to endow the creature with significant powers of logic and self-reflection; see Appendix II for details.
+
+Is the initial assignment of equal probabilities to the three circumstances irrational? Would some other initial assignment do better? Let $\mathrm{P}$ be a regular prior probability distribution that coincides with the corresponding distribution of expected posterior probabilities. So, in particular:
+
+$\mathrm{P}(\{x\})=\displaystyle\sum_{y\in \mathrm{W}}\mathrm{P}(\{y\})\mathrm{P}(\{x\}\mid \mathrm{R}(y))$
+
+By the diagram $x\in \mathrm{R}(y)$ for all $y\in \mathrm{W}$, so $\mathrm{P}(\{x\}\mid \mathrm{R}(y))=\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(y))$. Dividing through by $\mathrm{P}(\{x\})$ gives:
+
+$1=\displaystyle\sum_{y\in \mathrm{W}}\mathrm{P}(\{y\})/\mathrm{P}(\mathrm{R}(y))$
+
+But $\mathrm{R}(x)=\{x\}$, so $\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(x))=1$, so:
+
+$0=\mathrm{P}(\{w_1\})/\mathrm{P}(\mathrm{R}(w_1))+\mathrm{P}(\{w_2\})/\mathrm{P}(\mathrm{R}(w_2))$
+
+Thus $\mathrm{P}(\{w_1\})=\mathrm{P}(\{w_2\})=0$. This contradicts the assumed regularity of $\mathrm{P}$. Only an irregular prior distribution on $\mathrm{W}$ can coincide with the corresponding expected posterior distribution; specifically, the proof shows that either $\mathrm{P}(\{x\})=0$ (in which case $\mathrm{P}(\{x\}\mid \mathrm{R}(x))$ is undefined) or $\mathrm{P}(\{w_1\})=\mathrm{P}(\{w_2\})=0$. The creature can align its prior probabilities with its expected posterior probabilities only by ruling out some of the three circumstances in advance. But that would be quite irrational; each of them is an epistemically live possibility. The uniform prior distribution was not to blame. One must learn to live with the divergence between prior and expected posterior probabilities: but how?
+
+Consider the money pump argument first. As given above, it assumes that once the evidence is in the agent can calculate the relevant expectations, which requires it to know the posterior probabilities. That is just what the structure of the accessibility relation precludes. In the three-world model, it is certain in advance that the posterior probability that it is hot is $\tfrac12$ when it is hot and 0 otherwise. Hence if, when it was hot, the creature knew that the posterior probability that it was hot was $\tfrac12$, it could deduce that it was hot; but then the posterior probability that it was hot would be 1, not $\tfrac12$.42 Thus, when it is hot, the creature cannot know the probability on its evidence that it is hot. It does not know the premises of the decision-theoretic calculation. Even so, the probabilities on its evidence can still play a causal role in its decision-making, for its evidence is physically realized as its stored information. Thus decisions can be made when it is hot that would not have been made if it had not been hot.
+
+Could the creature discover that it is hot by observing its own actions? Once it has acted, it is in different circumstances; its action may even have changed the temperature. Perhaps it can work out that it was hot, but that would not imply that it could have had the present tense knowledge before it acted. Could it have introspected its intention to act in a certain way before carrying it out? Sometimes we do not know whether we are going to act in a certain way until we carry out the action; let the creature be like that when it does not know the probabilities on which it will act.
+
+Why should I give the property of being known by me tomorrow a privileged status today? There is one reason: whatever I shall know tomorrow is true.43 Thus if I know today that tomorrow I shall know $p$, I can deduce $p$ today. By contrast, if I rationally believe today that tomorrow I shall rationally believe $p$, I cannot deduce $p$ today; for all I rationally believe today, tomorrow’s rational belief will be based on misleading evidence. But this is no reason to give the property of being known by me tomorrow a more privileged status than I give to any other truth-entailing property.
+
+Consider an analogy. A die is about to be cast. Each of the natural numbers from one to six has an equal prior probability (1/6) of being thrown. Exactly five propositions are inscribed on a rock:
+
+$e_1\qquad$ A one will not be thrown.
+
+$e_2\qquad$ A two will not be thrown.
+
+$e_3\qquad$ A three will not be thrown.
+
+$e_4\qquad$ A four will not be thrown.
+
+$e_5\qquad$ A five will not be thrown.
+
+The propositions inscribed on the rock are known to have been chosen at random; that a given proposition is inscribed there does not make it any more likely to be true. Say that a proposition is an inscribed truth just in case it is true and inscribed on the rock; pseudo-posterior probabilities are the results of conditionalizing on the conjunction of all inscribed truths. Let $p$ be the proposition that a six will be thrown. The prior probability of $p$ is $1/6$. If a one is thrown, then the inscribed truths are $e_2$, $e_3$, $e_4$, and $e_5$, so the pseudo-posterior probability of $p$ is $\tfrac12$. By similar reasoning, the pseudo-posterior probability of $p$ is $\tfrac12$ if any number between one and five is thrown. If a six is thrown, all the inscribed propositions are inscribed truths, and the pseudo-posterior probability of $p$ is 1. Thus the pseudo-posterior probability of $p$ is bound to be much higher than its prior probability. Its expected pseudo-posterior probability is $(5/6)\tfrac12+(1/6)1=7/12$. Pseudo-posterior probabilities are better informed than prior probabilities, because by definition they result from conditionalizing the latter on true and relevant information. All this is known in advance. Should we therefore revise our prior probabilities to bring them into line with our expected pseudo-posterior probabilities? We have no reason whatsoever to regard a six as any more likely to be thrown than any other number. The inscribed propositions embody a bias towards six. The bias could just as easily have been towards another number, quite independently of the result of the throw.
+
+Moral: it is generally a mistake to try to align one’s probabilities with what one knows about the results of conditionalizing them on truths with some given property. One instance of this mistake is to try to align one’s probabilities with what one knows about the results of conditionalizing them on truths one will know in the future. Although we may be made to suffer for the misalignment, it would not be rational to try to avert the suffering by changing my present beliefs. From our present perspective, the non-partitional structure of our future knowledge is a source of bias, similar in effect to forgetting although much subtler in its operation. Of course, we shall probably know more tomorrow, and it would be foolish then to disregard the new knowledge. But we cannot take advantage of the new knowledge in advance. We must cross that bridge when we come to it, and accept the consequences of our unfortunate epistemic situation with what composure we can find. Life is hard.
+
+# Acknowledgements
+
+Some of this material was presented to conferences on epistemology at the Universities of London and Stirling. I thank participants for their comments, particularly Adam Morton and Peter Milne for their stimulating replies. Thanks also to Matthias Hild, Hyun Song Shin, and two anonymous referees for their comments.
+
+# Notes
+
+[1] Shope [1978].
+
+[2] It is not highly probable on our evidence that no one will ever give high credence to the proposition that Goldbach’s Conjecture is a theorem of first-order Peano arithmetic. To eternalize the example, imagine good evidence that nuclear war is about to end all intelligent life.
+
+[3] Presumably, a perfectly rational being must give great credence to $p$, be aware of doing so and therefore give little credence to $h$ and so to $p\mathbin{\&}h$; but then its evidence about its own states would be different from ours. If so, the hypothesis of a perfectly rational being with our evidence is impossible. For an argument that the subjective Bayesian conception of perfect rationality entails perfect accuracy about one’s own credences, see Milne [1991].
+
+[4] See Earman [1992], pp. 137–61 for a sophisticated discussion.
+
+[5] No attempt will be made to survey the non-Bayesian theories of evidential probability in the literature. See e.g. Kyburg [1974] and Plantinga [1993].
+
+[6] Williamson [1997] defends the assumption that evidence is propositional.
+
+[7] Williamson [1996a].
+
+[8] Perhaps ‘I seem to see a dead rat’ (uttered by me today) and ‘Yesterday I seemed to see a dead rat’ (uttered by me tomorrow) do not express exactly the same proposition. But if I can think tomorrow the proposition expressed by ‘I seem to see a dead rat’ (uttered by me today), then that proposition can become uncertain for me; if I cannot even think it tomorrow, then the problem is even worse, because I cannot retain my evidence.
+
+[9] In some cases it can be shown that, although our evidence is different, our beliefs will almost certainly converge on each other because they will almost certainly converge on the truth. For example, if a bag contains ten red or black balls, and we take it in turns to draw a ball with replacement, each observing our own draws and not the other’s, and conditionalizing on the results, our posterior probabilities for the number of balls in the bag will almost certainly converge to the same values, even if our prior probabilities are quite different (if we both assign nonzero prior probabilities to all eleven possibilities). But even this assumes that our evidence consists of true propositions about the results of the draws, not propositions about our mental states; where does that assumption come from, on a subjective Bayesian view?
+
+[10] For mathematical simplicity, infinite partitions are ignored.
+
+[11] Proof: Let the propositions of interest be $p_1,\ldots,p_m$. Each of the $2^m$ possible distributions of truth-values to them corresponds to a conjunction of $p_i$ or $\mathord{\sim} p_i$ for $1\le i\le m$. These $2^m$ conjunctions form a partition. Perhaps $\mathrm{P}_{\mathrm{old}}(g)=0$ for some such conjunction $g$; by disjoining each such $g$ with a conjunction $f$ such that $\mathrm{P}_{\mathrm{old}}(f)>0$, form a partition $\{e_1,\ldots,e_n\}$ such that $\mathrm{P}_{\mathrm{old}}(e_i)>0$ for $1\le i\le n$. Each $e_i$ is equivalent to a disjunction $f_i\vee g_i$, where $\mathrm{P}_{\mathrm{old}}(f_i)>0$, $\mathrm{P}_{\mathrm{old}}(g_i)=0$, and $f_i$ either entails $p_j$ or entails $\mathord{\sim} p_j$ ($1\le j\le m$). Since $\mathrm{P}_{\mathrm{old}}(g_i)=0$, standard reasoning shows that $\mathrm{P}_{\mathrm{old}}(e_i\equiv f_i)=1$, so $\mathrm{P}_{\mathrm{old}}(p_j\mid e_i)=\mathrm{P}_{\mathrm{old}}(p_j\mid f_i)$. Thus $\mathrm{P}_{\mathrm{old}}(p_j\mid e_i)$ is 1 or 0, depending on whether $f_i$ entails $p_j$ or $\mathord{\sim} p_j$. Now suppose that for every proposition $q$, if $\mathrm{P}_{\mathrm{old}}(q)=1$ then $\mathrm{P}_{\mathrm{new}}(q)=1$. Then $\mathrm{P}_{\mathrm{new}}(g_i)=0$, and parallel reasoning shows that if $\mathrm{P}_{\mathrm{new}}(e_i)>0$ then $\mathrm{P}_{\mathrm{new}}(p_j\mid e_i)$ is 1 or 0, depending on whether $f_i$ entails $p_j$ or $\mathord{\sim} p_j$. Thus if $\mathrm{P}_{\mathrm{new}}(e_i)\ne0$, $\mathrm{P}_{\mathrm{new}}(p_j\mid e_i)=\mathrm{P}_{\mathrm{old}}(p_j\mid e_i)$ ($1\le i\le n$). From this, JCOND is a routine corollary, with any $p_j$ in place of $p$.
+
+[12] It depends on whether one can introduce finer distinctions than those made by the propositions of interest. If not, and only two possibilities can be distinguished, then no Bayesian conditionalization can change $\mathrm{P}_{\mathrm{old}}$ to $\mathrm{P}_{\mathrm{new}}$ where $0<\mathrm{P}_{\mathrm{old}}(p)<\mathrm{P}_{\mathrm{new}}(p)<1$, because the proposition conditionalized on either makes no difference or eliminates one possibility, in which case all probabilities go to 0 or 1. If finer distinctions can be introduced, $\mathrm{P}_{\mathrm{new}}(p)=1$ whenever $\mathrm{P}_{\mathrm{old}}(p)=1$, and the set of propositions of interest is finite, then $\mathrm{P}_{\mathrm{new}}$ comes by BCOND from an extension of $\mathrm{P}_{\mathrm{old}}$ to the new partition. For suppose that $\{e_1,\ldots,e_n\}$ is a partition such that $\mathrm{P}_{\mathrm{old}}$ and $\mathrm{P}_{\mathrm{new}}$ are defined only on propositions equivalent to disjunctions of the $e_i$. Since $\mathrm{P}_{\mathrm{new}}(p)=0$ whenever $\mathrm{P}_{\mathrm{old}}(p)=0$, there is a real number $\mathrm{c}>0$ such that for all $p$ for which the probabilities are defined, $\mathrm{c}\mathrm{P}_{\mathrm{new}}(p)\le \mathrm{P}_{\mathrm{old}}(p)$. Introduce a new proposition $f$, bifurcating $e_i$ into $e_i\mathbin{\&}f$ and $e_i\mathbin{\&}\mathord{\sim} f$. Determine a probability distribution $\mathrm{P}_{\text{*}}$ for the refined partition by: $\mathrm{P}_{\text{*}}(e_i\mathbin{\&}f)=\mathrm{c}\mathrm{P}_{\mathrm{new}}(e_i)$; $\mathrm{P}_{\text{*}}(e_i\mathbin{\&}\mathord{\sim} f)=\mathrm{P}_{\mathrm{old}}(e_i)-\mathrm{c}\mathrm{P}_{\mathrm{new}}(e_i)$. Hence whenever the probabilities are defined, $\mathrm{P}_{\text{*}}(p\mathbin{\&}f)=\mathrm{c}\mathrm{P}_{\mathrm{new}}(p)$, $\mathrm{P}_{\text{*}}(p\mathbin{\&}\mathord{\sim} f)=\mathrm{P}_{\mathrm{old}}(p)-\mathrm{c}\mathrm{P}_{\mathrm{new}}(p)$ and $\mathrm{P}_{\text{*}}(p)=\mathrm{P}_{\mathrm{old}}(p)$; thus $\mathrm{P}_{\text{*}}$ extends $\mathrm{P}_{\mathrm{old}}$. Now $\mathrm{P}_{\text{*}}(p\mid f)=\mathrm{P}_{\text{*}}(p\mathbin{\&}f)/\mathrm{P}_{\text{*}}(f)=\mathrm{c}\mathrm{P}_{\mathrm{new}}(p)/\mathrm{c}=\mathrm{P}_{\mathrm{new}}(p)$. Thus $\mathrm{P}_{\mathrm{new}}$ comes from $\mathrm{P}_{\text{*}}$ by BCOND wherever $\mathrm{P}_{\mathrm{new}}$ is defined. See further Diaconis and Zabell [1982].
+
+[13] See Jeffrey [1975], Field [1978], Garber [1980], and Christensen [1992].
+
+[14] Jeffrey [1983], pp. 184–5.
+
+[15] Jeffrey [1983], pp. 166–7. Part of the rationale for Jeffrey conditionalization may also depend on an impoverished theory of propositions. The motivating example involves colour vision in poor light; Jeffrey argues that no proposition ‘expressible in the English language’ can ‘convey the precise quality of the experience’ (ibid., p. 165). Surely no context-independent English sentence conveys the precise quality of the experience. It is much less obvious that in the given context no English sentence with perceptual demonstratives (e.g. ‘It looks like that’) can express a proposition which would convey the precise quality of the experience, in the sense that Bayesian conditionalization on it would capture the evidential upshot of the experience. See further Christensen [1992] and Williamson [1997].
+
+[16] Information loss has a decision-theoretic interest. Before I fall asleep, I am certain that when I wake up I shall have forgotten how the coin landed (I always forget that kind of thing). I am now happy to accept a bet on which I gain £1 if it landed heads and lose £10 otherwise. Tomorrow I shall be happy to accept a bet on which I lose £5 if it landed heads and gain £6 otherwise. If I make both bets, I lose £4 however it landed. I know now that I am vulnerable to such a diachronic Dutch book, but what can I do? To avoid it by refusing the first bet is just to turn down a certain £1. Compare Skyrms [1993]. The case of forgetting shows that not even strong assumptions about the subject’s rationality block all counterexamples to the principle of reflection in van Fraassen [1984]. Talbott [1991] has an example of forgetting; the treatment of it by van Fraassen [1995], p. 22 cannot plausibly be extended to the present case. For further discussion see Skyrms [1987], Christensen [1991] and [1996], Green and Hitchcock [1994], Howson [1996], Castell [1996], and Hild [1997]. Isaac Levi rejects MONOTONICITY in his [1967] and many other publications.
+
+[17] Compare the notion of a diary in Skyrms [1983]. Skyrms’s discussion concentrates on the problem of memory storage, but remembering which propositions are evidence is no worse than remembering a probability for each proposition. Of course, it is often rational to retain a belief even when one has forgotten one’s past evidence for it. In some cases the belief itself has attained the status of evidence (see Section 3); in others one has only indirect evidence for it (e.g. one seems to remember $p$ and is usually right about such things). But even those beliefs are evidentially probable at $t$ only if one’s evidence at $t$ supports them. See Harman [1986] for much relevant discussion of clutter avoidance.
+
+[18] See Glymour [1980], pp. 85–93, Earman [1992], pp. 119–35, Howson and Urbach [1993], pp. 403–8, and Maher [1996].
+
+[19] We can relativize confirmation to background information $f$ by requiring that $\mathrm{P}(h\mid e\mathbin{\&}f)>\mathrm{P}(h\mid f)$, but this does not justify subjecting it to the vagaries of the evidence we once or would have had.
+
+[20] For a general defence of E = K, see Williamson [1997]. Compare Maher [1996], according to which all evidence is knowledge but not all knowledge is evidence. Restrictive views of evidence can make unnecessary problems for conditionalization by not allowing propositions about the subject’s updated belief state to count as part of the new evidence; this may explain the cases discussed in Howson [1996] and Castell [1996].
+
+[21] Here is one argument. The rules of assertion permit one to assert $p$ outright if and only if one knows $p$ (Williamson [1996b]). One’s evidence consists of just the propositions the rules of assertion permit one to assert outright. Therefore one’s evidence consists of just the propositions one knows. The premises of this argument are scarcely uncontroversial.
+
+[22] Williamson [1996a].
+
+[23] The application of modal logical techniques to epistemological problems was pioneered in Hintikka [1962], although the assumptions made here differ from Hintikka’s. A good text for the modal logical background is Hughes and Cresswell [1996].
+
+[24] In some applications ‘we’ will replace ‘I’.
+
+[25] It is in some ways more natural to say that the obtaining of conditions varies with subject and time than that the truth of propositions does, but every terminology has its disadvantages. For related discussion, see Lewis [1979].
+
+[26] If $p$ and $q$ are true in exactly the same circumstances, then in no circumstances are both $p$ and $\mathord{\sim} q$ true, and $p\vee\mathord{\sim} q$ is true in all circumstances, so by the axioms $1=\mathrm{P}(p\vee\mathord{\sim} q)=\mathrm{P}(p)+\mathrm{P}(\mathord{\sim} q)$. By the same reasoning, $1=\mathrm{P}(q)+\mathrm{P}(\mathord{\sim} q)$. Thus $\mathrm{P}(p)=1-\mathrm{P}(\mathord{\sim} q)=\mathrm{P}(q)$.
+
+[27] When there are uncountably many circumstances, no probability distribution is regular (infinitesimal probabilities are not being considered here).
+
+[28] See Williamson [1992], pp. 238–9 and [1994], pp. 245–7 for exploration of some simple models based on this idea.
+
+[29] See Skyrms [1980] and Gaifman [1988] for good discussions of higher-order probability. Their subjectivism introduces complications into their accounts, e.g. Gaifman needs a distinction between the agent’s probability and a hypothetical expert’s probability to handle higher-order probability. These complications are unnecessary from the present perspective.
+
+[30] Williamson [1992].
+
+[31] See Humberstone [1988] for related issues.
+
+[32] See also Shin and Williamson [1994].
+
+[33] Game-theoretic work on common knowledge uses the framework described; see Fudenberg and Tirole [1991], pp. 541–72.
+
+[34] Aumann [1976]; the proof relies heavily on the assumption of common prior probabilities.
+
+[35] Bacharach [1985], Geanakoplos [1989], Samet [1990], Shin [1993], Basu [1996].
+
+[36] Williamson [1994], pp. 270–5.
+
+[37] ‘Know in advance’ here could just mean ‘know a priori’. As explained in Section 2, the prior probabilities need not be the evidential probabilities at some earlier time $t_0$. But the example is more vivid if the initial probabilities are one’s evidential probabilities at $t_0$. On this reading, the diagram does not illustrate one’s circumstance at $t_0$; it is confined to one’s circumstances at the relevant later time. The problem arises even if the ‘prior’ probabilities are not the absolutely prior probabilities in ECOND, for the updating can be regarded as an instance of BCOND, which is a special case of ECOND.
+
+[38] Hyun Shin introduced me to this example. See Shin [1989] and [1992] and Geanakoplos [1989], which use it for different but related purposes.
+
+[39] I remain a money pump even if I require a small profit on each transaction.
+
+[40] See Goldstein [1983], van Fraassen [1984], and Skyrms [1987] for related discussion.
+
+[41] Partitionality is also equivalent to a form of the Principal Principle, or Miller’s Principle: $\mathrm{P}(\mathrm{X}\mid\{w\in \mathrm{W}:\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}\})=\mathrm{c}$ for every real number $\mathrm{c}$, $\mathrm{X}\subseteq \mathrm{W}$ and regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ such that the conditional probability is defined (Appendix I, proposition 6). Skyrms [1980] explores the relation of such principles to probability kinematics.
+
+[42] For simplicity, sentences about probabilities and actions were omitted from the creature’s language. Their addition would complicate but not undermine the argument, provided that the creature has no more empirical evidence than before.
+
+[43] For simplicity, truth is treated here as timeless. Complications about circumstance-dependent truth would only strengthen the argument.
+
+# References
+
+Aumann, R. [1976]: ‘Agreeing to Disagree’, Annals of Statistics, 4, pp. 1236–9.
+
+Bacharach, Michael [1985]: ‘Some Extensions to a Claim of Aumann in an Axiomatic Model of Knowledge’, Journal of Economic Theory, 37, pp. 167–90.
+
+Basu, Kaushik [1996]: ‘A Paradox of Knowledge and Some Related Observations’, MS.
+
+Castell, Paul [1996]: ‘Epistemic Probability II’, Aristotelian Society, suppl. 70, pp. 79–94.
+
+Christensen, David [1991]: ‘Clever Bookies and Coherent Beliefs’, Philosophical Review, 100, pp. 229–47.
+
+Christensen, David [1992]: ‘Confirmational Holism and Bayesian Epistemology’, Philosophy of Science, 59, pp. 540–57.
+
+Christensen, David [1996]: ‘Dutch-book Arguments Depragmatized: Epistemic Consistency for Partial Believers’, Journal of Philosophy, 93, pp. 450–79.
+
+Diaconis, Persi, and Zabell, Sandy [1982]: ‘Updating Subjective Probability’, Journal of the American Statistical Association, 77, pp. 822–30.
+
+Earman, John [1992]: Bayes or Bust?, Cambridge, MA, MIT Press.
+
+Field, Hartry [1978]: ‘A Note on Jeffrey Conditionalization’, Philosophy of Science, 45, pp. 361–7.
+
+Fudenberg, Drew, and Tirole, Jean [1991]: Game Theory, Cambridge, MA, MIT Press.
+
+Gaifman, Haim [1988]: ‘A Theory of Higher Order Probabilities’, in Brian Skyrms and William Harper (eds), Causation, Chance, and Credence, Dordrecht, Kluwer, pp. 191–219.
+
+Garber, Daniel [1980]: ‘Field and Jeffrey Conditionalization’, Philosophy of Science, 47, pp. 142–5.
+
+Geanakoplos, John [1989]: ‘Game Theory without Partitions, and Applications to Speculation and Consensus’, Cowles Foundation Discussion Paper no. 914, Yale University.
+
+Glymour, Clark [1980]: Theory and Evidence, Princeton, Princeton University Press.
+
+Goldstein, Michael [1983]: ‘The Prevision of a Prevision’, Journal of the American Statistical Association, 78, pp. 817–19.
+
+Green, Mitchell, and Hitchcock, Christopher [1994]: ‘Reflections on Reflection: van Fraassen on Belief’, Synthese, 98, pp. 297–324.
+
+Harman, Gilbert [1986]: Change in View: Principles of Reasoning, Cambridge, MA, MIT Press.
+
+Hild, Matthias [1997]: ‘Induction and the Dynamics of Belief’, thesis submitted for D. Phil., University of Oxford.
+
+Hintikka, Jaakko [1962]: Knowledge and Belief, Ithaca, NY, Cornell University Press.
+
+Howson, Colin [1996]: ‘Epistemic Probability I’, Aristotelian Society, suppl. 70, pp. 63–77.
+
+Howson, Colin, and Urbach, Peter [1993]: Scientific Reasoning: The Bayesian Approach, 2nd edn., Chicago, Open Court.
+
+Hughes, George, and Cresswell, Max [1996]: A New Introduction to Modal Logic, London, Routledge.
+
+Humberstone, Lloyd [1988]: ‘Some Epistemic Capacities’, Dialectica, 42, pp. 183–200.
+
+Jeffrey, Richard [1975]: ‘Carnap’s Empiricism’, in Grover Maxwell and Robert Anderson (eds), Induction, Probability, and Confirmation, Minneapolis, University of Minnesota Press, pp. 37–49.
+
+Jeffrey, Richard [1983]: The Logic of Decision, 2nd edn., Chicago, University of Chicago Press. (1st edn. 1965, New York, McGraw-Hill.)
+
+Kyburg, Henry, Jr. [1974]: The Logical Foundations of Statistical Inference, Dordrecht, Reidel.
+
+Levi, Isaac [1967]: ‘Probability Kinematics’, British Journal for the Philosophy of Science, 18, pp. 197–209.
+
+Lewis, David [1979]: ‘Attitudes de dicto and de se’, The Philosophical Review, 88, pp. 513–43.
+
+Maher, Patrick [1996]: ‘Subjective and Objective Confirmation’, Philosophy of Science, 63, pp. 149–74.
+
+Milne, Peter [1991]: ‘A Dilemma for Subjective Bayesians—and How to Resolve It’, Philosophical Studies, 62, pp. 307–14.
+
+Plantinga, Alvin [1993]: Warrant and Proper Function, Oxford, Oxford University Press.
+
+Samet, Dov [1990]: ‘Ignoring Ignorance and Agreeing to Disagree’, Journal of Economic Theory, 52, pp. 190–207.
+
+Shin, Hyun Song [1989]: ‘Non-partitional Information on Dynamic State Spaces and the Possibility of Speculation’, Center for Research on Economic and Social Theory Working Paper 90-11, University of Michigan.
+
+Shin, Hyun Song [1992]: Review of The Dynamics of Rational Deliberation by B. Skyrms, Economics and Philosophy, 8, pp. 176–83.
+
+Shin, Hyun Song [1993]: ‘Logical Structure of Common Knowledge’, Journal of Economic Theory, 60, pp. 1–13.
+
+Shin, Hyun Song, and Williamson, Timothy [1994]: ‘Representing the Knowledge of Turing Machines’, Theory and Decision, 37, pp. 125–46.
+
+Shope, Robert [1978]: ‘The Conditional Fallacy in Modern Philosophy’, Journal of Philosophy, 75, pp. 397–413.
+
+Skyrms, Brian [1980]: ‘Higher-Order Degrees of Belief’, in Hugh Mellor (ed.), Prospects for Pragmatism, Cambridge, Cambridge University Press, pp. 109–37.
+
+Skyrms, Brian [1983]: ‘Three Ways to Give a Probability Assignment a Memory’, in John Earman (ed.), Testing Scientific Theories, Minneapolis, University of Minnesota Press, pp. 157–61.
+
+Skyrms, Brian [1987]: ‘Dynamic Coherence and Probability Kinematics’, Philosophy of Science, 54, pp. 1–20.
+
+Skyrms, Brian [1993]: ‘A Mistake in Dynamic Coherence Arguments?’ Philosophy of Science, 60, pp. 320–8.
+
+Talbott, W. J. [1991]: ‘Two Principles of Bayesian Epistemology’, Philosophical Studies, 62, pp. 135–50.
+
+van Fraassen, Bas [1984]: ‘Belief and the Will’, Journal of Philosophy, 81, pp. 235–56.
+
+van Fraassen, Bas [1995]: ‘Belief and the Problem of Ulysses and the Sirens’, Philosophical Studies, 77, pp. 7–37.
+
+Williamson, Timothy [1992]: ‘Inexact Knowledge’, Mind, 101, pp. 217–42.
+
+Williamson, Timothy [1994]: Vagueness, London, Routledge.
+
+Williamson, Timothy [1996a]: ‘Cognitive Homelessness’, Journal of Philosophy, 93, pp. 554–73.
+
+Williamson, Timothy [1996b]: ‘Knowing and Asserting’, Philosophical Review, 105, pp. 489–523.
+
+Williamson, Timothy [1997]: ‘Knowledge as Evidence’, Mind, 106, pp. 717–41.
+
+# Appendix I: Proofs
+
+First some standard definitions. A frame is a pair $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$, where $\mathrm{R}$ is a binary relation on the set $\mathrm{W}$. For $w\in \mathrm{W}$, $\mathrm{R}(w)=\{x\in \mathrm{W}:w\mathrm{R}x\}$. $\mathrm{R}$ is serial on $\mathrm{W}$ just in case for every $w\in \mathrm{W}$ there is an $x\in \mathrm{W}$ such that $w\mathrm{R}x$. $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is serial (reflexive, symmetric, transitive) just in case $\mathrm{R}$ is serial (reflexive, symmetric, transitive) on $\mathrm{W}$. A frame is partitional just in case it is reflexive, symmetric, and transitive. A probability distribution on $\mathrm{W}$ is a mapping $\mathrm{P}$ from all subsets of $\mathrm{W}$ to non-negative real numbers such that $\mathrm{P}(\mathrm{W})=1$ and $\mathrm{P}(\mathrm{X}\cup \mathrm{Y})=\mathrm{P}(\mathrm{X})+\mathrm{P}(\mathrm{Y})$ whenever $\mathrm{X}$ and $\mathrm{Y}$ are disjoint subsets of $\mathrm{W}$. If $\mathrm{P}(\mathrm{Y})>0$, $\mathrm{P}(\mathrm{X}\mid \mathrm{Y})=\mathrm{P}(\mathrm{X}\cap \mathrm{Y})/\mathrm{P}(\mathrm{Y})$; if $\mathrm{P}(\mathrm{Y})=0$, $\mathrm{P}(\mathrm{X}\mid \mathrm{Y})$ is undefined. A probability distribution $\mathrm{P}$ on $\mathrm{W}$ is regular just in case $\mathrm{P}(\mathrm{X})>0$ whenever $\mathrm{X}$ is a non-empty subset of $\mathrm{W}$. A frame $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is bland just in case it is serial and $\mathrm{P}(\mathrm{X})=\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$ for every $\mathrm{X}\subseteq \mathrm{W}$ and regular probability distribution $\mathrm{P}$ on $\mathrm{W}$. $\mathrm{R}(w)$ is always non-empty when $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is serial, so $\mathrm{P}(\mathrm{R}(w))>0$ if $\mathrm{P}$ is regular, so $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$ is defined; if $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is not serial, $\mathrm{R}(w)$ is empty for some $w\in \mathrm{W}$ and $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$ is undefined.
+
+Proposition 1. Every bland finite frame is reflexive.
+
+Proof. Let $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ be a bland finite frame and $x\in \mathrm{W}$. Suppose that not $x\mathrm{R}x$. Since $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is serial, $x\mathrm{R}y$ for some $y\ne x$. Thus $\mathrm{W}$ has $n+2$ members for some $n\geq 0$. There is a (unique) regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ such that:
+
+$$
+\begin{aligned}
+\mathrm{P}(\{x\})&=2/3\\
+\mathrm{P}(\{w\})&=1/3(n+1)\text{ for }w\in \mathrm{W}-\{x\}.
+\end{aligned}
+$$
+
+Now
+
+$$
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{W}-\{x\}\mid \mathrm{R}(w))\geq \mathrm{P}(\{x\})\mathrm{P}(\mathrm{W}-\{x\}\mid \mathrm{R}(x)).
+$$
+
+Since not $x\mathrm{R}x$, $\mathrm{R}(x)\subseteq \mathrm{W}-\{x\}$, so $\mathrm{P}(\mathrm{W}-\{x\}\mid \mathrm{R}(x))=1$. Thus
+
+$$
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{W}-\{x\}\mid \mathrm{R}(w))\geq \mathrm{P}(\{x\})=2/3>1/3=\mathrm{P}(\mathrm{W}-\{x\}).
+$$
+
+This contradicts the blandness of $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$. Thus $x\mathrm{R}x$. ■
+
+Proposition 2. Every bland finite frame is symmetric.
+
+Proof. Let $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ be a bland finite frame, and $x,y\in \mathrm{W}$. Suppose that $x\mathrm{R}y$ but not $y\mathrm{R}x$. Hence $x\ne y$, so $\mathrm{W}$ has $n+2$ members for some $n\geq0$. There is a (unique) regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ such that:
+
+$$
+\begin{aligned}
+\mathrm{P}(\{x\})&=1/2\\
+\mathrm{P}(\{y\})&=(n+2)/4(n+1)\\
+\mathrm{P}(\{w\})&=1/4(n+1)\text{ for }w\in \mathrm{W}-\{x,y\}.
+\end{aligned}
+$$
+
+Now
+
+$$
+\begin{aligned}
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\{y\}\mid \mathrm{R}(w))
+&\geq \mathrm{P}(\{x\})\mathrm{P}(\{y\}\mid \mathrm{R}(x))+\mathrm{P}(\{y\})\mathrm{P}(\{y\}\mid \mathrm{R}(y))\\
+&=\mathrm{P}(\{y\}\mid \mathrm{R}(x))/2+(n+2)\mathrm{P}(\{y\}\mid \mathrm{R}(y))/4(n+1)\\
+&>\mathrm{P}(\{y\}\mid \mathrm{R}(x))/2+\mathrm{P}(\{y\}\mid \mathrm{R}(y))/4.
+\end{aligned}
+$$
+
+Since $x\mathrm{R}y$, $\{y\}\subseteq \mathrm{R}(x)$, so
+
+$$\mathrm{P}(\{y\}\mid \mathrm{R}(x))=\mathrm{P}(\{y\})/\mathrm{P}(\mathrm{R}(x))\geq \mathrm{P}(\{y\}).$$
+
+But not $y\mathrm{R}x$, so $\mathrm{R}(y)\subseteq \mathrm{W}-\{x\}$, so
+
+$$\mathrm{P}(\mathrm{R}(y))\leq \mathrm{P}(\mathrm{W}-\{x\})=1-\mathrm{P}(\{x\})=1/2.$$
+
+Now $y\mathrm{R}y$ because $\mathrm{R}$ is reflexive by Proposition 1, so $\{y\}\subseteq \mathrm{R}(y)$, so
+
+$$\mathrm{P}(\{y\}\mid \mathrm{R}(y))=\mathrm{P}(\{y\})/\mathrm{P}(\mathrm{R}(y))\geq 2\mathrm{P}(\{y\}).$$
+
+Thus
+
+$$
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\{y\}\mid \mathrm{R}(w))>\mathrm{P}(\{y\})/2+2\mathrm{P}(\{y\})/4=\mathrm{P}(\{y\}).
+$$
+
+This contradicts the blandness of $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$. Thus if $x\mathrm{R}y$ then $y\mathrm{R}x$. ■
+
+Proposition 3. Every bland finite frame is transitive.
+
+Proof. Let $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ be a bland finite frame, and $x,y,z\in \mathrm{W}$. Suppose that $x\mathrm{R}y$ and $y\mathrm{R}z$ but not $x\mathrm{R}z$. Hence $x\ne y$ and $y\ne z$. By Proposition 1, $x\mathrm{R}x$, so $x\ne z$. Thus $\mathrm{W}$ has $n+3$ members for some $n\geq0$. There is a (unique) regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ such that:
+
+$$
+\begin{aligned}
+\mathrm{P}(\{x\})&=\mathrm{P}(\{z\})=1/3\\
+\mathrm{P}(\{w\})&=1/3(n+1)\text{ for }w\in \mathrm{W}-\{x,z\}.
+\end{aligned}
+$$
+
+Now
+
+$$
+\begin{aligned}
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\{y\}\mid \mathrm{R}(w))
+&\geq \mathrm{P}(\{x\})\mathrm{P}(\{y\}\mid \mathrm{R}(x))+\mathrm{P}(\{y\})\mathrm{P}(\{y\}\mid \mathrm{R}(y))\\
+&\qquad +\mathrm{P}(\{z\})\mathrm{P}(\{y\}\mid \mathrm{R}(z))\\
+&=\mathrm{P}(\{y\}\mid \mathrm{R}(x))/3+\mathrm{P}(\{y\}\mid \mathrm{R}(y))/3(n+1)\\
+&\qquad +\mathrm{P}(\{y\}\mid \mathrm{R}(z))/3.
+\end{aligned}
+$$
+
+Since $x\mathrm{R}y$, $\{y\}\subseteq \mathrm{R}(x)$, so
+
+$$\mathrm{P}(\{y\}\mid \mathrm{R}(x))=\mathrm{P}(\{y\})/\mathrm{P}(\mathrm{R}(x)).$$
+
+Moreover, $y\mathrm{R}z$ and $\mathrm{R}$ is symmetric by Proposition 2, so $z\mathrm{R}y$, so $\{y\}\subseteq \mathrm{R}(z)$, so
+
+$$\mathrm{P}(\{y\}\mid \mathrm{R}(z))=\mathrm{P}(\{y\})/\mathrm{P}(\mathrm{R}(z)).$$
+
+Finally, $y\mathrm{R}y$ since $\mathrm{R}$ is reflexive, so $\{y\}\subseteq \mathrm{R}(y)$, so
+
+$$\mathrm{P}(\{y\}\mid \mathrm{R}(y))=\mathrm{P}(\{y\})/\mathrm{P}(\mathrm{R}(y)).$$
+
+Thus
+
+$$
+\begin{aligned}
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\{y\}\mid \mathrm{R}(w))
+&\geq \mathrm{P}(\{y\})/3\mathrm{P}(\mathrm{R}(x))+\mathrm{P}(\{y\})/3(n+1)\mathrm{P}(\mathrm{R}(y))\\
+&\qquad+\mathrm{P}(\{y\})/3\mathrm{P}(\mathrm{R}(z))\\
+&>\tfrac13\mathrm{P}(\{y\})\bigl(1/\mathrm{P}(\mathrm{R}(x))+1/\mathrm{P}(\mathrm{R}(z))\bigr).
+\end{aligned}
+$$
+
+Since not $x\mathrm{R}z$, $\mathrm{R}(x)\subseteq \mathrm{W}-\{z\}$, so
+
+$$\mathrm{P}(\mathrm{R}(x))\leq \mathrm{P}(\mathrm{W}-\{z\})=1-\mathrm{P}(\{z\})=2/3.$$
+
+Similarly, not $z\mathrm{R}x$ because $\mathrm{R}$ is symmetric, so
+
+$$\mathrm{P}(\mathrm{R}(z))\leq2/3.$$
+
+Hence
+
+$$
+\tfrac13\mathrm{P}(\{y\})\bigl(1/\mathrm{P}(\mathrm{R}(x))+1/\mathrm{P}(\mathrm{R}(z))\bigr)
+\geq\tfrac13\mathrm{P}(\{y\})(3/2+3/2)=\mathrm{P}(\{y\}).
+$$
+
+Thus
+
+$$\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\{y\}\mid \mathrm{R}(w))>\mathrm{P}(\{y\}).$$
+
+This contradicts the blandness of $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$, so if $x\mathrm{R}y$ and $y\mathrm{R}z$ then $x\mathrm{R}z$. ■
+
+Proposition 4. Every finite partitional frame is bland.
+
+Proof. Let $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ be a finite partitional frame, $\mathrm{P}$ a regular probability distribution on $\mathrm{W}$. Since $\mathrm{R}$ is reflexive on $\mathrm{W}$, $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is serial. Let $w,x\in \mathrm{W}$. If not $w\in \mathrm{R}(x)$ then not $x\in \mathrm{R}(w)$ because $\mathrm{R}$ is symmetric, so $\{x\}\cap \mathrm{R}(w)=\emptyset$, so
+
+$$\mathrm{P}(\{x\}\mid \mathrm{R}(w))=0.$$
+
+If $w\in \mathrm{R}(x)$ then $\mathrm{R}(x)=\mathrm{R}(w)$ and $\{x\}\subseteq \mathrm{R}(w)$, since $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is partitional, so
+
+$$\mathrm{P}(\{x\}\mid \mathrm{R}(w))=\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(w))=\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(x)).$$
+
+Hence
+
+$$
+\begin{aligned}
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\{x\}\mid \mathrm{R}(w))
+&=\sum_{w\in \mathrm{R}(x)}\mathrm{P}(\{w\})\mathrm{P}(\{x\}\mid \mathrm{R}(w))\\
+&=\sum_{w\in \mathrm{R}(x)}\mathrm{P}(\{w\})\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(x))\\
+&=(\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(x)))\sum_{w\in \mathrm{R}(x)}\mathrm{P}(\{w\})\\
+&=(\mathrm{P}(\{x\})/\mathrm{P}(\mathrm{R}(x)))/\mathrm{P}(\mathrm{R}(x))\\
+&=\mathrm{P}(\{x\}).
+\end{aligned}
+$$
+
+Hence, for any $\mathrm{X}\subseteq \mathrm{W}$, $\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{P}(\mathrm{X})$. ■
+
+Proposition 5. A finite frame is bland if and only if it is partitional.
+
+Proof. From Propositions 1–4. ■
+
+Remark. The proofs of Propositions 1–3 and 5 use non-uniform distributions: $\mathrm{P}(\{x\})\ne \mathrm{P}(\{y\})$ for some $x,y\in \mathrm{W}$ (for finite frames, uniformity entails regularity). This is essential, in the sense that if ‘bland’ had been defined with ‘uniform’ in place of ‘regular’ then the analogues of Propositions 1–3 would have been false. A non-partitional frame $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ can satisfy the equation $\mathrm{P}(\mathrm{X})=\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))$ for every $\mathrm{X}\subseteq \mathrm{W}$ when $\mathrm{P}$ is the uniform distribution on $\mathrm{W}$. To see this, let $\mathrm{W}=\{0,1,2\}$ and $\mathrm{R}=\{\mathord{<}0,1\mathord{>},\mathord{<}1,2\mathord{>},\mathord{<}2,0\mathord{>}\}$. Thus $\mathrm{R}(0)=\{1\}$, $\mathrm{R}(1)=\{2\}$, $\mathrm{R}(2)=\{0\}$ and $\mathrm{R}$ is serial but neither reflexive, symmetric nor transitive on $\mathrm{W}$. Let $\mathrm{P}$ be the uniform distribution on $\mathrm{W}$; $\mathrm{P}(\{0\})=\mathrm{P}(\{1\})=\mathrm{P}(\{2\})=1/3$. Nevertheless,
+
+$$
+\begin{aligned}
+\sum_{w\in \mathrm{W}}\mathrm{P}(\{w\})\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))
+&=\sum_{w\in \mathrm{W}}\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))/3\\
+&=\mathrm{P}(\mathrm{X}\cap\{1\})/3\mathrm{P}(\{1\})+\mathrm{P}(\mathrm{X}\cap\{2\})/3\mathrm{P}(\{2\})\\
+&\qquad+\mathrm{P}(\mathrm{X}\cap\{0\})/3\mathrm{P}(\{0\})\\
+&=\mathrm{P}(\mathrm{X}\cap\{1\})+\mathrm{P}(\mathrm{X}\cap\{2\})+\mathrm{P}(\mathrm{X}\cap\{0\})\\
+&=\mathrm{P}(\mathrm{X}).
+\end{aligned}
+$$
+
+Of course, the examples in the main text show that not every finite serial frame is bland even in this weakened sense.
+
+Now say that a frame $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is banal just in case it is serial and $\mathrm{P}(\mathrm{X}\mid\{w\in \mathrm{W}:\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}\})=\mathrm{c}$ for every real number $\mathrm{c}$, subset $\mathrm{X}$ of $\mathrm{W}$ and regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ such that the conditional probability is defined (i.e. $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}$ for some $w\in \mathrm{W}$). Banality is a form of Miller’s Principle or the Principal Principle.
+
+Proposition 6. A finite frame is banal if and only if it is partitional.
+
+Proof. Suppose that $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is a finite partitional frame, $\mathrm{X}\subseteq \mathrm{W}$ and $\mathrm{P}$ is a regular probability distribution on $\mathrm{W}$. If $w\mathrm{R}x$ then $\mathrm{R}(w)=\mathrm{R}(x)$ since $\mathrm{R}$ is an equivalence relation, so $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(x))=\mathrm{c}$ if $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}$. Thus, if the conditional probability is defined,
+
+$$\{w\in \mathrm{W}:\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}\}=\mathrm{R}(w_1)\cup\ldots\cup \mathrm{R}(w_n)$$
+
+where the $\mathrm{R}(w_i)$ are pairwise disjoint and $\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w_i))=\mathrm{c}$ for $1\leq i\leq n$. Thus
+
+$$\mathrm{P}(\mathrm{X}\cap \mathrm{R}(w_i))=\mathrm{c}\mathrm{P}(\mathrm{R}(w_i))$$
+
+for $1\leq i\leq n$. Hence
+
+$$
+\begin{aligned}
+\mathrm{P}(\mathrm{X}\cap\{w\in \mathrm{W}:\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}\})
+&=\mathrm{P}(\mathrm{X}\cap(\mathrm{R}(w_1)\cup\ldots\cup \mathrm{R}(w_n))\\
+&=\sum_{1\leq i\leq n}\mathrm{P}(\mathrm{X}\cap \mathrm{R}(w_i))\\
+&=\mathrm{c}\sum_{1\leq i\leq n}\mathrm{P}(\mathrm{R}(w_i))\\
+&=\mathrm{c}\mathrm{P}(\mathrm{R}(w_1)\cup\ldots\cup \mathrm{R}(w_n))\\
+&=\mathrm{c}\mathrm{P}(\{w\in \mathrm{W}:\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}\}).
+\end{aligned}
+$$
+
+Thus $\mathrm{P}(\mathrm{X}\mid\{w\in \mathrm{W}:\mathrm{P}(\mathrm{X}\mid \mathrm{R}(w))=\mathrm{c}\})=\mathrm{c}$.
+
+Conversely, suppose that $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is a finite banal frame. Let $\mathrm{W}=\{w_0,\ldots,w_m\}$. There is a regular probability distribution $\mathrm{P}$ on $\mathrm{W}$ such that:
+
+$$\mathrm{P}(\{w_i\})=2^i/(2^{m+1}-1)\qquad(0\leq i\leq m))$$
+
+Thus for all $\mathrm{X},\mathrm{Y}\subseteq \mathrm{W}$, $\mathrm{P}(\mathrm{X})=\mathrm{P}(\mathrm{Y})$ only if $\mathrm{X}=\mathrm{Y}$. Suppose that $x\mathrm{R}y$. Let $\mathrm{c}=\mathrm{P}(\{y\}\mid \mathrm{R}(x))$. Since $y\in \mathrm{R}(x)$, $\mathrm{c}>0$ and $\mathrm{P}(\{y\})=\mathrm{c}\mathrm{P}(\mathrm{R}(x))$. Now suppose that $\mathrm{P}(\{y\}\mid \mathrm{R}(w))=\mathrm{c}$. Since $\mathrm{c}>0$, $y\in \mathrm{R}(w)$, so $\mathrm{P}(\{y\})=\mathrm{c}\mathrm{P}(\mathrm{R}(w))$. Hence $\mathrm{c}\mathrm{P}(\mathrm{R}(w))=\mathrm{c}\mathrm{P}(\mathrm{R}(x))$; since $\mathrm{c}>0$, $\mathrm{P}(\mathrm{R}(w))=\mathrm{P}(\mathrm{R}(x))$, so $\mathrm{R}(w)=\mathrm{R}(x)$. Conversely, if $\mathrm{R}(w)=\mathrm{R}(x)$ then $\mathrm{P}(\{y\}\mid \mathrm{R}(w))=\mathrm{P}(\{y\}\mid \mathrm{R}(x))=\mathrm{c}$. Thus:
+
+$$\{w:\mathrm{P}(\{y\}\mid \mathrm{R}(w))=\mathrm{c}\}=\{w:\mathrm{R}(w)=\mathrm{R}(x)\}$$
+
+Hence:
+
+$$
+\begin{aligned}
+\mathrm{P}(\{y\}\mid\{w:\mathrm{R}(w)=\mathrm{R}(x)\}
+&=\mathrm{P}(\{y\}\mid\{w:\mathrm{P}(\{y\}\mid \mathrm{R}(w))=\mathrm{c}\})\\
+&=\mathrm{c}=\mathrm{P}(\{y\}\mid \mathrm{R}(x))
+\end{aligned}
+$$
+
+because $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is banal. By reasoning as above, $\{w:\mathrm{R}(w)=\mathrm{R}(x)\}=\mathrm{R}(x)$. Since $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is serial (because banal), this conclusion holds for all $x\in \mathrm{W}$.
+
+Thus $w\mathrm{R}x$ if and only if $\mathrm{R}(w)=\mathrm{R}(x)$; since the latter equation defines an equivalence relation, $\mathord{<} \mathrm{W},\mathrm{R}\mathord{>}$ is partitional. ■
+
+# Appendix II: A Non-Symmetric Epistemic Model
+
+A creature stores information in sentential form. Its language L has two atomic sentences H (‘It is hot’) and C (‘It is cold’), the logical constants $\sim$ and $\mathbin{\&}$ with their usual interpretations, and the unary sentence functor K (‘I know that …’). Let $\mathord{<} \mathrm{A}\mathord{>}$ be the proposition expressed by the sentence A on this interpretation, and $\mathrm{W}=\{w_1,w_2,x\}$. In order to specify which sentences are stored in which circumstances, recursively define an auxiliary function $\phi$ from L to W:
+
+$$
+\begin{aligned}
+\phi\mathrm{H}&=\{w_1\}\\
+\phi\mathrm{C}&=\{w_2\}\\
+\phi{\sim}\mathrm{A}&=\mathrm{W}-\phi \mathrm{A}\\
+\phi(\mathrm{A}\mathbin{\&}\mathrm{B})&=\phi \mathrm{A}\cap\phi \mathrm{B}\\
+\phi\mathrm{K}\mathrm{A}&=\phi \mathrm{A}\text{ if }x\in\phi \mathrm{A}\\
+&=\{\}\text{ otherwise.}
+\end{aligned}
+$$
+
+Let the creature be so connected to its environment that for all $y\in \mathrm{W}$ and $\mathrm{A}\in\mathrm{L}$:
+
+$$
+\text{It is disposed in }y\text{ to store A if and only if }y\in\phi\mathrm{K}\mathrm{A}.
+$$
+
+#
+
+For example, since $\phi{\sim}\mathrm{C}=\{w_1,x\}$, $\phi\mathrm{K}{\sim}\mathrm{C}=\{w_1,x\}$, so it is disposed to store $\sim\mathrm{C}$ in $w_1$ and $x$ but not in $w_2$. Since $\phi\mathrm{K}\mathrm{C}=\{\}$, it is not disposed to store C in any circumstance. Thus # agrees with the example in Section 5 on the storage of information about whether it is cold; likewise for information about whether it is hot.
+
+We can argue plausibly that $\phi \mathrm{A}$ is the set of circumstances in which $\mathord{<} \mathrm{A}\mathord{>}$ is true. The argument is by induction on the complexity of A. The only non-routine case is the induction step for K. The induction hypothesis is that $\phi \mathrm{A}$ is the set of circumstances in which $\mathord{<} \mathrm{A}\mathord{>}$ is true. Since the clause for $\phi\mathrm{K}\mathrm{A}$ implies that $\phi\mathrm{K}\mathrm{A}\subseteq\phi \mathrm{A}$, # implies that A is stored only in circumstances in $\phi \mathrm{A}$. Thus, by the induction hypothesis, the creature is disposed to store A only when $\mathord{<} \mathrm{A}\mathord{>}$ is true. We can therefore reasonably suppose that if the creature is disposed to store A then it knows $\mathord{<} \mathrm{A}\mathord{>}$. Conversely, if it is not disposed to store A, then it does not know $\mathord{<} \mathrm{A}\mathord{>}$. But $\mathord{<}\mathrm{K}\mathrm{A}\mathord{>}$ is true if and only if it knows $\mathord{<} \mathrm{A}\mathord{>}$. Thus $\mathord{<}\mathrm{K}\mathrm{A}\mathord{>}$ is true if and only if the creature is disposed to store A. It follows by # that $\phi\mathrm{K}\mathrm{A}$ is the set of circumstances in which $\mathord{<}\mathrm{K}\mathrm{A}\mathord{>}$ is true. This completes the induction step. Q.E.D.
+
+Given that $\phi \mathrm{A}$ is the set of circumstances in which $\mathord{<} \mathrm{A}\mathord{>}$ is true, the definition of $\phi$ recursively specifies the truth-conditions of sentences of L. One can easily check that its results coincide with those of a semantics in possible worlds style, using the accessibility relation in the diagram in Section 5. Since the accessibility relation is reflexive and transitive, every theorem of the modal system S4 is true in every circumstance, when $□$ is replaced by K and propositional variables by arbitrary sentences of L. Consequently, the creature knows every logical consequence of what it knows; moreover, whenever it knows $p$, it knows that it knows $p$. But sometimes, when it does not know $p$, it does not know that it does not know $p$. That is because it cannot survey the totality of its knowledge. It is a failure of self-knowledge, not of rationality in any ordinary sense.

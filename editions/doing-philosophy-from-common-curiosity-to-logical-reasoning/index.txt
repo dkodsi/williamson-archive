@@ -1,0 +1,172 @@
+# Doing Philosophy: From Common Curiosity to Logical Reasoning
+
+Timothy Williamson
+
+Doing Philosophy (2018). Oxford: Oxford University Press.
+
+Front matter, preface, introduction, and Chapter 2
+
+# Contents
+
+Preface
+vii
+List of Illustrations
+ix
+1 Introduction
+1
+2 Starting from Common Sense
+6
+3 Disputing
+19
+4 Clarifying Terms
+35
+5 Doing Thought Experiments
+50
+6 Comparing Theories
+66
+7 Deducing
+82
+8 Using the History of Philosophy
+98
+9 Using Other Fields
+111
+10 Model-Building
+127
+11 Conclusion: The Future of Philosophy
+141
+References and Further Reading
+143
+Index
+151
+
+# Preface
+
+I owe many thanks to the people who have helped in the development of this book at various stages with their perceptive comments: Jennifer Nagel, Peter Momtchiloff, Andrea Keegan, and Jenny Nugée at Oxford University Press; the anonymous referees; above all, my wife Ana Mladenović Williamson.
+
+In a few places, I have put more technical details of an idea in a display box. Some readers will find them helpful, but they can be skipped without breaking the flow of the main argument.
+
+# List of Illustrations
+
+1 Leopard and impalas. Nature Picture Library/Alamy Stock Photo
+17
+2 University masters in a disputation over the definition of happiness, with an audience of students, from a thirteenth-century Parisian copy of a commentary on Aristotle’s Nicomachean Ethics. National Library of Sweden, MS Va 3
+27
+3 C. E. M. Joad, philosopher as media celebrity, 1940s style. ART Collection/Alamy Stock Photo
+36
+4 David Chalmers’ zombie twin is the one on the left. James Duncan Davidson (CC BY-NC 2.0); Kues/Shutterstock.com
+57
+5 What best explains these? Anna Moskvina/Shutterstock.com
+79
+6 Turing’s machine in 1944
+83
+7 Four pioneers of quantified modal logic: clockwise from top left, Avicenna (Ibn Sina, 980–1037); Rudolf Carnap (1891–1970); Saul Kripke (1940–); Ruth Barcan Marcus (1921–2012). Granger/REX/Shutterstock; Library Special Collections, Charles E. Young Research Library, UCLA; by permission of The Ruth Barcan Marcus Family Trust; © Robert P. Matthews, Princeton University
+97
+8 Colonial scene: Evans-Pritchard with Zande boys. Courtesy of the Pitt Rivers Museum
+115
+9 The Müller-Lyer illusion
+119
+
+# 1 Introduction
+
+Jean-Pierre Rives is a rugby union legend. Livewire captain of the great French team in the years 1978–84, he was an unforgettably dashing figure on the field with long, wild, blond hair and often a bloodstained shirt. In a newspaper interview, he explained his thinking about tactics. The key, he said, is to have a clear and distinct idea of what you are trying to achieve. Then you should break each complicated move down into its simplest components, make them intuitive, and build it back up from there. Without naming the iconic French philosopher René Descartes (1596–1650), Rives was following both his signature emphasis on the need for clear and distinct ideas and one of his Rules for the Direction of the Mind (rule 5). French schools teach philosophy, and it has unexpected uses.
+
+Philosophy also has dangers. Rives did not recommend another part of Descartes’ method, his radical strategy of doubting whatever he could, including the whole world outside his mind, in order to rebuild science on the firm foundation of the few remaining certainties. Extreme doubt may not yield sporting success. Anyway, Descartes did not live up to his own high standards. He relied on dodgy old ways of thinking to ‘prove’ God’s existence and then used God to resolve his doubts. Even at the time, many philosophers found his solution unconvincing. His reasons for doubt were like Frankenstein’s monster, which he constructed but could not control. That is the problem of scepticism. It’s often dismissed as a non-issue, of interest only to paranoid philosophers. But don’t forget the public relations consultants called in by politicians and businesses to undermine inconvenient scientific discoveries, like global warming and the harmful effects of smoking. Those consultants have a slogan: “Our product is doubt”. They know they can’t prove the scientists wrong. Their aim is just to create enough confusion, to make people think “The experts can’t agree, so there’s no point worrying”. Climate change scepticism isn’t a harmless philosophical eccentricity; it’s a threat to future generations.
+
+Descartes’ starting point for reconstructing knowledge was his knowledge of his own inner thought. That too still has strange echoes. In March 2003 the United States under President George W. Bush and the United Kingdom under Prime Minister Tony Blair invaded Iraq and overthrew Saddam Hussein’s regime, claiming that it had weapons of mass destruction (WMD). The claim soon turned out to be false. In a 2004 speech defending his actions, Tony Blair said: “I only know what I believe”. He hadn’t known that there were WMD, but he had known that he believed that there were WMD. He tried to divert attention away from the question of testable evidence out there for WMD to the question of his inner sincerity.
+
+Philosophy also plays a role when we recognize that the people of that region have endured a long history of human rights abuses. We can do so because we have an idea of human rights. Philosophers played a key role in developing that idea: notably, in the same period as Descartes, Hugo Grotius (1583–1645), John Locke (1632–1704), and others.
+
+Philosophy isn’t something totally alien to us; it’s there already in our lives, in trivial ways and important ones. But what is philosophy? What are philosophers trying to achieve?
+
+Traditionally, philosophers have wanted to understand the nature of everything, in a very general way: existence and non-existence, possibility and necessity; the world of common sense, the world of natural science, the world of mathematics; parts and wholes, space and time, cause and effect, mind and matter. They want to understand our understanding itself: knowledge and ignorance, belief and doubt, appearance and reality, truth and falsity, thought and language, reason and emotion. They want to understand and judge what we do with that understanding: action and intention, means and ends, good and bad, right and wrong, fact and value, pleasure and pain, beauty and ugliness, life and death, and more. Philosophy is hyper-ambitious.
+
+That brief description raises an obvious question: since scientists study many of those topics, how is philosophy related to science? They were not always separate. From the ancient Greeks on, philosophy included natural philosophy, the study of the natural world. To cut a long story short, through the sixteenth and seventeenth centuries, natural philosophy turned into something recognizable as natural science in the modern sense, especially physics. Pioneers such as Galileo and Newton still described themselves as natural philosophers. Some philosophers were also scientists and mathematicians, including Descartes and Gottfried Wilhelm Leibniz (1646–1716). But natural philosophy or natural science developed a distinctive methodology, with a key role for experimentation, exact observation using special instruments such as telescopes and microscopes, measurement, and calculation. Increasingly, this child of philosophy has looked like a rival and mortal threat to its parent. For philosophy and natural science seem to be in competition to answer the same questions about the underlying nature of reality. If it is a duel, philosophy seems to be outgunned, for it only has thought, while natural science has those other methods too. If philosophers insist that they are better at thinking than natural scientists, who will believe them? To change the metaphor, the philosopher is cast in the role of the lazy man lecturing us from the comfort of his armchair about how the universe must be, while the scientist goes out to look and see how it really is. If that’s right, isn’t philosophy obsolete? Thus the rise of modern natural science has provoked a slow-burning crisis of philosophical method.
+
+Much of the subsequent history of philosophy can be interpreted as a series of responses to that crisis of method, attempts to find something, anything, that philosophical methods can do better than scientific ones. Those attempts have often involved drastically scaling down the ambitions of philosophy, as later chapters will explain.
+
+In my view, the supposed opposition between philosophy and science assumes an overly narrow, one-size-fits-all conception of science. After all, mathematics is just as scientific as natural sciences like physics, chemistry, and biology, all of which constantly rely on it, yet mathematicians don’t do experiments. Like philosophers, they can work by thinking in an armchair. This book explains how the methods philosophers use are the appropriate scientific methods for answering their questions, which are questions of the traditional ambitious kind. Like mathematics, philosophy is a non-natural science. Unlike mathematics, it is not yet a fully mature science.
+
+Admittedly, many contemporary philosophers are anything but scientific in their approach. This book is about doing philosophy well, not about doing it badly, though what counts as doing it well is itself contested. Many philosophers will hate my picture of how to do philosophy. I leave the reader to judge.
+
+This book explains how philosophy can answer questions of stupendous generality. It involves nothing exotic, no altered states of consciousness. The reader may sometimes react: “But I do that already!” That’s exactly the point. Philosophy, like all science, starts with ways of knowing and thinking all normal humans have, and applies them a bit more carefully, a bit more systematically, a bit more critically, iterating that process over and over again. Through the contributions of thousands of men and women over thousands of years, it has taken us to places of the intellect no one person, unaided, could ever have reached. Most people, especially children, from time to time ask themselves questions containing seeds of philosophy, just as most people ask themselves questions with seeds of physics, biology, psychology, linguistics, history. . . . The great difficulty is in identifying and providing the conditions for those seeds to grow. Without those conditions, each generation is stuck with lots of seed and no fruit.
+
+I have been doing philosophy for well over forty years. It is still one of my greatest sources of pleasure—and frustration. I hope that this book will convey some of the pleasure, and not too much of the frustration.
+
+# 2 Starting from Common Sense
+
+## Common Sense in Philosophy
+
+There is a story of a traveller who asks the way to somewhere and is told, “If I were going there, I wouldn’t start from here”. The advice is useless because one has no choice but to start from where one is. The same applies to any inquiry. We have no choice but to start from the knowledge and beliefs we already have, and the methods we already have for getting new knowledge and beliefs. In a phrase, we have to start from common sense. Of course, that doesn’t mean we have to end at common sense. We hope to go far beyond it. But can we ever completely escape our reliance on common sense? Don’t we bring it with us on our journey?
+
+Imagine someone suffering from continual hallucinations. He can’t rely on his own experience. He can’t even rely on others’ reports of their experience, because he may be hallucinating those ‘reports’ too. He is in no fit state to participate in any natural science. Thus even the most sophisticated natural scientists must presuppose that their senses have not gone haywire. At least to that extent, they still rely on common-sense ways of knowing.
+
+Just like natural science, philosophy never completely escapes its origins in common sense. Some philosophers have been firm defenders of common sense, or at least much of the common sense of their own time and place. Examples are Aristotle (384–322 BCE), Thomas Reid (1710–96), and G. E. Moore (1873–1958). Others seek to escape what they see as its errors, though never with total success. Whereas natural scientists tend to leave their reliance on common-sense methods in the background, simply taken for granted, philosophers are more likely to foreground it, often because they are not quite easy about its status. This recurrent, self-conscious engagement with common sense, asserted or questioned, is one aspect of philosophical method.
+
+## What Is Common Sense?
+
+What does common sense include? Humans start with more or less the same cognitive capacities (there are exceptions, of course). We can look and see. We can listen and hear. We can touch and feel. We can lick and taste. We can sniff and smell. We can manipulate. We can search. We can remember. We can imagine. We can compare. We can think. We can communicate our thoughts to others in words and pictures, and understand what they say and show to us. In such ways, we learn about our environment, each other, and ourselves. We come to know the world of which we are part. Much of that knowledge comes naturally or casually as we grow up and live in the world, even without formal education at school or university.
+
+By ‘common-sense’ knowledge in a society I mean whatever most of its members know. Thus common-sense knowledge varies from one society to another. In modern societies, it’s common-sense knowledge that the sun is much larger than the earth. In Stone Age societies, that wasn’t common-sense knowledge. In a Serbian-speaking society, it’s common-sense knowledge that the word ‘crveno’ means red. In other societies, that isn’t common-sense knowledge, because few of their members understand Serbian. But not all common-sense knowledge varies so much. In every human society it’s common-sense knowledge that people have heads and blood.
+
+Common-sense beliefs in a society are whatever most of its members believe. All common-sense knowledge may be common-sense belief, but not all common-sense belief is common-sense knowledge. For if a belief is false, it isn’t knowledge. In an isolated society where everyone believes that the earth is flat, they don’t know that it’s flat, simply because it isn’t. They may believe that they know that it’s flat, but that belief is false too. Similarly, in a racist society, most members have false beliefs about people of other races. They are common-sense beliefs in that society, but not common-sense knowledge, simply because they are false, so not knowledge at all. Even if members of that society believe that their common-sense beliefs about other races are common-sense knowledge, that further belief is false too. It’s hard to distinguish between common-sense knowledge and common-sense belief in one’s own society, but often members of another society can tell the difference.
+
+I’ll apply the phrase ‘common sense’ not only to common-sense knowledge and common-sense belief in a society, but also to the usual ways of thinking which produce that knowledge and belief.
+
+## Common-Sense Questions, Philosophical Questions
+
+Humans, like many other animals, are curious. We want to know. It’s good to have lots of knowledge. It comes in handy in all sorts of unpredictable ways.
+
+Common-sense thinking includes asking all sorts of questions. Many concern quite particular matters. Where’s the milk? Who’s that over there? Others have more generality. How do you make cheese? How long do mice live? Others are more general still. They include ‘what is’ questions. A child drinking a mug of milk may ask, “What is milk?” She knows well enough how to apply the word ‘milk’, but she still wants to know what milk is. She may be told how milk comes from cows, and mothers. In that case, an answer is already common knowledge in her society. In other cases, the answer may not yet be common knowledge, or even common belief. For instance, some people may ask, “What is honey?”, knowing that it can be found in bees’ nests but not how it got there. They may ask, “What is water?”, for instance when puzzled by how it can freeze to ice and unfreeze again. Science begins with such questions, as well as with questions about the properties of specific kinds of plants and animals. They are not questions about words or concepts in our minds, but about the stuff itself: milk, honey, water. We can’t eat or drink words or concepts.
+
+The questions continue. What are the sun and the moon? What is fire? What is light? What is sound? There is no natural division between such questions, which we now regard as the beginnings of science, and questions we now regard as the beginnings of philosophy. What is space? What is time? Those questions are asked in both physics and metaphysics, the branch of philosophy concerned with reality as a whole, not in totally different senses, though they may get very different answers. Natural science began as natural philosophy (see Chapter 1).
+
+‘What is’ questions go back to the beginning of philosophy. Plato (429?–347 BCE) asked, “What is justice?” and “What is knowledge?”—still central philosophical questions. He was not asking about the (ancient Greek) words or concepts, but about justice and knowledge themselves. Of course, they are not stuff like milk, honey, or water. You can’t have a pint of justice or a kilo of knowledge. But that is not a difference between philosophy and natural science. Biology answers the question, “What is life?” (and many others) but life is not a stuff. You can’t have a pint or kilo of life. There’s a distinction between living and non-living things; one task for biology is to explain the underlying difference. Similarly, there’s a distinction between just and unjust actions; one task for philosophy (specifically, political philosophy) is to explain the underlying difference. There’s a distinction between knowledge and ignorance; another task for philosophy (specifically, epistemology) is to explain that underlying difference too. Common sense recognizes life, justice, and knowledge. Our natural curiosity can make us want to understand them better.
+
+Of course, thinking about common-sense distinctions sometimes makes us dissatisfied with them. The ordinary words with which we draw them may be too vague, or muddle together several different distinctions, or mark only superficial differences. That can happen in both philosophy and natural science. We may need to introduce new terminology to mark clearer or deeper distinctions and create a more helpful framework for further investigation. Common sense is the starting point, not the end point.
+
+## Common Sense as a Check on Philosophy
+
+Common sense is not a mere point of departure for philosophy to leave behind. It remains in another role, as a check on the philosopher’s provisional conclusions.
+
+I once had a colleague who presented his theory of perception in a lecture. A student pointed out that the theory entailed that it is impossible to see through a window. My colleague’s theory was refuted by the common-sense knowledge that it is possible to see through a window. I see trees through one as I write.
+
+Any theory inconsistent with common-sense knowledge is false. For whatever is known is the case, so whatever it is inconsistent with is not the case. Another example: metaphysicians such as John McTaggart (1866–1925) have argued that time is unreal, meaning that nothing happens after anything else. That is inconsistent with the common-sense knowledge that people often eat breakfast after they get up. Thus the metaphysical theory is refuted. Contemporary philosophers often rule out philosophical theories by showing them to be inconsistent with common-sense knowledge.
+
+There’s an obvious worry about using common sense as a standard by which to judge philosophical theories. What if we are mistaking a false common-sense belief for common-sense knowledge? In some societies, they believe ‘Torture is not wrong’; indeed, they believe ‘We all know that torture is not wrong’. Philosophers in such a society may think they have refuted a theory of human rights by showing it to be inconsistent with common-sense knowledge, because it implies that torture is wrong. Isn’t that ‘refutation’ deluded?
+
+The worry is that appeals to common sense are just a disguise for reliance on popular prejudice in judging philosophical theories. Such suspicions are especially strong amongst philosophers with views inspired by modern science, because they regard common sense as pre-scientific. Bertrand Russell (1872–1970) called it ‘the metaphysics of savages’. For instance, on the basis of Einstein’s theory of special relativity, some philosophers deny that the present is more real than the past and future; they will not be impressed by appeals against them to common sense. They regard it as embodying an out-of-date understanding of time and space.
+
+Another theory inconsistent with common-sense belief says that there are only atoms (or fundamental particles) in the void. Some philosophers controversially take that to be a lesson of modern science. On their view, there are really no such things as the large-scale objects of common sense: no sticks and stones, no tables and chairs. Although there appear to be large-scale objects, really there are none. But now the dangers in a radical rejection of common sense start to emerge. For to whom do there appear to be large-scale objects? To us humans, presumably. Things don’t appear any way to a fundamental particle, since it has no mind. But humans are large-scale objects too, so, on the radical view, there are no humans; thus it doesn’t even appear to anyone that there are sticks and stones. Nor is it merely convenient to use words like ‘stick’ and ‘stone’, since there is no one to use them; indeed, there are no words, since words are not fundamental particles. Isn’t this getting out of hand?
+
+There is an issue here for natural science as well as for philosophy. Natural science is rooted in our capacity to make observations. If a scientific theory implies that there is nothing capable of making observations, isn’t it cutting off the branch it’s sitting on? Even if one tries postulating observations without an observer, they too would involve large-scale events of the sort being denied. A theory is self-undermining if it is incompatible with the possibility of obtaining evidence in its favour. That goes for theories both in natural science and in philosophy. Since obtaining such evidence ultimately depends on common-sense methods of knowing through the senses, there’s a limit to how far defensible theories can disagree with common sense.
+
+The disputed role of common sense as a check on philosophical theorizing raises a more general question: what kind of evidence have we to go on in philosophy?
+
+## Fallibility about Evidence
+
+Many philosophers treat appearances as the gold standard of evidence by which to judge theories in both natural science and philosophy. On their view, a good theory must save the appearances. In other words, it should accurately predict how things will appear to us—or at least, avoid inaccurately predicting those appearances. Now a theory can accurately predict the appearances yet still say that those appearances are false. For instance, it can predict that the moon will look to us much larger than the stars, and consistently add that the moon is really much smaller than the stars. A more radical theory may even predict that it will look to you as if there is a moon much larger than the stars, while adding that really there are no stars and no moon out there at all, there are only figments of your imagination. What the theory must not predict is that the moon will look to us much smaller than the stars. If saving the appearances suffices for fitting the evidence, then ultimately, the only evidence you have to go on right now is how things appear to you right now. Whether you are seeing the stars and moon or merely hallucinating them, your evidence includes the fact that it appears to you as if there are stars and a much larger moon.
+
+Why equate our evidence with how things appear to us? What makes the equation appealing is this thought: I may be wrong about how things really are, but at least I’m not wrong about how they appear to me. But are we really infallible about how things appear to us?
+
+To use appearances as evidence for or against a theory, it isn’t enough that they simply happen. For instance, a theory predicts that, if you do a particular experiment, a spot will appear to move. Once you do the experiment, using the result for or against the theory requires you to judge whether a spot did indeed appear to move. Judgements can be right or wrong. We humans are fallible in making judgements even about how things appear to us. If no spot appears to move, I may still convince myself otherwise because I’m committed to the theory, and make the biased judgement “A spot appeared to move”. Whatever our evidence is, we are fallible in making judgements about it. Sometimes we get it wrong. Even if we do our best to counteract our unconscious biases, we may fail. Thus there is a flaw in the argument, “My only evidence is appearances to me, because I can be wrong about everything else”, because it sets a standard for evidence that not even those appearances meet.
+
+In any case, equating evidence with appearances runs contrary to the spirit of science. That spirit requires evidence to be checkable, repeatable, open to scrutiny by others. Momentary appearances to one person do badly on all those tests. In that respect, common sense does better, because it is shared and can be checked. What papers in scientific journals cite as evidence are the actual results of experiments, described in large-scale physical terms. Such descriptions are more precise and technical than descriptions of our surroundings in everyday terms, but closer to them than to descriptions merely of how things appeared to someone.
+
+The case of natural science suggests that the quest for a kind of evidence about which we are infallible is a wild goose chase. Whatever evidence is, what we treat as evidence will sometimes turn out to be false. No scientific procedures are designed to provide 100 per cent guarantees against error in practice. Rather, they are designed to facilitate the correction of errors in the long run. That is the best to which philosophy too can aspire.
+
+Both philosophy and natural science must rely in multiple ways on our ordinary human capacities to learn about the world in common-sense ways. Both must therefore develop strategies for responding to the danger that what we have treated as knowledge is in fact false. The human condition means that we cannot rely on prevention alone, for occasional errors are bound to creep in, despite our best efforts. We also need methods for diagnosing and curing errors in what we treat as our evidence after they have occurred. In practice, therefore, we must allow a right of appeal against supposed evidence. But such a right does not imply that as soon as anyone questions a piece of supposed evidence, we stop treating it as evidence. That would make unsupported challenges decisive, which would allow a mischievous sceptic to bring both philosophy and natural science grinding to a halt, just by mechanically questioning whatever was produced as evidence. Rather, to deserve to be taken seriously, the critic must offer good reasons for doubting a specific piece of supposed evidence. Those reasons themselves had better be based on evidence, which can in turn be questioned. Chapter 3 will discuss such disputes in more detail.
+
+## The Reliability of Common Sense
+
+On the picture sketched in this chapter, if common sense is totally out of touch with reality, then neither philosophy nor natural science has much chance of putting us in touch with reality, since both are ultimately too reliant on common-sense methods of knowing. But isn’t the assumption that common sense is not totally out of touch with reality rather optimistic? For won’t common-sense beliefs have evolved to be practically useful rather than true, or even approximately true? And don’t the differences in common sense between one society or time and another suggest that their common senses do not mirror reality?
+
+Those sceptical arguments are unsound. First, true beliefs tend to be more practically useful than false beliefs. Second, we tend to find disagreements in common sense more surprising and so more interesting than agreements, which were expected and so are boring. Since our attention is on the disagreements, we are likely to overestimate the extent of disagreement compared to all the background agreement. Experience suggests that any two groups of humans in contact with each other will manage to communicate: the differences in common sense are not too deep for communication.
+
+If one seeks actual cases of ‘common sense’ achieving practical usefulness without truth, the best place to look would be at non-human animals, for human vanity or solidarity does not prejudice us in their favour. Think of a leopard stalking a herd of impalas. Both species surely have their own ‘common-sense’ ways of learning about their environment. Is it plausible that those ways are totally out of touch with reality? Not at all. For both leopards and impalas, it is literally a matter of life and death to know whether there’s a member of the other species nearby and, if so, where. They have evolved to be good at acquiring such knowledge. We can often explain why a particular leopard or impala acts as it does by attributing just such knowledge to it. Of course, like us, they are fallible, and sometimes have false beliefs. An impala may falsely believe that no leopard is nearby. But what explains the error is the leopard’s skill or luck, not the impala’s total detachment from reality. Naturally, leopards’ and impalas’ knowledge mainly concerns the tiny fraction of reality of practical interest to them, but within those limits it is impressive. It certainly impressed me when I watched impalas interacting with a leopard in South Africa.
+
+![Leopard and impalas.](leopard-and-impalas.png)
+1. Leopard and impalas.
+
+It is biologically implausible to deny common-sense knowledge to non-human animals. It is just as biologically implausible to deny common-sense knowledge to human animals. Ascribing such knowledge involves no favouritism towards ourselves. There is good evidence for it.
+
+The practice of testing philosophical theories against common-sense knowledge is thus quite reasonable. So too is the practice of challenging alleged cases of common-sense knowledge given specific grounds for doing so. It can be hard in practice to say just what should count as part of our evidence. But the same goes for natural science too: evidence is always in principle open to challenge.

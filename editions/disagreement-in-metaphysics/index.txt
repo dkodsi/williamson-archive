@@ -1,0 +1,216 @@
+# Disagreement in metaphysics
+
+Timothy Williamson
+
+In Maria Baghramian, J. Adam Carter, and Rach Cosker-Rowland (eds.), The Routledge Handbook of Philosophy of Disagreement (2025), 62–72. Abingdon: Routledge.
+
+# 1. Introduction
+
+At first sight, metaphysics looks as well‑stocked as any other field of theoretical inquiry with disagreement, of a generically familiar kind. One side asserts what the other denies. Physicalists assert that everything is physical, anti‑physicalists that not everything is physical. Each side supports its position with theoretical considerations. Physicalists invoke the explanatory success of natural science, and the unifying power of a physicalist world-picture; anti‑physicalists argue that natural science relies on mathematics, built up from set theory, which posits non‑physical pure sets. Theists argue that there is a god, atheists that there is none. And so on. Metaphysics concerns the deepest, most general nature of reality. We should expect its questions to be hard. A community of metaphysicians who all agree with each other sounds like a herd of closed‑minded conformists.
+
+Not everyone takes that view. According to Amie Thomasson, ‘the complete failures of convergence, recondite nature of many debates, and lack of clarity about the epistemology of metaphysics have led to renewed suspicions about metaphysical disputes’ (Thomasson 2017: 1). The term ‘renewed’ points to a long history of such suspicions, going back at least to Hume and Kant. Thomasson’s own deflationism about metaphysics owes much to the anti‑metaphysical stance of the logical positivist Rudolf Carnap.
+
+For some reason, ontology—the branch of metaphysics which asks ‘What is there?’—is especially liable to provoke suspicion (Yablo 1998, Eklund 2006, Chalmers, Manley, and Wasserman 2009, Thomasson 2015). But the underlying issues arise for metaphysics in general.
+
+Metaphysics has been threatened with meaninglessness, as punishment for violating a verification principle about meaning. Some metaphysicians utter a sentence as if asserting something; others utter its negation as if denying what had been asserted, but really no content was expressed about which to disagree. Such charges of meaninglessness are now rare. By normal linguistic standards, sentences used in metaphysics have literal meanings, determined in the usual compositional way from the meanings of their constituent words and how they are put together. Anti‑metaphysicians have had to devise subtler accusations.
+
+On one view, metaphysical disputes are merely verbal, a charge often thrown by impatient non‑philosophers at philosophical disputes in general. What makes a dispute ostensibly about non‑linguistic reality merely verbal? It is surprisingly hard to say (Chalmers 2011 is an attempt alert to many of the difficulties; see also Hirsch 2005, Balcerak Jackson 2014). Still, imagine two metaphysicians, him and her: his theory contains the negations of some sentences in her theory, but by interpreting his words differently from hers we can make both theories come out simultaneously true (by our lights). Is there really anything to choose between their theories? We can accept both, suitably interpreted. Aren’t we interpreting them charitably, by interpreting both as true? If the metaphysicians still insist that something profound is at stake between them, they seem to be disagreeing for the sake of it. What is the point of metaphysics, if its disputes are like that?
+
+The claim of compatibility is sometimes strengthened to one of equivalence: on a suitable translation scheme between his language and hers, their theories turn out to have the same truth‑conditions, so he is right if and only if she is right (see for example Putnam 1987, Hirsch 2002, 2011, and for discussion Eklund 2006, Hawthorne 2009, Hirsch and Warren 2019).
+
+On a different view, his language and hers are not intertranslatable, but only a practical question is at stake: which language is more useful for some purpose? According to Carnap (1950), we can ask ‘Are there numbers?’ as either an internal or an external question. As an internal question, it is asked in a linguistic framework with number words; the answer is trivially ‘Yes’, just as the answer to the mathematical question ‘Are there prime numbers between 20 and 30?’ is slightly less trivially ‘Yes’. By contrast, if we ask ‘Are there numbers?’ outside that framework, as an external question, it makes sense only as a metalinguistic question about the utility of numerical language, perhaps for physics. In a spirit like Carnap’s, Amie Thomasson’s characterizes ontological questions as ‘easy’ (2015).
+
+Refusals to take metaphysical disputes at face value typically depend on contentious assumptions about meaning. Thus Carnap assumed that number words get their meaning from semantic rules which guarantee the truth of the sentence ‘There are numbers’, making it analytic, true by virtue of its meaning: metaphysicians who assert ‘There are no numbers’, intending to speak literally, are doing something analogous to speaking ungrammatically, except that the rules violated are semantic rather than syntactic.
+
+That natural languages have semantic rules such as Carnap postulates is far from obvious. After all, if someone says ‘Mathematicians may talk about numbers, but really there are no such things’, it would be strange to conclude that she doesn’t know how to speak English; a more common reaction would be to agree with her (though I don’t).
+
+Another strategy for defusing metaphysical disputes is by interpreting one protagonist as speaking non‑literally, for instance, by proposing a mathematical theory with an ontology of abstract objects as a useful fiction rather than the literal truth (see Calderon 2005, especially Yablo 1998, 2009, Stanley 2001, Dorr 2005).
+
+Space does not permit detailed examination of attempts to reinterpret metaphysical disputes. Instead, we can ask why so many philosophers have been so reluctant to take metaphysical disputes at face value, as literal disagreements about the nature of reality. Their motivating assumptions may be far more problematic than traditional metaphysics itself.
+
+# 2. Charitable Interpretation
+
+A salient feature of some metaphysical disputes is that, by ordinary standards, one side speaks obvious falsehoods. For example, they deny that there are sticks and stones and other common sense objects, on the grounds that there are only atoms in the void, or some analogous premise updated to fit contemporary fundamental physics. But good interpreters try not to attribute obviously false beliefs; they prefer to attribute beliefs compatible with common sense. They apply a principle of charity in interpretation, maximizing the subject’s true beliefs, or rationality, or knowledge. Such a principle is at least a good rule of thumb and is arguably constitutive of correct interpretation (Lewis 1974). It is not generally hostile to metaphysics, but it can motivate attempts (as by Hirsch 2002, 2005, 2011) to reinterpret metaphysicians who appear to deny the obvious.
+
+A natural qualm about such uses of charity is that they may prevent us from recognizing radical challenges to our deeply held beliefs, in a kind of repressive tolerance. Is it impossible for scientific developments to reveal errors in common sense? Must metaphysics be descriptive rather than revisionary (Strawson 1959)? We need to revisit some assumptions in the philosophy of language.
+
+Attempts to interpret the parties to an apparent metaphysical dispute as not really disagreeing with each other tend to rely on an old‑fashioned individualistic model of linguistic meaning. The meaning of words in an individual’s mouth is assumed to be constitutively determined just by how that individual uses it. Any resemblance to its meaning in another’s mouth may not be quite coincidental, but is at best explained causally, not constitutively, by social interactions. That picture ignores the social division of linguistic labor, and the role of the linguistic community as a whole in constituting the publically available meanings of linguistic expressions (Putnam 1973, 1975, Burge 1979). The social determination of linguistic meaning applies just as much to words as used in philosophical disputes as elsewhere (Williamson 2007: 73–133). Of course, philosophers—like other people—can and occasionally do invent technical terms, or stipulate idiosyncratic senses for their words. But such occurrences reveal nothing special about metaphysical or other philosophical disputes. The default is still the socially determined meaning. That default is conducive to successful communication and the avoidance of misunderstanding. It is hardly charitable to metaphysicians to treat them as peculiarly incompetent communicators.
+
+The case for interpreting disputes unequivocally goes beyond the level of linguistic meaning. It also concerns co‑reference within a single conversation (spoken or written). For example, speakers often coordinate reference by using indexicals such as ‘it’ and ‘that’ anaphorically on terms as used earlier by other speakers. More generally, they often treat utterances of one term by different speakers as if made in a single context, just as they might utterances of it by one speaker at different times. Such a policy is charitable rather than naïve. For interpreting a dialogue does not reduce to interpreting mutually independent monologues. Ceteris paribus, a good interpretation of a monologue makes sense of the reasoning in it as cogent and knowledge‑conducive, and so where possible avoids attributing fallacies of equivocation (Williamson 2007: 247–277 discusses knowledge maximization as a principle of charity in interpretation). Dialogues, especially philosophical disputes, often involve reasoning across contributions by different speakers: for example, after one participant advances a claim, another draws consequences from it (perhaps aiming at a reductio ad absurdum). Ceteris paribus, a good interpretation of a dialogue makes sense of the inter‑participant as well as the intra‑participant reasoning in it as cogent and knowledge‑conducive, and so where possible avoids attributing inter‑participant as well as intra‑participant fallacies of equivocation. Of course, sometimes fallacies of equivocation really are committed, but such diagnoses are not the first resort.
+
+This picture of interpretation at the level of a dialogue is quite consistent with attributing conflicting aims to the participants. Each may be trying to defeat the other. Nevertheless, each can hope to benefit from the other’s dialectical skill, by showing how their view can pass the severest tests, perhaps by clarifying and developing it further.
+
+These points about interpretation are not specific to metaphysics. That fits the main claim of this chapter, that disagreement in metaphysics is much like disagreement in other theoretical domains.
+
+An important case of conversational coordination is in the generality with which participants are speaking. If one speaker treats some things as relevant, while another ignores them as irrelevant, miscommunication is liable to occur. The cooperative norm here is inclusive: by treating things as relevant, a speaker makes them relevant to the conversation, at least temporarily, so others should treat them as relevant too (Lewis 1979). Some restrictions in generality may remain, set by the purpose of the conversation, if all participants respect it. However, when the topic is general ontology, the purpose of the conversation excludes no entity, so absolutely unrestricted generality is appropriate (Williamson 2003). In such cases, to posit tacit restrictions on a speaker’s quantifiers would be to interpret the dialogue uncharitably as dysfunctional, not knowledge‑conducive, and so is to be avoided, in the absence of special reason to regard the speaker as conversationally incompetent.
+
+Of course, we can sometimes reinterpret people as speaking truly by reading a tacit restriction into their utterances. For example, if a metaphysician falsely believes that there are only simples (things without proper parts), much of what she says may be true when read as restricted to simples. But that does not make the restricted interpretation correct. Indeed, it trivializes her distinctive view. When she says ‘All things are simples’, it treats her as merely saying, ‘All simples are simples’. Such an interpretation treats the dialogue between this metaphysician and her opponents as a pointless non‑meeting of minds. It is hardly knowledge‑conducive; it silences the ontology of simples, rather than enabling its strengths and weaknesses to be brought out in open debate. When this metaphysician’s opponents want to extract truths from her utterances, they may be able to do so by inserting the restriction to simples, but there is no need to pretend that the restricted claims exhausted what she was saying (Williamson 2013: 305–375 discusses a related case in detail).
+
+# 3. Metalinguistic Negotiation
+
+Thomasson (2017) has suggested that various disputes in metaphysics are best understood as cases of metalinguistic negotiation in disguise. Thus two philosophers who appear to disagree about what it is to be a woman may really be engaged in a power struggle over how to use the word ‘woman’: whether to mark a biological, sociological, or psychological distinction. Such reinterpretations of apparently theoretical questions as really practical recall Carnap’s external questions.
+
+Reclassifying external questions as practical and metalinguistic is not intended to trivialize them. Much may be at stake. That is clear from recent discussion of ‘conceptual engineering’ (Cappelen 2018) and ‘metalinguistic negotiation’ (Plunkett 2015). Banning numerical language would be disastrous for natural and social science. Decisions on how to use gender and racial terms can have important moral and political consequences. The idea is just that, whatever is at stake, it is not metaphysical.
+
+There may indeed be cases of disguised metalinguistic negotiation in metaphysics. If so, I suspect, the phenomenon is marginal. For present purposes, three comments must suffice.
+
+First, use‑mention confusions are tempting enough at the best of times. Distinguished intellectuals have been known to claim that there were no galaxies before the word ‘galaxy’ was invented. Metalinguistic negotiation disguised from others and perhaps from the participants themselves as metaphysical disagreement is liable to make the temptation overwhelming. Indeed, use‑mention fallacies seem common in metalinguistic negotiation. Assimilating metaphysical disputes to such practices may turn out to be an uncharitable interpretation.
+
+Second, when metaphysicians care about the best use of terms, their reasons for doing so are often highly metaphysical. They use a word one way rather than another to carve at the joints, to mark a metaphysically deeper distinction. They disagree about which distinction is deeper. Thus metalinguistic negotiations often take one straight back into metaphysics (contrast Thomasson 2020b).
+
+Third, one should not underestimate the constraints on relevant terminological choices. For instance, disputes about personal identity (are persons individuated biologically, psychologically, or sociologically?) are sometimes treated as exemplars of metalinguistic negotiation, in this case about what to mean by the word ‘person’ (Burgess and Plunkett 2013: 1092–1093, Thomasson 2017: 4). But a natural constraint on the meaning of ‘person’ is that we end up in its extension, where ‘we’ includes you and me. We do not want its extension to contain only advanced robots. Suppose that you and I are biologically individuated: what it is for us to persist over time is a matter of biologically continuity. Then if we agree to apply ‘person’ only to non‑biologically individuated entities, we exclude ourselves from its extension. For something biologically individuated cannot make itself non‑biologically individuated just by fiat. Alternatively, suppose that you and I are non‑biologically individuated. Then if we agree to apply ‘person’ only to biologically individuated entities, we also exclude ourselves from its extension. For something non‑biologically individuated cannot make itself biologically individuated just by fiat. Thus our discussion of what to mean by ‘person’ is answerable to our own metaphysical status, which is not just up to us. We should not delude ourselves about the extent of our metaphysical powers. Such points easily get obscured by the use‑mention confusions already noted: by changing what we mean by the word ‘person’, we can decide what it takes to be in the extension of ‘person’, but it does not follow that we can decide what it takes to be a person. One cannot answer the question ‘What am I?’ by mere linguistic stipulation.
+
+Metalinguistic negotiation is no substitute for metaphysical understanding. Few metaphysical disputes are plausibly interpreted as metalinguistic. Why go to such lengths to deny that metaphysical disputes are, by and large, what they seem?
+
+# 4. Metaphysics and Metametaphysics
+
+We have considered various deflationary views of metaphysical disputes as involving no serious competition between mutually inconsistent metaphysical theories. I deny what deflationists assert. In whatever sense they claim that metaphysical disputes deflate, I claim that they do not. Since the deflationists’ claim is at least meaningful, so is my denial of it. We both develop our claims into theories, for which we provide serious arguments; neither of us is trivially mistaken. I craft my account to make it inconsistent with the deflationist’s. My meta‑dispute with the deflationist does not deflate.
+
+Of course, that does not make the meta‑dispute an exception to deflationists’ claim, since the latter concerned metaphysical disputes, whereas the former can be consigned to metametaphysics. However, when we recall the usual motivation for deflationism about metaphysical disputes, we find that it easily generalizes to metametaphysical disputes too. For it comes from complaints about metaphysics which apply just as much to metametaphysics. In particular, echoing Thomasson’s charge list against metaphysics, quoted earlier, one can charge metametaphysics with the complete failures of convergence, recondite nature of many debates, and lack of clarity about the epistemology of metametaphysics. There is obviously a complete failure of convergence between deflationists like Thomasson and realists like me; we will not agree any time soon. Debates about deflationism are just as recondite in nature as typical debates about first‑order metaphysical issues; indeed, the second‑order nature of the former makes them even more recondite (‘talks about talks’). Nor is the epistemology of metametaphysics any clearer than the epistemology of metaphysics. If one examines Thomasson’s own metametaphysical arguments, one encounters a complex discourse interweaving general theoretical considerations and particular examples, of a kind familiar from texts in metaphysics. There need be nothing wrong with that style of argumentation (which this chapter also employs), but its epistemology is far from clear. By contrast, the epistemology of deductive argument is somewhat clearer: but deductive arguments are more common in traditional metaphysics than they are in most contemporary metametaphysics, including Thomasson’s writings. In short, if her type of argument supports deflationism about metaphysics, it supports deflationism about metametaphysics at least as strongly. But if she were to adopt deflationism about metametaphysics, it would take the sting from her deflationism about metaphysics.
+
+The problem is not specific to Thomasson. Similar points apply to other contemporary philosophers who criticize metaphysics on broadly epistemological grounds which easily generalize to their own metametaphysics.
+
+So far, I have assumed that Thomasson can treat metametaphysics as separate from metaphysics itself. Thus, in doing metametaphysics, one can be neutral with respect to serious metaphysical disputes—either because there are no such disputes, or because one has no need to take sides in them. However, that assumption of metaphysical neutrality is questionable. In Appearance and Reality, F. H. Bradley outed the ‘man who is ready to prove that metaphysical knowledge is wholly impossible’ as ‘a brother metaphysician with a rival theory of first principles’. He explains: ‘To say the reality is such that our knowledge cannot reach it, is a claim to know reality’ (Bradley 1897: 1–2). More recently, Ted Sider (2011) has argued that deflationists about metaphysical structure in effect rely on the metaphysically contentious presupposition that the world has no deep structure of its own.
+
+One problem for the supposed metaphysical neutrality of metametaphysics comes from the status of logic. Presumably, metametaphysics needs logic, if only as a minimal constraint on theoretical options. Thus, a metaphysically neutral metametaphysics needs a metaphysically neutral logic. On a popular stereotype of logic, that is fine, because logic is indeed metaphysically neutral. But that stereotype does not withstand scrutiny (Williamson 2013, 2014). Every standard principle of logic has been challenged on metaphysical grounds. For example, the law of excluded middle (the schema ‘P or not P’) has been thought to fail for future contingents and for infinite domains. Similarly, according to dialetheists such as Graham Priest, the set of all sets which are not members of themselves both is and is not a member of itself; to ensure that not everything is derivable from that contradiction, they reject various classical principles, such as disjunctive syllogism (the inference from ‘P or Q’ and ‘Not P’ to ‘Q’). Hilary Putnam once held that a distributive principle (the inference from ‘P and (Q or R)’ to ‘(P and Q) or (P and R)’) breaks down at the quantum level. Some philosophers deny that anything is self‑identical, for everything changes. Meinongians reject the rule of existential generalization, on the grounds that although Pegasus is a winged horse, no winged horse exists. And so on.
+
+Quine once argued that such apparent disputes in logic are artifacts of equivocation, because would‑be deviant logicians are more charitably interpreted as just giving the relevant logical constant a new meaning, changing the subject instead of denying the doctrine (Quine 1970: 82–83). However, Quine’s deflationism about disagreement in logic rests on a crude methodology of interpretation; a more sensitive treatment indicates that the disagreement is genuine (Morton 1973, Williamson 2021 and Section 2).
+
+In my view, the proposed revisions of classical logic are all mistaken. Nevertheless, they are genuine theoretical challenges, which cannot be deflated away. Instead, one must and can argue in detail that the motivating phenomena are better explained within a classical framework. That is to take one side in a metaphysical dispute. Obviously, deflationists about metaphysics may prefer to keep out of such disputes between alternative logics. But that is not a way of maintaining metaphysical neutrality, if the deflationist uses logic at all. It is just a way of ignoring some threats to one’s metaphysical position.
+
+Another problem for the supposed metaphysical neutrality of metametaphysics comes from the status of semantics. Serious metametaphysicians care about what kind of meaning sentences used in metaphysics possess. Such sentences purport to express what metaphysicians are arguing about. To understand what is going on, one needs a semantic framework. For instance, the standard framework in linguistics for much contemporary formal semantics of natural languages is intensional. In that framework, a sentence uttered in the context of a metaphysical dispute will express a proposition, in the sense of a function from ordered pairs of a possible world and a time to truth‑values, or something more complex of a related kind. Although the linguist may not care about the metaphysics of possible worlds or times, she needs such entities to articulate the modal meaning of words like ‘can’, and the temporal meaning of words like ‘will’. To understand the semantics, one needs at least some conception of possible worlds and times. But both possible worlds and times are metaphysically contentious entities. So too are abstract objects such as functions and ordered pairs. Thus, the framework of intensional semantics is not metaphysically neutral.
+
+Of course, metametaphysicians are not forced to use intensional semantics. In principle, they could use some other form of semantics instead, to articulate the meaning of sentences uttered in metaphysical contexts. They would need to show that their preferred alternative could at least rival intensional semantics in explanatory power—no easy task. Moreover, to achieve such power, the alternative framework might well need to help itself to metaphysical resources at least as contentious as those of intensional semantics.
+
+Some metametaphysicians focus more on the pragmatics of metaphysicians’ use of language than on its semantics. But that does not free them from the metaphysical commitments of the semantics. For pragmatics depends on semantics. If metaphysicians used literally meaningless sentences, pragmatics would have too little to work on to generate useful results.
+
+Evidently, metametaphysics is no metaphysics‑free zone. Moderate deflationists like Thomasson can accept that much, if she can do metametaphysics using only the easy kind of metaphysics (Thomasson 2015). For example, she incorporates ‘pleonastic’ possible worlds into her easy ontology (Thomasson 2020a: 135–137, following Steinberg 2013). However, such constructions require non‑trivial logical apparatus, so moderate deflationists still face the metaphysical arguments against their preferred logic. Dealing with them is no easy task.
+
+Critiques of metaphysics still face the basic threat of self‑defeat. Their plausibility comes from the methodological difficulties of standard metaphysics, but they exemplify standard metametaphysics, which is in similar methodological difficulties. Thus, they draw on themselves analogous critiques of metametaphysics.
+
+# 5. The Conceptual and the Empirical
+
+Thomasson is right that the epistemology of metaphysics could do with clarification. For the same applies to the epistemology of all non‑trivial theoretical inquiry. But she has something more specific in mind. Since it goes to the heart of empiricist suspicions of metaphysics, it deserves examination.
+
+Thomasson has two touchstones in epistemology: empirical methods and conceptual analysis. They correspond to Hume’s distinction between matters of fact and relations of ideas: empirical methods reveal matters of fact; conceptual analysis, relations of ideas. On such views, cognition based on empirical methods or conceptual analysis (or both) is unmysterious and unproblematic; cognition not so based is mysterious and problematic (Thomasson 2017: 6–7, and her writings passim). Unless easy, metaphysical theorizing is irreducible to empirical methods and conceptual analysis, so mysterious and problematic. None of this would have surprised the Vienna Circle, though its members might have found Thomasson insufficiently strict and formal. In more Kantian terms, empirical methods yield the synthetic a posteriori, while conceptual analysis yields the analytic a priori, though on a conception of analyticity broader than Kant’s. There is no synthetic a priori (or analytic a posteriori).
+
+Thomasson tells us little about empirical methods or conceptual analysis. The latter, applied to given terms, applies ‘the rules by which they are introduced to our language’ (2017: 6). Perhaps empirical methods are whatever remains of kosher cognitive activity once conceptual analysis is subtracted, but there must be plenty of non‑kosher cognitive activity too, to fuel bad metaphysical disputes. Presumably, empirical methods involve sense perception in some distinctive way. Thomasson treats it as easy to recognize whether empirical methods are in play, and whether conceptual analysis is: she takes for granted that, normally, theorizing in traditional metaphysics is not based on empirical methods and conceptual analysis, and that theorizing in well‑established sciences is so based.
+
+How epistemologically unmysterious are conceptual analysis and empirical methods? We start with conceptual analysis.
+
+The first problem is Thomasson’s talk of ‘the rules’ by which a word is ‘introduced to our language’. What is this process of introduction? Did it take place when the word was first introduced into English, centuries ago? Or does it happen whenever parents introduce their child to a word by listing the rules for using it? We seem to have been offered some sort of creation myth, which may promote solidarity in the logical empiricist tribe, but does not literally explain anything. However, at least this much seems to be intended literally: words are associated with rules for using them. So what are these rules?
+
+The best non‑trivial case for such rules concerns logical words. They are often taken to be defined by associated rules of inference, such as those in a system of natural deduction. Consider the words ‘true’ and ‘false’. The salient candidates are disquotational rules, which allow us to infer between ‘Berwick is in Scotland’ and ‘“Berwick is in Scotland” is true’, and between ‘Berwick is not in Scotland’ and ‘“Berwick is in Scotland” is false’.
+
+Unfortunately, such disquotational rules are inconsistent: they generate the Liar and other semantic paradoxes. When conceptual analysis employs inconsistent rules, its products are epistemologically problematic. Of course, there are various ways of revising the disquotational rules to restore consistency. But those ways were discovered through difficult technical research. Our normal understanding of the English words ‘true’ and ‘false’ does not show us which way to choose. In such cases, Thomasson’s talk of rules does not help.
+
+That might look like a nasty choice of example, but the problem is widespread. Consider the word ‘if’. What rules govern it in English? We seem to rely on a suppositional rule: assess ‘If P, Q’ in the same way as you assess ‘Q’ on the supposition ‘P’. Unfortunately, the suppositional rule is inconsistent too (Williamson 2020). Again, there are various ways of revising the rule to restore consistency, but our normal understanding of the English word ‘if’ does not show us which way to choose; Thomasson’s talk of rules does not help.
+
+Another example: what rules govern the words ‘every’ and ‘no’? Normal English speakers are strongly attracted to these three rules:
+
+i
+Accept ‘Every F X is F’ (e.g. accept ‘Every square piece is square’).
+ii
+Given ‘Every X is F’, reject ‘No X is F’ (e.g. given ‘Every piece is square’, reject ‘No piece is square’).
+iii
+Given ‘No X is F’, accept ‘No G X is F’ (e.g. given ‘No piece is round’, accept ‘No red piece is round’).
+
+Together, (i)–(iii) bring trouble whenever one accepts something of the form ‘No X is F’. When one accepts ‘No piece is round’, (iii) tells one to accept ‘No round piece is round’; but since (i) tells one to accept ‘Every round piece is round’, (ii) tells one to reject ‘No round piece is round’. The problem concerns the treatment of quantified sentences with putatively empty subject terms. Modern logicians classify (i) and (iii) as valid but (ii) as invalid, counting both ‘Every round piece is round’ and ‘No round piece is round’ as vacuously true when no piece is round. By contrast, medieval logicians would have been more likely to classify (ii) as valid but (i) and (iii) as invalid, denying vacuous truth. For present purposes, it does not matter which side is right. The point is that our normal understanding of the English words ‘every’ and ‘no’ does not show us which side is right. Difficult systematic theoretical investigation is needed.
+
+Formal inconsistency is not the only problem. An example is one of the simplest natural deduction rules, disjunction introduction. For English ‘or’, it lets one infer ‘P or Q’ from ‘P’, and from ‘Q’. In a clearly circumscribed formal language, that is unproblematic. Things are trickier in natural languages. Does disjunction introduction allow one to infer, from ‘It’s hot’, ‘It’s hot or this statement is false’, or ‘It’s hot or Satan is a gentleman’, or ‘It’s hot or the mome raths outgrabe’? Presumably, the rule should not act as an entry for defective statements into the discourse. But no purely formal test for defectiveness is adequate. Thus disjunction introduction in a natural language may have to remain a defeasible rule, whose exceptions we identify as we encounter them. Similar problems arise for the rule of universal instantiation: given ‘Everything is F’, for which singular terms t can we infer ‘t is F’? In a natural language, there is no formal test for whether a singular term denotes anything.
+
+The inference patterns speakers associate with logical terms in natural languages are best understood as what psychologists call heuristics, quick and dirty forms of cognition, reliable enough in normal cases, but not 100% reliable. When they are inconsistent, that shows them to be less than perfectly accurate; it does not show them to be useless (Williamson 2020 develops this idea in detail). Our application of such heuristics gets us plenty of knowledge in good cases, with no semantic guarantee of validity. If we want to do better, our only alternative is to engage in difficult theoretical investigations. To call our use of the heuristics or the theoretical investigations ‘conceptual analysis’ would be false advertising, for the phrase implies much more straightforward cognitive access to the underlying semantic properties of logical words than is actually available.
+
+Logical words were the most promising case for Thomasson’s picture of conceptual analysis, but it radically misrepresents the epistemology of logic. It is an illusion that conceptual analysis is an epistemologically unmysterious form of cognition.
+
+Thomasson’s other touchstone for unmysterious epistemology was ‘empirical methods’. Of course, the mere property of being mediated by sense perception does not make a cognitive process good. When a racist judges people’s intelligence by their skin color, his judgments of intelligence are causally and cognitively mediated by sense perception, but his empirical method is still worthless. Calling a method ‘empirical’ does not make it epistemologically unmysterious. It does not explain how—if at all—the method yields knowledge, how the content of the ‘empirical’ judgment is related to the causal interaction with the environment underlying sense perception. Once we get serious about the epistemology of ‘empirical methods’, we may well find all sorts of connections with the epistemology of metaphysics. For example, the recognitional capacities we use online in perception may also be used offline in imagination when we assess counterfactuals and do thought experiments (see my contributions to Boghossian and Williamson 2020). Again, a continuum runs from metaphysics to philosophy of physics to highly theoretical physics; the breaks are more sociological than epistemological. No preconceived distinction between ‘empirical’ and ‘non‑empirical’ methods should blind us to the obvious methodological continuities between metaphysics and other closely related forms of theoretical inquiry.
+
+The idea of ‘empirical methods and conceptual analysis’ as some sort of cognitive gold standard is just a relic of primitive logical empiricist ideology—an ideology with no sound basis in either empirical methods or conceptual analysis. It will not frighten traditional metaphysicians. To understand the epistemology of metaphysics, we first need a far more psychologically sophisticated epistemology of logic and of highly theoretical science. Once we have that, metaphysics is likely to emerge as much less of an outlier than its critics think. In particular, disagreement in metaphysics will be seen as just one more case of disagreement about very difficult theoretical questions.1
+
+# Notes
+
+[1] Thanks to Amie Thomasson for comments on a draft of this chapter. For a positive account of the methodology of metaphysics, see Williamson (2007), especially the expanded edition.
+
+# References
+
+Balcerak Jackson, B. (2014) “Verbal disputes and substantiveness,” Erkenntnis 79: 31–54.
+
+Boghossian, P. and Williamson, T. (2020) Debating the A Priori. Oxford: Oxford University Press.
+
+Bradley, F.H. (1897) Appearance and Reality: A Metaphysical Essay, 2nd ed. London: Swan Sonnenschein.
+
+Burge, T. (1979) “Individualism and the mental,” Midwest Studies in Philosophy 4: 73–122.
+
+Burgess, A. and Plunkett, D. (2013) “Conceptual ethics I,” Philosophy Compass 8: 1102–1110.
+
+Calderon, M. (ed.) (2005) Fictionalism in Metaphysics. Oxford: Oxford University Press.
+
+Cappelen, H. (2018) Fixing Language: An Essay on Conceptual Engineering. Oxford: Oxford University Press.
+
+Carnap, R. (1950) “Empiricism, semantics, and ontology,” Revue Internationale de Philosophie 4: 20–40.
+
+Chalmers, D. (2011) “Verbal disputes,” Philosophical Review 120: 515–566.
+
+Chalmers, D., Manley, D. and Wasserman, R. (eds.) (2009) Metametaphysics: New Essays on the Foundations of Ontology. Oxford: Clarendon Press.
+
+Dorr, C. (2005) “What we disagree about when we disagree about ontology,” in Mark Eli Kalderon (ed.), Fictionalism in Metaphysics, 234–286. New York: Oxford University Press.
+
+Eklund, M. (2006) “Metaontology,” Philosophy Compass 1: 317–334.
+
+Hawthorne, J. (2009) “Superficialism in ontology,” in David Chalmers, David Manley, and Ryan Wasserman (eds), Metametaphysics: New Essays on the Foundations of Ontology 213–230. Oxford: Oxford University Press.
+
+Hirsch, E. (2002) “Quantifier variance and realism,” Philosophical Issues 12: 51–73.
+
+Hirsch, E. (2005) “Physical‑object ontology, verbal disputes, and common sense,” Philosophy and Phenomenological Research 70: 67–97.
+
+Hirsch, E. (2011) Quantifier Variance and Realism. Oxford: Oxford University Press.
+
+Hirsch, E. and Warren, J. (2019) “Quantifier variance and the demand for a semantics,” Philosophy and Phenomenological Research 98: 592–605.
+
+Lewis, D. (1974) “Radical interpretation,” Synthese 23: 331–344.
+
+Lewis, D. (1979) “Scorekeeping in a language game,” Journal of Philosophical Logic 8: 339–359.
+
+Morton, A. (1973) “Denying the doctrine and changing the subject,” Journal of Philosophy 70: 503–510.
+
+Plunkett, D. (2015) “Which concepts should we use? Metalinguistic negotiations and the methodology of philosophy,” Inquiry 58: 828–874.
+
+Putnam, H. (1973) “Meaning and reference,” Journal of Philosophy 70: 699–711.
+
+Putnam, H. (1975) “The meaning of ‘meaning’,” Minnesota Studies in the Philosophy of Science 7: 131–193.
+
+Putnam, H. (1987) “Truth and convention: On Davidson’s refutation of conceptual relativism,” Dialectica 41: 41–67.
+
+Quine, W.V.O. (1970) Philosophy of Logic. Englewood Cliffs, NJ: Prentice Hall.
+
+Sider, T. (2011) Writing the Book of the World. Oxford: Oxford University Press.
+
+Stanley, J. (2001) “Hermeneutic fictionalism,” Midwest Studies in Philosophy 25: 36–71.
+
+Steinberg, A. (2013) “Pleonastic possible worlds,” Philosophical Studies 164: 767–789.
+
+Strawson, P.F. (1959) Individuals: An Essay in Descriptive Metaphysics. London: Methuen.
+
+Thomasson, A. (2015) Ontology Made Easy. New York: Oxford University Press.
+
+Thomasson, A. (2017) “Metaphysical disputes and metalinguistic negotiation,” Analytic Philosophy 58: 1–28.
+
+Thomasson, A. (2020a) Norms and Necessity. Oxford: Oxford University Press.
+
+Thomasson, A. (2020b) “A pragmatic method for normative conceptual work,” in A. Burgess, H. Cappelen and D. Plunkett (eds.), Conceptual Engineering and Conceptual Ethics, 435–458. Oxford: Oxford University Press.
+
+Williamson, T. (2003) “Everything,” Philosophical Perspectives 17: 415–465.
+
+Williamson, T. (2007) The Philosophy of Philosophy. Oxford: Wiley‑Blackwell. Expanded edition 2021.
+
+Williamson, T. (2013) Modal Logic as Metaphysics. Oxford: Oxford University Press.
+
+Williamson, T. (2014) “Logic, metalogic and neutrality,” Erkenntnis 79: 211–231.
+
+Williamson, T. (2020) Suppose and Tell: The Semantics and Heuristics of Conditionals. Oxford: Oxford University Press.
+
+Williamson, T. (2021) “Accepting a logic, accepting a theory,” in R. Padró and Y. Weiss (eds.), Saul Kripke on Modal Logic. New York: Springer.
+
+Yablo, S. (1998) “Does ontology rest on a mistake?,” Aristotelian Society, sup. 72: 229–261.
+
+Yablo, S. (2009) “Must existence‑questions have answers?,” in Ryan Wasserman, David Manley & David Chalmers (eds.), Metametaphysics: New Essays on the Foundations of Ontology, 507–525. Oxford: Oxford University Press.

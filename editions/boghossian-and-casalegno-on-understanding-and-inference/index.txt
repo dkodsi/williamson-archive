@@ -1,0 +1,159 @@
+# Boghossian and Casalegno on Understanding and Inference
+
+Timothy Williamson
+
+Dialectica 66 (2) (2012): 237–247.
+
+Abstract
+
+In response to Paul Boghossian’s objections in ‘Inferentialism and the epistemology of logic’, this paper defends counterexamples offered by Paolo Casalegno and the author to an inferentialist account of what it is to understand a logical constant, on which Boghossian had relied in his explanation of our entitlement to reason according to basic logical principles. The importance for understanding is stressed of non-inferential aspects of the use of logical constants. Boghossian’s criteria for individuating concepts are also queried.
+
+# 1. Introduction
+
+What does it take to understand a logical constant, such as ‘if’ or ‘and’? The most popular answer is inferentialist in spirit: to understand a logical constant is to be disposed to reason with it according to certain basic principles of logic. In a series of much-discussed papers, Paul Boghossian (1999, 2000, 2003) has used that answer in an attempt to explain our entitlement to reason according to such principles despite our inability to justify them in any non-circular way. Both Paolo Casalegno (2004) and I (2003, 2006, 2007) have criticized the inferentialist account of understanding on which he relies. That led to a further round of discussion (Boghossian 2011, Williamson 2011) and now to Boghossian’s response (2012) to us both. In this reply, I defend both Casalegno’s objections and my own to inferentialism. Although I cannot put words in his mouth, our agreement on so many points gives me hope that my arguments will not be alien to those he might have produced.
+
+# 2. Using Logically Complex Sentences to Describe Visually Presented Scenes
+
+To illustrate his account, Boghossian originally took the rule of Modus Ponens (MP) as his example of a basic principle of logic. In trying to explain our entitlement to reason according to MP, Boghossian relied on the inferentialist assumption that one understands the conditional ‘if’ only if one is disposed to reason with it according to MP. Both Casalegno and I offer counterexamples to that assumption. Indeed, as Boghossian emphasizes, we each give a general recipe for constructing a similar counterexample to any inferentialist assumption of the relevant form, that one understands the logical constant C only if one is disposed to reason with it according to the rule R. Thus we each provide a general strategy for arguing against any attempt along such lines to explain our entitlement to reason according to a basic logical principle R, no matter what R is.
+
+Boghossian highlights a difference between the two recipes. Casalegno’s starts thus:
+
+Suppose Mary suffers from a cognitive disability which makes her completely incapable of performing anything which could be counted as an inference. Nevertheless, she is able to use logically complex sentences to describe visually presented scenes. (Casalegno 2004, 407)
+
+Casalegno argues on general grounds that Mary can understand C, even though she is not disposed to reason with it according to R. By contrast, my recipe involves someone who, far from being cognitively disabled, is an acknowledged expert on the logic of C, but rejects R on the basis of high-level, subtly mistaken theorizing. A fluent native speaker of the language, he understands C, but again is not disposed to reason with it according to R.
+
+Despite the obvious difference, the two recipes have much in common. To substantiate our claim that the agent understands C, both Casalegno and I point to hermeneutically relevant capacities of the agent that do not entail a disposition to reason according to R. Casalegno focuses on the ability ‘to use logically complex sentences to describe visually presented scenes’, while I emphasize the ability to engage smoothly in a wide variety of normal conversational interactions with other speakers. These two abilities clearly do not exclude each other, for ordinary speakers have both. Even together, they do not entail a disposition to reason according to R. The observation that the unorthodox logicians in my counterexamples can still use logically complex sentences to describe visually presented scenes significantly strengthens the case for ascribing understanding of C to them.
+
+It is worth reflecting on the contribution of logical constants to the visual-descriptive process in more detail. As a first approximation, we may regard vision at a given time as presenting the subject with a small finite model, in the sense of first-order model theory. The domain contains all and only the visually noticed objects. The model also specifies the extensions over the domain of the visually noticed properties and relations. The truth-value of any atomic sentence of a standard first-order language in the model can be visually determined, when the atomic predicates are interpreted as standing for visually noticed properties or relations, the names as denoting visually noticed objects, and so on. We may assume that the visual system assigns each visually noticed object a temporary name, so that a universal generalization is equivalent in the circumstances to a finite conjunction of its instances and an existential generalization to a finite disjunction of its instances. Thus every sentence of the language is equivalent in the circumstances to a truth-function of atomic sentences, so its truth-value can be mechanically determined from theirs.
+
+Someone might object that so evaluating a sentence is an inferential process, of which Mary is by hypothesis incapable, but the objection involves at least two mistakes.
+
+First, even if we characterize the process in terms of inference rules for the object-language, they would not include the particular rules that have been treated as paradigmatic in the debate. For example, evaluating a conjunction by evaluating its conjuncts corresponds to these four derivation rules in the object-language, reflecting the four lines of the truth-table for &:
+
+(1)
+$A, B \vdash A \mathbin{\&} B$
+(2)
+$A, \neg B \vdash \neg(A \mathbin{\&} B)$
+(3)
+$\neg A, B \vdash \neg(A \mathbin{\&} B)$
+(4)
+$\neg A, \neg B \vdash \neg(A \mathbin{\&} B)$
+
+Of these, (1) is the standard introduction rule for &, but none corresponds to the standard bipartite elimination rule for & ($A \mathbin{\&} B \vdash A$ and $A \mathbin{\&} B \vdash B$).1 The latter is the rule at stake in what is now Boghossian’s preferred example of the inferentialist account. In the case of the material conditional, none of the four analogous rules corresponds to either the standard introduction rule (conditional proof) or the standard elimination rule (MP). The closest of them to MP is the rule $A, \neg B \vdash \neg(A \rightarrow B)$, but it yields MP only when combined with a non-trivial rule of contraposition.
+
+Second, the objection unwarrantedly assumes that the process of evaluating complex sentences is at the personal level, the level at which Boghossian’s normative question about the agent’s entitlement to make basic inferences seems to arise, but the evaluation of a logically complex sentence on the basis of visual input can occur at the sub-personal level, hidden from the agent’s introspective gaze.2 We may assume that Casalegno had such sub-personal processes in mind when positing Mary’s ability to use logically complex sentences to describe visually presented scenes.
+
+In the light of these considerations, the evaluation process is better formalized in terms of moves from perceptually based evaluations of simpler sentences to perceptually based evaluations of more complex ones, rather than inferences directly from the former sentences to the latter. Thus (1)–(4) become (1#)–(4#), where ‘$\# \vDash A$’ means that the sentence $A$ is verified on the basis of input information $\#$, ‘$\# \mathrel{\mathord{=}\mathord{|}} A$’ means that $A$ is falsified on the basis of $\#$, and $\Rightarrow$ is a causal connection:
+
+(1#)
+$\# \vDash A,\; \# \vDash B \Rightarrow \# \vDash A \mathbin{\&} B$
+(2#)
+$\# \vDash A,\; \# \mathrel{\mathord{=}\mathord{|}} B \Rightarrow \# \mathrel{\mathord{=}\mathord{|}} A \mathbin{\&} B$
+(3#)
+$\# \mathrel{\mathord{=}\mathord{|}} A,\; \# \vDash B \Rightarrow \# \mathrel{\mathord{=}\mathord{|}} A \mathbin{\&} B$
+(4#)
+$\# \mathrel{\mathord{=}\mathord{|}} A,\; \# \mathrel{\mathord{=}\mathord{|}} B \Rightarrow \# \mathrel{\mathord{=}\mathord{|}} A \mathbin{\&} B$
+
+The rules for the other logical constants can be modified likewise.
+
+Of course, to make the model more realistic we must allow for uncertainty in the evaluation of simple sentences and its ramifications upwards for more complex ones. We must also allow for the painstaking step-by-step evaluation of complex sentences to be increasingly pre-empted by faster processes of pattern recognition calibrated by past experience. Pattern recognition may take over even where stepwise evaluation is blocked by uncertainty over simpler sentences. For example, as Casalegno (2002) convincingly objected to verificationist theories of meaning, one may be in a position to verify a disjunction without being in a position to verify any disjunct. One can sometimes see that a thing is red or orange while unable to see whether it is red and unable to see whether it is orange. One may be able to see that there are five, six or seven people over there while unable to see exactly how many people are over there. The capacity for pattern recognition is also needed to evaluate quantified sentences when the visually presented scene is hard to articulate into discrete objects. One can see that there is no elephant in the room even though one is uncertain how to list the things in the room individually.
+
+If we elaborate the case of Casalegno’s Mary along such lines, we can respond to the mystification Boghossian expresses about it. He writes:
+
+Confronted with a red box and blue book she is prepared to assert “The box is red and the book is blue,” but if you ask her right after she has asserted that conjunction (perhaps this has to take place in a different room), “So, is the box red?” she might say “No.” Similarly, for a question about the book. (2012)
+
+Mary’s disability was not supposed to include a bad memory. She can see that the box is red, and later remember that it is red, so she will answer “Yes” to the question “Is the box red?”, but she is not deducing the answer from the conjunction “The box is red and the book is blue”.
+
+Boghossian continues:
+
+And having shown Mary a red box and gotten her to assert “The box is red,” and having shown her a blue book in a different room and gotten her to assert “The book is blue,” she then refuses to assent to “The box is red and the book is blue,” although, by hypothesis she is willing to assent to the compound sentence when she is shown the box and the book together. (2012)
+
+Mary’s disability was not supposed to include a feeble imagination. Since she remembers the red box and the blue book, when queried on the conjunction she can visually imagine the two relevant objects together and apply her capacity to use logically complex sentences to describe visually presented scenes offline in the imagination to deliver the correct answer.3 None of this requires her to use the rule of conjunction introduction. The closest she may come is the causal connection (1#), but unlike the rule (1) of conjunction introduction it permits no direct transition from conjuncts to conjunction. Mary’s transition is mediated by visual input (#), perceived or imagined, and cannot take place without it. If you merely ask her to suppose one conjunct and then to suppose the other too, without showing her anything, at best she may visually imagine them holding in separate scenes, then imaginatively combine the scenes and assent to the conjunction on the assumption of the conjuncts, but that is a derived inference. In his paper, Boghossian stresses that the relevant inferences are underived. Moreover, Mary may fail in the task when the subject-matter of the sentences is more abstract and harder to imagine perceptually, so she is not responding primarily to the logical form of conjunction introduction, which is the same irrespective of subject-matter. By normal standards of understanding, Mary’s competence with ‘and’ in the description of visually presented scenes far outweighs her shakier performance in logic tests.4
+
+Similar points apply to my example of Simon, who accepts a conjunction while rejecting a conjunct, when he finds the latter false but another conjunct borderline. His descriptions of visually perceived, remembered or imagined scenes are normal when none of the relevant atomic sentences looks borderline. His deviant patterns of response in the presence of borderline cases reflect a deviant attitude to vagueness, not a deviant understanding of ‘and’.
+
+Boghossian makes much of the origin of Simon’s responses to borderline cases in his deviant theorizing about vagueness, as I characterized him. Boghossian counts theoretically mediated inferences as derived, and insists that an inferentialist account of understanding should be given at the level of underived inferences. He writes “Simon’s deviant inferences, however, are obviously highly derived”, and that the inferentialist “would look, rather, to the rules that Simon found primitively compelling, before engaging in all of that bad theorizing” (2012). Presumably, however, what really matters is not whether Simon once found conjunction elimination primitively compelling, but whether he still does. Boghossian and I agree in not wanting to exclude by mere fiat the possibility that Simon no longer means what he once did by ‘and’. If Simon still finds conjunction elimination primitively compelling, his disposition to apply the rule remains, even if its manifestations are inhibited by more reflective dispositions that result from his bad theorizing.
+
+But why suppose that Simon still finds conjunction elimination primitively compelling? Indeed, why suppose that he ever did? Boghossian has not shown that most or all normal speakers of a natural language find conjunction elimination primitively compelling. Perhaps we start more like Casalegno’s Mary and our more purely logical inferential abilities develop later, mediated by education and theory. In the psychology of reasoning, that is not a far-fetched hypothesis. Boghossian quotes Christopher Peacocke’s comment on the possession-condition for the concept of conjunction, and endorses it as a gloss on an inferential role theory:
+
+On any theory, this possession-condition will entail that thinkers must find the transition from A and B to A compelling, and must do so without relying on any background information. (Peacocke 2004, 172)
+
+A pervasive effect in the psychology of reasoning is that logically unsophisticated subjects tend to do far better on problems whose subject-matter is familiar and interesting to them than on problems whose subject-matter is unfamiliar and uninteresting, even though the underlying logical structure is exactly the same. It is not obvious that such thinkers make the transition from conjunction to conjunct “without relying on any background information”, however redundant that information in principle. Of course, the background information might serve to motivate the thinker to try harder to solve the problem, rather than providing extra premises for their solution, but how is such an intellectual struggle needed for us to understand elementary sentences of our native language?
+
+Inferentialists often seem unaware of how far their theory is hostage to developments in the psychology of reasoning. In particular, there is evidence for a distinction between two modes of reasoning in humans, known as system 1 and system 2. System 1 is primitive, unreflective, fast, largely independent in effectiveness of individual differences in working memory and general intelligence, comparatively unresponsive to formal education, sensitive to associations with the immediate pragmatic context and comparatively insensitive to abstract structure. System 2 is more sophisticated, reflective, slow, correlated in effectiveness with individual differences in working memory and general intelligence, comparatively responsive to formal education, sensitive to abstract structure and comparatively insensitive to associations with the immediate pragmatic context.5 Within this typology, competence with one’s native language belongs mainly to system 1, whereas competence with abstract rules of deductive logic belongs mainly to system 2. That gives reason to doubt inferentialist accounts, which ground competence with one’s native language in competence with abstract rules of deductive logic. Even principles such as (1#)–(4#) may well overstate the formal nature of the process of describing a visually presented scene.
+
+Boghossian anyway slightly misrepresents the relevance of Simon to an inferentialist account of linguistic competence with conjunction, by focusing on “Simon’s deviant inferences”. What is really at issue is Simon’s unwillingness to make non-deviant inferences, instances of conjunction elimination. When Boghossian requires non-derivativeness of the disposition to perform conjunction elimination as necessary for understanding ‘and’, he merely helps my counterexample by making it harder, not easier, for Simon to satisfy the condition.
+
+Suppose that, despite Boghossian’s doubts, Simon is indeed linguistically competent with ‘and’, as manifested by his ability to use it in both smooth conversational interactions and correct descriptions of visually presented scenes. What Boghossian then needs to argue is that Simon must still have the relevant disposition to accept instances of conjunction elimination, masked by his theoretical dispositions to the contrary. Of course, Simon accepts some such instances, for example, when he regards the conjuncts as non-borderline. We may suppose that such ‘background information’ plays a positive role in his underlying reasoning, rather than merely its absence constituting an external higher-level defeater. Before proceeding to evaluate a complex sentence classically, the system requires an ‘all clear’ on its atomic sentential constituents. Once we fully appreciate what is going on in the example, we have no need to postulate a masked disposition to apply conjunction elimination even in borderline cases in order to see Simon as linguistically competent with ‘and’ on its usual meaning. Thus the counterexample stands.
+
+# 3. Is Conjunction Elimination Enough?
+
+Some remarks are needed on Boghossian’s choice of conjunction elimination for the rule at issue in his preferred example of the inferentialist account. In earlier work (up to Boghossian 2003) he used MP, but then retreated to conjunction elimination when the inferentialist account for MP came under pressure. I objected (2011) that if the inferentialist story is defensible only for conjunction elimination and perhaps a few other rules, from which most of the standard rules of first-order logic cannot be recovered, then it is too restricted to be of much use in explaining our entitlement to reason according to basic principles of logic. Boghossian replies:
+
+As I am thinking about it, refuting the sceptical threat involves showing that it is possible to get our entitlement to some logical rules off the ground, even if the means by which that is accomplished may not generalize to all the logical rules to which we feel intuitively entitled. (2012)
+
+Presenting a story that does not generalize beyond one or two rules may indeed help us locate an unwarranted premise or step of reasoning in a particular sceptical argument. Moreover, if the nature of our entitlement to reason according to basic rules of logic varies radically from one rule to another, then such rule-specific stories are all that we can get.
+
+On present evidence, however, the epistemology of logic is unlikely to be so radically heterogeneous. For example, the correct account (whatever it is) of what it takes to understand conjunction and to be entitled to use its introduction and elimination rules probably resembles the correct account (whatever it is) of what it takes to understand disjunction and to be entitled to use its introduction and elimination rules. Call a rule R for a logical constant C inferentialist just if a disposition to reason according to R is necessary for understanding C. If we have examples to show that most of the basic rules of logic are non-inferentialist, then the presumption is that the remaining few rules are non-inferentialist too, even if less obviously so, and moreover that some other theory explains how we are entitled to reason according to the former rules and the explanation generalizes to the latter rules too. Thus, even if we were to bracket the direct counterexamples to Boghossian’s explanation of our entitlement to conjunction elimination, its failure to generalize to other basic rules would be evidence that it is false even of conjunction elimination.
+
+Boghossian’s considerations do not defeat the presumption in favour of a comparatively homogeneous epistemology of logic. His perplexity at the examples of Mary and Simon depends on no special feature of conjunction elimination except its extreme obviousness. Many other basic rules, including MP, are almost equally obvious. Unfortunately, the long history of human error shows denying the obvious to be not just possible but common, without semantic change. For example, Simon is less irrational than many holocaust deniers.
+
+# 4. Semantic Integration
+
+Boghossian treats Mary as not meaning by ‘and’ what we mean. He does not say whether she means something else by ‘and’ – if so, what is that other meaning? – or whether she means nothing at all by it. He treats Simon as meaning something different by ‘and’ from what we mean, but again does not say what that other meaning is. Of course, Simon believes a theory on which ‘and’ has a certain Kleene-inspired three-valued truth-table, but we cannot take that deviant theory even as a correct account of what he means by ‘and’ unless we accept the non-classical semantic framework within which it is articulated. Not every false theory of actual meanings is a true theory of possible meanings.
+
+Boghossian does not characterize differences in meaning in terms of the reasonably clear standards of differences in reference, or intension, or character. Instead, he characterizes them as differences in which concept is expressed. He treats that as a relevantly clear standard, for to Casalegno’s complaint that he has ‘simply no idea of what the relevant criterion might be like’ for whether a rule is constitutive of a logical concept (2004, p. 409), Boghossian responds:
+
+We’ve already been told what we are looking for. We are looking for those conditions that are necessary for having concept C. If we are working within an inferential framework, we are asking which inference rules are necessary for possessing concept C. (2012)
+
+That answer is unsatisfying, for inferentialists use the word ‘concept’ as an inadequately constrained technical term. Until inferentialists tell us what criterion they intend for whether a rule is constitutive of a ‘concept’, it is hard for us to know what they mean by ‘concept’. Boghossian seems to think that we already know what is meant, for in his concluding sentence he says that one can tell whether there has been a change of concept in ‘the usual way, clearly in use both by Paolo and by Tim – via intuitive judgments about possible cases’ (2012), but the judgments that Casalegno and I made about the cases of Mary and Simon respectively concerned primarily sameness of meaning (by normal standards) rather than sameness of ‘concept’. Of course, if the inferentialist stipulatively ties sameness of ‘concept’ to sameness of meaning (by normal standards), at least for verbally expressed ‘concepts’, then we are in no position to complain. However, when it is objected that characters like Mary and Simon are not normally treated as meaning something different by the word ‘and’, Boghossian and other defenders of an inferentialist account of ‘and’ typically take their stand on the claim that such characters have a different concept of conjunction.6 They seem unwilling for their claims to be judged by the standard of sameness of linguistic meaning. Far from clarifying the issue, this switch to a more theoretical vocabulary obscures it. The problem is particularly acute for Boghossian, because he does not commit himself to inferentialism in general. Rather, he assumes only an inferentialist account of what it takes to understand the logical constants, in order to meet a specific difficulty in the epistemology of reasoning, but logical constants do not seem anomalous when compared with other words with respect to the standards for meaning change. If the standard for meaning change in most non-logical words is non-inferentialist, is it not ad hoc to invoke an inferentialist standard when it comes to logical words?
+
+The compositionality of meaning exerts strong pressure towards a homogeneous account of meaning, and therefore of meaning change. In general, if we characterize the meaning of an expression E1 in one semantic framework, and the meaning of another expression E2 in a different framework, within what framework are we to explain how those meanings combine in the meaning of a sentence that puts E1 and E2 together? For example, suppose that we treat the meaning of a sentence as a truth-condition, but the meaning of the logical constant ‘and’ as a norm of inference. Since the result of conjoining a pair of sentences with ‘and’ is another sentence, that norm of inference must somehow map pairs of truth-conditions to truth-conditions, but a norm of inference is the wrong sort of thing to operate like that on truth-conditions. Whatever its advantages elsewhere, a pick ‘n mix strategy is not obviously coherent in semantics, where a bit of inferentialism here and a bit of some other theory there may not gel. We should therefore expect a rather homogeneous standard for meaning change, applicable to logical and non-logical expressions alike.
+
+Speakers are often wildly idiosyncratic in what they accept and reject while still using their words with their usual public senses. They refuse to comply with philosophers’ expectations of them. Why should Casalegno’s Mary and my Simon be any different?
+
+It is sometimes said that the greatest tribute one philosopher can pay another is disagreement, often in practice by rejecting their premises as false and their arguments as invalid. Here I pay Paolo Casalegno only the more banal tribute of agreement. I always learnt from talking with him (for instance, pp. 107–109 of Williamson (2007) respond to a question he once asked me). His sober, self-critical acumen is sorely missed. I also thank Paul Boghossian and members of the audience at the 2011 Milan workshop in memory of Paolo for valuable discussion.
+
+# Notes
+
+[1] In systems of natural deduction, the conjunction introduction rule often takes the form: for any sets $\Gamma$ and $\Delta$ of formulas, if $\Gamma \vdash A$ and $\Delta \vdash B$ then $\Gamma \cup \Delta \vdash A \mathbin{\&} B$; similarly for the other rules. This does not affect the argument in the text.
+
+[2] The evaluation process cannot be confined to a purely visual module, since it is sensitive to background information from non-visual sources.
+
+[3] The epistemological significance of our capacity to transfer cognitive skills honed online in perception to offline applications in the imagination is discussed extensively in Williamson (2007, 134–207).
+
+[4] See Kroedel (2012) for more discussion of the descriptive, non-inferential use of logical constants.
+
+[5] See Evans and Over (2004, 7–10), for remarks on the distinction between system 1 and system 2.
+
+[6] In Williamson (2007) and elsewhere I emphasize the relevance here of the social determination of meaning. Boghossian (2012) says that he prefers an idiolectic conception of meaning, but does not try to argue for one.
+
+# References
+
+Boghossian, P. 1999, ‘Analyticity’, in: B. Hale and C. Wright, eds, A Companion to the Philosophy of Language, Oxford: Blackwell, pp. 331–368.
+
+Boghossian, P. 2000, ‘Knowledge of Logic’, in: P. Boghossian and C. Peacocke, eds, New Essays on the A Priori, Oxford: Clarendon Press, pp. 229–254.
+
+Boghossian, P. 2003, ‘Blind Reasoning’, Aristotelian Society, suppl. 77, pp. 225–248.
+
+Boghossian, P. 2011, ‘Williamson on the A Priori and the Analytic’, Philosophy and Phenomenological Research 82, pp. 488–497.
+
+Boghossian, P. 2012, ‘Inferentialism and the Epistemology of Logic: Reflections on Casalegno and Williamson’, dialectica 66, pp. 221–236.
+
+Casalegno, P. 2002, ‘The Problem of Non-conclusiveness’, Topoi 21, pp. 75–86.
+
+Casalegno, P. 2004., ‘Logical Concepts and Logical Inferences’, dialectica 58, pp. 395–411.
+
+Evans, J. and Over, D. 2004, If, Oxford: Oxford University Press.
+
+Kroedel, T. 2012, ‘Implicit Definition and the Application of Logic’, Philosophical Studies 158, pp. 131–148.
+
+Peacocke, C. 2004, The Realm of Reason, Oxford: Oxford University Press.
+
+Williamson, T. 2003, ‘Understanding and Inference’, Aristotelian Society suppl. 77, pp. 249–293.
+
+Williamson, T. 2006, ‘Conceptual Truth’, Aristotelian Society suppl. 80, pp. 1–41.
+
+Williamson, T. 2007, The Philosophy of Philosophy, Oxford: Blackwell.
+
+Williamson, T. 2011, ‘Reply to Boghossian’, Philosophy and Phenomenological Research 82, pp. 498–506.

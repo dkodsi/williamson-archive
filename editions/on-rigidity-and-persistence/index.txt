@@ -1,0 +1,50 @@
+# On rigidity and persistence
+
+Timothy Williamson
+
+Logique et Analyse 121 (1988): 89–91.
+
+It is well known that the phrase “rigid designator” is used in a variety of non-equivalent senses. Nathan Salmon has given a helpful taxonomy of these.1 The purpose of this note is to qualify some remarks which Salmon makes about the relation between two of his categories of designator.
+
+Salmon defines an expression to be a rigid designator (simpliciter) “if it designates the same thing with respect to every possible world in which that thing exists”. He defines a persistent designator to be an expression “which designates the same thing with respect to every possible world in which that thing exists, and which designates nothing with respect to possible worlds in which that thing does not exist”.2 Salmon finds both of these notions in Kripke’s writings. He goes on to claim that his “formal treatment of definite descriptions has the effect that all rigid definite descriptions must be persistent”.3 The relevant aspect of this formal treatment is that “singular terms formed from the variable-binding definite descriptions operator, ι, can denote something with respect to a given possible world only if that thing exists in the given possible world”.4
+
+The nub of the problem is easily stated. Suppose that our metaphysics allows—as Leibniz’s, for example, did—that two possible individuals need not be compossible.5 In other words, there are worlds in which an individual $u$ exists, and worlds in which an individual $v$ exists, but no worlds in which both $u$ and $v$ exist. Let $d$ be any definite description which designates $u$ with respect to every possible world in which $u$ exists, designates $v$ with respect to every possible world in which $v$ exists, and designates nothing with respect to every other possible world. Then, according to Salmon’s definitions, $d$ seems to be a rigid but not persistent definite description. For instance, let $a$ and $b$ be names of $u$ and $v$ respectively; given Salmon’s treatment of definite treatment of definite descriptions and many standard treatments of names, the definite description $\ulcorner (\iota x)(x = a \vee x = b) \urcorner$ will satisfy the condition on $d$.6 Of course, our metaphysics may not allow that two possible individuals need not be compossible. However, the question is in either case a substantive one, which our semantic classifications should not prejudge.
+
+The argument of the previous paragraph can be refined. In particular, it is vulnerable as it stands to an objector who regards empty names as semantically defective: for, they might argue, in whatever world the definite description $\ulcorner (\iota x)(x = a \vee x = b) \urcorner$ is supposed itself to exist, at least one of $a$ and $b$ will be empty, so that the whole description would presumably be semantically defective. However, examples can be constructed using monadic predicates rather than names. Thus suppose that there are values of “$F$” and “$G$” such that: in some worlds there are $F$s; in some worlds there are $G$s; in no world are there both $F$s and $G$s; any $F$ in any world is the one and only $F$ in any world in which it exists; any $G$ in any world is the one and only $G$ in any world in which it exists. Or in operator symbolism, where the quantifiers range only over what exists in the relevant world:
+
+(1)
+$◇ \exists x\, Fx$
+(2)
+$◇ \exists x\, Gx$
+(3)
+$\mathord{-} ◇ (\exists x\, Fx \mathbin{\&} \exists x\, Gx)$
+(4)
+$□ \forall x\,(Fx \rightarrow □(\exists y\, x = y \rightarrow \forall y\,(Fy \leftrightarrow x = y)))$
+(5)
+$□ \forall x\,(Gx \rightarrow □(\exists y\, x = y \rightarrow \forall y\,(Gy \leftrightarrow x = y)))$
+
+Now consider the definite description $\ulcorner (\iota x)(Fx \vee Gx) \urcorner$: call it $d'$. By (3)–(5), $d'$ is a rigid designator. However, $d'$ designates an $F$ with respect to some worlds and a $G$ with respect to other worlds in which that $F$ does not exist, so $d'$ is not persistent.
+
+“$F$” and “$G$” could be interpreted in such a way as to make (1)–(5) true given some ontologies of facts. For example, suppose that it is contingent whether or not $P$, and let an $F$ be a fact that $P$ and a $G$ be a fact that $\mathord{-} P$. Presumably, there is a fact that $P$ ($\mathord{-} P$) if and only if $P$ ($\mathord{-} P$); hence (1)–(3) come out true. It is also not implausible that a fact that $P$ ($\mathord{-} P$) is essentially a fact that $P$ ($\mathord{-} P$), and that there cannot be more than one fact $P$ ($\mathord{-} P$); hence (4) and (5) also come out true.7 It is not for a taxonomy of designators to decide that such a theory of facts is incorrect.
+
+Finally, it is worth nothing that most definite descriptions will be rigid but not persistent on David Lewis’s theory of world-bound individuals.8 For the theory says that no ordinary individual exists in (is part of) more than one possible world. Thus a definite description such as “the highest volcano” will be trivially rigid, and it will fail to be persistent just because there is more than one world in which there is a highest volcano.9
+
+# Notes
+
+[1] Reference and Essence (Oxford: Blackwell, 1982) pp. 33–5.
+
+[2] Ibid. pp. 33–4.
+
+[3] Ibid. p. 35; cp. p. 40.
+
+[4] Ibid. p. 35.
+
+[5] See Fred d’Agostino “Leibniz on Compossibility and Relational Predicates”, Philosophical Quarterly 26 (1976) pp. 125–38, reprinted in R. S. Woolhouse (ed.) Leibniz: Metaphysics and Philosophy of Science (Oxford: Oxford University Press, 1981) pp. 89–103.
+
+[6] It suffices for the argument that $a$ and $b$ should be obstinate designators in Salmon’s terminology—i.e. that they should designate the same thing with respect to every possible world (op. cit. p. 34).
+
+[7] Compare the axioms of Name Abstraction and Empirical Identity for the theory F(Λ)—Th at p. 88 of Kit Fine “First-Order Modal Theories III—Facts” Synthese 53 (1982) pp. 43–122. Minor modifications to the axioms are required when the quantifiers are not restricted to facts.
+
+[8] On the Plurality of Worlds (Oxford: Blackwell, 1986) pp. 210–20; compare p. 256 on quasi-rigidity.
+
+[9] Professor Salmon informs me (private communication) that his present (1988) view is that the general notion of rigidity which he had intended to capture (and which he believes Kripke probably intended in the first place) is given by adding the condition “and does not designate something else with respect to any possible world” to the definition of “rigid designator”. According to the revised definition, rigid definite descriptions are persistent. Note that his paper “Model Paradox: Parts and Counterparts, Points and Counterpoints”, in P. A. French, T. E. Uehling and H. K. Wettstein (eds), Midwest Studies in Philosophy XI: Studies in Essentialism (Minneapolis: University of Minnesota Press, 1986), pp. 75–120, embodies at p. 116, note 8, a different and earlier response to the present objection.

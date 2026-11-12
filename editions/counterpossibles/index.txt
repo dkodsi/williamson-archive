@@ -1,0 +1,397 @@
+# Counterpossibles
+
+Timothy Williamson
+
+Topoi 37 (2018): 357–368.
+
+Abstract
+
+The paper clarifies and defends the orthodox view that counterfactual conditionals with impossible antecedents are vacuously true against recent criticisms. It argues that apparent counterexamples to orthodoxy result from uncritical reliance on a fallible heuristic used in the processing of conditionals. A comparison is developed between such counterpossibles and vacuously true universal generalizations.
+
+Keywords: Conditionals · Counterpossibles · Counterfactuals · Reductio ad absurdum · Heuristics · Vacuous truth · Impossible worlds
+
+On classic semantic accounts of counterfactual conditionals, all counterpossibles (counterfactuals with impossible antecedents) are true. There seem to be counterexamples to that claim. Is orthodoxy about counterpossibles correct? The problem is not just how best to tidy up an unimportant little corner of the logic and semantics of conditionals. It has significant theoretical and methodological ramifications in several directions. This paper defends orthodoxy against recent objections, and explains the most recalcitrant contrary appearances by our pre-reflective reliance on a fallible heuristic in the assessment of conditionals.
+
+# 1 What Is at Stake
+
+Typically, we use counterfactuals to talk about what would have happened if something had been different from how it actually was. Still, despite the etymology, a counterfactual may have a true antecedent; ‘If she were depressed, that would explain her silence’ does not imply that she is not depressed. But the antecedent of a counterpossible is impossible, and so false.
+
+What kind of impossibility is relevant? It is not epistemic. For consider this example:
+
+(1)
+If thinking had never occurred, science would have flourished.
+
+The antecedent of (1) is epistemically impossible, because it is incompatible with something we know: that we think. But that does not make the antecedent of (1) impossible in the relevant sense. Presumably, the universe could have been lifeless and thoughtless forever. In that case, science would not have flourished. Defenders of orthodoxy should agree that (1) is false. The special theoretical problem in evaluating ‘If this had been so, that would have been so’ arises when this could not have been so. The relevant sort of possibility is objective rather than epistemic or subjective. Moreover, what matters is the most inclusive sort of objective possibility, which we may call metaphysical possibility. For the special theoretical problem in evaluating a counterfactual does not arise when, although the antecedent could not easily have been so, it could still have been so.
+
+Some subjunctive conditionals arguably have an epistemic reading (Edgington 2008; Vetter 201X). This paper concerns non-epistemic readings of subjunctive conditionals, though some of its conclusions may generalize to epistemic readings too. It is sometimes hard to tell whether one is reading a conditional epistemically or not, an issue to keep in mind.
+
+One view is that counterpossibles suffer some sort of presupposition failure (von Fintel 1998). If the presupposition were semantic, they might even lack a truth-value. However, that is too drastic. In explaining how one can tell that whales are not fish, someone might say ‘If whales were fish, they would behave quite differently’. That utterance is felicitous even if it is common ground in the conversation that whales could not in fact have been fish. Of course, once it is common ground that the antecedent of a counterfactual conditional is impossible, the conditional will often lose any conversational relevance it might previously have had, and so be infelicitous to utter. Thus there may be a defeasible pragmatic presupposition of the possibility of the antecedent, but that would not enter the semantics.
+
+In discussing the semantics of the subjunctive conditional, I will treat it as a sentential operator, making a complex sentence $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ out of simpler sentences $\mathrm{\alpha}$ and $\mathrm{\beta}$. That may well be an over-simplification. On Kratzer’s influential account (2012), ‘if’ restricts sentential operators rather than being one in its own right. The arguments of this paper transpose to that more sophisticated setting.
+
+It is convenient, though not crucial, to put the problem of counterpossibles in terms of possible worlds. We take the worlds to be possible in the sense that it is metaphysically possible for any one of them to have obtained; metaphysical possibility as just explained is an appropriately inclusive and non-epistemic standard for present purposes. The evaluation of the counterfactual $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ depends on the truth-value of $\mathrm{\beta}$ at relevant possible worlds at which $\mathrm{\alpha}$ is true. But what happens if $\mathrm{\beta}$ is true at no possible worlds?
+
+The classic semantic accounts of counterfactuals, going back to Stalnaker (1968) and Lewis (1973), are in the framework of compositional intensional semantics, and more specifically of such possible worlds semantics. For simplicity in what follows, we hold fixed parameters such as the context and the assignment of values to variables, and leave them tacit. In this setting, we can explain why it is so natural to make all counterpossibles true. It is no optional peculiarity of Stalnaker’s semantics, or Lewis’s.
+
+We equate the intension $|\mathrm{\alpha}|$ of a sentence $\mathrm{\alpha}$ with the set of possible worlds at which $\mathrm{\alpha}$ is true. By hypothesis, the intension of a counterfactual is a function of the intensions of its antecedent and consequent:
+
+(2)
+$|\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}| = \mathrm{f}(|\mathrm{\alpha}|, |\mathrm{\beta}|)$
+
+Indeed, we can be more specific, for all that should matter about the consequent is at which possible worlds where the antecedent is true the consequent is also true, in other words, the intersection of the intension of the antecedent with the intension of the consequent. That is just the restricting effect of the antecedent. On that assumption, (2) implies (3):
+
+(3)
+$|\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}| = \mathrm{f}(|\mathrm{\alpha}|, |\mathrm{\alpha}| \cap |\mathrm{\beta}|)$
+
+The truth-value of the consequent at worlds where the antecedent is false should be irrelevant to the truth-value of the conditional, for it concerns only what holds if its antecedent held. But if the antecedent is true at no possible worlds, then the consequent is true at no possible worlds at which the antecedent is true; (3) yields (4):
+
+(4)
+If $|\mathrm{\alpha}| = \{\}$ then $|\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}| = \mathrm{f}(\{\}, \{\})$
+
+Given (4), all counterpossibles have the same intension: they are indiscriminate. That is not yet to decide between making them all true and making them all false. However, we surely want any counterfactual (counterpossible or not) whose consequent merely repeats its antecedent to be a trivial necessary truth, true throughout the set of all possible worlds $\mathrm{W}$:
+
+(5)
+$|\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\alpha}| = \mathrm{W}$
+
+Together, (4) (with $\mathrm{\beta} = \mathrm{\alpha}$) and (5) require $\mathrm{f}(\{\}, \{\})$ to be $\mathrm{W}$. Putting that back into (4), we get:
+
+(6)
+If $|\mathrm{\alpha}| = \{\}$ then $|\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}| = \mathrm{W}$
+
+In other words, all counterpossibles are necessary truths, and so truths. This is just the conclusion reached by Stalnaker, Lewis, and their successors in the mainstream of intensional semantics.
+
+A simpler argument in the object-language for the truth of counterpossibles just uses a plausible and attractive assumption linking metaphysical modality to counterfactuals. It is that strict implication materially implies counterfactual implication:
+
+(7)
+$□(\mathrm{\alpha} \supset \mathrm{\beta}) \supset (\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta})$
+
+For, by elementary modal logic, an impossibility strictly implies anything:
+
+(8)
+$□\neg\mathrm{\alpha} \supset □(\mathrm{\alpha} \supset \mathrm{\beta})$
+
+By transitivity, (7) and (8) entail (9):
+
+(9)
+$□\neg\mathrm{\alpha} \supset (\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta})$
+
+If one assumes the necessitation of (7), one can also derive the necessitation of (9).
+
+Elsewhere, I have used (7) in deriving equivalents of metaphysical modalities in counterfactual terms, as part of an argument for understanding our cognitive capacities for handling metaphysical modalities as a by-product of our cognitive capacities for handling counterfactual conditionals (Williamson 2007, pp. 156–177). This is an example of the ways in which issues about counterpossibles have significant knock-on effects for more general philosophical questions.
+
+Thus strong theoretical pressures push towards orthodoxy about counterpossibles. It is required by the standard simple and natural approach to the semantics of counterfactuals, and it contributes to a simple and natural picture of how counterfactuals and metaphysical modality fit together. Nevertheless, those pressures are not obviously irresistible. If one is willing to countenance impossible worlds in addition to possible worlds, one might be able to retain the world-based semantic framework for counterfactuals while rejecting orthodoxy about counterpossibles (Nolan 1997; Brogaard and Salerno 2013; Kment 2014). For if the semantic value of a counterfactual is sensitive to its behaviour at impossible worlds, that makes it easier to deny assumptions such as (2) and (7). Alternatively, one might seek a different semantic framework for counterfactuals that is less congenial to orthodoxy about counterpossibles. Thus counterpossibles make a test case for possible worlds semantics. We must examine the issues in more depth.
+
+The focus of resistance to orthodoxy about counterpossibles is usually on alleged counterexamples. Here is one (based on Nolan 1997). What are the truth-values of (10) and (11)?
+
+(10)
+If Hobbes had (secretly) squared the circle, sick children in the mountains of South America at the time would have cared.
+(11)
+If Hobbes had (secretly) squared the circle, sick children in the mountains of South America at the time would not have cared.
+
+If one responds pre-theoretically, the natural snap answers are presumably that (10) is false and (11) true. The sick children in the mountains of South America were in no position to know of Hobbes’s secret geometrical reasoning thousands of miles away, and in any case they had more urgent things to care about. But, as we now know, the circle cannot be squared. The shared antecedent of (10) and (11) is metaphysically impossible. Therefore, according to orthodoxy, both (10) and (11) are true. For the critics, (10) is a counterexample to orthodoxy: a false counterpossible. Such examples can of course be multiplied.
+
+The temptation to deny (10) and many similar counterpossibles is strong. But such inclinations are not always veridical. For the time being, we may treat them as defeasible evidence against orthodoxy about counterpossibles. Later, we will assess the prospects for an error theory about those inclinations.
+
+For some metaphysicians, rejecting orthodoxy also has more theoretical attractions. Here is an example. Nominalists crave the scientific advantages that platonists gain from quantifying over numbers and other abstract objects. How to emulate them? A common strategy, in this and similar cases, is fictionalist. One treats the envied rival metaphysical theory as a useful fiction. The proposal deserves to be taken seriously only if accompanied by a properly worked-out account of how reasoning on the basis of a fiction can still be a reliably truth-preserving way of getting from non-fictional premises to a non-fictional conclusion. For instance, if one reasons validly from true premises purely about concrete reality plus a false (by nominalist lights) auxiliary mathematical theory about abstract objects to a conclusion purely about concrete reality, the conclusion needs to be true too (Field 1980). But why should it be true? One way of implementing the fictionalist strategy is to use counterfactuals. The nominalist reasons in effect about how things would be if the mathematical theory were to obtain and concrete reality were just as it actually is. Thus the conclusion corresponds to this counterfactual:
+
+(12)
+$(M \wedge A) \mathbin{□\!\to} C$
+
+Here M is the platonist mathematical theory, A says that concrete reality is just as it actually is, and C says something specific purely about concrete reality. Thus, the truth of the counterfactual seems to guarantee the truth of its consequent, even though its antecedent is false (by nominalist lights), because the relevant counterfactual worlds are the same as the actual world with respect to concrete reality, which C is purely about. The trouble is that the nominalist may well regard platonism as not just false but metaphysically impossible: for instance, the structure of the hierarchy of pure sets (if any) seems to be a metaphysically non-contingent matter. For such a nominalist, M is impossible, so the counterfactual (12) is a counterpossible. But, given orthodoxy about counterpossibles, the impossibility of the antecedent guarantees the truth of the counterpossible, irrespective of its consequent, so the mere truth of (12) is insufficient for the truth of C. Fictionalists who implement their strategy by means of counterfactuals and regard the rival metaphysical theory as a useful but impossible fiction have therefore been compelled to deny orthodoxy about counterpossibles (for instance, Dorr 2008).
+
+We can be more explicit about the relation between the move from (12) to C and orthodoxy about counterpossibles. The natural route from (12) to C is this. Suppose that C is (actually) false. By hypothesis, A says that concrete reality is just as it actually is, and C says something specific purely about concrete reality, hence ¬C does too. Therefore, we can treat ¬C as part of what A in effect says. Thus the opposite counterfactual surely holds:
+
+(13)
+$(M \wedge A) \mathbin{□\!\to} \neg C$
+
+If (13) entails the negation of (12) we can therefore derive ¬(12) from ¬C, and so C from (12) by contraposition. Conversely, we can derive (12) from C just as we derived (13) from ¬C (without relying on the mutual exclusion of counterfactuals). But orthodoxy rejects the assumption that (12) and (13) exclude each other, for both are true if their shared antecedent is impossible.
+
+Most orthodox theorists will hold that opposite counterfactuals such as (12) and (13) are compatible only if they are counterpossibles. For they will accept the following two principles in the logic of counterfactuals. First, counterfactuals distribute over conjunction in the consequent:
+
+(14)
+$(\mathrm{\alpha} \mathbin{□\!\to} (\mathrm{\beta} \wedge \mathrm{\gamma})) \equiv ((\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}) \wedge (\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\gamma}))$
+
+This holds on any standard semantics for counterfactuals. Second, no metaphysical possibility counterfactually implies a metaphysical impossibility:
+
+(15)
+$(\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}) \supset (◇\mathrm{\alpha} \supset ◇\mathrm{\beta})$
+
+(See Williamson 2007, p. 156; in the setting of a quasi-Lewisian approach to the semantics of counterfactuals, (15) corresponds to the Strangeness of Impossibility Condition Daniel Nolan is ‘tempted to impose’: ‘any possible world is more similar (nearer) to the actual world than any impossible world’ at 1997, p. 550; see pp. 566–567 for more discussion.)
+
+If something is impossible which would obtain if something else were to obtain, then the other thing is impossible too. From (14) and (15) we can easily derive that the conjunction of opposite counterfactuals implies the impossibility of their antecedent:
+
+(16)
+$((\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}) \wedge (\mathrm{\alpha} \mathbin{□\!\to} \neg\mathrm{\beta})) \supset \neg◇\mathrm{\alpha}$
+
+Even opponents of orthodoxy about counterpossibles may grant (16), since their unorthodoxy may be confined to counterpossibles, and a counterexample to (16) would require a possible antecedent. What opponents of orthodoxy reject, and proponents accept, is the converse of (16).
+
+The apparently minor issue of counterpossibles is thus interrelated with various more central questions in both semantics and metaphysics. However, the question should be separated from some other issues with which it is surprisingly often confused. That is the business of the next section.
+
+# 2 Misconceptions About Orthodoxy
+
+In a recent critique of orthodoxy, Brogaard and Salerno characterize their target thus (2013, p. 642):
+
+Counterpossibles are trivial on the standard account. By ‘trivial’, we mean vacuously true and semantically uninformative. Counterpossibles are vacuously true in that they are always true; an impossibility counterfactually implies anything you like. And relatedly, they are uninformative in the sense that the consequent of a counterpossible makes no contribution to the truth-value, meaning or our understanding of the whole.
+
+Of this conjunction, orthodoxy as I characterized it above corresponds only to the first conjunct, the claim of vacuous truth. Semantic uninformativeness is no part of the standard account. Consequently, that counterpossibles are trivial in Brogaard and Salerno’s sense is no part of the standard account.
+
+To see this, we must recall that the standard view of counterfactuals is that, as usual for complex sentences, they have a compositional semantics. Their meanings are built up out of the meanings of their constituents. On the view found in authors such as Stalnaker (1968) and Lewis (1973), the meaning of the counterfactual sentence $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ is built up out of the meanings of the sentences $\mathrm{\alpha}$ and $\mathrm{\beta}$ combined with the meaning of the counterfactual operator $\mathbin{□\!\to}$. Although Kratzer’s view of the semantic structure of conditional sentences is subtly different, it is still a compositional one, and the same general morals can be drawn. In any case, a fine-grained conception of meaning, any difference in meaning between the sentences $\mathrm{\beta}$ and $\mathrm{\gamma}$ makes a difference in meaning between the counterfactuals $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ and $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\gamma}$, whatever the meaning of $\mathrm{\alpha}$. That applies just as much when $\mathrm{\alpha}$ is impossible as when $\mathrm{\alpha}$ is possible. For instance, the counterpossibles (10) and (11) differ by a ‘not’ in the consequent, which ipso facto makes a difference in meaning between (10) and (11). Thus it is false that, on the standard view, the consequent of a counterpossible makes no contribution to the meaning of the whole.
+
+It is also false that, on the standard view, the consequent of a counterpossible makes no contribution to our understanding of the whole. For instance, consider these two counterfactuals:
+
+(17)
+If Plato had been identical with Socrates, Plato would have been snub-nosed.
+(18)
+If Plato had been identical with Socrates, $2 + 2$ would have been 5.
+
+We may assume that, by the necessity of distinctness, since Plato and Socrates are distinct, it is metaphysically impossible for Plato and Socrates to have been identical. Thus both (17) and (18) are counterpossibles. Nevertheless, we understand them by understanding their constituents and how they are put together. For instance, a failure to understand the constituent ‘snub-nosed’ prevents one from fully understanding (17), but does not prevent one from understanding (18). Thus, on the standard view, our understanding of the consequent of a counterpossible does contribute to our understanding of the whole counterpossible. Of course, if one happens to know that it is metaphysically impossible for Plato to have been identical with Socrates, and one accepts orthodoxy about counterpossibles, then one can work out that (17) is true even if one does not understand ‘snub-nosed’, but that is just an instance of the general point that one can know that a sentence states a truth without knowing what it states. For example, a trustworthy and trusted native speaker of Mandarin might utter a sentence of Mandarin and tell me that it states a truth without telling me what truth it states. In any case, someone can understand (17) and (18) without knowing that it is impossible for Socrates to have been identical with Plato. Having spent too much time reading dodgy webpages, he might suspect that Plato was identical with Socrates. Alternatively, he might know that Plato was distinct from Socrates, but doubt the necessity of distinctness on faulty metaphysical grounds. In general, one can understand a counterpossible without knowing it to be a counterpossible, and one’s understanding of it is relevantly like one’s understanding of other counterfactuals. All these points arise naturally within the framework of a compositional approach to semantics, such as standard accounts assume.
+
+Of course, the informativeness of a sentence does not supervene purely on its intension in a standard semantic framework. For ‘2 + 2 = 4’ and a sentence expressing Fermat’s last theorem have the same intension, the set of all possible worlds, even though the latter is more informative than the former. Informativeness is sensitive to how the given intension is expressed. But that point does not depend on one’s view of counterpossibles.
+
+Here is another way to verify the informativeness of counterpossibles, on the standard view. Suppose that someone is initially uncertain whether Plato is identical with Socrates. Then someone whom he trusts tells him that (18) is the case. Since he knows that the consequent is impossible (2 + 2 could not have been 5), he deduces [using (15)] that the antecedent is impossible too, and thereby comes to know that Plato could not have been identical with Socrates. He has gained useful information from (18).
+
+What of Brogaard and Salerno’s claim that, on the standard account, ‘the consequent of a counterpossible makes no contribution to the truth-value […] of the whole’? At first sight, it looks more defensible, since truth-value is a more coarse-grained feature than either meaning or understanding. However, their claim about truth-values is unwarranted too. The only basis for making it is that, according to standard views, all counterfactuals with impossible antecedents have the same truth-value, because all are true, irrespective of their consequent. But, equally, according to standard views, all counterfactuals with necessary consequents have the same truth-value, because all are true, irrespective of their antecedent:
+
+(19)
+$□\mathrm{\beta} \supset (\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta})$
+
+Both principles, (9) and (19), are corollaries of the quite general entailment (7) from any strict implication to the corresponding counterfactual; one can also derive the semantic analogue of (19) from (3) and (5). Thus, if the standard account implies that the consequent of a counterfactual with an impossible antecedent makes no contribution to the truth-value of the whole, by parity of reasoning the standard account also implies that the antecedent of a counterfactual with a necessary consequent makes no contribution to the truth-value of the whole. But that combination is absurd. For consider a counterfactual such as (20) with an impossible antecedent and a necessary consequent:
+
+(20)
+If 6 were prime, 35 would be composite.
+
+By Brogaard and Salerno’s style of reasoning, the standard account would imply that neither the antecedent nor the consequent of (20) makes any contribution to the truth-value of (20). That is absurd because, without its specific antecedent and consequent, all that is left of (20) is the bare form of a counterfactual sentence alone, which by itself certainly does not determine a truth-value. Obviously, standard theories of counterfactuals such as Stalnaker’s and Lewis’s have no such ridiculous consequence. Thus even Brogaard and Salerno’s claim that, on the standard account, the consequent of a counterpossible makes no contribution to the truth-value of the whole is unwarranted.
+
+It is thus a misunderstanding of orthodoxy to suppose that it makes counterpossibles semantically uninformative or cognitively trivial. It simply makes them true. The misunderstanding is the source of many objections to orthodoxy, including many (though not all) of Brogaard and Salerno’s. One such style of objection is this. According to orthodoxy, (21) is true, because Fermat’s Last Theorem is a necessary truth:
+
+(21)
+If Fermat’s Last Theorem were false, $2 + 2$ would be 5.
+
+The critic then points out, correctly, that Andrew Wiles could not have simplified his famous proof by merely invoking (21) and thence deducing Fermat’s Last Theorem by reductio ad absurdum. This does indeed refute the claim that (21) is uninformative or trivial, for given the latter claim it is harmless to rely on (21) in a proof. But it is hopeless as an argument against the claim that (21) is true, for the mere truth of a claim does not permit one to rely on it in a proof. For that, the claim must have some epistemically appropriate property: it must be an axiom, or have been already proved, or the like. Since (21) has no such status, it offers no simplification of Wiles’s proof. Thus the objection fails. More generally, assertibility requires some epistemically appropriate status, such as being known by the asserter, for which truth is insufficient. That point applies just as much to counterpossibles as to sentences of any other kind, and fits well with orthodoxy. Failure to appreciate it presumably comes from the confused idea that orthodoxy makes counterpossibles uninformative or trivial.
+
+Of course, in terms purely of possible worlds, considering a counterpossible involves supposing that a member of the empty set of worlds obtains, which looks like a waste of time. But questions of uninformativeness and triviality are cognitive and computational, sensitive not only to sets of worlds but also to the linguistic guises under which they are presented. The mere fact that a counterfactual conditional has an impossible antecedent tells us very little about its cognitive or computational status. For that, we need to know the linguistic guise of the antecedent.
+
+A subtler misconception about orthodoxy concerns speakers who know the impossibility of the antecedent. Consider (22):
+
+(22)
+If Hobbes had squared the circle, he would have become Lord Chancellor.
+
+I know that the antecedent of (22) is impossible; given orthodoxy, I know that (22) is true. Epistemically, I am in a position to assert (22) on those grounds. But if I do so in a discussion of seventeenth century English politics, something is obviously amiss. However, that point does not tell against orthodoxy, for orthodoxy can easily explain what is amiss. Given orthodoxy, I was also in a position to assert the more informative and equally relevant (23) instead:
+
+(23)
+Hobbes could not have squared the circle.
+
+Of course, (22) mentions political matters while (23) does not, but my grounds for asserting (22) make the mention factitious and misleading. Therefore, I should have asserted (23)—or, better, just kept quiet—instead, on Gricean grounds of conversational cooperation. Since I did not, my hearers may assume that I asserted (22) because I knew of some politically significant connection between squaring the circle and the Lord Chancellorship, and so be misled. If my hearers correctly identify my grounds for asserting (22), they will recognize the irrelevance of my contribution. Orthodoxy has no trouble in dealing with such cases, as Lewis knew (1973, p. 25).
+
+In order to keep one’s grip on the implications of orthodoxy, a salutary comparison is between the vacuous truth of counterpossibles and the vacuous truth of empty universal generalizations. The impossibility of the antecedent corresponds to the emptiness of the subject term. For it is widely agreed that ‘Every $\mathrm{N}$ $\mathrm{V}$s’ is true if and only if the extension of $\mathrm{N}$ is a subset of the extension of $\mathrm{V}$. Thus, as a special case, if the extension of $\mathrm{N}$ is empty, it is a subset of the extension of $\mathrm{V}$, whatever $\mathrm{V}$ is, so ‘Every $\mathrm{N}$ $\mathrm{V}$s’ is true. (Any presupposition failure from the emptiness of $\mathrm{N}$ is pragmatic, not semantic, and in suitable circumstances can be cancelled by saying ‘I don’t know whether there are any $\mathrm{N}$s, but we can say at least this much’.) Consequently, since there are no golden mountains, (24)–(26) are true:
+
+(24)
+Every golden mountain is a mountain.
+(25)
+Every golden mountain is in Africa.
+(26)
+Every golden mountain is a valley.
+
+It would be obviously absurd to claim that, on this standard account of the universal quantifier, ‘is a mountain’, ‘is in Africa’, and ‘is a valley’ make no contribution to the truth-value, meaning or our understanding of (24)–(26). For universal generalizations have the same overall compositional semantic structure whether the subject term is empty or not, just as counterfactual conditionals have the same overall compositional semantic structure whether the antecedent is impossible or not. For the same reason, it would be absurd to claim that, on the standard account, (24)–(26) are cognitively trivial or semantically uninformative. After all, one can understand (24)–(26) without knowing that there are no golden mountains.
+
+Just as we cannot simplify the proof of Fermat’s Last Theorem by invoking (21), so we cannot simplify its proof by invoking (27):
+
+(27)
+Every counterexample to Fermat’s Last Theorem is a number both identical to $2 + 2$ and identical to 5.
+
+Although (27) is true, we cannot rely on it in a proof without having already proved it, any more than we can do so in the case of (21). Again, even though we know the truth of (28) because we know that no Englishman squared the circle, that does not make it appropriate to assert (28) in a discussion of seventeenth century English politics:
+
+(28)
+Every Englishman who squared the circle became Lord Chancellor.
+
+As these examples suggest, our reactions to counterpossibles are often similar to our reactions to similarly constructed universal quantifications. For instance, Brogaard and Salerno write of ‘the intuitive falsehood’ of (29) (2013, p. 645):
+
+(29)
+If my shirt had been red and non-red all over, then it would have been green.
+
+Faced with (29), my first, unreflective reaction is indeed sceptical: if it had been red and non-red all over, why should it have been green rather than any other colour? Compare (29) with (30):
+
+(30)
+Every shirt that is red and non-red all over is green.
+
+Faced with (30), my first, unreflective reaction is equally sceptical: if a shirt is red and non-red all over, why should it be green rather than any other colour? With universal quantification, we have learnt to override such immediate reactions. On reflection, (30) is true because it has no counterexample: no shirt is red and non-red all over and yet not green, because no shirt is red and non-red all over. Perhaps we should learn to override our immediate reactions to counterpossibles like (29) in a similar way. The last section of the paper will discuss these issues in more depth.
+
+# 3 Counterfactual Reasoning by Reductio ad Absurdum
+
+The prime specimens of useful reasoning from impossible suppositions are proofs by reductio ad absurdum in mathematics. When we state them in everyday terms, it is natural to use counterfactual conditionals. Thus Lewis gives these two examples (1973, p. 25):
+
+(31)
+If there were a largest prime p, p! + 1 would be prime.
+(32)
+If there were a largest prime p, p! + 1 would be composite.
+
+They summarize a standard proof that there is no largest prime: (31) holds because if p were the largest prime, p! would be divisible by all primes (since it is divisible by all natural numbers from 1 to p), so p! + 1 would be divisible by none; (32) holds because p! + 1 is larger than p, and so would be composite if p were the largest prime. To complete the proof, one can use standard conditional logic to conjoin the consequents of (31) and (32):
+
+(33)
+If there were a largest prime p, p! + 1 would be both prime and composite.
+
+Since the consequent of (33) is a contradiction, one can deny the antecedent, and conclude that there is no largest prime.
+
+Of course, one does not strictly need to formulate the proof in terms of counterfactual conditionals. One could use material conditionals instead, because all standard mathematical reasoning can be formalized in purely extensional terms. Still, it is legitimate, indeed natural and appropriate, to use counterfactual conditionals. They nicely convey the role of the antecedent in the reasoning. At the very least, on a good semantic theory, the counterpossibles (31)–(33) should be true, for they are soundly based on valid mathematical reasoning.
+
+It is not clear that (31)–(33) come out true on Brogaard and Salerno’s theory. The point is not merely that, on their account, some impossible worlds include the sentence ‘There is a largest prime p’ while excluding the sentence ‘p! + 1 is prime’ or ‘p! + 1 is composite’ (or both), for that does not show that they are the closest worlds including ‘There is a largest prime p’ to the actual world. It is instructive to note Brogaard and Salerno’s reaction to a much more elementary argument by reductio ad absurdum (Williamson 2007, p. 172):
+
+[I]f 5 + 7 were 13 then 5 + 6 would be 12 (and so by another eleven steps) 0 would be 1, so if the number of right answers I gave were 0, the number of right answers I gave would be 1.
+
+They analyse that compressed argument as using reductio ad absurdum but argue that, as it stands, it is not cogent, because it does nothing to show that the nearest impossible world in which the antecedent is true has the required properties (2013, pp. 649–650). Exactly the same objection applies to the classic proof that there is no largest prime, cast in counterfactual terms. After all, what mathematician has ever supplemented a standard proof by reductio ad absurdum with considerations about the relative closeness of various impossible worlds, considered as sets of sentences that need not be deductively closed, to the actual world? The cost of Brogaard and Salerno’s rejection of my toy proof is a commitment to rejecting ordinary mathematical proofs by reductio ad absurdum cast in counterfactual terms. Nor is there any reason to expect that special contextual factors will somehow rescue the hard mathematical proofs but not my easy one, or to postulate a different meaning for the counterfactual conditional in mathematics from its meaning in philosophy.
+
+Reflection suggests that the problem for opponents of orthodoxy goes deep. For consider any non-obvious impossibility $\mathrm{\alpha}$ that can be shown, by more or less elaborate deductive reasoning, to lead to an obvious impossibility $\mathrm{\omega}$. The general anti-orthodox strategy is to be charitable by evaluating counterfactuals with $\mathrm{\alpha}$ as the antecedent at impossible worlds or situations not closed under such reasoning, precisely in order to falsify counterpossibles such as $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\omega}$. But those are exactly the counterpossibles one needs to assert in articulating the argument by reductio ad absurdum against $\mathrm{\alpha}$.
+
+One fallback would be to concede orthodoxy for counterlogicals, countermathematicals, and the like, but still reject it for some countermetaphysicals. Not only is that a long retreat, it risks undermining the motivation for the residual resistance to orthodoxy in the first place, since the motivating features of the examples are already present in the case of the counterlogicals. If those features are somehow illusory, who is to say that similar illusions are not also at work in the case of the countermetaphysicals? Thus the fallback is unstable.
+
+Another response would be to say that formulating mathematical arguments in counterfactual terms was always loose speech. One would then have to explain why those formulations seemed so compelling to the most rigorous and precise reasoners in our community—mathematicians and logicians—in effect, why they mistook loose speech for strict speech. That would be some sort of error theory. Such a response also risks instability, for if anti-orthodox theorists need an error theory, what is to stop orthodox theorists from applying their own error theory to the other side’s considerations, and escaping the messy complications of anti-orthodoxy?
+
+Yet another defensive move would be to invoke context-dependence, arguing that (33) is true in the context of standard mathematical proof (contrary to Brogaard and Salerno’s reaction) but false in some other contexts. This move might concede a reading of counterfactuals on which they can be used to define metaphysical modalities, while also providing another reading of them on which they can be used for fictionalist purposes in metaphysics. Of course, the appeal to context-dependence is a generic way of rejecting the validity of just about any deductive argument. To carry weight, it needs more specific support. It is not controversial that counterfactuals exhibit some degree of context-dependence in which factors are held fixed; if Julius Caesar had been in command during the Korean war, would he have used catapults or nuclear weapons? But that makes it all the more striking how hard it is to hear the mathematical argument for (33) as unsound. If context determined whether standard logic and mathematics were to be held fixed, (33) might be expected to trigger a shift to a context in which they are not, because it brings out so clearly that the antecedent is untenable without such a shift. Yet the argument for (33) remains compelling. Although one might be able to browbeat ordinary hearers into questioning (33), that is very different from the smooth, unreflective transitions characteristic of ordinary context-dependence. Without adequate motivation, the appeal to context-dependence is just an all-purpose objection to any valid argument. That context can shift the relative ranking of given worlds does not mean that it can shift which worlds are being ranked at all.
+
+Mathematical arguments by reductio ad absurdum are amongst the best arguments for counterpossibles we have. They tell us that if something non-obviously impossible were the case, something obviously impossible would be the case. We should accept the conclusions of those mathematical proofs. They provide strong evidence for orthodoxy. But how can we explain away the strongest evidence against orthodoxy, all the seemingly clear examples of false counterpossibles?
+
+# 4 An Error Theory of Apparently False Counterpossibles
+
+Processing a non-obvious counterpossible typically feels very like processing a non-counterpossible counterfactual. Consider (10) above, a good example of a seemingly false counterpossible [‘If Hobbes had (secretly) squared the circle, sick children in the mountains of South America at the time would have cared’]. What goes on when we process it? In my case, before I consciously apply any theoretical considerations, it is something like this. I imagine Hobbes doing geometry in the secrecy of his room. I ask myself whether sick children in the mountains of South America at the time would have cared. I answer in the negative, because there was no way for them to have known about Hobbes’s doings at the time, and even if they had known, they would hardly have cared. In the first instance, I assent to (11), the opposite counterfactual to (10), with the same antecedent but the negation of the consequent. My immediate inclination is then to deny (10), as excluded by (11). So far, the impossibility of the antecedent has played no role whatsoever. That is not to deny that I imagine Hobbes (secretly) squaring the circle. In some minimal, vague, unspecific way I do imagine him squaring the circle, but I could imagine him carrying out some genuine geometrical construction in much the same way. Now, in my case, theory kicks in. I remind myself that squaring the circle is impossible, and that opposite counterfactuals may both be true when their shared antecedent is impossible. I therefore countermand my inclination to deny (10).
+
+What this suggests is that, in our unreflective assessment of counterfactual conditionals, we use a simple heuristic along these lines:
+
+HCC
+Given that $\mathrm{\beta}$ is inconsistent with $\mathrm{\gamma}$, treat $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ as inconsistent with $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\gamma}$
+
+For instance, ‘Sick children in the mountains of South America at the time cared’ is obviously inconsistent with ‘Sick children in the mountains of South America at the time did not care’ (on the relevant readings), so in accordance with HCC we treat (10) as inconsistent with (11). Thus, having verified (11), we treat ourselves as having falsified (10). More generally, when drawing out the implications of a counterfactual supposition $\mathrm{\alpha}$, as soon as we have put ourselves in a position to assert $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\gamma}$, we take ourselves to be in a position to reject $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ for any $\mathrm{\beta}$ inconsistent with $\mathrm{\gamma}$.
+
+For many purposes, we can consider a simpler heuristic in place of HCC:
+
+HCC*
+If you accept one of $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ and $\mathrm{\alpha} \mathbin{□\!\to} \neg\mathrm{\beta}$, reject the other
+
+HCC* has the advantage over HCC of not using ‘inconsistent’, a term which could do with some clarification. HCC and HCC* are equivalent under a wide range of conditions.
+
+There is psychological evidence that people reason in accordance with HCC*, treating pairs of conditionals with the same antecedent and contradictory consequents as inconsistent, whether the conditionals are indicative or subjunctive (Evans et al. 2005, pp. 1049–1050). More generally, there is extensive psychological evidence that we tend to evaluate conditionals by evaluating their consequents on the supposition of their antecedents, with only subtle differences in treatment between indicatives and consequents. Thus we tend to treat cases where the antecedent is false as irrelevant to the evaluation. Our assessment of the probability of a conditional is highly correlated with our assessment of the conditional probability of its consequent on its antecedent. The well-supported suppositional model of our evaluation of conditionals predicts that it will conform to both HCC and HCC*. For if $\mathrm{\beta}$ is inconsistent with $\mathrm{\gamma}$, then it is inconsistent to accept both under the supposition of $\mathrm{\alpha}$. In probabilistic terms, the inconsistency of $\mathrm{\beta}$ with $\mathrm{\gamma}$ implies this relation between their conditional probabilities on $\mathrm{\alpha}$ and the conditional probability of their disjunction on $\mathrm{\alpha}$:
+
+(34)
+$\operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha}) + \operatorname{Prob}(\mathrm{\gamma} \mid \mathrm{\alpha}) = \operatorname{Prob}(\mathrm{\beta} \wedge \mathrm{\gamma} \mid \mathrm{\alpha}) \leq 1$
+
+Thus if $\operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha})$ is high then $\operatorname{Prob}(\mathrm{\gamma} \mid \mathrm{\alpha})$ is low, and if the latter is high the former is low. Given the close correlation between our assessments of conditional probabilities and our assessments of the probabilities of conditionals, this means that if we assess one of the conditionals in HCC or HCC* as probable, we do not assess the other as probable. (Evans et al. 2005 provides a useful overview of the evidence for the suppositional theory, though they may be too quick in passing between psychological claims and semantic ones. See Evans and Over 2004, pp. 113–131, for more on the suppositional account of counterfactuals.)
+
+For the orthodox, HCC and HCC* are only heuristics because they lead you to reject true counterpossibles when $\mathrm{\alpha}$ is impossible. However, it is plausible that usually, when counterfactual conditionals arise in practice, their antecedents are possible. In that case, HCC* will never lead you astray. For if you accept a true one of $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ and $\mathrm{\alpha} \mathbin{□\!\to} \neg\mathrm{\beta}$ (which is not the responsibility of HCC*), HCC* will tell you to reject the other one, which will be false by (16). Given the near-equivalence of HCC and HCC*, HCC will share much of the qualified reliability of HCC*. Thus, on an orthodox logic of counterfactuals, both HCC and HCC* are reasonable though fallible heuristics.
+
+One might wonder whether an unorthodox view of counterfactuals could treat HCC and HCC* as more than a fallible heuristic, by treating no counterpossibles as exceptions; that might even be an advantage of unorthodoxy. But that idea is unlikely to work. For consider counterpossibles with explicit contradictions as antecedents:
+
+(35)
+$(\mathrm{\alpha} \wedge \neg\mathrm{\alpha}) \mathbin{□\!\to} \mathrm{\alpha}$
+(36)
+$(\mathrm{\alpha} \wedge \neg\mathrm{\alpha}) \mathbin{□\!\to} \neg\mathrm{\alpha}$
+
+Both (35) and (36) look highly plausible; surely conjunctions counterfactually imply their conjuncts. But if both (35) and (36) hold, then they are consistent, even though they have the same antecedent and inconsistent consequents. Now unorthodox theorists may reject some instances of (35) and (36), for instance when $\mathrm{\alpha}$ itself is ‘No conjunction counterfactually implies its conjuncts’ or the like. But they cannot plausibly reject one of them in all cases. For instance, let $\mathrm{\alpha}$ be ‘The Liar is true’, so $\mathrm{\alpha} \wedge \neg\mathrm{\alpha}$ makes the dialetheist claim about the Liar paradox that the Liar is both true and not true. The dialetheist both asserts that the Liar is true and asserts that the Liar is not true. Presumably, therefore, both (35) and (36) should hold on this reading of $\mathrm{\alpha}$, even for the unorthodox. Thus even they should regard HCC and HCC* as fallible heuristics, not as marking exceptionless rules of the logic of counterfactuals.
+
+Fiddling with the notion of inconsistency is unlikely to turn HCC into an infallible rule, since by loading enough into the antecedent one should be able to make it counterfactually imply mutually inconsistent things.
+
+Probabilistic considerations point in the same direction, even if we ignore the long series of results, initiated by Lewis (1976), which show that conditionals cannot in general be identified with propositions whose probability is the conditional probability of the antecedent on the consequent. Under the standard equation of the conditional probability $\operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha})$ with the ratio $\operatorname{Prob}(\mathrm{\alpha} \wedge \mathrm{\beta})/\operatorname{Prob}(\mathrm{\alpha})$ of unconditional probabilities, the conditional probability is undefined when $\operatorname{Prob}(\mathrm{\alpha})$ is zero, as it is when $\mathrm{\alpha}$ is a contradiction. If we treat conditional probabilities as primitive, we can sometimes assign $\operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha})$ a value even when $\operatorname{Prob}(\mathrm{\alpha}) = 0$, but we still cannot do so when $\mathrm{\alpha}$ holds at no point in the probability space, on pain of violating basic principles of conditional probability. For $\operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha})$ should be 1 whenever $\mathrm{\alpha}$ entails $\mathrm{\beta}$ in the sense that $\mathrm{\beta}$ holds at every point in the space at which $\mathrm{\alpha}$ holds, so for vacuous $\mathrm{\alpha}$, $\operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha})$ should be 1 for every $\mathrm{\beta}$, which violates the principle that $\operatorname{Prob}(\neg\mathrm{\beta} \mid \mathrm{\alpha}) = 1 - \operatorname{Prob}(\mathrm{\beta} \mid \mathrm{\alpha})$. Thus the structure of probability theory rules out vacuous conditional probabilities. Rejecting standard principles of conditional probability to allow for vacuous conditional probabilities would be a fool’s bargain. Thus we should expect HCC and HCC* to have exceptions for at least some impossible antecedents.
+
+How should we expect the evaluation of $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ and $\mathrm{\alpha} \mathbin{□\!\to} \neg\mathrm{\beta}$ to go when $\mathrm{\alpha}$ entails both $\mathrm{\beta}$ and $\neg\mathrm{\beta}$? In effect, since both $\mathrm{\beta}$ and $\neg\mathrm{\beta}$ would eventually emerge as we developed the counterfactual supposition $\mathrm{\alpha}$ for long enough, HCC and HCC* make it a race between the contradictories as to which emerges first. If $\mathrm{\beta}$ emerges first, we accept $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ and so reject $\mathrm{\alpha} \mathbin{□\!\to} \neg\mathrm{\beta}$ before $\neg\mathrm{\beta}$ has time to emerge. If $\neg\mathrm{\beta}$ emerges first, we accept $\mathrm{\alpha} \mathbin{□\!\to} \neg\mathrm{\beta}$ and so reject $\mathrm{\alpha} \mathbin{□\!\to} \mathrm{\beta}$ before $\mathrm{\beta}$ has time to emerge. On this view, the proponent of impossible worlds misinterprets this computational, inferential difference in terms of the relative closeness of impossible $\mathrm{\alpha} \wedge \mathrm{\beta}$ and impossible $\mathrm{\alpha} \wedge \neg\mathrm{\beta}$ worlds. One great advantage of the heuristics account is that it explains our inattention to the impossibility of the antecedent in our cognitive processing of many counterpossibles. By contrast, accounts such as Brogaard and Salerno’s that postulate a special standard of relative closeness for impossible worlds, apparently quite different from that appropriate for possible worlds, fail to explain the lack of felt adjustment to such a special standard in our cognitive processing of counterpossibles.
+
+Of course, we are not completely helpless victims of our heuristics. Through conscious theoretical reflection, we can sometimes inhibit their operation. Our mastery of reasoning by reductio ad absurdum in mathematics shows our ability to defeat HCC and HCC*. For example, we accept both counterpossibles in the proof that there is no largest prime, even though they have the same antecedent and mutually inconsistent consequents. Even in less formal settings, it is not psychologically compulsory to call off the search for $\mathrm{\beta}$ amongst the counterfactual consequences of $\mathrm{\alpha}$ once $\neg\mathrm{\beta}$ has turned up. If we are asked an open-ended question such as ‘What would have been the consequences if $\mathrm{\alpha}$ had been the case?’, we can continue the search in a way that allows for mutually inconsistent counterfactual consequences to emerge. That is in effect what we do when asked ‘Could $\mathrm{\alpha}$ have been the case?’ (Williamson 2007, p. 162). Nevertheless, despite our ability to inhibit their operation, HCC and HCC* remain the default, to which we may always be liable to revert when off our guard. For instance, if one puts aside one’s mathematical sophistication, it is not hard to feel that (31) and (32) are mutually inconsistent after all.
+
+A useful analogy, already suggested in Sect. 2, is with our naïve reactions to true universal quantifications with empty subject terms:
+
+(37)
+Every dolphin in Oxford has arms and legs.
+
+A natural inclination is to judge (37) false. Even when one is told that there are no dolphins in Oxford, one still feels some resistance to accepting (37). That resistance is explicable by the hypothesis that we accept (38) on the basis of background information about dolphins, and are then inclined to reject (37) as inconsistent with (38):
+
+(38)
+Every dolphin in Oxford lacks arms and legs.
+
+That suggests heuristics for universal quantification analogous to HCC and HCC*:
+
+HUQ
+Given that $\mathrm{\phi}$ is inconsistent with $\mathrm{\psi}$, treat ‘Every $\mathrm{\sigma}$ $\mathrm{\phi}$s’ as inconsistent with ‘Every $\mathrm{\sigma}$ $\mathrm{\psi}$s’
+HUQ*
+If you accept one of ‘Every $\mathrm{\sigma}$ $\mathrm{\phi}$s’ and ‘Every $\mathrm{\sigma}$ $\neg\mathrm{\phi}$s’, reject the other
+
+On the standard semantics for the universal quantifier, HUQ and HUQ* go extensionally wrong when and only when $\mathrm{\sigma}$ is empty in extension.
+
+We can come to recognize the limitations of HUQ and HUQ* through natural reasoning. For instance, suppose that our rejection of (37) leads us to accept its negation:
+
+(39)
+Not every dolphin in Oxford has arms and legs.
+
+From (39) we can validly reason to (40):
+
+(40)
+Some dolphin in Oxford lacks arms and legs.
+
+From (40) we can in turn validly reason to (41):
+
+(41)
+There is a dolphin in Oxford.
+
+But we know (41) to be false. That may lead us to realize that (37) is not false, though its utterance may induce a false presupposition. HUQ and HUQ* are fallible heuristics, defeasible by theoretical reflection, but they are still our default. (Our practical use of ‘If I were you’ counterpossibles and the associated imaginative exercises may also be explicable in terms of such heuristics, without appeal to any special semantics of the de se or the like.)
+
+There may be a more general cognitive pattern underlying these heuristics. It is plausible that we use analogues of HCC and HCC* for indicative as well as subjunctive conditionals, and analogues of HUQ and HUQ* for generic as well as universal quantifiers. We ignore the empty case. We continue using heuristics based on that principle, even when the empty case is obviously relevant, until we resort to conscious reflection. Indeed, we may tend to use suppositional reasoning in evaluating universal and generic generalizations as well as conditionals. For instance, when asked to evaluate (37) or its generic analogue (‘Dolphins in Oxford have arms and legs’), we may suppose that something is a dolphin in Oxford, and ask ourselves whether it has arms and legs.
+
+Our theoretical grasp of universal quantification is currently more secure than it is of counterfactuals conditionals. We are consequently more comfortable in overruling HUQ and HUQ* than in overruling HCC and HCC*. But it was not always so. Centuries of confusion about the existential import or otherwise of the universal quantifier bear witness to the difficulty of achieving a clear view of the truth-conditions of sentences of our native language formed using the most basic logical constants. (See Peters and Westerståhl 2006, pp. 124–127, for a concise defence of the modern view of existential import. For a contrasting view see Strawson 1952, pp. 163–179.) Those who take themselves to have provided clear examples of false counterpossibles may be in a similar position to traditional logicians who took themselves to have provided clear examples of false universal generalizations with empty subject terms. Indeed, the primitively compelling nature of heuristics such as HUQ and HUQ* may have been the main obstacle to achieving a clear view of the truth-conditions of universal generalizations.
+
+Imagine a philosopher attempting to craft a semantics for the universal quantifier to vindicate the heuristically driven judgments that (37) is false while (38) is true. He may invest immense patience and ingenuity in his project, but it is not going to end well. We should be similarly wary of attempts to craft a semantics for counterfactuals to vindicate the heuristically driven judgments that some counterpossibles are false while others are true. There is a danger in semantics of unintentionally laundering cognitive biases into veridical insights, a danger evident in the semantics of generics, where some theories make sentences such as ‘Muslims are terrorists’ come out true (Sterken 2015 makes this point).
+
+For the universal quantifier, clear understanding was finally achieved through systematic, highly general semantic and logical theorizing, rather than by a more data-driven approach. The same may well hold for the counterfactual conditional. At any rate, it is methodologically naïve to take the debate over counterpossibles to be settled by some supposed examples of clearly false counterpossibles. As we have seen, a simple and mostly reliable heuristic would lead us to judge them false even if they were true.
+
+On the present view, our assessments of counterfactuals are often based on fallible heuristics. How sceptical should that make us more generally about reliance on pre-theoretic assessments of counterfactuals in philosophy, semantics and elsewhere? Several points are worth noting.
+
+First, the heuristics are reliable over wide ranges of cases. Just as we can gain lots of perceptual knowledge by relying on perceptual heuristics that are reliable over wide ranges of cases but fail under special conditions, so we can gain lots of modal knowledge by relying on heuristics such as HCC and HCC*. Blanket scepticism is not a sensible response.
+
+Second, many assessments of counterfactuals will not rely on HCC and HCC*. They are devices for moving from acceptance of one unnegated counterfactual to rejection of another. They are not devices for accepting unnegated counterfactuals in the first place. Even if rejecting the latter counterfactual depends on the heuristic, accepting the former need not. Arguably, the key judgments in thought experiments, for instance that in such-and-such a Gettier case the subject would not know, involve acceptance of unnegated counterfactuals, for which HCC and HCC* are not needed (Williamson 2007, pp. 179–207). Moreover, nothing said here impugns the reliability of counterfactual judgments made on the basis of mathematical reasoning.
+
+Third, the heuristics at issue are of such a general and pre-reflective nature that one might conjecture them to be universal amongst humans, more or less hard-wired into us independently of intelligence and education, with relatively little individual variation. But there may still be such variation in the inputs (acceptance of one counterfactual) or correspondingly in the outputs (rejection of another). Furthermore, whether the individual takes the output of the heuristic at face value or second-guesses it on the basis of theoretical reflection may well be highly sensitive to individual variation and educational background. It is an appropriate locus for the application of philosophical expertise.
+
+Fourth, even without theoretical reflection, we can inhibit the operation of the heuristics, as we sometimes need to do in order to maintain consistency. For instance, as already noted, we can continue the imaginative search for counterfactual consequences of a subjunctive supposition in an open-minded way that allows contradictions to arise.
+
+Finally, the theorist who overrides the heuristic in favour of more reflective considerations should expect to feel some residual unease, at least at first. No matter how cogent the reflective considerations, the heuristic is too stupid to understand them; instead, it just goes on blindly pressing to have its way. If our access to the logic and semantics of our own language is essentially mediated by fallible heuristics, true theories may always feel Procrustean to us.
+
+# Acknowledgements
+
+This paper is based on my 2015 Beth Lecture in Amsterdam. For a much fuller version of the argument and acknowledgements see Williamson (201Y). Two referees gave useful comments.
+
+# References
+
+Brogaard B, Salerno J (2013) Remarks on counterpossibles. Synthese 190:639–660
+
+Dorr C (2008) There are no abstract objects. In: Sider T, Hawthorne J, Zimmerman D (eds) Contemporary debates in metaphysics. Blackwell, Oxford, pp 32–63
+
+Edgington D (2008) Counterfactuals. Proc Aristot Soc 108:1–21
+
+Evans J, Over D (2004) If. Oxford University Press, Oxford
+
+Evans J, Handley S, David O (2005) Suppositions, extensionality, and conditionals: a critique of the mental model theory of Johnson-Laird and Byrne (2002). Psychol Rev 112:1040–1052
+
+Field H (1980) Science without numbers: a defence of nominalism. Blackwell, Oxford
+
+Kment B (2014) Modality and explanatory reasoning. Oxford University Press, Oxford
+
+Kratzer A (2012) Modals and conditionals. Oxford University Press, Oxford
+
+Lewis D (1973) Counterfactuals, 2nd edn. Blackwell, Oxford. Page references to 1986 edition
+
+Lewis D (1976) Probabilities of conditionals and conditional probabilities. Philos Rev 85:297–315
+
+Nolan D (1997) Impossible worlds: a modest approach. Notre Dame J Form Log 38:535–572
+
+Peters S, Westerståhl D (2006) Quantifiers in language and logic. Clarendon Press, Oxford
+
+Stalnaker R (1968) A theory of conditionals. Am Philos Q Monogr 2:98–112
+
+Sterken R (2015) Generics, content and cognitive bias. Anal Philos 56:75–93
+
+Strawson P (1952) Introduction to logical theory. Methuen, London
+
+Vetter B (201X) Williamsonian modal epistemology, possibility based. In: McCullagh M, Yli-Vakkuri J (eds) Williamson on modality. Routledge, London
+
+von Fintel K (1998) The presupposition of subjunctive conditionals. In: Sauerland U, Percus O (eds) The Interpretive Tract, MIT Working Papers in Linguistics 25, pp 29–44
+
+Williamson T (2007) The philosophy of philosophy. Blackwell, Oxford
+
+Williamson T (201X) Modal science. In: Vaidya A (ed) The philosophy of modality: beyond the standard model. Oxford University Press, Oxford
+
+Williamson T (201Y) Counterpossibles in metaphysics. In: Armour-Garb B, Kroon F (eds) Philosophical Fictionalism

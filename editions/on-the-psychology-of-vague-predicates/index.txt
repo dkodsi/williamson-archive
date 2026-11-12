@@ -1,0 +1,356 @@
+# On the Psychology of Vague Predicates
+
+Nicolao Bonini, Daniel Osherson, Riccardo Viale and Timothy Williamson
+
+Mind & Language 14 (4) (1999): 377–393.
+
+Abstract: Most speakers experience unclarity about the application of predicates like tall and red to liminal cases. We formulate alternative psychological hypotheses about the nature of this unclarity, and report experiments that provide a partial test of them. A psychologized version of the ‘vagueness-as-ignorance’ theory is then advanced and defended.
+
+# 1. Introduction
+
+If you examine monochromatic light from 650 nm on down, the first hues will probably strike you as red and later ones as orange. Somewhere near 610 nm, however, your judgement will become unstable, with neither the affirmation ‘This hue is red’ nor its denial aptly characterizing your belief. Such unclarity is called ‘vagueness’, and, as every amateur sophist knows, it infects virtually every predicate in natural language.
+
+Vagueness is more than an annoyance since it can obstruct the attempt to articulate valid principles of reasoning. A classic illustration concerns mathematical induction:
+
+(1)
+Principle of Mathematical Induction: Suppose that predicate P is true of 0, and also true of a number k + 1 whenever it is true of k. Then P is true of every natural number.
+
+Whereas (1) applies validly to sharp predicates (e.g. decomposes uniquely into primes), it apparently leads to falsehood when applied to vague ones like: is not enough molecules of granite to make a mountain. The latter predicate applies obviously to 0, and it seems to apply to k + 1 whenever it applies to k (since adding one molecule of granite seems unable to transform a non-mountain into a mountain). Yet the predicate does not apply to all numbers since otherwise there could be no granite mountains. It thus appears to be a counter-example to (1).
+
+The unclarity experienced near 610 nm is consistent with a variety of hypotheses about the psychological origin of vagueness. One possibility is that the observer’s lexical representation of red divides the visible spectrum into three regions; namely, a top one to which red applies, a bottom one to which not red applies, and a middle one to which neither applies. If the middle region holds 610 nm, then the sentence
+
+(2)
+The color of 610 nm is red.
+
+falls into a truth-value ‘gap’ inasmuch as its truth requires that red apply to 610 nm, whereas its falsity requires that not red apply.
+
+An opposing thesis maintains that the lexical representation of red imposes a ‘glut’ of truth-values upon (2) instead of a dearth. This would result if both red and not red applied to some middle region of hues. Indeed, nothing in the phenomenology of vagueness appears to decide between gaps and gluts; the hesitation we experience in applying red to 610 nm might arise just as well from our conviction that (2) is both true and false, as from our conviction that it is neither.
+
+The truth-values at issue in the gap and glut hypotheses are the standard sort, namely, (flat) truth and (flat) falsity. A third hypothesis is that the observer’s lexical representation of red draws upon a continuum of nonstandard truth-values ranging from 0 (representing standard falsity) to 1 (truth). A truth-value close to .5, for example, would reflect the borderline status of (2), and hence the difficulty in deciding whether 610 nm is red. This is the ‘fuzzy truth’ hypothesis.
+
+Finally, a fourth hypothesis conceives the lexical representation of red as leaving place-holders for standard truth-values throughout the range of colours, with reliance on non-lexical mechanisms of belief fixation to discover in piecemeal fashion the regions that are red and those that are not red. Thus, the fourth hypothesis views the observer as implicitly acknowledging a standard truth-value for (2), but suffering from ignorance of its identity. The unclarity surrounding the redness of 610 nm is thus likened to unclarity about the capital of an unfamiliar country. This idea may be called ‘vagueness as ignorance’.
+
+The four hypotheses originate in philosophical discussion of the nature of vagueness.1 As such they are semantical hypotheses about the truth-values of vague predications, not psychological hypotheses about speakers’ willingness to make vague predications. Semantical hypotheses, however, can be associated in a natural way with auxiliary psycholinguistic assumptions leading to predictions about speakers. For brevity we sometimes refer to these predictions as emanating from a given semantical hypothesis, but it should be kept in mind that the same semantical hypothesis can yield different predictions in the presence of different auxiliary assumptions.
+
+To evaluate empirically the psycholinguistic versions of our hypotheses, we are reluctant to question people in general terms about vague predicates, e.g. to enquire bluntly about truth gaps and gluts. Nonspecialists are no better prepared than philosophers to perceive directly the principles that structure their linguistic competence.2 Our test of the four hypotheses will thus proceed more indirectly, as follows. Let $\mathrm{S}(x)$ stand for sentence (2) with the number $x$ substituted for 610. Suppose that different groups of informants are asked to estimate:
+
+(3)
+(a) the smallest number $x$ such that $\mathrm{S}(x)$ is true; and (b) the largest number $y$ such that $\mathrm{S}(y)$ is false.
+
+To derive predictions about the latter numbers from our four theories of vagueness, various psycholinguistic assumptions are needed. The following assumption seems to comport well with the spirit of the gap, glut, and fuzzy-logic theses (which eschew recourse to ignorance).
+
+(4)
+Auxiliary Assumption for the Gap, Glut, and Fuzzy-Logic theses: Speakers typically know what truth–value (if any) results from predicating vague adjectives like red, tall, and old of common objects (e.g. they know the truth-value resulting from attributing red to a given hue). They tend to assent to such predications if they consider them true (or sufficiently true in the case of fuzzy logic), and to dissent from them if they consider them false.
+
+Thus, allowing for experimental noise of various kinds, we get the following predictions. On the gap hypothesis, $x$ is appreciably larger than $y$, so we expect to find that $\bar{x}\gg\bar{y}$ ($\bar{x}$, $\bar{y}$ are the average estimates of $x$ and $y$, and $\bar{x}\gg\bar{y}$ means that $\bar{x}$ is more than slightly greater than $\bar{y}$). On the glut hypothesis, $y$ is significantly larger than $x$, so we expect to find that $\bar{y}\gg\bar{x}$. The prediction of fuzzy logic depends on the degrees of truth that speakers regard as sufficient for assertion and denial. In most versions of the theory, if a sentence has degree of truth $v$, then its negation has degree of truth $1-v$. Since the falsity of a sentence is usually associated with the truth of its negation, we may regard $1-v$ as the degree of falsity of a sentence of degree of truth $v$. Now it is natural to assume that if a sentence is true enough to count as assertible if and only if it has degree of truth at least $v$, then it is false enough to count as deniable if and only if it has degree of falsity at least $v$, that is, degree of truth at most $1-v$. Under this assumption, $x=y$ in (3) if the $v$ in question is .5, whereas $x>y$ if $v>.5$, and $x<y$ if $v<.5$. Fuzzy logicians typically assume that $v\gg.5$, so they predict $\bar{x}\gg\bar{y}$.
+
+The fourth hypothesis, vagueness as ignorance, is not compatible with the assumptions in (4). Indeed, its distinguishing characteristic is that speakers lack beliefs about what truth-value results from predicating vague adjectives of liminal objects. So its predictions about (3) are not straightforward. We shall see that vagueness-as-ignorance also predicts $\bar{x}\gg\bar{y}$ when it is supplemented by auxiliary assumptions discussed in section 3 below.3
+
+We have carried out the foregoing experiment with various nonsensory predicates, and have consistently observed $\bar{x}\gg\bar{y}$. The next section reports these results. We then specify auxiliary assumptions that allow the vagueness-as-ignorance thesis to predict the findings. The augmented theory makes an additional prediction whose test is reported subsequently.
+
+# 2. Experimental Results
+
+The six studies to be reported in this section share the same design. In each case, a randomly composed group of college students (the ‘truth-judgers’) responded to a set of questions similar to (3a), whereas a different, randomly composed group (the ‘falsity-judgers’) responded to questions like (3b). As indicated above, the reason for not asking the same person both questions is to limit the impact of the informant’s own theory of vagueness on the numbers she provides. In particular, she might be committed to the bivalence principle (‘Every statement is either true or false’) irrespective of her intuitions about specific predicates. In this case, she might ignore the difficulty experienced in setting boundaries, and choose arbitrary numbers x and y in (3) that leave neither gaps nor overlaps. Such answers would not reflect intuitions about specific predicates, but just theoretical bias.
+
+All students were undergraduate social science majors in Italian universities. They participated as anonymous, unpaid volunteers. None was included in more than one experiment. Questions were posed via questionnaire in a classroom setting using two or more random orders. English translations of the original Italian stimuli are provided in this report.
+
+In the remainder of the section we use the term ‘gap’ as a mere description of data, not theoretically. The data are said to reveal gaps if $\bar{x}\gg\bar{y}$, for $x$ and $y$ as in (3).
+
+# 2.1 Study 1
+
+There were 70 truth-judgers and 69 falsity-judgers. To the truth-judgers it was explained that the study concerned the conditions in which it is true to attribute a qualifier to a person or object. The instructions continued by emphasizing the importance of including all cases in which the qualifier truly applies. Subjects then responded to three questions like the following.
+
+When is it true to say that a man is ‘tall’? Of course, the adjective ‘tall’ is true of very big men and false of very small men. We’re interested in your view of the matter. Please indicate the smallest height that in your opinion makes it true to say that a man is ‘tall’.
+
+It is true to say that a man is ‘tall’ if his height is greater than or equal to _____ centimetres.
+
+Parallel queries were made with respect to the questions:
+
+When is it true to say that a conically shaped formation is a ‘mountain’? [in terms of altitude]
+When is it true to say that a man is ‘old’? [in terms of years of age]
+
+To the falsity-judgers it was explained that the study concerned the conditions in which it is false to attribute a qualifier to a person or object. The instructions continued by emphasizing the importance of including all cases in which the qualifier fails to apply. Subjects then responded to three questions like the following.
+
+When is it false to say that a man is ‘tall’? Of course, the adjective ‘tall’ is false of very small men and true of very big men. We’re interested in your view of the matter. Please indicate the greatest height that in your opinion makes it false to say that a man is ‘tall’.
+
+It is false to say that a man is ‘tall’ if his height is less than or equal to _____ centimetres.
+
+Parallel queries were made with respect to the questions:
+
+When is it false to say that a conically shaped formation is a ‘mountain’? [in terms of altitude]
+When is it false to say that a man is ‘old’? [in terms of years of age]
+
+Table 1 Mean estimates in Study 1 by truth-judgers and falsity-judgers
+
+Question	truth-judgers (N = 70)	falsity-judgers (N = 69)	z-score
+tall	178.30 cm sd = 5.51	167.22 cm sd = 8.69	z = 8.05 p < .001
+mountain	1371.57 m sd = 1345.20	732.97 m sd = 819.87	z = 5.43 p < .001
+old	74.37 yr sd = 8.89	64.17 yr sd = 8.74	z = 5.96 p < .001
+
+Note. For each question, the Mann–Whitney U-test (corrected for ties) was employed to evaluate the hypothesis that the medians of the two groups are identical. (The same statistic is used in all the tables below.)
+
+The average responses to these queries are shown in Table 1, and reveal substantial gaps between the range of values in which the target sentence is deemed true, and those for which it is deemed false. For example, the range of indeterminacy for ‘old man’ is ten years, which is more than 15% of the size of the region in which the predicate is judged to apply falsely. Gaps of similar size show up throughout our studies. All three gaps are statistically significant according to the Mann–Whitney U-test (a nonparametric statistic suggested by the unequal variances that appear for some of the items in our studies).
+
+It might be thought that falsity-judgers respond to the item ‘tall man’ by seeking an upper boundary for the opposite category ‘short man’. Such a conversion would explain the gap we have observed inasmuch as medium heights separate the tall from the short. Notice, however, that there is no such separated, opposite category for ‘mountain’. In particular, hills are not separated from mountains since no geological formation stands between the largest hill and the smallest mountain.4 The ‘mountain’ item nonetheless reveals a gap of more than half a kilometre. Other examples similar to ‘mountain’ appear below, and Study 6 directly addresses the impact of intermediate categories on category boundaries.
+
+# 2.2 Study 2
+
+The preceding experiment was replicated and extended with 51 truth-judgers and 56 falsity-judgers. The instructions were the same as before. Six items were employed, including the three from Study 1. The three additional items involved the following queries.
+
+Table 2 Mean estimates in Study 2
+
+Question	truth-judgers (N = 52)	falsity-judgers (N = 56)	z-score
+tall	179.55 cm sd = 6.7	164.13 cm sd = 14.7	z = 7.48 p < .001
+mountain	1233.92 m sd = 937.9	758.77 m sd = 388.7	z = 2.45 p < .05
+old	76.59 yr sd = 8.7	62.27 yr sd = 10.5	z = 6.35 p < .001
+film	165.16 min sd = 42.1	121.96 min sd = 43.8	z = 4.95 p < .001
+inflation	14.77% sd = 17.8	9.46% sd = 12.7	z = 2.30 p < .01
+cities	2859.41 km sd = 14116.3	963.66 km sd = 6672.2	z = 5.34 p < .001
+
+When is it true [respectively, false] to say that a film is ‘long’? [in terms of minutes]
+When is it true [false] to say that inflation in Italy is ‘high’? [in terms of percentage]
+When is it true [false] to say that two cities are ‘far apart’? [in terms of kilometres]
+
+Average responses are shown in Table 2. All items revealed substantial gaps, all statistically significant.
+
+# 2.3 Study 3
+
+We replicated Study 2 with 52 truth-judgers, 56 falsity-judgers, and the following six questions.
+
+When is it true [false] to say that a person is ‘late for an appointment’? [in terms of minutes]
+When is it true [false] to say that an unmarried person in Italy is ‘poor’? [in terms of monthly income, Italian lire]
+When is it true [false] to say that a city is ‘dangerous’? [in terms of annual number of violent crimes per thousand inhabitants]
+When is it true [false] to say that a sedan with cylinder volume 1300 cc is ‘expensive’? [in terms of sales price, Italian lire]
+When is it true [false] to say that unemployment in Italy is ‘high’? [in terms of percentage of the workforce]
+When is it true [false] to say that an Italian city (i.e. an urban agglomeration with at least 50,000 inhabitants) is ‘populous’? [in terms of population]
+
+To illustrate, falsity-judgers responded to the following question about poverty.
+
+When is it false to say that an unmarried person living in Italy is ‘poor’? Of course, the adjective ‘poor’ is false of unmarried people with very large monthly incomes, and true of unmarried people with very small monthly incomes. We’re interested in your view of the matter. Please indicate the greatest monthly income that in your opinion makes it false to say that an unmarried person living in Italy with that income is ‘poor’.
+
+It is false to say that an unmarried person living in Italy with a monthly income greater than or equal to _____ lire is ‘poor’.
+
+Table 3 Mean estimates in Study 3
+
+Question	truth-judgers (N = 52)	falsity-judgers (N = 56)	z-score
+tardy	16.75 min sd = 10.04	10 min sd = 7.9	z = 3.28 p < .001
+poor	M£1.18 sd = 1.30	M£2.33 sd = 2.59	z = −6.59 p < .001
+dangerous	169.71 cr sd = 267.5	88.34 cr sd = 166.1	z = 2.04 p < .05
+expensive	M£18.23 sd = 5.34	M£13.33 sd = 3.32	z = 5.49 p < .001
+unemployment	27.25% sd = 16.8	16.89% sd = 15.6	z = 3.50 p < .001
+populous	.523 M sd = 1.15	.307 M sd = 1.03	z = 4.51 p < .001
+
+Note. The symbol ‘min’ denotes minutes; ‘M£’ denotes 1 million lire; ‘cr’ denotes 1 violent crime per year; and ‘M’ denotes 1 million inhabitants.
+
+Average responses are shown in Table 3. Gaps are present and statistically significant for all six items. The ‘poverty’ item has special interest inasmuch as it reverses the usual roles of greater than and less than. Except for this item, truth-judgers were always asked for a lower numerical bound, and falsity-judgers for an upper bound. The requests are here reversed, yet the estimates still leave a gap (see Table 3).
+
+# 2.4 Study 4
+
+The queries figuring in Studies 1–3 have a metalinguistic character inasmuch as they involve quotation marks and explicit reference to truth and falsity. To determine the impact of these features, we reworded six of the items used earlier, as illustrated with the following version of the ‘tall man’ question.
+
+When is a man tall? Of course, very big men are tall and very small men are not tall. We’re interested in your view of the matter. Please indicate the smallest height that in your opinion makes a man tall.
+
+A man is tall if his height is greater than or equal to _____ centimetres.
+
+When is a man not tall? Of course, very small men are not tall and very big men are tall. We’re interested in your view of the matter. Please indicate the greatest height that in your opinion makes a man not tall.
+
+A man is not tall if his height is less than or equal to _____ centimetres.
+
+Table 4 Mean estimates in Study 4
+
+Question	truth-judgers (N = 41)	falsity-judgers (N = 42)	z-score
+tall	181.49 cm sd = 5.93	160.48 cm sd = 37.04	z = 6.67 p < .001
+mountain	932.20 m sd = 1054.83	762.60 m sd = 362.50	z = .15 N.S.
+old	68.17 yr sd = 6.69	58.64 yr sd = 6.74	z = 5.44 p < .001
+tardy	15.01 min sd = 22.88	9.37 min sd = 9.54	z = 1.84 p < .06
+film	169.29 min sd = 170.0	105.45 min sd = 29.6	z = 4.88 p < .001
+unemployment	12.99% sd = 10.44	6.54% sd = 4.90	z = 3.56 p < .001
+
+The other five questions were similarly reworded versions of the earlier items: mountain, old man, tardiness, film-length, and unemployment. There were 41 truth-judgers and 42 falsity-judgers. The results are shown in Table 4.
+
+Gaps appeared in all the items, with statistical significance in five of six cases (note that the sample sizes are smaller in this study compared to 1–3). The size of the gaps is about as large as before.
+
+# 2.5 Study 5
+
+To make our questionnaire even simpler, we omitted the general instructions, and shortened the queries still further. The new formulation may be illustrated as follows with the tardiness item.
+
+When is a person late for an appointment?5 Please indicate after how many minutes, in your opinion, a person is late for an appointment.
+
+A person is late for an appointment if he shows up _____ or more minutes after the appointed hour.
+
+Five other queries figuring earlier were also included in this study; namely: height, old man, film-length, unemployment, expensive car. There were 65 truth-judgers and 68 falsity-judgers. The results are shown in Table 5, and reveal particularly clear gaps.
+
+Table 5 Mean estimates in Study 5
+
+Question	truth-judgers (N = 65)	falsity-judgers (N = 68)	z-score
+tall	178.28 cm sd = 8.5	163.40 cm sd = 8.0	z = 8.23 p < .001
+unemployment	29.02% sd = 23.2	19.03% sd = 16.2	z = 2.62 p < .01
+old	73.09 yr sd = 8.6	59.79 yr sd = 9.4	z = 7.12 p < .001
+tardy	15.19 min sd = 8.3	7.65 min sd = 6.5	z = 5.89 p < .001
+film	174.28 min sd = 63.6	111.38 min sd = 29.0	z = 6.89 p < .001
+expensive	M£17.96 sd = 4.59	M£14.09 sd = 4.33	z = 5.03 p < .001
+
+# 2.6 Study 6
+
+Finally, we wished to determine whether gaps arose in the previous studies because the instructions refer to only two categories, e.g. ‘long films’ and ‘not long films’. We therefore asked 41 truth-judgers to respond to questions like the following.
+
+When referring to the length of a film, we can distinguish between ‘long’, ‘medium’, and ‘short’ duration. Of course, ‘long’ applies to films of great duration and not to films of brief or medium duration. We’re interested in your view of the matter. Please indicate after how much time, in your opinion, a film becomes ‘long’.
+
+It is true to say that a film is ‘long’ if its duration is greater than or equal to _____ minutes.
+
+Forty-one falsity-judgers responded to a similar question in which it was recalled that ‘long’ is false of films of brief or medium duration and true of those of great duration. Five other items concerned: height, mountain, old man, tardiness, unemployment. The results are shown in Table 6. All items yielded gaps, with all but mountain reaching statistical significance. The evocation of an intermediate category may have slightly narrowed the gap for the latter item, but seems to have had minimal effect on the others.
+
+Table 6 Mean estimates in Study 6
+
+Question	truth-judgers (N = 41)	falsity-judgers (N = 41)	z-score
+tall	180.27 cm sd = 5.10	174.59 cm sd = 10.75	z = 3.53 p < .001
+old	66.32 yr sd = 8.21	61.66 yr sd = 11.88	z = 2.76 p < .01
+mountain	1061.24 m sd = 578.26	899.42 m sd = 597.41	z = 1.46 N.S.
+tardy	15.32 min sd = 12.32	9.60 min sd = 5.36	z = 2.63 p < .01
+film	149.63 min sd = 34.14	108.05 min sd = 33.33	z = 5.03 p < .001
+unemployment	11.94% sd = 10.79	7.12% sd = 3.28	z = 2.35 p < .05
+
+# 3. Vagueness as Ignorance
+
+As noted in the introduction, the truth-glut hypothesis is weakened by the systematic finding of gaps between the estimates of the truth- and falsity-judgers, whereas the gap theory is strengthened. The fuzzy-truth approach is consistent with the data on the assumption that assertibility requires a degree of truth greater than .5. We now offer a version of the vagueness-as-ignorance hypothesis that accounts for our findings, and then indicate why we prefer it to the hypothesis of either fuzzy or gappy truth. Our account is formulated in terms of the semantic competence of a typical speaker S of a natural language.
+
+(5)
+Vagueness as Ignorance: S mentally represents vague predicates in the same way as other predicates with sharp true/false boundaries of whose location S is uncertain.
+
+According to (5), subjects react to questions about vague predicates as they do to questions about sharp predicates whose boundaries they think they do not know. To be more specific, we combine (5) with the auxiliary assumption that in responding to requests for the smallest number of which the predicate is true, S gives the least number for which he is reasonably confident that the predicate applies. In responding to requests for the greatest number of which the predicate is false, S gives the largest number for which he is reasonably confident that the predicate fails to apply. Using a statistical analogy, S is assumed to prefer type I error over type II. For example, truth-judgers lower the chance of accepting the truth of ‘tall’ in a region where it fails to apply by raising the chance of failing to accept ‘tall’ where it does apply. To explain the preference, we may conceive false application of a predicate as an error of commission and incorrect withholding of the predicate as an error of omission. There is evidence that people perceive errors of commission as graver than those of omission (Ritov and Baron, 1990; Spranca et al., 1991), and this would induce reluctance by truth-judgers to descend far down the height-continuum, and reluctance by falsity-judgers to ascend too high. Gaps result.
+
+Theory (5) conceives the intuition of vagueness as issuing from uncertainty about the genuine boundary between true and false application of a given predicate. It will be objected immediately that introspection reveals no conscious belief in the existence of such a sharp dividing line. In defence of our theory, we note that other semantic/conceptual principles have been plausibly ascribed to people who do not reliably acknowledge them. A notable example is the putative belief in hidden essences underlying natural kind terms like ‘mammal’ and ‘copper’.6 Indeed, belief in a ‘true but hard to discern’ dividing line between red and not red bears a noteworthy resemblance to belief in an ‘objective but perhaps never to be known’ essence for lions.
+
+Moreover, proponents of the thesis that there are genuine truth-gaps have their own difficulty explaining the absence of certain intuitions. If red applied truly to wavelengths near 650 nm and indeterminately to wavelengths near 610 nm, a sharp boundary might be expected between the true and the indeterminate regions of the spectrum. Yet no such boundary comes to mind; the transition from true to indeterminate is just as hazy (albeit not as extended) as the original transition from true to false. Gap theorists may reply by embracing ‘second-order’ vagueness, affirming that the gappy region is itself vague. The retreat will not stop there, however, since there is likewise no introspective evidence for a sharp line between the true and the indeterminately indeterminate regions. Thus the second-order vagueness of red will require its own vague boundary, and so on. The mental representation of all these vague boundaries seems psychologically implausible. But the ascent can only be stopped by positing a sharp line around the region of truth gaps (or around its boundary . . .), and there is no introspective evidence for such a line. Theory (5), in contrast, has no commitment to the intuition of a dividing line anywhere along the colour spectrum. This is because the observer’s subjective probability of a given point being the true/false boundary can be taken to be a continuous function of the point’s position along the spectrum, never reaching zero.
+
+It could be maintained by the gap theorist, of course, that the infinitely many vague boundaries along the colour continuum are mentally represented only in the dispositional sense that the nth one would be recognized by a speaker if only she meditated about the matter for sufficient time. But in this case vagueness as ignorance should benefit from the same room to manoeuvre; the conviction of an unknown fact-of-the-matter might evolve in the speaker’s mind only upon reflection.
+
+Furthermore, proponents of truth-gaps have difficulty explaining the similarity between the results of Studies 1–3 versus those of Studies 4–5. To grasp the issue, consider the claim that 178 cm (say) falls in a truth-gap for ‘tall’. This amounts to:
+
+(6)
+‘178 cm is tall’ is not true and ‘178 cm is tall’ is not false.
+
+Now suppose that ‘178 cm is tall is true’ has the same truth/falsity conditions as ‘178 cm is tall’, and that ‘178 cm is tall is false’ has the same truth/falsity conditions as ‘178 cm is not tall’. Then ‘178 cm is tall is not true’ has the same truth/falsity conditions as ‘178 cm is not tall’ and ‘178 cm is tall is not false’ has the same truth/falsity conditions as ‘178 cm is not not tall’. This makes (6) equivalent to:
+
+(7)
+178 cm is not tall and 178 cm is not not tall.
+
+But (7) is self-contradictory because it both affirms and denies that 178 cm is not tall. Proponents of truth-gaps typically respond to this difficulty by denying that ‘178 cm is tall is true’ has the same truth/falsity conditions as ‘178 cm is tall’, and likewise for ‘178 cm is tall is false’. On their view, the metalinguistic question ‘Is n cm is tall true?’ is not equivalent to the non-metalinguistic question ‘is n cm tall?’ because one should answer No to the former question for more values of n than for the latter. If these theorists treat such semantic facts as psychologically accessible to speakers, they are committed to there being greater gaps in the Studies 1–3 than in 4–5 since the former but not the latter relied on metalinguistic queries. But no such effect was observed.7 This is also an objection to versions of fuzzy logic according to which if sentence $s$ has degree of truth $v \in (0,1)$ then ‘s is true’ has degree of truth less than $v$ ($v^2$ say).
+
+Let us also respond to the claim that intuition directly informs us that there is no fact of the matter concerning the redness of (say) 610 nm.8 We believe that such an intuition exists primarily in the minds of philosophers already committed to the view that vague predicates exhibit genuine truth-gaps. Were there such an intuition, it would be difficult to conceive of new information that counts in favour of 610 nm being (really) red. However, the discovery that 610 nm isomerizes the photopigments in close to the same proportions as 650 nm would likely persuade many people that (after all) the former falls into the same colour category as the latter, hence is red. It is not difficult to imagine sociological, economic, or other facts that would similarly influence judgements about old men, expensive cars, dangerous cities, etc.
+
+Finally, we note that Theory (5) has a pleasant consequence concerning tautologies like:
+
+(8)
+Either 610 nm is red or 610 nm is not red.
+
+Since our theory ascribes a standard truth value to ‘610 nm is red’ the usual semantics of propositional logic classify (8) as tautologous, hence at the same informational level as the vacuous: ‘Men will visit Mars by 2100 or they won’t’. We suspect that many people subscribe to this classification of (8), despite their inability to decide the truth of ‘610 nm is red’. Indeed, the Mars-sentence also cannot (now) be decided, and the similar behaviour of the two claims within tautologies is evidence that both have (unknown) truth-values. Parallel remarks apply to sentences of the form $p\wedge\neg p$. In contrast, the treatment of (8) within fuzzy logic classifies it with the constituent sentence ‘610 nm is red’, each having an intermediate truth-value near .5. We find this counterintuitive, although advocates of nonstandard truth-values express satisfaction with just this outcome.9 Similarly, suppose that you can distinguish two lamps on a desk only by position, and that each is emitting light of 610 nm. Consider the sentence:
+
+(9)
+The light on the right is red and the light on the left is not red.
+
+Fuzzy logic assigns a truth-value near .5 to (9) since each conjunct has a truth-value near .5. But (9) seems clearly false since the light on the left is just as red as the light on the right.10
+
+# 4. Partial Test of the Theory
+
+Consider again the continuum for height among men. Average height in a given population partitions the continuum into two regions; namely, above average, and not above average. This boundary is unknown to most people but surely recognized as real. Similarly, Theory (5) claims that speakers implicitly acknowledge an unknown but genuine, sharp boundary between tall and not tall. If the theory is accurate, it suggests that informants will respond in similar fashion to requests for bounds on ‘above/below average’ compared to ‘tall/not tall’. In particular, we should once again see gaps rather than gluts. This prediction was tested in the following experiment.
+
+As before, there were two, randomly composed groups of students, which we call ‘upper-judgers’ and ‘lower-judgers’. The former were asked for least upper bounds on unknown divisions within specified continua. The latter were asked for greatest lower bounds. The queries for upper-judgers had fill-in portions as follows.
+
+A man is at least of average height among 30-year-old Italians if his height is greater than or equal to _____ centimetres.
+According to the Highway Code, a person is considered to be inebriated if the concentration of alcohol in his blood is greater than or equal to _____ grams per litre.
+A man is not at least average age for an adult Italian if his age is greater than or equal to _____ years.
+The length of a film is at least the average of those shown at the Biannual Venice Film Festival if its duration is greater than or equal to _____ minutes.
+It is sufficient for an object to escape the Earth’s gravitational field that its velocity be greater than or equal to _____ kilometres per hour.
+Lead melts at temperatures greater than or equal to _____ degrees centigrade.
+
+The queries for lower-judgers had fill-in portions as follows:
+
+A man is not as tall as average among 30-year-old Italians if his height is less than or equal to _____ centimetres.
+According to the Highway Code, a person is considered not to be inebriated if the concentration of alcohol in his blood is less than or equal to _____ grams per litre.
+A man is not as old as average for an adult Italian if his age is less than or equal to _____ years.
+It is not sufficient for an object to escape the Earth’s gravitational field that its velocity be less than or equal to _____ kilometres per hour.
+A film is not as long as the average of those shown at the Biannual Venice Film Festival if its duration is less than or equal to _____ minutes.
+Lead does not melt at temperatures less than or equal to _____ degrees centigrade.
+
+There were 42 upper-judgers and 43 lower-judgers. The mean responses are shown in Table 7.
+
+Table 7 Mean estimates in the study requesting upper and lower bounds on a well-defined quantity
+
+Question	upper-judgers (N = 42)	lower-judgers (N = 43)	z-score
+tall	171.48 cm sd = 4.86	150.49 cm sd = 32.95	z = 5.05 p < .001
+alcohol	26.81 g/l sd = 79.40	13.34 g/l sd = 23.88	z = .29 N.S.
+age	55.67 yr sd = 15.55	35.79 yr sd = 15.19	z = 5.07 p < .001
+film	131.07 min sd = 64.78	83.67 min sd = 35.83	z = 4.05 p < .001
+gravity	1057774 km/h sd = 6159829	34354 km/h sd = 88410	z = 2.49 p < .05
+lead	423.58 deg sd = 468.33	260.56 deg sd = 491.38	z = 2.69 p < .01
+
+Note. One of the lower-judgers failed to respond to the alcohol question, so N in this case is 42.
+
+All six items showed gaps, five of them statistically significant. The results support the hypothesis that estimates of an acknowledged, but unknown, boundary are generated in a manner similar to estimates of the true and false regions of continua associated with vague predicates. In both cases, people seem to focus on regions which have little chance of straddling the dividing line at issue. This supports the conjecture that the psychological interpretation of vagueness rests on the assumption of a sharp but unknown boundary.
+
+The data are equally consistent with the theory of fuzziness if it posits assertibility only for high degrees of truth. This is because the hidden boundary is naturally taken to coincide with a truth degree of .5, so the greater stringency of assertibility would leave a gap on both sides. It is the unsatisfactory treatment of logical truth and falsehood within the fuzzy perspective (as discussed above) that discourages this account of the findings.
+
+# 5. Concluding Remarks
+
+The interpretation of vagueness is one of the persistent puzzles of philosophy, becoming no simpler when raised as a psychological issue. In the present paper, we have advanced the hypothesis that people understand vagueness as mere ignorance about the sharp boundary separating true from false applications of a given predicate. A similar thesis in philosophy is defended in Williamson, 1994. Vagueness-as-ignorance is often greeted with scepticism by philosophers, yet it offers a clear explanation for the seamless transition from confident application of a predicate to puzzlement. It is also consistent with the illusion of truth-gaps in continua associated with imprecise predicates.
+
+# Acknowledgements
+
+We thank Andrea Cerroni and Davide Diamantini for helpful discussion and assistance in data collection. We also thank Richard Grandy, James Hampton, Hans Kamp and an anonymous reviewer for helpful comments on earlier versions of the paper.
+
+# Notes
+
+[1] For gaps and gluts, see Fine, 1975, and Hyde, 1997, respectively. Fuzzy logic is applied to vagueness in Goguen, 1969. The thesis that vagueness is ignorance is defended in Williamson, 1994.
+
+[2] Thus, university undergraduates are often ready to affirm the incontrovertibility of ‘tigers are mammals’ yet renounce this view under probing. This gives reason to doubt that students’ immediate intuition can be counted on to reveal fundamental semantic properties of lexical items like tiger and mammal. Their introspection about the nature of vagueness is unlikely to be more penetrating. Of course, speakers’ responses under such general questioning constitute data that might also merit investigation. But their connection to actual predication may turn out to be obscure.
+
+[3] If there were no vagueness at all, and if unit nanometres represented just-noticeable differences across the spectrum, then we would expect $\bar{x}=\bar{y}+1$ (e.g. a lower bound for red at 611 nm, and an upper bound for not red at 610 nm). The gap hypothesis thus predicts not just $\bar{x}>\bar{y}$, but the existence of discriminable hues that are not classified as either red or not red, i.e. $\bar{x}\gg\bar{y}$. Similar remarks apply to all of the gaps and gluts discussed below.
+
+[4] Perhaps there is one potential altitude that separates the mountains from the hills, belonging to neither. For otherwise one of the two concepts would embrace heights that form an open set whereas the other would yield a closed set; and such asymmetry is counterintuitive since there seems no basis to choose one rather than the other set as the closed one. With a lone altitude denied the status of both hill and mountain, each set is open. We thank Richard Grandy for discussion of this ‘point’.
+
+[5] Recall that our subjects are Italian. At 8.01 am one is not late in Italy for an 8.00 am appointment.
+
+[6] See Medin and Ortony, 1989; Margolis, 1995; Kalish, 1995, for essence-theories of adult concepts. The same attribution is made to children in Gelman and Wellman, 1991; see also Gopnik and Meltzoff, 1997, and references cited there.
+
+[7] Standard versions of supervaluation theory postulate truth-value gaps and so face the same difficulty. An introduction to supervaluation theory is provided in Kamp and Partee, 1995; for critical discussion see Williamson, 1994, ch. 5.
+
+[8] This claim is made with insistence in Fodor and Lepore, 1996, for example.
+
+[9] See Lakoff, 1987; Dubois and Prade, 1994.
+
+[10] For criticism of fuzzy-set theory as a theory of vagueness see Williamson, 1994, ch. 4, and Osherson and Smith, 1997, along with references cited there.
+
+# References
+
+Dubois, D. and Prade, H. 1994: Can We Enforce Full Compositionality in Uncertainty Calculi? In Proceedings of the Twelfth National Conference on Artificial Intelligence, vol. 1. Menlo Park, CA: AAAI Press/MIT Press, 149–54.
+
+Fine, K. 1975: Vagueness, Truth and Logic. Synthese, 30, 265–300.
+
+Fodor, J. and Lepore, E. 1996: What Cannot Be Evaluated Cannot Be Evaluated, and It Cannot Be Supervalued Either. Journal of Philosophy, 93, 516–35.
+
+Gelman, S. and Wellman, H. 1991: Insides and Essences: Early Understandings of the Non-Obvious. Cognition, 38, 213–44.
+
+Goguen, J. A. 1969: The Logic of Inexact Concepts. Synthese, 19, 325–73.
+
+Gopnik, A. and Meltzoff, A. N. 1997: Words, Thoughts, and Theories. Cambridge, MA: MIT Press.
+
+Hyde, D. 1997: From Heaps and Gaps to Heaps of Gluts. Mind, 106, 641–60.
+
+Kalish, C. W. 1995: Essentialism and Graded Membership in Animal and Artifact Categories. Memory and Cognition, 23, 335–53.
+
+Kamp, H. and Partee, B. 1995: Prototype Theory and Compositionality. Cognition, 57, 129–91.
+
+Lakoff, G. 1987: Women, Fire, and Dangerous Things: What Categories Reveal about the Mind. Chicago, ILL: University of Chicago Press.
+
+Margolis, E. 1995: The Significance of the Theory Analogy in the Psychological Study of Concepts. Mind and Language, 10, 45–71.
+
+Medin, D. and Ortony, A. 1989: Psychological Essentialism. In S. Voisniadou and A. Ortony (eds), Similarity and Analogical Reasoning. New York: Cambridge University Press.
+
+Osherson, D. and Smith, E. E. 1997: On Typicality and Vagueness. Cognition, 64, 189–206.
+
+Ritov, I. and Baron, J. 1990: Reluctance to Vaccinate: Omission Bias and Ambiguity. Journal of Behavioral Decision Making, 3, 263–77.
+
+Spranca, M., Minsk, E. and Baron, J. 1991: Omission and Commission in Judgment and Choice. Journal of Experimental Social Psychology, 27, 76–105.
+
+Williamson, T. 1994: Vagueness. London: Routledge.

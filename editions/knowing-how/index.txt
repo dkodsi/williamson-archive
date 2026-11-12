@@ -1,0 +1,706 @@
+# Knowing How
+
+Jason Stanley and Timothy Williamson
+
+The Journal of Philosophy 98 (8) (2001): 411–444.
+
+Many philosophers believe that there is a fundamental distinction between knowing that something is the case and knowing how to do something. According to Gilbert Ryle, to whom the insight is credited, knowledge-how is an ability, which is in turn a complex of dispositions. Knowledge-that, on the other hand, is not an ability, or anything similar. Rather, knowledge-that is a relation between a thinker and a true proposition.
+
+Although few philosophers now share Ryle’s general philosophical outlook, his view that knowledge-how is fundamentally different from knowledge-that is widely accepted, so much so that arguments for it are rarely presented, even in the works of those philosophers who crucially rely upon it. For example, Hilary Putnam1 characterizes the central moral of his work on meaning and understanding in the following terms: “knowing the meaning of the word ‘gold’ or of the word ‘elm’ is not a matter of knowing that at all, but a matter of knowing how” (ibid., p. xvi). Yet we are unaware of any passage in which Putnam argues for the distinction. Indeed, even Ryle’s positive view that knowledge-how is an ability is widely assumed and crucially exploited in many areas of philosophy outside epistemology. For example, according to David Lewis,2 knowing what an experience is like amounts to being able to remember, imagine, and recognize the experience. Possession of such abilities, Lewis writes, “isn’t knowing that. It’s knowing how” (ibid., p. 516). Indeed, according to Lewis, “Know how is ability” (ibid.). Similarly, in the philosophy of language, semantic competence is, according to Michael Devitt,3 “an ability or a skill: a piece of knowledge-how not knowledge-that” (ibid., p. 52; cf. also pp. 23-28).
+
+We contest the thesis that there is a fundamental distinction between knowledge-how and knowledge-that. Knowledge-how is simply a species of knowledge-that. In section i, we discuss Ryle’s central argument against the thesis that knowledge-how is a species of knowledge-that, as well as Ryle’s positive account of knowledge-how in terms of abilities. In section ii, we present and defend our positive account of knowledge-how, according to which it is a species of knowledge-that. In section iii, we consider and respond to some objections to our view. We conclude by briefly applying our discussion to two uses of the alleged distinction between knowing-that and knowing-how outside epistemology.
+
+# I. Ryle on Knowledge-How
+
+Ryle has two extended discussions of the relation between knowledge-how and knowledge-that.4 Both have as their main focus the rejection of what Ryle took to be the “prevailing doctrine” of the relation between knowledge-that and knowledge-how, which he took to follow from what he called “the intellectualist legend.” This doctrine is the thesis that knowledge-how is a species of knowledge-that. In addition, Ryle presents his own positive view of knowledge-how, according to which, contra the “intellectualist legend,” it is not a species of knowledge-that. We begin our discussion by considering Ryle’s arguments against what he took to be the prevailing doctrine. Then we turn to his positive account of knowledge-how.
+
+By his own admission, Ryle really had only one argument against the thesis that knowing-how is a species of knowing-that, of which his other arguments were applications. As he writes:
+
+…I rely largely on variations of one argument. I argue that the prevailing doctrine leads to vicious regresses, and these in two directions. (1) If the intelligence exhibited in any act, practical or theoretical, is to be credited to the occurrence of some ulterior act of intelligently considering regulative propositions, no intelligent act, practical or otherwise, could ever begin…. (2) If a deed, to be intelligent, has to be guided by the consideration of a regulative proposition, the gap between that consideration and the practical application of the regulation has to be bridged by some go-between process which cannot by the presupposed definition itself be an exercise of intelligence and cannot, by definition, be the resultant deed (Ryle I, p. 213).
+
+Similarly, and perhaps more clearly, in his later discussion of knowledge-how and knowledge-that:
+
+The crucial objection to the intellectualist legend is this. The consideration of propositions is itself an operation the execution of which can be more or less intelligent, less or more stupid. But if, for any operation to be intelligently executed, a prior theoretical operation had first to be performed and performed intelligently, it would be a logical impossibility for anyone ever to break into the circle (Ryle II, p. 30).
+
+It is therefore quite clear that Ryle took his central arguments against the thesis that knowledge-how is a species of knowledge-that to hinge on an accusation of vicious regress. Furthermore, Ryle’s “vicious regress” argument still carries much weight even in prominent contemporary discussions of the relation between knowledge-how and knowledge-that. For example, Edward Craig5 writes in a recent book:
+
+Hasn’t intellectualism been refuted? Ryle, one must admit, gave strong reason for thinking that, when taken in strict generality…it must be false: it leads to infinite regress. I accept the argument and its conclusion… (ibid., p. 154).
+
+Ryle’s argument has therefore obviously been influential, so it is worthwhile pausing to examine it in detail.6
+
+Very roughly, Ryle’s argument against the thesis that knowledge-how is a species of knowledge-that is supposed to work as follows: if knowledge-how were a species of knowledge-that, then, to engage in any action, one would have to contemplate a proposition. But the contemplation of a proposition is itself an action, which presumably would itself have to be accompanied by a distinct contemplation of a proposition. If the thesis that knowledge-how is a species of knowledge-that required each manifestation of knowledge-how to be accompanied by a distinct action of contemplating a proposition, which was itself a manifestation of knowledge-how, then no knowledge-how could ever be manifested.
+
+Ryle’s argument has two premises:
+
+(1)
+If one $F$s, one employs knowledge how to $F$.
+(2)
+If one employs knowledge that $p$, one contemplates the proposition that $p$.
+
+Let us see how these two premises operate together to produce a difficulty for the thesis that knowledge-how is a species of knowledge-that.
+
+If knowledge-how is a species of knowledge-that, the content of knowledge how to $F$ is, for some $\phi$, the proposition that $\phi(F)$. So, the assumption for reductio is:
+
+RA:
+knowledge how to $F$ is knowledge that $\phi(F)$.
+
+Furthermore, let ‘$C(p)$’ denote the act of contemplating the proposition that $p$. Suppose that Hannah $F$s. By premise (1), Hannah employs the knowledge how to $F$. By RA, Hannah employs the knowledge that $\phi(F)$. So, by premise (2), Hannah $C(\phi(F))$s. Since $C(\phi(F))$ is an act, we can reapply premise (1), to obtain the conclusion that Hannah knows how to $C(\phi(F))$. By RA, it then follows that Hannah employs the knowledge that $\phi(C(\phi(F)))$. By premise (2), it follows that Hannah $C(\phi(C(\phi(F))))$s. And so on.
+
+Ryle’s argument is intended to show that, if premise (1) and premise (2) are true, then, if knowledge-how is a species of knowledge-that, doing anything would require contemplating an infinite number of propositions of ever-increasing complexity. For it to be sound, however, several additional premises are needed. First, it must be the case that the function $\phi$, which maps acts to propositions, must map distinct actions onto distinct propositions. Second, it must be the case that $C(p)$ is a distinct action from $C(\phi(C(p)))$, which is a distinct action from $C(\phi(C(\phi(C(p)))))$, and so on. We shall not challenge these additional premises in this section.
+
+It is clear from Ryle’s own description of his argument, and his reference to “prior theoretical operations,” that he thinks that his argument takes the form of a vicious regress. But notice that Ryle’s argument need not take this form. For it to have force, it is not necessary to strengthen premise (2) into the stronger and less well-motivated claim that employment of knowledge-that requires a prior action of contemplating a proposition. It is simply prima facie implausible that, to engage in an action, it is necessary to contemplate an infinite number of distinct propositions, which, if propositions have structure, would presumably be of ever-increasing complexity. If the thesis that knowledge-how is a species of knowledge-that has this consequence, it is surely false.
+
+Let us evaluate Ryle’s central two premises. Take premise (1) first. If someone $F$s, must they really employ knowledge how to $F$? This premise is false for many values of ‘$F$’. For example, if we instantiate premise (1) to Hannah’s action of digesting food, we obtain:
+
+(1)
+If Hannah digests food, she knows how to digest food.
+
+But (1) is clearly false. Digesting food is not the sort of action that one knows how to do. Similarly, if Hannah wins a fair lottery, she still does not know how to win the lottery, since it was by sheer chance that she did so. So, for many values of ‘$F$’, premise (1) is false.
+
+For premise (1) to be true, the range of actions must be sufficiently restricted. Indeed, Ryle hints as much, when he speaks, in the above quotation, of “operations [that are] intelligently executed.” Digesting food is not the sort of operation that is executed with intelligence. Similarly, Hannah’s winning the lottery was not intelligently performed. Premise (1) is true only when the range of actions is restricted to intentional actions. Digesting food is not something done intentionally, and that is why it is not a manifestation of knowledge-how. Similarly, Hannah did not intentionally win the lottery, although she doubtless hoped to win it. So, for premise (1) to be true, the range of actions under consideration must be restricted to intentional actions, or perhaps even a proper subset thereof.
+
+Let us turn to premise (2). As Carl Ginet7 has pointed out in a neglected brief defense of the thesis that knowledge-how is a species of knowledge-that, on a natural construal of ‘contemplation’, it is simply false that manifestations of knowledge-that must be accompanied by distinct actions of contemplating propositions. As Ginet writes:
+
+I exercise (or manifest) my knowledge that one can get the door open by turning the knob and pushing it (as well as my knowledge that there is a door there) by performing that operation quite automatically as I leave the room; and I may do this, of course, without formulating (in my mind or out loud) that proposition or any other relevant proposition (op. cit., p. 7).
+
+What Ginet’s point brings out is that employments of knowledge-that are often unaccompanied by distinct acts of contemplating propositions. So, premise (2) seems straightforwardly false.
+
+There is, however, a way of rescuing premise (2) from Ginet’s objection. He clearly construes ‘contemplating a proposition’ as referring to an intentional act of contemplating a proposition, which is one natural reading of this phrase. If ‘contemplating a proposition’ is construed in its intentional action sense, then premise (2) is false. But we can rescue premise (2) from Ginet’s objection by denying that ‘contemplating a proposition’ should be taken in its intentional action sense in premise (2). Perhaps there is a sense of ‘contemplating a proposition’ in which it refers to an action that is no more intentional than is the action of digesting food. Or perhaps it can also be construed as denoting an action merely in some deflationary sense of ‘action’. If ‘contemplating a proposition’ is taken in such a sense, then premise (2) can be salvaged after all.
+
+As we have seen, however, premise (1) is plausible only if it is restricted to intentional actions. If ‘contemplates the proposition that $p$’ in premise (2) does not refer to an intentional action, then it is not an appropriate substitution instance for ‘$F$’ in premise (1) on its true reading. If so, Ryle’s argument does not get off the ground. There is no uniform reading of the two premises in Ryle’s argument on which both are true; the argument is unsound. It therefore fails to establish any difficulty for the thesis that knowledge-how is a species of knowledge-that.
+
+Let us turn from Ryle’s arguments against the thesis that knowledge-how is a species of knowledge-that to his positive account of knowledge-how. According to Ryle, an ascription of the form ‘$x$ knows how to $F$’ merely ascribes to $x$ the ability to $F$. It is simply false, however, that ascriptions of knowledge-how ascribe abilities. As Ginet and others have pointed out, ascriptions of knowledge-how do not even entail ascriptions of the corresponding abilities. For example, a ski instructor may know how to perform a certain complex stunt, without being able to perform it herself.8 Similarly, a master pianist who loses both of her arms in a tragic car accident still knows how to play the piano. But she has lost her ability to do so.9 It follows that Ryle’s own positive account of knowledge-how is demonstrably false.
+
+As we have seen in this section, Ryle’s central argument against the thesis that knowledge-how is a species of knowledge-that fails. Furthermore, his own positive account of knowledge-how is incorrect. But Ryle’s positive account of knowledge-how is not the only analysis of knowledge-how according to which it is not a species of knowledge-that. For example, David Carr10 has argued that knowledge-how is a relation between agents and actions, rather than agents and propositions. Thus, according to Carr, knowledge-how is a fundamentally different relation from knowledge-that. For instance, according to his analysis, sentences such as:
+
+(2)
+Hannah knows how to ride a bicycle.
+
+contain action descriptions, rather than sentential complements as the complement of ‘know how’. The grammatical objects of ascriptions of knowledge-how, unlike ascriptions of knowledge-that, are therefore nonsentential; the former do not ascribe propositional knowledge. Nevertheless, Carr is quite clear that ascriptions of knowledge-how also do not ascribe abilities to agents. It is this sort of more sophisticated account of the relation between knowledge-how and knowledge-that which we assume should actually underwrite the current consensus that knowledge-how is a fundamentally different relation from knowledge-that. In the next section, we present our own positive account of knowledge-how, according to which it is a species of knowledge-that. In the course of it, we undermine even these sorts of more sophisticated accounts of the relation between knowledge-how and knowledge-that.
+
+# II. A Positive Account of Knowledge-How
+
+According to the more sophisticated account of the distinction between knowledge-how and knowledge-that found in contemporary defenders of Ryle’s distinction, sentences such as (2) have a distinct syntactic structure from sentences such as (3):
+
+(2)
+Hannah knows how to ride a bicycle.
+(3)
+Hannah knows that penguins waddle.
+
+William Bechtel and Adele Abrahamsen11 write, in describing what they call the “linguistic distinction” between constructions such as (2) and (3): “In general, the expression ‘knowing that’ requires completion by a proposition, whereas the expression ‘knowing how’ is completed by an infinitive (e.g. ‘to ride’) specifying an activity” (ibid., p. 151). On this view, in a sentence such as (2), ‘knows how’ forms a constituent, which takes as a complement the expression ‘to ride a bicycle’, which is a description of an action. ‘Know’ has no clausal complement in (2). In (3), on the other hand, ‘that penguins waddle’ is the clausal complement of ‘knows’, and denotes a proposition, which is the object of the knowledge relation.
+
+Such accounts of the syntactic structure of sentences like (2), however, are inconsistent with what is said about such structures in recent syntactic theory. Although syntactic frameworks have undergone much change since the early 1970s, none of it has affected the basic analysis of sentences such as (2), and its syntactic counterparts, such as:
+
+(4) (a)
+Hannah knows where to find a nickel.
+(b)
+Hannah knows whom to call for help in a fire.
+(c)
+Hannah knows which prize to look for.
+(d)
+Hannah knows why to vote for Gore.12
+
+(2) and (4a-d) have two, and only two syntactic features which distinguish them from sentences such as (3). First, (2) and (4a-d) contain what are called embedded questions, whereas (3) obviously does not contain an embedded question. Second, (2) and (4a-d) contain untensed clauses, whereas (3) contains a tensed clause. There is, of course, no conceptual connection between these two syntactic features. Embedded questions may easily occur in tensed clauses, as in:
+
+(5) (a)
+Hannah knows how Bill rides a bicycle.
+(b)
+Hannah knows whom Bill called for help yesterday.
+(c)
+Hannah knows which prize Mary was looking for.
+(d)
+Hannah knows why Gore is the best candidate.
+
+It is also worth mentioning that embedded ‘how’ questions with untensed clauses can occur with all sorts of verbs, and are not restricted to co-occurring with ‘know’. For example:
+
+(6) (a)
+Hannah learned how to ride a bicycle.
+(b)
+Hannah recalled how to ride a bicycle.
+(c)
+Hannah asked how to ride a bicycle.
+(d)
+Hannah wonders how to ride a bicycle.
+(e)
+Hannah is certain about how to ride a bicycle.
+(f)
+Hannah indicated how to ride a bicycle.
+(g)
+Hannah saw how to ride a bicycle.
+
+From the perspective of their syntactic structure, there are no relevant differences between sentences such (2) and (6a-g). This suggests that it is incorrect to take ‘know how’ as a constituent in sentences such as (2).13
+
+Since the standard philosophical examples of ascriptions of knowledge-how occur with untensed clauses, as in (2), rather than tensed clauses, as in (5), it is the constituent structure of those which we shall first discuss. Where brackets signal clausal boundaries, abstracting from the many irrelevant details, the standardly accepted constituent structure of embedded questions with untensed clauses, as in (2) and (4a-d), is as follows:
+
+(7) (a)
+Hannah knows [how $\mathrm{PRO}$ to ride a bicycle $t$].
+(b)
+Hannah knows [where $\mathrm{PRO}$ to find a nickel $t$].
+(c)
+Hannah knows [whom $\mathrm{PRO}$ to call $t$ for help in a fire].
+(d)
+Hannah knows [which prize $\mathrm{PRO}$ to look for $t$].
+(e)
+Hannah knows [why $\mathrm{PRO}$ to vote for Gore $t$].
+
+‘PRO’ here is a phonologically null pronoun that occurs, according to standard syntactic theory, in the subject position of untensed clauses. The occurrences of ‘$t$’ in (7a-e) are the traces of movement of the phrases ‘how’, ‘where’, ‘whom’, ‘which person’, and ‘why’, respectively. These traces occur at the site from which the phrases have been moved.14
+
+The constituent structures of sentences involving embedded questions in tensed clauses, such as (5a-d), differ only in that they contain overt noun phrases where the phonologically null pronoun ‘PRO’ occurs in their untensed counterparts. But an embedded question in a tensed clause, such as:
+
+(5a)
+Hannah knows how Bill rides a bicycle.
+
+seems clearly to attribute propositional knowledge to Hannah. As we have seen, from the perspective of syntactic theory, there is no difference between (2) and (5a) which would lead us to think that (2) ascribes nonpropositional knowledge, whereas (5a) ascribes propositional knowledge. The supposed difference has no basis in structure. There are indeed interesting distinctions between embedded questions in tensed clauses and those in untensed clauses relating to the occurrence of ‘PRO’. As we shall see, these distinctions on their own explain the intuitions that might lead one incorrectly to the thesis that (2) ascribes nonpropositional knowledge, whereas (5a) ascribes propositional knowledge.
+
+Of course, the standardly accepted constituent structure of (3) is:
+
+(8)
+Hannah knows [that penguins waddle].
+
+So, in both constructions such as (2) and constructions, such as (3), ‘know’ takes a sentential complement. The syntactic difference between sentences such as (2) and sentences such as (3) is just that the former contain embedded questions with untensed clauses.
+
+Let us now turn from the standardly accepted syntax of constructions such as (2), to the standardly accepted semantics. There are a variety of different classical treatments of the semantics of embedded questions in the literature. But we shall, with only minimal commentary, use Lauri Karttunen’s15 classic 1977 account in presenting our account of embedded questions such as (2). Our account does not rely on any of the special features of Karttunen’s theory. It is easily translatable into other major contemporary frameworks without altering any of the substance of our claim that ascriptions of knowledge-how are ascriptions of propositional knowledge.16
+
+According to Karttunen’s theory, an embedded question denotes the set of its true answers. To illustrate Karttunen’s semantics, consider the following simple construction involving an embedded question:
+
+(9)
+Hannah knows whom Bill likes.
+
+On Karttunen’s analysis, the embedded question ‘whom Bill likes’ denotes the set of true propositions expressed by sentences of the form ‘Bill likes $x$’. (9) is true if and only if, for each proposition $p$ in that set, Hannah knows that $p$.17
+
+For (9) to be true, must Hannah know all the propositions in the set denoted by the embedded question? In certain contexts, (9) might be felicitously uttered when all are aware that Hannah stands in the knowledge-that relation only to a few propositions in the set of true propositions expressed by sentences of the form ‘Bill likes $x$’. Nonetheless, it is in fact standard to assume that, for (9) to be true, Hannah must know all of the propositions in the denotation of the embedded question. This prediction can be seen to be correct, once the account is adjusted to accommodate the effects of extralinguistic context on constructions involving embedded questions. For a particular use of (9) to be true, Hannah must know all propositions in the denotation of the embedded question relative to that context of use. For example, a particular use of (9) may mean that Hannah knows whom Bill likes in Bill’s math class. Relative to such a context, the denotation of the embedded question is the set of true propositions expressed by sentences of the form ‘Bill likes $x$ & $x$ is in Bill’s class’. In what follows, we shall take the set of propositions denoted by the embedded question to so depend on extralinguistic context.18 In many contexts, the set may contain very few members.19
+
+Up until this point, we have been discussing embedded questions involving what linguists call arguments rather than adjuncts. In (9), the word ‘whom’ originates in argument position, as the complement of the transitive verb ‘likes’. In contrast, words like ‘why’ and ‘how’ are what linguists call adjuncts rather than arguments, and so do not originate in argument position.20 But this difference is completely irrelevant to the semantics of embedded questions. Karttunen’s semantics is intended to apply equally to embedded questions headed by adjuncts, as in:
+
+(10)
+Hannah knows why Bill votes Republican $t$.
+
+On this account, the embedded question ‘why Bill votes Republican $t$’ denotes the set of true propositions expressed by sentences of the form ‘Bill votes Republican for reason $r$’. (10) is true if and only if, for all propositions $p$ in this set, Hannah knows that $p$.
+
+Let us now consider some of the more complicated examples of embedded questions which we have been discussing. Of particular relevance are the complications involved in interpreting embedded questions in untensed clauses, as in:
+
+(7c)
+Hannah knows [whom $\mathrm{PRO}$ to call $t$ for help in a fire].
+
+As we have discussed, ‘PRO’ is an empty pronominal element which occurs in the subject position of infinitives in English. There are two complicating factors in interpreting such constructions. The first involves the proper interpretation of ‘PRO’. The second involves the interpretation of the infinitive. There are sizable literatures in linguistics on both of these topics. The complications raised below, however, have no bearing on the thesis that knowledge-how is a species of knowledge-that. (7b-e) all clearly attribute propositional knowledge to Hannah. Furthermore, their cousins:
+
+(11) (a)
+Hannah recalled where $\mathrm{PRO}$ to find a nickel $t$.
+(b)
+Hannah asked why $\mathrm{PRO}$ to vote for Gore $t$.
+(c)
+Hannah discovered whom $\mathrm{PRO}$ to call $t$ for help.
+
+all clearly involve relations between persons and propositions. It is just that, in all these cases, the occurrence of ‘PRO’ and the use of the infinitive makes it somewhat tricky to state exactly which propositions are at issue.
+
+The first complication involved in the interpretation of embedded questions in untensed clauses involves the interpretive possibilities for ‘PRO’. When ‘PRO’ occurs in an untensed clause that is not an embedded question, as in the sentences in (12), it receives its interpretation obligatorily from the subject of the main clause (as is standard, co-indexation with an element to its left represents a relation of referential dependence):
+
+(12) (a)
+$\text{Hannah}_i$ wants $\mathrm{PRO}_i$ to win the race.
+(b)
+$\text{Hannah}_i$ expects $\mathrm{PRO}_i$ to cook pasta tonight.
+
+Because of this limitation on the interpretation of ‘PRO’ in such contexts, they are standardly called contexts of obligatory control.
+
+In embedded questions in untensed clauses, the favored reading of ‘PRO’ links it to the subject of the main clause, as in the examples in (12). Syntacticians have known for some time, however, that embedded questions in untensed clauses are not contexts of obligatory control. In contexts of obligatory control, ‘PRO’ cannot be interpreted in the so-called ‘PRO-arbitrary’ manner, where it is roughly equivalent to ‘one’. This is demonstrated by the ungrammaticality of:
+
+(13)
+*Hannah wants $\mathrm{PRO}$ to behave oneself.
+
+But embedded questions in untensed clauses seem to allow ‘PRO’ to be interpreted in this manner, as the following example demonstrates:21
+
+(14)
+John asked how $\mathrm{PRO}$ to behave oneself.
+
+Here is why, in (14), ‘PRO’ is interpreted as ‘one’. ‘Oneself’ is an anaphor in the technical syntactic sense. Anaphors require their antecedent to be within the same minimal clause. The occurrence of ‘oneself’ could be licensed only if ‘PRO’ is interpreted as ‘one’.
+
+Of course, (14) is less natural than:
+
+(15)
+John asked how to behave himself.
+
+But (14) is nonetheless far more acceptable than (12). Examples with a similar level of acceptability are:
+
+(16) (a)
+John knows how $\mathrm{PRO}$ to shoot oneself.
+(b)
+John knows why $\mathrm{PRO}$ to shoot oneself.
+(c)
+John knows how $\mathrm{PRO}$ to kill oneself painlessly.
+(d)
+Bill wondered how $\mathrm{PRO}$ to shave oneself without hot water.
+
+In all of these cases, ‘PRO’ must be interpreted as ‘one’. The conclusion in the linguistics literature from such data is that occurrences of ‘PRO’ in embedded questions in untensed clauses can be interpreted either as expressions anaphoric on the subject of the main clause, or, albeit less naturally, as ‘one’.
+
+The second complication concerns the interpretation of the infinitives in untensed embedded questions. The difficulty in interpreting infinitives in such constructions is that they do not have any obvious tense. Indeed, on one very standard use of infinitives, they have interpretations with some sort of deontic modal force, as in:
+
+(17) (a)
+Hannah is the person to call in case of danger.
+(b)
+The screwdriver to use is a Phillips.
+(c)
+A person to call when in need of assistance with moving is someone with no back trouble.
+
+For example, (17a) expresses something similar to what is expressed by the sentence, ‘Hannah is the person one ought to call in case of danger’.
+
+But infinitives also have readings on which they have a different kind of modal force. For example, consider:
+
+(18)
+John asked where to board the plane.
+
+The infinitive in (18) has a natural construal not in terms of deontic modality. According to this reading, John did not ask where he ought to board the plane. Rather, John asked where he could board the plane. That is, John wants as a response a proposition whose informational content is something like that expressed by ‘$w$ is a place for John to board the plane’.22
+
+So, infinitives appear to have at least two different kinds of readings. On the first reading, they express deontic modality. In this case, a use of ‘to $F$’ expresses something like ‘ought to $F$’. On the second reading, they express some kind of possibility. On this reading, a use of ‘to $F$’ expresses something like ‘can $F$’. These are the two readings which seem available for infinitives in embedded questions, and hence are the ones relevant for our purposes here.
+
+Let us sum up the discussion of the two complications involved in the interpretation of embedded questions in untensed clauses. Occurrences of ‘PRO’ in such constructions have two interpretive possibilities. According to the first, ‘PRO’ receives its interpretation from the subject of the main clause. According to the second, ‘PRO’ means something like ‘one’. An infinitive in such a construction also has two relevant interpretations. According to the first, the infinitive has ‘ought’-like force. According to the second, the infinitive expresses ‘can’-like force. So, in general, we would expect four interpretive possibilities for sentences containing embedded questions in untensed clauses.
+
+Consider now:
+
+(19)
+Hannah knows how $\mathrm{PRO}$ to ride a bicycle.
+
+In such an example, we should expect the embedded question to have four interpretive possibilities, corresponding to (20a-d):
+
+(20) (a)
+Hannah knows how she ought to ride a bicycle.
+(b)
+Hannah knows how one ought to ride a bicycle.
+(c)
+Hannah knows how she could ride a bicycle.
+(d)
+Hannah knows how one could ride a bicycle.
+
+(19) and its cousins certainly have these interpretive possibilities.23 The interpretations given in (20a) and (20b) quite obviously seem to attribute some kind of propositional knowledge to Hannah, so they are not the interpretations underlying the thesis that knowledge-how is not a species of knowledge-that. It is rather interpretations such as (20c) and (20d) that seem to be at issue in philosophical discussions of knowledge-how. So, let us see what is predicted by applying Karttunen’s semantics to (19), interpreted in one of these latter two ways.
+
+Consider (20c), the paradigm reading of (19) on which we shall focus in the rest of this discussion. On this reading of (19), ‘PRO’ receives its interpretation from ‘Hannah’, and the infinitive has some kind of nonnormative modal force. Interpreted in this way, Karttunen’s semantics predicts that (19) is true if and only if, for all propositions $p$ expressed by sentences of the form ‘$w$ is a way for Hannah to ride a bicycle’, Hannah knows that $p$.24
+
+Now, clearly Hannah need not know all such propositions for (19) to be true on this reading. It is more natural to construe (19) (on this reading) as true if and only if Hannah knows some proposition of the relevant form; that is, for some way $w$, Hannah knows that $w$ is a way for Hannah to ride a bicycle.25 But this is not a semantic difference between constructions like (19) and other constructions involving other kinds of embedded questions. Constructions involving embedded questions are generally ambiguous between what Jeroen Groenendijk and Martin Stokhof26 have called the “mention-all” and “mention-some” readings. For example, the sentences in (21a-b)), in addition to the readings we have been discussing above (Groenendijk and Stokhof’s “mention-all” readings), allow for the readings in (22a-b):
+
+(21) (a)
+John knows where to find an Italian newspaper.
+(b)
+John knows who has a light.
+(22) (a)
+John knows, of some place $p$, that $p$ is a place to find an Italian newspaper.
+(b)
+John knows, of some person $x$, that $x$ has a light.
+
+Similarly, although embedded questions involving ‘know how’ often favor the “mention-some” reading, they are nevertheless ambiguous between these two readings. For example, the examples in (23) have natural “mention-all” readings, where the subject of the sentence is said to know something about all contextually relevant ways:
+
+(23) (a)
+The warden of the prison knows how to escape from it.
+(b)
+The expert pitching coach knows how to pitch to a dangerous switch-hitter.
+
+The fact that (19) is more often used with the “mention-some” reading in mind is due to the distinctive communicative purpose of the relevant class of uses of (19).
+
+When we inform our audience that $x$ knows how to $F$, using it in the sense of (20c), it is irrelevant to our communicative purpose that our audience come to know, of every way which is a way for $x$ to $F$, that $x$ knows that $w$ is a way for $x$ to $F$. It is sufficient for our communicative purpose to inform our audience that $x$ knows of one such way that it is a way for $x$ to $F$. In cases such as (9), by contrast, our communicative purpose involves informing our audience that Hannah knows, of every relevant person whom Bill likes, that Bill likes that person. This difference in communicative purpose is the reason why speakers more often use ‘$x$ knows how to $F$’ with the “mention-some” reading in mind than the “mention-all” reading.
+
+In what follows, we restrict our attention to the “mention-some” reading of constructions such as (19). Relative to a context in which (19) is interpreted as (20c), (19) is true if and only if, for some contextually relevant way $w$ which is a way for Hannah to ride a bicycle, Hannah knows that $w$ is a way for her to ride a bicycle.27
+
+Thus, to say that someone knows how to $F$ is always to ascribe to them knowledge-that. To complete our account, however, we need to say which of the standard theories of propositional attitudes we are adopting. Essentially, there are three standard theories of the semantics of propositional-attitude ascriptions. According to the first two, sentences such as:
+
+(24) (a)
+Hannah believes that penguins waddle.
+(b)
+Hannah knows that she can walk.
+
+relate persons and propositions. The two theories differ, however, on the nature of propositions. According to the first theory, the contemporary Russellian theory, propositions are ordered sequences of properties and objects. According to the second theory, the Fregean theory, propositions contain modes of presentations of properties and objects, rather than the properties and objects themselves. Finally, according to the third standard theory, verbs such as ‘believes’ and ‘knows’ express three-place relations between persons, Russellian propositions, and ways of thinking of Russellian propositions.
+
+Our view can be stated in any of these three frameworks. For clarity’s sake, however, we shall take propositions to be Russellian, as in the first and third of these theories. The propositions that concern us will contain ways of engaging in actions. To be more precise, we shall take ways to be properties of token events. Ways are the elements of the domain of quantified expressions such as ‘however’, as in:
+
+(25)
+However Douglas passes the ball, it results in a basket.
+
+We believe that any successful account of natural language must postulate entities such as ways. But we shall not have much more of substance to say about the metaphysics of ways in this paper.
+
+So, according to our official account, on the relevant understanding of (19), its truth requires Hannah to stand in the knowledge-that relation to a Russellian proposition containing a way of riding a bicycle (along with other objects and properties). But our account is still incomplete. If a way is really a property, an element of a standard Russellian proposition, then it must be possible for it to be entertained under different modes of presentation. And we have not yet said anything about the modes of presentation under which propositions containing ways may be entertained.
+
+According to some accounts involving modes of presentation, the particular mode of presentation under which a person entertains a Russellian proposition is irrelevant to the truth conditions of a corresponding attitude ascription; it is only of pragmatic relevance. According to other theorists, such as John Perry and Mark Crimmins,28 context provides a particular mode of presentation under which the proposition is entertained to the truth conditions of a propositional-attitude ascription. In what follows, we shall speak of modes of presentation as being associated with certain linguistic constructions, but remain neutral on the question of whether these modes of presentation have semantic import.
+
+It is relatively straightforward to show that one and the same way can be entertained under distinct modes of presentation. But before we turn to this task, it is useful to review the general strategy for constructing such cases. Suppose that John is looking in a mirror, which he mistakenly believes to be a window. Seeing a man whose pants are on fire, and not recognizing that man as himself, John forms the demonstrative belief that that man is on fire. Intuitively, however, John does not believe that his own pants are on fire. That is, relative to the envisaged context, (26) is true and (27) is false:
+
+(26)
+John believes that that man has burning pants.
+(27)
+John believes that he himself has burning pants.
+
+Given that ‘that man’ refers to John, however, the complement clauses of (26) and (27) express the same proposition, namely, the singular proposition containing John. To distinguish between (26) and (27), contemporary advocates of Russellian propositions appeal to different modes of presentation under which that proposition is entertained. In the envisaged context, (26) is associated with a demonstrative mode of presentation (or guise) of the relevant proposition, whereas (27) is associated with a first-personal mode of presentation of that very same proposition.
+
+Here is a parallel case involving ways. Suppose that Hannah does not know how to ride a bicycle. Susan points to John, who is riding a bicycle, and says, ‘That is a way for you to ride a bicycle’.29 Suppose that the way in which John is riding his bicycle is in fact a way for Hannah to ride a bicycle. So, where the demonstrative ‘that way’ denotes John’s way of riding a bicycle, (28) seems true:
+
+(28)
+Hannah knows that that way is a way for her to ride a bicycle.
+
+Relative to this context, however:
+
+(29)
+$\text{Hannah}_i$ knows [how $\mathrm{PRO}_i$ to ride a bicycle].
+
+seems false. This case parallels (26) and (27). Where the demonstrated way is the only contextually salient way of riding a bicycle, (28) and (29) ascribe knowledge of the same proposition to Hannah. But this proposition is ascribed under different guises. In (28), knowledge of the proposition is ascribed to Hannah under a demonstrative mode of presentation. In (29), knowledge of that proposition is ascribed to Hannah under a different mode of presentation, what we call a practical mode of presentation.30
+
+There is a conventional connection between pronouns such as ‘he himself’ and first-person modes of presentation. Similarly, there is a conventional connection between the use of constructions that embed instances of the schema ‘how to $F$’, and practical modes of presentations of ways. Such conventional connections between linguistic constructions and modes of presentation have obvious communicative value in both the case of first-person propositional-attitude ascriptions and the constructions that concern us in this paper. Given such a connection, use of the relevant construction provides extra information about how the ascribee thinks about one of the propositional constituents, information that allows the hearer to predict how the ascribee will act in various situations.31
+
+Giving a nontrivial characterization of the first-person mode of presentation is quite a substantial philosophical task. Unfortunately, the same is true of giving a nontrivial characterization of a practical mode of presentation of a way. In both cases, however, one can provide an existence proof for such modes of presentation. If, as is assumed in much of philosophy of language, there is a sound argument from (26) and (27) to the existence of first-personal guises of propositions, then there is a sound argument from (28) and (29) to the existence of practical guises of propositions.
+
+Thinking of a person as oneself entails being disposed to behave in certain ways, or form certain beliefs, given relevant input from that person. Similarly, thinking of a place as here entails being disposed to behave in certain ways, or form certain beliefs, given relevant input from that place. Analogously, thinking of a way under a practical mode of presentation undoubtedly entails the possession of certain complex dispositions. It is for this reason that there are intricate connections between knowing-how and dispositional states. But acknowledging such connections in no way undermines the thesis that knowing-how is a species of knowing-that. For example, such connections are also present in the case of first-person thought. But this in no way threatens the thesis that thought about oneself is genuinely propositional. It is simply a feature of certain kinds of propositional knowledge that possession of it is related in complex ways to dispositional states. Recognizing this fact eliminates the need to postulate a distinctive kind of nonpropositional knowledge.
+
+So, here is our complete account of knowing-how. Suppose modes of presentation are semantically relevant. Then (29) is true relative to a context $c$ if and only if there is some contextually relevant way $w$ such that Hannah stands in the knowledge-that relation to the Russellian proposition that $w$ is a way for Hannah to ride a bicycle, and Hannah entertains this proposition under a practical mode of presentation. If modes of presentation are not semantically relevant, then the truth of (29) does not require that Hannah entertain the proposition in question under a practical mode of presentation, though a use of (29) pragmatically conveys that she does.
+
+We have exploited Karttunen’s account of embedded questions in developing our own account of examples such as (19). It is worth mentioning that later semantical frameworks modify Karttunen’s analysis in various directions. For example, one problematic aspect of Karttunen’s framework is that embedded questions are taken to denote sets of propositions, whereas ‘that’ clauses denote propositions. There is some evidence that both embedded questions and ‘that’ clauses denote entities of the same type, namely, propositions. For example, in linguistics, the possibility of conjunction is a standard indication of sameness of semantic type. And, as Groenendijk and Stokhof32 point out, one can conjoin embedded questions and ‘that’ complements, as in:
+
+(30) (a)
+John knows both that Peter has left for Paris and whether Mary has followed him.
+(b)
+Alex told Susan that someone was waiting for her, but not who it was.
+
+A similar point holds for embedded questions headed by ‘how’, as evidenced by the examples in (31):
+
+(31) (a)
+John knows both how to ride a bicycle and that accidents can happen to anyone.
+(b)
+John knows both how to twitch his ears and that his mother is sickened by facial tricks.
+(c)
+John knows both that his mother hates facial twitches and how to make them.
+
+What such examples suggest is that we should take embedded questions, including those involved in the ascription of knowledge-how, to denote propositions, rather than sets of propositions. Incorporating this insight only strengthens the parallels between ascriptions of knowledge-that and ascriptions of knowledge-how. But it also involves the introduction of technical machinery that would distract from our central points. We shall therefore continue to couch our views in Karttunen’s framework.33
+
+If these standard accounts of the syntax and semantics of embedded questions are correct, then ascriptions of knowledge-how simply ascribe knowledge-that to their subjects. The propositions that the subjects of ascriptions of knowledge-how are said to know in such ascriptions involve ways of engaging in actions. But this does not make them any less propositional.
+
+Our view of ascriptions of knowledge-how is very straightforward. It is just that the standard linguistic account of the syntax and semantics of embedded questions is correct. Furthermore, it should not be radically altered to rescue philosophical views about an allegedly philosophically significant subclass of them. Sentences such as (2) have sentential complements. Furthermore, a sentence such as (2) is true relative to a context if and only if the subject stands in the knowledge-that relation to some (or every) member of the set of propositions denoted by the embedded ‘how’ question in that context.
+
+We take our view of ascriptions of knowledge-how to be the default position. From a linguistic perspective, very little is special about ascriptions of knowledge-how. It is hard to motivate singling them out for special treatment from the rest of a family of related constructions. Our view of ascriptions of knowledge-how is the analysis reached on full consideration of these constructions by theorists unencumbered by relevant philosophical prejudices.34
+
+Of course, we would like to compare the standard syntactic and semantic accounts of such constructions with the syntactic and semantic accounts of them given by those who follow Ryle in rejecting the thesis that knowledge-how is a species of knowledge-that. Surprisingly, however, none of Ryle’s followers has ever given an explicit syntax and semantics for such constructions, much less one which would give them the interpretations they claim such constructions to have. Therefore, such a comparison is impossible. Nonetheless, we recognize the possibility that the enormous amount of attention philosophers have directed to this linguistically rather ordinary construction may be motivated by special features to which linguists have inexplicably been blind. To eliminate this possibility, we must show that our analysis in fact accounts for any such special feature. That is the task of the next section.
+
+# III. A Defense
+
+Consider again our paradigm ascription of knowledge-how:
+
+(29)
+$\text{Hannah}_i$ knows [how $\mathrm{PRO}_i$ to ride a bicycle].
+
+Abstracting from the possible semantic relevance of modes of presentation, on our analysis, (29) is true relative to context if and only if, for some contextually relevant way $w$ for Hannah to ride a bicycle, Hannah knows that $w$ is a way for Hannah to ride a bicycle. Our proposal reflects the intuitively felt connection between ‘Hannah knows how to ride a bicycle’ and ‘Hannah knows in what way to ride a bicycle’. In the course of responding to objections to our account, we now show that it explains the special features philosophers have claimed such constructions to have.
+
+We shall now consider a series of worries about our proposal. Here is the first. Even if Hannah knows how to ride a bicycle, there need be no informative sentence of the form ‘I ride a bicycle by $F$ing’ which she would recognize as true. That is, for (29) to be true, there need be no sentence she understands and accepts containing a purely nonindexical description of a way of riding a bicycle.
+
+Let us consider a parallel case. Consider:
+
+(32)
+Hannah knows that she is in pain.
+
+Suppose that (32) attributes a first-personal belief to Hannah. It is notoriously difficult to explicate the notion of a first-personal guise of a proposition. As is familiar from the work of Perry,35 (32) may be true, even if there is no pure nonindexical description ‘The $F$’ of Hannah, for which she would accept the sentence ‘The $F$ is in pain’. To take an extreme case, Hannah may have amnesia after a tragic accident, and have completely forgotten any purely descriptive uniquely identifying facts about herself. In such a case, (32) may still be true, even though there is no purely descriptive sentence of the form ‘The $F$ is in pain’ that Hannah would accept.
+
+But we need appeal to nothing so philosophically controversial as first-person thought in order to respond to the objection. Suppose that Hannah rides a bicycle in a most peculiar manner. John is unable to describe the way in which Hannah rides a bicycle, but he can physically imitate it. In trying to convey how Hannah rides a bicycle, he imitates her motions, and says:
+
+(33)
+I know that Hannah rides a bicycle in this way.
+
+John’s knowledge here is propositional knowledge involving a way. John’s use of ‘this way’ refers to this way. But, as we said, John is unable to describe in nonindexical involving terms the way in which Hannah rides a bicycle. So, completely apart from issues involving knowledge-how, that John possesses propositional knowledge about a way does not entail that he can describe it in nonindexical terms. To say that (29) is a propositional-knowledge ascription simply does not imply that the guises of the relevant propositions can be described in nonindexical terms.36
+
+Some still believe that all mental states can be characterized in nonindexical terms. We are not sympathetic to this view. But if it is correct, there is a nonindexical description of John’s thought about Hannah’s way of riding a bicycle that John would accept. If such a description can be provided for (33), it can also be provided for (29).
+
+Here is a second worry with our proposal.37 We have appealed, in our account of knowledge-how, to practical modes of presentation. One might worry then that we have not succeeded in our aim of establishing that knowledge-how is just knowledge-that, since an analysis of these practical modes of presentation might require appeal to an unreduced notion of knowing-how.
+
+This worry misunderstands our present purpose, however. We are not engaged in the reductive project of reducing talk of knowledge-how to talk that does not involve knowledge-how. Our view is rather that knowledge-how is a species of knowledge-that. To establish that one concept is a subspecies of another, it is not necessary to provide a reductive analysis of that concept. For example, perhaps the concept expressed by ‘assassinates’ resists reductive analysis, so that one cannot independently specify just when killing counts as assassinating. But it would be fallacious to infer on these grounds that assassinating is not killing. Similarly, if the concept expressed by ‘knows how’ resists reductive analysis, then one cannot independently specify just when knowing-that counts as knowing-how. But it would be nevertheless fallacious to infer that knowing-how is not knowing-that. Again, the arithmetic concept expressed by ‘is less than’ cannot be defined in terms of the concept expressed by ‘is distinct from’. Nevertheless, being less than a number is a way of being distinct from it.
+
+Perhaps an analogy to another kind of knowledge-that will help. John’s knowledge that he is tired is knowledge-that. If one accepts modes of presentation, then such knowledge involves thinking of oneself under a first-personal mode of presentation. There may very well be no way to analyze away John’s first-personal mode of presentation of himself in third-personal terms. But John’s knowledge that he is tired is nevertheless genuine knowledge-that. To say that first-person knowledge is a distinctive subclass of knowledge-that is not to deny that it is genuine knowledge-that. The very same point applies to knowing-how. Perhaps one cannot give a reductive analysis of thinking of a way under a practical mode of presentation. But this does not undermine the thesis that knowing-how is knowledge-that.38
+
+But another version of this concern remains for our project. According to us, knowing-how is a distinctive kind of knowing-that. If the special subclass of knowing-that which we call ‘knowing-how’ is too dissimilar from other kinds of knowing-that, then one might suspect that we have just recreated the traditional distinction between knowing-how and knowing-that, but in other terms. So it must be that, on our analysis, knowing-how possesses the characteristic features of other kinds of knowing-that. This leads us to a third worry with our proposal.
+
+On the analysis we presented in the last section, knowing-how is analyzed in terms of knowing-that. In particular, knowing how to $F$ is a matter of knowing that $p$, for a certain proposition $p$ (as well as entertaining it under the right mode of presentation). So, knowing-how is straightforwardly analyzed in terms of knowing-that. But one might worry that significant disanalogies still remain between knowing-how and other kinds of knowing-that. One potential source of disanalogy involves Gettier cases.39 We can imagine cases of justified true belief that fail to be knowledge-that, because they fail to satisfy some extra condition. It may appear difficult, however, to formulate examples that fall short of being knowledge-how for a similar reason. That is, one might think it is difficult to conceive of Gettier-cases for knowledge-how. But if knowledge-how is really a kind of knowledge-that, there should be such cases.
+
+We doubt that every kind of knowledge-that is susceptible to Gettier cases. So it would not worry us if it were not possible to come up with a Gettier case for knowledge-how. Be that as it may, there are indeed Gettier cases for knowledge-how. Bob wants to learn how to fly in a flight simulator. He is instructed by Henry. Unknown to Bob, Henry is a malicious imposter who has inserted a randomizing device in the simulator’s controls and intends to give all kinds of incorrect advice. Fortunately, by sheer chance the randomizing device causes exactly the same results in the simulator as would have occurred without it, and by incompetence Henry gives exactly the same advice as a proper instructor would have done. Bob passes the course with flying colors. He has still not flown a real plane. Bob has a justified true belief about how to fly. But there is a good sense in which he does not know how to fly.
+
+Here is a fourth worry with our proposal. There are numerous differences between constructions such as:
+
+(29)
+$\text{Hannah}_i$ knows [how $\mathrm{PRO}_i$ to ride a bicycle].
+
+and constructions such as:
+
+(34) (a)
+Hannah knows how Bill rides a bicycle.
+(b)
+Hannah knows how Hannah rides a bicycle.
+(c)
+Hannah knows how one should ride a bicycle.
+
+One might think that these differences provide evidence for the thesis that, while (34a-c) are ascriptions of knowledge-that, constructions such as (29) are not.40 But the numerous differences between (29), on the one hand, and (34a-c), on the other, all can be explained without threatening in the least the thesis that knowledge-how is a species of knowledge-that. Uses of (29) are associated with practical modes of presentation of ways of engaging in actions. In contrast, (34a-c) are not conventionally linked to practical modes of presentations of ways of engaging in actions. (29) involves a modal element missing in the sentences in (34a-b), and different from the modal element in (34c). (34a-b) entail, respectively, that Bill rides a bicycle, and that Hannah rides a bicycle; (29) carries no such commitment.
+
+Other relevant differences between (29) and (34a-c) are traceable to facts about the interpretation of ‘PRO’ in untensed clauses. For example, uses of ‘PRO’ where they are controlled by the subject in the main clause invariably give rise to “de se” readings, that is, readings involving a first-person mode of presentation.41 So, (29) ascribes self-knowledge, whereas (34a) and (34c) do not, and (34b) may or may not, depending upon context.
+
+Therefore, the many differences between (29), on the one hand, and (34a-c), on the other, in no way undermine the thesis that knowledge-how is a species of knowledge-that.
+
+Here is a fifth worry with our proposal. In many languages two meanings of the English word ‘know’ are lexically distinguished. The two meanings are those found in:
+
+(35)
+Hannah knows that penguins waddle.
+(36)
+Hannah knows Bill.
+
+For example, in German, the verb for the use of ‘know’ found in (35) is ‘wissen’ and the verb for the use of ‘know’ found in (36) is ‘kennen’. In French, the verb for the use of ‘know’ in (35) is ‘savoir’, and the verb for the use of ‘know’ in (36) is ‘connaître’. This suggests that, in English, the word ‘know’ has two distinct lexical meanings, corresponding to the meanings that would be expressed in German by ‘wissen’ and ‘kennen’.
+
+There is internal evidence for an ambiguity in the English word ‘know’ between its use in (35) and its use in (36). The sentence
+
+(37)
+John went to the bank, and Bill did too.
+
+cannot be used to express the proposition that John went to the riverbank, and Bill to the financial institution. Such examples strongly suggest that meanings are preserved in ellipsis. But consider:
+
+(38)
+?* Hannah knows that penguins waddle, and Bill, Ted.
+
+(38) is clearly ungrammatical. One explanation is that the elided expression has the meaning of the word ‘know’ in uses such as (35), but such a use requires a propositional complement, which it lacks in the second conjunct of (38). Examples such as (38) already suggest that the word ‘know’ is ambiguous in English between its uses in (35) and (36).
+
+The worry with our proposal is that a similar point holds of the uses of ‘know’ in
+
+(2)
+Hannah knows how to ride a bicycle.
+(3)
+Hannah knows that penguins waddle.
+
+Might evidence from English and other languages show that ‘know’ has different senses in (2) and (3)?
+
+The worry is easily assuaged. In the languages with which we are familiar, the uses of ‘know’ in (2) and (3) are translated by the same word. This strongly militates against an ambiguity between the uses of ‘know’ in (2) and (3).42 Moreover, ellipsis tests within English suggest that there is no such ambiguity in the English word ‘know’. Consider:
+
+(39) (a)
+Hannah knows that penguins waddle, and Bill, how to imitate them.
+(b)
+Bill knows how to ride a bicycle, and Hannah, that doing so is dangerous.
+
+(39a-b) are perfectly well formed. If ‘know’ had different meanings in (2) and (3), however, sentences such as (39a-b) would be ill formed. The crosslinguistic data, together with this evidence, demonstrate the nonexistence of the alleged ambiguity.
+
+Here is a sixth worry with our proposal. Intuitively, ascriptions of knowledge-that are opaque. That is, intuitively, (40) does not entail (41):
+
+(40)
+Hannah knows that Hesperus is Hesperus.
+(41)
+Hannah knows that Hesperus is Phosphorus.
+
+One might worry, however, that ascriptions of knowledge-how are transparent rather than opaque. That is, one might worry that inferences like that from (40) to (41) seem valid for cases of knowledge-how.
+
+But ascriptions of knowledge-how do not seem transparent. For example, (43) does not seem to follow from (42):
+
+(42)
+Hannah knows how to locate Hesperus.
+(43)
+Hannah knows how to locate Phosphorus.43
+
+Similarly, to modify an example of Carr,44 suppose that Hannah, a famous dancer, knows how to dance a performance which she has dubbed ‘Headbanger’. Unbeknownst to her, her performance of Headbanger mirrors an accurate semaphore performance of “Gray’s Elegy” which has become known as “Harvey.” In this situation, (45) does not seem to follow from (44):
+
+(44)
+Hannah knows how to perform Headbanger.
+(45)
+Hannah knows how to perform Harvey.
+
+Of course, as with ascriptions of knowledge-that, there is much room for pragmatic latitude in our judgments about ascriptions of knowledge-how. But the issues seem no different for ascriptions of knowledge-how and ascriptions of knowledge-that.45
+
+Here is a seventh objection to our proposal. On our account, knowledge-how is propositional knowledge. But in certain situations, we smoothly ascribe knowledge-how to animals. For instance, if Pip is a dog, someone might easily say:
+
+(46)
+Pip knows how to catch a Frisbee.
+
+One might think that nonhuman animals are not sufficiently conceptually sophisticated enough to possess propositional knowledge.
+
+But this objection is a nonstarter. For in similar scenarios, we just as smoothly ascribe propositional knowledge to nonhuman animals, as in:
+
+(47) (a)
+Pip knows that when visitors come, he has to go into the kitchen.
+(b)
+Pip knows that Alva will give him a treat after dinner.
+
+So, smooth ascriptions of knowledge-how to nonhuman animals are simply no objection to our account. Everyone requires some account of uses of sentences such as (47a-b). Whatever account is provided will work equally well for uses of sentences such as (46).
+
+Furthermore, the possibility of ascribing knowledge-how to $F$ goes with the possibility of ascribing false beliefs about how to $F$, which are clearly propositional. For example, we might say:
+
+(48)
+The elephants know how to cross the river.
+
+They go to the only ford and walk across. But now the river is dredged, unbeknownst to the elephants, and the ford disappears. (48) becomes false; what is true is:
+
+(49)
+The elephants have a false belief about how to cross the river.
+
+Here is a eighth and final objection to our proposal. We can formulate it using the following quote from Bechtel and Abrahamsen, which, together with the appeal to the alleged linguistic distinction discussed in the last section, is their sole argument for a distinction between knowledge-that and knowledge-how:
+
+A person who knows that Sacramento is the capital of California will be able to retrieve from memory the proposition Sacramento is the capital of California, or to retrieve other propositions from which this one can be deduced. But the same does not seem to hold for knowing how to ride a bicycle. In this example, what is required is to have a certain ability to control one’s perceptual-motor system (op. cit., p. 152).
+
+Now, we have already seen that it is incorrect to analyze knowledge-how in terms of abilities, so we may discard Bechtel and Abrahamsen’s positive account of knowledge-how. Their quote nonetheless suggests an argument against our account. According to this argument, knowledge-that requires a capacity to retrieve a proposition from memory, whereas knowledge-how does not.
+
+We doubt that knowledge-that requires a capacity to retrieve a proposition from memory. We are not occurrently aware of many propositions that we know. Examples include tedious geographical truths buried in one’s memory. External factors may prevent one from retrieving propositions from memory that entail them. One may be preoccupied driving a car, or by the state of one’s marriage. None of this undermines one’s knowledge of tedious propositions. So, in order for the premise to have some initial plausibility, the possibility of retrieval from memory must be limited to certain favored circumstances.
+
+But if the premise is that, in certain favored circumstances, one can retrieve one’s knowledge-that from memory, then there is no argument against the thesis that knowledge-how is just knowledge-that. If the premise is plausible for knowledge-that, then it is just as plausible for knowledge-how. For Hannah to know how to ride a bicycle, in certain favored circumstances, she must be able to retrieve some propositions expressed by sentences of the form ‘$w$ is a way for Hannah (herself) to ride a bicycle’. The favored circumstances may include sitting on a bicycle, and Hannah can retrieve the proposition without being able to express it in nonindexical words. If one accepts the premise for knowledge-that, then one should accept it for knowledge-how.
+
+So much for objections to our account; now we turn to some of its benefits. Its most obvious benefit is that it is the account entailed by current theories about the syntax and semantics of the relevant constructions. Rejecting it would involve revising many well-entrenched beliefs about them in linguistics. This move would be legitimate if the account could be shown to face serious difficulties. But we have been unable to uncover such difficulties.
+
+A second benefit of the account is that it explains features of ascriptions of knowledge-how that other accounts leave unexplained. For example, it has often been noted that people do not know how to do every sort of action. As Ziff (op. cit., p. 71) points out:
+
+(50)
+Human babies know how to suck.
+
+seems false. Although human babies do suck, presumably they do not know how to suck. Similarly, it seems false to say that:
+
+(51)
+Human babies know how to cry for hours.
+
+Our account explains these facts. On our account, knowledge-how is a species of knowledge-that. And we are often reluctant to ascribe propositional knowledge to babies.46
+
+Of course, we are not always reluctant to ascribe propositional knowledge to babies. For example, suppose Isobel is an infant. One might smoothly say:
+
+(52)
+Isobel knows that when Richard comes home, she will be tossed in the air.
+
+Similarly, in certain situations, we may smoothly ascribe the problematic instances of knowledge-how to babies. For example, suppose that there is some question about whether the infant Paul is handicapped. The doctor may note with pleasure that:
+
+(53)
+Paul knows how to suck.
+
+If knowledge-how is a species of knowledge-that, then these parallels are no accident.
+
+Our account of knowledge-how both follows from basic facts about the syntax and semantics of ascriptions of knowledge-how and explains some distinctive features of ascriptions of knowledge-how that other accounts leave unexplained. Furthermore, it is consistent with the theoretical significance of the intuitions that have motivated philosophers to reject our thesis. In the next section, we turn very briefly to the consequences of our arguments for uses that philosophers have made of knowledge-how outside of epistemology.
+
+# IV. Conclusion
+
+Outside epistemology proper, philosophers have made many uses of the thesis that knowledge-how is not a species of knowledge-that. We conclude by considering two, one in the philosophy of mind and one in the philosophy of language. In both cases, reliance on the alleged distinction between knowledge-how and knowledge-that is fatal to the thesis advanced. Our brief discussion of these representative cases will underscore the dangers of invoking Ryle’s distinction.47
+
+One particularly well-known use of Ryle’s account of the relation between knowledge-how and knowledge-that occurs in Lewis’s reply to Frank Jackson’s famous “knowledge argument.” Jackson imagines Mary, a brilliant scientist locked up in a room her entire life, who only sees television images of the world in black and white. Mary develops a full mastery of all natural sciences, including physics and neurobiology. In particular, Mary has a full knowledge of the neurophysiology underlying color vision and the physics of color. But when Mary leaves her black and white room, and sees red for the first time, intuitively, she acquires new knowledge. If so, according to Jackson, not all knowledge-that is knowledge of propositions about the physical world.
+
+According to Lewis, the correct account of Jackson’s knowledge argument is that Mary does not gain new knowledge-that when she leaves her black and white room, but only knowledge-how. In particular, she gains knowledge how to recognize, remember, and imagine experiences of red. Our discussion shows, however, that Lewis’s account is incorrect. Knowing how to imagine red and knowing how to recognize red are both examples of knowledge-that. For example, $x$’s knowing how to imagine red amounts to knowing a proposition of the form ‘$w$ is a way for $x$ to imagine red’, entertained under a guise involving a practical mode of presentation of a way.
+
+There is perhaps a fallback position available to Lewis. According to it, all we have shown is that Lewis has misappropriated the expression ‘knowledge-how’. If so, then Lewis can simply give up this locution, and recast his account purely in terms of abilities. On this account, what Mary gains is not knowledge-how, but rather simply new abilities. Indeed, this “ability” analysis of the knowledge argument is the now standard response to the knowledge argument. It occurs not only in Lewis, but also in quite influential work by others.48
+
+There are two ways to develop this fallback position. According to the first, there is no knowing how to imagine an experience of red. There is just being able to imagine an experience of red. If so, then Mary does not gain any new knowledge-how, but only a new ability. But this position is not a plausible response to Jackson’s argument against physicalism. For the ability to imagine an experience of red is clearly an ability to perform an intentional action. And we do find it very plausible that intentional actions are employments of knowledge-how. Indeed, as discussed in section i, the thesis that intentional actions are employments of knowledge-how is precisely what accounts for the initial plausibility of Ryle’s original argument against the claim that knowledge-how is a species of knowledge-that. But if intentional actions are in fact employments of knowledge-how, then Mary’s acquisition of an ability to imagine an experience of red brings with it knowledge how to imagine red, and with it, a bit of propositional knowledge that she previously lacked.
+
+Indeed, independently of any general thesis about intentional action, it is plausible that the ability to imagine an experience of red entails knowing how to imagine an experience of red. For example, intuitively, the best explanation of why Mary lacks the ability to imagine an experience of red in her black and white room is that she does not know how to do so.
+
+The second way to develop this fallback position is to grant to Mary, in her black and white room, knowledge how to imagine an experience of red. What Mary then gains upon emerging from her black and white room is the ability to employ this knowledge. Our problem with this response is straightforward. It seems absurd to countenance the truth of:
+
+(54)
+Mary knows how to imagine an experience of red.
+
+with respect to the situation in which Mary is in her black and white room. If she knows how to imagine an experience of red, why is she unable to imagine such an experience? Evidence for the robustness of the intuition that Mary does not know how to imagine an experience of red is the fact that, throughout the literature, the falsity of (54) with respect to the envisaged situation is assumed.
+
+Therefore, the ability account of Jackson’s knowledge argument fails to show that Mary does not acquire propositional knowledge that she did not previously possess upon leaving her black and white room. Indeed, assuming that Mary did not possess the requisite knowledge-how already, the ability account in fact entails that Mary acquires propositional knowledge upon leaving her black and white room.
+
+Another use of Ryle’s distinction between knowledge-how and knowledge-that occurs in Devitt’s discussion of linguistic competence (op. cit.), where one of his central purposes is to undermine a doctrine he calls “Cartesianism.” This doctrine is characterized in several nonequivalent ways. But one way in which it is characterized, to which Devitt repeatedly returns, is that linguistic competence with a term entails possession of propositional knowledge about its meaning (ibid., pp. 26-27; 52, note 4; 173). Devitt attempts to undermine this view by appeal to Ryle’s distinction. According to Devitt, someone who knows the meaning of a term knows how to use that term with a certain meaning. But this knowledge-how does not thereby grant the user of the term any propositional knowledge. It follows, according to Devitt, that “There is no good reason to suppose that a person who is competent with a sentence—who has the ability to use it with a certain meaning—must thereby have any propositional knowledge about what constitutes its meaning” (ibid., p. 173).
+
+Devitt is never very explicit about what sort of knowledge-how is to be identified with competence with a term. But, as the last quotation suggests, competence with a term $t$ at least involves knowing how to use $t$ with a certain meaning, presumably the meaning it actually has. But if competence with a term $t$ involves knowing how to use $t$ with the meaning it actually has, then linguistic competence with a term does, on Devitt’s own characterization, yield propositional knowledge about the meaning of that term. For, given a term $t$ which has a certain meaning $m$, $x$’s knowing how to use $t$ with the meaning $m$ amounts, for some contextually relevant way $w$, to $x$’s knowing that $w$ is a way for $x$ to use $t$ with the meaning $m$. So, Devitt’s own characterization of competence commits him to the doctrine he labels “Cartesianism.”
+
+We began this discussion by rejecting the original arguments that motivated the alleged distinction between knowing-how and knowing-that. We then presented our own account of knowledge-how, according to which it is a species of knowledge-that, and justified it by appeal to well-entrenched doctrines of linguistic theory. Following this, we showed how our account smoothly explains all of the different phenomena that have led philosophers to embrace a false dichotomy between knowing-how and knowing-that.
+
+All knowing-how is knowing-that. Neglect of this fact impoverishes our understanding of human action, by obscuring the way in which it is informed by intelligence.
+
+# Acknowledgements
+
+Thanks to Ned Block, Chris Collins, Carl Ginet, Delia Graff, Jeff King, Ernie Lepore, Peter Ludlow, Jim Pryor, Robert van Rooy, Ian Rumfitt, Stephen Schiffer, Paul Snowdon, and Jonathan Vogel for helpful discussion. Thanks also to audiences at Columbia University, Oxford University, Université de Paris/Sorbonne, University College/Dublin, and the University of California/Davis.
+
+# Notes
+
+[1] Introduction to Andrew Pessin and Sanford Goldberg, eds., The Twin Earth Chronicles (Armonk, NY: Sharpe, 1996), pp. xv-xxii.
+
+[2] “What Experience Teaches,” in William G. Lycan, ed., Mind and Cognition: A Reader (Cambridge: Blackwell, 1990), pp. 499-519.
+
+[3] Coming to Our Senses (New York: Cambridge, 1996).
+
+[4] “Knowing How and Knowing That,” in his Collected Papers, Volume 2 (New York: Barnes and Nobles, 1971), pp. 212-25 [hereafter Ryle I], and The Concept of Mind (Chicago: University Press, 1949) [hereafter Ryle II], chapter 2.
+
+[5] Knowledge and the State of Nature (New York: Oxford, 1990).
+
+[6] Ryle’s discussion is standardly taken to show that knowing-how is not a species of knowing-that. But his “intellectualist legend” might involve special objectionable features beyond the thesis that knowing-how is a species of knowing-that, and he may have intended his argument also to tell against these additional features. Be that as it may, these passages are standardly taken to demonstrate that knowing-how is not a species of knowing-that. Our purpose in what follows is to investigate whether this argument establishes the conclusion it is usually taken to establish, and not whether it is successful against the opponent Ryle intended. Thanks to Paul Snowdon for discussion here.
+
+[7] Knowledge, Perception, and Memory (Boston: Reidel, 1975). Two other important defenses of the thesis that knowledge-how is a species of knowledge-that are to be found in David Brown, “Knowing How and Knowing That, What,” in O. P. Wood and George Pitcher, eds., Ryle (London: Macmillan, 1970), pp. 213-48; and Jaakko Hintikka, “Different Constructions in Terms of the Basic Epistemological Verbs,” in his The Intentions of Intentionality and Other New Models for Modalities (Boston: Reidel, 1975), pp. 1-25 (cf. pp. 11-14), though Hintikka is less explicit about whether all cases of knowledge-how can be so characterized.
+
+[8] Thanks to Jeff King for the example.
+
+[9] Cf. also Paul Ziff, Epistemic Analysis (Boston: Reidel, 1984), p. 71.
+
+[10] “The Logic of Knowing How and Ability,” Mind, lxxxviii (1979): 394-409, and “Knowledge in Practice,” American Philosophical Quarterly, xviii (1981): 53-61.
+
+[11] Connectionism and the Mind (Cambridge: Blackwell, 1991). Assuming propositions to be nonlinguistic entities, as we do, there is an obvious use-mention difficulty in Bechtel and Abrahamsen’s claim. Nonetheless, their intent is clear.
+
+[12] We have not included, on this list, sentences involving ‘whether’, such as ‘Hannah knows whether to eat meat on Sundays’. The reason is that ‘whether’ is sufficiently syntactically distinct from ‘how’, ‘who’, ‘where’, ‘why’, and ‘which’ so that incorporation of it would distract from the discussion to follow. Unlike these words, ‘whether’ is commonly thought not to undergo movement, but rather to be generated in the position it appears to have on the surface. Furthermore, constructions such as ‘Hannah knows whether or not to eat meat on Sundays’ are grammatical, while ‘John knows who or not to call’ or ‘John knows how or not to ride a bicycle’ are not. These syntactic differences do not, however, affect the standard semantics for embedded questions; ‘Hannah knows whether to eat meat on Sundays’ receives the same semantic treatment as (4a-d).
+
+[13] Ryle himself noticed this point, mentioning it as a “parallel” between knowing-how and knowing-that (Ryle II, p. 28). In the next paragraph, he points to the fact that we never speak of ‘believing how’ as a “divergence” between knowing-how and knowing-that. But the reason we never speak of ‘believing how’ is simply that ‘believes’ does not take embedded questions (cf. the oddity of ‘John believes why to vote for Gore’). Though we may speak of ‘believing what John says’, the ‘what’ here is the relative pronoun ‘what’ (as in ‘whatever’); what we have in this construction is a noun phrase complement of ‘believe’, rather than an embedded question.
+
+[14] When it is unnecessary, we shall omit reference to the traces of movement in the discussion to follow.
+
+[15] “Syntax and Semantics of Questions,” Linguistics and Philosophy, i (1977): 3-44. As Jeroen Groenendijk and Martin Stokhof have written in a recent comprehensive survey of the literature on the topic—“Questions,” in Van Benthem and Ter Meulen, eds., Handbook of Logic and Language (Cambridge: MIT, 1997), pp. 1055-124, Karttunen’s approach “is probably the most influential analysis in the semantics literature to date” (p. 1105).
+
+[16] Two other now classical theories of questions are: C.L. Hamblin, “Questions in Montague English,” Foundations of Language, x (1973): 41-53; and James Higginbotham and Robert May, “Questions, Quantifiers, and Crossing,” Linguistic Review, i (1981): 41-79. But both these theories are more concerned with unembedded questions. Higginbotham and May’s discussion also mainly involves topics irrelevant to our central concerns, such as the difficulties involved in interpreting questions containing multiple wh-phrases.
+
+[17] The point that ascriptions of knowledge-who, knowledge-what, knowledge-when, and knowledge-where are fundamentally ascriptions of propositional knowledge of course antecedes Karttunen by many years in the philosophy literature. For one quite early reference, see Hintikka’s Knowledge and Belief: An Introduction to the Logic of the Two Notions (Ithaca: Cornell, 1962), pp. 131-32.
+
+Informally, this is how Karttunen’s semantics works. The question-embedding verb ‘know’, which we may symbolize as ‘$\mathrm{know}_q$’, takes two arguments, a person, and the set of propositions, which is the denotation of the embedded question (the set of true answers to that question). The lexical meaning of the question-embedding verb ‘know’ is such that $x$ stands in the relation expressed by ‘$\mathrm{know}_q$’ to a set of propositions if and only if $x$ knows all of the propositions in that set. Thus, on Karttunen’s view, while there is strictly speaking an ambiguity (or, more accurately, polysemy) between question-embedding uses of ‘know’ and normal clausal-complement uses of ‘know’, the former are analyzed in terms of the latter.
+
+[18] This point is standard in discussions of embedded questions; cf. Groenendijk and Stokhof, “Semantic Analysis of Wh-complements,” Linguistics and Philosophy, v (1982): 175-233, especially pp. 180-81.
+
+[19] What if there is no one Bill likes? The worry here is that sentence (9), ‘Hannah knows whom Bill likes’, will be trivially true relative to such a context. But (9) semantically presupposes that Bill likes someone. If this presupposition is not satisfied, no proposition is expressed. Karttunen and Groenendijk and Stokhof all assume that what appears to be a classical case of presupposition in fact is an implicature. But their central reasons seem just to stem from a general hostility to semantic presupposition (cf. Groenendijk and Stokhof, p. 184).
+
+[20] For example, adjuncts have slightly different movement properties from arguments, especially with regard to so-called “weak islands.” For one classic discussion of this topic, see Luigi Rizzi’s Relativized Minimality (Cambridge: MIT, 1990).
+
+[21] The example is from Noam Chomsky’s “On Binding,” Linguistic Inquiry, xi, 1 (1980); but this application of it is due to Maria Rita Manzini’s “On Control and Control Theory,” Linguistic Inquiry, xiv (1983): 421-46.
+
+[22] Cf. Brown, p. 240.
+
+[23] For example, consider the sentence ‘Hannah knows how $\mathrm{PRO}$ to ride a bicycle in New York City (namely carefully)’. Here, the infinitive has a clear ought-like modal force.
+
+[24] This is also the interpretation suggested by the brief but prescient discussion of the ‘knowing the way’ sense of ascriptions of knowledge-how in Hintikka, The Intentions of Intentionality, pp. 11-14.
+
+[25] Cf. Brown, p. 240.
+
+[26] Studies on the Semantics of Questions and the Pragmatics of Answers (University of Amsterdam Dissertation, 1984), chapter 6.
+
+[27] Incorporating this insight into Karttunen’s framework requires making a distinction between two question-embedding verbs, ‘$\mathrm{know}_{\forall}$’ and ‘$\mathrm{know}_{\exists}$’. Someone stands in the relation expressed by ‘$\mathrm{know}_{\exists}$’ to a set of propositions if and only if she knows at least one of the propositions in that set. For a discussion of how to incorporate the ‘mention-some’ readings of embedded questions into a semantic framework that is a development of Karttunen’s, see Groenendijk and Stokhof, ibid., pp. 528ff.
+
+[28] “The Prince and the Phonebook: Reporting Puzzling Beliefs,” this journal, lxxxvi, 12 (December 1989): 685-711.
+
+[29] Since ways are properties rather than particulars, such demonstrative reference involves deferred ostension to a property. That is, what Susan actually ostends is an instance of a way of riding a bicycle, and her demonstrative expression refers to a property of which that is an instance. But this does not prevent (25) from involving a de re mode of presentation of the property in question (that is, the way of riding a bicycle). To take a parallel example, suppose Susan, pointing at a brown chairs, utters ‘I know that that color sickens John’. Here, Susan’s demonstrative reference “exploits the presence of the sample” to refer to the color—John McDowell, Mind and World (Cambridge: Harvard, 1994), p. 57. But her utterance is still associated with a de re mode of presentation of the color; indeed, it is a paradigm example of such an association.
+
+[30] If someone entertained a way of riding a bicycle by possessing a complete physiological description of it, that might also give them de re knowledge of that way, though not under a practical mode of presentation. Whether or not it does depends upon what acquaintance with properties requires.
+
+[31] To say that there are such conventional connections does not preclude them from being of only pragmatic significance. As stated above, we are neutral on the issue of whether modes of presentation affect semantic content.
+
+[32] “Semantic Analysis of Wh-complements,” p. 185.
+
+[33] On Groenendijk and Stokhof’s theory, the semantic value of an embedded question is a propositional concept, a function from indices to propositions. But the question embedding verb ‘know’, on their view, is extensional. That is, it operates on the denotation of the propositional concept expressed by its embedded clause, relative to the world of context. The denotation of a propositional concept relative to a world of context is a proposition.
+
+[34] Like us, Brown (op. cit.) looks to linguistics for enlightenment about the true structure of constructions such as ‘Hannah knows how to ride a bicycle’. At the time at which Brown was writing, however, little progress had been made on the syntax and semantics of embedded questions. Brown nevertheless manages to make an impressive amount of progress on the topic, despite the lack of linguistic analyses available to him.
+
+[35] “The Problem of the Essential Indexical,” Noûs, xiii (1979): 3-21.
+
+[36] That ways would have to be linguistically describable in a manner in which the one to whom knowledge-how is ascribed would recognize is assumed in an argument against a variant of our view in Ziff, p. 70.
+
+[37] Thanks to Ian Rumfitt for pressing this concern.
+
+[38] Some philosophers reject modes of presentation altogether in the analysis of propositional attitudes, and so would not accept the Fregean arguments we have provided in the previous section for the existence of practical modes of presentation. Practical modes of presentation are not essential to our analysis, in the sense that a philosopher who rejects modes of presentation simpliciter may easily accept the rest of our analysis of knowing-how. For someone in this situation, this second worry of course does not arise at all.
+
+[39] Thanks to Alex Byrne and Dean Pettit for raising this concern.
+
+[40] For example, Ziff, who emphasizes the distinctions between (29) and (34c)—see p. 70.
+
+[41] For example, suppose Hannah sees a picture of a woman in the newspaper who appears to be buying a lottery ticket, and furthermore appears greatly burdened by poverty. On this basis, she forms the desire that the woman in the newspaper win the lottery. Hannah herself is quite happy with her middle-class salary, and rightly suspects that the accumulation of more money would make her into an unpleasant person. Unbeknownst to Hannah, however, the woman in the newspaper is Hannah herself, who was buying a pack of cigarettes, rather than buying a lottery ticket. With respect to this context,
+
+(a)
+Hannah wants to win the lottery.
+
+has only a false interpretation. Two facts explain the lack of a true interpretation. First, the structure of (a) is:
+
+(b)
+$\text{Hannah}_i$ wants [$\mathrm{PRO}_i$ to win the lottery].
+
+Second, ‘PRO’, when controlled by the subject in the main clause, permits only de se readings.
+
+[42] In certain languages, such as German, ‘wissen wie’, the translation of ‘to know how’, must always take a tensed clause as a complement. As a consequence, there is no direct German translation of constructions such as (29), though there are direct translations of constructions such as (34a-c). This distinction between English and German in no way indicates some deep conceptual difference between the English ‘know how’ and the German ‘wissen wie’. It merely reflects the brute syntactic fact that German embedded questions cannot occur in untensed clauses, no matter what the question-embedding verb may be.
+
+[43] Peter Ludlow has suggested to us that the intensionality in (42) and (43) is due to the fact that ‘locate’ is an intensional transitive verb. His suggested replacement for (42) is ‘Hannah knows how to blow up Hesperus’, which does not entail that Hannah knows how to blow up Phosphorus (perhaps she can only aim her rockets during a certain time of day).
+
+[44] “The Logic of Knowing How and Ability,” p. 407.
+
+[45] It may be that embedded questions seem less opaque than clausal complements not headed by question words. For example, ‘John knows where Cologne is’ seems less opaque than ‘John knows that Cologne is in Germany’. But this difference does not bear on the propositional nature of the construction. Thanks to King for discussion here.
+
+[46] According to Charlotte Katzoff—“Knowing How,” Southern Journal of Philosophy, xxii (1984): 61-69—such attributions of knowledge-how are infelicitous, because false. According to Katzoff, sucking is a basic action in Alvin Goldman’s sense. Furthermore, on her view, basic actions are not manifestations of knowledge-how. We disagree with Katzoff on this issue. We think that basic actions can be manifestations of knowledge-how. For example, one can sensibly ask a brain-damaged patient whether she still knows how to raise her arm. Knowledge of the relevant way of raising one’s arm is then demonstrated simply by raising one’s arm.
+
+[47] There are, of course, numerous other uses of the alleged distinction between knowledge-how and knowledge-that. One example is Adrian Moore, who uses the alleged distinction to argue that there is ineffable knowledge (for criticism, see Williamson, Review of Moore’s Points of View, Philosophical Books, xl (1999): 43-45). Another example is John Searle’s discussion of “The Background” in his Intentionality (New York: Cambridge, 1983). One quite recent example is Stephen Yalowitz—“A Dispositional Account of Self-Knowledge,” Philosophy and Phenomenological Research, lxi, 2 (2000): 249-78—who makes essential appeal to a nonpropositional notion of knowledge-how in responding to Crispin Wright’s arguments for a noncognitivist account of semantic self-knowledge (cf. pp. 270-71). There are more.
+
+[48] In particular, see Janet Levin, “Could Love Be Like a Heatwave? Physicalism and the Subjective Character of Experience,” Philosophical Studies, xlix (1986): 245-61, and Laurence Nemirow, “Physicalism and the Cognitive Role of Acquaintance,” in Lycan, ed., pp. 490-99.

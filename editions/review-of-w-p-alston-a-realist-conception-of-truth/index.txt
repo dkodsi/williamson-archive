@@ -1,0 +1,53 @@
+# Review of W.P. Alston, A Realist Conception of Truth
+
+Timothy Williamson
+
+The Journal of Philosophy 94 (2) (1997): 103–106.
+
+William Alston defends alethic realism, which he defines as the conjunction of two theses: (a) the realist conception of truth is the correct account of what it is for a proposition, statement, or belief to be true; (b) truth is important. The realist conception of truth is in turn summarized by a substitutionally quantified biconditional (28):
+
+RCT
+$(p)$ The proposition that $p$ is true iff $p$.
+
+Alston is willing to go beyond RCT to a minimalist correspondence account (38):
+
+MCA
+$(p)$ If the proposition that $p$ is true it is made true by the fact that $p$.
+
+He gives no account of facts, except to insist that they need not be mere shadows of propositions. He explains the application of ‘true’ to sentences as derivative from its application to the propositions that they express.
+
+Alston usefully distinguishes between the concept and the property of truth. He intends RCT and MCA as accounts of the ordinary concept of truth, not of the property that it picks out. He allows that another concept of truth might pick out the same property by specifying its hidden essence; for example, the concept might embody a rich theory of facts. In this sense, Alston is a minimalist about the concept of truth, but not about the property of truth.
+
+Does reference to the property of truth have explanatory value? In defending the importance of truth, the second conjunct of alethic realism, Alston uses considerations like this: when I act on a belief, I am more likely to achieve my goal if the belief is true. Minimalists about the property of truth object that the reference to truth is redundant, for it would have sufficed to say: when I act on a belief that $p$, I am more likely to achieve my goal if $p$. Alston replies that the disappearance of truth is only apparent. He claims that the generalizations in which ‘true’ does not occur are synonymous with generalizations in which it does, so the former employ the concept of truth just as the latter do (238). Thus, (1) must be equated in meaning with (2):
+
+(1)
+$(p)$ When I act on a belief that $p$, I am more likely to succeed if $p$.
+(2)
+$(p)$ When I act on a belief that $p$, I am more likely to succeed if that $p$ is true.
+
+The quantifier ‘$(p)$’ in (1) is substitutional, so ‘$(p)$’ had better be substitutional in (2), too. The phrase ‘that $p$’ in (2) refers to a proposition; otherwise, ‘is true’ does not have the sense in which Alston is interested. Presumably, (1) and (2) are synonymous only if their corresponding substitution instances are synonymous, and those substitution instances are synonymous only if their corresponding constituents are synonymous. Thus, (1) and (2) are synonymous only if the result of substituting ‘Caesar was murdered’ for ‘$p$’ in the matrix of (1) is synonymous with the result of making the same substitution in (2), which is so only if the result of substituting ‘Caesar was murdered’ for ‘$p$’ in ‘$p$’ is synonymous with the result of making the same substitution in ‘that $p$ is true’, that is, only if ‘Caesar was murdered’ is synonymous with ‘That Caesar was murdered is true’. But elsewhere in the book Alston denies that ‘Caesar was murdered’ has the same content as ‘The proposition that Caesar was murdered’, on the grounds that only the latter is about a proposition (47). By the same token, ‘Caesar was murdered’ is not synonymous with ‘That Caesar was murdered is true’; if they were synonymous, truth would not be a genuine property, which Alston insists that it is. Thus, (1) is not synonymous with (2). Although they are no doubt logically equivalent, that is not enough for Alston’s defense of the importance of truth. That (1) is logically equivalent to something that employs the concept of truth does not entail that (1) itself employs the concept of truth, any more than the fact that (1) is logically equivalent to something that employs the concept of butter entails that (1) itself employs the concept of butter.1 No alternative to (2) would do better for Alston; if any sentence in which truth is explicitly predicated of a proposition is synonymous with (1), (2) is.2 Thus, Alston’s defenses of the two conjuncts of alethic realism seem to conflict with each other.
+
+Truth is important in at least this sense: there is an important difference between cases of true belief and cases of false belief. But it does not follow that we can distinguish between the two kinds of case only by referring to the property of truth. There is an important difference between cases in which the set of one’s friends is the null set and cases in which it is not, but we can distinguish between the two kinds of case without referring to the null set.
+
+Much of the book is a response to Brand Blanshard, Michael Dummett, and Hilary Putnam, who proposed epistemic accounts of truth. Alston has many effective points to make. The main focus of his attack is on epistemic accounts of the ordinary concept of truth. Some verificationists might accept RCT as an account of the ordinary concept, but insist that for some epistemic concept $E$ (for example, justifiability in ideal epistemic conditions) we can know a priori that the ordinary concept and $E$ pick out the same property. Alston argues much more tentatively against such epistemic accounts of the property of truth, suggesting that some highly theoretical propositions may be true without falling under $E$ (203). Surprisingly, he does not consider examples used by Frederic Fitch, Bill Hart, and others. Let $p$ be the proposition expressed by the sentence ‘The number of hairs now on my head is even and no one will ever be justified in believing that the number of hairs now on my head is even’, and $q$ the corresponding proposition when ‘odd’ replaces ‘even’. The number is either even or odd. Since no one will in fact bother to count, no one will ever be justified in having a belief either way. Thus, either $p$ is true or $q$ is. But no one could be justified in believing either proposition, even in ideal epistemic conditions: if someone were, the second conjunct would be false, so the whole proposition would be, contrary to the epistemic account of the property of truth.3
+
+There are some lapses. Alston argues that Dummett’s verification-conditional semantics cannot use defeasible verification conditions:
+
+the statement of a set of confirming conditions, $\mathrm{C}$, for a putatively non-conclusively verifiable sentence, $\mathrm{S}$, is itself conclusively verifiable. But by the terms of verificationist semantics the statement of $\mathrm{C}$ is synonymous with $\mathrm{S}$, since $\mathrm{C}$ is what specifies $\mathrm{S}$’s meaning. Therefore $\mathrm{S}$ is conclusively verifiable after all. Hence there can be no merely defeasibly verifiable meaningful sentences on this semantics. Q.E.D. (127).
+
+This confuses specifying the meaning of $S$ with providing a synonym of $S$. The verificationist semantics might entail something of this form about $S$, where ‘$c$’ states $C$:
+
+VS
+$S$ is confirmed when and only when $c$.
+
+Since Dummettian verificationists suppose verification conditions to be epistemically unproblematic, they will grant that when $c$, it is conclusively verifiable that $c$, as the first quoted sentence says. Since they will also grant that competent speakers of the language implicitly know VS, it is conclusively verifiable that $S$ is confirmed when and only when it is conclusively verifiable that $c$. Putting these pieces together with VS, one concludes that when $S$ is confirmed, it is conclusively verifiable that $S$ is confirmed. What one cannot conclude is that when $S$ is confirmed, $S$ itself is conclusively verifiable. VS does not make $S$ and ‘$c$’ synonymous. For example, it does not imply that they have the same disconfirmation conditions.
+
+I have concentrated on points of disagreement. Much in the book deserves agreement and applause; it is argued with care, subtlety, and good sense. If the ordinary concept of truth is not a very exciting one, that is not Alston’s fault; it is just part of what he is telling us.
+
+# Notes
+
+[1] If a substitutionally universal generalization is synonymous with the infinite conjunction of its instances, then (1) employs the concept of truth, because some of its instances do. For the same reason, (1) employs the concept of butter; such considerations do not show that truth is more important than butter.
+
+[2] In Alston’s own example, he claims synonymy between (3) ‘For any $p$ if $p$ is asserted in the book, $p$’ and (4) ‘Everything asserted in the book is true’. (3) is ill formed, since ‘$p$’ occurs in both name and sentence position; presumably ‘$p$ is asserted’ should be ‘that $p$ is asserted’ and ‘For any $p$’ is a substitutional quantifier. Alston does not say whether the quantification in (4) is substitutional, but a difference in type of quantification would be hard to reconcile with the claimed synonymy.
+
+[3] Such propositions are counterexamples to Alston’s claim that ‘The proposition that $p$ would be known by an omniscient being iff $p$’ is analytically true (53), unless there actually is an omniscient being.

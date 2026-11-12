@@ -1,0 +1,459 @@
+# Strong Boethius’ Thesis and Consequential Implication
+
+Claudio Pizzi and Timothy Williamson
+
+Journal of Philosophical Logic 26 (1997): 569–588.
+
+ABSTRACT. The paper studies the relation between systems of modal logic and systems of consequential implication, a non-material form of implication satisfying “Aristotle’s Thesis” ($p$ does not imply not $p$) and “Weak Boethius’ Thesis” (if $p$ implies $q$, then $p$ does not imply not $q$). Definitions are given of consequential implication in terms of modal operators and of modal operators in terms of consequential implication. The modal equivalent of “Strong Boethius’ Thesis” (that $p$ implies $q$ implies that $p$ does not imply not $q$) is identified.
+
+§0
+
+Consider the following claims about an intuitively conceived relation of implication:
+
+(1)
+No proposition implies its own negation.
+(2)
+No proposition implies each of two contradictory propositions.
+(3)
+No proposition implies every proposition.
+(4)
+No proposition is implied by every proposition.
+
+(1) is often called “Aristotle’s Thesis”. (2) will be called here “Weak Boethius’ Thesis”; it has received several names in literature, being called the “Law of Conditional Contrariety” in Angell (1978), “Strawson’s Principle” in Routley et al. (1982) and simply “Boethius’ Thesis” in Pizzi (1977). As these names and the connection between (3)–(4) and so-called paradoxes of implication suggest, (1)–(4) have often been found plausible in the history of logic, although the historical details cannot be discussed here. Strict implication, the necessitation of material implication, is well known to violate each of (1)–(4). However, it does so only when it links propositions of different modal status (as necessary, contingent or impossible). We might therefore introduce a notion of analytic consequential implication which holds between a pair of propositions just in case (i) the first strictly implies the second and (ii) they have the same modal status. This definition corresponds to the formula $□ (p\supset q)\wedge (□ p\equiv □ q)\wedge (◇ p\equiv ◇ q)$, which is equivalent to $□ (p\supset q)\wedge (□ q\supset □ p)\wedge (◇ q\supset ◇ p)$ in any normal modal logic. Moreover, analytic consequential implication is easily seen to satisfy (1)–(4) in any normal modal logic with the $\mathrm{D}$ theorem $□ p\supset ◇ p$. It deserves independent investigation, not because there is anything “wrong” with strict implication (indeed, strict implication turns out to be definable in terms of analytic consequential implication), but because the former enables one to explore a range of intuitions which the latter does not capture. Moreover, ascriptions of analytic consequential implication are more informative than ascriptions of mere strict implication. See Pizzi (1977, 1991) and (1993) for more discussion.
+
+Naturally, analytic consequential implication does not satisfy every principle that strict implication satisfies. For example, strict implication satisfies the law of conjunctive simplification, in the sense that a conjunction strictly implies each of its conjuncts. Analytic consequential implication does not satisfy the law of conjunctive simplification, because an impossible conjunction may have necessary or contingent conjuncts (that someone is a married bachelor does not analytically consequentially imply that someone is married). Again, strict implication satisfies the law of factor, in the sense that if a proposition $p$ strictly implies a proposition $q$ then the conjunction of $p$ with a proposition $r$ strictly implies the conjunction of $q$ with $r$. Analytic consequential implication does not satisfy the law of factor, because the second and third propositions may be compossible while the first and third are not (that someone is a bachelor analytically consequentially implies that someone is a male, but that someone is a married bachelor does not analytically consequentially imply that someone is a married male); the restriction of the law to the case in which the first and third propositions are compossible is satisfied. In compensation, analytic consequential implication satisfies laws that strict implication does not satisfy: for example, Aristotle’s Thesis and Weak Boethius’ Thesis. If analytic consequential implication is symbolized by $\rightarrow$, those theses are expressed by the formulas $\neg (p\rightarrow \neg p)$ and $(p\rightarrow q)\supset \neg (p\rightarrow \neg q)$ respectively.
+
+In modal logic, the mathematically appropriate notion of a normal system does not impose the $\mathrm{T}$ theorem $□ p\supset p$, or even the weaker $\mathrm{D}$ theorem, and therefore generalizes well beyond the intuitive notions of possibility and necessity. We follow the same procedure here, and regard the formula $□ (p\supset q)\wedge (□ q\supset □ p)\wedge (◇ q\supset ◇ p)$ in a normal modal system as defining a form of analytic consequential implication even when $\mathrm{D}$ is not a theorem, and (1)–(4) therefore fail.
+
+Each modal logic generates a corresponding logic of analytic consequential implication. One can also work in the opposite direction, for $□ p$ is definable as $\top \rightarrow p$, where $\top$ is a constant truth of logic; thus each logic of analytic consequential implication generates a corresponding modal logic. §1 establishes a one-one correspondence between normal systems of modal logic and systems in the language of $\rightarrow$ that are normal in a sense to be defined.
+
+The most recent ancestor of consequential implication is so-called connexive implication, the study of which, however, has never been treated as a branch of modal logic. The idea embodied in (1) has frequently been formulated by connexive logicians in the form:
+
+(SBT)
+$(p\rightarrow q)\rightarrow \neg (p\rightarrow \neg q)$
+
+It is here called “Strong Boethius’ Thesis”. In normal systems in the language of $\rightarrow$ with the theorem $(p\rightarrow q)\supset (p\supset q),(\mathrm{SBT})$ causes the analogue of modal collapse (Proposition 3.19; see also Pizzi (1996)). However, the weakest normal system with $(\mathrm{SBT})$ as a theorem corresponds to the non-trivial modal logic $\mathrm{Kdf}$, which is identified in §2; it will be shown that the converse of $(\mathrm{SBT})$ is not derivable in this system (Proposition 3.15). This paper may be considered as a first contribution to the modal treatment of logics intermediate between logics of consequential implication and connexive logics. Although the modal logics of interest lack the $\mathrm{T}$ theorem $□ p\supset p$, and are therefore not plausible as complete logics of necessity in the usual sense, the notion defined by the formula $□ (p\supset q)\wedge (□ p\equiv □ q)\wedge (◇ p\equiv ◇ q)$ is still of interest in, for example, deontic logics and logics of provability, which lack the $\mathrm{T}$ theorem.
+
+In §4, a notion of synthetic consequential implication is also defined. The distinction between analytic and synthetic consequential implication is inspired by the medieval distinction between consequential bona simpliciter and consequentia bona ut nunc (Kneale and Kneale 1984: 274–297). It models the distinction between conditionals whose truth-value depends only on the intrinsic relation between the two clauses and those whose truth-value depends on extrinsic contextual factors. Extensions of some of the results of §§1–3 to synthetic consequential implication are briefly sketched.
+
+§1
+
+$\mathrm{L}$ is the propositional language with propositional variables $p_{0},p_{1},p_{2}$, … whose only primitive functors are $\bot$ (the 0-place falsity constant) and $\supset$ (material implication). Other truth-functors $(\top ,\neg ,\wedge ,\vee ,\equiv )$ are used as metalinguistic abbreviations in the usual ways. Parentheses will be omitted under the usual conventions. $\mathrm{L}_{□}$ is the result of extending $\mathrm{L}$ by the 1-place functor $□$ ($◇$ is a metalinguistic abbreviation for $\neg □ \neg$). $\mathrm{L}_{\rightarrow}$ is the result of extending $\mathrm{L}$ by the 2-place functor $\rightarrow$. $p,q,r$, … are arbitrary distinct propositional variables; $\alpha ,\beta ,\gamma$, … are arbitrary formulas of $\mathrm{L}_{□}$ or $\mathrm{L}_{\rightarrow}$, depending on context. A language is identified with the set of its sentences.
+
+A mapping $\phi$ form $\mathrm{L}_{\rightarrow}$ to $\mathrm{L}_{□}$ is defined inductively thus:
+
+$\begin{aligned}\phi p&=p \\ \phi \bot &=\bot \\ \phi (\alpha \supset \beta )&=\phi \alpha \supset \phi \beta \\ \phi (\alpha \rightarrow \beta )&=□ (\phi \alpha \supset \phi \beta )\wedge (□ \phi \beta \supset □ \phi \alpha )\wedge (◇ \phi \beta \supset ◇ \phi \alpha )\end{aligned}$
+
+In the reverse direction, a mapping $\psi$ from $\mathrm{L}_{□}$ to $\mathrm{L}_{\rightarrow}$ is defined inductively thus:
+
+$\begin{aligned}\psi p&=p \\ \psi \bot &=\bot \\ \psi (\alpha \supset \beta )&=\psi \alpha \supset \psi \beta \\ \psi □ \alpha &=\top \rightarrow \psi \alpha\end{aligned}$
+
+Note that $\phi$ and $\psi$ are not mutually inverse; for example, $\phi \psi □ p=□ (\top \supset p)\wedge (□ p\supset □ \top )\wedge (◇ p\supset ◇ \top )\ne □ p$. However, $\alpha \equiv \phi \psi \alpha$ for each $\alpha \in \mathrm{L}_{□}$ will be a theorem of suitably chosen systems in $\mathrm{L}_{□}$; similarly, $\alpha \equiv \psi \phi \alpha$ for each $\alpha \in \mathrm{L}_{\rightarrow}$ will be a theorem of suitably chosen systems in $\mathrm{L}_{\rightarrow}$.
+
+Suppose that $\mathrm{X}\subseteq \mathrm{L}_{\rightarrow}$ and $\mathrm{Y}\subseteq \mathrm{L}_{□}$. Then $\mathrm{X}$ translates $\mathrm{Y}$ just in case for all $\alpha \in \mathrm{L}_{\rightarrow},\alpha \in \mathrm{X}$ if and only if $\phi \alpha \in \mathrm{Y}$. $\mathrm{Y}$ translates $\mathrm{X}$ just in case for all $\alpha \in \mathrm{L}_{□},\alpha \in \mathrm{Y}$ if and only if $\psi \alpha \in \mathrm{X}$. Note that for each $\mathrm{Y}\subseteq \mathrm{L}_{□}$ there is exactly one $\mathrm{X}\subseteq \mathrm{L}_{\rightarrow}$ such that $\mathrm{X}$ translates $\mathrm{Y}$. Similarly, for each $\mathrm{X}\subseteq \mathrm{L}_{\rightarrow}$ there is exactly one $\mathrm{Y}\subseteq \mathrm{L}_{□}$ such that $\mathrm{Y}$ translates $\mathrm{X}$. It is not in general the case that for each $\mathrm{Y}\subseteq \mathrm{L}_{□}$ there is exactly one $\mathrm{X}\subseteq \mathrm{L}_{\rightarrow}$ such that $\mathrm{Y}$ translates $\mathrm{X}$, or that for each $\mathrm{X}\subseteq \mathrm{L}_{\rightarrow}$ there is exactly one $\mathrm{Y}\subseteq \mathrm{L}_{□}$ such that $\mathrm{X}$ translates $\mathrm{Y}$, for translation is not in general symmetric. However, special conditions will be identified under which it is symmetric.
+
+A normal system in $\mathrm{L}_{□}$ is a set $\mathrm{Y}\subseteq \mathrm{L}_{□}$ containing all truth-functional tautologies in $\mathrm{L}_{□}$ and $□ (p\supset q)\supset (□ p\supset □ q)$ and closed under Uniform Substitution (US), Modus Ponens (MP) for $\supset$ and Necessitation (if $\alpha \in \mathrm{Y}$ then $□ \alpha \in \mathrm{Y}$). The smallest normal system in $\mathrm{L}_{□}$ is $\mathrm{K}$. A normal system in $\mathrm{L}_{\rightarrow}$ is a set $X\subseteq L_{\rightarrow}$ containing all truth-functional tautologies and the following formulas
+
+(a)
+$((p\rightarrow q)\wedge (q\rightarrow r))\supset (p\rightarrow r)$
+(b)
+$((\top \rightarrow (p\supset q))\wedge \neg (\top \rightarrow \neg p)\wedge \neg (\top \rightarrow q))\supset (p\rightarrow q)$
+(c)
+$\neg (\top \rightarrow \neg (p\wedge r))\supset ((p\rightarrow q)\supset ((p\wedge r)\rightarrow (q\wedge r)))$
+(d)
+$(\neg p\rightarrow \neg q)\supset (q\rightarrow p)$
+(e)
+$(p\rightarrow \bot )\supset (\bot \rightarrow p)$
+(f)
+$(\bot \rightarrow p)\supset (p\rightarrow \bot )$
+(g)
+$p\rightarrow p$
+
+and closed under US, MP for $\supset$ and the congruence rule for $\rightarrow ,\mathrm{Eq}\rightarrow$, that if $\mathrm{X}$ contains $\alpha \equiv \alpha '$ and $\beta \equiv \beta '$ then it also contains $(\alpha \rightarrow \beta )\equiv (\alpha '\rightarrow \beta ')$. By a routine induction on the complexity of formulas, any normal system in $\mathrm{L}_{\rightarrow}$ admits the replacement of proved material equivalents. The smallest normal system in $\mathrm{L}_{\rightarrow}$ is $\mathrm{CIw}$. The first main task is to show the connection between the two notions of normality, in particular between $\mathrm{CIw}$ and $\mathrm{K}$.
+
+PROPOSITION 1.0. If $\mathrm{Y}$ translates $\mathrm{X}$ and $\mathrm{X}$ is normal in $\mathrm{L}_{\rightarrow}$ then $\mathrm{Y}$ is normal in $\mathrm{L}_{□}$.
+
+Proof. Suppose that $\mathrm{Y}$ translates $\mathrm{X}$ and $\mathrm{X}$ is normal in $\mathrm{L}_{\rightarrow}$.
+
+(i) If $\alpha$ is a truth-functional tautology in $\mathrm{L}_{□}$, then $\psi \alpha$ is a truth-functional tautology in $\mathrm{L}_{\rightarrow}$ because $\psi$ commutes with $\bot$ and $\supset$, so $\psi \alpha \in \mathrm{X}$ because $\mathrm{X}$ is normal in $\mathrm{L}_{\rightarrow}$, so $\alpha \in \mathrm{Y}$ because $\mathrm{Y}$ translates $\mathrm{X}$.
+
+(ii) To show that $□ (p\supset q)\supset (□ p\supset □ q)$ is in $\mathrm{Y}$, we must show that $\psi (□ (p\supset q)\supset (□ p\supset □ q))=(\top \rightarrow (p\supset q))\supset ((\top \rightarrow p)\supset (\top \rightarrow q))$ is in $\mathrm{X}$. To do this, we first show that $(\top \rightarrow (p\wedge q))\supset ((\top \rightarrow p)\wedge (\top \rightarrow q))$ is in $\mathrm{X}$, as follows.
+
+(1)	$\begin{aligned}&\neg (\top \rightarrow \neg ((p \supset \neg q) \wedge (p \supset q))) \supset \\ &\quad (((p \supset \neg q) \rightarrow \bot ) \supset \\ &\quad (((p \supset \neg q) \wedge (p \supset q)) \rightarrow (\bot \wedge (p \supset q)))\end{aligned}$	Ax(c)[$(p \supset \neg q)/p$, $\bot /q$, $(p \supset q)/r$]
+(2)	$\neg (\top \rightarrow p) \supset (((p \supset \neg q) \rightarrow \bot ) \supset (\neg p \rightarrow \neg \top ))$	$1,\mathrm{Eq}$ $\rightarrow$
+(3)	$\neg (\top \rightarrow p) \supset ((\neg \bot \rightarrow \neg (p \supset \neg q)) \supset (\top \rightarrow p))$	2, Ax(d)
+(4)	$(\neg \bot \rightarrow \neg (p \supset \neg q)) \supset (\top \rightarrow p)$	3, PC
+(5)	$(\top \rightarrow (p \wedge q)) \supset (\top \rightarrow p)$	$4,\mathrm{Eq}$ $\rightarrow$
+
+Next, we show that $((\top \rightarrow p)\wedge (\top \rightarrow q))\supset (\top \rightarrow (p\wedge q))$ is in $\mathrm{X}$, as follows.
+
+(1)	$\begin{aligned}&\neg (\top \rightarrow \neg (\top \wedge p)) \supset ((\top \rightarrow q) \supset \\ &\quad ((\top \wedge p) \rightarrow (q \wedge p)))\end{aligned}$	Ax(c)[$\top /p$, $p/r$]
+(2)	$\neg (\top \rightarrow \neg p) \supset ((\top \rightarrow q) \supset (p \rightarrow (p \wedge q)))$	$2,\mathrm{Eq}$ $\rightarrow$
+(3)	$((\top \rightarrow p) \wedge (p \rightarrow (p \wedge q))) \supset (\top \rightarrow (p \wedge q))$	Ax(a)
+(4)	$\begin{aligned}&\neg (\top \rightarrow \neg p) \supset (((\top \rightarrow p) \wedge (\top \rightarrow q)) \supset \\ &\quad (\top \rightarrow (p \wedge q)))\end{aligned}$	2, 3 PC
+(5)	$(\top \rightarrow \neg p) \supset (p \rightarrow ((p \wedge q) \wedge \bot ))$	Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+(6)	$\begin{aligned}&((\top \rightarrow p) \wedge (p \rightarrow ((p \wedge q) \wedge \bot ))) \supset \\ &\quad (\top \rightarrow ((p \wedge q) \wedge \bot ))\end{aligned}$	Ax(a)
+(7)	$((\top \rightarrow p)\wedge (\top \rightarrow \neg p)) \supset (\top \rightarrow ((p\wedge q)\wedge \bot ))$	5, 6 PC
+(8)	$(\top \rightarrow ((p \wedge q) \wedge \bot )) \supset (\top \rightarrow (p \wedge q))$	Previous proof
+(9)	$(\top \rightarrow \neg p) \supset ((\top \rightarrow p) \supset (\top \rightarrow (p \wedge q)))$	7, 8 PC
+(10)	$((\top \rightarrow p) \wedge (\top \rightarrow q)) \supset (\top \rightarrow (p \wedge q))$	4, 9 PC
+
+We can now show that the desired formula is in $\mathrm{X}$, as follows.
+
+(1)	$\begin{aligned}&((\top \rightarrow p) \wedge (\top \rightarrow (p \supset q))) \supset \\ &\quad (\top \rightarrow (p \wedge (p \supset q)))\end{aligned}$	Previous proof
+(2)	$((\top \rightarrow p)\wedge (\top \rightarrow (p \supset q))) \supset (\top \rightarrow (q \wedge p))$	$1,\mathrm{Eq}$ $\rightarrow$
+(3)	$(\top \rightarrow (q \wedge p)) \supset (\top \rightarrow q)$	Earlier proof
+(4)	$(\top \rightarrow (p \supset q)) \supset ((\top \rightarrow p) \supset (\top \rightarrow q))$	2, 3 PC
+
+(iii) We must show that $\mathrm{Y}$ is closed under US. Let $\tau$ be a substitution in $\mathrm{L}_{□}$. There is a unique substitution $\sigma$ in $\mathrm{L}_{\rightarrow}$ such that $\sigma p=\psi \tau p$ for all atomic $p$. By a routine induction on the complexity of $\alpha ,\sigma \psi \alpha =\psi \tau \alpha$ for all $\alpha \in \mathrm{L}_{□}$. Now if $\alpha \in \mathrm{Y}$ then $\psi \alpha \in \mathrm{X}$ because $\mathrm{Y}$ translates $\mathrm{X}$, so $\sigma \psi \alpha \in \mathrm{X}$ because $\mathrm{X}$ is closed under US, so $\psi \tau \alpha \in \mathrm{X}$ by the fact just mentioned, so $\tau \alpha \in \mathrm{Y}$ because $\mathrm{Y}$ translates $\mathrm{X}$. Thus $\mathrm{Y}$ is closed under US.
+
+(iv) We must show that $\mathrm{Y}$ is closed under MP. If $\alpha$ and $\alpha \supset \beta$ are in $\mathrm{Y}$ then $\psi \alpha$ and $\psi (\alpha \supset \beta )=\psi \alpha \supset \psi \beta$ are in $\mathrm{X}$, which is closed under MP, so $\psi \beta$ is in $\mathrm{X}$, so $\beta$ is in $\mathrm{Y}$.
+
+(v) Finally, we must show that $\mathrm{Y}$ is closed under Necessitation. Suppose that $\alpha \in \mathrm{Y}$, so $\psi \alpha \in \mathrm{X}$. Hence $\top \equiv \psi \alpha$ is in $\mathrm{X}$; but $\psi \alpha \rightarrow \psi \alpha$ is in $\mathrm{X}$ by Ax(g), so $\top \rightarrow \psi \alpha =\psi □ \alpha$ is in $\mathrm{X}$ by $\mathrm{Eq}\rightarrow$, so $□ \alpha$ is in $\mathrm{Y}$. $\square$
+
+PROPOSITION 1.1. If $\vdash_{\mathrm{K}}\alpha$ then $\vdash_{\mathrm{CIw}}\psi \alpha$.
+
+Proof. Let $\mathrm{Y}=\{\alpha \in \mathrm{L}_{□}:\vdash_{\mathrm{CIw}}\psi \alpha \}$. By definition, $\mathrm{Y}$ translates $\mathrm{CIw}$, the smallest normal system in $\mathrm{L}_{\rightarrow}$. Thus by Proposition 1.0, $\mathrm{Y}$ is normal in $\mathrm{L}_{□}$. Since $\mathrm{K}$ is the smallest normal system in $\mathrm{L}_{□},\mathrm{K}\subseteq \mathrm{Y}$. Thus if $\vdash_{\mathrm{K}}\alpha$, then $\alpha \in \mathrm{Y}$, so $\vdash_{\mathrm{CIw}}\psi \alpha$. $\square$
+
+PROPOSITION 1.2. If $\mathrm{X}$ translates $\mathrm{Y}$ and $\mathrm{Y}$ is normal in $\mathrm{L}_{□}$ then $\mathrm{X}$ is normal in $\mathrm{L}_{\rightarrow}$.
+
+Proof. Suppose that $\mathrm{X}$ translates $\mathrm{Y}$ and $\mathrm{Y}$ is normal in $\mathrm{L}_{□}$.
+
+(i) If $\alpha$ is a truth-functional tautology in $\mathrm{L}_{\rightarrow}$ then $\alpha \in \mathrm{X}$ by an argument like (i) in the proof of 1.0.
+
+(ii) If $\alpha$ is one of (a)–(g) then $\vdash_{\mathrm{K}}\phi \alpha$, as can be checked by any decision procedure for $\mathrm{K}$ (Pizzi (1991) provides a detailed proof by the tableaux method of the corresponding result for $\mathrm{KT}$; it can easily be adapted to $\mathrm{K}$ by dropping the reflexivity requirement on tableaux). Since $\mathrm{Y}$ is normal, $\mathrm{K}\subseteq \mathrm{Y}$; thus $\phi \alpha \in \mathrm{Y}$, so $\alpha \in \mathrm{X}$ because $\mathrm{X}$ translates $\mathrm{Y}$.
+
+(iii) The proof that $\mathrm{X}$ is closed under US is like (iii) in the proof of 1.0.
+
+(iv) The proof that $\mathrm{X}$ is closed under MP for $\supset$ is like (iv) in the proof of 1.0.
+
+(v) Finally, we must show that $\mathrm{X}$ is closed under $\mathrm{Eq}\rightarrow$. Suppose that $\alpha \equiv \alpha '$ and $\beta \equiv \beta '$ are in $\mathrm{X}$. Thus $\phi \alpha \equiv \phi \alpha '$ and $\phi \beta \equiv \phi \beta '$ are in $\mathrm{Y}$. It follows by the normality of $\mathrm{Y}$ that $\phi ((\alpha \rightarrow \beta )\equiv (\alpha '\rightarrow \beta '))=(□ (\phi \alpha \supset \phi \beta )\wedge (□ \phi \beta \supset □ \phi \alpha )\wedge (◇ \phi \beta \supset ◇ \phi \alpha ))\equiv (□ (\phi \alpha '\supset \phi \beta ')\wedge (□ \phi \beta '\supset □ \phi \alpha ')\wedge (◇ \phi \beta '\supset ◇ \phi \alpha '))$ is in $\mathrm{Y}$. Thus $(\alpha \rightarrow \beta )\equiv (\alpha '\rightarrow \beta ')$ is in $\mathrm{X}$. $\square$
+
+PROPOSITION 1.3. If $\vdash_{\mathrm{CIw}}\alpha$ then $\vdash_{\mathrm{K}}\phi \alpha$.
+
+Proof. 1.3 is a Corollary of 1.2 in the same way as 1.1 is a corollary of 1.0. $\square$
+
+PROPOSITION 1.4. For all $\alpha \in \mathrm{L}_{\rightarrow},\vdash_{\mathrm{CIw}}\alpha \equiv \psi \phi \alpha$.
+
+Proof. We use induction on the complexity of $\alpha$. The only non-trivial case is the induction step for $\rightarrow$. Suppose that $\vdash_{\mathrm{CIw}}\alpha \equiv \psi \phi \alpha$ and $\vdash_{\mathrm{CIw}}\beta \equiv \psi \phi \beta$. By $\mathrm{Eq}\rightarrow ,\vdash_{\mathrm{CIw}}(\alpha \rightarrow \beta )\equiv (\psi \phi \alpha \rightarrow \psi \phi \beta )$. Thus it suffices to show that $\vdash_{\mathrm{CIw}}(\psi \phi \alpha \rightarrow \psi \phi \beta )\equiv \psi \phi (\alpha \rightarrow \beta )$. Now $\psi \phi (\alpha \rightarrow \beta )=(\top \rightarrow (\psi \phi \alpha \supset \psi \phi \beta ))\wedge ((\top \rightarrow \psi \phi \beta )\supset (\top \rightarrow \psi \phi \alpha ))\wedge (\neg (\top \rightarrow \neg \psi \phi \beta )\supset \neg (\top \rightarrow \neg \psi \phi \alpha ))$. Thus it suffices to show that $\vdash_{\mathrm{CIw}}(p\rightarrow q)\equiv ((\top \rightarrow (p\supset q))\wedge ((\top \rightarrow q)\supset (\top \rightarrow p))\wedge (\neg (\top \rightarrow \neg q)\supset \neg (\top \rightarrow \neg p)))$, by US. For this (i)–(iv) suffice.
+
+(i) $\vdash_{\mathrm{CIw}}((\top \rightarrow (p\supset q))\wedge ((\top \rightarrow q)\supset (\top \rightarrow p))\wedge ((\top \rightarrow \neg p)\supset (\top \rightarrow \neg q)))\supset (p\rightarrow q)$. Proof:
+
+(1)	$\begin{aligned}&((\top \rightarrow (p \supset q)) \wedge \neg (\top \rightarrow \neg p) \wedge \neg (\top \rightarrow q)) \supset \\ &\quad (p \rightarrow q)\end{aligned}$	Ax(b)
+(2)	$((\top \rightarrow p)\wedge (\top \rightarrow q)) \supset ((\neg p \rightarrow \bot )\wedge (\neg q \rightarrow \bot ))$	Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+(3)	$((\top \rightarrow p)\wedge (\top \rightarrow q)) \supset ((\bot \rightarrow \neg p)\wedge (\neg q \rightarrow \bot ))$	2 Ax(e)
+(4)	$((\top \rightarrow p) \wedge (\top \rightarrow q)) \supset (\neg q \rightarrow \neg p)$	3 Ax(a)
+(5)	$((\top \rightarrow p) \wedge (\top \rightarrow q)) \supset (p \rightarrow q)$	4 Ax(d)
+(6)	$((\top \rightarrow \neg p)\wedge (\top \rightarrow \neg q)) \supset ((p \rightarrow \bot )\wedge (q \rightarrow \bot ))$	Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+(7)	$((\top \rightarrow \neg p)\wedge (\top \rightarrow \neg q)) \supset ((p \rightarrow \bot )\wedge (\bot \rightarrow q))$	6 Ax(e)
+(8)	$((\top \rightarrow \neg p) \wedge (\top \rightarrow \neg q)) \supset (p \rightarrow q)$	7 Ax(a)
+(9)	$\begin{aligned}&((\top \rightarrow (p \supset q)) \wedge ((\top \rightarrow q) \supset (\top \rightarrow p))\wedge \\ &\quad ((\top \rightarrow \neg p) \supset (\top \rightarrow \neg q))) \supset (p \rightarrow q)\end{aligned}$	1, 5, 8 PC
+
+(ii) $\vdash_{\mathrm{CIw}}(p\rightarrow q)\supset(\top\rightarrow(p\supset q))$. Proof:
+
+(1)	$\begin{aligned}&\neg (\top \rightarrow \neg (p \wedge \neg q)) \supset ((p \rightarrow q) \supset ((p \wedge \neg q) \rightarrow \\ &\quad (q \wedge \neg q))\end{aligned}$	Ax(c)
+(2)	$\neg (\top \rightarrow (p \supset q)) \supset ((p \rightarrow q) \supset ((p \wedge \neg q) \rightarrow \bot ))$	$1,\mathrm{Eq}$ $\rightarrow$
+(3)	$((p \wedge \neg q) \rightarrow \bot ) \supset (\top \rightarrow (p \supset q))$	Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+(4)	$(p \rightarrow q) \supset (\top \rightarrow (p \supset q))$	2, 3 PC
+
+(iii) $\vdash_{\mathrm{CIw}}(p\rightarrow q)\supset((\top\rightarrow q)\supset(\top\rightarrow p))$. Proof:
+
+(1)	$\begin{aligned}&((p \rightarrow q) \wedge (\top \rightarrow q)) \supset ((\neg q \rightarrow \bot )\wedge \\ &\quad (\neg q \rightarrow \neg p))\end{aligned}$	Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+(2)	$\begin{aligned}&((p \rightarrow q) \wedge (\top \rightarrow q)) \supset ((\bot \rightarrow \neg q)\wedge \\ &\quad (\neg q \rightarrow \neg p))\end{aligned}$	1 Ax(e)
+(3)	$((p \rightarrow q) \wedge (\top \rightarrow q)) \supset (\bot \rightarrow \neg p)$	2 Ax(a)
+(4)	$((p \rightarrow q) \wedge (\top \rightarrow q)) \supset (\neg p \rightarrow \bot )$	3 Ax(f)
+(5)	$(p \rightarrow q) \supset ((\top \rightarrow q) \supset (\top \rightarrow p))$	4 Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+
+(iv) $\vdash_{\mathrm{CIw}}(p\rightarrow q)\supset((\top\rightarrow\neg p)\supset(\top\rightarrow\neg q))$. Proof:
+
+(1)	$(\top \rightarrow \neg p) \supset (p \rightarrow \bot )$	Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+(2)	$(\top \rightarrow \neg p) \supset (\bot \rightarrow p)$	1 Ax(e)
+(3)	$((\top \rightarrow \neg p) \wedge (p \rightarrow q)) \supset (\bot \rightarrow q)$	2 Ax(a)
+(4)	$((\top \rightarrow \neg p) \wedge (p \rightarrow q)) \supset (q \rightarrow \bot )$	3 Ax(f)
+(5)	$(p \rightarrow q) \supset ((\top \rightarrow \neg p) \supset (\top \rightarrow \neg q))$	4 Ax(d)$,\mathrm{Eq}$ $\rightarrow$
+
+$\square$
+
+PROPOSITION 1.5. For all $\alpha \in \mathrm{L}_{□},\vdash_{\mathrm{K}}\alpha \equiv \phi \psi \alpha$.
+
+Proof. We use induction on the complexity of $\alpha$. The only non-trivial case is the induction step for $□$. Suppose that $\vdash_{\mathrm{K}}\alpha \equiv \phi \psi \alpha$. Thus $\vdash_{\mathrm{K}}□ \alpha \equiv □ \phi \psi \alpha$. Thus it suffices to show that $\vdash_{\mathrm{K}}□ \phi \psi \alpha \equiv \phi \psi □ \alpha$. Now $\phi \psi □ \alpha =□ (\top \supset \phi \psi \alpha )\wedge (□ \phi \psi \alpha \supset □ \top )\wedge (◇ \phi \psi \alpha \supset ◇ \top )$. Thus, by US, it suffices to show that $\vdash_{\mathrm{K}}□ p\equiv (□ (\top \supset p)\wedge (□ p\supset □ \top )\wedge (◇ p\supset ◇ \top ))$, which is routine. $\square$
+
+PROPOSITION 1.6. $\mathrm{K}$ translates $\mathrm{CIw}$ and $\mathrm{CIw}$ translates $\mathrm{K}$.
+
+Proof. If $\vdash_{\mathrm{K}}\alpha$ then $\vdash_{\mathrm{CIw}}\psi \alpha$ by Proposition 1.1. Conversely, if $\vdash_{\mathrm{CIw}}\psi \alpha$ then $\vdash_{\mathrm{K}}\phi \psi \alpha$ by Proposition 1.3, so $\vdash_{\mathrm{K}}\alpha$ by Proposition 1.5. Thus $\mathrm{K}$ translates $\mathrm{CIw}$. By a similar argument, $\mathrm{CIw}$ translates $\mathrm{K}$. $\square$
+
+PROPOSITION 1.7. If $\mathrm{X}$ is normal in $\mathrm{L}_{\rightarrow}$ and $\mathrm{Y}$ is normal in $\mathrm{L}_{□}$, then $\mathrm{X}$ translates $\mathrm{Y}$ if and only if $\mathrm{Y}$ translates $\mathrm{X}$.
+
+Proof. Suppose that $\mathrm{X}$ translates $\mathrm{Y}$. For $\alpha \in \mathrm{L}_{□},\vdash_{\mathrm{K}}\alpha \equiv \phi \psi \alpha$ by Proposition 1.5, so $\alpha \equiv \phi \psi \alpha$ is in $\mathrm{Y}$ if $\mathrm{Y}$ is normal. Hence $\alpha \in \mathrm{Y}$ if and only if $\phi \psi \alpha \in \mathrm{Y}$. But $\psi \alpha \in \mathrm{X}$ if and only if $\phi \psi \alpha \in \mathrm{Y}$, because $\mathrm{X}$ translates $\mathrm{Y}$; hence $\alpha \in \mathrm{Y}$ if and only if $\psi \alpha \in \mathrm{X}$. Thus $\mathrm{Y}$ translates $\mathrm{X}$. The converse is similar. $\square$
+
+PROPOSITION 1.8. Suppose that $\mathrm{X}_{0}\subseteq \mathrm{L}_{\rightarrow};\mathrm{Y}_{0}\subseteq \mathrm{L}_{□};\mathrm{X}$ is the smallest normal system in $\mathrm{L}\rightarrow$ such that $\mathrm{X}_{0}\subseteq \mathrm{X};\mathrm{Y}$ is the smallest normal system in $\mathrm{L}_{□}$ such that $\mathrm{Y}_{0}\subseteq \mathrm{Y};\phi \alpha \in \mathrm{Y}$ whenever $\alpha \in \mathrm{X}_{0};\psi \alpha \in \mathrm{X}$ whenever $\alpha \in \mathrm{Y}_{0}$. Then $\mathrm{X}$ and $\mathrm{Y}$ translate each other.
+
+Proof. Make the suppositions. Set $\mathrm{X}^{\ast }=\{\alpha \in \mathrm{L}_{□}:\psi \alpha \in \mathrm{X}\}$ and $\mathrm{Y}^{\ast }=\{\alpha \in \mathrm{L}_{\rightarrow}:\phi \alpha \in \mathrm{Y}\}$. $\mathrm{X}^{\ast }$ translates $\mathrm{X}$. Since $\mathrm{X}$ is normal, $\mathrm{X}^{\ast }$ is normal by Proposition 1.0. But by supposition $\mathrm{Y}_{0}\subseteq \mathrm{X}^{\ast }$ and $\mathrm{Y}$ is the smallest normal system such that $\mathrm{Y}_{0}\subseteq \mathrm{Y}$, so $\mathrm{Y}\subseteq \mathrm{X}^{\ast }$. By similar reasoning $\mathrm{X}\subseteq \mathrm{Y}^{\ast }$. Now suppose that $\alpha \in \mathrm{X}^{\ast }$, i.e. $\psi \alpha \in \mathrm{X}$. Since $\mathrm{X}\subseteq \mathrm{Y}^{\ast },\psi \alpha \in \mathrm{Y}^{\ast }$, i.e. $\phi \psi \alpha \in \mathrm{Y}$. But $\mathrm{Y}$ contains $\alpha \equiv \phi \psi \alpha$ by Proposition 1.5, since $\mathrm{Y}$ is normal, so $\alpha \in \mathrm{Y}$. Thus $\mathrm{X}^{\ast }\subseteq \mathrm{Y}$, so $\mathrm{X}^{\ast }=\mathrm{Y}$. Thus $\mathrm{Y}$ translates $\mathrm{X}$, so $\mathrm{X}$ translates $\mathrm{Y}$ by Proposition 1.7. $\square$
+
+By the preceding results, $\phi$ and $\psi$ induce a one-correspondence between the normal systems in $\mathrm{L}_{\rightarrow}$ and the normal systems in $\mathrm{L}_{□}$. Each normal system in $\mathrm{L}_{\rightarrow}$ can be embedded in a normal system in $\mathrm{L}_{□}$ that can be embedded in it, and each normal system in $\mathrm{L}_{□}$ can be embedded in a normal system in $\mathrm{L}_{\rightarrow}$ that can be embedded in it (for the relevant notion of embedding see for instance Smirnov (1982)). In this sense, each normal system in $\mathrm{L}_{\rightarrow}$ is definitionally equivalent to a normal system in $\mathrm{L}_{□}$, and each normal system in $\mathrm{L}_{□}$ is definitionally equivalent to a normal system in $\mathrm{L}_{\rightarrow}$. In particular, $\mathrm{K}$ and $\mathrm{CIw}$ are definitionally equivalent systems. The study of normal systems in $\mathrm{L}_{\rightarrow}$ can in this sense be reduced to the study of normal systems in $\mathrm{L}_{□}$. However, when the philosophical motivation for studying normal systems in $\mathrm{L}_{\rightarrow}$ makes one of them salient, it is of some interest to identify in a perspicuous way the corresponding system in $\mathrm{L}_{□}$. The examples of the corresponding systems in $\mathrm{L}_{□}$ in this section are already familiar, but this is not true of the example in the next section.
+
+As one example, let $\mathrm{CI}$ be the smallest normal system in $\mathrm{L}_{\rightarrow}$ containing Weak Boethius’ Thesis $(p\rightarrow q)\supset \neg (p\rightarrow \neg q)$, and let $\mathrm{KD}$ be the smallest normal system in $\mathrm{L}_{□}$ containing $◇ \top$. It is useful to note that $\mathrm{CI}$ can also be characterized as the smallest normal system containing Aristotle’s Thesis $\neg (p\rightarrow \neg p)$. For if a normal system in $\mathrm{L}_{\rightarrow}$ contains Weak Boethius’s Thesis, it contains the substitution instance $(p\rightarrow p)\supset \neg (p\rightarrow \neg p)$, and therefore Aristotle’s Thesis by Ax(g) and MP. Conversely, if a normal system contains Aristotle’s Thesis, it contains $\neg ((p\rightarrow q)\wedge (q\rightarrow \neg p))$ by Ax(a), and therefore Weak Boethius’ Thesis by Ax(d) and $\mathrm{Eq}\rightarrow$.
+
+PROPOSITION 1.9. $\mathrm{CI}$ and $\mathrm{KD}$ translate each other.
+
+Proof. By Proposition 1.8 and what has just been noted, it suffices to prove that $\vdash_{\mathrm{KD}}\phi \neg (p\rightarrow \neg p)$ and $\vdash_{\mathrm{CI}}\psi ◇ \top$. The latter is immediate by what has just been noted, for $\psi ◇ \top =\neg (\top \rightarrow \neg \top )$ is a substitution instance of Aristotle’s Thesis. $\phi \neg (p\rightarrow \neg p)=\neg (□ (p\supset \neg p)\wedge (□ \neg p\supset □ p)\wedge (◇ \neg p\supset ◇ p))$, which is easily proved in $\mathrm{KD}$.
+
+As a second example, let $\mathrm{CI.0}$ be the smallest normal system in $\mathrm{L}\rightarrow$ containing the formula $(p\rightarrow q)\supset (p\supset q)$, and let $\mathrm{KT}$ be the smallest normal system in $\mathrm{L}_{□}$ containing $□ p\supset p$. $\square$
+
+PROPOSITION 1.10. $\mathrm{CI.0}$ and $\mathrm{KT}$ translate each other.
+
+Proof. This is another easy application of Proposition 1.8. For an earlier proof see Pizzi (1991). $\square$
+
+Remark. Since $\mathrm{KD}\subseteq \mathrm{KT},\mathrm{CI}\subseteq \mathrm{CI.0}$; thus Weak Boethius’s Thesis and Aristotle’s Thesis are derivable from $(p\rightarrow q)\supset (p\supset q)$ in normal systems.
+
+§2
+
+This section identifies the result of adding to $\mathrm{CIw}$ Strong Boethius’ Thesis, the formula:
+
+(SBT)
+$(p\rightarrow q)\rightarrow \neg (p\rightarrow \neg q)$
+
+Let $\mathrm{CIw}\rightarrow$ be the smallest normal system in $\mathrm{L}_{\rightarrow}$ containing $\mathrm{SBT}$. We wish to axiomatize the normal system in $\mathrm{L}_{□}$ that translates $\mathrm{CIw}\rightarrow$. Let $\mathrm{Kdf}$ be the smallest normal system in $\mathrm{L}_{□}$ containing the following two formulas:
+
+(1D)
+$□ ◇ \top$
+(2F)
+$□ ◇ p\supset □ □ p$
+
+It will be shown that $\mathrm{Kdf}$ translates $\mathrm{CIw}\rightarrow$ (and vice versa).
+
+Remark. A simpler but less perspicuous characterization of $\mathrm{Kdf}$ is as the smallest normal system in $\mathrm{L}_{□}$ containing the formula:
+
+(R)
+$□ ◇ p\equiv □ □ p$
+
+For in $\mathrm{Kdf}$ we can derive $□ (□ p\supset ◇ p)$ and thence $□ □ p\supset □ ◇ p$ from Ax(1D), which in conjunction with Ax(2F) yields Ax(R). Conversely, Ax(1D) and Ax(2F) are derivable in $\mathrm{K}+\mathrm{R}$. For the former, note that $□ ◇ \top \equiv □ □ \top$ is a substitution instance of Ax(R), and that $□ □ \top$ is a theorem of any normal system.
+
+PROPOSITION 2.0. $\vdash_{\mathrm{CIw}\to}\top\to\neg(\top\to\neg\top)$ and
+
+$\vdash_{\mathrm{CIw}\to}(\top\to\neg(\top\to\neg p))\supset(\top\to(\top\to p))$.
+
+Proof.
+
+(1)	$(\top\to p)\to\neg(\top\to\neg p)$	$\mathrm{SBT}$ $[\top/p,p/q]$
+(2)	$\begin{aligned}&((\top\to p)\to\neg(\top\to\neg p))\supset((\top\to\neg(\top\to\neg p))\\ &\quad \supset(\top\to(\top\to p)))\end{aligned}$	Proof of 1.4, (iii) $\begin{aligned}&[(\top\to p)/p,\\&\neg(\top\to\neg p)/q]\end{aligned}$
+(3)	$(\top\to\neg(\top\to\neg p))\supset(\top\to(\top\to p))$	1, 2 PC
+(4)	$(\top\to\top)\to\neg(\top\to\neg\top)$	1 $[\top/p]$
+(5)	$\top\to\neg(\top\to\neg\top)$	4 Ax(g)$,\mathrm{Eq}$ $\to$
+
+$\square$
+
+PROPOSITION 2.1. $\vdash_{\mathrm{Kdf}}\phi \mathrm{SBT}$.
+
+Proof. $\phi ((p\rightarrow q)\rightarrow \neg (p\rightarrow \neg q))$ is the conjunction of $□ (\phi (p\rightarrow q)\supset \neg \phi (p\rightarrow \neg q)),□ \neg \phi (p\rightarrow \neg q)\supset □ \phi (p\rightarrow q)$ and $◇ \neg \phi (p\rightarrow \neg q)\supset ◇ \phi (p\rightarrow q)$. Thus it suffices to prove (i)–(iii).
+
+(i) $\vdash_{\mathrm{Kdf}}□(\phi(p\to q)\supset\neg\phi(p\to\neg q))$. Proof:
+
+(1)	$\phi(p\to q)\supset□(p\supset q)$	Def$\phi$
+(2)	$\phi(p\to\neg q)\supset□(p\supset\neg q)$	Def$\phi$
+(3)	$(\phi(p\to q)\wedge\phi(p\to\neg q))\supset\neg◇ p$	1, 2 Normality
+(4)	$\phi(p\to q)\supset(◇ q\supset◇ p)$	Def$\phi$
+(5)	$(\phi(p\to q)\wedge\phi(p\to\neg q))\supset\neg◇ q$	3, 4 PC
+(6)	$◇\top\supset(\neg◇ q\supset◇\neg q)$	Normality
+(7)	$◇\top\supset((\phi(p\to q)\wedge\phi(p\to\neg q))\supset◇\neg q)$	5, 6 PC
+(8)	$\phi(p\to\neg q)\supset(◇\neg q\supset◇ p)$	Def$\phi$
+(9)	$◇\top\supset(\phi(p\to q)\supset\neg\phi(p\to\neg q))$	3, 7, 8 PC
+(10)	$□◇\top\supset□(\phi(p\to q)\supset\neg\phi(p\to\neg q))$	9 Normality
+(11)	$□(\phi(p\to q)\supset\neg\phi(p\to\neg q))$	10 Ax(1D)
+
+(ii) $\vdash_{\mathrm{Kdf}}□\neg\phi(p\to\neg q)\supset□\phi(p\to q)$. Proof:
+
+(1)	$□(p\equiv q)\supset\phi(p\to q)$	Def$\phi$, Normality
+(2)	$□□(p\equiv q)\supset□\phi(p\to q)$	1 Normality
+(3)	$□◇(p\equiv q)\supset□\phi(p\to q)$	2 Ax(2F)
+(4)	$□(p\equiv\neg q)\supset\phi(p\to\neg q)$	Def$\phi$, Normality
+(5)	$\neg\phi(p\to\neg q)\supset◇(p\equiv q)$	4 Normality
+(6)	$□\neg\phi(p\to\neg q)\supset□◇(p\equiv q)$	5 Normality
+(7)	$□\neg\phi(p\to\neg q)\supset□\phi(p\to q)$	3, 6 PC
+
+(iii) $\vdash_{\mathrm{Kdf}}◇\neg\phi(p\to\neg q)\supset◇\phi(p\to q)$. Proof:
+
+(1)	$◇\neg\phi(p\to\neg q)\supset◇◇(p\equiv q)$	5 of (ii), Normality
+(2)	$◇◇ p\supset◇□ p$	Ax(2F), Normality
+(3)	$◇\neg\phi(p\to\neg q)\supset◇□(p\equiv q)$	1, 2 $[(p\equiv q)/p]$
+(4)	$◇□(p\equiv q)\supset◇\phi(p\to q)$	1 of (ii), Normality
+(5)	$◇\neg\phi(p\to\neg q)\supset◇\phi(p\to q)$	1, 4 PC
+
+PROPOSITION 2.2. $\mathrm{Kdf}$ and $\mathrm{CIw}\rightarrow$ translate each other.
+
+Proof. By Proposition 1.8, it suffices to show that $\vdash_{\mathrm{Kdf}}\phi \mathrm{SBT}$ and $\vdash_{\mathrm{CIw}\rightarrow}\psi □ ◇ \top$ and $\vdash_{\mathrm{CIw}\rightarrow}\psi (□ ◇ p\supset □ □ p)$. The first part is Proposition 2.1; the rest is Proposition 2.0, because $\psi □ ◇ \top =\top \rightarrow \neg (\top \rightarrow \neg \top )$ and $\psi (□ ◇ p\supset □ □ p)=(\top \rightarrow \neg (\top \rightarrow \neg p))\supset (\top \rightarrow (\top \rightarrow p))$. $\square$
+
+The system $\mathrm{Kdf}$ has a complete semantic characterization in first-order terms. As usual, a frame is a pair $\langle \mathrm{W},\mathrm{R}\rangle$, where $\mathrm{W}$ is a set of points and $\mathrm{R}$ a binary relation on $\mathrm{W}$. A valuation on $\langle \mathrm{W},\mathrm{R}\rangle$ is any mapping from $\mathrm{L}_{□}\times \mathrm{W}$ to $\{0,1\}$ such that for all $\alpha,\beta\in \mathrm{L}_{□}$ and $w\in \mathrm{W}$, $\mathrm{V}(\bot,w)=0$, $\mathrm{V}(\alpha\supset\beta,w)=1$ if and only if $\mathrm{V}(\alpha,w)=0$ or $\mathrm{V}(\beta,w)=1$, and $\mathrm{V}(□ \alpha,w)=1$ if and only if $\mathrm{V}(\alpha,x)=1$ for all $x$ such that $w\mathrm{R}x$. $\alpha$ is valid on $\langle \mathrm{W},\mathrm{R}\rangle$ just in case $\mathrm{V}(\alpha,w)=1$ for every valuation $\mathrm{V}$ on $\langle \mathrm{W},\mathrm{R}\rangle$ and $w\in \mathrm{W}$. Consider the following conditions on a frame $\langle \mathrm{W},\mathrm{R}\rangle$.
+
+Quasi-seriality
+$\forall w\,\forall x\,(w\mathrm{R}x\Rightarrow\exists y\,x\mathrm{R}y)$
+$◇$-functionality
+$\begin{aligned}&\forall w\,\forall x\,\forall y\,((w\mathrm{R}x\mathbin{\&}x\mathrm{R}y)\\ &\quad\Rightarrow\exists x'\,(w\mathrm{R}x'\mathbin{\&}\forall z\,(x'\mathrm{R}z\Rightarrow z=y))\end{aligned}$
+
+PROPOSITION 2.3. For all $\alpha \in \mathrm{L}_{□},\vdash_{\mathrm{Kdf}}\alpha$ if and only if $\alpha$ is valid on all frames that are both quasi-serial and $◇$-functional.
+
+Proof. The result is an application of standard correspondence theory (see e.g. Goldblatt 1993: 58-61, taking Ax(2F) in the equivalent form $◇ ◇ p\supset ◇ □ p$). $\square$
+
+§3
+
+The aim of this section is to clarify the consequences of Strong Boethius’ Thesis by contrasting some features of $\mathrm{CIw}$ and $\mathrm{CI}$ with those of $\mathrm{CIw}\rightarrow$ and $\mathrm{CI}\rightarrow$ ($\mathrm{CI}\rightarrow$ is the weakest normal system in $\mathrm{L}_{\rightarrow}$ containing both Weak and Strong Boethius’ Thesis; Weak Boethius’ Thesis is not a theorem of $\mathrm{CIw}\rightarrow$). For example, MP for $\rightarrow$ is an admissible rule in the former systems (even though they lack the theorem $(p\rightarrow q)\supset (p\supset q)$), but not in the latter. It will also be shown that the converse of Strong Boethius’s Thesis is not a theorem of any of these systems.
+
+PROPOSITION 3.0. If $\vdash_{\mathrm{CIw}}\alpha \rightarrow \beta$ then $\vdash_{\mathrm{CIw}}\alpha \equiv \beta$.
+
+Proof. Inductively define a mapping $\delta$ from $\mathrm{L}_{\rightarrow}$ to $\mathrm{L}_{\rightarrow}$ as follows:
+
+$\begin{aligned}\delta p&=p\\\delta\bot&=\bot\\\delta(\alpha\supset\beta)&=\delta\alpha\supset\delta\beta\\\delta(\alpha\rightarrow\beta)&=\alpha\equiv\beta\end{aligned}$
+
+(Note that $\delta (\alpha \rightarrow \beta )$ is not in general $\delta \alpha \equiv \delta \beta$). Axiomatize $\mathrm{CIw}$ with all truth-functional tautologies and all substitution instances of Ax(a)–Ax(g) as axioms and MP for $\supset$ and $\mathrm{Eq}\rightarrow$ as the only rules of inference. By a routine induction on the length of proofs, if $\vdash_{\mathrm{CIw}}\alpha$ then $\vdash_{\mathrm{CIw}}\delta \alpha$. $\square$
+
+PROPOSITION 3.1. If $\vdash_{\mathrm{CIw}}\alpha \rightarrow \beta$ and $\vdash_{\mathrm{CIw}}\alpha$ then $\vdash_{\mathrm{CIw}}\beta$.
+
+Proof. Immediate from Proposition 3.0. $\square$
+
+PROPOSITION 3.2. If $\vdash_{\mathrm{CIw}}\alpha \rightarrow \beta$ then $\vdash_{\mathrm{CIw}}\beta \rightarrow \alpha$.
+
+Proof. From Proposition 3.0 by $\mathrm{Eq}\rightarrow$. $\square$
+
+PROPOSITION 3.3. If $\vdash_{\mathrm{CI}}\alpha \rightarrow \beta$ then $\vdash_{\mathrm{CI}}\alpha \equiv \beta$.
+
+Proof. Since $\delta \neg (\alpha \rightarrow \neg \alpha )=\neg (\alpha \equiv \neg \alpha )$, the method used for Proposition 3.0 will do. $\square$
+
+PROPOSITION 3.4. If $\vdash_{\mathrm{CI}}\alpha \rightarrow \beta$ and $\vdash_{\mathrm{CI}}\alpha$ then $\vdash_{\mathrm{CI}}\beta$.
+
+Proof. Immediate from Proposition 3.3. $\square$
+
+PROPOSITION 3.5. If $\vdash_{\mathrm{CI}}\alpha \rightarrow \beta$ then $\vdash_{\mathrm{CI}}\beta \rightarrow \alpha$.
+
+Proof. Form Proposition 3.3 by $\mathrm{Eq}\rightarrow$. $\square$
+
+PROPOSITION 3.6. If $\vdash_{\mathrm{CI.0}}\alpha \rightarrow \beta$ then $\vdash_{\mathrm{CI.0}}\alpha \equiv \beta$.
+
+Proof. The method used for Proposition 3.0 will not do, for a substitution instance of the characteristic axiom of $\mathrm{CI.0}$ is $((\top \rightarrow p)\rightarrow \bot )\supset ((\top \rightarrow p)\supset \bot )$, and $\delta (((\top \rightarrow p)\rightarrow \bot )\supset ((\top \rightarrow p)\supset \bot ))=((\top \rightarrow p)\equiv \bot )\supset ((\top \equiv p)\supset \bot )$, which is equivalent to $p\supset (\top \rightarrow p)$, which is not a theorem of $\mathrm{CI.0}$. However, it is sufficient to apply the main result of Williamson (1990); see Pizzi (1996). $\square$
+
+PROPOSITION 3.7. If $\vdash_{\mathrm{CI.0}}\alpha \rightarrow \beta$ and $\vdash_{\mathrm{CI.0}}\alpha$ then $\vdash_{\mathrm{CI.0}}\beta$.
+
+Proof. Trivial. $\square$
+
+PROPOSITION 3.8. If $\vdash_{\mathrm{CI.0}}\alpha \rightarrow \beta$ then $\vdash_{\mathrm{CI.0}}\beta \rightarrow \alpha$.
+
+Proof. From Proposition 3.6 by $\mathrm{Eq}\rightarrow$. $\square$
+
+A general criterion can be given for the admissibility of MP for $\rightarrow$ by normal systems in $\mathrm{L}_{\rightarrow}$. Let Denecessitation be the rule in $\mathrm{L}_{□}$ that whenever $□ \alpha$ is a theorem, so is $\alpha$.
+
+PROPOSITION 3.9. If the normal system $\mathrm{X}$ in $\mathrm{L}_{\rightarrow}$ and the normal system $\mathrm{Y}$ in $\mathrm{L}_{□}$ translate each other, then $\mathrm{X}$ admits $\mathrm{MP}$ for $\rightarrow$ if and only if $\mathrm{Y}$ admits Denecessitation.
+
+Proof. Suppose that $\mathrm{X}$ admits MP for $\rightarrow$. If $\vdash_{\mathrm{Y}}□ \alpha$ then $\vdash_{\mathrm{X}}\top \rightarrow \psi \alpha$ since $\mathrm{Y}$ translates $\mathrm{X}$; but $\vdash_{\mathrm{X}}\top$, so $\vdash_{\mathrm{X}}\psi \alpha$, so $\vdash_{\mathrm{Y}}\alpha$. Thus $\mathrm{Y}$ admits Denecessitation. Conversely, suppose that $\mathrm{Y}$ admits Denecessitation. If $\vdash_{\mathrm{X}}\alpha \rightarrow \beta$ and $\vdash_{\mathrm{X}}\alpha$ then $\vdash_{\mathrm{Y}}\phi (\alpha \rightarrow \beta )$ and $\vdash_{\mathrm{Y}}\phi \alpha$; but $\vdash_{\mathrm{Y}}\phi (\alpha \rightarrow \beta )\supset □ (\phi \alpha \supset \phi \beta )$ by definition of $\phi$, so $\vdash_{\mathrm{Y}}□ (\phi \alpha \supset \phi \beta )$, so $\vdash_{\mathrm{Y}}\phi \alpha \supset \phi \beta$ by Denecessitation, so $\vdash_{\mathrm{Y}}\phi \beta$, so $\vdash_{\mathrm{X}}\beta$. Thus $\mathrm{X}$ admits MP for $\rightarrow$. $\square$
+
+We can now show that propositions analogous to 3.0-3.8 are false of $\mathrm{CIw}\rightarrow$.
+
+PROPOSITION 3.10. Neither $\vdash_{\mathrm{Kdf}}◇ p\supset □ p$ nor $\vdash_{\mathrm{Kdf}}□ (◇ p\supset □ p)$.
+
+Proof. Consider the following frame $\langle \mathrm{W},\mathrm{R}\rangle$:
+
+$\mathrm{W}=\{w,x,y_1,y_2\}$
+
+$\mathrm{R}=\{\langle w,x\rangle,\langle w,y_1\rangle,\langle w,y_2\rangle,\langle x,y_1\rangle,\langle x,y_2\rangle,\langle y_1,y_1\rangle,\langle y_2,y_2\rangle\}$
+
+The frame can be pictured thus:
+
+![](assets/figure-1.png)
+
+It is straightforward to prove that $\langle \mathrm{W},\mathrm{R}\rangle$ is quasi-serial and $◇$-functional. Thus every theorem of $\mathrm{Kdf}$ is valid on $\langle \mathrm{W},\mathrm{R}\rangle$, by Proposition 2.3. Now consider a valuation $\mathrm{V}$ such that $\mathrm{V}(p,y_{1})=1$ and $\mathrm{V}(p,y_{2})=0$. Then $\mathrm{V}(◇ p\supset □ p,x)=0$, so $\mathrm{V}(□ (◇ p\supset □ p),w)=0$. Thus neither $\vdash_{\mathrm{Kdf}}◇ p\supset □ p$ nor $\vdash_{\mathrm{Kdf}}□ (◇ p\supset □ p)$. $\square$
+
+PROPOSITION 3.11. $\vdash_{\mathrm{Kdf}}□□(◇ p\equiv□ p)$.
+
+Proof.
+
+(1)	$◇\top\supset(□□ p\supset◇□ p)$	Normality
+(2)	$◇\top\supset(□◇ p\supset◇□ p)$	1 Ax(2F)
+(3)	$◇\top\supset◇(◇ p\supset□ p)$	2 Normality
+(4)	$□(□ p\supset◇ p)$	Ax(1D), Normality
+(5)	$◇\top\supset◇(◇ p\equiv□ p)$	3, 4 Normality
+(6)	$□◇\top\supset□◇(◇ p\equiv□ p)$	5 Normality
+(7)	$□◇(◇ p\equiv□ p)$	6 Ax(1D)
+(8)	$□□(◇ p\equiv□ p)$	7 Ax(2F)
+
+$\square$
+
+PROPOSITION 3.12. $\mathrm{Kdf}$ does not admit Denecessitation.
+
+Proof. From Propositions 3.10 and 3.11. $\square$
+
+PROPOSITION 3.13. $\mathrm{CIw}\rightarrow$ does not admit $\mathrm{MP}$ for $\rightarrow$.
+
+Proof. From Propositions 2.2, 3.9 and 3.12. Specifically, $\vdash_{\mathrm{CIw}\rightarrow}\top \rightarrow (\top \rightarrow ((\top \rightarrow p)\vee (\top \rightarrow \neg p)))$ and $\vdash_{\mathrm{CIw}\rightarrow}\top$ but not $\vdash_{\mathrm{CIw}\rightarrow}\top \rightarrow ((\top \rightarrow p)\vee (\top \rightarrow \neg p))$. $\square$
+
+PROPOSITION 3.14. $\mathrm{CIw}\rightarrow$ does not admit the rule that $\alpha \equiv \beta$ is a theorem whenever $\alpha \rightarrow \beta$ is.
+
+Proof. From Proposition 3.13. $\square$
+
+PROPOSITION 3.15. Not $\vdash_{\mathrm{CIw}\rightarrow}\neg (p\rightarrow \neg q)\rightarrow (p\rightarrow q)$.
+
+Proof. If $\vdash_{\mathrm{CIw}\rightarrow}\neg (p\rightarrow \neg q)\rightarrow (p\rightarrow q)$ then $\vdash_{\mathrm{CIw}\rightarrow}\neg (\top \rightarrow \neg p)\rightarrow (\top \rightarrow p)$ by US, so $\vdash_{\mathrm{Kdf}}\phi (\neg (\top \rightarrow \neg p)\rightarrow (\top \rightarrow p))$ by Proposition 2.2. But $\vdash_{\mathrm{K}}\phi (\neg (\top \rightarrow \neg p)\rightarrow (\top \rightarrow p))\supset □ (◇ p\supset □ p)$, so it would follow that $\vdash_{\mathrm{Kdf}}□ (◇ p\supset □ p)$, contrary to Proposition 3.10. $\square$
+
+PROPOSITION 3.16. $\mathrm{CIw}\rightarrow$ does not admit the rule that $\beta \rightarrow \alpha$ is a theorem whenever $\alpha \rightarrow \beta$ is.
+
+Proof. From Proposition 3.15. $\square$
+
+PROPOSITION 3.17. Not $\vdash_{\mathrm{CIw}\rightarrow}\neg (p\rightarrow \neg q)\supset (p\rightarrow q)$.
+
+Proof. If $\vdash_{\mathrm{CIw}\rightarrow}\neg (p\rightarrow \neg q)\supset (p\rightarrow q)$ then $\vdash_{\mathrm{Kdf}}◇ p\supset □ p$ by an argument like that for Proposition 3.15, contrary to Proposition 3.10. $\square$
+
+Weak Boethius’ Thesis is not a theorem of $\mathrm{CIw}\rightarrow$, for otherwise $◇ \top$ would be a theorem of $\mathrm{Kdf}$ by Propositions 1.9 and 2.2: but $◇ \top$ is invalid on the frame consisting of a single irreflexive point, which is both quasi-serial and $◇$-functional and therefore validates all theorems of $\mathrm{Kdf}$ by Proposition 2.3. Strictly speaking, then $\mathrm{CIw}\rightarrow$ is not a system of consequential implication. $\mathrm{CI}\rightarrow$, the smallest normal extension in $\mathrm{L}_{\rightarrow}$ of $\mathrm{CIw}\rightarrow$ containing Weak Boethius’ Thesis, can easily be shown to translate $\mathrm{KDf}$, the smallest normal extension in $\mathrm{L}_{□}$ of $\mathrm{Kdf}$ containing $◇ \top$. The theorems of $\mathrm{KDf}$ are exactly the formulas valid on all serial and quasi-functional frames. The proofs of Propositions 3.10–3.17 can easily be adapted to establish the analogous results with $\mathrm{KDf}$ in place of $\mathrm{Kdf}$ (note that the frame used in the proof of 3.10 is serial).
+
+The following general result emphasizes the difficulty of interpreting $\rightarrow$ in normal systems in $\mathrm{L}_{\rightarrow}$ with Strong Boethius’ Thesis as a genuine conditional:
+
+PROPOSITION 3.18. If $\mathrm{X}$ is a normal extension of $\mathrm{CIw}\rightarrow$ that admits $\mathrm{MP}$ for $\rightarrow$, then $\vdash_{\mathrm{X}}(p\rightarrow q)\equiv (q\rightarrow p)$ and $\vdash_{\mathrm{X}}(p\rightarrow q)\equiv \neg (p\rightarrow \neg q)$.
+
+Proof. Let $\mathrm{X}$ be a normal extension of $\mathrm{CIw}\rightarrow$ that admits MP for $\rightarrow ,\mathrm{Y}$ be the normal system in $\mathrm{L}_{□}$ that translates $\mathrm{X}$, and $\mathrm{KD!}$ be the smallest normal system in $\mathrm{L}_{□}$ containing $◇ p\equiv □ p$. By Propositions 2.2, 3.9 and 3.11, $\mathrm{KD!}\subseteq \mathrm{Y}$. Since $□$ commutes with all truth-functional operators in $\mathrm{KD!}$, it can easily be shown that $\vdash_{\mathrm{KD!}}\phi ((p\rightarrow q)\equiv (q\rightarrow p))$ and $\vdash_{\mathrm{KD!}}\phi ((p\rightarrow q)\equiv \neg (p\rightarrow \neg q))$. Thus $\vdash_{\mathrm{X}}(p\rightarrow q)\equiv (q\rightarrow p)$ and $\vdash_{\mathrm{X}}(p\rightarrow q)\equiv \neg (p\rightarrow \neg q)$. $\square$
+
+A further limitative result is that the combination of strong Boethius’ Thesis with the thesis $(p\rightarrow q)\supset (p\supset q)$ in normal systems makes $\rightarrow$ collapse into $\equiv$ (not into $\supset$).
+
+PROPOSITION 3.19. If $\mathrm{X}$ is a normal extension of $\mathrm{CIw}\rightarrow$ such that $\vdash_{\mathrm{X}}(p\rightarrow q)\supset (p\supset q)$, then $\vdash_{\mathrm{X}}(p\rightarrow q)\equiv (p\equiv q)$.
+
+Proof. Let $\mathrm{X}$ be a normal extension of $\mathrm{CIw}\rightarrow$ such that $\vdash_{\mathrm{X}}(p\rightarrow q)\supset (p\supset q)$, and $\mathrm{Y}$ be the normal system in $\mathrm{L}_{□}$ that translates $\mathrm{X}$. By Propositions 1.9 and 3.11, $\vdash_{\mathrm{Y}}□ □ (◇ p\supset □ p)$ and $\vdash_{\mathrm{Y}}□ p\supset p$, from which it can easily be shown that $\vdash_{\mathrm{Y}}p\equiv □ p$. Thus $\vdash_{\mathrm{Y}}\phi (p\rightarrow q)\equiv (p\equiv q)$, so $\vdash_{\mathrm{X}}(p\rightarrow q)\equiv (p\equiv q)$. $\square$
+
+§4
+
+Many of the preceding results can be generalized to notions of consequential implication other than analytic consequential implication. Consider, for example, a “truncated” variant on analytic consequential implication which holds between a pair of propositions just in case (i) the first strictly implies the second and (ii) they have the same possibility status (as possible or impossible). This definition corresponds to the formula $□ (p\supset q)\wedge (◇ p\equiv ◇ q)$, which in normal systems is equivalent to $□ (p\supset q)\wedge (◇ q\supset ◇ p)$. This relation, unlike analytic consequential implication, can hold between a contingent proposition and a necessary one. In normal systems of modal logic with the $\mathrm{D}$ principle $□ p\supset ◇ p$ and without its converse, the new relation can be shown to satisfy Weak Boethius’ Thesis and Aristotle’s Thesis, but to fail the laws of conjunctive simplification and factor; unlike analytic consequential implication, it does not contrapose. More formally, for any formulas $\alpha$ and $\beta$ of $\mathrm{L}_{\rightarrow}$, let $\alpha \Rightarrow \beta$ be $(\top \rightarrow (\alpha \supset \beta ))\wedge ((\alpha \rightarrow \bot )\supset (\beta \rightarrow \bot ))$ (which is equivalent to $\psi (□ (p\supset q)\wedge (◇ q\supset ◇ p))$ in normal systems in $\mathrm{L}_{\rightarrow}$). The proof of Proposition 2.1 can then be adapted to show that $\vdash_{\mathrm{Kdf}}\phi ((p\Rightarrow q)\rightarrow \neg (p\Rightarrow \neg q))$ and $\vdash_{\mathrm{Kdf}}\phi ((p\Rightarrow q)\Rightarrow \neg (p\Rightarrow \neg q))$. Thus, by Proposition 2.2, $(p\Rightarrow q)\rightarrow \neg (p\Rightarrow \neg q)$ and $(p\Rightarrow q)\Rightarrow \neg (p\Rightarrow \neg q)$ (Strong Boethius’ Thesis for $\Rightarrow$) are theorems of $\mathrm{CIw}\rightarrow$.
+
+Another possible truncation of analytic consequential implication holds between a pair of propositions just in case (i) the first strictly implies the second and (ii) they have the same contingency status (as contingent or non-contingent). We do not investigate its properties here.
+
+We can also extend the language $\mathrm{L}_{\rightarrow}$ to a language $\mathrm{L}_{\rightarrow \ast }$ by adding a one-place functor ${}^{\ast }$ inspired by Åqvist ‘circumstantial’ operator introduced in [1973], where ${}^{\ast }\alpha$ may be read as “Ceteris paribus $\alpha$” or “Rebus sic stantibus $\alpha$”. Call $\mathrm{X}\subseteq \mathrm{L}_{\rightarrow \ast }$ normal just in case, in addition to satisfying the conditions for a normal system in $\mathrm{L}_{\rightarrow}$, it contains the formulas
+
+(h)
+${}^{\ast }p\supset p$
+(i)
+$({}^{\ast }p\rightarrow \bot )\supset (p\rightarrow \bot )$
+
+and is closed under the congruence rule $\mathrm{Eq}^{\ast }$ for ${}^{\ast }$, i.e. if $\alpha \equiv \beta$ is in $\mathrm{X}$ then so is ${}^{\ast }\alpha \equiv {}^{\ast }\beta$. The following remarks would hold even if we additionally required ${}^{\ast }\top$ to be a theorem of normal systems in $\mathrm{L}_{\rightarrow \ast }$, but we do not do so, in order not to exclude some systems of interest in relation to Pizzi (1993).
+
+It can easily be shown that if $\mathrm{X}$ is a normal system in $\mathrm{L}_{\rightarrow}$ and $\mathrm{X}^{\ast }$ is the smallest normal system in $\mathrm{L}_{\rightarrow \ast }$ containing $\mathrm{X}$, then $\mathrm{X}^{\ast }$ is a conservative extension of $\mathrm{X}$, in the sense that if $\alpha \in \mathrm{L}_{\rightarrow}$ then $\alpha \in \mathrm{X}^{\ast }$ only if $\alpha \in \mathrm{X}$. For we can axiomatize $\mathrm{X}^{\ast }$ by taking all substitution instances of theorems of $\mathrm{X}$ and of (h)–(i) as the only axioms and MP for $\supset$ and $\mathrm{Eq}\rightarrow$ and $\mathrm{Eq}^{\ast }$ as the only rules of inference; if $\mathrm{\Theta} \alpha$ is the result of deleting all occurrences of ${}^{\ast }$ in $\alpha$, then an easy induction on the length of proofs establishes that $\alpha \in \mathrm{X}^{\ast }$ only if $\mathrm{\Theta} \alpha \in \mathrm{X}$; since $\mathrm{\Theta} \alpha =\alpha$ when $\alpha \in \mathrm{L}_{\rightarrow}$, this implies conservativeness. A ‘synthetic’ form of consequential implication $>$ can now be defined by the stipulation that for any formulas $\alpha$ and $\beta$ of $\mathrm{L}_{\rightarrow \ast },\alpha >\beta$ is ${}^{\ast }\alpha \Rightarrow \beta$ (extending the definition of $\Rightarrow$ to $\mathrm{L}_{\rightarrow \ast }$). As will be shown below, $(p>q)\supset (\top \rightarrow (p\supset q))$ is not in general a theorem of normal systems in $\mathrm{L}_{\rightarrow \ast }$; not all synthetic consequential implications are strict implications. In any normal system in $\mathrm{L}_{\ast \rightarrow}$, Aristotle’s Thesis and Weak Boethius’s Thesis for $>$ are equivalent to the corresponding theses for $\Rightarrow$, and to those for $\rightarrow$. If $\mathrm{X}$ and $\mathrm{X}^{\ast }$ are as above, then the laws of conjunctive simplification and factor for $>$ are theorems of $\mathrm{X}^{\ast }$ only if $\mathrm{\Theta} ({}^{\ast }(p\wedge q)\Rightarrow p)$ and $\mathrm{\Theta} (({}^{\ast }p\Rightarrow q)\supset ({}^{\ast }(p\wedge r)\Rightarrow (q\wedge r)))$ are theorems of $\mathrm{X}$, i.e. only if the laws of conjunctive simplification and factor for $\Rightarrow$ are theorems of $\mathrm{X}$ (the same holds for any other theses about $\Rightarrow$ in $\mathrm{L}_{\rightarrow}$). It is easy to prove that $(p\rightarrow q)\supset (p\Rightarrow q)$ and $(p\Rightarrow q)\supset (p>q)$, and therefore $(p\rightarrow q)\supset (p>q)$, are theorems of any normal system in $\mathrm{L}_{\rightarrow \ast }$. None of these implications can be reversed, even in $\mathrm{CIw}\rightarrow^{\ast }$, the smallest normal system in $\mathrm{L}_{\rightarrow \ast }$ containing $\mathrm{CIw}\rightarrow$. Note first that $\neg (p\rightarrow$ $\bot )\supset (p\Rightarrow \top$) is a theorem of $\mathrm{CIw}$; thus if $(p\Rightarrow q)\supset (p\rightarrow q)$ were a theorem of $\mathrm{CIw}\rightarrow^{\ast }$, and therefore of $\mathrm{CIw}\rightarrow$, so too would be $\neg (p\rightarrow \bot )\supset (p\rightarrow \top )$, and therefore (by normality) $(\top \rightarrow p)\vee (\top \rightarrow \neg p)$, contrary to Propositions 2.2 and 3.10. We can prove that $(p>q)\supset (p\Rightarrow q)$ is not a theorem of $\mathrm{CIw}\rightarrow^{\ast }$ by proving that $(p>q)\supset (\top \rightarrow (p\supset q))$ is not either; thus $>$ does not entail strict implication. It is convenient to use the frame $\langle \mathrm{W},\mathrm{R}\rangle$ from the proof of Proposition 3.10. We can make $\langle \mathrm{W},\mathrm{R}\rangle$ into a frame for $\mathrm{CIw}\rightarrow$ by regarding a valuation $\mathrm{V}$ on $\langle \mathrm{W},\mathrm{R}\rangle$ for $\mathrm{L}_{□}$ as a valuation for $\mathrm{L}_{\rightarrow}$ by the stipulation that $\mathrm{V}(\alpha ,z)=\mathrm{V}(\phi \alpha ,z)$ for $\alpha \in \mathrm{L}_{\rightarrow}$ and $z\in \mathrm{W}$ and using Proposition 2.2. We can then make it into a frame for $\mathrm{CIw}\rightarrow^{\ast }$ by the further stipulation that, for $\alpha \in \mathrm{L}_{\rightarrow \ast }$ and $z\in \mathrm{W},\mathrm{V}({}^{\ast }\alpha ,z)=1$ just in case $(1)\mathrm{V}(\alpha ,z)=1$ and (2) if $z=x$ then $\mathrm{V}(\alpha ,y_{1})=\mathrm{V}(\alpha ,y_{2})$. It can easily be checked that all substitution instances of (h)–(i) are valid on the frame; $\mathrm{Eq}^{\ast }$ automatically preserves validity on the frame. Set $\mathrm{V}(p,z)=1$ just in case $z\in \{x,y_{1}\}$. Thus $\mathrm{V}({}^{\ast }p,z)=1$ just in case $z\in \{y_{1}\}$. Now ${}^{\ast }p\Rightarrow {}^{\ast }p$ and therefore $p>{}^{\ast }p$ is a theorem of $\mathrm{CIw}\rightarrow^{\ast }$, but $\top \rightarrow (p\supset {}^{\ast }p)$ is not, since $\mathrm{V}(p\supset {}^{\ast }p,x)=0$, so $\mathrm{V}(\top \rightarrow (p\supset {}^{\ast }p),w)=0$. Thus $p>{}^{\ast }p$ but not $p\Rightarrow {}^{\ast }p$ is a theorem of $\mathrm{CIw}\rightarrow^{\ast }$. In other words, $\Rightarrow$ is strictly between $\rightarrow$ and $>$ in $\mathrm{CIw}\rightarrow^{\ast }$.
+
+Say that a two-place functor $\mathbin{\text{?}}$ is between $\rightarrow$ and $>$ in a normal system $\mathrm{X}$ just in case both $(p\rightarrow q)\supset (p\mathbin{\text{?}}q)$ and $(p\mathbin{\text{?}}q)\supset (p>q)$ are theorems of $\mathrm{X}$. Strong Boethius’ Thesis can be generalized in $\mathrm{CIw}\rightarrow^{\ast }$ in the strong sense that if the three functors $\mathbin{\text{?}},\mathbin{\text{??}}$ and $\mathbin{\text{???}}$ are between $\rightarrow$ and $>$ in $\mathrm{CIw}\rightarrow^{\ast }$, then $(p\mathbin{\text{?}}q)\mathbin{\text{??}}\neg (p\mathbin{\text{???}}\neg q)$ is a theorem of $\mathrm{CIw}\rightarrow^{\ast }$. This can be proved as follows. For reasons already noted, $(p\Rightarrow q)\supset \neg (p\Rightarrow \neg q)$ is a theorem of $\mathrm{CIw}\rightarrow$ and therefore of $\mathrm{CIw}\rightarrow^{\ast }$. By substitution of ${}^{\ast }p$ for $p,(p>q)\supset \neg (p>\neg q)$ is a theorem. Since $\mathbin{\text{?}}$ and $\mathbin{\text{???}}$ are between $\rightarrow$ and $>$, they are at least as strong as $>$, so $(p\mathbin{\text{?}}q)\supset \neg (p\mathbin{\text{???}}\neg q)$ is also a theorem; by normality, it follows that $\top \rightarrow ((p\mathbin{\text{?}}q)\supset \neg (p\mathbin{\text{???}}\neg q))$ is a theorem too. Moreover, since Strong Boethius’s Thesis for $\rightarrow$ is a theorem, so are $(\top \rightarrow \neg (p\rightarrow \neg q))\supset (\top \rightarrow (p\rightarrow q))$ and $(\top \rightarrow \neg (p\rightarrow q))\supset (\top \rightarrow \neg \neg (p\rightarrow \neg q))$. Since $\mathbin{\text{?}}$ and $\mathbin{\text{???}}$ are no stronger than $\rightarrow$, it follows by normality that $(\top \rightarrow \neg (p\mathbin{\text{???}}\neg q))\supset (\top \rightarrow (p\mathbin{\text{?}}q))$ and $(\top \rightarrow \neg (p\mathbin{\text{?}}q))\supset (\top \rightarrow \neg \neg (p\mathbin{\text{???}}\neg q))$ are theorems. By (i) in the proof of Proposition 1.4, it follows that $(p\mathbin{\text{?}}q)\rightarrow \neg (p\mathbin{\text{???}}\neg q)$ is a theorem of $\mathrm{CIw}\rightarrow^{\ast }$. Since $\mathbin{\text{??}}$ is no stronger than $\rightarrow ,(p\mathbin{\text{?}}q)\mathbin{\text{??}}\neg (p\mathbin{\text{???}}\neg q)$ is a theorem of $\mathrm{CIw}\rightarrow^{\ast }$.
+
+The failure of the converse of Strong Boethius’s Thesis can also be generalized in $\mathrm{CIw}\rightarrow^{\ast }$. Suppose that $\mathbin{\text{?}},\mathbin{\text{??}}$ and $\mathbin{\text{???}}$ are between $\rightarrow$ and $>$, and that $\neg (p\mathbin{\text{?}}\neg q)\mathbin{\text{??}}(p\mathbin{\text{???}}q)$ is a theorem of $\mathrm{CIw}\rightarrow^{\ast }$. Then $\neg (p\mathbin{\text{?}}\neg q)>(p\mathbin{\text{???}}q)$ is a theorem, so, by definition of $>,\top \rightarrow$ $({}^{\ast }\neg (p\mathbin{\text{?}}\neg q)\supset (p\mathbin{\text{???}}q))$ is a theorem, so by Ax(h) and normality $\top \rightarrow ((p\mathbin{\text{?}}\neg q)\vee (p\mathbin{\text{???}}q))$ is a theorem, so $\top \rightarrow ((p>\neg q)\vee (p>q))$ is a theorem by normality again, so $\mathrm{\Theta} (\top \rightarrow ((p>\neg q)\vee (p>q)))=\top \rightarrow ((p\Rightarrow \neg q)\vee (p\Rightarrow q))$ is a theorem of $\mathrm{CIw}\rightarrow$, so $\top \rightarrow ((\top \Rightarrow \neg p)\vee (\top \Rightarrow p))$ is too; then by normality $\top \rightarrow ((\top \rightarrow (\top \supset \neg p))\vee (\top \rightarrow (\top \supset p))$ is a theorem of $\mathrm{CIw}\rightarrow$, which is impossible by Propositions 2.2 and 3.10.
+
+# References
+
+Angell, B. (1978): Tre logiche dei condizionali congiuntivi. In Pizzi, C. (ed.), Leggi di Natura, Modalità, Ipotesi. Feltrinelli, Milan: pp. 156–180.
+
+Goldblatt, R. (1993): Mathematics of Modality. CSLI Publications, Stanford, CA.
+
+Kneale, W. C. and Kneale, M. (1984): The Development of Logic. Clarendon Press, corrected edn., Oxford.
+
+Pizzi, C. (1977): Boethius’ Thesis and Conditional Logic, Journal of Philosophical Logic 6: 283-302.
+
+Pizzi, C. (1991): Decision Procedures for Logics of Consequential Implication, Notre Dame Journal of Formal Logic 32: 618-636.
+
+Pizzi, C. (1993): Consequential Implication: A Correction, Notre Dame Journal of Formal Logic 34: 621-624.
+
+Pizzi, C. (1996): Weak vs. Strong Boethius’ Thesis: A Problem in the Analysis of Consequential Implication. In Ursini, A. and Aglianò, P. (eds.), Logic and Algebra. Marcel Dekker Inc., New York.
+
+Routley, R., Plumwood, V., Meyer, R. K. and Brady, R. (1982): Relevant Logic and its Rivals. Ridgeview, Atascadero, CA.
+
+Smirnov, V. A. (1982): The Definition of Modal Operators by means of Tense Operators, Acta Philosophica Fennica 35: 50-69.
+
+Williamson, T. (1990): Verification, Falsification and Cancellation in KT, Notre Dame Journal of Formal Logic 31: 286-290.
+
+Åqvist, L. (1973): Modal Logic with Subjunctive Conditional and Dispositional Properties, Journal of Philosophical Logic 2: 1-76.

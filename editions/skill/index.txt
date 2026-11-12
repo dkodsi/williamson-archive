@@ -1,0 +1,263 @@
+# Skill
+
+Jason Stanley and Timothy Williamson
+
+With Jason Stanley. Noûs 51 (4) (2017): 713–726.
+
+Knowledge, virtue, and intelligent action have long been central themes of philosophical inquiry, and are the subject of deep and extensive debates in contemporary philosophy. At least in the analytic tradition, skill is not. Nevertheless, skill is intimately connected to those central topics of philosophical concern.
+
+Knowledge depends on skill. A scientist knows that one theory is better than another, through her skill at assessing such theories. A wine-taster knows that the wine in front of him is a Bordeaux, through his skill at wine-tasting. An outfielder knows where the fly-ball will land, through his skill at fielding.
+
+That virtues are like skills is a point familiar from Aristotle. Both improve with training. Moreover, virtues require skills. Tact involves skill in human relations, and justice skill in assessing competing claims. More generally, since self-control requires skill, all virtues that require self-control require skill.
+
+Intelligent action is evaluated in terms of skill. Some actions are skillful, others not. A clumsy attempt to field a fly-ball or settle a dispute reveals lack of skill. Of course, clumsy actions are still intelligent actions, sometimes even very intelligent actions. The distinction between skilled and clumsy action is itself an evaluative contrast within the realm of intelligent action.
+
+The connection between knowledge and skill, like that between knowledge and virtue, has been a major topic in the history of philosophy. Over the past century, some philosophers wrote directly on the nature of skill. But aside from Gilbert Ryle (1949), who argued that skill cannot be explained by states of propositional knowledge alone, most of this work has been in or under the influence of a non-analytic tradition. It has been largely negative, saying what skill is not rather than what it is. For example, the point of Hubert Dreyfus’s work on expertise or Sean Kelly’s work on skill is to argue for the negative point that genuinely skilled action is not action guided by propositional attitudes.1 It is difficult to extract from this work, or even from the figures who influenced it, such as Heidegger and Merleau-Ponty, a positive account of the nature of skill.
+
+Within analytic philosophy, skill appears in an instrumental role, but not itself as the object of analysis. For example, Dreyfus and his students invoke skill to raise problems for representational theories of mind and for cognitive science. Virtue epistemologists such as Ernest Sosa use the notion of skill instrumentally, to analyze knowledge.2 The twentieth century saw heavy philosophical industry devoted to producing analyses of knowledge, causation, meaning, goodness, truth, virtue, and beauty. By contrast, analytic philosophers have shown little or no interest in the analysis of skill.3 Given the philosophical importance of the phenomenon of skill, its downgrading in twentieth century analytic philosophy is puzzling. All traditions are partial and selective, but that is no reason not to repair so salient an omission.
+
+In this paper, we propose a theory of the nature of skill, one that explains its connections to obviously important philosophical matters, and in particular to knowledge. Our account vindicates the traditional place of skill as a properly central concern of philosophy.
+
+# I.
+
+Skill is intimately connected to a kind of knowledge which philosophers have typically, though misleadingly, called “knowing how”. If one is skilled at chess, one knows how to employ one’s knight; if one is skilled at tennis, one knows how to serve. But the knowledge states connected to skill are not exclusively or even mainly expressed by the “how” construction. Skill at scoring in basketball requires knowing when to leap. Skill at driving to the basket requires knowing where to go when confronted with a defender. Skill at conversation requires knowing whether or not to interrupt. Skill is connected to the kind of knowledge that has the non-reflective character philosophers associate with knowledge how.
+
+Various considerations have led philosophers to think that knowing how is a distinctive kind of state. But those considerations extend to knowledge ascribable by a range of constructions not just of the form “x knows how to $\phi$”, but also “x knows when to $\phi$”, “x knows where to $\phi$”, and “x knows whether to $\phi$”:
+
+Insofar as there is an intuitive basis for thinking that knowing how to do something is not a species of propositional knowledge, it survives as an intuitive basis for thinking that knowing where to do something, knowing when to do something, and knowing what to do are not species of propositional knowledge. For example, one reason to think that knowing how to do something is not a species of propositional knowledge is that, while it is obvious that animals do know how to do various things, it is highly controversial that they have propositional knowledge . . . However, if it is obvious that [the dog] Pip knows how to catch a Frisbee, then it is equally obvious that Pip knows when to leap at a Frisbee to catch it, and where to find his bone.
+
+Similarly, one might think that an outfielder knows how to catch a fly ball, and that this knowledge has an automatic quality that is inconsistent with being a manifestation of propositional knowledge. But the same automaticity is present when the outfielder manifests his knowledge of when to raise his mitt when a fly ball approaches. If the automaticity of an action based on it shows that knowing how to catch a fly ball is not propositional knowledge, than it also shows that knowing when to raise one’s mitt when a fly ball approaches is not propositional knowledge. (Emphasis in original. Stanley, 2011, p. 133)
+
+As Carl Ginet has pointed out, it is not just knowledge states expressible with infinitives in their complements that one can act on automatically, in the way philosophers mistakenly associate just with knowledge how:
+
+I exercise (or manifest) my knowledge that one can get the door open by turning the knob and pushing it (as well as my knowledge that there is a door there) by performing that operation quite automatically as I leave the room; and I may do this, of course, without formulating (in my mind or out loud) that proposition or any other relevant proposition. (Ginet, 1975, p. 7)
+
+For obvious reasons, we call constructions in which “know” occurs with a wh-complement (including one with “how”), “know wh” constructions. What is the nature of the states attributed by “know wh” constructions? There are open problems for each standard account of the semantics of such constructions. But all of them agree that one is in such a state in virtue of knowing the answer to a question.
+
+The sentences with which we attribute knowledge states of the kind philosophers associate with knowledge-how often involve infinitival embedded questions. These are questions with infinitive complements, such as “when to raise one’s mitt when a fly ball approaches”, “where to move when blocked by a defender”, and “how to jump to dunk a basketball”. In English, infinitival questions can only occur embedded under a verb that takes embedded questions, such as “know”, “remember”, or “wonder”—they cannot occur as stand-alone questions. But they are questions nevertheless. One knows when to raise one’s mitt when a fly ball approaches in virtue of knowing a proposition that answers the question “When to raise one’s mitt when a fly ball approaches?”
+
+In embedded infinitival questions, the infinitive is standardly taken to be ambiguous between a normative “ought” reading and something like a dispositional or “ability” modal (Bhatt, 2006, p. 122). One knows when to raise one’s mitt when a fly ball approaches if and only if one knows whether one ought to raise one’s mitt at a given time as a fly ball approaches. One knows where to move one’s racket in returning a serve if and only if one knows a place that one’s racket can occupy that will generally lead to returning a serve successfully.4 One knows where to go for a drink, if one knows of a place that remains open (say late at night). One knows where to go for a drink, in a different sense, if one knows where the good places to go for a drink are (even when every place is open and available).
+
+Knowledge where to move one’s racket in returning a serve, how to swim, where to look to avoid being struck out, is not “discursive”. It cannot be explained in non-indexical terms. But it has propositional content nevertheless. Not all propositional knowledge is discursive knowledge.
+
+Our claim about skills is straightforward: it is that skills are a kind of disposition to know. More specifically, to be skilled at the action type of $\phi$-ing is to be disposed to form knowledge appropriate for guiding tokens of $\phi$-ing. So to be skilled at returning serve in tennis is to be disposed to have knowledge appropriate for guiding returns of serve, to be skilled at driving to the basket in basketball is to be disposed to have knowledge appropriate for guiding one’s movement to the basket, and so on.
+
+In most activities, skill involves knowledge-wh states similar in all relevant respects to states typically thought of as knowing how. As just explained, such states are often ascribed by sentences involving embedded infinitival questions, like “John knows where to move his racket”, “John knows whether to interrupt”, “John knows when to throw the ball hard”. Many such knowledge attributions do not involve the word “how”. A skilled fencer, in virtue of her skill, is disposed to know both whether or not to go on the attack, and when to go on the attack. But skill can also manifest itself in knowledge-wh ascribed by a sentence with a non-infinitival embedded question. For example, a skilled interrogator, such as a trained detective, knows whether or not the suspect under interrogation is lying, and a skilled cook knows whether the soup is ready.
+
+Knowledge-wh ascriptions can express generic statements attributing dispositions. “John knows where to find the best view” can be used roughly to mean that for most situations, John knows where to find the best view in that situation. The knowledge ascription ascribes to John a disposition to know, in situations s, where the best view can found in s, a different item of knowledge for different situations. The knowledge ascriptions that come closest to skill typically have this generic character.5
+
+The view in this paper is that skills are dispositions. The view is not well-expressed by saying that “skills are competences”, because “competence” is easily read as involving skill. In such a sense of competence, the view that skills are competences to know is in danger of a regress, since competences would involve skills. Thus in effect it says, unpromisingly, that skill in $\phi$-ing involves skill in acquiring knowledge relevant to $\phi$-ing. By the same token, skill in acquiring knowledge relevant to $\phi$-ing involves skill in acquiring knowledge relevant to acquiring knowledge relevant to $\phi$-ing, and so on. By contrast, on our view, although skill in $\phi$-ing is the disposition to have knowledge appropriate to guiding $\phi$-ing, it is not in general skill in having or acquiring such knowledge. Dispositions form a much broader category than skills: fragility, robustness, and stamina are not skills.6
+
+Notoriously, the simple conditional analysis of dispositional claims faces severe problems. For example, a fragile glass has been encased in hard packing material; the glass still has the dispositional property of being fragile, but if it were struck, it would not break. Various solutions have been proposed to the problems facing conditional analyses, but we find none persuasive. We will not assume that dispositions are analyzable; a fortiori, we will not assume any particular analysis of them.
+
+Skills are dispositions to know; so it should be natural to describe the manifestation of a skill as a knowledge state, as well as an action. And it is in fact quite natural to describe the manifestation of a skill as a knowledge state. Yarrow, Brown, and Krakauer (2009) summarizes the literature on what they call “anticipatory information pick-up in expert performers” (591ff.). The example they chose to summarize is the literature on cricket experts:
+
+Cricket batsmen must select a shot based on the trajectory of a ball which may travel at up to 160 km per hour. The ball can deviate through the air, and take an additional deviation when it bounces off the pitch before reaching the batsman. Advanced cricketers use information from before the moment at which the bowler releases the ball to help determine its trajectory. Specifically, they make use of the motion of the bowling arm, in relation to the bowling hand, primarily between the time of front foot impact and that of ball release. Differences in information pick-up are found between novice and skilled cricketers, but also between skilled and elite players.
+
+As they note, the same distinctions between advanced experts and novices have been found with tennis7, squash8, and other sports. It is natural to think of anticipatory information pick-up as a disposition to know, which manifests in knowledge states. The advanced tennis player, by observing the movement of the server, comes rapidly to know, by virtue of her tennis skill, that the serve will land in a specific spot. The idea that a skill characteristically manifests in dispositions to know is familiar from the motor skills literature, though not of course explicitly described in those terms.
+
+It is of course at least as familiar to speak of skills being manifested in actions, rather than knowledge states. It is normal to think of a rapid and accurate serve in tennis manifesting tennis skill, and a serve is not a knowledge state. It is therefore important to distinguish two senses of “manifestation”:
+
+Manifestation_{1}: A skill manifests_{1} in knowledge states
+
+Manifestation_{2}: A skill manifests_{2} in actions guided by knowledge states that are manifestations_{1} of that skill
+
+More generally, a disposition to $\phi$ manifests_{1} only in $\phi$-ing. It may manifest_{2} in all sorts of other ways. For example, the fragility of a vase may manifest_{2}, but not manifest_{1}, in the label ‘Handle with care’ on the crate in which it is being transported.
+
+We shall say that an action exhibits a skill if and only if it is a manifestation_{2} of that skill. That is, an action exhibits a skill if and only if it is guided by the knowledge states that are direct manifestations, i.e. manifestations_{1}, of that skill. We will also sometimes speak of the exercise or execution of a skill, by which we also mean the manifestation_{2} of that skill. Though we shall move between Manifestation_{1} and Manifestation_{2} in our discussion, we will always be clear which sense of manifestation is at issue at a given stage.
+
+The manifestations_{1} of skill are situation specific. Skill at conversation is a disposition when one is in a conversation s to know at the time of s facts appropriate to guiding actions relevant to s. Whether or not dispositions are as closely connected to generics as Michael Fara (2005) has argued (an issue on which, as above, we are non-committal), they are closely connected at least in central cases. Our account of skill may be regarded as entailing the generic claim that skill in $\phi$-ing is knowing at the time of action facts appropriate to guiding $\phi$-ing.
+
+Anticipatory information pick-up is not all there is to expert performance. Performance involves non-cognitive factors, like strength and speed. But leaving those aside as not themselves part of skill (someone’s great strength may enable him to win a boxing match despite his lack of skill at boxing), there is a remaining cognitive aspect to skill. Expert performers show “superior performance at the level of perception” (Yarrow, Brown, and Krakauer 2009, p. 59). It is for this reason that neuroscientists and psychologists speak of “perceptual skills”. There is also strong evidence for a motor correlate of perceptual capacity.9 The view that skills are dispositions to know can explain both the anticipatory information pick-up aspect of skill and the perceptual and motor ability aspects, as both are plausibly dispositions to know.
+
+We call certain skills “perceptual” or “observational” when their successful exercise involves a substantial component of acquired perceptual ability: wine-tasting, for example. Even perceptual skills of this sort require intelligent decisions; what to look for, as well as where to look, or what to listen for, and when to listen for it.10 Perceptual skills are ones that involve acquired perceptual ability, which is employed in making intelligent decisions about what to do.11
+
+In the Nichomachean Ethics, Aristotle draws attention to a distinction between skill and virtue. One manifests a virtue by obeying its imperatives; you manifest generosity by giving money to a pauper. A choice not to manifest the virtue in this way is not manifesting the virtue. In contrast, one can manifest_{2} a skill by choosing not to exemplify it in the standard ways. Only a very skilled player can lose deliberately without appearing to lose deliberately. Our view is consistent with this insight; a skill gives one knowledge about what to do, which one can manifest_{2} in different ways, including in losing deliberately while appearing to be trying to win.
+
+One challenge to the view that skilled action involves fluid acquisition of reasons for action is that it is not clear what standing state, say, skill at scoring against good defenders is in basketball. But surely there is such a standing state. How else could one explain the fact that some people receive such high salaries to play professional basketball? On our view that skills are dispositions to acquire knowledge-wh, skilled action depends on fluid acquisition of reasons for action (which are knowledge states). But it also provides a standing state that constitutes the skill—simply being disposed to know facts relevant to guiding actions of scoring. Such standing states explain why some people receive high salaries to play professional sports.
+
+On our view, a skilled action of an agent exhibits knowledge, knowledge that manifests_{1} that agent’s possession of skill at the relevant activity. The relation between the knowledge that manifests_{1} a skill and the action that is done on the basis of that knowledge is Guidance:
+
+Guidance: Any skilled action is guided by knowledge that manifests_{1} possession of skill at that activity.12
+
+So, in a very clear sense, skilled action is action guided by propositional knowledge, the propositional knowledge that is revelatory of that agent’s skill.
+
+According to Gilbert Ryle (1949, p. 26):
+
+. . . both philosophers and laymen tend to treat intellectual operations as the core of mental conduct; that is to say, they tend to define all other mental-conduct concepts in terms of concepts of cognition. They suppose that the primary exercise of minds consists in finding the answers to questions and that their other occupations are merely applications of considered truths . . .
+
+Ryle labels this view “intellectualism”. Our view is that skills are dispositions to know-wh, so we are characterizing a central mental-conduct term in terms of cognition, namely knowledge. Furthermore, since we endorse Manifestation and Guidance, we think that the instances of this mental conduct term are merely applications of considered truths (in particular, knowledge). So if our view is true, it vindicates the letter of the doctrine Ryle calls “intellectualism”.13
+
+# II.
+
+The standard objection to intellectualism, familiar from the works of Hubert Dreyfus we may call the novelty objection:
+
+A mark of expertise is the ability to respond efficiently to novel situations. The expert surgeon is able to adjust her scalpel to a surprising complication in a way that the novice surgeon, even one with the same knowledge of what has been published in the journals, is not. An expert outfielder is able to adjust to an unusually hit fly ball better than a novice. And, as Taylor Carman [2013] brings out, we are all experts at the art of conversation, an activity expertise at which demands fluidly adjusting to subtleties of novel situations. (Emphasis in original. Stanley, 2011, p. 181)
+
+Can the view that skills are dispositions to know explain the fact that the skilled actor is capable of adjusting her behavior to novel situations?
+
+To sharpen the problem, consider some examples. Could skill in conversation require a disposition to know whether one should speak? Obviously, conversational skill does not require always knowing that one should speak; nor does it require always knowing that one should not speak. For it is not even true that one should always speak, or that one should never speak. A good conversationalist speaks at some times and listens at others. Skill in conversation is flexible; a skilled conversationalist knows when to speak and when to listen. Similarly, skill in throwing a head-fake in basketball requires knowing when the defender is most likely to fall for it. But how could one characterize the times at which a defender is most likely to fall for a head fake in a sentence without indexicals or demonstratives? Even if one knew such a general formula, how could one apply it in real time? Skill in throwing a head fake is faster and more flexible than would be predicted by the equation of it with prior knowledge of a general formula.
+
+Our view accommodates all these facts. Skill at conversation is a disposition that at one point in the conversation yields knowledge that one should speak now, and at another point yields knowledge that one should stop speaking now. The same skill produces different knowledge states in different situations. Similarly, skill in throwing a head fake sometimes yields knowledge that this defender is likely to fall for a head fake now in this game, and at other times, perhaps in other games, knowledge that this other defender is unlikely to fall for a head fake now. These are different items of knowledge. The view that skills are dispositions to have knowledge appropriate to guiding action not only permits the content of the knowledge to be situation-specific, it predicts this situation-specificity, because the knowledge appropriate to guiding action is typically situation-specific. Thus our view has no problem with the novelty involved in skill, for it predicts that novelty.
+
+Skill requires situation-specific knowledge. In part this means that skill requires knowledge formed in the situation at the time of acting. It also means that skill involves knowledge under demonstrative or indexical guises. Someone disposed only to have situation-unspecific knowledge-wh can hardly have paradigmatic skills. What situation-unspecific knowledge can successfully guide the pulling of this bow to shoot this arrow now under these wind conditions to hit that target over there? Someone who merely knew a general formula would still have to find some way of instantiating it to arrive at the appropriate situation-specific instance under an appropriate guise in order to obtain the needed guidance towards successful action.
+
+Some of the knowledge states that guide the agent in action are states that can only be acquired when the time to act comes. This is fully consistent with the intellectualist picture we endorse. With John McDowell (2007, p. 339), we reject the picture of “rationality as detached from particular situations—as able to relate to particular situations only by subsuming them under content determinately expressible in abstraction from any situation”. The fact that some states of knowledge can only be achieved at the time of action is fully consistent with the “mindedness” of action guided by such knowledge. The intellectualist holds that skilled action results from applied knowledge. That claim is fully consistent with the knowledge being achieved only in the situation.
+
+Our view is designed to accommodate the fact that skills involve situation-specific flexibility. But some might think that skill retention requires a core of stable knowledge over time. Our view is clearly consistent with this position about skill. For example, one’s skill at chess might involve retaining knowledge of various openings (Stanley, 2011, pp. 182ff.). If one retains a knowledge state, one is a fortiori disposed to have it across situations, and so a fortiori disposed to know.
+
+Does our view concedes too much to the anti-intellectualist? After all, it equates skills with dispositions. That equation is typically associated with opponents of Guidance. Is our view of the metaphysics of skill consistent with our intellectualism?
+
+According to Hubert Dreyfus (2005):
+
+While infants acquire skills by imitation and trial and error, in our formal instruction we start with rules. The rules, however, seem to give way to more flexible responses as we become skilled. We should therefore be suspicious of the cognitivist assumption that, as we become experts, our rules become unconscious. Indeed, our experience suggests that rules are like training wheels. We may need such aids when learning to ride a bicycle, but we must eventually set them aside if we are to become skilled cyclists. To assume that the rules we once consciously followed become unconscious is like assuming that, when we finally learn to ride a bike, the training wheels that were required for us to be able to ride in the first place must have become invisible. The actual phenomenon suggests that to become experts we must switch from detached rule-following to a more involved and situation-specific way of coping.
+
+Indeed, if learners feel that they can act only if they have reasons to guide them, this attitude will stunt their skill acquisition.
+
+Dreyfus’s view is that truly skilled performance is not guided by reasons at all. In contrast, on our view, any skilled act is skilled in virtue of being guided by the agent’s knowledge of truths. Those truths are among the skilled agent’s reasons to do as she does. Dreyfus’s move from the premise that skilled action is not guided by general, situation-independent rules to the conclusion that skilled actions are not guided by reasons, is fallacious. Dreyfus presupposes the false thesis that all reasons must be situation-independent rules.
+
+Dreyfus’s argument that skilled action is not done on the basis of reasons is fallacious. Moreover, any view of the sort, which identifies skills with mere abilities or propensities to act, robs skill of any cognitive component. Consider the difference between someone who can bench-press a maximum of 100 pounds and someone who can bench-press 150 pounds. We may suppose that both employ the same technique; only brute strength makes the difference between them. Both are equally skilled, but clearly have different abilities. Similarly, there may be no distinction in skill between someone who runs a five minute mile and someone only capable of running a six minute mile. But there is clearly a difference in ability. Any view of skill must account for such cases. In particular, it must explain why strength, speed, and stamina are not themselves skills.
+
+Another way of putting the general demand on an account of skill is that it must explain what is distinctively mental about skill. It is presumably this feature that distinguishes skills from abilities merely due to brute strength, speed, and stamina.
+
+Our view straightforwardly explains these facts. The amount of skill involved in lifting 100 pounds is equal to the amount of skill involved in lifting 150 pounds in the envisaged scenario, because the agents’ skills are dispositions to acquire the same amount of knowledge of the same type. In the first case, their equal skills in lifting are dispositions that yield equal knowledge in corresponding situations, for example of when to use one’s maximum force, how to grasp the bar, and so on. In the second case, the equal skills in running yield equal knowledge of when to kick for home, on which lap to save one’s effort, and so on. Only brute strength or brute speed makes the difference in these cases. In contrast, a view that equates skill with non-mental ability clearly cannot capture these facts. It straightforwardly predicts that the relevant agents are unequal in skill, because they are unequal in non-mental ability. Exactly similar points can be made about stamina in place of strength and speed.
+
+One might worry that because we make skill a disposition to acquire knowledge, we thereby put skill before knowledge in explaining intelligent action, and so vindicate anti-intellectualism. We agree with Ryle, for example, that for virtually any $\phi$, skill at $\phi$-ing is a multi-track disposition (Ryle, 1949, p. 44). For example, there may be no finite non-indexical specification of the disposition that is skill at driving to the basket in basketball. Nevertheless, even if there is no such specification, this does not mean that “skill comes before knowledge”, as Imogen Dickie (2012) has argued. Skill at $\phi$-ing is a state whose nature is constituted through the knowledge relation.
+
+# III.
+
+Skill is a paradigm of what can be improved with training. Improvement entails gradability.14 Jean can be more or less skilled at an activity than Bob; both can become more (or less) skilled over time. The gradability of skill poses a traditional challenge to accounts on which skills are knowledge states:
+
+Learning how or improving in ability is not like learning that or acquiring information. Truths can be imparted, procedures can only be inculcated, and while inculcation is a gradual process, imparting is relatively sudden. It makes sense to ask at what moment someone became appraised of a truth, but not to ask at what moment someone acquired a skill. (Ryle, 1949, p. 59)
+
+Can our account of skill accommodate Ryle’s insight that skill is gradable?
+
+Prima facie, the gradability of skill poses no problem for our view. Dispositions too are gradable; something can be more or less fragile, and more or less soluble. So there is a straightforward answer to Ryle’s worry, given the metaphysics of skill we have endorsed. Our view predicts that skills are gradable, since dispositions are gradable. However, a more sophisticated version of Ryle’s worry remains. Improving in skill means, on our view, becoming more disposed to know truths about the relevant activity. But what does it mean to be more disposed to know truths about an activity? And does being more disposed to know truths about the activity correlate properly with improvement in skill?
+
+There are multiple ways to become more disposed to know relevant truths. Here are three. First, someone can become disposed to know the relevant truths more quickly than before, and thereby improve his disposition to know them. Secondly, someone can improve her disposition to know by becoming disposed to acquire more of the relevant facts than before in similar situations. Third, someone can improve his disposition to know by becoming disposed to acquire qualitatively better information.15 One way to accommodate this semantically is by recognizing that there are different scales suitable to disposition ascriptions, which rank dispositions along different dimensions. This is standard in semantic accounts of gradability generally. Different occurrences of the adjective “expensive” can be associated with distinct scales; one can speak of a policy being expensive in terms of lives, rather than financial cost. One chair can be more expensive than another in terms of absolute cost but less expensive in terms of value for money.
+
+There are also many ways to improve skill. They correspond to different ways of gaining a greater disposition to know relevant truths. An athlete can improve skill by increasing the anticipatory information pick-up aspect of skill, with regard to increase in either the speed of information pick-up, or the quantity of information, or the quality of information (the last requires an account of quality of information, or more exactly quality of components of information, for which see Pavese (mansucript) on qualitative gradability). An improved perceptual capacity clearly results in improvements on dispositions to know relevant truths, in these ways.
+
+Often, in making comparisons, we combine distinct scales into one scale. We might wish to evaluate health policies along a single scale that includes financial cost as well as mortality costs, or pension types along a single scale that includes breadth of coverage and amount of benefit per recipient. Such cases are typically controversial, because they involve hard choices about how to combine ranks on very distinct scales into a single overall scale, in particular, about what relative weightings to assign the component scales. Comparisons of skill are no different. They too involve combining multiple dimensions of gradability; someone might pick up more information from a situation, but take a bit longer to pick up any information at all. A full account of our comparisons of skill requires marrying distinct scales. This too is controversial in practice—we evaluate point guards in basketball on their assist to turnover ratio, and centers and power forwards on their scoring and rebounding. Comparing a point guard to a center or power forward in terms of skill as a basketball player requires combining two quite different scales. The controversies associated with combining distinct scales in evaluating the cost of public policy play out on one kind of talk radio station; the controversies associated with combining distinct scales in evaluating sports skill play out on another.
+
+# IV.
+
+Here, we have argued that skills are dispositions to know, in particular, dispositions to acquire knowledge states like knowing how to F. That is how skill is connected to knowledge. Stanley and Williamson (2001) apply the view that knowing how is propositional knowledge to some arguments in the literature that employed knowing how. One might worry whether, by identifying skill with something that is not a knowledge state, we undermine the application of a propositional view of knowing how to such arguments. We will use the example of Stanley and Williamson’s criticism of David Lewis’s response to Frank Jackson’s knowledge argument to show that the worry is unfounded. Structurally similar points are available in the other cases too.
+
+Frank Jackson considers the case of “black and white Mary”, who has been trapped from birth in a black and white room, but learns all of the physics and neuroscience of color vision. So, apparently, she learns all the physical facts. However, when she emerges from her black and white room, she learns something new when she sees red for the first time. Therefore, Jackson concluded, she has learned a non-physical fact.
+
+In responding to Jackson, Lewis argues that black and white Mary does not learn a new fact. Rather, she acquires knowledge-how, such as knowledge how to imagine red. These new skills do not implicate new facts that are learned. In response, Stanley and Williamson argued that black and white Mary does learn new facts, if knowing how to do something is propositional knowledge. One might now have the following worry. Suppose Lewis framed his view, not in terms of knowledge how, but in terms of skills or even just perceptual abilities. If so, black and white Mary’s new skill is not a knowledge state. Does this rescue Lewis’s response from Stanley and Williamson’s criticism?
+
+Suppose that black and white Mary acquires a new skill, or perceptual ability. Both skills and perceptual abilities are dispositions to know. If black and white Mary acquires a new skill or perceptual ability, it is a novel disposition to know, one she had not previously possessed. By stipulation, she already knew all the physical facts. In order for her newly acquired disposition to know to be fully novel, it must result in knowledge she did not already possess. Therefore, there is knowledge that she did not already possess. Since by stipulation she knew all the physical facts, the new knowledge is of non-physical facts. It should therefore be clear that the identification of skills and perceptual capacities with dispositions to know raises the same obstacle to Lewis’s response to Jackson that is raised in Stanley and Williamson. Indeed, the problem is worse, because there is no retreat from knowing how and skill to mere perceptual or recognitional abilities, as these too are dispositions to know.16
+
+Despite our rejection of Lewis’s response to Jackson’s knowledge argument, we do not endorse Jackson’s knowledge argument. Stanley and Krakauer (2013) emphasize that there is a motor equivalent to perceptual capacity, which, following work by Krakauer and others, they call “motor acuity”.17 Using this notion, it is simple to imagine a similar example to black-and-white Mary. Suppose that John, a brilliant neuroscientist, is born paralyzed. He never learns to engage his motor acuity. However, like black-and-white Mary, he learns all the propositions ever expressed in the papers and books of ideal neuroscience. After an operation, he is able to move. His motor acuity allows him to grasp propositions he has never before grasped, grasp of which finally allows him to ride a bicycle. We take it that such a case does not intuitively pose a problem for physicalism. If so, nor does Jackson’s envisaged example. Alternatively, if propositions are very coarse-grained entities, such as sets of possible worlds, perhaps John grasps an old proposition in a radically new way; but if so, the same may apply to Mary. Intellectualism about both know-how and skill is compatible with any of several non-Lewisian objections to Jackson’s knowledge argument.
+
+# Acknowledgements
+
+Thanks for valuable discussion and comments to Ellen Fridland, John Krakauer, Bruno Whittle, Verity Harte, Alan Code, Susanna Schellenberg, Ernie Sosa, and Lisa Miracchi. Most of all, we would like to thank Carlotta Pavese for many comments, insights, and suggestions that were essential to the paper.
+
+# Notes
+
+[1] E.g. Dreyfus and Dreyfus (1986), Dreyfus (2005), Kelly (2000).
+
+[2] E.g. Sosa (1991, 2007, 2011), Zagzebski (1996), Greco (2007).
+
+[3] With some notable contemporary exceptions, e.g. Fridland (2014a, b), Pavese (2015).
+
+[4] Hawley (2003, pp. 19–31), Stanley (2011, pp. 110–115, 126–129). For a discussion of the subtle differences between the different readings of the dispositional modal associated with such knowledge, and the explicit modal word “can”, see Stanley (2011, pp. 125–129).
+
+[5] Thanks to Carlotta Pavese for discussion here.
+
+[6] Lisa Miracchi (2015) has argued for a version of what she calls “direct virtue epistemology”, according to which knowledge is an exercise of a competence to know, and uses “competence to know” occasionally as a synonym for the kind of skill of which knowledge is an exercise. She there provides a sophisticated analysis of the competence in question. Our claim here is not in the first instance about knowledge, but about skill; it is that skills generally are dispositions to know, where dispositions form the familiar metaphysical category in which for example fragility belongs.
+
+[7] Goulet et al (1988).
+
+[8] Abernethy (1990).
+
+[9] Shmuelof, Krakauer, and Mazzoni (2012).
+
+[10] See Montero (2013, 2015) for the case that motor skills involves such deliberation; similar considerations apply to perceptual skills.
+
+[11] Though perception too can itself be regarded as a disposition to acquire knowledge, mere perceptual capacity, in and of itself, is not a skill. Alan Millar (2010) develops the thesis at length that perceptual knowledge is the result of an ability to know (or “tell”) on the basis of appearances. However, we are not committed to such a role for appearances in perceptual knowledge.
+
+[12] We do not mean to dodge difficult questions about the nature of guidance; one possible account is due to Peter Railton (2006, p. 13):
+
+Agent’s A conduct C is guided by norm N only if C is a manifestation of A’s disposition to act in a way conducive to compliance with N, such that N plays a regulative role in A’s C-ing, where this involves some disposition on A’s part to notice failures to comply with N, to feel discomfort when this occurs, and to exert effort to establish conformity with N even when the departure from N is unsanctioned and non-consequential.
+
+[13] Robert Stalnaker (2012) argues that given a plausible view of propositional knowledge, the view that skilled action is the manifestation of knowledge is not intellectualism in Ryle’s sense.
+
+[14] But not vice versa; youth is gradable but not improvable.
+
+[15] This latter requires an account of comparisons between information states or their components. Carlotta Pavese has provided the most detailed and plausible such account in recent years; see her account of what she calls “qualitative gradability” in her manuscript.
+
+[16] Strictly, if dispositions are individuated by their bases, a new disposition to know need not be a disposition to know new things. It could be a new basis for a disposition to know old things (perhaps in new ways). However, this does not seem to be what Lewis had in mind.
+
+[17] Stanley and Krakauer (2013).
+
+# References
+
+Abernethy, Bruce (1990). Anticipation in squash: differences in advance cue utilization between expert and novice players. Journal of Sports Science 8: 17–34.
+
+Bhatt, Rajesh (2006). Covert Modality in Non-finite Contexts. New York: Mouton de Gruyter.
+
+Carman, Taylor (2013). Conceptualism and the scholastic fallacy. In J. Schear (ed.) Mind, Reason, and Being-in-the-World: The McDowell-Dreyfus Debate. London and New York: Routledge: 165–177.
+
+Dickie, Imogen (2012). Skill before knowledge. Philosophy and Phenomenological Research 85.3: 737–745.
+
+Dreyfus, Hubert (2005). Overcoming the myth of the mental: how philosophers can profit from the phenomenology of everyday expertise. Proceedings and Addresses of the American Philosophical Association 79.2: 47–65.
+
+Dreyfus, Hubert, and Dreyfus, Stuart (1986). From Socrates to expert systems: the limits and dangers of calculative rationality. In C. Mitcham and A. Huning (eds.), Philosophy and Technology II: Information Technology and Computer in Theory and Practice. Dordrecht: D. Reidel Publishing Company: 111–130.
+
+Fara, Michael (2005). Dispositions and habituals. Noûs 39.1: 43–82.
+
+Fridland, Ellen (2014a). Skill learning and conceptual thought: making a way through the wilderness. In B. Bashour and H. Muller (eds.), Contemporary Philosophical Naturalism and Its Implications. London: Routledge: 77–100.
+
+Fridland, Ellen (2014b) They’ve lost control: reflections on skill. Synthese 191.12: 2729–2750.
+
+Ginet, Carl (1975). Knowledge, Perception, and Memory. Dordrecht: Kluwer.
+
+Goulet, Claude et al (1988). Analysis of advance visual indices in receiving a tennis serve. Canadian Journal of Sport Sciences 13: 79–87.
+
+Greco, John (2007). The nature of ability and the purpose of knowledge. Philosophical Issues 17.1: 57–69.
+
+Hawley, Katherine (2003). Success and knowing how. American Philosophical Quarterly 40.1: 19–31.
+
+Kelly, Sean (2000). Grasping at straws: motor intentionality and the cognitive science of skillful action. In M. Wrathall and J. Malpas (eds.), Heidegger, Coping, and Cognitive Science: Essays in Honor of Hubert L. Dreyfus—Vol. II. Cambridge, MA: MIT Press: 161–177.
+
+McDowell, John (2007). What myth?. Inquiry 50.4: 338–351.
+
+Millar, Alan (2010). Knowledge and recognition. In A. Millar, D. Pritchard, and A. Haddock (eds.), The Nature and Value of Knowledge. Oxford: Oxford University Press.
+
+Miracchi, Lisa (2015). Competence to know. Philosophical Studies 172: 29–56.
+
+Montero, Barbara Gail (2013). A dancer reflects deliberation in action. In J. Schear (ed.), Mind, Reason, and Being-in-the-World: The McDowell-Dreyfus Debate. London and New York: Routledge: 303–319.
+
+Montero, Barbara Gail (2015). Thinking in the zone: reflection and attention in expert action. Southern Journal Philosophy 53.S1: 126–140.
+
+Pavese, Carlotta (2015). Practical senses. Philosophers’ Imprint 15.19: 1–25.
+
+Pavese, Carlotta (manuscript). Know how and gradability
+
+Railton, Peter (2006). Normative guidance. In R. Shafer-Landau (ed.), Oxford Studies in Metaethics. Oxford: Clarendon Press: 3–33.
+
+Ryle, Gilbert (1949). The Concept of Mind. London: Hutchinson’s University Library.
+
+Shmuelof, Lior, Krakauer, John, and Mazzoni, Pietro (2012). How is a motor skill learned? Change and invariance at the levels of task success and trajectory control. Journal of Neurophysiology 108: 578–594.
+
+Sosa, Ernest (1991). Knowledge in Perspective. Cambridge: Cambridge University Press.
+
+Sosa, Ernest (2007). A Virtue Epistemology. Oxford: Oxford University Press.
+
+Sosa, Ernest (2011). Knowing Full Well. Princeton: Princeton University Press.
+
+Stalnaker, Robert (2012). Intellectualism and the objects of knowledge. Philosophy and Phenomenological Research 85.3: 754–761.
+
+Stanley, Jason (2011). Know How. Oxford: Oxford University Press.
+
+Stanley, Jason and Krakauer, John (2013). Motor skill depends on knowledge of fact. Frontiers in Human Neuroscience 7: 503.
+
+Stanley, Jason and Williamson, Timothy (2001). Knowing how. Journal of Philosophy 98: 411–444.
+
+Yarrow, Kielan, Brown, Peter and Krakauer, John (2009). Inside the brain of an elite athlete: the neural processes that support high achievement in sports. Nature Reviews Neuroscience 10.8: 585–596.
+
+Zagzebski, Linda (1996). Virtues of Mind. Cambridge: Cambridge University Press.

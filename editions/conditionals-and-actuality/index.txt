@@ -1,0 +1,529 @@
+# Conditionals and Actuality
+
+Timothy Williamson
+
+Erkenntnis 70 (2009): 135–150.
+
+Abstract It is known that indicative and subjunctive conditionals interact differently with a rigidifying “actually” operator. The paper studies this difference in an abstract setting. It does not assume the framework of possible world semantics, characterizing “actually” instead by the type of logically valid formulas to which it gives rise. It is proved that in a language with such features all sentential contexts that are congruential (in the sense that they preserve logical equivalence) are extensional (in the sense that they preserve material equivalence). For a subjunctive conditional, the natural conclusion to draw is that it is non-congruential. It is much harder to defend the claim that an indicative conditional is non-congruential. The pressure to treat the indicative conditional as truth-functional is correspondingly greater. The implications of these results for attempts to interpret the indicative conditional as an epistemic or doxastic operator are assessed.
+
+# 1 Introduction
+
+Indicative and subjunctive conditionals are known to interact differently with a natural rigidifying reading of the ‘actually’ operator. The basic observation here goes back at least to Stalnaker (1975), although (Jackson 1981, p. 129; 1987, pp. 74–75) has used it in arguing against semantic accounts of the indicative conditional such as Stalnaker’s that use a framework of possible worlds.1 Here is a variant on the original examples:
+
+(1i)
+If Jim is two metres tall, Jim is actually two metres tall.
+(1s)
+If Jim had been two metres tall, Jim would have actually been two metres tall.
+
+The indicative conditional (1i) is an obvious truism, verifiable on broadly logical grounds. By contrast, the subjunctive conditional (1s) is actually false on the relevant reading unless Jim is actually two metres tall, given that he could have been two metres tall. To put the point in terms of Lewis-Stalnaker semantics for counterfactuals, (1s) says that in the closest possible world(s) (if any) in which Jim is two metres tall, Jim is two metres tall back here in the actual world. Given that Jim could have been two metres tall, there are such worlds, so that truth-condition requires Jim to be two metres tall back here. The danger for a possible worlds account of indicative conditionals such as Stalnaker’s is that it delivers the same result for them, falsely predicting that (1i) is false if Jim is not two metres tall. However, the aim of this paper is not to criticize Stalnaker but to explore the different ways in which conditionals can interact with an ‘actually’ operator, and their consequences. Throughout, we will be assuming a ‘rigidifying’ reading of ‘actually’, on which its function is, in possible world terms, to return the world of evaluation to the world of utterance, or more generally the circumstance of evaluation to the context of utterance, although we shall see later that we can capture such a function without assuming as much as that about the semantic framework. The rigidifying reading of ‘actually’ is not the only one available in English, but it is available in English, and it is the reading relevant to present concerns.
+
+A difference like that between (1i) and (1s) arises even for indicative and subjunctive conditionals about the future, which are generally hard to separate:
+
+(2i)
+If Mary comes tomorrow, she will actually come tomorrow.
+(2s)
+If Mary had come tomorrow, she would actually have come tomorrow.
+
+As before, the indicative conditional (2i) is an obvious truism, verifiable on broadly logical grounds, whereas the subjunctive conditional (2s) is actually false on the relevant reading unless Mary does actually come tomorrow, given that she could have come tomorrow.
+
+In the foregoing respect the indicative conditional (1s) works like the strict conditional (1m):
+
+(1m)
+Necessarily, if Jim is two metres tall, then Jim is actually two metres tall.
+
+Using $\mathrm{A}$ for ‘actually’, we can formalize (1m) as:
+
+$$\text{(1m)′}\quad □(\mathrm{j} \supset \mathrm{Aj})$$
+
+Given standard principles of modal logic with an ‘actually’ operator, (1m)′ will have the same truth-value in the actual world as (1m)″:
+
+$$\text{(1m)″}\quad ◇ \mathrm{j} \supset \mathrm{j}$$
+
+For (1m)′ entails $◇ \mathrm{j} \supset ◇ \mathrm{Aj}$ and $◇ \mathrm{Aj}$ entails $\mathrm{Aj}$, which has the same actual world truth-value as $\mathrm{j}$; conversely, if (1m)″ is true in the actual world so is either $\neg◇ \mathrm{j}$ or $\mathrm{j}$ and if the latter $\mathrm{Aj}$ too; but $\mathrm{Aj}$ entails $□ \mathrm{Aj}$, which entails (1m)″, as does $\neg◇ \mathrm{j}$.
+
+Incidentally, (1m) is a problem for naive attempts to regard ‘actually’ as merely a syntactic scope-indicating device that simply takes what it governs out of the scope of modal operators. In particular, (1m) is certainly not equivalent to:
+
+(1m)*
+If Jim is necessarily two metres tall, then Jim is two metres tall.
+
+For if Jim is not two metres tall then (1m) is false, whereas (1m)* is still true because necessity entails truth. More generally, (1m)″ is not logically equivalent to any truth-function of $□ \mathrm{j}$ and $\mathrm{j}$, otherwise its truth-value would be settled by the falsity of $\mathrm{j}$ (which requires the falsity of $□ \mathrm{j}$), irrespective of the truth-value of $◇ \mathrm{j}$. A much more sophisticated notion of semantic scope would be needed to make sense of such an idea.
+
+The difference in the ways in which ‘actually’ interacts with indicative and subjunctive conditionals permits non-trivial comparisons between conditionally supposed and actual states of affairs to be made in subjunctive but not in indicative conditionals.
+
+(3i)
+If I kept quiet while hunting, I caught more than I actually did.
+(3s)
+If I had kept quiet while hunting, I would have caught more than I actually did.
+
+Here the subjunctive conditional (3s) records the sort of consideration that helps one to learn from experience, in particular from past mistakes. By contrast, the indicative conditional (3i) tells someone who knows full well that he did not keep quiet while hunting nothing new of interest. Thus the difference in interaction with ‘actually’ is no mere curiosity: it is a sign of significant differences in the function of such conditionals.
+
+In what follows, we investigate the interaction between ‘actually’ and other operators in a formal setting. Our concern here is not primarily to investigate subtleties of the use of ‘actually’ operators in natural languages. Rather, we will take for granted an operator in a formal language with the evidently intelligible rigidifying reading in order to investigate formally some ways in which it constrains the space of available semantic options for other constructions in the language, such as indicative and subjunctive conditionals.2
+
+We will not assume a framework of possible worlds semantics to handle the formal analogue of ‘actually’, $\mathrm{A}$, on which a formula $\mathrm{A}\alpha$ is evaluated as true at an arbitrary world in a model if and only if $\alpha$ is evaluated as true at the actual world of the model (while other parameters of semantic evaluation remain fixed). Instead, we will provide a more general characterization of its logical role, relative to an arbitrary semantic notion of validity. This level of generality is not motivated by any objection to the possible worlds semantics for ‘actually’ in itself but rather by the fact that many different sorts of semantic framework have been proposed for the treatment of conditionals (not all of them even truth-conditional). The aim is to remain neutral to the extent possible between those frameworks. For heuristic purposes, some points will be informally glossed in terms of possible worlds, but such glosses are inessential to the official arguments.
+
+To anticipate: In the sorts of language with which we shall be concerned, the behaviour of the subjunctive conditional noted above is typical of a non-truth-functional conditional, whereas the corresponding behaviour of the indicative conditional seems to exclude any natural reading except that of a truth-functional conditional.3
+
+# 2 Language
+
+We consider a formal language $\mathrm{L}$ with a countable infinity of atomic sentence variables, the usual truth-functional operators, including the 0-place falsity constant $\mathrm{f}$ and the truth constant $\mathrm{t}$, negation ($\neg$), conjunction ($\mathbin{\&}$), disjunction ($\vee$), the material conditional ($\supset$) the material biconditional ($\equiv$), the (atomic) one-place sentential operator $\mathrm{A}$ and an unspecified set of further (atomic) operators (specific consideration of non-truth-functional conditionals is postponed to the final section); $\mathrm{p}$, $\mathrm{q}$, $\mathrm{r}$, … are atomic sentence variables of $\mathrm{L}$ and $\alpha$, $\beta$, $\gamma$, … are any sentences of $\mathrm{L}$. Below, ‘tautology’ means truth-functional tautology and ‘variable’ means sentence variable.
+
+In what follows, we shall speak of sentential contexts, not just of sentential operators. For example, for any sentence $\beta$ in $\mathrm{L}$ there is a sentential context $\mathrm{C}$ such that for any sentence $\alpha$, $\mathrm{C}(\alpha) = \neg\alpha \mathbin{\&} \beta$, even if $\mathrm{C}$ does not correspond to an atomic operator of $\mathrm{L}$. But we do not wish to describe every function from sentences of $\mathrm{L}$ to sentences of $\mathrm{L}$ as a sentential context. For instance, in $\mathrm{L}$ there is no sentential context $\mathrm{C}$ such that for every sentence $\alpha$, $\mathrm{C}(\alpha)$ is $\mathrm{t}$ if $\alpha$ is atomic and $\mathrm{C}(\alpha)$ is $\mathrm{f}$ otherwise. Obviously, contexts in this intra-linguistic sense are not to be confused with contexts in the more usual extra-linguistic sense, in which a speaker, time and world are components of a context. Although the notion of a sentential context seems intuitively clear, we pause to make it more precise.
+
+A substitution is any function $\sigma$ from $\mathrm{L}$ to $\mathrm{L}$ that commutes with all operators of $\mathrm{L}$: that is, if $\mathrm{O}$ is an $n$-place operator then $\sigma(\mathrm{O}(\alpha_1, \ldots, \alpha_n)) = \mathrm{O}(\sigma(\alpha_1), \ldots, \sigma(\alpha_n))$; in particular, $\sigma(\mathrm{t}) = \mathrm{t}$, $\sigma(\mathrm{f}) = \mathrm{f}$ and $\sigma(\mathrm{A}\alpha) = \mathrm{A}\sigma(\alpha)$. Clearly, substitutions are closed under composition: if $\sigma_1$ and $\sigma_2$ are substitutions, there is a unique substitution $\sigma_1\sigma_2$ such that $\sigma_1\sigma_2(\alpha) = \sigma_1(\sigma_2(\alpha))$ for all $\alpha$. Below, $\sigma$ is any substitution.
+
+A (sentential) context is an ordered pair $\mathord{<}\alpha, \mathrm{p}\mathord{>}$. If $\mathrm{C} = \mathord{<}\alpha, \mathrm{p}\mathord{>}$ then $\mathrm{C}(\beta) = \sigma_{\mathrm{p}/\beta}(\alpha)$, where $\sigma_{\mathrm{p}/\beta}$ is the substitution such that $\sigma_{\mathrm{p}/\beta}(\mathrm{p}) = \beta$ and $\sigma_{\mathrm{p}/\beta}(\mathrm{q}) = \mathrm{q}$ whenever $\mathrm{q} \ne \mathrm{p}$. Think of $\mathord{<}\alpha, \mathrm{p}\mathord{>}$ as a metalinguistic analogue of $\lambda \mathrm{p}.\alpha$. For example, if $\mathrm{C} = \mathord{<} \mathrm{p} \mathbin{\&} \neg \mathrm{q}, \mathrm{p}\mathord{>}$ and $\mathrm{D} = \mathord{<} \mathrm{p} \mathbin{\&} \neg \mathrm{q}, \mathrm{q}\mathord{>}$ then $\mathrm{C}(\neg \mathrm{r}) = \neg \mathrm{r} \mathbin{\&} \neg \mathrm{q}$ and $\mathrm{D}(\neg \mathrm{r}) = \mathrm{p} \mathbin{\&} \neg\neg \mathrm{r}$. We say that contexts $\mathrm{C}$ and $\mathrm{D}$ are equivalent iff $\mathrm{C}(\alpha) = \mathrm{D}(\alpha)$ for every sentence $\alpha$.
+
+We check the following fact:
+
+1. Composition of contexts. For any contexts $\mathrm{C}$ and $\mathrm{D}$, there is a context $\mathrm{CD}$ such that for all $\alpha$, $\mathrm{CD}(\alpha) = \mathrm{C}(\mathrm{D}(\alpha))$.
+
+Proof Let $\mathrm{C} = \mathord{<}\gamma, \mathrm{p}\mathord{>}$ and $\mathrm{D} = \mathord{<}\delta, \mathrm{q}\mathord{>}$. Choose an $\mathrm{r}$ that occurs in neither $\gamma$ nor $\delta$. Set $\mathrm{E} = \mathord{<} \mathrm{C}(\mathrm{D}(\mathrm{r})), \mathrm{r}\mathord{>}$. Now for any formula $\alpha$ the substitutions $\sigma_{\mathrm{q}/\alpha}$ and $\sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{q}/\mathrm{r}}$ have the same effect on any sentence in which $\mathrm{r}$ does not occur, for $\sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{q}/\mathrm{r}}(\mathrm{q}) = \sigma_{\mathrm{r}/\alpha}(\mathrm{r}) = \alpha = \sigma_{\mathrm{q}/\alpha}(\mathrm{q})$ and $\sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{q}/\mathrm{r}}(\mathrm{s}) = \sigma_{\mathrm{r}/\alpha}(\mathrm{s}) = \mathrm{s} = \sigma_{\mathrm{q}/\alpha}(\mathrm{s})$ whenever $\mathrm{s} \ne \mathrm{q}, \mathrm{s} \ne \mathrm{r}$. Since $\mathrm{r}$ does not occur in $\delta$, $\sigma_{\mathrm{r}/\alpha}(\mathrm{D}(\mathrm{r})) = \sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{q}/\mathrm{r}}(\delta) = \sigma_{\mathrm{q}/\alpha}(\delta) = \mathrm{D}(\alpha)$. Thus the substitutions $\sigma_{\mathrm{p}/\mathrm{D}(\alpha)}$ and $\sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{p}/\mathrm{D}(\mathrm{r})}$ have the same effect on any sentence in which $\mathrm{r}$ does not occur, for $\sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{p}/\mathrm{D}(\mathrm{r})}(\mathrm{p}) = \sigma_{\mathrm{r}/\alpha}(\mathrm{D}(\mathrm{r})) = \mathrm{D}(\alpha) = \sigma_{\mathrm{p}/\mathrm{D}(\alpha)}(\mathrm{p})$ and $\sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{p}/\mathrm{D}(\mathrm{r})}(\mathrm{s}) = \sigma_{\mathrm{r}/\alpha}(\mathrm{s}) = \mathrm{s} = \sigma_{\mathrm{p}/\mathrm{D}(\alpha)}(\mathrm{s})$ whenever $\mathrm{s} \ne \mathrm{p}, \mathrm{s} \ne \mathrm{r}$. Since $\mathrm{r}$ does not occur in $\gamma$, $\mathrm{E}(\alpha) = \sigma_{\mathrm{r}/\alpha}(\mathrm{C}(\mathrm{D}(\mathrm{r}))) = \sigma_{\mathrm{r}/\alpha}\sigma_{\mathrm{p}/\mathrm{D}(\mathrm{r})}(\gamma) = \sigma_{\mathrm{p}/\mathrm{D}(\alpha)}(\gamma) = \mathrm{C}(\mathrm{D}(\alpha))$. □
+
+# 3 Validity
+
+We assume that some semantic notion of validity is given, and write $\vDash \alpha$ to mean that $\alpha$ is valid. For simplicity, we consider only single formula validity, although the discussion could certainly be extended to validity for arguments with one or more premises. We assume for purposes of inquiry that validity has the following properties:
+
+MP
+If $\vDash \alpha \supset \beta$ and $\vDash \alpha$ then $\vDash \beta$
+TAUTOLOGY
+If $\alpha \equiv \beta$ is a tautology then $\vDash \mathrm{C}(\alpha) \supset \mathrm{C}(\beta)$
+SUBSTITUTION
+If $\vDash \alpha$ then $\vDash \sigma(\alpha)$
+ACTUALITY
+$\vDash \mathrm{C}(\mathrm{A}\alpha) \equiv [[\alpha \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\alpha \supset \mathrm{C}(\mathrm{f})]]$
+
+Comments: MP is modus ponens for the material conditional $\supset$; modus ponens for any other conditional the language may contain is another matter. TAUTOLOGY implies that the language does not contain operators so fine-grained that they are sensitive to differences between truth-functional equivalents; it ensures that the background logic for the usual connectives is classical. SUBSTITUTION is a ‘smoothness’ condition; dropping it would make little difference to the main line of argument below, but SUBSTITUTION does allow us to talk of the validity of all instances of a schema by talking of the validity of a single instance of it in which distinct atomic sentences stand in for distinct schematic letters. ACTUALITY expresses the rigidifying effect of $\mathrm{A}$ in all contexts in $\mathrm{L}$: actualized truths behave like tautologies and actualized falsehoods like contradictions. Implicit in ACTUALITY is the validity of the equivalence of truth and actual truth: in the terminology of Davies and Humberstone (1980), this corresponds to real world validity (truth at the actual world in each model) rather than the modal notion of general validity (truth at every world in each model). Indeed, since ACTUALITY applies to all sentential contexts in the language, $\mathrm{A}$ must rigidify all parameters in a circumstance of evaluation: the time as well as the world (“actually now”) and even the assignment of values to individual variables in a quantified language. However, as already noted, for present purposes we are avoiding official commitment to such semantic glosses on $\mathrm{A}$ in terms of possible worlds.
+
+We are not claiming that all languages must obey these four conditions. Rather, the claim is just that they are attractive enough for their consequences to be worth exploring. For example, if we add a standard ‘actually’ operator $\mathrm{A}$, a counterfactual conditional and operators for metaphysical possibility and necessity to a standard propositional calculus and consider real world validity on a possible worlds semantics, we obtain all four features.
+
+For future use, we make explicit a few elementary consequences of these constraints. First, we check that validity is closed under classical truth-functional reasoning.
+
+1.1
+If $\alpha$ is a tautology then $\vDash \alpha$.
+
+Proof Since $\mathrm{t} \equiv \mathrm{t}$ is a tautology, $\vDash \mathrm{t} \supset \mathrm{t}$ by TAUTOLOGY. But if $\alpha$ is a tautology then $[\mathrm{t} \supset \mathrm{t}] \equiv \alpha$ is a tautology, so $\vDash [\mathrm{t} \supset \mathrm{t}] \supset \alpha$ by TAUTOLOGY again, so $\vDash \alpha$ by MP. □
+
+1.2
+If $\vDash [\alpha_1 \mathbin{\&} \ldots \mathbin{\&} \alpha_n] \supset \beta$ and $\vDash \alpha_1$, …, $\vDash \alpha_n$ then $\vDash \beta$.
+
+Proof By induction on $n$. Basis: For $n = 0$ we treat the conjunction as $\mathrm{t}$, so $\vDash \mathrm{t} \supset \beta$, but $\vDash \mathrm{t}$ by 1.1, so $\vDash \beta$ by MP. Induction step: Suppose that the result holds for $n$. Suppose also that $\vDash [\alpha_1 \mathbin{\&} \ldots \mathbin{\&} \alpha_{n+1}] \supset \beta$ and $\vDash \alpha_1$, …, $\vDash \alpha_{n+1}$. But $[[\alpha_1 \mathbin{\&} \ldots \mathbin{\&} \alpha_{n+1}] \supset \beta] \supset [\alpha_{n+1} \supset [[\alpha_1 \mathbin{\&} \ldots \mathbin{\&} \alpha_n] \supset \beta]]$ is a tautology. Hence by 1.1 and two steps of MP $\vDash [\alpha_1 \mathbin{\&} \ldots \mathbin{\&} \alpha_n] \supset \beta$, so $\vDash \beta$ by induction hypothesis. □
+
+1.3
+If $[\alpha_1 \mathbin{\&} \ldots \mathbin{\&} \alpha_n] \supset \beta$ is a tautology and $\vDash \alpha_1$, …, $\vDash \alpha_n$ then $\vDash \beta$.
+
+Proof By 1.1 and 1.2. □
+
+Most of the subsequent proofs in this paper use at least one of these three lemmas without comment.
+
+We now make explicit that validity is real world validity:
+
+1.4
+$\vDash \mathrm{A}\alpha \equiv \alpha$
+
+Proof Setting $\mathrm{C} = \mathord{<} \mathrm{p}, \mathrm{p}\mathord{>}$ in ACTUALITY, $\vDash \mathrm{A}\alpha \equiv [[\alpha \supset \mathrm{t}] \mathbin{\&} [\neg\alpha \supset \mathrm{f}]]$. But $\alpha \equiv [[\alpha \supset \mathrm{t}] \mathbin{\&} [\neg\alpha \supset \mathrm{f}]]$ is a tautology, so $\vDash \mathrm{A}\alpha \equiv \alpha$. □
+
+Call a context $\mathrm{C}$ congruential iff whenever $\vDash \alpha \equiv \beta$, $\vDash \mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)$ (‘substitution of logical equivalents’). Call $\mathrm{C}$ extensional iff always $\vDash [\alpha \equiv \beta] \supset [\mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)]$. Of course, by MP all extensional contexts are congruential. Many languages contain operators that create congruential, non-extensional contexts: for instance, modal operators in simple languages of propositional modal logic. Extensionality is almost but not quite equivalent to truth-functionality (Humberstone 1986, 1997). All truth-functional contexts are extensional. An example of an extensional context that is not truth-functional is $\mathord{<} \mathrm{p} \mathbin{\&} \mathrm{q}, \mathrm{p}\mathord{>}$. Although $\vDash [\alpha \equiv \beta] \supset [[\alpha \mathbin{\&} \mathrm{q}] \equiv [\beta \mathbin{\&} \mathrm{q}]]$, because it is a tautology, the truth-value of $\mathrm{p} \mathbin{\&} \mathrm{q}$ is not determined by the truth-value of $\mathrm{p}$ independently of that of $\mathrm{q}$. In practice, all the non-truth-functional operators commonly discussed in the literature are also non-extensional.
+
+The following result shows a perhaps surprising effect of the presence of $\mathrm{A}$ in $\mathrm{L}$:
+
+1.5
+All congruential contexts are extensional.
+
+Proof Suppose that $\mathrm{C}$ is congruential. Let $\alpha$ and $\beta$ be any sentences. By 1.4, $\vDash \mathrm{A}\alpha \equiv \alpha$. Since $\mathrm{C}$ is congruential, $\vDash \mathrm{C}(\mathrm{A}\alpha) \equiv \mathrm{C}(\alpha)$. So by ACTUALITY $\vDash \mathrm{C}(\alpha) \equiv [[\alpha \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\alpha \supset \mathrm{C}(\mathrm{f})]]$. Similarly, $\vDash \mathrm{C}(\beta) \equiv [[\beta \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\beta \supset \mathrm{C}(\mathrm{f})]]$. But $[\alpha \equiv \beta] \supset [[[\alpha \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\alpha \supset \mathrm{C}(\mathrm{f})]] \equiv [[\beta \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\beta \supset \mathrm{C}(\mathrm{f})]]]$ is a tautology, so $\vDash [\alpha \equiv \beta] \supset [[[\alpha \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\alpha \supset \mathrm{C}(\mathrm{f})]] \equiv [[\beta \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\beta \supset \mathrm{C}(\mathrm{f})]]]$. Hence $\vDash [\alpha \equiv \beta] \supset [\mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)]$. □
+
+The proof can be thought of as a valid analogue of the notorious Frege-Church ‘slingshot’ argument, for sentence rather than name position. Since we want to allow non-extensional contexts into $\mathrm{L}$ (such as the context of the antecedent or consequent of a subjunctive conditional), we must allow non-congruential contexts. Thus merely establishing that $\vDash \alpha \equiv \beta$ does not in general show that $\alpha$ and $\beta$ are interchangeable with respect to validity. It would therefore also be nice to have some notion of semantic equivalence broader than truth-functional equivalence that does permit interchangeability of such equivalents without change of relevant semantic status. The next section shows how to define such a notion from present resources.
+
+# 4 Validity*
+
+We define a stronger notion of validity, written $\vDash\text{*}$, by setting $\vDash\text{*} \alpha$ if and only if for every context $\mathrm{C}$, $\vDash \mathrm{C}(\alpha) \equiv \mathrm{C}(\mathrm{t})$. Thus the valid* sentences are those semantically interchangeable with a tautology. We establish some properties of $\vDash\text{*}$. First, we check that $\vDash\text{*}$ is indeed at least as strong as $\vDash$, in the sense of imposing at least as high a standard for validity.
+
+2.1
+If $\vDash\text{*} \alpha$ then $\vDash \alpha$.
+
+Proof Suppose that $\vDash\text{*} \alpha$. Setting $\mathrm{C} = \mathord{<} \mathrm{p}, \mathrm{p}\mathord{>}$, $\vDash \alpha \equiv \mathrm{t}$. Since $[\alpha \equiv \mathrm{t}] \supset \alpha$ is a tautology, $\vDash \alpha$. □
+
+Now we check that classical truth-functional reasoning is valid in the stronger sense.
+
+2.2
+If $\alpha$ is a tautology then $\vDash\text{*} \alpha$.
+
+Proof If $\alpha$ is a tautology then $\mathrm{t} \equiv \alpha$ and $\alpha \equiv \mathrm{t}$ are tautologies, so by TAUTOLOGY $\vDash \mathrm{C}(\mathrm{t}) \supset \mathrm{C}(\alpha)$ and $\vDash \mathrm{C}(\alpha) \supset \mathrm{C}(\mathrm{t})$, so $\vDash \mathrm{C}(\alpha) \equiv \mathrm{C}(\mathrm{t})$. □
+
+2.3
+If $\vDash\text{*} \alpha \supset \beta$ and $\vDash\text{*} \alpha$ then $\vDash\text{*} \beta$.
+
+Proof Suppose that $\vDash\text{*} \alpha \supset \beta$ and $\vDash\text{*} \alpha$. Fix a context $\mathrm{C}$. Let $\mathrm{D} = \mathord{<} \mathrm{q} \supset \beta, \mathrm{q}\mathord{>}$, where $\mathrm{q}$ does not occur in $\beta$. Since $\vDash\text{*} \alpha$, $\vDash \mathrm{CD}(\alpha) \equiv \mathrm{CD}(\mathrm{t})$. But $\mathrm{CD}(\alpha) = \mathrm{C}(\alpha \supset \beta)$ and $\mathrm{CD}(\mathrm{t}) = \mathrm{C}(\mathrm{t} \supset \beta)$. Hence $\vDash \mathrm{C}(\alpha \supset \beta) \equiv \mathrm{C}(\mathrm{t} \supset \beta)$. But $[\mathrm{t} \supset \beta] \equiv \beta$ is a tautology, so by TAUTOLOGY $\vDash \mathrm{C}(\mathrm{t} \supset \beta) \equiv \mathrm{C}(\beta)$. Hence $\vDash \mathrm{C}(\alpha \supset \beta) \equiv \mathrm{C}(\beta)$. Since $\vDash\text{*} \alpha \supset \beta$, $\vDash \mathrm{C}(\alpha \supset \beta) \equiv \mathrm{C}(\mathrm{t})$. Thus $\vDash \mathrm{C}(\beta) \equiv \mathrm{C}(\mathrm{t})$. Since $\mathrm{C}$ was an arbitrary context, $\vDash\text{*} \beta$. □
+
+2.4
+If $\alpha \equiv \beta$ is a tautology then $\vDash\text{*} \alpha$ iff $\vDash\text{*} \beta$.
+
+Proof If $\alpha \equiv \beta$ is a tautology so are $\alpha \supset \beta$ and $\beta \supset \alpha$; now use 2.2 and 2.3. □
+
+Next, we check that semantic equivalence in the sense of $\vDash\text{*}$ really does imply semantic interchangeability with respect to $\vDash$.
+
+2.5
+If $\vDash\text{*} \alpha \equiv \beta$ then $\vDash \mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)$.
+
+Proof Suppose that $\vDash\text{*} \alpha \equiv \beta$. Let $\mathrm{D} = \mathord{<} \mathrm{q} \equiv \beta, \mathrm{q}\mathord{>}$ where $\mathrm{q}$ does not occur in $\beta$. Since $\vDash\text{*} \alpha \equiv \beta$, $\vDash \mathrm{CD}(\alpha \equiv \beta) \equiv \mathrm{CD}(\mathrm{t})$. But $\mathrm{CD}(\alpha \equiv \beta) = \mathrm{C}([\alpha \equiv \beta] \equiv \beta)$ and $\mathrm{CD}(\mathrm{t}) = \mathrm{C}(\mathrm{t} \equiv \beta)$. Thus $\vDash \mathrm{C}([\alpha \equiv \beta] \equiv \beta) \equiv \mathrm{C}(\mathrm{t} \equiv \beta)$. But $[[\alpha \equiv \beta] \equiv \beta] \equiv \alpha$ and $[\mathrm{t} \equiv \beta] \equiv \beta$ are tautologies, so by TAUTOLOGY $\vDash \mathrm{C}([[\alpha \equiv \beta] \equiv \beta]) \equiv \mathrm{C}(\alpha)$ and $\vDash \mathrm{C}(\mathrm{t} \equiv \beta) \equiv \mathrm{C}(\beta)$. Hence $\vDash \mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)$. □
+
+We can now show that all contexts in $\mathrm{L}$ have the analogue of congruentiality for $\vDash\text{*}$ in place of $\vDash$:
+
+2.6
+If $\vDash\text{*} \alpha \equiv \beta$ then $\vDash\text{*} \mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)$.
+
+Proof Suppose that $\vDash\text{*} \alpha \equiv \beta$. Let $\mathrm{C} = \mathord{<}\gamma, \mathrm{p}\mathord{>}$. Consider any context $\mathrm{D} = \mathord{<}\delta, \mathrm{q}\mathord{>}$. Let $\mathrm{E} = \mathord{<} \mathrm{q} \equiv \mathrm{C}(\beta), \mathrm{q}\mathord{>}$, where $\mathrm{q}$ does not occur in $\mathrm{C}(\beta)$. For any context $\mathrm{D}$, by 2.5 $\vDash \mathrm{DEC}(\alpha) \equiv \mathrm{DEC}(\beta)$. But $\mathrm{DEC}(\alpha) = \mathrm{D}(\mathrm{C}(\alpha) \equiv \mathrm{C}(\beta))$ and $\mathrm{DEC}(\beta) = \mathrm{D}(\mathrm{C}(\beta) \equiv \mathrm{C}(\beta))$. Hence $\vDash \mathrm{D}(\mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)) \equiv \mathrm{D}(\mathrm{C}(\beta) \equiv \mathrm{C}(\beta))$. But $[\mathrm{C}(\beta) \equiv \mathrm{C}(\beta)] \equiv \mathrm{t}$ is a tautology, so by TAUTOLOGY $\vDash \mathrm{D}(\mathrm{C}(\beta) \equiv \mathrm{C}(\beta)) \equiv \mathrm{D}(\mathrm{t})$. Hence $\vDash \mathrm{D}(\mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)) \equiv \mathrm{D}(\mathrm{t})$. Since $\mathrm{D}$ was an arbitrary context, $\vDash\text{*} \mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)$. □
+
+We can also show that $\vDash\text{*}$ is the weakest strengthening of $\vDash$ to have features 2.1, 2.4 and 2.6.
+
+2.7
+Suppose that $\vDash\text{\textasciicircum}$ obeys the following principles for all sentences $\alpha$ and $\beta$:
+(a^)
+If $\vDash\text{\textasciicircum} \alpha$ then $\vDash \alpha$
+(b^)
+If $\alpha \equiv \beta$ is a tautology then $\vDash\text{\textasciicircum} \alpha$ iff $\vDash\text{\textasciicircum} \beta$
+(c^)
+If $\vDash\text{\textasciicircum} \alpha \equiv \beta$ then $\vDash\text{\textasciicircum} \mathrm{C}(\alpha) \equiv \mathrm{C}(\beta)$
+
+Then for all sentences $\alpha$, if $\vDash\text{\textasciicircum} \alpha$ then $\vDash\text{*} \alpha$.
+
+Proof Suppose that $\vDash\text{\textasciicircum} \alpha$. Since $\alpha \equiv [\alpha \equiv \mathrm{t}]$ is a tautology, $\vDash\text{\textasciicircum} \alpha \equiv \mathrm{t}$ by (b^). Thus $\vDash\text{\textasciicircum} \mathrm{C}(\alpha) \equiv \mathrm{C}(\mathrm{t})$ by (c^), so $\vDash \mathrm{C}(\alpha) \equiv \mathrm{C}(\mathrm{t})$ by (a^). Since $\mathrm{C}$ was arbitrary, $\vDash\text{*} \alpha$. □
+
+We should also check that the smoothness condition of closure under uniform substitutions is preserved under the transition from $\vDash$ to $\vDash\text{*}$.
+
+2.8
+If $\vDash\text{*} \alpha$ then $\vDash\text{*} \sigma(\alpha)$
+
+Proof Fix $\alpha$ and $\sigma$. Suppose that $\vDash\text{*} \alpha$. Let $\mathrm{C} = \mathord{<}\gamma, \mathrm{p}\mathord{>}$. Let $\mathrm{S}$ be the set of variables in $\alpha$, $\sigma(\alpha)$, $\gamma$ or $\mathrm{p}$. Let $\varphi$ be a substitution that maps distinct variables in $\mathrm{S}$ to distinct variables not in $\mathrm{S}$ and is constant on variables not in $\mathrm{S}$. Let $\psi$ be a substitution such that if $\mathrm{q}$ is in $\mathrm{S}$ then $\psi(\varphi(\mathrm{q})) = \mathrm{q}$ and $\psi$ is constant outside $\mathrm{S}$. Let $\mathrm{C}\text{*} = \mathord{<}\varphi(\gamma), \varphi(\mathrm{p})\mathord{>}$. Let $\sigma\text{*}$ be the substitution such that $\sigma\text{*}(\mathrm{q}) = \sigma(\mathrm{q})$ if $\mathrm{q}$ is in $\mathrm{S}$ and $\sigma\text{*}(\mathrm{q}) = \mathrm{q}$ otherwise. Now for any $\beta$, $\sigma\text{*}(\sigma_{\varphi(\mathrm{p})/\beta}(\varphi(\mathrm{p}))) = \sigma\text{*}(\beta) = \sigma_{\varphi(\mathrm{p})/\sigma\text{*}(\beta)}(\varphi(\mathrm{p}))$ and for any other variable $\mathrm{q}$ not in $\mathrm{S}$, $\sigma\text{*}(\sigma_{\varphi(\mathrm{p})/\beta}(\mathrm{q})) = \sigma\text{*}(\mathrm{q}) = \mathrm{q} = \sigma_{\varphi(\mathrm{p})/\sigma\text{*}(\beta)}(\mathrm{q})$. Hence for any $\delta$ with no variables in $\mathrm{S}$, $\sigma\text{*}(\sigma_{\varphi(\mathrm{p})/\beta}(\delta)) = \sigma_{\varphi(\mathrm{p})/\sigma\text{*}(\beta)}(\delta)$. Since $\varphi(\gamma)$ has no sentence variables in $\mathrm{S}$, $\sigma\text{*}(\mathrm{C}\text{*}(\beta)) = \sigma\text{*}(\sigma_{\varphi(\mathrm{p})/\beta}(\varphi(\gamma))) = \sigma_{\varphi(\mathrm{p})/\sigma\text{*}(\beta)}(\varphi(\gamma)) = \mathrm{C}\text{*}(\sigma\text{*}(\beta))$. But $\vDash \mathrm{C}\text{*}(\alpha) \equiv \mathrm{C}\text{*}(\mathrm{t})$, so by SUBSTITUTION $\vDash \psi(\sigma\text{*}(\mathrm{C}\text{*}(\alpha))) \equiv \psi(\sigma\text{*}(\mathrm{C}\text{*}(\mathrm{t})))$, so $\vDash \psi(\mathrm{C}\text{*}(\sigma\text{*}(\alpha))) \equiv \psi(\mathrm{C}\text{*}(\sigma\text{*}(\mathrm{t})))$. Now $\sigma\text{*}(\mathrm{t}) = \mathrm{t}$ and $\sigma\text{*}(\alpha) = \sigma(\alpha)$ since every variable in $\alpha$ is in $\mathrm{S}$. Thus $\vDash \psi(\mathrm{C}\text{*}(\sigma(\alpha))) \equiv \psi(\mathrm{C}\text{*}(\mathrm{t}))$. Let $\beta$ have no variables outside $\mathrm{S}$. Then $\psi(\sigma_{\varphi(\mathrm{p})/\beta}(\varphi(\mathrm{p}))) = \psi(\beta) = \beta = \sigma_{\mathrm{p}/\beta}(\mathrm{p})$ and if $\mathrm{q}$ is any other variable in $\mathrm{S}$, $\psi(\sigma_{\varphi(\mathrm{p})/\beta}(\varphi(\mathrm{q}))) = \psi(\varphi(\mathrm{q})) = \mathrm{q} = \sigma_{\mathrm{p}/\beta}(\mathrm{q})$. Therefore, since $\gamma$ has no variables outside $\mathrm{S}$, $\psi(\sigma_{\varphi(\mathrm{p})/\beta}(\varphi(\gamma))) = \sigma_{\mathrm{p}/\beta}(\gamma)$. But $\psi(\mathrm{C}\text{*}(\beta)) = \psi(\sigma_{\varphi(\mathrm{p})/\beta}(\varphi(\gamma)))$ and $\mathrm{C}(\beta) = \sigma_{\mathrm{p}/\beta}(\gamma)$, so $\psi(\mathrm{C}\text{*}(\beta)) = \mathrm{C}(\beta)$. In particular, since $\sigma(\alpha)$ and $\mathrm{t}$ have no variables outside $\mathrm{S}$, $\psi(\mathrm{C}\text{*}(\sigma(\alpha))) = \mathrm{C}(\sigma(\alpha))$ and $\psi(\mathrm{C}\text{*}(\mathrm{t})) = \mathrm{C}(\mathrm{t})$. Therefore $\vDash \mathrm{C}(\sigma(\alpha)) \equiv \mathrm{C}(\mathrm{t})$. But $\mathrm{C}$ was arbitrary, so $\vDash\text{*} \sigma(\alpha)$. □
+
+The price of allowing non-extensional contexts, such as are created by counterfactual conditionals and modal operators, is that we lose some real world valid features of the logic of the ‘actually’ operator:
+
+2.9
+If $\mathrm{L}$ has non-extensional contexts, then not $\vDash\text{*} \mathrm{Ap} \equiv \mathrm{p}$.
+
+Proof Suppose that $\vDash\text{*} \mathrm{Ap} \equiv \mathrm{p}$. Then for all $\alpha$ $\vDash\text{*} \mathrm{A}\alpha \equiv \alpha$ by 2.8, so far any context $\mathrm{C}$, $\vDash\text{*} \mathrm{C}(\mathrm{A}\alpha) \equiv \mathrm{C}(\alpha)$. It follows as in the proof of 1.5 that $\mathrm{C}$ is extensional. □
+
+Nevertheless, we can still obtain all the standard generally valid features of the logic of ‘actually’ for the strengthened notion of validity (and a fortiori for the original weaker notion). In possible worlds terms, all those formulas that are true at all worlds in every model, not just at the actual world of every model, are still valid in the new sense.
+
+2.10
+$\vDash\text{*} \neg \mathrm{Ap} \equiv \mathrm{A}\neg \mathrm{p}$
+
+Proof Let $\mathrm{C}$ be any context. Let $\mathrm{D} = \mathord{<}\neg \mathrm{q} \equiv \mathrm{A}\neg \mathrm{p}, \mathrm{q}\mathord{>}$. Applying ACTUALITY to the context $\mathrm{CD}$:
+
+$$\vDash \mathrm{C}(\neg \mathrm{Ap} \equiv \mathrm{A}\neg \mathrm{p}) \equiv [[\mathrm{p} \supset \mathrm{C}(\neg \mathrm{t} \equiv \mathrm{A}\neg \mathrm{p})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\neg \mathrm{f} \equiv \mathrm{A}\neg \mathrm{p})]]$$
+
+(10a)
+
+By TAUTOLOGY from (10a):
+
+$$\vDash \mathrm{C}(\neg \mathrm{Ap} \equiv \mathrm{A}\neg \mathrm{p}) \equiv [[\mathrm{p} \supset \mathrm{C}(\neg \mathrm{A}\neg \mathrm{p})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{A}\neg \mathrm{p})]]$$
+
+(10b)
+
+Let $\mathrm{E} = \mathord{<}\neg \mathrm{q}, \mathrm{q}\mathord{>}$. Applying ACTUALITY to $\neg\alpha$ for $\mathrm{C}$ and $\mathrm{CE}$ respectively:
+
+$$\vDash \mathrm{C}(\mathrm{A}\neg \mathrm{p}) \equiv [[\neg \mathrm{p} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f})]]$$
+
+(10c)
+
+$$\vDash \mathrm{C}(\neg \mathrm{A}\neg \mathrm{p}) \equiv [[\neg \mathrm{p} \supset \mathrm{C}(\neg \mathrm{t})] \mathbin{\&} [\neg\neg \mathrm{p} \supset \mathrm{C}(\neg \mathrm{f})]]$$
+
+(10d)
+
+By TAUTOLOGY (10d) simplifies to:
+
+$$\vDash \mathrm{C}(\neg \mathrm{A}\neg \mathrm{p}) \equiv [[\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f})] \mathbin{\&} [\mathrm{p} \supset \mathrm{C}(\mathrm{t})]]$$
+
+(10e)
+
+From (10b), (10c) and (10e):
+
+$$\begin{aligned} &\vDash \mathrm{C}(\neg \mathrm{Ap} \equiv \mathrm{A}\neg \mathrm{p}) \equiv\\ &[[\mathrm{p} \supset [[\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f})] \mathbin{\&} [\mathrm{p} \supset \mathrm{C}(\mathrm{t})]]] \mathbin{\&} [\neg \mathrm{p} \supset [[\neg \mathrm{p} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\mathrm{p} \supset \mathrm{C}(\mathrm{f})]]]]\end{aligned}$$
+
+(10f)
+
+The right-hand side of (10f) is tautologously equivalent to $\mathrm{C}(\mathrm{t})$. Hence (10f) gives:
+
+$$\vDash \mathrm{C}(\neg \mathrm{Ap} \equiv \mathrm{A}\neg \mathrm{p}) \equiv \mathrm{C}(\mathrm{t})$$
+
+(10g)
+
+□
+
+2.11
+$\vDash\text{*} \mathrm{A}[\mathrm{p} \supset \mathrm{q}] \supset [\mathrm{Ap} \supset \mathrm{Aq}]$
+
+Proof Let $\mathrm{C}$ be any context. Let $\mathrm{D} = \mathord{<} \mathrm{r} \supset [\mathrm{Ap} \supset \mathrm{Aq}], \mathrm{r}\mathord{>}$. Applying ACTUALITY to $\mathrm{p} \supset \mathrm{q}$ for $\mathrm{CD}$:
+
+$$\begin{aligned} &\vDash \mathrm{C}(\mathrm{A}[\mathrm{p} \supset \mathrm{q}] \supset [\mathrm{Ap} \supset \mathrm{Aq}]) \equiv\\ &[[[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{t} \supset [\mathrm{Ap} \supset \mathrm{Aq}])] \mathbin{\&} [\neg[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{f} \supset [\mathrm{Ap} \supset \mathrm{Aq}])]]\end{aligned}$$
+
+(11a)
+
+TAUTOLOGY from (11a) gives:
+
+$$\begin{aligned} &\vDash \mathrm{C}(\mathrm{A}[\mathrm{p} \supset \mathrm{q}] \supset [\mathrm{Ap} \supset \mathrm{Aq}]) \equiv\\ & [[[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{Ap} \supset \mathrm{Aq})] \mathbin{\&} [\neg[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{t})]]\end{aligned}$$
+
+(11b)
+
+Let $\mathrm{E} = \mathord{<} \mathrm{r}, \mathrm{r} \supset \mathrm{Aq}\mathord{>}$. Applying ACTUALITY to $\mathrm{CE}$:
+
+$$\vDash \mathrm{C}(\mathrm{Ap} \supset \mathrm{Aq}) \equiv [[\mathrm{p} \supset \mathrm{C}(\mathrm{t} \supset \mathrm{Aq})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f} \supset \mathrm{Aq})]]$$
+
+(11c)
+
+By TAUTOLOGY from (11c):
+
+$$\vDash \mathrm{C}(\mathrm{Ap} \supset \mathrm{Aq}) \equiv [[\mathrm{p} \supset \mathrm{C}(\mathrm{Aq})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{t})]]$$
+
+(11d)
+
+By ACTUALITY again:
+
+$$\vDash \mathrm{C}(\mathrm{Aq}) \equiv [[\mathrm{q} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg \mathrm{q} \supset \mathrm{C}(\mathrm{f})]]$$
+
+(11e)
+
+From (11d) and (11e):
+
+$$\vDash \mathrm{C}(\mathrm{Ap} \supset \mathrm{Aq}) \equiv [[\mathrm{p} \supset [[\mathrm{q} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg \mathrm{q} \supset \mathrm{C}(\mathrm{f})]]] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{t})]]$$
+
+(11f)
+
+Simplifying the right-hand side of (11f) by TAUTOLOGY:
+
+$$\vDash \mathrm{C}(\mathrm{Ap} \supset \mathrm{Aq}) \equiv [[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{f})]]$$
+
+(11g)
+
+From (11b) and (11g):
+
+$$\begin{aligned} &\vDash \mathrm{C}(\mathrm{A}[\mathrm{p} \supset \mathrm{q}] \supset [\mathrm{Ap} \supset \mathrm{Aq}]) \equiv\\ &[[[\mathrm{p} \supset \mathrm{q}] \supset [[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{f})]]] \mathbin{\&} [\neg[\mathrm{p} \supset \mathrm{q}] \supset \mathrm{C}(\mathrm{t})]]\end{aligned}$$
+
+(11h)
+
+But the right-hand side of (11h) is tautologously equivalent to $\mathrm{C}(\mathrm{t})$, so:
+
+$$\vDash \mathrm{C}(\mathrm{A}[\mathrm{p} \supset \mathrm{q}] \supset [\mathrm{Ap} \supset \mathrm{Aq}]) \equiv \mathrm{C}(\mathrm{t})$$
+
+(11i)
+
+□
+
+2.12
+$\vDash\text{*} \mathrm{AAp} \equiv \mathrm{Ap}$
+
+Proof Let $\mathrm{C}$ be any context. Let $\mathrm{D} = \mathord{<} \mathrm{q} \equiv \mathrm{Ap}, \mathrm{q}\mathord{>}$. Applying ACTUALITY to $\mathrm{Ap}$ for $\mathrm{CD}$:
+
+$$\vDash \mathrm{C}(\mathrm{AAp} \equiv \mathrm{Ap}) \equiv [[\mathrm{Ap} \supset \mathrm{C}(\mathrm{t} \equiv \mathrm{Ap})] \mathbin{\&} [\neg \mathrm{Ap} \supset \mathrm{C}(\mathrm{f} \equiv \mathrm{Ap})]]$$
+
+(12a)
+
+By (1.4) this simplifies to:
+
+$$\vDash \mathrm{C}(\mathrm{AAp} \equiv \mathrm{Ap}) \equiv [[\mathrm{p} \supset \mathrm{C}(\mathrm{t} \equiv \mathrm{Ap})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f} \equiv \mathrm{Ap})]]$$
+
+(12b)
+
+By TAUTOLOGY from (12b):
+
+$$\vDash \mathrm{C}(\mathrm{AAp} \equiv \mathrm{Ap}) \equiv [[\mathrm{p} \supset \mathrm{C}(\mathrm{Ap})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\neg \mathrm{Ap})]]$$
+
+(12c)
+
+From 2.6 and 2.10:
+
+$$\vDash \mathrm{C}(\neg \mathrm{Ap}) \equiv \mathrm{C}(\mathrm{A}\neg \mathrm{p})$$
+
+(12d)
+
+Thus from (12c) and (12d):
+
+$$\vDash \mathrm{C}(\mathrm{AAp} \equiv \mathrm{Ap}) \equiv [[\mathrm{p} \supset \mathrm{C}(\mathrm{Ap})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{A}\neg \mathrm{p})]]$$
+
+(12e)
+
+Applying ACTUALITY to $\mathrm{p}$ and $\neg \mathrm{p}$:
+
+$$\vDash \mathrm{C}(\mathrm{Ap}) \equiv [[\mathrm{p} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f})]]$$
+
+(12f)
+
+$$\vDash \mathrm{C}(\mathrm{A}\neg \mathrm{p}) \equiv [[\neg \mathrm{p} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f})]]$$
+
+(12g)
+
+From (12e) to (12g):
+
+$$\begin{aligned} &\vDash \mathrm{C}(\mathrm{AAp} \equiv \mathrm{Ap}) \equiv\\ &[[\mathrm{p} \supset [[\mathrm{p} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg \mathrm{p} \supset \mathrm{C}(\mathrm{f})]]] \mathbin{\&} [\neg \mathrm{p} \supset [[\neg \mathrm{p} \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\mathrm{p} \supset \mathrm{C}(\mathrm{f})]]]]\end{aligned}$$
+
+(12h)
+
+But the right-hand side of (12h) is tautologously equivalent to $\mathrm{C}(\mathrm{t})$, so from (12h):
+
+$$\vDash \mathrm{C}(\mathrm{AAp} \equiv \mathrm{Ap}) \equiv \mathrm{C}(\mathrm{t})$$
+
+(12i)
+
+□
+
+2.13
+If $\vDash\text{*} \alpha$ then $\vDash\text{*} \mathrm{A}\alpha$
+
+Proof Suppose that $\vDash\text{*} \alpha$. Then by (2.1) $\vDash \alpha$. By ACTUALITY, $\vDash \mathrm{C}(\mathrm{A}\alpha) \equiv [[\alpha \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg\alpha \supset \mathrm{C}(\mathrm{f})]]$, so $\vDash \mathrm{C}(\mathrm{A}\alpha) \equiv \mathrm{C}(\mathrm{t})$. □
+
+# 5 Adding a Conditional
+
+Let us now assume that, in addition to the truth-functional conditional $\supset$, $\mathrm{L}$ contains a conditional $\rightarrow$. Beyond the general assumptions already made, we make only these three specific to $\rightarrow$:
+
+CONSEQUENCE
+If $\vDash \alpha \supset \beta$ then $\vDash \alpha \rightarrow \beta$
+DISTRIBUTION
+$\vDash [\mathrm{p} \rightarrow [\mathrm{q} \mathbin{\&} \mathrm{r}]] \equiv [[\mathrm{p} \rightarrow \mathrm{q}] \mathbin{\&} [\mathrm{p} \rightarrow \mathrm{r}]]$
+REDUCTIO
+$\vDash [\mathrm{p} \rightarrow \mathrm{f}] \supset \neg \mathrm{p}$
+
+These seem rather mild assumptions. CONSEQUENCE does not say that the material conditional entails the corresponding $\rightarrow$ conditional; it merely says that when the material conditional is valid, so that we can exclude the case of $\alpha$ without $\beta$, the corresponding $\rightarrow$ conditional is valid too. Almost all standard conditionals support DISTRIBUTION. REDUCTIO permits us to exclude whatever implies a contradiction in the sense of $\rightarrow$. All three principles are derivable in the Lewis-Stalnaker systems for counterfactual conditionals with respect to their original languages. We could also consider stronger versions of the three constraints with $\vDash\text{*}$ in place of $\vDash$, and use them to prove correspondingly strengthened versions of the results below, but for present purposes that is unnecessary. For these three constraints, combined with the four earlier ones, already suffice to show that $\rightarrow$ is extensionally equivalent to the material conditional.
+
+We first note two elementary lemmas and then prove the main result, 3.3.
+
+3.1
+If $\beta \supset \gamma$ is a tautology then $\vDash [\alpha \rightarrow \beta] \supset [\alpha \rightarrow \gamma]$.
+
+Proof Suppose that $\beta \supset \gamma$ is a tautology. Then $\beta \equiv [\beta \mathbin{\&} \gamma]$ is a tautology. Choose $\mathrm{p}$ not to appear in $\alpha$. Let $\mathrm{C} = \mathord{<}\alpha \rightarrow \mathrm{p}, \mathrm{p}\mathord{>}$. By TAUTOLOGY, $\vDash \mathrm{C}(\beta) \equiv \mathrm{C}(\beta \mathbin{\&} \gamma)$, in other words $\vDash [\alpha \rightarrow \beta] \equiv [\alpha \rightarrow [\beta \mathbin{\&} \gamma]]$. Thus by DISTRIBUTION $\vDash [\alpha \rightarrow \beta] \supset [\alpha \rightarrow \gamma]$. □
+
+3.2
+If $[\beta \mathbin{\&} \gamma] \supset \delta$ is a tautology then $\vDash [[\alpha \rightarrow \beta] \mathbin{\&} [\alpha \rightarrow \gamma]] \supset [\alpha \rightarrow \delta]$.
+
+Proof By 3.1 and DISTRIBUTION. □
+
+3.3
+$\vDash [\mathrm{p} \rightarrow \mathrm{q}] \equiv [\mathrm{p} \supset \mathrm{q}]$.
+
+Proof By 1.4, $\vDash \mathrm{p} \supset [\mathrm{Aq} \equiv \mathrm{q}]$, so by CONSEQUENCE:
+
+$$\vDash \mathrm{p} \rightarrow [\mathrm{Aq} \equiv \mathrm{q}]$$
+
+(4a)
+
+But since $[\mathrm{q} \mathbin{\&} [\mathrm{Aq} \equiv \mathrm{q}]] \supset \mathrm{Aq}$ and $[\mathrm{Aq} \mathbin{\&} [\mathrm{Aq} \equiv \mathrm{q}]] \supset \mathrm{q}$ are tautologies, by 3.2: $\vDash [[\mathrm{p} \rightarrow \mathrm{q}] \mathbin{\&} [\mathrm{p} \rightarrow [\mathrm{Aq} \equiv \mathrm{q}]]] \supset [\mathrm{p} \rightarrow \mathrm{Aq}]$ and $\vDash [[\mathrm{p} \rightarrow \mathrm{Aq}] \mathbin{\&} [\mathrm{p} \rightarrow [\mathrm{Aq} \equiv \mathrm{q}]]] \supset [\mathrm{p} \rightarrow \mathrm{q}]$, so by (4a):
+
+$$\vDash [\mathrm{p} \rightarrow \mathrm{q}] \equiv [\mathrm{p} \rightarrow \mathrm{Aq}]$$
+
+(4b)
+
+Let $\mathrm{C} = \mathord{<} \mathrm{p} \rightarrow \mathrm{r}, \mathrm{r}\mathord{>}$. Applying ACTUALITY to $\mathrm{C}$ with $\mathrm{q}$ for $\mathrm{p}$:
+
+$$\vDash [\mathrm{p} \rightarrow \mathrm{Aq}] \equiv [[\mathrm{q} \supset [\mathrm{p} \rightarrow \mathrm{t}]] \mathbin{\&} [\neg \mathrm{q} \supset [\mathrm{p} \rightarrow \mathrm{f}]]]$$
+
+(4c)
+
+Since $\mathrm{p} \supset \mathrm{t}$ is a tautology, by TAUTOLOGY and CONSEQUENCE $\vDash \mathrm{p} \rightarrow \mathrm{t}$. Hence from (4c):
+
+$$\vDash [\mathrm{p} \rightarrow \mathrm{Aq}] \equiv [\neg \mathrm{q} \supset [\mathrm{p} \rightarrow \mathrm{f}]]$$
+
+(4d)
+
+From (4b) and (4d):
+
+$$\vDash [\mathrm{p} \rightarrow \mathrm{q}] \equiv [\neg \mathrm{q} \supset [\mathrm{p} \rightarrow \mathrm{f}]]$$
+
+(4e)
+
+By truth-functional reasoning, the right-to-left direction of (4e) yields:
+
+$$\vDash \mathrm{q} \supset [\mathrm{p} \rightarrow \mathrm{q}]$$
+
+(4f)
+
+From the left-to-right direction of (4e) and REDUCTIO $\vDash [\mathrm{p} \rightarrow \mathrm{q}] \supset [\neg \mathrm{q} \supset \neg \mathrm{p}]$, so:
+
+$$\vDash [\mathrm{p} \rightarrow \mathrm{q}] \supset [\mathrm{p} \supset \mathrm{q}]$$
+
+(4g)
+
+By CONSEQUENCE, $\vDash \mathrm{p} \rightarrow \mathrm{p}$, so putting $\mathrm{p}$ for $\mathrm{q}$ in (4e) yields:
+
+$$\vDash \neg \mathrm{p} \supset [\mathrm{p} \rightarrow \mathrm{f}]$$
+
+(4h)
+
+But $\mathrm{f} \supset \mathrm{q}$ is a tautology, so by 3.1 $\vDash [\mathrm{p} \rightarrow \mathrm{f}] \supset [\mathrm{p} \rightarrow \mathrm{q}]$, so from (4h):
+
+$$\vDash \neg \mathrm{p} \supset [\mathrm{p} \rightarrow \mathrm{q}]$$
+
+(4i)
+
+Collecting (4f), (4g) and (4i) together:
+
+$$\vDash [\mathrm{p} \rightarrow \mathrm{q}] \equiv [\mathrm{p} \supset \mathrm{q}]$$
+
+(4j)
+
+□
+
+What is the informal significance of 3.3, on either a subjunctive or an indicative reading of $\rightarrow$?
+
+On a subjunctive reading of $\rightarrow$ and rigidifying reading of $\mathrm{A}$, the problem is clear. DISTRIBUTION and REDUCTIO are unproblematic, but CONSEQUENCE cannot hold with full generality on the operative reading of $\vDash$ as real world validity (1.4). For $\mathrm{p} \supset \mathrm{Ap}$ is real world valid, whereas $\mathrm{p} \rightarrow \mathrm{Ap}$ fails on a subjunctive reading when $\mathrm{p}$ is contingently false, as was noted above in respect of (1s) and (2s). Indeed, ACTUALITY by itself tells us that $\vDash \neg \mathrm{q} \supset [[\mathrm{p} \rightarrow \mathrm{Aq}] \equiv [\mathrm{p} \rightarrow \mathrm{f}]]$: subjunctively implying a rigidified falsehood is equivalent to subjunctively implying a contradiction. On this reading, the failure of CONSEQUENCE is just like the failure of the rule of necessitation in modal logic for real world validity: although $\mathrm{p} \supset \mathrm{Ap}$ is real world valid, $□(\mathrm{p} \supset \mathrm{Ap})$ is not. Like necessitation, consequence should be restricted to general validity: if $\vDash\text{*} \alpha \supset \beta$ then $\vDash\text{*} \alpha \rightarrow \beta$.
+
+Let us switch to an indicative reading of $\rightarrow$. If it is read truth-functionally, no problem arises. CONSEQUENCE becomes trivial and DISTRIBUTION and REDUCTIO are obvious. But what happens if we try to read $\rightarrow$ as a non-truth-functional conditional, supposed to fit the indicative use of ‘if’ in English? CONSEQUENCE still looks compelling. If we apply it to $\mathrm{p} \supset \mathrm{Ap}$, the case that made trouble for the subjunctive conditional, we still conclude that $\mathrm{p} \rightarrow \mathrm{Ap}$ is real world valid, but we have already noted that indicative conditionals of that form, such as (1i) and (2i), seem to be logically trivial.4 Indeed, one might expect real world validity to be the standard of validity best adapted to an indicative conditional.
+
+Caution is required, for 3.3 does not imply that $\mathrm{p} \rightarrow \mathrm{q}$ embeds in the same way as $\mathrm{p} \supset \mathrm{q}$ in non-truth-functional contexts. For by 1.4 $\vDash [\mathrm{p} \rightarrow \mathrm{q}] \equiv \mathrm{A}[\mathrm{p} \supset \mathrm{q}]$ too, but $\mathrm{p} \supset \mathrm{q}$ and $\mathrm{A}[\mathrm{p} \supset \mathrm{q}]$ embed differently in modal contexts (only the latter entails its own necessitation). However, many of the standard objections to the truth-functional reading of ‘if’ extend to 3.3, because they concern cases that do not involve problematic embeddings. For instance, we often seem to be much more confident of the negation of $\mathrm{p}$ than of an indicative conditional $\mathrm{p} \rightarrow \mathrm{q}$; that is hard to reconcile with 3.3. Thus 3.3 shows the language $\mathrm{L}$ to constitute an extremely hostile environment for a non-extensional indicative conditional.
+
+What is the source of the hostility? Without ACTUALITY, nothing like 3.3 is derivable, since all the other principles hold on the interpretation of → as the strict conditional in a modal language with $\vDash$ as general validity. Indeed, even this variant of ACTUALITY is generally valid:
+
+$$\text{ACTUALITY*}\quad \vDash \mathrm{C}(\mathrm{A}\alpha) \equiv [[\mathrm{A}\alpha \supset \mathrm{C}(\mathrm{t})] \mathbin{\&} [\neg \mathrm{A}\alpha \supset \mathrm{C}(\mathrm{f})]]$$
+
+Given the other initial constraints, ACTUALITY is equivalent to the conjunction of 1.4 with ACTUALITY*, for ACTUALITY and ACTUALITY* are trivially equivalent in the presence of 1.4 and the other constraints. ACTUALITY* depends on the rigidifying effect of $\mathrm{A}$ but not on the privileged role with respect to validity of the point of evaluation to which it rigidifies.
+
+The treatment of $\vDash$ as real world validity, associated with 1.4, is not wholly uncontentious, since some philosophers regard general validity as a better candidate than real world validity for the analysis of the informal notion of validity; they want validity to have a modal dimension. However, this concern is orthogonal to the issue about non-extensional indicative conditionals, since even if general validity is the preferred candidate, real world validity is still a perfectly intelligible notion, whether or not we dignify it with the title ‘validity’. Moreover, simple real world valid sentences such as (1i) and (2i) still obviously hold. Thus a preference for general validity would not block the proof of 3.3 for the technical notion $\vDash$; we could still conclude on broadly logical grounds that $\alpha \rightarrow \beta$ is extensionally equivalent to $\alpha \supset \beta$. Since defenders of a non-extensional indicative reading of $\rightarrow$ want to avoid that conclusion, the heart of the issue must concern the treatment of embedded occurrences of sentences of the form $\mathrm{A}\alpha$, as in ACTUALITY*, irrespective of the choice between real world and general validity.
+
+Accounts of indicative ‘if’ as a non-extensional conditional typically assign it some kind of doxastic or epistemic meaning. We should therefore consider instances of ACTUALITY* involving doxastic or epistemic contexts. For instance, let $\mathrm{Bel}$ be a belief operator and $\mathrm{p}$ say that it is pouring. An instance of ACTUALITY* is:
+
+$$\text{(!)}\quad \vDash \mathrm{Bel}(\mathrm{Ap}) \equiv [[\mathrm{Ap} \supset \mathrm{Bel}(\mathrm{t})] \mathbin{\&} [\neg \mathrm{Ap} \supset \mathrm{Bel}(\mathrm{f})]]$$
+
+According to (!), if it is actually pouring, then it is believed that it is actually pouring if and only if a tautology is believed; if it is not actually pouring, then it is believed that it is actually pouring if and only if a contradiction is believed. If the truth of $\mathrm{Bel}(\alpha)$ depends on the agent’s reaction to the sentence $\alpha$, provided that the agent understands $\alpha$, then (!) is hopeless, even as evaluated with respect to the actual world. If it is pouring but I do not believe that it is pouring, I can assent to a tautology without having any inclination to assent to the sentence “It is actually pouring”; thus the right-hand side of (!) may hold while the left-hand side fails. If it is not pouring but I falsely believe that is pouring, I can assent to the sentence “It is actually pouring” without having any inclination to assent to a contradiction; thus the left-hand side of (!) may hold while the right-hand side fails. These problems for (!) depend simply on error and ignorance about the weather, not about logic; they are quite compatible with logical omniscience. Thus a defender of a non-extensional indicative conditional might take it to create a doxastic or epistemic context of such a kind for which ACTUALITY* would fail.5
+
+However, standard frameworks for formal semantics enable one to introduce a rigidifying operator such as $\mathrm{A}$ by force of stipulation; thus one cannot simply assert that ACTUALITY* must fail. Instead, one should use ACTUALITY* to understand the effect of such an operator. For instance, one uses the right-hand side of (!) to understand its left-hand side, rather than assuming that one understands its left-hand side independently. If $\mathrm{p}$ is true, then $\mathrm{Ap}$ expresses a tautologous proposition, and what it takes to believe $\mathrm{Ap}$ is to believe a tautology; if $\mathrm{p}$ is false, then $\mathrm{Ap}$ expresses a contradictory proposition and what it takes to believe $\mathrm{Ap}$ is to believe a contradiction. The operator $\mathrm{A}$ is indexical because what proposition $\mathrm{Ap}$ expresses depends on the world in which one is speaking, even if what proposition $\mathrm{p}$ expresses does not so depend. On this understanding, the problem is after all not with the treatment of $\mathrm{A}$, but with the possibility of its unforeseen repercussions for sentences in which $\mathrm{A}$ interacts with $\rightarrow$. In particular, what looks like a harmless principle about the conditional might turn out to be implausible when properly understood. For a toy example, give $\alpha \rightarrow \beta$ the crude doxastic reading $\mathrm{Bel}(\alpha \supset \beta)$, where the believer is assumed to be rational. In particular, $\mathrm{p} \rightarrow \mathrm{Ap}$ is interpreted as $\mathrm{Bel}(\mathrm{p} \supset \mathrm{Ap})$. If $\mathrm{p}$ is actually false, that requires $\mathrm{Bel}(\mathrm{p} \supset \mathrm{f})$. (in effect, $\mathrm{Bel}(\neg \mathrm{p})$) by ACTUALITY*, which may fail on account of the rational agent’s ignorance of the weather. On this toy doxastic reading, $\mathrm{p} \rightarrow \mathrm{Ap}$ would fail, and with it CONSEQUENCE for real world validity.6
+
+The problem is that it is very hard, perhaps impossible, to hear ordinary indicative conditionals of the form $\mathrm{p} \rightarrow \mathrm{Ap}$ as failing in any such way. No ignorance of the weather threatens the validity of (1i) and (2i), however much one focuses on a rigidifying reading of ‘actually’. Thus it is very doubtful that indicative conditionals are doxastic or epistemic in the sort of way required to block the derivation of 3.3, in particular to invalidate CONSEQUENCE.
+
+In the present state of understanding, it would be premature to draw any conclusion too confidently for the prospects for a non-extensional reading of indicative ‘if’. Nevertheless, the possibility of a rigidifying operator poses a threat to any such reading that must be taken seriously.
+
+# Acknowledgements
+
+Thanks to participants in the 2008 First Formal Epistemology Festival in Konstanz for stimulating comments on an earlier version of this material, and to Franz Huber for written comments.
+
+# Notes
+
+[1] Stalnaker uses an example from Anderson (1951) to make the point (Stalnaker 1999, p. 71 in the reprinted version).
+
+[2] The present paper extends the investigation of such issues in Williamson (2006). There are also relevant remarks at Williamson (2007, pp. 137–141, 144–145, 152–153, 295–296).
+
+[3] One can observe that sentences such as (1i) and (2i) are truisms prior to taking any theoretical stance on whether indicative conditionals are truth-functional.
+
+[4] Of course, we do not expect $\vDash\text{*} \mathrm{p} \rightarrow \mathrm{Ap}$, since the conditional may have a true antecedent and a false consequent with respect to a counterfactual circumstance of evaluation.
+
+[5] Such an account of propositional attitudes would be incompatible with Stalnaker’s; his is coarse-grained and gives much less weight to the agent’s reaction to a sentence that expresses the proposition at issue, even when the agent understands the sentence.
+
+[6] The agent’s assumed rationality allows us to ignore objections to TAUTOLOGY that concern agents who are not omniscient about truth-functional logic.
+
+# References
+
+Anderson, A. R. (1951). A note on subjunctive and counterfactual conditionals. Analysis, 12, 35–38.
+
+Davies, M., & Humberstone, L. (1980). Two notions of necessity. Philosophical Studies, 38, 1–30.
+
+Humberstone, L. (1986). Extensionality in sentence position. Journal of Philosophical Logic, 15, 27–54.
+
+Humberstone, L. (1997). Singulary extensional connectives: A closer look. Journal of Philosophical Logic, 26, 341–356.
+
+Jackson, F. (1981). Conditionals and possibilia. Proceedings of the Aristotelian Society, 81, 125–137.
+
+Jackson, F. (1987). Conditionals. Oxford: Blackwell.
+
+Stalnaker, R. C. (1975). Indicative conditionals. Philosophia, 5, 269–286.
+
+Stalnaker, R. C. (1999). Context and content: Essays on intentionality in speech and thought. Oxford: Oxford University Press.
+
+Williamson, T. (2006). Indicative versus subjunctive conditionals, congruential versus non-hyperintensional contexts. Philosophical Issues, 16, 310–333.
+
+Williamson, T. (2007). The philosophy of philosophy. Oxford: Blackwell.

@@ -1,0 +1,110 @@
+# Quantifiers and context-dependence
+
+Jason Stanley and Timothy Williamson
+
+Analysis 55 (1995): 291–295. With Jason Stanley.
+
+Let DDQ be the thesis that definite descriptions are quantifiers. Philosophers often deny DDQ because they believe that quantifiers do not depend on context in certain ways, ways in which definite descriptions do depend on context. In this paper, we examine one such argument, which, if sound, would entail the negation of DDQ.1 We show that this argument fails, and draw some consequences from its failure.
+
+As is familiar, the truth of an utterance of a sentence containing a quantified expression must be evaluated with respect to a contextually determined domain. An utterance of
+
+(1)
+Every bottle has been put on the shelf.
+
+would not be true in an ordinary context in which a normal-sized shelf is at issue, unless the domain contained few of all the world’s bottles. Since there are clearly true utterances of (1) in ordinary contexts, it follows that utterances of sentences containing quantified expressions are evaluated with respect to contextually restricted domains.
+
+Correct evaluation requires contextually determined variation in the domain between different utterances of the same sentence. Does it ever require contextually determined variation in the domain within a single utterance of a sentence? Utterances of sentences such as
+
+(2)
+Every bottle has been put on the shelf, but some bottles have not been put on the shelf.
+
+sound paradoxical, indeed self-contradictory. One might therefore conclude that evaluation never requires contextually determined variation in the domain within a single utterance of a sentence. On this view, the evaluation of quantified expressions requires only utterances of whole sentences to be assigned to contexts; no such assignment to utterances of sub-sentential expressions is needed. Call this the Sentential Quantifier Thesis:
+
+SQT
+The context-dependence of quantifiers is captured by assigning utterances of sentences containing them to contexts.
+
+SQT implies that domains for quantifiers can differ contextually only across sentential boundaries. Thus it implies that one can ascertain the truth-value of an utterance of a sentence containing two or more quantifiers by taking the domain of all quantifiers within the sentence to be the same.2
+
+One who accepts SQT will conclude that DDQ is false, i.e. that definite descriptions are not quantifiers, for a reason now to be explained. Suppose that DDQ is true. Then the sentence ‘The $F$ is $G$’ will be parsed as of something like the form ‘(The $x$: $Fx$)$Gx$’, and sentences of that form will be given something like the following semantics:
+
+THE
+A sequence $\sigma$ satisfies ‘(The $x$: $Fx$)$Gx$’ with respect to a domain $\mathrm{D}$ for that quantifier iff the sequence which
+(i) assigns a member of $\mathrm{D}$ to ‘$x$’,
+(ii) differs from $\sigma$ at most in its assignment to ‘$x$’, and
+(iii) satisfies ‘$Fx$’
+satisfies ‘$Gx$’.
+
+What follows ‘iff’ is to be read as equivalent to the Russellian condition that one and only one sequence has the three properties (i) to (iii), and it satisfies ‘$Gx$’. Technicalities aside, THE implies that an utterance of ‘The $F$ is $G$’ is true with respect to a domain just in case one and only one member of the domain is an $F$, and it is also $G$.
+
+If definite descriptions are indeed quantifiers, then they pose a serious problem for SQT. Consider the following example, as in Lewis’s seminal ‘Score-keeping in a language game’:3
+
+(3)
+The dog bit the other dog.
+
+Utterances of (3) do not sound paradoxical or self-contradictory; some are true. However, if DDQ is true, then, if SQT were true, (3) should sound paradoxical, even self-contradictory. For SQT requires evaluation to proceed with respect to the same domain for the two supposedly quantified expressions, ‘the dog’ and ‘the other dog’. (3) will be parsed as something like:
+
+$(3')$
+(The $x$: $x$ is a dog)(The $y$: $y$ is a dog and $y \ne x$)$x$ bit $y$.
+
+For (3’) to be satisfied, the domain must contain exactly one dog; but ‘(The $y$: $y$ is another dog) $x$ bit $y$’ must also be satisfied, which requires another dog in the domain, for which there is no room. Thus SQT conspires with DDQ to prevent utterances of (3) from being true.
+
+One might react to such examples by rejecting SQT, reasoning that since definite descriptions are quantifiers, they are counterexamples to SQT. On this view, (3) shows that the domain of quantification can shift within the utterance of a single sentence. However, in the absence of further support, this reaction involves a somewhat dogmatic adherence to DDQ. Alternatively, one could, of course, retain SQT and therefore reject DDQ.
+
+However, SQT is false, and can be seen to be false quite independently of issues about descriptions. Consider this example:
+
+(4)
+A group of evangelists met in the square, whereupon everyone converted someone.
+
+Clearly, the evangelists did not convert each other; they were already evangelists. An utterance of (4) is most naturally understood as asserting that every one of the evangelists converted someone who was not (yet) an evangelist. This reading requires the domain for ‘everyone’ to differ from the domain for ‘someone’. Since ‘everyone’ and ‘someone’ are clearly quantifiers, and occur within the same sentence, SQT is false.4
+
+Examples such as (4) abound. Another is:
+
+(5)
+Someone angered everyone by being overly joyful.
+
+An utterance of (5) is not naturally interpreted as implying that someone angered herself by her joyfulness.
+
+There are also counterexamples to SQT in which different occurrences of the same quantified expression must be assigned different domains. A charming case, communicated to us by Peter Ludlow, is:
+
+(6)
+Nobody cared that nobody came.
+
+However, (6) would not be a counterexample to the following weakened version of SQT:
+
+CQT
+If no clausal boundaries appear between two occurrences $\mathrm{Q}$ and $\mathrm{Q}'$ of quantified expressions, then $\mathrm{Q}$ and $\mathrm{Q}'$ must be evaluated with respect to the same domain.
+
+However, (4) and (5) are already counterexamples to CQT. A counterexample to CQT in which $\mathrm{Q}$ and $\mathrm{Q}'$ are occurrences of the same quantified expression is this:
+
+(7)
+As the ship pulled away from the dock, every man waved to every woman, every woman waved to every man, and every child waved to every child.
+
+It is natural to interpret (7) as not implying that if two children were both on the dock (or both on the ship) then they waved to each other, and as still less implying that they waved to themselves. Exercise: Is the following a counterexample to CQT?
+
+(8)
+When we looked out of the window, everyone saw everyone putting up their umbrellas.
+
+(It is natural to interpret the first ‘everyone’ with respect to a domain of people inside looking out and the second with respect to a domain of people outside being looked at from within).
+
+Several consequences flow from the failure of SQT/CQT. One such consequence is an argument that descriptions should be treated as unitary quantifier expressions, rather than analysed away in terms of their Russellian expansions. For consider (9), the English sentence expressing the Russellian expansion of (10):
+
+(9)
+There is exactly one bottle, and every bottle is in the refrigerator.
+(10)
+The bottle is in the refrigerator.
+
+(9) could be uttered truly in a context in which there is exactly one coke bottle, and it is on the table, and all of the (many) beer bottles are in the refrigerator. (10), of course, has no such reading. Thus, the English sentence which expresses the Russellian expansion of a definite description is more context sensitive than the sentence which contains just the definite description. Since the failure of SQT/CQT shows that the domain can vary with each quantified expression, whereas only one domain is possible for utterances of (10), we can safely conclude that definite descriptions are not shorthand for English sentences containing multiple quantified expressions.
+
+The failure of SQT/CQT also seems to us to provide evidence for DDQ. First of all, it demonstrates that examples such as (3) cannot be used as arguments against DDQ. But it also, arguably, shows something more. In the literature on incomplete descriptions, philosophers tend to assume that an account of the context-dependence of terms such as ‘every’ and ‘some’ is relatively easy to come by, but no such account will work for descriptions. However, the extreme context-dependence of non-descriptive quantifiers places these assumptions into doubt.5 It is a safe bet, we think, that any theory adequate to the task of accounting for the extreme context-dependence of expressions such as ‘every’ and ‘some’ will also be able to account for the context-dependence of ‘the’.
+
+# Notes
+
+[1] Our strategy in refuting this argument is in accordance with Stephen Neale’s sage advice on p. 94 of his Descriptions (Cambridge MA: MIT Press, 1990): ‘Whenever we find some phenomenon associated with the use of definite descriptions, we should look for corresponding phenomena associated with the uses of other quantifiers’.
+
+[2] ‘Someone’ and ‘somewhere’ could be construed as sortal quantifiers with different domains in the same sentence (they could also be construed as restricting a single domain in different ways, but they do not have to be), but then the variation in domain would be triggered by lexical meaning not context. Higher-order quantifiers, as in ‘Athens and Alexandria were something that Watford will never be’ might be assigned a domain disjoint from the domain of individuals; the two occurrences of ‘something’ in ‘Athens and Alexandria were something that something will never be’ would then have different domains. However, this difference might be regarded as the result of a typical ambiguity in ‘something’ (in a formal language, the different readings would be distinguished syntactically), whereas the cases of definite descriptions discussed below are clearly not cases of ambiguity.
+
+[3] Journal of Philosophical Logic 9 (1979) 339–59.
+
+[4] One place in which the falsity of SQT is clearly recognized is Scott Soames, ‘Incomplete Definite Descriptions’, Notre Dame Journal of Formal Logic 27 (1986) 349–75, see especially example (8c) on p. 357, and the discussion following. Other places include Dag Westerståhl, ‘Determiners and Context Sets’, in Johann van Bentham and Alice ter Meulen, eds., Generalized Quantifiers in Natural Language (Dordrecht: Foris, 1984), and Kai von Fintel in Section 2.2 of his unpublished dissertation Restrictions on Quantifier Domains (University of Massachusetts, 1994).
+
+[5] For instance, in Marga Reimer’s insightful discussion of the ‘explicit’ approach to incomplete descriptions (‘Incomplete descriptions’, Erkenntnis 37 (1992) 347–63), she points out that the problems facing this approach to incomplete descriptions generalize to quantifiers such as ‘every’ and ‘some’. However, in her discussion of the ‘implicit’ approach, she seems to assume without argument that the implicit approach will work for non-descriptive quantifiers.

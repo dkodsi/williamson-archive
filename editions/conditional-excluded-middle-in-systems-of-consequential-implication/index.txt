@@ -1,0 +1,796 @@
+# Conditional Excluded Middle in Systems of Consequential Implication
+
+C. Pizzi and T. Williamson
+
+Journal of Philosophical Logic 34 (2005): 333–362.
+
+ABSTRACT. It is natural to ask under what conditions negating a conditional is equivalent to negating its consequent. Given a bivalent background logic, this is equivalent to asking about the conjunction of Conditional Excluded Middle (CEM, opposite conditionals are not both false) and Weak Boethius’ Thesis (WBT, opposite conditionals are not both true). In the system CI.0 of consequential implication, which is intertranslatable with the modal logic KT, WBT is a theorem, so it is natural to ask which instances of CEM are derivable. We also investigate the systems CIw and CI of consequential implication, corresponding to the modal logics K and KD respectively, with occasional remarks about stronger systems. While unrestricted CEM produces modal collapse in all these systems, CEM restricted to contingent formulas yields the Alt2 axiom (semantically, each world can see at most two worlds), which corresponds to the symmetry of consequential implication. It is proved that in all the main systems considered, a given instance of CEM is derivable if and only if the result of replacing consequential implication by the material biconditional in one or other of its disjuncts is provable. Several related results are also proved. The methods of the paper are those of propositional modal logic as applied to a special sort of conditional.
+
+KEY WORDS: conditionals, modal logic, Boethius
+
+# 1.
+
+It is well known that the negations of conditionals in natural languages raise complex and distinctive problems. In English, “Not if it rained, he took his umbrella” is ill-formed, while “It is not the case that if it rained, he took his umbrella” sounds somewhat artificial and pedantic. The sentence “If it rained, he did not take his umbrella” sounds natural but the grammatical scope of the negation is restricted to the consequent. Something similar happens in Italian, where the tendency is to insert the negation in intermediate position between the antecedent and the consequent clauses. For instance, “Se il fiammifero fosse stato sfregato non si sarebbe acceso” is normally used to deny the whole conditional “Se il fiammifero fosse stato sfregato si sarebbe acceso” and not simply the latter’s consequent conditional on its antecedent.
+
+Michael Dummett has seriously entertained the suggestion that the natural falsity-condition for a subjunctive conditional is given by the opposite subjunctive conditional, which has the same antecedent but a consequent that is the negation of the original consequent (1993, pp. 251–2). Given that the negation of a subjunctive conditional is true if and only if the conditional is false, that suggestion implies that the negation of a subjunctive conditional has the same truth-condition as the opposite conditional. A similar suggestion might be entertained for indicative conditionals.
+
+Such indications need not be taken at face value. Nevertheless, they motivate the investigation of conditionals whose negations are equivalent to their opposite conditionals. Given an operator $\ast$, consider this schema:
+
+NegCond
+$\neg (A \ast B) \equiv (A \ast \neg B)$
+
+Here $\neg$ and $\equiv$ are the usual truth-functional connectives; we will assume a classical background logic with a bivalent semantics throughout. NegCond is of course equivalent to the conjunction of these two schemas:
+
+CEM
+$(A \ast B) \vee (A \ast \neg B)$
+WBT
+$(A \ast \neg B) \supset \neg (A \ast B)$
+
+The acronyms ‘CEM’ and ‘WBT’ stand for Conditional Excluded Middle and Weak Boethius’ Thesis respectively.
+
+Although both CEM and WBT are discussed separately in the literature, they are not jointly satisfied by any standard conditional, such as material implication, strict implication, Lewis’s variably strict conditional (1973) and Stalnaker’s closely related conditional (1968). In particular, WBT fails for any conditional $\ast$ such that $A \ast B$ is (vacuously) true when $A$ is impossible. CEM is also highly controversial. It holds for the classical material conditional but fails for the strict conditional. It is accepted by Stalnaker but rejected by Lewis for the counterfactual conditional. A conditional that required a conceptual connection between antecedent and consequent would be especially unlikely to satisfy CEM; the principle has better prospects on synthetic than on analytic readings of the conditional, since the former permit hidden features of reality to determine which disjunct is true.
+
+However, one familiar operator does satisfy both NegCond and many other constraints frequently imposed on conditionals: the material biconditional. Indeed, up to equivalence it is the only operator that does so. To be more precise, consider the inference schemes of modus ponens and contraposition for $\ast$ in these forms:
+
+MP
+$A \ast B, A \vdash B$
+Contr
+$B \ast \neg A \vdash A \ast \neg B$
+
+NegCond, MP and Contr are valid (true or truth-preserving in all instances) if and only if $A \ast B$ always has the same truth-value as $A \equiv B$. The right-to-left direction is obvious. To establish the left-to-right direction, suppose that NegCond, MP and Contr are valid. Then so are these schemas:
+
+(i)
+$(A \mathbin{\&} B) \supset (A \ast B)$
+(ii)
+$(A \mathbin{\&} \neg B) \supset \neg (A \ast B)$
+(iii)
+$(\neg A \mathbin{\&} B) \supset \neg (A \ast B)$
+(iv)
+$(\neg A \mathbin{\&} \neg B) \supset (A \ast B)$
+
+For (i): if $A \ast B$ is false then $A \ast \neg B$ is true by CEM, so $A$ is true only if $B$ is false by MP. For (ii): if $A$ and $A \ast B$ are true then so is $B$ by MP. For (iii): if $A \ast B$ is true then $A \ast \neg B$ is false by WBT, so $B \ast \neg A$ is false by Contr, so $B \ast A$ is true by CEM, so $B$ is true only if $A$ is true. For (iv): by substitution in (i), if $A$ and $B$ are false then $\neg B \ast \neg A$ is true, so $A \ast \neg \neg B$ is true by Contr, so $A \ast \neg B$ is false by WBT, so $A \ast B$ is true by CEM. Evidently, if (i)–(iv) are valid then $A \ast B$ always has the same truth-value as $A \equiv B$. It will therefore not be surprising if conditionals that satisfy NegCond totally or partially turn out to satisfy many of the same formulas as the material biconditional.
+
+It is worth remarking that the argument for (i) does not depend on Contr. Thus any conditional that validates MP and CEM yields a truth whenever both the antecedent and the consequent are true.
+
+By thoroughly failing Contr, a conditional can satisfy NegCond without resembling the material biconditional. Stalnaker’s conditional $>$ comes close to doing that. It satisfies CEM and MP, and fails WBT only when the antecedent is impossible. Indeed, a slight modification of the truth-condition of $A > B$ for that special case suffices to satisfy WBT totally. For example, one might stipulate that if $A$ is impossible then $A > B$ has the same truth-value as $B$ (although that particular stipulation invalidates the schema $A > A$).
+
+Alternatively, we might examine conditionals that satisfy Contr and MP and come close to satisfying NegCond without collapsing into the material biconditional. If such a conditional totally satisfies CEM but fails WBT, (i) and (ii) above are still derivable, so it is equivalent to the material biconditional (and conditional) for true antecedents. Even (iv) is derivable from CEM given only Contr, MP and the extra proviso that $\neg \neg B$ and $B$ are intersubstitutable; then non-truth-functional behaviour is restricted to the case of a false antecedent and true consequent. That suggests looking instead at conditionals that satisfy Contr, MP and WBT, to see how close they can come to satisfying CEM without collapsing into the material biconditional. Conditionals that satisfy Contr, MP and WBT have indeed been studied, under the terminology of ‘consequential implication’.1 In this paper, we investigate the status of CEM in systems of consequential implication. Given the derivability of WBT, every derivable instance of CEM is a case of a conditional whose negation is equivalent to its opposite conditional. We will ask two sorts of question. First, what happens when CEM is added to standard systems of consequential implication? Second, which instances of CEM are already theses of those systems? We will not make strong claims about the relation between consequential implication and conditionals in natural language; the preceding remarks are intended only to suggest a certain naturalness to our approach.
+
+# 2.
+
+Informally, we can think of consequential implication as the result of strengthening strict implication to a form of implication that cannot hold both between $A$ and $B$ and between $A$ and $\neg B$. If $A$ strictly implies both $B$ and $\neg B$ then $A$ is impossible; since $B$ and $\neg B$ are not both impossible, at least one of those implications involves a sort of modal disproportionality between antecedent and consequent, where modal proportionality requires that the consequent is impossible if the antecedent is impossible, contingent (neither necessary nor impossible) if the antecedent is contingent and necessary if the antecedent is necessary. We therefore say that $A$ consequentially implies $B$ if and only if $A$ strictly implies $B$ and $B$ is modally proportional to $A$. Under very modest modal assumptions, it follows that consequential implication satisfies WBT, MP and Contr. That is the guiding conception behind the formal development.
+
+The language of propositional systems of consequential implication consists of countably many propositional variables (including $p, q , r$ and $s$), the falsity constant $\bot$, the material conditional $\supset$ and the two-place operator $\to$ for consequential implication. The truth-functional connectives $\neg , \mathbin{\&}, \vee , \equiv$ and $\top$ are introduced as metalinguistic abbreviations in the usual way.
+
+We start with the weak system CIw of consequential implication. CIw may be axiomatized thus:
+
+Axioms:
+
+(PC)
+All truth-functional tautologies
+(a)
+$((p \to q) \mathbin{\&} (q \to r)) \supset (p \to r)$
+(b)
+$((\top \to (p \supset q)) \mathbin{\&} \neg (\top \to \neg p) \mathbin{\&} \neg (\top \to q)) \supset (p \to q)$
+(c)
+$\neg (\top \to \neg (p \mathbin{\&} r)) \supset ((p \to q) \supset ((p \mathbin{\&} r) \to (q \mathbin{\&} r)))$
+(d)
+$(\neg p \to \neg q) \supset (q \to p)$
+(e)
+$(p \to \bot ) \supset (\bot \to p)$
+(f)
+$(\bot \to p) \supset (p \to \bot )$
+(g)
+$p \to p$
+
+Rules of inference:
+
+(US)
+Uniform substitution
+(MP $\supset$)
+Modus Ponens for $\supset$
+(Eq)
+Replacement of proved material equivalents
+
+We may define inductively two mappings: $\varphi$ from the language of CIw to the language of the standard propositional modal logic K and $\psi$ in the reverse direction (where $□$ and $◇$ are the usual modal operators):
+
+1a.
+$\varphi P = P$ (if $P$ is a propositional variable)
+2a.
+$\varphi \bot = \bot$
+3a.
+$\varphi (A \supset B) = \varphi A \supset \varphi B$
+4a.
+$\varphi (A \to B) = □ (\varphi A \supset \varphi B) \mathbin{\&} (□ \varphi B \supset □ \varphi A) \mathbin{\&} (◇ \varphi B \supset ◇ \varphi A)$
+1b.
+$\psi P = P$ (if $P$ is a propositional variable)
+2b.
+$\psi \bot = \bot$
+3b.
+$\psi (A \supset B) = \psi A \supset \psi B$
+4b.
+$\psi □ A = \top \to \psi A$
+
+One can show that the systems CIw and K are equivalent under these translations, in the sense that for every formula $A$ in the language of CIw, $A$ is a thesis of CIw if and only if $\varphi A$ is a thesis of K, and for every formula $A$ in the language of K, $A$ is a thesis of K if and only if $\psi A$ is a thesis of CIw (see Pizzi and Williamson, 1997, for more details on these and related matters). One can also show that the two translations are mutually inverse up to logical equivalence, in the sense that for every formula $A$ in the language of CIw, $A \equiv \psi \varphi A$ is a thesis of CIw, and for every formula $A$ in the language of K, $A \equiv \varphi \psi A$ is a thesis of K. Thus all theorems of K are theorems of CIw under this metalinguistic definition:
+
+(Def$□$)
+$□ A = \top \to A$
+
+Similarly, all theorems of CIw are theorems of K under the following metalinguistic definition, which is equivalent to the equation of consequential implication with the conjunction of strict implication with modal proportionality between antecedent and consequent:
+
+(Def $\to$)
+$A \to B = □ (A \supset B) \mathbin{\&} (□ B \supset □ A) \mathbin{\&} (◇ B \supset ◇ A)$
+
+In other words, CIw and K are definitionally equivalent. Since K is the smallest normal modal system, we may regard CIw as the smallest normal consequential system. More precisely, a system of consequential implication is normal if and only if it extends CIw and is closed under US, MP$\supset$ and Eq.
+
+The correspondence established by the inverse translations extends to stronger normal systems. We can therefore uses semantic characterizations and decision procedures for the modal systems to gain information about the corresponding systems of consequential implication. For ease of exposition, we shall sometimes move rather sloppily between modal and consequential systems; the steps in the reasoning can be filled in using the translations above.
+
+CIw lacks WBT, the so-called Weak Boethius’ Thesis for $\to$. We therefore extend CIw to the consequential system known as CI by adding this axiom:
+
+(h)
+$(p \to q) \supset \neg (p \to \neg q)$
+
+Equivalently, we could have added the so-called Aristotle’s Thesis, $\neg (p \to \neg p)$, or the so-called secondary Boethius’ Thesis, $(p \to q) \supset \neg (\neg p \to q)$. Weak Boethius’ Thesis and Aristotle’s Thesis are considered characteristic features of the family of connexive logics and logics of consequential implication. In exactly the sense in which CIw is definitionally equivalent to K, CI is definitionally equivalent to the modal system KD (in which necessity implies possibility).
+
+Even CI lacks MP, Modus Ponens for $\to$. We therefore extend CIw to the consequential system known as CI.0 by adding this axiom:
+
+(i)
+$(p \to q) \supset (p \supset q)$
+
+In the same sense as before, CI.0 is definitionally equivalent to the modal system KT (in which necessity implies truth). Since KT extends KD, CI.0 extends CI. CI.0 is the weakest system to satisfy the initial desiderata for consequential implication.
+
+It is not hard to check that if $\to$ is uniformly replaced by $\equiv$ in a thesis of CI.0, the result is a truth-functional tautology (by induction on the length of proofs in CI.0). We can put this point by saying that all theorems of CI.0 are iff-like. The corresponding semantic point is that all theses of KT are valid in any possible worlds model consisting of a single reflexive point; in such models the definition of $\to$ reduces to $\equiv$. Thus no theorem of CI.0, CI or CIw distinguishes $\to$ from the biconditional.2
+
+We can go further: all theorems of any consistent normal extension of CI are iff-like. For any consistent normal extension of KD is contained in Triv, the maximal consistent normal modal system whose characteristic axiom is $□ p \equiv p$ (see Makinson, 1971). A quick syntactic proof of the latter familiar result is this. Let S be a consistent normal extension of KD. Define a letterless substitution as a uniform substitution that maps all propositional variables to letterless formulas, that is, formulas not containing propositional variables (they are constructed out of $\bot , \supset$ and $□$). Let $\mathrm{S}^{+}$ consist of exactly those formulas $A$ such that $\lambda A$ is a theorem of S for every letterless substitution $\lambda$. It is easy to check that since S is a consistent normal system, $\mathrm{S}^{+}$ is a consistent normal extension of S. Moreover, $\mathrm{S}^{+}$ contains Triv, for one easily shows by induction on the complexity of formulas that for every letterless formula $A$, either $A$ is a theorem of KD or $\neg A$ is; in both cases, $□ A \equiv A$ is a theorem of KD and therefore of S; thus $□ p \equiv p$ is a theorem of $\mathrm{S}^{+}$. But the only consistent normal extension of Triv is Triv itself, for every formula is equivalent in Triv to a non-modal formula, and every non-modal formula that is not a tautology has a substitution instance that is the negation of a tautology. Consequently, $\mathrm{S}^{+}$ is Triv itself, so Triv is an extension of S. Thus Triv contains every consistent normal extension of KD. Now let $A$ be any theorem of a consistent normal extension of KD, and $dA$ be the result of deleting all modal operators in $A$. Then $A$ is a theorem of Triv. But it is easy to show that $A \equiv dA$ is also a theorem of Triv. Thus $dA$ is a theorem of Triv; since $dA$ is nonmodal, it is a truth-functional tautology. When we translate this fact into the consequential framework, the result is that replacing $\to$ by $\equiv$ throughout any theorem of any consistent normal extension of CI yields a truth-functional tautology. Thus the theorems of all such systems are iff-like.
+
+An immediate corollary is that no consistent normal extension of CI has the negation of a conjunction of instances of CEM for $\to$ as a theorem, since the result of applying $d$ to any such theorem is the negation of a conjunction of tautologies of the form $(A \equiv B ) \vee (A \equiv \neg B )$. More generally, no consistent normal extension of CIw has the negation of a conjunction of instances of CEM for $\to$ as a theorem. For any consistent normal logic that is not extended by Triv is extended by Ver, the normal system with the characteristic axiom $□ p$ (Makinson, 1971). For all formulas $A$ and $B$, Ver has as theses $□ (A \supset B), □ A, □ B, \neg ◇ A$ and $\neg ◇ B$, and therefore $A \to B$; hence it also contains all conjunctions of instances of CEM. Since Ver is consistent, no system of which it is an extension has the negation of any conjunction of instances of CEM as a theorem. For similar reasons, no consistent normal modal logic has the negation of a conjunction of instances of CEM for strict implication as a thesis. In effect, in any consistent normal logic it is consistent to assume all instances of CEM for consequential or strict implication – which is of course not the same as adding them as axioms.
+
+# 3.
+
+What happens when we add CEM, Conditional Excluded Middle for $\to$, to systems of consequential implication? The relevant axiom is:
+
+(i)
+$(p \to q) \vee (p \to \neg q)$
+
+US on (i) gives $(\top \to p) \vee (\top \to \neg p)$, which translates to $□ p \vee □ \neg p$, a characteristic axiom for KAlt1, the modal logic of frames in which each world can see at most one world.3 It is equivalent to $◇ p \supset □ p$ (informally, the wild claim that possibility implies necessity). Conversely, $□ (p \equiv q) \vee □ (p \equiv \neg q)$ is a thesis of KAlt1; since the strict biconditional implies consequential implication, the translation of (i) is a thesis of KAlt1.4 Thus CIw + CEM is definitionally equivalent to the modal system KAlt1. Consequently, CI + CEM is definitionally equivalent to KDAlt1, the modal logic of frames in which each world can see exactly one world. Although both KAlt1 and KDAlt1 are rather uninteresting systems, neither suffers modal collapse: $□ p \equiv p$ is not derivable in KDAlt1, since KDAlt1 is sound for the frame whose worlds are the natural numbers, where each world sees its successor and nothing else (indeed, KDAlt1 is the logic of that frame). Thus CIw + CEM and CI + CEM do not suffer ‘consequential collapse’, the derivability of $(p \to q) \equiv (p \equiv q)$. By contrast, CI.0 + CEM does suffer consequential collapse, since it is definitionally equivalent to KTAlt1, in other words Triv, with the theorem $□ p \equiv p$. Thus in CI.0 + CEM consequential implication collapses into the material biconditional. That is simply a special case of the little result in Section 1, since WBT, MP and Contr are all derivable in CI.0.5
+
+It is worth noting that the results are exactly the same if one extends CIw/K, CI/KD and CI.0/KT by Conditional Excluded Middle for strict implication, $□ (p \supset q ) \vee □ (p \supset \neg q )$, rather than for consequential implication, since it too yields the Alt1 axiom by substitution. The extra strength of consequential implication is not what does the damage.
+
+Differences between consequential implication and strict implication with respect to Conditional Excluded Middle start to emerge once we refine our analysis. Let us consider separately the nine possibilities for the modal status of the antecedent and consequent respectively, as necessary, contingent or impossible. Consider the table:
+
+CEM (consequential)	$□ q$	$◇ q \mathbin{\&} ◇ \neg q$	$□ \neg q$
+$□ p$	Yes	No	Yes
+$◇ p \mathbin{\&} ◇ \neg p$	No	#	No
+$□ \neg p$	Yes	No	Yes
+
+The rows and columns represent the modal status of $p$ and $q$ respectively. A ‘Yes’ in the intersection of a row and a column means that Conditional Excluded Middle is provable in CIw for the given case, in the sense that the material conditional whose antecedent is the conjunction of the formulas for that row and column and whose consequent is (i) above is a theorem of CIw. For example, the top right ‘Yes’ indicates the derivability of
+
+$$(□ p \mathbin{\&} □ \neg q) \supset ((p \to q) \vee (p \to \neg q))$$
+
+in CIw. Similarly, a ‘No’ means that Conditional Excluded Middle is refutable in CIw for the given case, in the sense that the material conditional whose antecedent is the conjunction of the formulas for that row and column and whose consequent is the negation of (i) above is a theorem of CIw. For example, the rightmost ‘No’ indicates the derivability of
+
+$$(□ p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset \neg ((p \to q) \vee (p \to \neg q))$$
+
+in CIw. Each ‘Yes’ or ‘No’ would still apply if CIw were replaced by any of its extensions. Note that ‘Yes’ and ‘No’ cannot both apply to a given case for any consequential system weaker than CIw + CEM (KAlt1), since no weaker system excludes any of the nine cases from arising. Each ‘Yes’ is justified by the observation that since both $p$ and $q$ are noncontingent, the antecedent materially implies $□ (p \equiv q ) \vee □ (p \equiv \neg q )$, which in turn materially implies $p \to q$. Each ‘No’ is justified by the observation that the antecedent materially implies that $p$ and $q$ differ with respect to contingency, which in turn implies that $p$ differs in modal status from both $q$ and $\neg q$. The ‘#’ in the centre indicates that neither ‘Yes’ nor ‘No’ applies. In other words, neither of the following is a theorem of CIw:
+
+(j)
+$(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset ((p \to q) \vee (p \to \neg q))$
+(k)
+$(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset \neg ((p \to q) \vee (p \to \neg q))$
+
+No consequential system weaker than CIw + CEM (KAlt1) has (k) as a theorem, since substitution of $p$ for $q$ easily yields $\neg (◇ p \mathbin{\&} ◇ \neg p)$. To see that (j) is not a theorem of CI.0, and so not a theorem of CIw, consider a model with just three worlds, $w, w^{*}$ and $w^{**}$, where every world can see every world, $p$ is true at just $w$ and $w^{*}$ and $q$ is true at just $w$.
+
+For strict implication in K (or any other modal system not containing KAlt1), the corresponding table is this:
+
+CEM (strict)	$□ q$	$◇ q \mathbin{\&} ◇ \neg q$	$□ \neg q$
+$□ p$	Yes	No	Yes
+$◇ p \mathbin{\&} ◇ \neg p$	Yes	#	Yes
+$□ \neg p$	Yes	Yes	Yes
+
+It is to be interpreted by analogy with the previous table. Its entries differ by having a ‘Yes’ where the table for consequential implication had a ‘No’ in case $p$ is contingent and $q$ is noncontingent or $p$ is impossible and $q$ is contingent. Thus Conditional Excluded Middle fails less extensively for strict implication than for consequential implication.
+
+Let us return to consequential implication. For each of the nine cases, we can consider a correspondingly restricted version of CEM. Where a ‘Yes’ appears in the table, that restricted version is already provable in CIw. Where a ‘No’ appears in the table, adding the restricted version to CIw yields an uninterestingly strong system tantamount to KAlt1.6 That leaves (j), the restricted version of CEM for the case ‘#’ in which $p$ and $q$ are both contingent. Let us call it ‘CEMCon’. Note that since $p, q$ and $\neg q$ all have the same modal status in this case, consequential implications between them are equivalent to the corresponding strict implications, so that CEMCon is interderivable with the correspondingly restricted version of CEM for strict implication.
+
+What is CIw + CEMCon? Consider it as a normal modal logic with CEMCon as its characteristic axiom. By a result of David Lewis (1974), any normal modal logic whose characteristic axioms are all of modal degree 1 (that is, no modal operator occurs in them in the scope of a modal operator) is sound and complete for some class of frames. Since CEMCon is of modal degree 1, CIw+CEMCon is sound and complete for some class of frames. Let $\langle W , R\rangle$ be a frame in that class. Suppose that some world $w$ in $W$ has $R$ to three distinct worlds $x, y$ and $z$. Then CEMCon is false at $w$ in some model based on $\langle W, R\rangle$, for we can set $p$ to be true at just $x$ and $y$ and $q$ to be true at just $x$; that contradicts the soundness of CIw + CEMCon for $\langle W , R\rangle$. Thus in every frame for which CIw + CEMCon is sound, each world can see at most two worlds. Conversely, CIw + CEMCon is sound for any frame in which each world can see at most two worlds, for if $p$ and $q$ are contingent at a world $w$, it can see two worlds $x$ and $y$, and we may assume without loss of generality that $p$ is true at $x$ and false at $y$; but either $q$ is true at $x$ and false at $y$, in which case $p \to q$ is true at $w$, or $q$ is false at $x$ and true at $y$, in which case $p \to \neg q$ is true at $w$. It follows that CIw + CEMCon is sound and complete for the class of frames in which each world can see at most two worlds. Thus CIw + CEMCon corresponds to the modal system KAlt2, which may be axiomatized by this formula equivalent to Alt2:
+
+$$(◇ (p \mathbin{\&} q) \mathbin{\&} ◇ (p \mathbin{\&} \neg q)) \supset □ p$$
+
+Equivalently, by contraposition, it may be axiomatized by the principle of conditional excluded middle for strict implication restricted by the condition that $p$ is not necessary. Similarly, CI + CEMCon corresponds to the modal system KDAlt2, the logic of frames in which each world can see one or two worlds. CI.0 + CEMCon corresponds to the modal system KTAlt2, the logic of frames in which each world can see itself and at most one other world. Unlike CI.0 + CEM, CI.0 + CEMCon does not suffer modal collapse. For example, KTAlt2 is sound for the frame whose worlds are the natural numbers, where each world can see just itself and its successor (indeed, it is the logic of that frame). Thus no formula in the series $p, □ p, □ □ p$, . . . implies any later formula. So CI.0 + CEMCon has infinitely many non-equivalent formulas whose only propositional variable is $p$.
+
+The addition of Alt2 to KT does generate some new relations between modalities. For KTAlt2 has the theorem $◇ □ p \supset (p \supset □ p)$, for at a world at which it is false $◇ □ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ (p \mathbin{\&} ◇ \neg p)$ is true by the T axiom, and $□ p, \neg p$ and $p \mathbin{\&} ◇ \neg p$ are pairwise incompatible even in KT. Consequently, the G1 axiom $◇ □ p \supset □ ◇ p$ is a theorem of KTAlt2, for by substitution KTAlt2 contains $◇ □ \neg p \supset (\neg p \supset □ \neg p)$, and the T axiom yields $◇ □ p \supset ◇ p$ and $◇ □ \neg p \supset ◇ \neg p$, so $◇ □ p$ and $◇ □ \neg p$ are incompatible in KTAlt2. The converse of G1, the McKinsey axiom $□ ◇ p \supset ◇ □ p$, is not a thesis of KTAlt2, since it fails in the model with just two worlds, both of which can see both, when $p$ is true at just one world. A general result about KT is that distinct modalities are never equivalent, where a modality is a string (possibly null) each member of which is either $□$ or $◇$, the whole possibly followed by one $\neg$. That is, if $M$ and $M^{*}$ are modalities and $Mp \equiv M^{*}p$ is a thesis of KT then $M = M^{*}$ (Chagrov and Zakharyaschev, 1997: 106, citing a 1974 paper by G. E. Mints in Russian). By contrast, $□ ◇ □ □ p \equiv □ □ ◇ □ p$ is a thesis of KTAlt2.7
+
+The situation is different in KAlt2 and KDAlt2. In particular, the G1 axiom is not a theorem, for it fails in a model with just three worlds $w, x$ and $y$, where $w$ can see only $x$ and $y, x$ can see only itself, $y$ can see only itself and $p$ is true only at $x$. Indeed, in KAlt2 no modality implies any other: if $M$ and $M^{*}$ are modalities and $Mp \supset M^{*}p$ is a thesis of KAlt2 then $M = M^{*}$. The standard proof of the corresponding result for K applies without alteration to KAlt2 (Chagrov and Zakharyaschev, 1997, pp. 89–90). In KD, one modality may imply another (as in the D axiom itself) but no two modalities are equivalent. Likewise in KDAlt2: if $M$ and $M^{*}$ are modalities and $Mp \equiv M^{*}p$ is a thesis of KDAlt2 then $M = M^{*}$.8
+
+Of course, KTAlt2 is not a plausible logic for metaphysical modality, given that there are infinitely many metaphysical possibilities for the number of planets. Nevertheless, CEMCon is notably less restrictive than CEM itself. One might therefore hope that consequential systems with CEMCon would permit interesting readings of $\to$ that correspond to modalities of some kind for which Alt2 is plausible. However, we shall see in the next section that the addition of CEMCon is equivalent to the addition of the symmetry of $\to$, which severely restricts the interpretation of consequential implication.
+
+As already noted, the same holds for Conditional Excluded Middle for strict implication, restricted to contingent formulas: adding it to normal systems is equivalent to adding the Alt2 axiom.
+
+# 4.
+
+The principle CEMCon has the further feature that adding it to normal systems is equivalent to adding one of two principles of interest with respect to consequential implication. As already mentioned, one principle is the symmetry of consequential implication:
+
+(Symm)
+$(p \to q) \supset (q \to p)$
+
+Thus in CEMCon consequential implication reduces to the strict biconditional. Together, axioms (a), (g) and Symm present $\to$ as the analogue of an equivalence relation. The other principle is the so-called Factor Law:
+
+(FL)
+$(p \to q) \supset ((p \mathbin{\&} r) \to (q \mathbin{\&} r))$
+
+FL is a thesis of all so-called connexive logics, which are at the origin of logics of consequential implication. However, in standard systems of consequential implication the Factor Law is restricted to the case in which $p$ and $r$ are compossible (see axiom (c)). To show that CIw + CEMCon = CIw + Symm = CIw + FL (= KAlt2) we establish a cycle of inclusions. We merely sketch the proofs since the details are in effect a routine exercise in derivations in the modal system K.
+
+First, we show that CIw + CEMCon includes CIw + Symm. Note that CIw contains the theorem $\neg (◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset ((p \to q) \supset (q \to p))$. Since CEMCon has the substitution instance $(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset ((q \to p) \vee (q \to \neg p))$, it suffices to show that $(p \to q ) \supset ((q \to \neg p) \supset (q \to p))$ is derivable in CIw. But that is easy, for we have $(p \to q ) \supset ((q \to \neg p) \supset (p \to \neg p))$ by transitivity, and $(p \to \neg p) \supset (q \to p)$ as a substitution instance of the theorem $(p \to \neg p) \supset (q \to r)$.
+
+Next, we show that CIw + Symm includes CIw + FL. This is almost immediate, because CIw has the theorem $((p \to q ) \mathbin{\&} (q \to p)) \supset ((p \mathbin{\&} r) \to (q \mathbin{\&} r))$.
+
+Finally, we show that CIw + FL includes CIw + CEMCon. First, note that CIw has the following theorems:
+
+$(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset (\neg (p \to q) \supset ◇ (p \mathbin{\&} \neg q))$
+$◇ q \supset ◇ \neg (p \mathbin{\&} \neg q)$
+$(◇ \neg p \mathbin{\&} ◇ (p \mathbin{\&} \neg q) \mathbin{\&} ◇ \neg (p \mathbin{\&} \neg q)) \supset ((p \mathbin{\&} \neg q) \to p)$.
+
+Thus CIw has the theorem $(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset ((p \to q) \vee ((p \mathbin{\&} \neg q) \to p))$. Consequently, since $((p \mathbin{\&} \neg q) \to p) \supset ((p \mathbin{\&} \neg q \mathbin{\&} q) \to (p \mathbin{\&} q))$ is an instance of FL, $(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q) \supset ((p \to q) \vee ((p \mathbin{\&} \neg q \mathbin{\&} q) \to (p \mathbin{\&} q)))$ is derivable in CIw + FL. But CIw has the theorems $((p \mathbin{\&} \neg q \mathbin{\&} q) \to (p \mathbin{\&} q)) \supset \neg ◇ (p \mathbin{\&} q)$ and $(◇ p \mathbin{\&} ◇ \neg p \mathbin{\&} ◇ q \mathbin{\&} ◇ \neg q ) \supset (\neg ◇ (p \mathbin{\&} q ) \supset (p \to \neg q ))$. Consequently, CEMCon is derivable in CIw + FL.9
+
+Corresponding results hold for stronger consequential systems. Thus CI+CEMCon = CI+Symm = CI+FL = KDAlt2 and CI.0+CEMCon = CI.0 + Symm = CI.0 + FL = KTAlt2.
+
+# 5.
+
+Having investigated the very strong logics that result when CEM or its restricted version CEMCon is added to the consequential systems CIw, CI and CI.0, we now ask exactly which instances of CEM are derivable in CIw, CI and CI.0 themselves. We first establish a more general lemma about the derivability of disjunctions of conditionals in CIw and CI that may be of independent interest.
+
+LEMMA 1. In CIw and CI, for all formulas $A, B, C, D: \vdash (A \to B) \vee (C \to D)$ if and only if either $\vdash A \equiv B$ or $\vdash C \equiv D$.
+
+Proof. For definiteness, we work in CIw; exactly the same proof goes through in CI. The right-to-left direction is easy, so we concentrate on the converse. Suppose for a contradiction that in CIw:
+
+(1a)
+$\vdash (A \to B) \vee (C \to D)$
+(1b)
+Not $\vdash A \equiv B$
+(1c)
+Not $\vdash C \equiv D$
+
+By (1a):
+
+(2)
+$\vdash □ (A \supset B) \vee □ (C \supset D)$
+
+It is well known that K (= CIw) and KD (= CI) provide the rule of disjunction in the form that if $\vdash □ X_1\vee\cdots\vee□ X_n$ then $\vdash X_i$ for some $i$ (Lemmon and Scott, 1977). Thus from (2) either $\vdash A \supset B$ or $\vdash C \supset D$. Suppose without loss of generality the former:
+
+(3)
+$\vdash A \supset B$
+
+We have in any case:
+
+(4)
+$\vdash (□ B \mathbin{\&} \neg □ A) \supset \neg (A \to B)$
+
+By (1a) and (4):
+
+(5)
+$\vdash (□ B \mathbin{\&} \neg □ A) \supset (C \to D)$
+
+Consequently:
+
+(6)
+$\vdash □ B \supset (□ A \vee □ (C \supset D))$
+
+But K and KD are also known to provide a strengthened rule of disjunction in the form that if $\vdash□ Y\supset(□ X_0\vee\cdots\vee□ X_n)$ then $\vdash Y \supset X_i$ for some $i$ (Lemmon and Scott, 1977; the proof on pp. 45–7 for K works equally for KD). Thus from (6) either $\vdash B \supset A$ or $\vdash B \supset (C \supset D)$. But if the former then by (3) $\vdash A \equiv B$, contrary to (1b). Consequently:
+
+(7)
+$\vdash B \supset (C \supset D)$
+
+Similarly, we have in any case:
+
+(8)
+$\vdash (◇ B \mathbin{\&} \neg ◇ A) \supset \neg (A \to B)$
+
+Just as (4) yields (6) so (8) yields:
+
+(9)
+$\vdash □ \neg A \supset (□ \neg B \vee □ (C \supset D))$
+
+By the strengthened rule of disjunction again, from (9) either $\vdash \neg A \supset \neg B$ or $\vdash \neg A \supset (C \supset D)$. But if $\vdash \neg A \supset \neg B$ then by (3) $\vdash A \equiv B$ again, contrary to hypothesis. Consequently:
+
+(10)
+$\vdash \neg A \supset (C \supset D)$
+
+From (7) and (10):
+
+(11)
+$\vdash (A \supset B) \supset (C \supset D)$
+
+From (3) and (11):
+
+(12)
+$\vdash C \supset D$
+
+By symmetry, if we supposed (12) rather than (3), we could have derived (3). Thus both (3) and (12) follow from (1a–c). We also have in any case:
+
+(13)
+$\vdash (□ D \mathbin{\&} \neg □ C) \supset \neg (C \to D)$
+
+Consequently, by (1a):
+
+(14)
+$\vdash (□ D \mathbin{\&} \neg □ C) \supset (A \to B)$
+
+But:
+
+(15)
+$\vdash (A \to B) \supset (□ B \supset □ A)$
+
+From (14) and (15):
+
+(16)
+$\vdash □ (B \mathbin{\&} D) \supset (□ A \vee □ C)$
+
+Consequently, by the strengthened rule of disjunction, one of the following holds:
+
+(17x)
+$\vdash (B \mathbin{\&} D) \supset A$
+(17y)
+$\vdash (B \mathbin{\&} D) \supset C$
+
+This disjunction follows from (1a–c). But since $\to$ contraposes, (1a) is equivalent to:
+
+(18a)
+$\vdash (\neg B \to \neg A) \vee (C \to D)$
+
+Similarly, (1b) and (1c) are equivalent to (18b) and (18c) respectively, the latter formulas being defined in the obvious way. By symmetry, just as (1a–c) implies the disjunction of (17x) and (17y), so (18a–c) implies the disjunction of:
+
+(19x)
+$\vdash (\neg A \mathbin{\&} D) \supset \neg B$
+(19y)
+$\vdash (\neg A \mathbin{\&} D) \supset C$
+
+We can now complete the argument. Suppose that (17x) fails; thus (19x) also fails. Therefore, (17y) and (19y) hold. But together they imply:
+
+(20)
+$\vdash (A \supset B) \supset (D \supset C)$
+
+Given (3) and (12), (20) contradicts (1c). Thus (17x) holds. Equally, (1a) is equivalent to:
+
+(21a)
+$\vdash (A \to B) \vee (\neg D \to \neg C)$
+
+By symmetry, just as we can reason from (1a–c) to (17x), so we can reason from (21a–c) (and therefore from (1a–c)) to:
+
+(22)
+$\vdash (B \mathbin{\&} \neg C) \supset A$
+
+But (17x) and (22) together imply:
+
+(23)
+$\vdash (C \supset D) \supset (B \supset A)$
+
+Given (3) and (12), (23) contradicts (1b). This final contradiction refutes the conjunction (1a–c). ■
+
+As an immediate corollary of Lemma 1, in CIw and CI, for all formulas A and B: $\vdash (A \to B) \vee (A \to \neg B)$ if and only if either $\vdash A \equiv B$ or $\vdash A \equiv \neg B$. In these systems, therefore, only the most trivial instances of Conditional Excluded Middle are provable. By contrast, no consistent normal modal logic provides the corresponding rule for strict implication, for $\vdash □ (\bot \supset p) \vee □ (\bot \supset \neg p)$ but neither $\vdash \bot \equiv p$ nor $\vdash \bot \equiv \neg p$.
+
+We observe that the analogue of Lemma 1 fails for disjunctions with more than two disjuncts. For a counterexample, note that in CIw and CI:
+
+$$\vdash (\top \to p) \vee ((p \mathbin{\&} q) \to \bot ) \vee ((p \mathbin{\&} q) \to p)$$
+
+For the third disjunct fails only if $p \mathbin{\&} q$ differs in modal status from $p$, which happens only if either $p \mathbin{\&} q$ is impossible and $p$ possible, in which case the second disjunct holds, or $p \mathbin{\&} q$ is contingent and $p$ necessary, in which case the first disjunct holds. But evidently neither $\vdash \top \equiv p$ nor $\vdash (p \mathbin{\&} q) \equiv \bot$ nor $\vdash (p \mathbin{\&} q) \equiv p$ in CIw or CI, for they are consistent systems and none of the formulas in question is a tautology.
+
+By contrast, if a disjunction of any number of strict implications is a theorem of CIw and CI, so too is at least one of the corresponding material implications (since CIw and CI provide the rule of disjunction), but obviously no corresponding material biconditional need be a theorem. In particular, $\vdash □ ((p \mathbin{\&} q) \supset p) \vee □ ((p \mathbin{\&} q) \supset \neg p)$ but neither $\vdash (p \mathbin{\&} q) \equiv p$ nor $\vdash (p \mathbin{\&} q) \equiv \neg p$ in CIw or CI.
+
+The proof of Lemma 1 does not work for CI.0 (= KT), which does not provide the strengthened rule of disjunction. Indeed, the analogue of Lemma 1 is false for CI.0 and any stronger system that avoids modal collapse. For in CI.0 we have:
+
+$$\vdash (\bot \to (p \mathbin{\&} q \mathbin{\&} \neg □ p)) \vee ((p \mathbin{\&} q \mathbin{\&} \neg □ p) \to (p \mathbin{\&} \neg □ p))$$
+
+To see this, note that in CI.0 (= KT) $\vdash \neg □ (p \mathbin{\&} \neg □ p)$, so $\vdash \neg □ (p \mathbin{\&} q \mathbin{\&} \neg □ p)$; informally, therefore, either $p \mathbin{\&} q \mathbin{\&} \neg □ p$ is impossible, in which case the first disjunct holds, or it is contingent, in which case $p \mathbin{\&} \neg □ p$ has the same modal status and the second disjunct holds. But evidently neither $\vdash \bot \equiv (p \mathbin{\&} q \mathbin{\&} \neg □ p)$) nor $\vdash ((p \mathbin{\&} q \mathbin{\&} \neg □ p) \equiv (p \mathbin{\&} \neg □ p))$ unless $\vdash p \supset □ p$. Nevertheless, we can prove the special case of the analogue of Lemma 1 for CI.0 relevant to Conditional Excluded Middle:
+
+PROPOSITION 2. In CI.0, for all formulas $A, B : \vdash (A \to B) \vee (A \to \neg B)$ if and only if either $\vdash A \equiv B$ or $\vdash A \equiv \neg B$.
+
+Proof. The right-to-left direction is easy, so we concentrate on the converse. Suppose that in CI.0:
+
+(1)
+$\vdash (A \to B) \vee (A \to \neg B)$
+
+As previously explained, we can work in CI.0 as if in the modal system KT. By (1):
+
+(2)
+$\vdash □ (A \supset B) \vee □ (A \supset \neg B)$
+
+It is well known that KT provides the rule of disjunction. Thus from (2) either $\vdash A \supset B$ or $\vdash A \supset \neg B$. Suppose without loss of generality the former:
+
+(3)
+$\vdash A \supset B$
+
+Now suppose that (4a) and (4b) hold in KT:
+
+(4a)
+Not $\vdash B \supset A$
+(4b)
+Not $\vdash B \supset \neg A$
+
+Let $\langle W , R, V \rangle$ be the canonical model for KT (so $R$ is reflexive). It contains verifying worlds $u$ and $v$ in $W$ for (4a) and (4b) respectively, i.e.:
+
+(5a)
+$V (B, u) = 1$ and $V (A, u) = 0$.
+(5b)
+$V (B, v) = 1$ and $V (A, v) = 1$.
+
+Since $W$ is disjoint from $N$, the set of natural numbers, we can construct a new model $\langle W^*,R^*,V^*\rangle$ thus:
+
+$$\begin{aligned}
+W^* &= W \cup N\\
+R^* &= R \cup \{\langle n,n\rangle:n\in N\} \cup \{\langle n+1,n\rangle:n\in N\}\\
+&\qquad {}\cup \{\langle n,u\rangle:n\in N\} \cup \{\langle 0,v\rangle\}
+\end{aligned}$$
+
+For any propositional variable $P$:
+
+$$\begin{aligned}
+V^*(P,w)&=V(P,w) &&\text{if }w\in W.\\
+V^*(P,n)&=V(P,v) &&\text{if }n\in N.
+\end{aligned}$$
+
+Since $R^*$ is reflexive, $\langle W^*,R^*,V^*\rangle$ is a model for KT. Moreover, for all $w\in W$ and $x\in W^*$, $wR^*x$ just in case $wRx$, so we can easily prove by induction on the complexity of a formula $C$:
+
+(6)
+$V^*(C,w)=V(C,w)\qquad\text{for all }w\in W.$
+
+The next step is to establish this:
+
+(7)
+$\begin{aligned}\text{For all }n\in N:\quad &\text{if }n\text{ is even then }V^*(A,n)=V^*(B,n)=0.\\
+&\text{If }n\text{ is odd then }V^*(A,n)=V^*(B,n)=1.\end{aligned}$
+
+We prove (7) by induction on $n$.
+
+Basis ($n=0$). Suppose for a contradiction that $V^*(B,0)=1$. Moreover, by (5a–b) and (6), $V^*(B,u)=V(B,u)=1$ and $V^*(B,v)=V(B,v)=1$. But by definition of $R^*$ $\{w\in W^*:0R^*w\}=\{0,u,v\}$. Thus:
+
+(7a)
+$V^*(□ B,0)=1$
+
+By (5b) and (6), $V^*(A\supset\neg B,v)=V(A\supset\neg B,v)=0$; since $0R^*v$, $V^*(□(A\supset\neg B),0)=0$. Thus $V^*(A\to\neg B,0)=0$. But by (1), $V^*((A\to B)\vee(A\to\neg B),0)=1$. Consequently, $V^*(A\to B,0)=1$. Therefore, by the modal analysis of $\to$, $V^*(□ B\supset□ A,0)=1$. Thus by (7a), $V^*(□ A,0)=1$. But that is impossible because $0R^*u$ and by (5a) and (6) $V^*(A,u)=V(A,u)=0$. That reduces the original supposition to absurdity, so $V^*(B,0)=0$. But by (3) $V^*(A\supset B,0)=1$, so $V^*(A,0)=1$.
+
+Induction step. The case when $n$ is odd is like the basis, with $n+1$ in place of 0 and $n$ in place of $v$. Suppose therefore that $n$ is even and (by the induction hypothesis) that $V^*(A,n)=V^*(B,n)=0$. Suppose for a contradiction that $V^*(A,n+1)=0$ too. Since $\{w\in W^*:n+1R^*w\}=\{n,n+1,u\}$ and $V^*(A,u)=0$:
+
+(7b)
+$V^*(◇ A,n+1)=0$
+
+By (1), $V^*((A\to B)\vee(A\to\neg B),n+1)=1$. Therefore, by the modal analysis of $\to$, $V^*((◇ B\supset◇ A)\vee(◇\neg B\supset◇ A),n+1)=1$. Hence, by (7b), either $V^*(◇ B,n+1)=0$ or $V^*(◇\neg B,n+1)=0$. But $n+1R^*u$ and $V^*(B,u)=1$, so $V^*(◇ B,n+1)=1$, while $n+1R^*n$ and $V^*(B,n)=0$ by hypothesis, so $V^*(◇\neg B,n+1)=1$. This is a contradiction, so $V^*(A,n+1)=1$. Moreover, by (3) $V^*(B,n+1)=1$ too. That completes the proof of (7).
+
+Recall the standard definition of the modal depth of a formula $D$, $\operatorname{md}(D)$, as the maximum number of embeddings of modal operators in $D$; when $\to$ is taken as primitive, $\operatorname{md}(D)=\operatorname{md}(\bot)=0$ when $D$ is atomic; otherwise, $\operatorname{md}(D\supset E)=\max\{\operatorname{md}(D),\operatorname{md}(E)\}$; $\operatorname{md}(D\to E)=\max\{\operatorname{md}(D),\operatorname{md}(E)\}+1$. We now establish:
+
+(8)
+$\begin{aligned}&\text{For all formulas }D\text{ and }m,n\in N,\text{ if }\operatorname{md}(D)\leq\min\{m,n\}\\
+&\quad\text{then }V^*(D,m)=V^*(D,n).\end{aligned}$
+
+We prove (8) by a routine induction on the complexity of $D$. The only interesting case is the induction step for $\to$. Suppose that $\operatorname{md}(D\to E)\leq\min\{m,n\}$; thus $0<m$, $0<n$, $\operatorname{md}(D)\leq\min\{m-1,n-1\}$ and $\operatorname{md}(E)\leq\min\{m-1,n-1\}$. Consequently, by induction hypothesis, $V^*(D,m-1)=V^*(D,m)=V^*(D,n-1)=V^*(D,n)$; likewise for $E$. But $\{w\in W^*:mR^*w\}=\{m-1,m,u\}$ and $\{w\in W^*:nR^*w\}=\{n-1,n,u\}$, so $V^*(D\to E,m)=V^*(D\to E,n)$. That completes the proof of (8).
+
+Obviously, (7) and (8) are inconsistent, for if $\operatorname{md}(A)\leq 2m$ then by (7) $V^*(A,2m)=0$ and $V^*(A,2m+1)=1$ whereas by (8) $V^*(A,2m)=V^*(A,2m+1)$. Thus the joint supposition of (4a–b) has led to a contradiction. Thus one of the following holds for KT:
+
+(9a)
+$\vdash B \supset A$
+(9b)
+$\vdash B \supset \neg A$
+
+From (9a), $\vdash A \equiv B$ by (3). So assume (9b). Hence by (3), $\vdash \neg A$. Hence by necessitation, $\vdash \neg ◇ A$. But by (1) and the modal analysis of $\to , \vdash (◇ B \supset ◇ A) \vee (◇ \neg B \supset ◇ A)$. Consequently, $\vdash □ \neg B \vee □ B$. Since KT provides the rule of disjunction, either $\vdash \neg B$ or $\vdash B$. But since $\vdash \neg A$, in the first case $\vdash A \equiv B$ and in the second $\vdash A \equiv \neg B$. ■
+
+Thus even in CI.0 Conditional Excluded Middle is provable for consequential implication only in the most trivial instances.
+
+We can use Propositions 1 and 2 to establish a connection between CEM and the so-called Strong Boethius’ Thesis:
+
+SBT
+$(p \to \neg q) \to \neg (p \to q)$
+
+For each of $\vdash A \equiv B$ and $\vdash A \equiv \neg B$ implies $\vdash (A \to \neg B) \equiv \neg (A \to B)$ and therefore $\vdash (A \to \neg B) \to \neg (A \to B)$. Thus by Propositions 1 and 2, whenever an instance of CEM is derivable in CIw, CI or CI.0, so is the corresponding instance of SBT.10
+
+As an immediate corollary of Proposition 2, we observe that in CIw, CI and CI.0, for all formulas $A, B: \vdash (A \to B) \vee (\neg A \to B)$ if and only if either $\vdash A \equiv B$ or $\vdash A \equiv \neg B$. For, given Lemma 1 and Proposition 2, it suffices to observe that $A \to B$ and $\neg A \to B$ are equivalent in CIw to $\neg B \to \neg A$ and $\neg B \to A$ respectively.
+
+We cannot in general expect the analogue of Proposition 2 to hold for systems with stronger iterative axioms. For example, in KT4 (S4) we have:
+
+$$\vdash p \to (p \vee (◇ p \mathbin{\&} ◇ □ \neg p))$$
+
+and consequently
+
+$$\vdash (p \to (p \vee (◇ p \mathbin{\&} ◇ □ \neg p))) \vee (p \to \neg (p \vee (◇ p \mathbin{\&} ◇ □ \neg p)))$$
+
+But certainly in KT4 we have neither $\vdash p \equiv (p \vee (◇ p \mathbin{\&} ◇ □ \neg p))$ nor $\vdash p \equiv \neg (p \vee (◇ p \mathbin{\&} ◇ □ \neg p))$. More simply, in KTE (S5) we have $\vdash (\top \to □ p) \vee (\top \to \neg □ p)$ but neither $\vdash \top \equiv □ p$ nor $\vdash \top \equiv \neg □ p$. We leave the details of the proofs as an exercise for the reader.
+
+We can also ask which instances of CEM are theses of systems with CEMCon, CEM conditional on the contingency of the formulas. It turns out that adding CEMCon to CIw, CI and CI.0 makes no difference to the structural results in Lemma 1 and Proposition 2: still only the most trivial instances of unconditional CEM are derivable given the conditional version CEMCon (although of course there are more such trivial instances, since CEMCon makes more biconditionals provable). However, the proofs differ significantly.
+
+LEMMA 3. In CIw + CEMCon and CI + CEMCon, for all formulas $A, B, C, D: \vdash (A \to B) \vee (C \to D)$ if and only if either $\vdash A \equiv B$ or $\vdash C \equiv D$.
+
+Proof. For definiteness, we work in CIw + CEMCon; exactly the same proof goes through in CI + CEMCon. Since $A \to B$ is equivalent to $□ (A \equiv B)$ in CIw + CEMCon (KAlt2) by Section 4, it suffices to prove that in KAlt2: $\vdash □ A \vee □ B$ if and only if either $\vdash A$ or $\vdash B$. The right-to-left direction is trivial. For the converse, the Lemmon–Scott method of establishing that K and KD provide the rule of disjunction extends to KAlt2 and KDAlt2 when there are only two disjuncts. More specifically, suppose that neither $\vdash A$ nor $\vdash B$. As mentioned earlier, KAlt2 is complete for models in which each world can see at most two worlds. Thus there are such models $\langle W, R, V \rangle$ and $\langle W^{*}, R^{*}, V^{*}\rangle (W$ and $W^{*}$ disjoint) and worlds $w \in W$ and $w^{*} \in W^{*}$ such that $V (A, w) = V^{*}(B, w^{*}) = 0$. Choose $x$ not in $W \cup W^{*}$. Define a new model $\langle W^{**}, R^{**}, V^{**}\rangle$ thus:
+
+$$\begin{array}{l}
+W^{**} = W \cup W^{*} \cup \{x\}\\
+R^{**} = R \cup R^{*} \cup \{\langle x, w\rangle , \langle x, w^{*}\rangle \}
+\end{array}$$
+
+For $P$ a propositional variable:
+
+$V^{**}(P,y)=V(P,y)$ if $y\in W$
+$V^{**}(P,y)=V^{*}(P,y)$ if $y\in W^{*}$
+$V^{**}(P,x)=V(P,w)$
+
+It is routine to prove by induction on the complexity of $C$ that for every formula $C V^{**}(C, y) = V (C, y)$ if $y \in W$ and $V^{**}(C, y) = V^{*}(C, y)$ if $y \in W^{*}$. Consequently, $V^{**}(A, w) = V^{**}(B, w^{*}) = 0$. Since $xR^{**}w$ and $xR^{**}w^{*}, V^{**}(□ A \vee □ B, x) = 0$. But each member of $W^{**}$ has $R^{**}$ to at most two members of $W^{**}$, so $\langle W^{**}, R^{**}, V^{**}\rangle$ is a model of KAlt2. Thus $□ A \vee □ B$ is not a thesis of KAlt2. ■
+
+In particular, in CIw + CEMCon and CI + CEMCon, $\vdash (A \to B) \vee (A \to \neg B)$ if and only if either $\vdash A \equiv B$ or $\vdash A \equiv \neg B$. Only the most trivial instances of Conditional Excluded Middle are theses.
+
+As with Lemma 1, Lemma 3 does not extend to disjunctions of more than two disjuncts (exactly the same example shows this as was used for CIw and CI). Correspondingly, KAlt2 and KDAlt2 do not provide the ordinary rule of disjunction for disjunctions with more than two disjuncts.
+
+Now we turn to CI.0+CEMCon, for which Lemma 3 does not hold (exactly the same example shows this as was used for CI.0). Correspondingly, KTAlt2 does not provide the ordinary rule of disjunction even for disjunctions with only two disjuncts (one can see that more directly by considering the G1 axiom in the form $□ ◇ p \vee □ ◇ \neg p$, which is a thesis of KTAlt2). This means that the method of proof used for Proposition 2 does not apply to CI.0 + CEMCon. Nevertheless, we can reach the same result by other means. As with CI and CIw, the addition of CEMCon to CI.0 makes no difference to the structural relation between the derivability of instances of unconditional Conditional Excluded Middle and the derivability of one of the corresponding biconditionals.
+
+PROPOSITION 4. In CI.0 + CEMCon, for all formulas $A, B : \vdash (A \to B) \vee (A \to \neg B)$ if and only if either $\vdash A \equiv B$ or $\vdash A \equiv \neg B$.
+
+Proof. Since $A \to B$ is equivalent to $□ (A \equiv B )$ in CI.0 + CEMCon (KTAlt2), it suffices to prove that in KTAlt2: $\vdash □ A \vee □ \neg A$ if and only if either $\vdash A$ or $\vdash \neg A$. As usual, the right-to-left direction is easy, so we concentrate on the converse. Suppose:
+
+(1a)
+$\vdash □ A \vee □ \neg A$
+(1b)
+Not $\vdash A$
+(1c)
+Not $\vdash \neg A$
+
+As mentioned earlier, KTAlt2 is complete for models in which each world can see itself and at most one other world. Thus for some such models $\langle W, R, V \rangle$ and $\langle W^{*}, R^{*}, V^{*}\rangle$ and worlds $w \in W$ and $w^{*} \in W^{*}$, (1b) and (1c) yield respectively:
+
+(2a)
+$V (A, w) = 0$
+(2b)
+$V^{*}(A, w^{*}) = 1$
+
+Let $f$ be the function from $W^{*}$ to $W^{*}$ such that $f(x)$ is the unique member of $W^{*}$ other than $x$ to which $x$ has $R$ if such exists and $f(x)=x$ otherwise. Thus for $x \in W^{*}$:
+
+(3)
+$\{y \in W^{*}:xR^{*}y\}=\{x,f(x)\}$
+
+Define a sequence of worlds in $W^{*}$ by setting $w^{*}(0)=w^{*}$ and $w^{*}(n + 1) = f(w^{*}(n))$. Recall the definition of the modal depth $\operatorname{md}(D)$ of a formula $D$ from the proof of Proposition 2. We may assume without loss of generality that $W$ is disjoint from $N$, the set of natural numbers. Now define a new model $\langle W^{**}, R^{**}, V^{**}\rangle$ thus:
+
+$$\begin{array}{l}
+W^{**} = W \cup \{n \in N : n \leq \operatorname{md}(A)\}\\
+R^{**} = R \cup \{\langle n, n\rangle : n \in N, n \leq \operatorname{md}(A)\} \cup \{\langle n + 1, n\rangle :\\
+\qquad n \in N, n < \operatorname{md}(A)\} \cup \{\langle 0, w\rangle \}
+\end{array}$$
+
+For $P$ a propositional variable:
+
+$$\begin{array}{l}
+V^{**}(P,x)=V(P,x)\quad\text{if }x\in W\\
+V^{**}(P,n)=V^{*}(P,w^{*}(\operatorname{md}(A)-n))\quad\text{if }n\leq\operatorname{md}(A)
+\end{array}$$
+
+A routine induction on the complexity of $C$ establishes that for all formulas $C$:
+
+(4)
+$V^{**}(C, x) = V (C, x)$ for all $x \in W$.
+
+We now prove for all formulas $C$:
+
+(5)
+$\begin{aligned}&\text{If }\operatorname{md}(C)\leq n\leq\operatorname{md}(A)\\
+&\quad\text{then }V^{**}(C,n)=V^*(C,w^*(\operatorname{md}(A)-n)).\end{aligned}$
+
+The proof is by induction on the complexity of $C$. The only interesting case is the induction step for $□ C$. Suppose that (5) holds for all formulas less complex than $□ C$, and $\operatorname{md}(□ C) \leq n \leq \operatorname{md}(A)$. Consequently $1 \leq n$ and $\operatorname{md}(C) \leq n - 1 \leq \operatorname{md}(A)$. By induction hypothesis, $V^{**}(C, n - 1) = V^{*}(C, w^{*}(\operatorname{md}(A)-(n-1))) = V^{*}(C, f (w^{*}(\operatorname{md}(A)-n)))$ and $V^{**}(C, n) = V^{*}(C, w^{*}(\operatorname{md}(A) - n))$. Also $\{x \in W^{**}: nR^{**}x\} = \{n, n - 1\}$ and by (3), $\{x \in W^{*}: w^{*}(\operatorname{md}(A) - n)R^{*}x\} = \{w^{*}(\operatorname{md}(A) - n)$, $f (w^{*}(\operatorname{md}(A) - n))\}$. Consequently: $V^{**}(□ C, n) = V^{*}(□ C, w^{*}(\operatorname{md}(A) - n))$. Thus (5) is established.
+
+Putting $C = A$ and $n = \operatorname{md}(A)$ in (4), we have by (1b):
+
+(6)
+$V^{**}(A,\operatorname{md}(A))=V^{*}(A,w^{*}(0))=V^{*}(A,w^{*})=1$
+
+We now show:
+
+(7)
+For all $n < \operatorname{md}(A), V^{**}(A, n) = V^{**}(A, n + 1)$.
+
+For since each member of $W^{**}$ has $R^{**}$ to itself and at most one other member of $W^{**}, \langle W^{**}, R^{**}, V^{**}\rangle$ is a model of KTAlt2. Thus by (1a), $V^{**}(□ A \vee □ \neg A, n + 1) = 1$. Since $n + 1R^{**}n + 1$, if $V^{**}(A, n + 1) = 1$ then $V^{**}(□ \neg A, n + 1) = 0$, so $V^{**}(□ A, n + 1) = 1$, so $V^{**}(A, n) = 1$ because $n + 1R^{**}n$; likewise, if $V^{**}(A, n + 1) = 0$ then $V^{**}(A, n) = 0$.
+
+Having established (7), we can iterate it starting with (6), giving $V^{**}(A, 0) = 1$. Therefore, arguing as for (7), $V^{**}(□ A, 0) = 1$. Since $0R^{**}w, V^{**}(A, w) = 1$. But by (4), $V^{**}(A, w) = V (A, w)$, so $V (A, w) = 1$, which contradicts (2a). ■
+
+# 6.
+
+In Section 4 we observed a close relation between Conditional Excluded Middle for contingent formulas (CEMCon), the symmetry of consequential implication (Symm) and the Factor Law (FL): the normal extension of a consequential system by any one of these principles is equivalent to its normal extension by any other. It is therefore natural to complete the investigation in Section 5 by asking which instances of CEMCon, Symm and FL are derivable in CIw, CI and CI.0. The case of CEMCon is the easiest.
+
+PROPOSITION 5. In CIw, CI and CI.0, for all formulas $A$ and $B : \vdash ((◇ A \mathbin{\&} ◇ \neg A \mathbin{\&} ◇ B \mathbin{\&} ◇ \neg B) \supset ((A \to B) \vee (A \to \neg B))$ if and only if either $\vdash A$ or $\vdash A \supset B$ or $\vdash A \supset \neg B$.
+
+Proof. When the antecedent and consequent are contingent, consequential and strict implication are equivalent in all normal systems. Thus the left-hand side is equivalent to: $\vdash □ A \vee □ \neg A \vee □ B \vee □ \neg B \vee □ (A \supset B ) \vee □ (A \supset \neg B )$. Since CIw, CI and CI.0 all provide the rule of disjunction, that holds (in a given one of those systems) if and only if either $\vdash A$ or $\vdash \neg A$ or $\vdash B$ or $\vdash \neg B$ or $\vdash A \supset B \vdash A \supset \neg B$. But if $\vdash \neg A$ or $\vdash B$ then $\vdash A \supset B$ and if $\vdash \neg B$ then $\vdash A \supset \neg B$. That proves the left-to-right direction. The right-to-left direction is simply an application of necessitation. ■
+
+We must now treat FL and Symm. For CIw and CI, we again establish a result of more general application, in this case concerning the circumstances in which one consequential implication implies another, that may be of independent interest.
+
+LEMMA 6. In CIw and CI, for all formulas $A, B, C, D: \vdash (A \to B) \supset (C \to D)$ if and only if at least one of the following holds:
+
+(i)
+$\vdash A \vee B$ and $\vdash (A \mathbin{\&} B) \supset (C \equiv D)$,
+(ii)
+$\vdash \neg A \vee \neg B$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset (C \equiv D)$,
+(iii)
+$\vdash (A \supset B) \supset (C \supset D), \vdash (A \mathbin{\&} B) \supset C$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset \neg D$,
+(iv)
+$\vdash (A \supset B) \supset (C \supset D), \vdash (A \mathbin{\&} B) \supset \neg D$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset C$,
+(v)
+$\vdash (A \supset B) \supset (C \equiv D)$.
+
+Proof. For definiteness, we work in CIw; exactly the same proof goes for CI. To see that each of (i)–(v) is sufficient, first note this:
+
+(1)
+$\vdash (A \to B) \supset (□ (A \vee B) \supset □ (A \mathbin{\&} B))$
+
+For $A \to B$ yields $□ (A \supset B)$, which with $□ (A \vee B)$ gives $□ B$; but $A \to B$ also yields $□ B \supset □ A$, which gives (1). Similarly, we have:
+
+(2)
+$\vdash (A \to B) \supset (□ (\neg A \vee \neg B) \supset □ (\neg A \mathbin{\&} \neg B))$
+
+We can now argue that each of (i)–(v) is sufficient.
+
+For (i): By necessitation, $\vdash □ (A \vee B)$ and $\vdash □ (A \mathbin{\&} B) \supset □ (C \equiv D)$, so by (1) $\vdash A \to B \supset □ (C \equiv D)$; but $\vdash □ (C \equiv D) \supset (C \to D)$, so $\vdash (A \to B) \supset (C \to D)$, as required.
+
+For (ii): Like (i), but using (2) in place (1).
+
+For (iii): By necessitation, $\vdash □ (A \supset B ) \supset □ (C \supset D)$, hence $\vdash (A \to B) \supset □ (C \supset D)$. Moreover, $\vdash D \supset (A \vee B)$, so $\vdash □ D \supset □ (A \vee B)$, so by (1) $\vdash (A \to B) \supset (□ D \supset □ (A \mathbin{\&} B))$. But $\vdash (A \mathbin{\&} B) \supset C$, so $\vdash □ (A \mathbin{\&} B) \supset □ C$; thus $\vdash (A \to B) \supset (□ D \supset □ C)$. Similarly, $\vdash □ \neg C \supset □ (\neg A\vee \neg B)$, so by (2) $\vdash (A \to B) \supset (□ \neg C \supset □ (\neg A \mathbin{\&} \neg B))$. But $\vdash □ (\neg A \mathbin{\&} \neg B) \supset □ \neg D$; thus $\vdash (A \to B) \supset (◇ D \supset ◇ C)$. Thus $\vdash (A \to B) \supset (C \to D)$.
+
+For (iv): Dual to (iii).
+
+For (v): $\vdash □ (A \supset B) \supset □ (C \equiv D)$. Since $\vdash (A \to B) \supset □ (A \supset B)$ and $\vdash □ (C \equiv D) \supset (C \to D), \vdash (A \to B) \supset (C \to D)$.
+
+That completes the proof of sufficiency. For the converse, suppose that
+
+(3)
+$\vdash (A \to B) \supset (C \to D)$
+
+Consequently, $\vdash □ (A \equiv B ) \supset □ (C \supset D)$. Therefore, since K and KD provide the strengthened rule of disjunction:
+
+(4)
+$\vdash (A \equiv B) \supset (C \supset D)$
+
+Moreover, $\vdash (C \to D) \supset (□ D \supset □ C)$, so by (3) $\vdash (A \to B) \supset (□ D \supset □ C)$, so $\vdash □ (A \equiv B) \supset (□ D \supset □ C)$, so $\vdash □$((A $\equiv$ B) $\mathbin{\&}$ D) $\supset □$C), so by the strengthened rule of disjunction again:
+
+(5)
+$\vdash (A \equiv B) \supset (D \supset C)$
+
+We also have $\vdash (□ (A \supset B) \mathbin{\&} ◇ A \mathbin{\&} ◇ \neg B) \supset (A \to B)$, so by (3):
+
+(6)
+$\vdash (□ (A \supset B) \mathbin{\&} ◇ A \mathbin{\&} ◇ \neg B) \supset (C \to D)$
+
+Thus $\vdash (□ (A \supset B) \mathbin{\&} ◇ A \mathbin{\&} ◇ \neg B) \supset □ (C \supset D)$, so $\vdash □ (A \supset B) \supset (□ \neg A \vee □ B \vee □ (C \supset D))$. Hence, by the strengthened rule of disjunction, at least one of the following holds:
+
+(7x)
+$\vdash (A \supset B) \supset \neg A$
+(7y)
+$\vdash (A \supset B) \supset B$
+(7z)
+$\vdash (A \supset B) \supset (C \supset D)$
+
+If (7x) holds then $\vdash \neg A \vee \neg B$, so by (4) and (5) case (ii) obtains. If (7y) holds then $\vdash A \vee B$, so by (4) and (5) case (i) obtains. Henceforth we may therefore assume that (7z) holds. Now (6) also yields $\vdash (□ (A \supset B) \mathbin{\&} ◇ A \mathbin{\&} ◇ \neg B) \supset (□ D \supset □ C)$, so $\vdash □ ((A \supset B) \mathbin{\&} D) \supset (□ \neg A \vee □ B \vee □ C)$. Hence, by the strengthened rule of disjunction, at least one of the following holds:
+
+(8x)
+$\vdash ((A \supset B) \mathbin{\&} D) \supset \neg A$ (implying $\vdash (A \mathbin{\&} B) \supset \neg D$)
+(8y)
+$\vdash ((A \supset B) \mathbin{\&} D) \supset B$ (implying $\vdash (\neg A \mathbin{\&} \neg B) \supset \neg D$)
+(8z)
+$\vdash ((A \supset B) \mathbin{\&} D) \supset C$
+
+Similarly, (6) also yields $\vdash (□ (A \supset B ) \mathbin{\&} ◇ A \mathbin{\&} ◇ \neg B ) \supset (□ \neg C \supset □ \neg D)$, so $\vdash □ ((A \supset B) \mathbin{\&} \neg C) \supset (□ \neg A \vee □ B \vee □ \neg D)$. Hence, by the strengthened rule of disjunction, at least one of the following holds:
+
+(9x)
+$\vdash ((A \supset B) \mathbin{\&} \neg C) \supset \neg A$ (implying $\vdash (A \mathbin{\&} B) \supset C$)
+(9y)
+$\vdash ((A \supset B) \mathbin{\&} \neg C) \supset B$ (implying $\vdash (\neg A \mathbin{\&} \neg B) \supset C$)
+(9z)
+$\vdash ((A \supset B) \mathbin{\&} \neg C) \supset \neg D$
+
+Given (7z), each of (8z) and (9z) separately implies that case (v) obtains. Thus four possibilities remain to be considered.
+
+(8x) and (9x): By (7z) $\vdash \neg A \vee \neg B$, so by (4) and (5) case (ii) obtains.
+
+(8x) and (9y): By (7z) case (iv) obtains.
+
+(8y) and (9x): By (7z) case (iii) obtains.
+
+(8y) and (9y): By (7z) $\vdash A \vee B$, so by (4) and (5) case (i) obtains. ■
+
+COROLLARY 7. In CIw and CI, for all formulas $A, B, C: \vdash (A \to B) \supset ((A \mathbin{\&} C) \to (B \mathbin{\&} C))$ if and only if either $\vdash (A \mathbin{\&} B) \supset C$ or $\vdash (B \mathbin{\&} C) \supset A$ or $\vdash A \vee B$.
+
+Proof. By Lemma 6, $\vdash (A \to B) \supset ((A \mathbin{\&} C) \to (B \mathbin{\&} C))$ if and only if one of the following holds:
+
+(i)
+$\vdash A \vee B$ and $\vdash (A \mathbin{\&} B) \supset ((A \mathbin{\&} C) \equiv (B \mathbin{\&} C))$,
+(ii)
+$\vdash \neg A \vee \neg B$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset ((A \mathbin{\&} C) \equiv (B \mathbin{\&} C))$,
+(iii)
+$\vdash (A \supset B) \supset ((A \mathbin{\&} C) \supset (B \mathbin{\&} C)), \vdash (A \mathbin{\&} B) \supset (A \mathbin{\&} C)$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset \neg (B \mathbin{\&} C)$,
+(iv)
+$\vdash (A \supset B) \supset ((A \mathbin{\&} C) \supset (B \mathbin{\&} C)), \vdash (A \mathbin{\&} B) \supset \neg (B \mathbin{\&} C)$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset (A \mathbin{\&} C)$,
+(v)
+$\vdash (A \supset B) \supset ((A \mathbin{\&} C) \equiv (B \mathbin{\&} C))$.
+
+Of these conditions, (i) simplifies truth-functionally to $\vdash A \vee B$, (ii) to $\vdash \neg A \vee \neg B$ (which implies $\vdash (A \mathbin{\&} B) \supset C$), (iii) to $\vdash (A \mathbin{\&} B) \supset C$, (iv) to $\vdash (A \mathbin{\&} B) \supset \neg C$ and $\vdash A \vee B$, and (v) to $\vdash (B \mathbin{\&} C) \supset A$. The result follows by inspection. ■
+
+COROLLARY 8. In CIw and CI, for all formulas $A, B: \vdash (A \to B) \supset (B \to A)$ if and only if either $\vdash A \supset \neg B$ or $\vdash B \supset A$ or $\vdash \neg B \supset A$.
+
+Proof. By Lemma 6, for all formulas $A, B: \vdash (A \to B) \supset (B \to A)$ if and only if at least one of the following holds:
+
+(i)
+$\vdash A \vee B$ and $\vdash (A \mathbin{\&} B) \supset (B \equiv A)$,
+(ii)
+$\vdash \neg A \vee \neg B$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset (B \equiv A)$,
+(iii)
+$\vdash (A \supset B) \supset (B \supset A), \vdash (A \mathbin{\&} B) \supset B$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset \neg A$,
+(iv)
+$\vdash (A \supset B) \supset (B \supset A), \vdash (A \mathbin{\&} B) \supset \neg A$ and $\vdash (\neg A \mathbin{\&} \neg B) \supset B$,
+(v)
+$\vdash (A \supset B) \supset (B \equiv A)$.
+
+Of these conditions, (i) simplifies truth-functionally to $\vdash A \vee B$, (ii) to $\vdash \neg A \vee \neg B$, (iii) to $\vdash B \supset A$, (iv) to $\vdash A$ and $\vdash \neg B$, and (v) to $\vdash B \supset A$. The result follows by inspection. ■
+
+By Proposition 1 and Corollary 8, whenever an instance of CEM is derivable in CIw or CI, so is the corresponding instance of Symm. The same goes for CI.0, for $\vdash A \equiv B$ implies $\vdash B \to A$ and $\vdash A \equiv \neg B$ implies $\vdash \neg (A \to B)$, so in both cases $\vdash (A \to B) \supset (B \to A)$.
+
+For CI.0, there is no analogue of Corollary 7 or 8. To show this, we must be more precise about what the analogy would be. We say that there is an elementary non-modal criterion for the derivability of substitution instances of a formula $D$ in a system S if and only if there are non-modal formulas $E_1, . . . , E_n$ and an $n$-place truth-functor ${}^{*}$ in the metalanguage such that for every uniform substitution $\sigma , \vdash \sigma D$ if and only if ${}^{*} (\vdash \sigma E_1, . . . , \sigma E_n)$, where $\vdash$ expresses derivability in S. For example, Lemma 1 shows that there is an elementary non-modal criterion for the derivability of substitution instances of the formula $(p \to q ) \vee (r \to s)$ in CIw and CI, where $E_1$ is $p \equiv q, E_2$ is $r \equiv s$ and ${}^{*}$ is (two-place) disjunction. Similarly, Corollary 8 shows that that there is an elementary non-modal criterion for the derivability of substitution instances of the formula $(p \to q) \supset (q \to p)$ in CIw and CI, where $E_1$ is $p \supset \neg q, E_2$ is $q \supset p$ and $E_3$ is $\neg q \supset p$ and ${}^{*}$ is (three-place) disjunction.
+
+PROPOSITION 9. There is no elementary non-modal criterion for the derivability of substitution instances of $(p \to q ) \supset ((p \mathbin{\&} r ) \to (q \mathbin{\&} r ))$ in CI.0.
+
+Proof. Suppose that there is such a criterion. Thus in CI.0 there are non-modal formulas $E_1, . . . , E_n$ and an $n$-place truth-functor ${}^{*}$ in the metalanguage such that for every substitution $\sigma , \vdash (\sigma p \to \sigma q ) \supset ((\sigma p \mathbin{\&} \sigma r) \to (\sigma q \mathbin{\&} \sigma r))$ if and only if ${}^{*} (\vdash \sigma E_1, . . . , \sigma E_n)$. Define two substitutions $\pi$ and $\rho$ thus:
+
+$$\begin{array}{ll}
+\pi p=(s\mathbin{\&}\neg□ s)\supset p & \rho p=p\\
+\pi q=(s\mathbin{\&}\neg□ s)\mathbin{\&}q & \rho q=q\\
+\pi Q=r & \rho Q=r\quad(Q\text{ any other propositional variable})
+\end{array}$$
+
+Since $(\rho p \to \rho q) \supset ((\rho p \mathbin{\&} \rho r) \to (\rho q \mathbin{\&} \rho r)) = (p \to q) \supset ((p \mathbin{\&} r) \to (q \mathbin{\&} r ))$, this formula is not derivable in CI.0 (by the results of Section 4). By propositional logic, however, $\vdash (\pi p \supset \pi q ) \supset (s \mathbin{\&} \neg □ s)$. Consequently, $\vdash □ (\pi p \supset \pi q ) \supset □ (s \mathbin{\&} \neg □ s)$. But in CI.0 $\vdash \neg □ (s \mathbin{\&} \neg □ s)$, so $\vdash \neg □ (\pi p \supset \pi q)$. Since $\vdash (\pi p \to \pi q) \supset □ (\pi p \supset \pi q), \vdash \neg (\pi p \to \pi q)$, so $\vdash (\pi p \to \pi q) \supset ((\pi p \mathbin{\&} \pi r) \to (\pi q \mathbin{\&} \pi r))$. Consequently, we must have ${}^{*} (\vdash \pi E_1, . . . , \vdash \pi E_n)$ but not ${}^{*} (\vdash \rho E_1, . . . , \vdash \rho E_n)$. However, we will show that to be impossible by proving that for every non-modal formula $A, \vdash \pi A$ if and only if $\vdash \rho A$ in CI.0. It is easy to check that $\pi A = \pi \rho A$ for all propositional variables and therefore for all formulas $A$, so if $\vdash \rho A$ then $\vdash \pi A$. For the converse, suppose that $\vdash \pi A$ but not $\vdash \rho A$ for some non-modal formula $A$. By the usual completeness theorem for KT (= CI.0), in some model $\langle W , R, V \rangle , \rho A$ is false at some world $w \in W$. Let $\langle W^{*}, R^{*}, V^{*}\rangle$ be a model for which $W^{*}$ consists of just two worlds, $x$ and $y$, where $R^{*}$ holds universally, $p, q$ and $r$ have the same truth-values at $x$ as they have at $w$ in $\langle W , R, V \rangle$, all other propositional variables are true at $x$ and all propositional variables are false at $y$. Thus $s \mathbin{\&} \neg □ s$ is true at $x$ in $\langle W^{*}, R^{*}, V^{*}\rangle$. It is now easy to check that for every propositional variable $Q, \pi Q$ has the same truth-value at $x$ in $\langle W^{*}, R^{*}, V^{*}\rangle$ as $\rho Q$ has at $w$ in $\langle W, R, V \rangle$. Consequently, for every non-modal formula $B, \pi B$ has the same truth-value at $x$ in $\langle W^{*}, R^{*}, V^{*}\rangle$ as $\rho B$ has at $w$ in $\langle W , R, V \rangle$, since $\pi B$ and $\rho B$ are simply truth-functions of the formulas to which $\pi$ and $\rho$ respectively map the propositional variables in $B$. In particular, since $\rho A$ is false at $w$ in $\langle W, R, V \rangle , \pi A$ is false at $x$ in $\langle W^{*}, R^{*}, V^{*}\rangle$. But since $\langle W^{*}, R^{*}, V^{*}\rangle$ is reflexive it is a model for KT, contrary to the hypothesis that $\vdash \pi A$. Consequently, if $\vdash \pi A$ then $\vdash \rho A$. ■
+
+PROPOSITION 10. There is no elementary non-modal criterion for the derivability of substitution instances of $(p \to q ) \supset (q \to p)$ in CI.0.
+
+Proof. Exactly the same method of proof works as for Proposition 9 (using the same substitutions). ■
+
+PROPOSITION 11. There is no elementary non-modal criterion for the derivability of substitution instances of $\neg (p \to q )$ in CI.0.
+
+Proof. Again, the same method of proof applies. ■
+
+# Notes
+
+[1] Consequential implication was introduced in Pizzi (1991) and (1993) as a modal reinterpretation of so-called connexive logic. For a logico-philosophical analysis see Pizzi (2004). The historical roots of the basic ideas underlying consequential implication have recently been explored in Nasti (2004).
+
+[2] In Pizzi and Williamson (1997) it is proved that in all three of the systems CIw, CI and CI.0 the provability of a consequential implication is equivalent to the provability of the corresponding material biconditional: $A \to B$ is a theorem if and only if $A \equiv B$ is a theorem (a result strengthened in the present paper). Since consequential implication materially implies strict implication, an equivalent result is that $A \to B$ is a theorem if and only if $□ (A \supset B ) \mathbin{\&} (A \equiv B )$ is a theorem. Of course, the two formulas are not in general materially equivalent even in CI.0: intuitively, because $A \to B$ is true and $□ (A \supset B ) \mathbin{\&} (A \equiv B )$ false when $A$ is contingently false, $B$ is contingently true and $A$ strictly implies $B$; conversely, $□ (A \supset B) \mathbin{\&} (A \equiv B)$ is true and $A \to B$ false when $A$ is contingently true and $B$ necessary and when $A$ is impossible and $B$ contingently false. Nevertheless, a comparison is suggested of logics of consequential implication with logics of the conjunction of strict implication and the material biconditional. In fact, Meyer (1977) has proved that under a definition of a conditional by $□ (A \supset B ) \mathbin{\&} (A \equiv B )$, the first degree formulas provable in S5 are exactly those provable in McCall’s system CFL of connexive logic (1975). All the theorems of CFL are of course iff-like. However, the comparison with systems of consequential implication is fully possible only if one drops the restriction on substitution which in CFL forbids nesting of arrows. McCall himself raises the prospect of such a relaxation (p. 452).
+
+[3] More systematically, KAlt$n$ can be axiomatized as $K+□ p_1\vee□(p_1\supset p_2)\vee\cdots\vee□((p_1\mathbin{\&}\cdots\mathbin{\&}p_n)\supset p_{n+1})$ and is characterized by the class of frames in which every world can see at most $n$ worlds (Hughes and Cresswell, 1996: 142).
+
+[4] In fact, the strict biconditional is equivalent to the consequential biconditional since the former implies $□ A \equiv □ B$ and $◇ A \equiv ◇ B$.
+
+[5] If we add instead of CEM $(\neg (p \to q ) \supset (p \to \neg q ))$ the weaker-looking formula $\neg (p \to q) \supset (p \supset \neg q)$, which is equivalent to $(p \mathbin{\&} q) \supset (p \to q)$ (the analogue for $\to$ of one of Lewis’s axioms about the subjunctive conditional), the result is equivalent to adding $p \supset □ p$ or $(p \supset q ) \supset (p \to q )$. The corresponding semantic condition is that no world can see any world other than itself.
+
+[6] The antecedent corresponding to that entry implies both CEM and its negation in the extended system, so the negation of the antecedent is derivable. In each case, the antecedent makes one of $p$ and $q$ contingent and the other necessary or impossible. To rule out that combination is equivalent to ruling out contingency, which is just what Alt1 does.
+
+[7] Proof (working in KTAlt2): $□ ◇ □ □ p \supset □ □ ◇ □ p$ is a straightforward corollary of the G1 axiom. Conversely $\vdash ◇ □ p \supset (p \supset □ p)$ as already noted, so $\vdash □ □ ◇ □ p \supset □ □ (p \supset □ p)$, hence $\vdash □ □ ◇ □ p \supset (◇ □ p \supset ◇ □ □ p)$; also $\vdash □ □ ◇ □ p \supset ◇ □ p$ by T; consequently, $\vdash □ □ ◇ □ p \supset ◇ □ □ p$. Substituting $\neg p$ for $p$ in $◇ □ p \supset (p \supset □ p), \vdash (\neg p \mathbin{\&} ◇ p) \supset □ ◇ p$; hence by substitution $\vdash (\neg □ □ p \mathbin{\&} ◇ □ □ p) \supset □ ◇ □ □ p$, so (%) $\vdash (\neg □ □ p \mathbin{\&} □ □ ◇ □ p) \supset □ ◇ □ □ p$. But since $\vdash □ □ ◇ □ p \supset □ □ (p \supset □ p), \vdash □ □ ◇ □ p \supset (□ □ p \supset □ □ □ p)$, so (%%) $\vdash □ □ ◇ □ p \supset (□ □ p \supset □ ◇ □ □ p)$ by T. Putting (%) and (%%) together, $\vdash □ □ ◇ □ p \supset □ ◇ □ □ p$.
+
+[8] Proof (working in KDAlt2): By the standard Lemmon–Scott method one proves that if $\vdash □ A \supset (□ B \vee □ C)$ then either $\vdash A \supset B$ or $A \supset C$, just as one would for KD (the relevant semantic construction introduces only two-way branching). Consequently, for all formulas $A, B$: (1) if $\vdash □ A \equiv □ B$ then $A \equiv B$; (2) if $\vdash ◇ A \equiv ◇ B$ then $\vdash A \equiv B$; (3) if $\vdash □ A \vee □ B$ then either $\vdash A$ or $\vdash B$. Note that we cannot have $\vdash □ Mp \equiv ◇ M^{*}p$ for any modalities $M$ and $M^{*}$, for otherwise $\vdash □ Mp \vee □ \neg M^{*}p$, so by (3) either $\vdash Mp$ or $\vdash \neg M^{*}p$, so substitution of $\bot$ or $\top$ for $p$ (depending on whether the modality is positive or negative) yields a formula that is inconsistent even in KD. Consequently, if $\vdash Mp\equiv M^{*}p$ for two distinct modalities $M$ and $M^{*}$ then by repeated application of (i) and (ii) $\vdash p \equiv M^{**}p$ for some non-null modality $M^{**}$, which is impossible (consider a model with just two worlds $w$ and $x$, in which $w$ sees only $x$, which sees only itself, and $p$ is true at $w$ and false at $x$ if the modality is positive and true at $x$ otherwise).
+
+[9] For a different proof of the equivalence between CIw + FL and CIw + Symm see Pizzi (1993).
+
+[10] See Pizzi and Williamson (1997) for more on SBT.
+
+# References
+
+Chagrov, A. and Zakharyaschev, M. (1997) Modal Logic, Clarendon Press, Oxford.
+
+Dummett, M. (1993) The Seas of Language, Clarendon Press, Oxford.
+
+Hughes, G. and Cresswell, M. (1996) A New Introduction to Modal Logic, Routledge, London.
+
+Lemmon, E. J. and Scott, D. (1977) The “Lemmon Notes”: An Introduction to Modal Logic, K. Segerberg (ed.), Blackwell, Oxford.
+
+Lewis, D. (1973) Counterfactuals, Blackwell, Oxford.
+
+Lewis, D. (1974) Intensional logics without iterative axioms, J. Philos. Logic 3, 457–466.
+
+Makinson, D. (1971) Some embedding theorems in modal logic, Notre Dame J. Formal Logic 12, 252–254.
+
+McCall, S. (1975) Connexive implication, in A. R. Anderson and N. Belnap (eds.), Entailment: The Logic of Relevance and Necessity, Vol. 1, Princeton University Press, Princeton.
+
+Meyer, R. K. (1977) The poor man’s connexive implication, Relevant Logic Newsletter 2, 117–124.
+
+Nasti, M. (2004) From Aristotle’s syllogistic to Stoic conditionals: Holzwege or detectable paths?, Topoi 23, 113–137.
+
+Pizzi, C. (1991) Decision procedures for logics of consequential implication, Notre Dame J. Formal Logic 32, 618–636.
+
+Pizzi, C. (1993) Consequential implication: A correction, Notre Dame J. Formal Logic 34, 621–624.
+
+Pizzi, C. (2004) Aristotle’s Thesis between paraconsistency and modalization, J. Appl. Logic 3, 119–131.
+
+Pizzi, C. and Williamson, T. (1997) Strong Boethius’ Thesis and consequential implication, J. Philos. Logic 26, 569–588.
+
+Stalnaker, R. (1968) A theory of conditionals, in N. Rescher (ed.), Studies in Logical Theory (American Philosophical Quarterly Monograph No. 2), Blackwell, Oxford.

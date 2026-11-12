@@ -1,0 +1,142 @@
+# Continuum many maximal consistent normal bimodal logics with inverses
+
+Timothy Williamson
+
+Notre Dame Journal of Formal Logic 39 (1) (1998): 128–134.
+
+Abstract
+
+The paper considers extensions of a normal bimodal logic KL in which the two necessity operators are mutual one-sided inverses. A continuum of maximal consistent normal extensions of KL is constructed, each of which has infinitely many quasi-normal Post complete extensions. Some syntactic properties of maximal consistent normal bimodal logics and in particular of such extensions of KL are investigated.
+
+There are just two maximal consistent normal monomodal logics; each consistent normal monomodal logic is extended by at least one of them (see Makinson [2]). In bimodal logic, the situation is less simple. This note investigates one aspect of the problem by considering maximal consistent normal bimodal logics in which the two modal operators are one-sided inverses of each other, that is, □■α ≡ α is a theorem for every formula α. It will be shown that there are $2^{\aleph_0}$ such logics. For a general account of bimodal logics in which the two modal operators are one-sided inverses of each other see Humberstone and Williamson [1].
+
+Some terminology for bimodal logic will briefly be rehearsed. The language consists of a set of sentence letters p, . . . , the 0-place falsity constant ⊥, the material implication ⊃, and two 1-place operators □ and ■. None of the results in this paper essentially depends on the cardinality of the set of sentence letters (even if it is 0). Other standard logical symbols are used as metalinguistic abbreviations; $\lozenge$ = ¬□¬ and $\blacklozenge$ = ¬■¬. A letterless formula is one not containing sentence letters. A letterless substitution maps all sentence letters to letterless formulas.
+
+A logic is a set of formulas containing all truth-functional tautologies and closed under uniform substitution (US) and modus ponens (MP). If Σ is a logic, we say $\vdash_\Sigma \alpha$ when $\alpha \in \Sigma$. A normal (bimodal) logic is a logic containing all formulas of the forms □(α ⊃ β) ⊃ (□α ⊃ □β) and ■(α ⊃ β) ⊃ (■α ⊃ ■β) and closed under $\mathrm{RN}_{□}$(α/□α) and $\mathrm{RN}_{■}$(α/■α). Σ is inconsistent if and only if ⊥ ∈ Σ. Σ is Post complete if and only if Σ is a consistent logic and for every consistent logic $\Sigma^{+}$, if Σ ⊆ $\Sigma^{+}$ then Σ = $\Sigma^{+}$ (Segerberg [3], corrected in Segerberg [4], discusses Post completeness in monomodal logic). Σ is a maximal consistent normal logic if and only if Σ is a consistent normal logic and for every consistent normal logic $\Sigma^{+}$, if Σ ⊆ $\Sigma^{+}$ then Σ = $\Sigma^{+}$. Proposition 5 below illustrates the difference between Post completeness and maximal consistent normality. Following [1], the smallest normal logic containing □■α ≡ α for all α is KL.
+
+A frame is a triple $\langle W,R,S\rangle$, where $W$ is a set and $R$ and $S$ are binary relations on $W$. A valuation on a frame $\langle W,R,S\rangle$ is a mapping $V$ from ordered pairs of formulas and members of $W$ to $\{0,1\}$ such that for all formulas $\alpha$ and $\beta$ and $w\in W$: $V(\bot,w)=0$; $V(\alpha\supset\beta,w)=1$ if and only if $V(\alpha,w)\le V(\beta,w)$; $V(□\alpha,w)=1$ if and only if $V(\alpha,x)=1$ whenever $wRx$; $V(■\alpha,w)=1$ if and only if $V(\alpha,x)=1$ whenever $wSx$. A set of formulas Σ is valid on a frame $\langle W,R,S\rangle$ if and only if for every valuation $V$ on $\langle W,R,S\rangle$, $w\in W$ and $\alpha\in\Sigma$, $V(\alpha,w)=1$. Σ is satisfiable on $\langle W,R,S\rangle$ if and only if for some valuation $V$ on $\langle W,R,S\rangle$ and $w\in W$, for every $\alpha\in\Sigma$, $V(\alpha,w)=1$.
+
+For X ⊆ ω, define relations $R_X$ and S on ω:
+
+$\begin{array}{rcll}iR_Xj&⟺&\text{either}&\text{(a) }j=i+1\\&&\text{or}&\text{(b) }j=0\text{ and }i\text{ is even}\\&&\text{or}&\text{(c) }j=0\text{ and for some }k\in X,\ i=2k+1.\end{array}$
+
+$iSj⟺ i=j+1.$
+
+Let KL[X] be the normal bimodal logic consisting of all formulas α such that {α} is valid on the frame ⟨ω, $R_X$, S⟩. Note that for any formula α and i, j, k ∈ ω, if $iR_XjSk$ then j = k + 1, so j = i + 1, so i = k, so V(α ⊃ □■α, i) = 1 for any valuation V on ⟨ω, $R_X$, S⟩. Conversely, $iR_Xi+1Si$, so V(□■α ⊃ α, i) = 1. Thus $\vdash_{{𝐊𝐋}[X]} \alpha \equiv □■\alpha$; KL ⊆ KL[X] for any X ⊆ ω. Since the argument does not depend on which numbers have $R_X$ to 0, $\{i:iR_X0\}$ can be used to encode X so that KL[X] is inconsistent with KL[Y] whenever X ≠ Y. Thus there are uncountably many such logics. Moreover, KL[X] and any consistent extension of it is undecidable whenever X is undecidable.
+
+Proposition 1 If $X$ and $Y$ are distinct subsets of $\omega$, then for some formula $\alpha$ $\vdash_{{𝐊𝐋}[X]} \alpha$ and $\vdash_{{𝐊𝐋}[Y]} \neg\alpha$.
+
+Proof: It suffices to show that for any X ⊆ ω and i ∈ ω,
+
+(a)
+if $i \in X$ then $\vdash_{{𝐊𝐋}[X]} \lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot)$;
+(b)
+if not $i \in X$ then $\vdash_{{𝐊𝐋}[X]} \neg \lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot)$.
+
+Let V be any valuation on ⟨ω, $R_X$, S⟩.
+
+(a) Suppose that i ∈ X. Then $2i+1R_X0$, so V($\lozenge$■⊥, 2i + 1) = 1. Note that V($\blacklozenge^{2i+1}■\bot$, 2i + 1) = 1. Hence V($\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot$, 2i + 1) = 1. Now for any j ∈ ω, either j or j + 1 is even, so $jR_X0R_X0$ or $jR_Xj+1R_X0$; either way, $jR_X^2 0$. Since $0R_X^{2i+1}2i+1$, $jR_X^{2i+3}2i+1$. Hence $V(\lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot),j)=1$ for all j ∈ ω. Since V was arbitrary, $\vdash_{{𝐊𝐋}[X]} \lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot)$.
+
+(b) Suppose that $V(\lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot),j)=1$ for some j ∈ ω. Hence for some k, $jR_X^{2i+3}k$ and $V(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot,k)=1$. Thus $V(\blacklozenge^{2i+1}■\bot,k)=1$, so 2i + 1 = k by the structure of the frame, so V($\lozenge$■⊥, 2i + 1) = 1, so $2i+1R_X0$, so i ∈ X. Thus if not i ∈ X, $V(\lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot),j)=0$ for all j ∈ ω. Since V was arbitrary, $\vdash_{{𝐊𝐋}[X]} \neg \lozenge ^{2i+3}(\blacklozenge^{2i+1}■\bot \wedge \lozenge ■\bot)$. □
+
+Proposition 2 For $X$ ⊆ $\omega$, ${𝐊𝐋}$[$X$] is a maximal consistent normal logic.
+
+Proof: Let Σ be a consistent normal logic such that KL[X] ⊆ Σ. We must show that KL[X] = Σ. Let #α be the degree of embedding of □ (not ■) in α: #p = #⊥ = 0; #■α = #α; #(α ⊃ β) = max{#α, #β}; #□α = 1 + #α.
+
+(i) Note the following fact.
+
+Fact 3 For any valuation $V$ on ⟨$\omega$, $R_X$, $S$⟩ and $k$ ∈ $\omega$, there is a substitution $\sigma$ such that for every formula $\alpha$, $i$ ∈ $\omega$ and valuation $V^*$ on ⟨$\omega$, $R_X$, $S$⟩, if $i$ + #$\alpha$ ≤ $k$ then $V^*$($\sigma\alpha$, $i$) = $V$($\alpha$, $i$).
+
+To see this, let σ be the substitution such that for each sentence letter p, $\sigma p = \bigvee\{\blacklozenge^j■\bot : 0 \leq j \leq k \text{ and } V(p,j)=1\}$. We can now prove Fact 3 by induction on the complexity of α. The basis for this is as follows: α = p. By the structure of the frame, V($\blacklozenge^j■\bot$, i) = 1 just in case i = j. Thus if i ≤ k, $V^*$(σp, i) = 1 $⟺$ V(p, i) = 1. The cases of ⊃ and ⊥ are trivial. For the induction step for □, note that if i + #□α ≤ k and $iR_Xj$ then i + 1 + #α ≤ k and j ≤ i + 1, so j + #α ≤ k. For the induction step for ■, note that if i + #■α ≤ k and iSj then i + #α ≤ k and i ≤ j + 1, so j + #α < k.
+
+(ii) Now suppose that not $\vdash_{{𝐊𝐋}[X]} \alpha$. Then for some i ∈ ω and valuation V on ⟨ω, $R_X$, S⟩, V(α, i) = 0. By Fact 3 for k = i + #α, there is a substitution σ such that $V^*$(σα, i) = V(α, i) = 0 for every valuation $V^*$. By an argument such as (a) in the proof of Proposition 1, $jR_X^{i+2}i$ for all j ∈ ω. Thus $V^*(\lozenge ^{i+2}\neg\sigma\alpha,j)=1$ for every valuation $V^*$ and j ∈ ω. Thus $\vdash_{{𝐊𝐋}[X]} \lozenge ^{i+2}\neg\sigma\alpha$, so $\vdash_\Sigma \lozenge ^{i+2}\neg\sigma\alpha$. But if $\vdash_\Sigma \alpha$ then $\vdash_\Sigma □^{i+2}\sigma\alpha$ because Σ is normal, contradicting the consistency of Σ; hence not $\vdash_\Sigma \alpha$. Thus if $\vdash_\Sigma \alpha$ then $\vdash_{{𝐊𝐋}[X]} \alpha$, as required. □
+
+Corollary 4 The number of maximal consistent normal extensions of ${𝐊𝐋}$ is $2^{\aleph_0}$, as is the number of Post complete extensions of ${𝐊𝐋}$.
+
+Proof: By Propositions 1 and 2, KL has at least $2^{\aleph_0}$ mutually inconsistent maximal consistent normal extensions. By an argument from Zorn’s lemma, every consistent logic is extended by a Post complete logic, so KL has at least $2^{\aleph_0}$ Post complete extensions. In both cases the number is at most $2^{\aleph_0}$, however many sentence letters there are, for if Σ is a Post complete or maximal consistent normal extension of KL, then $\Sigma = \{\alpha : \vdash_\Sigma \sigma\alpha \text{ for every letterless substitution } \sigma\}$ by an argument such as that for Proposition 6 ($⟹$ (b)) below, so each such extension is determined by its letterless fragment. □
+
+Proposition 5 ${𝐊𝐋}$[$X$] has infinitely many Post complete extensions, all of which are nonnormal.
+
+Proof: For i ∈ ω, let KL[X][i] = {α : V(α, i) = 1 for every valuation V on ⟨ω, $R_X$, S⟩}. By standard reasoning, KL[X][i] is a consistent logic extending KL[X]. By the structure of the frame, V($\blacklozenge^j■\bot$, i) = 1 just in case i = j. Thus $\vdash_{{𝐊𝐋}[X][i]} \blacklozenge^i■\bot$ and $\vdash_{{𝐊𝐋}[X][i]} \neg\blacklozenge^j■\bot$ whenever i ≠ j. Hence if i ≠ j, for some formula α, $\vdash_{{𝐊𝐋}[X][i]} \alpha$ and $\vdash_{{𝐊𝐋}[X][j]} \neg\alpha$. Since every consistent logic has a Post complete extension, KL[X] has infinitely many Post complete extensions, all of which are nonnormal by Proposition 2. □
+
+Having established the existence of a nontrivial set of maximal consistent normal extensions of KL, we proceed to investigate their properties, beginning with a general characterization of maximal consistent normal bimodal logics. A necessitation is a sequence (possibly null) of occurrences of □ and ■ in any order.
+
+Proposition 6 A consistent normal bimodal logic $\Sigma$ is a maximal consistent normal logic just in case
+
+(a)
+for every letterless formula $\alpha$, either $\vdash_\Sigma \alpha$ or for some necessitations $L_1$, …, $L_k$, $\vdash_\Sigma \neg(L_1\alpha \wedge \cdots \wedge L_k\alpha)$;
+
+and
+
+(b)
+for every formula $\alpha$, if $\vdash_\Sigma \sigma\alpha$ for every letterless substitution $\sigma$ then $\vdash_\Sigma \alpha$.
+
+Proof: ($⟸$) Assume (a) and (b). Let $\Sigma^{+}$ be a consistent normal logic such that Σ ⊆ $\Sigma^{+}$. Suppose that $\vdash_{\Sigma^{+}}\alpha$. We must show that $\vdash_\Sigma\alpha$. Let σ be a letterless substitution. By (b), we need only show that $\vdash_\Sigma\sigma\alpha$. By (a), if not $\vdash_\Sigma\sigma\alpha$, then for some necessitations $L_1$, …, $L_k$, $\vdash_\Sigma\neg(L_1\alpha\wedge\cdots\wedge L_k\alpha)$. Since Σ ⊆ $\Sigma^{+}$, $\vdash_{\Sigma^{+}}\neg(L_1\alpha\wedge\cdots\wedge L_k\alpha)$. By US for $\Sigma^{+}$, $\vdash_{\Sigma^{+}}\sigma\alpha$. Since Σ is normal, $\vdash_{\Sigma^{+}}L_1\sigma\alpha\wedge\cdots\wedge L_k\sigma\alpha$. Thus $\Sigma^{+}$ is inconsistent, contrary to hypothesis.
+
+($⟹$) Let Σ be a maximal consistent normal bimodal logic.
+
+(a) Let α be letterless. Put $\Sigma^{+} = \{\beta : \vdash_\Sigma (L_1\alpha\wedge\cdots\wedge L_k\alpha)\supset\beta$ for some necessitations $L_1,\ldots,L_k\}$. If ⊥ ∈ $\Sigma^{+}$ we are done. Suppose that not ⊥ ∈ $\Sigma^{+}$. We show that $\Sigma^{+}$ is a normal extension of Σ; by hypothesis, it is consistent. Evidently Σ ⊆ $\Sigma^{+}$ and $\Sigma^{+}$ is closed under MP. $\Sigma^{+}$ is closed under US because Σ is, and σα = α since α is letterless. $\Sigma^{+}$ is closed under $\mathrm{RN}_{□}$ and $\mathrm{RN}_{■}$ because Σ is normal. Thus $\Sigma^{+}$ is a consistent normal extension of Σ. Since Σ is maximal, Σ = $\Sigma^{+}$. Trivially, $\vdash_{\Sigma^{+}}\alpha$. Thus $\vdash_\Sigma\alpha$.
+
+(b) Let $\Sigma^{+} = \{\alpha : \vdash_\Sigma\sigma\alpha\text{ for every letterless substitution }\sigma\}$. Since Σ is closed under US, Σ ⊆ $\Sigma^{+}$. We need only show that Σ = $\Sigma^{+}$. Since Σ is maximal, we need only show that $\Sigma^{+}$ is consistent and normal. $\Sigma^{+}$ is consistent, otherwise Σ would be inconsistent. $\Sigma^{+}$ is closed under US, for if $\sigma_0$ is a substitution and σ is a letterless substitution then σ$\sigma_0$ is a letterless substitution. $\Sigma^{+}$ is closed under MP, $\mathrm{RN}_{□}$ and $\mathrm{RN}_{■}$ because Σ is and substitutions commute with ⊃, □, and ■. □
+
+Corollary 7 If $\Sigma$ is a maximal consistent normal bimodal logic, $\vdash_\Sigma\lozenge \top$ and $\vdash_\Sigma\blacklozenge\top$ then $\vdash_\Sigma□\alpha\equiv\alpha$ and $\vdash_\Sigma■\alpha\equiv\alpha$ for all $\alpha$.
+
+Proof: Make the assumptions. By induction on the complexity of β, if β is letterless then either $\vdash_\Sigma\beta$ or $\vdash_\Sigma\neg\beta$. Thus if σ is a letterless substitution, either $\vdash_\Sigma\sigma\alpha$ or $\vdash_\Sigma\neg\sigma\alpha$; either way, $\vdash_\Sigma□\sigma\alpha\equiv\sigma\alpha$ and $\vdash_\Sigma■\sigma\alpha\equiv\sigma\alpha$. By (b) of Proposition 6, $\vdash_\Sigma□\alpha\equiv\alpha$ and $\vdash_\Sigma■\alpha\equiv\alpha$. □
+
+Corollary 8 If $\Sigma$ is a maximal consistent normal extension of ${𝐊𝐋}$ and $\vdash_\Sigma\blacklozenge\top$ then $\vdash_\Sigma□\alpha\equiv\alpha$ and $\vdash_\Sigma■\alpha\equiv\alpha$ for all $\alpha$.
+
+Proof: From Corollary 7, for $\vdash_\Sigma\lozenge \top$ because $\vdash_{{𝐊𝐋}}□■\bot\equiv\bot$ and KL is normal, so $\vdash_{{𝐊𝐋}}\lozenge \top$. □
+
+Proposition 9 A consistent normal extension $\Sigma$ of ${𝐊𝐋}$ is a maximal consistent normal logic just in case
+
+(a′)
+for every letterless formula $\alpha$, either $\vdash_\Sigma\alpha$ or for some $i$(1), …, $i$($k$) ∈ $\omega$ $\vdash_\Sigma\neg(□^{i(1)}\alpha\wedge\cdots\wedge□^{i(k)}\alpha)$,
+
+and
+
+(b)
+for every formula $\alpha$, if $\vdash_\Sigma\sigma\alpha$ for every letterless substitution $\sigma$ then $\vdash_\Sigma\alpha$.
+
+Proof: By Proposition 6, we need only show that if Σ is a normal extension of KL, α is letterless and for some necessitations $L_1$, …, $L_k$, $\vdash_\Sigma\neg(L_1\alpha\wedge\cdots\wedge L_k\alpha)$ then for some i(1), …, i(k) ∈ ω, $\vdash_\Sigma\neg(□^{i(1)}\alpha\wedge\cdots\wedge□^{i(k)}\alpha)$. Now for each necessitation L there are m, n ∈ ω such that for every formula α $\vdash_{{𝐊𝐋}}L\alpha\equiv■^m□^n\alpha$; this can easily be proved by induction on the length of L. Thus we can assume that for some m(1), …, m(k), n(1), …, n(k) ∈ ω, $\vdash_\Sigma\neg(■^{m(1)}□^{n(1)}\alpha\wedge\cdots\wedge■^{m(k)}□^{n(k)}\alpha)$. Let m = max{m(1), …, m(k)}. Since Σ is normal, $\vdash_\Sigma□^m\neg(■^{m(1)}□^{n(1)}\alpha\wedge\cdots\wedge■^{m(k)}□^{n(k)}\alpha)$. Since $\vdash_{{𝐊𝐋}}\lozenge \top$ and Σ is a normal extension of KL, $\vdash_\Sigma\neg(□^m■^{m(1)}□^{n(1)}\alpha\wedge\cdots\wedge□^m■^{m(k)}□^{n(k)}\alpha)$. Now $\vdash_{{𝐊𝐋}}□^i■^i\beta\equiv\beta$ for every formula β and i ∈ ω (proof: by induction on i, using the normality of KL). Thus $\vdash_\Sigma□^m■^{m(j)}\beta\equiv□^{m-m(j)}\beta$ for 1 ≤ j ≤ k. Since KL ⊆ Σ, $\vdash_\Sigma\neg(□^{m-m(1)+n(1)}\alpha\wedge\cdots\wedge□^{m-m(k)+n(k)}\alpha)$. □
+
+Corollary 10 If $\Sigma$ is a maximal consistent normal extension of ${𝐊𝐋}$ and $\vdash_\Sigma□\alpha$ then $\vdash_\Sigma\alpha$.
+
+Proof: Suppose that $\vdash_\Sigma□\alpha$. Let σ be a letterless substitution. By Proposition 9, either $\vdash_\Sigma\sigma\alpha$ or for some i(1), …, i(k) ∈ ω $\vdash_\Sigma\neg(□^{i(1)}\sigma\alpha\wedge\cdots\wedge□^{i(k)}\sigma\alpha)$. Suppose that not $\vdash_\Sigma\sigma\alpha$. Since Σ is closed under US, $\vdash_\Sigma□\sigma\alpha$. Since Σ is normal, $\vdash_\Sigma□^{i(k)}\sigma\alpha$ whenever i(k) ≥ 1. Thus $\vdash_\Sigma\neg\sigma\alpha$. Since Σ is normal, $\vdash_\Sigma□\neg\sigma\alpha$, so $\vdash_\Sigma□\bot$. But $\vdash_{{𝐊𝐋}}\lozenge \top$, so Σ is inconsistent, contrary to hypothesis. Thus $\vdash_\Sigma\sigma\alpha$. But σ was arbitrary, so $\vdash_\Sigma\alpha$ by Proposition 9. □
+
+The result for ■ is automatic: if Σ is a normal extension of KL and $\vdash_\Sigma■\alpha$ then $\vdash_\Sigma□■\alpha$, so $\vdash_\Sigma\alpha$.
+
+Corollary 11 If $\Sigma$ is a maximal consistent normal extension of ${𝐊𝐋}$ then $\vdash_\Sigma\blacklozenge\alpha\supset■\alpha$.
+
+Proof: $\vdash_{{𝐊𝐋}}\alpha\supset□■\alpha$ and $\vdash_{{𝐊𝐋}}\neg\alpha\supset□■\neg\alpha$, so $\vdash_{{𝐊𝐋}}□■\alpha\vee□■\neg\alpha$. Since KL is normal, $\vdash_{{𝐊𝐋}}□(\blacklozenge\alpha\supset■\alpha)$. Since KL ⊆ Σ, $\vdash_\Sigma□(\blacklozenge\alpha\supset■\alpha)$. By Corollary 10, $\vdash_\Sigma\blacklozenge\alpha\supset■\alpha$. □
+
+Corollary 12 If $\Sigma$ is a maximal consistent normal extension of ${𝐊𝐋}$ then either $\vdash_\Sigma□\alpha\equiv\alpha$ and $\vdash_\Sigma■\alpha\equiv\alpha$ for all $\alpha$ or for some $i$(1), …, $i$($k$) ∈ $\omega$ $\vdash_\Sigma\lozenge ^{i(1)}■\bot\vee\cdots\vee\lozenge ^{i(k)}■\bot$.
+
+Proof: By Proposition 9, either $\vdash_\Sigma\blacklozenge\top$ or for some i(1), …, i(k) ∈ ω $\vdash_\Sigma\neg(□^{i(1)}\blacklozenge\top\wedge\cdots\wedge□^{i(k)}\blacklozenge\top)$. The result follows by Corollary 8. □
+
+Proposition 13 If a maximal consistent normal extension $\Sigma$ of ${𝐊𝐋}$ is satisfiable on a finite frame, then $\vdash_\Sigma□\alpha\equiv\alpha$ and $\vdash_\Sigma■\alpha\equiv\alpha$.
+
+Proof: Suppose that a maximal consistent normal extension Σ of KL is satisfiable on a finite frame ⟨W, R, S⟩. Thus for some valuation V on ⟨W, R, S⟩ and x ∈ W, V(α, x) = 1 whenever $\vdash_\Sigma\alpha$. Now for all i ∈ ω, $\{w\in W:V(■^i\bot,w)\}\subseteq\{w\in W:V(■^{i+1}\bot,w)\}$. Since W is finite, for some i $\{w\in W:V(■^i\bot,w)\}=\{w\in W:V(■^{i+1}\bot,w)\}$. Thus for all w ∈ W, $V(■^{i+1}\bot\supset■^i\bot,w)=1$. Hence for all w ∈ W and j ∈ ω, $V(□^{i+j}(■^{i+1}\bot\supset■^i\bot),w)=1$. Since $\vdash_{{𝐊𝐋}}\neg□^i■^i\bot$ and $\vdash_{{𝐊𝐋}}□^i■^{i+1}\bot\equiv■\bot$, $\vdash_{{𝐊𝐋}}(□^i■^{i+1}\bot\supset□^i■^i\bot)\supset\neg■\bot$, so by normality $\vdash_{{𝐊𝐋}}□^i(■^{i+1}\bot\supset■^i\bot)\supset\neg■\bot$, so $\vdash_{{𝐊𝐋}}□^{i+j}(■^{i+1}\bot\supset■^i\bot)\supset□^j\neg■\bot$. Since KL ⊆ Σ, $\vdash_\Sigma□^{i+j}(■^{i+1}\bot\supset■^i\bot)\supset□^j\neg■\bot$. Thus $V(□^{i+j}(■^{i+1}\bot\supset■^i\bot)\supset□^j\neg■\bot,x)=1$. But $V(□^{i+j}(■^{i+1}\bot\supset■^i\bot),x)=1$, so $V(□^j\neg■\bot,x)=1$ for all j. Hence for all i(1), …, i(k) ∈ ω, $V(\lozenge ^{i(1)}■\bot\vee\cdots\vee\lozenge ^{i(k)}■\bot,x)=0$, so not $\vdash_\Sigma\lozenge ^{i(1)}■\bot\vee\cdots\vee\lozenge ^{i(k)}■\bot$. The result follows by Corollary 12. □
+
+The ■-fragment of a bimodal logic Σ is the result of replacing ■ by □ throughout the set of all formulas in Σ not containing □ (the replacement is for notational uniformity with standard monomodal logic). If Σ is (bi)normal, its ■-fragment is a normal monomodal logic. We determine the ■-fragments of all maximal consistent normal extensions of KL. Let Triv be the smallest normal monomodal logic containing all formulas of the form □α ≡ α and ${𝐊𝐃}_c$ the smallest normal monomodal logic containing all formulas of the form $\lozenge$α ⊃ □α.
+
+Proposition 14 If $\Sigma$ is a maximal consistent normal extension of ${𝐊𝐋}$, then the ■-fragment of $\Sigma$ is either ${𝐊𝐃}_c$ or $\mathit{Triv}$.
+
+Proof: Let Δ be the ■-fragment of Σ. By Corollary 11, ${𝐊𝐃}_c$ ⊆ Δ. Thus either Δ = ${𝐊𝐃}_c$ or Δ is a proper normal extension of ${𝐊𝐃}_c$. In the latter case, $\vdash_\Delta□^i\lozenge \top$ for some i (Segerberg [5]). Then $\vdash_\Sigma■^i\blacklozenge\top$, so $\vdash_\Sigma□^i■^i\blacklozenge\top$, so $\vdash_\Sigma\blacklozenge\top$ since Σ extends KL, so $\vdash_\Sigma■\alpha\equiv\alpha$ for all α by Corollary 8, so Triv ⊆ Δ. Hence Δ = Triv, for the only proper normal extension of Triv is inconsistent. □
+
+The more difficult problem of finding the □-fragments of all maximal consistent normal extensions of KL is left open.
+
+# Acknowledgements
+
+The author thanks Lloyd Humberstone and the anonymous referee for helpful comments.
+
+# References
+
+[1] Humberstone, I. L., and T. Williamson, “Inverses for normal modal operators,” Studia Logica, vol. 59 (1997), pp. 33–64. Zbl 0887.03015 MR 98k:03044
+
+[2] Makinson, D. C., “Some embedding theorems in modal logic,” Notre Dame Journal of Formal Logic, vol. 12 (1971), pp. 252–4.
+
+[3] Segerberg, K., “Post completeness in modal logic,” The Journal of Symbolic Logic, vol. 37 (1972), pp. 711–15. Zbl 0268.02012 MR 47:4765
+
+[4] Segerberg, K., “The truth about some Post numbers,” The Journal of Symbolic Logic, vol. 41 (1976), pp. 239–44. Zbl 0331.02008 MR 55:5393
+
+[5] Segerberg, K., “Modal logics with functional alternative relations,” Notre Dame Journal of Formal Logic, vol. 27 (1986), pp. 504–22. Zbl 0631.03008 MR 88d:03035

@@ -1,0 +1,479 @@
+# On intuitionistic modal epistemic logic
+
+Timothy Williamson
+
+Journal of Philosophical Logic 21 (1992): 63–89.
+
+# I. Introduction
+
+According to intuitionists, truth consists in the possibility of verification.1 A verification is something present to a real subject in real time, but truth requires only the possibility of such a thing, not its actual occurrence. What relation has that idea to intuitionistic logic? This paper explores two links.
+
+(i) Someone who used classical rather than intuitionistic logic might nevertheless identify truth with the possibility of some kind of verification: proof, knowledge, belief at the end of inquiry, indefeasibly warranted assertion, rational acceptance or the like. Perhaps pragmatists do just that. However, one argument against any such identification (‘Fitch’s Problem’) can be blocked more effectively in intuitionistic than in classical logic. Those who accept the idea about truth thereby have some reason to accept intuitionistic logic. Equally, those who reject intuitionistic logic thereby have some (or more) reason to reject the idea about truth. This paper is (almost) neutral between the two attitudes.
+
+(ii) The idea about truth may be implicit in the intended interpretation of intuitionistic propositional logic, IPC. In order to make the idea explicit, one must add operators for ‘it is possible that’ and ‘it is verified that’ to the language. Given the redundancy of truth as an operator, the idea can then be expressed by the schema ‘$A$ if and only if it is possible that it is verified that $A$’.2 This paper considers intuitionistic systems of propositional modal logic with an added operator in which the formalization of that schema is axiomatic. They might be thought to duplicate what has already been achieved in the intuitionistic theory of the creative subject. However, that theory is a part of intuitionistic mathematics. The creative subject is an idealized abstraction whose inquiries are assumed to proceed indefinitely, without interference by death or boredom; its knowledge grows through a series of notionally possible stages, not in real time.3 Such idealization has its uses, but it is also worth investigating, as here, the effect on intuitionistic logic of factoring the notion of verifiability into a notion of possibility and a non-mathematical operator which reflects the contingency of real time cognition. That operator is ‘it is verified that’. Since its formalization belongs to the object language, it can appear in formulae substituted for $A$ in the schema above. Thus the intuitionistic conception of truth is being considered in application to empirical as well as to mathematical statements. The legitimacy of this extrapolation has been defended by Michael Dummett, Dag Prawitz and others.
+
+(i) and (ii) are related. The contingency of verification in (ii) is crucial to Fitch’s Problem in (i). Since the extended language of (ii) is used in formalizing the issues of (i), (ii) will be developed before (i).
+
+The more technical content of the paper may be sketched as follows. Section II described an intuitionistic modal logic IKT and extends it to a system $\mathrm{IKT}\mathord{\ast}$ by the idea about truth, formalized as a biconditional schema ($\mathord{\ast}$) in terms of a new verification operator $K$; it observes that both the S4 principle for $◇$ and the ‘$KK$’ principle lead to modal collapse for $◇$, and that $K$ is a truth-entailing operator. Section III extends $\mathrm{IKT}\mathord{\ast}$ to a system $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ by a very weak principle of deductive closure for $K$; it watches one proof that $K$ is a redundant operator in the classical version of $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ fail in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ itself, and contrasts $K$ with the operator $\exists n\,\vdash_n$ in the theory of the creative subject. Section IV shows $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ not to be a conservative extension of IKT, since it has the $K$-free theorem $◇ p\rightarrow\neg\neg p$, which is not a theorem of IKT; however, a system $\mathrm{IKT}\mathord{\ast}_{\rightarrow}$ Close$_K$ is a conservative extension of IKT, where ($\mathord{\ast}_{\rightarrow}$) is one direction of ($\mathord{\ast}$) and (Close$_K$) is a very strong principle of deductive closure for $K$. Section V shows that $◇$, $□$ and $K$ are non-redundant operators in $\mathrm{IKT}\mathord{\ast}$ Close$_K$, and remain so even if the underlying propositional logic is strengthened by Dummett’s Schema; it observes a degree of independence between iteration principles for $◇$ and for $□$. Section VI shows non-trivial logics with ($\mathord{\ast}$) to lack the finite model property under rather general conditions. Section VII presents an intuitionistic modal logic IZ in which $□$ might be interpreted as $K$, and in which $◇$ and $□$ are mutually inverse operators; it provides a formal semantics with respect to which it proves IZ to be sound and complete.
+
+# II. The System $\mathrm{IKT}*$
+
+The first task is to construct an intuitionistic system in which the intuitionistic conception of truth can be represented by a schema with the sense ‘$A$ if and only if it is possible that it is verified that $A$’.
+
+The language $\mathrm{L}$ contains propositional variables $p,q,r,\ldots$, the propositional constant $\bot$ (falsity), the binary propositional operators $\vee$, $\mathbin{\&}$ and $\rightarrow$ with their usual senses and the unary operators $◇$ (possibility) and $□$ (necessity). $\neg A$ is $A\rightarrow\bot$; $A\leftrightarrow B$ is $(A\rightarrow B)\mathbin{\&}(B\rightarrow A)$. The addition of the unary verification operator $K$ extends $\mathrm{L}$ to the language $\mathrm{L}^+$. The interpretation of $◇$ and $K$ is discussed in more detail below. The metalogical symbol $\vdash$ is used for provability in whatever logic is under consideration.
+
+The intuitionistic conception of truth can now be represented by the schema:
+
+($\mathord{\ast}$)
+$\vdash A\leftrightarrow◇ KA$
+
+For future reference, the two directions of ($\mathord{\ast}$) will be labelled:
+
+($\mathord{\ast}_{\rightarrow}$)
+$\vdash A\rightarrow◇ KA$
+($\mathord{\ast}_{\leftarrow}$)
+$\vdash◇ KA\rightarrow A$
+
+Any formula of $\mathrm{L}^+$ may be substituted for $A$, including those in which $◇$, $□$ and $K$ occur.
+
+In order to discuss ($\mathord{\ast}$) and other principles in $\mathrm{L}^+$, we need an appropriately intuitionistic background logic for $\mathrm{L}$. The propositional basis, IPC, can be formalized by a standard set of axioms for IPC and the rule of modus ponens. What specifically modal principles should be added to IPC? Not all the principles characteristic of familiar classical modal logics are intuitionistically plausible; for example, since $\neg\forall x\,A(x)\rightarrow\exists x\,\neg A(x)$ fails intuitionistically, one might not expect to have $\neg□ A\rightarrow◇\neg A$.
+
+A system with the right kind of plausibility is an intuitionist version IK of the weak classical modal logic $K$.4 IK is the result of adding two rules of inference and one axiom schema to IPC. The additional rules of inference are:
+
+(RIK1)
+If $\vdash(A_1\mathbin{\&}\cdots\mathbin{\&}A_m)\rightarrow C$
+then $\vdash(□ A_1\mathbin{\&}\cdots\mathbin{\&}□ A_m)\rightarrow□ C$
+(RIK2)
+If $\vdash(A_1\mathbin{\&}\cdots\mathbin{\&}A_m\mathbin{\&}B)\rightarrow(C_1\vee\cdots\vee C_n)$
+then $\vdash(□ A_1\mathbin{\&}\cdots\mathbin{\&}□ A_m\mathbin{\&}◇ B)\rightarrow$
+$\quad(◇ C_1\vee\cdots\vee◇ C_n)$
+
+Null conjunctions ($m=0$) and disjunctions ($n=0$) are allowed, being treated as $\bot\rightarrow\bot$ and $\bot$ respectively. The additional axiom schema is:
+
+(AIK)
+$\vdash(◇ A\rightarrow□ B)\rightarrow□(A\rightarrow B)$
+
+(RIK1), (RIK2) and (AIK) can be defended by intuitionistic reasoning from the premise that possibility is truth in some possible situation and necessity truth in all possible situations, where the logic is required to preserve truth in all situations. Situations need not be maximally specific.
+
+IK can be extended to IKT, an intuitionistic version of the classical modal system KT (= T), by the addition of two axiom schemata:
+
+(T$_◇$)
+$\vdash A\rightarrow◇ A$
+(T$_□$)
+$\vdash□ A\rightarrow A$
+
+They reflect the rather uncontroversial idea that if a situation obtains, it is possible. IKT will be used as the background modal logic for $\mathrm{L}$. The system $\mathrm{IKT}\mathord{\ast}$ is the result of extending IKT by ($\mathord{\ast}$). Thus the theorems of $\mathrm{IKT}\mathord{\ast}$ are the members of the smallest set closed under modus ponens, (RIK1) and (RIK2) that contains all axioms of IPC and all instances of (AIK), (T$_◇$), (T$_□$) and ($\mathord{\ast}$).5
+
+It has not been assumed that the possibility of a situation is not itself a contingent matter. If it had been, one would expect the S4 axiom schemata to hold:
+
+(4$_◇$)
+$\vdash◇◇ A\rightarrow◇ A$
+(4$_□$)
+$\vdash□ A\rightarrow□□ A$
+
+The addition of (4$_◇$) and (4$_□$) to IKT would result in IKT4, an intuitionistic version of the classical modal system KT4 (= S4). In view of the translation results between KT4 and IPC, it might be supposed that IKT4 is the ‘natural’ intuitionistic modal logic.6 However, there is no reason to identify the senses of $◇$ and $□$ appropriate to ($\mathord{\ast}$) with the senses they would need to take in formulae of KT4 in order for the mapping of them to formulae of IPC to preserve meaning (if such senses exist). That is just as well, since ($\mathord{\ast}$) conflates possibility with actuality in the context of IKT4. For ($\mathord{\ast}_{\rightarrow}$) and (RIK2) yield $\vdash◇ A\rightarrow◇◇ KA$; (4$_◇$) gives $\vdash◇◇ KA\rightarrow◇ KA$; ($\mathord{\ast}_{\leftarrow}$) then yields the disastrous schema $\vdash◇ A\rightarrow A$, the converse of (T$_◇$).7 The notion of possibility is pointless if it collapses into actuality; the rationale for ($\mathord{\ast}$) presupposes that $A$ may have an unactualized capacity to be verified. Thus the required background logic is not IKT4. The failure of (4$_◇$) suggests that $◇$ in ($\mathord{\ast}$) should be read as adverting to ‘nearby’ situations; $◇$ in the KT4 transforms of IPC formulae should be read as adverting to consistency.
+
+There is a more direct reason for interpreting $◇$ in ($\mathord{\ast}$) as a very restricted kind of possibility. For consider a statement $p$ which in a broad sense is contingent and decidable: for example, that the number of tennis balls in my garden today, 4 July 1990, is even. In some broadly possible situations $p$ is true and verified in the sense of $K$; in others its negation is. If $◇$ were read correspondingly, $◇ Kp\mathbin{\&}◇ K\neg p$ would hold; but ($\mathord{\ast}_{\leftarrow}$) reduces it to the contradiction $p\mathbin{\&}\neg p$. The problem arises because situations in which the number of tennis balls is other than it actually is have been counted as possible. Roughly speaking, only those situations count towards $◇$ in which the facts (the number of tennis balls) are the same but knowledge of them may differ. Since our knowledge of a fact is itself a fact, the distinction is not an easy one to draw, and Fitch’s Problems below is connected with this difficulty. It may be noted that the reasons for restricting the interpretation of $◇$ depend only on ($\mathord{\ast}_{\leftarrow}$), as results in Section IV will emphasize, whereas Fitch’s Problem depends only on ($\mathord{\ast}_{\rightarrow}$). One half of ($\mathord{\ast}$) might be retained without the other. However, this paper concerns the problems in combining both halves.
+
+Whatever kind of possibility $◇$ expresses, $□$ expresses the correlative kind of necessity.
+
+As for the verification operator $K$, its exact interpretation depends on the way in which intuitionistic ideas are extrapolated from mathematical to empirical cases. However, one remark can already be made to justify the choice of the first letter of ‘Knowledge’. For (T$_◇$) gives $\vdash KA\rightarrow◇ KA$, whence by ($\mathord{\ast}_{\leftarrow}$) we have in $\mathrm{IKT}\mathord{\ast}$:
+
+(a)
+$\vdash KA\rightarrow A$
+
+Thus $K$ has the most striking feature of knowledge: it entails truth.8 $K$ requires more than warranted assertion. However, it does not follow that $K$ requires strict proof; that would not be a reasonable requirement when $K$ is applied to empirical statements, such as those which themselves contain $K$. The ordinary concept of knowledge already satisfies (a) without requiring proof; whether it satisfies all other constraints on $K$ is another matter.
+
+Just as the addition of (4$_◇$) to $\mathrm{IKT}\mathord{\ast}$ would collapse possibility into actuality, so would that of the ‘$KK$’ principle:
+
+(b)
+$\vdash KA\rightarrow KKA$
+
+For one application of (RIK2) to ($\mathord{\ast}_{\rightarrow}$) gives $\vdash◇ A\rightarrow◇◇ KA$; two applications of it to (b) give $\vdash◇◇ KA\rightarrow◇◇ KKA$; one application of it to an instance of ($\mathord{\ast}_{\leftarrow}$) gives $\vdash◇◇ KKA\rightarrow◇ KA$ and thence $\vdash◇◇ KKA\rightarrow A$; putting the pieces together, one has $\vdash◇ A\rightarrow A$. Thus it is crucial to this theory that when you know, you may not know that you know (or the analogue for other readings of $K$). However, ($\mathord{\ast}_{\rightarrow}$) does yield $\vdash KA\rightarrow◇ KKA$: if it is known, it is possible to know that it is known.9
+
+$K$ obeys a kind of cancellation principle in $\mathrm{IKT}\mathord{\ast}$. If we have $\vdash KA\rightarrow KB$, we also have $\vdash◇ KA\rightarrow◇ KB$ by (RIK2) and therefore $\vdash A\rightarrow B$ by ($\mathord{\ast}$). Similarly, $\vdash KA\leftrightarrow KB$ entails $\vdash A\leftrightarrow B$. In this sense, $\mathrm{IKT}\mathord{\ast}$ says that statements with the same verification conditions have the same truth conditions, so that verification conditions determine truth conditions (where truth is a redundant operator). This determination is just what would be required in the object language $\mathrm{L}^+$ by an intuitionistic semantics in the meta-language based on a recursion over the verification conditions rather than the truth conditions of formulae of $\mathrm{L}^+$.10
+
+In many versions of intuitionistic semantics, the recursive clauses for conjunction and disjunction take a particularly simple form. A conjunction is verified just in case every conjunct is; a disjunction is verified just in case some disjunct is. If $K$ expresses the relevant kind of verification, one would therefore expect:
+
+(c)
+$\vdash K(A\mathbin{\&}B)\leftrightarrow(KA\mathbin{\&}KB)$
+(d)
+$\vdash K(A\vee B)\leftrightarrow(KA\vee KB)$
+
+However, (c) and (d) would not be plausible if verifying a statement involves explicitly formulating it. For one may verify one disjunct without explicitly formulating the other, and therefore without explicitly formulating the disjunction; if it follows that one would not have verified the disjunction, the right-to-left direction of (d) fails. One might even verify one disjunct while lacking the concepts to formulate the other, and thus while lacking the concepts to formulate the disjunction. Again, two statements may be separately verified while never being put together, so that their conjunction would not have been explicitly formulated; if it follows that the conjunction would not have been verified, the right-to-left direction of (c) fails. Contrapositively, on an alignment of the intuitionistic conception of truth and intuitionistic semantics which validates (c) and (d), one can verify a statement without explicitly formulating it; one may simple possess what one could see to verify the statement if one got to the point of raising the question.11 However, there are strict limits to what further statements one has verified by verifying that $A$; one has not verified that it is verified that $A$, for example, since otherwise the disastrous (b) would hold. It should also be noted that knowing a statement to be true will not always count as having verified it, for one may know a disjunction without having bothered to acquire knowledge that would determine which disjunct was true, whereas the left-to-right direction of (d) says that a disjunction has been verified only if some disjunct has.12 For simplicity’s sake, however, knowledge and verification will be treated interchangeably in what follows.
+
+The remarks in the previous paragraph are conditional on a particular form of intuitionistic semantics. There are others, some of which allow (c) and (d) to fail. For example, the recursive clause for $\mathbin{\&}$ might say that a verification of $A\mathbin{\&}B$ is the concatenation of a verification of $A$ with a verification of $B$; thus two statements could be verified even though their conjunction had not been, contrary to the right-to-left direction of (c). The discussion below will not presuppose a particular form of intuitionistic semantics.
+
+# III. Fitch’s Problem
+
+So far, the intuitionistic character of the background logic has not been exploited. Its relevance can be brought out by consideration of an important obstacle to making sense of ($\mathord{\ast}$), which may be called Fitch’s Problem in honour of the man by whom it was first published.13
+
+A defence of ($\mathord{\ast}$) should make sure that it does not lead to the converse of (a):
+
+(e)
+$\vdash A\rightarrow KA$
+
+For (c) says that every truth expressible in the language is in fact verified, not just that it could be. That is grossly implausible for a language even of moderate expressive power. It is unreasonable to claim on purely philosophical grounds that if the number of tennis balls in my garden on 4 July 1990 is even then someone will discover that it is; the most that can be said is that it could in principle be discovered if someone bothered to look. Moreover, the addition of (e) to $\mathrm{IKT}\mathord{\ast}$ collapses possibility into actuality, for the addition of (b) does, and (b) is a sub-schema of (e). Thus (e) is to be avoided.14
+
+Fitch’s Problem for KT, the classical analogue of IKT, is that (e) is derivable in any extension of KT with ($\mathord{\ast}_{\rightarrow}$), (a) and (c$_{\rightarrow}$), the left-to-right direction of (c):
+
+(c$_{\rightarrow}$)
+$\vdash K(A\mathbin{\&}B)\rightarrow(KA\mathbin{\&}KB)$
+
+A fortiori, any extension of KT with ($\mathord{\ast}$) and (c$_{\rightarrow}$) also contains (e). (c$_{\rightarrow}$) says that verifying a conjunction involves verifying its conjuncts. That is plausible for just about any notion of verification, not as an instance of some more general deductive closure, but just because understanding a conjunction involves understaning its conjuncts and appreciating their logical relation to it. In particular, (c$_{\rightarrow}$) (unlike its converse) is evident for even a very strict intuitionistic concept of verification.15
+
+The argument to (e) is as follows. Consider the statement $A\mathbin{\&}\neg KA$. By (a), $\vdash K(A\mathbin{\&}\neg KA)\rightarrow\neg KA$. By (c$_{\rightarrow}$), $\vdash K(A\mathbin{\&}\neg KA)\rightarrow KA$. Thus $\vdash\neg K(A\mathbin{\&}\neg KA)$. By (RIK2) with $m=n=0$, $\vdash\neg◇ K(A\mathbin{\&}\neg KA)$. By ($\mathord{\ast}_{\rightarrow}$), $\vdash(A\mathbin{\&}\neg KA)\rightarrow◇ K(A\mathbin{\&}\neg KA)$, so:
+
+(f)
+$\vdash A\rightarrow\neg\neg KA$
+
+In classical logic (f) yields (e).
+
+The result does not apply to systems without (c$_{\rightarrow}$). The classical analogue of $\mathrm{IKT}\mathord{\ast}$, $\mathrm{KT}\mathord{\ast}$, is a conservative extension of KT, in the sense that if $A$ is a theorem of $\mathrm{KT}\mathord{\ast}$ in the restricted language $\mathrm{L}$ which lacks the $K$ operator then $A$ is a theorem of KT. In particular, $◇ p\rightarrow p$ is not a theorem of $\mathrm{KT}\mathord{\ast}$ because it is not a theorem of KT. Since (b), (e) and (f) yield $\vdash◇ p\rightarrow p$ in extensions of KT, none of them is derivable in $\mathrm{KT}\mathord{\ast}$. These results still hold good if $\mathrm{KT}\mathord{\ast}$ is extended by the converse of a cancellation rule: from $\vdash A\leftrightarrow B$ derive $\vdash KA\leftrightarrow KB$ (contrast the rule that from $\vdash A\rightarrow B$ derives $\vdash KA\rightarrow KB$, which evidently yields (c$_{\rightarrow}$)).16 Since $\mathrm{IKT}\mathord{\ast}$ is a subsystem of $\mathrm{KT}\mathord{\ast}$, it too contains neither (b), (e) nor (f). However, the failure of (c$_{\rightarrow}$) in these systems makes $K$ hard to interpret. An advantage of intuitionistic logic for the conception of truth as the possibility of verification is that it enables (c$_{\rightarrow}$) to be added without the collapse of possibility into actuality.
+
+Let $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ be the result of adding (c$_{\rightarrow}$) to $\mathrm{IKT}\mathord{\ast}$. By what has already been seen, (f) holds in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$. Equivalently, we have $\vdash\neg KA\rightarrow\neg A$. This might be thought to be as counter-intuitive as (e) itself. However, one must take account of the special force of intuitionistic negation. $\neg A$ (i.e. $A\rightarrow\bot$) expresses the very strong claim that the prospect of ever verifying $A$ can be ruled out, and $\neg KA$ says the same of the prospect of ever verifying $KA$. This follows from the standard intuitionistic account of negation, but it is also brought out by ($\mathord{\ast}$), which makes $\neg A$ equivalent to $\neg◇ KA$ and $\neg KA$ to $\neg◇ KKA$. The intuitionist can then argue that one can rule out the prospect of ever verifying $KA$ only by ruling out the prospect of ever verifying $A$, for if verification of $A$ were in prospect, so would be verification of $KA$. $\vdash\neg KA\rightarrow\neg A$ does not look absurd from an intuitionistic perspective.17
+
+If (f) but not (e) is to be derivable, $KA\vee\neg KA$ must be underivable, for in IPC we have $KA\vee\neg KA,\neg\neg KA\vdash KA$. Thus $K$ must sometimes given an undecidable result, even when applied to a decidable statement such as the one about the number of tennis balls in my garden on 4 July 1990. Yet the intuitionistic theory of the creative subject assumes that what is known at a given stage is a decidable matter, and the assumption seems a reasonable one, at least to a first approximation.18 Fitch’s Problem does not essentially depend on any difficulty in deciding what we do or do not know at a given time. In the case of the tennis balls, the point is not that counting is a fallible process, but that we may not count at all. The relevant interpretation of $K$ therefore seems to be something like ‘it is known at some time or other that’. For at no stage is it decidable what we shall or shall not eventually know, while (e) remains too strong to be accepted on this reading: for the intuitionist, a question has a right answer if we have a decision procedure for it, but we are not required to carry out that procedure in real time.
+
+The rejection of (e) may seem to conflict with the theory of the creative subject, which contains the schema $A\rightarrow\exists t\,K_tA$, where $K_t$ might be read as ‘it is known at time $t$ that’. However, the existential quantifier has a different meaning there; in the theory of the creative subject, $\exists t\,\ldots$ expresses only the possibility of a time at which …, not its actual occurrence, for otherwise the statement would be an empirical rather than a mathematical one, whereas the theory is intended as a mathematical theory.19 $KA$ in (e) is an empirical statement. The point can be put as follows, where $\exists$ is used empirically rather than mathematically. Both $\mathrm{IKT}\mathord{\ast}$ and the theory of the creative subject agree on the schema $A\rightarrow◇\exists t\,K_tA$. In $\mathrm{IKT}\mathord{\ast}$, $◇\exists t\,K_tA$ is grouped as $◇(\exists t\,K_tA)$, and the second and third operators abbreviated as $K$. In the theory of the creative subject, $◇\exists t\,K_tA$ is grouped as $(◇\exists t)K_tA$ and the first and second operators abbreviated by a possibilist existential quantifier. Statements of the form $KA$ are not expressible in the theory of the creative subject, in which Fitch’s Problem therefore cannot be raised.
+
+It is important not to read $KA$ as $OK^\#A$, where $O$ is the tense operator ‘in the past, present or future’ and $K^\#$ is a tensed knowledge operator, in a language with significantly tensed sentences. If one did, schema (a) ($KA\rightarrow A$) could have false instances. For in tense logic the validity of the inference from $K^\#A$ to $A$ would guarantee that of the inference from $OK^\#A$ to $OA$, but $A$ does not follow from $OA$, nor from $OK^\#A$, when the sentence $A$ can take different truth values with respect to different times. For example, let $p$ be true with respect to a time $t$ just in case it is raining at $t$; $K^\#p$ is then true with respect to $t$ just in case it is known at $t$ that it is raining (at $t$); $OK^\#p$ is true with respect to $t$ just in case there is a time $t'$ at which it is known that it is raining (at $t'$). In practice, $OK^\#p$ is true with respect to all times, but $p$ is not; $OK^\#p\rightarrow p$ is false with respect to any time at which it is not raining. In order to validate (a), $Kp$ should be understood as true with respect to a time $t$ just in case there is a time $t'$ at which it is known that it is raining at $t$. That reading is expressed by the quantified version $\exists t\,K_tA$, where the variable $t$ is not free in $A$. Similarly, the remark ‘It will be known tomorrow that it is raining’ may predict knowledge tomorrow of rain today, rather than of rain tomorrow.20 On such a reading, schema (a) is clearly correct.
+
+# IV. Conservative and Non-Conservative Extensions of IKT
+
+The derivability of (f) in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ has an important consequence. (f) can be rearranged as $\vdash(\neg KA\mathbin{\&}A)\rightarrow\bot$, which gives $\vdash(□\neg KA\mathbin{\&}◇ A)\rightarrow\bot$ and thus $\vdash□\neg KA\rightarrow\neg◇ A$ by (RIK2) (with $n=0$). Now $\vdash\neg◇ KA\rightarrow(◇ KA\rightarrow□\bot)$ in IPC, so by (AIK) $\vdash\neg◇ KA\rightarrow□(KA\rightarrow\bot)$, i.e. $\vdash\neg◇ KA\rightarrow□\neg KA$. Thus $\vdash\neg◇ KA\rightarrow\neg◇ A$. By ($\mathord{\ast}_{\leftarrow}$), $\vdash\neg A\rightarrow\neg◇ KA$. Thus in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ we have $\vdash\neg A\rightarrow\neg◇ A$, or equivalently:
+
+(g)
+$\vdash◇ A\rightarrow\neg\neg A$
+
+It follows that $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ is not a conservative extension of IKT. $◇ p\rightarrow\neg\neg p$ is a theorem of $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ in the restricted $K$-free language $\mathrm{L}$ which is not a theorem of IKT (for it is not a theorem of KT, which extends IKT).21
+
+The importance of (g) is that it demonstrates interaction between the concept of a possible situation needed to interpret the modal operators $◇$ and $□$ and the concept of a state of knowledge needed to interpret the intuitionistic propositional connectives. In apparent contrast, the work of W. B. Ewald suggests that the intuitionist must draw a sharp distinction between the possible situations (which the logician is studying) and the states of knowledge (which he or she is in).22 The intuitionist must surely allow that people sometimes express true propositions, and know them to be true, when they say things like ‘I did not know five minutes ago that $17^2=289$ but I could have done’. However, in order to interpret such remarks the intuitionist will need to invoke a kind of possibility wider than any appropriate to $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$, in which $\neg A\mathbin{\&}◇ A$ is a contradiction. $◇$ in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ represents a kind of possibility with an epistemic component at least as strong as that represented by intuitionistic double negation; $\neg\neg A$ says roughly that we can rule out the prospect of ruling out the prospect that $A$.23
+
+Schema ($\mathord{\ast}_{\leftarrow}$) is essential to the non-conservativeness result, and therefore to the derivation of (g). For consider the result $\mathrm{IKT}\mathord{\ast}_{\rightarrow}\mathrm{c}_{\rightarrow}$ of adding only ($\mathord{\ast}_{\rightarrow}$) and (c$_{\rightarrow}$) to IKT. For any formula $A$ of $L^+$, let $\$A$ be the result of deleting all occurrences of $K$ in $A$. An easy induction on the length of proofs shows that if $\vdash A$ in $\mathrm{IKT}\mathord{\ast}_{\rightarrow}\mathrm{c}_{\rightarrow}$ then $\vdash\$A$ in IKT, for $\$$ maps every instance of ($\mathord{\ast}_{\rightarrow}$) to an instance of (T$_◇$) and every instance of (c$_{\rightarrow}$) to an instance of the schema $\vdash A\rightarrow A$. Thus if $A$ is in the restricted language $\mathrm{L}$, $\$A=A$ and $A$ is a theorem of $\mathrm{IKT}\mathord{\ast}_{\rightarrow}\mathrm{c}_{\rightarrow}$ just in case it is a theorem of IKT. Thus $\mathrm{IKT}\mathord{\ast}_{\rightarrow}\mathrm{c}_{\rightarrow}$ is a conservative extension of IKT.
+
+The conservativeness result can obviously be generalized to any extension of IKT by axioms in the language $\mathrm{L}$; for example, $\mathrm{IKT4}\mathord{\ast}_{\rightarrow}\mathrm{c}_{\rightarrow}$ is a conservative extension of IKT4. It also holds good when further axioms $A$ involving $K$ are added, provided that $\vdash\$A$ in IKT. Such axioms would include (a), (b), (c), (d), (e) and (f). In particular, such axioms will include any claim to the effect that $\mathrm{K}$ is closed under deduction, or commutes with a given operator. One could also consider the rule:
+
+(Close$_K$)
+If $\vdash(A_1\mathbin{\&}\cdots\mathbin{\&}A_m)\rightarrow(B_1\vee\cdots\vee B_n)$
+then $\vdash(KA_1\mathbin{\&}\cdots\mathbin{\&}KA_m)\rightarrow(KB_1\vee\cdots\vee KB_n)$
+
+$m=0$ and $n=0$ are allowed. Since $\$$ maps the input and output of (Close$_K$) to the same formula, $\mathrm{IKT}\mathord{\ast}_{\rightarrow}$ Close$_K$ is a conservative extension of IKT.
+
+(Close$_K$) is no doubt too strong a closure principle for the intended interpretation of $K$. It subsumes both (c) and (d), as well as $\vdash K\bot\rightarrow\bot$, the schema $\vdash K(A\rightarrow B)\rightarrow(KA\rightarrow KB)$ and the rule, analogous to Necessitation, that if $\vdash A$ then $\vdash KA$ (conversely, these consequences together suffice for the derivation of (Close$_K$)). Doubts have already been expressed about (c) and (d), which could be extended to $\vdash K(A\rightarrow B)\rightarrow(KA\rightarrow KB)$; the analogue of Necessitation is also implausible, for not every boring logical truth will sooner or later be known. What does seem likely is that any closure principle valid on the intended interpretation of $K$ is a consequence of (Close$_K$); by the previous paragraph, the addition of any such principle to $\mathrm{IKT}\mathord{\ast}_{\rightarrow}$ yields a conservative extension of IKT.
+
+The intuitionistic claim that the possibility of knowledge is necessary for truth does not force the concepts of a possible situation and a state of knowledge to interact in the manner of (g); the claim that it is necessary and sufficient does (in the presence of the very plausible (c$_{\rightarrow}$)).24 This interaction is not a disaster for $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$. Possibility may collapse into truth for negative formulae without doing so for all formulae, just as truth may collapse into knowledge for negative formulae without doing so for all formulae, because of the special force of intuitionistic negation. However, the schema $\vdash◇ A\rightarrow A$ has not yet been shown not to be derivable in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$. If it were, so would be (e) (by substitution of $KA$ for $A$). The intuitionistic treatment of Fitch’s Problem in section III depends on the underivability of (e). So far, all that has been seen is the intuitionistic failure of one argument for (e), via (f). What needs to be proved is the underivability of (e) in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$.25 That is the business of the next section. In fact, something stronger will be proved: (e) is underivable in $\mathrm{IKT}\mathord{\ast}$ Close$_K$ and various extensions of it. Since $\mathrm{IKT}\mathord{\ast}$ Close$_K$ may be presumed to include all closure principles for $K$ valid on its intended interpretation, the addition of such principles to $\mathrm{IKT}\mathord{\ast}$ preserves the distinctions between possibility and truth and between truth and knowledge.
+
+# V. Models of $\mathrm{IKT}*$ Close$_K$
+
+The following proof that possibility does not collapse into truth in $\mathrm{IKT}\mathord{\ast}$ Close$_K$ uses a Kripke model on the set ${Z}$ of positive and negative integers under its usual ordering. The modal operators require an accessibility relation between integers; $y$ is taken to be accessible from $x$ just in case $y\leq x+1$. In this model, $KA$ holds at an integer just in case $A$ held at the previous integer. Thus we consider a relation $\Vdash$ between integers and formulae of $\mathrm{L}^+$ such that:
+
+$x\Vdash A$
+iff $0\leq x$ ($A$ atomic);
+$x\Vdash\bot$
+in no case;
+$x\Vdash A\mathbin{\&}B$
+iff $x\Vdash A$ and $x\Vdash B$;
+$x\Vdash A\vee B$
+iff $x\Vdash A$ or $x\Vdash B$;
+$x\Vdash A\rightarrow B$
+iff for all $y\geq x$, if $y\Vdash A$ then $y\Vdash B$;
+$x\Vdash□ A$
+iff for all $y\leq x+1$, $y\Vdash A$;
+$x\Vdash◇ A$
+iff for some $y\leq x+1$, $y\Vdash A$;
+$x\Vdash KA$
+iff $x-1\Vdash A$.
+
+Induction on the length of $A$ easily establishes:
+
+Monotonicity: If $x\leq y$ and $x\Vdash A$ then $y\Vdash A$.
+
+The clauses for $□$ and $◇$ can be stated in more convenient form, for by Monotonicity one can prove:
+
+$x\Vdash□ A$
+iff for all $y$, $y\Vdash A$;
+$x\Vdash◇ A$
+iff $x+1\Vdash A$.
+
+Now let $S$ be the set of formulae $A$ such that $x\Vdash A$ for all $x$. Since $\Vdash$ yields a Kripke model, $S$ includes all axioms of IPC and is closed under modus ponens. By the original form of the clauses for the modal operators, $S$ includes all instances of (AIK) and is closed under (RIK1) and (RIK2). Since the accessibility relation is reflexive, $S$ includes all instances of (T$_◇$) and (T$_□$). By the restated clause for $◇$, $S$ includes all instances of ($\mathord{\ast}$); $(x-1)+1=x$. The clause for $K$ ensures that $S$ is closed under (Close$_K$). Thus we have:
+
+Soundness: If $\vdash A$ in $\mathrm{IKT}\mathord{\ast}$ Close$_K$ then $x\Vdash A$ for all $x$.
+
+The underivability of (e) in $\mathrm{IKT}\mathord{\ast}$ Close$_K$ is an immediate consequence of Soundness, for since $p$ is atomic we have $0\Vdash p$ without $0\Vdash Kp$ or $0\Vdash□ p$ and $-1\Vdash◇ p$ without $-1\Vdash p$, giving:
+
+Non-collapse: $\nvdash p\rightarrow Kp$, $\nvdash p\rightarrow□ p$ and $\nvdash◇ p\rightarrow p$ in $\mathrm{IKT}\mathord{\ast}$ Close$_K$.
+
+Some features of the model are worth remark.
+
+(i) Since ${Z}$ is linearly ordered, the model validates ‘Dummett’s Schema’ $(A\rightarrow B)\vee(B\rightarrow A)$. Thus the full weakness of intuitionistic propositional logic is not formally required for the treatment of Fitch’s Problem in Section III; the logic LC consisting of IPC and Dummett’s Schema would do as well. That is not, of course, to say that the use of LC rather than IPC has any philosophical motivation in this context. Models of $\mathrm{IKT}\mathord{\ast}$ Close$_K$ which do not validate Dummett’s Schema can be constructed using sequences of integers, where $\langle x_0,\ldots,x_n\rangle\leq\langle y_0,\ldots,y_n\rangle$ just in case $x_i\leq y_i$ for each $i$, and $\langle y_0,\ldots,y_n\rangle$ is accessible from $\langle x_0,\ldots,x_n\rangle$ just in case $\langle y_0,\ldots,y_n\rangle\leq\langle x_0+1,\ldots,x_n+1\rangle$.
+
+(ii) As the restated clauses for the modal operators make clear, the model combines an S5-like treatment of necessity with a very un-S5-like treatment of possibility. There is a corresponding asymmetry in the schemata it validates. We have the S5 principle in the form $◇□ A\rightarrow□ A$ but not in the dual form $◇ A\rightarrow□◇ A$, and the S4 principle in the form $□ A\rightarrow□□ A$ but not in the dual form $◇◇ A\rightarrow◇ A$; the latter case is particularly striking, since the dual form (T$_◇$) has been seen to collapse possibility into actuality in extensions of $\mathrm{IKT}\mathord{\ast}$. In the model, any sequence of $□$, $◇$ and $K$ which includes at least one occurrence of $□$ is equivalent simply to $□$, for we have the equivalences $□◇ A\leftrightarrow□ A$, $◇□ A\leftrightarrow□ A$, $□□ A\leftrightarrow□ A$, $□ KA\leftrightarrow□ A$ and $K□ A\leftrightarrow□ A$. The asymmetry between possibility and necessity can also be displayed by a variant accessibility relation such that $y$ is accessible from $x$ just in case $y$ is either $x$ or $x+1$. This has no effect on the semantics of $◇$ but makes $□ A$ equivalent to $A$. Thus necessity but not possibility would collapse into actuality. Alternatively, one could have $y$ accessible from $x$ just in case $y$ is either $x-1$, $x$ or $x+1$; this again has no effect on the semantics for $◇$, but makes $□ A$ equivalent to $KA$. The origin of the asymmetry in $\mathrm{IKT}\mathord{\ast}$ Close$_K$ is that it contains no dual of ($\mathord{\ast}$), no schema of the form $A\leftrightarrow□\ldots$$A\ldots$; every claim in $\mathrm{IKT}\mathord{\ast}$ Close$_K$ is equivalent to a claim of possibility by ($\mathord{\ast}$), but not every claim is equivalent to a claim of necessity.
+
+(iii) In $\mathrm{IKT}\mathord{\ast}$ Close$_K$, $K$ acts like a right inverse of $◇$ in virtue of ($\mathord{\ast}$). The modal validates $A\leftrightarrow K◇ A$ as well as $A\leftrightarrow◇ KA$; thus the postulation of a two-sided inverse of possibility does not lead to modal collapse. To be more precise, consider any system based on IPC with $\vdash A\leftrightarrow◇ KA$ and $\vdash A\leftrightarrow K◇ A$ in which $\vdash A\leftrightarrow B$ entails $\vdash◇ A\leftrightarrow◇ B$ and $\vdash KA\leftrightarrow KB$. A Lindenbaum algebra can be defined in the usual way, by putting $|A|=|B|$ just in case $\vdash A\leftrightarrow B$. Since $|A|=|B|$ entails $|◇ A|=|◇ B|$ and $|KA|=|KB|$, we can put $|◇|(|A|)=|◇ A|$ and $|K|(|A|)=|KA|$. Then $|◇|(|K|(|A|))=|◇ KA|=|A|=|K◇ A|=|K|(|◇|(|A|))$. Thus $|◇|$ and $|K|$ generate a group acting on the Lindenbaum algebra. The position in classical modal logic is different; the above conditions lead to collapse. For any extension of KT has $\vdash◇(A\rightarrow□ A)$ and therefore $\vdash◇(A\rightarrow□ A)\leftrightarrow◇(A\rightarrow A)$; by the closure principle for $K$ this would yield $\vdash K◇(A\rightarrow□ A)\leftrightarrow K◇(A\rightarrow A)$; since $K$ is supposed to act like a left inverse of $◇$, one would then have $\vdash(A\rightarrow□ A)\leftrightarrow(A\rightarrow A)$ and therefore $\vdash A\rightarrow□ A$. Note that the argument does not require $K$ to act like a right inverse of $◇$.
+
+(iv) In the model, $K$ commutes with every propositional operator in $\mathrm{L}^+$. Close$_K$ already yields $\vdash K(A\mathbin{\&}B)\leftrightarrow(KA\mathbin{\&}KB)$, $\vdash K(A\vee B)\leftrightarrow(KA\vee KB)$, $\vdash K(A\rightarrow B)\rightarrow(KA\rightarrow KB)$ and $\vdash\bot\rightarrow K\bot$, to which (a) adds $\vdash K\bot\rightarrow\bot$; the model then provides $\vdash(KA\rightarrow KB)\rightarrow K(A\rightarrow B)$, $\vdash K◇ A\leftrightarrow◇ KA$ and $\vdash□ KA\leftrightarrow K□ A$. This fact is suggestive (not more) of a constructivist semantics for $\mathrm{L}^+$ in terms of $K$-conditions rather than truth-conditions. However, it is not clear that the intuitive interpretation of $K$ relevant to Fitch’s Problem validates these commutation principles.
+
+# VI. Failure of the Finite Model Property
+
+The use of an infinite model in the previous section to invalidate $◇ p\rightarrow p$ was necessary, since $◇ p\rightarrow p$ will be proved to be valid in any finite model of $\mathrm{IKT}\mathord{\ast}$, and therefore in any finite model of $\mathrm{IKT}\mathord{\ast}$ Close$_K$. Thus $\mathrm{IKT}\mathord{\ast}$ and $\mathrm{IKT}\mathord{\ast}$ Close$_K$ lack the finite model property in the form: if $A$ is valid in all finite models of the system then $A$ is valid in all models of the system. In this respect they contrast with standard systems of intuitionistic modal logic, and in particular with IKT, which has the finite model property.26
+
+The statement that $\mathrm{IKT}\mathord{\ast}$ and $\mathrm{IKT}\mathord{\ast}$ Close$_K$ lack the finite model property seems rather vague, since no general notion of a model of a theory has been defined for $\mathrm{L}$ or $\mathrm{L}^+$. However, the main point is not sensitive to the details of the model theory; for example, it does not depend on whether the underlying propositional logic is intuitionistic or classical.
+
+Consider any language with a propositional operator $◇$. Suppose that we have a notion of a model such that every model $M$ has a set of nodes $X_m$, and for every formula $A$ there is a subset $[A]_M$ of $X_M$, which may be thought of as the set of nodes at which $A$ holds in $M$. $M$ is said to be finite just in case $X_M$ is. Suppose further that the semantics for $◇$ has a recursive form such that $[◇ A]_M$ is a function of $[A]_M$; that is, if $[A]_M=[B]_M$ then $[◇ A]_M=[◇ B]_M$. Put $A\vDash_M B$ just in case $[A]_M\subseteq[B]_M$. One then has:
+
+FACT. Let $M$ be a finite model such that for every formula $A$ there is a formula $K(A)$, where $A\vDash_M◇ A$, $A\vDash_M◇ K(A)$ and $◇ K(A)\vDash_M A$; then for every formula $A$, $◇ A\vDash_M A$.
+
+Proof. Let $A$ be any formula, $K^0(A)=A$, $K^{n+1}(A)=K(K^n(A))$. For any $n$, $K^{n+1}(A)\vDash_M◇ K^{n+1}(A)$ and $◇ K^{n+1}(A)\vDash_MK^n(A)$, so $[K^{n+1}(A)]_M\subseteq[◇ K^{n+1}(A)]_M=[K^n(A)]_M$. Since $[K^n(A)]_M\subseteq X_M$ for each $n$ and $X_M$ is finite, $[K^{n+1}(A)]_M=[K^n(A)]_M$ for some $n$. So by assumption, $[◇ K^{n+1}(A)]_M=[◇ K^n(A)]_M$. Now $[◇ K^{n+1}(A)]_M=[K^n(A)]_M$ and if $n>0$ then $[◇ K^n(A)]_M=[K^{n-1}(A)]_M$. Thus if $n>0$, $[K^n(A)]_M=[K^{n-1}(A)]_M$. The process can be continued; eventually $n=0$ and $[K(A)]_M=[A]_M$, so $[◇ A]_M=[◇ K(A)]_M=[A]_M$.
+
+Roughly speaking, in a finite model the only truth-entailed propositional operator with a right inverse is the identity. Indeed, the identity is the only truth-entailed operator $◇$ such that every subset of $X_M$ of the form $[A]_M$ is of the form $[◇ B]_M$. Now let $S$ be any set of models, and put $A\vDash_S B$ just in case $A\vDash_M B$ for every $M$ in $S$. Consider the following variant of the finite model property for $S$: for any formulae $A$ and $B$, if $A\vDash_M B$ for every finite $M$ in $S$ then $A\vDash_S B$. We have:
+
+COROLLARY. If $A\vDash_S◇ A$, $A\vDash_S◇ K(A)$ and $◇ K(A)\vDash_S A$ for every $A$, but $◇ A\not\vDash_S A$ for some $A$, then $S$ lacks the finite model property.
+
+If the language has an operator with semantics appropriate to a conditional, under the same assumptions one can also demonstrate the failure of the original version of the finite model property in terms of validity for single formulae.
+
+The failure of such forms of the finite model property for $\mathrm{IKT}\mathord{\ast}$ and $\mathrm{IKT}\mathord{\ast}$ Close$_K$ foils standard proofs of decidability, which use the property. It does not follow, of course, that $\mathrm{IKT}\mathord{\ast}$ and $\mathrm{IKT}\mathord{\ast}$ Close$_K$ are undecidable. The question is left open here.
+
+# VII. The System IZ
+
+Section V noted the existence of a non-trivial model of $\mathrm{IKT}\mathord{\ast}$ Close$_K$ in which $K$ and $□$ are equivalent (point (ii)). Since the derivability of (g) in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ and $\mathrm{IKT}\mathord{\ast}$ Close$_K$ already requires an epistemic conception of possibility, one would expect a correspondingly epistemic conception of necessity; the interpretation of $□$ as $K$ provides precisely that. ($\mathord{\ast}$) would then become the schema $\vdash A\leftrightarrow◇□ A$, whose intuitionistic plausibility on this interpretation is not undermined by its implausibility on others. This suggests the project of representing the intuitionistic conception of truth in a suitably interpreted modal logic without additional operators.
+
+If the interpretation of $□$ is to validate standard modal principles such as Necessitation, it may have to depart from the highly empirical interpretation of $K$ considered in previous sections, by using an idealized concept of verification. It may also validate closure principles such as $□(A\vee B)\rightarrow(□ A\vee□ B)$ which are clearly invalid on a more standard reading of $□$. This section makes a start on the project by analysing a very strong intuitionistic modal system IZ. If every occurrence of $K$ in a theorem of $\mathrm{IKT}\mathord{\ast}$ Close$_K$ is replaced by $□$, the result is a theorem of IZ (although the same is not true of nontheoremhood); it follows that IZ would suffer modal collapse if its underlying propositional logic were strengthened to a classical one. However, IZ itself does not suffer collapse; it has a model already described in Section V.
+
+The present investigation of IZ is formal; it is not claimed that every theorem of IZ is plausible on the foregoing interpretation. Rather, IZ has been chosen as a starting point because the strength and symmetry of its principles make its meta-theory comparatively simple. More complicated applications of the same techniques may be needed for systems more faithful to an intuitive interpretation. As is normal, a classical metalogic will be used.
+
+The language of IZ is $\mathrm{L}$. Its axioms consist of a standard set for IPC and all instances of:
+
+(T$_□$)
+$\vdash□ A\rightarrow A$
+(T$_◇$)
+$\vdash A\rightarrow◇ A$27
+(Cancel$_{□◇}$)
+$\vdash A\leftrightarrow□◇ A$
+(Cancel$_{◇□}$)
+$\vdash A\leftrightarrow◇□ A$
+
+The inference rules of IZ are modus ponens and:
+
+(Close$_□$)
+If $\vdash(A_1\mathbin{\&}\cdots\mathbin{\&}A_m)\rightarrow(B_1\vee\cdots\vee B_n)$
+then $\vdash(□ A_1\mathbin{\&}\cdots\mathbin{\&}□ A_m)\rightarrow$
+$\quad(□ B_1\vee\cdots\vee□ B_n)$
+(Close$_◇$)
+If $\vdash(A_1\mathbin{\&}\cdots\mathbin{\&}A_m)\rightarrow(B_1\vee\cdots\vee B_n)$
+then $(◇ A_1\mathbin{\&}\cdots\mathbin{\&}◇ A_m)\rightarrow$
+$\quad(◇ B_1\vee\cdots\vee◇ B_n)$
+
+$m=0$ and $n=0$ are allowed.
+
+The theorems of IZ include the following:
+
+$\vdash□\bot\leftrightarrow\bot$
+
+$\vdash◇\bot\leftrightarrow\bot$
+
+$\vdash□(A\mathbin{\&}B)\leftrightarrow(□ A\mathbin{\&}□ B)$
+
+$\vdash◇(A\mathbin{\&}B)\leftrightarrow(◇ A\mathbin{\&}◇ B)$
+
+$\vdash□(A\vee B)\leftrightarrow(□ A\vee□ B)$
+
+$\vdash◇(A\vee B)\leftrightarrow(◇ A\vee◇ B)$
+
+$\vdash□(A\rightarrow B)\leftrightarrow(□ A\rightarrow□ B)$
+
+$\vdash◇(A\rightarrow B)\leftrightarrow(◇ A\rightarrow◇ B)$
+
+Most of the above are trivial to prove. For $\vdash(□ A\rightarrow□ B)\rightarrow□(A\rightarrow B)$, note that $\vdash(◇(□ A\rightarrow□ B)\mathbin{\&}◇□ A)\rightarrow◇□ B$ by (Close$_◇$), so $\vdash◇(□ A\rightarrow□ B)\rightarrow(A\rightarrow B)$ by (Cancel$_{◇□}$), so $\vdash□◇(□ A\rightarrow□ B)\rightarrow□(A\rightarrow B)$ by (Close$_□$), so $\vdash(□ A\rightarrow□ B)\rightarrow□(A\rightarrow B)$ by (Cancel$_{□◇}$). For $\vdash◇\bot\rightarrow\bot$, put $m=1$, $A_1=\bot$ and $n=0$ in (Close$_◇$).
+
+Since $□$ and $◇$ commute with all propositional operators in IZ, they can be pushed inwards to yield a normal form for every formula. Before this is made precise, it is convenient to introduce an auxiliary notion. For every formula $A$ and integer $x$, a formula $A^x$ can be defined by the following upwards and downwards induction:
+
+$A^0=A$
+
+$A^{x-1}=□ A^x\quad(x\leq0)$
+
+$A^{x+1}=◇ A^x\quad(x\geq0)$
+
+LEMMA.
+
+$\vdash_{\mathrm{IZ}}A^{x-1}\leftrightarrow□ A^x$
+
+$\vdash_{\mathrm{IZ}}A^{x+1}\leftrightarrow◇ A^x$
+
+$\vdash_{\mathrm{IZ}}A^{x+y}\leftrightarrow(A^x)^y$
+
+Proof. The first part is true by definition unless $x>0$, in which case $A^x=◇ A^{x-1}$ and (Cancel$_{□◇}$) can be applied; the second part is similar; the third follows from the other two by an upwards and downwards induction on $y$ with use of (Close$_□$) and (Close$_◇$).28
+
+NORMAL FORM THEOREM. For every formula $A$ there is a formula $B$ such that $\vdash_{IZ}A\leftrightarrow B$ and in $B$ no operator other than $◇$ occurs in the scope of $◇$ and no operator other than $□$ occurs in the scope of $□$.
+
+Proof. Define a family of functions $t^x$ ($x\in{Z}$) from $\mathrm{L}$ to $\mathrm{L}$ by:
+
+$t^x(A)=A^x$ ($A$ atomic)
+
+$t^x(\bot)=\bot$
+
+$t^x(A\mathbin{\&}B)=t^x(A)\mathbin{\&}t^x(B)$
+
+$t^x(A\vee B)=t^x(A)\vee t^x(B)$
+
+$t^x(A\rightarrow B)=t^x(A)\rightarrow t^x(B)$
+
+$t^x(□ A)=t^{x-1}(A)$
+
+$t^x(◇ A)=t^{x+1}(A)$
+
+It can be proved by induction on the complexity of $A$ that $\vdash_{\mathrm{IZ}}t^x(A)\leftrightarrow A^x$ for all $x$, by use of the Lemma and the equivalences that precede it. In particular, $\vdash_{\mathrm{IZ}}t^0(A)\leftrightarrow A$. Put $B=t^0(A)$. QED
+
+The aim is now to provide a formal semantics with respect to which IZ is sound and complete. This can be achieved by a special kind of Kripke model, which will be called a $Z$ model.
+
+Consider any non-empty partially ordered set $\langle X,\leq\rangle$ (with harmless ambiguity, $\leq$ is also the natural order on ${Z}$). The Cartesian product of $X$ and ${Z}$ is taken as the set of nodes. A $Z$ model is given by any forcing relation $\Vdash$ such that for $f,g\in X$, $x,y\in{Z}$:
+
+$\langle f,x\rangle\Vdash A$
+only if when $f\leq g$ and $x\leq y$,
+$\langle g,y\rangle\Vdash A$ ($A$ atomic)
+$\langle f,x\rangle\Vdash\bot$
+in no case
+$\langle f,x\rangle\Vdash A\mathbin{\&}B$
+iff $\langle f,x\rangle\Vdash A$ and $\langle f,x\rangle\Vdash B$
+$\langle f,x\rangle\Vdash A\vee B$
+iff $\langle f,x\rangle\Vdash A$ or $\langle f,x\rangle\Vdash B$
+$\langle f,x\rangle\Vdash A\rightarrow B$
+iff when $f\leq g$ and $x\leq y$,
+if $\langle g,y\rangle\Vdash A$ then $\langle g,y\rangle\Vdash B$
+$\langle f,x\rangle\Vdash□ A$
+iff $\langle f,x-1\rangle\Vdash A$
+$\langle f,x\rangle\Vdash◇ A$
+iff $\langle f,x+1\rangle\Vdash A$
+
+If one treats $□ A$ and $◇ A$ as atomic, one can regard a $Z$ model as a Kripke model $\langle X\times{Z},\leq,\Vdash\rangle$ where $\langle f,x\rangle\leq\langle g,y\rangle$ iff $f\leq g$ and $x\leq y$. To check this one needs:
+
+MONOTONICITY. If $\langle f,x\rangle\leq\langle g,y\rangle$ and $\langle f,x\rangle\Vdash A$, $\langle g,y\rangle\Vdash A$.
+
+Proof. Use induction on the complexity of $A$.
+
+Monotonicity also allows one to restate the clauses for the modal operators in the familiar possible worlds style by treating nodes as worlds and defining an accessibility relation by:
+
+$\langle f,x\rangle R\langle g,y\rangle$ iff $f=g$ and $x-1\leq y\leq x+1$
+
+One then has:
+
+$\langle f,x\rangle\Vdash□ A$
+iff for all $\langle g,y\rangle$ such that
+$\langle f,x\rangle R\langle g,y\rangle$, $\langle g,y\rangle\Vdash A$
+$\langle f,x\rangle\Vdash◇ A$
+iff for some $\langle g,y\rangle$ such that
+$\langle f,x\rangle R\langle g,y\rangle$, $\langle g,y\rangle\Vdash A$
+
+These clauses follow from the original ones by Monotonicity.
+
+One of the models of Section V can be recovered (up to isomorphism) as the special case of a $Z$ model where $X$ is a singleton; the result is in effect the model in which $KA$ was equivalent to $□ A$.
+
+Has a $Z$ model any intuitive significance? It can be thought of as the product of an ordinary Kripke model with the integers under their usual ordering. One is tempted to treat the first component of a node as a state of information and the second as a time. $□ A$ would then say that $A$ was the case ‘yesterday’ and $◇ A$ that it will be the case ‘tomorrow’. $□$ and $◇$ cancel each other out in just the way that ‘yesterday’ and ‘today’ do, and like them commute with the other propositional operators. But (T$_□$) and (T$_◇$) are also validated, for if an atomic sentence holds on one day it is required to hold on all subsequent days, and the clauses for the operators preserve this property. This contrasts with standard temporal logics, on which what was the case yesterday may not be the case today. Atomic sentences are not to be significantly tensed in the usual way; they might be thought of as eternal sentences in which any time references are fixed in a context-independent way. For example, one atomic sentence could mean ‘The number of tennis balls in my garden on 4 July 1990 is even’; the suggestion might be that it was not true before that date but came true on it and remained true thereafter. This is reminiscent of the idea that the future is open, and realm of possibility, the past closed, the realm of necessity, and the present the point of passage from one to the other. On the semantics above, a sentence is ‘necessary’ if it has already come true, and ‘possible’ if it is true or about to come so. This view makes the theorem $◇ A\rightarrow\neg\neg A$ quite plausible intuitionistically.
+
+It is no surprise on the preceding interpretation that $□$ should have closure properties not to be expected of a knowledge operator, for the epistemic element in the sense it gives to $□$ is no greater than for the other operators. A semantics for a system such as $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ would need to allow for more haphazard distributions of knowledge to nodes, not determined merely by the ordering relation on the model. Such a semantics will not be developed here.
+
+For $\mathrm{T}\subseteq \mathrm{L}$ and $A\in \mathrm{L}$, put $\mathrm{T}\vdash_{\mathrm{IZ}}A$ iff $\vdash_{\mathrm{IZ}}(B_1\mathbin{\&}\cdots\mathbin{\&}B_m)\rightarrow A$ for some $B_1,\ldots,B_m\in \mathrm{T}$. $\mathrm{T}\vDash_{\mathrm{IZ}}A$ iff for each node $\langle f,x\rangle$ of a $Z$ model, if $\langle f,x\rangle\Vdash B$ for each $B\in \mathrm{T}$ then $\langle f,x\rangle\Vdash A$. We are now in a position to give the Soundness and Completeness Theorems.
+
+SOUNDNESS THEOREM: If $T\vdash_{IZ}A$ then $T\vDash_{IZ}A$.
+
+Proof. It suffices to show that $\vDash_{\mathrm{IZ}}A$ for every axiom $A$ of IZ and that this property is preserved by its rules of inference. Since $Z$ models are Kripke models, all axioms of IPC have the property and it is preserved by modus ponens. Since $R$ is reflexive, all instances of (T$_□$) and (T$_◇$) have the property. All instances of (Cancel$_□$) and (Cancel$_{◇□}$) have the property. If the antecedent conditional of (Close$_□$) and (Close$_◇$) is forced at every node of a $Z$ model, so are their consequent conditionals; thus they preserve the property. QED
+
+COROLLARY. $\nvdash_{\mathrm{IZ}}◇ p\rightarrow p$ and $\nvdash_{IZ}p\rightarrow□ p$.
+
+Proof. By earlier remarks, the proof of Non-collapse in Section V can be adapted to show $\not\vDash_{\mathrm{IZ}}◇ p\rightarrow p$ and $\not\vDash_{\mathrm{IZ}}p\rightarrow□ p$.
+
+Since all $Z$ models are infinite, IZ lacks the finite model property even with respect to formulae such as $\bot$.
+
+COMPLETENESS THEOREM. If $T\vDash_{IZ}A$ then $T\vdash_{IZ}A$.
+
+Proof. A canonical model for IZ will be constructed. A set $\mathrm{T}\subseteq \mathrm{L}$ is prime iff (i) if $\mathrm{T}\vdash_{\mathrm{IZ}}A$ then $A\in \mathrm{T}$; (ii) if $A\vee B\in \mathrm{T}$ then either $A\in \mathrm{T}$ or $B\in \mathrm{T}$; (iii) $\bot\notin \mathrm{T}$.
+
+LEMMA. If $T\nvdash_{IZ}A$ then $A\notin T^\sim$ for some prime $T^\sim$, $T\subseteq T^\sim$.
+
+Proof. Standard.
+
+Consider the set $X$ of prime sets, partially ordered by inclusion. Define a forcing relation by:
+
+$\langle U,x\rangle\Vdash A$ iff $A^x\in U$ ($A$ atomic)
+
+$\Vdash$ is monotonic, for if $U$ and $V$ are prime and $\langle U,x\rangle\leq\langle V,y\rangle$, if $A^x\in U$ then $A^x\in V$ (since $U\subseteq V$); but $\vdash_{\mathrm{IZ}}A^x\rightarrow A^y$ by the Lemma to the Normal Form Theorem (since $x\leq y$), so $A^y\in V$ by the primeness of $V$.
+
+LEMMA. $\langle U,x\rangle\Vdash A$ iff $A^x\in U$.
+
+Proof. By induction on the complexity of $A$. Only the steps for $◇$ and $\rightarrow$ will be given. Suppose that $\langle U,x\rangle\Vdash A$ iff $A^x\in U$ for all $\langle U,x\rangle$, and similarly for $B$. Then $\langle U,x\rangle\Vdash◇ A$ iff $\langle U,x+1\rangle\Vdash A$ iff $A^{x+1}\in U$ (induction hypothesis) iff $◇ A^x\in U$ ($\vdash_{\mathrm{IZ}}A^{x+1}\leftrightarrow◇ A^x$). Suppose that $(A\rightarrow B)^x\notin U$. Since $\vdash_{\mathrm{IZ}}(A^x\rightarrow B^x)\rightarrow(A\rightarrow B)^x$, $A^x\rightarrow B^x\notin U$. Thus $U\cup\{A^x\}\nvdash_{\mathrm{IZ}}B^x$. Hence for some prime $V$, $U\cup\{A^x\}\subseteq V$ and $B^x\notin V$, so by the induction hypothesis $\langle V,x\rangle\nVdash B$; but $A^x\in V$ so $\langle V,x\rangle\Vdash A$. Since $U\subseteq V$, $\langle U,x\rangle\leq\langle V,x\rangle$ so $\langle U,x\rangle\nVdash A\rightarrow B$. Conversely, suppose that $(A\rightarrow B)^x\in U$. Let $V$ be prime, $U\subseteq V$ and $x\leq y$. Since $\vdash_{\mathrm{IZ}}(A\rightarrow B)^x\rightarrow(A\rightarrow B)^y$ and $\vdash_{\mathrm{IZ}}(A\rightarrow b)^y\rightarrow(A^y\rightarrow B^y)$, $A^y\rightarrow B^y\in U$, so $A^y\rightarrow B^y\in V$. Thus if $\langle V,y\rangle\Vdash A$, $A^y\in V$, so $B^y\in V$ ($V$ is prime), so $\langle V,y\rangle\Vdash B$. Thus $\langle U,x\rangle\Vdash A\rightarrow B$.
+
+The proof can now be completed. If $\mathrm{T}\nvdash_{\mathrm{IZ}}A$, $A\notin \mathrm{T}^\sim$ for some prime $\mathrm{T}^\sim$ such that $\mathrm{T}\subseteq \mathrm{T}^\sim$. Thus $A^0\notin \mathrm{T}^\sim$, so by the Lemma $\langle \mathrm{T}^\sim,0\rangle\nVdash A$, but $\langle \mathrm{T}^\sim,0\rangle\Vdash B$ for $B\in \mathrm{T}^\sim$ and hence for $B\in \mathrm{T}$; but then $\mathrm{T}\not\vDash_{\mathrm{IZ}}A$.
+
+QED
+
+COROLLARY. If $T\vdash_{IKT}A$ then $T\vdash_{IZ}A$.
+
+Proof. If $\mathrm{T}\vdash_{\mathrm{IKT}}A$ then $\mathrm{T}\vDash_{\mathrm{IZ}}A$ by the structure of $Z$ models.
+
+DISJUNCTION PROPERTY. If $\vdash_{IZ}A\vee B$ then $\vdash_{IZ}A$ or $\vdash_{IZ}B$.
+
+Proof. Suppose that $\nvdash_{\mathrm{IZ}}A$ and $\nvdash_{\mathrm{IZ}}B$. By the Completeness Theorem there are nodes $\langle f,x\rangle$ and $\langle g,y\rangle$ of (disjoint) $Z$ models on $X\times{Z}$ and $Y\times{Z}$ respectively such that $\langle f,x\rangle\nVdash A$ and $\langle g,y\rangle\nVdash B$. In the usual way the partial orderings on $X$ and $Y$ can be glued together and a new point $h$ added directly below $f$ and $g$, enabling a $Z$ model to be defined on $(X\cup Y\cup\{h\})\times{Z}$ in which $\langle h,\min\{x,y\}\rangle\nVdash A\vee B$. Thus $\nvdash_{\mathrm{IZ}}A\vee B$ by the Soundness Theorem.
+
+Two questions for further research present themselves at once. What intuitionistic modal systems result if the role of ${Z}$ in $Z$ models is played by some other structure (e.g. ${N}$)? Which of these systems are decidable?
+
+# Acknowledgements
+
+Philip Percival and the referee made useful comments on an earlier version of this paper.
+
+# Notes
+
+[1] A recent discussion is W. Rabinowicz, ‘Intuitionistic truth’, Journal of Philosophical Logic 14 (1985), pp. 191–228.
+
+[2] For the intuitionistic redundancy of the truth operator see M. A. E. Dummett, Truth and Other Enigmas (London: Duckworth, 1978) at p. 234.
+
+[3] See M. A. E. Dummett, Elements of Intuitionism (Oxford: Oxford University Press, 1977), at p. 350.
+
+[4] The treatment of IK and IKT follows W. B. Ewald, ‘Intuitionistic tense and modal logic’, Journal of Symbolic Logic 51 (1986), pp. 166–79. Ewald provides a model theory and proves completeness for the tense logical case, but the modal case is analogous. A different approach is to be found in M. Božić and K. Došen, ‘Models for normal intuitionistic modal logics’, Studia Logica 43 (1984), pp. 217–45, and K. Došen, ‘Models for stronger normal intuitionistic modal logics’, Studia Logica 44 (1985), pp. 39–70. For further references to work on intuitionistic modal logic, see the bibliography of J. M. Font and V. Verdú, ‘A first approach to abstract modal logics’, Journal of Symbolic Logic 54 (1989), pp. 1042–62.
+
+[5] The classical analogue $\mathrm{KT}\mathord{\ast}$ of $\mathrm{IKT}\mathord{\ast}$ is discussed in T. Williamson, ‘Two incomplete anti-realist modal epistemic logics’, Journal of Symbolic Logic 55 (1990), pp. 297–314.
+
+[6] See S. Feferman et al. (eds.), K. Gödel: Collected Works, vol. I (Oxford: Oxford University Press, 1986), pp. 296–303, for Gödel’s 1933 paper, translated as ‘An interpretation of the intuitionistic propositional calculus’, and an introductory survey of later results by A. S. Troelstra.
+
+[7] A similar argument demonstrates $\vdash◇ A\rightarrow A$ for any extension of $\mathrm{IKT}\mathord{\ast}$ with $\vdash◇^mA\rightarrow◇^nA$, where $n<m$, $◇^0A=A$ and $◇^{i+1}A=◇^i◇ A$.
+
+[8] Conversely, any extension of IK with (a) and ($\mathord{\ast}_{\rightarrow}$) also has (T$_◇$), for (RIK2) applied to (a) gives $\vdash◇ KA\rightarrow◇ A$.
+
+[9] A similar argument demonstrates $\vdash◇ A\rightarrow A$ for any extension of $\mathrm{IKT}\mathord{\ast}$ with $\vdash K^mA\rightarrow K^nA$, where $m<n$.
+
+[10] For a discussion of similar cancellation principles in classical modal logic, with $□$ read as a verification operator, see T. Williamson, ‘Assertion, denial and some cancellation rules in modal logic’, Journal of Philosophical Logic 17 (1988), pp. 299–318, and ‘Verification, falsification and cancellation in KT’, Notre Dame Journal of Formal Logic 31 (1990), pp. 286–90.
+
+[11] For the contrast between strict and lenient concepts of verification see Dummett, Elements of Intuitionism, op. cit., pp. 340–44. The more lenient concept of verification is similar to the concept of direct verifiability, i.e. verifiability on the basis of already available information, in Rabinowicz, op. cit., especially pp. 192 and 198.
+
+[12] Compare Dummett’s distinction between canonical proofs and demonstrations, op. cit., pp. 392ff., discussed in Rabinowicz, op. cit., pp. 212ff.
+
+[13] See F. B. Fitch, ‘A logical analysis of some value concepts’, Journal of Symbolic Logic 28 (1963), pp. 135–42.
+
+[14] See also D. Prawitz, ‘Intuitionistic logic: a philosophical challenge’, in G. H. von Wright (ed.), Logic and Philosophy (The Hague: Martinus Nijhoff, 1980), and Rabinowicz, op. cit., pp. 191–4. W. D. Hart, ‘Access and inference’, Proceedings of the Aristotelian Society, sup. vol. 53 (1979), pp. 153–65, and C. J. G. Wright, Realism, Meaning and Truth (Oxford: Blackwell, 1987), at p. 314, suggest that the intuitionistic verification conditional semantics for the conditional may validate (e); T. Williamson, ‘Intuitionism disproved?’, Analysis 42 (1982), pp. 203–207, and ‘Knowability and constructivism’, Philosophical Quarterly, 38 (1988), pp. 422–32, argues that it does not. The failure of the verification conditional semantics to validate (e) is closely connected with the failure of (b); the cancellation principle of Section II applied to (b) yields (e).
+
+[15] See further T. Williamson, ‘Does knowledge distribute over conjunction?’, forthcoming, where it is shown that even if $K$ does not distribute over conjunction it can be closely approximated by operators which do, and the argument for (e) given in terms of them.
+
+[16] These results are proved in Williamson, ‘Two incomplete anti-realist modal epistemic logics’, op. cit.
+
+[17] Dummett suggests that a different kind of intuitionistic negation may also be applied to empirical statements (op. cit., p. 337). Philip Percival in ‘Fitch and intuitionistic knowability’, Analysis, 50 (1990), pp. 182–7, in effect suggests two desiderata for such an empirical negation N: that the possibility of NK$p$ should not entail the possibility of N$p$ (let $p$ be a mathematical truth) and that NK$p$ & NKN$p$ should be possible; in IKT and its extensions neither desideratum is met by intuitionistic $\neg$ in place of N. See also Wright, op. cit. pp. 293–99, on empirical negation. However, unless N behaves non-classically in some respect, Fitch’s Problem can be raised in terms of it rather than of $\neg$. The analysis of such an operator lies outside the scope of this essay.
+
+[18] Dummett, op. cit., p. 338.
+
+[19] Ibid., pp. 348–50.
+
+[20] D. Edgington, ‘The paradox of knowability’, Mind 94 (1985), pp. 557–68, extends this point to an analysis of Fitch’s Problem by means of a modal/temporal analogy. For doubts about that strategy see T. Williamson, ‘On the paradox of knowability’, Mind 96 (1987), pp. 256–61, and ‘On knowledge of the unknowable’, Analysis 47 (1987), pp. 154–8, and P. Percival, ‘Knowability, actuality and the metaphysics of context-dependence’, Australasian Journal of Philosophy, forthcoming.
+
+[21] $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ is however a conservative extension of IPC, in the sense that any theorem of $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ without $◇$, $□$ and $K$ is already a theorem of IPC, for an easy induction on the length of proofs shows that the result of deleting all occurrences of these operators in a theorem of $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$ is a theorem of IPC. The same goes for other extensions of IK considered in this paper.
+
+[22] See Ewald, op. cit., at p. 167; he is discussing the case of tense logic (with times in place of possible situations), but treats the temporal and modal cases as parallel.
+
+[23] $◇ A$ must in general be stronger than $\neg\neg A$, since the remark in note 21 shows that we do not have $\vdash\neg\neg p\rightarrow◇ p$ in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$.
+
+[24] The claim that the possibility of knowledge is sufficient for truth does not by itself force the interaction either. One can show that $\mathrm{IKT}\mathord{\ast}_{\leftarrow}\mathrm{c}_{\rightarrow}$ is a conservative extension of IKT by replacing each occurrence of $KA$ by $\bot$. The proof extends to any instance of (Close$_K$) except where $m=0$.
+
+[25] The possibility that some other argument for (e) may be intuitionistically valid (in effect, in $\mathrm{IKT}\mathord{\ast}\mathrm{c}_{\rightarrow}$) is raised at p. 129 of R. A. Sorensen, Blindspots (Oxford: Oxford University Press, 1988).
+
+[26] The proof of the finite model property for IKT is analogous to that given for an intuitionistic tense logic at pp. 173–5 of Ewald, op. cit.
+
+[27] (T$_□$) and (T$_◇$) are interderivable in the presence of the other axioms and rules of IZ; both are included for the sake of symmetry.
+
+[28] It follows from the Lemma that one can think of the additive group of integers as acting on the elements of the Lindenbaum algebra for IZ in the obvious way.

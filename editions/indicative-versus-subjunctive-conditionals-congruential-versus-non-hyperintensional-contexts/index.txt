@@ -1,0 +1,549 @@
+# Indicative versus subjunctive conditionals, congruential versus non-hyperintensional contexts
+
+Timothy Williamson
+
+Philosophical Issues 16, Philosophy of Language (2006): 310–333.
+
+# §0
+
+A familiar if obscure idea: an indicative conditional presents its consequent as holding in the actual world on the supposition that its antecedent so holds, whereas a subjunctive conditional merely presents its consequent as holding in a world, typically counterfactual, in which its antecedent holds. Consider this pair:
+
+(1)
+If you had starved as a child, you would have been as tall now as you actually are.
+(2)
+If you starved as a child, you are as tall now as you actually are.
+
+I do not know how tall you are; I doubt that you starved as a child. My empirical evidence tells strongly against (1), by indicating that childhood malnutrition tends to reduce adult height. In contrast, (2) is logically trivial. How things actually are includes your actual height, whether or not it also includes your childhood starvation; how things would have been if you had starved as a child does not include your actual height. A similar contrast arises between metaphysical and epistemic modalities. As a claim of metaphysical possibility, (3) is obviously true, while as a claim of epistemic possibility (4) is obviously false:
+
+(3)
+You could have been less tall now than you actually are.
+(4)
+You may be less tall now than you actually are.
+
+Such differences are no mere curiosities of natural language. They exemplify a very general difference between two kinds of sentential context. This paper expounds the general difference, and uses it to derive constraints on the semantics of indicative conditionals.
+
+# §1
+
+We first construct a taxonomy of sentential contexts, according to their fineness or coarseness of grain.
+
+By a ‘sentential context’ is meant an ordered pair <${𝛂}$, ${𝛃}$>, ${𝛂}$ being any formula and ${𝛃}$ any atomic formula, both in a given object-language L: if it helps, think of ${𝛃}$ as occurring in ${𝛂}$, although that is not formally required. If ${𝐂}$ is a sentential context <${𝛂}$, ${𝐩}$> and ${𝛃}$ a formula of L, ${𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)}$ is the result of uniformly substituting ${𝛃}$ for ${𝐩}$ throughout ${𝛂}$. For instance, if ${𝐂}$ is <$\mathord{\boldsymbol{\sim}} {𝐩} \boldsymbol{\supset} {𝐪}$, ${𝐩}$> then ${𝐂} \boldsymbol{(} {𝐩} \boldsymbol{\&} {𝐫} \boldsymbol{)}$ is $\mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝐩} \boldsymbol{\&} {𝐫} \boldsymbol{)} \boldsymbol{\supset} {𝐪}$. This is just a formal version of the informal notion of a sentential context.
+
+L is assumed to contain atomic formulas ${𝐩}$, ${𝐪}$, . . . and the sentential operators $\mathord{\boldsymbol{\sim}}$ (negation), $\boldsymbol{\supset}$ (the material conditional) and $\boldsymbol{□}$ (informally interpreted as an operator for metaphysical necessity). Other connectives are, as usual, introduced as metalinguistic abbreviations; in particular, $\boldsymbol{\equiv}$ is the material biconditional and $\boldsymbol{\lozenge}$ is the dual of $\boldsymbol{□}$. L may contain many other constructions too, such as quantifiers and propositional attitude operators, but they do not matter for present purposes.
+
+We work with a fairly standard model-theoretic conception of logical truth. Each formula of L is evaluated as true or false (never both) in each model for L; although the main points to follow do not depend on that assumption, dropping it would considerably complicate the exposition. To determine the truth-values of formulas in a model M, each formula is first evaluated as true or false in M relative to various points in a set P(M) associated with M. Each point in P(M) assigns values to all semantic parameters of L. It assigns values to all the free variables of L; it determines values for the parameters that fix the circumstance with respect to which sentences of L are to be evaluated; perhaps it also determines values for parameters that fix the context in which sentences of L are considered as uttered, and so on. Most importantly for our purposes, each point x determines an item w(x) which we can informally think of as the world of evaluation. The model M is associated with a set of such ‘worlds’ W(M) = {w(x): x $\boldsymbol{\in}$ P(M)}. If x $\boldsymbol{\in}$ P(M) and u $\boldsymbol{\in}$ W(M), then x[u] is the point just like x except that it assigns u as the value of the world of evaluation parameter; as is orthodox, we assume that x[u] is always in P(M). ‘M,x $\vDash {𝛂}$’ means that ${𝛂}$ is true in M relative to x $\boldsymbol{\in}$ P(M).
+
+The semantic clauses for $\mathord{\boldsymbol{\sim}}$, $\boldsymbol{\supset}$ and $\boldsymbol{□}$ are these:
+
+M,x $\vDash \mathord{\boldsymbol{\sim}} {𝛂}$ iff not M,x $\vDash {𝛂}$.
+M,x $\vDash {𝛂} \boldsymbol{\supset} {𝛃}$ iff not M,x $\vDash {𝛂}$ or M,x $\vDash {𝛃}$.
+M,x $\vDash \boldsymbol{□} {𝛂}$ iff for all u $\boldsymbol{\in}$ W(M), M,x[u] $\vDash {𝛂}$.
+
+The clauses for $\mathord{\boldsymbol{\sim}}$ and $\boldsymbol{\supset}$ are standard; thus all theorems of classical propositional logic are true in any model relative to any point, and modus ponens preserves truth in any given model relative to any given point. The clause for $\boldsymbol{□}$ treats necessity as truth in all worlds of the model, holding fixed all other semantic parameters. It does not embody a restriction to those worlds to which the world component w(x) of point x bears a designated accessibility relation R. Consequently, all theorems of the propositional modal system S5 (including $\boldsymbol{□} {𝐩} \boldsymbol{\supset} {𝐩}$, $\boldsymbol{□} {𝐩} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{□} {𝐩}$ and $\boldsymbol{\lozenge} {𝐩} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{\lozenge} {𝐩}$) are true in any model relative to any point. S5 is a plausible but not uncontroversial logic for metaphysical necessity, and dropping the accessibility relation simplifies the semantics; a further rationale will emerge below.
+
+To get from truth in a model relative to a point to truth in a model simpliciter, we assume that each model M distinguishes some point a(M) $\boldsymbol{\in}$ P(M) as its actual point; correspondingly, w(a(M)) is the actual world of M. A sentence ${𝛂}$ is true in a model M (M $\vDash {𝛂}$) iff ${𝛂}$ is true in M relative to the actual point of M (M,a(M) $\vDash {𝛂}$); ${𝛂}$ is logically true ($\vDash {𝛂}$) iff ${𝛂}$ is true in every model. More generally, ${𝛂}$ is a logical consequence of a set of sentences ${𝚪}$ (${𝚪} \vDash {𝛂}$) iff ${𝛂}$ is true in every model in which every member of ${𝚪}$ is true. We assume that the semantics of L provides enough models to falsify any non-theorem of S5; more precisely, if ${𝛂}$ is constituted of atomic formulas, truth-functors and $\boldsymbol{□}$ then $\vDash {𝛂}$ only if ${𝛂}$ is a theorem of S5.
+
+We now have enough semantic apparatus to define some useful kinds of context. A sentential context ${𝐂}$ is extensional iff for all sentences ${𝛂}$ and ${𝛃}$ this holds:
+
+EXTENSIONAL
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)} \boldsymbol{)}$
+
+${𝐂}$ is intensional iff it is not extensional. For example, negation creates an extensional context: <$\mathord{\boldsymbol{\sim}} {𝐩}$, ${𝐩}$> is extensional because $\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \mathord{\boldsymbol{\sim}} {𝛂} \boldsymbol{\equiv} \mathord{\boldsymbol{\sim}} {𝛃} \boldsymbol{)}$ for all ${𝛂}$ and ${𝛃}$. More generally, we can show that for any sentence ${𝛂}$ constructed solely out of atomic sentences, $\mathord{\boldsymbol{\sim}}$ and $\boldsymbol{\supset}$, the context <${𝛂}$, ${𝐩}$> is extensional (by induction on the complexity of ${𝛂}$). By contrast, a modal operator such as $\boldsymbol{□}$ creates an intensional context: <$\boldsymbol{□} {𝐩}$, ${𝐩}$> is intensional because if $\vDash \boldsymbol{(} {𝐩} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{□} {𝐩} \boldsymbol{\equiv} \boldsymbol{□} \boldsymbol{\top} \boldsymbol{)}$, where $\boldsymbol{\top}$ is a truth-functional tautology, then, since $\vDash \boldsymbol{□} \boldsymbol{\top}$, $\vDash {𝐩} \boldsymbol{\supset} \boldsymbol{□} {𝐩}$, contrary to fact (in S5). As we should expect, the result ${𝐂}\mathbf{1}^{\boldsymbol{\ast}}{𝐂}\mathbf{2}$ of composing a pair of extensional contexts ${𝐂}\mathbf{1}$ and ${𝐂}\mathbf{2}$ is itself an extensional context, where ${𝐂}\mathbf{1}^{\boldsymbol{\ast}}{𝐂}\mathbf{2}$ is defined by the equation ${𝐂}\mathbf{1}^{\boldsymbol{\ast}}{𝐂}\mathbf{2} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{)}$ = ${𝐂}\mathbf{1} \boldsymbol{(} {𝐂}\mathbf{2} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{)}$. We cannot quite identify an extensional context of a sentence with a formula that expresses a truth-function of that sentence; for example, <${𝐩} \boldsymbol{\&} {𝐪}$, ${𝐩}$> is extensional (since $\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\&} {𝐪} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{(} {𝛃} \boldsymbol{\&} {𝐪} \boldsymbol{)} \boldsymbol{)}$) even though ${𝐩} \boldsymbol{\&} {𝐪}$ is no truth-function of ${𝐩}$. Informally, for an extensional context ${𝐂}$, at any point in any model the truth-value (extension) of ${𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)}$ is a function of the truth-value (extension) of ${𝛂}$, although which function it is may depend on the model or the point (see further Humberstone 1986).
+
+We can define a new notion by replacing material equivalence in EXTENSIONALITY with strict equivalence. A sentential context ${𝐂}$ is non-hyperintensional iff for all sentences ${𝛂}$ and ${𝛃}$ this holds:
+
+NON-HYPERINTENSIONAL
+$\vDash \boldsymbol{□} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)} \boldsymbol{)}$
+
+${𝐂}$ is hyperintensional iff it is not non-hyperintensional. For example, $\boldsymbol{□}$ is non-hyperintensional because $\boldsymbol{□} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} \boldsymbol{□} {𝛂} \boldsymbol{\equiv} \boldsymbol{□} {𝛃} \boldsymbol{)}$ is a theorem of S5 (indeed of S4). More generally, we can show that for any sentence ${𝛂}$ constructed solely out of atomic sentences, $\mathord{\boldsymbol{\sim}}$, $\boldsymbol{\supset}$ and $\boldsymbol{□}$, the context <${𝛂}$, ${𝐩}$> is non-hyperintensional (by induction on the complexity of ${𝛂}$). By contrast, belief operators create hyperintensional contexts, given that one necessary truth may be believed while another is not. As expected, composing non-hyperintensional contexts gives a non-hyperintensional context. Informally, if the intension of a sentence ${𝛂}$ at a point x in a model M is the function that takes each world u $\boldsymbol{\in}$ W(M) to the truth-value of ${𝛂}$ in M relative to x[u], a non-hyperintensional context ${𝐂}$ is one for which, relative to the actual point in any given model, the intension of ${𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)}$ is a function of the intension of ${𝛂}$, although which function it is may depend on the model or the point. Still more informally, non-hyperintensional contexts concern only what could have been.1
+
+Had we restricted the quantification over worlds in the semantic clause for $\boldsymbol{□}$ by an arbitrary accessibility relation, we could not have shown that $\boldsymbol{□}$ creates a non-hyperintensional context, for $\boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} \boldsymbol{□} {𝐩} \boldsymbol{\equiv} \boldsymbol{□} \boldsymbol{\top} \boldsymbol{)}$ is equivalent in any normal modal logic to $\boldsymbol{□} {𝐩} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{□} {𝐩}$, the characteristic axiom of S4, which is invalid when the accessibility relation is non-transitive. The problem is that the strict equivalence of two sentences at a point in a model no longer requires their intensions to coincide at that point, and ‘hyperintensionality’ becomes correspondingly less interesting.2 It is more perspicuous to define ‘hyperintensional’ in terms of a $\boldsymbol{□}$ unrestricted by an accessibility relation, which is not to deny that semantic clauses with an accessibility relation suit other readings of $\boldsymbol{□}$, such as easy possibility. Those (notably Salmon 1989) who deny that metaphysical necessity satisfies the S4 axiom should think of the unrestricted $\boldsymbol{□}$ as stronger than metaphysical necessity, and therefore as at least as strong as the infinite conjunction of metaphysical necessity, the metaphysical necessity of metaphysical necessity, and so on.
+
+We can define a third notion by replacing material equivalence with logical equivalence. A sentential context ${𝐂}$ is congruential iff for all sentences ${𝛂}$ and ${𝛃}$ this holds:
+
+CONGRUENTIAL
+If $\vDash {𝛂} \boldsymbol{\equiv} {𝛃}$ then $\vDash {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)}$
+
+Since logical truth is closed under modus ponens for $\boldsymbol{\supset}$, all extensional contexts are congruential. As expected, composing congruential contexts gives a congruential context. Belief operators create non-congruential contexts, given that one logical truth may be believed while another is not. Informally, for a congruential context ${𝐂}$, the logical consequences of ${𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)}$ are a function of the logical consequences of ${𝛂}$.
+
+Assume that the rule of necessitation is valid: whenever $\vDash {𝛂}$, $\vDash \boldsymbol{□} {𝛂}$. Then all extensional contexts are non-hyperintensional, and all non-hyperintensional contexts are congruential. For if ${𝐂}$ is extensional then $\vDash \boldsymbol{□} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)} \boldsymbol{)} \boldsymbol{)}$ by necessitation; we can distribute $\boldsymbol{□}$ over $\boldsymbol{\supset}$ because we have the K schema $\vDash \boldsymbol{□} \boldsymbol{(} {𝛄} \boldsymbol{\supset} {𝛅} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{□} {𝛄} \boldsymbol{\supset} \boldsymbol{□} {𝛅} \boldsymbol{)}$, so ${𝐂}$ is non-hyperintensional. Similarly, if ${𝐂}$ is non-hyperintensional and $\vDash {𝛂} \boldsymbol{\equiv} {𝛃}$, then $\vDash \boldsymbol{□} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)}$ by necessitation, so $\vDash \boldsymbol{□} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)} \boldsymbol{)}$; we can eliminate the $\boldsymbol{□}$ because we have the T schema $\vDash \boldsymbol{□} {𝛄} \boldsymbol{\supset} {𝛄}$, so ${𝐂}$ is congruential. Both inclusions are strict if L is rich enough. As already noted, $\boldsymbol{□}$ creates a non-extensional non-hyperintensional context. To construct a hyperintensional congruential context, define a logical truth operator ${𝐎}$ such that ${𝐎} {𝛂}$ is true everywhere if $\vDash {𝛂}$, and ${𝐎} {𝛂}$ is false everywhere otherwise. The context <${𝐎𝐩}$, ${𝐩}$> is congruential, for if $\vDash {𝛂} \boldsymbol{\equiv} {𝛃}$ then $\vDash {𝛂}$ iff $\vDash {𝛃}$, so either $\vDash {𝐎} {𝛂}$ and $\vDash {𝐎} {𝛃}$ or $\vDash \mathord{\boldsymbol{\sim}} {𝐎} {𝛂}$ and $\vDash \mathord{\boldsymbol{\sim}} {𝐎} {𝛃}$; hence $\vDash {𝐎} {𝛂} \boldsymbol{\equiv} {𝐎} {𝛃}$. Yet $\boldsymbol{\mathord{<}} {𝐎𝐩}$, ${𝐩}$> is hyperintensional, for otherwise $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐎𝐩} \boldsymbol{\equiv} {𝐎} \boldsymbol{\top} \boldsymbol{)}$, which in S5 implies that $\vDash \boldsymbol{□} {𝐩} \boldsymbol{\supset} \boldsymbol{(} {𝐎𝐩} \boldsymbol{\equiv} {𝐎} \boldsymbol{\top} \boldsymbol{)}$; since $\vDash \boldsymbol{\top}$ but not $\vDash {𝐩}$ (${𝐩}$ being just an atomic sentence), $\vDash {𝐎} \boldsymbol{\top}$ and $\vDash \mathord{\boldsymbol{\sim}} {𝐎𝐩}$, so $\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{□} {𝐩}$, contrary to fact.3 Under the preceding assumptions, therefore, the three features are ordered in decreasing logical strength: extensionality; non-hyperintensionality; congruentiality.
+
+# §2
+
+The picture becomes more complex once we consider languages in which necessitation does not preserve logical truth. To construct an example, we need only add to L an ‘actually’ operator ${𝐀}$ of the usual sort: it rigidly returns the evaluation to the actual world. Recall that for any point x in a model M, x[w(a(M))] is the point just like x except that it assigns w(a(M)), the actual world of the model, to the world of evaluation parameter. Thus the semantic clause for ${𝐀}$ is this:
+
+M,x $\vDash {𝐀} {𝛂}$ iff M,x[w(a(M))] $\vDash {𝛂}$.
+
+We use x[w(a(M))] rather than a(M), the actual point of the model itself, because ‘actually’ should not interfere with other aspects of the evaluation, such as the assignment of values to variables.
+
+How does necessitation fail in this setting? Since truth in a model M is truth in M relative to its actual point, M $\vDash {𝐀𝐩}$ iff M,a(M) $\vDash {𝐀𝐩}$ iff M,a(M)[w(a(M))] $\vDash {𝐩}$; but a(M)[w(a(M))] is just a(M), so M $\vDash {𝐀𝐩}$ iff M,a(M) $\vDash {𝐩}$ iff M $\vDash {𝐩}$. Thus $\vDash {𝐀𝐩} \boldsymbol{\equiv} {𝐩}$. If necessitation preserves logical truth, $\vDash \boldsymbol{□} \boldsymbol{(} {𝐀𝐩} \boldsymbol{\equiv} {𝐩} \boldsymbol{)}$, so $\vDash \boldsymbol{□} {𝐀𝐩} \boldsymbol{\equiv} \boldsymbol{□} {𝐩}$. But $\vDash \boldsymbol{□} {𝐀𝐩} \boldsymbol{\equiv} {𝐀𝐩}$, for M,x $\vDash \boldsymbol{□} {𝐀𝐩}$ iff for all u $\boldsymbol{\in}$ W(M), M,x[u] $\vDash {𝐀𝐩}$ iff for all u $\boldsymbol{\in}$ W(M), M,x[u][w(a(M))] $\vDash {𝐩}$; but x[u][w(a(M))] is just x[w(a(M))], so M,x $\vDash \boldsymbol{□} {𝐀𝐩}$ iff M,x[w(a(M))] $\vDash {𝐩}$ iff M,x $\vDash {𝐀𝐩}$. Intuitively, ${𝐀}$ is a rigidifier, so prefixing $\boldsymbol{□}$ to it is redundant. Consequently, if necessitation preserves logical truth then $\vDash {𝐀𝐩} \boldsymbol{\equiv} \boldsymbol{□} {𝐩}$, so $\vDash {𝐩} \boldsymbol{\equiv} \boldsymbol{□} {𝐩}$, contrary to fact.4 Therefore, necessitation does not preserve logical truth in L. Informally: logical truth depends only on what happens in the actual world of each model, where ${𝐀𝐩}$ and ${𝐩}$ coincide in truth-value; they may differ in truth-value in a counterfactual world, which suffices to falsify $\boldsymbol{□} \boldsymbol{(} {𝐀𝐩} \boldsymbol{\equiv} {𝐩} \boldsymbol{)}$ in the actual world.
+
+In the terminology of Crossley and Humberstone (1977), we defined logical truth as real world validity, truth in each model relative to its actual point, by contrast with general validity, truth relative to each point in each model.5 Although necessitation does not preserve real world validity, it does preserve general validity.6 In particular, ${𝐀𝐩} \boldsymbol{\equiv} {𝐩}$ is not generally valid. For some purposes, general validity is a more useful notion than real world validity, as indicated below. For present purposes, however, real world validity constitutes a better standard of logical truth. Transitions between ‘It’s raining’ and ‘It’s actually raining’ are broadly logical in character. Moreover, real world validity is truth in all models, and so fits the model-theoretic account of logical truth, whereas general validity does not (Zalta 1988). We therefore continue to work with real world validity.
+
+The argument above that necessitation does not preserve logical truth also shows that <$\boldsymbol{□} {𝐩}$, ${𝐩}$> is a counterexample to the claim that every non-hyperintensional context is congruential. We have already noted that it is non-hyperintensional. It is non-congruential because $\vDash {𝐀𝐩} \boldsymbol{\equiv} {𝐩}$ but not $\vDash \boldsymbol{□} {𝐀𝐩} \boldsymbol{\equiv} \boldsymbol{□} {𝐩}$.
+
+To construct a counterexample to the claim that no extensional context is hyperintensional, recall the logical truth operator ${𝐎}$ from the end of §1. Let ${𝐂}$ be the context <$\boldsymbol{(} {𝐀𝐪} \boldsymbol{\equiv} {𝐪} \boldsymbol{)} \vee {𝐎𝐩}$, ${𝐩}$>. ${𝐂}$ is trivially extensional because $\vDash {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)}$ for all ${𝛂}$. ${𝐂}$ is hyperintensional: otherwise $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} \boldsymbol{(} \boldsymbol{(} {𝐀𝐪} \boldsymbol{\equiv} {𝐪} \boldsymbol{)} \vee {𝐎𝐩}$) $\boldsymbol{\equiv} \boldsymbol{(} \boldsymbol{(} {𝐀𝐪} \boldsymbol{\equiv} {𝐪} \boldsymbol{)} \vee {𝐎} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{)}$; since $\vDash \boldsymbol{□} \mathord{\boldsymbol{\sim}} {𝐎𝐩}$ and $\vDash \boldsymbol{□} {𝐎} \boldsymbol{\top}$, by normal modal logic $\vDash \boldsymbol{□} {𝐩} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐀𝐪} \boldsymbol{\equiv} {𝐪} \boldsymbol{)}$, so $\vDash \boldsymbol{□} {𝐩} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{□} {𝐀𝐪} \boldsymbol{\supset} \boldsymbol{□} {𝐪} \boldsymbol{)}$; but $\vDash {𝐪} \boldsymbol{\supset} \boldsymbol{□} {𝐀𝐪}$, so $\vDash \boldsymbol{□} {𝐩} \boldsymbol{\supset} \boldsymbol{(} {𝐪} \boldsymbol{\supset} \boldsymbol{□} {𝐪} \boldsymbol{)}$, contrary to fact.
+
+In the presence of an ‘actually’ operator, the interrelations between the three kinds of context are therefore more complex. Of course, all extensional contexts are still congruential, but the logical features of extensionality and congruentiality are less tidily related to the modal feature of non-hyperintensionality.
+
+Perhaps more surprisingly, the presence of an ‘actually’ operator forces new positive interrelations between the three features. For example, in the language of propositional modal logic without additional operators such as ${𝐀}$, modal operators are congruential and non-hyperintensional without being extensional. Even when we have added ${𝐀}$, we might be tempted to think of congruentiality and non-hyperintensionality as approximately equivalent categorisations, even though each applies to a few curiosities to which the other does not. On this picture, the two categories agree on excluding very fine-grained contexts and including moderately coarse-grained ones, while disagreeing on a marginal range of intermediate contexts. But that picture is wrong. On a more accurate view, the two categories exclude each other, but for an overlap on very coarse-grained contexts. For, if L contains ${𝐀}$, every congruential non-hyperintensional context is extensional.
+
+Here is the proof. Let ${𝐂}$ be a congruential non-hyperintensional context and ${𝛂}$ and ${𝛃}$ sentences of L. As usual:
+
+(i)
+$\vDash {𝐀} {𝛂} \boldsymbol{\equiv} {𝛂}$
+(ii)
+$\vDash {𝐀} {𝛃} \boldsymbol{\equiv} {𝛃}$
+
+From (i) and (ii):
+
+(iii)
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{\equiv} {𝐀} {𝛃} \boldsymbol{)}$
+
+The rigidifying effect of ${𝐀}$ makes $\boldsymbol{□}$ redundant as applied to the consequent of (iii), as one can easily check by a semantic argument:
+
+(iv)
+$\vDash \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{\equiv} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{\equiv} {𝐀} {𝛃} \boldsymbol{)}$
+
+An instance of the non-hyperintensionality of ${𝐂}$ is:
+
+(v)
+$\vDash \boldsymbol{□} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{\equiv} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{)}$
+
+The semantics for $\boldsymbol{□}$ validates the T schema, and in particular:
+
+(vi)
+$\vDash \boldsymbol{□} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{)}$
+
+Chaining (iii)-(vi) together we have:
+
+(vii)
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{)}$
+
+From (i) and (ii) respectively the congruentiality of ${𝐂}$ yields:
+
+(viii)
+$\vDash {𝐂} \boldsymbol{(} {𝐀} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)}$
+(ix)
+$\vDash {𝐂} \boldsymbol{(} {𝐀} {𝛃} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)}$
+
+Together, (vii)-(ix) yield:
+
+(x)
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐂} \boldsymbol{(} {𝛂} \boldsymbol{)} \boldsymbol{\equiv} {𝐂} \boldsymbol{(} {𝛃} \boldsymbol{)} \boldsymbol{)}$
+
+That is, ${𝐂}$ is extensional.
+
+How should we interpret this result? Very roughly: extensional contexts are insensitive to differences between sentences with the same truth-value; non-hyperintensional contexts are insensitive to differences between sentences with the same intension; congruential contexts are insensitive to differences between sentences with the same real-world logical consequences. The proof works because any two sentences ${𝛂}$ and ${𝛃}$ with the same truth-value are linked by a chain in which successive members have either the same intension or the same real-world logical consequences: ${𝛂}$ has the same real-world logical consequences as ${𝐀} {𝛂}$, which has the same intension as ${𝐀} {𝛃}$, which has the same real-world logical consequences as ${𝛃}$. A context that is both congruential and non-hyperintensional must be insensitive to differences between the sentences at the opposite ends of such a chain, and therefore between any two sentences with the same truth-value; in other words, it is extensional. That explanation is rough, because ‘insensitive’ does not mean exactly the same in the three cases (hence the need for a rigorous proof); nevertheless, it gives the feel of what is going on.
+
+# §3
+
+Some examples may help. Consider ‘The probability that ${𝐩}$ is d’ as a context of ${𝐩}$. Standard axioms for probability guarantee that logical equivalents are equiprobable, but what is the appropriate notion of logical equivalence? A probabilistic context is non-extensional: sameness of truth-value does not imply sameness of probability. Therefore it is either hyperintensional or non-congruential. Which?
+
+Suppose that the probability in question is objective chance. The resultant context is hardly hyperintensional; if two outcomes could have differed in their chances, one of them could have occurred without the other. Therefore, since talk of chances creates non-extensional contexts (otherwise everything has a chance of 0 or 1), it must create non-congruential ones, by the result above. For example, the real-world logical equivalence of (5) and (6) does not imply the real-world logical equivalence of (7) and (8):
+
+(5)
+The next toss will be heads.
+(6)
+Actually the next toss will be heads.
+(7)
+The chance that the next toss will be heads is 0.5.
+(8)
+The chance that actually the next toss will be heads is 0.5.
+
+Whatever world u is actual, it is non-contingent whether (6) holds in u. Therefore the chance that (6) holds in u is either 0 or 1. Thus the chance that (6) holds in the actual world is not 0.5; (8) is false. Nevertheless, given indeterminism, (7) may very well be true. Unlike general logical equivalence, real-world logical equivalence does not imply equality of chance.
+
+Suppose, by contrast, that the probability in question is (coherent) subjective credence or evidential probability. The resultant context is surely congruential. The rationale for assigning the same coherent subjective credence or evidential probability to ordinary logical equivalents extends straightforwardly to pairs such as (5) and (6); the coincidence in truth-value is easily accessible to reflection. Therefore, since talk of credences or evidential probabilities creates non-extensional contexts (otherwise everything has such a probability of 0 or 1), it must create hyperintensional ones by the result above. Suppose that the next toss will in fact be heads. Then (6) has the same intension as (9):
+
+(9)
+The next toss will be heads or not.
+
+Nevertheless, even for a perfectly coherent subject, (10) may be true while (11) is false:
+
+(10)
+My credence that actually the next toss will be heads is 0.5.
+(11)
+My credence that the next toss will be heads or not is 0.5.
+
+For the credence for (6) should be the same as for (5), while the credence for (9) should be 1. Coincidence in intension is not always accessible to reflection. Real-world logical equivalence is a better candidate than metaphysically necessary equivalence for implying sameness of coherent credence or evidential probability.
+
+Metaphysical and epistemic possibility pattern the same way as chance and credence respectively. Both create non-extensional contexts, for some falsehoods are both metaphysically and epistemically possible while others are neither.
+
+Talk of metaphysical possibilities creates non-hyperintensional, non-congruential contexts. Non-hyperintensionality: If two sentences have the same intension, so have the results of prefixing them with ‘It could have been that’ (on the metaphysical reading).7 For example, if you are in fact six feet tall, (12) has the same intension as (13), and (14) (= (3)) correspondingly the same intension as (15):
+
+(12)
+You are less tall now than you actually are.
+(13)
+You are less than six feet tall now.
+(14)
+You could have been less tall now than you actually are.
+(15)
+You could have been less than six feet tall now.
+
+Non-congruentiality: The real-world logical equivalence of (16) and (17) does not imply even the material equivalence of (18) and (19):
+
+(16)
+The last toss was tails.
+(17)
+The last toss was actually tails.
+(18)
+It could have been that the last toss was tails.
+(19)
+It could have been that the last toss was actually tails.
+
+For (18) is true and (19) false if (16) is false. Similarly, despite the real-world logical equivalence of (12) and (20), (14) is true and (21) false:
+
+(20)
+You are self-distinct.
+(21)
+You could have been self-distinct.
+
+By contrast, talk of epistemic possibilities creates a hyperintensional, congruential context. Hyperintensionality: If (16) is false, then (17) has the same intension as (20), but (22) is true (if nobody has checked) while (23) is false, so they have different intensions:
+
+(22)
+It may be that the last toss was actually tails.
+(23)
+It may be that you are self-distinct.
+
+Similarly, despite the sameness in intension of (12) and (13), (24) can be true while (25) (= (4)) is false:
+
+(24)
+It may be that you are less than six feet tall now.
+(25)
+It may be that you are less tall now than you actually are.
+
+Congruentiality: If ${𝛂}$ and ${𝛃}$ are logically equivalent, then ${𝛂}$ is consistent with what is known iff ${𝛃}$ is consistent with what is known. For instance, the real-world logical equivalence of (12) and (20) implies the real-world logical equivalence of (25) and (23).
+
+Such examples may suggest that the distinction between non-hyperintentional non-congruential contexts and hyperintensional congruential contexts is fundamentally a distinction between the metaphysical and the epistemic. That thought might encourage attempts to explain the distinction within some sort of generalized two-dimensional semantics, perhaps in the manner of Chalmers (2004) or Jackson (2004). Such attempts would not be well motivated by the considerations of this paper, for at least two reasons.
+
+First, the definitions in §1 and the argument of §2 nowhere used two-dimensional semantics. They make perfect sense even if each point in a model consists of a single world of evaluation (the ‘metaphysical’ dimension) and nothing else (in particular, no ‘epistemic’ dimension). Even if each point fixes other parameters too, such as times, they may all pertain to the circumstance of evaluation rather than the context of utterance in the sense of Kaplan (1989), and therefore still not pertain to the epistemic side of generalized two-dimensional semantics. Although the ‘actually’ operator was crucial, its semantic clause relied simply on the stipulation that each model has a distinguished actual point. The rationale for that stipulation was in turn simply to obtain a sensible notion of truth in a model. If semantic clauses for epistemic modal operators or the like involve a new ‘epistemic’ dimension of models, that reflects on those operators, not on the general notions of extensionality, non-hyperintensionality and congruentiality.8
+
+Second, the category of hyperintensional congruential contexts is not limited to epistemic contexts. For instance, the logical truth operator ${𝐎}$ in §1 created a hyperintensional congruential context without being epistemic in any natural sense: logical truth was understood simply as truth in all models. Although ‘All red things are coloured’ may express a truth knowable a priori, the sentence is not logically true; $\forall \boldsymbol{x} \boldsymbol{(} \boldsymbol{Rx} \boldsymbol{\supset} \boldsymbol{Cx} \boldsymbol{)}$ is false in some models. Conversely, we have no general guarantee that every sentence true in all models expresses a truth knowable a priori. Of course, the completeness theorem for first-order logic tells us that a sentence of first-order logic is true in all models only if it is provable from standard axiomatizations and therefore expresses a truth knowable a priori (once interpreted).9 But second-order logic is incomplete; we cannot assume that the second-order sentence that expresses a version of the Continuum Hypothesis is true in all models only if it is knowable a priori.
+
+Do such examples undermine the idea that talk of epistemic probability or possibility creates congruential contexts? Let ‘P’ abbreviate an epistemically inaccessible logical truth while ‘Q’ abbreviates an epistemically accessible logical truth; thus ‘P iff Q’ also abbreviates an epistemically inaccessible logical truth. The epistemic probability that Q is 1; isn’t the epistemic probability that P less than 1? It is not epistemically possible that not Q; isn’t it epistemically possible that not P? The same queries might even be raised about a pair of epistemically accessible logical truths, one that will never in fact be accessed because it is too complex, the other simple and already accessed.
+
+In the case of probability, its insensitivity to such differences is built into the technical notion, otherwise it would not satisfy the standard axioms of probability theory, on which most of its usefulness depends. The case of possibility is not very different. If a complex truth-functional tautology and a simple one can differ in epistemic possibility, the latter notion does not satisfy basic principles of weak normal propositional modal logic (specifically, the weakest normal system K), on which much of its usefulness depends. Of course, we might read the English ‘It may be that not P’ as expressing only that it is not known that P, rather than the stronger claim that it is consistent with the totality of what is known that P, for something tautologically equivalent to something known need not itself be known: but a mere denial of knowledge is not usefully regarded as a modality. Thus we legitimately impose closure under at least some forms of logical equivalence by brute force on both epistemic probability and epistemic possibility in order to achieve a perspicuous mathematical and logical structure. It may well be best to extend the imposition to closure under all forms of logical equivalence for the same reason. We can still register finer-grained epistemic differences elsewhere in our conceptual framework. In any case, the forms of logical equivalence of most interest for this paper, in particular that between ‘P’ and ‘Actually P’, are epistemically almost trivial.
+
+The distinction between congruential and non-congruential contexts is more accurately conceived as purely logical (because it concerns closure under real-world logical equivalence) than as epistemic, and the distinction between non-hyperintensional and hyperintensional contexts as metaphysical (because it concerns closure under metaphysically necessary equivalence).10 The term ‘real-world’ should not mislead one into regarding the former distinction as metaphysical too, for real-world validity was defined in terms of the actual point of a model; the actual world of the model may be only one component amongst many of the actual point, relevant only for the evaluation of sentences with operators that engage with metaphysical modality.
+
+Epistemic probability and possibility operators have exhibited differences in purely logical behaviour from corresponding operators for metaphysical probability and possibility. The former are closed under real-world logical equivalence, the latter not (both kinds are closed under general logical equivalence). Less remarkably, the metaphysical operators are closed under (metaphysically) necessary equivalence, whereas the epistemic operators are not. Does the contrast apply to conditionals too?
+
+# §4
+
+Let $\boldsymbol{\to}$ be a conditional operator. We must consider two contexts, that of the antecedent, <${𝐩} \boldsymbol{\to} {𝐪}$, ${𝐩}$>, and that of the consequent, <${𝐩} \boldsymbol{\to} {𝐪}$, ${𝐪}$>. Say that $\boldsymbol{\to}$ is extensional in its antecedent (respectively, consequent) iff <${𝐩} \boldsymbol{\to} {𝐪}$, ${𝐩}$> (respectively, <${𝐩} \boldsymbol{\to} {𝐪}$, ${𝐪}$>) is an extensional context; likewise for non-hyperintensionality and congruentiality. Usually, a conditional operator is extensional (non-hyperintensional, congruential) in its antecedent iff it is extensional (non-hyperintensional, congruential) in its consequent. The contrast between (1) and (2) (with ‘actually’ in the consequent) is similar to the following contrast (with ‘actually’ in the antecedent):
+
+(26)
+If you had eaten much less as a child than you actually did, you would have been six feet tall now.
+(27)
+If you ate much less as a child than you actually did, you are six feet tall now.
+
+We might have strong empirical evidence against (26), concerning the effects of childhood malnutrition. Such evidence is irrelevant to (27), since its antecedent is logically false; perhaps (27) is vacuously true. An example with an epistemically possible antecedent is:
+
+(28)
+If you had eaten much less as a child than I actually did, you would have been six feet tall now.
+(29)
+If you ate much less as a child than I actually did, you are six feet tall now.
+
+We might have the same sort of empirical evidence against (28) that we have against (26), while knowing that (29) is true because you have been measured as six feet tall now.
+
+By the result of §2, any conditional that is both non-hyperintensional and congruential in its antecedent is extensional in its antecedent, and any conditional that is both non-hyperintensional and congruential in its consequent is extensional in its consequent. Indeed, given weak assumptions, we can establish something stronger: any conditional that is both non-hyperintensional and congruential in either its antecedent or its consequent is extensional in both its antecedent and its consequent. For we can show, on the assumptions, that a conditional is extensional in its antecedent iff it is extensional in its consequent. Moreover, on the same assumptions, we can show that a conditional is extensional in its antecedent or consequent iff it is logically equivalent to the material (truth-functional) conditional (see Appendix). Thus any conditional that is both non-hyperintensional and congruential in its antecedent or consequent is logically equivalent to $\boldsymbol{\supset}$.
+
+Of course, logical equivalence is weaker than synonymy. For example, if ${𝛂} \boldsymbol{\to} {𝛃}$ is ${𝐀} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$, then $\vDash \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$ (this $\boldsymbol{\to}$ is both non-hyperintensional and congruential). Nevertheless, $\boldsymbol{\to}$ and $\boldsymbol{\supset}$ differ in meaning because they embed differently. In particular, $\vDash \boldsymbol{(} {𝐩} \boldsymbol{\to} {𝐪} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\to} {𝐪} \boldsymbol{)}$ because $\vDash {𝐀} {𝛄} \boldsymbol{\supset} \boldsymbol{□} {𝐀} {𝛄}$ more generally, but of course not $\vDash \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐪} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐪} \boldsymbol{)}$. However, the most basic disputes about conditionals concern the truth-values of unembedded occurrences. To say that that ${𝛂} \boldsymbol{\to} {𝛃}$ is always logically equivalent to ${𝛂} \boldsymbol{\supset} {𝛃}$ is to answer the most urgent questions about $\boldsymbol{\to}$.
+
+The strict conditional ($\boldsymbol{□} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$) is not logically equivalent to the material conditional. It is non-hyperintensional in both its antecedent and its consequent because $\boldsymbol{□}$ creates a non-hyperintensional context (in S4 and S5). Therefore the strict conditional is non-congruential in both its antecedent and its consequent. Specifically, although $\vDash {𝐀𝐩} \boldsymbol{\equiv} {𝐩}$, neither $\vDash \boldsymbol{□} \boldsymbol{(} {𝐀𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)}$ nor $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐀𝐩} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)}$, for otherwise, since $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)}$, either $\vDash \boldsymbol{□} \boldsymbol{(} {𝐀𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)}$ or $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐀𝐩} \boldsymbol{)}$; models in which ${𝐩}$ is actually contingently true refute the first alternative and models in which ${𝐩}$ is actually contingently false refute the second.
+
+An example of the reverse case is the binary logical consequence operator defined by ${𝐎} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$, where ${𝐎}$ is the logical truth operator from the end of §1. It is not logically equivalent to the material conditional. It is congruential in both its antecedent and its consequent because ${𝐎}$ creates a congruential context. Therefore the logical consequence operator is hyperintensional in both its antecedent and its consequent. Specifically, if $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} {𝐪} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{□} \boldsymbol{(} {𝐎} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)} \boldsymbol{\equiv} {𝐎} \boldsymbol{(} {𝐪} \boldsymbol{\supset} {𝐩} \boldsymbol{)} \boldsymbol{)}$ then $\vDash \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} {𝐪} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝐎} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)} \boldsymbol{\equiv} {𝐎} \boldsymbol{(} {𝐪} \boldsymbol{\supset} {𝐩} \boldsymbol{)} \boldsymbol{)}$ (by the T axiom); but $\vDash {𝐎} \boldsymbol{(} {𝐩} \boldsymbol{\supset} {𝐩} \boldsymbol{)}$ and not $\vDash \mathord{\boldsymbol{\sim}} {𝐎} \boldsymbol{(} {𝐪} \boldsymbol{\supset} {𝐩} \boldsymbol{)}$, so $\vDash \mathord{\sim} \boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} {𝐪} \boldsymbol{)}$, contrary to fact. Hyperintensionality in the consequent is similar.
+
+In these respects, the subjunctive conditional patterns like the strict conditional. Its non-extensionality is clear, but let us check it anyway. Suppose that John is in China. All three of these conditionals have false antecedents and false consequents:
+
+(30)
+If John were in London, he would be in England.
+(31)
+If John were in Paris, he would be in England.
+(32)
+If John were in London, he would be in France.
+
+The subjunctive conditional is non-extensional in its antecedent because (30) is true and (31) false, even though (30) and (31) have the same consequent and antecedents with the same truth-value. It is non-extensional in its consequent because (30) is true and (32) false, even though (30) and (32) have the same antecedents and consequents with the same truth-value. Thus the subjunctive conditional is either hyperintensional or non-congruential in its antecedent and in its consequent. Intuitively, it is non-hyperintensional in both.11 For what possibilities a subjunctive conditional obtains in seems to supervene on what possibilities its antecedent and consequent obtain in; thus replacing the antecedent or consequent by another that obtains in exactly the same possibilities should make no difference to what possibilities the conditional itself obtains in.12 For example, any possible worlds semantics of the usual Stalnaker-Lewis type for subjunctive conditionals excludes hyperintensionality, provided that $\boldsymbol{□}$ ranges over all the worlds in a model. Whether the consequent is true in the most similar worlds to the actual one in which the antecedent is fixed by what worlds the antecedent and consequent are true in.
+
+An intriguing objection is that hyperintensionality infects the subjunctive conditional because logically equivalent antecedents sometimes trigger evaluation by different similarity relations. For example, when we counterfactually suppose that Bizet had been the same nationality as Verdi, we tend to keep Verdi’s nationality fixed and imagine both of them as Italian, whereas when we counterfactually suppose that Verdi had been the same nationality as Bizet, we tend to keep Bizet’s nationality fixed and imagine both of them as French. Even though co-nationality is symmetric, we might assent to (33) and dissent from (34):
+
+(33)
+If Bizet had been the same nationality as Verdi, Bizet would have been Italian.
+(34)
+If Verdi had been the same nationality as Bizet, Bizet would have been Italian.
+
+However, one can explain such examples without invoking hyperintensionality. We tend to read (33) as (35) and (34) as (36):
+
+(35)
+If Bizet had been the same nationality as Verdi actually was, Bizet would have been Italian.
+(36)
+If Verdi had been the same nationality as Bizet actually was, Bizet would have been Italian.
+
+Since the antecedents of (35) and (36) are not strictly equivalent, a difference in truth-value between (35) and (36) does not imply hyperintensionality. This explanation of the difference between (33) and (34) is confirmed by the observation that the difference disappears once it is explicit that what counts is the nationality of the second-mentioned composer in the counterfactual circumstances, not the actual ones:
+
+(37)
+If Bizet had been the same nationality as Verdi had been, Bizet would have been Italian.
+(38)
+If Verdi had been the same nationality as Bizet had been, Bizet would have been Italian.
+
+Thus the objection fails to identify hyperintensionality in the subjunctive conditional.
+
+Given that the subjunctive conditional is non-hyperintensional in both antecedent and consequent, it is also non-congruential in both. Examples are easy to find. If the subjunctive conditional were congruential in its antecedent, we could drop ‘actually’ and the associated rigidification from the antecedent of (39) (= (26)):
+
+(39)
+If you had eaten much less as a child than you actually did, you would have been six feet tall now.
+
+But that would transform the contingently false (39) into a vacuously true conditional with an impossible antecedent on the unrigidified reading. Similarly, if the subjunctive conditional were congruential in its consequent, we could drop ‘actually’ and the associated rigidification from the consequent of (40) (= (1)):
+
+(40)
+If you had starved as a child, you would have been as tall now as you actually are.
+
+But that would transform the contingently false (40) into a necessarily true conditional with a trivial consequent.
+
+We can also argue more formally, making two weak assumptions about the subjunctive conditional, symbolized as $\boldsymbol{□} \boldsymbol{\to}$. First, it is reflexive:
+
+REFLEXIVITY
+$\vDash {𝛂} \boldsymbol{□} \boldsymbol{\to} {𝛂}$
+
+If something were so, it would indeed be so. Second, the subjunctive conditional transmits metaphysical possibility:
+
+POSSIBILITY
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{□} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{\lozenge} {𝛂} \boldsymbol{\supset} \boldsymbol{\lozenge} {𝛃} \boldsymbol{)}$
+
+If something could be so, whatever would be so if it were so could also be so.13 Suppose that ${𝐩}$ is contingently false ($\mathord{\boldsymbol{\sim}}$p $\boldsymbol{\&}$ $\boldsymbol{\lozenge} {𝐩}$). By the semantics of ${𝐀}$, ${𝐀𝐩}$ is non-contingently false ($\mathord{\boldsymbol{\sim}} \boldsymbol{\lozenge} {𝐀𝐩}$). Thus, by POSSIBILITY, ${𝐩} \boldsymbol{□} \boldsymbol{\to} {𝐀𝐩}$ is false. By REFLEXIVITY, ${𝐀𝐩} \boldsymbol{□} \boldsymbol{\to} {𝐀𝐩}$ is true, so $\boldsymbol{□} \boldsymbol{\to}$ is non-congruential in its antecedent, and ${𝐩} \boldsymbol{□} \boldsymbol{\to} {𝐩}$ is true, so $\boldsymbol{□} \boldsymbol{\to}$ is non-congruential in its consequent.
+
+Such interactions between the subjunctive conditional and ‘actually’ should not surprise us once we consider the functions that subjunctive conditionals perform in our lives. For example, they help us learn from our mistakes. The subjunctive (41) gives one reason to eat less in future; the vacuous indicative (42) does not:
+
+(41)
+If I had eaten much less than I actually did, I would not have a stomach ache now.
+(42)
+If I ate much less than I actually did, I do not have a stomach ache now.
+
+Subjunctive conditionals also help us in abductive reasoning. Given (43), we may provisionally judge that John has the disease; by contrast, the indicative (44) is an uninformative triviality:
+
+(43)
+If John had the disease, he would appear just as he actually does.
+(44)
+If John has the disease, he appears just as he actually does.
+
+Such uses of subjunctive conditionals involve comparisons within the scope of the conditional between how things would be and how they actually are. For those comparisons, the rigidifying effect of ‘actually’ is very convenient. We might try to avoid it by quantification, as in (45), but why deprive ourselves of the option of referring back to actuality whenever we feel like it from within the scope of a counterfactual supposition that we are in the process of exploring?
+
+(45)
+For some q, is the quantity that I ate and if I had eaten much less than q, I would not have a stomach ache now.
+
+We need ${𝐩} \boldsymbol{□} \boldsymbol{\to} {𝐀𝐩}$ to fail when ${𝐩}$ is contingently false for such comparisons of the counterfactual with the actual to make non-trivial sense. Equally, we need REFLEXIVITY to hold for making a counterfactual supposition to have its point. Thus the non-congruentiality of the subjunctive conditional in both its antecedent and its consequent is no accidental by-product of the interaction between two otherwise unrelated operators. Rather, it goes to the heart of thought about how things could have been otherwise.
+
+If the contrast between indicative and subjunctive conditionals follows those in §3, the indicative conditional should be non-extensional and congruential, and therefore hyperintensional, in both antecedent and consequent. It certainly seems to be congruential.14 If ‘P’ and ‘$\mathrm{P}^{\ast}$’ are (real-world) logically equivalent, surely ‘If P, Q’ is logically equivalent to ‘If $\mathrm{P}^{\ast}$, Q’ and ‘If Q, P’ is logically equivalent to ‘If Q, $\mathrm{P}^{\ast}$’. For example, (46) is equivalent to (47) and to (48):
+
+(46)
+If it rained, the match was cancelled.
+(47)
+If it actually rained, the match was cancelled.
+(48)
+If it rained, the match was actually cancelled.
+
+Such closure under real-world equivalence explains the triviality of (2) and the vacuity of (27). We therefore assume that the indicative conditional is congruential in both antecedent and consequent.15
+
+Given that the indicative conditional is non-extensional in both antecedent and consequent, we can conclude that it is hyperintensional in both antecedent and consequent. But is the indicative conditional really nonextensional?
+
+A crude argument for non-extensionality mechanically follows the argument for the non-extensionality of the subjunctive conditional, based on (30)–(32). The indicative analogues of (30)–(32) are:
+
+(49)
+If John is in London, he is in England.
+(50)
+If John is in Paris, he is in England.
+(51)
+If John is in London, he is in France.
+
+The argument insists that (49) is true but (50) and (51) false, wherever John in fact is. Suppose that John is in China, although we do not know that. Thus (49)–(51) all have false antecedents and false consequents. Then, according to the argument, the indicative conditional is non-extensional in its antecedent because (49) is true and (50) false, even though (49) and (50) have the same consequent and antecedents with the same truth-value. It is non-extensional in its consequent because (49) is true and (50) false, even though (49) and (50) have the same antecedents and consequents with the same truth-value.
+
+However, the arguments for non-extensionality are not perfectly parallel for the two conditionals. For the subjunctive conditional, the argument for non-extensionality works even if we are certain in evaluating (30)–(32) that John is in China; that does not prevent us from making sensible judgements as to what would be the case were he elsewhere. By contrast, for the indicative conditional, if we are certain in trying to evaluate (49)–(51) that John is in China, it is hard to know what to make of them. What is clear is that when we have no idea of John’s whereabouts, it is fine to assert (49) but far from fine to assert (50) or (51). But that does not exclude the hypothesis that (49) differs from (50) and (51) in epistemic status rather than truth-value. If indicative conditionals have truth-values that are independent of their epistemic status, it remains unclear what is wrong with arguing for (50) and (51) as follows. Since John is in China, he is not in Paris, so either he is not in Paris or he is in England, so if he is in Paris he is in England. Moreover, he is not in London, so either he is not in London or he is in France, so if he is in London he is in France.
+
+On a rival hypothesis, the truth-values of indicative conditionals depend on their epistemic status.16 For instance, (54) is false while (53) is true, even though (52) is true (where definite descriptions take narrow scope throughout):
+
+(52)
+The masked man is my father.
+(53)
+If the masked man is not my father, the masked man is not my father.
+(54)
+If the masked man is not my father, the masked man is not the masked man.
+
+Consequently, the argument from the identity (52) and (53) (or from (53) alone) to (54) is invalid, because it fails to preserve truth. But the argument from (52) and (53) to (54) looks valid, unlike the arguments from (52) and (55) to (56) and from (52) and (57) to (58):
+
+(55)
+The evidential probability that the masked man is not my father is nonzero.
+(56)
+The evidential probability that the masked man is not the masked man is non-zero.
+(57)
+It is epistemically possible that the masked man is not my father.
+(58)
+It is epistemically possible that the masked man is not the masked man.
+
+Of course, once (52) is known, the differences in truth-value may disappear between (55) and (56) and between (57) and (58). But the validity of an argument is a matter of preserving truth from premises to conclusion, not of preserving known truth. It is far more plausible that (52) and (55) can be true while (56) is false, or that (52) and (57) can be true while (58) is false, than that (52) and (53) can be true while (54) is false. That the arguments from (52) and (55) to (56) and from (54) and (57) to (58) preserve certainty does not trick us into falsely thinking that they preserve truth. Thus one cannot adequately explain the appearance of validity in the argument from (52) and (53) to (54) merely by claiming that, because it preserves certainty, we are tricked into falsely thinking that it preserves truth. Surely indicative ‘if’ does not create an opaque context.
+
+Once the validity of the argument from (52) and (53) to (54) is conceded, the hyperintensionality of the indicative conditional is hard to maintain. The argument from (59) and (60) (or from (59) alone) to (61) seems valid:
+
+(59)
+John is six feet tall.
+(60)
+If John is six feet tall, John is six feet tall.
+(61)
+If John is his actual height, John is six feet tall.
+
+It preserves truth from premises to conclusion, even though we do not know whether premise (59) is true. Our ignorance is no ground to exclude the truth of (61). Although we may answer ‘No, he may be only five feet tall’ to someone equally ignorant who asserts (61), we might thereby merely be denying his warrant to make the assertion rather than denying the truth of its content. After all, (62) is quite plausible even when we are in no position to assert any verifying instance:
+
+(62)
+For some height h, if John is his actual height, John is h tall.
+
+Thus the assignment of epistemic truth-conditions to indicative ‘if’ looks ill-grounded.
+
+More generally, the forms of inference from (63) and (64) to (65) and from (63) and (66) to (67) seem valid (where ‘iff’ is read as the material biconditional):
+
+(63)
+Necessarily, P iff $\mathrm{P}^{\ast}$.
+(64)
+If P, Q.
+(65)
+If $\mathrm{P}^{\ast}$, Q.
+(66)
+If Q, P.
+(67)
+If Q, $\mathrm{P}^{\ast}$.
+
+But then indicative ‘if’ is non-hyperintensional. Since it is also congruential, it is extensional. Therefore, by the argument of the Appendix, it is logically equivalent to the truth-functional conditional.
+
+Throughout, we have worked within a framework of truth-conditional semantics. That may seem unfair to those, such as Edgington (1986), who deny that indicative conditionals have truth-conditions. The critical definitions and arguments of this paper were stated in terms of logical truth ($\vDash$). However, theorists who deny that indicative conditionals have truth-conditions propose non-truth-conditional notions of validity for them. The preceding definitions and arguments may be reinterpretable in terms of such a reading of ‘$\vDash$’. Of course, the application of the definitions of extensionality, congruentiality and non-hyperintensionality to indicative ‘if’ does require the intelligibility of embedding it in the scope of the material biconditional and other operators, but to deny that intelligibility might be a further cost of the position. If the argument for the extensionality of indicative ‘if’ is accepted, understood in terms of EXTENSIONALITY even on a non-truth-conditional reading of ‘$\vDash$’, it seems strained to continue to insist that indicative ‘if’ is not truth-functional.
+
+Caution is in order, for we cannot hope to discuss here all the extant challenges to a truth-functional reading of indicative ‘if’. We leave those who reject the truth-functional reading with the challenge of making the required hyperintensionality of ‘if’ plausible.
+
+Probably no semantic theory of the indicative conditional can smoothly explain all the data. Speakers often react to sample sentences under the influence of their inchoate theorizing about the indicative conditional, partly because its embedded occurrences tend to produce unnatural sentences. We may need to recall a moral from the epistemic theory of vagueness: understanding an expression as a native speaker does not always put one in a position to recognize a correct perspicuous non-homophonic description of its reference as correct. Our use of the indicative conditional may determine an assignment of reference to it in a way that is not fully cognitively accessible to us: some of our dispositions in using it may turn out to involve errors that can be recognized as such from the third-person perspective of the theorist but not from the first-person perspective of the speaker. That is especially likely if the practice embodies internal tensions.
+
+# §5
+
+One might have expected a category of mildly non-extensional contexts that would be congruential but neither extensional nor hyperintensional. As we have seen, in sufficiently rich languages that category is empty. This constraint on the possibilities for sentential operators may help us classify them more accurately.
+
+# Appendix
+
+Assume these two principles, for all formulas ${𝛂}$ and ${𝛃}$ of L:
+
+(I)
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\&} {𝛃} \boldsymbol{)} \boldsymbol{\to} {𝛃}$
+(II)
+$\vDash {𝛂} \boldsymbol{\to} \boldsymbol{(} {𝛂} \boldsymbol{\vee} {𝛃} \boldsymbol{)}$
+(III)
+$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\to} \boldsymbol{\bot} \boldsymbol{)} \boldsymbol{\supset} \mathord{\boldsymbol{\sim}} {𝛂}$
+(IV)
+$\vDash \boldsymbol{(} \boldsymbol{\top} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\supset} {𝛃}$
+
+(I) and (II) are special cases of a more general principle: a conditional whose consequent follows by truth-functional logic from its antecedent is true. Similarly, (III) and (IV) are tantamount to special cases of modus ponens for $\boldsymbol{\to}$, since modus ponens requires a true conditional with a true antecedent to have a true consequent. But even someone who rejected one or both of those more general principles might accept all of (I)–(IV).
+
+Suppose that $\boldsymbol{\to}$ is extensional in its antecedent. To show that $\boldsymbol{\to}$ is extensional in its consequent, it suffices to show that ${𝛂} \boldsymbol{\to} {𝛃}$ is logically equivalent to the material conditional ${𝛂} \boldsymbol{\supset} {𝛃}$ (which is of course extensional in its consequent). We argue thus:
+
+(i)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\&} {𝛃} \boldsymbol{)} \boldsymbol{)}$	truth-functional logic
+(ii)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\&} {𝛃} \boldsymbol{)} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$
+$\qquad \boldsymbol{\equiv} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\&} {𝛃} \boldsymbol{)} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	extensionality in antecedent
+(iii)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\&} {𝛃} \boldsymbol{)} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	(ii), (I)
+(iv)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	(i), (iii)
+(v)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)}$	truth-functional logic
+(vi)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{(} \boldsymbol{\top} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{)}$	extensionality in antecedent
+(vii)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$	(vi), (IV)
+(viii)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$	(v), (vii)
+(ix)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \mathord{\boldsymbol{\sim}} {𝛃}$	truth-functional logic
+(x)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	(viii), (ix)
+(xi)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$	(iv), (x)
+
+Conversely, suppose that that $\boldsymbol{\to}$ is extensional in its consequent. To show that $\boldsymbol{\to}$ is extensional in its antecedent, it suffices to show that ${𝛂} \boldsymbol{\to} {𝛃}$ is logically equivalent to the material conditional ${𝛂} \boldsymbol{\supset} {𝛃}$ (which is extensional in its antecedent). We argue thus:
+
+(i)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛃} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\vee} {𝛃} \boldsymbol{)} \boldsymbol{)}$	truth-functional logic
+(ii)	$\vDash \boldsymbol{(} {𝛃} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\vee} {𝛃} \boldsymbol{)} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$
+$\qquad \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\to} \boldsymbol{(} {𝛂} \boldsymbol{\vee} {𝛃}\boldsymbol{)} \boldsymbol{)}$	extensionality in consequent
+(iii)	$\vDash \boldsymbol{(} {𝛃} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\vee} {𝛃} \boldsymbol{)} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	(ii), (II)
+(iv)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	(i), (iii)
+(v)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} {𝛃} \boldsymbol{\equiv} \boldsymbol{\bot} \boldsymbol{)}$	truth-functional logic
+(vi)	$\vDash \boldsymbol{(} {𝛃} \boldsymbol{\equiv} \boldsymbol{\bot} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\to} \boldsymbol{\bot} \boldsymbol{)} \boldsymbol{)}$	extensionality in consequent
+(vii)	$\vDash \boldsymbol{(} {𝛃} \boldsymbol{\equiv} \boldsymbol{\bot} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \mathord{\boldsymbol{\sim}} {𝛂} \boldsymbol{)}$	(vi), (III)
+(viii)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \mathord{\boldsymbol{\sim}} {𝛂} \boldsymbol{)}$	(v), (vii)
+(ix)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} {𝛂}$	truth-functional logic
+(x)	$\vDash \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \mathord{\boldsymbol{\sim}} \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)}$	(viii), (ix)
+(xi)	$\vDash \boldsymbol{(} {𝛂} \boldsymbol{\to} {𝛃} \boldsymbol{)} \boldsymbol{\equiv} \boldsymbol{(} {𝛂} \boldsymbol{\supset} {𝛃} \boldsymbol{)}$	(iv), (x)
+
+Thus $\boldsymbol{\to}$ is extensional in its antecedent iff it is extensional in its consequent, and it is extensional in either position only if it is logically equivalent to the material conditional. Conversely, it is trivial that if $\boldsymbol{\to}$ is logically equivalent to the material conditional, then it is extensional in both its antecedent and its consequent.
+
+# Acknowledgements
+
+Thanks to audiences in Oxford, including a meeting of the Luxemburg group, and especially to Dorothy Edgington and John Hawthorne, for discussion of earlier versions of this material, and to Lloyd Humberstone and Brian Weatherson for written comments.
+
+# Notes
+
+[1] The term ‘hyperintensional’ is sometimes used with the sense given to ‘congruential’ below, but the present definition is more closely related to the usual understanding of ‘intension’.
+
+[2] Dropping the initial $\boldsymbol{□}$ in the consequent of NON-HYPERINTENSIONAL evades the immediate problem, for $\boldsymbol{□} \boldsymbol{(} {𝛂} \boldsymbol{\equiv} {𝛃} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{□} {𝛂} \boldsymbol{\equiv} \boldsymbol{□} {𝛃} \boldsymbol{)}$ is a theorem of all normal modal systems. However, that makes worse problems in other directions, for $\boldsymbol{□} \boldsymbol{(} {𝐩} \boldsymbol{\equiv} \boldsymbol{\top} \boldsymbol{)} \boldsymbol{\supset} \boldsymbol{(} \boldsymbol{□} \boldsymbol{□} {𝐩} \boldsymbol{\equiv} \boldsymbol{□} \boldsymbol{□} \boldsymbol{\top} \boldsymbol{)}$ fails when accessibility is non-transitive, so <$\boldsymbol{□} \boldsymbol{□} {𝐩}$, ${𝐩}$> fails the new condition. Thus the composition of contexts that satisfy the new condition need not satisfy the new condition.
+
+[3] ${𝐎}$ feels somewhat metalinguistic, since its logic is not closed under uniform substitution. §3 provides more natural examples of hyperintensional congruential contexts.
+
+[4] More generally, $\vDash \boldsymbol{□} \mathord{\boldsymbol{.}}\,\mathord{\boldsymbol{.}}\,\mathord{\boldsymbol{.}} \boldsymbol{□} {𝐀} {𝛂} \boldsymbol{\equiv} {𝐀} {𝛂}$ for any number of iterations of $\boldsymbol{□}$, so we need not worry about objections to S4 here.
+
+[5] Humberstone 2004 traces the distinction back to Meredith and Prior 1965. Incidentally, the generality validity of ${𝛂}$ need not be recoverable as the real-world validity of $\boldsymbol{□} {𝛂}$, for although the general validity of ${𝛂}$ implies the general validity of $\boldsymbol{□} {𝛂}$ and therefore its real-world validity, the latter means only that for every model M and every u $\boldsymbol{\in}$ W(M), M,a(M)[u] $\vDash {𝛂}$, which does not imply the general validity of ${𝛂}$ because there may be points x $\boldsymbol{\in}$ P(M) not of the form a(M)[u]. The latter coincides with x in its world component when u is w(x), but even a(M)[w(x)] may differ from x in some other component. Operators generalizing over all those other dimensions would need to be combined with $\boldsymbol{□}$ to capture general validity as the real world validity of the result of prefixing operators to the relevant formula. Similarly, the general validity of ${𝐀} {𝛂}$ implies the real world validity of ${𝛂}$ but not vice versa.
+
+[6] The rule of necessitation is standard in axiomatizations of S5. Since it does not preserve real-world validity, one cannot argue directly by induction on the length of proofs that all theorems of S5 are real-world valid. Rather, one argues by induction that all theorems of S5 are generally valid, and then deduces that they are all real-world valid.
+
+[7] Many of the English sentences quoted in the text have several readings. It should be clear which ones are relevant.
+
+[8] One might try to quantify over the ‘epistemic’ dimension of our models with an operator $\blacksquare$ such that $\blacksquare {𝛂}$ is true at a point in a model M iff ${𝛂}$ is true (at the actual point) in every model that differs from M at most in which world is actual; $\blacksquare$ is equivalent to the ‘Fixedly actually’ operator that Davies and Humberstone (1980) propose as corresponding to the notion of ‘deep necessity’ (Evans 1979; $\boldsymbol{□}$ corresponds to ‘superficial necessity’). Call the result of replacing $\boldsymbol{□}$ by $\blacksquare$ throughout the definition of ‘non-hyperintensionality’ ‘deep non-hyperintensionality’. Since, for $\blacksquare$, all theorems of S5 are real-world valid and necessitation preserves real-world validity, irrespective of what special operators the language contains, reasoning like that towards the end of §1 shows that extensionality, deep non-hyperintensionality and congruentiality are so ordered in decreasing logical strength. For present purposes, however, the contrast between ‘superficial’ non-hyperintensionality and congruentiality is exactly the point of interest.
+
+[9] The situation for first-order logic is subtler than the main text suggests, although not in ways that undermine the present argument; see Rayo and Williamson 2003. Strictly speaking, the talk of ‘models’ throughout this paper should be modified as explained there.
+
+[10] The latter distinction also has a logical element, represented by ‘$\vDash$’ in NON-HYPERINTENSIONAL.
+
+[11] Non-hyperintensionality in the consequent of subjunctive implication is a special case of the principle that if ${𝛂}$ subjunctively implies ${𝛃}$ and ${𝛃}$ strictly implies ${𝛄}$ then ${𝛂}$ subjunctively implies ${𝛄}$, which is valid on standard possible worlds semantics for subjunctive conditionals. By contrast, there is no such plausible generalization of non-hyperintensionality in the antecedent of subjunctive implication: if ${𝛂}$ strictly implies ${𝛃}$ and ${𝛃}$ subjunctively implies ${𝛄}$, still ${𝛂}$ may not subjunctively imply ${𝛄}$. Perhaps, if it had rained, it would not have rained hard; necessarily, if it rained hard then it rained; it does not follow that if it had rained hard, it would not have rained hard.
+
+[12] The supervenience principle must be rejected by those who allow some but not all subjunctive conditionals with impossible antecedents to be false (or at least contingent). They may include those who reject the S4 schema for possibility, for if X is contingently impossible while Y is necessarily impossible, so that X and Y are contingently necessarily equivalent, it is tempting to evaluate ‘If X had happened, X would have happened’ as true and ‘If X had happened, Y would have happened’ as false. As already noted, it is best for present purposes to work with a notion of possibility that satisfies S4.
+
+[13] POSSIBILITY (combined with REFLEXIVITY) is discussed and applied in Williamson 2005.
+
+[14] Objection: ‘If the intuitionists are right, that problem is not not decidable’ does not imply ‘If the intuitionists are right, that problem is decidable’, because according to the intuitionists ‘That problem is not not decidable’ does not imply ‘That problem is decidable’. Reply: Allowing such examples leaves almost nothing of the logic of indicative conditionals. We are not obliged to build a non-standard probability theory on which the probability of ‘That problem is not not decidable’ conditional on ‘The intuitionists are right’ is higher than the probability of ‘That problem is decidable’ conditional on ‘The intuitionists are right’. Similarly, we are not obliged to build a non-standard logic of indicative conditionals on which ‘If the intuitionists are right, that problem is not not decidable’ does not imply ‘If the intuitionists are right, that problem is decidable’.
+
+[15] Congruentiality in the consequent of indicative implication is a special case of the plausible principle that if ${𝛂}$ indicatively implies ${𝛃}$ and ${𝛃}$ logically implies ${𝛄}$ then ${𝛂}$ indicatively implies ${𝛄}$. The corresponding generalization of congruentiality in the antecedent of indicative implication is less clear: if ${𝛂}$ logically implies ${𝛃}$ and ${𝛃}$ indicatively implies ${𝛄}$, does ${𝛂}$ indicatively imply ${𝛄}$? That it will rain hard logically implies that it will rain; if it rains, it will not rain hard (we may assume); does it follow that if it rains hard, it will not rain hard? On the truth-functional reading, the conclusion does follow and is vacuously true.
+
+[16] Weatherson 2001 gives a theory of indicative conditionals as epistemic and subjunctive conditionals as ‘metaphysical’, in a two-dimensional semantic setting. He emphasizes the difference between the two types of conditional in their interaction with ‘actually’. Jackson (1981: 129; 1987: 74–75) first called attention to the difference as an argument against attempts by Stalnaker 1976 and Davis 1979 to assimilate indicative ‘if’ semantically to subjunctive ‘if’.
+
+# References
+
+Chalmers, D. (2004). ‘Epistemic two-dimensional semantics’. Philosophical Studies 118: 153–226.
+
+Crossley, J., and Humberstone, L. (1977). ‘The logic of “actually”’. Reports on Mathematical Logic 8: 11–29.
+
+Davies, M., and Humberstone, L. (1980). ‘Two notions of necessity’. Philosophical Studies 38: 1–30.
+
+Davis, W. (1979). ‘Indicative and subjunctive conditionals’. Philosophical Review 87: 544–64.
+
+Edgington, D. (1986). ‘Do conditionals have truth-conditions?’. Crítica 18: 3–30. Reprinted in Jackson 1991.
+
+Evans, G. (1979). ‘Reference and contingency’. Monist 62: 161–89.
+
+Humberstone, L. (1986). ‘Extensionality in sentence position’. Journal of Philosophical Logic 15: 27–54.
+
+Humberstone, L. (2004). ‘Two-dimensional adventures’. Philosophical Studies 118: 17–65.
+
+Jackson, F. (1981). ‘Conditionals and possibilia’. Proceedings of the Aristotelian Society 81: 125–37.
+
+Jackson, F. (1987). Conditionals. Oxford: Blackwell.
+
+Jackson, F. (ed.) (1991). Conditionals. Oxford: Oxford University Press.
+
+Jackson, F. (2004). ‘Why we need A-intensions’. Philosophical Studies 118: 257–77.
+
+Kaplan, D. (1989). ‘Demonstratives’, in J. Almog, J. Perry and H. Wettstein (eds.), Themes from Kaplan. Oxford: Oxford University Press.
+
+Meredith, C., and Prior, A. (1965). ‘Modal logic with functorial variables and a contingent constant’. Notre Dame Journal of Formal Logic 6: 99–109.
+
+Rayo, A., and Williamson, T. (2003). ‘A completeness theorem for unrestricted first-order languages’, in J.C. Beall (ed.), Liars and Heaps. Oxford: Clarendon Press.
+
+Salmon, N. (1989). ‘The logic of what might have been’. Philosophical Review 98: 3–34.
+
+Stalnaker, R. (1976). ‘Indicative conditionals’, in A. Kasher (ed.), Language in Focus. Dordrecht: Reidel.
+
+Weatherson, B. (2001). ‘Indicative and subjunctive conditionals’. Philosophical Quarterly 51: 200–16.
+
+Williamson, T. (2005). ‘Armchair philosophy, metaphysical modality and counterfactual thinking’. Proceedings of the Aristotelian Society 105: 1–23.
+
+Zalta, E. (1988). ‘Logical and analytic truths that are not necessary’. Journal of Philosophy 85: 57–74.

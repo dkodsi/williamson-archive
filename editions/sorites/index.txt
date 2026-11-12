@@ -1,0 +1,724 @@
+# Sorites
+
+Mark Sainsbury and Timothy Williamson
+
+In B. Hale, C. Wright, and A. Miller (eds.), A Companion to the Philosophy of Language, 2nd ed. (2017), 734–764. Chichester: Wiley-Blackwell.
+
+# 1 The Early History
+
+The logician Eubulides of Miletus, a contemporary of Aristotle, was famous for seven puzzles. One was the Liar: If a man says that he is lying, is he telling the truth? Another was the Hooded Man: How can you know your brother when you do not know that hooded man, who is in fact your brother? There were also the Bald Man and the Heap. In antiquity they were usually formulated as series of questions. Does one grain of wheat make a heap? Do two grains of wheat make a heap? Do 10,000 grains of wheat make a heap? If you admit that one grain does not make a heap, and are unwilling to make a fuss about the addition of any single grain, you are eventually forced to admit that 10,000 grains do not make a heap. Is a man with one hair on his head bald? Is a man with two hairs on his head bald? Is a man with 10,000 hairs on his head bald? If you admit that a man with one hair is bald, and are unwilling to make a fuss about the addition of any single hair, you are eventually forced to admit that a man with 10,000 hairs is bald. The standard ancient terms for the Heap and the Bald Man were “sorites” (from “soros,” a heap) and “phalakros,” respectively. Later, “sorites” was used for all such puzzles. They were also known as little‐by‐little arguments.1
+
+Many philosophical doctrines have been suggested as the target Eubulides intended his Heap and Bald Man to destroy: the coherence of empirical concepts, the law of non‐contradiction, the Law of Excluded Middle, pluralism, Aristotle’s theory of infinity or of the mean. The evidence gives little support to any of these suggestions. Eubulides is indeed said to have attacked Aristotle, but in slanderous terms; the sources do not connect the dispute with any of the puzzles. Aristotle betrays no clear awareness of sorites reasoning in any of his extant works. Some later commentators did consider its use against Aristotle’s theory of the mean, but without suggesting that either Eubulides or Aristotle had done so. Eubulides’s interests were described as purely logical; if he had a specific target in mind, it is likely to have been a logical one.
+
+Sorites puzzles became a standard weapon of Skeptics in their attacks on Stoic philosophy. A Skeptic does not feel obliged to answer any of the sorites questions; he can simply plead ignorance. If a Stoic is obliged to answer each question “Yes” or “No,” he will find himself in an embarrassing position. An obvious focus for Skeptical attack was the Stoic theory of knowledge. It was based on cognitive impressions, which represent real objects with complete accuracy and reliability (compare Descartes’s clear and distinct ideas). The Skeptics constructed sorites series from cognitive to non‐cognitive impressions, replacing each impression by a virtually indistinguishable one, and took themselves to have undermined Stoic claims to knowledge. Stoic defenses against these attacks were mustered by Chrysippus (c.280–c.207 bce), the man with the best claim to have initiated propositional logic.
+
+The Stoics firmly accepted the principle of bivalence: every proposition is either true or false. Chrysippus “strained every nerve” to persuade people of it. For any proposition P there is one right answer to the question “P?” “Yes” or “No”; for any sequence of propositions $P_1$, …, $P_n$ there is one sequence of right answers to the questions “$P_1$?” …, “$P_n$?” The Stoics used “Are i few?” as the schematic form of the ith sorites question; thus the right answers to the first and last questions are “Yes” and “No” respectively, and there is a last question, “Are i few?” rightly answerable “Yes,” immediately followed by a first question, “Are i + 1 few?” rightly answerable “No”: i are few and i + 1 are not few; i is a cut‐off point for fewness.
+
+The Stoics distinguished between sentences and the propositions they are used to assert. The argument from bivalence to the existence of a cut‐off point assumes that the sentences “One is few,” …, “10,000 are few” express propositions. However, someone who utters “i are few” with the sense “A man with i hairs on his head is bald” does assert something, which on the Stoic view requires the sentence to express a proposition. The assumption gave no escape from the argument for a cut‐off point. Indeed, there is independent evidence that the Stoics accepted the conclusion of the argument. In other cases which look susceptible to sorites reasoning they insisted on cut‐off points; for example, they denied that there are degrees of virtue, holding that one is either vicious or perfectly virtuous. An analogy was drawn with a drowning man as he rises to the surface; he is coming closer to not drowning, but he is not drowning to a lesser degree until he breaks the surface, when he is suddenly not drowning at all. Moreover, in rebutting the sorites argument against cognitive impressions, Chrysippus dealt explicitly with the case “when the last cognitive impression lies next to the first non‐cognitive one”: cognitiveness has a cut‐off point. The Stoics were prepared to apply bivalence to sorites reasoning and swallow the consequences: any difficulty in answering the sorites questions must come from our ignorance of the right answers, not their non‐existence. The puzzle is an epistemological one.
+
+One might answer the questions “Is one few?” … “Are i few?” “Yes,” and the questions “Are i + 1 few?” … “Are 10,000 few?” “No”: but one would be guessing. No one has such knowledge of cut‐off points; no one knows both that i are few and that i + 1 are not few. Such a pattern of answers is forbidden by the principle that one should give an answer only if one knows it to be correct. The wise man, the Stoic ideal, conformed to that principle. Since he was infallible rather than omniscient, he would sometimes suspend judgment. The Stoics did not claim to be wise men, still less to be omniscient; they readily admitted that they did not know whether the number of stars was odd or even and that they could not distinguish between very similar hairs or grains (the examples are ancient). Nevertheless, the aim was to avoid error by withholding assent from what one did not know.2 The Stoic who did not know enough to be wise should suspend judgment more often than the wise man. That fits Chrysippus’s recommended response to the sorites. At some point in the interrogation one should fall silent.
+
+If sorites questions puzzled the Stoic simply because he did not always know whether to answer “Yes” or “No,” like the question about the number of stars, he could confidently face the interrogation armed only with the three possible answers “Yes,” “No,” and “I don’t know.” If he knew i to be few he would answer “Yes”; if he knew i not to be few he would answer “No”; in every other case he would answer “I don’t know.” Why should an honest admission of ignorance not completely dissolve the puzzle?
+
+However, Chrysippus did not say that one should admit ignorance; he said that one should fall silent. Under interrogation, saying “I don’t know” is quite a different policy from saying nothing. The former but not the latter denies knowledge. This undermines the argument that the Stoic could answer each question “Yes,” “No,” or “I don’t know.”
+
+The Stoic is supposed to say only what he knows to be correct. “I don’t know” in answer to “Are i few?” is tantamount to the assertion “I don’t know that i are few and I don’t know that i are not few,” just as “Yes” is tantamount to “i are few” and “No” to “i are not few.” Thus the Stoic is supposed to answer “I don’t know” only if he knows that he doesn’t know whether i are few. The “Yes”/“No”/“Don’t know” strategy requires the Stoic to answer “I don’t know” whenever he doesn’t know. It is therefore available, on Stoic terms, only if whenever one doesn’t know whether i are few, one knows that one doesn’t know whether i are few. For simplicity, one may be assumed to know a proposition just in case it is clear, where the logical consequences of what is clear are themselves clear. The prerequisite for the “Yes”/“No”/“Don’t know” strategy is then that if i are neither clearly few nor clearly not few, i are clearly neither clearly few nor clearly not few. This is equivalent on Stoic terms to a pair of simpler principles:
+
+(1a)
+If i are not clearly few, i are clearly not clearly few.
+(1b)
+If i are not clearly not few, i are clearly not clearly not few.
+
+Principles (1a) and (1b) are simply the relevant instances of the “S5” principle for clarity: if something is not clearly so, it is clearly not clearly so. Thus the “Yes”/“No”/“Don’t know” strategy is available only if the S5 principle applies. However, the S5 principle is incorrect for clarity in such cases, for clear fewness is as sorites‐susceptible as fewness. One is clearly few; 10,000 are not clearly few. By Stoic logic, there is a cut‐off point for clear fewness: for some i, i − 1 are clearly few and i are not clearly few. Where that point comes is no clearer for clear fewness than for fewness. It is very slightly clearer that i − 1 are few than that i are few. But i are too close to being clearly few to be clearly not clearly few. One cannot reliably judge whether i are clearly few. In particular, one cannot answer the question “Are i clearly few?” just by following the policy: if you hesitate to say “Yes,” say “No.” If that policy worked, one would unhesitatingly judge that i were clearly few if and only if i were clearly few; whatever one thought was right would be right. But unless one is reasonably cautious, one will sometimes unhesitatingly judge that i are clearly few when they are not in fact clearly few (or even few). Most of us say silly things from time to time. On the other hand, if one is reasonably cautious, one will sometimes hesitate over what turns out to be genuinely clear, for fear of a hidden catch. Principle (1a) is false for some i. Principle (1b) fails similarly. Silence is the best policy.
+
+When should the Stoic fall silent? Chrysippus seems to have advised that one should fall silent before the end of the clear cases. Stoic constraints may imply that one should sometimes give no answer to the sorites question “Are i few?” even though i are clearly few. If one answers “Yes” whenever that answer is clearly correct, on Stoic assumptions one stops answering “Yes” either when it ceases to be clearly correct or later. In the former case one has located the cut‐off point for clarity with perfect accuracy; in the latter one has violated the constraint that all one’s answers should be clearly correct. Given the failure of the S5 principle for clarity, one cannot reliably locate the cut‐off point for clarity with perfect accuracy; thus one will reliably satisfy the constraint that one’s answers should be clearly correct only if one stops answering “Yes” before it has ceased to be the clearly correct answer. One must undershoot in order to avoid the risk of overshooting.
+
+The point generalizes. One would like to satisfy two conditions:
+
+(2a)
+If “Yes” is a good answer, say “Yes.”
+(2b)
+If “Yes” isn’t a good answer, don’t say “Yes.”
+
+The goodness of an answer is some truth‐related property of it, and does not simply consist in its being given. There is play between the antecedents and consequents of (2a) and (2b); in an imperfect world they will sometimes come apart. In such a case, one either fails to say “Yes” when “Yes” is a good answer, violating (2a), or says “Yes” when “Yes” is not a good answer, violating (2b). If one regards violations of (2a) and (2b) as equally serious, one may simply aim to say “Yes” when and only when it is a good answer. Other things being equal, one’s misses are as likely to fall on one side of the target as on the other, and no matter. But one might regard a violation of (2b) as worse than a violation of (2a); one would rather commit an error of omission by not saying “Yes” when it is a good answer than one of commission by saying “Yes” when it is not a good answer. For example, one might prefer failing to make true or warranted statements to making false or unwarranted ones, and follow a policy of saying nothing when in doubt. One decreases the risk of more serious violations by increasing the risk of less serious ones. At the limit, the price of never violating (2b) is sometimes violating (2a). That is the choice the Stoic makes in falling silent before the end of the clear cases, where clarity is goodness. It was worse to say “Yes” in an unclear case than not to say it in a clear one. Those who take the opposite view should fall silent after the end of the clear cases. The Chrysippan strategy can be seen as resulting from two levels of precaution. At the first level, goodness in (2a) and (2b) is simply truth. The Stoics were not alone in holding it to be worse to give a false answer than to fail to give a true one. For truth, (2a) rather than (2b) is to be violated. This preference motivates the constraint that one should give an answer only if it is clear. But then clarity takes on a life of its own as a cognitive end, and again the Stoic takes the cautious option. Condition (2a) rather than (2b) is to be violated for clarity too.
+
+The Skeptics were not satisfied with Chrysippus’s silence; it was most notably attacked half a century after his death by Carneades. “For all I care you can snore, not just become quiescent. But what’s the point? In time there’ll be someone to wake you up and question you in the same fashion.” Chrysippus was dialectically no better off than he would have been had he fallen asleep, and Carneades’s attitude was that of a chess player with what he takes to be a winning strategy, whose opponent simply refuses to make a move (in a game without time limits).
+
+Suspension of judgment was the Skeptical attitude, and Carneades fastened on the extent to which Chrysippus’s strategy allowed it to spread. If Chrysippus suspended judgment in clear cases, on what basis did he object to the Skeptic’s suspension of judgment? The question does not reduce the strategy to immediate incoherence, for some sort of reply is open to Chrysippus: do not suspend judgment when the case is clearly clear. Nevertheless, the Stoics were in a very delicate position. Their epistemological caution enlarged the concessions to Skepticism that their bivalent semantics forced them to make under sorites questioning. The concessions did not amount to surrender, for cases remained in which they could still claim knowledge; but these cases were marked off by a disputed no‐man’s‐land rather than a compelling principle.
+
+So far, the Heap and the Bald Man have been presented, as they usually were in antiquity, as series of questions, not as arguments with premises and conclusions. Yet one speaks of them as paradoxes, and a paradox may be defined as an apparently valid argument with apparently true premises and an apparently false conclusion. In argument form, the sorites goes like this:
+
+Premise 1
+1 is few
+Premise 2
+If 1 is few then 2 are few
+Premise 3
+If 2 are few then 3 are few
+…
+
+Premise 10, 000
+If 9,999 are few then 10,000 are few
+Conclusion
+10,000 are few
+
+The argument appears to be valid; if its premises are true, its conclusion will be true too. The relevant rule of inference is modus ponens (MP), which allows one to infer Q from P and “If P then Q”; its validity is hard to challenge. By MP, “1 is few” and “If 1 is few then 2 are few” entail “2 are few.” In the same way, “2 are few” and “If 2 are few then 3 are few” entail “3 are few.” After 9,999 applications of MP, one reaches the conclusion “10,000 are few.” The premise “1 is few” is apparently true and the conclusion “10,000 are few” apparently false. The gradualness of the sorites series makes each of the conditional premises appear true. Thus the apparently valid argument has apparently true premises and an apparently false conclusion. At least one of these appearances is misleading, for the conclusion cannot be both true and false.
+
+The argument is valid by the standards of orthodox modern logic. It is also valid by the standards of Stoic logic. Two logical principles are at stake. One is MP; it was the first indemonstrable (primitive) form of argument in Stoic logic: “If the first, then the second; but the first; therefore the second.” The other is the “Cut” principle that valid arguments can be chained together: thus the valid argument from “1 is few” and “If 1 is few then 2 are few” to “2 are few” can be chained together with the valid argument from “2 are few” and “If 2 are few then 3 are few” to “3 are few,” giving a valid argument from “1 is few,” “If 1 is few then 2 are few” and “If 2 are few then 3 are few” to “3 are few.” The relevant form of Cut was the third Stoic rule for the analysis of complex arguments: “If from two propositions a third is deduced and there are propositions from which one of the premises may be deduced, then the other premise together with these propositions will yield the conclusion.”
+
+On Stoic terms, the argument is valid, its first premise true and its conclusion false. Thus not all the conditional premises are true. By the Stoic principle of bivalence, at least one of them is false, despite appearances. At this point there is a complication. The truth and falsity conditions of conditionals were the subject of a fierce controversy that went back to Diodorus and his contemporary, Philo, and was taken up by the Stoics. Philo treated the conditional “If P then Q” as a truth‐function of its components equivalent to “Not: P and not Q.” In contrast, Diodorus held “If P then Q” to be at least as strong as “Not ever: P and not Q.” Chrysippus went still further; for him, a conditional is true if and only if its antecedent is incompatible with the negation of its consequent. Thus “If P then Q” is equivalent to “Not possible: P and not Q.” In modern terms, Philo’s conditional is material implication, Chrysippus’s is strict implication. Later Stoics tended to follow Chrysippus.
+
+In the sorites argument, some conditional premise “If i are few then i + 1 are few” is supposed to be false. If the conditional is Chrysippan, it is false if and only if “i are few” is compatible with “i + 1 are not few.” However, this conclusion looks banal; who thought them incompatible? Chrysippus might cheerfully allow that all the conditional premises, so taken, are false. To know the falsity of such a conditional is not to identify a cut‐off point; it is merely to know that a certain point is not debarred from being the cut‐off. For some modern philosophers, sorites puzzles arise because vague concepts are subject to tolerance principles which do rule out the possibility of cut‐off points and “i are few” does threaten to be incompatible with “i + 1 are not few,” making the Chrysippan conditional “If i are few then i + 1 are few” true.3 But the Stoics did not take that view, and may not have regarded the argument with Chrysippan conditional premises as genuinely challenging.
+
+The most challenging form of the sorites argument uses the Philonian conditional, for it is the weakest connective to obey MP, which is to say that it is the weakest conditional. If the conditional premises are true on any reading, they are true on this one. Since it was not the standard reading of the conditional, the Stoics had to formulate the premises explicitly as negated conjunctions to confront the argument in its most telling form. Just that was done in standard Stoic accounts.
+
+Once the explicit conditional has been eliminated, MP can no longer be used, but Stoic logic still obliges. The sorites argument with negated conjunctions is valid, its first premise is true and its conclusion false. Thus some premise of the form “Not: i are few and i + 1 are not few” is false. By the falsity condition for the Philonian conditional, i are few and i + 1 are not few. Thus i is a sharp cut‐off point for fewness. Since one cannot identify such a point, one is in no position to deny any of the premises; one can only suspend judgment. The challenge “Which premise is false?” is unfair, for one may be unable to find out even though one knows that at least one premise is false.
+
+What is gained by presenting the sorites as an argument with premises and conclusion? Its logical structure was never the point at issue, for the argument is formally valid according to those whom it threatens, the Stoics, who used arguments with that structure themselves. As for the Skeptics, they could suspend judgment on its logical status; it was enough for their purposes that their opponents took such arguments to be valid. The logical structure provides a convenient way of laying out the problem, but so far nothing more.
+
+It is tempting to argue for a dialectical structure behind the logical façade. One point is that the use of conditionals in the sorites argument is a distraction, since the sorites interrogation shows that one can set the puzzle going in a language whose only resources are “Yes,” “No,” and simple sentences (without logical connectives such as “if,” “and,” and “not”) in the interrogative mood. Moreover, the argument has been persuasive so far not because its premises commanded assent, but because they forbade dissent. The problem was not that one could say “Not: i are few and i + 1 are not few,” but that one could not say “i are few and i + 1 are not few.” One is not presumed to believe the premises of the sorites argument. The point of the questions is to force one to take up attitudes for or against the individual propositions, for any pattern of such attitudes leads one into trouble. Since the premises of the sorites argument seem compelling only when one is interrogated on their components, the question form takes primacy.
+
+The situation is transformed if the premises of the sorites argument can be given positive support. If they can, the argument form takes primacy: the question form leaves too much unsaid. What is more, Chrysippan silence is no longer an adequate response, for it does not undermine the positive support for the premises. Awareness of the need to provide that support is shown by Galen (ad c.129–c.199): “I know of nothing worse and more absurd than that the being and non‐being of a heap is determined by a grain of corn.” Chrysippus could not have suspended judgment on the general claim that one grain does not make the difference between a heap and a non‐heap. He must deny it, for it contradicts the existence even of an unknown cut‐off point. For him, the addition of one grain can turn a non‐heap into a heap.
+
+Galen’s interest in sorites puzzles was connected with a long‐running dispute between Empiricist and Dogmatic (one might say “Rationalist”) Doctors. The Empiricist Doctors based their medical knowledge on inductive inferences, holding it to be reliable only if derived from sufficiently many observations; their opponents applied sorites reasoning against the notion “sufficiently many.” The Empiricist Doctors replied that the argument proved too much; if it destroyed the notion of sufficiently many observations, it would by parity of reasoning destroy much of the common sense on which all must rely. They gave the examples of a mountain, strong love, a row, a strong wind, a city, a wave, the open sea, a flock of sheep and a herd of cattle, the nation and the crowd, boyhood and adolescence, the seasons: none would exist if sorites reasoning were to be trusted. The Empiricist Doctors could reasonably claim to know that sorites arguments were unsound, without claiming to know exactly where the flaw lay. Even Chrysippus could not say which premise in negated conjunction form was false.
+
+It was known that for every sorites series which proceeded by adding (as Eubulides’s original series seem to have done), a reverse sorites series proceeded by subtracting. Thus examples tend to come in pairs of opposites: rich and poor, famous and obscure, many and few, great and small, long and short, broad and narrow. The awareness of reversibility no doubt helped to check the tendency to think of a sorites puzzle as showing its conclusion to be strange but true, for the conclusion of one sorites argument contradicts the first premise of the reverse argument.
+
+There are also signs of a rather different Empiricist point. The sorites questioner is compared to someone who asks a shoemaker what last will shoe everyone: the question has no answer, for different feet require different lasts. The idea may be that the required number of observations depends on the circumstances of the particular case. There is no general answer to the question, “Are 50 observations enough?” The point has been repeated by modern philosophers, and is correct as far as it goes, but that is not very far; for the questions can be asked about a particular case, and the Empiricist still cannot plausibly claim to know all the answers. The same goes for heaps. Fifty grains may make a heap in one arrangement and not in another; but in any particular process of piling up grains one by one there will be a point at which the right answer to the question “Is this a heap?” is unknown.
+
+As logic declined in later antiquity, so did interest in sorites puzzles. They formed no part of the medieval logic curriculum, perhaps because of their absence from the works of Aristotle. Their revival had to wait for what is usually seen as the corruption of logic in the Renaissance. Lorenzo Valla (1407–1457) was one of the chief instigators of a shift from the formal rigor of scholastic logic to the more literary pursuit of humanist dialectic, and his preference for Cicero over Aristotle led him to Cicero’s account of sorites arguments. Valla rejected them, on the grounds that even one grain makes some difference, in his original treatment of multiple syllogisms. Unfortunately, later writers did not develop his suggestions. Sorites puzzles were known as curiosities. Logic textbooks used the term “sorites” for all syllogisms with more than two premises. Stoic arguments do not count as multiple syllogisms, for they turn on the logic of propositional connectives such as “if” rather than quantifiers such as “all” and “some.” The analogy with the original sense of “sorites” lies in the repetition of steps, but the textbooks did not associate sorites syllogisms with paradoxes in any way.
+
+Leibniz knew of the Heap and the Bald Man. For him, unlike the Stoics, the ideas of heap and baldness exemplify indeterminacy: their limits, like those of color ideas, have not been fixed. A borderline case is a matter of opinion, different opinions being equally good.4 In one respect, Leibniz shared the view which has dominated twentieth‐century discussions: that the ignorance associated with vagueness is not a matter merely of not knowing where the cut‐off lies, but of there being nothing to know.
+
+# 2 Recent Approaches
+
+In the first half of the twentieth century sorites paradoxes aroused little interest. An exception is Russell’s 1923 article. He takes the paradoxes seriously, and responds as follows:
+
+[if a hairy man goes bald] it is argued [that] there must have been one hair the loss of which converted him into a bald man. This, of course, is absurd …. there are men of whom it is not true to say they must either be bald or not bald. The law of excluded middle is true when precise symbols are employed, but it is not true when symbols are vague. (pp. 85–86)5
+
+More recently, sorites puzzles have been discussed in the form of apparently sound arguments with apparently false conclusions, and philosophers such as Dummett and Wright have advanced grounds for the premises. As noted earlier, this renders Chrysippan silence by itself an insufficient response: the grounds for the premises must be rebutted.
+
+The recent tradition has largely ignored the epistemic view of vagueness, assuming, by contrast, that borderline cases, initially characterized as those where we do not know what to say in answer to a sorites question, are cases in which there is no fact of the matter to be known. Such a view cannot avoid commitment to indeterminacy at the semantic level: for some sentences there is no fact of the matter whether they are true, and for some predicates and some objects, no fact of the matter whether the former apply, or fail to apply, to the latter. So we will refer to the “no fact of the matter” conception of vagueness as the “semantic” conception. (The conception may be coupled with different views about the ontological status of the absence of determinate fact. On one view, once the semantics have been properly formulated, there is nothing more to be said; on another view, the semantic indeterminacy reflects some real indeterminacy in the non‐linguistic world itself.)
+
+Developing the semantic conception of vagueness requires abandoning classical semantics or logic. In the context of the rise of formal methods dating from the middle of the last century, it is not surprising that a number of non‐classical systems have been designed to accommodate vagueness, semantically conceived; and we will shortly survey some of these theories.
+
+First, however, we present three schemata of sorites-paradoxical arguments (§2.1). Second, we examine arguments which have been given for the truth of their premises or the falsehood of their conclusions (§2.2). Third, we review some formal treatments of vagueness (§2.3); and fourth, we remind the reader of the attractions of the epistemic view of vagueness, but also indicate a potential source of difficulty for the view (§2.4).
+
+# 2.1 Three Forms of Paradoxical Arguments
+
+With no sand you cannot make a heap of sand; and if you have just one more grain, you cannot make a heap from what is not a heap. Hence there are no heaps of sand. The argument could be schematized so as to fit the standard pattern of argument by mathematical induction, with quantifiers ranging over the natural numbers and “x′” abbreviating “x + 1”:
+
+(A)
+$\mathrm{\varphi}(0)$
+$\forall x\,(\mathrm{\varphi}x\to\mathrm{\varphi}x')\quad\mathrm{(QP)}$
+--------
+$\forall x\,\mathrm{\varphi}x$
+
+We refer to the quantified premise as QP. This schema yields the heap paradox itself if we replace “$\mathrm{\varphi}x$” by “a collection of x grains cannot make a heap no matter how it is arranged.”
+
+Imagine a painted wall hundreds of yards or hundreds of miles long. The left‐hand region is clearly painted red, but there is a subtle gradation of shades, and the right‐hand region is clearly yellow. The strip is covered by a small double window which exposes only a small section of the wall at any one time. It is moved progressively rightwards, in such a way that at each move after the initial position the left‐hand segment of the window exposes just the area that was in the previous position exposed by the right‐hand segment. The window is so small relative to the strip that in no position can you tell any difference in color between what the two segments expose. After each move, you are asked to say whether what you see in the right‐hand segment of the window is red. You must certainly answer “Yes” at first. At each subsequent move you can tell no difference between a region you have already called red and the one for which the new question arises. It seems that you must after every move call the next region red, and thus, absurdly, find yourself calling a clearly yellow region red.
+
+This form of sorites can also be molded to schema (A). One could stipulate that the successive positions of the right‐hand segment of the window are numbered upwards from 0, and replace “$\mathrm{\varphi}$” by “… numbers a red region.” Equally, and with no difference of substance, we can regard the numerals as simply naming the successive regions, and replace “$\mathrm{\varphi}$” simply by “red.”
+
+One does not need to argue by mathematical induction to have sorites paradoxes. We could, as we saw in §1 (p. 738) write out, say, 10,000 singular conditionals instead of QP, and use modus ponens to derive the absurd result that a collection of 10,000 grains, however arranged, cannot make a heap. The schema is:
+
+(B)
+$\mathrm{\varphi}(0)$
+$\mathrm{\varphi}(0)\to\mathrm{\varphi}(1)$
+…
+$\mathrm{\varphi}(9{,}999)\to\mathrm{\varphi}(10{,}000)$
+--------
+$\mathrm{\varphi}(10{,}000)$
+
+We do not need to use either conditionals or quantifiers in the premises, for example:6
+
+(C)
+$\mathrm{\varphi}(0)$
+$\neg\mathrm{\varphi}(10{,}000)$
+--------
+$\exists x\,(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')\quad\mathrm{(QC)}$
+
+An instance might be: A man with 0 hairs on his head is bald, and a man with 10,000 hairs on his head is not; therefore there is some number of hairs such that a man with that number of hairs is bald and a man with one more hair is not. The supposed absurdity is the derivation of the existence of a sharp boundary, represented by the quantified conclusion (QC).
+
+In all cases, the arguments appear to be sound, yet they have what appear to be false conclusions.
+
+The availability of these different formulations, and others we have not mentioned, puts constraints on what sort of solution is acceptable. A reasonable initial hope is that there is a single correct approach to all forms of sorites. If this hope can be fulfilled, it would be no good merely to argue, with schema (A) in mind, that the principle of mathematical induction does not hold for vague predicates, for this would not touch sorites arguments exemplifying schemata (B) and (C).7 Equally, it would not do to suppose that one need only point out that by adopting an intuitionistic logic, one can deny the QP of (A) without thereby being committed to the seemingly unacceptable classical equivalent of its negation, $\exists x\,(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')$ (cf. Putnam, 1983; Read and Wright, 1985; Putnam, 1985); for paradoxical arguments modeled on the other schemata are not touched by this point.
+
+# 2.2 Arguments for the Premises or Against the Conclusions
+
+We will consider two kinds of argument: (a) from the nature of observation; and (b) from the nature of vagueness.
+
+# 2.2.1 Observational Predicates
+
+Perhaps one can always apply “red” or at least “looks red” correctly, under suitable circumstances, just by looking. If so, then if under such circumstances two things look the same, and the predicate is true of one, it is true of the other. With “red” or “looks red” inserted as before into the replacement for “$\mathrm{\varphi}$,” this line of thought justifies the conditional premises in schema (B), the QP in (A), and the negation of the conclusion of (C) (that is, not‐QC). The conditionals would be justified by the fact that, given that adjacent regions on the wall look the same, the truth of an antecedent of the form “x is (or looks) red” would be enough for the truth of a consequent corresponding to “x′ is (or looks) red.” The QP of (A) would be justified by the fact that, given the same feature of the wall, “red” (or “looks red”) must apply to both or neither of adjacent regions; and this would also establish the falsehood of the QC of (C).
+
+Since the truth‐values of the atomic premises and conclusions are uncontroversial, this would take care of all that is controversial in showing that the arguments have true premises and false conclusions. If one takes this result at face value one must regard classical logic, and any other logic upon which arguments molded on any of the schemata (A)–(C) are valid, as incorrect.
+
+“Red” (or “looks red”) is meant to be an example of a more general phenomenon: the “observationality” of certain predicates. Dummett suggests that an observational predicate is one “whose application is determined by mere observation” (1975, p. 261), and “can be decided merely by the application of our sense‐organs” (p. 265). Dummett takes it to be a consequence of the observationality of a predicate like “red” that it is “governed by the principle that, if I cannot discern any difference between the colour of a and the colour of b, and I have characterized a as red, then I am bound to accept a characterization of b as red” (p. 264). The justification is that a predicate could not be applied simply on the basis of how things look, and so could not be observational, if an indistinguishable difference could determine the predicate’s differential applicability.
+
+To use this thought to ensure paradoxical truth‐values for the elements of sorites arguments, we could define the observationality of $\mathrm{\varphi}$ as follows:
+
+if $\mathrm{\alpha}$ satisfies $\mathrm{\varphi}$ and, under normal circumstances for observation for $\mathrm{\varphi}$, $\mathrm{\beta}$ is indistinguishable from $\mathrm{\alpha}$, then $\mathrm{\beta}$ satisfies $\mathrm{\varphi}$.
+
+If adjacent members of a sorites series count as indistinguishable, this ensures that observational predicates are paradoxical. But it is questionable whether there are any non‐trivial observational predicates, thus defined. Consider “looks red” as a strong candidate. Suppose that $\mathrm{\alpha}$ and $\mathrm{\beta}$ are indistinguishable under, say, standard lighting conditions, and so on. Then one might argue: their indistinguishability entails that they look the same; so if $\mathrm{\alpha}$ looks red, so does $\mathrm{\beta}$; so the condition for “looks red” being observational is met. So there is at least one observational predicate.
+
+The notion of indistinguishability is crucial to this argument, but it has not been adequately explained. To show the complexity, consider a case in which regions on the wall are exposed to a subject in a random order (the “random sorites”), and he is asked to say of each region whether it looks red. We then score the result by writing a “Y” beneath a region if the subject said “Yes” with respect to that region, an “N” if he said “No,” and a “0” otherwise. What would the score of a perfectly rational subject look like, assuming conditions of observation to be normal for “looks red,” and assuming that his eyesight and mastery of the predicate are both perfect? There will certainly be a “Y” beneath at least one of the left‐hand regions, and an “N” beneath at least one of the right‐hand regions; there will be no “0” to the left of a Y, and no “N” to the left of a “0.” But there will certainly be a Y‐region, call it $\mathrm{\alpha}$, which has a “0” or “N” adjacent to it and to its right, that is, at $\alpha'$.
+
+Given the assumptions about the rationality of the subject and the perfect conditions for observation, one might conclude that he has not made a mistake about how things looked to him, even though distinct rational subjects, and the same subject on different occasions, will draw the line in different places. This means that there is no mistake in supposing that $\alpha$ satisfies “looks red” and $\alpha'$ does not. We could infer that adjacent regions of the wall are not, after all, indistinguishable, for a rational subject, without error, made a distinction between them. In that case, we will be hard put to find sorites series with indistinguishable members, and so will be hard put to use the notion of observationality to justify the premises of arguments of types (A) and (B).
+
+Alternatively, we might insist that the adjacent regions of the wall are indistinguishable (for example, because they look the same when co‐presented), but then we must say that “looks red” does not satisfy the envisaged condition for being an observational predicate.
+
+Either way, observationality has no impact on the sorites paradoxes.8 This is what one would have predicted on the supposition that all sorites paradoxes should be accounted for in the same way, for there are many sorites-paradoxical predicates which have little claim to observationality, such as “child,” “dog,” “know,” and “few.” Even for those for which observationality is at issue, like “red” or even “heap,” we can generate a sorites series in which the adjacent members are discriminable. Intuitively, a patch which differs only just discriminably from a red patch should count as red; and, as we saw, the paradox of the heap is quite impervious to the assumption that the various collections differ in size, in a potentially knowable way.
+
+# 2.2.2 The Nature of Vagueness
+
+The semantic conception of vagueness holds that it is of the nature of a vague predicate to draw no sharp boundary between the things to which it applies and those to which it does not. Arguably, this could be expressed precisely as the QP of schema (A), as the conditionals of schema (B), and as a denial of the QC of schema (C). So we have an argument for the paradoxical distributions based on a claim about the nature of vagueness.
+
+Resisting this argument requires, from the perspective of the semantic conception, adjustments to classical logic or classical semantics or both. Perhaps one can persuade oneself that an adequate account of the nature of vagueness should not entail QP. We don’t believe a tadpole can turn into a frog in a millisecond, but perhaps we can refrain from holding that it is in general true that anything which is a tadpole at a time is also a tadpole a millisecond later: we see too clearly where that belief would lead. So perhaps there is no immediate argument from the nature of vagueness to the truth‐value distributions required to make arguments of type (A) paradoxical.9 But there is a less immediate argument. Suppose we are happy to resist QP, that is, to hold that it is not true. Then the natural thing to say is that it is false; but this commits us to the truth of its negation, which is classically equivalent to QC: $\exists x\,(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')$. So we sever a direct connection between the nature of vagueness and the paradoxical truth‐value distributions, only to force into view a less direct connection. Perhaps we could hold that QP is not true, yet not that it is false; perhaps this would be enough to avoid the unwelcome QC and also avoid the paradox‐inducing QP. However, we would need an account of an appropriate non‐classical semantics, and a justification for the specific treatment of QP.10 The general moral, then, is that a semantic view of vagueness requires non‐classical semantics and/or non‐classical logic.
+
+# 2.3 Alternative Logics and Semantics
+
+On the semantic view, it would be desirable to be able to say that QP is not true without being forced to say that QC is true; and desirable to be able to say that at least one conditional from schema (B) fails, without having to say that one of them is false. (The envisaged conditionals are material, so a false one has a true antecedent and a false consequent.)
+
+To do this, one would have to abandon bivalence. There are two ways to proceed. We can use a bivalent metalanguage to describe a non‐bivalent object language. Well‐known examples are given in §2.3.1 and §2.3.2. Or we can use a non‐bivalent metalanguage to describe our non‐bivalent object language. An example is sketched in §2.3.3. On the first alternative, we can keep to classical conceptions of sets and models: vagueness is then tamed, described in essentially non‐vague terms. On the second alternative, vagueness is never eliminated, never sharply described.
+
+# 2.3.1 Supervaluations
+
+If an expression is vague, we believe it could, in theory, be replaced by a more precise one. Thus we could replace the vague “child” by the more precise “minor” (meaning person who has not yet reached the day of his or her eighteenth birthday). Not every replacement would be acceptable: if “minor*” is defined as a person who has not yet reached the day of his or her fifth birthday, the word is nowhere near “child,” since it would be clear that some children are not minors*. Equally, the expression “minor′,” defined as a person who had not yet reached his or her thirtieth birthday, would be unacceptable, since it would be clear that some minors′ are not children.
+
+An important line of thought about vagueness is that this notion of an acceptable way of making an expression more precise can be used to specify the meaning of a vague expression: its meaning will be given in terms of all the ways in which it could acceptably be made precise, where an acceptable way is one not precluded by the meaning it has. An acceptable way does not make the extension of the term too narrow, like that of “minor*,” or too wide, like that of “minor′.” A sentence containing a vague expression is to count as true, if it is true however that expression is made precise, and to count as false if it is false however that expression is made precise. This makes room for cases in which the sentence is true on some ways of making it precise, false on others; and, hence, in which it is neither true nor false.
+
+In a classical model, a (unary) predicate is associated with a set of entities from the domain. Using the idea of the previous paragraph, we could associate a vague unary predicate with a range of sets, the sets corresponding to the acceptable ways in which it could be made precise.
+
+This approach has been developed with formal elegance in a kind of model theory called supervaluation theory.11 In addition to starting from an appealing conception of vagueness, it offers two further charms: it promises a precise description of a vague language; and it promises to preserve classical logic.
+
+Let us think of a model, M, for a language, L, as an ordered pair $\langle D,F\rangle$ of a domain, D, and a family F of valuation functions, each mapping each unary predicate of L on to a subset of D and each name of L on to a member of D. (For simplicity, we will assume that all the non‐logical symbols of L are either unary predicates or names.) Suppose that for some predicate, $\mathrm{\varphi}$, of L, every member f of F meets these conditions:
+
+if x is in D and is definitely a satisfier of $\mathrm{\varphi}$ then x is in f($\mathrm{\varphi}$).
+
+if x is in D and is definitely not a satisfier of $\mathrm{\varphi}$ then x is not in f($\mathrm{\varphi}$).
+
+Then we shall say that M is appropriate for $\mathrm{\varphi}$. A model is appropriate for a language iff it is appropriate for all its expressions.12 An appropriate model is maximal iff any addition to its family of valuations would render it inappropriate. Maximal models are supposed to represent the semantics of languages with vague predicates.
+
+Within any model, truth‐relative‐to‐a‐member‐$f$‐of‐$F$ (abbreviation: truth$_f$) is defined in the usual classical way:
+
+$\ulcorner\mathrm{\varphi}\mathrm{\alpha}\urcorner$ is true$_f$ iff $f(\mathrm{\alpha})$ is in $f(\mathrm{\varphi})$;
+
+$\ulcorner A\mathbin{\&}B\urcorner$ is true$_f$ iff $f$ $\ulcorner A\urcorner$ is true$_f$ and $\ulcorner B\urcorner$ is true$_f$;
+
+… and so on.
+
+$\ulcorner A\urcorner$ is false$_f$ iff $\ulcorner A\urcorner$ is not true$_f$.
+
+Truth and falsity (relative to a model) are defined by generalizing over valuation‐relativized truth: $\ulcorner A\urcorner$ is true in $M$ iff $\ulcorner A\urcorner$ is true$_f$ for every $f$ in $F$; $\ulcorner A\urcorner$ is false in $M$ iff $\ulcorner A\urcorner$ is false$_f$ for every $f$ in $F$. Truth and falsity are thus “supervaluations” relative to the basic bivalent valuations in $F$. This allows for borderline cases to induce a failure of bivalence in maximal models. Suppose that a member $\mathrm{\alpha}$ of $D$ is not definitely a satisfier of $\mathrm{\varphi}$ and also not definitely not a satisfier of $\mathrm{\varphi}$. And suppose that $\mathrm{M}=\langle D,F\rangle$ is maximal. This means that there is a member of $F$, say $f_1$, such that $f_1(\mathrm{\varphi})$ contains $\mathrm{\alpha}$, and a member of $F$, say $f_2$, such that $f_2(\mathrm{\varphi})$ does not contain $\mathrm{\alpha}$. So “$\mathrm{\varphi}\mathrm{\alpha}$” is true$_{f1}$ and false$_{f2}$. So “$\mathrm{\varphi}\mathrm{\alpha}$” is neither true nor false in this model.
+
+Although supervaluation theory treats the object language as non‐bivalent, the Law of Excluded Middle is preserved, that is, the schema $\ulcorner A\vee\neg A\urcorner$ is valid. Consider the instance of it with $\mathrm{\varphi}$ and $\mathrm{\alpha}$ as in the previous paragraph. It will be true$_f$ for every $f$, since for every valuation either $f(\mathrm{\alpha})$ is in $f(\mathrm{\varphi})$ or it is not, and in the first case the disjunction will be true$_f$ in virtue of the truth$_f$ of its first disjunct, and in the second case in virtue of the truth$_f$ of its second. In supervaluation theory, a disjunction can be true without either disjunct being true.
+
+Validity can be defined as usual: an argument is valid iff every model in which all the premises are true is one in which the conclusion is true. The class of valid arguments thus defined is identical with the class of classically valid arguments.13 Hence arguments following schemas (A), (B), and (C) are all supervaluationally valid; but sorites instances of schemas (A) and (B) are unsound. We will first show how this is so, and then consider what the supervaluational theory has to say about instances of (C).
+
+By the definition of appropriateness, the valuations in an appropriate maximal model will place intuitively definite cases in the extension of any vague predicate, and exclude intuitively definite non‐cases from its extension. For “heap,” each $f$ will associate the predicate with a set of collections (of grains of sand, say), where one collection is the smallest, and the set also contains all larger ones.14 In other words, every $f$ will associate the predicate with a sharp threshold, though, because of the predicate’s vagueness, the different valuations will associate it with different thresholds. For any $f$ in $F$, one conditional is false$_f$: the conditional which, for the line drawn by $f$, has an antecedent referring to an object on one side of the line and a consequent referring to an object on the other. Hence at least one conditional (typically, several conditionals) in the premises of schema (B) will fail to be true.
+
+Similar facts ensure that QP in schema (A) is not merely not true, but false. The singular instances of QP are the conditionals which are the premises of (B). Since every f in F falsifies one of these conditionals, every f falsifies QP.
+
+Many objections have been leveled at supervaluational theories. We list two.
+
+### The Truth of QC
+
+The supervaluational theory has it that instances of (C) are sound, and thus have a true conclusion, QC: $\exists x\,(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')$. If we find this hard to swallow, we are asked to remember that, in the presence of vagueness, quantifiers do not work in the normal classical way. In particular, using “satisfies” on the lines of “true,” there is no sound inference from the truth of QC in the model to the conclusion that there is something in the domain of the model which satisfies “$\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x'$.” The supervaluation theorist could claim that only the existence of such an object would amount to the existence of a sharp cut‐off; so the truth of QC does not entail a sharp cut‐off; so one is confused if one thinks that one wants to deny QC.
+
+By itself, this is unlikely to be very persuasive. It seems plain that one can use our ordinary language to express absence of a cut‐off, without having to ascend into the metalanguage, as this response supposes.
+
+However, it is plausible that an object‐language account of what it is for a predicate to be vague involves, at least in the first instance, the use of some expression representing definiteness, or, equivalently, vagueness. One wants to say, for example, that “red” is vague because there are things which are neither definitely red nor definitely not red; or that it is vague because there are things concerning which there is no fact of the matter whether they are red or not. More formally, we might say that any vague language could be expected to be capable of expressing its vagueness, perhaps by a sentence operator, “Def,” expressing definiteness.15
+
+The supervaluation theorist would do well to claim that something like this operator must be used in saying what we want to say about vague predicates and cut‐offs: what we really want to say is that there is no definite cut‐off point. This is properly expressed not by denying QC, but rather by denying “$\exists x\,\mathrm{Def}(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')$.” This means extending supervaluation theory to deal with “Def.”
+
+From a supervaluationist’s point of view, “Def” should resemble an object‐language expression of the notion of truth (by supervaluational lights).16 Thus “Def A” should be true‐on‐a‐valuation iff A is true (that is, true‐on‐every‐valuation). This makes “Def” in some ways like “□ ” (“□A” is true‐at‐a‐world iff “A” is true‐at‐every‐world). In particular, taking the analogy in the most straightforward way, “Def” would eliminate vagueness: applied to any sentence, the result is one which is true on all or on no valuations.
+
+However, there are two important points of disanalogy between “Def” and “□.” First, if the supervaluationist retains the definition of validity as, in effect, necessary preservation of truth, he must agree that once “Def” is added to the object language, certain classical forms of reasoning (conditional proof, reductio ad absurdum, and or‐elimination) cannot be allowed to be valid.17 Second, if there is higher‐order vagueness, then vagueness should not be eliminated by “Def.”
+
+### Problems with Higher‐Order Vagueness
+
+A supervaluational model is intended to divide the sentences of the language into three sets: the truths, the falsehoods, and the remainder. There will be adjacent members, $\alpha$ and $\alpha'$, of a sorites series such that $\alpha$ is the last truth in the series and $\alpha'$ the first non‐truth. But many find this unacceptable: they claim that there is no more a sharp boundary between the truths and the borderline cases than there is between the truths and the falsehoods.
+
+The notion of a supervaluation is itself vague: it is defined in terms of an acceptable model, which is in turn defined in terms of what definitely falls under a predicate and what definitely does not. These notions admit of borderline cases: the reasons for saying that, for example, there is no fact of the matter whether certain color patches are red support with no less strength the conclusion that there is no fact of the matter whether certain patches are definitely red. Equally, the reasons for thinking that there is no last region of the wall which counts as red support with no less strength the conclusion that there is no last region on the wall which is definitely red. If the conclusion is correct, there will be a valuation such that there is no fact of the matter whether or not it is appropriate.
+
+One ensuing problem is that in an object language in which there is higher‐order vagueness, “Def A” is neither true nor false for some A; so the truth‐conditions for “Def” cannot be given in the simple way envisaged earlier (“Def A” is true‐on‐a‐valuation iff A is true). One response draws inspiration from possible‐worlds semantics for modality: one would need to introduce an analogue of the accessibility relation, holding between valuations, and this would need to be reflexive (to validate “Def A → A”) but not transitive (in order not to validate “Def A → DefDef A”).
+
+A deeper problem is that the supervaluationist’s notion of truth as truth‐on‐all‐appropriate‐valuations must itself be vague. This means that a potential charm of supervaluation theory is lost: it cannot, after all, give a precise description of a vague language. It also raises the question whether the supervaluational concept of truth is correct. Many believe that truth must satisfy Tarski’s disquotation schema:
+
+(T)
+True (A) iff A.
+
+But then, by reasoning which the supervaluationist endorses, it follows that if A is not true it is false.18 The supervaluationist category of neither‐true‐nor‐false sentences would vanish, and with it the basic idea of supervaluation theory.19 So the supervaluationist must deny that his concept of truth is disquotational, and this raises the question whether it is, properly speaking, a concept of truth at all.
+
+# 2.3.2 Degrees of Truth
+
+Not all borderline cases for a vague predicate are equal (or so it may reasonably seem). Two patches $\mathrm{\alpha}$ and $\mathrm{\beta}$ might both be borderline cases of red, yet one redder than the other: one has a greater degree of redness. So one might be tempted by the following progression: it is closer to the truth to say that $\mathrm{\alpha}$ is red than to say that $\mathrm{\beta}$ is red; so truer to say that $\mathrm{\alpha}$ is red than to say that $\mathrm{\beta}$ is red; so “$\mathrm{\alpha}$ is red” has a greater degree of truth than “$\mathrm{\beta}$ is red.”
+
+It is certainly an important feature of many vague predicates, and perhaps of all those which are sorites‐susceptible, that the relevant cases are subject to an underlying comparative relation. However, this cannot be taken as any kind of knockdown argument for the existence of degrees of truth, for we have yet to distinguish between the relatively innocuous suggestion that some sentences are nearer to stating the (absolute) truth than others, and the controversial suggestion that some sentences are truer than others. We might make some progress towards the more exotic suggestion by reflecting on the following lines: truth is what one should aim at in belief, but for borderline cases the best you can aim at is degrees of belief; so we must be able to make sense of a notion of degrees of truth.
+
+Whatever the philosophical motivation, semantics based upon degrees of truth have been claimed to dispel sorites paradoxes.20 In the models $\mathrm{\mu}=\langle\mathrm{\delta},\mathrm{\Phi}\rangle$ which we now consider, $\mathrm{\delta}$ is a domain of individuals, and $\mathrm{\Phi}$ assigns to every name in the language a member of $\mathrm{\delta}$, and to each predicate, $\mathrm{\varphi}$, a J‐set, $\mathrm{\Phi}(\mathrm{\varphi})$. A J‐set is a mapping of members of $\mathrm{\delta}$ into the real numbers in the closed interval [0,1]. Intuitively, the idea is that the number which is the value of the mapping for the member of $\mathrm{\delta}$ which is the argument – the “J‐value of $\mathrm{\Phi}(\mathrm{\varphi})$ for $\mathrm{\delta}$” – represents the degree of truth, relative to assignment $\mathrm{\Phi}$, associated with affirming $\mathrm{\varphi}$ of that member. The value 1 represents an object to which the predicate definitely applies, the value 0 represents an object to which the predicate definitely does not apply, and the intermediate values represent intermediate cases. Writing $[P]_{\mathrm{\Phi}}=n$ to express the fact that the sentence P is assigned the degree of truth n by function $\mathrm{\Phi}$, atomic sentences are assigned degrees of truth by rules like: $[\mathrm{\varphi}\mathrm{\alpha}]_{\mathrm{\Phi}}$ is the J‐value of $\mathrm{\Phi}(\mathrm{\varphi})$ for argument $\mathrm{\Phi}(\mathrm{\alpha})$. Appropriate models assign J‐sets which reflect actual usage, that is, lead to assignments of degrees of truth to atomic sentences which both preserve our intuitive orderings (such as our ordering of how red the patches on the wall are) and conform to our intuitions about definite truths (assigned 1) and definite falsehoods (assigned 0).
+
+The theories we discuss treat the logical constants as degree‐functional: that is, the degree of truth of a complex is a function of the degrees of truth of the constituents. There are various possible functions. One standard approach is to stipulate as follows:
+
+$[\neg\mathrm{P}]=1-[\mathrm{P}]$
+
+$[\mathrm{P}\mathbin{\&}\mathrm{Q}]=\min\{[\mathrm{P}],[\mathrm{Q}]\}$
+
+$[\mathrm{P}\vee\mathrm{Q}]=\min\{[\mathrm{P}],[\mathrm{Q}]\}$
+
+$[\mathrm{P}\to\mathrm{Q}]=1,\text{ if }[\mathrm{Q}]\geq[\mathrm{P}],=1-([\mathrm{P}]-[\mathrm{Q}])\text{otherwise.}$
+
+$[\forall v\,\mathrm{A}v]=\operatorname{glb}\{[\mathrm{A}^{a}/v]:\text{for all a}\}$
+
+$[\exists v\,\mathrm{A}v]=\operatorname{lub}\{[\mathrm{A}^{a}/v]:\text{for all a}\}$21
+
+The functions give the classical results if the arguments are restricted to 1 and 0. The specific idea behind the equation for ¬ is that there is no difference between departing from definite truth (that is, value 1) and approaching definite falsehood, and that predicates have paradigm borderline cases (such as $\mathrm{\alpha}$ for $\mathrm{\varphi}$) for which we want $[\mathrm{\varphi}\mathrm{\alpha}]=[\neg\mathrm{\varphi}\mathrm{\alpha}]$. The specific idea behind the equation for → is that a conditional should fall short of perfect truth to the extent that truth leaks away as between antecedent and consequent.
+
+One standard account of validity within degree theory is based on a generalization of the notion of truth‐preservation: a valid argument is one such that every model assigns a degree of truth to the conclusion no lower than that assigned to the lowest‐valued premise. However, Edgington (1992) has argued that it would be better to give a different account, based on the idea that validity does not permit additional falsehood: a valid argument is one such that every model assigns a degree of falsehood to the conclusion which does not exceed the sum of the degrees of falsehood it assigns to the premises.
+
+One impact of this view upon the sorites is that arguments of type (A) and type (B) will be seen as having at least one premise which is not entirely true. Thus the truth‐values of the components of the conditionals of (B) progressively fall, and a conditional with a consequent less true than its antecedent will not be entirely true. For similar reasons, the QP of (A) is also not entirely true. Hence, on this approach, the impression that the sorites arguments are sound is, for these cases, supposedly dispelled by dispelling the appearance of (fully) true premises.
+
+On the more common definition of degree‐theoretic validity, generalizing from truth‐preservation, none of the argument patterns we have discussed is valid. For example, type (B) is not, because modus ponens is, by this standard, not valid in degree theory. For suppose that [P] = 0.9, and [Q] = 0.8. Then [P → Q] = 0.9. So an argument of the form:
+
+$P,\ P\to Q\mathbin{\therefore}Q$
+
+has a lowest‐valued premise of 0.9, and a conclusion valued 0.8.
+
+Whichever definition of degree‐theoretic validity one uses, arguments of type (C) are invalid, for the premises will have degree 1 and the conclusion a degree of around 0.5. So the apparent soundness of some versions of the sorites arguments is supposedly dispelled, through dispelling the appearance of validity.
+
+However, the degree‐theoretic account is open to various objections. We mention three.
+
+### It Does Not Do Justice to QC
+
+In connection with (C), natural assumptions about the existential quantifier in degree theory have the result that QC does not come out as false (=0) but only as midway true. A defense of degree theory would have to claim that what should really have degree 0 is not QC itself, but rather “$\exists x\,\mathrm{Def}(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')$.” The required extension of the theory to an object language containing “Def” is not straightforward. If the sentence just quoted is to receive degree 1, it would seem that $[\mathrm{DefA}]=0$ iff $[\mathrm{A}]<\mathrm{l}$. This means that “Def” would eliminate vagueness, and thus would not allow for higher‐order vagueness.
+
+### Its Logic is Unintuitive and Unmotivated
+
+People have found the assignments of degrees to complexes unintuitive and unmotivated. For example, “$P\vee\neg P$” will be as true as “$P\mathbin{\&}\neg P$” when $[P]=0.5$. Similar unintuitive results are obtained when the sentences stand in non‐formal logical relations. Thus suppose Eve is definitely female but a borderline case for being an adult, so that [Eve is an adult] and [Eve is a woman] are both 0.5. Degree theory cannot distinguish between “Eve is a woman if and only if Eve is an adult” and “Eve is a woman if and only if Eve is not an adult,” assigning both 1.22
+
+Even certain sentences which may be critically involved in some versions of sorites arguments are treated by this degree theory in an unintuitive way. Thus a classical equivalent of QP, “$(\forall x)\neg(\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x')$,” will be assigned a value of about 0.5, whereas intuitively it ought to come out as nearly true.
+
+### It Does Not Do Justice to Higher‐Order Vagueness
+
+The degree‐theoretic property of having degree of truth 1 is supposed to correspond to some intuitive property (or else the formal semantics cannot connect with the informal judgments of truth and validity which underlie sorites paradoxes). Perhaps it is that of being true, or of being definitely true, or of being completely, definitely, and unimpugnably true. Whatever property we choose, we have something unsatisfactory: since having degree 1 is a sharp property, the corresponding truth‐related intuitive property must be sharp too. In any sorites series there is a last sentence having truth to degree 1; hence there is also a last sentence with the relevant truth‐related intuitive property. But it is natural to suppose that there is no such sharp cut‐off: whatever property we consider, true to a certain degree, absolutely true, definitely true, or completely, definitely, and unimpugnably true, there are no adjacent members of the sorites series one of which lacks, while the other possesses, this property.23
+
+# 2.3.3 A Non‐Bivalent Metalanguage
+
+It is hard to see how there could be a more accurate account of what you should aim to do, in using a vague word like “red,” than that, if you want to keep to the truth, you should apply it just to red things. This suggests that we should look for a semantic theory which unashamedly uses vague vocabulary in the metalanguage. In particular, we wish to mention a theory recently proposed by Michael Tye (1994).24
+
+His proposal is based on three semantic values: true, false, and indefinite. The connectives are assigned values as follows: a negation is true iff its component is false, false iff its component is true, otherwise indefinite; a conjunction is true iff both components are, false iff one component is, otherwise indefinite. Universal quantifications are true iff all their instances are, false iff an instance is, otherwise indefinite. So the premises of sorites arguments of schemata (A) and (B) are indefinite, and not true. These argument‐patterns are not sound.
+
+Merely having three values is of no help in itself, once higher‐order vagueness is admitted, as we saw in the case of supervaluation theory. For example, suppose that in a sorites series of sentences there is a last which is assigned truth. It makes no difference whether the next sentence is assigned falsehood or some other value: either way, we have a boundary where, according to many intuitions, no boundary should be. Tye deals with this by saying that there is no fact of the matter whether all sentences have one of the three truth‐values. Hence the claim that, for example, there is a last true sentence in a sorites series is vague, and not true. Once again, we would not have the making of soundness in sorites arguments. If this strategy works at all, it should work as well with just two truth‐values, distributed in a similarly vague way.
+
+To obtain truth‐conditions for atomic sentences, Tye associates a predicate with a vague set, a set concerning which there are things for which it is vague whether they are members of it. Thus the approach involves recognizing vague extra‐linguistic entities, which is controversial.
+
+A problematic feature of his account is that indefiniteness in a component of a complex sentence can render the whole sentence indefinite regardless of its form. Thus “if P then P” is indefinite if P is, yet many find it compelling to regard it as true however things are with P. To take an example closer to the sorites, consider the reverse of QP:
+
+RQP
+$\forall x\,(\mathrm{\varphi}x'\to\mathrm{\varphi}x)$
+
+Applied to the wall, this says that if a region further to the right (towards the yellow end) is red, so is the adjacent region to the left; so it is intuitively true. But on Tye’s semantics, it is not true, since the truth of a quantification requires the truth of its instances, and some of these conditionals will have indefinite components, and thus be themselves indefinite. Intuitively, however, RQP is true, and corresponds to what some would see as a constitutive principle: anything redder than a red thing is red.
+
+It is not clear which features of Tye’s account are essential. As we have mentioned, the third value could not be essential to dealing with the sorites (even if it is required for the best description of the use of language). It may be that the apparently implausible features can be removed, or shown not to be implausible after all. However, if higher‐order vagueness is a genuine semantic phenomenon, there cannot be a precise semantic theory for a vague language. It is plausible to infer, as Tye in effect does, that in this case we must abandon a conception of semantics as making, for every sentence of a language, some definite pronouncement (such as that it is true, false, or indefinite): there will have to be sentences for which there is no definite fact of the matter concerning what the semantic theory says about them, and this must be distinguished from the semantic theory saying that there is no definite fact of the matter concerning their semantic value. Thus Tye’s approach requires semantic theories to be, in a sense, incomplete.
+
+# 2.4 The Epistemic View25
+
+All these problems would be solved on the epistemic view, according to which there really are sharp cut‐offs, though we cannot identify them. We cannot identify them because we do not have the required fineness of discrimination: we must allow for a margin of error in our cognitive mechanisms. If we know of a region of the wall that it is red, we could not know of its neighbor to the right that it is not red (even if in fact it is not red); for we could not reliably distinguish shades which differ so little.
+
+Arguments of type (C) are seen as sound demonstrations of the epistemic view. Arguments of types (A) and (B) are valid on the view, and establish the falsehood of a premise by reductio ad absurdum. There is no problem about denying QP and accepting QC, and no problem about regarding one of the conditionals in type (B) arguments (though one does not know which) as having a true antecedent and false consequent. One can retain all the simplicity of classical logic and semantics.
+
+The epistemic view thus has plenty to be said for it, yet it often evokes incredulity. Those who see any merit in the rule‐following considerations advanced by Wittgenstein, and his denigration of the notion of imperceptible rails upon which the correct usage of language is supposed to run, are likely to be particularly hostile to the epistemic position. However, it is easier to identify generalized hostility than precisely formulated opposing arguments. In this section, we try to give voice to two connected objections.
+
+### There is No Evidence that Vague Concepts Induce Sharp Cut‐Offs
+
+The point of this objection is to claim that the main reasons in favor of the epistemic view are quite general, like arguments of type (C), whereas what would be needed would be a detailed examination of how specific vague concepts actually work. The suggestion is that nothing in the details of how they work would ground the view that they are associated with sharp cut‐offs.
+
+However, at least for some vague concepts, close examination reveals some surprisingly rich cut‐off‐determining principles. Consider that paradigm of vagueness, “heap.”26 A heap of $\mathrm{\varphi}$s must be heaped up, and this involves at least one $\mathrm{\varphi}$ stably above another, but not in virtue of glue‐like attachment. Thus grains of sand spread out in such a way that no grain is on top of another cannot be a heap, however many grains there are. Moreover, gluing grains together in such a way that some grains are on top of others is not a way of making a heap. It seems to be of the essence of heaps that they are held together by gravity alone. The arrangement must also not be that of a stack: a dry stone wall is not a heap of stones. If we think of roundish things like grains of sand, it would appear that the smallest stable arrangement meeting these conditions requires four of them: three grains close together supporting a fourth on top. Here we arguably have a sharp cut‐off. (The governing principles may well not determine the same cut‐off for every shape of object.) An argument of this kind is at best suggestive, and it is always open to the conventional theorist to say that we were wrong in counting as vague some predicates for which such cut‐off‐determining principles can be discovered. The conventional theorist may be on safest ground with color predicates.
+
+### The Epistemic View Does Not Do Justice to the Fact that Meaning Supervenes on Use
+
+“Meaning is use”: that is, semantic facts concerning a language supervene on facts about the linguistic behavior of masters of that language. Can the epistemic view do justice to this?
+
+By “meaning supervenes on use” one might mean just that if two communities used a language in just the same way, then every sentence of the language would have the same meaning in both communities. By this standard, the epistemic theory of vagueness can certainly claim that meaning supervenes on use.
+
+A much more stringent demand is that a theorist should provide explicit details of how meaning supervenes on use. Since no theorist of any kind (whether or not vagueness is at issue) has given any such detailed account, the fact that the epistemic theorist has not should not count against the theory.
+
+However, the supervenience doctrine can be used to generate demands of a strength intermediate between the extremely weak and extremely strong demands of the previous two paragraphs. For there may be a priori principles relating to conditions under which supervenience is possible.
+
+One proposed principle of this kind is verificationism. On the verificationist view, meaning can supervene on use only through knowledge: a sentence cannot have a meaning such that it would be impossible for those who understand it to determine whether it is true or false. Since the epistemic view holds that it is impossible for us to know where the cut‐offs come, the view is inconsistent with the verificationist constraint upon the supervenience relation. However, since verificationism, at least in the strong form envisaged, now has few supporters, it does not pose a serious threat to the epistemic view.
+
+One does not have to be a verificationist to feel qualms about whether the epistemic view can do justice to the supervenience of meaning on use. For example, one might hold that if a predicate stands for a manifest property (one which under some conditions detectably obtains), then under optimal conditions for manifestation, if there is a fact of the matter whether or not it obtains, that fact is detectable. This is not full‐blown verificationism, for it is consistent with there being properties which are not manifest, and consistent with it being impossible for us to detect even manifest properties, to the extent that it is impossible for us to bring about optimal conditions. Yet, it might be claimed, we can view a region of the colored wall under optimal conditions without being able to detect the presence or absence of redness; and the view then delivers that there is no fact concerning whether the region is or is not red.
+
+Clearly the epistemic theorist will take issue with this line of thought, challenging, among other things, what is taken for granted in the notion of optimal condition for manifestation (cf. Williamson, 1994, pp. 180–184). Until these issues are clarified and resolved, some caution about the epistemic view is called for. However, we are not aware of any decisive refutation of it, and it would provide a breathtakingly simple solution to sorites paradoxes.
+
+# Acknowledgements
+
+We thank the editors, Bob Hale and Crispin Wright, for helpful comments on an earlier draft.
+
+# Notes
+
+[1] The account of the sorites in antiquity draws heavily on Barnes (1982) and Burnyeat (1982). The most important ancient texts are translated in Long and Sedley (1987, vol. 1, pp. 221–225). For more on the history of the sorites see Williamson (1994).
+
+[2] The Stoics were not sure that any wise men had lived; they may also have held that only a wise man would know anything at all. Nevertheless, knowledge was what the Stoics aimed at. The argument in the text could still be made with “justified true belief’ in place of “knowledge.”
+
+[3] See below, §2.2.
+
+[4] Leibniz (1961, III v 9 and III vi 27); see Wiggins (1980, p. 124).
+
+[5] It is now customary to distinguish between the Law of Excluded Middle, which requires the validity of the schema “Either A or not A,” and the principle of bivalence, of which one formulation is that every sentence is true or false. (In §2.3.1 below we describe a theory which preserves the Law while rejecting the Principle.) Russell is best understood as rejecting the latter.
+
+[6] For this formulation, see Rolf (1984, p. 220).
+
+[7] Cf. Dummett (1975, pp. 251–252). Kamp (1981, pp. 226–27) provides an independent reason for the same conclusion.
+
+[8] The reason offered here for this conclusion can be found in Wright (1987, p. 283, especially n. 13) and Williamson (1990, pp. 88–103).
+
+[9] In particular, it is reasonable to suggest that our intuitions about vagueness are properly expressed only using some expression for definiteness. Cf. Wright (1987; 1992).
+
+[10] We would, in particular, need an account which allowed that something not true can yield a falsehood, without itself being false.
+
+[11] This form of theory was systematically applied to vagueness by Dummett (1975), Fine (1975), Kamp (1975), and Lewis (1970). Fine traces the origins of the idea, as applied to vagueness, to Mehlberg (1958). The use of the expression “supervaluation” goes back to van Fraassen (1966), though he was concerned not with vagueness but with the semantic paradoxes. A glimmering of the idea is found in Russell’s suggestion that vagueness is a matter of a one–many relation between words and world (1923, p. 89). Supervaluation theory can be cast in a bivalent metalanguage, and this may have been part of the theory’s appeal. However, it can also be cast in a non‐bivalent language, as we in effect point out elsewhere (p. 748 and n. 17).
+
+[12] Complex predicates must be included, since an appropriate valuation must respect what Fine (1975) has called “penumbral connections” between predicates. Thus a valuation which ensures that “Eve is a female child” is true must also ensure that “Eve is a girl” is true, to respect the intuition that, definitely, nothing satisfies “x is a female child and not a girl.” Vague names, if there are such things, could be treated just like vague predicates: different valuation functions within a model’s family may assign them to different things. But for the moment it will be best to imagine that all assignment functions, or at least all appropriate ones, agree on what they assign to names.
+
+[13] If the envisaged definition of validity is retained, this depends upon the assumption that “Def” is not in the object language; see p. 748 and n. 17; and see Williamson (1994).
+
+[14] This makes the assumption that arrangement is held constant. It follows that if an n-membered collection is a heap, so is any collection with more than n members.
+
+[15] Thus Wright (1987; 1992) suggests that the notion of there being no sharp boundary can be non‐paradoxically expressed using such an operator, whereas removing it leads to immediate paradox.
+
+[16] This means that it can do something like the work done by the metalinguistic denial that there is something in the domain of the model which satisfies “$\mathrm{\varphi}x\mathbin{\&}\neg\mathrm{\varphi}x'$.”
+
+[17] Cf. Williamson (1994, pp. 147–153). For example, although one can validly infer “Def A” from “A,” if validity is defined in terms of truth‐preservation, this does not guarantee the validity of “If A then Def A”: if for some model M, some valuation, f, “A” is true$_f$, and for some valuation, g, “A” is false$_g$, then the conditional is false$_f$ and so not true in M, so not valid. The supervaluationist might, therefore, prefer to exploit, in his account of validity, a different similarity with the classical definition. His idea is that questions of truth arise only relative to ways of making precise, and he extends this from atomic sentences to complex ones in terms of making the whole complex sentence precise. In this spirit, he might treat validity similarly, defining it in terms of making precise the whole argument. Then, the right thing to say would be that a valid argument is one for which every valuation verifying the premises verifies the conclusion. (As sentence connectives are, in supervaluation theory, valuation‐functional but not truth‐functional, so with arguments.) It would seem that this would restore the classical character of supervaluational validity. (We are grateful to Dominic Hyde for discussion of this point.)
+
+[18] $\begin{aligned}\text{(1)}\quad&\text{not True (A)}&&\text{assumed}\\\text{(2)}\quad&\text{True (A) iff A}&&\text{(T)}\\\text{(3)}\quad&\text{not A}&&\text{from (1) and (2) by classical prop. logic}\\\text{(4)}\quad&\text{True (not A) iff not A}&&\text{(T)}\\\text{(5)}\quad&\text{True (not A)}&&\text{from (3) and (4) by classical prop. logic}\\\text{(6)}\quad&\text{False (A)}&&\text{from (5), given that a negation is true iff}\\&&&\text{what it negates is false}\end{aligned}$
+
+This argument will not be persuasive for those theorists who adopt some non‐classical logics, e.g., those involving distinct notions of negation.
+
+[19] For discussions of the relation between supervaluation theory and higher-order vagueness, see Fine (1975, especially §5), and Williamson (1994, pp. 156–164). On higher-order vagueness more generally, see Heck (1993) and Wright (1992).
+
+[20] A classic formulation is Goguen’s (1969).
+
+[21] “glb” and “lub” abbreviate “greatest lower bound” and “least upper bound” respectively. These are the infinitary analogues of min and max. “[$\mathrm{A}^{a}/v$]” abbreviates “the result of replacing every occurrence of “$v$” in “$\mathrm{A}v$” by some name not in “$\mathrm{A}v$.” Cf. Forbes (1985, p. 174).
+
+[22] Supervaluation theory, by contrast, treats the first as neither true nor false and the second as false. This is the problem Fine (1975) calls that of “penumbral connection,” and he regards the way in which supervaluation theory handles it as an important merit of the theory.
+
+[23] Degrees of truth can be defined within the supervaluational approach: roughly, [$\mathrm{\sigma}$] is the probability of $\mathrm{\sigma}$ being true on a randomly chosen sharpening. Cf. Lewis (1970), Kamp (1975), Edgington (1992), and Williamson (1994, pp. 154–156). However, the two accounts differ on the proper treatment of the logical constants, and they have very different philosophical motivations.
+
+[24] See also Horgan (1993), who offers a different non‐bivalent account in an article which came to our attention too late to be discussed here. We saw above that supervaluation theory could be modifed so as to allow that its concept of a sharpening is vague (and we mentioned that certain objections would still remain); so it could have featured in both the bivalent and non‐bivalent categories of our taxonomy.
+
+[25] Early postwar versions of the theory can be found in Cargile (1969) and Campbell (1974). For more recent versions, see Williamson (1992), Sorensen (1988, pp. 217–252), Sperber and Wilson (1986), and Williamson (1994, pp. 185–247).
+
+[26] Cf. Hart (1991/1992), though he does not embrace the epistemic view.
+
+# References
+
+Barnes, J. 1982. “Medicine, experience and logic.” In Barnes et al., 1982, pp. 24–68.
+
+Barnes, J., J. Brunschwig, M. F. Burnyeat, and M. Schofield, eds. 1982. Science and Speculation. Cambridge: Cambridge University Press.
+
+Burnyeat, M. F. 1982. “Gods and heaps.” In Schofield and Nussbaum, 1982, pp. 315–338.
+
+Campbell, R. 1974. “The sorites paradox.” Philosophical Studies, 26(3–4): 175–191.
+
+Cargile, J. 1969. “The sorites paradox.” British Journal for the Philosophy of Science, 20(3): 193–202.
+
+Dummett, M. 1975. “Wang’s paradox.” Reprinted in Truth and Other Enigmas, pp. 248–268. London: Duckworth, 1978.
+
+Edgington, D. 1992. “Validity, uncertainty and vagueness.” Analysis, 52(4): 193–204.
+
+Fine, K. 1975. “Vagueness, truth and logic.” Synthese, 30(3–4): 265–300.
+
+Forbes, G. 1985. The Metaphysics of Modality. Oxford: Oxford University Press.
+
+Goguen, J. A. 1969. “The logic of inexact concepts.” Synthese, 19(3–4): 325–373.
+
+Hart, W. D. 1991/1992. “Hat‐tricks and heaps.” Philosophical Studies, 33: 1–24.
+
+Heck, R. G. 1993. “A note on the logic of (higher‐order) vagueness.” Analysis, 53(4): 201–208.
+
+Horgan, T. 1993. “Robust vagueness and the forced‐march sorites paradox.” In Philosophical Perspectives, 8: 159–188.
+
+Kamp, J. A. W. 1975. “Two theories about adjectives.” In Formal Semantics of Natural Language, edited by E. Keenan, pp. 123–155. Cambridge: Cambridge University Press.
+
+Kamp, J. A. W. 1981. “The paradox of the heap.” In Aspects of Philosophical Logic, edited by U. Monnich, pp. 225–277. Dordrecht, Netherlands: Reidel.
+
+Lewis, D. 1970. “General semantics.” Synthese, 22(1): 18–67. Reprinted in his Philosophical Papers, vol. 1. Oxford: Oxford University Press, 1983.
+
+Leibniz, G. W. 1961 (1765). Nouveaux Essais sur l’entendement humain. Paris: Presses Universitaires de France.
+
+Long, A. A., and D. N. Sedley. 1987. The Hellenistic Philosophers, 2 vols. Cambridge: Cambridge University Press.
+
+Mehlberg, H. 1958. The Reach of Science. Toronto: Toronto University Press.
+
+Putnam, H. 1983. “Vagueness and alternative logic.” Erkenntnis, 19(1–3): 297–314.
+
+Putnam, H. 1985. “A quick Read is a wrong Wright.” Analysis, 45(4): 203.
+
+Read, S., and C. Wright. 1985. “Hairier than Putnam thought.” Analysis, 45(1): 56–58.
+
+Rolf, B. 1984. “Sorites.” Synthese, 58(2): 219–250.
+
+Russell, B. 1923. “Vagueness.” Australasian Journal of Philosophy and Psychology, 1: 84–92. Reprinted in his Collected Papers, vol. 9, edited by J. Slater, pp. 145–154. London: Unwin Hyman, 1988.
+
+Schofield, M., and M. C. Nussbaum, eds. 1982. Language and Logos. Cambridge: Cambridge University Press.
+
+Sorensen, R. A. 1988. Blindspots. Oxford: Clarendon Press.
+
+Sperber, D., and D. Wilson. 1986. Relevance. Oxford: Blackwell.
+
+Tye, M. 1994. “Sorites paradoxes and the semantics of vagueness.” Philosophical Perspectives, 8: 189–206.
+
+van Fraassen, B. 1966. “Singular terms, truth value gaps, and free logic.” Journal of Philosophy, 63(17): 481–495.
+
+Wiggins, D. R. P. 1980. Sameness and Substance. Oxford: Blackwell.
+
+Williamson, T. 1990. Identity and Discrimination. Oxford: Blackwell.
+
+Williamson, T. 1992. “Vagueness and ignorance.” Proceedings of the Aristotelian Society, suppl. vol. 66: 145–162.
+
+Williamson, T. 1994: Vagueness. London: Routledge.
+
+Wright, C. 1987. “Further reflections on the sorites paradox.” Philosophical Topics, 15(1): 227–290.
+
+Wright, C. 1992. “Is higher order vagueness coherent?” Analysis, 52(3): 129–139.
+
+# Further Reading
+
+Burnyeat, M. F. ed. 1983. The Skeptical Tradition. Berkeley: University of California Press.
+
+Frede, M. 1983. “Stoics and skeptics on clear and distinct impressions.” In Burnyeat, 1983, pp. 65–93.
+
+Sainsbury, R. M. 1990. Concepts without boundaries. Inaugural lecture published by King’s College, London.
+
+Wittgenstein, L. 1953. Philosophical Investigations. Oxford: Blackwell.
+
+# Postscript
+
+AIDAN MCGLYNN
+
+Vagueness and the sorites paradox have continued to be areas of intense focus in the past 20 years. This short appendix cannot possibly do justice to the rich and sophisticated treatments developed in this period, and so instead I offer an overview of some central trends, positions, and points that have emerged.1
+
+# 1 Supervaluationism, Degree Theory, and Epistemicism Revisited
+
+Each of the three principal solutions discussed by Sainsbury and Williamson has continued to be refined and defended. For reasons of space and continuity, I’ll focus on the objections raised in Sainsbury and Williamson’s discussion.
+
+First, recall Sainsbury and Williamson’s objection that adopting supervaluationism forces us to give up certain classically valid rules of inference once we introduce a ‘definitely’ operator, D, into the object language. Rosanna Keefe has responded that from a supervaluationist perspective, such deviations from classical logic are to be welcomed. D “brings to the object‐language the non‐classicality of the semantics, since it can be used to capture the fact that some sentence takes the non‐classical indeterminate truth‐value status” (2000, pp. 178–179), permitting us to express the vagueness of a sentence within the object language. So “the logic of the D operator is appropriately non‐classical” (2000, p. 181). Robbie Williams (2008) has questioned whether supervaluationists are committed to logical revisions, arguing that given a plausible assumption about how supervaluationists should understand logical consequence, all of the disputed classical rules are valid even with D in the object language. Moreover, Williams contends that even versions of supervaluationism that are logically revisionary aren’t ‘damagingly’ so, since these logical revisions do not require any revisions to our inferential practices.2
+
+Recent work by degree theorists tries to resist the claim that the logics they propose are, as Sainsbury and Williamson allege, ‘unintuitive and unmotivated.’ For example, if a proposition P receives the value 0.5, then both “$P\wedge\mathord{\sim}P$” and “$P\vee\mathord{\sim}P$” will also be true to degree 0.5, and this has struck many as clearly wrong.3 John MacFarlane observes that such objections often treat degrees of truth as the chance that a proposition is true, and so interpreted it does seem clear that an outright contradiction should receive the value 0. But as MacFarlane notes, “if we are certain that [a contradiction] has degree 0.5, then we will take it to have no chance of being completely true” (2010, p. 459). The value 0.5 doesn’t reflect maximum uncertainty regarding whether a proposition is true, but rather a certain kind of ambivalence; it means that one regards it as just as true as false (2010, p. 447).4 Nicholas Smith (2008, p. 86) also finds the supposedly absurd consequences of degree theories quite intuitive, and he suggests that ordinary speakers frequently agree.5
+
+Roy Sorensen has offered a very different version of epistemicism to that defended by Williamson, complaining that the latter makes the unknowability of where the boundary in a sorites series lies too contingent on human epistemic limitations; the kind of ignorance to be explained is ‘absolute’ (2001, pp. 13–15, 177). Sorensen’s treatment of the sorites paradox is inspired and motivated by his treatment of the ‘no‐no’ paradox. Suppose that you have a sheet of card, and on each side the following statement is printed: ‘The statement on the other side of this card is false.’ What truth‐values should these statements be assigned? We get liar‐paradoxical inconsistencies if we try to assign both statements the value true or both false, but the two asymmetrical assignments are consistent. How could one of these statements be true and the other false, though, given their symmetrical situations?
+
+Sorensen’s answer is that the no‐no is a counter‐example to the thesis that every truth has a truthmaker; one of the statements is true and the other false, but nothing makes it the case that things are this way around. This explains our absolute ignorance about which statement is the true one; such truths are ‘epistemic islands,’ since there is no access to them via their truthmakers (2001, p. 175). Sorensen extends this account to explain both how one of the conditionals linking adjacent items in a sorites series could be false while its neighbors are true, and our ignorance of which conditional is the false one.
+
+However, Sorensen’s treatment of the no‐no paradox has been subject to some serious objections (e.g., López de Sa and Zardini, 2007; 2011; Greenough, 2011). Moreover, Sorensen’s whole account has been subjected to forensic scrutiny by Dorothy Edgington (2005; 2010), and she makes a strong case against it.
+
+# 2 Quandaries and Intuitionism
+
+A much more radical break with Williamson’s epistemicism is Crispin Wright’s intuitionism (e.g., 2001; 2003a; 2003b). Wright accepts Williamson’s contention that vagueness is at root an epistemic phenomenon, but rather than using this idea to defend classical logic and semantics, Wright takes it as a basis for an argument for intuitionist revisions. Wright treats the paradox as a reductio ad absurdum of its major premise, (QP), and so he concludes
+
+$\mathord{\sim}\forall \mathrm{x}(F\mathrm{x}\to F\mathrm{x}')$,
+
+while refusing to make the (classically valid) step to the ‘Unpalatable Existential’:
+
+$\exists \mathrm{x}(F\mathrm{x}\wedge\mathord{\sim}F\mathrm{x}')$.
+
+The question is how to motivate such intuitionist restrictions to classical logic.
+
+Borderline cases, according to Wright, present us with quandaries, where a proposition P presents a quandary to a thinker T just in case: T has considered whether P; T does not know whether or not P; T does not know any way of coming to know whether or not P; T does not know whether there is any way of coming to know whether P; and T does not know whether it is even metaphysically possible to know whether P. Wright’s primary argument for logical revision also requires the thesis that knowledge is closed under known logical entailment (or some refinement of it) and the thesis that propositions making vague predications are known to be subject to a principle of Epistemic Constraint:
+
+(EC)
+$P\to{}$ it is feasible to know $P$
+
+Let Bob again be a borderline case of baldness, and let us suppose that the relevant instance of the Law of Excluded Middle,
+
+Bob is bald $\vee$ Bob is not bald
+
+is known. It follows that the following is also known:
+
+It is feasible to know that Bob is bald $\vee$ it is feasible to know that Bob is not bald
+
+But to recognize that borderline cases are quandaries is to recognize that this disjunction is not known. Hence, if we know that (EC) holds, we can reject the initial supposition that we know that the Law of Excluded Middle holds in this instance, and this puts pressure on the claim that the Law of Excluded Middle is a logical law (Wright, 2001, p. 66).6
+
+I’ll briefly mention two objections to Wright’s solution. Luca Incurvati and Julien Murzi (2008) contend that a parallel argument can be run against the logical status of the law of non‐contradiction, and so Wright’s revisionary argument is much more revisionary that he intends, while Sven Rosenkranz (2005) has made a plausible case that Wright’s quandaries conception of borderline cases is in fact incoherent (see also Rosenkranz, 2003, and Wright, 2003b).
+
+# 3 Dialetheism as a Unified Solution
+
+Graham Priest has revived Bertrand Russell’s suggestion that the paradoxes of self‐reference – the Liar paradox, Russell’s paradox, the Burali‐Forti paradox, and so on – share a common underlying structure, and so should receive a unified solution (e.g., Priest, 2002). Priest classifies these paradoxes as inclosure paradoxes, since they fit the inclosure schema. We have an inclosure paradox just when there are monadic predicates $\mathrm{\varphi}$ and $\Omega$ and a one‐place function $\delta$ such that we can construct apparently sound arguments for the following claims:
+
+1.
+There is a set $\Omega$ such that $\Omega=\{x:\varphi(x)\}$ (Existence)
+2.
+If $X\subseteq\Omega$,
+a. $\delta(X)\notin X$ (Transcendence)
+b. $\delta(X)\in\Omega$ (Closure)7
+
+Consider the Burali‐Forti paradox, which shows that there cannot be a set of all ordinal numbers on pain of contradiction. Here’s how to represent the paradoxical reasoning as an inclosure paradox (Priest, 2010, p. 70). $\varphi(x)$ is ‘x is an ordinal,’ and so $\Omega$ is the set of ordinals, which we’ll take to be defined as von Neumann ordinals (so that each ordinal is taken to be the well‐ordered set of all smaller ordinals). Let $\delta(X)$ be the least ordinal greater than every member of X. $\delta(X)$ satisfies Transcendence and Closure by definition. In the special case where $X=\Omega$, we get the contradiction $\delta(\Omega)\in\Omega$ and $\delta(\Omega)\notin\Omega$: intuitively, the least ordinal greater than every member of the set of ordinals both is and is not a member of the set of ordinals.
+
+To be faced with an inclosure paradox, it’s not required that the arguments for Existence, Transcendence, and Closure ultimately prove sound or even valid. However, dialetheists like Priest argue that the best response to the paradoxes of self‐reference involves taking the apparent soundness at face value, and accepting the resulting contradictions. Triviality is avoided by adopting a paraconsistent logic: one lacking the principle of explosion (ex falso quodlibet).
+
+Priest (2010) has recently argued that the sorites paradox is also an inclosure paradox, and so since the paradoxes of self‐references are to be given a dialetheic solution, so should the sorites.8 Let F be our vague predicate, and we’ll assume it obeys (QP):
+
+(QP)
+$\forall x\,(Fx\supset Fx')$
+
+Let $\varphi(x)=Fx$, so that $\Omega=\{x:Fx\}$. This gives us existence. $\Omega$ is a proper subset of the series, since the last item in the series is not F. If $X\subseteq\Omega$, then X must also be a proper subset of the series. So there must be a first item in the series not in X. Let this be $\delta(X)$. By definition $\delta(X)\notin X$, giving us Transcendence. But also by definition, $\delta(X)$ is the successor of an item in $X\subseteq\Omega$. So by (QP), $F\delta(X)$, in which case $\delta(X)\in\Omega$. And so we have Closure too. When we let $X=\Omega$, the resulting contradiction is that $\delta(\Omega)\in\Omega$ and $\delta(\Omega)\notin\Omega$, or as Priest puts it (2010, p. 71), the first item in the series that is not F is F. Intuitively, the clash here is between (QP) and the thought that, since the set of Fs is a proper subset of the entire series, then given the ordering of the series there must be a first item in the series not in that set.
+
+Note that while Priest thinks that this soritical inclosure reasoning is sound (and so requires dialetheism), he doesn’t think that “sorites arguments themselves” are sound (2010, pp. 72, 79–80); that’s to say, he doesn’t accept the argument from the premise that the first item in a sorites series is F and (QP) to the conclusion that every item in the series is F. Different dialetheists have addressed this point in different ways; according to Priest, sorites arguments are blocked by the fact that in a paraconsistent setting, modus ponens isn’t valid for any conditional that renders (QP) defensible.
+
+Many philosophers find dialetheism deeply unattractive, and importantly, there are specific concerns that can be raised to its application to the sorites. The most pressing begins with consideration of Curry’s paradox; one can derive an arbitrary proposition P as a theorem, starting with a self‐referential conditional that says
+
+If this statement is true then P,
+
+and appealing only to the standard introduction and elimination rules for the conditional and Tarksi’s disquotational schema (or something like it).9 Unless blocked, Curry’s paradox renders our logic trivial, and crucially it does so without requiring us to pass through a contradiction, and so without an appeal to the principle of explosion. J. C. Beall (2014a; 2014b) has argued at length that Curry’s paradox has at least as much of a claim to count as an inclosure paradox as the sorites, but it can’t receive a dialetheic solution, putting pressure on the argument for a dialetheic treatment of the sorites.10
+
+# 4 Contextualism and Interest‐Relativity
+
+According to contextualism about vagueness, vague expressions are characteristically context sensitive in ways that go beyond what we standardly recognize (such as the fact that whether someone counts as ‘tall’ in a conversational context depends on the relevant comparison class), and these hidden dimensions of context sensitivity explain the allure of (QP), even though it is not true. Though the details vary, the general idea is roughly that when any two sufficiently similar items in a given sorites series are considered, the interpretation of the vague predicate shifts (if it needs to) so that the first falls under it only if the second does too. So whenever we consider whether a pair of adjacent items in a sorites series is a counter‐example to the major premise of the relevant paradox, that very act ensures that it is not (e.g., Raffman, 1994). Crucially, though, there is no single context in which every instance of the major premise is true. Contextualism might offer a way to defend classical logic and semantics; however, it is not wedded to a classical picture (e.g., Soames, 1999, ch. 7; 2002).11
+
+Jason Stanley takes contextualism to be committed to the claim that vague expressions are indexicals (2003, p. 271), and he contends that this renders the contextualist’s explanation of why (QP) is attractive insufficiently general. First, he argues that indexicals do not shift their interpretation under verb phrase ellipsis. Consider an example:
+
+(1)
+John likes me, and Bill does too.
+
+As Stanley notes, “[t]here is no available interpretation of (1) in which John and Bill are said to like different people” (2003, p. 271). Stanley then constructs a sorites series that exploits verb phrase ellipsis. He imagines a series of arrangements of sand that starts with a clear heap, and where each successive arrangement contains one less grain. Pointing at each arrangement of sand in turn:
+
+If that$_1$ is a heap, then that$_2$ is too, and if that$_2$ is, then that$_3$ is, and if that$_3$ is, then that$_4$ is, … and then that$_n$ is. (2003, p. 272)
+
+The explanation of why we find each of these conjuncts compelling cannot be that shifts in the interpretation of ‘heap’ ensure that each conjunct is true as we consider it, Stanley concludes, since there are no such shifts.
+
+Jonathan Ellis (2004) has disputed Stanley’s claim about indexicals, while Diana Raffman (2005) contends that contextualists should deny that vague expressions are indexicals. Delia Graff Fara (2000) offers an account that’s closely related to contextualism, and which allows her to offer a similar treatment of the sorites paradox while evading Stanley’s objection. According to Fara, vague expressions are no more context sensitive than ordinary thought, but “the semantics of vague expressions renders the truth‐conditions of utterances containing them sensitive to our interests” (2000, p. 49). Here the role our interests play is not in fixing the interpretation of an expression like ‘heap’ in a context; rather, they play a role in determining whether the (relatively) context‐invariant standards for being a heap are met.12
+
+However, Stanley’s objection is a version of a more general worry, namely that (QP) remains compelling even when we hold fixed all of the features relative to which any boundaries in the associated sorites series supposedly shift. If that’s right, then the general explanation of why we are taken in by (QP) cannot be that hidden shifts ensure that we never confront a counter‐example to it.13
+
+# Notes
+
+[1] To keep things manageable, I bracket issues concerning higher‐order vagueness, though I offer references in the notes and in the suggested further reading.
+
+[2] See McGee and McLaughlin (1994) and Asher, Dever, and Pappas (2009) for other developments of broadly supervaluationist approaches that claim to preserve classical logic, and see Keefe (2000, ch. 8) and Asher, Dever and Pappas (2009) for supervaluationist treatments of higher‐order vagueness.
+
+[3] I leave aside versions of degree theory on which the connectives are not truth‐functional and so which lack this result (e.g., Edgington, 1997); see Smith (2008, pp. 263–264) for discussion.
+
+[4] Unlike other defenders of a degree‐theoretic approach to vagueness, MacFarlane doesn’t think that this approach solves the sorites paradox.
+
+[5] A recent empirical study by David Ripley (2011) partially bears Smith’s claim out. For degree‐theoretic treatments of higher‐order vagueness see, e.g., Smith (2008, pp. 304–315) and MacFarlane (2010).
+
+[6] This sketch of Wright’s arguments ignores some subtleties addressed in his 2001. Wright also explores some arguments that don’t appeal to (EC). See Wright (2003a, pp. 102–104; 2003b, pp. 472–473).
+
+[7] Actually, this is Russell’s schema (Priest, 2002, p. 129), which Priest’s inclosure schema generalizes. The difference won’t matter here.
+
+[8] See also Weber (2010), and see Weber et al. (2014, p. 813, fn. 1) for some background to Priest’s discussion.
+
+[9] Curry (1942); see Cook (2013, pp. 71–77) for a more accessible presentation.
+
+[10] See Weber et al. (2014) for critical discussion of Beall. An alternative unified solution to the paradoxes (potentially including Curry’s paradox) involves placing restrictions on the structural rules built into classical logic (as opposed to the operational rules that govern the various logical constants). For such approaches to the sorites paradox, see, e.g., Ripley (2013) and Zardini (2008).
+
+[11] See also Shapiro (2006) (though his treatment of the sorites paradox is rather different to that sketched in the text), and see Keefe (2003) and Greenough (2005) for criticism.
+
+[12] For critical discussion of Fara see Stanley (2003, pp. 277–279); but see Fara (2008) for a reply. See also Heck (2003, pp. 119–120).
+
+[13] This general worry is critically discussed in Åkerman and Greenough (2010a). Keefe (2007) offers a battery of further arguments against contextualism: see Åkerman and Greenough (2010b) for discussion.
+
+# References
+
+Åkerman, J., and P. Greenough. 2010a. “Hold the context fixed – vagueness still remains.” In Dietz and Moruzzi, 2010, pp. 275–288.
+
+Åkerman, J., and P. Greenough. 2010b. “Vagueness and non‐indexical contextualism.” In New Waves in Philosophy, edited by S. Sawyer, pp. 8–23. Basingstoke: Palgrave Macmillan.
+
+Asher, N., J. Dever, and C. Pappas. 2009. “Supervaluations debugged.” Mind, 118(472): 901–933.
+
+Beall, J. C., ed. 2003. Liars and Heaps. Oxford: Oxford University Press.
+
+Beall, J. C. 2014a. “Finding tolerance without gluts.” Mind, 123(491): 791–811.
+
+Beall, J. C. 2014b. “End of inclosure.” Mind, 123(491): 829–849.
+
+Cook, R. 2013. Paradoxes. Cambridge and Malden: Polity Press.
+
+Curry, H. 1942. “The inconsistency of certain formal logics.” Journal of Symbolic Logic, 7(3): 115–117.
+
+Dietz, R., and S. Moruzzi, eds. 2010. Cuts and Clouds: Vagueness, its Nature, and its Logic. Oxford: Oxford University Press
+
+Edgington, D. 1997. “Vagueness by degrees.” In Vagueness: A Reader, edited by R. Keefe and P. Smith, pp. 295–316. Cambridge, MA: MIT Press.
+
+Edgington, D. 2005. “The mystery of the missing boundary: Vagueness and Contradiction by Roy Sorensen.” Philosophy and Phenomenological Research, 71(3): 704–711.
+
+Edgington, D. 2010. “Sorensen on vagueness and contradiction.” In Dietz and Moruzzi, 2010, pp. 91–106.
+
+Ellis, J. 2004. “Context, indexicals and the sorites.” Analysis, 64(4): 362–364.
+
+Fara, D. G. 2000. “Shifting sands: an interest‐relative theory of vagueness.” Philosophical Topics, 28(1): 45–81. Originally published under the name Delia Graff.
+
+Fara, D. G. 2008. “Profiling interest relativity.” Analysis, 68(4): 326–335.
+
+Greenough, P. 2005. “Contextualism about vagueness and higher‐order vagueness.” Proceedings of the Aristotelian Society, suppl. vol. 79: 167–190.
+
+Greenough, P. 2011. “Truthmaker gaps and the no‐no paradox.” Philosophy and Phenomenological Research, 82(3): 547–563.
+
+Heck, R. 2003. “Semantic accounts of vagueness.” In Beall, 2003, pp. 106–127.
+
+Incurvati, L., and J. Murzi. 2008. “How basic is the basic revisionary argument?” Analysis, 68(4): 303–309.
+
+Keefe, R. 2000. Theories of Vagueness. Cambridge: Cambridge University Press.
+
+Keefe, R. 2003. “Context, vagueness, and the sorites: comments on Shapiro.” In Beall, 2003, pp. 73–83.
+
+Keefe, R. 2007. “Vagueness without context change.” Mind, 116(462): 275–292.
+
+Keefe, R., and P. Smith, eds. 1997. Vagueness: A Reader. Cambridge, MA: MIT Press.
+
+López de Sa, D., and E. Zardini. 2007. “Truthmakers, knowledge, and paradox.” Analysis, 67(3): 242–250.
+
+López de Sa, D., and E. Zardini. 2011. “No‐no. Paradox and consistency.” Analysis, 71(3): 472–478.
+
+MacFarlane, J. 2010. “Fuzzy epistemicism.” In Dietz and Moruzzi, 2010, pp. 438–464.
+
+McGee, V., and B. McLaughlin. 1994. “Distinctions without a difference.” Southern Journal of Philosophy, 33(suppl.): 203–251.
+
+Priest, G. 2002. Beyond the Limits of Thought, 2nd edn. Cambridge: Cambridge University Press.
+
+Priest, G. 2010. “Inclosures, vagueness, and self‐reference.” Notre Dame Journal of Formal Logic, 51(1): 69–84.
+
+Raffman, D. 1994. “Vagueness without paradox.” Philosophical Review, 103(1): 41–74.
+
+Raffman, D. 2005. “How to understand contextualism about vagueness: reply to Stanley.” Analysis, 65(3): 244–248.
+
+Raffman, D. 2014. Unruly Words: A Study of Vague Language. Oxford: Oxford University Press.
+
+Ripley, D. 2011. “Contradictions at the borders.” In Vagueness in Communication, edited by R. Nouwen, R. van Rooij, U. Sauerland, and H.‐C. Schmitz, pp. 169–188. Heidelberg: Springer.
+
+Ripley, D. 2013. “Revising up: strengthening classical logic in the face of paradox.” Philosophers’ Imprint, 13(5): 1–13.
+
+Rosenkranz, S. 2003. “Wright on vagueness and agnosticism.” Mind, 112(447): 449–463.
+
+Rosenkranz, S. 2005. “Knowledge in borderline cases.” Analysis, 65(285): 49–55.
+
+Shapiro, S. 2006. Vagueness in Context. Oxford: Oxford University Press.
+
+Smith, N. 2008. Vagueness and Degrees of Truth. Oxford: Oxford University Press.
+
+Soames, S. 1999. Understanding Truth. Oxford: Oxford University Press.
+
+Soames, S. 2002. “Replies.” Philosophy and Phenomenological Research, 65(2): 429–452.
+
+Sorensen, R. 2001. Vagueness and Contradiction. Oxford: Oxford University Press.
+
+Stanley, J. 2003. “Context, interest relativity and the sorites.” Analysis, 63(280): 269–280.
+
+Weber, Z. 2010. “A paraconsistent model of vagueness.” Mind 119(476): 1025–1045.
+
+Weber, Z., D. Ripley, G. Priest et al. 2014. “Tolerating gluts.” Mind, 123(491): 813–828.
+
+Williams, R. 2008. “Supervaluationism and logical revisionism.” Journal of Philosophy, 105(4): 192–212.
+
+Wright, C. 2001. “On being in a quandary: relativism, vagueness, logical revisionism.” Mind, 110(437): 45–98.
+
+Wright, C. 2003a. “Vagueness: a fifth column approach.” In Beall, 2003, pp. 84–105.
+
+Wright, C. 2003b. “Rosenkranz on quandary, vagueness, and intuitionism.” Mind, 112(447): 465–474.
+
+Zardini, E. 2008. “A model of tolerance.” Studia Logica, 90(3): 337–368.
+
+# Further Reading
+
+Cook (2013) is an accessible introduction to paradoxes in general, and it includes a chapter on the sorites as well as coverage of many other topics discussed here. Keefe and Smith (1997) is an anthology of now classic papers on vagueness, while Beall (2003) and Dietz and Moruzzi (2010) are collections of recent work on the topic that both include important discussions of all of the issues covered here, as well as several key papers on higher‐order vagueness. Important recent monographs on the sorites include Keefe (2000), Sorensen (2001), Shapiro (2006), Smith (2008), and Raffman (2014).

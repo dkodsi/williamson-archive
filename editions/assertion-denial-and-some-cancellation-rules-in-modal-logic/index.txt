@@ -1,0 +1,283 @@
+# Assertion, Denial and Some Cancellation Rules in Modal Logic
+
+Timothy Williamson
+
+Journal of Philosophical Logic 17 (1988): 299–318.
+
+0. The technical parts of this paper concern the effect of some non-standard rules of proof on normal modal logics. There is also a philosophical motive for investigating this topic, which it is as well to explain first.
+
+Consider two philosophical claims:
+
+(A)
+Assertibility-conditions determine truth-conditions.
+(B)
+Assertibility-conditions are truth-conditions.
+
+(A) and (B) are deliberately schematic. In particular, the discussion will apply to a variety of epistemological concepts, each of which can be used as a reading for ‘assertibility’. The assertibility of a sentence might be a descriptive matter (Quine’s dispositions to assent), or it might have prescriptive overtones (Dewey and Dummett’s warranted assertions). It might require conclusive proof, or only defeasible evidence. (A) and (B) could also be rephrased in a less linguistic mode, as concerning the relation between the truth-conditions of thoughts and the conditions under which they can be verified, accepted or confirmed. They clearly have something to do with philosophical disputes about ‘verificationism’ and ‘anti-realism’. On the face of it, (A) seems to be the natural destination of certain arguments summarized in the slogan ‘Meaning cannot transcend use’ and (B) an absurdly strong form of verificationism; any difficulty in holding (A) without (B) would therefore constitute a prima facie objection to those arguments. A better understanding of the logical relations between (A) and (B) might throw some light on this confusing area.
+
+(B) obviously entails (A); identity is a special case of determination, provided that (as here) the latter is taken in a logical rather than a causal sense. (A) does not obviously entail (B); after all, someone who holds that falsity-conditions determine truth-conditions is not thereby committed to holding that falsity-conditions are truth-conditions. If (A) does not entail (B), there is a philosophical position to be considered on which (A) is asserted and (B) denied; it would offer a non-trivial explanation of how sentences get their truth-conditions, without doing so at the expense of an implausibly verificationist consequence.1 That might be a good way of reconciling realist and anti-realist insights. On the other hand, if (A) does in some non-obvious way entail (B), then anyone who wishes to deny the verificationism of the latter faces the task of saying what beyond assertibility-conditions determines truth-conditions, if they are determinate at all. There would be the prospect of non-trivial connections between semantics and metaphysics, for it looks as though semantic premises might entail (A), while (B) might entail metaphysical conclusions.
+
+Section 1 shows that on a variety of assumptions (A) does entail (B). The assumptions have some prima facie plausibility, but their detailed evaluation is not attempted here; it will be sensitive to the notion of assertibility at issue. Section 2 is technical; it investigates a rule of proof in modal logic corresponding to (A). Section 3 discusses the proposal that someone who wants to avoid (B) but thinks that epistemological facts do determine truth-conditions might replace (A) by:
+
+(A’)
+Assertibility-conditions and deniability-conditions together determine truth-conditions.
+
+Section 4 is technical; it investigates a rule of proof in modal logic corresponding to (A’). Section 5 concludes that (A’) is not in a much stronger position philosophically than (A).
+
+1. Consider a language $\mathrm{L}$ of whose (indicative) sentences (A) is true. $\mathrm{L}$ will be assumed to contain the usual truth-functional connectives, satisfying classical propositional logic; since some anti-realists reject classical logic, the scope of this assumption can itself be regarded as under test. It will also be assumed that a concept of assertibility is represented in $\mathrm{L}$ by an operator (not a predicate) $L$ with the sense ‘it is assertible that’. For present purposes, assertibility-conditions and truth-conditions can be thought of as classes of possible situations in which a sentence may be uttered; such situations will be called contexts.2 The use of an assertibility operator in the object language will be defended at the end of Section 1.
+
+The gist of (A) is that two sentences with the same assertibility-conditions have the same truth-conditions. A quick argument from (A) to (B) then goes as follows: it is assertible that $A$ if and only if it is assertible that it is assertible that $A$; therefore $A$ and $LA$ have the same assertibility-conditions; therefore, by (A), they have the same truth-conditions; since the truth-condition of $LA$ is the assertibility-condition of $A$, the assertibility-condition of $A$ is its truth-condition, which gives (B). More formally, (A) corresponds to the L-cancellation property, that for any sentences $A$ and $B$ of $\mathrm{L}$, if $LA\leftrightarrow LB$ is true in all contexts then so is $A\leftrightarrow B$. (B) corresponds to the L-collapse property, that for any sentence $A$ of $\mathrm{L}$, $A\leftrightarrow LA$ is true in all contexts. The assumption used above in moving from the former to the latter is a kind of S4 biconditional, that for any sentence $A$ of $\mathrm{L}$, $LA\leftrightarrow LLA$ is true in all contexts; it has considerable intuitive plausibility, and by itself does not require assertibility to be either necessary or sufficient for truth. The idea is that warrants for assertion must be recognizable to speakers, for otherwise such warrants could not play the role required of them in governing the speakers’ use of the language; but then speakers can reflect that a warrant to assert that it is assertible (in their context) that $A$ gives them a warrant to assert that $A$; conversely, they can reflect that a warrant to assert that $A$ gives them a warrant to assert that it is assertible (in their context) that $A$. Nevertheless, this equivalence can itself be regarded as under test. Note that the argument did not appeal to any laws of truth-functional logic for $\mathrm{L}$ at all.3
+
+Different assumptions about $L$ can be used to construct another argument from (A) to (B). It may seem reasonable to assume that the assertibility of a conjunction entails the assertibility of its conjuncts and that if a sentence is assertible, it is not also assertible (in the same context) that the sentence is not assertible, nor is the negation of the sentence assertible. Thus for any sentences $A$ and $B$ of $\mathrm{L}$, $L(A\mathbin{\&}B)\to(LA\mathbin{\&}LB)$, $LA\to\mathord{-} L\mathord{-} LA$ and $LA\to\mathord{-} L\mathord{-} A$ (that is, $LA\to MLA$ and $LA\to MA$) are true in all contexts. In contrast to the previous case, the S4 principle $LA\to LLA$ is not assumed. By the first assumption we have $L(A\mathbin{\&}\mathord{-} LA)\to(LA\mathbin{\&}L\mathord{-} LA)$ and $L(A\mathbin{\&}\mathord{-} A)\to(LA\mathbin{\&}L\mathord{-} A)$, whose consequents the second and third assumptions respectively make inconsistent. Thus $L(A\mathbin{\&}\mathord{-} LA)$ and $L(A\mathbin{\&}\mathord{-} A)$ are true in no contexts, and so $L(A\mathbin{\&}\mathord{-} LA)\leftrightarrow L(A\mathbin{\&}\mathord{-} A)$ in all. By $L$-cancellation, $(A\mathbin{\&}\mathord{-} LA)\leftrightarrow(A\mathbin{\&}\mathord{-} A)$ and so $A\to LA$ are true in all contexts. As a special case we have $\mathord{-} A\to L\mathord{-} A$; combining this with the third assumption gives $LA\to A$. Thus $A\leftrightarrow LA$ is true in all contexts.4 (A) again yields (B).
+
+Although the arguments above require $L$ and the truth-functional operators to be present in $\mathrm{L}$, this is less of a restriction than it might appear. All that is really required is that these operators can coherently be added to any language, for then — given the extra assumptions — it follows that if (A) is true of all languages, so is (B). Of course, it has not been ruled out that the sentences of a restricted language (one not containing $L$, for instance) should obey (A) but not (B), even if the extra assumptions hold in all languages: but the ambitions of the literature on realism and anti-realism call for readings of (A) and (B) on which they aspire to characterize all languages, rather than merely distinguishing some from others. For instance, the claim ‘Meaning cannot transcend use’ is not intended to state a contingent fact about English.
+
+This is not the place to decide whether one should use the conditional ‘If (A) then (B)’ for a Modus Ponens or for a Modus Tollens (the latter looks more promising); that may partly depend on which concept of assertibility is at issue. The present point is just that it is much harder than one might imagine to combine (A) with the negation of (B).
+
+2. The discussion above can be set in the context of normal modal logics.5 The syntax is standard: sentential variables $p$, $q$, $r$, …, the usual truth-functions, including the contradiction $\bot$ and the tautology $\top$, $L$, and $M$ abbreviating $\mathord{-} L\mathord{-}$. For present purposes, a normal modal logic can be defined simply as a set of formulae that contains all truth-functional tautologies and the formula $L(p\to q)\to(Lp\to Lq)$ and is closed under the rules of Modus Ponens, Necessitation and Uniform Substitution; thus the logic is identified with the set of its theorems.6 This formal language $\mathrm{L}'$ should not be confused with the language $\mathrm{L}$ of Section 1. $\mathrm{L}$ may contain all sorts of compositional devices not definable from the resources of $\mathrm{L}'$ ($L$ and the truth-functions). Rather $\mathrm{L}'$ can be thought of as a meta-language for $L$, with the atomic sentential variables of the former ranging over all sentences of the latter. On one such interpretation, a formula of $\mathrm{L}'$ will be valid if and only if the result of uniform substitution of sentences of $\mathrm{L}$ for its variables always yields a sentence of $\mathrm{L}$ true in all contexts (note that the truth-functional operators and $L$ are therefore thought of as in common between $\mathrm{L}$ and $\mathrm{L}'$). Thus the rule of Uniform Substitution takes valid formulae of $\mathrm{L}'$ to valid formulae of $\mathrm{L}'$. Upper-case italic letters are used as meta-linguistic variables ranging over sentences of $\mathrm{L}'$. The standard notation for rules of proof is used, on which Necessitation becomes: $A/LA$.
+
+That the valid sentences of $\mathrm{L}'$ are closed under Necessitation and that $L(p\to q)\to(Lp\to Lq)$ is a valid sentence, on this interpretation, are substantive assumptions. Their plausibility will, of course, depend on which concept of assertibility is at issue. There might indeed be a decisive objective to them if they amounted to the assumption that the set of sentences of $\mathrm{L}$ assertible in a given context is closed under logical consequence, for then membership of such a set would characteristically not be a decidable property and it may be essential to the philosophical motivation for (A) that assertibility in a given context is a decidable property (otherwise it might lack the right connection with the use of language). However, all that is really being assumed is that the set of valid sentences of $\mathrm{L}'$ is closed under logical consequence, and membership of this set may well be a decidable property even if membership in the set of assertible sentences of $\mathrm{L}$ is not. It will turn out that the most relevant modal logics for present purposes are indeed decidable; trivially, where (B) is true of the sentences of $\mathrm{L}$, so that $p\leftrightarrow Lp$ is valid in $\mathrm{L}'$ (modal collapse), validity in $\mathrm{L}'$ reduces to truth-functional validity and is therefore decidable.7 Thus the use of normal systems may not involve too damaging an idealization.
+
+Just as $p\leftrightarrow Lp$ is valid on the above interpretation if (B) is true of the sentences of $\mathrm{L}$, so the following rule of proof $L\leftrightarrow \mathrm{C}$ holds in $\mathrm{L}'$ if (A) is true of the sentences of $\mathrm{L}$: if $LA\leftrightarrow LB$ is valid, so is $A\leftrightarrow B$. For if $LA\leftrightarrow LB$ is valid, then $LA'\leftrightarrow LB'$ is true in all contexts for any sentences $A'$ and $B'$ of $\mathrm{L}$ resulting from $A$ and $B$ respectively by uniform substitution of sentences of $\mathrm{L}$ for their variables, so by (A) $A'\leftrightarrow B'$ is always true in all contexts, so $A\leftrightarrow B$ is valid (note that the converse argument from the validity-preservingness of $L\leftrightarrow \mathrm{C}$ to the satisfaction of (A) by sentences of $\mathrm{L}$ is not valid without extra assumptions, since a particular sentence $LA'\leftrightarrow LB'$ of $\mathrm{L}$ might be true in all contexts for reasons dependent on the content of $A'$ and $B'$, so that no sentence $LA\leftrightarrow LB$ of $\mathrm{L}'$ of which it was a substitution-instance would be valid). Obviously, $L\leftrightarrow \mathrm{C}$ no more says that any sentence $(LA\leftrightarrow LB)\to(A\leftrightarrow B)$ is valid than the rule of Necessitation says that any sentence $A\to LA$ is valid. Questions about the rule independent of the original interpretation, but with consequences for it, now suggest themselves. What is the effect of $L\leftrightarrow \mathrm{C}$ on normal modal logics?
+
+We may begin by noting that $L\leftrightarrow \mathrm{C}$ has a number of equivalent forms:
+
+$\begin{array}{llll}L\to\mathrm{C}:&LA\to LB/A\to B&L\leftrightarrow\mathrm{C}:&LA\leftrightarrow LB/A\leftrightarrow B\\M\to\mathrm{C}:&MA\to MB/A\to B&M\leftrightarrow\mathrm{C}:&MA\leftrightarrow MB/A\leftrightarrow B\end{array}$
+
+$L,M\to\mathrm{C}:\quad LA\to LB,\ MA\to MB/A\to B$8
+
+It is obvious that $L,M\to \mathrm{C}$ is derivable from $L\to \mathrm{C}$ and from $M\to \mathrm{C}$, that $L\leftrightarrow \mathrm{C}$ is derivable from $L\to \mathrm{C}$ and $M\leftrightarrow \mathrm{C}$ from $M\to \mathrm{C}$, that $L\leftrightarrow \mathrm{C}$ is interderivable with $M\leftrightarrow \mathrm{C}$ and that $L\to \mathrm{C}$ is interderivable with $M\to \mathrm{C}$. $L\to \mathrm{C}$ follows from $L\leftrightarrow \mathrm{C}$ because in any normal system $LA\leftrightarrow L(A\mathbin{\&}B)$ follows from $LA\to LB$. To complete the chain of equivalences it is sufficient to show that $L\to \mathrm{C}$ is derivable from $L,M\to \mathrm{C}$. So suppose that $LA\to LB\in \mathrm{S}$ (a normal modal system). Evidently $LA\to L(A\to B)\in \mathrm{S}$. Now $\mathord{-} M(A\to B)\to(LA\mathbin{\&}L\mathord{-} B)$ is in any normal system, so $\mathord{-} M(A\to B)\to(LB\mathbin{\&}L\mathord{-} B)\in \mathrm{S}$, so $\mathord{-} M(A\to B)\to\mathord{-} MA\in \mathrm{S}$, so $MA\to M(A\to B)\in \mathrm{S}$. Thus, given $L,M\to \mathrm{C}$, $A\to(A\to B)\in \mathrm{S}$, so $A\to B\in \mathrm{S}$. Thus all five of the above rules are equivalent. To revert to the interpretation above: $M\leftrightarrow \mathrm{C}$ says in effect that deniability-conditions determine truth-conditions; $L\to \mathrm{C}$ might be compared with the intuitionist semantics for the conditional, which allows one to assert a conditional when one has seen the assertibility of its antecedent to guarantee the assertibility of its consequent.9
+
+In Section 1, it was in effect observed (N. 4) that the addition of $L\leftrightarrow \mathrm{C}$ to any normal system containing $Lp\to p$ and $L(p\mathbin{\&}q)\to(Lp\mathbin{\&}Lq)$ causes modal collapse; since any normal system contains the latter formula, the addition of $L\leftrightarrow \mathrm{C}$ to any normal system that includes the system T (KT) causes modal collapse. Similarly, it was observed that the addition of $L\leftrightarrow \mathrm{C}$ to any normal system containing $Lp\leftrightarrow LLp$ has the same effect. Not all normal systems collapse under $L\leftrightarrow \mathrm{C}$, however. For instance K, the smallest normal system, is closed under $L\leftrightarrow \mathrm{C}$. For suppose that $A\leftrightarrow B\notin \mathrm{K}$. Since K is complete with respect to the class of all models, there is a world $x$ in some model at which $A\leftrightarrow B$ does not hold. The model can be extended by the addition of a world $y$, accessible from no world and from which only $x$ is accessible, so that $LA$ and $LB$ hold at $y$ if and only if $A$ and $B$ respectively hold at $x$. Thus $LA\leftrightarrow LB$ does not hold at $y$, and so is not in K. Contraposing, if $LA\leftrightarrow LB\in \mathrm{K}$ then $A\leftrightarrow B\in \mathrm{K}$.10 This argument also shows the closure under $L\leftrightarrow \mathrm{C}$ of the system D, which results from the addition of $M\top$ to K, for D is complete with respect to the class of serial models (those in which from every world at least one world is accessible) and the extended model will be in this class if the original one is. A quirkier system closed under $L\leftrightarrow \mathrm{C}$ results from the addition of $p\leftrightarrow LLp$ to K: for if $LA\leftrightarrow LB$ is a theorem, so is $L(LA\leftrightarrow LB)$, therefore $LLA\leftrightarrow LLB$ and therefore $A\leftrightarrow B$. None of these systems contains $p\leftrightarrow Lp$ (in the last case, consider models with two worlds, each accessible from the other but not from itself).
+
+Two somewhat better-known rules of proof can be derived from $L\leftrightarrow \mathrm{C}$: they are $MA/A$ and $LA/A$. For in any normal system $\mathrm{S}$, if $MA\in \mathrm{S}$ then $L\mathord{-} A\to L\bot\in \mathrm{S}$, so if $\mathrm{S}$ is closed under $L\leftrightarrow \mathrm{C}$ and therefore under $L\to \mathrm{C}$ then $\mathord{-} A\to\bot\in \mathrm{S}$, and therefore $A\in \mathrm{S}$. Similarly, if $LA\in \mathrm{S}$ then $L\top\to LA$, giving $\top\to A\in \mathrm{S}$ and therefore $A\in \mathrm{S}$ by $L\to \mathrm{C}$. Both of these rules are weaker than $L\to \mathrm{C}$. This is obvious for $LA/A$, under which all systems that include T are closed, whereas $L\leftrightarrow \mathrm{C}$ has been seen to cause modal collapse in them. The rule of proof $MA/A$ must of course be distinguished from the schema $MA\to A$; the former says that if $MA$ is a thesis then so is $A$, not that $MA$ entails $A$. The addition of $MA/A$ also causes any normal system that includes T to collapse, since it contains the thesis $M(p\to Lp)$, but the consistent system which results from the addition of $L\bot$ to K is vacuously closed under this rule, not having any theorem of the form $MA$, whereas the addition of $L\leftrightarrow \mathrm{C}$ would make it inconsistent, since $L\top\leftrightarrow L\bot$ is a theorem.11
+
+Finally, a general connection can be made between $L\leftrightarrow \mathrm{C}$ and the standard semantics, where a model $(\mathrm{W},\mathrm{R},\mathrm{V})$ consists of a set of worlds $\mathrm{W}$, an accessibility relation $\mathrm{R}$ and a valuation $\mathrm{V}$, a formula $A$ holds at a world iff $\mathrm{V}(A,x)=\mathrm{T}$ and a characteristic model for a system is one such that the formulae holding at all worlds in the model are precisely the theorems of the system:
+
+FACT. A normal modal logic $\mathrm{S}$ is closed under $L\leftrightarrow \mathrm{C}$ iff it has a characteristic model $(\mathrm{W},\mathrm{R},\mathrm{V})$ in which $\forall x\,\in \mathrm{W}\;\exists y\,\in \mathrm{W}\;\forall z\,\in \mathrm{W}\;(yRz\Leftrightarrow z=x)$
+
+Proof. Suppose that $\mathrm{S}$ has such a characteristic model $(\mathrm{W},\mathrm{R},\mathrm{V})$ and that $LA\leftrightarrow LB\in \mathrm{S}$. Let $x\in \mathrm{W}$, and choose $y\in \mathrm{W}$ such that $\forall z\,\in \mathrm{W}\;(y\mathrm{R}z\Leftrightarrow z=x)$. Thus $\mathrm{V}(LA,y)=V(A,x)$ and $V(LB,y)=V(B,x)$, so $V(A\leftrightarrow B,x)=V(LA\leftrightarrow LB,y)=\mathrm{T}$. Thus $A\leftrightarrow B$ holds at each world in $\mathrm{W}$, so $A\leftrightarrow B\in \mathrm{S}$.
+
+Conversely, suppose that $\mathrm{S}$ is closed under $L\leftrightarrow \mathrm{C}$. Let $(\mathrm{W},\mathrm{R},\mathrm{V})$ be the canonical model (whose worlds are maximal $\mathrm{S}$-consistent sets of formulae) for $\mathrm{S}$, which is always characteristic.12 Let $x\in \mathrm{W}$. Consider the set $\mathrm{X}=\{MA:A\in x\}\cup\{LB:B\in x\}$. Suppose that $\mathrm{X}$ is $\mathrm{S}$-inconsistent. Thus there are $\mathrm{A}_1,\ldots,A_p,B_1,\ldots,B_q\in x$ such that $(LB_1\mathbin{\&}\ldots\mathbin{\&}LB_q)\to\mathord{-}(MA_1\mathbin{\&}\ldots\mathbin{\&}MA_p)\in \mathrm{S};$ since $\mathrm{S}$ is normal $L(B_1\mathbin{\&}\ldots\mathbin{\&}B_q)\to L(\mathord{-} A_1\vee\ldots\vee\mathord{-} A_p)\in \mathrm{S}$. By $L\to \mathrm{C}$, and so by $L\leftrightarrow \mathrm{C}$, $(B_1\mathbin{\&}\ldots\mathbin{\&}B_q)\to(\mathord{-} A_1\vee\ldots\vee\mathord{-} A_p)\in \mathrm{S}$, contradicting the $\mathrm{S}$-consistency of $x$. Thus $\mathrm{X}$ is $\mathrm{S}$-consistent. Let $y\in \mathrm{W}$ be a maximal $\mathrm{S}$-consistent extension of $\mathrm{X}$. By the definition of $\mathrm{R}$ for the canonical model, $y\mathrm{R}x$ because $\{MA:A\in x\}\subseteq y$; $y\mathrm{R}z$ requires $z=x$ because if $B\in x$, $LB\in y$ so $B\in z$, so $x\subseteq z$, so $z=x$.
+
+3. The following principle is at least plausible:
+
+(C)
+It is assertible that it is assertible that $A$ if and only if it is assertible that $A$.
+
+However, (C) was seen in Section 1 to yield the equivalence of (A) with (B). There is thus a problem for those who feel that (A) has the right end of the stick and (B) the wrong one. An obvious move for them to make, and one that has been proposed in the literature, is to treat denial on a par with assertion, and to hold that truth-conditions are determined only by assertibility-conditions and deniability-conditions together, as in (A’).13 This feature is already built into Quine’s model of radical translation, on which the native speakers’ assent and dissent behaviour have equal status.14 In less linguistic terms, a version of (A’) would say that the content of a thought is determined by the conditions for its falsification (disconfirmation, rejection) as well as those for its verification (confirmation, acceptance). The truth-conditions of ‘It is assertible that $A$’ could then be distinguished from those of $A$, even on the assumption (C) that they have the same assertibility-conditions, for when there is no evidence either for or against $A$, ‘It is assertible that $A$’ is deniable while $A$ is not. Of course, this shows only that one quick argument from (A) and (C) to (B) cannot immediately be transformed into an argument from (A’) and (C) to (B); it does not rule out the possibility of a different argument from (A’) and (C) to (B), for (A’) says that identity in assertibility- and deniability-conditions is sufficient for identity in truth-conditions, not that it is necessary. The acceptance of (A’) and (C) does turn out to be consistent with the rejection of (B), but more work will be needed to show this.
+
+The denial of a sentence is, of course, equivalent to the assertion of its negation. It has been objected that to put denial on a par with assertion in determining truth-conditions is to treat negative sentences as semantically unstructured, and thereby to flout an obvious constraint of compositionality: for the meaning of $\mathord{-} A$ should be exhibited as a function of the meaning of $A$.15 This point might be well taken if the denial of a sentence could be expressed only as the assertion of its negation. However, Quine’s model of radical translation suggests otherwise: assent and dissent are conceived symmetrically (saying ‘Yes’ or ‘No’, shaking or nodding one’s head). For the purposes of (B), assertion and denial should be treated as equally basic speech acts, with the equivalence between the denial of a sentence and the assertion of its negation defining negation rather than denial.
+
+4. Just as (A) corresponds to the rule of proof $L\leftrightarrow \mathrm{C}$ on a certain interpretation of modal logic, so (A’) corresponds to the rule:
+
+$L,M\leftrightarrow \mathrm{C}:\quad LA\leftrightarrow LB,\ MA\leftrightarrow MB/A\leftrightarrow B$
+
+For ‘$A$ is deniable if and only if $B$ is deniable’ is equivalent to ‘$\mathord{-} A$ is assertible if and only if $\mathord{-} B$ is assertible’, which is formalizable as $L\mathord{-} A\leftrightarrow L\mathord{-} B$, which is equivalent to $MA\leftrightarrow MB$. Now $L,M\leftrightarrow \mathrm{C}$ would fit into the conspicuously empty corner in the table of rules in Section 2; it stands to $L,M\to \mathrm{C}$ just as $L\leftrightarrow \mathrm{C}$ and $M\leftrightarrow \mathrm{C}$ stand to $L\to \mathrm{C}$ and $M\to \mathrm{C}$, and to $L\leftrightarrow \mathrm{C}$ and $M\leftrightarrow \mathrm{C}$ just as $L,M\to \mathrm{C}$ stands to $L\to \mathrm{C}$ and $M\to \mathrm{C}$. Since those other five rules are all equivalent to each other, it is a natural guess that $L,M\leftrightarrow \mathrm{C}$ is equivalent to them too (it is obviously a consequence of $L\leftrightarrow \mathrm{C}$), in which case there would be an argument from (A’) and (C) to (B) after all, at least on the assumption that the logic of assertibility is a normal one. Surprisingly, this is not the case. Some modal logics which contain the principle $Lp\leftrightarrow LLp$ (corresponding to (C)) are closed under $L,M\leftrightarrow \mathrm{C}$ but not under $L\leftrightarrow \mathrm{C}$, and therefore do not contain $p\leftrightarrow Lp$. Thus (A’) and (C) do not entail (B).
+
+To establish this result, it suffices to consider the following frame, where arrows as usual represent the accessibility relation:
+
+![](assets/frame-308.png)
+
+The effect of the $L$ and $M$ operators on propositions (qua sets of worlds) can be shown in a table:
+
+$p$	$Lp$	$Mp$
+$\{\ \}$	$\{\ \}$	$\{\ \}$
+$\{x\}$	$\{\ \}$	$\{x\}$
+$\{y\}$	$\{y\}$	$\{x,y\}$
+$\{x,y\}$	$\{x,y\}$	$\{x,y\}$
+
+Note that $Lp\leftrightarrow LLp$ is valid on the frame (since accessibility is transitive) but that $p\leftrightarrow Lp$ is not. Now $L,M\leftrightarrow \mathrm{C}$ preserves validity on the frame. For suppose that $LA\leftrightarrow LB$ and $MA\leftrightarrow MB$ are valid on it; thus in any model $LA$ holds at the same worlds at $LB$ and $MA$ as $MB$, in which case $A$ holds at the same worlds as $B$, by inspection of the table (no two rows of which have the same entries in both the second and third columns); thus $A\leftrightarrow B$ is valid on the frame. In contrast, $L\leftrightarrow \mathrm{C}$ does not preserve validity on the frame: for instance, $L(p\mathbin{\&}\mathord{-} Lp)\leftrightarrow L\bot$ is valid while $(p\mathbin{\&}\mathord{-} Lp)\leftrightarrow\bot$ is not.
+
+The reader may have noticed that the formula $Lp\to p$ (indeed, the system S4) is valid on the above frame. This formula is not logically valid on the intended interpretation of $L$ as the ordinary, defeasible notion of assertibility. However, it can be shown to be a consequence of the assumptions made so far about assertibility together with the uncontroversial assumption that a blatant contradiction is not assertible ($\mathord{-} L\bot$, or equivalently $M\top$). That is, any normal system $\mathrm{S}$ closed under $L,M\leftrightarrow \mathrm{C}$ which contains $Lp\leftrightarrow LLp$ and $M\top$ also contains $Lp\to p$. For one can show in order that $\mathrm{S}$ contains the following formulae:
+
+(1)	$LLp\to L(p\mathbin{\&}Lp)$	$LLp\to Lp\in \mathrm{S}$
+(2)	$L(p\mathbin{\&}Lp)\to LLp$	
+(3)	$LLp\leftrightarrow L(p\mathbin{\&}Lp)$	1, 2
+(4)	$M(p\mathbin{\&}Lp)\to MLp$	
+(5)	$Lp\to L(p\mathbin{\&}Lp)$	$Lp\to LLp\in \mathrm{S}$
+(6)	$Lp\to M(p\mathbin{\&}Lp)$	5, $M\top\in \mathrm{S}$
+(7)	$MLp\to MM(p\mathbin{\&}Lp)$	6
+(8)	$MLp\to M(p\mathbin{\&}Lp)$	7, $Lp\to LLp\in \mathrm{S}$
+(9)	$MLp\leftrightarrow M(p\mathbin{\&}Lp)$	4, 8
+(10)	$Lp\leftrightarrow(p\mathbin{\&}Lp)$	3, 9, $L,M\leftrightarrow \mathrm{C}$
+(11)	$Lp\to p$	10
+
+Thus in particular K + $Lp\leftrightarrow LLp$ + $M\top$ + $L,M\leftrightarrow \mathrm{C}$ is simply S4 + $L,M\leftrightarrow \mathrm{C}$.
+
+Within the context of normal systems, the recourse to denial in determining truth-conditions fails to have its intended effect; (A’) and (C) cannot be satisfied together in a normal system without violating the logic of defeasible assertibility, either by not making a tautology assertible or by making truth a consequence of assertibility. However, there are other concepts of assertibility on which $Lp\to p$ is acceptable as a theorem; for instance, one might read $L$ as ‘There is conclusive evidence that’, or (in the case of mathematical language) as ‘It is informally provable that’. Another possible reading would be ‘It is implicitly known that’, where implicit knowledge had the requisite closure properties. Thus the possibility remains open for someone to adopt a concept of assertibility obedient to S4, and then endorse (A’), and thus $L,M\leftrightarrow \mathrm{C}$. In order to investigate the prospects for this move, it is necessary to find out what system S4 + $L,M\leftrightarrow \mathrm{C}$ is.
+
+It can be shown that S4 + $L,M\leftrightarrow \mathrm{C}$ is a system called K4 by Sobociński, which results from the addition of $LMp\leftrightarrow MLp$ to S4.4, which in turn results from the addition of $p\to(MLp\to Lp)$ to S4 (this K4 should not be confused with the one better known under the same name, which results simply from the addition of $Lp\to LLp$ to K).16
+
+The system has a rather simple canonical model. For if $R$ is the accessibility relation on this model, it follows by a standard result that, since $p\to(MLp\to Lp)$ is a theorem, $R$ obeys the condition:
+
+$$
+\forall x\,\forall y\,\forall z\,((xRy\mathbin{\text{ and }}xRz\mathbin{\text{ and }}x\ne y)\Rightarrow zRy)
+$$
+
+Similarly, since $p\to(LMp\to Lp)$ (and therefore $Mp\to(p\vee MLp)$) is a theorem, $R$ obeys:
+
+$\begin{aligned}
+&\forall x\,\forall y\,((xRy\mathbin{\text{ and }}x\ne y)\Rightarrow{}\\
+&\qquad\Rightarrow\exists z\,(xRz\mathbin{\text{ and }}\forall w\,(zRw\Rightarrow w=y)))
+\end{aligned}$17
+
+Together with the reflexivity of $R$ (from $Lp\to p$), these conditions entail:
+
+$\begin{aligned}
+&\forall x\,\forall y\,\forall z\,((xRy\mathbin{\text{ and }}xRz)\Rightarrow(x=y\mathbin{\text{ or }}x=z\mathbin{\text{ or }}y=z))\\
+&\forall x\,\forall y\,\forall z\,((xRy\mathbin{\text{ and }}yRz)\Rightarrow(x=y\mathbin{\text{ or }}y=z))
+\end{aligned}$
+
+It follows that every generated subframe of the canonical model is isomorphic either to the two world frame illustrated earlier or to a single self-accessible world. Since every such subframe is isomorphic either to the illustrated frame or to a generated subframe of it, and every theorem of the system is valid on that frame, it follows that the formulae valid on the illustrated frame are precisely the theorems of the system. This, of course, provides a straightforward decision procedure for S4 + $L,M\leftrightarrow \mathrm{C}$, in fulfilment of an earlier promise.
+
+The presence of the formula $p\leftrightarrow(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$ in S4 + $L,M\leftrightarrow \mathrm{C}$ is of particular interest. For, on the earlier interpretation, it means that truth, although not equivalent to assertibility, is at least definable in terms of assertibility and deniability: it says, in effect, that a formula is true if and only if either it is assertible or its assertibility but not the formula itself is deniable. It remains to be seen whether there are any concepts of assertion and denial for which this rather bizarre equivalence is plausible. Clearly, (A’) is a consequence of any such definition of truth in terms of assertibility and deniability. More formally: any normal system is closed under $L,M\leftrightarrow \mathrm{C}$ if it has a theorem of the form $p\leftrightarrow A$, where $A$ is a modal function of $Lp$ and $Mp$ (just as it will be closed under $L\leftrightarrow \mathrm{C}$ and $M\leftrightarrow \mathrm{C}$ if $A$ is a modal function either of $Lp$ or of $Mp$). On the other hand, a normal system can be closed under $L,M\leftrightarrow \mathrm{C}$ even if it has no such theorem. The systems K and D are examples. For if they had such a theorem, so would S5, which would therefore be closed under $L,M\leftrightarrow \mathrm{C}$, which it is not — indeed S5 collapses under $L,M\leftrightarrow \mathrm{C}$, since S4 + $L,M\leftrightarrow \mathrm{C}$, and therefore S5 + $L,M\leftrightarrow \mathrm{C}$, contains the theorem $p\to(LMp\to Lp)$ and S5 contains $p\to LMp$. Yet K and D are closed under $L,M\leftrightarrow \mathrm{C}$, for they are closed under $L\leftrightarrow \mathrm{C}$.
+
+5. Is there any concept of assertibility for which S4 + $L,M\leftrightarrow \mathrm{C}$ is a plausible system? One might attempt to model some sort of speculative interpretation on the characteristic two world frame. Suppose, for instance, that we could make sense of the phrases ‘the world of reality’ and ‘the world of appearance’ in such a way that sentences of the language $\mathrm{L}$ not containing $L$ could be said to hold or to fail to hold at these worlds. Then one might stipulate that $LA$ holds at the world of appearance if and only if $A$ holds at the world of appearance, but that $LA$ holds at the world of reality if and only if $A$ holds at both the world of reality and the world of appearance, with standard clauses for the logical constants. One might read $L$ as ‘it is evident that’, understood as a factive. Perhaps there is some limited domain in which this interpretation would be a useful one, but taken generally it seems both fanciful and crude.
+
+Does any concept we actually employ validate S4 + $L,M\leftrightarrow \mathrm{C}$? If $L$ is read as something like ‘it is informally provable that’, at least S4 is arguably validated: but many additional theorems of S4 + $L,M\leftrightarrow \mathrm{C}$ are not. Consider the theorem $L(\mathord{-} p\to L(p\to Lp))$, for instance: on this reading, it says that it is informally provable that if $p$ is false then it is informally provable that $p$ is informally provable if true; but no such informal proof seems to be generally forthcoming. Again, the theorem $LMp\vee L\mathord{-} Lp$ is read as making the not generally plausible assertion that either it is informally provable that $p$ is not informally disprovable or it is informally provable that $p$ is not informally provable.
+
+No concept of assertibility that I know of validates S4 + $L,M\leftrightarrow \mathrm{C}$. The retreat from (A) to (A’) therefore does not by itself meet the objections to (A) in a philosophically satisfying manner. The discussion in this paper has of course been based on a number of simplifying assumptions, which may need to be called into question. Of these, the appeal to the concept of truth-conditions is perhaps the least significant, for although there obviously are conceptions of truth which many tempted by (A) or by (A’) would regard as suspect, they are not required by the preceding discussion. For just as the identity of $A$ and $B$ in assertibility-conditions amounted to the validity of $LA\leftrightarrow LB$, so their identity in truth-conditions amounted to the validity of $A\leftrightarrow B$, where it was not essential that the notion of validity should itself be explained in terms of some controversial notion of truth. In effect, the operative notion of truth was that of a redundant sentential operator, representing the identity truth-function. More deserving of controversy are the closure assumptions about assertibility (the use of normal logics), the treatment of assertibility as though it did not come in degrees, even the appeal to classical logic. A claim often made at this point is that the truth-condition of a sentence is determined by its compositional structure as well as by its assertibility- and deniability-conditions; that may be so, but as a bare claim it hardly comes to grips with the problem for it does not explain what determines the effect of a compositional device other than the conditions for the assertion and denial of the sentences which serve as its arguments and values. In any case, if a more true-to-life model does imply a relation between assertibility and truth essentially different from the results above, it should at least be illuminating to discover what the crucially misleading simplifications were, and why.
+
+# Appendix
+
+It will be proved that S4 + $L,M\leftrightarrow \mathrm{C}$ is Sobociński’s K4. In order to show that S4 + $L,M\leftrightarrow \mathrm{C}$ includes Sobociński’s system, we can start by showing the former to contain $p\to(MLp\to Lp)$:
+
+(1)	$M\mathord{-} p\leftrightarrow M(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))$	S4
+(2)	$(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))\to M\mathord{-} p$	T
+(3)	$L(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))\to LM\mathord{-} p$	2
+(4)	$L(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))\to LLM\mathord{-} p$	3, S4
+(5)	$\begin{aligned}&((\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))\mathbin{\&}\\&\quad \mathbin{\&}LM\mathord{-} p)\to\mathord{-} p\end{aligned}$	
+(6)	$\begin{aligned}&(L(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))\mathbin{\&}\\&\quad \mathbin{\&}LLM\mathord{-} p)\to L\mathord{-} p\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{5}\end{aligned}$
+(7)	$L(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))\to L\mathord{-} p$	4, 6
+(8)	$L\mathord{-} p\leftrightarrow L(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))$	7
+(9)	$\mathord{-} p\leftrightarrow(\mathord{-} p\vee(M\mathord{-} p\mathbin{\&}MLp))$	1, 8, $L,M\leftrightarrow \mathrm{C}$
+(10)	$p\to(MLp\to Lp)$	9
+
+We can now show S4 + $L,M\leftrightarrow$ also to contain $p\to(LMp\to Lp)$:
+
+(1)	$\mathord{-} L(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))$	T
+(2)	$\mathord{-} L(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))$	T
+(3)	$\begin{aligned}&L(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\\&\quad \leftrightarrow L(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{1, 2}\end{aligned}$
+(4)	$\mathord{-} p\to(ML\mathord{-} p\to L\mathord{-} p)$	Previous result
+(5)	$(\mathord{-} p\mathbin{\&}Mp)\to LMp$	4
+(6)	$(\mathord{-} p\mathbin{\&}Mp)\to LLMp$	5, S4
+(7)	$(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\to LLMp$	6
+(8)	$\begin{aligned}&(M(p\mathbin{\&}M\mathord{-} p)\mathbin{\&}LLMp)\\&\quad \to M(p\mathbin{\&}LMp\mathbin{\&}M\mathord{-} p)\end{aligned}$	
+(9)	$\begin{aligned}&(M(p\mathbin{\&}M\mathord{-} p)\mathbin{\&}LLMp)\\&\quad \to M(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{8}\end{aligned}$
+(10)	$\begin{aligned}&(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\\&\quad \to M(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{7, 9}\end{aligned}$
+(11)	$\begin{aligned}&M(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\\&\quad \to MM(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{10}\end{aligned}$
+(12)	$\begin{aligned}&M(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\\&\quad \to M(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{11, S4}\end{aligned}$
+(13)	$\begin{aligned}&M(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\\&\quad \to M(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{As 12}\end{aligned}$
+(14)	$\begin{aligned}&M(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\\&\quad \leftrightarrow M(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{12, 13}\end{aligned}$
+(15)	$\begin{aligned}&(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))\\&\quad \leftrightarrow(\mathord{-} p\mathbin{\&}M(p\mathbin{\&}M\mathord{-} p)\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{3, 14, }L,M\leftrightarrow \mathrm{C}\end{aligned}$
+(16)	$\mathord{-}(p\mathbin{\&}M(\mathord{-} p\mathbin{\&}Mp))$	15
+(17)	$p\to L(Mp\to p)$	16
+(18)	$p\to(LMp\to Lp)$	17
+
+It is now straightforward to show that S4 + $L,M\leftrightarrow \mathrm{C}$ contains the remaining axiom of Sobociński’s system, $LMp\leftrightarrow MLp$:
+
+(1)	$p\to(MLp\to Lp)$	Previous result
+(2)	$p\to(MLp\to LMp)$	1, T
+(3)	$\mathord{-} p\to(ML\mathord{-} p\to L\mathord{-} p)$	Previous result
+(4)	$\mathord{-} p\to(Mp\to LMp)$	3
+(5)	$\mathord{-} p\to(MLp\to LMp)$	4, T
+(6)	$MLp\to LMp$	2, 5
+(7)	$p\to(LMp\to Lp)$	Previous result
+(8)	$p\to(LMp\to MLp)$	7, T
+(9)	$\mathord{-} p\to(LM\mathord{-} p\to L\mathord{-} p)$	Previous result
+(10)	$\mathord{-} p\to(Mp\to MLp)$	9
+(11)	$\mathord{-} p\to(LMp\to MLp)$	10, T
+(12)	$LMp\to MLp$	8, 11
+(13)	$LMp\leftrightarrow MLp$	6, 12
+
+Thus S4 + $L,M\leftrightarrow \mathrm{C}$ includes Sobociński’s system. In order to prove the converse, it suffices to show that his system, which includes S4, is closed under $L,M\leftrightarrow \mathrm{C}$. We first show it to contain $p\leftrightarrow(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$:
+
+(1)	$p\to(MLp\to Lp)$	Axiom
+(2)	$p\to(Lp\vee\mathord{-} MLp)$	1
+(3)	$p\to Mp$	T
+(4)	$p\to(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$	2, 3
+(5)	$\mathord{-} p\to(ML\mathord{-} p\to L\mathord{-} p)$	1, substitution
+(6)	$(Mp\mathbin{\&}\mathord{-} LMp)\to p$	5
+(7)	$LMp\to MLp$	Axiom
+(8)	$(Mp\mathbin{\&}\mathord{-} MLp)\to p$	6, 7
+(9)	$Lp\to p$	T
+(10)	$(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))\to p$	8, 9
+(11)	$p\leftrightarrow(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$	4, 10
+
+Sobociński’s system can now be shown to be closed under $L,M\leftrightarrow \mathrm{C}$, as follows:
+
+(1)	$LA\leftrightarrow LB$	Assumed theorem
+(2)	$MA\leftrightarrow MB$	Assumed theorem
+(3)	$\begin{aligned}&(LA\vee(MA\mathbin{\&}\mathord{-} MLA))\leftrightarrow\\&\quad \leftrightarrow(LB\vee(MB\mathbin{\&}\mathord{-} MLB))\end{aligned}$	$\begin{aligned}&\phantom{X}\\&\text{1, 2}\end{aligned}$
+(4)	$A\leftrightarrow(LA\vee(MA\mathbin{\&}\mathord{-} MLA))$	Previous result
+(5)	$B\leftrightarrow(LB\vee(MB\mathbin{\&}\mathord{-} MLB))$	Previous result
+(6)	$A\leftrightarrow B$	3, 4, 5
+
+This completes the proof that S4 + $L,M\leftrightarrow \mathrm{C}$ (and therefore K + $M\top$ + $Lp\leftrightarrow LLp$ + $L,M\leftrightarrow \mathrm{C}$) is equivalent to Sobociński’s system.
+
+Two alternative axiomatizations of this system may be noted. First, it is equivalent to K + $p\leftrightarrow(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$. For the latter formula has been seen to be contained in it, and in turn to ensure closure under $L,M\leftrightarrow \mathrm{C}$. Thus it remains only to show that $K$ + $p\leftrightarrow(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$ contains the characteristic S4 axioms. $Lp\to p$ is obvious. For $Lp\to LLp$, substitute $p\mathbin{\&}\mathord{-} Lp$ for $p$; the result simplifies to $M(p\mathbin{\&}\mathord{-} Lp)\to(p\mathbin{\&}\mathord{-} Lp)$, which yields $Lp\to L(p\to Lp)$. Second, the system is equivalent to T + $p\to(MLp\to Lp)$ + $p\to(LMp\to Lp)$; this follows without difficulty from what has been established so far.
+
+# Notes
+
+[1] For a recent discussion bearing on this point see Peacocke [8].
+
+[2] In this sense, the truth-condition of a sentence is the set of possible situations in which it can be truly uttered; it is not the set of situations with respect to which the sentence, as uttered in a fixed context, is true. The sophistications of two-dimensional modal logic will be avoided. The assertibility-condition of a sentence is, correspondingly, something like the set of possible situations in which its assertive utterance is warranted.
+
+[3] Arguments of this kind are proposed in Brandom [2], following Dummett [3] at pp. 450–451.
+
+[4] The second and third assumptions are of course consequences of the validity of $LA\to A$. Given the first assumption, the argument therefore applies to any truth-entailing concept of assertibility, such as provability in mathematics. Its application is clearly more general than that, however.
+
+[5] Hughes and Cresswell [5] provide a suitable background for the technical discussion.
+
+[6] The rewards of a finer-grained approach are illustrated in Humberstone [6], which distinguishes between the derivability of a rule in a system and the mere closure of the system under the rule. Interesting questions could be raised in these terms about the rules discussed in this paper, but they go beyond its scope.
+
+[7] For some relevant results see Lemmon and Scott [7], pp. 81–85.
+
+[8] ‘C’ for ‘cancellation’; in other respects the choice of labels should be self-explanatory. Note that $L,M\to \mathrm{C}$ differs from $LM\to \mathrm{C}$ which, by analogy, would be the rule $LMA\to LMB/A\to B$.
+
+[9] Note that $L\leftrightarrow \mathrm{C}$ and $L\to \mathrm{C}$ are the converses of the standard rules called RE and RM by Lemmon and Scott (ibid., p. 11).
+
+[10] Ibid., p. 47.
+
+[11] Ibid., p. 86; further results concerning the rule $LA/A$ are at pp. 46 and 80, and it is discussed in Humberstone [6].
+
+[12] The proof presupposes the material at pp. 22–26 of Hughes and Cresswell [5].
+
+[13] Dummett [4], p. 112, cp. Price [9].
+
+[14] For a discussion in the context of language learning see Quine [10], Part II.
+
+[15] Appiah [1], pp. 135/6.
+
+[16] Sobociński [11]. The proof is in the Appendix.
+
+[17] Lemmon and Scott [7], pp. 66–68.
+
+# Acknowledgements
+
+The technical parts of this paper are largely the outcome of correspondence with Lloyd Humberstone. He did most of the work in Section 2, pointed out the equivalence of S4 + $p\leftrightarrow(Lp\vee(Mp\mathbin{\&}\mathord{-} MLp))$ and T + $p\to(LMp\to Lp)$ + $p\to(MLp\to Lp)$ and the facts about its canonical model, and made other helpful comments. The referee also made useful suggestions.
+
+# Bibliography
+
+[1] Appiah, Anthony: 1986, For Truth in Semantics, Oxford, Blackwell.
+
+[2] Brandom, Robert: 1976, ‘Truth and Assertibility’, The Journal of Philosophy 83, 137–49.
+
+[3] Dummett, Michael: 1973, Frege: Philosophy of Language, London, Duckworth.
+
+[4] Dummett, Michael: 1976, ‘What Is a Theory of Meaning? (II)’, in G. Evans and J. McDowell (eds.), Truth and Meaning, Oxford, Oxford University Press, pp. 67–137.
+
+[5] Hughes, G. E. and Cresswell, M. J.: 1984, A Companion to Modal Logic, London, Methuen.
+
+[6] Humberstone, I. L.: ‘A More Discriminating Approach to Modal Logic’, unpublished.
+
+[7] Lemmon, E. J. and Scott, D. S.: 1977, The “Lemmon Notes”: An Introduction to Modal Logic, ed. K. Segerberg, Oxford, Blackwell.
+
+[8] Peacocke, Christopher: 1986, ‘What Determines Truth Conditions?’ in P. Pettit and J. McDowell (eds.), Subject, Thought, and Context, Oxford, Clarendon Press, pp. 181–208.
+
+[9] Price, H.: 1983, ‘Sense, Assertion, Dummett and Denial’, Mind 92, 161–73.
+
+[10] Quine, W. V. O.: 1973, The Roots of Reference, La Salle, Open Court.
+
+[11] Sobociński, B.: 1964, ‘Family $\mathcal{K}$ of the Non-Lewis Modal Systems’, Notre Dame Journal of Formal Logic 5 313–318.

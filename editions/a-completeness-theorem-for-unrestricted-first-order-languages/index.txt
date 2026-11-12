@@ -1,0 +1,501 @@
+# A Completeness Theorem for Unrestricted First-Order Languages
+
+Agustín Rayo and Timothy Williamson
+
+In J. C. Beall (ed.), Liars and Heaps: New Essays on Paradox (2003), 331–356. Oxford: Clarendon Press.
+
+# 1. Preliminaries
+
+Here is an account of logical consequence inspired by Bolzano and Tarski. Logical validity is a property of arguments. An argument is a pair of a set of interpreted sentences (the premises) and an interpreted sentence (the conclusion). Whether an argument is logically valid depends only on its logical form. The logical form of an argument is fixed by the syntax of its constituent sentences, the meanings of their logical constituents, and the syntactic differences between their non-logical constituents, treated as variables. A constituent of a sentence is logical just if it is formal in meaning, in the sense roughly that its application is invariant under permutations of individuals.1 Thus ‘=’ is a logical constant because no permutation maps two individuals to one or one to two; ‘∈’ is not a logical constant because some permutations interchange the null set and its singleton. Truth functions, the usual quantifiers, and bound variables also count as logical constants. An argument is logically valid if and only if the conclusion is true under every assignment of semantic values to variables (including all non-logical expressions) under which all its premises are true. A sentence is logically true if and only if the argument with no premises of which it is the conclusion is logically valid, that is, if and only if the sentence is true under every assignment of semantic values to variables. An interpretation assigns values to all variables.
+
+For the case of first-order languages,2 interpretations are standardly cashed out in terms of what might be called model-theoretic interpretations (or MT-interpretations). An MT-interpretation for a first-order language $L$ is an ordered pair $\langle D,F\rangle$. The domain $D$ is a non-empty set, and is intended to specify the range of the variables in $L$. The interpretation function $F$ is intended to specify semantic values for the variables of $L$ (including non-logical expressions). The semantic value of an $n$-place predicate-letter is a set of $n$-tuples of individuals in $D$,3 and the semantic value of a first-order variable is an individual in $D$.
+
+Truth on an MT-interpretation can then be characterized as follows:
+
+[$\mathrm{MT}\text{-}{=}$]
+$\ulcorner v_i=v_j\urcorner$ is true on $\langle D,F\rangle$ iff $F(\ulcorner v_i\urcorner)=F(\ulcorner v_j\urcorner)$,
+[$\mathrm{MT}\text{-}P$]
+$\ulcorner P_i^n(v_{j_1},\ldots,v_{j_n})\urcorner$ is true on $\langle D,F\rangle$ iff $\langle F(\ulcorner v_{j_1}\urcorner),\ldots,F(\ulcorner v_{j_n}\urcorner)\rangle\in F(\ulcorner P_i^n\urcorner)$,
+[$\mathrm{MT}\text{-}\neg$]
+$\ulcorner\neg\psi\urcorner$ is true on $\langle D,F\rangle$ iff $\ulcorner\psi\urcorner$ is not true on $\langle D,F\rangle$,
+[$\mathrm{MT}\text{-}\wedge$]
+$\ulcorner\psi\wedge\theta\urcorner$ is true on $\langle D,F\rangle$ iff $\ulcorner\psi\urcorner$ and $\ulcorner\theta\urcorner$ are both true on $\langle D,F\rangle$,
+[$\mathrm{MT}\text{-}\exists$]
+$\ulcorner\exists v_i\,(\psi)\urcorner$ is true on $\langle D,F\rangle$ iff there is some $d\in D$ such that $\ulcorner\psi\urcorner$ is true on $\langle D,F[\ulcorner v_i\urcorner/d]\rangle$,
+
+where $F[v/d]$ is the function that is just like $F$ except that it assigns $d$ to $v$.
+
+If $\mathrm{\Gamma}$ is a set of formulas, we say that $\mathrm{\Gamma}$ is true on $\langle D,F\rangle$ just in case each formula in $\mathrm{\Gamma}$ is true on $\langle D,F\rangle$. Finally, an argument is said to be MT-valid just in case every MT-interpretation on which the set of premises is true is also an MT-interpretation on which the conclusion is true, and a formula is said to be MT-valid just in case the argument with no premises of which it is the conclusion is MT-valid.
+
+The variables of a first-order language are sometimes intended to range over absolutely everything whatsoever (henceforth, we will use ‘everything’ and similar phrases such as ‘all individuals’ in that sense).4 For instance, the variables of the first-order language in which the theory of MT-interpretations is couched must range over everything, on pain of excluding some individuals from the semantic values of non-logical terms. But, according to standard conceptions of set-theory such as ZFU (i.e. Zermelo–Fraenkel set theory with urelements), there is no set of all individuals. And, in the absence of such a set, there is no MT-interpretation that specifies a domain consisting of everything. So, when the variables of a first-order language $L$ are intended to range over everything, no MT-interpretation captures the intended interpretation of $L$.
+
+Clearly, matters cannot be improved by appealing to proper classes: no proper class can play the role of a universal domain because no proper class is a member of itself. But one might be tempted to address the problem by adopting a set theory which allows for a universal set—Quine’s New Foundations, the Church and Mitchell systems, and positive set theory all satisfy this requirement.5 Unfortunately, set theories that allow for a universal set must impose restrictions on the axiom of separation to avoid paradox. So, as long as an MT-interpretation assigns a subset of its domain as the interpretation of a monadic predicate, some intuitive interpretations for monadic predicates will not be realized by any MT-interpretation. (Throughout the rest of the paper we will be working with ZFU plus choice principles, rather than a set theory which allows for a universal set.)
+
+The problems we have discussed are instances of a more general difficulty. Regardless of the set theory one chooses to work with, trouble will arise from the fact that an MT-interpretation is an individual. For, whatever it is to G, there are legitimate assignments of semantic values to variables according to which the predicate-letter $P$ applies to something if and only it Gs. So, if every legitimate assignment of semantic values to variables is to be captured by some MT-interpretation, we must have the following:
+
+(1)
+For every individual $x$, $M^G$ is an MT-interpretation according to which $P$ applies to $x$ if and only if $x$ Gs.
+
+But, since MT-interpretations are individuals, we may define a verb ‘R’ as follows:
+
+(2)
+For each individual $x$, $x$ Rs if and only if $x$ is not an MT-interpretation according to which $P$ applies to $x$.
+
+Putting ‘R’ for ‘G’ in (1) and applying (2) yields:
+
+(3)
+For every individual $x$, $M^R$ is an MT-interpretation according to which $P$ applies to $x$ if and only if $x$ is not an MT-interpretation according to which $P$ applies to $x$.
+
+In particular, we can let $x$ be $M^R$ itself; so (3) implies:
+
+(4)
+$M^R$ is an MT-interpretation according to which $P$ applies to $M^R$ if and only if $M^R$ is not an MT-interpretation according to which $P$ applies to $M^R$.
+
+And (4) is a contradiction. It follows that there are legitimate assignments of semantic values to variables that cannot be captured by any MT-interpretation. (It is worth noting that, although the argument is structurally similar to standard derivations of Russell’s Paradox, it does not rest on any assumptions about sets. As long as the variables in the metalanguage range over everything, all we need to get the problem going is the observation that MT-interpretations are individuals, and the claim that, whatever it is to G, there are legitimate assignments of semantic values to variables according to which the predicate-letter $P$ applies to something if and only if it Gs.)
+
+It is best to use a semantics which is not based on MT-interpretations. Here we will work with the notion of a second-order interpretation (or SO-interpretation), set forth in Rayo and Uzquiano (1999). Informally, the idea is this: rather than taking an SO-interpretation to be an individual, like an MT-interpretation, we regard it as given by the individuals which a monadic second-order variable $I$ is true of. The ‘domain’ of $I$ is the collection of individuals $x$ such that $I$ is true of $\langle\text{‘}\forall\text{’},x\rangle$. The ‘semantic value’ which $I$ assigns to an $n$-place predicate-letter $\ulcorner P_i\urcorner$ is the collection of $n$-tuples $\langle x_1,\ldots,x_n\rangle$ such that $I$ is true of $\langle\ulcorner P_i\urcorner,\langle x_1,\ldots,x_n\rangle\rangle$; and the semantic value which $I$ assigns to a first-order variable $\ulcorner v_i\urcorner$ is the unique individual $x$ such that $I$ is true of $\langle\ulcorner v_i\urcorner,x\rangle$ (for the sake of brevity, we sometimes use ‘$I(\ulcorner v_i\urcorner)$’ to refer to the unique $x$ such that $I\langle\ulcorner v_i\urcorner,x\rangle$). Such informal explanations are a kind of useful nonsense, a ladder to be thrown away once climbed, because they use the second-order (predicate) variable ‘I’ in first-order (name) positions in sentences of natural language; nevertheless, they draw attention to helpful analogies between SO-interpretations and MT-interpretations. Formally, when ‘$I$’ is a second-order variable, we take ‘$I$ is an SO-interpretation’ to abbreviate the following second-order formula:6
+
+$$\exists x\,(I\langle\text{‘}\forall\text{’},x\rangle)\wedge\forall x\,(\mathrm{FOV}(x)\to\exists!yI\langle x,y\rangle)$$
+
+where ‘FOV($x$)’ is interpreted as ‘$x$ is a first-order variable’.
+
+Unlike MT-interpretations, SO-interpretations are well-suited to cover the case in which the variables of $L$ range over everything. For, whenever $I\langle\text{‘}\forall\text{’},x\rangle$ holds for every $x$, the ‘domain’ of $I$ will consist of everything.
+
+Let us now characterize the predicate ‘$\phi$ is true on $I$’, where $\phi$ is a formula of $L$ and $I$ is an SO-interpretation for $L$. It is important to note that our satisfaction predicate is a second-level predicate (i.e. a predicate taking a second-order variable in one of its argument-places), since ‘$I$’ is a second-order variable.7
+
+[$\mathrm{SO}\text{-}{=}$]
+$\ulcorner v_i=v_j\urcorner$ is true on $I$ iff $I(\ulcorner v_i\urcorner)=I(\ulcorner v_j\urcorner)$,
+[$\mathrm{SO}\text{-}P$]
+$\ulcorner P_i^n(v_{j_1},\ldots,v_{j_n})\urcorner$ is true on $I$ iff $I\langle\ulcorner P_i^n\urcorner,\langle I(\ulcorner v_{j_1}\urcorner),\ldots,I(\ulcorner v_{j_n}\urcorner)\rangle\rangle$,
+[$\mathrm{SO}\text{-}\neg$]
+$\ulcorner\neg\psi\urcorner$ is true on $I$ iff $\ulcorner\psi\urcorner$ is not true on $I$,
+[$\mathrm{SO}\text{-}\wedge$]
+$\ulcorner\psi\wedge\theta\urcorner$ is true on $I$ iff $\ulcorner\psi\urcorner$ and $\ulcorner\theta\urcorner$ are both true on $I$,
+[$\mathrm{SO}\text{-}\exists$]
+$\ulcorner\exists v_i\,(\psi)\urcorner$ is true on $I$ iff there is some $d$ such that $I\langle\text{‘}\forall\text{’},d\rangle$ and $\ulcorner\psi\urcorner$ is true on $I[\ulcorner v_i\urcorner/d]$,
+
+where $I[v/d]$ is just like $I$ except that $I(v)=d$.
+
+If $\mathrm{\mathrm{\Gamma}}$ is a set of formulas, we say that $\mathrm{\mathrm{\Gamma}}$ is true on $I$ just in case each formula in $\mathrm{\mathrm{\Gamma}}$ is true on $I$. Finally, an argument is said to be SO-valid just in case every SO-interpretation on which the set of premises is true is also an SO-interpretation on which the conclusion is true, and a formula is said to be SO-valid just in case the argument with no premises of which it is the conclusion is SO-valid.
+
+A famous argument of Kreisel’s can be used to show that a first-order argument $\langle\mathrm{\Gamma},\phi\rangle$ is SO-valid if and only if it is MT-valid.8 [Proof sketch. Suppose $\langle\mathrm{\Gamma},\phi\rangle$ is MT-valid. Then, by the completeness of MT-validity, $\phi$ is derivable from $\mathrm{\Gamma}$. But the SO-validity of derivable inferences follows from a straightforward induction on the length of proofs. So $\phi$ is true on every SO-interpretation which makes $\mathrm{\Gamma}$ true. $\langle\mathrm{\Gamma},\phi\rangle$ is therefore SO-valid. Conversely, suppose $\langle\mathrm{\Gamma},\phi\rangle$ is not MT-valid. Then there is some MT-interpretation on which every member of $\mathrm{\Gamma}$ is true and $\phi$ is not true. But, since every MT-interpretation has the same domain and delivers the same assignments of semantic value as some SO-interpretation, there is some SO-interpretation on which every member of $\mathrm{\Gamma}$ is true and $\phi$ is not true. So $\langle\mathrm{\Gamma},\phi\rangle$ is not SO-valid.]
+
+Kreisel’s result guarantees that standard first-order deductive systems are sound and complete with respect to SO-interpretations. It also shows that, if the only purpose of a formal semantics is to characterize the set of standard first-order validities, then SO-interpretations are unnecessary, since they deliver the same result as MT-interpretations. But a formal semantics might have a broader objective than that of characterizing the set of standard first-order validities. For instance, one may wish to consider the result of enriching a first-order language with a quantifier ‘$\exists^{AI}$’, as in McGee (1992). On its intended interpretation, a sentence ‘$\exists^{AI}v\,(\phi(v))$’ is true just in case the individuals satisfying ‘$\phi(v)$’ are too many to form a set. Accordingly, when the quantifiers range over everything, ‘$\exists^{AI}v\,(v=v)$’ is true, since there are too many individuals to form a set. Within an SO-semantics, we can specify the truth-conditions of ‘$\exists^{AI}$’ as follows:
+
+[$\mathrm{SO}\text{-}\exists^{AI}$]
+$\ulcorner\exists^{AI}v_i\,(\phi)\urcorner$ is true on $I$ iff no set contains every $d$ such that $I\langle\text{‘}\forall\text{’},d\rangle$ and $\ulcorner\phi\urcorner$ is true on $I[\ulcorner v_i\urcorner/d]$.
+
+This yields the intended result. For instance, [SO-$\exists^{AI}$] ensures that ‘$\exists^{AI}v\,(v=v)$’ is true on any SO-interpretation $I$ such that, for every $x$, $I\langle\text{‘}\forall\text{’},x\rangle$. On the other hand, we run into trouble when we try to specify the truth-conditions of ‘$\exists^{AI}$’ within MT-semantics. For, suppose we attempt to mirror [SO-$\exists^{AI}$] by way of the following clause:
+
+[$\mathrm{MT}\text{-}\exists^{AI}$]
+$\ulcorner\exists^{AI}v_i\,(\phi)\urcorner$ is true on $\langle D,F\rangle$ iff no set contains every $d\in D$ such that $\ulcorner\phi\urcorner$ is true on $\langle D,F[\ulcorner v_i\urcorner/d]\rangle$.
+
+It follows from [MT-$\exists^{AI}$] that no MT-interpretation can make a sentence of the form $\ulcorner\exists^{AI}v_i\,(\phi)\urcorner$ true. So ‘$\neg\exists^{AI}v\,(v=v)$’ is an MT-validity, even though ‘$\exists^{AI}v\,(v=v)$’ is true on the intended interpretation.
+
+# 2. Unrestricted Quantification
+
+Throughout our discussion of ‘$\exists$’ and ‘$\exists^{AI}$’ we have made the following standard assumption:
+
+Domain Assumption. What individuals the truth-value of a quantified sentence depends on is not a logical matter; it varies between interpretations.
+
+The presence of the Domain Assumption is evidenced by [MT-$\exists$], [SO-$\exists$], [MT-$\exists^{AI}$], and [SO-$\exists^{AI}$], which explicitly impose an (interpretation-relative) domain restriction on the individuals that the truth-value of quantified sentences depends on.
+
+Williamson (1999) argues that, even if the Domain Assumption is appropriate in the case of ‘$\exists$’ and ‘$\exists^{AI}$’, there is no reason to think that it is appropriate in general. Specifically, we might set forth an unrestricted quantifier ‘$\exists^U$’ such that a sentence ‘$\exists^Uv\,(\phi(v))$’ is true if and only if ‘$\phi(v)$’ is true of some individual, whether or not the individual is part of some domain or other. If there is such a quantifier, its application is insensitive to permutations of individuals. So, on the Bolzano–Tarski picture of logical consequence described above, it should count as a logical expression, and its semantic value should not vary between interpretations.
+
+Within an SO-semantics, we have the resources to characterize ‘$\exists^U$’. All we need to do is add the following clause to our definition of ‘truth on $I$’:
+
+[$\mathrm{SO}\text{-}\exists^U$]
+$\ulcorner\exists^Uv_i\,(\phi)\urcorner$ is true on $I$ iff some $d$ is such that $\ulcorner\phi\urcorner$ is true on $I[\ulcorner v_i\urcorner/d]$.
+
+Extending our object-language with ‘$\exists^U$’ and our formal semantics with [SO-$\exists^U$] does not mean that we must jettison ‘$\exists$’ or ‘$\exists^{AI}$’. Arguments in the original language that were SO-valid before the extension will remain SO-valid, and arguments in the original language that were SO-invalid before the extension will remain SO-invalid. On the other hand, we get a number of new SO-validities from arguments in the extended language. For instance, the inference from ‘$\exists v\,(\phi)$’ to ‘$\exists^Uv\,(\phi)$’ is SO-valid. The sentence ‘$\exists^Uv\,(v=v)$’ is also SO-valid. Finally, let $\ulcorner\exists^U_nv\,(\phi(v))\urcorner$ (read ‘there are at least $n$ $v$s such that $\phi(v)$’) be defined as follows:
+
+$\begin{aligned}&\exists^U_1v\,(\phi(v))\equiv_{df}\exists^Uv\,(\phi(v))\\&\exists^U_2v\,(\phi(v))\equiv_{df}\exists^Uv\,\exists^Uu\,(\phi(v)\wedge\phi(u)\wedge v\ne u)\end{aligned}$
+etc.
+
+Since the world contains infinitely many individuals (such as $\{\},\{\{\}\},\{\{\{\}\}\},\ldots$), the sentence $\ulcorner\exists^U_nv\,(v=v)\urcorner$, for any $n$, is true on every SO-interpretation. So, for any $n$, $\ulcorner\exists^U_nv\,(v=v)\urcorner$ is SO-valid.
+
+It is worth noting that the standard (domain-restricted) quantifier ‘$\exists$’ can be defined in terms of ‘$\exists^U$’. All we need to do is introduce a monadic predicate ‘$D$’, to play the role of specifying a domain and take ‘$\exists v\,(\phi(v))$’ to abbreviate ‘$\exists^Uv\,(D(v)\wedge\phi(v))$’. By taking ‘$\exists^Uv\,(D(v))$’ as a premise, we can then recover the usual validity for ‘$\exists$’. If the language includes a predicate ‘$\in$’ expressing set-theoretic membership, then McGee’s quantifier ‘$\exists^{AI}$’ can also be defined in terms of ‘$\exists^U$’, since we can take ‘$\exists^{AI}v\,(\phi(v))$’ to abbreviate ‘$\neg\exists^Uv\,\forall^Uv'\,(v'\in v\leftrightarrow\phi(v'))$’.9 When ‘$\exists^U$’ is regarded as the only primitive quantifier in the language, the notion of an SO-interpretation can be simplified. We can take ‘$I$ is an SO-interpretation’ to abbreviate ‘$\forall x\,(\mathrm{FOV}(x)\to\exists!yI\langle x,y\rangle)$’.
+
+It is worth noting, moreover, that MT-semantics does not provide an appropriate framework for the introduction of ‘$\exists^U$’. Although we could certainly set forth a clause analogous to [SO-$\exists^U$],
+
+[$\mathrm{MT}\text{-}\exists^U$]
+$\ulcorner\exists^Uv_i\,(\phi)\urcorner$ is true on $\langle D,F\rangle$ iff some $d$ is such that $\ulcorner\phi\urcorner$ is true on $\langle D,F[\ulcorner v_i\urcorner/d]\rangle$,
+
+it wouldn’t deliver the intended result. The problem is that an MT-interpretation assigns a set as the semantic value of a predicate. Since no set contains every individual, this means that, for any $\ulcorner P_j\urcorner$, $\ulcorner\exists^Uv_i\,(\neg P_j(v_i))\urcorner$ is true on every $\langle D,F\rangle$. So $\ulcorner\exists^Uv_i\,(\neg P_j(v_i))\urcorner$ is MT-valid, even though its negation may be true on the intended interpretation of $\ulcorner P_j\urcorner$ (for example, as meaning self-identity).
+
+Here we will not attempt to assess the legitimacy of ‘$\exists^U$’; that project is developed in Williamson (1999). Our present task is to identify a sound and complete deductive system for first-order languages involving ‘$\exists^U$’. For simplicity, we will set ‘$\exists$’ and ‘$\exists^{AI}$’ aside. Thus, we let our object-language, $L^U$, be the result of substituting ‘$\exists^U$’ for ‘$\exists$’ in a standard first-order language. In addition, we let $\mathrm{\Delta}$ be the result of substituting ‘$\exists^U$’ for ‘$\exists$’ in any standard first-order deductive system.
+
+Not every SO-valid sentence of $L^U$ is deducible in $\mathrm{\Delta}$. To see this note that, although $\ulcorner\exists^U_nv\,(v=v)\urcorner$ is not derivable in $\mathrm{\Delta}$ for $n\ge2$, $\ulcorner\exists^U_nv\,(v=v)\urcorner$ is SO-valid for any $n$. It follows immediately that no deductive system weaker than $\mathrm{\Delta}^\infty$—the result of enriching $\mathrm{\Delta}$ with an axiom $\ulcorner\exists^U_nv\,(v=v)\urcorner$ for every $n$—can be complete with respect to SO-validity. As it turns out, $\mathrm{\Delta}^\infty$ itself is sound and complete with respect to SO-validity.10 Williamson (1999) outlines an argument for this result. Here we will provide a formal proof.
+
+The soundness of $\mathrm{\Delta}^\infty$ with respect to SO-validity is immediate, since a straightforward induction on the length of proofs reveals that, if $\phi$ is a sentence of $L^U$ and $\mathrm{\Gamma}$ is a set of sentences of $L^U$, then $\phi$ is derivable from $\mathrm{\Gamma}$ in $\mathrm{\Delta}^\infty$ only if $\langle\mathrm{\Gamma},\phi\rangle$ is a valid SO-argument. To show the completeness of $\mathrm{\Delta}^\infty$, we prove the following:
+
+Completeness Theorem for Unrestricted First-Order Languages. Let $\ulcorner\phi\urcorner$ be a sentence of $L^U$ and $\mathrm{\Gamma}$ a set of sentences of $L^U$. Then $\langle\mathrm{\Gamma},\ulcorner\phi\urcorner\rangle$ is a valid SO-argument only if $\ulcorner\phi\urcorner$ is derivable from $\mathrm{\Gamma}$ in $\mathrm{\Delta}^\infty$.
+
+First some preliminary remarks. We work within second-order ZFC with urelements, and assume that everything can be put in one–one correspondence with the ordinals. An immediate consequence of our assumption is that the members of any set $S$ can be put in one–one correspondence with the ordinals less than a given ordinal $\alpha$. As usual, we let $|S|$ be the smallest such $\alpha$.
+
+In the course of the proof we will make use of several standard model-theoretic results. In order to retain their availability, we will make use of MT-interpretations, alongside SO-interpretations, with the important proviso that MT-interpretations are to treat ‘$\exists^U$’ like a standard (domain-restricted) quantifier, rather than an unrestricted one. Thus, instead of using [MT-$\exists^U$] as the truth-clause for ‘$\exists^U$’ within MT-semantics, we use the following analogue of [MT-$\exists$],
+
+[$\mathrm{MT}\text{-}\exists^{U+}$]
+$\ulcorner\exists^Uv_i\,(\phi)\urcorner$ is true on $\langle D,F\rangle$ iff some $d\in D$ is such that $\ulcorner\phi\urcorner$ is true on $\langle D,F[\ulcorner v_i\urcorner/d]\rangle$.
+
+On the other hand, we retain [SO-$\exists^U$] as the truth-clause for ‘$\exists^U$’ within SO-semantics.
+
+Two of the model-theoretic results we make use of are from Tarski and Vaught (1957). The first is a strengthened version of the Upward Löwenheim–Skolem Theorem:
+
+Tarski–Vaught 1. If $\langle D,F\rangle$ is an MT-interpretation for a language $L$, $D$ is infinite, and $\kappa$ is a cardinal such that $\kappa\ge|D|$ and $\kappa\ge|L|$, then there is an elementary extension $\langle D^{\text{*}},F^{\text{*}}\rangle$ of $\langle D,F\rangle$ such that $|D^{\text{*}}|=\kappa$.
+
+As usual, we say that an MT-interpretation $\langle D',F'\rangle$ is an elementary extension of $\langle D,F\rangle$ just in case: (i) $D\subseteq D'$, and (ii) for any formula $\psi$ with free variables among $\ulcorner v_1\urcorner,\ldots,\ulcorner v_n\urcorner$, and for any $a_1,\ldots,a_n\in D$, $\psi$ is true on $\langle D,F[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$ if and only if $\psi$ is true on $\langle D',F'[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$, where $G[\overrightarrow{v_n}/\overrightarrow{a_n}]$ is the function that is just like $G$ except that it assigns $a_1$ to $\ulcorner v_1\urcorner$, $a_2$ to $\ulcorner v_2\urcorner$, …, and $a_n$ to $\ulcorner v_n\urcorner$.
+
+The second model-theoretic result from Tarski and Vaught (1957) is the following:
+
+Tarski–Vaught 2. Let $K$ be a non-empty family of MT-interpretations such that, for any MT-interpretations $M,M'\in K$, some MT-interpretation in $K$ is an elementary extension of $M$ and an elementary extension of $M^{\prime}$. Let $D^K$ be the union of the $D_\beta$ for $\langle D_\beta,F_\beta\rangle\in K$; let $F^K(\ulcorner v_i\urcorner)=F_0(\ulcorner v_i\urcorner)$ for some $\langle D_0,F_0\rangle\in K$; and let $F^K(\ulcorner P_\alpha^n\urcorner)$ be the union of the $F_\beta(\ulcorner P_\alpha^n\urcorner)$ for $\langle D_\beta,F_\beta\rangle\in K$. Then $\langle D^K,F^K\rangle$ is an MT-interpretation and, for any MT-interpretation $M\in K$, $\langle D^K,F^K\rangle$ is an elementary extension of $M$.
+
+So much for preliminary remarks; we now turn to the proof. We assume that $\ulcorner\phi\urcorner$ is not derivable from $\mathrm{\Gamma}$ in $\mathrm{\Delta}^\infty$, and show that $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true on some SO-interpretation. We proceed by proving each of the following three propositions in turn:
+
+Proposition 1. For each ordinal $\alpha$ there is an MT-interpretation $\langle D_\alpha,F_\alpha\rangle$ such that: (a) $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true on $\langle D_0,F_0\rangle$; (b) for any $\alpha$, $|D_\alpha|\ge\aleph_\alpha$; and (c) for $\alpha\le\gamma$, $\langle D_\gamma,F_\gamma\rangle$ is an elementary extension of $\langle D_\alpha,F_\alpha\rangle$.
+
+Proposition 2. For each ordinal $\alpha$ there is an MT-interpretation $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}\rangle$ such that: (a) for any sentence $\psi$ of $L^U$, $\psi$ is true on $\langle D_0^{\text{*}},F_0^{\text{*}}\rangle$ if and only if $\psi$ is true on $\langle D_0,F_0\rangle$; (b) for any $\alpha$, $|D_\alpha^{\text{*}}|\ge\aleph_\alpha$; (c) for $\alpha\le\gamma$, $\langle D_\gamma^{\text{*}},F_\gamma^{\text{*}}\rangle$ is an elementary extension of $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}\rangle$; and (d) every individual is in some $D_\alpha^{\text{*}}$.
+
+Proposition 3. There is an SO-interpretation $I^{\text{*}}$ such that $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true on $I^{\text{*}}$.
+
+It is worth noting that the use of second-order resources will be confined to propositions 2 and 3.
+
+Proof of Proposition 1
+
+Since $\ulcorner\phi\urcorner$ is not derivable from $\mathrm{\Gamma}$ in $\mathrm{\Delta}^\infty$, it follows from the standard Completeness Theorem for first-order languages that $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}\cup N^\infty$ is true on some MT-interpretation $\langle D_0,F_0\rangle$, where $N^\infty$ is the set of sentences $\ulcorner\exists^U_n v_1\,(v_1=v_1)\urcorner$ for $n\in w$. Since every sentence in $N^\infty$ is true on $\langle D_0,F_0\rangle$, $D_0$ must be infinite. For $\alpha>0$, define $\langle D_\alpha,F_\alpha\rangle$ as follows:
+
+(D1)
+Assume $\alpha=\beta+1$, and suppose that $\langle D_\beta,F_\beta\rangle$ has been defined. By [Tarski–Vaught 1], there is an elementary extension $\langle D,F\rangle$ of $\langle D_\beta,F_\beta\rangle$ with $|D|\ge\aleph_\alpha$. By our assumption that everything can be put in one–one correspondence with the ordinals, there is a least such elementary extension. Let that elementary extension be $\langle D_\alpha,F_\alpha\rangle$.
+(D2)
+Assume that $\alpha$ is a limit ordinal, and suppose that $\langle D_\beta,F_\beta\rangle$ has been defined for every $\beta<\alpha$. Let $D_\alpha=\bigcup_{\beta<\alpha}D_\beta$, and define $F_\alpha$ as follows: $\begin{aligned}&F_\alpha(\ulcorner v_i\urcorner)=F_0(\ulcorner v_i\urcorner);\\&F_\alpha(\ulcorner P_\gamma^n\urcorner)=\bigcup\limits_{\beta<\alpha}F_\beta(\ulcorner P_\gamma^n\urcorner).\end{aligned}$
+
+It follows immediately from [Tarski–Vaught 2] that $\langle D_\alpha,F_\alpha\rangle$ is an MT-interpretation and that, for every $\beta<\alpha$, $\langle D_\alpha,F_\alpha\rangle$ is an elementary extension of $\langle D_\beta,F_\beta\rangle$. Moreover, since $|D_\beta|\ge\aleph_\beta$ for $\beta<\alpha$, we get the result that $|D_\alpha|\ge\aleph_\alpha$. □
+
+Proof of Proposition 2
+
+Since $|D_\alpha|\ge\aleph_\alpha$, our assumption that everything can be put in one–one correspondence with the ordinals guarantees that there is an $R^{\text{*}}$ such that
+
+$\forall x\,(\exists\alpha\,(x\in D_\alpha)\to\exists!y(R^{\text{*}}(x,y)))\wedge\forall y\,\exists!x(\exists\alpha\,(x\in D_\alpha)\wedge R^{\text{*}}(x,y)).$
+
+For each $\alpha$, let $r_\alpha$ be the one–one function with domain $D_\alpha$ such that $r_\alpha(x)$ is the unique $y$ for which $R^{\text{*}}(x,y)$. We may now define $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}\rangle$ from $\langle D_\alpha,F_\alpha\rangle$ as follows:
+
+$\begin{aligned}&D_\alpha^{\text{*}}=\{r_\alpha(x):x\in D_\alpha\}\\&F_\alpha^{\text{*}}(\ulcorner v_i\urcorner)=r_\alpha(F_\alpha(\ulcorner v_i\urcorner))\\&F_\alpha^{\text{*}}(\ulcorner P_\beta^n\urcorner)=\{\langle r_\alpha(x_1),\ldots,r_\alpha(x_n)\rangle:\langle x_1,\ldots,x_n\rangle\in F_\alpha(\ulcorner P_\beta^n\urcorner)\}.\end{aligned}$
+
+Clause (a) of Proposition 2 can be verified by a routine induction on the complexity of formulas. Since $r_\alpha$ is a one–one function with domain $D_\alpha$ and since $|D_\alpha|\ge\aleph_\alpha$, the definition of $D_\alpha^{\text{*}}$ guarantees that clause (b) is satisfied. Clause (c) can be verified by a routine induction on the complexity of formulas. Finally, in virtue of the construction of the $r_\alpha$ from $R^{\text{*}}$, the definition of the $D_\alpha^{\text{*}}$ guarantees that clause (d) is satisfied.
+
+Proof of Proposition 3
+
+Let $I^{\text{*}}$ be any SO-interpretation with the following property:
+
+$I^{\text{*}}\langle\ulcorner P_\beta^n\urcorner,\langle x_1,\ldots,x_n\rangle\rangle\leftrightarrow\exists\alpha\,(\langle x_1,\ldots,x_n\rangle\in F_\alpha^{\text{*}}(\ulcorner P_\beta^n\urcorner)).$
+
+We show the following:
+
+Let $\psi$ be a formula of $L^U$ with free variables among $v_1,\ldots,v_n$. For any ordinal $\alpha$, if $\langle a_1,\ldots,a_n\rangle$ is a sequence of individuals in $D_\alpha^{\text{*}}$, then $\psi$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$ if and only if $\psi$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]$,
+
+where $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]$ is just like $I^{\text{*}}$ except that, for $k\le n$, $a_k$ is the unique $x$ such that $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]\langle\ulcorner v_k\urcorner,x\rangle$. The proof is by induction on the complexity of $\psi$. Clauses corresponding to ‘=’, ‘¬’, and ‘ ∧ ’ are trivial.
+
+- Suppose $\psi$ is $\ulcorner P_\beta^m(v_{j_1},\ldots,v_{j_m})\urcorner$ (for $j_1,\ldots,j_m\le n$). Then, by [MT-P], $\psi$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$ iff $\langle a_{j_1},\ldots,a_{j_m}\rangle\in F_\alpha^{\text{*}}(\ulcorner P_\beta^m\urcorner)$. Similarly, by [SO-P], $\psi$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]$ iff $I^{\text{*}}\langle\ulcorner P_\beta^m\urcorner,\langle a_{j_1},\ldots,a_{j_m}\rangle\rangle$. So it suffices to show that $\langle a_{j_1},\ldots,a_{j_m}\rangle\in F_\alpha^{\text{*}}(\ulcorner P_\beta^m\urcorner)$ iff $I^{\text{*}}\langle\ulcorner P_\beta^m\urcorner,\langle a_{j_1},\ldots,a_{j_m}\rangle\rangle$. The definition of $I^{\text{*}}$ guarantees that $\langle a_{j_1},\ldots,a_{j_m}\rangle\in F_\alpha^{\text{*}}(\ulcorner P_i\urcorner)$ only if $I^{\text{*}}\langle\ulcorner P_\beta^m\urcorner,\langle a_{j_1},\ldots,a_{j_m}\rangle\rangle$. For the converse, suppose that $I^{\text{*}}\langle\ulcorner P_\beta^m\urcorner,\langle a_{j_1},\ldots,a_{j_m}\rangle\rangle$. By the definition of $I^{\text{*}}$, there is a $\delta$ such that $\langle a_{j_1},\ldots,a_{j_m}\rangle\in F_\delta^{\text{*}}(\ulcorner P_\beta^m\urcorner)$. If $\alpha\le\delta$, then $\langle D_\delta^{\text{*}},F_\delta^{\text{*}}\rangle$ is an elementary extension of $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}\rangle$; if $\delta<\alpha$, then $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}\rangle$ is an elementary extension of $\langle D_\delta^{\text{*}},F_\delta^{\text{*}}\rangle$. In either case $a_{j_1},\ldots,a_{j_m}\in F_\alpha^{\text{*}}(\ulcorner P_\beta^m\urcorner)$.
+- Suppose $\psi$ is $\ulcorner\exists^U v_i\,(\xi)\urcorner$ (for $i\le n$). Then, by [MT-$\exists^{U+}$], $\psi$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$ iff there is some $d\in D_\alpha^{\text{*}}$ such that $\ulcorner\xi\urcorner$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}][\ulcorner v_i\urcorner/d]\rangle$. Similarly, by [SO-$\exists^U$], $\psi$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]$ iff there is some $d$ such that $\ulcorner\xi\urcorner$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}][\ulcorner v_i\urcorner/d]$.
+
+Suppose $e\in D_\alpha^{\text{*}}$ is such that $\ulcorner\xi\urcorner$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}][\ulcorner v_i\urcorner/e]\rangle$. Let $e_i=e$; and, for $j\le n$ and $j\ne i$, let $e_j=a_j$. It follows that $\ulcorner\xi\urcorner$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{e_n}]\rangle$. Since $e_k\in D_\alpha^{\text{*}}$ for $k\le n$, it follows by inductive hypothesis that $\ulcorner\xi\urcorner$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{e_n}]$. This means that there is some $d$ such that $\ulcorner\xi\urcorner$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}][\ulcorner v_i\urcorner/d]$.
+
+Conversely, suppose that there is an $e$ such that $\ulcorner\xi\urcorner$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}][\ulcorner v_i\urcorner/e]$. As before, let $e_i=e$; and, for $j\le n$ and $j\ne i$, let $e_j=a_j$. It follows that $\ulcorner\xi\urcorner$ is true on $I^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{e_n}]$. Since every individual is in some $D_\eta^{\text{*}}$, $e\in D_\delta$ for some $\delta\ge\alpha$. By inductive hypothesis, $\ulcorner\xi\urcorner$ is true on $\langle D_\delta^{\text{*}},F_\delta^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{e_n}]\rangle$. Accordingly, there is some $d\in D_\delta^{\text{*}}$ such that $\ulcorner\xi\urcorner$ is true on $\langle D_\delta^{\text{*}},F_\delta^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}][\ulcorner v_i\urcorner/d]\rangle$ and, by [MT-$\exists^{U+}$], $\ulcorner\exists^U v_i\,(\xi)\urcorner$ is true on $\langle D_\delta^{\text{*}},F_\delta^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$. But, since $\alpha\le\delta$, $\langle D_\delta^{\text{*}},F_\delta^{\text{*}}\rangle$ is an elementary extension of $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}\rangle$. So, given that $a_k\in D_\alpha^{\text{*}}$ (for $k\le n$), $\ulcorner\exists^U v_i\,(\xi)\urcorner$ is true on $\langle D_\alpha^{\text{*}},F_\alpha^{\text{*}}[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$.
+
+It follows immediately that a sentence of $L^U$ is true on $I^{\text{*}}$ if and only if it is true on $\langle D_0^{\text{*}},F_0^{\text{*}}\rangle$. But, by Proposition 2, a sentence of $L^U$ is true on $\langle D_0^{\text{*}},F_0^{\text{*}}\rangle$ if and only if it is true on $\langle D_0,F_0\rangle$. And, by Proposition 1, $\mathrm{\Gamma}\cup\{\neg\phi\}$ is true on $\langle D_0,F_0\rangle$. So $\mathrm{\Gamma}\cup\{\neg\phi\}$ is true on $I^{\text{*}}$. This completes the proof. □
+
+# 3. Corollaries
+
+The soundness and completeness results for unrestricted first-order languages have two immediate consequences. (As before, we use [MT-$\exists^{U+}$] rather than [MT-$\exists^U$] as the truth-clause for ‘$\exists^U$’ within MT-semantics.)
+
+Corollary 1 (Compactness). Let $\mathrm{\Gamma}$ be a set of sentences of $L^U$. If, for every finite subset $\mathrm{\Gamma}^{\text{*}}$ of $\mathrm{\Gamma}$, there is some SO-interpretation on which $\mathrm{\Gamma}^{\text{*}}$ is true, then there is some SO-interpretation on which $\mathrm{\Gamma}$ is true.
+
+The proof is immediate.
+
+Corollary 2. If $\langle D,F\rangle$ is an MT-interpretation with $D$ infinite, then there is some SO-interpretation $I$ such that, for every sentence $\phi$ of $L^U$, $\phi$ is true on $\langle D,F\rangle$ if and only if $\phi$ is true on $I$.
+
+Proof. We make use of the fact that $\mathrm{\Delta}^\infty$ is sound with respect to the class of MT-interpretations with infinite domains. Let $\langle D,F\rangle$ be an MT-interpretation with $D$ infinite, and let $\mathrm{\Gamma}$ be the set of sentences of $L^U$ which are true on $\langle D,F\rangle$. By the soundness of $\mathrm{\Delta}^\infty$ with respect to the class of MT-interpretations with infinite domains, $\mathrm{\Gamma}$ is consistent in $\mathrm{\Delta}^\infty$. So, by the completeness of $\mathrm{\Delta}^\infty$ with respect to SO-interpretations, $\mathrm{\Gamma}$ is true on some SO-interpretation (and no sentence outside $\mathrm{\Gamma}$ is, since $\mathrm{\Gamma}$ is negation-complete). □
+
+Conversely, we have the following:
+
+Observation. For any SO-interpretation $I$, there is some MT-interpretation $\langle D,F\rangle$ with $D$ infinite such that, for every sentence $\phi$ of $L^U$, $\phi$ is true on $I$ if and only if $\phi$ is true on $\langle D,F\rangle$.
+
+Proof. We make use of the fact that $\mathrm{\Delta}^\infty$ is complete with respect to the class of MT-interpretations with infinite domains. Let $I$ be an SO-interpretation and let $\mathrm{\Gamma}$ be the set of sentences of $L^U$ which are true on $I$. By the soundness of $\mathrm{\Delta}^\infty$ with respect to SO-semantics, $\mathrm{\Gamma}$ is consistent in $\mathrm{\Delta}^\infty$. So, by the completeness of $\mathrm{\Delta}^\infty$ with respect to MT-interpretations, $\mathrm{\Gamma}$ is true with respect to some MT-interpretation (and no sentence outside $\mathrm{\Gamma}$ is, since $\mathrm{\Gamma}$ is negation-complete). □
+
+# 4. Choice Principles
+
+Our proof of the Completeness Theorem for unrestricted first-order languages makes use of a strong choice principle. It assumes that everything can be put in one–one correspondence with the ordinals.11 This assumption is equivalent to the existence of a well-ordering of the universe together with the existence of a one–one correspondence between everything and the sets, and it follows from (but does not imply) the existence of a well-ordering of the sets together with the existence of a set containing all non-sets.
+
+As it turns out, the use of choice principles in our proof is unavoidable. The easiest way to see this is by noting that the Completeness Theorem implies, in second-order ZF, that the universe can be linearly ordered. (Proof. For an arbitrary two-place predicate $R$, let $\phi$ be a sentence of $L^U$ stating that $R$ is a linear ordering. Clearly, $\phi$ is true on any MT-interpretation $\langle\mathbb N,F\rangle$ where $F(R)$ is the usual ordering of the natural numbers. So, by Corollary 2, $\phi$ is true on some SO-interpretation $I$. But then $\prec$ linearly orders the universe, where $x\prec y\leftrightarrow I\langle R,\langle x,y\rangle\rangle$.] A sentence stating that the universe can be linearly ordered is a choice principle because it is provable in second-order ZF plus the Axiom of Global Choice, but not in second-order ZF (if second-order ZF is consistent); it does not, however, imply the Axiom of Global Choice in second-order ZF (if second-order ZF is consistent).12
+
+A result of Harvey Friedman’s shows that, for the special case where $L^U$ contains countably many non-logical primitives, the Completeness Theorem for unrestricted first-order languages is equivalent, within second-order ZF, to the claim that the universe can be linearly ordered.13 However, this result is unlikely to extend to the general case, where arbitrary non-countable sets of non-logical primitives are allowed. In addition to implying that the universe can be linearly ordered, the Completeness Theorem implies, within second-order ZF, the Prime Ideal Theorem (which states that any Boolean Algebra has a prime ideal).14 The Prime Ideal Theorem is a choice principle because it is provable in ZFC, but not in ZF (if ZF is consistent); it does not, however, imply the Axiom of Choice in ZF (if ZF is consistent).15 Ascertaining the exact strength of our Completeness Theorem with respect to different choice principles is an interesting matter, which we do not address here.
+
+The Completeness Theorem for unrestricted first-order languages is not alone in its reliance on choice principles. A choice principle is needed to prove the Generalized Completeness Theorem for standard first-order languages (which states that, when arbitrary non-countable sets of non-logical primitives are allowed, a first-order argument $\langle\mathrm{\Gamma},\phi\rangle$ is valid only if $\phi$ is derivable from $\mathrm{\Gamma}$ in some standard first-order deductive system). Specifically, the Generalized Completeness Theorem can be shown within ZF to be equivalent to the Prime Ideal Theorem.16 Choice principles are also needed to prove [Tarski–Vaught 1], and the Downward Löwenheim–Skolem Theorem (which states that a formula of $L$ which is true on some MT-interpretation with domain of cardinality $\kappa$ is also true on some MT-interpretation with domain of cardinality $\mu$, if $\max(\aleph_0,|L|)\le\mu\le\kappa$). They are both provably equivalent to the Axiom of Choice within ZF.17
+
+A distinctive feature of the Completeness Theorem for unrestricted first-order languages is its reliance on a global choice principle. But non-global choice principles are largely an artefact of the use of first-order languages. When one gives purely second-order formulations of choice principles, one naturally gets the global forms.18
+
+No choice principles are needed to prove certain special cases of the results we have considered. For instance, no choice principles are needed to prove the special case of the Generalized Completeness Theorem when the set of non-logical primitives has cardinality $\aleph_\alpha$ for some $\alpha$ (since any set of cardinality $\aleph_\alpha$ for some $\alpha$ can be well-ordered, and the well-ordering can be extended to finite sequences of its members).19 In the case of the Completeness Theorem for unrestricted first-order languages, no choice principles are required when there are only finitely many monadic predicates and no polyadic predicates other than ‘=’, or when the language does not contain identity and the set of non-logical primitives has cardinality $\aleph_\alpha$ for some $\alpha$. More specifically, the following propositions are provable within second-order ZF with urelements:20
+
+Special Case 1. Assume that $L^U$ contains only finitely many monadic predicates and no polyadic predicates other than ‘=’. Let $\ulcorner\phi\urcorner$ be a sentence of $L^U$ and $\mathrm{\Gamma}$ a set of sentences of $L^U$. Then $\langle\mathrm{\Gamma},\ulcorner\phi\urcorner\rangle$ is a valid SO-argument only if $\ulcorner\phi\urcorner$ is derivable from $\mathrm{\Gamma}$ in $\mathrm{\Delta}^\infty$.
+
+Proof sketch. Suppose $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is consistent with respect to $\mathrm{\Delta}^\infty$. Then, by the standard Completeness Theorem for first-order languages, there is an MT-interpretation $\langle D,F\rangle$, with $D$ infinite, on which $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true. Since there are only finitely many monadic predicates and no polyadic predicates other than ‘=’, it is easy to verify that there is some infinite subset $D^{\text{*}}$ of $D$ with the following property:
+
+Let $\text{*}$ be a one–one function from $D$ into $D$ such that $a^{\text{*}}=a$ if $a\notin D^{\text{*}}$, and $a^{\text{*}}\in D^{\text{*}}$ otherwise. Then, for any objects $a_1,\ldots,a_n\in D$ and any formula $\phi$ with free variables among $\ulcorner v_1\urcorner,\ldots,\ulcorner v_n\urcorner$, $\phi$ is true on $\langle D,F[\overrightarrow{v_n}/\overrightarrow{a_n}]\rangle$ just in case $\phi$ is true on $\langle D,F[\overrightarrow{v_n}/\overrightarrow{a_n^{\text{*}}}]\rangle$.
+
+In particular, this means that, for $a,b\in D^{\text{*}}$, $a\in F(\ulcorner P_\alpha^1\urcorner)\leftrightarrow b\in F(\ulcorner P_\alpha^1\urcorner)$. For $d\in D^{\text{*}}$, let $I$ be any SO-interpretation such that
+
+$\begin{aligned}&I\langle\ulcorner P_\alpha^1\urcorner,a\rangle\leftrightarrow a\in F(\ulcorner P_\alpha^1\urcorner)\quad\text{for }a\in D\\&I\langle\ulcorner P_\alpha^1\urcorner,a\rangle\leftrightarrow d\in F(\ulcorner P_\alpha^1\urcorner)\quad\text{for }a\notin D.\end{aligned}$
+
+An induction on the complexity of formulas shows that, for any $a_1,\ldots,a_n$, if $\phi$ is a formula with free variables among $\ulcorner v_1\urcorner,\ldots,\ulcorner v_n\urcorner$, and if $\circ$ is a function from $D\cup\{a_1,\ldots,a_n\}$ into $D$ such that: (1) $a^\circ=a$ if $a\in D$, and $a^\circ\in D^{\text{*}}$ otherwise, and (2) $a_i\ne a_j\to a_i^\circ\ne a_j^\circ$ (for $1\le i\le j\le n$), then $\phi$ is true on $I[\overrightarrow{v_n}/\overrightarrow{a_n}]$ just in case $\phi$ is true on $\langle D,F[\overrightarrow{v_n}/\overrightarrow{a_n^\circ}]\rangle$. It follows that $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true on $I$. □
+
+Special Case 2. Assume that $L^U$ does not contain ‘=’ and that the set of non-logical primitives in $L^U$ has cardinality $\aleph_\alpha$ for some $\alpha$.21 Let $\ulcorner\phi\urcorner$ be a sentence of $L^U$ and $\mathrm{\Gamma}$ a set of sentences of $L^U$. Then $\langle\mathrm{\Gamma},\ulcorner\phi\urcorner\rangle$ is a valid SO-argument only if $\ulcorner\phi\urcorner$ is derivable from $\mathrm{\Gamma}$ in a standard first-order system without identity.
+
+Proof sketch. Suppose $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is consistent with respect to a standard first-order system without identity. Then, by the standard Completeness Theorem for first-order languages, there is an MT-interpretation $\langle D,F\rangle$ on which $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true. For an arbitrary $d\in D$, let $a^\circ=a$ if $a\in D$, and let $a^\circ=d$ otherwise. Let $I$ be any SO-interpretation such that
+
+$$I\langle\ulcorner P_\alpha^n\urcorner,\langle a_1,\ldots,a_n\rangle\rangle\leftrightarrow\langle a_1^\circ,\ldots,a_n^\circ\rangle\in F(\ulcorner P_\alpha^n\urcorner).$$
+
+An induction on the complexity of formulas shows that, for any $a_1,\ldots,a_n$, if $\phi$ is a formula with free variables among $\ulcorner v_1\urcorner,\ldots,\ulcorner v_n\urcorner$, then $\phi$ is true on $I[\overrightarrow{v_n}/\overrightarrow{a_n}]$ just in case $\phi$ is true on $\langle D,F[\overrightarrow{v_n}/\overrightarrow{a_n^\circ}]\rangle$. It follows that $\mathrm{\Gamma}\cup\{\ulcorner\neg\phi\urcorner\}$ is true on $I$. □
+
+# 5. Additional Assumptions
+
+The assumption that everything can be put in one–one correspondence with the ordinals implies that the universe can be well-ordered. But it also imposes restrictions on the universe which are independent of choice principles. In particular, since the ordinals are pure sets, it implies that there can’t be more urelements than pure sets. It is important to note that this sort of restriction is inessential. The proof in Section 2 makes non-choice assumptions in order to minimize the use of second-order resources. But, by making heavier use of second-order resources, the Completeness Theorem can be proved within second ZFC plus urelements from the assumption that the universe can be well-ordered.
+
+Proof sketch. Say that $<$ is a well-ordering of the universe, and let $\mathrm{\Gamma}$ be a set of sentences of $L^U$ which is consistent with respect to $\mathrm{\Delta}^\infty$. We show that there is an SO-interpretation on which every sentence in $\mathrm{\Gamma}$ is true.
+
+We begin with some notation. Let $L_+^U$ be the result of enriching $L^U$ with a constant-letter $\ulcorner c_a\urcorner$ for every individual $a$. [This is possible because we may assume, with no loss of generality, that none of the primitives in $L^U$ is identical to $\langle x,0\rangle$ for some $x$, and go on to identify $\ulcorner c_a\urcorner$ with $\langle a,0\rangle$ for every $a$.] In addition, let $G_0$ be such that $G_0(x)\leftrightarrow(x\in\mathrm{\Gamma}\vee x=\ulcorner c_a\ne c_b\urcorner)$ for $a\ne b$.
+
+The consistency of $G_0$ with respect to $\mathrm{\Delta}^\infty$ follows from the consistency of $\mathrm{\Gamma}$ with respect to $\mathrm{\Delta}^\infty$. We wish to produce a consistent extension of $G_0$ which contains ‘witnesses’ for all existential sentences. Since $<$ is a well-ordering of the universe, we may say that, for any individual $a$, $\ulcorner\phi_a(x_{i_a})\urcorner$ is the $a$-th formula of $L_+^U$ with one free variable $\ulcorner x_{i_a}\urcorner$. Similarly, for some subcollection $D$ of the constant-letters in $L_+^U$, we may say that, for any individual $a$, $\ulcorner d_a\urcorner$ is the $a$-th constant-letter in $D$. With no loss of generality, we may assume that, for each individual $a$, the $a$-th formula of $L_+^U$ with one free variable does not contain the $a$-th constant-letter in $D$. Let $G_1$ be the result of adding to $G_0$, for each individual $a$, the formula $\ulcorner\exists x_{i_a}\,(\phi_a(x_{i_a}))\to\phi_a(d_a)\urcorner$. It is easy to verify that the consistency of $G_1$ with respect to $\mathrm{\Delta}^\infty$ follows from the consistency of $G_0$ with respect to $\mathrm{\Delta}^\infty$.
+
+The next step is to produce an extension of $G_1$ which is negation-complete in $L_+^U$ and consistent with respect to $\mathrm{\Delta}^\infty$. For each individual $a$, we define $P_a$ as follows:
+
+- $P_0(x)\leftrightarrow G_1(x)$, where 0 is the $<$-smallest individual.
+- For $a$ such that $0<a$, let $\phi$ be the $<$-smallest sentence of $L_+^U$ which is $<$-greater than or equal to $a$, and let $X$ be such that $\forall x\,(X(x)\leftrightarrow\exists b\,<a(P_b(x)))$. Then $P_a(x)\leftrightarrow(X(x)\vee x=\phi)$ if the result of adding $\phi$ to the formulas in $X$ is consistent with respect to $\mathrm{\Delta}^\infty$, and $P_a(x)\leftrightarrow X(x)$ otherwise. If no sentence of $L_+^U$ is $<$-greater than or equal to $a$, then $P_a(x)\leftrightarrow X(x)$.
+
+Let $G_2$ be such that $G_2(x)\leftrightarrow\exists a\,(P_a(x))$. It is straightforward to show that $G_2$ is an extension of $G_1$ which is negation-complete in $L_+^U$ and which is consistent with respect to $\mathrm{\Delta}^\infty$.
+
+Finally, we provide an SO-interpretation on which every sentence in $G_2$ is true. Let $G_3$ be the result of substituting ‘$\exists$’ for ‘$\exists^U$’ throughout $G_2$. Expand the definition of SO-interpretations so as to allow for individual constants (in the obvious way), and let $I$ be an SO-interpretation meeting the following conditions:
+
+- $I\langle\text{‘}\forall\text{’},x\rangle$ iff there is a constant $\ulcorner a\urcorner$ such that $x=\ulcorner a\urcorner$ and, for some constant $\ulcorner c\urcorner$, $\ulcorner a\urcorner$ is the $<$-smallest constant such that $G_3(\ulcorner a=c\urcorner)$.
+
+- if $\ulcorner c\urcorner$ is a constant, then $I\langle\ulcorner c\urcorner,x\rangle$ iff there is a constant $\ulcorner a\urcorner$ such that $x=\ulcorner a\urcorner$ and $\ulcorner a\urcorner$ is the $<$-smallest constant such that $G_3(\ulcorner a=c\urcorner)$;
+
+- if $\ulcorner P\urcorner$ is an $n$-place predicate, then $I\langle\ulcorner P\urcorner,\langle x_1,\ldots,x_n\rangle\rangle$ iff there are constants $\ulcorner a_1\urcorner,\ldots,\ulcorner a_n\urcorner$ such that $x_1=\ulcorner a_1\urcorner,\ldots,x_n=\ulcorner a_n\urcorner$ and $G_3(\ulcorner P(a_1,\ldots,a_n)\urcorner)$.
+
+An induction on the complexity of formulas shows that a sentence $\phi$ is true on $I$ just in case $G_3(\phi)$. But, since $L_+^U$ contains a constant $\ulcorner c_a\urcorner$ for each individual $a$, and since $G_3(\ulcorner c_a\ne c_b\urcorner)$ whenever $a\ne b$, the individuals in the domain of $I$ can be put in one–one correspondence with everything. This allows us to define an SO-interpretation on which every sentence in $G_2$ is true and, hence, an SO-interpretation on which every sentence in $\mathrm{\Gamma}$ is true. □
+
+# 6. Second-Order Languages
+
+So far our object-language has always been a first-order language, but SO-interpretations can also be used to provide a semantics for second-order languages.22
+
+Formally, we continue to regard ‘$I$ is an SO-interpretation’ as an abbreviation for ‘$\exists x\,(I\langle\text{‘}\forall\text{’},x\rangle)\wedge\forall x\,(\mathrm{FOV}(x)\to\exists!yI\langle x,y\rangle)$’ (or as an abbreviation for ‘$\forall x\,(\mathrm{FOV}(x)\to\exists!yI\langle x,y\rangle)$’ if only unrestricted quantifiers are taken into account). But we add the following clauses to our characterization of ‘$\phi$ is true on $I$’:
+
+[$\mathrm{SO}\text{-}V$]
+$\ulcorner V_i^n(v_{j_1},\ldots,vj_n)\urcorner$ is true on $I$ iff $I\langle\ulcorner V_i^n\urcorner,\langle I(\ulcorner v_{j_1}\urcorner),\ldots,I(\ulcorner v_{j_n}\urcorner)\rangle\rangle$,
+[$\mathrm{SO}\text{-}2\exists$]
+$\ulcorner\exists V_i^n\,(\psi)\urcorner$ is true on $I$ iff $\exists X\,(\forall x\,(X(x)\to I\langle\text{‘}\forall\text{’},x\rangle)\wedge\ulcorner\psi\urcorner$ is true on $I[\ulcorner V_i^n\urcorner IX])$,
+[$\mathrm{SO}\text{-}2\exists^{\mathrm U}$]
+$\ulcorner\exists^UV_i^n\,(\psi)\urcorner$ is true on $I$ iff $\exists X\,(\ulcorner\psi\urcorner$ is true on $I[\ulcorner V_i^n\urcorner/X])$.
+
+where $I[\ulcorner V_i^n\urcorner/X]$ is just like $I$ except that, for all $x$, $I\langle\ulcorner V_i^n\urcorner,x\rangle\leftrightarrow X(x)$. SO-validity is characterized as before.
+
+Intuitively, the ‘semantic value’ which an SO-interpretation $I$ assigns to an $n$-place second-order variable $\ulcorner V^n\urcorner$ is the collection of $n$-tuples $\langle x_1,\ldots,x_n\rangle$ such that $I$ is true of $\langle\ulcorner V^n\urcorner,\langle x_1,\ldots,x_n\rangle\rangle$. Clause [SO-2∃] ensures that every collection of individuals in the ‘domain’ of $I$ is within the ‘range’ of the standard (domain-dependent) second-order quantifier ‘∃’, and clause [SO-$2\exists^{\mathrm U}$] ensures that every collection of individuals is within the ‘range’ of the unrestricted second-order quantifier ‘$\exists^U$’.
+
+As in the first-order case, there are second-order sentences containing unrestricted quantifiers which are SO-valid even though their domain-relative counterparts are not. For instance, the infinity of the universe ensures that the following sentence—which states that there is a one–one function from everything onto less than everything—is SO-valid:
+
+$$\begin{aligned}&\exists^UR\,[{}\forall^Ux\,\forall^Uy\,\forall^Uz\,(R(x,y)\wedge R(x,z)\to y=z)\wedge{}\\&\forall^Ux\,\forall^Uy\,\forall^Uz\,(R(x,z)\wedge R(y,z)\to x=y)\wedge{}\\&\forall^Ux\,\exists^Uy\,(R(x,y))\wedge{}\exists^Uy\,\forall^Ux\,(\neg R(x,y))];\end{aligned}$$
+
+even though its domain-relative counterpart is not, since there are SO-interpretations with finite ‘domains’. Similarly, the existence of inaccessibly many sets ensures that the following sentence—which implies that there are inaccessibly many individuals—is SO-valid:
+
+$\exists^UR\,(\mathit{ZFC}2)$
+
+where ‘ZFC2’ is the result of substituting the unused second-order variable ‘$R$’ for every occurrence of ‘$\in$’ in (an unrestricted version of) the conjunction of the axioms of second-order ZFC;
+
+even though its domain-relative counterpart is not, since there are SO-interpretations with ‘domains’ which do not contain inaccessibly many objects.
+
+Finally, consider the following two sentences, both of which are free from non-logical vocabulary:
+
+[$\mathrm{CH}$]
+$\forall^UX\,($Aleph-1$(X)\leftrightarrow$Continuum$(X))$
+[$\mathrm{NCH}$]
+$\forall^UX\,($Aleph-1$(X)\to\neg$Continuum$(X))$
+
+where ‘Aleph-1($X$)’ is (the unrestricted version of) a formula of pure second-order logic to the effect that there are precisely $\aleph_1$-many objects falling under ‘$X$’, and ‘Continuum($X$)’ is (the unrestricted version of) a formula of pure second-order logic to the effect that there are precisely continuum-many objects falling under ‘$X$’ (see Shapiro 1991, sect. 5.1).
+
+Suppose that the continuum hypothesis is true. Then [CH] is SO-valid, and so is its domain-relative counterpart. But the existence of $\aleph_1$-many individuals ensures that the negation of [NCH] is SO-valid, even though its domain-relative counterpart is not (since it is false on any SO-interpretation with a ‘domain’ consisting of less-than-$\aleph_1$-many individuals). On the other hand, suppose the continuum hypothesis is false. Then [NCH] is SO-valid, and so is its domain-relative counterpart. But the existence of $\aleph_1$-many individuals ensures that the negation of [CH] is SO-valid, even though its domain-relative counterpart is not (since it is false on any SO-interpretation with a ‘domain’ consisting of less-than-$\aleph_1$-many individuals). So, whether or not the continuum hypothesis is true, [CH] or its negation is SO-valid, and [NCH] or its negation is SO-valid. But the same cannot be said of their domain-relative counterparts. (A similar example can be constructed for the case of the Generalized Continuum Hypothesis.)
+
+Our examples illustrate a general feature of unrestricted second-order sentences, which sets them apart from their domain-relative counterparts: every true second-order sentence containing no non-logical vocabulary or domain-relative quantifiers is SO-valid.
+
+Unfortunately, we cannot hope to obtain a completeness result for second-order languages (whether the quantifiers be unrestricted or domain-relative). It is a consequence of Gödel’s Incompleteness Theorem that, if $D$ is any effective second-order deductive system which is sound with respect to SO-validity, then there is a second-order sentence which is SO-valid but is not a theorem of $D$.23
+
+# 7. Higher-Order Languages
+
+We have seen that SO-interpretations can be used to provide a semantics for second-order languages. Could SO-interpretations also be used to provide a semantics for a language containing second-level predicates, such as our metalinguistic predicate ‘$\phi$ is true on $I$’ (where ‘$I$’ is a second-order variable)? There is an important sense in which they cannot. Say that a semantics based on $\mathrm{\Upsilon}$-interpretations is strictly adequate for a language $L$ only if every semantic value which a non-logical expression in $L$ might take is captured by some $\mathrm{\Upsilon}$-interpretation. Then a semantics based on SO-interpretations cannot be strictly adequate for a language containing second-level predicates. Informally, the problem is this: the semantic value of a second-level predicate might consist of any ‘supercollection’ of collections of individuals. But a (third-order) generalization of Cantor’s Theorem shows that there are ‘more’ supercollections of collections of individuals than there are collections of individuals. Since each SO-interpretation is given by the collection of individuals a second-order variable is true of, this means that there are ‘more’ semantic values a second-level predicate might take than SO-interpretations. So there are semantic values a second-level predicate might take which are not captured by any SO-interpretation. Again, this informal explanation is strictly nonsense, since ‘is a collection’ and ‘is a supercollection’ take the position of first-level predicates in sentences of natural language, even though they are intended to capture higher-order notions; nonetheless, it draws attention to a helpful analogy between first- and higher-order notions. The result can be stated formally and proved within a third-order language.
+
+In order to provide a strictly adequate semantics for languages containing second-level predicates one needs at least a third-order metalanguage enriched with a third-level predicate (i.e. a predicate taking third-order variables in some of its argument-places). And, of course, the situation generalizes. In order to provide a strictly adequate semantics for languages containing $n$th-level predicates one needs at least an $(n+1)$th-order metalanguage enriched with an $(n+1)$th-level predicate.
+
+# 8. Concluding Remarks
+
+We conclude with a historical note. The formal system which Frege set forth in the Begriffsschrift was meant to be a universal language: it was intended as a vehicle for formalizing all deductive reasoning. Accordingly, Frege took the first-order variables of his system to range over all individuals. So much is beyond dispute. However, some interpreters have recently contended that Frege’s conception of logic as a universal language prevented him from engaging in substantive metatheoretical investigation.24 The problem, they argue, is that there can be no external perspective within a universal logical system from which to assess the system itself. With this we disagree.25
+
+The metatheoretical results in the present paper show that absolutely unrestricted quantification is not an obstacle to substantial metatheoretical investigation. Accordingly, our results show that metatheoretical investigation is possible for systems which do not allow for an ontologically external perspective. We did, of course, make use of an ideologically external perspective, since (for instance) we appealed to a higher-order metalanguage in our study of first-order object-languages. But this does not affect the claim that a universal language can be used to perform a substantial metatheoretical investigation of a fragment of itself, even when the fragment contains unrestricted quantifiers.
+
+# Acknowledgements
+
+Thanks to Vann McGee and Stephen Read for many helpful comments.
+
+# Notes
+
+[1] Tarski (1986) (text of a lecture delivered in 1966) suggests invariance under permutations of the universe as a criterion for a logical constant. Sher (1991) develops this approach in an extensional way (see also McGee 1996; contrast McCarty 1981). Alternatively, one might require the invariance to be necessary or a priori. One can also require logical constants to be invariant in extension across circumstances of evaluation (worlds and times), so that a predicate applicable to everything if Nelson died at Trafalgar and to nothing otherwise does not qualify as a logical constant, even though we know a priori that it is necessarily permutation-invariant in extension.
+
+Almog (1989) also characterizes logical truth by permutation invariance, although the underlying conception is quite different. Our aim here is not fine-tuning the notion of logical consequence.
+
+[2] We take a first-order language to consist of the following symbols: the logical connectives ‘$\wedge$’ and ‘$\neg$’, the quantifier-expression ‘$\exists$’, variable-symbols $\ulcorner v_i\urcorner$ for $i\in w$, the identity-symbol ‘$=$’, $n$-place predicate-letters $\ulcorner P_\alpha^n\urcorner$ for $n\in\mathrm{\omega}$ and $\alpha$ in some set $S$, and the auxiliary symbols ‘(’ and ‘)’. We do not consider function-letters, since they can be simulated by $(n+1)$-place predicates. The formulas of $L$ are defined in the usual way.
+
+[3] To simplify our presentation, we make the assumption that, for every $x$, the 1-tuple of $x$ is identical with $x$.
+
+[4] A powerful defense of unrestricted quantification is set forth in Cartwright (1994), undermining some of the classic criticisms in Dummett (1981, chs. 14–16). The possibility of quantifying over everything is also defended in Boolos (1998b), McGee (2000), Williamson (1999), Rayo (2003), and Williamson (forthcoming).
+
+[5] See Quine (1937), Church (1974), Mitchell (1976), and Skala (1974). For an extended discussion of set theories with a universal set, see Forster (1995).
+
+[6] On this definition, not everything falling under ‘$I$’ has a role to play in the resulting semantics. If we wished to stipulate away idle clutter, we could have taken ‘$I$ is an SO-interpretation’ to abbreviate the following instead:
+
+$\exists x\,(I\langle\text{‘}\forall\text{’},x\rangle)\wedge\forall x\,(\mathrm{FOV}(x)\to\exists!yI\langle x,y\rangle)\wedge{}$
+$\forall x\,\{Ix\to[\exists y\,(x=\langle\text{‘}\forall\text{’},y\rangle)\vee\exists y\,\exists z\,\exists n\,($Pred$(y,n)\wedge$Tuple$(z,n)\wedge x=\langle y,z\rangle)\vee{}$
+$\exists y\,\exists z\,(\mathrm{FOV}(y)\wedge x=\langle y,z\rangle)]\}$
+
+where the predicates are understood in the obvious way: ‘FOV($x$)’ is interpreted as ‘$x$ is a first-order variable’, ‘Pred($x,n$)’ is interpreted as ‘$x$ is an $n$-place predicate’, and ‘Tuple($x,n$)’ is interpreted as ‘$x$ is an $n$-tuple’.
+
+[7] For more on second-level predicates see Rayo (2002). Vann McGee has pointed out that, as long as $L$ is a first-order language, the notion of truth on an SO-interpretation for $L$ can be explicitly characterized in a second-order language with no atomic second-level predicates (see ch. 16 in this volume). When $L$ is a second-order language, however, the notion of truth on an SO-interpretation for $L$ cannot be characterized in a second-order language with no atomic second-level predicates. [Proof sketch. Let $L$ and $L'$ be second-order languages containing no atomic second-level predicates and let $M$ be the intended SO-interpretation for $L'$. We suppose, for reductio, that it is possible to characterize in $L'$ the notion of truth on an SO-interpretation for $L$, in other words, we suppose that there is a formula ‘$Sat(x,I)$’ of $L'$ such that the following sentence of $L'$ is true on $M$:
+
+(*)
+$\begin{aligned}&\forall I\,\forall x\,[[(I\text{ is an SO-interpretation for }L\wedge x\text{ is a formula of }L)\to{}\\&([\mathrm{SO}\text{-}{=} ]\wedge[\mathrm{SO}\text{-}P]\wedge[\mathrm{SO}\text{-}\neg]\wedge[\mathrm{SO}\text{-}\wedge]\wedge[\mathrm{SO}\text{-}\exists]\wedge[\mathrm{SO}\text{-}V]\wedge[\mathrm{SO}\text{-}2\exists])]\end{aligned}$
+
+where ‘$I$ is an SO-interpretation for $L$’ and ‘$x$ is a formula of $L$’ are interpreted in the obvious way, and ‘$Sat(x,I)$’ is substituted for ‘$x$ is true on $I$’ in [SO-=], [SO-$P$], [SO-$\neg$], [SO-$\wedge$], [SO-$\exists$], [SO-$V$], and [SO-$2\exists$] ([SO-$V$] and [SO-$2\exists$] are defined in Section 6). With no loss of generality, we may assume that $L'$ contains no non-logical predicate-letters which do not occur in (*), and hence that $L'$ contains only finitely many non-logical primitives (for simplicity, we take second-order languages to contain no function-letters). Since ‘$x$ is a formula of $L$’ is true of all and only formulas of $L$, the domain of $M$ must be infinite; this means that any arithmetical sentence $\ulcorner\phi\urcorner$ can be expressed in $L'$ as the universal closure of the result of substituting the arithmetical primitives for variables of the appropriate type in $\ulcorner\mathrm{PA}\to\phi\urcorner$, where PA is the conjunction of the second-order Dedekind–Peano Axioms. It is therefore harmless to assume that the language of arithmetic can be interpreted in the theory of $M$. From this it follows that $L'$ is able to characterize its own syntax by way of Gödel numbering. Let $P_1,\ldots,P_n$ be a complete list of the non-logical predicate-letters in $L'$, and say that a correspondence function is a one–one function mapping each of the $P_i$ ($1\le i\le n$) onto a variable of $L$ with the same number of argument-places. Since $L'$ is able to characterize the syntax of $L$ in addition to its own, there is a correspondence function $c$ definable in $L'$. If $\phi$ is a formula of $L'$, let $\phi^c$ be the result of substituting $c(P_i)$ for every occurrence of $P_i$ in $\phi$ ($1\le i\le n$), and, if necessary, relabeling variables to avoid clashes. For any formula $\phi$ of $L'$, $c(\phi)$ is a formula of pure second-order logic, and therefore a formula of $L$. Moreover, it follows from the definability of $c$ in $L'$ that there is a formula $C(x,y)$ of $L'$ which holds of $x$ and $y$ just in case $x$ is the (Gödel number of) a formula $\phi$ of $L'$ and $y$ is $c(\phi)$. It is also possible to characterize in $L'$ an SO-interpretation $I^M$ of $L$ with the following characteristics: (a) $I^M(\langle\text{‘}\forall\text{’},x\rangle)$ if and only if $M(\langle\text{‘}\forall\text{’},x\rangle)$ and (b) for each $P_i$ ($1\le i\le n$), if $\ulcorner V_j^m\urcorner$ is $c(P_i)$, then $I^M(\langle\ulcorner V_j^m\urcorner,\langle x_1,\ldots,x_m\rangle\rangle)$ if and only if $M(\langle\ulcorner P_i\urcorner,\langle x_1,\ldots,x_m\rangle\rangle)$. But ‘$\forall y\,(C(x,y)\to Sat(y,I^M))$’ is a truth predicate for $L'$, contradicting Tarski’s Theorem.] It is worth noting that the result continues to hold when $L$ contains unrestricted quantifiers (introduced in Sections 2 and 6).
+
+[8] See Kreisel (1967). Cartwright (1994) uses Kreisel’s argument to argue against the view that the All-in-One Principle—the principle that to quantify over certain objects is to presuppose that there is one thing of which those objects are the members—derives support from MT-semantics. In particular, Cartwright notes that Kreisel’s argument undermines the thought that the MT-validity of a sentence $\phi$ can only be a guarantee of $\phi$’s truth if the intended domain of $\phi$ coincides with the domain of some MT-interpretation.
+
+[9] As usual, we take ‘$\forall^U\upsilon\,(\phi)$’ to abbreviate ‘$\neg\exists^U\upsilon\,\neg(\phi)$’.
+
+[10] Since any theory compatible with Robinson Arithmetic is recursively undecidable (see, for instance, Mendelson 1987, proposition 3.48), the recursive undecidability of the set of theorems of $\mathrm{\Delta}^\infty$ is an immediate consequence of the observation that Robinson Arithmetic can be consistently added to the axioms of $\mathrm{\Delta}^\infty$.
+
+[11] For an interesting discussion on the question of whether everything can be put in one–one correspondence with the ordinals, see Shapiro (forthcoming).
+
+[12] See Rubin and Rubin (1985: 286).
+
+[13] See Friedman (1999, theorem D.4).
+
+[14] The proof is analogous to standard proofs that the Generalized Completeness Theorem is equivalent to the Prime Ideal Theorem within ZF. See, for instance, Jech (1973: 17).
+
+[15] See Jech (1973, §7.1).
+
+[16] The equivalence of the Prime Ideal Theorem to the Generalized Completeness Theorem is due to Henkin (1954). For a more recent exposition of the proof, see Mendelson (1987).
+
+[17] The results are due to Vaught (1956) and Tarski and Vaught (1957). For proofs, see Rubin and Rubin (1985: 163).
+
+[18] Thanks here to Robert Black.
+
+[19] For a proof, see Mendelson (1987, proposition 2.33).
+
+[20] For additional results within a metatheory lacking choice principles, see Friedman (1999).
+
+[21] It is worth noting that the assumption that the set of non-logical primitives in $L^U$ has cardinality $\aleph_\alpha$ for some $\alpha$ is required in the proof below to ensure that the relevant version of the Completeness Theorem for domain-relative first-order languages holds. But the assumption is not needed to extend the completeness result for domain-relative first-order languages to a completeness result for unrestricted first-order languages.
+
+[22] See Rayo and Uzquiano (1999).
+
+[23] For the domain-relative case, see Shapiro (1991, theorem 4.14). When the quantifiers are unrestricted, the result can be proved as follows. Let $A$ be the conjunction of a finite, categorical axiomatization of pure second-order arithmetic, formulated in the language of pure second-order arithmetic (for instance, the system described in Shapiro 1991, section 4.2). Let $L2^U$ be a second-order language with unrestricted quantifiers containing every non-logical primitive in $A$. For $N$ an unused monadic predicate of $L2^U$ and $\phi$ a sentence of the language of pure second-order arithmetic, let $\phi^N$ be the sentence of $L2^U$ which results from substituting ‘$\forall^U$’ and ‘$\exists^U$’ for ‘$\forall$’ and ‘$\exists$’ in $\phi$ (respectively), and relativizing the resulting quantifiers with $N$. Let $T$ be the set of sentences $\phi^N$ of $L2^U$ such that $\phi^N$ is derivable in $D$ from $A^N$. Since $D$ is effective, $T$ is recursively enumerable. Say that an SO-interpretation $I$ is arithmetical just in case $A^N$ is true on $I$. Since $D$ is sound with respect to SO-validity, it follows that every sentence in $T$ is true on every arithmetical SO-interpretation. But if $\phi$ is a sentence of the language of pure second-order arithmetic and $\phi^N$ is true on every arithmetical SO-interpretation, then $\phi$ is true. So any sentence $\phi$ of the language of pure second-order arithmetic such that $\phi^N$ is a member of $T$ must be true. By Gödel’s Incompleteness Theorem, the collection of true sentences of the language of pure first-order arithmetic is not recursively enumerable. Since $T$ is recursively enumerable, it follows that there is a true sentence of first-order arithmetic $\psi$ such that $\psi^N$ is not in $T$. Hence, $\ulcorner A^N\to\psi^N\urcorner$ is not derivable in $D$. But it follows from the categoricity of $A$ that $\ulcorner A^N\to\psi^N\urcorner$ is true on every SO-interpretation.
+
+[24] Relevant texts include van Heijenoort (1967), Goldfarb (1979, 1982), Dreben and van Heijenoort (1986), Ricketts (1986), and Conant (1991).
+
+[25] We are not alone. See Stanley (1996) and Tappenden (1997).
+
+# References
+
+Almog, J. (1989), ‘Logic and the World’, in Almog et al. (1989).
+
+Almog, J., J. Perry, and J. Wettstein (1989), Themes from Kaplan (Oxford: Oxford University Press).
+
+Boolos, G. (1998a), Logic, Logic and Logic (Cambridge, Mass.: Harvard University Press).
+
+—— (1998b), ‘Reply to Parsons’ “Sets and Classes”’, in Boolos (1998a: 30–6).
+
+Cartwright, R. (1994), ‘Speaking of Everything’, Noûs, 28: 1–20.
+
+Church, A. (1974), ‘Set Theory with a Universal Set’, in L. Henkin et al. (eds.), Proceedings of the Tarski Symposium, Proceedings of Symposia in Pure Mathematics, 25 (Providence, RI: American Mathematical Society for the Association for Symbolic Logic), 297–308; also in International Logic Review, 8 (1977), 11–23.
+
+Conant, J. (1991), ‘The Search for Logically Alien Thought: Descartes, Kant, Frege and the Tractatus’, Philosophical Topics, 20: 115–80.
+
+Dreben, B., and J. van Heijenoort (1986), ‘Introductory Note to Gödel 1929, 1930, 1930a’, in Feferman et al. (1986).
+
+Dummett, M. (1981), Frege: Philosophy of Language, 2nd edn. (Cambridge, Mass.: Harvard University Press).
+
+Feferman, S., J. Dawson, et al. (eds.) (1986), Kurt Gödel: Collected Works, vol. i (New York: Oxford University Press).
+
+Forster, T. E. (1995), Set Theory with a Universal Set: Exploring an Untyped Universe, Oxford Logic Guides, 31, 2nd edn. (Oxford: Oxford Science Publications).
+
+Friedman, H. (1999), ‘A Complete Theory of Everything: Validity in the Universal Domain’, extended abstract, 16 May 1999, www.math.ohio-state.edu/~friedman/
+
+Goldfarb, W. (1979), ‘Logic in the Twenties: The Nature of the Quantifier’, Journal of Symbolic Logic, 44: 351–68.
+
+—— (1982), ‘Logicism and Logical Truth’, Journal of Philosophy, 79: 692–5.
+
+Haaparanta, L., and J. Hintikka (eds.) (1986), Frege Synthesized: Essays on the Philosophical and Foundational Work of Gottlob Frege (Dordrecht: Reidel).
+
+Henkin, L. (1954), ‘Metamathematical Theorems Equivalent to the Prime Ideal Theorems for Boolean Algebras’, Bulletin of the American Mathematical Society, 60: 388.
+
+Jech, T. J. (1973), The Axiom of Choice, Studies in Logic and the Foundations of Mathematics, 75 (Amsterdam: North-Holland).
+
+Kreisel, G. (1967), ‘Informal Rigour and Completeness Proofs’, in Lakatos (1967).
+
+Lakatos, I. (ed.) (1967), Problems in the Philosophy of Mathematics (Amsterdam: North-Holland).
+
+McCarty, T. (1981), ‘The Idea of a Logical Constant’, Journal of Philosophy, 78: 499–523.
+
+McGee, V. (1992), ‘Two Problems with Tarski’s Theory of Consequence’, Proceedings of the Aristotelian Society, 92: 273–92.
+
+—— (1996), ‘Logical Operations’, Journal of Philosophical Logic, 25: 567–80.
+
+—— (2000), ‘Everything’, in Sher and Tieszen (2000).
+
+Mendelson, E. (1987), Introduction to Mathematical Logic, Cole Mathematics Series, 3rd edn. (Pacific Grove, Calif.: Wadsworth & Brooks).
+
+Mitchell, E. (1976), ‘A Model of Set Theory with a Universal Set’, Ph.D. thesis, University of Wisconsin, Madison.
+
+Quine, W. V. O. (1937), ‘New Foundations for Mathematical Logic’, American Mathematical Monthly, 44: 70–80; repr. in Quine (1953).
+
+—— (1953), From a Logical Point of View (Cambridge, Mass.: Harvard University Press).
+
+Rayo, A. (2002), ‘Word and Objects’, Noûs, 36: 436–64.
+
+—— (2003), ‘When does “Everything” Mean Everything?’, Analysis, 63: 100–5.
+
+Rayo, A. and G. Uzquiano (1999), ‘Toward a Theory of Second-Order Consequence’, Notre Dame Journal of Formal Logic, 40: 315–25.
+
+Ricketts, T. E. (1986), ‘Objectivity and Objecthood: Frege’s Metaphysics of Judgement’, in Haaparanta and Hintikka (1986).
+
+Rubin, H., and J. Rubin (1985), Equivalents of the Axiom of Choice, II, Studies in Logic and the Foundations of Mathematics, 116 (Amsterdam: North-Holland).
+
+Shapiro, S. (1991), Foundations without Foundationalism: A Case for Second-Order Logic (Oxford: Clarendon Press).
+
+—— (forthcoming), ‘All Sets Great and Small’, Philosophical Perspectives.
+
+Sher, G. (1991), The Bounds of Logic: A Generalized Viewpoint (Cambridge, Mass.: MIT Press).
+
+—— and R. Tieszen (eds.) (2000), Between Logic and Intuition (New York: Cambridge University Press).
+
+Skala, H. (1974), ‘An Alternative Way of Avoiding the Set Theoretic Paradoxes’, Zeitschrift für mathematische Logik und Grundlagen der Mathematik, 20: 233–7.
+
+Stanley, J. (1996), ‘Truth and Metatheory in Frege’, Pacific Philosophical Quarterly, 77: 45–70.
+
+Tappenden, J. (1997), ‘Metatheory and Mathematical Practice’, Philosophical Topics, 25: 213–64.
+
+Tarski, A. (1986), ‘What are Logical Notions?’, History and Philosophy of Logic, 7: 143–54.
+
+—— and R. L. Vaught (1957), ‘Arithmetical Extensions of Relational Systems’, Compositio Mathematica, 13: 81–102.
+
+van Heijenoort, J. (1967), ‘Logic as Calculus and Logic as Language’, Synthese, 17: 324–30.
+
+Vaught, R. (1956), ‘On the Axiom of Choice and Some Metamathematical Theorems’, Bulletin of the American Mathematical Society, 62: 262.
+
+Williamson, T. (1999), ‘Existence and Contingency’, Proceedings of the Aristotelian Society, suppl. vol. 73: 181–203; repr. with printer’s errors corrected in Proceedings of the Aristotelian Society, 100 (2000), 321–43 (117–39 in unbound edn.).
+
+—— (forthcoming), ‘Everything’, Philosophical Perspectives.

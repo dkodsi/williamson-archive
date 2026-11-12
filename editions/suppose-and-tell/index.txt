@@ -1,0 +1,371 @@
+# Suppose and Tell
+
+Timothy Williamson
+
+Suppose and Tell (2020). Oxford: Oxford University Press.
+
+Front matter, preface, and Chapter 1
+
+# Preface
+
+Conditionals are hard to avoid in reasoning; reasoning about conditionals is correspondingly hard to avoid in reasoning about reasoning. For many years, I kept bumping into them in connection with other philosophical issues: counterfactual conditionals as alleged counterexamples to the principle of bivalence (Williamson 1988), indicative conditionals in non-bivalent semantic theories of vagueness (Williamson 1994), non-standard ‘consequential’ conditionals defined within modal logic (Pizzi and Williamson 1997, 2005), differences between indicative and counterfactual conditionals as they interact with the modal operator ‘actually’ (Williamson 2006, 2009), the logic of counterfactual conditionals underlying thought experiments and generating principles of modal logic (Williamson 2007a, 2013). At the interface of epistemology and psychology, humans’ cognitive use of supposition and imagination to assess counterfactual conditionals, often quite reliably, is a template for our capacity to learn about objective possibility and necessity through thought experiments (Williamson 2007, 2016d). That line of thought drew me into a debate over the orthodox view that counterfactual conditionals with impossible antecedents are vacuously true—an academic question if ever there was one. However, it has significant ramifications. The putative counterexamples to orthodoxy feel compelling; they rely on the same form of supposition-based thinking as we use in assessing other counterfactual conditionals. But that form of thinking can be shown to be subtly inconsistent, and so less than perfectly reliable, in particular for conditionals whose antecedents are themselves inconsistent. The objections to orthodoxy tacitly rely on a usually but not universally reliable heuristic in just the sort of case where it can be predicted to fail (Williamson 2016c, 2017a).
+
+Despite my inability to leave conditionals alone, until spring 2018 I expected never to write a book on them. I thought that I had too little to add but details to the extant literature. On counterfactual conditionals, I feared that David Lewis’s theory of them might be about as good as we can get. On indicative conditionals, my unfashionable sympathies were with the plain truth-functional account, on which many plausible logical considerations converge, but no adequate counter seemed available to many of the apparent counterexamples. However, deeper analysis of a suppositional heuristic for indicative conditionals showed that all the data which look so bad for the truth-functional view are predicted by the hypothesis that we rely on that heuristic—even though it cannot be fully reliable. I could thereby see my way to a full defence of the truth-functional view, the simplest semantics for a conditional. Given that plain ‘if’ is just the truth-functional conditional, it also becomes much easier to see the counterfactual conditional, not as another sui generis conditional, but as generated within a compositional semantics by the interaction of plain ‘if’ with an autonomous modal operator, such as ‘would’, resulting in a contextually restricted strict conditional. Along those lines, I wrote the first draft of this book in a year, pretty much from scratch.
+
+This book does not contain extensive discussion of alternative theories of conditionals. I indicate what I take to be their key faults, but I do not survey all their strengths and weaknesses. Such discussion is available elsewhere, and this book is long enough as it is. My central aim has been to explain the idea that conditional thinking relies on a fallible heuristic, how it fits the proposed simple semantics, and how the combined view makes sense of a wide range of complex and recalcitrant-looking data. My hope is that this presentation will encourage theorists of conditionals to take a more critical attitude to the data, and enable the positive view to be judged on its own merits.
+
+Readers may recognize a common theme to this book and my work on vagueness: the danger of giving semantic solutions to epistemic problems. In both cases, the trap is sprung by over-hasty articulations of the data in semantic terms. Alas, good practice offers no ritual observance to avoid all such traps: as in the rest of science, whatever ‘observation language’ we speak, no statement of the evidence is in principle beyond question. Instead, we must introduce local safeguards after bitter experience shows them to be needed. For both vagueness and conditionals, by now the experience has been bitter enough. Some sections of this book tighten the analogy, by explaining how the ‘tolerance principles’ which induce paradoxes for vague terms when treated semantically are better understood as convenient psychological heuristics for applying such terms, reliable but not infallible.
+
+Obviously, this book could not have been written without the long tradition of previous work on conditionals and related topics. Indeed, the bare bones of its semantic treatments of indicative and counterfactual conditionals were already familiar to the ancient Greeks. Even my more personal debts go back several decades, and can be traced through the acknowledgments in my previous publications, cited above, and of course the co-authorship with Claudio Pizzi. I will not repeat them here. Since the present project took shape, I have been the beneficiary of excellent feedback from audiences at presentations of various parts of it. The venues included: Yale University, the University of Oxford, the 2018 joint conference of the Australasian Association of Philosophy and the New Zealand Association at the Victoria University of Wellington, the 2019 Eastern Division meeting of the American Philosophical Association in New York, where Michael Caie was the commentator, and conferences, workshops, and colloquia at the universities of Belgrade, Bochum, Cologne, Edinburgh, Tübingen, Warsaw, King’s College London, University College London, and (by Skype) the Humboldt University of Berlin. Outside those events, I have gained from specific comments on the material from many individuals, including John Bigelow, Will Davies, Christina Dietz, Igor Douven, Dorothy Edgington, John Hawthorne, Matthew Hewson, Laurence Horn, James Kirkpatrick, Angelika Kratzer, Matthew Mandelkern, Sarah Moss, Jennifer Nagel, Daniel Rothschild, Jason Stanley, Zoltán Szabó, and three anonymous readers for Oxford University Press, who provided thoughtful and constructive comments. Apologies to all who have contributed to the book in ways which no longer come to mind. Peter Momtchiloff has been, as always, a supportive and encouraging editor.
+
+For no special reason, I strongly associate this book with the places where it was written, especially a room on the island of Korcula with a view across the channel to Sveti Ilija mountain, a darker room in a Milan hotel, and my usual rooms in New College, Oxford, Connecticut Hall, Yale, and at home in Iffley (= Ifandonlyifley). My wife Ana finds conditional speeches irritating, and sometimes complains: “Too many ‘if’ clauses!” This book has far too many ‘if’ clauses. But, with all their faults, conditionals can be understood.
+
+# Contents
+
+Part I. If
+
+1. The Value of Conditionals
+3
+1.1 Introduction
+3
+1.2 Conditionals and generalizations
+7
+1.3 Conditionals across contexts
+10
+2. The Suppositional Rule
+15
+2.1 Supposing and imagining
+15
+2.2 Ways of assessing conditionals
+17
+2.3 Suppositions and updating
+26
+3. Consequences of the Suppositional Rule
+31
+3.1 From conditional probabilities to conditional proof
+31
+3.2 Deductive paradoxes for the Suppositional Rule
+37
+3.3 Probabilistic paradox for the Suppositional Rule
+42
+3.4 The Suppositional Rule for complex attitudes
+45
+3.5 The inconsistency of the Suppositional Rule for complex attitudes
+53
+3.6 Plain counterlogicals
+57
+3.7 Inconsistent linguistic practices
+60
+3.8 Appendix: tolerance principles as fallible heuristics
+63
+4. Heuristics within Heuristics
+68
+4.1 Heuristics for applying the Suppositional Rule
+68
+4.2 The Divide-and-Rule strategy
+70
+4.3 Conditionals within conditionals
+78
+4.4 Embedding in the consequent
+78
+4.5 Embedding in the antecedent
+84
+5. Conditional Testimony
+89
+5.1 Pooling testimony: variations on a case
+89
+5.2 Testimony: generalizing the case
+98
+6. The Role of Conditional Propositions
+103
+6.1 Underpinned propositions
+103
+6.2 Overpinned propositions
+108
+6.3 Illusions of truth-value
+110
+6.4 The practice of using plain conditionals
+112
+6.5 Semantic equivalence and cognitive equivalence
+116
+6.6 Synonymy and vagueness
+121
+7. More Challenges
+123
+7.1 Dorothy Edgington and the Queen
+123
+7.2 Conditional commands and questions
+126
+7.3 Interactions with epistemic modals
+132
+8. Interactions between Plain Conditionals and Quantifiers
+137
+8.1 Universal instantiation by conditionals
+137
+8.2 Gappy conditionals
+139
+8.3 Applying the Suppositional Rule to generalizations
+142
+8.4 Quantifying conditionals
+146
+8.5 More quantified conditionals
+152
+Part II. Would If
+
+9. Conditionals and Abduction
+161
+10. The Interaction of ‘If’ and ‘Would’: Semantics and Logic
+167
+10.1 Conditionals with and without ‘would’
+167
+10.2 The semantics of ‘would’
+168
+10.3 The logic of ‘would if’
+174
+11. The Interaction of ‘If’ and ‘Would’: Heuristics
+189
+11.1 An analogy between ‘would’ and ‘if’
+189
+11.2 Does ‘would’ single out a unique world?
+190
+11.3 Negating ‘would’
+195
+11.4 A suppositional heuristic for ‘would’
+200
+11.5 Heuristics for ‘would’ in practice
+207
+11.6 Prediction and imagination
+212
+12. Is ‘Would If’ Hyperintensional?
+214
+12.1 Intensional and hyperintensional semantics
+214
+12.2 Fine’s examples
+217
+13. More on the Interaction of ‘Would’ with Context
+222
+13.1 Reverse Sobel sequences
+222
+13.2 Epistemic and pragmatic effects
+223
+14. Thought Experiments and ‘Would’
+229
+14.1 Thought experiments and counterfactuals
+229
+14.2 Interrelations between necessity and ‘would’
+231
+14.3 The problem of deviant realizations
+234
+14.4 The interaction of ‘would if’ with quantifiers
+237
+15. Worlds and Meaning
+242
+15.1 Worlds as parameters of evaluation
+242
+15.2 Worlds and epistemic possibility
+245
+15.3 Epistemic readings of ‘would’
+251
+15.4 Objective modality
+253
+15.5 Counterpossibles
+256
+15.6 Comparison with quantifiers
+259
+15.7 Philosophical repercussions
+262
+16. Conclusion: Semantics, Heuristics, Pragmatics
+264
+References
+267
+Index
+273
+
+# PART I
+
+# If
+
+# 1 The Value of Conditionals
+
+## 1.1 Introduction
+
+What if . . . ? Hypothetical thinking is central to human cognitive life, from the naïve to the super-sophisticated. A sign of its importance is how often we use the word ‘if’, or its equivalents in other languages, in discourse from everyday conversation to abstract science. If a creature cannot think hypothetically, how intelligently can it live? That is itself a hypothetical question.
+
+We rely on hypothetical thinking in deciding what to do. Choosing between two alternative courses of action, you compare what will happen if you take one course with what will happen if you take the other. ‘If I turn right, I’ll come to the river. If I turn left, I’ll come to the forest.’ What will happen depends too on unknown circumstances beyond your control. ‘If it rains, I’ll get wet.’ You make a plan and form the intention to put it into effect. That can include intentions conditional on the circumstances. ‘If the river is low, I’ll wade across. If it is high, I’ll walk all the way down to the bridge.’ Such thinking is no mere quirk of human psychology. It simply reflects the general predicament of decision-making under uncertainty, a central feature of intelligent life.
+
+Many conditionals are not one-off devices, to be discarded after immediate use. One can retain a conditional intention for years. ‘If I ever meet him, I’ll tell him what I think of him.’ One can also retain conditional knowledge for later use. ‘If I go by the forest path, it will take me four hours.’ One can communicate such conditional knowledge in words to someone else. ‘If you look west from the top of the hill, you can see the river.’ Conditionals can survive robustly from one time to another and from one person to another.
+
+We can communicate our intentions, including our conditional intentions, to other people. Some of those intentions can be for other people, indeed, for those we are speaking to. We may issue requests, instructions, or orders, in the form of imperatives, including conditional imperatives. ‘If the river is low, wade across.’ Conditional commands are central to computer programming languages. ‘If condition C holds do X, else do Y.’ Both humans and computers need conditional instructions to deal with the unpredictable variety of situations they may encounter.
+
+Imperatives are of course closely related to declaratives (even when understood as predictions): ‘If the river is low, wade across’ corresponds to ‘If the river is low, you will wade across.’ You can make sure that you comply with both, either cognitively, by observing that the river is not low, or conatively, by wading across. Such alternatives may be available even when you know neither whether the antecedent holds nor whether the consequent does. At a party where you have no idea who belongs to which family, you can make sure that you comply with both the instruction ‘If you speak to a Montague, don’t speak to a Capulet’ and the prediction ‘If you speak to a Montague, you won’t speak to a Capulet’, either cognitively, by being reliably informed that no party is mixed, or conatively, by speaking to only one person. Uses of ‘if’ in declaratives and imperatives are part of the same overall practice. Section 7.2 has more discussion of conditional commands.
+
+Hypothetical thinking comes in more than one flavour. A distinction is often drawn between indicative conditionals, such as ‘If those mushrooms were poisonous, he is dead’ and so-called subjunctive or counterfactual conditionals, such as ‘If those mushrooms were poisonous, he would be dead’. Both correspond to hypothetical thinking, but of different sorts: the hypothesis is treated differently. Chapters 9–11 discuss the difference.
+
+The most plausible initial hypothesis is that ‘if’ means the same in the two types of sentence: the source of the difference is an extra modal operator in subjunctive conditionals, introduced by ‘would’ or by some other means. Chapter 10 vindicates that hypothesis: it derives the semantics of ‘subjunctive conditionals’ compositionally, by combining the semantics of ‘if’ with the independent semantics of ‘would’. Chapters 1–8 concentrate on indicative conditionals, as crudely distinguished by their superficial form.
+
+Unsurprisingly, ‘if’ is one of the most commonly used words of English. On one count, it comes in fortieth place.1 It is never far away when we are uncertain. One may wonder what ‘if’ means, to have this cognitive power. But the question has the tail wagging the dog. ‘If’ matters because we use it to articulate the results of hypothetical thinking. Until we have properly understood the practice of hypothetical thinking, we shall not appreciate what the meaning of ‘if’ has to fit. And once we have properly understood that rich practice, we shall see why that strict and literal meaning has to be utterly impoverished by comparison. Conditionals are too important to be left to semantics alone.
+
+To use a conditional in practice, we need more than bare knowledge of its strict and literal meaning. If we cannot tell whether it is applicable to the situation we find ourselves in, it is to that extent less useful. We must be able to combine conditionals productively with our background knowledge or belief. We need to reason with conditionals—sometimes to reason from them, when they are premises, sometimes to reason to them, when they are conclusions. But deductive reasoning is only one aspect of our use of conditionals. Often, when we address a ‘What if?’ question, our background information does not entail an answer. Instead, we have to assess candidate answers by less formal means. We may have no feasible alternative but to use what psychologists call ‘heuristics’: ‘fast and frugal’ or, in less positive terms, ‘quick and dirty’ methods, which tend to give the right answer under normal conditions, but the wrong one in unfavourable cases.2 For practical purposes, a small decrease in the reliability of the answer may be a reasonable price to pay for a large increase in the willingness to give a prompt answer in the first place.
+
+Of course, it is not for a semantic theory of conditionals to determine which specific conditionals ‘If A, C’ are true or credible: it depends on the specific cognitive properties and relations of the antecedent A and the consequent C, which do not concern that theory.3 But it is a task for a general theory of conditionals to explain how agents get from cognitive capacities to apply sentences A and C to a cognitive capacity to apply the sentence ‘If A, C.’ As just noted, such cognitive capacities have both deductive and non-deductive aspects. Formal semantic theories of conditionals are typically informative on the deductive side of the task. They predict a deductive logic for conditionals, usually by determining which argument patterns with them are truth-preserving in all models, although they may not say much about how far and how speakers implement that logic in practice. What such theories are much less informative about is the more usual case: the non-deductive cognitive assessment of conditionals. For example, they do not explain how speakers get the practical capacity to apply the sentence ‘If the guests all left within three hours, the party was a failure’ from the practical capacities to apply the sentences ‘The guests all left within three hours’ and ‘The party was a failure.’ The semantic theory may specify which proposition the conditional expresses, as a function of the propositions its antecedent and consequent express, but that does not explain how speakers recognize the truth-value of the proposition in practice. Arguably, it is not the job of semantics to provide such an explanation. That is fine, but then whose job is it? An informative account of speakers’ general cognitive capacity to apply conditionals is needed from somewhere.
+
+Pragmatics is the usual first resort for filling the gaps between semantics and linguistic practice. However, it is not what is wanted here. In analysing conversational phenomena, pragmatics (legitimately) takes for granted speakers’ capacities to make the very cognitive assessments we are now seeking to understand. At the basic cognitive level, what we seek is a matter of psychology rather than linguistics. But it is also hooked up to natural language, by words like ‘if’.
+
+Of course, the semantic and cognitive-psychological tasks are not mutually independent. The cognitive methods are for shooting at a target set by the semantics. If a cognitive theory specifies methods quite inappropriate for shooting at the target specified by a semantic theory, presumably something is wrong with at least one of the two theories. In the long run, what need to be compared are theoretical packages combining both semantic and cognitive components. At present, the trouble is that semantic theories of conditionals are often proposed with no accompanying cognitive account: half the theoretical package is missing. Without the full package, they cannot properly allay the suspicion that semantic benefits have been bought at hidden cognitive costs.
+
+From the cognitive side, we may expect constraints of feasibility, both computational feasibility and feasibility of other cognitive kinds. The semantic theory should not set a target invisible to humans, or out of our range. More subtly, even if many visible potential targets are within range, the semantics should not specify the actual target by a formula too complex to be computed in real time. For, within reasonable limits, normal human beings do very often apply conditionals successfully.
+
+Just as in archery, the relevant computations need not be conscious or reflective. Some may be hardwired into our brains, or acquired through long practice with good feedback. However, conditionals are all-purpose devices, at home in virtually any context, including those in which we are reasoning consciously and reflectively. The semantics must reflect our ability to use conditionals in those contexts too. Of course, even when speakers are reasoning consciously and reflectively, they almost never invoke an explicit semantic theory, correct or incorrect. In principle, the complexity of a semantic theory does not prevent its outputs from matching those of a humanly feasible capacity in relevant respects. For a start, the complexity might be eliminable, by formulating an equivalent semantic theory in simpler terms. But if the complexity is ineliminable, a serious question arises as to how humans manage to be so good at the cognitive task of hitting the targets set by such a theory.
+
+Complex semantic theories also tend to validate weaker logics, because their complexities generate more counterexamples to putative logical principles. That in itself is no objection, since human cognition deals easily with many familiar terms which fail to satisfy any non-trivial logical principles. But weakening the deductive logic of conditionals puts still more weight on the non-deductive side, and makes the need for a proper cognitive account of it even more urgent.
+
+In the light of such considerations, other things equal, we might expect ‘if’ to work quite simply, in both thought and language. This is not just the very general point that simple operations can be characterized by a simple hypothesis, and we should give simple hypotheses priority here, as elsewhere in science. The more complicated the operation of ‘if’, the harder conditionals will probably be to use—harder to assess, harder to act on. The more moving parts we postulate, the more likely we make the device to break down, or to catch out its users. The density of conditionals in our cognitive life is evidence that ‘if’ is robust and comparatively easy to handle. Since it is all-purpose equipment, it also needs to be flexible: tailoring its meaning too closely to one task would make it unserviceable for another. In a construction set, the basic components in most frequent use are typically plain, simple ones, without special features to get in the way. ‘If’ is just such a basic, commonplace component of our thought and talk.
+
+Of course, other things are often not equal; we cannot exclude in advance the possibility that conditionals work in surprisingly complex ways. But every complication has a non-trivial cost, for practitioners as well as theorists. The onus is on those who postulate the complication to make the case that it is really indispensable.4 This book shows how a very simple account of the semantics and heuristics of conditionals may be able to do the explanatory work. In principle, it should be compared against other combined semantic-cognitive accounts, although this is made difficult by the shortage of adequately developed cognitive alternatives. A purely semantic theory of conditionals is only half an alternative.
+
+The rest of this chapter further illustrates the cognitive value of ‘if’, which an overcomplicated conditional operator would risk breaking. The next chapters provide a very general account of the simple heuristics which guide our use of ‘if’. These chapters rely on an ordinary pre-theoretic practice of using ‘if’ as a speaker of English, without assuming any special semantic theory of the conditional. I focus on ‘if’, not on conditionals in other languages, because English is the language I know best. Nevertheless, on the view developed in this book, the key to understanding ‘if’ is its connection to a fundamental cognitive capacity for hypothetical thinking shared by virtually all humans. One would expect all human languages to have a conditional device similarly connected to that capacity, though the details of its implementation may well vary from language to language. As far as I know, that claim of universality is true, but it will be left as a plausible conjecture, for others to test.
+
+## 1.2 Conditionals and generalizations
+
+A child is going off to pick strawberries. An adult gives her two simple rules:
+
+If a strawberry is red, pick it.
+
+If a strawberry is green, leave it.
+
+Those are conditional imperatives. One might wonder whether that form is really needed. The adult could just as well have said:
+
+Pick the red strawberries.
+
+Leave the green strawberries.
+
+Those are general imperatives, with no ‘if’. Even the conditional imperatives had a general element: the indefinite ‘a strawberry’. But when the child recognizes a berry in the patch before her, she must instantiate the general rules to the case at hand. She might mutter to herself:
+
+If this is a red strawberry, pick it.
+
+If this is a green strawberry, leave it.
+
+Here the perceptual demonstrative ‘this’ refers to the particular berry she is looking at. A conditional is the natural form in which to instantiate a general rule to a particular case, the obvious way to articulate what the rule says about that case. More specifically, an indicative conditional is the natural form in which to instantiate a general rule to a particular case, treated as actual rather than merely as possible.
+
+The same connection holds between declarative conditionals and declarative generalizations. The adult might explain the point of the rules to the child by saying:
+
+If a strawberry is red, it is ripe.
+
+If a strawberry is green, it is unripe.
+
+One might again wonder whether the conditional form is really needed. The adult could just as well have said:
+
+Red strawberries are ripe.
+
+Green strawberries are unripe.
+
+Those are general declaratives, with no ‘if’. More specifically, they are generic statements, not falsified by the occasional anomalous unripe red strawberry or ripe green one. Thus they offer only defeasible support to their instances. But, as before, the natural form for those instances is a conditional:
+
+If this is a red strawberry, it is ripe.
+
+If this is a green strawberry, it is unripe.
+
+The same conditionals are also the natural instances of the corresponding universal generalizations, which do entail them deductively, as when we add ‘all’ to the generics or, to slightly different effect, say:
+
+Every red strawberry is ripe.
+
+Every green strawberry is unripe.
+
+Unlike the generic generalizations, the universal ones are falsified by anomalous cases, except in contexts where the domain is restricted to exclude such cases.
+
+Instantiating universal generalizations by indicative conditionals is not just an ordinary conversational move. It also plays a central role in scientific theory-testing. In a simplified schema, one moves from the universal generalization ‘Every F is a G’ to the prediction ‘If a is an F, a is a G’, where a is the thing to be observed. Less formally, one goes from ‘Salt dissolves in water’ to ‘If this is salt, this dissolves in water.’ Scientific practice relies on such inferences, even when the generalization is put forward only as a hypothesis, not an assertion—we may be testing it precisely because it is only a conjecture, so far. The practice relies on the assumption that the argument from a universal generalization to a specific instance in conditional form is truth-preserving, whatever the status of the premise. In scientific contexts, native speakers still fluently speak natural language, using words in their normal senses, including the word ‘if’, despite the added technical scientific vocabulary and mathematical notation.
+
+For a natural language to lack a simple, easy means of capturing what a universal generalization entails and a generic generalization defeasibly implies about a given particular case would be surprisingly dysfunctional. A conditional like ‘if’ is the obvious candidate—if it does not do the job, what does?
+
+As alternative candidates for what ‘Every F is a G’ says about a, someone might suggest the disjunction ‘a is not an F or a is a G’ or the negated conjunction ‘It is not the case that a is an F and a is not a G.’ However, each of those is a much less natural candidate than the plain ‘If a is an F, a is a G.’ They each introduce a negative element that seems extraneous to both the original generalization and the plain conditional. Such negative elements tend to cause computational difficulties for normal speakers, so their role as instances of a generalization would incur significant cognitive costs. To make the point vivid, consider the blatantly trivial generalization ‘Every F is an F’ (the special case where $F = G$). What it says about a should also be blatantly trivial, given that a belongs to the contextually relevant domain for ‘every’. The blatantly trivial conditional ‘If a is an F, a is an F’ meets that condition. By contrast, the proposed disjunction ‘a is not an F or a is an F’ is much less blatantly trivial; it is indeed a classical logical truth, but it is a typical instance of the law of excluded middle, disputed by some non-classical logicians. The proposed negated conjunction ‘It is not the case that a is an F and a is not an F’ is also less blatantly trivial than the corresponding conditional; it too is indeed a classical logical truth, but it is a typical instance of the law of non-contradiction, disputed by some non-classical logicians (though fewer than for excluded middle). Other proposed alternatives do even worse.
+
+Thus the price of denying that what a universal generalization says about a member of its domain is the corresponding plain conditional may be that one ends up with no good candidate in natural language for what a universal generalization says about a member of its domain. It would be quite surprising, though not impossible, for natural language to suffer from such a basic expressive deficiency. Thus we may regard it as at least a defeasible desideratum on a theory of conditionals to explain how they follow, in the relevant sense, from the corresponding generalizations.
+
+The challenge is not just to explain why, when one is in a position to assert a generalization, one is also in a position to assert its instances in conditional form. As noted, we also draw instances in conditional form from a merely hypothesized generalization, to test its predictions. The form of argument from ‘Every F is a G’ to ‘If a is an F, a is a G’ had better be valid, in an appropriate sense. This tightly constrains the meaning of ‘if’. If a theory imposes a requirement on the truth-conditions of indicative conditionals with no corresponding requirement on the truth-conditions of generalizations, it will invalidate the argument form. For example, since the mere truth of a universal generalization does not in general impose any epistemic requirement (on the speaker’s knowledge, for instance), the mere truth of an instance of it should not in general impose any epistemic requirement either (on the speaker’s knowledge, for instance).
+
+The truth-conditions of indicative conditionals must not be too strong. There is also a Scylla to that Charybdis. The truth-conditions of indicative conditionals must not be too weak. Not only must the conditional avoid saying more about the particular case than the generalization says, it must also avoid saying less about the particular case than the generalization says. Otherwise, even though the argument form may be validated, the conditional fails to capture fully what the generalization says about the particular case. But what ‘Every F is a G’ says about a particular case a is in general quite simple and straightforward—apart from any complexities generated by ‘F’ and ‘G’, rather than by the universally quantified form itself. We should therefore expect ‘If a is an F, a is a G’ to say something quite simple and straightforward—apart from any complexities generated by ‘F’, ‘G’, and ‘a’, rather than by the conditional form itself (sections 8.1-2 discuss the connection in more detail).
+
+None of this means that there are no serious challenges to the entailment from a universal generalization to the corresponding conditionals. For example, you have massive inductive evidence that all swans are white. Now you glimpse what looks like a black swan. It is clearly black, but you reasonably (though mistakenly) suspect that when properly examined it will turn out not to be a swan. On your evidence, we may suppose, it is still 80 per cent probable that all swans are white. But how probable on your evidence is it that if this bird is a swan, it is white? A tempting answer is that the probability of the conditional is much closer to 0 per cent than to 80 per cent. But, by the laws of probability, a logical consequence of a hypothesis is at least as probable as the hypothesis itself. One might therefore conclude that ‘If this bird is a swan, it is white’ is not a genuine logical consequence of ‘All swans are white’.
+
+Chapters 3 and 6 discuss the application of probability to conditionals in detail. They explain how a good but fallible heuristic for assessing conditionals can sometimes lead us drastically to underestimate their probabilities. For now, the reader is not asked to take that explanation on trust. Rather, the point is just that if the explanation works, and we can hold onto the equation of what a universal generalization says about a member of its domain with the corresponding plain conditional, we thereby avoid imputing a strange expressive dysfunctionality to natural language. Of course, opposing theorists of conditionals may claim that natural language is dysfunctional in this respect, and perhaps even argue that this dysfunctionality is the obverse of functionality in some other respect. But the onus is on them to provide such an argument, in detail. The admission of dysfunctionality is a significant cost to their view.
+
+The case of the universal quantifier also serves as an apt reminder that we should not expect to read off the full cognitive story about a logical constant from a bare semantic account of its truth-conditional meaning. Very roughly, the truth-conditional semantics for ‘every’ says that ‘Every F is a G’ is true if and only if the extension of ‘F’ is a subset of the extension of ‘G’. It does not specify how a speaker is supposed to go about trying to verify ‘Every F is a G’—whether by an exhaustive check on each member of the contextually relevant domain, one by one, or by an induction from checks on a sample of members of the domain, or by a deduction from the open formula ‘x is an F’ to the open formula ‘x is a G’. Of course, the truth-conditional meaning should somehow make sense of the cognitive practice, but that does not require the truth-conditional meaning to spell out how the practice works. The connection may be more distant than that. Such latitude will be significant when we come to the semantics of conditionals in chapter 6. Indeed, given the close connection between the universal quantifier and the conditional, we should not expect the cognitive story to be more legible in the bare semantics for ‘if’ than it is in the bare semantics for ‘every’.
+
+## 1.3 Conditionals across contexts
+
+If the close link between ‘if’ and ‘every’ holds, a further point may follow: we should not expect the truth-conditional contribution of ‘if’ to vary across contexts of utterance in any way in which the truth-conditional contribution of ‘every’ does not. For if what ‘If a is an F, a is a G’ says varies between a context C1 and a context C2, while what ‘Every F is a G’ says about a is the same in C1 as in C2, then, in at least one of those two contexts, what ‘If a is an F, a is a G’ says is not what ‘Every F is a G’ says about a. Of course, the quantifier is itself an independent source of contextual variation, since two contexts may impose different restrictions on the domain of quantification. But if C1 and C2 have the same domain, to which a belongs, and ‘F’, ‘G’, and ‘a’ do not vary in reference between C1 and C2, then ‘Every F is a G’ should say the same about a in C1 as in C2, so ‘If a is an F, a is a G’ should also say the same in C1 as in C2. That suggests that ‘if’ is not an independent source of contextual variation.
+
+Independently of the link with quantifiers, other evidence also tells against ‘if’ as a source of contextual variation. As seen in section 1.1, conditionals can be communicated from one context to another, without change of wording. Through memory, they can be passed on from one time to another. Through testimony, they can be passed on from one agent to another.
+
+Two clarifications are needed straight away:
+
+First, when the antecedent A or the consequent C is context-dependent, the conditional ‘If A, C’ will typically inherit that context-dependence. For example, what the sentences ‘He is hungry’ and ‘He is grumpy’ express depends on the contextually determined referent of the pronoun ‘he’; unsurprisingly, the same goes for the conditional ‘If he is hungry, he is grumpy’. The key question is whether ‘if’ is a further source of context-dependence.
+
+Second, the assertibility of any declarative sentence whatsoever depends on the epistemic circumstances of the speaker. However constant the content it expresses across different contexts, that by itself does not prevent it from being assertible in one context and not in another, owing to differences in the available evidence. Such variability does not imply that its content varies with context. In particular, for conditional sentences, we must not confuse the two kinds of epistemic sensitivity.
+
+Indicative conditionals are often held to be context-dependent in ways not reducible to those trivialities. Apart from anything in the antecedent and consequent, ‘if’ is claimed to introduce a further dimension of context-dependence in which proposition the conditional expresses—not just in whether the speaker is in an epistemic position to assert that proposition. On the most fashionable view of indicative conditionals, the context-dependence does indeed concern the speaker’s epistemic position, but as a determinant of which proposition the conditional expresses. Very roughly, it is held to express a proposition about an epistemic connection between its antecedent and its consequent, with respect to the relevant stock of evidence.5
+
+The usual analogy for the alleged epistemic context-dependence of indicative conditionals is with the behaviour of epistemic modals such as ‘must’ and ‘may’. For example, as a detective gathers more evidence, the sentence ‘Smith may be innocent’ can go from true to false, and ‘Smith must be guilty’ from false to true. Smith’s innocence was epistemically possible, then ceased to be so. The referent of ‘Smith’ and the crime in question remained constant, as did the truth-values of the plain sentences ‘Smith is innocent’ and ‘Smith is guilty.’ When the detective rightly asserts ‘Smith must be guilty’, she does not regard her earlier assertion of ‘Smith may be innocent’ as in any way wrong. It was not a mistake made on the basis of incomplete but misleading evidence. That was the point of saying ‘Smith may be innocent’ rather than ‘Smith is innocent.’ If she had initially been deceived by Smith’s false but highly plausible alibi, she might have asserted ‘Smith is innocent’ and would later have regarded that assertion as false, a mistake. Instead, she kept an open mind from the beginning. She only ever went as far as asserting ‘Smith may be innocent’, and in retrospect can still regard what she then said as true. Of course, now she knows that Smith is guilty, she should no longer assert ‘Smith may be innocent’, but that is unproblematic, since it no longer expresses the same proposition, given the change in her evidence. Thus epistemically modal sentences are non-trivially context-dependent.
+
+The same point can be made synchronically rather than diachronically. Two detectives are simultaneously conducting independent inquiries into the same crime, each hiding their results from the other. Smith’s innocence is compatible with Detective One’s evidence, but not with Detective Two’s. In Detective One’s mouth, ‘Smith may be innocent’ is true and ‘Smith must be guilty’ false. In Detective Two’s mouth, ‘Smith may be innocent’ is false and ‘Smith must be guilty’ true. Of course, if they really wanted, they could both use ‘may’ and ‘must’ with respect to the combination of both bodies of evidence, in which case Detective One would not know the truth-value of ‘Smith may be innocent.’ But that pooled use of ‘may’ and ‘must’ would be of less use to either detective, given their ignorance of the pooled body of evidence. For each of them, the contextually relevant use of epistemic modals is with respect to their own body of evidence.
+
+Do such phenomena have analogues for indicative conditionals? That is not obvious. Of course, we can easily imagine that a conditional such as ‘If Smith was in Berlin, he is innocent’ was highly probable on the original evidence but is highly improbable on the present evidence, or that it is highly probable on Detective One’s evidence but highly improbable on Detective Two’s evidence. But that does not mean that which proposition the conditional expresses varies over time or between the two detectives. Even if it expresses the same proposition throughout, its probability on the evidence can vary as the evidence varies.
+
+The dependence of epistemic modals on a relevant body of evidence is easily accessible to speakers; the epistemic role of ‘may’ and ‘must’ is more or less overt. For example, imagine a school for detectives, where they are taught to discriminate what is compatible with their evidence from what is not. They are trained on real-life cases, but are given only the evidence available at an early stage of the actual investigation. The instructor, who knows the full story about the cases, can recognize that the trainee speaks truly when he says ‘Smith may be innocent’, even though she knows that Smith is guilty. She adjusts her assessments in the light of her awareness of differences between her evidence and his. Any competent teacher would do likewise. By contrast, it is much less obvious whether she should treat a conditional like ‘If Smith was in Berlin, he was smuggling drugs’ as false in the trainee’s mouth, because he lacks the required evidence, but true in her own mouth (outside the training context), because she has the required evidence.
+
+We can probe some differences between epistemic modals and indicative conditionals by considering a sentence such as (1):
+
+(1)
+Smith may be innocent and he may be guilty.
+
+Things like (1) are often natural, correct things to say. Sentence (1) is neutral between the non-epistemic hypotheses ‘Smith is innocent’ and ‘Smith is guilty’, and yields the answer ‘No’ to the epistemic question whether the evidence decides between them. If indicative conditionals work like epistemic modals, we may expect there to be a sentence involving indicative conditionals (but not epistemic modals) which is neutral between the non-epistemic hypotheses ‘Smith was in Berlin and he is innocent’ and ‘Smith was in Berlin and he is guilty’, and yields the answer ‘No’ to the epistemic question whether the evidence decides between them. What is that sentence?
+
+Suppose that the evidence is compatible with Smith’s having been in Berlin. Then it decides in favour of the second conjunction over the first just in case it combines with ‘Smith was in Berlin’ to determine that Smith is guilty. Consequently, the evidence is compatible with Smith’s innocence (does not determine his guilt) just in case it does not combine with ‘Smith was in Berlin’ to determine that Smith is guilty. By parallel reasoning, the evidence is compatible with Smith’s guilt just in case it does not combine with ‘Smith was in Berlin’ to determine that Smith is innocent. Thus one might be tempted to propose (2) as the desired sentence:
+
+(2)
+It is not the case that if Smith was in Berlin, he is guilty, and it is not the case that if Smith was in Berlin, he is innocent.
+
+However, compared to (1), (2) sounds unnatural. If someone uttered (2), we might conjecture that they intended to convey something analogous to (1), but it would be guesswork, quite unlike our fluent understanding of (1). More specifically, it is not obvious whether any similarity between (1) and (2) can somehow be calculated from their literal meanings, or instead concerns some shaky conversational implicatures.
+
+One awkward feature of (2) is that it involves negated conditionals. As has long been observed, we tend to be more comfortable negating the consequent of a conditional than negating the whole conditional: we prefer ‘If A, not(C)’ to ‘Not(if A, C)’.6 If we work the negations in (2) through into the consequents, the result is (3):
+
+(3)
+If Smith was in Berlin, he is not guilty, and if Smith was in Berlin, he is not innocent.
+
+But since the evidence is compatible with Smith’s having been in Berlin, and he is either guilty or innocent, (3) seems hopeless.
+
+To avoid negated conditionals, we can consider a natural contradictory of (1), like (4):
+
+(4)
+Either Smith must be guilty or he must be innocent.
+
+Although (4) sounds less natural than (1), we could use it with reference to the detective’s evidence rather than our own, when we see that she has received the decisive DNA report but we do not yet know what it says. Like (1), (4) is neutral between the non-epistemic hypotheses ‘Smith is innocent’ and ‘Smith is guilty.’ Unlike (1), (4) yields the opposite answer ‘Yes’ to the epistemic question whether the evidence decides between the two non-epistemic hypotheses. Again, if indicative conditionals work like epistemic modals, we may expect there to be a sentence involving indicative conditionals (but not epistemic modals) which is neutral between the two non-epistemic hypotheses ‘Smith was in Berlin and he is innocent’ and ‘Smith was in Berlin and he is guilty’, but yields the answer ‘Yes’ to the question whether the evidence decides between the two non-epistemic hypotheses. What is that sentence?
+
+Reasoning as before, the natural candidate is (5):
+
+(5)
+Either if Smith was in Berlin, he is guilty, or if Smith was in Berlin, he is innocent.
+
+Compared to (4), (5) still sounds unnatural. If someone uttered (5), we might conjecture that they intended to convey something analogous to (4), but it would again be guesswork, quite unlike our understanding of (4). One might put the difference by saying that with (1) and (4) we hear the epistemic meaning in the words, whereas with the conditional constructions (2) and (5) we make an effort to reconstruct an epistemic meaning because it is unclear what else the speaker might be getting at. More specifically, it is not obvious whether any similarity between (4) and (5) can somehow be calculated from their literal meanings, or instead concerns some shaky conversational implicature.7
+
+Of course, indicative conditionals could be epistemically context-dependent in some way which did not enable them to clarify epistemic matters like (1) and (4). But then one starts to question the point of their epistemic context-dependence. Why load conditionals with such complications if it does not enable them to clarify such elementary epistemic matters? The question is urgent because context-dependence can confuse and obstruct communication across contexts, especially when it is not salient to speakers. Of course, indicative conditionals might have a dysfunctional semantics, but it seems unlikely. At any rate, the comparison of indicative conditionals with epistemic modals seems to do more harm than good to the claim that indicative conditionals are epistemically context-dependent, absent a plausible story to explain either the added value of such an accretion to the meaning of our commonest conditional expression, or else the needlessness of such added value.
+
+So far, we have only been scratching at the surface. It would be premature to draw any final conclusions without examining the practice of using conditionals in much more detail and depth. We have begun to see how resistant conditionals are to reflection from the standpoint of a native speaker. It is not only semantic theorists who find them difficult. Ordinary speakers too find conditionals hard to handle once embedded under logical operators such as negation, and correspondingly hard to assert or deny with confidence. That in turn often makes the ordinary language data for theorizing elusive or untrustworthy.
+
+In chapter 2, we examine the basic ways in which an indicative conditional is assessed, and the problems they raise. That will eventually enable us to understand, amongst other things, the phenomena which have been misinterpreted as revealing epistemic context-dependence in indicative conditionals.
+
+# Notes
+
+[1] See http://www.bckelk.ukfsn.org/words/uk1000n.html.
+
+[2] The term ‘heuristic’ is intended to recall both the heuristics and biases programme in psychology (going back to works such as Kahneman, Slovic, and Tversky 1982) and the partly contrasting tradition of work on adaptive rationality (see for example Gigerenzer, Hertwig, and Pachur 2011). The heuristics postulated in this book may be adaptively rational, despite importing biases. Exactly how the connections go with those traditions is left as an open question.
+
+[3] Here and elsewhere in the book, the reader is asked to imagine schematic letters replaced by expressions of the relevant grammatical category, with quotation marks where appropriate.
+
+[4] There sometimes seems to be an element of macho competition over who can argue for the most complicated semantics for a simple expression. Of course, it would be quite unfair to implicate most semanticists in that tendency.
+
+[5] Stalnaker’s work (1968, 1975, 1984) has been seminal in the development of the view.
+
+[6] The ‘not(.)’ stands in for any suitable way of forming the negation of a sentence, perhaps simply by prefixing it with ‘it is not the case that’.
+
+[7] See chapter 5 and section 7.3 for detailed discussion of some alleged connections between conditionals and epistemic modals.

@@ -1,0 +1,215 @@
+# An alternative rule of disjunction in modal logic
+
+Timothy Williamson
+
+Notre Dame Journal of Formal Logic 33 (1) (1992): 89–100.
+
+Abstract
+
+Lemmon and Scott introduced the notion of a modal system’s providing the rule of disjunction. No consistent normal extension of KB provides this rule. An alternative rule is defined, which KDB, KTB, and other systems are shown to provide, while K and other systems provide the Lemmon–Scott rule but not the alternative rule. If $S$ provides the alternative rule then either $\mathord{\sim} A$ is a theorem of $S$ or $A$ is whenever $A \to □ A$ is a theorem; the converse fails. It is suggested that systems with this property are appropriate for handling sorites paradoxes, where $□$ is read as ‘clearly’. The S4 axiom fails in such systems.
+
+Lemmon and Scott introduced the notion of a modal system’s providing the rule of disjunction ([6], p. 44). This paper investigates similar rules for systems that do not provide the rule of disjunction. It ends with an application to philosophical issues about vagueness and sorites paradoxes.
+
+First, some definitions. For any wff $A$, $□^0 A=A$; $□^{j+1}A=□^j□ A$. $S$ is a modal system.
+
+$S$ provides the Lemmon–Scott rule of disjunction:
+
+if
+$\vdash_S □ A_1 \vee \ldots \vee □ A_n$
+then
+$\vdash_S A_i$ for some $i$ ($1 \le i \le n$).
+
+$S$ provides the weak rule of disjunction:
+
+if
+$\vdash_S □^{j_1}A_1 \vee \ldots \vee □^{j_n}A_n$ for all $j_1,\ldots,j_n$ ($\ge 0$)
+then
+$\vdash_S A_i$ for some $i$ ($1 \le i \le n$).
+
+$S$ provides the bad rule of disjunction:
+
+if
+$\vdash_S A_0 \vee □ A_1 \vee \ldots \vee □ A_n$
+then
+$\vdash_S A_i$ for some $i$ ($0 \le i \le n$).
+
+$S$ provides the alternative rule of disjunction:
+
+if
+$\vdash_S A_0 \vee □^{j_1}A_1 \vee \ldots \vee □^{j_n}A_n$ for all $j_1,\ldots,j_n$ ($\ge 0$)
+then
+$\vdash_S A_i$ for some $i$ ($0 \le i \le n$).
+
+Of course, the weak and alternative rules have infinitary premises, but then the Lemmon–Scott rule itself is not supposed to be a rule of proof within modal systems but a metalogical property of them. For present purposes, a modal system is simply a set of theorems; amongst the admissible rules for such a system, no particular subset will be marked off as derivable within a privileged apparatus for proving theorems (Humberstone [5] makes further refinements). As for the distinction between finitary and infinitary rules, the systems to be considered that satisfy the infinitary rules above will also be seen to satisfy finitary versions of them, with $j_i$ bounded by the modal depth of $A_0,\ldots,A_n$.
+
+Discussion will be confined to normal systems (Hughes and Cresswell [4], pp. 4–6). The following axioms will be mentioned: B ($p\to□\lozenge p$), D ($□ p\to\lozenge p$), D! ($□ p\leftrightarrow\lozenge p$), E ($\lozenge p\to□\lozenge p$), G1 ($\lozenge□ p\to□\lozenge p$), T ($□ p\to p$), W ($□(□ p\to p)\to□ p$), 4 ($□ p\to□□ p$).
+
+Trivially, if $S$ provides either the Lemmon–Scott or the alternative rule then it provides the weak rule. It will be noted that the weak and Lemmon–Scott rules are equivalent for extensions of KT4 (= S4), in which $\vdash_S □ A_1\vee\ldots\vee□ A_n$ entails $\vdash_S □^{j_1}A_1\vee\ldots\vee□^{j_n}A_n$ for all $j_1,\ldots,j_n$. Similarly, the bad and alternative rules are equivalent for extensions of KT4. The main interest will be in systems providing the alternative but not the Lemmon–Scott rule. The bad rule is included only for symmetry; it is so-called because no consistent normal system provides it (from $\vdash_S \mathord{\sim}□ p\vee□ p$ it yields $\vdash_S\mathord{\sim}□ p$ or $\vdash_Sp$), although K and other systems provide it in the special case when $A_0$ contains no modal operators ([6], p. 47).
+
+Well-known examples of systems providing the Lemmon–Scott rule are K, KD (= D), KT (= T), K4, KD4, KT4, and KW ([6], pp. 46, 79–81; [4], pp. 100–101). But no consistent normal extension of KG1 provides the Lemmon–Scott rule; for any such system $S$, $\vdash_S□\lozenge\mathord{\sim} p\vee□\lozenge p$ but neither $\vdash_S\lozenge\mathord{\sim} p$ nor $\vdash_S\lozenge p$. Since B and E entail G1 in normal systems, no consistent normal extension of KB or of KE provides the rule; for example, KTE (= S5) does not. The argument can be adapted to show that no consistent normal extension of K4G1 provides the weak rule. For if $S$ extends K4G1, $\vdash_S□^i□\lozenge\mathord{\sim} p\vee□^j□\lozenge p$ for all $i,j\ge0$, so $\vdash_S□\lozenge\mathord{\sim} p$ or $\vdash_S□\lozenge p$ if $S$ provides the weak rule. By substitution, $\vdash_S□\lozenge\mathord{\sim}(p\vee\mathord{\sim} p)$. Since $S$ is normal, $\vdash_S\mathord{\sim}\lozenge\mathord{\sim}(p\vee\mathord{\sim} p)$ and so $\vdash_S□ A$ for any $A$. Thus $\vdash_S□^i\mathord{\sim} p\vee□^jp$ if $i>0$ or $j>0$. Since $\vdash_S\mathord{\sim} p\vee p$, $\vdash_S□^i\mathord{\sim} p\vee□^jp$ for all $i,j\ge0$, so $\vdash_S\mathord{\sim} p$ or $\vdash_Sp$ by the weak rule again, making $S$ inconsistent. Similarly, no consistent normal extension of KE provides the weak rule, for it is not hard to show that $\vdash_{KE}□^i□(\mathord{\sim} p\mathbin{\&} p)\vee□^j\lozenge\mathord{\sim} p\vee□^k\lozenge p$ for all $i,j,k$.
+
+KG1 and KB can be shown not to provide the weak rule by a different route. More generally, if $S$ extends KG1 and provides the weak rule, $S$ extends KDG1, as neither KG1 nor KB does. For $\vdash_{\mathrm{K}}□^i□(\mathord{\sim} p\mathbin{\&} p)\vee\lozenge(\mathord{\sim} p\vee p)$ and $\vdash_{\mathrm{KG1}}□^{i+1}\lozenge(\mathord{\sim} p\vee p)$ for all $i$, so $\vdash_{\mathrm{KG1}}□^i□(\mathord{\sim} p\mathbin{\&} p)\vee□^j\lozenge(\mathord{\sim} p\vee p)$ for all $i,j$; thus if $S$ extends KG1 and provides the weak rule, $\vdash_S□(\mathord{\sim} p\mathbin{\&} p)$ or $\vdash_S\lozenge(\mathord{\sim} p\vee p)$. In the former case, $\vdash_S□^i\mathord{\sim} p\vee□^jp$ for all $i,j$, so $\vdash_S\mathord{\sim} p$ or $\vdash_Sp$ by another application of the rule, making $S$ inconsistent. In either case, $S$ extends KDG1.
+
+In contrast, although KDG1, KTG1, KDB, and KTB do not provide the Lemmon–Scott rule they do provide the alternative rule and therefore the weak one. One might say that these systems are less deeply disjunctive than are K4G1 and KE (a system is disjunctive insofar as it cannot decide between the disjuncts of its disjunctive theorems).
+
+That the alternative rule is stronger than the weak one can be seen already from the cases of K, K4, and KW. They provide the Lemmon–Scott rule and therefore the weak one. They do not provide the alternative rule, since any normal system providing it extends KD, as they do not. For if $S$ is normal, $\vdash_S\lozenge(\mathord{\sim} p\vee p)\vee□^i□(\mathord{\sim} p\mathbin{\&} p)$ for all $i$, so $\vdash_S\lozenge(\mathord{\sim} p\vee p)$ or $\vdash_S□(\mathord{\sim} p\mathbin{\&} p)$; by an earlier argument, $S$ extends KD. One might say that systems providing both the Lemmon–Scott and the alternative rule, such as KD and KT, are more thoroughly nondisjunctive than are K, K4, and KW.
+
+Problem Find a normal system providing the weak but neither the Lemmon–Scott nor the alternative rule.
+
+A sufficient condition for a normal system $S$ to provide the Lemmon–Scott rule is that there be a class $C$ of generated models such that every nontheorem of $S$ is false at a generating world of some model in $C$ and an amalgamation of any finite subset of $C$ is a model for $S$ ([4], p. 99). An amalgamation of a set of models is their union together with an extra world from which all other worlds are accessible. The condition is sufficient because if $\vdash_S A_i$ for no $i$, for each $i$ a model in $C$ can be chosen at some world in which $A_i$ is false, falsifying $□ A_1\vee\ldots\vee□ A_n$ at the extra world in the amalgamation of these models. Standard proofs that a system provides the rule of disjunction use this sufficient condition.
+
+Many systems can be shown to provide the weak rule of disjunction by a similar construction, but now the extra world need only have the reflexive ancestral of the accessibility relation to the world falsifying $A_i$, since this suffices to falsify $□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n$ for some $j_1,\ldots,j_n$. This in turn permits a world falsifying $A_0$ to be used in place of the extra world, showing the system to provide the alternative rule.
+
+Theorem KD, KDG1, KDB, KT, KTG1, KTB, and KD! provide the alternative rule of disjunction.
+
+Proof: The case of KTB will be taken first, and appropriate modifications indicated for the others.
+
+Suppose that $\vdash_{\mathrm{KTB}} A_i$ for no $i$ ($0\le i\le n$, $1\le n$). Since KTB is complete with respect to reflexive symmetric models, there are reflexive symmetric models $\langle W_i,R_i,V_i\rangle$ and worlds $w_i\in W_i$ such that $V_i(A_i,w_i)=0$ ($0\le i\le n$; $W_i,W_j$ disjoint unless $i=j$). The plan is to form something like an amalgamation of these models, a model $\langle W,R,V\rangle$ where $w_0R^{j_i}w_i$ ($1\le i\le n$) so that $V(A_0\vee□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n,w_0)=0$. However, because $w_0R^{j_i}w_i$ it cannot be assumed that $V(A_0,w_0)=V_0(A_0,w_0)=0$ if $A_0$ contains modal operators. Moreover, $R$ must be symmetric to ensure that $\langle W,R,V\rangle$ is a model for KTB; thus $w_iR^{j_i}w_0$, and it cannot be assumed that $V(A_i,w_i)=V_i(A_i,w_i)=0$. To overcome this problem, each $\langle W_i,R_i,V_i\rangle$ is protected from the others by a buffer of a pile of copies of itself, one for each layer of modal operators in $A_i$, so that the truth value of $A_i$ in the most protected copy is not disturbed.
+
+The modal depth ($\#$) of a formula is defined as usual: $\#B=0$ for atomic $B$; $\#\mathord{\sim} B=\#B$; $\#(B\mathbin{\&} C)=\max\{\#B,\#C\}$; $\#□ B=\#B+1$. $\langle W,R,V\rangle$ may now be defined by:
+
+$W=(W_0\times\{0,\ldots,\#A_0\})\cup\ldots\cup(W_n\times\{0,\ldots,\#A_n\}.$
+
+$\langle u,i\rangle R\langle v,j\rangle$ ($u\in W_s$, $v\in W_t$) iff
+
+either (i)
+$s=t$, $|i-j|\le1$, $uR_sv$
+or (ii)
+$s=0$, $t>0$, $i=j=0$
+or (iii)
+$s>0$, $t=0$, $i=j=0$.
+
+$V(B,\langle u,i\rangle)=V_s(B,u)$ ($u\in W_s$, $B$ atomic).
+
+Claim If $u\in W_s$ and $\#B\le i$ then $V(B,\langle u,i\rangle)=V_s(B,u)$ ($0\le i\le\#A_s$).
+
+Proof by induction on the complexity of $B$. The definition of $V$ is the atomic case. The cases of $\mathord{\sim}$ and $\mathbin{\&}$ are routine. Suppose the claim true for $B$, where $\#□ B\le i$. Suppose that $V(□ B,\langle u,i\rangle)=0$. For some $v\in W_t$ and $j$, $\langle u,i\rangle R\langle v,j\rangle$ and $V(B,\langle v,j\rangle)=0$. Now $\#B\le i-1$, so $0<i$, so $s=t$, $|i-j|\le1$, and $uR_sv$ by definition of $R$. Thus $\#B\le j$, so $V(B,\langle v,j\rangle)=V_s(B,v)$ by induction hypothesis. Hence $V_s(□ B,u)=0$ because $uR_sv$ and $V_s(B,v)=0$. Conversely, suppose that $V_s(□ B,u)=0$. For some $v\in W_s$, $uR_sv$ and $V_s(B,v)=0$. By induction hypothesis, $V(B,\langle v,i\rangle)=V_s(B,v)$. Moreover, $\langle u,i\rangle R\langle v,i\rangle$. Thus $V(□ B,\langle u,i\rangle)=0$. This proves the claim.
+
+It follows from the claim that $V(A_s,\langle w_s,\#A_s\rangle)=V_s(A_s,w_s)=0$ ($0\le s\le n$). Let $s>0$. If $\#A_0\ge i\ge1$, $\langle w_0,i\rangle R\langle w_0,i-1\rangle$ ($R_0$ is reflexive); $\langle w_0,0\rangle R\langle w_s,0\rangle$; if $0\le i\le\#A_s-1$, $\langle w_s,i\rangle R\langle w_s,i+1\rangle$ ($R_s$ is reflexive). Thus $\langle w_0,\#A_0\rangle R^{j_s}\langle w_s,\#A_s\rangle$, where $j_s=\#A_0+\#A_s+1$. Hence $V(□^{j_s}A_s,\langle w_0,\#A_0\rangle)=0$. Thus $V(A_0\vee□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n,\langle w_0,\#A_0\rangle)=0$. But $R$ is reflexive and symmetric because each $R_s$ is, given the nature of the construction, so $\langle W,R,V\rangle$ is a model for KTB. This refutes $\vdash_{\mathrm{KTB}}A_0\vee□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n$, completing the proof that KTB provides the alternative rule.
+
+For KDB, the proof proceeds in terms of serial symmetric models with respect to which KDB is complete ($R$ is serial iff for each $u$ there is a $v$ such that $uRv$). It can easily be checked that $R$ is serial and symmetric if each $R_s$ is. The argument for $\langle w_0,\#A_0\rangle R^{j_s}\langle w_s,\#A_s\rangle$ must be altered, since it appealed to reflexivity in the case of KTB. Since $R_0$ is serial, $W_0$ contains a sequence of worlds $w_0=w_0(\#A_0),w_0(\#A_0-1),\ldots,w_0(0)$ such that $w_0(\#A_0)R_0w_0(\#A_0-1)R_0\ldots R_0w_0(0)$. Similarly, since $R_s$ is serial, $W_s$ contains a sequence of worlds $w_s=w_s(\#A_s),w_s(\#A_s-1),\ldots,w_s(0)$ such that $w_s(\#A_s)R_sw_s(\#A_s-1)R_s\ldots R_sw_s(0)$; by the symmetry of $R_s$, $w_s(0)R_sw_s(1)R_s\ldots R_sw_s(\#A_s)$. Thus if $\#A_0\ge i\ge1$, $\langle w_0(i),i\rangle R\langle w_0(i-1),i-1\rangle$; $\langle w_0(0),0\rangle R\langle w_s(0),0\rangle$; if $0\le i\le\#A_s-1$, $\langle w_s(i),i\rangle R\langle w_s(i+1),i+1\rangle$, giving $\langle w_0,\#A_0\rangle R^{j_s}\langle w_s,\#A_s\rangle$.
+
+For KT and KD, a more economical $\langle W,R,V\rangle$ will do:
+
+$W=(W_0\times\{0,\ldots,\#A_0\})\cup(W_1\times\{0\})\cup\ldots\cup(W_n\times\{0\}).$
+
+$\langle u,i\rangle R\langle v,j\rangle$ ($u\in W_s$, $v\in W_t$) iff
+
+either (i)
+$s=t$, $i\ge j\ge i-1$, $uR_sv$
+or (ii)
+$s=0$, $t>0$, $i=0$.
+
+$V(B,\langle u,i\rangle)=V_s(B,u)$ ($u\in W_s$, $B$ atomic).
+
+The proofs are then simplifications of those for KTB and KDB respectively, with the modifications in $\langle W,R,V\rangle$ obviating appeal to the symmetry of $R_s$.
+
+KTG1 is complete with respect to reflexive convergent models ($R$ is convergent iff if $uRv$ and $uRv\text{*}$, then for some $w$, $vRw$ and $v\text{*}Rw$). The proof goes through as for KTB, the only new point to check being that $R$ is convergent if each $R_s$ is. To check this, suppose that $\langle u,i\rangle R\langle v,j\rangle$ and $\langle u,i\rangle R\langle v\text{*},j\text{*}\rangle$, where $u\in W_s$, $v\in W_t$, and $v\text{*}\in W_{t\text{*}}$. Case (a). $s=t$, $|i-j|\le1$, $uR_sv$, $s=t\text{*}$, $|i-j\text{*}|\le1$, $uR_sv\text{*}$. Since $R_s$ is convergent, $vR_sw$ and $v\text{*}R_sw$ for some $w\in W_s$. Then $\langle v,j\rangle R\langle w,i\rangle$ and $\langle v\text{*},j\text{*}\rangle R\langle w,i\rangle$. Case (b). $s=t$, $|i-j|\le1$, $uR_sv$, $s=0$, $t\text{*}>0$, $i=j\text{*}=0$. Then $\langle v,j\rangle R\langle v,0\rangle$ ($j\le1$ and $R_s$ is reflexive) and $\langle v\text{*},j\text{*}\rangle R\langle v,0\rangle$ ($t\text{*}>0$, $s=0$, $j\text{*}=0$). Case (c). $s=0$, $t>0$, $t\text{*}>0$, $i=j=j\text{*}=0$. Then $\langle v,j\rangle R\langle u,0\rangle$ and $\langle v\text{*},j\text{*}\rangle R\langle u,0\rangle$. The other possible cases are similar.
+
+KDG1 is complete with respect to serial convergent models. Convergence can be checked as before, except that in Case (b) one has $\langle v,j\rangle R\langle w,0\rangle$ and $\langle v\text{*},j\text{*}\rangle R\langle w,0\rangle$ for some $w\in W_t$ such that $vR_tw$ ($R_t$ is serial). However, there is a hitch where the proof for KDB used the symmetry of $R_s$ in proving $\langle w_0,\#A_0\rangle R^{j_s}\langle w_s,\#A_s\rangle$; convergence is no substitute. The simplified construction for KD avoids this difficulty, but yields a nonconvergent $R$. Fortunately, the proof can be carried through in terms of serial backward-serial convergent models, where a relation is backward-serial iff its converse is serial. If $R_s$ is backward-serial, $W_s$ contains worlds $w_s=w_s(\#A_s),w_s(\#A_s-1),\ldots,w_s(0)$ such that $w_s(0)R_sw_s(1)R_s\ldots R_sw_s(\#A_s)$. It is easy to check that $R$ is backward-serial if each $R_s$ is. Thus a lemma is needed: the completeness of KDG1 with respect to serial backward-serial convergent models.
+
+Since KDG1 is complete with respect to serial convergent models, it suffices to show that if a serial convergent model falsifies $B$, so does a serial backward-serial convergent one. Let $\langle W\text{*},R\text{*},V\text{*}\rangle$ be serial and convergent. Define a new model $\langle W\text{**},R\text{**},V\text{**}\rangle$ by: $W\text{**}=W\text{*}\times{N}$; $\langle u,i\rangle R\text{**}\langle v,j\rangle$ ($u,v\in W\text{*}$, $i,j\in{N}$) iff either $i=j=0$ and $uR\text{*}v$ or both $u=v$ and $i=j+1$; $V\text{**}(C,\langle u,i\rangle)=V\text{*}(C,u)$ ($u\in W$, $i\in{N}$, $C$ atomic). It is routine to show that $R\text{**}$ is serial, backward-serial, and convergent and that $V\text{**}(B,\langle u,0\rangle)=V\text{*}(B,u)$ ($u\in W\text{*}$).
+
+For the final system, KD! ($K+\lozenge p\leftrightarrow□ p$), the proof takes a different form. Note first that KD! is the nonmodal propositional calculus PC in disguise (although purists will note that the latter, unlike the former, is Post-complete). To see this, for each atomic wff $A$ and $i\in{N}$ let $A_i$ be an atomic wff, with $A_i=B_j$ only if $A=B$ and $i=j$; let $s$ be the substitution such that $sA_i=A_{i+1}$. Define a translation $t$ from wff to nonmodal wff by: $tA=A_0$ ($A$ atomic); $t\mathord{\sim} A=\mathord{\sim} tA$; $t(A\mathbin{\&} B)=tA\mathbin{\&} tB$; $t□ A=stA$. It can be shown that $\vdash_{\mathrm{KD!}}A$ iff $\vdash_{\mathrm{PC}}tA$, for $A$ is equivalent in KD! to the result of driving all its modal operators inwards ($□$ commutes with $\mathord{\sim}$ and $\mathbin{\&}$), $t$ transforms the modal axioms of KD! into theorems of PC and necessitation corresponds to uniform substitution using $s$. Now suppose that $\vdash_{\mathrm{KD!}}A_0\vee□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n$, where $j_i=\#A_0+\#A_1+\ldots+\#A_{i-1}+i$ ($1\le i\le n$). Thus $\vdash_{\mathrm{PC}}tA_0\vee t□^{j_1}A_1\vee\ldots\vee t□^{j_n}A_n$. But no two disjuncts of $tA_0\vee t□^{j_1}A_1\vee\ldots\vee t□^{j_n}A_n$ have any propositional variables in common, so by the Interpolation Theorem for PC (or, more strictly, its Halldén-completeness) either $\vdash_{\mathrm{PC}}tA_0$ or $\vdash_{\mathrm{PC}}t□^{j_i}A_i$ for some $i$. In the latter case, $\vdash_{\mathrm{PC}}tA_i$ since $tA_i$ is a substitution instance of $t□^{j_i}A_i$. Thus $\vdash_{\mathrm{KD!}}A_i$ for some $i$, and KD! provides the alternative rule of disjunction.
+
+Corollary 1 KD, KDG1, KDB, KT, KTG1, KTB, and KD! provide the weak rule of disjunction.
+
+The alternative rule of disjunction produces a failure of a certain kind of compactness. Where $X$ and $Y$ are sets of formulae and $S$ is a modal system, put $X\Vdash_SY$ iff for every uniform substitution $s$, if $\vdash_Ss(A)$ for all $A\in X$ then $\vdash_Ss(B)$ for some $B\in Y$. $\Vdash_S$ is an abstract consequence relation in that it is reflexive and admits thinning on the right and left and a cut rule; moreover, if $X\Vdash_SY$ then $s(X)\Vdash_Ss(Y)$ for any uniform substitution $s$. The rule of necessitation for $S$ can be expressed as $\{p\}\Vdash_S\{□ p\}$, and the Lemmon–Scott rule of disjunction for a fixed $n$ as $\{□ p_1\vee\ldots\vee□ p_n\}\Vdash_S\{p_1,\ldots,p_n\}$. The alternative rule for $n=1$ is $\{p\vee□^jq:j\ge0\}\Vdash_S\{p,q\}$. If $S$ is a consistent normal system and provides the alternative rule (and so for $n=1$), $\Vdash_S$ fails to be compact in that although $\{p\vee□^jq:j\ge0\}\Vdash_S\{p,q\}$, there is no finite subset $X$ of $\{p\vee□^jq:j\ge0\}$ such that $X\Vdash_S\{p,q\}$. For otherwise $\{p\vee□^jq:k\ge j\ge0\}\Vdash_S\{p,q\}$ for some $k$; substituting $\mathord{\sim}(q\mathbin{\&}□ q\mathbin{\&}\ldots\mathbin{\&}□^kq)$ (or just $\mathord{\sim}□^kq$ if $S$ extends KT) for $p$, one concludes that since $\vdash_S\mathord{\sim}(q\mathbin{\&}□ q\mathbin{\&}\ldots\mathbin{\&}□^kq)\vee□^jq$ for $k\ge j\ge0$, either $\vdash_S\mathord{\sim}(q\mathbin{\&}□ q\mathbin{\&}\ldots\mathbin{\&}□^kq)$ or $\vdash_Sq$, which are both impossible by the consistency and normality of $S$.
+
+One does not necessarily restore compactness by restricting the conclusion of $\Vdash_S$ to a single formula. For example, if $S=$ KD, KDG1, KDB, KT, KTG1, or KTB, $\{p\vee□^j(\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q):j\ge0\}\Vdash_S\{p\}$: for $\{p\vee□^j(\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q):j\ge0\}\Vdash_S\{p,\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q\}$ by the alternative rule, and the second formula in the conclusion can be omitted as none of the systems in question has any theorem of the form $\lozenge A\mathbin{\&}\lozenge\mathord{\sim} A$ (consider a one-world reflexive frame). Now if $\{p\vee□^j(\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q):k\ge j\ge0\}\Vdash_S\{p\}$ for some $k$, one concludes from the previous paragraph that $\vdash_S\mathord{\sim}(\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q\mathbin{\&}□(\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q)\mathbin{\&}\ldots\mathbin{\&}□^k(\lozenge q\mathbin{\&}\lozenge\mathord{\sim} q))$, which is not the case for any of the systems (consider a two-world frame in which both worlds are accessible from both worlds). Thus for $S=$ KD, KDG1, KDB, KT, KTG1, or KTB, $\Vdash_S$ cannot be axiomatized for single-formula conclusions. One cannot provide axioms in the language of propositional modal logic and rules of inference with finitely many premises such that $X\Vdash_S\{A\}$ iff $A$ can be inferred from $X$ and those axioms by a finite number of applications of the rules of inference, for any such axiomatization would yield a compact consequence relation.
+
+Although the alternative rule makes $\Vdash_S$ noncompact for the systems covered by the theorem, examination of the proof shows it to establish that each system admits a finitary strengthening of the alternative rule. For $S=$ KD, KDG1, KDB, KT, KTG1, KTB, if $\vdash_SA_0\vee□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n$ then $\vdash_SA_i$ for some $i$, where $j_i=\#A_0+\#A_i+1$. This can be reduced to $j_i=\#A_0+1$ for $S=$ KD, KT. For KD, one has $j_i=\#A_0+\#A_1+\ldots+\#A_{i-1}+i$. These systems admit parallel finitary strengthenings of the weak rule: put $A_0=p\mathbin{\&}\mathord{\sim} p$, so $\#A_0=0$. For systems providing the Lemmon–Scott rule, it is another finitary strengthening of the weak rule.
+
+Problem Do the alternative and weak rules have finitary strengthenings in terms of $\#A_0,\ldots,\#A_n$ for every normal system that provides them?
+
+The difference between the finitary strengthenings of the rules for KD! and those for the other systems is not merely an artifact of the proof. $\vdash_{\mathrm{KD!}}□\mathord{\sim} p\vee□ p$, but neither $\vdash_{\mathrm{KD!}}\mathord{\sim} p$ nor $\vdash_{\mathrm{KD!}}p$, contrary to the finitary strengthening of the weak rule for the other systems given above. KD! also violates the finitary strengthenings of the alternative rule for the other systems. There is a related difference over what might be called the homogeneous alternative rule of disjunction: if $\vdash_SA_0\vee□^jA_1\vee\ldots\vee□^jA_n$ for all $j$ ($\ge0$) then $\vdash_SA_i$ for some $i$ ($0\le i\le n$), another strengthening of the alternative rule. KD! does not provide the homogeneous alternative rule, since $\vdash_{\mathrm{KD!}}q\vee□^j\mathord{\sim} p\vee□^jp$ for all $j$. In contrast, KD, KDG1, KDB, KT, KTG1, and KTB do provide the homogeneous alternative rule. The proof of the theorem for these systems can easily be adapted to show that if $\vdash_SA_0\vee□^{j_1}A_1\vee\ldots\vee□^{j_n}A_n$ for some $j_1,\ldots,j_n$ where $j_i\ge\#A_0+\#A_i+1$ then $\vdash_SA_i$ for some $i$ (where the inequality is strict, the truth value of $A_i$ in the bottom copy of $\langle W_i,R_1,V_i\rangle$ is protected by a deeper pile of other copies than necessary). Thus if $j=\max\{\#A_0+\#A_1+1,\ldots,\#A_0+\#A_n+1\}$ and $\vdash_SA_0\vee□^jA_1\vee\ldots\vee□^jA_n$ then $\vdash_SA_i$ for some $i$, so that $S$ provides the homogeneous alternative rule. Similarly, say that $S$ provides the homogeneous weak rule of disjunction just in case if $\vdash_S□^jA_1\vee\ldots\vee□^jA_n$ for all $j$ then $\vdash_SA_i$ for some $i$; this rule is intermediate in strength between the weak rule and the Lemmon–Scott rule. By reasoning like that above, KD, KDG1, KDB, KT, KTG1, and KTB provide the homogeneous weak rule (put $A_0=p\mathbin{\&}\mathord{\sim} p$), but KD! does not.
+
+KD! also constitutes a counterexample to the natural extension of Lemmon and Scott’s semantic characterization of their rule to the weak rule. They show ([6], p. 45) that a consistent normal system provides the rule of disjunction iff its canonical frame $\langle W,R\rangle$ (the frame of its canonical model) is left-directed, in the sense that for any $x_1,\ldots,x_n\in W$ there is a $y\in W$ such that $yRx_1,\ldots,yRx_n$. One might correspondingly suppose that a normal system provides the weak rule iff its canonical frame is ancestrally left-directed, in the sense that for any $x_1,\ldots,x_n\in W$ there is a $y\in W$ such that $yR^{j_1}x_1,\ldots,yR^{j_n}x_n$ for some $j_1,\ldots,j_n$ ($\ge0$). This condition seems to stand to the Lemmon–Scott condition just as the weak rule stands to the Lemmon–Scott rule. One can indeed show that if the canonical frame of a normal system is ancestrally left-directed, then the system provides the weak rule of disjunction. However, the converse fails. Since the sets $\{□^j\mathord{\sim} p:j\ge0\}$ and $\{□^jp:j\ge0\}$ are both consistent in KD!, they have maximal consistent extensions $x_1$ and $x_2\in W$ respectively, where $\langle W,R\rangle$ is the canonical frame for KD!. Suppose that $yR^{j_1}x_1$ and $yR^{j_2}x_2$ for some $y\in W$. Then $\lozenge^{j_1}□^{j_2}\mathord{\sim} p\in y$ since $□^{j_2}\mathord{\sim} p\in x_1$, and $\lozenge^{j_2}□^{j_1}p\in y$ since $□^{j_1}p\in x_2$. Thus $\{\lozenge^{j_1}□^{j_2}\mathord{\sim} p,\lozenge^{j_2}□^{j_1}p\}$ should be a consistent set in KD!. But it is not, for $\vdash_{\mathrm{KD!}}\lozenge^{j_1}□^{j_2}\mathord{\sim} p\leftrightarrow\mathord{\sim}□^{j_1+j_2}p$ and $\vdash_{\mathrm{KD!}}\lozenge^{j_2}□^{j_1}p\leftrightarrow□^{j_1+j_2}p$. Thus no such $y$ exists. The canonical frame for KD! is not ancestrally left-directed, even though KD! provides the weak rule.
+
+Although the frame of the canonical model for KD! is not ancestrally left-directed, KD! can be characterized by a model whose frame is ancestrally left-directed. For let $A_0,A_1,A_2,\ldots$ be an enumeration of the consistent formulae in KD! (where the set of propositional variables is taken to be countable). By an argument like that in the proof of the theorem, one can show that $\{A_0,\lozenge^{j_1}A_1,\lozenge^{j_2}A_2,\ldots\}$ is consistent in KD!, where $j_i=\#A_0+\#A_1+\ldots+\#A_{i-1}+i$. Thus it has a maximal consistent extension $x$. The submodel of the canonical model of KD! generated by $x$ characterizes KD!: a formula is consistent in KD! iff it holds at some world in this submodel (however, a set of formulas may be consistent in KD! without all holding together at any world in the submodel, by the argument of the previous paragraph). The frame $\langle W,R\rangle$ of any generated submodel is ancestrally left-directed, since the generating world has the ancestral of $R$ to any world in $W$. A similar argument can be given for KD, KDG1, KDB, KT, KTG1, and KTB, with $j_i=\#A_0+\#A_i+1$. However, in the absence of general finitary equivalents of the infinitary rules of disjunction there remains:
+
+Problem Find semantic characterizations of the infinitary rules of disjunction.
+
+An important consequence of the alternative rule is:
+
+Corollary 2 The following are equivalent for $S=$ KD, KDG1, KDB, KT, KTG1, KTB, and KD!:
+
+(a)
+$\vdash_SA\to□ A$
+(b)
+$\vdash_S\mathord{\sim} A$ or $\vdash_SA$
+(c)
+$\vdash_S\lozenge A\to A$.
+
+Proof: (a) $\Rightarrow$ (b). For any normal $S$, if $\vdash_SA\to□ A$ then $\vdash_S□^iA\to□^{i+1}A$ for all $i$, and hence $\vdash_SA\to□^iA$, i.e. $\vdash_S\mathord{\sim} A\vee□^iA$, for any $i$. If $S$ provides the alternative rule of disjunction, $\vdash_S\mathord{\sim} A$ or $\vdash_SA$. (b) $\Rightarrow$ (a). $S$ is normal. (c) $\Leftrightarrow$ (b). This is like (a) $\Leftrightarrow$ (b), for (c) is equivalent to $\vdash_S\mathord{\sim} A\to□\mathord{\sim} A$ and (b) is symmetric between $A$ and $\mathord{\sim} A$.
+
+If $\vdash_S\mathord{\sim} A$ or $\vdash_SA$ whenever $\vdash_SA\to□ A$, let us say that $S$ provides the rule of margins (the margin between the truth of $A$ and its necessity). Any normal system providing the alternative rule also provides the rule of margins. Thus, for example, no consistent extension of K4 provides the alternative rule, since it would have $\vdash_S\mathord{\sim}□ p$ or $\vdash_S□ p$, leading to inconsistency (in the latter case by another application of the rule). More generally, no modality entails its own necessitation in any consistent normal system providing the alternative rule of disjunction.
+
+The equivalence of (a) and (c) in Corollary 2 follows from the rule of margins, but not conversely. If $S$ extends KB, (a) and (c) are equivalent (if $\vdash_S\lozenge A\to A$ then $\vdash_S□\lozenge A\to□ A$, and $\vdash_{\mathrm{KB}}A\to□\lozenge A$), so they are equivalent in KB4, which does not provide the rule of margins (in contrast, (a) and (c) are not equivalent in K4, for $\vdash_{\mathrm{K4}}□ p\to□□ p$ but not $\vdash_{\mathrm{K4}}\lozenge□ p\to□ p$). The equivalence of (a) and (c) will not be treated as a rule of disjunction.
+
+Corollary 2 is weaker than the theorem. A normal system can provide the rule of margins without providing the alternative rule (even for $n=1$). A counterexample is the system KT $\vee$ KDB, where $\vdash_{\mathrm{KT}\vee\mathrm{KDB}}A$ iff $\vdash_{\mathrm{KT}}A$ and $\vdash_{\mathrm{KDB}}A$. KT $\vee$ KDB is complete with respect to models that are either reflexive or both serial and convergent. If $\vdash_{\mathrm{KT}\vee\mathrm{KDB}}A\to□ A$ then $\vdash_{\mathrm{KT}}A\to□ A$ and $\vdash_{\mathrm{KDB}}A\to□ A$; by Corollary 2, $\vdash_{\mathrm{KT}}\mathord{\sim} A$ or $\vdash_{\mathrm{KT}}A$ and $\vdash_{\mathrm{KDB}}\mathord{\sim} A$ or $\vdash_{\mathrm{KDB}}A$. If either $\vdash_{\mathrm{KT}}\mathord{\sim} A$ and $\vdash_{\mathrm{KDB}}A$ or $\vdash_{\mathrm{KT}}A$ and $\vdash_{\mathrm{KDB}}\mathord{\sim} A$, KTB would be inconsistent. Thus either $\vdash_{\mathrm{KT}}\mathord{\sim} A$ and $\vdash_{\mathrm{KDB}}\mathord{\sim} A$ or $\vdash_{\mathrm{KT}}A$ and $\vdash_{\mathrm{KDB}}A$, so $\vdash_{\mathrm{KT}\vee\mathrm{KDB}}\mathord{\sim} A$ or $\vdash_{\mathrm{KT}\vee\mathrm{KDB}}A$. However, KT $\vee$ KDB does not provide even the weak rule. For $\vdash_{\mathrm{KT}}□^i(□ p\to p)\vee□^j(p\to□\lozenge p)$ and $\vdash_{\mathrm{KDB}}□^i(□ p\to p)\vee□^j(p\to□\lozenge p)$ for all $i$ and $j$, but neither $\vdash_{\mathrm{KT}\vee\mathrm{KDB}}□ p\to p$ nor $\vdash_{\mathrm{KT}\vee\mathrm{KDB}}p\to□\lozenge p$.
+
+Nevertheless, the rule of margins has many of the consequences of the alternative rule. If S is normal and provides the marginal rule, it extends KD, and if it is consistent, it does not extend K4 or KE.
+
+The rule of margins signals a kind of expressive incompleteness in the systems which provide it. Suppose that $□\text{*}$ is a (perhaps complex) operator in a normal modal system $S$, where $□\text{*}A$ is to be interpreted as the infinite conjunction $A\mathbin{\&}□ A\mathbin{\&}□□ A\mathbin{\&}\ldots$. Thus $S$ should satisfy at least three conditions: (i) if $\vdash_SA$ then $\vdash_S□\text{*}A$; (ii) $\vdash_S□\text{*}p\to p$; (iii) $\vdash_S□\text{*}p\to□□\text{*}p$. If $S$ provides the rule of margins, either $\vdash_S□\text{*}p$ or $\vdash_S\mathord{\sim}□\text{*}p$ by (iii). If the former, $\vdash_Sp$ by (ii) and $S$ is inconsistent. If the latter, $\vdash_S\mathord{\sim}□\text{*}(p\vee\mathord{\sim} p)$ by substitution; but $\vdash_S□\text{*}(p\vee\mathord{\sim} p)$ by (i), and $S$ is again inconsistent. Thus a consistent normal system providing the rule of margins cannot express the ancestral of its own necessity operator. If an operator for the ancestral is introduced, the new system will not provide the rule of margins.
+
+Now for the application. Some things are clearly heaps, some are clearly not heaps, and borderline cases are neither clearly heaps nor clearly not heaps (‘clearly’ could be taken epistemologically, semantically, or ontologically). $□ A$ can be read as ‘It is clearly the case that $A$’. That $A$ is a borderline case may be expressed as $\mathord{\sim}□ A\mathbin{\&}\mathord{\sim}□\mathord{\sim} A$. Let $S?$ be an appropriate system of modal logic for this reading. The choice of a classical underlying propositional logic is controversial in the context of vagueness, but it may be motivated by either a supervaluational approach (Fine [3]) or the claim that clarity is an epistemological rather than a semantic or ontological matter (Cargile [2], Campbell [1], Sorensen [7]). Given classical logic, one cannot assert ‘If $X$ is a heap then $X$ is not a borderline case of a heap’ and ‘If $X$ is not a heap then $X$ is not a borderline case of a heap’ without abolishing the borderline cases altogether; rather, $p\mathbin{\&}\mathord{\sim}□ p$ will be regarded as a consistent combination ($p$ atomic). To assume that $S?$ is normal is to assume that the clear propositions are closed under logical consequence, but that need not be implausible: if $X$ is genuinely a borderline case of a heap, it surely follows that one cannot deduce from what is clear that $X$ is a heap, nor that it is not. It also seems plausible that if something is clearly the case, then it is the case. That makes $S?$ at least as strong as KT.
+
+Vagueness is often said to be ubiquitous in natural languages. One development of this idea would be the claim that it is never a matter of logic that all cases of $A$ are clear cases, unless for the trivial reason that it is a matter of logic that $A$ has no cases or that everything is a case of $A$. In other words, if $\vdash_{S?}A\to□ A$ then either $\vdash_{S?}\mathord{\sim} A$ or $\vdash_{S?}A$. Thus the rule of margins can be taken to represent the ubiquity of vagueness. It is therefore satisfying that KT provides the rule, since on the present approach it is the minimal logic of clarity.
+
+The claim formalized in the previous paragraph is not equivalent to the claim ‘It is a matter of logic that $A$ lacks borderline cases only when it is a matter of logic that $A$ has no cases or that everything is a case of $A$’. The latter would be formalized by the rule that if $\vdash_{S?}□\mathord{\sim} A\vee□ A$ then $\vdash_{S?}\mathord{\sim} A$ or $\vdash_{S?}A$. This rule is a special case of the Lemmon–Scott rule of disjunction and is therefore possessed by systems such as K, K4, KD4, and KT4 that provide that rule but not the rule of margins. On the other hand, KD! provides the rule of margins but not the new rule, since $\vdash_{\mathrm{KD!}}□\mathord{\sim} p\vee□ p$ but neither $\vdash_{\mathrm{KD!}}\mathord{\sim} p$ nor $\vdash_{\mathrm{KD!}}p$. However, the new rule follows easily from the rule of margins in extensions of KT, so the latter is the stronger rule in $S?$ and therefore seems a more appropriate representation of the ubiquity of vagueness. The same point applies to the rule that if $\vdash_{S?}A\to□ A$ and $\vdash_{S?}\mathord{\sim} A\to□\mathord{\sim} A$ then $\vdash_{S?}\mathord{\sim} A$ or $\vdash_{S?}A$, corresponding to the claim that all cases of $A$ are clear cases and all noncases clear noncases only if $A$ is a logical truth or falsehood. This rule is a consequence of both the previous one and the rule of margins and is equivalent to the former in extensions of KT. It says that when $A$ is not a logical truth or falsehood, its truth-conditions are liable to unclarity on at least one side; the rule of margins says that they are liable to unclarity on both sides.
+
+The ubiquity of vagueness is relative to a language. If $□\text{*}A$ is introduced to mean that $A$ and clearly $A$ and clearly clearly $A$ and …, one must expect $□\text{*}p\to□□\text{*}p$ to be a theorem of the new system and the rule of margins to fail, as noted above. This does not mean that KT is the wrong logic for clarity, of course, for what the rule of margins fails in may be a conservative extension of KT. There is no need to deny that precise sentences can be introduced into a so far thoroughly vague language. The rule of margins indicates that (with trivial exceptions) such sentences have not yet been introduced.
+
+The connection between vagueness and the rule of margins can also be discerned in the proof of the theorem. In the case relevant to the rule, one takes a world at which $A$ holds and a world at which $\mathord{\sim} A$ holds and constructs a sequence of worlds from one to the other, each accessible from its predecessor. The point is that there must be a cut-off point, a last world at which $A$ holds; $A\mathbin{\&}\mathord{\sim}□ A$ will hold at that world. This is reminiscent of a sorites argument.
+
+Assume that $S?$ is a consistent extension of KT and provides the rule of margins. It follows that $S?$ does not extend K4. The failure of what is clear always to be clearly clear is a striking result but one predicted by the epistemic theory of vagueness. (Sorensen [7], pp. 242–243 argues from the epistemic theory of vagueness and the vagueness of knowledge to the failure of the corresponding principle for knowledge.) It is harder to accommodate within the standard apparatus of supervaluations; this may be a version of the problem of higher-order vagueness (perhaps a hierarchy of valuations is required).
+
+One way to realize these ideas would be to suppose that $A$ is clear at a world iff it is true at all nearby worlds on some appropriate metric. Perhaps $A$ is clear iff we are very reliably right about it, and reliability is a matter of leaving a margin for error, at least for sentences of the language in question (Williamson [8], pp. 103–108 offers a tentative defense of the epistemic theory along these lines). One would thus consider models $\langle W,R,V\rangle$ with a metric $d$ defined on $W$, where $uRv$ iff $d(u,v)<k$ ($u,v\in W$, $k>0$). $R$ would therefore be reflexive and symmetric; conversely, every reflexive symmetric relation is induced by some metric in this way (to see this, put $d(u,v)=0$ iff $u=v$, $d(u,v)=1$ iff $uRv$ but not $u=v$, $d(u,v)=2$ otherwise; let $k=2$). Thus KTB would be the strongest system valid for these models. It is satisfying that KTB provides the rule of margins.
+
+Of course, KTB is not a plausible logic of clarity once undecidable propositions are taken into account. If Goldbach’s Conjecture (GC) is false, it is clearly false in the relevant sense, for a counterexample can be computed; by contraposition and bivalence, if GC is not clearly false, it is true. The B axiom says that if GC is true it is clearly not clearly false: but then it would be clearly true. The truth of GC should not entail its clear truth, for it might be true yet not even informally provable. The B axiom is implausible in the light of such examples. KT is a better candidate for the strict logic of clarity. However, KTB is the system that emerges when one idealizes away such phenomena and concentrates on what may be the main source of sorites paradoxes. On this view, the impossibility of identifying a cut-off point for $A$ can be explained. The last cases of $A$ are cases of $A$ near cases of $\mathord{\sim} A$, that is, they are cases of $A\mathbin{\&}\mathord{\sim}□ A$; but $A\mathbin{\&}\mathord{\sim}□ A$ has no clear cases, for $□(A\mathbin{\&}\mathord{\sim}□ A)$ is a contradiction in any normal extension of KT. Thus nothing is clearly one of the last cases of $A$.
+
+# Acknowledgements
+
+I thank Lloyd Humberstone for many helpful comments.
+
+# References
+
+[1] Campbell, R., “The sorites paradox,” Philosophical Studies, vol. 26 (1974), pp. 175–191.
+
+[2] Cargile, J., “The sorites paradox,” British Journal for the Philosophy of Science, vol. 20 (1969), pp. 193–202.
+
+[3] Fine, K., “Vagueness, truth and logic,” Synthese, vol. 30 (1975), pp. 265–300.
+
+[4] Hughes, G. E. and M. J. Cresswell, A Companion to Modal Logic, Methuen, London, 1984.
+
+[5] Humberstone, I. L., “A more discriminating approach to modal logic” (abstract), Journal of Symbolic Logic, vol. 51 (1986), pp. 503–504.
+
+[6] Lemmon, E. J. and D. Scott, The “Lemmon Notes”: An Introduction to Modal Logic, edited by K. Segerberg, American Philosophical Quarterly Monograph Series, Blackwell, Oxford, 1977.
+
+[7] Sorensen, R., Blindspots, Clarendon Press, Oxford, 1988.
+
+[8] Williamson, T., Identity and Discrimination, Blackwell, Oxford, 1990.
+
+# Appendix
+
+A table showing which systems provide which rules may be of use. $+$ means that the system provides the rule, $-+$ that it does not but that some consistent normal extension of it does, and $--$ that no consistent normal extension of it does.
+
+Lemmon–Scott rule	Weak rule	Homo­geneous weak rule	Alter­native rule	Homo­geneous alter­native rule	Rule of margins
+KD	$+$	$+$	$+$	$+$	$+$	$+$
+KT	$+$	$+$	$+$	$+$	$+$	$+$
+KDG1	$--$	$+$	$+$	$+$	$+$	$+$
+KDB	$--$	$+$	$+$	$+$	$+$	$+$
+KTG1	$--$	$+$	$+$	$+$	$+$	$+$
+KTB	$--$	$+$	$+$	$+$	$+$	$+$
+K	$+$	$+$	$+$	$-+$	$-+$	$-+$
+KD!	$--$	$+$	$--$	$+$	$--$	$+$
+K4	$+$	$+$	$+$	$--$	$--$	$--$
+KD4	$+$	$+$	$+$	$--$	$--$	$--$
+KT4	$+$	$+$	$+$	$--$	$--$	$--$
+KW	$+$	$+$	$+$	$--$	$--$	$--$
+KT $\vee$ KDB	$-+$	$-+$	$-+$	$-+$	$-+$	$+$
+KG1	$--$	$-+$	$-+$	$-+$	$-+$	$-+$
+KB	$--$	$-+$	$-+$	$-+$	$-+$	$-+$
+K4G1	$--$	$--$	$--$	$--$	$--$	$--$
+KE	$--$	$--$	$--$	$--$	$--$	$--$

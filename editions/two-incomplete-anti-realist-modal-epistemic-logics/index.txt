@@ -1,0 +1,401 @@
+# Two Incomplete Anti-Realist Modal Epistemic Logics1
+
+Timothy Williamson
+
+The Journal of Symbolic Logic 55 (1) (1990): 297–314.
+
+Many phrases have been used to express what are sometimes called anti-realist conceptions of truth: ‘verifiability’, ‘knowability’, ‘rational acceptability’, ‘warranted assertability’. In spite of their obvious differences, all four of these phrases have a common form; each is a cognitive attitude modified by ‘-ability’. They speak of the possibility of verification, knowledge, rational acceptance or warranted assertion. Schematically, it seems to be claimed that it is true that $A$ if and only if it is possible that it is $E$’d that $A$, where ‘$E$’ is to be replaced by some cognitive verb and ‘$A$’ by any indicative sentence of the class to which the anti-realist conception is being claimed to apply. Since truth is redundant as a sentential operator, this boils down to the following thesis, where ‘$p$’ is a propositional variable and ‘$M$’ expresses the appropriate kind of possibility:
+
+$$p \leftrightarrow MEp.$$
+
+(*)
+
+(*) also formalizes views such as Putnam’s: ‘To claim a statement is true is to claim it could be justified’ [11, p. 56]. It is no doubt a crude model for anti-realism, but one has to start somewhere; by seeing how and why more sophisticated versions of anti-realism differ from (*) one should be able to understand them better too. Moreover, if an anti-realist rejects the equation of truth with, say, warranted assertibility, arguing that truth is rather to be identified with the possibility of getting into a position in which one’s warrant to assert somehow cannot be overturned, the form of (*) is preserved, for truth is still being identified with the possibility of something. The arguments below require no more; nothing else will be assumed about $E$. The aim of this paper is not primarily to evaluate the philosophical plausibility of (*) under some interpretation, but to discuss systems of propositional modal logic with an added operator $E$ in which it is a thesis, although some results about the latter will naturally provide material for the former task.2 The area also has mathematical interest; in particular, (*) seems to say that the possibility operator $M$ has a right inverse.
+
+Consider a language $\mathbb{L}$ whose primitive vocabulary consists of a denumerable set $\mathrm{Atom}$ of propositional variables $p,q,r,\ldots$, three monadic sentential operators $\neg$ (negation), $M$ and $E$, the dyadic $\mathbin{\&}$ (conjunction) and parentheses. $L$ (necessity) abbreviates $\neg M\neg$ in the metalanguage; $\vee$, $\to$ and $\leftrightarrow$ (disjunction and the material conditional and biconditional) are used similarly. The set $\mathrm{Wff}$ of well-formed formulae of $\mathbb{L}$ is defined in the usual way. The concept of a normal modal logic (cf. [9]) has an obvious extension to $\mathbb{L}$: a subset $S$ of $\mathrm{Wff}$ is a normal $E$-logic iff $S$ contains $L(p\to q)\to(Lp\to Lq)$ and all truth-functional tautologies and is closed under the rules of modus ponens (MP), uniform substitution (US) and necessitation (Nec). By analogy with modal logic, $\text{“}K\text{”}$ is the smallest normal $E$-logic, $\text{“}KT\text{”}$ is the smallest normal $E$-logic containing the $T$ axiom $Lp\to p$, $\text{“}KT4\text{”}$ (or $\text{“}S4\text{”}$) is the smallest normal $E$-logic containing it and the $S4$ axiom $Lp\to LLp$, and so on.3 A normal $E$-logic collapses iff it contains $Mp\leftrightarrow p$.
+
+The philosophical motivation for interest in (*) requires $M$ to be interpreted as some kind of genuine possibility, and therefore $L$ as some kind of genuine necessity, although perhaps of a restricted sort. It seems reasonable to assume that a necessary consequence of something necessary is itself necessary and that the necessity of a logical truth is itself a logical truth, which suggests that attention should be confined to normal $E$-logics. US is of course justified by the treatment of $p,q,r,\ldots$ as variables, a wff $A$ of $\mathbb{L}$ being valid on the intended interpretation iff every substitution instance of $A$ in an interpreted language of some kind has an appropriate kind of logical truth, for every substitution instance of a substitution instance of $A$ is itself a substitution instance of $A$. The requirement that the underlying propositional logic be classical is a substantive one, for some anti-realists reject classical in favour of intuitionist logic; however, the attempt to combine anti-realism with classical logic is sufficiently common for investigation of its consequences to be worthwhile.4 Thus the concern is with normal $E$-logics containing (*). Note that (*) is thereby subject to Nec; this seems reasonable, for anti-realists advance readings of (*) in saying what it is for a statement to be true, not just which statements happen to be true. The focus will further be narrowed to normal $E$-logics containing the $T$ axiom $Lp\to p$, and therefore, equivalently, $p\to Mp$: what is necessary is actual, and what is actual is possible. That is scarcely controversial. Some versions of anti-realism may seem to violate this requirement, for example by claiming that it is true that $A$ iff it is possible to verify that $A$ under epistemically ideal conditions, which suggests a limitation of the possible to the epistemically ideal, thereby excluding the actual. However, these versions can be regimented into line with $T$ by building the restriction into the interpretation of $E$ rather than of $M$. Again, it might be suggested that ‘It is possible to $E$ that $A$’ is not equivalent to ‘It is possible that it is $E$’d that $A$’, and that the notion of possibility involved in the former is the ‘can’ of ability, which, Anthony Kenny has argued, obeys neither $p\to Mp$ nor the thesis $M(p\vee q)\to(Mp\vee Mq)$ of all normal logics ([10, pp. 122–144], and [2]). In both of these cases the problem can be traced to the intuition that one can $X$ only if one has a reliable ability to $X$. But this condition too can be built into the interpretation of $E$ rather than of $M$: to $E$ that $A$ might be (in some appropriate sense) to verify that $A$ in a reliable or locally reproducible way. Thus the use of a normal logic with the $T$ axiom does not beg this particular philosophical question. Other interpretations for which the $T$ axiom fails are some on which $LA$ says that $A$ is provable in a given formal system, as in the Gödelian modal logic $KW$ (= $G$; cf. [1]); however, even granted a formal system in which $E$ is expressible, (*) then equates the truth of a proposition with the formal consistency of the claim that it is cognized, not a principle likely to attract many anti-realists. In any case, if (*) holds for an operator $M$ which obeys $\text{“}K\text{”}$ and $E$ satisfies the principle $Ep\to p$, then (*) holds for an operator $M'$ which obeys $\text{“}KT\text{”}$, since we can put $M'p=p\vee Mp$.
+
+Finally, collapsing systems should be excluded, for no interesting kind of possibility is logically equivalent to actuality; moreover, if $p\leftrightarrow Mp$ is a thesis of a normal $E$-logic containing (*), so by US is $Ep\leftrightarrow MEp$, and therefore by (*) $Ep\leftrightarrow p$, which would trivialize (*). Thus, since only extensions of $\text{“}T\text{”}$ are under consideration, $Mp\to p$ must not be a thesis.
+
+Given the desiderata of the previous paragraph, an anti-realist system may be defined as a normal $E$-logic containing (*) and $T$, and a nontrivial anti-realist system as a noncollapsing one. There are exactly two trivial anti-realist systems: the inconsistent system and the system of classical propositional logic with $M$ and $E$ as redundant operators. If $\text{“}KT\text{”*}$ ($\text{“}KT\text{”}$ plus (*)) does not collapse, it is the smallest nontrivial anti-realist system. If it does collapse, there are no nontrivial anti-realist systems. The main result of this paper is the existence of nontrivial anti-realist systems. However, some facts about all nontrivial anti-realist systems will first be listed and briefly discussed.
+
+If $S$ is any nontrivial anti-realist system then:
+
+(a) $Ep\to p\in S$. For $Ep\to MEp\in S$ by $T$ and $MEp\to p\in S$ by (*). Thus $E$ must be interpreted as a truth-entailing (but not truth-presupposing) cognitive attitude, a factive. This point is obviously connected with difficulties in giving an account of truth in terms of nonconclusive verification (cf. [19]), and with the tendency for the concept of conclusive verification to be used in anti-realist theorizing about empirical language, to which its application is obviously problematic (cf. [5], e.g. at pp. 362, 370 and 379, but contrast p. xxxviii). However, one factive, surprisingly often ignored by anti-realists, is undoubtedly applicable to empirical language: the ordinary concept of knowledge. It is an obvious candidate for the interpretation of $E$.
+
+(b) $E(p\mathbin{\&}q)\to Ep\notin S$. For otherwise $E(p\mathbin{\&}\neg Ep)\to Ep\in S$; but by (a)
+
+$$
+E(p\mathbin{\&}\neg Ep)\to(p\mathbin{\&}\neg Ep)\in S,
+$$
+
+so $\neg E(p\mathbin{\&}\neg Ep)\in S$, so $\neg ME(p\mathbin{\&}\neg Ep)\in S$, so by (*) $\neg(p\mathbin{\&}\neg Ep)\in S$, so $p\to Ep\in S$, so $Mp\to MEp\in S$, so by (*) $Mp\to p\in S$, which is impossible (inferences valid in all normal logics have not been annotated). Thus $E$ fails one of the most elementary kinds of deductive closure; it cannot even be said that if it is $E$’d that $A$ and $B$ it is thereby $E$’d that $A$. For example, how can one know a conjunction without knowing its conjuncts? This result casts some doubt on the interpretability of $E$; it will be discussed in more detail below.5
+
+(c) If $EA\to EB\in S$ then $A\to B\in S$, for $A,B\in\mathrm{Wff}$. For if $EA\to EB\in S$ then $MEA\to MEB\in S$, which gives (c) by (*).
+
+(d) If $EA\leftrightarrow EB\in S$ then $A\leftrightarrow B\in S$, for $A,B\in\mathrm{Wff}$, from (c). This cancellation rule can be summarized by the slogan ‘$E$-conditions determine truth-conditions’. It is obviously suggestive of the project of giving an anti-realist theory of meaning for the language $\mathbb{L}$ in terms of $E$-conditions rather than truth-conditions (for further discussion cf. [18]).
+
+(e) $Ep\to EEp\notin S$. For otherwise $MMEp\to MMEEp\in S$ and so $Mp\to p\in S$. Thus $E$ does not obey the analogue of the principle that if you know, then you know that you know. More generally, $E^m p\to E^n p\in S$ only if $n\leq m$. However, $S$ does trivially contain the thesis $Ep\to MEEp$, the analogue of the principle that if you know, then you can know that you know.
+
+(f) $E(p\vee q)\to M(Ep\vee Eq)\in S$. For $E(p\vee q)\to(p\vee q)\in S$ and $(p\vee q)\to M(Ep\vee Eq)\in S$. Thus anti-realist systems obey the analogue of the constructivist principle that if you know that a disjunction holds, then you can find out which disjunct does. In particular, $M(Ep\vee E\neg p)\in S$. However, this may not be a form of decidability in the usual sense, since there may be no algorithm for realizing this possibility.
+
+(g) $\neg(MEp\mathbin{\&}ME\neg p)\in S$. For by (*) $MEp\to p\in S$ and $ME\neg p\to\neg p\in S$. The concept of possibility required by (*) is clearly a restricted one. For consider any contingent and decidable statement such as ‘It rained in Rome on 1st January 1988.’ Whichever truth-value it has, it could have had the opposite one, and either way someone would have $E$’d that it did, for just about any relevant reading of $E$; if (*) is to be defended, this ‘could have’ must not be a possibility on the intended reading of $M$. Perhaps $MA$ is true in a situation only if $A$ is true in a relevantly similar situation, although the force of ‘relevantly similar’ remains to be explained (cf. [20, pp. 183–184] and [8, p. 181], at which the replacement of ‘it is possible to $E$ that $p$’ by ‘there is a way of $E$’ing that $p$’ is suggested in order to avoid the problem of unwanted reference to situations in which the relevant nonepistemic facts are different, for the special case where $E$ expresses a priori knowledge). The trick, if it can be turned, will be to use a notion of relative possibility so restricted that if situation $s'$ is possible relative to situation $s$ then $s$ and $s'$ differ only in ways required for something to be cognized ($E$’d) in $s'$ which is uncognizedly the case in $s$—so that they will not differ with respect, for example, to the weather.
+
+(h) $p\leftrightarrow L\neg E\neg p\in S$. For by (*) $\neg p\leftrightarrow ME\neg p\in S$, so $\neg\neg p\leftrightarrow\neg ME\neg p\in S$. Thus necessity as well as possibility has a kind of right inverse, and every claim is equivalent to a claim of necessity as well as to a claim of possibility. Indeed, for any natural number $n$ it can be shown that every formula is equivalent in $S$ to a claim of $n$-times iterated possibility and to a claim of $n$-times iterated necessity. For by a simple inductive argument $S$ can be shown to contain the theses $p\leftrightarrow M^nE^np$ and $p\leftrightarrow L^n(\neg E\neg)^np$.
+
+(i) $MMp\to Mp\notin S$. For by (*) $Mp\leftrightarrow MMEp\in S$; but if $MMp\to Mp\in S$, $MMEp\to MEp\in S$, so by (*) $Mp\to p\in S$, which is impossible. Thus $S$ does not contain the $S4$ axiom. It therefore also fails to contain the $S5$ axiom $Mp\to LMp$, which entails the $S4$ axiom in normal extensions of $KT$. In terms of possible worlds semantics, the accessibility relation for $S$ cannot be required to be transitive. This reinforces the point of (g). Althouth $S4$ and $S5$ may give the most plausible logics for unrestricted possibility, in the present context $M$ should be read as a restricted kind of possibility, for which the $S4$ axiom need not be plausible (cf. [5, p. 182], where the failure of the $S4$ axiom is associated with strict finitism, and [12], where it is not associated with any kind of anti-realism at all).
+
+(j) $p\to LMp\notin S$. For otherwise $Ep\to LMEp\in S$, but by (*) $LMEp\to Lp\in S$, so $Ep\to Lp\in S$; but by $T$ $\neg L(p\mathbin{\&}\neg Lp)\in S$, so $\neg E(p\mathbin{\&}\neg Lp)\in S$, so $\neg ME(p\mathbin{\&}\neg Lp)\in S$, so $\neg(p\mathbin{\&}\neg Lp)\in S$, so $p\to Lp\in S$, which is impossible. Thus $S$ does not contain the Brouwersche axiom. In terms of possible worlds semantics, the accessibility relation for $S$ cannot be required to be symmetric. Again, this may be seen as a manifestation of the restrictedness of the required notion of possibility.
+
+(k) $LA\vee LB\in S$ although neither $A\in S$ nor $B\in S$, for some $A,B\in\mathrm{Wff}$. For let $A=\neg E\neg p$ and $B=\neg E\neg\neg p$. By (f), $p\to L\neg E\neg p\in S$ and $\neg p\to L\neg E\neg\neg p\in S$. Since $p\vee\neg p\in S$, $L\neg E\neg p\vee L\neg E\neg\neg p\in S$. However, if $\neg E\neg\neg p\in S$, $\neg ME\neg\neg p\in S$, so $\neg\neg\neg p\in S$, so $Mp\to p\in S$, impossibly. Thus $\neg E\neg\neg p\notin S$, and therefore $\neg E\neg p\notin S$. Hence $S$ does not provide the rule of disjunction, that if $LA_1\vee\cdots\vee LA_n\in S$ then $A_i\in S$ for some $i$ $(1\leq i\leq n)$.
+
+The obvious next step is to attempt a treatment of anti-realist systems in terms of something like possible worlds semantics. Even if no philosophical significance is attached to these structures, they represent a mathematically powerful technique for investigating modal logics. In the present case they will provide a proof that nontrivial anti-realist systems exist.
+
+The usual semantic notions must first be adapted to the language $\mathbb{L}$ with the new operator $E$. This will be done in a way which, so far as possible, is neutral between different readings of $E$; its interpretation will be constrained only by (*). A model is a triple $\langle W,R,V\rangle$, where $W$ is a nonempty set, $R$ a relation on $W^2$ and $V$ a function from $\mathrm{Wff}\times W$ to $\{0,1\}$ such that for $A,B\in\mathrm{Wff}$ and $w\in W$, $V(\neg A,w)=1$ iff $V(A,w)=0$; $V(A\mathbin{\&}B,w)=1$ iff $V(A,w)=1$ and $V(B,w)=1$; $V(MA,w)=1$ iff for some $w'\in W$, $wRw'$ and $V(A,w')=1$. Note that no condition is imposed for $V(EA,w)=1$. If $A\in\mathrm{Wff}$, $A$ is true throughout a model $\langle W,R,V\rangle$ iff for all $w\in W$, $V(A,w)=1$. As usual, all tautologies and all wff of the form $L(A\to B)\to(LA\to LB)$ are true throughout every model, and the set of wff true throughout a given model is closed under MP and Nec. A model is a model of a set of wff iff every wff in the set is true throughout it. Evidently, a model is a model of the smallest normal $E$-logic containing a given set of wff iff every substitution instance of every wff in the set is true throughout it. For any normal $E$-logic $S$ a canonical model $\langle W,R,V\rangle$ can be defined in the usual way, where $W$ is the set of maximal $S$-consistent sets of wff (a set of wff is $S$-consistent iff $S$ contains no negation of a conjunction of members of the set); for $w,w'\in W$, $wRw'$ iff $A\in w'$ whenever $LA\in w$, for all $A\in\mathrm{Wff}$; $V(A,w)=1$ iff $A\in w$, for $A\in\mathrm{Wff}$. It can be proved in the usual way that a normal $E$-logic contains precisely those wff true throughout its canonical model.
+
+Interesting questions concern the notion of a frame. As usual, a frame is a pair $\langle W,R\rangle$, where $W$ is a nonempty set and $R$ a relation on $W^2$. Say that a frame $\langle W,R\rangle$ is suitable for a normal $E$-logic $S$ iff for every function $V_0$ from $\mathrm{Atom}\times W$ to $\{0,1\}$ there is a function $V$ from $\mathrm{Wff}\times W$ to $\{0,1\}$ such that $V$ extends $V_0$ and $\langle W,R,V\rangle$ is a model of $S$. Note that $V_0$ may not determine $V$ uniquely, since $V(EA,w)$ is semantically unconstrained for all $A\in\mathrm{Wff}$ and $w\in W$; there will be infinitely many models $\langle W,R,V\rangle$ such that $V$ extends $V_0$, although only one of these may be a model of $S$. One might seek to determine $V$ uniquely in terms of $V_0$ by imposing semantic constraints on $V(EA,w)$, perhaps involving additional structure on the frame. This would yield a restricted notion of a model based on a frame. One could then say as usual that a wff $A$ or set of wff $S$ is valid on a frame iff every model (in the restricted sense) based on that frame is a model of $\{A\}$ or $S$; clearly, $S$ is then valid on a frame only if that frame is suitable for $S$. Given such definitions, one could say that a class of frames characterizes $S$ iff for every $A\in\mathrm{Wff}$, $A\in S$ iff $A$ is valid on every frame in the class, and that $S$ is complete iff it is characterized by some set of frames. However, every nontrivial anti-realist system is incomplete on every way of carrying out that programme, as the following result makes clear:
+
+Theorem 1. If the frame $\langle W,R\rangle$ is suitable for some anti-realist system, $Mp\to p$ is valid in every model $\langle W,R,V\rangle$.
+
+Proof. Let $x\in W$. Define $V_0$ from $\mathrm{Atom}\times W$ to $\{0,1\}$ by:
+
+$$
+V_0(A,w)=1\quad\text{iff}\quad w=x,\qquad\text{for }A\in\mathrm{Atom}\text{ and }w\in W.
+$$
+
+By assumption, there is a function $V'$ from $\mathrm{Wff}\times W$ to $\{0,1\}$ such that $V'$ extends $V_0$ and $\langle W,R,V'\rangle$ is a model of some anti-realist system. By (a), $V'(Ep\to p,w)=1$ for $w\in W$, so $V'(Ep,w)=0$ when $w\neq x$, since $V'(p,w)=V_0(p,w)=0$. Since $V'(p,x)=V_0(p,x)=1$ and by (*) $V'(p\to MEp,x)=1$, $V'(MEp,x)=1$, so $V'(Ep,w)=1$ for some $w\in W$. By the foregoing, $w=x$, so $V'(Ep,x)=1$. Suppose that $u\in W$ and $uRx$, so $V'(MEp,u)=1$, so by (*) $V'(p,u)=V_0(p,u)=1$, so $u=x$. Thus for all $u,x\in W$, $uRx$ implies $u=x$. Hence for every model $\langle W,R,V\rangle$, $V(Mp\to p,u)=1$ for $u\in W$. Thus $Mp\to p$ is valid in $\langle W,R,V\rangle$. QED
+
+Now if a nontrivial anti-realist system $S$ were characterized by a class $C$ of frames in the manner sketched above, $S$ would be valid on every frame in $C$, so that every frame in $C$ would be suitable for $S$, and thus by Theorem 1 $Mp\to p$ would be valid in every frame in $C$, whence $Mp\to p\in S$ by the definition of characterization; but $Mp\to p\notin S$. It is thus necessary to study anti-realist systems in terms of models, not just of frames.
+
+A point of some philosophical significance can be extracted from the proof of Theorem 1. Intuitively, the feature of frames which it exploits to make trouble for anti-realist logic is that they permit world-propositions—propositions true at exactly one world. Now if world-propositions are problematic for the anti-realist, so presumably are worlds, and the anti-realist will wish to put the point in terms which do not presuppose the possible worlds framework. That, however, can be done, since a world-proposition can be recharacterized as a maximally specific consistent proposition. The argument can then be reproduced in an object language with propositional quantifiers, concluding that for the anti-realist no maximally specific propositions are contingently false, as follows. Let $A$ be a maximally specific proposition. Thus for any proposition $B$, either $A$ entails $B$ or $A$ entails $\neg B$. In particular, either $A$ entails $EA$ or $A$ entails $\neg EA$. But if $A$ entails $\neg EA$ then $EA$ is inconsistent (since it entails $A$), so $MEA$ is inconsistent, so by (*) $A$ is inconsistent. Thus if $A$ is consistent, it entails $EA$. But then $MA$ entails $MEA$, and so $A$. Thus if $A$ is possibly true, it is actually true. So no maximally specific propositions are contingently false. The argument does not immediately rule out contingently true maximally specific propositions, since although the fact that $MA$ entails $A$ means that $M\neg A$ entails $M\neg MA$ in a normal system, the anti-realist has already been seen to reject the Brouwerian inference from $M\neg MA$ to $\neg A$. In any case, the argument gives a sort of formal vindication to the widespread sense that the notion of a nonactual possible world is anti-realistically suspect. It does not follow, of course, that anti-realists should reject the use of formal possible worlds model theory in proving results about modal logic, for they can regard it as a purely algebraic device; a model $\langle W,R,V\rangle$ does not really assign truth-values to all propositions at each member of $W$, but only to those propositions expressible in the language (relative to an assignment of propositions to the propositional variables), and the set of all sentences of the object language true at a given world may not itself be equivalent to a single sentence of that language. What the anti-realist should not do is to regard the possible worlds semantics as having philosophically explanatory force—an independently plausible conclusion.
+
+A trivial model of an anti-realist system $S$ is a model of $S$ throughout which $MA\to A$ is true for every $A\in\mathrm{Wff}$. Trivial models are evidently of little use in proving the existence of nontrivial anti-realist systems. The obvious method of proof is by construction of a nontrivial model—and any nontrivial anti-realist system has a nontrivial model, its canonical model.
+
+It turns out that any nontrivial model of an anti-realist system is quite complex, in particular infinite, since it must embed the canonical subordination frame. To define this frame, let $U$ be the set of all finite sequences whose members are in $N$, the set of natural numbers; $U$ includes the empty sequence $\langle\rangle$. If $s,t\in U$, $s\text{\textasciicircum} t$ is the concatenation of $s$ with $t$. If $n\in N$, $n$ is (with harmless ambiguity) the singleton sequence of $n$. If $s,t\in U$, $sPt$ iff $t=s\text{\textasciicircum} n$ for some $n\in N$. Then $\langle U,P\rangle$ is the canonical subordination frame.6
+
+Theorem 2. If $\langle W,R,V\rangle$ is a nontrivial model of an anti-realist system and $\langle U,P\rangle$ the canonical subordination frame, there is a 1-1 function $w$ from $U$ into $W$ such that $w(s)Rw(t)$ whenever $sPt$, for all $s,t\in U$.
+
+Proof. Since $\langle W,R,V\rangle$ is nontrivial, choose $A\in\mathrm{Wff}$ and $x\in W$ such that $V(MA\to A,x)=0$. Thus $V(MA,x)=1$ and $V(A,x)=0$. Hence for some $y$, $xRy$ and $V(A,y)=1$. If $V(EA,y)=1$ then $V(MEA,x)=1$, so $V(A,x)=1$ because $\langle W,R,V\rangle$ is a model of an anti-realist system; thus $V(EA,y)=0$. For $s\in U$, define $A(s)\in\mathrm{Wff}$ by the following recursion:
+
+$$
+\begin{array}{rcl}
+A(\langle\rangle)&=&A, \\
+A(s\text{\textasciicircum} 0)&=&EA(s), \\
+A(s\text{\textasciicircum} n+1)&=&A(s\text{\textasciicircum} n)\mathbin{\&}\neg EA(s\text{\textasciicircum} n).
+\end{array}
+$$
+
+Note that any anti-realist system contains the following wff, for $m,n\in N$ and $s,t,u\in U$:
+
+(1)
+$A(s\text{\textasciicircum} n+1)\to A(s\text{\textasciicircum} n)$ (by construction).
+(2)
+$A(s\text{\textasciicircum} n)\to A(s\text{\textasciicircum} m)$ for $m\leq n$ (induction from (1)).
+(3)
+$A(s\text{\textasciicircum} n)\to A(s\text{\textasciicircum} 0)$ (from (2)).
+(4)
+$A(s\text{\textasciicircum} 0)\to A(s)$ (by (a)).
+(5)
+$A(s\text{\textasciicircum} n)\to A(s)$ (from (3) and (4)).
+(6)
+$A(s\text{\textasciicircum} t)\to A(s)$ (induction from (5)).
+(7)
+$EA(s\text{\textasciicircum} n\text{\textasciicircum} t)\to A(s\text{\textasciicircum} n)$ (by (a) from (6)).
+(8)
+$EA(s\text{\textasciicircum} n\text{\textasciicircum} t)\to EA(s)$ (from (3), (7) and the definition of $A(s\text{\textasciicircum}0)$).
+(9)
+$EA(s\text{\textasciicircum} t)\to EA(s)$ ($t=\langle\rangle$ or $t$ is of the form $n\text{\textasciicircum} u$ and (8) applies).
+(10)
+$A(s\text{\textasciicircum} n+1)\to\neg EA(s\text{\textasciicircum} n)$ (by construction).
+(11)
+$A(s\text{\textasciicircum} n)\to\neg EA(s\text{\textasciicircum} m)$ for $m<n$ (from (2) and (10)).
+(12)
+$EA(s\text{\textasciicircum} n\text{\textasciicircum} t)\to\neg EA(s\text{\textasciicircum} m)$ for $m<n$ (from (7) and (11)).
+(13)
+$EA(s\text{\textasciicircum} n\text{\textasciicircum} t)\to\neg EA(s\text{\textasciicircum} m\text{\textasciicircum} u)$ for $m<n$ (from (9) and (12)).
+(14)
+$EA(s\text{\textasciicircum} n\text{\textasciicircum} t)\to\neg EA(s\text{\textasciicircum} m\text{\textasciicircum} u)$ for $m\neq n$ (from (13) and contraposition).
+
+Let $s\mathord{-}$ be the predecessor of $s\in U$, i.e. $s\text{\textasciicircum} n\mathord{-}=s$; it will be convenient to define $\langle\rangle\mathord{-}$ as some arbitrary object outside $U$. By induction and liberal use of the axiom of choice, a function $w$ can now be built from $U\cup\{\langle\rangle\mathord{-}\}$ to $W$ such that for $s\in U$, $w(s\mathord{-})Rw(s)$, $V(A(s)\mathbin{\&}\neg EA(s),w(s\mathord{-}))=1$ and $V(EA(s),w(s))=1$, as follows.
+
+Put $w(\langle\rangle\mathord{-})=y$, since $V(A\mathbin{\&}\neg EA,y)=1$ and $A=A(\langle\rangle)$. Since $V(A,y)=1$, $V(MEA,y)=1$; so for some $z$, $yRz$ and $V(EA,z)=1$. Let $w(\langle\rangle)$ be such a $z$.
+
+Now suppose that $w$ has been defined for sequences up to and including $s\in U$, in such a way as to ensure that $V(EA(s),w(s))=1$. First we establish that for $n\in N$, $V(A(s\text{\textasciicircum} n),w(s))=1$. This can be done by induction. For $n=0$, $V(A(s\text{\textasciicircum}0),w(s))=V(EA(s),w(s))=1$ by choice of $w(s)$. Now suppose that $V(A(s\text{\textasciicircum} n),w(s))=1$. If $V(EA(s\text{\textasciicircum} n),w(s))=1$, then $V(MEA(s\text{\textasciicircum} n),w(s\mathord{-}))=1$ since $w(s\mathord{-})Rw(s)$, so $V(A(s\text{\textasciicircum} n),w(s\mathord{-}))=1$, so by (3) $V(A(s\text{\textasciicircum}0),w(s\mathord{-}))=V(EA(s),w(s\mathord{-}))=1$, contradicting the choice of $w(s\mathord{-})$. Thus $V(EA(s\text{\textasciicircum} n),w(s))=0$; since $V(A(s\text{\textasciicircum} n),w(s))=1$,
+
+$$
+V(A(s\text{\textasciicircum} n+1),w(s))=V(A(s\text{\textasciicircum} n)\mathbin{\&}\neg EA(s\text{\textasciicircum} n),w(s))=1.
+$$
+
+Thus for $n\in N$, $V(A(s\text{\textasciicircum} n),w(s))=1$. Hence $V(MEA(s\text{\textasciicircum} n),w(s))=1$, so that $w(s\text{\textasciicircum} n)$ can be chosen such that $w(s)Rw(s\text{\textasciicircum} n)$ and $V(EA(s\text{\textasciicircum} n),w(s\text{\textasciicircum} n))=1$. Note that
+
+$$
+V(A(s\text{\textasciicircum} n)\mathbin{\&}\neg EA(s\text{\textasciicircum} n),w(s\text{\textasciicircum} n\mathord{-}))=V(A(s\text{\textasciicircum} n+1),w(s))=1.
+$$
+
+It remains to be shown that $w$ is 1-1 on $U$. Suppose that $w(s)=w(t)$ ($s,t\in U$) and (without loss of generality) that $t$ is at least as long a sequence as $s$. Now
+
+$$
+V(EA(t),w(s))=V(EA(t),w(t))=1=V(EA(s),w(s)).
+$$
+
+Clearly then, by (14), either $s=t$ or $s$ is an initial proper subsequence of $t$, with $t=s\text{\textasciicircum} m\text{\textasciicircum} u$ for some $m\in N$ and $u\in U$. But in the latter case $V(EA(s\text{\textasciicircum} m\text{\textasciicircum} u),w(s))=1$, so $V(MEA(s\text{\textasciicircum} m\text{\textasciicircum} u),w(s\mathord{-}))=1$ since $w(s\mathord{-})Rw(s)$; but then $V(A(s\text{\textasciicircum} m\text{\textasciicircum} u),w(s\mathord{-}))=1$, so by (3) and (6) $V(A(s\text{\textasciicircum}0),w(s\mathord{-}))=V(EA(s),w(s\mathord{-}))=1$, contradicting the choice of $w(s\mathord{-})$. Thus $s=t$. QED
+
+Corollary. No nontrivial anti-realist system has the finite model property.7
+
+Proof. By the theorem, every finite model of an anti-realist system $S$ is trivial. Thus $Mp\to p$ is true throughout every finite model of $S$.
+
+It is worth noting that the above features of anti-realist systems do not follow from the presence of (*) alone, but from its combination with $T$. For consider $\text{“}K\text{”*}$, the smallest normal $E$-logic containing (*). It has a finite nontrivial model on a frame consisting of two worlds, each accessible from the other but not from itself; since every wff of the form $A\leftrightarrow MMA$ is true throughout this model, every substitution instance of (*) is true throughout it when $EA$ is interpreted as $MA$. Indeed, since $p\leftrightarrow MLp$ is valid on this frame, $E$ could equally well be interpreted as $L$; the modal wff valid on this frame are precisely the theorems of $K+p\leftrightarrow MMp=K+p\leftrightarrow MLp$. Moreover, every substitution instance of a certain weakening of $T$, the $D$ axiom $Lp\to Mp$, is true throughout this model, which is therefore a model of the system $\text{“}KD\text{”*}$; thus something like the full strength of $T$ is required for the above results (actually $\text{“}K\text{”*}$ = $\text{“}KD\text{”*}$).
+
+In view of Theorem 2, the canonical subordination frame is (up to isomorphism) the smallest frame on which one can hope to build a nontrivial model of an anti-realist system. Such a “best possible” construction is used in the proof of the next theorem, although with an extended accessibility relation.
+
+Theorem 3. There are nontrivial anti-realist systems.
+
+Proof. Let $\langle U,P\rangle$ be the canonical subordination frame. For $s,t\in U$, put $sRt$ iff either $s=t$ or $sPt$. Let $A(0),A(1),A(2),\ldots$ be an enumeration without repetitions of $\mathrm{Wff}$. For $A,B\in\mathrm{Wff}$, say that $A\mathrel{\mathit{sub}}B$ iff $A$ is a subformula of $B$ (even if $A=B$), and $A\mathrel{\mathit{psub}}B$ iff $A\mathrel{\mathrm{sub}}B$ and $A\neq B$. Now let $V$ be a function from $\mathrm{Wff}\times U$ to $\{0,1\}$ such that:
+
+$$
+\begin{array}{l}
+V(A,s)=1\quad\text{if }A\in\mathrm{Atom}. \\
+V(\neg A,s)=1\quad\text{iff}\quad V(A,s)=0. \\
+V(A\mathbin{\&}B,s)=1\quad\text{iff}\quad V(A,s)=1\text{ and }V(B,s)=1. \\
+V(MA,s)=1\quad\text{iff}\quad V(A,t)=1\text{ for some }t\text{ such that }sRt. \\
+V(EA,\langle\rangle)=0. \\
+V(EA,s\text{\textasciicircum} n)=1\quad\text{iff}\quad\begin{array}{l}
+\text{either }A\mathrel{\mathrm{psub}}A(n)\text{ and }V(EA,s)=1\\
+\text{or }A=A(n)\text{ and }V(A,s)=1.
+\end{array}
+\end{array}
+$$
+
+The general idea of the proof is as follows. The world $s\text{\textasciicircum} n$ is assigned the main burden of the task of making $A(n)\leftrightarrow MEA(n)$ true at the world $s$. If $A(n)$ is true at $s$, this requires making $EA(n)$ true at $s\text{\textasciicircum} n$; but since $EA(n)$ should entail $A(n)$, this requires making $A(n)$ true at $s\text{\textasciicircum} n$, which is achieved by having the subformulae of $A(n)$ behave at $s\text{\textasciicircum} n$ as they do at $s$. The first lemma verifies that the definition of $V$ does indeed have this effect; in the process a more general result has to be proved, to handle complications at the induction step caused by the fact that the valuation clause for $M$ goes in the direction of the branches of the tree whereas that for $E$ goes towards the roots. Note that the recursion for $V(EA,s)$ does not introduce circularity, since in both cases the sum of the complexity of the formula and the length of the sequence is decreased.
+
+Lemma. If $A\mathrel{\mathrm{sub}}A(n)$, $V(A,s\text{\textasciicircum} t)=V(A,s\text{\textasciicircum} n\text{\textasciicircum} t)$.
+
+Proof. Call $A$ good iff for all $n\in N$ and $s,t\in U$, if $A\mathrel{\mathrm{sub}}A(n)$, $V(A,s\text{\textasciicircum} t)=V(A,s\text{\textasciicircum} n\text{\textasciicircum} t)$. It will be proved that all wff are good by induction on their complexity. If $A\in\mathrm{Atom}$, $A$ is trivially good. Now suppose that $B$ is good whenever $B\mathrel{\mathrm{psub}}A$. Let $n\in N$, $s,t\in U$ and $A\mathrel{\mathrm{sub}}A(n)$.
+
+If $A=\neg B$ or $A=B\mathbin{\&}C$, it is routine to show that $V(A,s\text{\textasciicircum} t)=V(A,s\text{\textasciicircum} n\text{\textasciicircum} t)$.
+
+Suppose that $A=MB$. If $V(MB,s\text{\textasciicircum} t)=1$, either $V(B,s\text{\textasciicircum} t)=1$ or $V(B,s\text{\textasciicircum} t\text{\textasciicircum} m)=1$ for some $m\in N$. Since $B$ is good (because $B\mathrel{\mathrm{psub}}A$) and $B\mathrel{\mathrm{sub}}A(n)$ (because $B\mathrel{\mathrm{sub}}A$ and $A\mathrel{\mathrm{sub}}A(n)$),
+
+$$V(B,s\text{\textasciicircum} t)=V(B,s\text{\textasciicircum} n\text{\textasciicircum} t)\quad\text{and}\quad V(B,s\text{\textasciicircum} t\text{\textasciicircum} m)=V(B,s\text{\textasciicircum} n\text{\textasciicircum} t\text{\textasciicircum} m),$$
+
+so either $V(B,s\text{\textasciicircum} n\text{\textasciicircum} t)=1$ or $V(B,s\text{\textasciicircum} n\text{\textasciicircum} t\text{\textasciicircum} m)=1$; either way, $V(MB,s\text{\textasciicircum} n\text{\textasciicircum} t)=1$. The converse is similar. Thus
+
+$$
+V(A,s\text{\textasciicircum} t)=V(A,s\text{\textasciicircum} n\text{\textasciicircum} t).
+$$
+
+Suppose that $A=EB$. $V(EB,s\text{\textasciicircum} t)=V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t)$ will be proved by induction on the length of $t$. Basis: $t=\langle\rangle$. Since $B\mathrel{\mathrm{psub}}A$ and $A\mathrel{\mathrm{sub}}A(n)$, $B\mathrel{\mathrm{psub}}A(n)$; thus $V(EB,s\text{\textasciicircum} n)=1$ iff $V(EB,s)=1$ by definition of $V$. Induction step: suppose that $V(EB,s\text{\textasciicircum} t)=V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t)$. What must be shown is that
+
+$$
+V(EB,s\text{\textasciicircum} t\text{\textasciicircum} m)=V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t\text{\textasciicircum} m)\quad\text{for }m\in N.
+$$
+
+Suppose that $V(EB,s\text{\textasciicircum} t\text{\textasciicircum} m)=1$. Thus either $B\mathrel{\mathrm{psub}}A(m)$ or $B=A(m)$ by the valuation rule for $V$. If $B\mathrel{\mathrm{psub}}A(m)$, $V(EB,s\text{\textasciicircum} t)=1$, so by hypothesis $V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t)=1$, so $V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t\text{\textasciicircum} m)=1$. Otherwise $B=A(m)$ and $V(B,s\text{\textasciicircum} t)=1$; since $B$ is good and $B\mathrel{\mathrm{sub}}A(n)$ (as in the previous paragraph), $V(B,s\text{\textasciicircum} n\text{\textasciicircum} t)=1$, so $V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t\text{\textasciicircum} m)=1$. The converse is similar. Thus
+
+$$
+V(EB,s\text{\textasciicircum} t\text{\textasciicircum} m)=V(EB,s\text{\textasciicircum} n\text{\textasciicircum} t\text{\textasciicircum} m).
+$$
+
+Thus $A$ is good.
+
+Lemma. $V(EA\to A,s)=1$.
+
+Proof. Induction on the length of $s$ is used. Basis: $s=\langle\rangle$. The result is trivial, for $V(EA,\langle\rangle)=0$. Induction step: suppose that $V(EB\to B,s)=1$ for all $B\in\mathrm{Wff}$, and that $V(EA,s\text{\textasciicircum} n)=1$, where $n\in N$. Thus either $A\mathrel{\mathrm{psub}}A(n)$ and $V(EA,s)=1$, or $A=A(n)$ and $V(A,s)=1$. In the former case, $V(A,s)=1$ too by the induction hypothesis. In either case $A\mathrel{\mathrm{sub}}A(n)$, so $V(A,s\text{\textasciicircum} n)=1$ by the previous lemma, so $V(EA\to A,s\text{\textasciicircum} n)=1$.
+
+Lemma. $V(A\leftrightarrow MEA,s)=1$.
+
+Proof. Suppose that $V(A,s)=1$. Let $A=A(n)$. Then $V(EA,s\text{\textasciicircum} n)=1$, so $V(MEA,s)=1$ since $sRs\text{\textasciicircum} n$. Conversely, suppose that $V(MEA,s)=1$. If $V(EA,s)=1$ then $V(A,s)=1$ by the previous lemma. Otherwise $V(EA,s\text{\textasciicircum} n)=1$ for some $n$ such that $A=A(n)$, and $V(A,s)=1$ again. Thus $V(A,s)=1$ iff $V(MEA,s)=1$.
+
+To complete the proof of the theorem, put $A\in S$ iff $V(B,s)=1$ for every substitution instance $B$ of $A$ and $s\in U$. $S$ obviously contains $L(p\to q)\to(Lp\to Lq)$ and all tautologies and is closed under MP, US and Nec. Since $R$ is reflexive, $Lp\to p\in S$. By the previous lemma, (*) $\in S$. To show that $Mp\to p\notin S$, let $p=A(n)$. Then $V(Ep,n)=1$, so $V(MEp,\langle\rangle)=1$ since $\langle\rangle Rn$, but $V(Ep,\langle\rangle)=0$, and therefore $V(MEp\to Ep,\langle\rangle)=0$; but $MEp\to Ep$ is a substitution instance of $Mp\to p$. Thus $S$ is a nontrivial anti-realist system. QED
+
+Corollary. $Ep\to EA\in\text{“}KT\text{”*}$ only if $A=p$.
+
+Proof. Let $p=A(n)$. In $\langle U,R,V\rangle$, $V(Ep,n)=1$ and $V(EA,n)=0$ unless $A=p$. Thus unless $A=p$, $Ep\to EA\notin S$ (defined as above) and so $Ep\to EA\notin\text{“}KT\text{”*}$, since $\text{“}KT\text{”*}$ is the smallest anti-realist system.
+
+Corollary. $EA\notin\text{“}KT\text{”*}$ for $A\in\mathrm{Wff}$.
+
+Proof. If $EA\in\text{“}KT\text{”*}$, then $V(EA,\langle\rangle)=1$ in $\langle U,R,V\rangle$; but $V(EA,\langle\rangle)=0$.
+
+Although Theorem 3 means that the addition of (*) to $KT$, with the corresponding expansion of the language to include $E$, does not yield $Mp\to p$ as a thesis, the latter is not the only modal thesis which may be found counterintuitive on a natural reading of $M$. Fortunately, the method of proof can be extended to show that this extension of $KT$ is conservative, in that it has no new theses not containing $E$, so that $\text{“}KT\text{”*}$ is not open to criticism on the grounds of any of its purely modal theses.
+
+Theorem 4. $\text{“}KT\text{”*}$ is a conservative extension of $KT$.
+
+Proof. Let $C$ be an $E$-free wff not in $KT$. Then there is a model $\langle W,R,V\rangle$ of $KT$ where $R$ is reflexive and $V(C,w)=0$ for some $w\in W$. We follow the proof of the previous theorem to construct a model of $\text{“}KT\text{”*}$ which falsifies $C$. The idea is to give each world in $W$ its own copy of the canonical subordination frame $\langle U,P\rangle$.
+
+The new model $\langle W',R',V'\rangle$ is defined as follows, for $v,w\in W$, and $s,t\in U$:
+
+$W'=W\times U$.
+
+$\langle v,s\rangle R\langle w,t\rangle$ iff either $(v=w$ and either $s=t$ or $sPt)$, or $(v\neq w$, $vRw$ and $t=\langle\rangle)$.
+
+$V'(A,\langle v,s\rangle)=V(A,v)$ if $A\in\mathrm{Atom}$.
+
+The clauses for $\neg$, $\mathbin{\&}$ and $M$ are standard.
+
+$V'(EA,\langle v,s\rangle)$ is defined by recursion on $s$ (keeping $v$ fixed) just as $V(EA,s)$ was in the proof of Theorem 3.
+
+The three lemmas can now be proved as before, with obvious modifications. The first says that if $A\mathrel{\mathrm{sub}}A(n)$, then
+
+$$V(A,\langle w,s\text{\textasciicircum} t\rangle)=V(A,\langle w,s\text{\textasciicircum} n\text{\textasciicircum} t\rangle).$$
+
+The definiens for ‘$A$ is good’ will require this condition to hold for all $w\in W$; the crucial fact for the extension of the lemma is that $\langle v,s\text{\textasciicircum} t\rangle R'\langle w,u\rangle$ iff $\langle v,s\text{\textasciicircum} n\text{\textasciicircum} t\rangle R'\langle w,u\rangle$ when $v\neq w$. The crucial fact for the extension of the third lemma is that $V'(EA,\langle w,\langle\rangle\rangle)=0$.
+
+Since $R'$ is reflexive and all substitution instances of (*) are true throughout $\langle W',R',V'\rangle$, $\text{“}KT\text{”*}$ holds in it. But it is easy to prove by induction on the complexity of $E$-free $A$ that $V'(A,\langle w,s\rangle)=V(A,w)$. Thus, since $V(C,w)=0$, $V'(C,\langle w,\langle\rangle\rangle)=0$. QED
+
+Problem. Which other modal logics does (*) conservatively extend?
+
+In view of the first corollary to Theorem 3, $E$ is an extremely intensional operator in $\text{“}KT\text{”*}$; in effect, it can discriminate between $p$ and every other formula, including those whose equivalence to $p$ is a thesis of $\text{“}KT\text{”*}$, e.g. $p\mathbin{\&}p$. By similar methods one can show $\text{“}KT\text{”*}$ to contain neither $E(p\mathbin{\&}p)\to Ep$ nor $E(p\mathbin{\&}q)\to E(q\mathbin{\&}p)$. In fact, the proof of the theorem requires of the valuation of the atomic letters in the model only that it should not vary from world to world; hence for any consistent formula $A$ whose only operators are truth-functional, it could have been arranged that $A$ was true at $\langle\rangle$ and therefore $EA$ at $n$, where $A=A(n)$; the argument of the first corollary would then show that $EA\to EB\in\text{“}KT\text{”*}$ only if $A=B$. Thus $\text{“}KT\text{”*}$ does not provide the rule of substitution of equivalents; in particular, $A\leftrightarrow B\in\text{“}KT\text{”*}$ does not entail $EA\leftrightarrow EB\in\text{“}KT\text{”*}$ (this invalid rule is the converse of the valid (d); contrast the rule that if $A\to B\in S$ then $EA\to EB\in S$; by (b) above, it is not provided by any nontrivial anti-realist system). However, this failure makes it difficult to see (*) as making $E$ a right inverse for $M$ in $\text{“}KT\text{”*}$. For that would require (*) to be read as an implicit identity, with $M$ and $E$ as implicit functional expressions. The obvious way to remedy this is to consider the Lindenbaum algebra of equivalence classes $\lvert A\rvert$ for $A\in\mathrm{Wff}$, where $\lvert A\rvert=\lvert B\rvert$ iff $A\leftrightarrow B\in S$ (e.g. $\text{“}KT\text{”*}$). Functions are then defined in terms of operators: $\lvert\neg\rvert(\lvert A\rvert)=\lvert\neg A\rvert$, $\lvert\mathbin{\&}\rvert(\lvert A\rvert,\lvert B\rvert)=\lvert A\mathbin{\&}B\rvert$, $\lvert M\rvert(\lvert A\rvert)=\lvert MA\rvert$. However, the legitimacy of these definitions depends on the validity in $S$ of substitution of equivalents for those operators. If one tries to put $\lvert E\rvert(\lvert A\rvert)=\lvert EA\rvert$ in $\text{“}KT\text{”*}$, $\lvert E\rvert$ is not a well-defined function, since $\lvert p\rvert=\lvert p\mathbin{\&}p\rvert$ but $\lvert Ep\rvert\neq\lvert E(p\mathbin{\&}p)\rvert$. Thus (*) cannot be read as guaranteeing $\lvert M\rvert(\lvert E\rvert(\lvert A\rvert))=\lvert A\rvert$ (although one could legitimately put $\lvert ME\rvert(\lvert A\rvert)=\lvert MEA\rvert$, and $\lvert ME\rvert$ would be the identity function). Nevertheless, $\lvert M\rvert$ does have a right inverse. For let $\text{*}$ be a choice function for elements of the Lindenbaum algebra for some normal $E$-logic containing (*); thus $\text{*}\lvert A\rvert\in\lvert A\rvert$ for $A\in\mathrm{Wff}$. Put $\#A=E\text{*}\lvert A\rvert$; $\#$ is a function from $\mathrm{Wff}$ to $\mathrm{Wff}$. Then if $\lvert A\rvert=\lvert B\rvert$, $\text{*}\lvert A\rvert=\text{*}\lvert B\rvert$, so $\#A=E\text{*}\lvert A\rvert=E\text{*}\lvert B\rvert=\#B$. Thus it is legitimate to put $\lvert\#\rvert(\lvert A\rvert)=\lvert\#A\rvert$. Then
+
+$$
+\lvert M\rvert(\lvert\#\rvert(\lvert A\rvert))=\lvert M\rvert(\lvert\#A\rvert)=\lvert M\#A\rvert=\lvert ME\text{*}\lvert A\rvert\rvert=\lvert \text{*}\lvert A\rvert\rvert=\lvert A\rvert,
+$$
+
+so that $\lvert\#\rvert$ is the required right inverse of $\lvert M\rvert$.
+
+The question in any case arises, whether some nontrivial anti-realist systems permit substitution of equivalents for $E$, so that $\lvert E\rvert$ would be the right inverse of $\lvert M\rvert$ in the Lindenbaum algebra (more generally, since $\lvert\neg\rvert$ is self-inverse, every modality will have a right inverse). The next theorem gives a positive answer. More generally, for any normal $X$ let $XC$ be the closure of $X$ under substitution of equivalents for $E$. Then the proof of Theorem 5 shows that if $X$ has no special axioms containing $E$ with the possible exception of (*), then $XC$ has the same $E$-free theses as $X$; in particular, $XC$ is trivial only if $X$ is. By Theorem 4, $\text{“}KT\text{”*}C$ is a conservative extension of $KT$.
+
+Theorem 5. For any anti-realist system $X$ there is an anti-realist system $Y$ such that:
+
+(i)
+if $A\leftrightarrow B\in Y$ then $EA\leftrightarrow EB\in Y$;
+(ii)
+if $A$ does not contain $E$ then $A\in Y$ iff $A\in X$.
+
+Proof. Relative to some Gödel numbering of wff, let $mA$ be the least wff $B$ such that $A\leftrightarrow B\in X$. Thus $A\leftrightarrow mA\in X$, and if $A\leftrightarrow B\in X$ then $mA=mB$.
+
+Define a mapping $t$ from wff to wff by: $tA=A$ if $A\in\mathrm{Atom}$; $t\neg A=\neg tA$; $t(A\mathbin{\&}B)=tA\mathbin{\&}tB$; $tMA=MtA$; $tEA=EmtA$.
+
+Recall that a substitution is a mapping from wff to wff which commutes with every operator. Put $A\in Y$ iff $tsA\in X$ for every substitution $s$.
+
+To prove (i), suppose that $A\leftrightarrow B\in Y$. Thus for every substitution $s$, $ts(A\leftrightarrow B)\in X$; but $ts(A\leftrightarrow B)=tsA\leftrightarrow tsB$, so $mtsA=mtsB$, so $EmtsA\leftrightarrow EmtsB\in X$; but $ts(EA\leftrightarrow EB)=EmtsA\leftrightarrow EmtsB$, so $ts(EA\leftrightarrow EB)\in X$. Thus $EA\leftrightarrow EB\in Y$.
+
+To prove (ii), suppose that $A$ is $E$-free. Thus $tA=A$, so if $A\in Y$ then $tA\in X$ (the identity mapping is a substitution), so $A\in X$. For the converse, let $s$ be any substitution. Let $r$ be the substitution such that $rB=tsB$ whenever $B\in\mathrm{Atom}$. It is trivial to prove by induction on the complexity of $E$-free $A$ that $rA=tsA$. Thus if $A\in X$, $rA\in X$ (since $X$ obeys US), so $tsA\in X$; hence $A\in Y$.
+
+It remains to show that $Y$ is an anti-realist system. $Y$ obeys US because substitutions are closed under composition; it obeys MP and Nec because $X$ obeys these rules and $s$ and $t$ commute with $L$ and $\to$; similarly, it contains $L(p\to q)\to(Lp\to Lq)$, $Lp\to p$ and all truth-functional tautologies. To show that (*) $\in Y$, note that for any substitution $s$, $ts(p\leftrightarrow MEp)=tsp\leftrightarrow MEmtsp$; but $mtsp\leftrightarrow MEmtsp\in X$ and $tsp\leftrightarrow mtsp\in X$, so $tsp\leftrightarrow MEmtsp\in X$, so $ts(p\leftrightarrow MEp)\in X$; thus $p\leftrightarrow MEp\in Y$. QED
+
+Remark. if $X$ in the proof of Theorem 5 is $\text{“}KT\text{”*}$, then $Y$ is simply $\text{“}KT\text{”*}C$. For $Y$ certainly includes $\text{“}KT\text{”*}C$, which in turn can be shown by induction on the complexity of $A$ to include $A\leftrightarrow tA$ for every wff $A$; $\text{“}KT\text{”*}C$ therefore contains $A$ whenever $Y$ does, since $A\in Y$ entails $tA\in\text{“}KT\text{”*}$, which gives the converse inclusion.
+
+Problem. Does the theorem still hold if (i) is replaced by (i’): $L(p\leftrightarrow q)\to(Ep\leftrightarrow Eq)\in Y$?
+
+Theorem 5 opens the way to neighbourhood semantics in the sense of Segerberg [13] for some anti-realist systems. In fact, Kit Fine [personal communication] has used neighbourhood semantics to give an independent proof of the result that $\text{“}KT\text{”*}C$ is a conservative extension of $KT$ (of which Theorem 4 is an obvious corollary). Defining the degree of a formula as the degree of nesting of $E$ in it (irrespective of occurrences of $M$), Fine constructs a sequence of neighbourhood models $M(0),M(1),M(2),\ldots$ such that each substitution instance of (*) of degree $\leq n$ is true throughout $M(n)$; a limit model $M(\infty)$ can then be constructed such that if $A$ is of degree $\leq n$ then $A$ is true at a world in $M(n)$ iff it is true at that world in $M(\infty)$. Since the part of $M(0)$ which handles $E$-free wff can be any $KT$ model, it follows that any consistent set of wff in $KT$ has a $\text{“}KT\text{”*}$ model; the neighborhood semantics automatically yields the substitution of equivalents for $E$.
+
+Fine also uses his method of proof to argue for the decidability of $\text{“}KT\text{”*}$ and $\text{“}KT\text{”*}C$. These results of his can also be obtained by modification of the proofs of Theorems 4 and 5.
+
+Theorem 6. $\text{“}KT\text{”*}$ is decidable.
+
+Proof. We can regard $\text{“}KT\text{”}$ as $KT$ by treating wff of the form $EA$ as atomic. Now $KT$ is decidable. It will therefore be sufficient to find a computable function $f$ on wff such that for every wff $A$, $A\in\text{“}KT\text{”*}$ iff $fA\to A\in\text{“}KT\text{”}$. For this it will be enough that $fA\in\text{“}KT\text{”*}$ (for then $A\in\text{“}KT\text{”*}$ if $fA\to A\in\text{“}KT\text{”}$) and that if $fA\mathbin{\&}\neg A$ is true in a $\text{“}KT\text{”}$ model, $\neg A$ is true in a $\text{“}KT\text{”*}$ model (for then if $A\in\text{“}KT\text{”*}$, $\neg A$ is true in no $\text{“}KT\text{”*}$ model, so $fA\mathbin{\&}\neg A$ is true in no $\text{“}KT\text{”}$ model, so $fA\to A\in\text{“}KT\text{”}$ by the completeness of $KT$).
+
+To construct $f$, first define the modal depth md of wff in the usual way: $\operatorname{md}A=0$ if $A\in\mathrm{Atom}$; $\operatorname{md}\neg A=\operatorname{md}EA=\operatorname{md}A$; $\operatorname{md}(A\mathbin{\&}B)=\max\{\operatorname{md}A,\operatorname{md}B\}$; $\operatorname{md}MA=\operatorname{md}A+1$. Let $fA$ be the conjunction of the following wff for each subformula $EB$ of $A$: $L^n(EB\to B)$ and $L^{n-1}(B\leftrightarrow MEB)$, where $n=\operatorname{md}A-\operatorname{md}B$ (if $n=0$, the latter conjunct is omitted). Evidently, $fA\in\text{“}KT\text{”*}$.
+
+What needs to be shown is that for $A_0\in\mathrm{Wff}$, if $fA_0\mathbin{\&}\neg A_0$ is true in a $\text{“}KT\text{”}$ model, $\neg A_0$ is true in a $\text{“}KT\text{”*}$ model. Since $KT$ is characterized by the subordination frame from Theorem 3 [9, p. 119], we can assume that for some model $\langle W,R,V\rangle$ and some $w_0\in W$, $V(fA_0\mathbin{\&}\neg A_0,w_0)=1$, where $\langle W,R\rangle$ is that subordination frame. The construction of the $\text{“}KT\text{”*}$ model $\langle W',R',V'\rangle$ follows the proof of Theorem 4 with modifications.
+
+For $w\in W$, let $d(w)$ be the length of the shortest $R$-chain from $w_0$ to $w$ (or infinite if no such shortest chain exists). Thus $d(w_0)=0$ and (i) if $wRw'$ and $w\neq w'$, $d(w')=d(w)+1$ (by the structure of the subordination frame); since $V(fA_0,w_0)=1$, (ii) if $EA\mathrel{\mathrm{sub}}A_0$ then $d(w)\leq\operatorname{md}A_0-\operatorname{md}A$ implies $V(EA\to A,w)=1$ and $d(w)<\operatorname{md}A_0-\operatorname{md}A$ implies $V(A\leftrightarrow MEA,w)=1$ (by definition of $f$ and $d$).
+
+The definition of $V'$ is as in the proof of Theorem 4, except that if $EA\mathrel{\mathrm{sub}}A_0$ then $V'(EA,\langle w,s\rangle)=V(EA,w)$ when either $d(w)<\operatorname{md}A_0-\operatorname{md}A$ or both $d(w)=\operatorname{md}A_0-\operatorname{md}A$ and $s=\langle\rangle$ (otherwise the recursion on $s$ goes as usual).
+
+By a routine induction on the complexity of $A$, one can now prove that (iii) if $d(w)<\operatorname{md}A_0-\operatorname{md}A$ and $A\mathrel{\mathrm{sub}}A_0$ then $V'(A,\langle w,s\rangle)=V(A,s)$. By a similar induction and appeal to (iii), one can prove that (iv) if $d(w)=\operatorname{md}A_0-\operatorname{md}A$ and $A\mathrel{\mathrm{sub}}A_0$ then $V'(A,\langle w,\langle\rangle\rangle)=V(A,w)$.
+
+The proofs of the three lemmas for Theorem 4 can now be extended to the present case by means of (i)–(iv). Thus $\text{“}KT\text{”*}$ is valid in $\langle W',R',V'\rangle$. But by (iv),
+
+$$V'(A_0,\langle w_0,\langle\rangle\rangle)=V(A_0,w_0)=0,$$
+
+so $\neg A_0$ is true in a $\text{“}KT\text{”*}$ model. QED
+
+Theorem 7. $\text{“}KT\text{”*}C$ is decidable.
+
+Proof. Since the theses of $\text{“}KT\text{”*}C$ are recursively enumerable, it suffices to show that its nontheses are. Now in notation from the proof of Theorem 5, and by the remark after it, $A$ is a nonthesis of $\text{“}KT\text{”*}C$ iff $tsA$ is a nonthesis of $\text{“}KT\text{”*}$ for some substitution $s$. Evidently we need consider only substitutions whose domain is restricted to propositional variables which occur in $A$; these are recursively enumerable. Moreover, we can effectively compute $tsA$; the point to notice here is that $t$ is defined in terms of an auxiliary function $m$, where $mA$ is the least wff $B$ relative to some Gödel numbering of wff such that $A\leftrightarrow B\in\text{“}KT\text{”*}$, so that by Theorem 6 $m$ will itself be computable for a sensible choice of Gödel numbering. By Theorem 6 again, we can decide whether $tsA\in\text{“}KT\text{”*}$. Thus the nontheses of $\text{“}KT\text{”*}C$ are recursively enumerable. QED
+
+Theorems 3 and 5 yield a choice between hyperintensional and merely intensional nontrivial anti-realist systems. This in turn suggests a choice between two kinds of explanation for the failure of $E(p\mathbin{\&}q)\to Ep$ from an anti-realist standpoint. On the hyperintensional view, exemplified by $\text{“}KT\text{”*}$, the principle fails because $E$ is ‘too intensional’. For instance, its failure might be traced to the point that an answer to the question ‘Is it the case that $p$ and $q$?’ is not explicitly an answer to the question ‘Is it the case that $p$?’ Here the emphasis is on occurrent linguistic or intellectual acts. On the alternative, merely intensional view, exemplified by $\text{“}KT\text{”*}C$, $E(p\mathbin{\&}q)\to Ep$ fails because $E$ is ‘not intensional enough’. For instance, its failure might be traced to the possibility of a situation in which the information that $p$ and $q$ is accessible even though the information that $p$ is not accessible, because the information that $p$ and $q$ is accessible only in a form in which it is not articulated as a conjunction, or as that conjunction; the consequence $p$ becomes buried. Both the fine-grained and the coarse-grained alternatives seem to merit further investigation.
+
+A particularly interesting version of the fine-grained explanation goes as follows (its fine-grainedness will emerge in the discussion); I owe it to Kit Fine. Suppose that cognition of whatever kind $E$ represents comes in levels of increasing self-reflectiveness; such a hierarchy might be independently motivated by reference to epistemic cousins of the semantic paradoxes (cf. e.g. Burge [3] and [4]). What is cognized at a given level includes both what is cognized at a lower level and the results of reflection on that lower-level cognition. Cognition at a level $i$ may be represented as $E_i$. It does satisfy the conjunction principle: we have $E_i(p\mathbin{\&}q)\to E_ip$ for every level $i$. As just noted, we also have $E_ip\to E_jp$ whenever $i\leq j$. Moreover, we have an anti-realist axiom schema $A\leftrightarrow ME_iA$ at each level, where $i$ is higher than the level of any operator which appears in $A$. The unsubscripted use of $E$ can then be explained as context-relative, much as in some treatments of the epistemic paradoxes: the implicit level of $E$ in the context $EA$ is the lowest one higher than the level of any operator in $A$. An explanation for the failure of $E(A\mathbin{\&}B)\to EA$ is then forthcoming, since $B$ may have operators of a higher level than any in $A$, so that $A\mathbin{\&}B$ also does. In particular, if $A$ contains no epistemic operators, $E(A\mathbin{\&}\neg EA)\to EA$ will be understood as $E_2(A\mathbin{\&}\neg E_1A)\to E_1A$, which can fail since although $E_2(A\mathbin{\&}\neg E_1A)$ yields $E_2A$, $E_2A$ does not yield $E_1A$. Just such a substitution in $E(p\mathbin{\&}q)\to Ep$ was used at (b) above to show its failure in nontrivial anti-realist systems.8
+
+The use of propositional variables complicates the picture, since there is no limit to the level of the propositions which may be substituted for them. If they are assigned fixed numerical levels at all, then some propositional variable $p$ will be assigned a level $i$ no lower than that of some other propositional variable $q$, in which case $E(p\mathbin{\&}q)\to Ep$ will be read as $E_i(p\mathbin{\&}q)\to E_ip$ and thus come out valid. Evidently, the requirement should be that an unsubscripted wff $A$ is valid iff every subscription of it is valid, where a subscription of $A$ is any wff which results from assigning arbitrary levels to the propositional variables and then subscripting each occurrence of $E$ in $A$ by the rule given in the previous paragraph (thus $E(p\mathbin{\&}q)\to(Ep\vee Eq)$ should come out valid).
+
+However, the suggested treatment of $E$ still leads to disturbing results. Consider, for example, the formula
+
+$$
+E((p\mathbin{\&}(p\vee q))\mathbin{\&}q)\to E(p\mathbin{\&}(p\vee q)).
+$$
+
+It remains valid, because both occurrences of $E$ will be assigned the least level higher than those of $p$ and $q$. Since $(p\mathbin{\&}(p\vee q))\mathbin{\&}q$ is equivalent to $p\mathbin{\&}q$ and $p\mathbin{\&}(p\vee q)$ to $p$, this formula is equivalent to $E(p\mathbin{\&}q)\to Ep$ in any system in which $E$ obeys the substitution of equivalents; it is therefore not a thesis of any nontrivial anti-realist system with that rule; in particular, it is not a thesis of $\text{“}KT\text{”*}C$. Contraposing, the suggested treatment invalidates the substitution of equivalents for $E$. In this sense it forces a hyperintensional reading of $E$. However, the resulting system is not $\text{“}KT\text{”*}$ either, since the proof of Theorem 3 shows that the formula is not a thesis of $\text{“}KT\text{”*}$. The construction thus fails to interpret any anti-realist system so far considered. One might try to subscript $E$ in a manner independent of ‘inessential’ occurrences of propositional variables, such as that of $q$ in $E(p\mathbin{\&}(p\vee q))$. However, the idea is hard to implement, since examples such as
+
+$$
+E((p\mathbin{\&}\neg E\neg p)\mathbin{\&}\neg Ep)\to E(p\mathbin{\&}\neg E\neg p)
+$$
+
+must also be dealt with; it is not a thesis of any nontrivial anti-realist system in which $E$ permits substitution of equivalents.
+
+Problem. Can these difficulties be overcome?
+
+Finally, discussion of a right inverse of possibility naturally raises the question of a left inverse. The corresponding thesis would be:
+
+$$p \leftrightarrow EMp.$$
+
+(**)
+
+Of course, (**) is in no way supported by the philosophical motivation for (*). There are certainly noncollapsing normal $E$-logics which contain both (*) and (**) and in which $E$ obeys substitution of equivalents, for there are noncollapsing normal $E$-logics which contain both $p\leftrightarrow MMp$ and $Ep\leftrightarrow Mp$ (consider the two-world frame for $\text{“}KD\text{”*}$ mentioned above). What does cause collapse in a normal $E$-logic is the combination of (**), substitution of equivalents for $E$ and the $T$ axiom. For in such a system $S$, if $MA\leftrightarrow MB\in S$, then by substitution of equivalents $EMA\leftrightarrow EMB\in S$, so by (**) $A\leftrightarrow B\in S$; but by $T$, $M(Mp\to p)\leftrightarrow M(p\to p)\in S$, so $(Mp\to p)\leftrightarrow(p\to p)\in S$, so $Mp\to p\in S$. Nor can a left inverse of $\lvert M\rvert$ be constructed in the Lindenbaum algebra, for the same example shows that $\lvert M\rvert$ is not 1-1. One might try to gerrymander an equivalence relation on wff which was congruence with respect to the operations in $E$ and on the equivalence classes of which the functions induced by $M$ and $E$ were mutually inverse, but the point of the exercise would be obscure. These facts about (**) can also be put in the framework of modal logic. In place of the operator $E$, consider any modal function $E(p)$; in a normal modal logic it obeys substitution of equivalents. Thus any normal modal logic which contains both $T$ and a thesis of the form $p\leftrightarrow E(Mp)$ collapses.
+
+If, on the other hand, $E$ is not required to permit substitution of equivalents, then any normal modal logic can be extended conservatively to a normal $E$-logic of which (**) is a thesis. This can be proved as follows. Let $p(0),p(1),p(2),\ldots$ and $A(0),A(1),A(2),\ldots$ enumerate $\mathrm{Atom}$ and $\mathrm{Wff}$ respectively without repetitions. Define a function $t$ from wff to $E$-free wff by: $tp(i)=p(2i)$; $t\neg A=\neg tA$; $t(A\mathbin{\&}B)=tA\mathbin{\&}tB$; $tMA=MtA$; $tEMB=tB$; if $A(i)$ is not of the form $MB$, $tEA(i)=p(2i+1)$. Let $S$ be a normal modal logic. Define $S\mathord{+}$ as follows: $A\in S\mathord{+}$ iff $tA\in S$. Since $t(p(i)\leftrightarrow EMp(i))=p(2i)\leftrightarrow p(2i)$, (**) $\in S\mathord{+}$. To show that $S\mathord{+}$ conservatively extends $S$, what is required is that if $A$ is $E$-free then $A\in S$ iff $A\in S\mathord{+}$, i.e. iff $tA\in S$. Let $A$ be $E$-free; $tA$ will also be $E$-free. If $A\in S$ then $tA\in S$ since $t$ acts as a substitution on $E$-free wff and $S$ is closed under US (of $E$-free wff). For the converse, let $t'$ be a substitution such that $t'p(2i)=p(i)$ for all $i$. By induction on the complexity of $E$-free wff, $t'tA=A$. Since $S$ is closed under US, if $tA\in S$ then $t'tA\in S$, so $A\in S$. Thus $S\mathord{+}$ conservatively extends $S$. It remains only to show that $S\mathord{+}$ is a normal $E$-logic. Since it extends $S$, we need show only that $S\mathord{+}$ obeys MP, Nec and US. The first two are easy, since $t(A\to B)=tA\to tB$ and $tLA=LtA$ and $S$ obeys MP and Nec. For US, let $s$ be any substitution and $s''$ the substitution such that $s''p(2i)=tsp(i)$ and $s''p(2i+1)=tsEA(i)$ for all $i$. By induction on the complexity of $A$, $s''tA=tsA$. Thus if $A\in S\mathord{+}$, $tA\in S$, so $s''tA\in S$ (since $s''tA$ is $E$-free and $S$ is closed under US), so $tsA\in S$, so $sA\in S\mathord{+}$. Thus $S\mathord{+}$ obeys US. QED
+
+# Notes
+
+[1] I thank Lloyd Humberstone, Kit Fine, Alan Weir, a referee and participants in discussions at the University of Oxford, the Queen’s University of Belfast, the University of Maryland at College Park and the University of Belgrade for comments on earlier versions of this material. It was also presented to a conference on the Philosophy of Logic and Language at the University of Leeds in March 1989.
+
+[2] The use of the term ‘anti-realism’ for an epistemic conception of truth is loosely based on that of Michael Dummett (although the framework of classical logic is not Dummettian); his anti-realist with respect to the past claims, for example, that “The only notion of truth for past-tense statements which we could have acquired … is that which coincides with the justifiability of assertions of such statements” [5, p. 363]. The interpretation of (*) as an account of truth exploits the redundant truth operator, but this is not a problematic move for Dummett’s anti-realist [5, p. 234]. Of course, if $E$ is interpreted as a nonepistemic operator then (*) does not express a form of anti-realism: a realist who thought that the actual world was the only possible one might assert (*), reading $E$ as $L$ or $M$. Such unintended readings can hardly be ruled out by formal means alone. Just as modal provability logics are ones which it is interesting but not compulsory to interpret in terms of provability, so anti-realist logics are ones which it is interesting but not compulsory to interpret in terms of anti-realism.
+
+A weaker philosophical doctrine, perhaps associated with the verification principle of the logical positivists, characterizes what it is to have some truth value or other, rather than what it is to have a given truth value, in epistemic terms. It might be formalized analogously to (*) by the schema $(p\vee\neg p)\leftrightarrow(MEp\vee ME\neg p)$. It can be modelled in any extension of $KD$ by taking $E$ as the redundant operator, but would be of more interest in the context of an intuitionist background logic. However, it may seem strange to give an epistemic account of a disjunction without offering epistemic accounts of its disjuncts.
+
+[3] Double quotation marks are used to distinguish $E$-logics from the corresponding modal logics in a language without $E$; thus $LEp\to Ep$ is a thesis of $\text{“}KT\text{”}$ but not of $KT$.
+
+[4] One point where a restriction to intuitionist logic would make a difference is at (b) below, since the inference from $\neg(p\mathbin{\&}\neg Ep)$ to $p\to Ep$ is not intuitionistically valid (cf. [17]).
+
+[5] A contraposed version of this argument goes back to [7] (and more distantly to Moore’s paradox “It’s raining but I don’t believe it”); for recent discussion cf. [6], [14], [15], [16], [17] and [19] at pp. 309–316. The discussion in [6] is particularly relevant. In effect, Edgington replaces $p\to MEp$ by $@p\to ME@p$, where $@$ and $E$ stand for ‘in the actual world’ and ‘it is known that’ respectively; $E(p\mathbin{\&}q)\to(Ep\mathbin{\&}Eq)$ can then be asserted. Although Edgington does not discuss the converse principle $ME@p\to@p$, it is presumably valid on the intended interpretation, since $Ep\to p$ yields $ME@p\to M@p$ and $M@p\to@p$ is valid in the logic of actuality. Thus she could assert $@p\leftrightarrow ME@p$.
+
+[6] This frame has been extensively used by Hughes and Cresswell; cf. [9, Chapter 7]. Note that they use 0 rather than $\langle\rangle$ as the initial world, and allow it to be followed only by positive integers.
+
+[7] This corollary can also be extracted from the incompleteness of nontrivial anti-realist systems, by an extension of Segerberg’s proof (in [13]) of the completeness of normal modal logics with the finite model property to normal $E$-logics. The easiest such extension is one on which no constraints associated with $E$ are imposed on frames, just as none were on models as defined above, in order not to jeopardize the required lemma that a finite distinguishable model for a normal system is based on a frame for that system.
+
+[8] This will be a case in which the base level proposition $A$ is cognized only by level 2, where cognition of cognition is already taking place; but level 1 cognition of $A$ is still possible (we have $A$ and $A\leftrightarrow ME_1A$); it is merely nonactual.
+
+# References
+
+[1] G. Boolos, The unprovability of consistency, Cambridge University Press, Cambridge, 1979.
+
+[2] M. A. Brown, On the logic of ability, Journal of Philosophical Logic, vol. 17 (1988), pp. 1–26.
+
+[3] T. Burge, Buridan and epistemic paradox, Philosophical Studies, vol. 34 (1978), pp. 21–35.
+
+[4] ———, Epistemic paradox, Journal of Philosophy, vol. 81 (1984), pp. 5–29.
+
+[5] M. A. E. Dummett, Truth and other enigmas, Duckworth, London, 1978.
+
+[6] D. Edgington, The paradox of knowability, Mind, vol. 94 (1985), pp. 557–568.
+
+[7] F. B. Fitch, A logical analysis of some value concepts, this Journal, vol. 28 (1963), pp. 135–142.
+
+[8] P. T. Geach, Logic matters, Blackwell, Oxford, 1972.
+
+[9] G. E. Hughes and M. J. Cresswell, A companion to modal logic, Methuen, London, 1984.
+
+[10] A. Kenny, Will, freedom and power, Barnes and Noble, New York, 1975.
+
+[11] H. Putnam, Reason, truth and history, Cambridge University Press, Cambridge, 1981.
+
+[12] N. U. Salmon, Modal Paradox: Parts and Counterparts, Points and Counterpoints, Midwest Studies in Philosophy XI: Studies in Essentialism (P. A. French et al., editors), University of Minnesota Press, Minneapolis, Minnesota, 1987, pp. 75–120.
+
+[13] K. Segerberg, An essay in classical modal logic. Vols. 1, 2, 3, Filosofiska Studier, No. 13, Uppsala Universitet, Uppsala, 1971.
+
+[14] R. A. Sorensen, Blindspots, Clarendon Press, Oxford, 1988.
+
+[15] T. Williamson, On the paradox of knowability, Mind, vol. 96 (1987), pp. 256–261.
+
+[16] ———, On knowledge of the unknowable, Analysis, vol. 47 (1987), pp. 154–158.
+
+[17] ———, Knowability and constructivism, Philosophical Quarterly, vol. 38 (1988), pp. 422–432.
+
+[18] ———, Assertion, denial and some cancellation rules in modal logic, Journal of Philosophical Logic, vol. 17 (1988), pp. 299–318.
+
+[19] C. J. G. Wright, Realism, meaning and truth, Blackwell, Oxford, 1987.
+
+[20] G. H. von Wright, Logical studies, Routledge, London, 1957.

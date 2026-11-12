@@ -1,0 +1,571 @@
+# Vagueness
+
+Timothy Williamson
+
+Vagueness (1994). London: Routledge.
+
+Front matter, preface, introduction, and Chapter 1
+
+For Nathan Isaacs and Jeff Williamson
+
+# Contents
+
+Preface
+xi
+Introduction
+1
+1 The early history of sorites paradoxes
+8
+1.1 The first sorites
+8
+1.2 Chrysippan silence
+12
+1.3 Sorites arguments and Stoic logic
+22
+1.4 The sorites in later antiquity
+27
+1.5 The sorites after antiquity
+31
+2 The ideal of precision
+36
+2.1 The emergence of vagueness
+36
+2.2 Frege
+37
+2.3 Peirce
+46
+2.4 Russell
+52
+3 The rehabilitation of vagueness
+70
+3.1 Vagueness and ordinary language
+70
+3.2 The Black–Hempel debate
+73
+3.3 Family resemblances
+84
+3.4 Open texture
+89
+4 Many-valued logic and degrees of truth
+96
+4.1 Overview
+96
+4.2 Truth-functionality
+97
+4.3 Three-valued logic: beginnings
+102
+4.4 Three-valued logic: Halldén
+103
+4.5 Three-valued logic: Körner
+108
+4.6 Three-valued logic: second-order vagueness
+111
+4.7 Continuum-valued logic: a rationale
+113
+4.8 Continuum-valued logic: truth-tables
+114
+4.9 Fuzzy sets and fuzzy logic
+120
+4.10 Degree-theoretic treatments of sorites paradoxes
+123
+4.11 Comparatives and modifiers
+124
+4.12 Vague degrees of truth
+127
+4.13 Non-numerical degrees of truth
+131
+4.14 Degree-functionality
+135
+4.15 Appendix: axiomatizations of continuum-valued logic
+138
+5 Supervaluations
+142
+5.1 Incomplete meanings
+142
+5.2 Origins
+143
+5.3 Logic and semantics
+146
+5.4 The elusiveness of supertruth
+153
+5.5 Supervaluational degrees of truth
+154
+5.6 Supervaluations and higher-order vagueness
+156
+5.7 Truth and supertruth
+162
+6 Nihilism
+165
+6.1 Despair
+165
+6.2 Global nihilism
+166
+6.3 Local nihilism: appearances
+171
+6.4 Local nihilism: colours
+180
+7 Vagueness as ignorance
+185
+7.1 Bivalence and ignorance
+185
+7.2 Bivalence and truth
+187
+7.3 Omniscient speakers
+198
+7.4 The supervenience of vagueness
+201
+7.5 Meaning and use
+205
+7.6 Understanding
+209
+7.7 Decidable cases
+212
+8 Inexact knowledge
+216
+8.1 The explanatory task
+216
+8.2 The crowd
+217
+8.3 Margins for error
+226
+8.4 Conceptual sources of inexactness
+230
+8.5 Recognition of vague concepts
+234
+8.6 Indiscriminable differences
+237
+8.7 Inexact beliefs
+244
+9 Vagueness in the world
+248
+9.1 Supervenience and vague facts
+248
+9.2 Determinacy in the world
+249
+9.3 Unclarity de re
+257
+Appendix The logic of clarity
+270
+Notes
+276
+References
+307
+Index
+320
+
+# Preface
+
+This book originated in my attempts to refute its main thesis: that vagueness consists in our ignorance of the sharp boundaries of our concepts, and therefore requires no revision of standard logic. For years I took this epistemic view of vagueness to be obviously false, as most philosophers do. In 1988 Simon Blackburn, then editor of the journal Mind, asked me to review Roy Sorensen’s intriguing book Blindspots, which includes a defence of the epistemic view. It did not persuade me; I could not see what makes us ignorant, and Sorensen offered no specific explanation. An alternative treatment of vagueness, supervaluationism, looked more or less adequate – unlike other popular alternatives, such as three-valued and fuzzy logic, which on technical grounds have always looked like blind alleys. However, I continued to think about the epistemic view, for the standard objections to it did not seem quite decisive. It was not clear that they did not assume a suspect connection between what is true and what we can verify. It then struck me that the notion of a margin for error could be used to give a specific explanation of ignorance of the sharp boundaries of our concepts, and the epistemic view began to look more plausible. A limited version of it was tentatively proposed in my book Identity and Discrimination (Oxford, Blackwell, 1990). The more closely the objections to it were analysed, the weaker they seemed. The next step was to focus on the fact that the meaning of vague expressions can be stated only in a language into which those expressions can be translated; it is a mistake to treat the language in which one theorizes about vagueness as though it were precise. Mark Sainsbury’s inaugural lecture at King’s College London, ‘Concepts without Boundaries’, helped to bring the significance of this point home to me, although we used it in quite different ways. It permits the formulation of arguments against a wide range of non-epistemic views, including the supervaluationism that had previously looked adequate (my objection to it, however, is not the one made in Sainsbury’s lecture). The balance of arguments seemed to have moved firmly onto the side of the epistemic view. A book-length treatment was clearly needed. This is the result.
+
+Some of the research for this book was carried out in late 1990 whilst I was a Visiting Fellow at the Research School of Social Sciences of the Australian National University in Canberra. Many people helped to make the visit a success; Philip and Eileen Pettit stand out. Gratitude is also due to University College Oxford and Oxford University for allowing me extra leave of absence in that academic year.
+
+Ted Honderich kindly permitted me to substitute a volume on vagueness in this series for one planned on another subject. One result of working on the past of the problem of vagueness for which I am particularly grateful is a better sense of the richness of Stoic logic. In this connection, I thank David Sedley for permission to quote translations from the first volume of a work he edited with A. A. Long, The Hellenistic Philosophers (Cambridge, Cambridge University Press, 1987).
+
+Parts of Chapters 7 and 8 are drawn from two previously published articles of mine: ‘Vagueness and ignorance’, Aristotelian Society, suppl. 66 (1992), 145–62, and ‘Inexact knowledge’, Mind, 101 (1992), 217–42. I am grateful to the Aristotelian Society and The Mind Association for permission to use this material.
+
+For written comments on predecessors of parts of this book, many thanks go to Michael Bacharach, Justin Broackes, Myles Burnyeat, Peter Carruthers, Bill Child, Jack Copeland, Dorothy Edgington, Timothy Endicott, Graeme Forbes, Brian Garrett, Bill Hart, Dominic Hyde, Frank Jackson, Rosanna Keefe, Peter Lipton, Andrei Marmor, Gregory McCulloch, Karina and Angus McIntosh, David Over, Peter Pagin, Philip Percival, Philip Pettit, Mark Sainsbury, David Sedley, Jonathan Sutton, Charles Travis and David Wiggins. Peter Simons replied to ‘Vagueness and ignorance’ in an enjoyable symposium at Reading, chaired by Mark Sainsbury. More people than I can name helped with critical questions after talks on the epistemic view of vagueness, inexact knowledge and related topics at the universities of Bradford, Bristol, Cambridge (the Moral Sciences Club), Dundee, Edinburgh, Heidelberg, Leeds, Lisbon, London (University College), New England (Armidale), Nottingham, Oslo, Oxford, Queensland, Stirling, Stockholm and Uppsala, the Australian National University and Monash University, and to a meeting of the Lisbon Philosophical Society in May 1991, an Anglo–Polish Symposium on the Philosophy of Logic and Language at Oriel College Oxford in September 1991, the Second Workshop on Knowledge, Belief and Strategic Interaction at Castiglioncello in June 1992 and the Joint Session of the Aristotelian Society and the Mind Association at Reading University in July 1992. Invidiously, I pick out George Bealer and Peter Menzies, because there is a particularly direct causal link between their questions and sections of the book. Early versions of several chapters were used in classes at Oxford, and were considerably improved as a result; Ron Chrisley, Michael Martin and Roger Teichmann were particularly persistent questioners. I have also been helped by conversations with Maria Baghramian, João Branquinho, John Campbell, David Charles, Kit Fine, Olav Gjelsvik and Peter Strawson (not to mention anyone previously mentioned). Juliane Kerkhecker guided me through Lorenzo Valla’s Latin.
+
+Those who know Elisabetta Perosino Williamson will guess how she helped in the writing of this book, and how much. It is dedicated to a great-uncle and an uncle, whose open-minded rationality (amongst other things) I rightly tried to imitate, with only mixed success.
+
+# Introduction
+
+Logicians are often accused of treating language as though it were precise, and ignoring its vagueness. Their standards of valid and invalid reasoning are held to be good enough for artificial precise languages, but to break down when applied to the natural vague languages in which we actually reason about the world that we experience. A perfectly precise language for such reasoning is an idealization never to be realized. Although we can make our language less vague, we cannot make it perfectly precise. If we try to do so by stipulating what our words are to mean, our stipulations will themselves be made in less than perfectly precise terms, and the reformed language will inherit some of that vagueness.
+
+The problem is not confined to logic. Attempts to describe the semantics of natural languages in formal terms are also frequently supposed to ignore vagueness, and therefore to misdescribe the meanings of ordinary expressions. Of course, a theory might ignore vagueness and remain a useful approximation for some purposes, but it is also legitimate to ask what changes of theory are needed to take vagueness into account.
+
+At the core of classical (i.e. standard) logic and semantics is the principle of bivalence, according to which every statement is either true or false. This is the principle most obviously threatened by vagueness. When, for example, did Rembrandt become old? For each second of his life, one can consider the statement that he was old then. Some of those statements are false; others are true. If all of them are true or false, then there was a last second at which it was false to say that Rembrandt was old, immediately followed by a first second at which it was true to say that he was old. Which second was that? We have no way of knowing. Indeed, it is widely felt to be just silly to suppose that there was such a second. Our use of the word ‘old’ is conceived as too vague to single one out. On such grounds, the principle of bivalence has been rejected for vague languages. To reject bivalence is to reject classical logic or semantics.
+
+At some times, it was unclear whether Rembrandt was old. He was neither clearly old nor clearly not old. The unclarity resulted from vagueness in the statement that Rembrandt was old. We can even use such examples to define the notion of vagueness. An expression or concept is vague if and only if it can result in unclarity of the kind just exemplified. Such a definition does not pretend to display the underlying nature of the phenomenon. In particular, it does not specify whether the unclarity results from the failure of the statement to be true or false, or simply from our inability to find out which. The definition is neutral on such points of theory. Just as we might agree to define the term ‘light’, or ‘poetry’, by examples, in order not to talk past each other when disagreeing about the nature of light, or poetry, so we can agree to define the term ‘vagueness’ by examples, in order not to talk past each other when disagreeing about the nature of vagueness.
+
+The phenomenon of vagueness is broad. Most challenges to classical logic or semantics depend on special features of a subject matter: the future, the infinite, the quantum mechanical. For all such a challenge implies, classical logic and semantics apply to statements about other subject matters. Vagueness, in contrast, presents a ubiquitous challenge. It is hard to make a perfectly precise statement about anything. If classical logic and semantics apply only to perfectly precise languages, then they apply to no language that we can speak.
+
+The phenomenon of vagueness is deep as well as broad. It would be shallow if it could be adequately described in precise terms. That is not generally possible. The difficulties presented by the question ‘When did Rembrandt become old?’ are also presented by the question ‘When did Rembrandt become clearly old?’. At some times, it was unclear whether it was unclear whether Rembrandt was old. The limits of vagueness are themselves vague. The same difficulties are presented by the question ‘When did Rembrandt become clearly clearly old?’; the point reiterates ad infinitum. This is the phenomenon of higher-order vagueness. It means that the meta-language in which we describe the vagueness of a vague language will itself be vague.
+
+The use of non-classical systems of logic or semantics has been advocated for vague languages. New and increasingly complex systems continue to be invented. What none has so far given is a satisfying account of higher-order vagueness. In more or less subtle ways, the meta-language is treated as though it were precise. For example, classical logic is said to be invalid for vague languages, and is then used in the meta-language. Such proposals underestimate the depth of the problem.
+
+The problem is not solved by the pessimistic idea that no system of logic or semantics, classical or non-classical, is adequate for a vague language. That idea still permits one to ask for perspicuous descriptions of vagueness in particular cases. No one has given a satisfying and perspicuous description of higher-order vagueness without use of classical logic. Of course, the nature of vagueness might be to defy perspicuous description, but that counsel of despair should prevail only if there is good evidence that it does not overestimate the depth of the problem.
+
+The thesis of this book is that vagueness is an epistemic phenomenon. As such, it constitutes no objection to classical logic or semantics. In cases of unclarity, statements remain true or false, but speakers of the language have no way of knowing which. Higher-order vagueness consists in ignorance about ignorance.
+
+At first sight, the epistemic view of vagueness is incredible. We may think that we cannot conceive how a vague statement could be true or false in an unclear case. For when we conceive that something is so, we tend to imagine finding out that it is so. We are uneasy with a fact on which we cannot attain such a first-personal perspective. We have no idea how we ever could have found out that the vague statement is true, or that it is false, in an unclear case; we are consequently unable to imagine finding out that it is true, or that it is false; we fallaciously conclude that it is inconceivable that it is true, and inconceivable that it is false. Such fallacies of the imagination must be laid aside before the epistemic view can be adequately assessed.
+
+Most work on the problem of vagueness assumes that the epistemic view is false, without seriously arguing the point. If the epistemic view is true, that work is fundamentally mistaken. Even if the epistemic view is false, that work is ungrounded until cogent arguments against the view have been found. The assessment of the epistemic view is therefore one of the main tasks facing the study of vagueness. This book contributes to that task.
+
+The assessment of the epistemic view has ramifications far beyond the study of vagueness. As already noted, classical logic and semantics are at stake. More generally, the epistemic view implies a form of realism, that even the truth about the boundaries of our concepts can outrun our capacity to know it. To deny the epistemic view of vagueness is therefore to impose limits on realism; to assert it is to endorse realism in a thoroughgoing form.
+
+The first part of the book is historical. It traces the slow and intermittent recognition of vagueness as a distinct and problematic phenomenon, up to the origins of the theories of vagueness that have been popular over the last two decades. This part is also critical. It argues that none of the extant non-epistemic theories of vagueness is adequate. Not only do they abandon classical logic or semantics for alternatives of doubtful coherence; those sacrifices are not rewarded by adequate insight into the nature of vagueness. The second part of the book is constructive. It develops and applies an epistemic view of vagueness, finds the standard objections to it fallacious, and concludes that the epistemic view provides the best explanation of the phenomenon of vagueness.
+
+The Greeks introduced the problem of vagueness into philosophy, in the guise of the original sorites paradox: if the removal of one grain from a heap always leaves a heap, then the successive removal of every grain still leaves a heap. Chapter 1 sketches the history of this paradox and its variants from their invention to the nineteenth century. Stoic logicians are interpreted as taking an epistemic view of sorites paradoxes.
+
+What makes a sorites paradox paradoxical is the vagueness of its central term, e.g. ‘heap’. Historically, however, such paradoxes were identified by their form. Vagueness as such became a topic of philosophical discussion only at the start of the twentieth century, when it presented an obstacle to the ideal of a logically perfect language associated with the development of modern logic. Only with difficulty was the phenomenon of unclear boundaries separated from other phenomena, such as lack of specificity, to which the term ‘vagueness’ is also applied in everyday usage. Chapter 2 discusses three stages in the emergence of the philosophical concept of vagueness, in the work of Frege, Peirce and Russell.
+
+As philosophical attention turned to ordinary language, vagueness acquired a more positive image. It was seen no longer as a deviation from an ideal norm, but as the real norm itself. As such, it was described by Black, Wittgenstein and Waismann. Their work is discussed in Chapter 3.
+
+Formal treatments of vagueness have become common only in the last few decades. One main approach relies on many-valued logic, which replaces the dichotomy of truth and falsity by a manyfold classification. Chapter 4 follows the development of its application to the problem of vagueness, from the use of three-valued logic to the growth of ‘fuzzy logic’ and other logics based on infinitely many values, and then of more sophisticated accounts appealing to a qualitative conception of degrees of truth. These views are criticized on several grounds. None has adequately treated higher-order vagueness; degrees of truth are not connected with vagueness in the requisite way; the generalization from two-valued logic to many-valued logic has highly counter-intuitive consequences when applied to natural languages.
+
+A technically subtler approach to vagueness is supervaluationism, with which Chapter 5 is concerned. It preserves almost all of classical logic, at the expense of classical semantics, by giving a non-standard account of truth. It also treats higher-order vagueness in a promising way. However, it is argued that the treatment of higher-order vagueness undermines the non-standard account of truth, making supervaluationism as a whole unmotivated.
+
+On a more pessimistic view, vagueness is a form of incoherence. If this view is taken globally, Chapter 6 suggests, all rational discourse is subverted, for vagueness is ubiquitous. However, local forms of nihilism might be coherent. They have been defended in the special case of concepts used to describe perceptual appearances, on the grounds that such concepts cannot differentiate between perceptually indiscriminable items, yet perceptually discriminable items can be linked by a sorites series of which each member is perceptually indiscriminable from its neighbours. However, careful attention to the structure of the relevant concepts shows that the paradoxical arguments are unsound. In particular, they falsely assume that appearances are just what they appear to be.
+
+Chapter 7 defends the epistemic view of vagueness. First, it argues that it is incoherent to deny the principle of bivalence for vague statements in unclear cases. It then questions our ability to think through coherently the consequences of a non-epistemic view of vagueness. Obvious objections to the epistemic view are analysed and shown to be fallacious. A picture of linguistic understanding is sketched, on which we can know that a word has a given meaning without knowing what the boundaries of that meaning are in conceptual space.
+
+Chapter 8 develops the epistemological background to the epistemic view. It gives independent justification for principles about knowledge on which the ignorance postulated by the view was only to be expected as a special case of a much wider phenomenon, inexact knowledge. Nevertheless, the case is special, for the source of the inexactness is distinctive in being conceptual. Higher-order vagueness has a central place in this account, for a central feature of inexact knowledge is that one can know something without being in a position to know that one knows it; when the inexactness takes the form of vagueness, this becomes unclarity about unclarity. The epistemology of inexact knowledge is then used to analyse in greater depth the phenomena of indiscriminability to which the nihilist appeals.
+
+It is controversial whether in any sense the world itself, as opposed to our representations of it, can be vague. Chapter 9 examines the issue. It argues that the epistemic view permits objects to be vague in a modest sense, for the impossibility of knowing their boundaries may be independent of the way in which the objects are represented.
+
+The Appendix identifies the formal system uniquely appropriate for the logic of clarity and unclarity on the epistemic view of vagueness.
+
+Most of the book keeps technicalities to a minimum. The gain in intelligibility will, it is hoped, outweigh the loss in rigour. There is also a philosophical reason for minimizing technicality. The emphasis on formal systems has encouraged the illusion that vagueness can be studied in a precise meta-language. It has therefore caused the significance of higher-order vagueness to be underestimated. Indeed, to use a supposedly precise meta-language in studying vague terms is to use a language into which, by hypothesis, they cannot be translated. Since vague terms are meaningful, this is an expressive limitation on the meta-language. It is not an innocent one. The argument in Chapter 7 for the incoherence of denials of bivalence in unclear cases can be stated only in a language into which the relevant vague terms can be translated. To deny bivalence is in the end to treat vague utterances as though they said nothing. Vagueness can be understood only from within.
+
+# Chapter 1 The Early History of Sorites Paradoxes
+
+## 1.1 The First Sorites1
+
+The logician Eubulides of Miletus, a contemporary of Aristotle, was famous for seven puzzles. One was the Liar: if a man says that he is lying, is he telling the truth? Another was the Hooded Man: how can you know your brother when you do not know that hooded man, who is in fact your brother? The Electra turned on the delusion of Orestes in his madness, who took his sister Electra for a Fury. The Elusive Man will appear later. There was also the Horned Man: since you still have what you have not lost, and you have not lost horns, you still have them (hence the horns of a dilemma). The remaining puzzles were the Bald Man and (accompanying five men and one woman) the Heap. In antiquity they were usually formulated as series of questions.2
+
+Does one grain of wheat make a heap? Do two grains of wheat make a heap? Do three grains of wheat make a heap? . . . Do ten thousand grains of wheat make a heap? It is to be understood that the grains are properly piled up, and that a heap must contain reasonably many grains. If you admit that one grain does not make a heap, and are unwilling to make a fuss about the addition of any single grain, you are eventually forced to admit that ten thousand grains do not make a heap.
+
+Is a man with one hair on his head bald? Is a man with two hairs on his head bald? Is a man with three hairs on his head bald? . . . Is a man with ten thousand hairs on his head bald? It is to be understood that the hairs are properly distributed, and that a man with reasonably few hairs is bald. If you admit that a man with one hair is bald, and are unwilling to make a fuss about the addition of any single hair, you are eventually forced to admit that a man with ten thousand hairs is bald.
+
+The standard ancient terms for the Heap and the Bald Man were ‘sorites’ and ‘phalakros’ respectively. The Greek adjective ‘sorites’ comes from the noun ‘soros’, for ‘heap’, and means literally heaper, as in ‘the heaper paradox’. Perhaps Eubulides coined the word himself. The primary reference was to the content of the puzzle, although there may also have been a secondary allusion to the heaping up of questions in its form. The term was extended to similar puzzles, such as the Bald Man. They were also known as little-by-little arguments.3
+
+So far as is known, Eubulides invented the Heap and the Bald Man himself. The Heap may have been inspired by a different puzzle, the Millet Seed, propounded by Zeno of Elea a century earlier. If the fall of a seed to the ground were completely silent, so would be the fall of a bushel of seed, which it is not; thus each seed must make a noise when it falls to the ground. That puzzle can certainly be adapted to sorites form. Does one seed make a noise when it falls to the ground? Do two seeds? Three? . . . However, Zeno seems to have based his puzzle on something much more specific: a principle that the noise made when some grains fall to the ground is proportional to their weight.4 Eubulides may well have been the first to focus on the general difficulty that sorites questioning presents; he is unlikely to have overlooked the common form of the Heap and the Bald Man, however much their difference in content caused them to be listed as distinct puzzles.
+
+It is not known what Eubulides used sorites puzzles for – fun, troublemaking or some graver purpose. Many philosophical doctrines have been suggested as the target he intended them to destroy: the coherence of empirical concepts (such as ‘bald’ and ‘heap’), the law of non-contradiction (‘Not both P and not P’), the law of excluded middle (‘Either P or not P’), pluralism (the existence of more than one thing), Aristotle’s theory of infinity (as potential rather than actual), Aristotle’s theory of the mean (as the place of virtue between vicious extremes). The evidence gives little support to any of these suggestions. Eubulides is indeed said to have attacked Aristotle, but in slanderous terms; the sources do not connect the dispute with any of the puzzles. Aristotle betrays no clear awareness of sorites reasoning in any of his extant works. Some later commentators did consider its use against Aristotle’s theory of the mean, but without suggesting that either Eubulides or Aristotle had done so. Eubulides’ interests were described as purely logical; if he had a specific target in mind, it is likely to have been a logical one.5 But if he had no specific target in mind, it does not follow that his interest in sorites puzzles was intellectually frivolous, for one can treat any absurdity apparently licensed by accepted standards of argument as a serious challenge to those standards. A puzzle threatens the whole system of thought within which it is formulated, and for that very reason refutes no element of it in particular until a positive diagnosis is given, fixing the source of the trouble. There is no evidence that Eubulides had such a diagnosis.
+
+The sorites puzzles can be traced conjecturally forward from Eubulides in the mid fourth century BCE through a chain of teacher–pupil links. One pupil of Eubulides was Apollonius Cronus; one of his pupils was Diodorus Cronus. David Sedley argues that it was Diodorus who gave Eubulides’ puzzles wide circulation and intellectual status. According to Sedley, Diodorus inherited from Eubulides ‘his sophistical leanings, his flamboyancy and his love of showmanship’; he could present a puzzle so that it not only caught the imagination but emerged as a serious challenge to philosophical theory.6 Diodorus taught dialectic, ‘the science of discoursing correctly on arguments in question and answer form’, the standard medium of philosophical argument and that in which the sorites puzzles were formulated.
+
+No explicit mention of the sorites by Diodorus survives. However, he almost certainly discussed it; his intellectual ancestors and descendants did, and it is just the kind of puzzle he liked. Moreover, he propounded an argument about motion with very strong affinities to the Heap. Its details as they survive are so unconvincing that one must hope them to have been garbled. It begins with the promising general principle that a predicate which can apply ‘absolutely’ can also apply ‘by predominance’; for example, a man can be grey-headed because all the hairs on his head are grey, but he can also be grey-headed because a majority of them are (the Bald Man involves a different form of aging). The idea is then to suppose that a body of three particles is moving by predominance, and to add stationary particles until a body of ten thousand particles would also be moving by predominance when only two particles are. Heaps are indeed mentioned in the course of the argument.7 Although a sorites puzzle could be constructed out of such material, this is not it; the words ‘a majority’ would need to be replaced by something like ‘most’ in the definition of ‘predominance’. The puzzle would then turn on ‘most’ rather than ‘moving’. It is tempting to connect the sorites with some of Diodorus’ other interests too. For example, he argued that the present truth of a past tense statement such as ‘It has moved’ or ‘Helen had three husbands’ does not require the past truth of a present tense statement such as ‘It is moving’ or ‘Helen has three husbands’.8 Might the question ‘When?’ be similarly out of place with respect to the creation or destruction of a heap? Again, Diodorus studied the minima of perceptibility; some later sorites paradoxes depend on the fact that imperceptible differences can add up to a perceptible one. Unfortunately, there is no evidence to verify these speculative connections.
+
+Diodorus is unreliably reported to have died of shame when he failed to solve a puzzle set him by another philosopher in front of Ptolemy Soter, King of Egypt. After him, sorites puzzles became standard weapons in disputes between two rival schools of philosophy, the Stoa and the Academy. He influenced both. In about 300 his ex-pupil Zeno of Citium began to teach in a public hall in Athens, the Stoa Poikile, from which his pupils were known as Stoics. In about 273 Arcesilaus became head of Plato’s Academy and achieved a remarkable coup by converting it to scepticism; Arcesilaus was influenced by Diodorus’ logic.9 The sceptics of the Academy then attacked the Stoic ‘dogmatists’. Their chief weapons included sorites arguments, against which they took the Stoics to have no non-sceptical defence. A sceptic does not feel obliged to answer any of the sorites questions; he can simply plead ignorance. If a Stoic is obliged to answer each question ‘Yes’ or ‘No’, he will find himself in an embarrassing position.
+
+The Stoic theory of knowledge was an obvious focus for sceptical attack, and sorites reasoning a particularly apt means. The central concept of Stoic epistemology was that of a cognitive impression, something like a Cartesian clear and distinct idea. Cognitive impressions have a propositional content, and are essentially such as to derive from and represent real objects with complete accuracy. They are the foundation of the Stoic account of the possibility of knowledge. The sceptics proceeded to construct sorites series from cognitive to non-cognitive impressions, replacing each impression by a virtually indistinguishable one, and took themselves to have undermined Stoic claims to knowledge.10
+
+The Stoics needed a defence against sceptical sorites attacks. But they must have discussed sorites arguments prior to the institution of scepticism in the Academy, for Zeno emphasized the development of techniques for dealing with just such puzzles as part of a training in dialectical techniques. He was succeeded as head of the Stoa by Cleanthes in 262, and Cleanthes by Chrysippus (c. 280–c. 206) in about 232. It was Chrysippus who was responsible for the systematic construction of Stoic logical theory. In antiquity he was reputed the greatest logician of all (Aristotle being the greatest scientist, and Plato the greatest philosopher).11 He also devised strategies to handle attacks by the sceptics, and in particular their use of sorites arguments. Unfortunately, the two volumes (i.e. scrolls of papyrus) he is known to have written On the Little-by-Little Argument do not survive; nor do his three volumes On Sorites Arguments Against Words.12 There are only fragments and reports. What follows is a speculative reconstruction.
+
+## 1.2 Chrysippan Silence
+
+The Stoics firmly accepted the principle of bivalence: every proposition is either true or false. Unlike Aristotle, they did not reject it for future contingencies; it is true or false that there will be a sea-fight tomorrow. According to Cicero, Chrysippus ‘strains every nerve to persuade us that every axioma [proposition] is either true or false’.13 Thus for every proposition P there is one right answer to the question ‘P?’; it is ‘Yes’ if P is true and ‘No’ if P is false. Consequently, for every sequence of propositions $P_1$, . . . , $P_n$ there is one sequence of right answers to the questions ‘$P_1$?’, . . . , ‘$P_n$?’, each member of which is either ‘Yes’ or ‘No’.
+
+In a sorites sequence, the right answers to the first and last questions are obvious and opposite. The Stoics used ‘Are i few?’ as the schematic form of the ith question; it will be convenient to follow their example.14 Thus the right answers to the first and last questions are ‘Yes’ and ‘No’ respectively. This fits the Bald Man rather than the Heap, but the difference is not significant. Now the usual sorites sequences are monotonic, in the sense that a question rightly answerable ‘No’ never comes between two questions rightly answerable ‘Yes’, nor vice versa. If i are few then, a fortiori, fewer than i are few; if i are not few then, a fortiori, more than i are not few. Thus the sequence of right answers to the questions ‘Is one few?’, . . . , ‘Are ten thousand few?’ consists of ‘Yes’ a certain number of times followed by ‘No’ a certain number of times. In particular, there is a last question ‘Are i few?’ rightly answerable ‘Yes’, immediately followed by a first question ‘Are i + 1 few?’ rightly answerable ‘No’. i are few and i + 1 are not few; i is a sharp cut-off point for fewness.
+
+The argument from bivalence to the existence of a sharp cut-off point assumes that the sentences ‘One is few’, . . . , ‘Ten thousand are few’ do express propositions. The Stoics themselves distinguished the proposition asserted from the sentence by means of which it is asserted. However, someone who utters ‘i are few’ with the sense ‘A man with i hairs on his head is bald’ does assert something, which on the Stoic view requires the sentence to express a proposition. The assumption gave no escape from the argument to a sharp cut-off point.
+
+There is independent evidence that the Stoics accepted sharp cut-off points.15 First and most tenuous, in Cicero’s account Chrysippus compares himself to a clever charioteer who pulls up his horses before he comes to a precipice; what is the sharp drop if not from truth to falsity? Second, in other cases which look susceptible to sorites reasoning the Stoics insisted on sharp cut-off points. For example, they denied that there are degrees of virtue, holding that one is either vicious or perfectly virtuous. An analogy was drawn with a drowning man as he rises to the surface; he is coming closer to not drowning but he is drowning to no less a degree until he breaks the surface, when he is suddenly not drowning at all. Third, in rebutting the sorites argument against cognitive impressions, Chrysippus dealt explicitly with the case ‘when the last cognitive impression lies next to the first non-cognitive one’; cognitiveness has a sharp cut-off point. The Stoics were prepared to apply bivalence to sorites reasoning and swallow the consequences.
+
+For the Stoics, there are sharp cut-off points. The difficulty in answering the sorites questions must come not from the non-existence of right answers but from our ignorance of what they are. The sorites is a puzzle in epistemology. This book is a defence of that Stoic view. The immediate need, however, is not to defend the view but to explore its consequences.
+
+One might answer the questions ‘Is one few?’, . . . , ‘Are i few?’ ‘Yes’ and the questions ‘Are i + 1 few?’, . . . , ‘Are ten thousand few?’ ‘No’: but one would be guessing. No one has such knowlege of cut-off points; no one knows both that i are few and that i + 1 are not few. Such a pattern of answers is forbidden by the principle that one should give an answer only if one knows it to be correct. If they were to respect that principle, the Stoics needed an alternative pattern of answers.
+
+The problem concerns what one should believe, not just what one should say. If one believes that i are few and that i + 1 are not few, one violates the principle that one should believe only what one knows to be correct. The Stoics were committed to this principle in a sense, but the elucidation of that sense requires a little more background in Stoic epistemology.16
+
+The Stoics made a threefold distinction between mere opinion (doxa), cognition (katalepsis) and scientific knowledge (episteme). The ordinary man cognizes by assenting to cognitive impressions. He believes their propositional content, as in normal perception. Cognitive impressions tend to cause us to assent to them. We are strongly but not irresistibly inclined to take what is clearly the case to be the case. However, the ordinary man tends to assent indiscriminately to all impressions. When he does not realize that conditions are abnormal, he may land himself with a mere opinion by assenting to a non-cognitive impression. The wise man, the Stoic ideal, does not err in that way (or any other). He has trained himself to assent only to cognitive impressions. This is possible because there is always some qualitative difference, however slight, between a cognitive and a non-cognitive impression, given the Stoic principle that no two entities are absolutely indiscernible.17 In case of doubt, the wise man suspends judgement. Where certainty is not to be had, he may act on plausible assumptions, but without believing them; what he believes is just that they are plausible.18 Since cognitive impressions cannot be false, the wise man has no false beliefs. He is not omniscient, but he is infallible.19 His beliefs, and only his, are sure to withstand attempted refutations. For example, he will not be tricked by the sorites questioner into denying the proposition that ten thousand grains make a heap, to which he had previously assented on the basis of a cognitive impression. Only he has scientific knowledge.
+
+Understandably, the Stoics were not sure that there had been any wise men. Perhaps Socrates was one, but the number was very small, and the Stoics did not themselves claim to be wise. Thus they could not claim to say or believe only what they scientifically knew. However, they did aspire to wisdom. In particular, they sought to train themselves to assent only to cognitive impressions, to what is clear. The term ‘knowledge’, unqualified by ‘scientific’, will be used for assent to what is clear, i.e. to truths guaranteed as such by cognitive impressions; it covers both cognition and scientific knowledge. In circumstances for which they had trained, ordinary Stoics might indeed say and believe only what they knew in this looser sense. Moreover, they could not hope to deal successfully with the sorites interrogation if they assented to non-cognitive impressions in the course of it. Thus any good strategy for responding to the interrogation would involve one in saying and believing only what one knows. This principle will help to explain the Stoic treatment of the puzzle.
+
+Chrysippus recommended that at some point in the sorites interrogation one should fall silent and withhold assent.20 The wise man would and the ordinary Stoic should suspend judgement, making no statement and forming no belief either way, thereby avoiding error in both thought and speech.
+
+If the source of the puzzle is just that one does not know whether ‘Yes’ or ‘No’ is the right answer to some of the questions, it turns out to be on a level with other matters of which one is simply ignorant. For example, the Stoics readily admitted that they did not know the right answer to the question ‘Is the number of stars even?’. If no more is involved, the Stoic could confidently face a sorites interrogation armed only with the three possible answers ‘Yes’, ‘No’ and ‘I don’t know’. If he knew i to be few he would answer ‘Yes’; if he knew i not to be few he would answer ‘No’; in every other case he would answer ‘I don’t know’. Why should such an honest admission of ignorance not completely dissolve the puzzle?
+
+The Stoics did not classify the sorites interrogation merely as a list of questions some of whose answers were unknown; they classified it as a sophism. The question about the stars makes it very easy to say only what one knows to be true. The sorites makes it very hard not to say what one knows to be false. At first sight, the epistemic approach seems to lose the difficulty of the puzzle. What follows is an attempt to think through the epistemology of sorites series more carefully on Stoic lines. The results are subtler than one might expect, and help to explain some otherwise puzzling features of the Stoic strategy.
+
+Recall that Chrysippus did not say that one should admit ignorance; he said that one should fall silent. Under interrogation, saying ‘I don’t know’ is quite a different policy from saying nothing. In the former case but not the latter one denies knowledge. The Stoic is supposed not to make a statement unless he knows it to be correct. Now to say ‘I don’t know’ in answer to the question ‘Are i few?’ is in effect to make the statement ‘I neither know that i are few nor know that i are not few’, just as ‘Yes’ is tantamount to the statement ‘i are few’ and ‘No’ to the statement ‘i are not few’. Thus the Stoic is supposed to answer ‘I don’t know’ only if he knows that he neither knows that i are few nor knows that i are not few. The ‘Yes’/‘No’/‘Don’t know’ strategy requires the Stoic to answer ‘I don’t know’ whenever he does not know. The strategy is therefore available on Stoic terms only if for each i:
+
+(1)
+If one neither knows that i are few nor knows that i are not few, then one knows that one neither knows that i are few nor knows that i are not few.
+
+Knowledge was defined above as assent to what is clear. Thus what is known is clear. Conversely, since cognitive impressions strongly incline us to assent, what is clear tends to be known. The ‘Yes’/‘No’/‘Don’t know’ strategy is therefore very close to the following: if i are clearly few, say ‘Yes’; if i are clearly not few, say ‘No’; otherwise, say ‘Unclear’. It will be simplest to begin with the latter strategy. Once its flaws have emerged, the former can be reconsidered.
+
+The ‘Yes’/‘No’/‘Unclear’ strategy is available on Stoic terms only if the third answer is clearly correct when neither the first nor the second is. (1) corresponds to:
+
+(2)
+If i are neither clearly few nor clearly not few, then i are clearly neither clearly few nor clearly not few.
+
+This is equivalent to the conjunction of two simpler principles:21
+
+(3a)
+If i are not clearly few, then i are clearly few.
+(3b)
+If i are not clearly not few, then i are clearly not clearly not few.
+
+(3a) and (3b) are two instances of what is called the S5 principle for clarity: if it is not clear that P, then it is clear that it is not clear that P. Thus the ‘Yes’/‘No’/‘Unclear’ strategy is available only if clarity satisfies the S5 principle.
+
+On a Stoic view, clarity cannot in general satisfy the S5 principle. For example, not knowing that the light is abnormal, I assent to the non-cognitive impression that x is yellow, when in fact x is white. Thus x is not clearly yellow, but it is not clearly not clearly yellow.22 If it were, I should have a cognitive impression to the effect that x is not clearly yellow; such an impression would strongly incline me to judge that x is not clearly yellow. But I have no such inclination at all; it does not occur to me that the situation is other than a normal case of seeing something to be yellow. My problems come from glib assent to a non-cognitive impression, not from resistance to a cognitive one. Of course, the Stoic view is that, if I had been more attentive, I could have avoided the mistake. My attentiveness might have enabled me to have a cognitive impression to the effect that my perceptual impression was non-cognitive, but it does not follow that I have such a second-order cognitive impression in my actual state. I have no such impression.
+
+The S5 principle seems equally vulnerable in the case of (3a) and (3b). Just as fewness is sorites-susceptible, so is clear fewness. One is clearly few; ten thousand are not clearly few (for they are not few). By Stoic logic, there is a sharp cut-off point for clear fewness: for some number i, i − 1 are clearly few and i are not clearly few. One is in no better a position to say what that number is than to locate the cut-off point for fewness itself. The cognitive impression that i − 1 are few is too relevantly similar to the non-cognitive impression that i are few for one to judge reliably that the latter is indeed a non-cognitive impression. One cannot discriminate so finely. Although i are not clearly few, they are not clearly not clearly few. Some instance of (3a) is false. By a parallel argument, so is some instance of (3b). Thus (2), which entails them, is false too. The ‘Yes’/‘No’/‘Unclear’ strategy fails on Stoic terms, for at some points in the series none of those three answers is clearly correct, so none is known to be correct. One cannot recognize the last of the clear cases.
+
+Jonathan Barnes has argued to the contrary that ‘it seems relatively easy to show that if there is a last clear case then we can recognise it as such’. Transposed to present notation, his reasoning runs:
+
+Consider any relevant case: are i clearly few or not? One may answer ‘No’, ‘Yes’ or ‘I don’t know’; but if one doesn’t know whether i are clearly few, then i are not clearly clearly few and hence not clearly few. Hence one can always answer ‘No’ or ‘Yes’ to the question ‘Are i clearly few?’: hence the last clear case, if it exists, is recognizable.23
+
+The reasoning is perfectly general. If it were valid, it would show that clarity satisfies the S5 principle everywhere. In particular, it would apply to my mistake about the colour of x. But then the fallacy is clear. If, in my glib state, I am asked whether x is clearly yellow, I shall answer ‘Yes’, but I shall be wrong.24
+
+One might try to revive Barnes’s argument by adding an extra premise. It was noted above that the Stoic can expect to survive the sorites interrogation intact only if he has trained himself not to assent to any relevant non-cognitive impression. One might therefore add the premise that the Stoic’s answers are clearly correct. This excludes counterexamples of the foregoing kind. If one answers ‘Yes’ to the question ‘Are i clearly few?’, then i are clearly clearly few; if one answers ‘No’, they are clearly not clearly few. However, it still needs to be shown that if neither of these answers is available then one clearly doesn’t know whether i are clearly few, for otherwise the answer ‘I don’t know’ is unavailable too.
+
+One might hope to make the answer ‘I don’t know’ available just by suspending judgement as to whether i are clearly few whenever one did not say ‘Yes’ or ‘No’. For knowledge requires assent; if one assents neither to the proposition that i are clearly few nor to the proposition that they are not clearly few, one knows neither proposition. Moreover, one can suspend judgement clearly, to make one’s ignorance clear. One then clearly fails to know that i are clearly few. However, what needs to be shown at this point in the argument is that i are not clearly clearly few. But this does not follow, for one’s failure to know is guaranteed only by one’s failure to assent. If one can refuse assent to what is clear, one might refuse assent to the proposition that i are clearly few even when i are clearly clearly few. Thus the argument seems to require clarity to be sufficient as well as necessary for the assent of a well-trained Stoic. This is tantamount to the assumption that such a person can discriminate with perfect accuracy between cognitive and non-cognitive impressions. But that is in effect what the argument was supposed to show.
+
+One cannot reliably answer the question ‘Are i clearly few?’ just by following the advice: if you hesitate to say ‘Yes’, say ‘No’. If that policy worked, one would unhesitatingly judge that i were clearly few if and only if i were clearly few; whatever one thought was right would be right. But clarity is an independently desirable epistemic feature about whose application one can be wrong as well as right. Unless one is reasonably cautious, one will often unhesitatingly judge that i are clearly few when they are not in fact clearly few (or even few). On the other hand, if one is reasonably cautious, one will often hesitate over what turns out to be genuinely clear; one suspects a hidden catch and finds there is none. The story is told of a mathematician lecturing who began a sentence ‘It is clear that . . .’, was seized by sudden doubt, spent several minutes in agonized thought, and then resumed ‘It is clear that . . .’. The point of the story is that he may have been right.
+
+There is no universal algorithm for detecting clarity. Chrysippus seems to have held that not even the wise man can discriminate with perfect accuracy between cognitive and non-cognitive impressions. Sextus Empiricus writes:
+
+For since in the Sorites the last cognitive impression is adjacent to the first non-cognitive impression and virtually indistinguishable from it, the school of Chrysippus say that in the case of impressions which differ so slightly the wise man will stop and become quiescent, while in the cases where a more substantial difference strikes him he will assent to one of the impressions as true.25
+
+Not even the wise man can locate the last clear case with perfect accuracy. Practice has improved his powers of discrimination but not made them perfect. In order to avoid the risk of assent to a non-cognitive impression, he refrains from assenting to impressions that he cannot discriminate from non-cognitive ones. He will therefore sometimes refrain from assenting to what is in fact a cognitive impression. When he refrains from assenting to an impression, he does not always classify it as unclear, for if he did he would sometimes be mistaken. He does not say ‘Unclear’; he falls silent. The ordinary Stoic, who takes him as a model, should do the same.
+
+If one answers the simple sorites question ‘Are i few?’ with ‘Yes’ whenever that answer is clearly correct, on Stoic assumptions one stops answering ‘Yes’ either at the point when it ceases to be clearly correct or at some later stage. In the former case one has located the cut-off point for clarity with perfect accuracy; in the latter one has violated the constraint that all one’s answers should be clearly correct. Since one cannot reliably locate the cut-off point for clarity with perfect accuracy, one will reliably satisfy the constraint only if one stops answering ‘Yes’ before it has ceased to be the clearly correct answer. One must undershoot in order to avoid the risk of overshooting.
+
+The Stoic will fall silent before the end of the clear cases. Chrysippus is reported as advising just that.26 Barnes’s claim that the end of the clear cases can easily be shown to be recognizable as such makes him suggest that Chrysippus may have been misreported, and merely suggested that one should stop at the end of the clear cases. What has emerged is that there is no reason to reject the report, for the advice it attributes to Chrysippus is good advice on Stoic terms.
+
+There remains a trivial sense in which the ‘Yes’/‘No’/‘Don’t know’ strategy is feasible, unlike the ‘Yes’/‘No’/‘Unclear’ strategy. For if one’s refusal of assent is very clear, one can recognize it and thereby come to know that one does not know. A trained Stoic may satisfy (1) throughout a sorites series, if he assents to no relevant non-cognitive impression. However, ‘I don’t know’ now in effect reports his refusal to assent, a psychological episode, not the state of the evidence available to him; what he does not know may nevertheless be clear. Such a report would be of little interest to the questioner. Silence remains intelligible.
+
+The moral that one should stop before the end of the clear cases can be generalized. One would like to obey two injunctions:
+
+(4a)
+If ‘Yes’ is a good answer, say ‘Yes’.
+(4b)
+If ‘Yes’ is not a good answer, do not say ‘Yes’.
+
+The goodness of an answer is some truth-related property of it, and does not simply consist in its being given. There is play between the antecedents and consequents of (4a) and (4b); in an imperfect world they will sometimes come apart. In such a case, one either fails to say ‘Yes’ when ‘Yes’ is a good answer, violating (4a), or says ‘Yes’ when ‘Yes’ is not a good answer, violating (4b). If one regards violations of (4a) and (4b) as equally serious, one may simply aim to say ‘Yes’ when and only when it is a good answer. Other things being equal, one’s misses are as likely to fall on one side of the target as on the other, and no matter. But one might regard a violation of (4b) as worse than a violation of (4a); given the choice, one would rather err by omission, not saying ‘Yes’ when it is a good answer, than by commission, saying ‘Yes’ when it is not a good answer. For example, one may prefer failing to make true or warranted statements to making false or unwarranted ones. In that case, one will follow a policy of saying nothing when in doubt. One decreases the risk of more serious violations by increasing the risk of less serious ones. At the limit, the price of never violating (4b) is sometimes violating (4a). That is the choice the Stoic made in falling silent before the end of the clear cases; here clarity is goodness. It was worse to say ‘Yes’ in an unclear case than not to say it in a clear one. Those who take the opposite view should fall silent after the end of the clear cases.
+
+The Chrysippan strategy results from two levels of precaution. At the first level, goodness in (4a) and (4b) is simply truth. The Stoics were not alone in holding it to be worse to give a false answer than to fail to give a true one. For truth, (4a) rather than (4b) is to be violated. This preference motivates the constraint that one should give an answer only if it is clear. But then clarity takes on a life of its own as a cognitive end, and again the Stoic takes the cautious option. (4a) rather than (4b) is to be violated for clarity too.
+
+The Chrysippan strategy is incomplete if it gives no clue as to where amongst the clear cases one should fall silent. If the advice is to fall silent a little before the end of the clear cases, it is very vague, and also presupposes that the respondent can predict the future course of the questioning – an impossible task in the case of non-numerical sorites, such as those about cognitive impressions, and others considered below. A sceptic might suspend judgement until the questioning was over, but that was not what Chrysippus recommended. Perhaps one is supposed to be silent for all the cases one cannot discriminate from unclear cases. For reasons of a kind already given, there is no algorithm for discriminability from unclear cases; one will sometimes be wrong about it. However, if goodness is taken to be discriminability from unclear cases, one might regard violation of (4b) as no worse than violation of (4a) at this third level. That would bring the regress to an end.
+
+## 1.3 Sorites Arguments and Stoic Logic
+
+A paradox may be defined as an apparently valid argument with apparently true premises and an apparently false conclusion. One often speaks of a sorites paradox, and there was mention above of sorites arguments. Yet the Heap and the Bald Man have been presented, as they usually were in antiquity, as series of questions, not as arguments with premises and conclusions. According to Barnes, ‘we can – and the ancients did – see a logical structure behind that dialectical façade’.27
+
+Consider the following argument, with premises above the line and conclusion below:
+
+1 is few
+If 1 is few then 2 are few
+If 2 are few then 3 are few
+.
+.
+.
+If 9,999 are few then 10,000 are few
+--------
+10,000 are few
+
+The argument appears to be valid; if its premises are true, its conclusion will be true too. The relevant rule of inference is modus ponens, which allows one to argue from ‘P’ and ‘If P then Q’ to ‘Q’; it appears impossible for its premises to be true and its conclusion false. By modus ponens, ‘1 is few’ and ‘If 1 is few then 2 are few’ entail ‘2 are few’. In the same way, ‘2 are few’ and ‘If 2 are few then 3 are few’ entail ‘3 are few’. After 9,999 applications of modus ponens, one finally reaches the conclusion ‘10,000 are few’. The premise ‘1 is few’ is apparently true and the conclusion ‘10,000 are few’ apparently false. The gradualness of the sorites series makes each of the conditional premises appear true. Thus the apparently valid argument has apparently true premises and an apparently false conclusion. At least one of these appearances is misleading, for the conclusion cannot be both true and false.
+
+The argument is valid by the standards of orthodox modern logic; it cannot have true premises and a false conclusion. It is also valid by the standards of Stoic logic.28 Two logical principles are at stake. One is modus ponens; it was the first indemonstrable (basic) form of argument in Stoic logic: ‘If the first, then the second; but the first; therefore the second’. The other is the principle, sometimes known as Cut, that valid arguments can be chained together: for example, the valid argument from ‘1 is few’ and ‘If 1 is few then 2 are few’ to ‘2 are few’ can be chained together with the valid argument from ‘2 are few and ‘If 2 are few then 3 are few’ to ‘3 are few’, giving a valid argument from ‘1 is few’, ‘If 1 is few then 2 are few’ and ‘If 2 are few then 3 are few’ to ‘3 are few’. The third Stoic ground-rule for the analysis of complex arguments is the relevant form of Cut: when from two propositions a third is deduced, and extra propositions are found from which one of those two can be deduced, then the same conclusion can be deduced from the other of the two plus those extra propositions. Suppose that one can deduce ‘n are few’ from ‘1 is few’, ‘If 1 is few then 2 are few’, . . . , ‘If n − 1 are few then n are few’. By modus ponens, from the two propositions ‘n are few’ and ‘If n are few then n + 1 are few’ one deduces the conclusion ‘n + 1 are few’. The ground-rule then permits one to deduce the conclusion ‘n + 1 are few’ from the premises ‘1 is few’, ‘If 1 is few then 2 are few’, . . . , ‘If n are few then n + 1 are few’. By continuing in this way, one eventually reaches a complete Stoic analysis of the sorites argument above into basic inferences.29
+
+On Stoic terms, the argument is valid, its first premise is true and its conclusion false. Thus not all the conditional premises are true. By the Stoic principle of bivalence, at least one of them is false. Yet the gradualness of the sorites makes them all appear true. How can one of the conditionals ‘If i are few then i + 1 are few’ be false?
+
+At this point there is a complication. The truth-conditions of conditionals were the subject of a fierce controversy that went back to Diodorus and his contemporary Philo, and was taken up by the Stoics. In Alexandria the poet Callimachus wrote ‘Even the crows on the roof tops are cawing about the question which conditionals are true’. Philo treated the truth-value of the conditional as a function of the truth-values of its components. ‘If P then Q’ is true in three cases: ‘P’ and ‘Q’ are true; ‘P’ is false and ‘Q’ is true; ‘P’ and ‘Q’ are false. It is false in case ‘P’ is true and ‘Q’ is false. The Philonian conditional is the weakest construction to obey modus ponens, and therefore the weakest kind of conditional; it is true if any conditional with antecedent ‘P’ and consequent ‘Q’ is true. The Philonian ‘If P then Q’ is equivalent to ‘Not: P and not Q’. In contrast, Diodorus held ‘If P then Q’ to be at least as strong as ‘Not ever: P and not Q’. Chrysippus went still further; for him, a conditional is true if and only if its antecedent is incompatible with the negation of its consequent. Thus ‘If P then Q’ becomes equivalent to ‘Not possible: P and not Q’. In modern terms, Philo’s conditional is material implication and Chrysippus’ is strict implication. Later Stoics tended to follow Chrysippus.
+
+In the sorites argument, some conditional premise ‘If i are few then i + 1 are few’ is supposed to be false. If the conditional is Chrysippan, it is false if and only if ‘i are few’ is compatible with ‘i + 1 are not few’. However, this conclusion looks banal; who ever thought them incompatible? Chrysippus might cheerfully allow that all the conditional premises, so taken, are false. To know the falsity of such a conditional is not to identify a cut-off point; it is merely to know that a certain point is not logically debarred from being the cut-off. Some modern philosophers would disagree, holding that sorites puzzles arise because vague concepts are subject to tolerance principles which do rule out the possibility of cut-off points. For them, ‘i are few’ does threaten to be incompatible with ‘i + 1 are not few’, making the Chrysippan conditional ‘If i are few then i + 1 are few’ true. But the Stoics did not take that view, and may not have regarded the argument with Chrysippan conditional premises as genuinely challenging.30
+
+The most challenging form of the sorites argument uses Philonian conditionals. Its premises claim the least, and are therefore the hardest to deny. Since the Philonian reading of the conditional was not the standard one, the premises had to be formulated explicitly as negated conjunctions. Just that was done in standard Stoic accounts of the argument:
+
+Not: 2 are few, but not 3 as well. Not: the latter but not 4 as well. And so on up to 10. But 2 are few. Therefore 10 are few as well.31
+
+The manoeuvre does nothing to solve the paradox. For example, it cannot remove any semantic or conceptual pressure against cut-off points. If the argument with Chrysippan conditionals were in any respect more paradoxical than the argument with negated conjunctions, it would be mere evasion to replace the former by the latter. The point is the reverse: to confront the paradox in its most telling form. As already noted, the argument with Chrysippan conditionals may not have been regarded as paradoxical at all. In any case, the Chrysippan conditionals entail the negated conjunctions, so anything that generates the argument with Chrysippan conditionals will also generate the argument with Philonian conditionals.
+
+Once the explicit conditional has been eliminated, modus ponens can no longer be used to drive the argument forward. But Stoic logic still obliges. Its third indemonstrable principle is ‘Not both the first and the second; but the first; therefore not the second’. Thus from ‘i are few’ and ‘Not: i are few and i + 1 are not few’ one can derive ‘Not: i + 1 are not few’, and Stoic principles allowed the double negation to be eliminated.32 Such arguments can be chained together by the third ground-rule, just as before. Thus any argument of this form is valid on Stoic terms:
+
+$P_1$
+Not: $P_1$ and not $P_2$
+Not: $P_2$ and not $P_3$
+.
+.
+.
+Not: $P_n{-}{}_{1}$ and not $P_n$
+--------
+$P_n$
+
+Indeed, Chrysippus sometimes supported his own doctrines by arguments with exactly the same form as the sorites^{.}33 Another Stoic example is:
+
+It is not the case that while fate is of this kind, destiny does not exist; nor that while destiny exists, apportionment does not; nor that while apportionment exists, retribution does not; nor that while retribution exists, law does not; nor that while law exists, there does not exist right reason enjoining what must be done and prohibiting what must not be done. But it is wrong actions that are prohibited, and right actions that are enjoined. Therefore it is not the case that while fate is of this kind wrong and right actions do not exist.34
+
+The sorites argument with negated conjunctions is valid, its first premise is true and its conclusion false. Thus some premise of the form ‘Not: i are few and i + 1 are not few’ is false. Hence i are few and i + 1 are not few. Thus i is a sharp cut-off point for fewness. Since one cannot identify such a point, one is in no position to deny any of the premises. One can only suspend judgement. The challenge ‘Which premise is false?’ is unfair, for one may be unable to find out even though one knows that at least one premise is false.
+
+What has been gained by presenting the sorites as an argument with premises and conclusion? Its logical structure was not the heart of the problem, for the argument is formally valid according to those whom it threatens, the Stoics. They used arguments with that structure themselves. As for the sceptics, they could suspend judgement on its logical status; it was enough for their purposes that their opponents took such arguments to be valid. The logical structure provides a convenient way of laying out the problem, but so far nothing more.
+
+It is tempting to argue for a dialectical structure behind the logical façade. First, the use of conditionals in the sorites argument is a distraction, for the sorites interrogation shows that one can set the puzzle going in a language whose only resources are ‘Yes’, ‘No’ and simple sentences (without logical connectives such as ‘if’, ‘and’ and ‘not’) in the interrogative mood. Second, the argument has been persuasive so far not because its premises commanded assent, but because they forbad dissent. The problem was not that one could say ‘Not: i are few and i + 1 are not few’, but that one could not say ‘i are few and i + 1 are not few’. One is not presumed to believe the premises of the sorites argument. The point of the questions is to force one to take up attitudes for or against the individual propositions, for any pattern of such attitudes leads one into trouble; hence the power of the interrogative form. Since the premises of the sorites argument seem compelling only when one is interrogated on their components, the question form takes primacy.
+
+The situation is transformed if the premises of the sorites argument can be given positive support. If they can, the argument form takes primacy: the question form leaves too much unsaid. Moreover, Chrysippan silence is no longer an adequate response, for it does not undermine the positive support for the premises. One strand in later developments was the attempt to provide that support.
+
+## 1.4 The Sorites in Later Antiquity
+
+Chrysippus’ strategy may have satisfied later Stoics. There is no sign of attempts to take the investigation further. The puzzles became a standard and perhaps stale item in the Stoic logical curriculum.35
+
+The sceptics were not satisfied with Chrysippus’ silence. It was most notably attacked half a century after his death by Carneades, who renewed the scepticism of the Academy. ‘For all I care you can snore, not just become quiescent. But what’s the point? In time there’ll be someone to wake you up and question you in the same fashion.’ Chrysippus was dialectically no better off than he would have been had he fallen asleep. ‘Why should your pursuer care whether he traps you silent or speaking?^{’}36 Carneades’ attitude was that of a chess-player with what he takes to be a winning strategy, whose opponent simply refuses to make a move (in a game without time-limits).
+
+Suspension of judgement was the sceptical attitude, and Carneades fastened on the extent to which Chrysippus’ strategy allowed it to spread. If Chrysippus suspended judgement in clear cases, on what basis did he object to the sceptic’s suspension of judgement? The question does not reduce the strategy to immediate incoherence, for some sort of reply is open to Chrysippus: do not suspend judgement when the case is discriminable from the unclear cases. Nevertheless, the Stoic is in a very delicate position. He stops at clear cases, avoiding the risk of giving answers that are not clearly correct only at the cost of failing to give answers that are clearly correct (in the Stoic sense). The Stoics’ epistemological caution enlarged the concessions to scepticism that their bivalent semantics forced them to make under sorites questioning. The concessions did not amount to surrender, for cases remained in which they could still claim knowledge, but these cases were marked off by a disputed no man’s land rather than a compelling principle. Perhaps that is just what knowledge is like.
+
+Carneades made particular use of sorites reasoning against the Stoic theory of the gods:
+
+If Zeus is a god, . . . , Posidon too, being his brother, will be a god. But if Posidon [the sea] is a god, the [river] Achelous too will be a god. And if the Achelous is, so is the Nile. If the Nile is, so are all rivers. If all rivers are, streams too would be gods. If streams were, torrents would be. But streams are not. Therefore Zeus is not a god either. But if there were gods, Zeus too would be a god. Therefore there are no gods.37
+
+Unlike standard sorites series, this one has varying relations between successive members. Posidon is the brother of Zeus, but a stream is a smaller version of a river. Nevertheless, it is clearly a little-by-little argument. The moral is not intended to be that there are no gods; rather, it is that Stoic rational theology fails, because its attempts to demarcate divinity by non-arbitrary general principles provide it with no way to resist any one step. Carneades supports each premise by separate considerations whose cogency the Stoic is supposed to grant. Mere silence would not be an adequate defence against this argument.38
+
+If the screw is to be tightened in the usual sorites arguments, their premises need support. Awareness of this is shown by Galen (CE c. 129–c. 199):
+
+If you do not say with respect to any of the numbers, as in the case of the 100 grains of wheat for example, that it now constitutes a heap, but afterwards when a grain is added to it, you say that a heap has now been formed, consequently this quantity of corn becomes a heap by the addition of the single grain of wheat, and if the grain is taken away the heap is eliminated. And I know of nothing worse and more absurd than that the being and non-being of a heap is determined by a grain of corn.39
+
+Chrysippus could not suspend judgement on the general claim that one grain does not make the difference between a heap and a non-heap. He must deny it, for it contradicts the existence even of an unknown cut-off point. For him, the addition of one grain can turn a non-heap into a heap.
+
+Galen’s interest in sorites puzzles was connected with a long-running dispute between Empirical and Dogmatic (one might say Rationalist) Doctors. The Empirical Doctors based their medical knowledge on inductive inferences, holding it to be reliable only if derived from sufficiently many observations; their opponents applied sorites reasoning against the notion ‘sufficiently many’. The Empirical Doctors replied that the argument proved too much; if it destroyed the notion ‘sufficiently many’, it would by parity of reasoning destroy much of the common sense on which all must rely. They gave the examples of a mountain, strong love, a row, a strong wind, a city, a wave, the open sea, a flock of sheep and a herd of cattle, the nation and the crowd, boyhood and adolescence, the seasons: none would exist if sorites arguments were sound. The Empirical Doctors could reasonably claim that sorites arguments were unsound, without being able to say exactly where the flaw lay. Not even Chrysippus could say which premise in negated conjunction form was false.40
+
+There are also signs of a rather different Empiricist point. The sorites questioner is compared to someone who asks a shoemaker what last will shoe everyone: the question has no answer, for different feet require different lasts. The idea may be that the required number of observations depends on the circumstances of the particular case. There is no general answer to the question ‘Are fifty observations enough?’.41 The point has been repeated by modern philosophers, and is correct as far as it goes, but that is not very far. For the questions can be asked about a particular case, and the Empiricist still cannot plausibly claim to know all the answers. Similarly, fifty grains may make a heap in one arrangement and not in another, but in any particular process of heaping up grains one by one there will come a point at which the right answer to the question ‘Is this a heap?’ is unknown.
+
+As already noted, the Empiricists knew that susceptibility to sorites puzzles is widespread. They had no interest in logic, and did not to attempt to demarcate the phenomenon in logical terms. The logicians themselves regarded sorites arguments as instantiating a logically valid form, the trouble lying in the premises. For both, sorites susceptibility depends on content, but how? The Empiricists attributed it to everything which has ‘a measure or multitude’. Burnyeat complains that this characterization is too narrow, since it excludes puzzles based on qualitative rather than quantitative variation, such as a series of shades of colour from red to orange.42 However, the Empirical Doctors’ own example of strong love suggests that they had a broader notion in mind, for the strength of love is intensive rather than extensive. Perhaps they meant that anything which comes in degrees can give rise to sorites puzzles.
+
+It was known that for every sorites series which proceeded by adding (as Eubulides’ original series seem to have done), a reverse sorites series proceeded by subtracting. Thus examples tend to come in pairs of opposites: rich and poor, famous and obscure, many and few, great and small, long and short, broad and narrow.43 The awareness of reversibility no doubt helped to check the tendency to think of a sorites puzzle as showing its conclusion to be strange but true, for the conclusion of one sorites argument contradicts the first premise of the reverse argument.
+
+Some modern writers have argued for a special connection between sorites puzzles and concepts applied on the basis of observation. The preceding examples show no sign of this. Some followers of Aristotle did make a connection, but not quite the modern one. In commentaries on Aristotle’s Nicomachean Ethics, both Aspasius (CE c. 100–150) and an anonymous writer took the puzzles to show that empirical concepts must be applied case by case. General rules are no substitute for observation and good judgement. Where the modern writers take observation to pose the puzzles, the Aristotelian commentators took it to solve them. But can even a man of good judgement always tell by looking whether something is a heap, as the grains pile up one by one?44
+
+The Dogmatic Doctors presumably hoped that their use of sorites arguments against rivals would carry conviction with potential clients, who might use the debate to choose their doctor. It would not have been profitable to use arguments that everyone knew were unsound. Nevertheless, sorites paradoxes were well known outside philosophy. Horace playfully used a sorites series for ‘old’ against the belief that old poets are best, and Persius one for ‘rich’ against the desire to become rich.45 The general reader was expected to catch allusions to heaps. The notoriety of slippery slope arguments no more prevented their frequent employment than it does today.
+
+One late development may be mentioned. The fourth-century rhetorician Marius Victorinus applied the term ‘sorites syllogism’ to the iterated syllogisms already discussed by Aristotle:46
+
+All $F_1$s are $F_2$s
+All $F_2$s are $F_3$s
+.
+.
+.
+All $F_n{-}1$ are $F_n$s
+--------
+All $F_1$s are $F_n$s
+
+This should be compared with the Stoic forms of argument discussed above. They are not quite the same. The Stoics iterated rules of inference involving complex premises built out of simpler propositions; in ‘If the first then the second; but the first; therefore the second’, ‘the first’ and ‘the second’ are variables for propositions. What Victorinus iterated was the Aristotelian syllogistic form with premises ‘All Fs are Gs’ and ‘All Gs are Hs’ and conclusion ‘All Fs are Hs’, where the variables stand in for sub-propositional terms such as ‘horse’ and ‘tree’. In modern terms, the Stoics were doing propositional logic, the Aristotelians predicate logic. The point of analogy is the chaining together of arguments, not the nature of the arguments so chained together.
+
+His combination of Stoic and Aristotelian terminology aside, Victorinus was not an innovator in logic. However, his writings had some influence in the Christian world of later antiquity, for he was a Christian convert and taught St Jerome. That made him an acceptable channel for the transmission of logical doctrine, and ‘sorites syllogism’ would later become standard terminology.47 But it did so simply as a name for compound syllogisms, conceived as unproblematic. The connection with the sorites as a puzzle had faded out.
+
+## 1.5 The Sorites after Antiquity
+
+A thousand years may be passed over in a few words. Sorites puzzles formed no part of the medieval logic curriculum, no doubt because they were absent from the works of Aristotle and his followers.48 Their revival had to wait for what was in other respects the corruption and decline of logic in the Renaissance.
+
+Lorenzo Valla (1407–57) was one of the chief instigators of a shift in the curriculum from the formal rigour of scholastic logic to the more literary pursuit of humanist rhetoric. An ordinary language philosopher of the Renaissance, he insisted that argument should be conducted in idiomatic Latin. The achievements of medieval logic were dismissed as solecisms of grammar, for they depended on the artificial regimentation of Latin as a semi-formal language. Valla taught the art of arguing, but as an essentially informal and practical skill. In this context he discussed the sorites, of which he knew from Cicero’s account. The aim was to inculcate the ability to distinguish between sound and sophistical arguments in particular cases.
+
+Valla uses the term ‘coacervatio’ for the heaping – the iteration – of syllogisms. As such, he treats it as a valid form of argument. He gives the example: ‘Whatever I wish, my mother wishes; whatever my mother wishes, Themistocles wishes; whatever Themistocles wishes, the Athenians wish; therefore whatever I wish, the Athenians wish’. This is a clearly valid sorites syllogism; if its premises are true, so is its conclusion. Valla’s main concern is to bring out the difference between this kind of reasoning and invalid kinds easily mistaken for it. One of his examples of the latter is: ‘Rome is the most beautiful of all cities; this district is the most beautiful of all districts in Rome; this house is the most beautiful of all houses in this district; therefore this house is the most beautiful of all houses in all cities’. This argument is clearly fallacious; the beauty of the whole is not determined only by the beauty of its most beautiful part. The individual links in the chain are non-syllogistic. The problem lies not in the heaping but in what is heaped. Valla suggests that such arguments may be invalid when they concern wealth, nobility, strength, beauty and knowledge, but will be valid when they concern warmth, cold, height and distance; perhaps the intended contrast is between many-dimensional and one-dimensional phenomena. Valla’s suggestion is at best a fallible rule of thumb; the warmest house may not be found in the warmest city. Such a rule is of little use to the theory of reasoning, but may be a useful contribution to its practice. Valla also considers standard sorites puzzles, mainly in question and answer form. He insists that each grain and each hair makes some relevant difference, however small, and ends by quoting Cicero’s remark that in such cases we can never know exactly where to draw the line. This is quite consistent with the claim that we can learn to know unsound slippery slope reasoning when we see it.49
+
+After Valla, the history of the sorites syllogism diverged from the history of the sorites sophism. For textbooks of logic, a sorites was a multiple syllogism in the orthodox sense of ‘syllogism’.50 A favourite example came from Romans 8: 29,30: ‘For whom he did foreknow, he also did predestinate to be conformed to the image of his Son. . . . Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified.’ This sense of the term ‘sorites’ survived as long as syllogistic logic, and is still in occasional use. The liveliness of this tradition may be judged from its major innovation. Rudolf Goclenius (1547–1628), Professor of Logic and Metaphysics at Marburg, listed the premises of sorites syllogisms in reverse order in his Isagoge in Organum Aristotelis. Sorites syllogisms were thenceforth known as Goclenian when so presented, and as Aristotelian when in the original order.51 The distinction between Aristotelian and Goclenian forms became the main item of information in many a textbook’s chapter on ‘Sorites’. The etymology of the word was sometimes explained as a heaping up of premises, without reference to the paradox.
+
+Sorites paradoxes appeared far less often in logic textbooks, and then usually under alternative terminology such as ‘sophisma polyzeteseos’, the fallacy of continual questioning. They were preserved by their appearance in sceptical works by Cicero and Sextus Empiricus which became well known in the seventeenth century.52 One philosopher of sceptical cast gave them attention – Pierre Gassendi, in his history of logic De Origine et Varietate Logicae – but little use was made of the sorites for sceptical purposes in the period. The sceptics of the Academy had exploited it against Stoic logic; only with the rise of modern logic at the end of the nineteenth century would it again be perceived as a serious threat.
+
+Leibniz mentions both the Heap and the Bald Man in New Essays on Human Understanding, his reply to Locke’s Essay Concerning Human Understanding. Locke had argued that the boundaries of sorts and species are fixed by the mind, not by the nature of the things classified, supporting his claim by appeal to the existence of monsters on the boundaries between species. Leibniz replies that such borderline cases could not show that all classification is purely stipulative. The line between man and beast, or between stabbing and slashing, is fixed by the nature of what it divides. However, he allows that in cases of insensible variation some stipulation is required, just as we must fix our units of measurement (nature does not require us to measure in inches), and associates such cases with sorites paradoxes. Bald men do not form a natural kind; nor do heaps.53 A borderline case is then a matter of opinion; different opinions may be equally good. Leibniz gives the outer limits of colours as an example. He also mentions Locke’s remark that the same horse will be regarded as large by a Welshman and as small by a Fleming, because they have different comparison classes in mind – although here one might wish to distinguish between vagueness and context dependence. Leibniz concludes that, although different species could be linked by sorites series of insensible transitions, in practice they usually are not, so that few arbitrary stipulations are required in the classification of what actually exists.54
+
+Unlike the Stoics, Leibniz holds that some of the questions in a sorites interrogation do not have right and wrong answers. The indeterminacy would remain even if we were perfectly acquainted with the inner natures of the creatures in question. Our inability to answer is not simply a product of ignorance. A similar moral would later be drawn by Alexander Bain in his Logic. Under the canons of definition he discussed borderline cases, connecting them with the Heap, and concluded ‘A certain margin must be allowed as indetermined, and as open to difference of opinion; and such a margin of ambiguity is not to be held as invalidating the radical contrast of qualities on either side’.55
+
+Sorites paradoxes play a quite different role in Hegel’s logic. He uses them to illustrate not indeterminacy but the way in which a quantitative difference can issue in a qualitative one. The temperature of water rises or falls, until it turns to steam or ice. The peasant adds ounce after ounce to his ass’s load, until its spine snaps. Grain after grain is added and a heap starts to exist. The assimilation of these cases is surprising, for it seems to require a sharp cut-off point between non-heap and heap, so that quality can be a discontinuous function of quantity. Hegel had something broader in mind, however, as his next examples show. A small increase or decrease in expenditure may not matter, but more will amount to prodigality or avarice. The constitution of a state need not be changed every time a citizen is born or dies, or an acre is added to or subtracted from its territory, but nevertheless the constitution appropriate to a small city state is inappropriate to a vast empire. Differences of degree, however slight, cannot be considered without implication for differences of kind. In unHegelian terms, sorites paradoxes refute generalizations of the form: if x and y differ by less than quantity q, and x has quality Q, then y has quality Q.56
+
+According to the principle of excluded middle, everything is either a heap or not a heap. Given Hegel’s low opinion of this principle, ‘the maxim of the definite understanding, which would fain avoid contradiction, but in doing so falls into it’, one may find it surprising that he did not use the sorites as a stick with which to beat it.57 Only when philosophers accorded more respect to the principle did the paradox emerge as one of the most significant obstacles to its application.
+
+# Notes
+
+[1] In this chapter I am greatly indebted to Barnes 1982 and Burnyeat 1982. Barnes gives priority to Abraham, who presented the Lord with a sorites series in his defence of Sodom (Genesis 18: 23–33). Lorenzo Valla mentions the same passage in his discussion of sorites arguments (Dialecticae disputationes III xii), commenting that Abraham dared not go below ten for the number of righteous Sodomites because the differences between the numbers were becoming too large. Masson-Oursel 1912 discusses related Indian and Chinese arguments, but they seem to be sorites only in theharmless sense discussed at the end of Section 1.4, not intended to be paradoxical.
+
+[2] Diogenes Laertius, Lives of the Philosophers 2.108; Kneale and Kneale 1962: 114; Sedley 1977: 102; Barnes 1982: 36–7.
+
+[3] Barnes 1982: 32–3; Burnyeat 1982: 317–18.
+
+[4] Aristotle, Physics 250a 19–22; Moline 1969: 393 n.3; Sedley 1977: 112 n.85, Barnes 1982: 36–7; Sillitti 1984; Mignucci 1993: 231–2.
+
+[5] Beth 1959: 21–3; Moline 1969; Barnes 1982: 37–41.
+
+[6] Sedley 1977: 78.
+
+[7] Sedley 1977: 92–3.
+
+[8] Long and Sedley 1987 I: 51.
+
+[9] Barnes 1982: 42–3.
+
+[10] Barnes 1982: 43–4; Frede 1983.
+
+[11] Kneale and Kneale 1962: 116.
+
+[12] Barnes 1982: 41–2.
+
+[13] Long and Sedley 1987 I: 104, translating Cicero, On Fate 21.
+
+[14] Barnes 1982: 30.
+
+[15] Cicero, Academica 2.94; Sedley 1977: 93; Barnes 1982: 52–3; Burnyeat 1982: 335–6. The evidence mentioned in the text suggests that Chrysippus did not blame the sorites on ambiguity as to which proposition was expressed (after all, some of the sorites-susceptible terms were drawn from Stoic theory); for Chrysippus on ambiguity, Long and Sedley 1987 I: 227–9. Mignucci 1993 hints that Chrysippus used a notion of degree of truth in handling the paradox, but does not reconcile such an interpretation with Chrysippus’ commitment to bivalence.
+
+[16] Frede 1983 for a general account of Stoic epistemology; Long and Sedley 1987 I: 236–66 for the sources.
+
+[17] Cicero, Academica 2.85.
+
+[18] Diogenes Laertius, Lives of the Philosophers, 7.177.
+
+[19] For the non-omniscience of the Stoic wise man, Kerferd 1978 and Burnyeat 1982: 335. The boundary between wisdom and unwisdom is another sharp Stoic cut-off point.
+
+[20] Cicero, Academica 2.93; Barnes 1982: 49–50. In taking silence to be accompanied by suspension of judgement, I follow Barnes against Burnyeat 1982: 334, who treats silence as a rhetorical device. Burnyeat’s treatment does not explain what pattern of beliefs about the sorites series the Stoic should form. Moreover, for a sorites series for ‘cognitive impression’, Chrysippan quiescence is contrasted with assent (Sextus Empiricus, Against the Professors 7.416); since assent in Stoic epistemology is not a merely verbal matter, nor is quiescence. What could the Stoic hope to gain, even rhetorically, by not asserting out loud a proposition to which he had mentally assented?
+
+[21] To argue from (2) to (3a), suppose that i are not clearly few. On Stoic principles, i are either clearly not few or not clearly not few. If i are clearly not few, they are clearly not clearly few, for since what is clear (i.e. the content of a cognitive impression) is true, if i were clearly few then i would be few, which they clearly are not. On the other hand, if i are not clearly not few, by supposition they are also not clearly few, so by (2) they are clearly neither clearly few nor clearly not few, so i are clearly not clearly few. Thus (2) implies (3a). (2) implies (3b) by a parallel argument. Conversely, (3a) and (3b) together imply (2), for if two propositions are clear, so is their conjunction. The notion of clarity validates the required assumptions that what is clear is true and that what follows from what is clear is itself clear.
+
+[22] For a similar objection to the S5 principle for knowledge see Hintikka 1962: 106; Lenzen 1978: 79; Humberstone 1988: 187.
+
+[23] Barnes 1982: 55; I assume that ‘Is $a_i$ F?’ in his n. 78 should read ‘Is ai clearly F?’.
+
+[24] Barnes’s argument also assumes the S4 principle for clarity: what is clear is clearly clear. An argument that sorites series provide counterexamples to the S4 principle for clarity can be extracted from Section 8.4. It is worth noting that the Stoics themselves had the basis for a counterexample to the S4 principle for scientific knowledge. One might suppose that the wise man knows that he is wise, but a later variant on Eubulides’ puzzle of the Elusive Man suggests otherwise. ‘You say that the wise man is ignorant of nothing, and that nothing eludes him. How, then, can he ever have become wise? For at the instant at which a man becomes wise there is a fact of which he is ignorant, and which eludes him, namely the fact that he is now wise.’ Knowledge of the fact is subsequent to the fact. The case greatly troubled the Stoics, and Chrysippus wrote a book about it. It was held that it is possible to be wise and yet not know that one is (Sedley 1977: 94). The example can obviously be generalized. If one learns that i are few, there is an instant at which one knows that i are few but does not yet know that one knows that i are few. If the reason for the delay is that it takes time for a fact to become clear, there is an instant at which i are clearly few but not clearly clearly few. If what takes time is only assent, the case is not itself a counterexample to the S4 principle for clarity, but it is still very similar to the counterexample in Section 8.4, with temporal boundaries in place of conceptual ones. It cannot be taken for granted that Chrysippus would have accepted the S4 principle for clarity.
+
+[25] Against the Professors 7.416; translation from Long and Sedley 1987 I: 223–4. Annas 1990 argues that the Stoics vacillated as to whether the cognitiveness of an impression must be available to its subject.
+
+[26] Barnes 1982: 52; Burnyeat 1982: 335.
+
+[27] Barnes 1982: 27.
+
+[28] Barnes 1982: 47–9.
+
+[29] Long and Sedley 1987 I: 218.
+
+[30] For the bearing of Stoic views of conditionals on sorites reasoning, Sedley 1977: 91, 1982: 255, 1984; Barnes 1982: 28–9; Burnyeat 1982: 321; Long and Sedley 1987 I: 229–30.
+
+[31] Long and Sedley 1987 I: 222, translating Diogenes Laertius 7.82.
+
+[32] Burnyeat 1982: 321.
+
+[33] Long and Sedley 1987 I: 306, translating Plutarch, On Common Conceptions, 1084 c–d.
+
+[34] Long and Sedley 1987 I: 391, translating Alexander, On Fate 207.5–21; contrast Mignucci 1993:245 (an interpretation on which the Stoics should have regarded such arguments as invalid).
+
+[35] Barnes 1982: 45.
+
+[36] Long and Sedley 1987 I: 225, translating Cicero, Academica 2.93–4.
+
+[37] Long and Sedley 1987 I: 463, translating Sextus Empiricus Against the Professors 9.182–4.
+
+[38] Barnes 1982: 46; Burnyeat 1982: 326–33.
+
+[39] Long and Sedley 1987 I: 223, printing On Medical Experience 16.1–17.3.
+
+[40] Barnes 1982: 24–7, 57–9.
+
+[41] Barnes 1982: 60–3. Chrysippus may have rejected such a treatment of the sorites (Long and Sedley 1987 I: 229). It would hardly have yielded congenial results when applied to the sorites for ‘cognitive impression’.
+
+[42] Burnyeat 1982: 319–20; contrast Mignucci 1993: 237–8.
+
+[43] Cicero, Academica 2.92.
+
+[44] Moline 1969; Barnes 1982: 60–1.
+
+[45] Horace, Epistles II i 36–49; Persius, Satires VI 75–80; Barnes 1982: 36.
+
+[46] Expositione in Rhetor. Cic. II 27; Prantl 1855–70 I: 663.
+
+[47] Kneale and Kneale 1962: 187–8.
+
+[48] Jardine 1977: 161. Relevant works such as Cicero’s Academica were scarcely known in the Middle Ages (Schmitt 1983: 227). Augustine’s reply to Ciceronian scepticism, Contra Academicos, was better known but mentions the sorites only in passing (II v 11).
+
+[49] Valla’s discussion of the sorites is in the work now generally known as Dialecticae disputationes (III xii, Valla 1982 I: 306–12). It has been argued that his intended moral was the sceptical one that the status of such arguments must remain problematic for us (Jardine 1977: 161–2, 1983: 272–5, 1988: 180–1). The text follows Monfasani 1990: 193–6 in taking Valla’s treatment to be non-sceptical.
+
+[50] The reversion was not immediate; there are non-syllogistic sorites in the textbooks of Caesarius (1467–1550) and Melanchthon (1497–1560) (Jardine 1982: 806–7).
+
+[51] These topics are discussed in Hamilton 1860 I: 366–85, 464–6.
+
+[52] Schmitt 1983.
+
+[53] Hart 1991–2 argues with surprising plausibility that heaps do form a natural kind; even so, large heaps do not form a natural kind.
+
+[54] Nouveaux Essais III v 9 and III vi 27; Wiggins 1980: 124.
+
+[55] Bain 1870: 160–1; compare 433.
+
+[56] Hegel 1892 I: 462–4, 1975: 159.
+
+[57] Hegel 1975: 172.

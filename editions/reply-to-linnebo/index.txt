@@ -1,0 +1,82 @@
+# Reply to Linnebo
+
+Timothy Williamson
+
+Canadian Journal of Philosophy 46 (4–5) (2016): 677–682.
+
+In ‘Plurals and modals’ (Linnebo 2016), Øystein Linnebo argues for the metaphysical principle of plural rigidity. The strong necessitist version of this principle simply says that whether a given thing is one of some given things is non-contingent. The weaker contingentist version restricts the principle to those circumstances in which there are that thing and those things. I too have argued for the rigidity of pluralities (Williamson 2003, 456–457; 2010, 698–700; 2013, 245–252). Linnebo strengthens the case and draws a detailed, helpful map of the derivability relations between various principles in the vicinity. In most respects our conceptions of the metaphysics of pluralities are similar. This reply addresses the few points of disagreement.
+
+I follow Linnebo in the convenient standard practice of using the singular noun ‘plurality’, although in a more rigorous formulation of the arguments it would be replaced by a plural term. Similarly, I will sometimes use the noun ‘property’ in places where it would be replaced by a monadic predicate in a more rigorous formulation.
+
+# 1. From Plural Extensionality to Plural Rigidity
+
+Linnebo and I agree that the natural strategy for deriving the rigidity of pluralities is to start with their extensionality and then find attractive auxiliary assumptions to bridge the gap from extensionality to rigidity. The extensionality of pluralities means that coextensiveness is their analogue of identity: if every one of these is one of those and every one of those is one of these, then these just are those. In particular, therefore, coextensive pluralities are necessarily coextensive. By itself, however, that does not exclude a scenario in which pluralities shift their membership across possibilities. For instance, consider a toy model with just two possible worlds, $w_1$ and $w_2$, two objects, $o_1$ and $o_2$ (both of which are in both worlds), and three pluralities: $pp_1$, which comprise both objects in both worlds, $pp_2$, which comprise just $o_1$ in $w_1$ and just $o_2$ in $w_2$, and $pp_3$, which comprise just $o_2$ in $w_1$ and just $o_1$ in $w_2$. In both worlds in that model, extensionality holds but rigidity fails. We can also get that result in models where pluralities vary in the (non-zero) number of their members. Different implementations of the overall argumentative strategy exclude such scenarios in different ways.
+
+Linnebo does not discuss the detailed treatment of both necessitist and contingentist plural modal logics in Modal Logic as Metaphysics (241–254). Instead, in Section 5.3 of his paper, he assesses a brief argument for plural rigidity in an earlier paper of mine (Williamson 2010, 700). The latter argument is stated in a necessitist setting. The idea is that for any plurality, there is a coextensive rigid plurality. For instance, let these be the committee members, and suppose that just Tom, Dick and Harry are on the committee. It is not contingent whether something is one of Tom, Dick and Harry. But these just are Tom, Dick and Harry. Therefore, by extensionality, it is not contingent whether something is one of these. Linnebo concedes that this argument for plural rigidity is as plausible as his in the necessitist setting, but objects that it does not generalize properly to the contingentist setting. On such generalizations of the argument to a contingentist setting, in the 2010 paper I say only ‘Contingentists will presumably want to qualify these principles to take account of contingency in what there is, but that is not our immediate concern’.
+
+Here is Linnebo’s objection. Both his argument and mine start from extensionality, in the form of an indiscernibility principle:
+
+(INDISC)
+$xx \equiv yy \to (\varphi(xx) \leftrightarrow \varphi(yy))$
+
+Here, $xx \equiv yy$ abbreviates $\forall u\,(u \prec xx \leftrightarrow u \prec yy)$. Informally, if these are all and only those, then these have a property just in case those do, though Linnebo interprets such a displayed open formula as short for the necessitation of its universal closure.
+
+From (INDISC) we derive the necessity of coextensiveness, the plural analogue of the necessity of identity:
+
+(COV)
+$xx \equiv yy \to □(xx \equiv yy)$
+
+For the contingentist, the principle that every plurality is coextensive with a rigid plurality takes the restricted form of (7) (in Linnebo’s numbering):
+
+(7)
+$\exists y\,y\,(xx \equiv yy \wedge \forall x\,(x \prec yy \to □(Eyy \to x \prec yy)))$
+
+Informally, some things $yy$ are all and only these $xx$, and if something is one of those $yy$, then necessarily if there are those $yy$ then it is one of those $yy$. Two points are worth noting about (7), which is Linnebo’s formulation, not mine. First, he has a principle (DEP) that makes the conjunct $Ex$ redundant in the more cautious variant of (7) with $Ex \mathbin{\&} Eyy$ in place of $Eyy$. Second, the rigidity of $yy$ also requires that if some $x$ is not one of $yy$ then necessarily $x$ is not one of $yy$, but we can ignore that complication because the same considerations apply to the negative and positive halves of rigidity. In any case, Linnebo makes no objection to (7). The restricted positive rigidity claim to be derived is that if something is one of these $xx$, then necessarily if there are these $xx$ then it is one of these $xx$:
+
+(RGD^{+})
+$a \prec xx \to □(Exx \to a \prec xx)$
+
+As Linnebo notes, what (COV) and (7) enable us to derive from $a \prec xx$ is $□(Eyy \to a \prec yy)$, which has $yy$ where the consequent of the target claim (RGD^{+}) has $xx$. No such problem affects the necessitist version of the argument, since it needs no such plural being condition as $Eyy$. We could fill the gap in the argument by adding the extra conjunct $□(Exx \to Eyy)$ to (7), but Linnebo objects that this further assumption would be ‘very strong and problematic from the point of view of anyone not antecedently committed to the rigidity of pluralities’.
+
+Fortunately, no extra assumption is required. For from (INDISC) we can derive (COVE) (since $□(Exx \leftrightarrow Exx)$ is trivial):
+
+(COVE)
+$xx \equiv yy \to □(Exx \leftrightarrow Eyy)$
+
+(COVE) fills the gap in the argument to (RGD^{+}). Deriving (COVE) from (INDISC) involves substituting one plural variable for another in a modal context, but only in the same way as is done in deriving (COV) from (INDISC). Linnebo’s defence of the latter derivation and its use in the argument for rigidity applies equally to the derivation of (COVE) from (INDISC) and its use in an argument for rigidity. If his objection to my argument for rigidity worked, then so would a corresponding objection to his argument for rigidity. In effect, the objection would be that (INDISC) itself is ‘very strong and problematic from the point of view of anyone not antecedently committed to the rigidity of pluralities’. But (COVE) is no more problematic from such a point of view than (COV), on which Linnebo was happy to rely in his argument for rigidity.
+
+According to Linnebo, ‘a theorist who doubts the rigidity of pluralities […] regards some pluralities as much like groups’. He points out that such a theorist is likely to reject the assumption $□(Exx \to Eyy)$, noting ‘xx might be the Hiring Committee, whose members happen to be a, b, and c. Then the partial rigidification yy of xx is ontologically dependent on a, b, and c, whereas xx need not be subject to this ontological dependence’. But anyone who makes that objection to (COVE) will have a corresponding objection to (COV) too. If there could have been the Hiring Committee even though there was no plurality a, b and c, then the Hiring Committee could have failed to be coextensive with the plurality a, b and c. Any theorist antecedently committed to regarding some pluralities as individuated by properties such as membership of a given committee would be mad to accept (INDISC) in addition.
+
+No arguments such as Linnebo’s and mine from plural extensionality to plural rigidity will silence those firmly enough committed to an intensional conception of pluralities. Any mistake can be defended indefinitely by those ruthless enough to say whatever it takes. The value of such arguments is instead for those still open to the attractive idea that coextensiveness is the plural analogue of identity, in showing them how naturally that analogy leads to plural rigidity.
+
+# 2. Plural Comprehension
+
+The concluding part of Linnebo’s paper, Section 7, takes a different turn, sketching a rationale for restricting the standard comprehension principle for pluralities. On his view, for some well-defined conditions C, although some things meet C, no things are the things that meet C. By contrast, I endorse a strong non-modal comprehension principle for pluralities: for any well-defined condition C, if some things meet C, then some things are the things that meet C ($\mathrm{Comp}\,\mathord{\prec}$, Williamson 2013, 248). Linnebo has developed his view of pluralities in much more detail elsewhere. Here, I will respond only to what he says in the present paper.
+
+On one important point, I emphatically agree with Linnebo: plural comprehension principles are not trivial, logically, metaphysically or epistemologically. Of course, in the standard Quinean sense, ontological commitments are expressed by a first-order singular quantifier. Since the plural quantifiers are irreducible to singular quantifiers, plural comprehension principles do not incur specifically ontological commitments in that sense. However, a theory’s plurally quantified claims are just as metaphysically serious as its singularly quantified ones, just as much ‘about reality’, just as little to be brushed aside as ‘mere ideology’. In more methodological terms, they are just as much in the scales when the theory is abductively compared with other theories (Williamson 2013, 260–261). Thus, Linnebo’s rejection of strong plural comprehension principles cannot be dismissed on general methodological grounds.
+
+Linnebo’s objection to a standard plural comprehension principle is based on Russell’s paradox. Given such a principle, there are some pure sets xx such that, for every pure set x, x is one of xx just in case x is not an element of itself. So ‘there is no logical or mathematical obstacle’ to defining a pure set y whose elements are all and only xx:
+
+We can make good mathematical sense of the envisaged pure set; for we know exactly what its members are. Given this, it would run counter to the spirit of modern mathematics to deny that this is a definition in good mathematical standing.
+
+But:
+
+[P]ure sets exist of metaphysical necessity, if at all. The pure set y was not created through its definition but existed all along. This means that y is in the range of the quantifier ‘for every pure set x’ that figures in the description of xx[.]
+
+Thus, we cannot escape the inconsistency that y is an element of itself just in case y is not an element of itself. Linnebo blames the contradiction on the standard plural comprehension principle assumed at the start of the argument, and rejects it. On his view, there are not some pure sets xx that include all nonself-membered pure sets and nothing else.
+
+It is hard to see how Linnebo’s argumentative strategy could work in plural logic without also working in second-order logic with quantification into predicate position. Thus, if strong plural comprehension principles are to be rejected, so are the corresponding second-order comprehension principles. For plurals play no privileged role in ‘modern mathematics’. It is no part of modern mathematical practice that in order to get a set from a property, one must first get a plurality from the property, and only then get a set from the plurality. In the sense in which we know what the Russell set’s putative members are, we know it just as well by knowing that x is a member just in case x is a pure set and not a member of itself as we do, less directly, by knowing that x is a member just in case x is one of xx and something is one of xx just in case it is a pure set and not a member of itself. Indeed, the plurals look suspiciously like the excess layer of middle management that gets cut out in the interest of efficiency. Of course, Russell’s paradox still needs to be blocked, but few working mathematicians worry about how. They simply work in a more or less standard mathematical style that does not in practice court paradox. None of this makes it illegitimate for Linnebo to postulate a deep metaphysical divide between plurals and sets on one side and properties on the other. It is just that the spirit of modern mathematics gives no positive support to his proposal.
+
+Someone might accept the analogy between pluralities and properties, and reject strong comprehension principles for both. However, that is not Linnebo’s line. He already hints as much in remarks such as: ‘There are certain conditions [such as “x is not a member of itself”] which — despite having a sharp intension — lack an extension with a rigid membership profile’. For the claim that ‘x is not a member of itself’ has a sharp intension seems to assume a strong comprehension principle for sharp intensions, which are presumably a bit like properties. Moreover, as I emphasize in Modal Logic as Metaphysics, without strong comprehension principles, we tend to lose the mathematical advantages of going beyond first-order logic. Thus, if we give them up for plural logic, we need them all the more for second-order logic, non-plurally interpreted.
+
+On the methodological approach of my book, these large issues about the overall shape of quantified modal logic should be settled abductively. Linnebo’s restriction of plural comprehension has the compensating advantage that it enables him to maintain an unrestricted principle of set formation from pluralities. However, we speak plurally in many contexts where sets are not at issue. There, Linnebo’s restriction of plural comprehension will trip up our plural reasoning, with no compensating advantage. My hunch is that the balance of abductive considerations will favour unrestricted plural comprehension.
+
+# References
+
+Linnebo, Øystein. 2016. “Plurals and Modals.” Canadian Journal of Philosophy 46 (4–5): 655–677.
+
+Williamson, Timothy. 2003. “Everything.” Philosophical Perspectives 17: 415–465.
+
+Williamson, Timothy. 2010. “Necessitism, Contingentism, and Plural Quantification.” Mind 119: 657–748.
+
+Williamson, Timothy. 2013. Modal Logic as Metaphysics. Oxford: Oxford University Press.

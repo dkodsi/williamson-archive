@@ -1,0 +1,86 @@
+# Wright and Casalegno on meaning and assertibility
+
+Timothy Williamson
+
+Dialectica 66 (2) (2012): 267–271.
+
+Abstract
+
+In Crispin Wright’s ‘Meaning and Assertibility’, the main point of disagreement with Paolo Casalegno’s critique of verificationist semantics in ‘The Problem of Non-conclusiveness’ concerns Wright’s diagnosis of one of Casalegno’s arguments as depending on an over-estimation of the proper explanatory task of a semantic theory. The present note argues that there is no such dependence.
+
+# 1. Introduction
+
+Much of Crispin Wright’s paper ‘Meaning and Assertibility’ (2012) consists of general reflections on the failure of the verificationist programme for systematically explaining linguistic meaning in terms of assertibility conditions. They are implicitly or explicitly sympathetic to the tenor of Paolo Casalegno’s critique of verificationist semantics in ‘The Problem of Non-conclusiveness’ (2002), especially the emphasis on the holistic preconditions for verification and their resistance to codification. Where Wright agrees with Casalegno, I agree with both of them. However, on one point Wright takes serious issue with Casalegno’s argument, in particular with his objection to the envisaged verificationist response to the difficulties. The purpose of this note is to defend Casalegno against Wright on that issue.
+
+# 2. Wright’s Challenge
+
+Standardly, the assertibility conditions verificationists specify for sample everyday sentences turn out to be defeasible, because assertibility is holistic; thus we have the problem of non-conclusiveness. In some situations, the so-called assertibility condition is met but the sentence is unassertible. In Casalegno’s terminology, such situations are inappropriate. Thus his verificationists concede that speakers’ use of the language is guided by the general rule that a sentence is assertible when one of its so-called assertibility conditions is met only given the further background condition that the situation is appropriate, but if ‘appropriate’ just means ‘such that if one of the so-called assertibility conditions is met then the sentence is assertible’, that proviso makes such a statement of the overall assertibility condition for the sentence too uninformative to be useful. So Casalegno envisages verificationists as independently characterizing appropriateness to this effect:1
+
+(5)
+a sentence “S” is assertible if one of its assertibility conditions C is satisfied and, in addition, (i) there is no plausible explanation of why it is the case that C compatible with “not-S”; (ii) there is no evidence in favour of the assertibility of “not-S” at least as strong as the evidence in favour of the assertibility of “S” provided by C.
+
+Wright (2012) explains the rationale for the bipartite characterization of appropriateness by clauses (i) and (ii). Indeed, Casalegno finds ‘something like’ (5) in Wright’s earlier work.2
+
+The next step of Casalegno’s argument is to show that a verificationist who relies on (5) must assume that the assertibility conditions of “S” and those of “not-S” are learnt separately (2002, 83):
+
+For suppose, on the contrary, that the meaning of “not-S” is to be uniformly derived from the meaning of “S”; then (5) would give rise to a vicious circle: in order to know when she is entitled to assert “S”, a speaker should apply (5); but she cannot apply (5) unless she already knows when she is entitled to assert “not-S”; if, now, the meaning of “not-S” has to be derived from that of “S”, the circularity is all too apparent.
+
+Casalegno treats this as a reductio ad absurdum of (5):
+
+But the idea that negation has no single meaning and that the meaning of “not-S” has to be learnt anew for each sentence “S” seems to me obviously absurd.
+
+In response, Wright (2012, section 6) argues that Casalegno has not shown (5) to entail any absurdity. Wright’s Casalegno takes (5) to require “not-S” to precede “S” in the order of understanding, but, Wright objects, it is a familiar insight that the task of a semantic theory is to characterize what someone who already understands the language knows, not to enable someone to acquire that understanding in the first place. For example, the semantic clauses for ‘red’ and ‘every’ can legitimately use as well as mention those very words. Thus, on Wright’s analysis, (5) lacks the consequences for the order of understanding on which Casalegno relies. What should we make of Wright’s objection?
+
+# 3. Response on Behalf of Casalegno
+
+For clarity, we may slightly rephrase (5). Since what it calls “assertibility conditions” are insufficient for overall assertibility, the term ‘criteria’ is less likely to cause confusion. Furthermore, taken at face value, (5) merely offers a sufficient condition for “S” to be assertible, not a necessary one, and so manifestly underdetermines assertibility. For definiteness we therefore replace ‘if’ in (5) with a biconditional (this is inessential to the argument below). Thus (5) becomes this rule:
+
+(5a)
+“S” is assertible if and only if one of its criteria C is satisfied and (i) there is no plausible explanation of C compatible with “not-S”; (ii) there is no evidence in favour of the assertibility of “not-S” at least as strong as the evidence in favour of the assertibility of “S” provided by C.
+
+The intended verificationist proposal is presumably that understanding a declarative sentence “S” is tantamount to knowing both what the criteria for “S” are and the general rule (5a).
+
+That proposal is obviously wrong. Suppose that Mercedes, a native speaker of Spanish, is learning English from scratch. Her teacher explains to her in Spanish what the English sentence ‘It is raining’ means. Mercedes has not yet been taught the word ‘not’ or any other device for negation in English. Thus she understands ‘It is raining’ but not ‘It is not raining’. She does not know the rule (5a), since it mentions English words of which she knows nothing. Thus knowing (5a) is not in general necessary for understanding “S”. Conversely, Mercedes’ perverse English instructor might explicitly teach her the general rule (5a) in Spanish concerning English sentences “S” and “not-S” still without teaching her what ‘not’ means. Since she does not understand “not-S”, she has no idea what it takes specifically for an explanation to be compatible with it, or for evidence to favour its assertibility. Consequently, she cannot apply (5a) in any useful way. Even though she knows (5a), teaching her a complete list of criteria for “S” need not enable her to understand or use “S”.
+
+Those points all depend on the fact that the word ‘not’ is mentioned but not used in (5a). We might therefore consider modifying (5a) by using negation instead of mentioning it. Mercedes is taught that every declarative English sentence “S” has a negation N(“S”). For our purposes, it does not matter whether she knows what the syntactic realization of N(“S”) is, or what the word ‘not’ means. She already knows what negation does semantically from her knowledge of Spanish. Thus we have the general rule (5b) in place of (5a):
+
+(5b)
+“S” is assertible if and only if one of its criteria C is satisfied and (i) there is no plausible explanation of C compatible with N(“S”); (ii) there is no evidence in favour of the assertibility of N(“S”) at least as strong as the evidence in favour of the assertibility of “S” provided by C.
+
+Of course, the general semantic operation of negation on which (5b) relies is just what Casalegno says the verificationist cannot assume. In effect, we are testing Casalegno’s argument for that claim.
+
+The rule (5b) is circular, as Casalegno predicts. It characterizes the assertibility of “S” explicitly in terms of the assertibility of “S”, at the end of clause (ii). Moreover, if assertibility conditions are supposed to be compositional, then the assertibility of N(“S”) referred to earlier in the same clause amounts to some function of the assertibility of “S”, which yields a second circularity, closely related to the one on which Casalegno bases his charge of vicious circularity. The reference to compatibility with N(“S”) in clause (i) makes a third circularity, for in the setting of a theory of meanings as assertibility conditions it too involves characterizing the meaning of “S” indirectly in terms of itself, since the operation N was explained in terms of its semantic effect. The circularity here is not the familiar harmless pseudo-circularity of a homophonic semantic theory to which Wright appeals, where an object-language expression is mentioned on the left-hand side and used on the right-hand side: to know that the sentence ‘Snow is white’ is true if and only if snow is white is to have some useful semantic information about that sentence, information not easily acquired without understanding ‘Snow is white’. Rather, it is the vicious circularity of a would-be semantic theory where the same object-language expression is mentioned on both sides: to know that ‘Snow is white’ is true if and only if ‘Snow is white’ is true is not to have any useful semantic information about that sentence, but merely tautologous information easily acquired by hearing ‘Snow is white’ without understanding it. Knowledge of the criteria for “S” and of the general rule (5b) is far from sufficient for understanding “S”. If (5) is interpreted as (5b), the main limitation of Casalegno’s treatment is just that he understates the objections to the view he is opposing. Some of the difficulties for it may be even more obvious than the one he describes as “the most obvious difficulty” (2002, 83).
+
+In Wright’s discussion, it is not always clear where the line between use and mention is intended to fall. One might therefore speculate that he has in mind an interpretation of (5) on which “S” itself is used rather than mentioned on the right-hand side. That would give a schema along these lines:
+
+(5c)
+“S” is assertible if and only if one of its criteria C is satisfied and (i) there is no plausible explanation of C compatible with its not being the case that S; (ii) there is no evidence in favour of asserting that not-S at least as strong as the evidence in favour of asserting that S provided by C.
+
+Although Casalegno does not intend (5c) by (5), since “S” is clearly mentioned not used in (5), we can assess (5c) as an option for verificationists in its own right.
+
+To assess (5c), first consider a simpler schema:
+
+(*)
+“S” is assertible if and only if it is assertible that S.
+
+Instances of (*) are not trivial. For example, to know that the sentence ‘Snow is white’ is assertible if and only if it is assertible that snow is white is to have some useful semantic information about that sentence, information not easily acquired without understanding ‘Snow is white’. Nevertheless, assertibility conditional theorists are no more likely to be satisfied with (*) as a semantic theory than truth conditional theorists are to be satisfied with the undifferentiated schema ‘ “S” is true if and only if S’.3 In both cases, a salient objection is that such a theory fails to capture the compositional semantics of the language, the ways in which the meanings of complex expressions are determined by the meanings of their constituents. For example, (*) shows nothing about how the assertibility condition for “not-S” depends on the assertibility condition for “S”. A similar objection may be made to (5c), although verificationists might in principle reply that (5c) is a global rule, while the compositional aspect of meaning is to be handled entirely by another part of the theory, devoted to the supposed criterial dimension of meaning (in practice, they have no idea how, as Wright emphasizes).
+
+Those who employ the category of criteria in their semantic theory, as in (5c), are likely to have a more specific objection to (*), even when “S” is an atomic sentence. For they will view our understanding even of atomic sentences as significantly structured into cognitively tractable components. For each atomic sentence (or predicate) we must learn a manageable list of identifiable criteria, but a global rule such as (5c) is needed to mediate between those criteria and our use of the sentence. On this view, a rule such as (*) that fails to analyse the assertibility condition of a sentence in more basic terms has not gone deep enough. For if (*) were adequate, why bother with criteria? This objection extends to (5c). For it too works with an unanalysed assertibility condition on the right-hand side, for example in the phrase ‘evidence in favour of asserting that not-S’. Thus (5c) is no solution to the problems for (5).
+
+The preceding remarks only scratch the surface of the difficulties for assertibility conditional semantics. Nevertheless, they may do enough to show that, on the main point where Wright takes issue with his critique, we need not interpret Casalegno as trading on confusion about the proper explanatory task of a semantic theory. Rather, he was opening a can of worms, and letting just enough of them for his purposes crawl out.
+
+# Notes
+
+[1] See Casalegno (2002, 82) (his numbering).
+
+[2] Casalegno (2002, 86), refers to Wright (1993, 363), where Wright experiments with what he calls a “Criterial Schema” as a condition for the statements {$\mathrm{D}_1, \ldots, \mathrm{D}_n$} to “[collectively] describe conditions knowledge of whose realization is capable of justifying assertion of S”: “If an agent has verified each of {$\mathrm{D}_1, \ldots, \mathrm{D}_n$}, and possesses no information telling against S and no information which would explain, without the need to suppose S, why {$\mathrm{D}_1, \ldots, \mathrm{D}_n$} are true, then it is reasonable for him to believe S.”
+
+[3] Of course, homophonic semantic theories, whether assertibility conditional or truth conditional, have extra problems with indexical sentences. Just as we should reject the principle that ‘I am hungry’ in your mouth is true if and only if I am hungry, so we should reject the principle that ‘I am hungry’ is assertible by you if and only if it is assertible that I am hungry.
+
+# References
+
+Casalegno, P. 2002, ‘The Problem of Non-conclusiveness’, Topoi, 21, pp. 75–86.
+
+Wright, C. 1993, Realism, Meaning and Truth, second edition, Oxford: Blackwell.
+
+Wright, C. 2012, ‘Meaning and Assertibility: Some Reflections on Paolo Casalegno’s “The Problem of Non-conclusiveness”’, dialectica 66, pp. 249–266.

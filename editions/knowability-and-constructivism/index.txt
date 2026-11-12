@@ -1,0 +1,208 @@
+# Knowability and constructivism
+
+Timothy Williamson
+
+The Philosophical Quarterly 38 (153) (1988): 422–432.
+
+If anti-realism is defined as the principle that all truths are knowable, then anti-realists have a reason to revise logic. For an argument first published by Fitch seems to reduce anti-realism to absurdity within classical but not constructivist logic.1 One might try to sever this link between anti-realism and revisionism in logic by giving either a modified version of anti-realism not vulnerable to Fitch’s argument within classical logic or a modified version of Fitch’s argument to which anti-realism is vulnerable within constructivist logic. A recent article by Dorothy Edgington in effect takes the first path; I have objected elsewhere.2 In this paper I discuss an ingenious attempt by Crispin Wright to take the second path.3
+
+The anti-realist principle can be formalized as:
+
+(1)
+$\forall \mathrm{P}\, (\mathrm{P} \rightarrow \lozenge \mathrm{K}\mathrm{P})$4
+
+‘K’ will be read as ‘it is known that’, but the main points of the argument go through even if it is read as a non-factive such as ‘there is good evidence that’; this will be of some importance if the anti-realist treats the semantics of natural language in terms of a notion of warranted assertibility, which is likely to be a non-factive. Although anti-realists deny that a truth may be unknowable, it would be absurd for them to deny that a truth may be unknown – at least by human subjects, and no others are at issue. We do not bother to find out everything that we could find out. It should be uncontroversial that Gray wrote the literal truth in the stanza:
+
+Full many a gem of purest ray serene,
+The dark unfathom’d caves of ocean bear:
+Full many a flower is born to blush unseen,
+And waste its sweetness on the desert air.
+
+Thus the anti-realist should apparently accept:
+
+(2)
+$\exists \mathrm{P}\, (\mathrm{P} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{P})$
+
+That is, for some S:
+
+(3)
+$\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S}$
+
+Fitch’s argument feeds (3) into (1), giving:
+
+(4)
+$\lozenge \mathrm{K}(\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S})$
+
+But it is impossible, in both classical and intuitionist logic, to know that it is an unknown truth that S, for then it would be an unknown truth that S (since ‘it is known that’ is a factive), yet it would be known that S (given that knowing a conjunction entails knowing its conjuncts). Moreover, as Edgington and Wright point out, (4) is already absurd for non-factive interpretations of ‘K’; there cannot be good evidence that S is a truth for which there is not good evidence.5 Given (1), (3) is therefore to be denied, in which case (2) must also be denied. The anti-realist who accepts classical logic is therefore forced absurdly to deny the truism that not all truths are known:
+
+(2′)
+$\mathord{-}\forall \mathrm{P}\, (\mathrm{P} \rightarrow \mathrm{K}\mathrm{P})$
+
+For (2’) classically entails (2). However, (2’) does not entail (2) intuitionistically; the anti-realist who accepts intuitionist logic can assert the truism (2’) that not all truths are known while denying (2), that there is an unknown truth.
+
+Wright claims, however, that the anti-realist who accepts intuitionist logic is open to a more complex difficulty of the same kind as Fitch’s. Intuitionistically, to know a disjunction is to be in a position to know one or other disjunct, giving:
+
+(5)
+$\forall \mathrm{P}\, \forall \mathrm{Q}\,(\mathrm{K}(\mathrm{P} \vee \mathrm{Q}) \rightarrow (\lozenge \mathrm{K}\mathrm{P} \vee \lozenge \mathrm{K}\mathrm{Q}))$
+
+Intuitionists nevertheless allow that one can know a disjunction without having in fact got to know either disjunct. In particular, if one has a decision procedure for $\mathrm{S}$ but has not applied it, $\mathrm{S} \vee \mathord{-} \mathrm{S}$, $\mathord{-} \mathrm{K}\mathrm{S}$ and $\mathord{-} \mathrm{K}\mathord{-} \mathrm{S}$ will all be true. Since one can know oneself to be in such a situation, the following can be true:
+
+(6)
+$\mathrm{K}((\mathrm{S} \vee \mathord{-} \mathrm{S}) \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathord{-} \mathrm{S})$
+
+Wright assumes K to be closed under intuitionist logical consequence. Thus, by distributivity:
+
+(7)
+$\mathrm{K}((\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathord{-} \mathrm{S}) \vee (\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathord{-} \mathrm{S}))$
+
+Simplifying:
+
+(8)
+$\mathrm{K}((\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S}) \vee (\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathord{-} \mathrm{S}))$
+
+By (5):
+
+(9)
+$\lozenge \mathrm{K}(\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S}) \vee \lozenge \mathrm{K}(\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathord{-} \mathrm{S})$
+
+(9) is absurd, since both disjuncts are substitution instances of the absurd (4). Given (5), (6) is therefore to be denied, which is almost as bad as a denial of (2’). Just as it seems to have been proved that if anti-realists accept classical logic then they cannot do justice to the truism that a truth may be unknown, so, Wright claims, it seems to have been proved that if anti-realists accept intuitionist logic then they cannot do justice to the truism that a disjunction may be known even when its disjuncts are not (and this situation is known to obtain).
+
+It would be pointless here to object to Wright’s assumption that K is closed under intuitionist logical consequence, for even if it is not, the people who did not bother to apply their decision procedure for S (call them the idlers) may consistently be assumed to have reflected on their situation in parallel with Wright’s argument and thus to have come (in an intuitionistically acceptable way) to the knowledge expressed in (8). The possibility of (8) is independently plausible.
+
+The real problem for Wright’s argument concerns the interpretation of ‘$\mathrm{K}$’. Is ‘$\mathrm{K}\mathrm{P}$’ to mean that there is a time at which it is known that $\mathrm{P}$, or does it contain a tacit time reference and mean that it is known at $t$ that $\mathrm{P}$?
+
+On the first reading, (5) and (6) become:
+
+(5.1)
+$\forall \mathrm{P}\, \forall \mathrm{Q}\,(\exists t\, \mathrm{K}_t(\mathrm{P} \vee \mathrm{Q}) \rightarrow (\lozenge\exists t\, \mathrm{K}_t\mathrm{P} \vee \lozenge\exists t\, \mathrm{K}_t\mathrm{Q}))$
+(6.1)
+$\exists t'\, \mathrm{K}_{t'}((\mathrm{S} \vee \mathord{-} \mathrm{S}) \mathbin{\&} \mathord{-}\exists t\, \mathrm{K}_t\mathrm{S} \mathbin{\&} \mathord{-}\exists t\, \mathrm{K}_t\mathord{-} \mathrm{S})$
+
+(Where ‘$\mathrm{K}_t$’ abbreviates ‘it is known at time $t$ that’). (5.1) seems to express an intuitionistically acceptable sense of (5). (6.1), however, goes far beyond what may be assumed about the idlers. At a time at which they have not applied their decision procedure for $\mathrm{S}$, they may know that they do not yet know that $\mathrm{S}$ and that they do not yet know that it is not the case that $\mathrm{S}$; but intuitionistically it is only because they are in a position to come to know one or other of these in the future that they currently know their disjunction. Yet (6.1) requires them to know that they will never know that $\mathrm{S}$ and that they will never know that it is not the case that $\mathrm{S}$.6 Thus the argument fails on the first reading because (6) becomes intuitionistically deniable.
+
+The second reading brings out the sense in which there are intuitionistically acceptable instances of (6). On it, (5) and (6) become:
+
+(5.2)
+$\forall t\, \forall \mathrm{P}\, \forall \mathrm{Q}\,(\mathrm{K}_t(\mathrm{P} \vee \mathrm{Q}) \rightarrow (\lozenge \mathrm{K}_t\mathrm{P} \vee \lozenge \mathrm{K}_t\mathrm{Q}))$
+(6.2)
+$\exists t\, \mathrm{K}_t((\mathrm{S} \vee \mathord{-} \mathrm{S}) \mathbin{\&} \mathord{-} \mathrm{K}_t\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathord{-} \mathrm{S})$7
+
+(6.2) exactly expresses the situation of the idlers who know that they have not applied their decision procedure for $\mathrm{S}$. The problem is now with (5.2). Why should an intuitionist accept that if a disjunction is known at a time, then one or other disjunct can be known at that time, as (5.2) requires? Why is it not enough that one or other can be known at some later time? After all, the application of a decision procedure takes time. It would be a mistake to insist that the idlers could, counterfactually, have applied the decision procedure earlier than the time in question, for the relevant substitutions for ‘$\mathrm{P}$’ and ‘$\mathrm{Q}$’ (‘$\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathrm{S}$’ and ‘$\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathord{-} \mathrm{S}$’) themselves contain ‘$t$’; if a proposition has a time reference, the decision procedure for it may be applicable only at certain times. The question ‘What is the number of babies born on 16 April 1987?’ cannot be answered until 17 April 1987. Thus the argument fails on the second reading because (5) becomes intuitionistically deniable.
+
+I know of no relevant reading on which both (5) and (6) are intuitionistically compelling. Moreover, any attempt to find such a reading faces the difficulty that (5.1) is already available to explain the sense in which (5) is intuitionistically compelling, and (6.2) is already available to explain the sense in which (6) is intuitionistically compelling.
+
+A strengthened version of Wright’s argument might be proposed, as follows. The introduction and elimination rules for disjunction applied to (1) give $\mathrm{P} \rightarrow (\lozenge \mathrm{K}\mathrm{P} \vee \lozenge \mathrm{K}\mathrm{Q})$, $\mathrm{Q} \rightarrow (\lozenge \mathrm{K}\mathrm{P} \vee \lozenge \mathrm{K}\mathrm{Q})$ and thence:
+
+(10)
+$\forall \mathrm{P}\, \forall \mathrm{Q}\,((\mathrm{P} \vee \mathrm{Q}) \rightarrow (\lozenge \mathrm{K}\mathrm{P} \vee \lozenge \mathrm{K}\mathrm{Q}))$8
+
+Where the decision procedure for S has not been applied we have:
+
+(11)
+$(\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathrm{S}) \vee (\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}\mathord{-} \mathrm{S})$
+
+The application of (10) to (11) yields (9), the same absurdity as before. This argument has at least three advantages over (5)–(9): (i) it relies directly on (1), rather than involving an extra assumption such as (5); (ii) it does not require K to be closed under intuitionist logical consequence; (iii) it does not require the idlers to have knowledge of their situation, (11), unlike (6)–(8), not being governed by ‘K’ as the principal operator. Nevertheless, the modified argument is open to the same line of objection as before.
+
+On the first reading, (1) and (11) become:
+
+(1.1)
+$\forall \mathrm{P}\, (\mathrm{P} \rightarrow \lozenge\exists t\, \mathrm{K}_t\mathrm{P})$
+(11.1)
+$(\mathrm{S} \mathbin{\&} \mathord{-}\exists t\, \mathrm{K}_t\mathrm{S}) \vee (\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-}\exists t\, \mathrm{K}_t\mathord{-} \mathrm{S})$
+
+(1.1) seems to capture the intended sense of (1). However, (11.1) says that neither $\mathrm{S}$ nor its negation will ever be known: but if we are in a position to assert this, then there is no question of our applying a decision procedure for $\mathrm{S}$, in which case we are not intuitionistically entitled to assert the disjunction (11.1). One might try to evade this point by restricting ‘$\mathrm{K}_t$’ to what the idlers know at $t$; perhaps we have watched the last of the idlers die before they could apply their decision procedure for $\mathrm{S}$. However, (1.1) then says that all truths are knowable by the idlers: but why should we make them the measure of reality in this way? A truth about what the idlers never know is just the kind of thing that can be known, but not by the idlers. The knowing subject in (1) should not be identified with any particular empirically given individual or group of individuals.9 Thus the argument fails on the first reading because (11) becomes intuitionistically deniable (unless (1) is made so deniable by the restriction of knowers to idlers).
+
+On the second reading, (1) and (11) become:
+
+(1.2)
+$\forall t\, \forall \mathrm{P}\, (\mathrm{P} \rightarrow \lozenge \mathrm{K}_t\mathrm{P})$
+(11.2)
+$\exists t\, ((\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathrm{S}) \vee (\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathord{-} \mathrm{S}))$
+
+(11.2) correctly expresses the situation of the idlers. The problem is now with (1.2). As was argued above, it is not intuitionistically plausible that knowledge of a proposition with a time reference is eternally available, and the relevant substitutions for ‘$\mathrm{P}$’ in (1.2) (‘$\mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathrm{S}$’ and ‘$\mathord{-} \mathrm{S} \mathbin{\&} \mathord{-} \mathrm{K}_t\mathord{-} \mathrm{S}$’) do have such a time reference. Thus the argument fails on the second reading because (1) becomes intuitionistically deniable, and dubious as a formulation of anti-realism.
+
+In the absence of any third reading of ‘K’ that would make either both (5) and (6) or both (1) and (11) compelling to the anti-realist who accepts intuitionist logic, Wright’s argument and its modified version must be rejected. Nevertheless, the intuitionist defence of (1) (read as (1.1)) faces other threats.
+
+One of them goes as follows. Since (3) has been intuitionistically refuted (given (1)), reductio ad absurdum allows one to deny $\mathord{-} \mathrm{K}\mathrm{S}$ on the assumption $\mathrm{S}$. Generalizing:
+
+(12)
+$\forall \mathrm{P}\, (\mathrm{P} \rightarrow \mathord{-}\mathord{-} \mathrm{K}\mathrm{P})$
+
+Yet is not $\mathrm{K}\mathrm{P}$ effectively decidable? We can always work out whether we have a proof, or good evidence, for a given proposition. In that case, however, $\mathord{-}\mathord{-} \mathrm{K}\mathrm{P}$ intuitionistically entails $\mathrm{K}\mathrm{P}$, so (12) intuitionistically entails:
+
+(13)
+$\forall \mathrm{P}\, (\mathrm{P} \rightarrow \mathrm{K}\mathrm{P})$
+
+But then the envisaged position, which combines (1) with (2′), is inconsistent, since (1) intuitionistically entails (13), of which (2′) is the negation. In reply to this objection, ‘$\mathrm{K}$’ must be disambiguated as usual. If ‘$\mathrm{K}\mathrm{P}$’ means $\exists t\, \mathrm{K}_t\mathrm{P}$ then it is not effectively decidable: there is no general procedure for deciding whether a given proposition will be proved, or supported by good evidence, sooner or later in the future. On this reading, (12) does not intuitionistically entail (13). If ‘$\mathrm{K}\mathrm{P}$’ means $\mathrm{K}_t\mathrm{P}$ (with an initial ‘$\forall t$’ understood in (12) and (13)) then it may well be effectively decidable, but (1) becomes (1.2), which has already been rejected (similarly, (2) becomes true, since it follows from (11), which is true if read as (11.2)). On this reading, (12) is not intuitionistically acceptable. On neither reading is the argument to (13) via (12) intuitionistically sound.10
+
+A related objection uses the fact that (12) is intuitionistically equivalent to:
+
+(14)
+$\forall \mathrm{P}\, (\mathord{-} \mathrm{K}\mathrm{P} \rightarrow \mathord{-} \mathrm{P})$11
+
+Yet is not (14) almost as absurd as what (2′) denies, that all truths are known? (14) says that whatever is not known is not a truth. Now, of the two readings of ‘K’ above, (14) should be interpreted in terms of the former, for that is the one on which its assumption (1) is compelling for the anti-realist who accepts intuitionist logic. Thus (14) becomes:
+
+(14.1)
+$\forall \mathrm{P}\, (\mathord{-}\exists t\, \mathrm{K}_t\mathrm{P} \rightarrow \mathord{-} \mathrm{P})$
+
+However, (14.1) is not absurd when understood intuitionistically. For its antecedent then supposes circumstances in which one could rule out the possibility of knowledge that P ever being attained; but such circumstances would intuitionistically warrant the denial of P.
+
+Unfortunately, this defence makes another difficulty raised by Wright all the more pressing.12 Consider the supposedly absurd claim (13). Why is it not intuitionistically compelling? For is not anyone who knows the antecedent of (13) in a position to know its consequent, and does that not intuitionistically warrant the assertion of the conditional? The anti-realist who treats the semantics of (14) intuitionistically in order to render it plausible is obliged to give the same treatment to (13), all of whose semantic primitives also appear in (14); but this treatment renders (13) plausible too.13 Yet if (13) were accepted, all the previous manoeuvring would have been in vain, and the intuitionistic anti-realist would still seem to lack any way of acknowledging the truism that not all truths are ever known.
+
+It is very hard to avoid something like (13) if one gives – as many intuitionists do – a semantic account of the conditional on which $\mathrm{P} \rightarrow \mathrm{Q}$ is assertible whenever the assertibility of $\mathrm{P}$ evidently guarantees the assertibility of $\mathrm{Q}$. For the assertibility of $\mathrm{P}$, being a decidable condition, seems to guarantee the assertibility of the assertibility of $\mathrm{P}$, which would then make ‘$\mathrm{P} \rightarrow$ it is assertible that $\mathrm{P}$’ itself assertible; ‘$\mathrm{K}$’ in (13) can be interpreted as ‘it is assertible that’, and (13) remains absurd on this reading.
+
+However, a subtly different form of constructivist semantics is available. For example, a semantic treatment of the conditional in intuitionist mathematics is often stated roughly as follows: a proof of $\mathrm{P} \rightarrow \mathrm{Q}$ is a function (in the sense of an operation) that evidently takes any proof of $\mathrm{P}$ to a proof of $\mathrm{Q}$.14 The meaning clause directly relates proofs of $\mathrm{P}$ to proofs of $\mathrm{Q}$, not situations in which someone has a proof of $\mathrm{P}$ to situations in which someone has a proof of $\mathrm{Q}$. Now add to the language of constructivist mathematics the empirical operator ‘$\mathrm{K}$’, abbreviating ‘at some time it will have been proved that’, and suppose that the notion of proof can be extended to statements involving ‘$\mathrm{K}$’ (how that might be done will be considered below). On the present form of constructivist semantics, a proof of $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$ is then a function that evidently takes any proof of $\mathrm{P}$ to a proof that at some time $\mathrm{P}$ will have been proved. Need there be such a function?
+
+For an intuitionist, proofs are in some sense mental constructions. It is less clear whether they are to be types of mental construction, or tokens of such types: both interpretations seem to be consistent with standard treatments of intuitionist logic and mathematics. Suppose that proofs are tokens; then a proof of $\mathrm{P}$ is a particular mental construction, made at a particular time; thus its very existence guarantees that at some time $\mathrm{P}$ will have been proved; since being a proof of $\mathrm{P}$ is a decidable property, one can evidently transform any proof of $\mathrm{P}$ into a proof of $\mathrm{K}\mathrm{P}$ just by adding the reflection that it is a proof of $\mathrm{P}$. If proofs are tokens of mental constructions, $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$ is provable. Thus our intuitionist had better use ‘proof’ in the sense of a type of mental construction. In that case, a proof of $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$ is a function that evidently takes any proof-type of $\mathrm{P}$ to a proof-type that at some time $\mathrm{P}$ will have been proved. Since a constructivist proof of an existential statement is a proof of some instance of it, a proof-type that at some time $\mathrm{P}$ will have been proved is for some time $t$ a proof-type that $\mathrm{P}$ is proved at $t$ (in the extended sense of ‘proof’).
+
+The notion of a proof-type sounds suspiciously Platonist.15 Fortunately for intuitionists, all they really need is the ontologically neutral concept of sameness in type, where two proof-tokens of the same type are required to have identical conclusions and structure, but need not occur at the same time. For a function from proof-types to proof-types need be nothing more than a function $f$ of a special kind from proof-tokens to proof-tokens: one that is unitype in the sense that if $p$ and $q$ are proof-tokens of the same type then so are $f(p)$ and $f(q)$. To speak of proof-types is then just to speak of proof-tokens in ways not sensitive to differences between proof-tokens of the same type; there need be no suggestion that the existence of a type is anything over and above the existence of tokens of that type. Proof-types are not a Trojan horse for realism. If this idea is combined with those of the previous paragraph, the result is that a proof of $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$ is a unitype function that evidently takes any proof-token of $\mathrm{P}$ to a proof-token, for some time $t$, of the proposition that $\mathrm{P}$ is proved at $t$. Need there be such a function?
+
+For any proof-token $p$ of $\mathrm{P}$, let $t(p)$ be the time at which $p$, as a particular mental construction, was carried out; we can allow that reflection on $p$ can yield a corresponding proof-token $f(p)$ that $\mathrm{P}$ was proved at $t(p)$ (otherwise there is no problem about (13)). Now if we know of such a proof-token $p$, we can consider a function $f_p$ which maps any proof-token $q$ of $\mathrm{P}$ to a proof-token of $\mathrm{K}\mathrm{P}$ of the same type as $f(p)$; $f_p$ is obviously unitype, and thus constitutes a proof of $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$. If $\mathrm{P}$ has not yet been decided, however, the best we can do is to consider the function $f$ itself, for the hypothetical proof-token of $\mathrm{P}$ is the only one we have to play with in attempting to construct a proof-token of $\mathrm{K}\mathrm{P}$. But $f$ is not a unitype function: for there can be proof-tokens $p$ and $q$ of $\mathrm{P}$ of the same type but carried out at different times, in which case $f(p)$ and $f(q)$ are proof-tokens of distinct types, for their conclusions differ: $f(p)$ is a proof that $\mathrm{P}$ is proved at $t(p)$, $f(q)$ is a proof that $\mathrm{P}$ is proved at $t(q)$, and $t(p) \ne t(q)$.16 Thus if we have no decision procedure for $\mathrm{P}$, we have no way of constructing a proof of $\mathrm{P} \rightarrow \mathrm{K}\mathrm{P}$; if we can assert that we shall never have a decision procedure for all propositions, we can intuitionistically deny (13) and assert (2′), as required.
+
+In short: if intuitionists treat proofs as types, in the limited way explained above, they can consistently deny (13). At the same time they can continue to maintain (14.1), for a proof of its antecedent would rule out the possibility that anyone would ever grasp a proof of $\mathrm{P}$, which for an anti-realist evidently rules out the possibility of a proof of $\mathrm{P}$, and thus intuitionistically constitutes a proof of $\mathord{-} \mathrm{P}$. It therefore looks as though the technical obstacles to an intuitionist treatment of Fitch’s problem can be overcome – not by an ad hoc device, but by adherence to the principle that proofs should be treated as types in constructivist semantics. No doubt much more work needs to be done in exploring that principle: but at least there is a programme to be pursued.
+
+Of course, the anti-realist will not expect to give the semantics of natural language in terms of a notion of proof of any kind. Empirical statements do not have proofs. Presumably, the appropriate notion for them will be one of defeasibly warranted assertion. Thus it was an idealization to speak of a proof of the empirical statement $\mathrm{K}\mathrm{P}$. It was nevertheless a justified idealization, for the problems raised by Fitch’s argument do not depend on the defeasibility of $\mathrm{K}\mathrm{P}$, or any other empirical statement; they arise even if one assumes that there is never any doubt as to what is presently known, and that an assertion of $\exists t\, \mathrm{K}_t\mathrm{P}$ is warranted only if $\mathrm{P}$ is presently known, at least for relevant values of ‘$\mathrm{P}$’. If the anti-realists’ only escape from absurdity in this simple case is by means of a constructivist revision of logic, then their best hope in the general case is for an extension of the constructivist treatment of indefeasible statements to defeasible ones.17 The notions of evidence and of having evidence might replace those of a proof and of having a proof. Grave problems are known to face the attempt to extend constructivist semantics to defeasible statements, for example in relation to tense.18 Nevertheless, the anti-realist may not have much alternative but to make the attempt. If a constructivist treatment of the semantics of defeasible statements can be given, we certainly do not know enough about it to defeat the expectation that it will allow a response to Fitch’s argument parallel to that above.
+
+I have argued that since anti-realists want to assert that all truths are knowable while denying that all truths are known, they have a reason to adopt constructivist logic. I have not argued that they have a right to do so. In particular, I have argued neither that constructivist treatments of the semantics of natural languages are feasible nor that, if they are, there is any warrant to adopt them. The only virtue claimed for constructivist anti-realism is this, that no argument along the lines of Fitch’s has yet shown it to be incapable of acknowledging the truism that not all truths are known. Not all forms of anti-realism have even that virtue.
+
+# Acknowledgements
+
+I thank Stephen Read for comments on an earlier version of this paper.
+
+# Notes
+
+[1] F.B. Fitch, ‘A Logical Analysis of Some Value Concepts’, Journal of Symbolic Logic, 28 (1963), pp. 135–42. The discussion in the journals is being orchestrated by anonymous referees, or an anonymous referee: Fitch attributes the argument to the referee for an earlier, never published paper of his, in 1945; W.D. Hart and C. McGinn, who reintroduced it into discussion in ‘Knowledge and Necessity’, Journal of Philosophical Logic, 5 (1976), pp. 205–8, say that their attention was drawn to it by a referee; the first proposal I have seen for a treatment such as Dorothy Edgington’s (cf. n.2 below) came from a referee for Analysis in 1982. No doubt the dialectic is compelled to disguise itself in this way in order to secure contemporary recognition. For the view that the argument does not reduce anti-realism to absurdity within constructivist logic see my ‘Intuitionism Disproved?’, Analysis, 42 (1982), pp. 203–7, also S.A. Rasmussen and J. Ravnkilde, ‘Realism and Logic’, Synthese, 52 (1982), pp. 379–437, n.77.
+
+[2] D. Edgington, ‘The Paradox of Knowability’, Mind, 94 (1985), pp. 557–68; T. Williamson, ‘On the Paradox of Knowability’, Mind, 96 (1987), pp. 256–61, and ‘On Knowledge of the Unknowable’, Analysis, 47 (1987), pp. 154–8; see also C.J.G. Wright, Realism, Meaning and Truth (Oxford, 1987), pp. 312–16.
+
+[3] Wright, Realism, Meaning and Truth, p. 311.
+
+[4] Stronger forms of anti-realism can be defined by prefixing ‘it is necessary that’, ‘it is a priori that’ or some sequence of these operators to (1); this would not materially affect the argument.
+
+[5] Ibid.; Edgington, ‘The Paradox of Knowability’, pp. 558–9; cf. J.L. Mackie, ‘Truth and Knowability’, Analysis, 40 (1980), pp. 90–2.
+
+[6] It might be replied, in defence of (6.1), that the idlers could know $\mathrm{S} \vee \mathord{-} \mathrm{S}$ simply by having a decision procedure for $\mathrm{S}$, while knowing $\mathord{-}\exists t\, \mathrm{K}_t\mathrm{S}$ and $\mathord{-}\exists t\, \mathrm{K}_t\mathord{-} \mathrm{S}$ because $\mathrm{S}$ was too complex for the procedure to be applied (e.g. Eratosthenes’ sieve as a test for primeness in the case of very large numbers). However, this reply presupposes a hybrid semantic treatment, on which the assertibility-conditions of disjunctions and negations are given in terms of different modalities: $\mathrm{S} \vee \mathord{-} \mathrm{S}$ is supposed to be known because $\mathrm{S}$ is decidable in principle; $\mathord{-}\exists t\, \mathrm{K}_t\mathrm{S}$ and $\mathord{-}\exists t\, \mathrm{K}_t\mathord{-} \mathrm{S}$ are supposed to be known because $\mathrm{S}$ is not decidable in practice. There are indeed serious questions about which notion of decidability is appropriate (discussed by Wright in ‘Strict Finitism’ in his Realism, Meaning and Truth, pp. 107–75). For present purposes, it suffices that knowledge of a disjunction should require possible knowledge of a disjunct in the same sense of ‘possible’, whatever that is, as that in which knowledge that something will never occur requires it to be no longer possible for it to occur. Such a notion is not that of bare counterfactual possibility: as one should expect of a constructivist notion, it includes an epistemic element. A possibility is a ‘live option’, not yet ruled out by what is known. The standard intuitionist notion is that of possibility in principle: but even if the strict finitist notion of possibility in practice is adopted, intuitionist logic is still likely to result (Wright, ‘Strict Finitism’, p. 175), as the present approach requires. In short: the objection to (6.1) is sustained, provided that the same notion of possibility is used throughout, which seems a reasonable demand.
+
+[7] ‘$t$’ is quantified universally in (5.2) but existentially in (6.2) because the former was defended as a general principle, the latter as a specific possibility.
+
+[8] Thus (1) entails (5) if K is a factive.
+
+[9] Even if the only restriction on ‘K’ in (1) is to human knowers, it may be felt to make man the measure of all things – or could one avoid this by restricting substitutions for ‘P’ to sentences in a human language? It is not clear that standard forms of anti-realism do not attribute such implausible metaphysical privileges to a particular species; cf. my ‘Anthropocentrism and Truth’, Philosophia, 17 (1987), pp. 33–53.
+
+[10] Cf. also my ‘Intuitionism Disproved?’, pp. 205–6.
+
+[11] It is raised by Philip Percival in ‘Against Two Varieties of Anti-Realism’ (unpublished paper, 1986), as are other matters considered below.
+
+[12] Wright, Realism, Meaning and Truth, p. 314; cf. W.D. Hart, ‘The Epistemology of Abstract Objects: Access and Inference’, Proceedings of the Aristotelian Society, Supplementary Volume 53 (1979), pp. 152–65, at p. 165.
+
+[13] Anti-realists would in any case leave themselves in an implausible position if they accepted intuitionist logic without intuitionist semantics; it would look like a merely ad hoc rejection of an inconvenient inference. One needs a good story to justify moving the goalposts.
+
+[14] For example, by Michael Dummett in Elements of Intuitionism, (Oxford, 1977), pp. 12–13.
+
+[15] Related points are made by Enrico Martino in ‘Soggetto Creativo’, (unpublished paper, 1986).
+
+[16] Of course, $f(p)$ and $f(q)$ are also both proofs of $\mathrm{K}\mathrm{P}$, but two proof-tokens are of the same type only if every conclusion of one is a conclusion of the other. Alternatively, if one wants a proof to have a unique conclusion, one can rule that a proof of an existential statement is a proof of an instance plus a label for the existential conclusion (cf. Dummett, Elements of Intuitionism, pp. 340–4). In that case, $p$ and $q$ will be mapped to proofs with the same existential conclusion $\mathrm{K}\mathrm{P}$, but these proofs will nevertheless be of distinct types, since they differ in their last intermediate conclusion (one has that $\mathrm{P}$ is proved at $t(p)$, the other that it is proved at $t(q)$), and thus in their structure. The function from proofs of $\mathrm{P}$ to proofs of $\mathrm{K}\mathrm{P}$ is therefore still not unitype.
+
+[17] Cf. Wright, Realism, Meaning and Truth, passim.
+
+[18] Cf. for example, Anthony Appiah, For Truth in Semantics (Oxford, 1986).

@@ -1,0 +1,69 @@
+# Remarks on some varieties of naturalism
+
+Timothy Williamson
+
+In Gary Kemp, Ali Hossein Khan, Hossein Sheykh Rezaee, and Hassan Amiriara (eds.), Naturalism and Its Challenges (2025), 295–298. London: Routledge.
+
+# 17.1 ‘Naturalism’
+
+What does the term ‘naturalism’ mean? The term is so unclear that its use can easily do more harm than good.
+
+One of my experiences of the unclarity was in reactions to my book The Philosophy of Philosophy. Some philosophers described it as ‘naturalistic’. Others described it as ‘anti-naturalistic’. The reason was divergence, not in what specific views they attributed to me, but in whether those views counted m, as ‘naturalistic’.
+
+Clarification is evidently needed.
+
+# 17.2 Distinctions
+
+One standard distinction is between ontological naturalism and methodological naturalism. Both privilege science, but in different ways.
+
+Ontological naturalism is the view that the ontology of science is privileged over all other ontologies. For example, an ontological naturalist may claim that only those entities recognized by science exist.
+
+Methodological naturalism is the view that the methodology of science is privileged over all other methodologies. For example, a methodological naturalist may claim that only those methods used by science give knowledge.
+
+Neither ontological naturalism nor methodological naturalism strictly entails the other. However, ontological naturalism looks comparatively easy to motivate with methodological naturalism and comparatively difficult to motivate without it. A privileged methodology tends to support privileged conclusions, while an unprivileged methodology does not. Thus, the two forms of naturalism tend to go together.
+
+Unfortunately, there is a serious ambiguity in both ‘ontological naturalism’ and ‘methodological naturalism’. For, in their definitions, what does the word ‘science’ mean?
+
+For soft naturalists, ‘science’ means any kind of systematic, critical, evidence-based inquiry. By contrast, for hard naturalists, ‘science’ means specifically natural science, comprising physics, chemistry, biology, and other sciences which use experimentation, instruments for observing and measuring, and so on. The most salient example of a non-natural science is mathematics, which is primarily proof-based. Another example of a non-natural science is history, which is primarily document-based. For soft naturalists, ‘science’ includes both mathematics and history. For hard naturalists, ‘science’ excludes both mathematics and history.
+
+The distinction between hard and soft naturalism cross-cuts the distinction between ontological and methodological naturalism. All four combinations are possible:
+
+Hard ontological naturalism + hard methodological naturalism
+
+Hard ontological naturalism + soft methodological naturalism
+
+Soft ontological naturalism + hard methodological naturalism
+
+Soft ontological naturalism + soft methodological naturalism
+
+The hard + hard and soft + soft combinations look more stable than hard + soft and soft + hard. For hard ontological naturalism looks comparatively easy to motivate with hard methodological naturalism, and comparatively difficult to motivate without it, while soft ontological naturalism looks comparatively easy to motivate with soft methodological naturalism, and comparatively difficult to motivate without it.
+
+The hard/soft ambiguity in ‘naturalism’ is not innocent. For philosophers who self-identify as ‘naturalists’ not infrequently exploit the ambiguity by arguing for soft naturalism (ontological or methodological) but then arguing from hard naturalism (ontological or methodological). That is cheating. They pay the price of the cheap version but walk out of the shop with the expensive one.
+
+# 17.3 Hard Naturalism
+
+Mathematics is a challenge to hard methodological naturalism. For mathematics is not a natural science, and so is not methodologically privileged, according to hard methodological naturalism. Yet mathematics is the most rigorous and exact form of inquiry we have! Moreover, the natural sciences comprehensively depend on mathematics. How can natural science be methodologically privileged if it relies on the results of a methodologically unprivileged discipline, mathematics?
+
+Another challenge to hard methodological naturalism is this: it cannot be established by the methods which it privileges. For it claims that the methodology of natural science is privileged over all other methodology—for example, that only those methods used by natural science give knowledge. But those are general philosophical claims, of an epistemological nature, which the characteristic methods of natural science are quite unsuited to testing. Thus, by its own standards, hard methodological naturalism has a low epistemic standing.
+
+I have pressed both these challenges on hard methodological naturalists, without ever receiving an effective response.
+
+The troubles for hard methodological naturalism infect hard ontological naturalism too. For if we cannot justify awarding exclusive methodological privileges to natural science, why should we assume that only those entities recognized by natural science exist?
+
+# 17.4 Soft Naturalism
+
+Those two challenges to hard methodological naturalism pose no threat to soft methodological naturalism. Soft methodological naturalists meet the first challenge by taking science to include mathematics. They can also meet the second challenge, by taking science to include epistemology too, at least when done in a systematic, critical, evidence-based way, as much of epistemology is. Still, even soft methodological naturalism faces some residual challenges.
+
+Despite the soft methodological naturalist’s inclusive view of science, the emphasis on systematic, critical, evidence-based inquiry tends to privilege reflective cognitive steps—the conclusions of systematic inquiry—over non-reflective steps. But reflective steps depend on non-reflective ones, on pain of an infinite regress. For reflection consists in consciously chaining together many individual steps: a simple paradigm is a mathematical calculation. This does not mean that we cannot later criticize or justify those non-reflective steps, just that such a process can never be brought to completion: at any point, we are relying on some steps on which we have not yet reflected. Full reflection is an impossible ideal. This is a much less severe challenge than those to hard methodological naturalism, but it is not trivial.
+
+Again, any limitations of soft methodological naturalism will tend to have repercussions for soft methodological naturalism too. If we cannot justify awarding exclusive methodological privileges to science, broadly understood, why should we assume that only those entities recognized by science, broadly understood, exist? After all, it is far from obvious that whatever exists can be known (scientifically or unscientifically) to exist.
+
+# 17.5 Concluding Reflections
+
+Despite the challenges to both hard and soft methodological naturalism, we can, of course, still criticize claims or theories for being unsupported by good evidence, or for failing to explain relevant scientific evidence, or for being inconsistent with well-established scientific theories, or for being evolutionarily implausible, or whatever. ‘Science’ here is not restricted to natural science: inconsistency with a mathematical theorem or with a well-established historical fact is a severe criticism—it shows the claim to be false. But such criticisms should be made and assessed on their own specific merits. They are not strengthened by invoking ‘naturalism’ as an all-purpose enforcer. No version of naturalism is a well-established scientific theory!
+
+# Note (2023)
+
+This short paper is a lightly edited version of my talk ‘Naturalism and Mathematics’ given to the online conference Naturalism and Its Challenges in March 2022, hosted by the Iranian Institute of Philosophy, Tehran. I have retained the programmatic, provocative style of the original talk since that was its point, and thank the audience for discussion.
+
+The edition of The Philosophy of Philosophy that has been classified as naturalistic and as anti-naturalistic is the first (Oxford: Wiley-Blackwell, 2007). Chapter 11 of the enlarged edition (2021) collects together my engagements with self-identified naturalists of several kinds (Andrea Bianchi, Hilary Kornblith, Penelope Maddy, Alex Rosenberg, and Robert Stalnaker) and develops some themes of these remarks in more detail.

@@ -1,0 +1,550 @@
+# Inverses for Normal Modal Operators
+
+Lloyd Humberstone and Timothy Williamson
+
+Studia Logica 59 (1997): 33–64.
+
+Abstract. Given a 1-ary sentence operator $\bigcirc$, we describe $L$ – another 1-ary operator – as a left inverse of $\bigcirc$ in a given logic if in that logic every formula $\varphi$ is provably equivalent to $L\bigcirc\varphi$. Similarly $R$ is a right inverse of $\bigcirc$ if $\varphi$ is always provably equivalent to $\bigcirc R\varphi$. We investigate the behaviour of left and right inverses for $\bigcirc$ taken as the $□$ operator of various normal modal logics, paying particular attention to the conditions under which these logics are conservatively extended by the addition of such inverses, as well as to the question of when, in such extensions, the inverses behave as normal modal operators in their own right.
+
+Key words: modal logic, Kripke models, inverses, conservative extension.
+
+# 1. Introduction
+
+The n-modal language comprises all formulas obtained from a denumerable set of propositional variables (‘sentence letters’) $p_0, \ldots p_k, \ldots$ by means of the usual boolean connectives $\to, \leftrightarrow, \wedge, \vee, \neg$, and (so that we can have formulas containing no propositional variables) $\top, \bot$, as well as additional primitive singulary connectives (‘modal operators’) $\bigcirc_1, \ldots, \bigcirc_n$. An n-modal logic is a set of formulas in this language containing all truth-functional tautologies and closed under Uniform Substitution (of arbitrary formulas for propositional variables) as well as under Modus Ponens. 1-modal and 2-modal logics are referred to as ‘monomodal’ and ‘bimodal’, respectively. A primitive modal operator $\bigcirc_i$ is congruential in an n-modal logic ${𝐒}$ (where $1 \leq i \leq n$) if for all formulas $\varphi, \psi$, with $\varphi \leftrightarrow \psi \in {𝐒}$, we have $\bigcirc_i\varphi \leftrightarrow \bigcirc_i\psi \in {𝐒}$ and normal in ${𝐒}$ if for all formulas $\varphi_1, \ldots, \varphi_m, \psi$, if $(\varphi_1 \wedge \ldots \wedge \varphi_m) \to \psi \in {𝐒}$, then $(\bigcirc_i\varphi_1 \wedge \ldots \wedge \bigcirc_i\varphi_m) \to \bigcirc_i\psi \in {𝐒}$. (When $m=0$, this is to be understood as saying that if $\psi \in {𝐒}$ then $\bigcirc_i\psi \in S$: the ‘rule of necessitation’ for $\bigcirc_i$.) Note that normality implies congruentiality but not conversely. ${𝐒}$ itself is congruential (normal) when each of $\bigcirc_1, \ldots, \bigcirc_n$ is congruential (normal) in ${𝐒}$. Where $i,j \leq n$, $\bigcirc_i$ is a left inverse of $\bigcirc_j$, and $\bigcirc_j$ is a right inverse of $\bigcirc_i$, just in case for all formulas $\varphi$ (in the language of ${𝐒}$) we have $\bigcirc_i\bigcirc_j\varphi \leftrightarrow \varphi \in {𝐒}$. We sometimes write ‘$\vdash_{{𝐒}} \varphi$’ in place of ‘$\varphi \in {𝐒}$’, and read this as ‘$\varphi$ is provable in ${𝐒}$’.
+
+We shall be concerned with extending normal monomodal logics (a) to bimodal logics in which $\bigcirc_2$ is a left inverse of $\bigcirc_1$, and (b) to bimodal logics in which $\bigcirc_2$ is a right inverse of $\bigcirc_1$. We write $\bigcirc_1$ as ‘$□$’ throughout, writing $\bigcirc_2$ as ‘$L$’ in case (a) and as ‘$R$’ in case (b). The letters here are of course mnemonic for Left and Right, respectively. We abbreviate $\neg□\neg\varphi$ to $◇\varphi$, $\neg L\neg\varphi$ to $M\varphi$, and $\neg R\neg\varphi$ to ${𝐒}\varphi$. Note that in the latter pair of cases, we have simply chosen the letters alphabetically following ‘$L$’ and ‘$R$’ to denote the dual operators. In particular, the resulting use of ‘$L$’ and ‘$M$’ is to be distinguished from their usage in some quarters as variants on ‘$□$’ and ‘$◇$’. While on the subject of notation, we remark that it would not have been a good idea to employ the perhaps obvious notation ‘$□^{-1}$’ for an inverse of $□$, in the first place because of the desirability of distinguishing between left and right inverses, and secondly because that notation already has a usage (in connexion with tense logic) for symbolising an operator interpreted in Kripke models by the converse of the accessibility relation interpreting $□$: we avail ourselves of that usage in Section 6 below, in fact. Familiarity is assumed with the Kripke semantics for normal (n-)modal logics, and in particular with the canonical model construction and its role in proving completeness with respect to a class of models. (See [6].) If ${𝐒}$ is a normal monomodal logic then ${𝐒}({𝐋})$ is the smallest bimodal logic extending ${𝐒}$ in which $\bigcirc_2$ is a congruential left inverse of $\bigcirc_1$, while ${𝐒}{𝐋}$ is the smallest bimodal logic extending ${𝐒}$ in which $\bigcirc_2$ is a normal left inverse of $\bigcirc_1$; in both ${𝐒}({𝐋})$ and ${𝐒}{𝐋}$, we require $\bigcirc_1$ to be normal. That is, in terms of the notation introduced above, ${𝐒}({𝐋})$ and ${𝐒}{𝐋}$ both contain all formulas of the form ${𝐋}□\varphi \leftrightarrow \varphi$ and allow the ‘substitutivity of provable equivalents’, while in the latter case we also have closure under the passage from $(\varphi_1 \wedge \ldots \wedge \varphi_m) \to \psi$ to $({𝐋}\varphi_1 \wedge \ldots \wedge {𝐋}\varphi_m) \to {𝐋}\psi$. Mutatis mutandis for the notations ${𝐒}({𝐑})$ and ${𝐒}{𝐑}$; for these cases, the relevant schema is $□ {𝐑}\varphi \leftrightarrow \varphi$. We refer to ${𝐋}□\varphi \leftrightarrow \varphi$ and $□ {𝐑}\varphi \leftrightarrow \varphi$ as the left inverse schema and the right inverse schema, respectively.
+
+The talk of left and right inverses here of course derives from the corresponding terminology in the context of semigroups with a (two-sided) identity element (alias monoids). Recall that if an element a of such a semigroup possesses a left inverse l(a) and a right inverse r(a), then these inverses coincide, since, denoting the identity element by e and the semigroup operation by ·, we have, for the given a:
+
+$\begin{aligned}
+a\cdot r(a)&=e\\
+\text{so }l(a)\cdot(a\cdot r(a))&=l(a)\cdot e\\
+\text{so }l(a)\cdot(a\cdot r(a))&=l(a)\\
+\text{so }(l(a)\cdot a)\cdot r(a)&=l(a)\\
+\text{so }e\cdot r(a)&=l(a)\\
+\text{so }r(a)&=l(a).
+\end{aligned}$
+
+It is for this reason that we do not also consider 3-modal logics in which there are separate left and right inverses for an originally given operator $□$. (However, in subsection 6.1 below, we do consider the case in which the given operator has a two-sided inverse: a left-inverse which is also a right-inverse.) The corresponding reasoning in this case takes the following form, with $□$ playing the role of the $a$ above:
+
+(1)
+$□ R\varphi \leftrightarrow \varphi$
+(2)
+$L□ R\varphi \leftrightarrow L\varphi$
+(3)
+$R\varphi \leftrightarrow L\varphi$
+
+Here we have had to indicate explicitly an arbitrary ‘argument’ $\varphi$ for the operators concerned, and the derivation – which should be understood as saying that if (1) belongs to the logic concerned, so does (2), and if (2) does, so does (3) – is shorter because there is no explicit notation for the identity operator, and so no separate steps in which it is deleted, as well as no separate appeal to associativity (passing from, as it were, $L(□ R)\varphi \leftrightarrow L\varphi$ to $(L□)R\varphi \leftrightarrow L\varphi$). Note the exploitation of $L$’s congruentiality in the transition from (1) to (2). (The connexion between the semigroup reasoning and this modal logical version is of course given by the semigroup of 1-ary operations induced by the operators in the Lindenbaum-Tarski algebra of the envisaged logic; see [2], p. 205, for example. Warning: semigroup theorists themselves tend to mean something weaker when they speak of inverses – see [5], Chapter 5.)
+
+Our interest, in what follows, is in the modal analogue of another part of the received wisdom concerning inverses, to the effect that a function has a left inverse in the semigroup of all mappings from a set into itself (with composition as the semigroup operation) if and only if that function is injective, and likewise with ‘right’ replacing ‘left’ and ‘surjective’ replacing ‘injective’. Concentrating initially on the ‘left inverse’ part of the story, this suggests that we consider the relationship between, on the one hand, the logics ${𝐒}({𝐋})$ and ${𝐒}{𝐋}$, for a normal monomodal logic ${𝐒}$, and the closure of ${𝐒}$ under what we shall call the ‘Cancellation Rule’:
+
+Cancellation
+
+$\begin{aligned}
+\mathit{From}:&\quad□\varphi\leftrightarrow□\psi\\
+\mathit{to}:&\quad\varphi\leftrightarrow\psi
+\end{aligned}$
+
+We take the name ‘Cancellation Rule’ from [14], which considers some variants also, as does [15]. (These papers, as well as [16], may be consulted for some of the philosophical interest behind studying left and right inverses. We restrict ourselves to presenting – rather than motivating – such a study here.) For ${𝐒}$ to be closed under this rule is for the operation corresponding to $□$ in the Lindenbaum-Tarski algebra of ${𝐒}$ to be injective (‘one-one’); and clearly, whatever the status of ${𝐒}$ in this regard, ${𝐒}({𝐋})$ and ${𝐒}{𝐋}$ are closed under Cancellation, since if $□\varphi\leftrightarrow□\psi$ belongs to either of these logics, for a pair of formulas $\varphi,\psi$, then we may prefix ‘$L$’ to each side and delete the resulting ‘$L□$’ sequence. We look further into the Cancellation Rule in Section 2, returning to the connection with left inverses in Section 3. Section 4 addresses the topic of right inverses. (To complete this prospectus: in Section 5 an issue related to the right inverse theme is raised, and Section 6 collects together sundry additional material.) The topic of right inverses naturally suggests consideration of the case of logics in which the operation corresponding to $□$ in the Lindenbaum-Tarski algebra is surjective (‘onto’), which amounts to saying that $□$ itself is universally representative in the logic, meaning: every formula $\varphi$ is provably equivalent to one of the form $□\psi$. This is clearly so for the logics ${𝐒}({𝐑})$ and ${𝐒}{𝐑}$, since for a given $\varphi$ we can take $\psi$ as $R\varphi$. In some cases $□$ is even universally representative in ${𝐒}$ itself (see Section 6.2); in the general case this is not so, even if the extension to ${𝐒}({𝐑})$ (or indeed to the stronger ${𝐒}{𝐑}$) is conservative – and we shall want to know under what conditions the extension is conservative. As is stressed in [1], if a connective with prescribed inferential properties – in our case, those of being a left or a right inverse of $□$ – cannot be defined within a logic, there is still a sense in which a proponent of that logic is committed to the intelligibility (to the ‘existence’, as [1] has it) of such a connective provided the logic in question can be extended conservatively to accommodate a new connective with the inferential powers concerned.
+
+To conclude these introductory remarks, notice that while the definitions of left and right inverses for a given operator were given specifically for the primitive modal operators, the notions make precisely analogous sense for arbitrary primitive or defined modal or non-modal operators. Thus, taking up the ‘non-modal’, we observe that negation ($\neg$) is its own left (and right) inverse, and, taking up the ‘or defined’, we observe that $M$ is a left inverse of $◇$ in ${𝐒}({𝐋})$, and so a fortiori in ${𝐒}{𝐋}$ (since ${𝐒}({𝐋})\subseteq {𝐒}{𝐋}$): for we have, where $\varphi$ is arbitrary, $L□\neg\varphi\leftrightarrow\neg\varphi\in {𝐒}({𝐋})$, and thus $\neg L□\neg\varphi\leftrightarrow\varphi\in {𝐒}({𝐋})$, and so (appealing to the congruentiality of $L$) $\neg L\neg\neg□\neg\varphi\leftrightarrow\varphi\in {𝐒}({𝐋})$, which is to say $M◇\varphi\leftrightarrow\varphi\in {𝐒}({𝐋})$. Similarly, in the case of ${𝐒}({𝐑})$ we have: $□ R\neg\varphi\leftrightarrow\neg\varphi\in {𝐒}({𝐑})$, so $\neg□ R\neg\varphi\leftrightarrow\varphi\in {𝐒}({𝐑})$, so (this time by the normality – and hence congruentiality – of $□$ itself) $\neg□\neg\neg R\neg\varphi\leftrightarrow\varphi\in {𝐒}({𝐑})$, i.e., $◇ S\varphi\leftrightarrow\varphi\in {𝐒}({𝐑})$: thus $S$ is a right inverse of $◇$. [16] provides a detailed study of the properties a right inverse of $◇$, the latter being the dual of a normal $□$ for which the ${𝐓}$ schema (see Section 3 below) holds, the inverse itself not being assumed to be congruential. (All references to duality are to boolean duality rather than semigroup duality.) In what follows, we attend only to inverses which are at least congruential (as in the systems ${𝐒}({𝐋})$ and ${𝐒}({𝐑})$, for various ${𝐒}$), if not actually normal (the systems ${𝐒}{𝐋}$ and ${𝐒}{𝐑}$).
+
+# 2. The Cancellation Rule
+
+We begin by noting some rules which are equivalent to the Cancellation Rule in the sense of
+
+Proposition 2.1. A modal logic in which $□$ is normal is closed under any of these rules if and only if it is closed under all of them:
+
+(i)
+the Cancellation Rule
+(ii)
+the rule: From $◇\varphi\leftrightarrow◇\psi$ to $\varphi\leftrightarrow\psi$
+(iii)
+the rule: From $□\varphi\to□\psi$ to $\varphi\to\psi$
+(iv)
+the rule: From $□\varphi\to□\neg\varphi$ to $\neg\varphi$
+
+Proof. For the equivalence of (i), (ii), (iii), see [14], p.304. We address the equivalence of (iii) and (iv). Suppose ${𝐒}$ is a modal logic in which $□$ is normal, and that ${𝐒}$ is closed under the rule mentioned in (iii). Then if $□\varphi\to□\neg\varphi\in {𝐒}$, we may invoke that rule to conclude that $\varphi\to\neg\varphi\in {𝐒}$ and hence that $\neg\varphi\in {𝐒}$ (since $(\varphi\to\neg\varphi)\to\neg\varphi$ is a substitution instance of a truth-functional tautology and ${𝐒}$ is closed under Modus Ponens). Thus closure under the rule in (iii) implies closure under the rule in (iv). Conversely, suppose that ${𝐒}$ is closed under the latter rule and that we have a premiss for the application of the rule in (iii): $□\varphi\to□\psi$. From the hypothesis that $□$ is normal in ${𝐒}$ it follows that this formula is then also in ${𝐒}$: $□(\varphi\wedge\neg\psi)\to□\neg(\varphi\wedge\neg\psi)$. Thus by the rule in (iv) we get $\neg(\varphi\wedge\neg\psi)\in {𝐒}$, and so $\varphi\to\psi\in {𝐒}$, as required. ■
+
+Next, we want a semantic characterization of the Cancellation Rule. We say that a model $\langle W,R,V\rangle$ satisfies the Predecessor Condition when for all $y\in W$ there exists $x\in W$ such that $xRy$ and for all $z\in W$, $xRz$ implies $y=z$. This is really a condition on the frame $\langle W,R\rangle$ of the model, but we shall often prefer model-based rather than frame-based formulations, since we rely heavily on the fact that the canonical model for a normal modal logic ${𝐒}$ is a characteristic model for ${𝐒}$ – a model verifying all and only those $\varphi\in {𝐒}$, that is – even though the frame of that model may not be a characteristic frame for ${𝐒}$ – a frame validating precisely such $\varphi$, that is. (As usual, in saying that a frame validates a formula we mean that every model on that frame verifies the formula.) Now it is not hard to check that a normal monomodal logic ${𝐒}$ is closed under the Cancellation Rule if and only if ${𝐒}$ is determined by some class of models all of which satisfy the Predecessor Condition. (Note that this is not to say that every class of models which determines ${𝐒}$ consists exclusively of models satisfying the condition.) For present purposes, however, it suffices to give a restricted form of this observation:
+
+Proposition 2.2. A normal monomodal logic ${𝐒}$ is closed under the Cancellation Rule if and only if the canonical model for ${𝐒}$ satisfies the Predecessor Condition.
+
+Proof. ‘If’: We take the implicational version of the Cancellation Rule given in (iii) of Prop. 2.1, showing that if the canonical model $\langle W,R,V\rangle$ for ${𝐒}$ satisfies the Predecessor Condition, then ${𝐒}$ is closed under this rule. Suppose that the conclusion $\varphi\to\psi$ of an application of the rule is not provable in ${𝐒}$. Then at some point $y\in W$, $\varphi\to\psi$ is false, so $\varphi$ is true at $y$ while $\psi$ is false. Since the model satisfies the Predecessor Condition, there is some $x\in W$ which bears the relation $R$ to $y$, making $□\psi$ false at $x$, and only to $y$, making $□\varphi$ true at $x$. Since $□\varphi\to□\psi$ is therefore false at $x$, this implication is not provable in ${𝐒}$.
+
+‘Only if’: We take the form of the Cancellation Rule given in (iv) of Prop. 2.1, showing that, on the assumption that ${𝐒}$ is closed under this rule, the canonical model $\langle W,R,V\rangle$ for ${𝐒}$ must satisfy the Predecessor Condition. Making this assumption, then, take $y\in W$ and note that if the set $\{◇\varphi\wedge□\varphi\mid\varphi\in y\}$ is ${𝐒}$-consistent, then any maximal ${𝐒}$-consistent superset of this set will be an $x\in W$ such that $xRy$ and for all $z\in W$, $xRz$ only if $z=y$. So it remains only to verify that the indicated set is indeed $S$-consistent. Suppose otherwise; that is, that for some $\varphi_1,\ldots,\varphi_n$ with each $\varphi_i\in y$, we have $\neg((◇\varphi_1\wedge□\varphi_1)\wedge\ldots\wedge(◇\varphi_n\wedge□\varphi_n))$ provable in ${𝐒}$. Thus $(◇\varphi_1\wedge\ldots\wedge◇\varphi_n)\to\neg(□\varphi_1\wedge\ldots\wedge□\varphi_n)\in {𝐒}$, and hence $◇(\varphi_1\wedge\ldots\wedge\varphi_n)\to\neg□(\varphi_1\wedge\ldots\wedge\varphi_n)\in {𝐒}$, and therefore (contraposing): $□(\varphi_1\wedge\ldots\wedge\varphi_n)\to□\neg(\varphi_1\wedge\ldots\wedge\varphi_n)\in {𝐒}$. These manoevres are all justified by the normality (in ${𝐒}$) of $□$. We have ended up with a premiss for the rule mentioned in Prop. 2.1(iv), so we conclude that the conclusion, $\neg(\varphi_1\wedge\ldots\wedge\varphi_n)$, is provable in ${𝐒}$: but this contradicts the fact that $\varphi_1,\ldots,\varphi_n$ are all drawn from the ${𝐒}$-consistent set $y$. We conclude from this contradiction that the set $\{◇\varphi\wedge□\varphi\mid\varphi\in y\}$ is indeed ${𝐒}$-consistent, and so that $y$ has an $R$-predecessor bearing $R$ only to $y$, and thus, since $y$ was arbitrary, that $\langle W,R,V\rangle$ satisfies the Predecessor Condition. ■
+
+At the end of this section we shall see that several familiar modal logics are not closed under the Cancellation Rule. Before proceeding, we pause to observe that infinitely many normal modal logics are so closed. Let ${𝐂}_n$ be the schema $□^n\varphi\leftrightarrow\varphi$. (As usual, ‘$□^n$’ indicates $n$-fold iteration of ‘$□$’; the ‘${𝐂}$’ is for ‘cyclic’: see the top left hand diagram of Figure 2 in [12], putting $k=0$ there.) ${𝐊}{𝐂}_n$ is to be the smallest normal (monomodal) logic containing all instances of the schema ${𝐂}_n$. (This makes ${𝐊}{𝐂}_1$ the logic called ${𝐊}{𝐓}!$ in the nomenclature of [3].)
+
+Proposition 2.3. The logics ${𝐊}{𝐂}_n$ are all closed under the Cancellation Rule; the logics ${𝐊}{𝐂}_m$ and ${𝐊}{𝐂}_n$ are distinct whenever $m\ne n$.
+
+Proof. The second assertion follows from the unprovability of the instance of ${𝐂}_m$ with $\varphi$ as a propositional variable in the logic ${𝐊}{𝐂}_n$ whenever $m<n$. (One can check this by an easy semantic argument.) For the first assertion, suppose $□\varphi\leftrightarrow□\psi\in {𝐊}{𝐂}_n$. By normality, we can prefix $□^{n-1}$ to each side of this biconditional, concluding that $□^n\varphi\leftrightarrow□^n\psi\in {𝐊}{𝐂}_n$; hence, by appeal to the schema ${𝐂}_n$ we have $\varphi\leftrightarrow\psi\in {𝐊}{𝐂}_n$. ■
+
+We shall hear more of these logics ${𝐊}{𝐂}_n$ in subsection 6.2.
+
+Proposition 2.2 is reminiscent of a similar result for the rule of Denecessitation (from: $□\varphi$ to: $\varphi$); when a reference to this rule replaces the reference to the Cancellation Rule, the corresponding result replaces the Predecessor Condition by a weaker condition – that the model in question is ‘converse serial’ in the sense that for all $y\in W$ there exists $x\in W$ with $xRy$. (And again, we can further replace the talk of the canonical model’s satisfying this condition by talk of being determined by some class of models all of which satisfy it). Syntactically, the closure of a normal monomodal logic under Denecessitation follows from its closure under the Cancellation Rule by putting $\psi=\top$.
+
+The above semantic characterization of Denecessitation is a special case of the results proved in [9] concerning what Lemmon and Scott call the ‘Rule of $n$-ary Disjunction’, which they describe a modal logic $\mathrm{S}$ as possessing when for any $\varphi_1,\ldots,\varphi_n$, if $□\varphi_1\vee\ldots\vee□\varphi_n\in {𝐒}$ then $\varphi_1\in {𝐒}$ or … or $\varphi_n\in {𝐒}$. (Actually, Lemmon and Scott say simply that a logic possesses the Rule of Disjunction when the above condition is satisfied for all $n$.) Because of the ‘or’s here, when $n>1$ we prefer to describe this as a generalized rule rather than as a rule simpliciter. (There is no such thing as the closure of a set of formulas under this ‘rule’.) The corresponding semantic condition is an obvious variation on converse seriality: namely that for any $y_1,\ldots,y_n\in W$ there exists $x\in W$ with $xRy_1$ and … and $xRy_n$. It may be of some interest to note a similarly generalized version of the Cancellation Rule. Just as the (generalized) Rule of $n$-ary Disjunction is the Denecessitation Rule when $n=1$, so the Cancellation Rule – in the ‘implicational’ form given under Proposition 2.1(iii) – is the $n=1$ case of the following principle:
+
+$\begin{aligned}&\text{If }□(\varphi_1\vee\ldots\vee\varphi_n)\to(□\psi_1\vee\ldots\vee□\psi_n)\in {𝐒}\text{ then}\\&\qquad\qquad\varphi_1\to\psi_1\in {𝐒}\text{ or }\ldots\text{ or }\varphi_n\to\psi_n\in {𝐒}\end{aligned}$
+
+or, equivalently, of the following:
+
+If $□\varphi\to(□\psi_1\vee\ldots\vee□\psi_n)\in {𝐒}$ then $\varphi\to\psi_1\in {𝐒}$ or … or $\varphi\to\psi_n\in {𝐒}$
+
+To describe the effect of this condition on the canonical model for a system ${𝐒}$ satisfying it, it is convenient to use the notation $R(w)$ for $\{z\in W\mid wRz\}$ (understood relative a to a model $\langle W,R,V\rangle$ with $w\in W$), in terms of which the Predecessor Condition itself becomes: for all $y\in W$ there exists $x\in W$ with $R(x)=\{y\}$. Then the corresponding condition for the above generalized Cancellation Rule is: for all $y_1,\ldots,y_n\in W$ there exists $x\in W$ with $R(x)=\{y_1,\ldots,y_n\}$. (Compare this with the condition given above for the $n$-ary Disjunction Rule, which replaces ‘$=$’ by ‘$\supseteq$’.)
+
+Finally, on the subject of this comparison between the Rule of Disjunction and the generalized Rule of Cancellation, we recall that Lemmon and Scott showed, using a simple ‘adjunction of points’ argument that the smallest normal (mono)modal logic ${𝐊}$ satisfies the $n$-ary Rule of Disjunction for all $n\in▲$. ([9], proof of Theorem 3.5. This style of argument goes back to [8]. ) The same argument shows – since the point adjoined bears the accessibility relation of the new model to just the selected $n$ points falsifying $\varphi_1,\ldots,\varphi_n$ – that ${𝐊}$ satisfies, for each $n$, the $n$-ary generalized Cancellation Rule above. The corresponding arguments by adjunction of points showing that ${𝐊}\mathbf{4}$, ${𝐊}{𝐓}$, and ${𝐒}\mathbf{4}$ (= ${𝐊}{𝐓}\mathbf{4}$) have the Rule of Disjunction lack this feature, since we have to keep the new model in the class of transitive, reflexive, and reflexive and transitive models respectively: not surprisingly, since these logics are not closed under the Cancellation Rule. In the case of ${𝐊}\mathbf{4}$, we can illustrate the failure of closure by noting that $□ p\to□□ p\in {𝐊}\mathbf{4}$ while $p\to□ p\notin {𝐊}\mathbf{4}$; for the case of ${𝐊}{𝐓}$ we have $□(p\wedge\neg□ p)\to□\bot\in {𝐊}{𝐓}$ while $(p\wedge\neg□ p)\to\bot\notin {𝐊}{𝐓}$. Either illustration makes the point for the case of ${𝐒}\mathbf{4}$. (Note that we have used the version of the Cancellation Rule given in Prop 2.1(iii), and that – here and below – we abbreviate (say) ‘$p_0$’ to ‘$p$’. For a variation – due to de Jongh – on this rule, under which ${𝐊}\mathbf{4}$ is closed, see [13], p.70, p.97f., and p. 105.)
+
+# 3. Left Inverses
+
+We adapt the system of nomenclature for normal modal logics of [3] in the following way. In labelling a normal bimodal extension of ${𝐊}{𝐋}$ we fill the blanks in ‘${𝐊}\_{{𝐋}}\_$’ with names of schemata governing $□$ and $L$ respectively. The labels we particularly need are: ‘${𝐓}$’, ‘${𝐓}_c$’ and ‘${𝐓}!$’ (‘$\bigcirc\varphi\to\varphi$’, ‘$\varphi\to\bigcirc\varphi$’, and ‘$\bigcirc\varphi\leftrightarrow\varphi$’, respectively, for $\bigcirc=□,L$); ‘${𝐃}$’, ‘${𝐃}_c$’ and ‘${𝐃}!$’ (‘$\bigcirc\varphi\to\neg\bigcirc\neg\varphi$’, ‘$\neg\bigcirc\neg\varphi\to\bigcirc\varphi$’, and ‘$\bigcirc\varphi\leftrightarrow\neg\bigcirc\neg\varphi$’), and ‘$\mathbf{4}$‘, ‘$\mathbf{4}_c$’ and ‘$\mathbf{4}!$’ (‘$\bigcirc\varphi\to\bigcirc\bigcirc\varphi^{\prime}$, ‘$\bigcirc\bigcirc\varphi\to\bigcirc\varphi$’, and ‘$\bigcirc\varphi\leftrightarrow\bigcirc\bigcirc\varphi$’). For example, ${𝐊}{𝐃}_c{𝐋}\mathbf{4}$ is the smallest normal bimodal logic containing all instances of the left-inverse schema $L□\varphi\leftrightarrow\varphi$ as well as of $◇\varphi\to□\varphi$ and $L\varphi\to LL\varphi$. Because of the interaction between $□$ and $L$ occasioned by the left-inverse schema, distinct such names may single out the same logic:
+
+Example 3.1. (i) ${𝐊}{𝐓}_c{𝐋}={𝐊}{𝐋}{𝐓}$; (ii) ${𝐊}{𝐓}{𝐋}={𝐊}{𝐋}{𝐓}_c$.
+
+By way of illustration, we treat (ii). The following sequence of steps shows that ${𝐊}{𝐓}{𝐋}\subseteq {𝐊}{𝐋}{𝐓}_c$, deriving ${𝐓}_c$ for $L$ from ${𝐓}$ for $□$: $□\varphi\to\varphi$; $L□\varphi\to L\varphi$; $\varphi\to L\varphi$. Here the second formula (for any given choice of $\varphi$) is obtained from the first by the normality of $L$, and the third from the second by appeal to the left-inverse schema. For the converse inclusion, deriving ${𝐓}$ for $□$ from ${𝐓}_c$ for $L$: $□\varphi\to L□\varphi$; $□\varphi\to\varphi$. (Here the first step is a special case of ${𝐓}_c$ for $L$, and the normality of $L$ is not required.) Similar reasoning gives the following more dramatic case.
+
+Example 3.2. ${𝐊}{𝐓}!{𝐋}={𝐊}\mathbf{4}!{𝐋}={𝐊}\mathbf{4}{𝐋}={𝐊}{𝐋}\mathbf{4}={𝐊}{𝐋}\mathbf{4}!={𝐊}{𝐋}{𝐓}!$
+
+The logic featured in Example 3.2 is a Post-complete normal bimodal logic (a dual atom in the lattice – ordered by inclusion – of all such logics, that is): since the operators $□$ and $L$ are both vacuous in this logic (which has the redundancy – involving label ${𝐊}{𝐓}!{𝐋}{𝐓}!$), any unprovable formula is provably equivalent to a non-tautologous formula free of modal operators, so that its addition would yield the inconsistent logic. In fact, by an argument which we shall not give here, this is the only Post-complete extension of any normal extension of ${𝐊}{𝐋}$ which has a finite model (note: we are not saying ‘which has a finite characteristic model’); however – as again we shall not show here – there are normal extensions of ${𝐊}{𝐋}$ which lack finite models, and uncountably many of these are Post-complete. The same example illustrates something else: since the monomodal logic ${𝐊}\mathbf{4}!$ is a proper subsystem of ${𝐊}{𝐓}!$, while ${𝐊}{𝐓}!{𝐋}={𝐊}\mathbf{4}!{𝐋}$, the extension to a normal bimodal logic with a left inverse for $□$ is non-conservative. This is not surprising, of course, since ${𝐊}\mathbf{4}!$ (and for that matter ${𝐊}\mathbf{4}$ itself, as was mentioned at the end of the preceding section) is not closed under the Cancellation Rule. We make the considerations at work here explicit in Theorem 3.4 below.
+
+To this end, we need a lemma dealing with what we call expanded models. Where $\langle W,R,V\rangle$ is any model satisfying the Predecessor Condition, we call $\langle W,R,f,V\rangle$ an expanded model if $f$ is a function (from $W$ to $W$) assigning to each $y\in W$ some element of the (ex hypothesi, non-empty) set $\{x\in W\mid R(x)=\{y\}\}$. We call $\langle W,R,f,V\rangle$ an expansion of the original model $\langle W,R,V\rangle$. (Typically, a model which satisfies the Predecessor Condition will have more than one expansion, since there will be more than one selection function $f$ available to choose for each element some element bearing $R$ to precisely that element.) Truth in an expanded model is given the usual inductive definition supplemented by the following clause for $L$: a formula $L\varphi$ is true at $w$ just in case $\varphi$ is true at $f(w)$. We make an obvious observation using the following terminology. A model (an expanded model) throughout which every formula in some set is true is called a model for (expanded model for) that set of formulas. A frame for (expanded frame for) a set of formulas – typically a logic – is a frame (expanded frame) every model (expanded model) on which is a model (an expanded model) for that set of formulas.
+
+Lemma 3.3. If $\langle W,R\rangle$ is a frame satisfying the Predecessor Condition for a normal monomodal logic ${𝐒}$, then any expansion $\langle W,R,f\rangle$ (of $\langle W,R\rangle$) is a frame for ${𝐒}{𝐋}$.
+
+Proof. It suffices to check that $L$’s normality and left-inverse properties give only formulas valid on the expanded model. ■
+
+As usual, we call a normal monomodal logic canonical when the frame of the canonical model for that logic is a frame for the logic.
+
+Theorem 3.4. For any canonical normal monomodal logic ${𝐒}$: ${𝐒}{𝐋}$ is a conservative extension of ${𝐒}$ if and only if ${𝐒}$ is closed under the Rule of Cancellation.
+
+Proof. ‘Only if’: Suppose that ${𝐒}{𝐋}$ is a conservative extension of ${𝐒}$ and that $□\varphi\leftrightarrow□\psi\in {𝐒}$. Since ${𝐒}{𝐋}$ is closed under the Rule of Cancellation, $\varphi\leftrightarrow\psi\in {𝐒}{𝐋}$. But as $□\varphi\leftrightarrow□\psi\in {𝐒}$, $\varphi$ and $\psi$ (and therefore also $\varphi\leftrightarrow\psi$) do not contain $L$, so since ${𝐒}{𝐋}$ is a conservative extension of ${𝐒}$, $\varphi\leftrightarrow\psi\in {𝐒}$.
+
+‘If’: Suppose that (canonical) ${𝐒}$ is closed under the Rule of Cancellation and that $\varphi\in {𝐒}{𝐋}$, for $L$-free $\varphi$. We must show that $\varphi\in {𝐒}$. So suppose otherwise. Then $\varphi$ is false at some point $w$ in the canonical model $\langle W,R,V\rangle$ for ${𝐒}$, which model, by Proposition 2.2, satisfies the Predecessor Condition. In any expansion $\langle W,R,f,V\rangle$ of this model, $\varphi$ is false at $w$, since $\varphi$ does not contain $L$ and the definition of truth for such formulas makes no reference to $f$ and so agrees with truth at the given point in the original model. Thus $\langle W,R,f\rangle$ is not an expanded frame for ${𝐒}{𝐋}$, which contradicts Lemma 3.3, since, ${𝐒}$ being canonical, $\langle W,R\rangle$ is a frame for ${𝐒}$. ■
+
+The expanded models in play here verify not just the provable formulas of ${𝐒}{𝐋}$ but of the stronger logic ${𝐒}{𝐋}{𝐃}!$. As a result, we have for example:
+
+Proposition 3.5. ${𝐊}{𝐋}{𝐃}!$ is determined by the class of all expanded models.
+
+Proof. Soundness: Clear.
+
+Completeness: By a canonical model construction. Specifically, for a ${𝐊}{𝐋}{𝐃}!$ maximal consistent set $y$, define $f(y)$ to be $\{\psi\mid L\psi\in y\}$; by ${𝐃}$! (for $L$) this set is maximal consistent, and automatically settles the case of $\varphi=L\psi$ in the inductive part of the proof that $\varphi$ is true at $w$ in the model if and only if $\varphi\in w$. It remains only to check that, with $f$ so defined, and $R$ (as well as $W$ and $V$) defined as usual, $\langle W,R,f,V\rangle$ is an expanded model: that is, that $R(f(y))=\{y\}$. It is left to the reader to exploit the left inverse schema to show this. ■
+
+The leap from ${𝐒}{𝐋}$ to ${𝐒}{𝐋}{𝐃}!$ is, incidentally, not so great as it may appear from this labelling, because already ${𝐒}{𝐋}={𝐒}{𝐋}{𝐃}$ (so ${𝐒}{𝐋}{𝐃}!={𝐒}{𝐋}{𝐃}_c$). To substantiate this claim, it suffices to show that ${𝐃}$ holds for $L$ in ${𝐒}{𝐋}$, in the sense that the equivalent form $\neg L\bot$, is provable in ${𝐒}{𝐋}$: but this is immediate from a special case of the left inverse schema, namely $L□\bot\leftrightarrow\bot$.
+
+Given that the expanded models above provide a semantic treatment specifically for the systems ${𝐒}{𝐋}{𝐃}!$ (and their extensions), what can be offered in a similar vein for the weaker ${𝐒}{𝐋}$ (alias ${𝐒}{𝐋}{𝐃}$)? As usual for a normal bimodal logic, we need two accessibility relations in our models, and we denote the additional relation (for interpreting $L$) by $R'$. That is, we count $L\varphi$ as true at $w$ in a (bi-relational) model $\langle W,R,R',V\rangle$ just in case $\varphi$ is true at every $x$ such that $wR'x$. For the basic system, ${𝐊}{𝐋}$, the conditions we need to impose on such models are the following (using some obvious abbreviative notation, and taking variables to range over $W$):
+
+$$\forall u\,\exists v\,(uR'vRu)$$
+
+(1)
+
+$$\forall u,v,w\,(uR'vRw\Rightarrow w=u)$$
+
+(2)
+
+For any normal monomodal logic ${𝐒}$ closed under the Cancellation Rule, the logic ${𝐒}{𝐋}$ is determined by some class of such models; for the weakest such logic, we have the following (predictable) result.
+
+Proposition 3.6. ${𝐊}{𝐋}$ is determined by the class of all bi-relational models satisfying conditions (1) and (2) above.
+
+In a notation which is more suggestive in the light of the considerations reviewed in Section 1, we can rewrite (1) as $I\subseteq R'\circ R$, where $I$ is the identity relation on $W$ and $\circ$ denotes composition of relations (‘relative product’). Similarly, (2) amounts to the converse inclusion, so that together we have $R'\circ R=I$, stating that $R'$ is a left inverse of $R$ in the semigroup of binary relations (under $\circ$) on $W$. Let us say that a relation $R\subseteq W\times W$ is left-invertible if the following condition is satisfied:
+
+$$\exists R'\,(R'\circ R=I)$$
+
+(∗)
+
+More explicitly, we should say ‘left-invertible over $W$’, but let us take some fixed $W$ as a background domain. Now (*) is a second-order condition on $\mathrm{R}$, because it quantifies over relations on, rather than just elements of, this domain. If we ask whether there is a purely first-order condition equivalent to (*), we answer with following, which may be thought of as a ‘modal-logic’ – free version of Theorem 3.4.
+
+Proposition 3.7. For any set $W$ with $R\subseteq W\times W$, $R$ is left-invertible if and only if $\langle W,R\rangle$ satisfies the Predecessor Condition: $\forall y\,\exists x\,\forall z\,(xRz\Leftrightarrow z=y)$.
+
+Proof. ‘If’: Suppose the Predecessor Condition is satisfied, so that for each $y\in W$ there exists $x\in W$ with $R(x)=\{y\}$. Let $f(y)$ be some such $x$, and define $R'=\{<y,f(y)>\mid y\in W\}$, noting that $R'\circ R=I$.
+
+‘Only if’: Let $R'$ be a left inverse of $R$, so that (1) and (2) are satisfied. Then for any $u\in W$ a $v$ as promised by (1) bears $R$ to $u$ and, by (2), only to $u$: so the Predecessor Condition is satisfied. ■
+
+Our discussion of left inverses has concentrated on the case of normal rather than merely congruential such inverses. The notation for logics here would be an obvious adaptation of that given above: for example, ${𝐊}{𝐃}({𝐋}\mathbf{4})$ would be the bimodal logic with normal $□$ satisfying the ${𝐃}$ schema and congruential $L$ satisfying the left inverse schema and the 4 schema. We address such congruential left inverse extensions of monomodal ${𝐒}$ with the following observations. (The straightforward proof of (i) is omitted; (ii) follows from (i) and Thm. 3.4.)
+
+Proposition 3.8. For any normal monomodal logic ${𝐒}$:
+
+(i)
+${𝐒}$ is closed under Cancellation if and only if ${𝐒}({𝐋})$ extends ${𝐒}$ conservatively
+(ii)
+If ${𝐒}$ is canonical, then ${𝐒}({𝐋})$ extends ${𝐒}$ conservatively if and only if ${𝐒}{𝐋}$ extends ${𝐒}$ conservatively.
+
+We conclude this section with an open problem: how to prove or refute the claim resulting from Thm. 3.4 by deleting the word ‘canonical’. Such a claim would allow a similar deletion from Prop. 3.8(ii) and would follow from a version of Lemma 3.3 in terms of models rather than frames, which read instead: ‘If $\langle W,R,V\rangle$ is a model, satisfying the Predecessor Condition, for a normal monomodal logic ${𝐒}$, then any expansion $\langle W,R,f,V\rangle$ (of $\langle W,R,V\rangle$) is a model for ${𝐒}{𝐋}$’; however, the proof sketched for Lemma 3.3 itself would not justify this new version (there being no reason to suppose that substitution instances, in the language of ${𝐒}{𝐋}$, of theorems of ${𝐒}$, were all true throughout the expanded model). The only progress we have been able to make in the direction of showing that ‘canonical’ can be deleted from the statement of Thm. 3.4 has been to show (by an argument we do not give here) that such a deletion is possible for the case of normal monomodal ${𝐒}$ for which ${𝐒}\nsubseteq {𝐊}{𝐃}\mathbf{4}$: for all such ${𝐒}$, that is, closure under Cancellation guarantees that extension to $\mathrm{SL}$ is conservative.
+
+# 4. Right Inverses
+
+Because $\bigcirc_i$ is a left inverse of $\bigcirc_j$ just in case $\bigcirc_j$ is a right inverse of $\bigcirc_i$, some attention has in effect already been given to issues concerning right inverses for $□$ in the course of the above discussion of left inverses. If we denote by $\varphi^\#$ the result of replacing, simultaneously, all occurrences of ‘$□$’ by ‘$R$’ and all occurrences of ‘$L$’ by ‘$□$’ in a formula $\varphi$ of the language (with modal operators $L$ and $□$) of the preceding section, and put, for a set $\mathrm{\Phi}$ of such formulas, $\mathrm{\Phi}^\#=\{\varphi^\#\mid\varphi\in\mathrm{\Phi}\}$, then ${𝐊}{𝐑}=({𝐊}{𝐋})^\#$, for example. (Here we assume the labelling policy described at the start of Section 3 in terms of the notation ‘${𝐊}\_{{𝐋}}\_$’ taken over mutatis mutandis for ‘${𝐊}\_{{𝐑}}\_$’.) Similarly, where ${𝐗},{𝐘}$, are any schema-labels, ${𝐊}{𝐗}{𝐑}{𝐘}=({𝐊}{𝐘}{𝐋}{𝐗})^\#$. By this correspondence, we have, for example, that ${𝐊}{𝐑}$ is closed under the Cancellation Rule (not for $□$ but) for $R$, i.e. the rule From: $R\varphi\leftrightarrow R\psi$ to: $\varphi\leftrightarrow\psi$. Although viewed ‘statically’, the correspondence means that logics with a normal modal operator having a normal right inverse do not raise issues not already raised by logics with a normal modal operator having a normal left inverse, the dynamics of extending a given normal modal logic to one with a normal right inverse are not the same as those for the analogous extension with a left inverse – to say nothing of the case in which we ask only for a congruential inverse. In the first place, the above rule of Cancellation for $\mathrm{R}$ is a rule under which ${𝐒}{𝐑}$, and indeed ${𝐒}({𝐑})$, is closed, whereas we should ideally like, given Prop. 3.8 and the discussion following it, a syntactic condition on the original monomodal ${𝐒}$ which is necessary and sufficient for those systems to extend ${𝐒}$ conservatively. A second complication arises from the fact that the question of whether the extension of ${𝐒}$ to ${𝐒}({𝐑})$ is conservative and that of whether the extension to ${𝐒}{𝐑}$ is conservative questions need no longer have the same answer for a given canonical ${𝐒}$, by contrast with the left inverse case (Prop. 3.8):
+
+Example 4.1. ${𝐊}{𝐓}({𝐑})$ is a conservative extension of ${𝐊}{𝐓}$; but ${𝐊}{𝐓}{𝐑}$ is not a conservative extension of ${𝐊}{𝐓}$.
+
+The first assertion here can be extracted from [16]; the second (also implicit in [16]) is justified as follows. The right inverse schema and ${𝐓}$ give $\varphi\to R\varphi\in {𝐊}{𝐓}{𝐑}$, for all formulas $\varphi$, so taking $\varphi$ as $Rp\to p$, we have
+
+(1)
+$\vdash_{{𝐊}{𝐓}{𝐑}}(Rp\to p)\to R(Rp\to p)$.
+
+The normality of $R$ gives $Rp\to R(\psi\to p)$ for all $\psi$; so taking $\psi$ as $Rp$, we have
+
+(2)
+$\vdash_{{𝐊}{𝐓}{𝐑}}Rp\to R(Rp\to p)$
+
+By truth-functional reasoning from (1) and (2), we have
+
+(3)
+$\vdash_{{𝐊}{𝐓}{𝐑}}R(Rp\to p)$
+
+So by Necessitation (with $□$) and the right inverse schema:
+
+(4)
+$\vdash_{{𝐊}{𝐓}{𝐑}}Rp\to p$
+
+Then, since $□$ is normal,
+
+(5)
+$\vdash_{{𝐊}{𝐓}{𝐑}}□ Rp\to□ p$
+
+Finally, by appeal to the right inverse schema, we conclude that $p\to□ p\in {𝐊}{𝐓}{𝐑}$. Since $p\to□ p\notin {𝐊}{𝐓}$, the extension is non-conservative.
+
+Since ${𝐒}({𝐑})\subseteq {𝐒}{𝐑}$, whenever ${𝐒}{𝐑}$ extends ${𝐒}$ conservatively, ${𝐒}({𝐑})$ does; but as the above example shows, one can have ${𝐒}({𝐑})$ conservatively extending ${𝐒}$ without ${𝐒}{𝐑}$ doing so. We should like to have syntactic conditions on ${𝐒}$ which reliably indicate the conservativeness of the extensions in each case. We only possess such information in the former case (the extension of ${𝐒}$ to ${𝐒}({𝐑})$), however. For this case, it is necessary to adjust the rule mentioned under the name ‘Cancellation for $R$’ above. As was pointed out, closure under this rule is not an appropriate syntactic condition on the $R$-free system ${𝐒}$ to be extended. What is wanted is, rather, a condition of closure under a rule we shall call Inner Cancellation (or more explicitly: Inner Cancellation for $□$). To formulate the rule, we use the notation $s_□$ to denote the substitution which replaces each propositional variable $p_i$ by $□ p_i$. In fact, more generally, for any $k$-ary connective $\kappa$, we shall understand by $s_\kappa$ the substitution which maps each $p_i$ to $\kappa(p_i,\ldots,p_i)$ ($k$ occurrences of $p_i$). In what follows we exploit this notation only for cases in which $k=0$ or $k=1$.
+
+Inner Cancellation
+
+$\begin{aligned}
+\mathit{From}:&\quad s_□(\varphi)\\
+\mathit{To}:&\quad\varphi.
+\end{aligned}$
+
+Thus, for example, if $□◇□ p\to◇□ p\in {𝐒}$ and ${𝐒}$ is closed under Inner Cancellation, then $□◇ p\to◇ p\in {𝐒}$. As this example illustrates, Inner Cancellation deletes innermost occurrences of $□$, while our familiar Cancellation rule for $□$ – which might accordingly be called ‘Outer’ Cancellation – deletes outermost occurrences. In some cases the results are the same. For example, as applied to the premiss $□ p\to□□ p$ both yield the same conclusion: $p\to□ p$. It follows, by the reasoning of the following paragraph, that ${𝐊}\mathbf{4}$ and ${𝐒}\mathbf{4}$ are extended non-conservatively when they are extended to include a congruential right inverse for $□$, no less than – as the last paragraph of Section 2 (together with Prop. 3.8) showed – when they are extended to include a congruential left inverse.
+
+It is not hard to see that closure of ${𝐒}$ under Inner Cancellation is a necessary condition for the extension to ${𝐒}({𝐑})$ to be conservative. For suppose that $s_□(\varphi)\in {𝐒}$; then $s_□(\varphi)\in {𝐒}({𝐑})$, so by Uniform Substitution, $s_Rs_□(\varphi)\in {𝐒}({𝐑})$. Now, $s_Rs_□(p)=□ Rp$, so for all $\varphi$, $\varphi\leftrightarrow s_Rs_□(\varphi)\in {𝐒}({𝐑})$. Therefore $\varphi\in {𝐒}({𝐑})$, and $\varphi$ is $R$-free, so unless ${𝐒}$ is closed under Inner Cancellation, the passage to ${𝐒}({𝐑})$ will be non-conservative. In fact, closure (of ${𝐒}$) under Inner Cancellation is not only necessary, but also sufficient for ${𝐒}({𝐑})$ to be a conservative extension. Our proof of this consists in the construction, for an arbitrary normal monomodal ${𝐒}$ (assumed closed under Inner Cancellation), of a system ${𝐒}^+$ with ${𝐒}({𝐑})\subseteq {𝐒}^+$ and with ${𝐒}^+$ demonstrably a conservatively extension of ${𝐒}$. It follows that ${𝐒}({𝐑})$ conservatively extends ${𝐒}$. As the construction in question is somewhat elaborate, we economize on space by omitting a proof for the ‘if’ direction:
+
+Theorem 4.2. For any normal monomodal logic ${𝐒}$, ${𝐒}({𝐑})$ is a conservative extension of ${𝐒}$ if and only if ${𝐒}$ is closed under Inner Cancellation.
+
+We recall the concept of a universally representative connective, introduced for the case of the connective $□$ in Section 1: a connective $\kappa$ is universally representative in a logic if in that logic every formula is provably equivalent to a formula of the form $\kappa(\varphi_1,\ldots,\varphi_k)$. Here $\kappa$ is assumed $k$-ary and for notational convenience in what follows we consider the case of $k=1$. Universal representativeness is related to the Inner Cancellation rule for $\kappa$ by the following considerations. (To make the following points in full generality, allowing $k>1$, we should need to modify our convention as to what the substitutions $s_\kappa$ do.) To show that a connective is not universally representative in a logic – not necessarily an $n$-modal logic by the definition of Section 1, but assumed closed under Uniform Substitution and to be congruential in an obvious enough sense – it suffices to show that the logic treats that connective in what we may call a special way: meaning that there is a feature the logic accords to all formulas with the given connective as main connective, but not to all formulas whatever. For example, negation is ‘special’ in intuitionistic logic because negated formulas have the following feature not shared by all formulas: they are provably implied by their own double negations. The fact that negated formulas are thus special shows that negation is not universally representative in intuitionistic logic, since this would make every formula equivalent to a formula having the feature in question, whence, by congruentiality, every formula would have that feature after all. Similarly, in ${𝐊}\mathbf{4}$ (or ${𝐒}\mathbf{4}$) $□$ is special because $□$-formulas provably imply their own necessitations while not all formulas do, and in the Verum system $(K+□\bot)$ $□$ is special because because all $□$-formulas are provable while not all formulas are. Accordingly, by the same reasoning as before, $□$ is not universally representative in these modal logics. Contraposing the general statement here – that being special implies not being universally representative – we get: any universally representative connective is non-special. But this is just to say (given closure under Uniform Substitution) that if $\kappa$ is universally representative in a logic, then that logic is closed under Inner Cancellation for $\kappa$: the rule for passing, for arbitrary $\varphi$, from $s_\kappa(\varphi)$ to $\varphi$. The converse is, incidentally, false. For example, ${𝐊}{𝐃}$ is closed under Inner Cancellation for $□$ – this connective is non-special in ${𝐊}{𝐃}$, in the other terminology – though $□$ is not universally representative in that logic. The latter claim follows from the fact that $□$ is not universally representative in ${𝐒}\mathbf{4}$ (by the argument above) and ${𝐒}\mathbf{4}\supseteq {𝐊}{𝐃}$. The former claim follows from Thm. 4.2 and Prop. 5.2 together with a remark about ${𝐊}{𝐃}$ which precedes the statement, below, of Prop. 5.2. Bibliographical note: the examples of non-universality in intuitionistic logic and modal logic given above may be found in [7], $$12.4 and 27.2, respectively; an earlier source for these and several other examples of non-universality in virtue of ‘specialness’ is [10].
+
+For the sake of a result related to that just alluded to (and also to be proved in Section 6), we give here a further observation (Prop. 4.4) pertaining to the conservativeness of ${𝐒}({𝐑})$ as an extension of ${𝐒}$.
+
+Lemma 4.3. If ${𝐒}$ is a normal monomodal logic with $\vdash_{{𝐒}} p\to□◇^k p$ for some $k\ge0$, then if ${𝐒}({𝐑})$ is a conservative extension of ${𝐒}$, we have $\vdash_{{𝐒}}□^k◇ p\to p$.
+
+Proof. Given the hypothesis of the Lemma, we show by induction on $i\le k$ that $\vdash_{{𝐒}}□^i◇□^{k-i}p\to p$. For $i=0$, this follows from normality. For the induction step, suppose that $i<k$ and $\vdash_{{𝐒}}□^i◇□^{k-i}p\to p$. By Uniform Substitution, $\vdash_{{𝐒}({𝐑})}□^i◇□^{k-i}Rp\to Rp$, so by the normality of $□$, $\vdash_{{𝐒}({𝐑})}□^{i+1}◇□^{k-i}Rp\to□ Rp$. Since $R$ is a right inverse of $□$, we have (using the congruentiality of $□$ to make the replacement in the antecedent) $\vdash_{{𝐒}({𝐑})}□^{i+1}◇□^{k-(i+1)}p\to p$. Since ${𝐒}({𝐑})$ is a conservative extension of ${𝐒}$, $\vdash_{{𝐒}}□^{i+1}◇□^{k-(i+1)}p\to p$, completing the induction. The Lemma then follows by taking $i=k$. ■
+
+Proposition 4.4. Let ${𝐒}$ be a normal monomodal system with $\vdash_{{𝐒}} p\to□◇^k p$ for some $k\ge0$. Then ${𝐒}({𝐑})$ is a conservative extension of ${𝐒}$ if and only if $\vdash_{{𝐒}} p\leftrightarrow□^{k+1}p$.
+
+Proof. ‘If’. Even without the assumption that $p\to□◇^k p\in {𝐒}$, if $p\leftrightarrow□^{k+1}p\in {𝐒}$, then $□^k$ is a congruential right inverse of $□$ within ${𝐒}$, so the extension of ${𝐒}$ by $R\varphi\leftrightarrow□^k\varphi$ (all formulas $\varphi$) is a conservative extension of ${𝐒}$, which itself includes the logic ${𝐒}({𝐑})$.
+
+‘Only if’. Suppose ${𝐒}({𝐑})$ extends ${𝐒}$ conservatively and $\vdash_{{𝐒}} p\to□◇^k p$. By Lemma 4.3, we have (1) $\vdash_{{𝐒}}□^k◇ p\to p$. The supposition also gives us that ${𝐒}\supseteq {𝐊}{𝐃}$ (see below), so, since $\vdash_{{𝐊}{𝐃}}□^{k+1}p\to□^k◇ p$, we have (2) $\vdash_{{𝐒}}□^{k+1}p\to□^k◇ p$. From (1) and (2), we conclude: (3) $\vdash_{{𝐒}}□^{k+1}p\to p$. For the converse implication, we note that (3) yields, by normality, $\vdash_{{𝐒}}\neg□^{k+1}(p\wedge\neg□^{k+1}p)$, so: (4) $\vdash_{{𝐒}}◇^{k+1}(p\to□^{k+1}p)$. Now (1) implies that for all $\varphi$, if $◇\varphi\in {𝐒}$ then $\varphi\in {𝐒}$; for by normality if $◇\varphi\in {𝐒}$ then $□^k◇\varphi\in {𝐒}$, so Uniform Substitution (of $\varphi$ for $p$) in (1) and Modus Ponens give $\varphi\in {𝐒}$. Repeated appeals to this rule of ‘Depossibilitation’ deliver the conclusion that $\vdash_{{𝐒}} p\to□^{k+1}p$, from (4). Putting this together with (3) then gives the desired result: $\vdash_{{𝐒}} p\leftrightarrow□^{k+1}p$. ■
+
+As for the claim in the above proof that ${𝐒}\supseteq {𝐊}{𝐃}$, we note that this is secured by the hypothesis that ${𝐒}({𝐑})$ extends ${𝐒}$ conservatively, in view of the following instance of the right inverse schema: $□ R\bot\leftrightarrow\bot$, since this implies $◇\top$. (Compare the remark following Prop. 3.5)
+
+# 5. The Successor Condition
+
+Although, as we have remarked, we do not know of a syntactic condition on ${𝐒}$ which is necessary and sufficient for the normal right inverse extension ${𝐒}{𝐑}$ to be conservative, unlike the case of conservative extension to ${𝐒}({𝐑})$ (Thm. 4.2) and to ${𝐒}{𝐋}$ (for canonical ${𝐒}$ at least) and ${𝐒}({𝐋})$ (Thm. 3.4, Prop. 3.8), a consideration of the route taken to the latter results especially – the route via the Predecessor Condition – turns out to connect fruitfully with the topics we have been exploring.
+
+According to Prop. 3.7, which we described as a (modal) logic – free version of the main result for the systems ${𝐒}{𝐋}$, Theorem 3.4, the second-order condition of left-invertibility had a first order equivalent in the shape of: the Predecessor Condition – a condition satisfied by the canonical models of precisely those monomodal logics which were closed under the (‘outer’) Cancellation Rule. The question naturally arises, then, as to what the analogue of the Predecessor Condition might be when we turn our attention from left-invertibility to right-invertibility. By parity with the ‘left’ case, we are understanding the claim that $R\subseteq W\times W$ is right-invertible to mean that
+
+$$\exists R'\,(R\circ R'=I)$$
+
+(∗∗)
+
+We can obtain a first-order condition equivalent to (**) by considering the following well-known property of composition of relations and their converses (symbolized here by the superscript ‘${}^{-1}$’):
+
+- For any binary relations $S,T$: $(S\circ T)^{-1}=T^{-1}\circ S^{-1}$
+
+Thus (**) is equivalent to the condition that $\exists R'\,(R'^{-1}\circ R^{-1}=I)$. (Here we have tacitly used the fact that $I^{-1}=I$.) The right-invertibility of $R$ is therefore equivalent to the left-invertibility of $R^{-1}$, so we can give a first order characterization of the right-invertibility of $R$ by appealing to Proposition 3.7. Accordingly, let us say that a frame $\langle W,R\rangle$ – or, for later, a model $\langle W,R,V\rangle$ – satisfies the Successor Condition just in case for all $x\in W$ there exists $y\in W$ such that $xRy$ and for all $z\in W$, $zRy$ implies $x=z$. Here we have adapted the definition given for the Predecessor Condition following Proposition 2.1. More concisely, since the Predecessor Condition can be formulated as: $\forall u\,\exists v.R(v)=\{u\}$ (quantifiers ranging over $W$), so the Successor Condition can be put as: $\forall u\,\exists v.R^{-1}(v)=\{u\}$. What Proposition 3.7 delivers then, is the following.
+
+Proposition 5.1. For any set $W$ with $R\subseteq W\times W$, $R$ is right-invertible if and only if $\langle W,R\rangle$ satisfies the Successor Condition.
+
+The Successor Condition, as one might expect, is intimately connected with the conservativeness of ${𝐒}{𝐑}$ over ${𝐒}$, though not in quite the way the Predecessor Condition was connected with the conservativeness of ${𝐒}{𝐋}$ over ${𝐒}$. Proposition 2.2 and Theorem 3.4 can be combined into this claim:
+
+For any canonical normal monomodal logic ${𝐒}$ the following are equivalent:
+
+(i)
+${𝐒}$ is closed under the Rule of (Outer) Cancellation
+(ii)
+${𝐒}{𝐋}$ is a conservative extension of ${𝐒}$
+(iii)
+The canonical model for ${𝐒}$ satisfies the Predecessor Condition.
+
+As was mentioned in Section 2, we could extend this list by adding:
+
+(iv)
+${𝐒}$ is determined by some class of models satisfying the Predecessor Condition.
+
+The point is that (iv) implies (i) by essentially the same argument as that supplied in the proof of the ‘If’ direction of Prop. 2.2; conversely, (iii) obviously implies (iv).
+
+In the case of the Successor Condition, however, the analogues of (iii) and (iv) are not equivalent: a canonical logic can be determined by a class of models satisfying the condition without the canonical model’s satisfying that condition. ${𝐊}{𝐃}$ provides an example: its canonical model does not satisfy the condition, while various other classes of models determining the logic – models on the unravelled frames of [11], for instance, or on the ‘canonical’ subordination frame of [6], p. 115 – do satisfy it. It is the analogue of (iv), rather than of (iii), that turns out to be equivalent to the right-handed analogue of (ii), as we now show. (The ‘successor’ analogue of (iii) will appear in the following section – see especially Thm. 6.10.)
+
+Proposition 5.2. For any normal monomodal logic ${𝐒}$:
+
+(i)
+${𝐒}{𝐑}$ is a conservative extension of ${𝐒}$ if ${𝐒}$ is determined by some class of frames satisfying the Successor Condition.
+(ii)
+${𝐒}{𝐑}$ is a conservative extension of ${𝐒}$ only if ${𝐒}$ is determined by some class of models satisfying the Successor Condition.
+
+Proof. (i) If $\mathrm{S}$ is determined by a class of frames satisfying the Successor Condition then each frame $\langle W,R\rangle$ in the class can be expanded to a frame $\langle W,R,g\rangle$ as with the expanded frames introduced for Lemma 3.3 except that $g$ now assigns to each element of $W$ some point to which it and only it bears the relation $R$. Reasoning parallel to that of the proof of Lemma 3.3 and Theorem 3.4 (‘if’ direction) then gives the result. (ii) Since ${𝐒}{𝐑}$ is a normal bimodal logic its canonical (bi-relational) model can be defined in the usual way. Appealing to the ‘$□ R\varphi\to\varphi$’ direction of the right inverse schema gives, for any point $x$, some point $y$ to which it bears the accessibility relation associated with $□$ which in turn bears the accessibility relation associated with $R$ to $x$; appealing to the ‘$\varphi\to□ R\varphi$’ direction of the schema then shows that no point other than $x$ bears the former relation to $y$. The reduct of this model obtained by discarding the latter relation thus meets the Successor Condition, and is a characteristic model for ${𝐒}$ on the assumption that ${𝐒}{𝐑}$ conservatively extends ${𝐒}$. (The unit class of this model provides the class of models promised by (ii).) ■
+
+We conclude our discussion of the Successor Condition with a technical observation concerning a restricted class of frames satisfying it. We shall need to appeal to this result in the following section. We call a frame functional when each element of the frame bears the accessibility relation of the frame to exactly one element. (These are the ‘totally functional’ frames of [12].)
+
+Lemma 5.3.
+
+(i)
+Suppose $\langle W,R\rangle$ is a frame satisfying the Successor Condition and that for some $n\ge1$ we have $xR^n x$ for all $x\in W$. Then $\langle W,R\rangle$ is a functional frame.
+(ii)
+The same conclusion follows if ‘Successor Condition’ is replaced by ‘Predecessor Condition’.
+
+Proof. (i) Let $\langle W,R\rangle$ be a frame meeting the conditions of part (i). We must show that $R$ is a functional relation, i.e. that for each $u\in W$ there exists exactly one $v\in W$ such that $uRv$. Since the Successor Condition implies seriality, it is clear that the ‘existence’ part of this claim is correct. (This also follows independently from the condition that $R^n$ is reflexive for some $n\ge1$.) For the ‘uniqueness’ part, suppose that $uRv$ and $uRw$ ($u,v,w\in W$). We shall show that $v=w$. By repeated appeal to the Successor Condition, there exist $v_0,\ldots,v_n,w_0,\ldots,w_n$ (this $n$ being that for which $R^n$ is assumed to be reflexive) with $v=v_0$, $w=w_0$, $v_0Rv_1R\ldots Rv_n$, and $w_0Rw_1R\ldots Rw_n$, and, for all $z\in W$, $0\le i<n$:
+
+(SC)
+If $zRv_{i+1}$ then $z=v_i$ and if $zRw_{i+1}$ then $z=w_i$
+
+We now show by induction on $i\le n$ that $v_nR^{n-i}v_{n-i}$. For $i=0$, $v_nR^nv_n$, by the hypothesis that $xR^nx$ for all $x\in W$. For the induction step, suppose that $v_nR^{n-i}v_{n-i}$ ($0<i<n$). Thus for some $z\in W$, $v_nR^{n-(i+1)}zRv_{n-i}$. Since $zRv_{n-i}$, $z=v_{n-(i+1)}$ by (SC), so $v_nR^{n-(i+1)}v_{n-(i+1)}$, as required. Putting $i=n$, we get $v_nR^0v_0$, i.e., $v_n=v_0$. By a parallel argument, $w_n=w_0$. Finally, we show by induction on $i<n$ that $v_{n-1-i}=w_{n-1-i}$. Basis: Since $v_n=v_0=v$ and $w_n=w_0=w$, $uRv_n$ and $uRw_n$. Then $v_{n-1}=u=w_{n-1}$ by (SC). Induction step: Suppose that $v_{n-1-i}=w_{n-1-i}$ ($i<n\Leftrightarrow1$). Since $v_{n-2-i}Rv_{n-1-i}$, $v_{n-2-i}Rw_{n-1-i}$, so $v_{n-2-i}=w_{n-2-i}$, as required. Putting $i=n\Leftrightarrow1$, $v_0=w_0$, i.e., $v=w$, which was to be proved.
+
+(ii) Assume $\langle W,R\rangle$ is a frame satisfying the Predecessor Condition, with $R^n$ reflexive for some $n\ge1$. The above proof can be recast rewriting $uRv$ as $vRu$, etc., and using the Predecessor Condition in place of the Successor Condition, to show that if $vRu$ and $wRu$ then $v=w$. But then, by the Predecessor Condition, $R$ must be functional. For if $vRu$ then there exists $w$ such that $wRu$ and for all $y$, $wRy\Rightarrow y=u$; but $v=w$, so for all $y$, $vRy\Rightarrow y=u$. ■
+
+# 6. Three Additional Topics
+
+We treat this section as an Appendix in which to discuss three special topics arising out of the foregoing material: two-sided inverses, what we call ‘indigenous’ inverses, and the status of inverses in systems of tense logic (temporal logic).
+
+# 6.1 Two-Sided Inverses
+
+We recall from Section 1 that a two-sided inverse for $□$ is an operator $\bigcirc$ with $\bigcirc□\varphi$, $\varphi$, and $□\bigcirc\varphi$ all provably equivalent in the logic under discussion. To avoid new notation, we write ‘$L$’ for ‘$\bigcirc$’ (though we could equally suitably have written ‘$R$’). We assume in addition only that $L$ is congruential. Thus we are considering the congruential logics extending ${𝐒}({𝐋})$ by the addition of all instances of the right-inverse schema (for $L$): $□ L\varphi\leftrightarrow\varphi$. For a given monomodal ${𝐒}$, we refer to the least such extension of ${𝐒}({𝐋})$ as two-sided ${𝐒}({𝐋})$.
+
+Lemma 6.1. If two-sided ${𝐒}({𝐋})$ extends (normal monomodal) ${𝐒}$ conservatively then ${𝐒}\supseteq {𝐊}{𝐃}!$.
+
+Proof. It suffices to show that $□ p\leftrightarrow◇ p\in {𝐒}({𝐋})$, since this is an $L$-free formula. The forward (‘${𝐃}$’) direction of this equivalence follows from the fact that $L$ is a right inverse of $□$ (via the right inverse property $□ L\bot\leftrightarrow\bot$). Since $L$ is also a left inverse of $□$, $□$ is a right inverse of $L$, so $L$ satisfies the ${𝐃}$ schema $L\varphi\to M\varphi$. We can now show that the backward direction of the above equivalence is provable by consideration of the following sequence of formulas provable in two-sided ${𝐒}({𝐋})$:
+
+(1)	$p\to L□ p$	($L$ is a left inverse)
+(2)	$L□ p\to M□ p$	(${𝐃}$ for $L$)
+(3)	$p\to M□ p$	(1,2 truth-functional logic)
+(4)	$◇ p\to◇ M□ p$	(3, normality of $□$)
+(5)	$◇ M□ p\to□ p$	($L$ is a right inverse)
+(6)	$◇ p\to□ p$	(4, 5 truth-functional logic) ■
+
+Although we have assumed only congruentiality for $L$ in two-sided ${𝐒}({𝐋})$, in fact normality follows – so this logic turns out to be ‘two-sided ${𝐒}{𝐋}$’. For the proof we note in advance that two-sided ${𝐒}({𝐋})$ is always closed under Necessitation for $L$ and under the (Outer) Cancellation Rule (for $□$). As to the first point: for $\varphi\in {𝐒}({𝐋})$ we have $□\varphi\in {𝐒}({𝐋})$ since $□$ is normal, making $\varphi$ and $□\varphi$ provably equivalent, thereby (since $L$ is congruential), making $L\varphi$ and $L□\varphi$ provably equivalent; but, as $L$ is a left inverse $\varphi$ and $L□\varphi$ are equivalent. Thus $L\varphi$ and $\varphi$ are equivalent and since $\varphi\in {𝐒}({𝐋})$, we have $L\varphi\in {𝐒}({𝐋})$. Since we have here derived $L\varphi$ from $\varphi$ using only the resources of ${𝐒}({𝐋})$, it follows that not only ${𝐒}({𝐋})$ itself, but any $□$-normal extension thereof, such as two-sided ${𝐒}({𝐋})$, is closed under Necessitation. We turn to the Cancellation Rule. For any normal monomodal ${𝐒}$, we know from the proof of Lemma 6.1 that two-sided ${𝐒}({𝐋})$ contains all formulas of the form $◇\varphi\to□\varphi$. Thus if $□\varphi\to□\psi$ is provable so is $◇\varphi\to□\psi$ and hence $□\neg\varphi\vee□\psi$, and hence $□(\varphi\to\psi)$. We now apply Necessitation for $L$, available by the argument just given, and then delete the ‘$L□$’ by the left inverse schema, concluding that $\varphi\to\psi$ belongs to two-sided ${𝐒}({𝐋})$. So this logic is closed under the Cancellation Rule (taken here in the form given in Prop. 2.1(iii)).
+
+Lemma 6.2. $L$ is normal in two-sided ${𝐒}({𝐋})$.
+
+Proof. Suppose that
+(1) $(\varphi_1\wedge\ldots\wedge\varphi_m)\to\psi$ is provable in two-sided ${𝐒}({𝐋})$. We must show that $(L\varphi_1\wedge\ldots\wedge L\varphi_m)\to L\psi$ is provable. If $m=0$, this is the rule of Necessitation for $L$, under which the logic has been shown to be closed. So suppose $m>0$. Then the following formulas are provable in two-sided ${𝐒}({𝐋})$:
+
+(2)	$(□ L\varphi_1\wedge\ldots\wedge□ L\varphi_m)\to□ L\psi$	(From 1, since $L$ is a right inverse)
+(3)	$□(L\varphi_1\wedge\ldots\wedge L\varphi_m)\to□ L\psi$	(From 2, by the normality of $□$)
+(4)	$(L\varphi_1\wedge\ldots\wedge L\varphi_m)\to L\psi$	(3, Cancellation Rule) ■
+
+Thus the proof of Lemma 6.1 goes through, mutatis mutandis, to show that $Lp\leftrightarrow Mp$ (= ${𝐃}$! for $L$) is provable in two-sided ${𝐒}({𝐋})$, for all ${𝐒}$; so for example two-sided ${𝐊}({𝐋})\supseteq {𝐊}{𝐃}!{𝐋}{𝐃}!$.
+
+Lemma 6.1 can be strengthened to give a necessary and sufficient condition for two-sided ${𝐒}({𝐋})$ to extend ${𝐒}$ conservatively; by the foregoing remarks, it also gives a necessary and sufficient condition for two-sided ${𝐒}{𝐋}$ to extend ${𝐒}$ conservatively.
+
+Proposition 6.3. Two-sided ${𝐒}({𝐋})$ extends (normal monomodal) ${𝐒}$ conservatively if and only if either ${𝐒}={𝐊}{𝐃}!$ or for some $n\ge1$, ${𝐒}\supseteq {𝐊}{𝐂}_n$.
+
+Proof. ‘If’: If ${𝐒}\supseteq {𝐊}{𝐂}_n$, two-sided ${𝐒}({𝐋})$ extends ${𝐒}$ conservatively by reasoning like that in the proof of Proposition 4.4. Two-sided ${𝐊}{𝐃}!({𝐋})$ extends ${𝐊}{𝐃}!$ conservatively by an easy semantic argument based on the fact that ${𝐊}{𝐃}!$ is determined by the frame $\langle W,R\rangle$, where $W$ is the set of integers and for $w,x\in W$, $wRx$ just in case $x=w+1$.
+
+‘Only if’: Supose that two-sided ${𝐒}({𝐋})$ extends ${𝐒}$ conservatively, and that $S\ne {𝐊}{𝐃}!$. Since $S\supseteq {𝐊}{𝐃}!$ by Lemma 6.1, ${𝐒}$ is a proper normal extension of ${𝐊}{𝐃}!$ By Corollary 2.3 of [12], ${𝐒}$ is determined by a finite class of finite frames. Hence for some $m,n\ge1$, $□^{m+n}p\leftrightarrow□^m p\in {𝐒}$. Thus $L^m□^{m+n}p\leftrightarrow L^m□^m p\in {𝐒}$, so $□^n p\leftrightarrow p\in {𝐒}$; thus ${𝐒}\supseteq {𝐊}{𝐂}_n$. ■
+
+# 6.2 Indigenous Inverses
+
+In the proof of Prop. 4.4 (‘If’ direction) we had occasion to remark that “$□^k$ is a congruential right inverse of $□$ within ${𝐒}$” , in saying which we are exploiting the observation (from Section 1) that “the notions [of left and right inverse] make precisely analogous sense for arbitrary primitive or defined modal or non-modal operators.” The term ‘indigenous’, here borrowed from its use in [4], in particular, seems apposite for this case. Thus when there is already, in the monomodal language, a context $\psi(\cdot)$, such that for the result, $\psi(\varphi)$ of putting any formula $\varphi$ into that context, we have the right inverse equivalence
+
+$□\psi(\varphi)\leftrightarrow\varphi$
+
+provable in (monomodal) ${𝐒}$, then the context $\psi(\cdot)$ is an indigenous right inverse (in ${𝐒}$). Similarly, $\psi(\cdot)$ is an indigenous left inverse in ${𝐒}$ if ${𝐒}$ proves the left inverse equivalence
+
+$\psi(□\varphi)\leftrightarrow\varphi$
+
+for all formulas $\varphi$. Here we have used the functional notation ‘$\psi(\cdot)$’ to denote a context, thought of as a formula with gaps in it; when these gaps are filled by $\varphi$, we get, as value of the function, the formula $\psi(\varphi)$. We can alternatively represent this function by singling out a propositional variable in $\psi$ – an ordinary formula with no ‘gaps’ – and regarding $\psi(\varphi)$ as the result of uniformly substituting $\varphi$ for that variable throughout $\psi$. Let us choose $p$ (=$p_0$) to play this gap-indicating role. Then in particular, taking $\varphi$ as $p$ itself, the right inverse equivalence above becomes
+
+(1)
+$□\psi\leftrightarrow p$
+
+Similarly, the left inverse equivalence becomes, using the substitution notation introduced in Section 4:
+
+(2)
+$\vdash_{{𝐒}} s_□(\psi)\leftrightarrow p$
+
+We return to the case of left inverses below.
+
+For $□$ to have an indigenous right inverse in ${𝐒}$, then, is for ${𝐒}$ to prove (1) for some choice of $\psi$. By Uniform Substitution of an arbitrary formula $\varphi$ for $p$, it follows that $\varphi$ is provably equivalent to the result of applying this substitution in $□\psi$: which is to say that $□$ is universally representative in ${𝐒}$. Some further reformulations in the same vein are recorded in:
+
+Lemma 6.4. The following are equivalent for any normal monomodal logic ${𝐒}$:
+
+(i)
+$□$ has an indigenous right inverse in ${𝐒}$
+(ii)
+$□$ is universally representative in ${𝐒}$
+(iii)
+$◇$ is universally representative in ${𝐒}$
+(iv)
+$\vdash_{{𝐒}} p\leftrightarrow□\varphi$ for some formula $\varphi$
+(v)
+$\vdash_{{𝐒}} p\leftrightarrow◇\varphi$ for some formula $\varphi$
+
+We shall now that (iv) can be ‘improved’ in the sense that a much more specific claim about the form of $\varphi$ can be made which is equivalent to the general claim, and therefore to the other formulations listed here. We shall show that $\varphi$ can itself always be taken to be $□^n p$ for a suitable choice of $n\ge0$. We do so in the course of linking indigenous right inverses to the satisfaction, by the canonical model for ${𝐒}$, of the Successor Condition.
+
+Proposition 6.5. Let ${𝐒}$ be a normal monomodal logic such that $\vdash_S p\leftrightarrow□\varphi$ for some formula $\varphi$ of modal degree $m$. Then $\vdash_{{𝐒}} p\leftrightarrow□^{(m+1)!}p$.
+
+Proof. By Uniform Subsitution, we can assume that $\varphi$ contains no propositional variables other than $p$. By normality, $\vdash_{{𝐒}} \bigwedge_{0\le i\le m}□^i(p\leftrightarrow\bot)\to(\varphi\leftrightarrow s_\bot(\varphi))$. Since $\vdash_{{𝐒}}\bot\leftrightarrow□ s_\bot(\varphi)$ and ${𝐒}$ is normal, ${𝐒}\supseteq {𝐊}{𝐃}$. Since $s_\bot(\varphi)$ contains no propositional variables, by a well-known property of (extensions of) ${𝐊}{𝐃}$, either it or its negation is provable in ${𝐒}$. In the former case, so is its necessitation, and therefore $\vdash_{{𝐒}}\bot$ and our conclusion follows trivially. In the latter case, then by normality we have $\vdash_{{𝐒}}(\bigwedge_{0\le i\le m}□^i\neg p)\to\neg\varphi$, so $\vdash_{{𝐒}}\varphi\to\bigvee_{0\le i\le m}◇^i p$, so $\vdash_{{𝐒}}□\varphi\to□\bigvee_{0\le i\le m}◇^i p$, and therefore $\vdash_{{𝐒}} p\to□\bigvee_{0\le i\le m}◇^i p$. Letting $\langle W,R,V\rangle$ be the canonical model for ${𝐒}$, standard arguments then show that for all $w,x\in W$, if $wRx$ then there exists $i\le m$ such that $xR^i w$, in which case $wR^{i+1}w$. But for some $j\ge1$, $(i+1)j=(m+1)!$. Then $xR^i wR^{(i+1)(j-1)}w$ and $i+(i+1)(j\Leftrightarrow1)=(m+1)!\Leftrightarrow1$, so $xR^{(m+1)!-1}w$. Thus for all $w,x\in W$, if $wRx$ then $xR^{(m+1)!-1}w$. By standard reasoning it follows that $\vdash_{{𝐒}} p\to□◇^{(m+1)!-1}p$. Since $\vdash_{{𝐒}} p\leftrightarrow□\varphi$, ${𝐒}({𝐑})$ extends ${𝐒}$ conservatively, and we may appeal to Prop. 4.4 to conclude that $\vdash_{{𝐒}} p\leftrightarrow□^{(m+1)!}p$. ■
+
+Next, we bring the Successor Condition back into the picture. In Section 5, we had occasion to observe that, by contrast with the case of the Predecessor Condition, a canonical (normal monomodal) logic could be determined by a class of models (or indeed have a characteristic model) satisfying the Successor Condition, without the canonical model for that logic satisfying the condition. In Prop. 5.2, we saw that ${𝐒}$’s being determined by a class of models satisfying the Successor Condition was at least a necessary condition for ${𝐒}{𝐑}$ to be a conservative extension of ${𝐒}$. This leaves open the question of what we can learn about ${𝐒}$ from the fact that its canonical model satisfies the Successor Condition. The answer is that this is both necessary and sufficient for $□$ to be universally representative in ${𝐒}$, or to any of the equivalent conditions listed under Lemma 6.4. We give half of this answer as:
+
+Proposition 6.6. If the canonical model for a normal monomodal logic ${𝐒}$ satisfies the Successor Condition, then $□$ is universally representative in ${𝐒}$.
+
+Proof. Assume the canonical model for ${𝐒}$ meets the Successor Condition. We shall show that $□$ is universally representative in ${𝐒}$ by showing that ${𝐒}$ proves something of the form $p\leftrightarrow◇\varphi$, exploiting the equivalence of (i) and (iv) in Lemma 6.4. We shall omit the ‘${𝐒}$’ subscript on ‘$\vdash$’. Let $x_0=\{\neg◇\psi\mid\vdash◇\psi\to p\}\cup\{p\}$. Suppose that $x_0$ is ${𝐒}$-consistent. Then it has a maximal ${𝐒}$-consistent extension $x\in W$, where $\langle W,R,V\rangle$ is the canonical model for ${𝐒}$. By hypothesis, there exists $y\in W$ such that $xRy$ and for all $z\in W$, $zRy\Rightarrow z=x$. Next, let $z_0=\{◇\psi\mid\psi\in y\}\cup\{\neg p\}$, and suppose that $z_0$ is ${𝐒}$-consistent. Then it has a maximal ${𝐒}$-consistent extension $z$. But $zRy$ by construction, and $z\ne x$ since $p\in x$ and $p\notin z$. Thus (still on the assumption that $x_0$ is consistent) $z_0$ is $S$-inconsistent. Therefore there are $\psi_1,\ldots,\psi_m\in y$ with $\vdash(◇\psi_1\wedge\ldots\wedge◇\psi_m)\to p$. Let $\psi=\psi_1\wedge\ldots\wedge\psi_m$. Then $\psi\in y$ and (by normality) $\vdash◇\psi\to p$, so $\neg◇\psi\in x_0\subseteq x$. But since $\psi\in y$ and $xRy$, $◇\psi\in x$ and $x$ is inconsistent, contrary to hypothesis. Thus $x_0$ is itself ${𝐒}$-inconsistent. Therefore there are $\varphi_1,\ldots,\varphi_n$, for which (1) $\vdash◇\varphi_i\to p$ ($1\le i\le n$) and (2) $\vdash\neg(\neg◇\varphi_1\wedge\ldots\wedge\neg◇\varphi_n\wedge p)$. (2) gives: $\vdash p\to(◇\varphi_1\vee\ldots\vee◇\varphi_n)$ which (1) strengthens to $\vdash p\leftrightarrow(◇\varphi_1\vee\ldots\vee◇\varphi_n)$; by normality, the r.h.s here is equivalent to $◇(\varphi_1\vee\ldots\vee\varphi_n)$, so we may take $\varphi_1\vee\ldots\vee\varphi_n$ as the desired $\varphi$ for which ${𝐒}$ proves $p\leftrightarrow◇\varphi$. ■
+
+To tie together the notions in play in our discussion, which we shall do in Theorem 6.10, we need now to give a condition which is sufficient for the canonical model of a normal monomodal logic to satisfy the Successor Condition. We recall the ‘cyclical’ logics ${𝐊}{𝐂}_n$ from Prop. 2.3 (${𝐂}_n$ being the schema $□^n\varphi\leftrightarrow\varphi$). These logics are all extensions of ${𝐊}{𝐃}!$, a fact which may be extracted from [12], Lemmas 1.1, 1.3, but which we shall establish ‘syntactically’ here. (The ‘3/8’ in Lemma 1.3 of [12] is a misprint for ‘$\equiv$’, Segerberg’s notation for ‘$\leftrightarrow$’.)
+
+Lemma 6.7. For $n\ge1$, ${𝐊}{𝐂}_n\supseteq {𝐊}{𝐃}!$.
+
+Proof. Putting $\bot$ for $\varphi$ in ${𝐂}_n$ gives ${𝐃}$, so we need only derive ${𝐃}_c$, or the following instance of a truth-functional variant of that schema: $□ p\vee□\neg p$. If $n=1$, this is immediate by replacement of $p$ by $□ p$ and $\neg p$ by $□\neg p$ in the truth-functional tautology $p\vee\neg p$, both replacements being justified by $C_1$. For $n>1$ we instead replace the disjuncts of this tautology by $□^n p$ and $□^n\neg p$. Thus $□^n p\vee□^n\neg p\in {𝐊}{𝐂}_n$, and so by normality $□^{n-1}(□ p\vee□\neg p)\in {𝐊}{𝐂}_n$. By Prop. 2.3, ${𝐊}{𝐂}_n$ is closed under the Cancellation Rule, and therefore, by the discussion following the proof of Prop. 2.3, under Denecessitation, $n\Leftrightarrow1$ appeals to which give the desired conclusion: that $□ p\vee□\neg p\in {𝐊}{𝐂}_n$. ■
+
+Lemma 6.8. If $\langle W,R,V\rangle$ is the canonical model for a normal monomodal logic in which $□$ is universally representative, then for any $u,v\in W$, $R(u)=R(v)$ implies $u=v$.
+
+Proof. Suppose $u\ne v$ ($u,v$ as in the Lemma). Then some formula $\varphi$ belongs to one of $u,v$, but not to the other. Since $□$ is universally representative in the logic in question, there is a formula $□\psi$ (provably equivalent to $\varphi$) which belongs to one of $u,v$, but not the other, which implies $R(u)\ne R(v)$. ■
+
+We remark in passing that the converse of Lemma 6.8 would be false: universal representativeness of $□$ in ${𝐒}$ is not a necessary condition for the canonical model to satisfy (for all $u,v$) $R(u)=R(v)\Rightarrow u=v$. A certain condition, weaker than the condition that $□$ is universally representative, suffices for this property of the canonical model: namely, the condition that every formula is equivalent to a boolean compound of $□$-formulas.
+
+Proposition 6.9. For any normal monomodal logic ${𝐒}$ and any $n\ge1$, if ${𝐒}\supseteq {𝐊}{𝐂}_n$ then the canonical model for ${𝐒}$ satisfies the Successor Condition.
+
+Proof. We need, for any point $x$ in the canonical model of ${𝐒}$ meeting the conditions stated, a $y\in W$ with $xRy$ and for all $z$ such that $zRy$, $z=x$. (We take the canonical model to be $\langle W,R,V\rangle$.) By Lemma 6.7, ${𝐒}\supseteq {𝐊}{𝐃}!$, so $R$ is functional, so $x$ has a unique $R$-successor $y$; we shall show that for this $y$, we have, as required, that $x$ is the sole point bearing $R$ to it. Suppose $z\in W$ and $zRy$. Then since $R$ is functional, $R(x)=\{y\}=R(z)$, so, by Lemma 6.8, $z=x$. ■
+
+We are now in a position to summarize the story of indigenous right inverses:
+
+Theorem 6.10. The following are equivalent for a normal monomodal logic ${𝐒}$:
+
+(i)
+$□$ is universally representative in [= has an indigenous right inverse in] ${𝐒}$
+(ii)
+$\vdash_{{𝐒}} p\leftrightarrow□^n p$ for some $n\ge1$ [= ${𝐒}\supseteq {𝐊}{𝐂}_n$]
+(iii)
+The canonical model for ${𝐒}$ satisfies the Successor Condition.
+
+Proof. The implication (i) $\Rightarrow$ (ii) is given by Prop. 6.5; (ii) $\Rightarrow$ (iii) by Prop. 6.9; and (iii) $\Rightarrow$ (i) by Prop. 6.6. ■
+
+The case of indigenous left inverses can be dealt with more briefly. We notice that in the logics ${𝐊}{𝐂}_n$ ($n\ge1$), which exhaust the range of consistent normal monomodal logics providing an indigenous right inverse for $□$, that inverse can be taken as $□^{n-1}$; but then this is also a left inverse of $□$. (Here our formulation exploits the fact – which we have not given a proof of – that if ${𝐒}$ is a consistent extension of ${𝐊}{𝐂}_n$ then ${𝐒}$ is itself ${𝐊}{𝐂}_m$ for some $m$ ($1\le m\le n$).) It turns out that, like indigenous right inverses, indigenous left inverses can always be taken to be of this form. Recall that ${𝐒}$ provides $□$ with an indigenous left inverse just in case there is some formula $\psi$ for which we have $\vdash_{{𝐒}} s_□(\psi)\leftrightarrow p$. As before, by Uniform Substitution we may assume that $p$ is the only variable occurring in $\psi$. Supposing the modal degree of $\psi$ is $k$, and noting that every occurrence of $p$ in $s_□(\psi)$ is in the scope of some occurrence of $□$, we have:
+
+$$\vdash_{{𝐒}}\bigwedge\limits_{1\le i\le k+1}□^i(p\leftrightarrow\top)\to(s_□(\psi)\leftrightarrow s_\top s_□(\psi)).$$
+
+But since $\vdash_{{𝐒}}s_□(\psi)\leftrightarrow p$, and, by Uniform Substitution
+
+$$\vdash_{{𝐒}}s_\top s_□(\psi)\leftrightarrow\top,\ \text{we have: }\vdash_{{𝐒}}(\bigwedge\limits_{1\le i\le k+1}□^ip)\to p$$
+
+By a standard argument it follows that in the canonical model for ${𝐒}$, $\langle W,R,V\rangle$, for all $x\in W$ there exists $i$ ($1\le i\le k+1$) with $xR^i x$. Indeed, it follows that there exists $n$ such that for all $x\in W$, $xR^n x$ (e.g. take $n=(k+1)!$). Note that for such an $n$ we have $□^n p\to p\in {𝐒}$. Now since ${𝐒}$ has an indigenous left inverse for $□$, ${𝐒}({𝐋})$ is a conservative extension of ${𝐒}$ (cf. the proof of the ‘if’ direction of Prop. 4.4), so ${𝐒}$ is closed under the (outer) Cancellation Rule: the canonical model $\langle W,R,V\rangle$ for ${𝐒}$ therefore satisfies the Predecessor Condition. Putting this together with the fact, established above, that $R^n$ is reflexive, we can use Lemma 5.3(ii) to conclude that the canonical model is functional. Hence ${𝐒}\supseteq {𝐊}{𝐃}!$, and, so, since $□^n p\to p\in {𝐒}$, we have $□^n p\leftrightarrow p\in {𝐒}$. But this is (equivalent to) formulation (ii) under Thm. 6.10, so we can extend that result to subsume the indigenous left inverse case also; we list this as (iv), adding (v) and (vi) for good measure (in view of (ii)):
+
+Theorem 6.11. The following are equivalent for a normal monomodal logic ${𝐒}$:
+
+(i)
+$□$ has an indigenous right inverse in ${𝐒}$
+(ii)
+$\vdash_{{𝐒}} p\leftrightarrow□^n p$ for some $n\ge1$ [= ${𝐒}\supseteq {𝐊}{𝐂}_n$]
+(iii)
+The canonical model for ${𝐒}$ satisfies the Successor Condition.
+(iv)
+$□$ has an indigenous left inverse in ${𝐒}$
+(v)
+$□$ has an indigenous normal right inverse in ${𝐒}$
+(vi)
+$□$ has an indigenous normal left inverse in ${𝐒}$
+
+# 6.3 Inverses in Tense Logic
+
+Adding a single left or right inverse to a tense logic produces a 3-modal logic, in the terminology of Section 1, because the logic to be extended is already bimodal. However, as we shall see, when the extension is conservative, it is unnecessary: the inverse in question is indigenously definable. We view the tense logic to be extended as already the result of extending a normal monomodal logic ${𝐒}$; its tense-logical extension (always, as it happens, conservative) is the logic we denote by ${𝐒}_t$: the smallest normal bimodal extension of ${𝐒}$ by all instances of the following schemata, in which the new operator is written (recalling Section 1) as ‘$□^{-1}$’, with dual ‘$◇^{-1}$’: $\varphi\to□◇^{-1}\varphi$; $\varphi\to□^{-1}◇\varphi$. Such logics are called normal tense logics. The operator $□^{-1}$ is interpreted in Kripke models using the converse of the accessibility relation interpreting $□$. The ‘tense’ terminology merely records the historical motivation for studying such logics, which arises from thinking of the points of a model as moments of time, and the accessibility relation as the earlier than relation. (Then $□$ and $□^{-1}$ emerge as means of simulating certain future and past tense constructions, respectively.) There is no suggestion of any preoccupation with such temporal interpretations in describing ${𝐒}_t$ as the tense-logical extension of ${𝐒}$. Before turning to the question of inverses, we remark on the considerable increase of expressive power attendant on the passage from the language of ${𝐒}$ to that of ${𝐒}_t$. In particular, there are formulas of the latter language which directly express the Predecessor and Successor Conditions of Sections 3 and 5 above, namely (1) and (2) respectively – that is, which modally define (in the sense of [2]) the classes of frames satisfying these conditions – and which are such that the canonical models of normal tense logics in which these formulas (and therefore all their substitution instances) are provable meet the respective conditions:
+
+(1)
+$p\to◇^{-1}□ p$
+(2)
+$p\to◇□^{-1}p$
+
+(Note that when we refer to the Predecessor and Successor Conditions, we have in mind those conditions as stated for the relation $R$ interpreting $□$, not the relation $R^{-1}$ interpreting $□^{-1}$.) It follows from this that, by contrast with the monomodal case, the canonical model for any logic determined by a class of models satisfying the Successor Condition itself satisfies that condition.
+
+The crucial observation for what follows is that in every normal tense logic, the following is provable:
+
+(3)
+$□ p\leftrightarrow□◇^{-1}□ p$
+
+Now applying the rule of Outer Cancellation (for $□$) to (3) would yield a biconditional form of (1), and hence (1) itself. (The converse conditional belongs to every normal tense logic.) And applying the rule of Inner Cancellation (for $□$) to (3) yields the formula $p\leftrightarrow□◇^{-1}p$, which (in every normal tense logic) yields (2). Thus since neither (1) nor (2) is provable in ${𝐊}_t$, the smallest normal tense logic, while (3) is, that logic is closed under neither Outer nor Inner Cancellation – a contrast with the smallest normal monomodal logic, ${𝐊}$, which is closed the former rule. (Reformulating the point about Inner Cancellation: in ${𝐊}_t$, unlike ${𝐊}$, $□$ is special, since all $□$-formulas, but not all formulas, are provably equivalent to the results of prefixing them with ‘$□◇^{-1}$’.) To bring these considerations to bear on the topic of inverses, we adapt our earlier notation in the following way: ${𝐒}_t({𝐋})$ and $S_t({𝐑})$ are the extensions of the normal tense logic ${𝐒}_t$ by the addition of, respectively, a congruential left inverse for $□$ and a congruential right inverse for $□$. As foreshadowed above, the extensions are unnecessary whenever they are conservative:
+
+Proposition 6.12. The following are equivalent for any normal tense logic ${𝐒}_t$:
+
+(i)
+${𝐒}_t({𝐋})$ is a conservative extension of ${𝐒}_t$.
+(ii)
+${𝐒}_t$ provides an indigenous left inverse for $□$.
+(iii)
+${𝐒}_t$ is closed under the Outer Cancellation Rule for $□$.
+
+Proof. (i) $\Rightarrow$ (iii): As in the monomodal case (Section 1); (iii) $\Rightarrow$ (ii): deriving the biconditional form of (1) from (3), as above, gives $◇^{-1}$ as an indigenous left inverse; (ii) $\Rightarrow$ (i): obvious. ■
+
+A similar proof, using the derivation of (2) from (3) above, establishes:
+
+Proposition 6.13. The following are equivalent for any normal tense logic ${𝐒}_t$:
+
+(i)
+${𝐒}_t({𝐑})$ is a conservative extension of ${𝐒}_t$.
+(ii)
+${𝐒}_t$ provides an indigenous right inverse for $□$.
+(iii)
+${𝐒}_t$ is closed under the Inner Cancellation Rule for $□$.
+
+Since, although the left and right inverses which the proofs of Props. 6.12, 6.13, deliver are not normal, we can say more than simply that they are congruential: they are the duals of normal modal operators (viz. $□^{-1}$, in both cases). Rather than directly discussing the case of normal inverse extensions of a tense logic ${𝐒}_t$, the logics ${𝐒}_t{𝐋}$ and ${𝐒}_t{𝐑}$, we close with an observation concerning something such normality makes possible: that the inverses $L$ and $R$ themselves have tense-logical ‘companions’, indicated by a superscripted ‘$\Leftrightarrow1$’, in the sense that we have $\varphi\to LM^{-1}\varphi$; $\varphi\to L^{-1}M\varphi$, and similarly with $R,S$, for the right-hand case. Call these normal 4-modal extensions of ${𝐒}_t$: ${𝐒}_t{𝐋}_t$ and ${𝐒}_t{𝐑}_t$.
+
+Proposition 6.14. For any normal tense logic ${𝐒}_t$, $R^{-1}$ is a left inverse of $□^{-1}$ in ${𝐒}_t{𝐑}_t$; $L^{-1}$ is a right inverse of $□^{-1}$ in ${𝐒}_t{𝐋}_t$
+
+Proof. We prove the first assertion, the second being similar. ‘$\vdash$’ indicates provability in ${𝐊}_t{𝐑}_t$, and hence in ${𝐒}_t{𝐑}_t$ for any normal ${𝐒}_t$. We need to show $\vdash R^{-1}□^{-1}\varphi\leftrightarrow\varphi$ (for arbitrary $\varphi$). Beginning with the fact that $\vdash\varphi\to□ R\varphi$, we proceed through the following tense-logically standard steps:
+
+(1)
+$\vdash◇^{-1}\varphi\to R\varphi$
+(2)
+$\vdash S^{-1}◇^{-1}\varphi\to S^{-1}R\varphi$
+(3)
+$\vdash S^{-1}◇^{-1}\varphi\to\varphi$
+(4)
+$\vdash\varphi\to R^{-1}□^{-1}\varphi$
+
+Note that the transition from (1) to (2) exploits the normality of $R^{-1}$ (via the definition $S^{-1}=\neg R^{-1}\neg$).
+
+For the converse, we begin with that fact that $\vdash□ R\varphi\to\varphi$, and putting $\varphi=S^{-1}◇^{-1}\psi$, we proceed:
+
+(5)
+$\vdash□ RS^{-1}◇^{-1}\psi\to S^{-1}◇^{-1}\psi$
+(6)
+$\vdash□◇^{-1}\psi\to S^{-1}◇^{-1}\psi$
+(7)
+$\vdash\psi\to S^{-1}◇^{-1}\psi$
+(8)
+$\vdash R^{-1}□^{-1}\varphi\to\varphi$.
+
+The desired result then follows from (4) and (8). ■
+
+Thus in the case of the normal inverse extensions of ${𝐊}_t$ there is no loss incurred by not separately recording in the labels the existence of inverses for the operator $□^{-1}$. For the merely congruential extensions, a more detailed investigation may profit from greater explicitness in this regard, with a labelling recording separately the existence of right or left inverses not only $□$ for but also for $□^{-1}$, by contrast with that employed above, in which the ‘(${𝐑}$)’ or ‘(${𝐋}$)’ in the labels address only the provision of inverses for the former operator. We have contented ourselves in the above remarks only with conveying the flavour of tense-logical inverses and touching on some points of contrast with the earlier monomodal case.
+
+# References
+
+[1] Belnap, N. D., 1962, ‘Tonk, Plonk, and Plink’, Analysis 22, 130–134.
+
+[2] van Benthem, J., 1984, ‘Correspondence Theory’, in D. Gabbay and F. Guenthner (eds.) Handbook of Philosophical Logic, Vol. II, 167–247, Reidel, Dordrecht.
+
+[3] Chellas, B. F., 1980, Modal Logic: An Introduction, Cambridge University Press, Cambridge.
+
+[4] Hendry, H. E., 1981, ‘Does IPC Have a Binary Indigenous Sheffer Function?’, Notre Dame Journal of Formal Logic 22, 183–186.
+
+[5] Howie, J. M., 1976, An Introduction to Semigroup Theory, Academic Press, London.
+
+[6] Hughes, G. E., and M. J. Cresswell, 1984, A Companion to Modal Logic, Methuen, London.
+
+[7] Koslow, A., 1992, A Structuralist Theory of Logic, Cambridge University Press, Cambridge.
+
+[8] Kripke, S. A., 1963, ‘Semantical Analysis of Modal Logic I. Normal Modal Propositional Calculi’, Zeitschrift für math. Logik und Grundlagen der Math. 9, 67–96.
+
+[9] Lemmon, E. J., (with D. S. Scott), 1977, An Introduction to Modal Logic (ed. K. Segerberg), American Philosophical Quarterly Monograph Series (#11), Blackwell, Oxford.
+
+[10] Pahi, B., 1971, ‘Full Models and Restricted Extensions of Propositional Calculi’, Zeitschrift für math. Logik und Grundlagen der Math. 17, 5–10.
+
+[11] Sahlqvist, H., 1975, ‘Completeness and Correspondence in the First and Second Order Semantics for Modal Logic’, in S. Kanger (ed.) Procs. Third Scandinavian Logic Symposium, 110–143 Uppsala 1973, North-Holland, Amsterdam.
+
+[12] Segerberg, K., 1986, ‘Modal Logics with Functional Alternative Relations’, Notre Dame Journal of Formal Logic 27, 504–522.
+
+[13] Smoryński, C., 1985, Self-Reference and Modal Logic, Springer-Verlag, New York.
+
+[14] Williamson, T., 1988, ‘Assertion, Denial, and Some Cancellation Rules in Modal Logic’, Journal of Philosophical Logic 17, 299–318.
+
+[15] Williamson, T., 1990, ‘Verification, Falsification, and Cancellation in KT’, Notre Dame Journal of Formal Logic 31, 286–290.
+
+[16] Williamson, T., 1990, ‘Two Incomplete Anti-Realist Modal Epistemic Logics’, Journal of Symbolic Logic 55, 297–314.
