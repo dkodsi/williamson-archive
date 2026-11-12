@@ -270,13 +270,23 @@
     return leading + windows.map(renderWindow).join(" … ") + trailing;
   };
 
-  const resultHref = (result, query) => {
-    const exact = result.exact ? "&exact=1" : "";
-    const match = result.matches.map(({ start, end }) => `${start}:${end}`).join(",");
-    return `../editions/${encodeURIComponent(result.slug)}/index.html?search=${encodeURIComponent(query)}${exact}&match=${encodeURIComponent(match)}#${encodeURIComponent(result.anchor)}`;
+  const groupResults = results => {
+    const grouped = new Map();
+    for (const result of results) {
+      if (!grouped.has(result.slug)) grouped.set(result.slug, { slug: result.slug, title: result.title, passages: [] });
+      grouped.get(result.slug).passages.push(result);
+    }
+    return [...grouped.values()];
   };
 
-  const api = { normalizeText, normalizedStringMap, normalizedTextMap, parseQuery, queryNeedles, resultHref, search, searchWorkSlugs, snippet };
+  const resultHref = (result, query, { editionRoot = "../editions/", returnTo = "" } = {}) => {
+    const exact = result.exact ? "&exact=1" : "";
+    const match = result.matches.map(({ start, end }) => `${start}:${end}`).join(",");
+    const back = returnTo ? `&return=${encodeURIComponent(returnTo)}` : "";
+    return `${editionRoot}${encodeURIComponent(result.slug)}/index.html?search=${encodeURIComponent(query)}${exact}&match=${encodeURIComponent(match)}${back}#${encodeURIComponent(result.anchor)}`;
+  };
+
+  const api = { normalizeText, normalizedStringMap, normalizedTextMap, parseQuery, queryNeedles, resultHref, groupResults, search, searchWorkSlugs, snippet };
   globalThis.TWArticleSearch = api;
   if (typeof module !== "undefined") module.exports = api;
 

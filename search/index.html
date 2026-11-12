@@ -3,39 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Full-text search of the Timothy Williamson digital editions.">
+  <meta name="description" content="A searchable bibliography and digital archive of work by Timothy Williamson.">
   <meta name="robots" content="noindex, nofollow">
-  <meta property="og:title" content="Search articles - Timothy Williamson Archive">
-  <meta property="og:description" content="Full-text search of the Timothy Williamson digital editions.">
+  <meta property="og:title" content="Timothy Williamson Archive">
+  <meta property="og:description" content="A searchable bibliography and digital archive of work by Timothy Williamson.">
   <meta property="og:type" content="website">
-  <title>Search articles - Timothy Williamson Archive</title>
+  <title>Search - Timothy Williamson Archive</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/style.css?v=20260821-2">
+  <link rel="stylesheet" href="../assets/style.css?v=20260822-1">
+  <link rel="stylesheet" href="../assets/discovery.css?v=20261112">
 </head>
-<body class="fulltext-page">
+<body data-discovery-root="../" data-discovery-default-scope="text">
   <header class="topbar">
     <a class="brand" href="../index.html">TW<span>Archive</span></a>
     <nav class="topbar-links" aria-label="Archive pages">
-      <a class="topbar-link" href="../index.html">Catalogue</a>
+      <a class="topbar-link" href="../index.html" data-titles-link>Catalogue</a>
 
-      <a class="topbar-link" href="index.html">Corpus search</a>
+      <a class="topbar-link" href="index.html" data-fulltext-link>Corpus search</a>
       <a class="topbar-link" href="../citations/index.html">Timeline</a>
 
     </nav>
   </header>
-  <main class="fulltext-main">
-    <h1>Search articles</h1>
-    <form class="fulltext-search" role="search" data-search-form data-search-index="../assets/article-search-index.json">
-      <label class="visually-hidden" for="article-search">Search article text</label>
-      <input id="article-search" type="search" autocomplete="off" data-search-input>
-      <button type="submit">Search</button>
-    </form>
-    <p class="fulltext-status" role="status" aria-live="polite" data-search-status></p>
-    <section class="fulltext-results" data-search-results hidden>
-      <ol></ol>
-      <button class="fulltext-more" type="button" data-search-more hidden>Show more</button>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Search <em>the archive</em></h1>
+      <form id="discoverySearch" role="search">
+        <fieldset class="search-scope">
+          <legend class="visually-hidden">Search in</legend>
+          <label><input type="radio" name="scope" value="titles"> Titles</label>
+          <label><input type="radio" name="scope" value="text" checked> Full text</label>
+        </fieldset>
+        <label class="visually-hidden" for="search">Search works</label>
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Search full text…" autocomplete="off" aria-describedby="searchHint searchStatus">
+          <kbd>/</kbd>
+          <button type="submit">Search</button>
+        </div>
+        <p id="searchHint" class="search-hint">Find a title, or search the text of the digital editions.</p>
+      </form>
+      <div class="hero-links">
+        <a class="article-search-link" href="index.html" data-fulltext-link>Corpus search</a>
+        <a class="article-search-link" href="../citations/index.html">Timeline</a>
+      </div>
+      <div id="stats" class="stats"></div>
+      <p id="searchStatus" class="discovery-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="browse" class="catalogue">
+      <details id="catalogueFilters" class="catalogue-filters" open>
+        <summary>Filters<span id="filterCount"></span></summary>
+      <aside aria-label="Filter works">
+        <div class="aside-title">Browse</div>
+        <button class="filter active" data-category="all">All topics</button>
+
+        <div class="aside-title spaced">Availability</div>
+        <div class="availability-options" role="radiogroup" aria-label="Digital edition availability">
+          <label><input type="radio" class="availability-filter" name="availability" value="all" checked> All</label>
+          <label><input type="radio" class="availability-filter" name="availability" value="available"> Editions</label>
+          <label><input type="radio" class="availability-filter" name="availability" value="unavailable"> Without editions</label>
+        </div>
+
+        <div class="aside-title spaced">Type</div>
+        <label><input type="checkbox" class="type-filter" value="Book" checked> Books</label>
+        <label><input type="checkbox" class="type-filter" value="Paper" checked> Papers</label>
+        <label><input type="checkbox" class="type-filter" value="Public writing" checked> Public writing</label>
+        <label><input type="checkbox" class="type-filter" value="Review / interview" checked> Reviews &amp; interviews</label>
+
+        <details class="category-panel" open>
+          <summary class="aside-title">Categories</summary>
+          <div id="categoryFilters"></div>
+        </details>
+      </aside>
+      </details>
+
+      <div class="results">
+        <div class="results-head">
+          <div><span id="resultCount"></span> works <button id="clearFilters" type="button" hidden>Clear filters</button></div>
+          <div class="sort-wrap">
+            <label for="sort">Sort</label>
+            <select id="sort">
+              <option value="citations">Most cited</option>
+              <option value="relevance" hidden>Best matches</option>
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="az">Title A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div id="activeFilters" class="active-filters" aria-label="Active filters" hidden></div>
+        <div id="yearBuckets"><noscript><p>Full-text search needs JavaScript. <a href="../index.html">Browse the catalogue</a>.</p></noscript></div>
+        <div id="fulltextGroups" class="discovery-groups" hidden></div>
+        <button id="moreWorks" class="fulltext-more" type="button" hidden>Show more works</button>
+        <div id="empty" hidden>No works match those filters.</div>
+      </div>
     </section>
   </main>
-  <script src="../assets/article-search.js?v=20260821-2"></script>
+
+  <footer>
+    <span>Timothy Williamson Archive</span>
+    <span class="footer-links"><a href="../citations/index.html">Timeline</a><a href="../exports/timothy-williamson-catalogue.bib">BibTeX</a><a href="../exports/timothy-williamson-catalogue.csv">CSV</a></span>
+  </footer>
+
+  <script src="../assets/article-search.js?v=20261112"></script>
+  <script src="../assets/app.js?v=20261112"></script>
 </body>
 </html>

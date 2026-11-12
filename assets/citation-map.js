@@ -9,7 +9,14 @@ let connectedNodes;
 let overviewPositions;
 let overviewYears;
 let maximumInfluence;
-let currentView = "overview";
+let currentView = "timeline";
+let catalogueNodes = [];
+let decadeFilter = "all";
+let topicFilter = "all";
+let searchQuery = "";
+let selectedEdge = null;
+const $ = selector => document.querySelector(selector);
+const normalized = value => String(value ?? "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[’‘]/g, "\'").trim();
 
 const SVG = "http://www.w3.org/2000/svg";
 const esc = value => String(value ?? "").replace(
@@ -28,15 +35,18 @@ function chronological(ids) {
   );
 }
 
-function neighbourList(ids) {
+function neighbourList(ids, direction) {
   const items = ids.map(id => nodes.get(id)).filter(Boolean);
-  const render = values => `<ul>${values.map(node =>
-    `<li><button type="button" data-work="${esc(node.id)}">${esc(node.title)}</button>` +
-    `<span>${esc(node.year ?? "n.d.")}</span></li>`
-  ).join("")}</ul>`;
-  if (items.length <= 12) return render(items);
-  return render(items.slice(0, 12)) +
-    `<details><summary>${items.length - 12} more</summary>${render(items.slice(12))}</details>`;
+  const renderItems = values => `<ul>${values.map(node => {
+    const source = direction === "outgoing" ? currentId : node.id;
+    const target = direction === "outgoing" ? node.id : currentId;
+    return `<li><div><button type="button" data-work="${esc(node.id)}">${esc(node.title)}</button>` +
+      `<span>${esc(node.year ?? "n.d.")}</span></div>` +
+      `<button class="citation-evidence-button" type="button" data-edge-source="${esc(source)}" data-edge-target="${esc(target)}">View citation</button></li>`;
+  }).join("")}</ul>`;
+  if (items.length <= 8) return renderItems(items);
+  return renderItems(items.slice(0, 8)) +
+    `<details><summary>${items.length - 8} more</summary>${renderItems(items.slice(8))}</details>`;
 }
 
 function element(name, attributes = {}) {
@@ -61,8 +71,9 @@ function addDefinitions(svg) {
 }
 
 function activateNode(id) {
-  const restoreFocus = Boolean(document.activeElement?.closest?.("#citationGraph, #citationFocus"));
+  const restoreFocus = Boolean(document.activeElement?.closest?.("#citationGraph, #citationFocus, #timelineList, #citationMatches, #connectionsListItems"));
   currentView = "focus";
+  selectedEdge = null;
   render(id);
   if (restoreFocus) document.querySelector(".citation-graph-node.selected")?.focus({ preventScroll: true });
 }
@@ -84,6 +95,7 @@ function addNode(layer, node, x, y, radius, keyboard = true, selected = false) {
     class: "citation-node-circle",
     r: radius.toFixed(2), fill: nodeColour(node)
   });
+  if (selected) item.setAttribute("aria-pressed", "true");
   const title = element("title");
   title.textContent = `${label(node)} — cites ${node.out_degree}; cited by ${node.in_degree}` +
     (Number.isFinite(node.external_citations) ? `; ${node.external_citations} external citations` : "");
@@ -315,8 +327,25 @@ function addFocusLabels(layer, localNodes, positions, selectedId, bounds) {
   placeGraphLabels(layer, localNodes, positions, selectedId, bounds, 34, 30);
 }
 
+function edgeAction(item, source, target) {
+  item.setAttribute("role", "button");
+  item.setAttribute("aria-label", `View citation from ${nodes.get(source).title} to ${nodes.get(target).title}`);
+  item.addEventListener("click", () => showEvidence(source, target));
+  // The same actions are ordinary buttons in the selected-work list.
+  // Keep graph strokes out of the tab sequence rather than adding duplicate stops.
+  item.setAttribute("tabindex", "-1");
+}
+
+function addFocusEdge(layer, source, target, positions, radii) {
+  const line = shortenedLine(positions.get(source), positions.get(target), radii.get(source) + 2, radii.get(target) + 2);
+  layer.append(element("line", { ...line, "marker-end": "url(#citationArrow)" }));
+  const hit = element("line", { ...line, class: "citation-edge-hit" });
+  edgeAction(hit, source, target);
+  layer.append(hit);
+}
+
 function drawFocus(id) {
-  const svg = document.querySelector("#citationGraph");
+  const svg = $("#citationGraph");
   svg.replaceChildren();
   addDefinitions(svg);
   const axisLayer = element("g", { class: "citation-year-axis" });
@@ -327,39 +356,27 @@ function drawFocus(id) {
   const localIds = new Set([id, ...(outgoing.get(id) || []), ...(incoming.get(id) || [])]);
   const localNodes = [...localIds].map(workId => nodes.get(workId)).filter(Boolean);
   const positions = overviewPositions;
-  const radii = new Map(localNodes.map(node => [
-    node.id,
-    nodeRadius(node, node.id === id)
-  ]));
-  for (const target of outgoing.get(id) || []) {
-    const line = shortenedLine(positions.get(id), positions.get(target), radii.get(id) + 2, radii.get(target) + 2);
-    edgeLayer.append(element("line", { ...line, "marker-end": "url(#citationArrow)" }));
-  }
-  for (const source of incoming.get(id) || []) {
-    const line = shortenedLine(positions.get(source), positions.get(id), radii.get(source) + 2, radii.get(id) + 2);
-    edgeLayer.append(element("line", { ...line, "marker-end": "url(#citationArrow)" }));
-  }
-  localNodes
-    .slice()
-    .sort((left, right) => Number(left.id === id) - Number(right.id === id))
-    .forEach(node => {
-      const point = positions.get(node.id);
-      addNode(nodeLayer, node, point.x, point.y, radii.get(node.id), true, node.id === id);
+  const radii = new Map(localNodes.map(node => [node.id, nodeRadius(node, node.id === id)]));
+  for (const target of outgoing.get(id) || []) addFocusEdge(edgeLayer, id, target, positions, radii);
+  for (const source of incoming.get(id) || []) addFocusEdge(edgeLayer, source, id, positions, radii);
+  localNodes.slice().sort((a, b) => Number(a.id === id) - Number(b.id === id)).forEach(node => {
+    const point = positions.get(node.id);
+    addNode(nodeLayer, node, point.x, point.y, radii.get(node.id), true, node.id === id);
   });
   const points = localNodes.map(node => positions.get(node.id));
   const minimumX = Math.min(...points.map(point => point.x));
   const maximumX = Math.max(...points.map(point => point.x));
-  const minimumY = Math.min(...points.map(point => point.y));
-  const maximumY = Math.max(...points.map(point => point.y));
-  const width = Math.min(1000, Math.max(420, maximumX - minimumX + 330));
-  const height = Math.min(540, Math.max(260, maximumY - minimumY + 180));
+  const width = Math.min(1000, Math.max(520, maximumX - minimumX + 330));
   const x = Math.max(0, Math.min(1000 - width, minimumX - 105));
-  const y = Math.max(0, Math.min(540 - height, (minimumY + maximumY - height) / 2));
-  addFocusLabels(labelLayer, localNodes, positions, id, {
-    left: x, right: x + width, top: y, bottom: y + height
-  });
-  svg.setAttribute("viewBox", `${x.toFixed(1)} ${y.toFixed(1)} ${width.toFixed(1)} ${height.toFixed(1)}`);
-  document.querySelector("#citationStatus").textContent = "";
+  // Retain the shared year scale and its bottom axis when a neighbourhood is focused.
+  const yearX = year => 75 + 760 * (year - overviewYears.first) /
+    Math.max(1, overviewYears.last + 1 - overviewYears.first);
+  addYearAxis(axisLayer, overviewYears.first, overviewYears.last, overviewYears.last + 1, yearX,
+    localNodes.some(node => !Number.isFinite(node.year)));
+  addFocusLabels(labelLayer, localNodes, positions, id, { left: x, right: x + width, top: 0, bottom: 510 });
+  svg.setAttribute("viewBox", `${x.toFixed(1)} 0 ${width.toFixed(1)} 550`);
+  $("#citationGraphCaption").textContent = "Arrows point from the citing work to the work it cites. Select a line or use View citation to read the linked passage.";
+  renderConnectionsList(localNodes);
 }
 
 function drawOverview() {
@@ -380,11 +397,17 @@ function drawOverview() {
   lineages.edges.filter(edge => edge.overview).forEach(edge => {
     const start = overviewPositions.get(edge.source);
     const end = overviewPositions.get(edge.target);
-    if (start && end) edgeLayer.append(element("path", {
-      d: branchingPath(start, end, 3, 3),
-      class: edge.lineage_strength >= .72 ? "lineage-backbone" : "",
-      "data-strength": edge.lineage_strength
-    }));
+    if (start && end) {
+      const d = branchingPath(start, end, 3, 3);
+      edgeLayer.append(element("path", { d,
+        class: edge.lineage_strength >= .72 ? "lineage-backbone" : "",
+        "data-strength": edge.lineage_strength }));
+      const hit = element("path", { d, class: "citation-edge-hit" });
+      // Lineage orientation is chronological, while the direct citation points backwards.
+      const direct = findEdge(edge.source, edge.target) || findEdge(edge.target, edge.source);
+      if (direct) edgeAction(hit, direct.source, direct.target);
+      edgeLayer.append(hit);
+    }
   });
   connectedNodes
     .slice()
@@ -395,117 +418,244 @@ function drawOverview() {
       addNode(nodeLayer, node, point.x, point.y, radius, false, node.id === currentId);
     });
   addOverviewLabels(labelLayer);
-  document.querySelector("#citationStatus").textContent = "";
+  $("#citationGraphCaption").textContent = `${connectedNodes.length} of ${catalogueNodes.length} works appear in this selected network. Use Chronology to browse every work.`;
+  renderConnectionsList(connectedNodes);
 }
 
 function updateViewButtons() {
-  document.querySelector("#citationFocusView").classList.toggle("active", currentView === "focus");
-  document.querySelector("#citationOverviewView").classList.toggle("active", currentView === "overview");
-  document.querySelector("#citationFocusView").setAttribute("aria-pressed", String(currentView === "focus"));
-  document.querySelector("#citationOverviewView").setAttribute("aria-pressed", String(currentView === "overview"));
-  document.querySelector("#citationFocusView").disabled = !currentId;
-  document.querySelector("#citationZoomOut").hidden = currentView === "overview";
+  for (const [selector, view] of [["#citationTimelineView", "timeline"], ["#citationFocusView", "focus"], ["#citationOverviewView", "overview"]]) {
+    const control = $(selector);
+    if (!control) continue;
+    control.classList.toggle("active", currentView === view);
+    control.setAttribute("aria-pressed", String(currentView === view));
+  }
+  $("#citationFocusView").disabled = !currentId;
+  $("#citationZoomOut").hidden = currentView !== "focus";
+  if ($("#timelinePanel")) $("#timelinePanel").hidden = currentView !== "timeline";
+  if ($("#connectionsPanel")) $("#connectionsPanel").hidden = currentView === "timeline";
 }
 
-function updateURL() {
+function stateURL() {
   const parameters = new URLSearchParams();
   if (currentId) parameters.set("work", currentId);
-  if (currentView === "overview") parameters.set("view", "overview");
-  history.replaceState(null, "", parameters.size ? `?${parameters}` : location.pathname);
+  if (currentView !== "timeline" || currentId) parameters.set("view", currentView);
+  if (searchQuery) parameters.set("q", searchQuery);
+  if (decadeFilter !== "all") parameters.set("decade", decadeFilter);
+  if (topicFilter !== "all") parameters.set("topic", topicFilter);
+  if (selectedEdge) parameters.set("citation", selectedEdge.join("~"));
+  return parameters.size ? `${location.pathname}?${parameters}` : location.pathname;
+}
+
+function updateURL(mode = "push") {
+  const url = stateURL();
+  if (url === location.pathname + (location.search || "")) return;
+  history[mode === "replace" ? "replaceState" : "pushState"]({ timeline: true }, "", url);
+}
+
+function applyURLState() {
+  const parameters = new URLSearchParams(location.search);
+  const requested = parameters.get("work");
+  currentId = requested && nodes.has(requested) ? requested : null;
+  const view = parameters.get("view");
+  currentView = view === "timeline" ? "timeline" : view === "overview" ? "overview" : currentId ? "focus" : "timeline";
+  searchQuery = parameters.get("q") || "";
+  const decade = parameters.get("decade") || "all";
+  decadeFilter = decade === "undated" || catalogueNodes.some(node => String(Math.floor(node.year / 10) * 10) === decade) ? decade : "all";
+  const topic = parameters.get("topic") || "all";
+  topicFilter = catalogueNodes.some(node => node.category === topic) ? topic : "all";
+  const edge = (parameters.get("citation") || "").split("~");
+  selectedEdge = edge.length === 2 && findEdge(...edge) ? edge : null;
+  $("#timelineDecade").value = decadeFilter;
+  $("#timelineTopic").value = topicFilter;
+}
+
+function matchTitle(node, query) {
+  const terms = normalized(query).split(/\s+/).filter(Boolean);
+  const title = normalized(`${node.title} ${node.year ?? ""}`);
+  return terms.every(term => title.includes(term));
+}
+
+function chronologicalWorks(items = catalogueNodes) {
+  return items.slice().sort((a, b) => (a.year ?? Infinity) - (b.year ?? Infinity) || a.title.localeCompare(b.title));
+}
+
+function filteredWorks() {
+  const exact = labels?.get(normalized(searchQuery));
+  return chronologicalWorks(catalogueNodes.filter(node =>
+    (exact ? exact.includes(node.id) : matchTitle(node, searchQuery)) &&
+    (topicFilter === "all" || node.category === topicFilter) &&
+    (decadeFilter === "all" || (decadeFilter === "undated" ? !Number.isFinite(node.year) : Math.floor(node.year / 10) * 10 === Number(decadeFilter)))
+  ));
+}
+
+function editionActions(node) {
+  return (node.edition_path ? `<a href="${esc(node.edition_path)}">Read edition</a>` : "") +
+    (node.edition_pdf_path ? `<a href="${esc(node.edition_pdf_path)}" target="_blank" rel="noopener">Download PDF</a>` : "");
+}
+
+function renderChronology() {
+  const items = filteredWorks();
+  const groups = new Map();
+  items.forEach(node => {
+    const year = node.year ?? "Undated";
+    if (!groups.has(year)) groups.set(year, []);
+    groups.get(year).push(node);
+  });
+  $("#timelineList").innerHTML = [...groups].map(([year, entries]) =>
+    `<section class="timeline-year"><h2>${esc(year)}</h2><ul>${entries.map(node =>
+      `<li class="timeline-work"><a class="timeline-work-title" href="${esc(node.path)}">${esc(node.title)}</a>` +
+      `<p class="timeline-work-meta">${esc(node.type)}${node.category ? ` · ${esc(node.category)}` : ""}</p>` +
+      `<div class="timeline-work-actions">${editionActions(node)}<button type="button" data-work="${esc(node.id)}">Connections</button></div></li>`
+    ).join("")}</ul></section>`
+  ).join("") || '<p>No works match these filters. Clear them to see the complete chronology.</p>';
+  bindWorkButtons($("#timelineList"));
+  $("#timelineClear").hidden = !searchQuery && decadeFilter === "all" && topicFilter === "all";
+  $("#citationStatus").textContent = `${items.length} of ${catalogueNodes.length} works, oldest first.`;
+}
+
+function renderConnectionsList(items) {
+  $("#connectionsListItems").innerHTML = `<ul>${chronologicalWorks(items).map(node =>
+    `<li><button type="button" data-work="${esc(node.id)}">${esc(node.year ?? "n.d.")} · ${esc(node.title)}</button></li>`
+  ).join("")}</ul>`;
+  bindWorkButtons($("#connectionsListItems"));
+}
+
+function bindWorkButtons(container) {
+  container.querySelectorAll("button[data-work]").forEach(button => {
+    button.onclick = () => activateNode(button.dataset.work);
+  });
+}
+
+function findEdge(source, target) {
+  return graph?.edges.find(edge => edge.source === source && edge.target === target);
+}
+
+function showEvidence(source, target, updateHistory = true, moveFocus = true) {
+  const edge = findEdge(source, target);
+  if (!edge) return;
+  selectedEdge = [source, target];
+  const panel = $("#citationEvidence");
+  const passages = edge.passages || [];
+  panel.hidden = false;
+  panel.innerHTML = `<h2>Citation from ${esc(nodes.get(source).title)}</h2>` +
+    `<p>Refers to <a href="${esc(nodes.get(target).path)}">${esc(nodes.get(target).title)}</a>.</p>` +
+    (passages.length ? passages.map(passage =>
+      `<div class="citation-evidence-item"><p class="citation-evidence-type">${passage.kind === "reference" ? "Bibliography entry" : "Citing passage"}</p>` +
+      `<blockquote>${esc(passage.excerpt)}</blockquote><a href="${esc(passage.path)}">Read in context →</a></div>`
+    ).join("") : `<p>This connection is recorded, but a linked passage is not available in the digital edition.</p>` +
+      `<a href="${esc(nodes.get(source).path)}">View the citing work →</a>`);
+  if (updateHistory) updateURL();
+  if (moveFocus) {
+    panel.focus({ preventScroll: true });
+    panel.scrollIntoView({ behavior: "auto", block: "nearest" });
+  }
 }
 
 function render(id, updateHistory = true) {
   const node = id ? nodes.get(id) : null;
-  if (!node) {
-    currentId = null;
-    document.querySelector("#citationWork").value = "";
-    document.querySelector("#citationFocus").hidden = true;
-    currentView = "overview";
-    updateViewButtons();
-    drawOverview();
-    if (updateHistory) updateURL();
-    return;
-  }
-  currentId = id;
+  currentId = node?.id || null;
+  if (currentView === "focus" && !node) currentView = "overview";
   updateViewButtons();
-  document.querySelector("#citationWork").value = label(node);
-  const cites = [...(outgoing.get(id) || [])];
-  const citedBy = [...(incoming.get(id) || [])];
-  const focus = document.querySelector("#citationFocus");
-  focus.hidden = false;
-  focus.innerHTML = `
-    <div class="citation-focus-work">
-      <span>${esc(node.year ?? "n.d.")}</span>
-      <h2><a href="${esc(node.path)}">${esc(node.title)}</a></h2>
-    </div>
-    <div class="citation-neighbours">
-      <section><h3>Cites <span>${cites.length}</span></h3>${cites.length ? neighbourList(cites) : "<p>None recorded.</p>"}</section>
-      <section><h3>Cited by <span>${citedBy.length}</span></h3>${citedBy.length ? neighbourList(citedBy) : "<p>None recorded.</p>"}</section>
-    </div>`;
-  focus.querySelectorAll("button[data-work]").forEach(button => {
-    button.onclick = () => activateNode(button.dataset.work);
-  });
-  if (currentView === "overview") drawOverview();
-  else drawFocus(id);
-  if (updateHistory) updateURL();
+  $("#citationWork").value = currentView === "timeline" ? searchQuery : node ? label(node) : searchQuery;
+  $("#citationMatches").hidden = true;
+  $("#citationEvidence").hidden = true;
+  const focus = $("#citationFocus");
+  focus.hidden = !node;
+  if (node) {
+    const cites = [...(outgoing.get(id) || [])];
+    const citedBy = [...(incoming.get(id) || [])];
+    focus.innerHTML = `<div class="citation-focus-work"><span>${esc(node.year ?? "n.d.")} · ${esc(node.type || "Work")}</span>` +
+      `<h2><a href="${esc(node.path)}">${esc(node.title)}</a></h2>` +
+      `<div class="timeline-work-actions">${editionActions(node)}</div></div>` +
+      `<div class="citation-neighbours"><section><h3>Cites <span>${cites.length}</span></h3>${cites.length ? neighbourList(cites, "outgoing") : "<p>None recorded.</p>"}</section>` +
+      `<section><h3>Cited by <span>${citedBy.length}</span></h3>${citedBy.length ? neighbourList(citedBy, "incoming") : "<p>None recorded.</p>"}</section></div>`;
+    bindWorkButtons(focus);
+    focus.querySelectorAll("button[data-edge-source]").forEach(button => {
+      button.onclick = () => showEvidence(button.dataset.edgeSource, button.dataset.edgeTarget);
+    });
+  }
+  if (currentView === "timeline") renderChronology();
+  else {
+    if (currentView === "focus") drawFocus(id); else drawOverview();
+    $("#citationStatus").textContent = node ? `Selected: ${label(node)}.` : "Select a work or search by any part of its title.";
+    if (selectedEdge) showEvidence(...selectedEdge, false, false);
+  }
+  if (updateHistory) updateURL(updateHistory === "replace" ? "replace" : "push");
+}
+
+function searchConnections() {
+  const query = $("#citationWork").value.trim();
+  const exact = labels.get(normalized(query));
+  const candidates = exact ? exact.map(id => nodes.get(id)) : graph.nodes.filter(node => matchTitle(node, query));
+  if (query && candidates.length === 1) { activateNode(candidates[0].id); return; }
+  const matches = $("#citationMatches");
+  matches.hidden = false;
+  matches.innerHTML = query && candidates.length ? `<ul>${chronologicalWorks(candidates).map(node =>
+    `<li><button type="button" data-work="${esc(node.id)}">${esc(label(node))}</button></li>`
+  ).join("")}</ul>` : query ? "<p>No matching work. Try another word from the title.</p>" : "<p>Enter part of a title to find matching works.</p>";
+  bindWorkButtons(matches);
+  $("#citationStatus").textContent = query && candidates.length ? `${candidates.length} matching works. Choose one below.` : "No matching work. Try another word from the title.";
 }
 
 async function init() {
   [graph, lineages] = await Promise.all([
-    fetch("../data/citation-graph.json"),
-    fetch("../data/citation-lineages.json")
+    fetch("../data/citation-graph.json"), fetch("../data/citation-lineages.json")
   ]).then(async responses => {
     if (responses.some(response => !response.ok)) throw new Error("Citation data unavailable");
     return Promise.all(responses.map(response => response.json()));
   });
+  catalogueNodes = graph.nodes.slice();
   const lineageNodes = new Map(lineages.nodes.map(node => [node.id, node]));
   graph.nodes = graph.nodes.map(node => ({ ...node, ...lineageNodes.get(node.id) }));
   nodes = new Map(graph.nodes.map(node => [node.id, node]));
-  labels = new Map(graph.nodes.map(node => [label(node).toLocaleLowerCase(), node.id]));
-  outgoing = new Map();
-  incoming = new Map();
+  labels = new Map();
+  for (const node of [...graph.nodes, ...catalogueNodes]) {
+    for (const value of [label(node), node.title]) {
+      const key = normalized(value);
+      const ids = labels.get(key) || [];
+      if (!ids.includes(node.id)) ids.push(node.id);
+      labels.set(key, ids);
+    }
+  }
+  outgoing = new Map(); incoming = new Map();
   graph.edges.forEach(edge => {
     if (!outgoing.has(edge.source)) outgoing.set(edge.source, new Set());
     if (!incoming.has(edge.target)) incoming.set(edge.target, new Set());
-    outgoing.get(edge.source).add(edge.target);
-    incoming.get(edge.target).add(edge.source);
+    outgoing.get(edge.source).add(edge.target); incoming.get(edge.target).add(edge.source);
   });
   outgoing.forEach((value, key) => outgoing.set(key, chronological(value)));
   incoming.forEach((value, key) => incoming.set(key, chronological(value)));
   prepareOverviewLayout();
-  document.querySelector("#citationWorkList").innerHTML = graph.nodes
-    .slice().sort((a, b) => a.title.localeCompare(b.title))
+  $("#citationWorkList").innerHTML = catalogueNodes.slice().sort((a, b) => a.title.localeCompare(b.title))
     .map(node => `<option value="${esc(label(node))}"></option>`).join("");
-  document.querySelector("#citationSearch").onsubmit = event => {
+  const decades = [...new Set(catalogueNodes.filter(node => Number.isFinite(node.year)).map(node => Math.floor(node.year / 10) * 10))].sort((a, b) => a - b);
+  $("#timelineDecade").innerHTML = '<option value="all">All years</option>' + decades.map(year => `<option value="${year}">${year}–${year + 9}</option>`).join("") +
+    (catalogueNodes.some(node => !Number.isFinite(node.year)) ? '<option value="undated">Undated</option>' : "");
+  $("#timelineTopic").innerHTML = '<option value="all">All topics</option>' + [...new Set(catalogueNodes.map(node => node.category).filter(Boolean))].sort()
+    .map(topic => `<option value="${esc(topic)}">${esc(topic)}</option>`).join("");
+  $("#citationSearch").onsubmit = event => {
     event.preventDefault();
-    const value = document.querySelector("#citationWork").value.trim().toLocaleLowerCase();
-    const id = labels.get(value);
-    if (id) activateNode(id);
-    else document.querySelector("#citationStatus").textContent = "Choose a work from the list.";
+    if (currentView === "timeline") { searchQuery = $("#citationWork").value.trim(); render(currentId, "replace"); }
+    else searchConnections();
   };
-  document.querySelector("#citationFocusView").onclick = () => {
-    currentView = "focus";
-    updateViewButtons();
+  $("#citationWork").addEventListener("input", () => {
+    if (currentView === "timeline") { searchQuery = $("#citationWork").value.trim(); renderChronology(); updateURL("replace"); }
+  });
+  for (const [selector, view] of [["#citationTimelineView", "timeline"], ["#citationOverviewView", "overview"], ["#citationFocusView", "focus"], ["#citationZoomOut", "overview"]]) {
+    $(selector).onclick = () => { currentView = view; selectedEdge = null; render(currentId); };
+  }
+  $("#timelineDecade").onchange = event => { decadeFilter = event.target.value; render(currentId); };
+  $("#timelineTopic").onchange = event => { topicFilter = event.target.value; render(currentId); };
+  $("#timelineClear").onclick = () => {
+    searchQuery = ""; decadeFilter = "all"; topicFilter = "all";
+    $("#timelineDecade").value = "all"; $("#timelineTopic").value = "all";
     render(currentId);
   };
-  document.querySelector("#citationOverviewView").onclick = () => {
-    currentView = "overview";
-    updateViewButtons();
-    render(currentId);
-  };
-  document.querySelector("#citationZoomOut").onclick = () => {
-    currentView = "overview";
-    updateViewButtons();
-    render(currentId);
-  };
-  const parameters = new URLSearchParams(location.search);
-  const requested = parameters.get("work");
-  currentView = requested && nodes.has(requested) && parameters.get("view") !== "overview"
-    ? "focus" : "overview";
-  updateViewButtons();
-  render(requested && nodes.has(requested) ? requested : null, false);
+  window.addEventListener("popstate", () => { applyURLState(); render(currentId, false); });
+  applyURLState();
+  render(currentId, false);
 }
 
 init().catch(() => {
-  document.querySelector("#citationStatus").textContent = "Citation data is unavailable.";
+  $("#citationStatus").textContent = "The timeline is unavailable. You can still browse the catalogue.";
 });

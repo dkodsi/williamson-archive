@@ -4,40 +4,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="A chronological map of connections between works in the Timothy Williamson Archive.">
+  <meta name="description" content="Browse Timothy Williamson's work chronologically and explore its recorded citations.">
   <title>Timeline - Timothy Williamson Archive</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/style.css?v=20260822-2">
+  <link rel="stylesheet" href="../assets/style.css?v=20261112-1">
+  <link rel="stylesheet" href="../assets/timeline.css?v=20261112-1">
 </head>
 <body>
   <header class="topbar"><a class="brand" href="../index.html">TW<span>Archive</span></a>
     <nav class="topbar-links" aria-label="Archive pages">
       <a class="topbar-link" href="../index.html">Catalogue</a>
-      <a class="topbar-link" href="../search/index.html">Corpus search</a>
-      <a class="topbar-link" href="index.html">Timeline</a>
+      <a class="topbar-link" href="../search/index.html">Search</a>
+      <a class="topbar-link" href="index.html" aria-current="page">Timeline</a>
     </nav>
-
   </header>
-  <main class="citation-map-main">
-    <a class="work-record-back" href="../index.html">← Archive</a>
+  <main class="citation-map-main timeline-main">
     <h1>Timeline</h1>
+    <p class="timeline-introduction">Browse the complete bibliography by year, or follow citations between works.</p>
     <form id="citationSearch" class="citation-map-search" role="search">
-      <label class="visually-hidden" for="citationWork">Work</label>
-      <input id="citationWork" list="citationWorkList" type="search" placeholder="Find a work…" autocomplete="off">
+      <label class="visually-hidden" for="citationWork">Find a work</label>
+      <input id="citationWork" list="citationWorkList" type="search" placeholder="Find a work…" autocomplete="off" aria-controls="timelineList citationMatches">
       <datalist id="citationWorkList"></datalist>
-      <button type="submit">Show</button>
+      <button type="submit">Find</button>
     </form>
-    <p id="citationStatus" class="citation-map-status" role="status" aria-live="polite"></p>
-    <div class="citation-view-controls" role="group" aria-label="Graph view">
-      <button id="citationOverviewView" class="active" type="button" aria-pressed="true">Overview</button>
-      <button id="citationFocusView" type="button" aria-pressed="false" disabled>Focus</button>
+    <p id="citationStatus" class="citation-map-status" role="status" aria-live="polite">Loading works…</p>
+    <div id="citationMatches" class="timeline-matches" hidden></div>
+    <div class="citation-view-controls" role="group" aria-label="Browse view">
+      <button id="citationTimelineView" class="active" type="button" aria-pressed="true">Chronology</button>
+      <button id="citationOverviewView" type="button" aria-pressed="false">Connections</button>
+      <button id="citationFocusView" type="button" aria-pressed="false" disabled>Selected work</button>
     </div>
-    <figure class="citation-graph-frame">
-      <button id="citationZoomOut" class="citation-zoom-out" type="button" hidden>Zoom out</button>
-      <svg id="citationGraph" viewBox="0 0 1000 540" role="group" aria-label="Chronological map of connections between works; books are red"></svg>
-    </figure>
-    <section id="citationFocus" class="citation-focus" hidden></section>
+    <section id="timelinePanel" aria-label="Complete chronology">
+      <div class="timeline-filters">
+        <label>Period <select id="timelineDecade"><option value="all">All years</option></select></label>
+        <label>Topic <select id="timelineTopic"><option value="all">All topics</option></select></label>
+        <button id="timelineClear" type="button" hidden>Clear filters</button>
+      </div>
+      <div id="timelineList"></div>
+      <noscript><p>Use the <a href="../index.html?sort=oldest">chronological catalogue</a> to browse the works without JavaScript.</p></noscript>
+    </section>
+    <section id="connectionsPanel" aria-label="Connections between works" hidden>
+      <p id="citationLegend" class="citation-legend">Connections shows a selected network; Selected work shows all its recorded direct citations. Red dots are books; larger dots have more citations within this archive. Vertical placement has no subject meaning. Different editions may be grouped under a work’s first publication year. Select a line or “View citation” to read the supporting passage when available.</p>
+      <div class="connections-layout">
+        <figure class="citation-graph-frame">
+          <button id="citationZoomOut" class="citation-zoom-out" type="button" hidden>All connections</button>
+          <svg id="citationGraph" viewBox="0 0 1000 540" role="group" aria-label="Citation connections arranged by publication year" aria-describedby="citationLegend"></svg>
+          <figcaption id="citationGraphCaption"></figcaption>
+        </figure>
+        <section id="citationFocus" class="citation-focus" aria-label="Selected work" hidden></section>
+      </div>
+      <section id="citationEvidence" class="citation-evidence" aria-live="polite" tabindex="-1" hidden></section>
+      <details id="connectionsList" class="connections-text-list">
+        <summary>Browse these works as a list</summary>
+        <div id="connectionsListItems"></div>
+      </details>
+    </section>
   </main>
-  <script src="../assets/citation-map.js?v=20260822-5"></script>
+  <script src="../assets/citation-map.js?v=20261112-1"></script>
 </body>
 </html>
