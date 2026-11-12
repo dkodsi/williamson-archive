@@ -6,8 +6,8 @@
   <meta name="robots" content="index, follow">
   <title>Timeline - Timothy Williamson Archive</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/style.css?v=20261112-2">
-  <link rel="stylesheet" href="../assets/timeline.css?v=20261112-2">
+  <link rel="stylesheet" href="../assets/style.css?v=20261112-3">
+  <link rel="stylesheet" href="../assets/timeline.css?v=20261112-3">
 <link rel="canonical" href="https://dkodsi.github.io/williamson-archive/citations/">
 <meta name="description" content="Explore Timothy Williamson&#x27;s work by publication year and follow citation connections between works.">
 <meta property="og:title" content="Timeline – Timothy Williamson Archive">
@@ -25,7 +25,6 @@
   </header>
   <main class="citation-map-main timeline-main">
     <h1>Timeline</h1>
-    <p class="timeline-introduction">Browse the complete bibliography by year, or follow citations between works.</p>
     <form id="citationSearch" class="citation-map-search" role="search">
       <label class="visually-hidden" for="citationWork">Find a work</label>
       <input id="citationWork" list="citationWorkList" type="search" placeholder="Find a work…" autocomplete="off" aria-controls="timelineList citationMatches">
@@ -49,7 +48,7 @@
       <noscript><p>Use the <a href="../index.html?sort=oldest">chronological catalogue</a> to browse the works without JavaScript.</p></noscript>
     </section>
     <section id="connectionsPanel" aria-label="Connections between works" hidden>
-      <p id="citationLegend" class="citation-legend">Connections shows a selected network; Selected work shows all its recorded direct citations. Red dots are books; larger dots have more citations within this archive. Vertical placement has no subject meaning. Different editions may be grouped under a work’s first publication year. Select a line or “View citation” to read the supporting passage when available.</p>
+      <p id="citationLegend" class="citation-legend">Red: books. Size: citations within the archive. Arrows: citing → cited. Editions may share the first publication year; vertical position has no subject meaning.</p>
       <div class="connections-layout">
         <figure class="citation-graph-frame">
           <button id="citationZoomOut" class="citation-zoom-out" type="button" hidden>All connections</button>
@@ -60,11 +59,11 @@
       </div>
       <section id="citationEvidence" class="citation-evidence" aria-live="polite" tabindex="-1" hidden></section>
       <details id="connectionsList" class="connections-text-list">
-        <summary>Browse these works as a list</summary>
+        <summary>List view</summary>
         <div id="connectionsListItems"></div>
       </details>
     </section>
   </main>
-  <script src="../assets/citation-map.js?v=20261112-2"></script>
+  <script src="../assets/citation-map.js?v=20261112-3"></script>
 </body>
 </html>

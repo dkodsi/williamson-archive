@@ -48,7 +48,7 @@ document.querySelectorAll("[data-copy-citation]").forEach((button, index) => {
       status.textContent = "Citation copied.";
       resetTimer = setTimeout(() => { button.textContent = "Copy citation"; }, 1600);
     } catch (error) {
-      status.textContent = "Automatic copying is unavailable. The citation below is selected; copy it using your keyboard or device menu.";
+      status.textContent = "Automatic copying is unavailable. Copy the selected citation below.";
       manualCopy();
     } finally {
       copying = false;

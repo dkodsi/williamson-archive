@@ -375,7 +375,7 @@ function drawFocus(id) {
     localNodes.some(node => !Number.isFinite(node.year)));
   addFocusLabels(labelLayer, localNodes, positions, id, { left: x, right: x + width, top: 0, bottom: 510 });
   svg.setAttribute("viewBox", `${x.toFixed(1)} 0 ${width.toFixed(1)} 550`);
-  $("#citationGraphCaption").textContent = "Arrows point from the citing work to the work it cites. Select a line or use View citation to read the linked passage.";
+  $("#citationGraphCaption").textContent = "Direct citations to and from the selected work.";
   renderConnectionsList(localNodes);
 }
 
@@ -418,7 +418,7 @@ function drawOverview() {
       addNode(nodeLayer, node, point.x, point.y, radius, false, node.id === currentId);
     });
   addOverviewLabels(labelLayer);
-  $("#citationGraphCaption").textContent = `${connectedNodes.length} of ${catalogueNodes.length} works appear in this selected network. Use Chronology to browse every work.`;
+  $("#citationGraphCaption").textContent = `Selected network: ${connectedNodes.length} of ${catalogueNodes.length} works.`;
   renderConnectionsList(connectedNodes);
 }
 
@@ -542,7 +542,7 @@ function showEvidence(source, target, updateHistory = true, moveFocus = true) {
     (passages.length ? passages.map(passage =>
       `<div class="citation-evidence-item"><p class="citation-evidence-type">${passage.kind === "reference" ? "Bibliography entry" : "Citing passage"}</p>` +
       `<blockquote>${esc(passage.excerpt)}</blockquote><a href="${esc(passage.path)}">Read in context →</a></div>`
-    ).join("") : `<p>This connection is recorded, but a linked passage is not available in the digital edition.</p>` +
+    ).join("") : `<p>No linked passage available.</p>` +
       `<a href="${esc(nodes.get(source).path)}">View the citing work →</a>`);
   if (updateHistory) updateURL();
   if (moveFocus) {
@@ -577,7 +577,7 @@ function render(id, updateHistory = true) {
   if (currentView === "timeline") renderChronology();
   else {
     if (currentView === "focus") drawFocus(id); else drawOverview();
-    $("#citationStatus").textContent = node ? `Selected: ${label(node)}.` : "Select a work or search by any part of its title.";
+    $("#citationStatus").textContent = node ? `Selected: ${label(node)}.` : "";
     if (selectedEdge) showEvidence(...selectedEdge, false, false);
   }
   if (updateHistory) updateURL(updateHistory === "replace" ? "replace" : "push");

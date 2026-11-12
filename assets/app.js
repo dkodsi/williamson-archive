@@ -229,8 +229,9 @@ async function render({ updateURL = true, historyMode = "push" } = {}) {
   updateFilterSummary(state);
   $("#search").placeholder = state.scope === "text" ? "Search full text…" : "Search titles…";
   $("#searchHint").textContent = state.scope === "text"
-    ? 'Search available digital editions. Use quotation marks for a phrase; * matches part of a word.'
-    : "Find a title, or search the text of the digital editions.";
+    ? 'Use "quotes" for phrases; * matches part of a word.'
+    : "";
+  $("#searchHint").hidden = state.scope !== "text";
   $("#sort option[value=relevance]").hidden = state.scope !== "text";
   if (updateURL && !restoringState) writeURLState(historyMode);
   $$('[data-titles-link]').forEach(link => {
