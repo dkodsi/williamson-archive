@@ -83,8 +83,7 @@ body.reader-night{--ink:#e8e1d7;--muted:#aaa096;--rule:#413b36;--paper:#181615;-
 @media print{.reader-navigation,.reader-note-preview{display:none!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* Current reviewed-edition typography. The base reader controls remain
-   unchanged; article structure mirrors the reviewed PDF treatment. */
+/* Article typography follows the PDF layout; reader controls use base styles. */
 @font-face{font-family:"TW Modal Symbols";src:url("TWModalSymbols.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block}
 @font-face{font-family:"TW Bold Math Symbols";src:url("../../fonts/XITSMath-Bold.otf") format("opentype");font-style:normal;font-weight:700;font-display:block}
 math .bold-math-operator{font-family:"TW Bold Math Symbols",serif!important;font-style:normal;font-weight:700}

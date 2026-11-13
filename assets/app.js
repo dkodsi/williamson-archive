@@ -353,7 +353,7 @@ function writeURLState(state, mode = "push") {
 }
 function applyURLState() {
   const params = new URLSearchParams(location.search);
-  // Old bookmarked topic filters must not silently restrict the simplified UI.
+  // Unsupported topic filters must not silently restrict catalogue results.
   if (params.has("category")) {
     params.delete("category");
     history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`);
