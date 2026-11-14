@@ -22,7 +22,7 @@ const normalized = value => String(value || "").normalize("NFKC")
   .toLocaleLowerCase().replace(/\s+/g, " ").trim();
 const archiveHref = path => `${ARCHIVE_ROOT}${encodeURI(path)}`;
 const selectedScope = () => $('input[name="scope"]:checked')?.value || DEFAULT_SCOPE;
-const defaultSort = scope => scope === "text" ? "relevance" : "citations";
+const defaultSort = scope => scope === "text" ? "relevance" : "newest";
 const compareYears = (left, right, direction) => {
   if (left.year == null && right.year != null) return 1;
   if (right.year == null && left.year != null) return -1;
@@ -134,7 +134,7 @@ function bind() {
     input.addEventListener("change", () => {
       finishQueryEdit();
       const sort = $("#sort");
-      if (["citations", "relevance"].includes(sort.value)) sort.value = defaultSort(input.value);
+      if (["newest", "relevance"].includes(sort.value)) sort.value = defaultSort(input.value);
       render();
     });
   });
@@ -238,7 +238,7 @@ function render({ updateURL = true, historyMode = "push" } = {}) {
   $("#sort option[value=relevance]").hidden = !fulltext;
   if (updateURL) writeURLState(state, historyMode);
   $$('[data-titles-link]').forEach(link => {
-    const params = stateParameters({ ...state, scope: "titles", sort: state.sort === "relevance" ? "citations" : state.sort });
+    const params = stateParameters({ ...state, scope: "titles", sort: state.sort === "relevance" ? defaultSort("titles") : state.sort });
     link.href = `${ARCHIVE_ROOT}index.html?${params}`;
   });
   $("#yearBuckets").hidden = fulltext;
